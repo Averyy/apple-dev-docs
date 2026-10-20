@@ -12,12 +12,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/cgdisplaycreateuuidfromdisplayid(_:)": {
       "etag": "\"2726-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/cgdisplaycreateuuidfromdisplayid.md",
+      "file_path": "documentation/ColorSync/cgdisplaycreateuuidfromdisplayid(_).md",
       "hash": "0663e37ef0798d013ab60e3f6a3c56f45c99a5247751aaf827780f8467fada2c"
     },
     "https://developer.apple.com/documentation/colorsync/cgdisplaygetdisplayidfromuuid(_:)": {
       "etag": "\"23b2-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/cgdisplaygetdisplayidfromuuid.md",
+      "file_path": "documentation/ColorSync/cgdisplaygetdisplayidfromuuid(_).md",
       "hash": "a3543aeaa3f8b30ba38d77d7ee111b23a68349c5ca25d37feed6890f0ea9e41b"
     },
     "https://developer.apple.com/documentation/colorsync/cmmapplytransformproc": {
@@ -62,17 +62,17 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsync_api_version": {
       "etag": "\"245f-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsync-api-version.md",
+      "file_path": "documentation/ColorSync/colorsync_api_version.md",
       "hash": "749d8a2ed3dde3ab058bc07e30f0e57dcd0091dc63f41c848af85a75535645d3"
     },
     "https://developer.apple.com/documentation/colorsync/colorsync_md5_length": {
       "etag": "\"2740-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsync-md5-length.md",
+      "file_path": "documentation/ColorSync/colorsync_md5_length.md",
       "hash": "61993344f8da49d937df3fb12bb7d571027d01cd614d9e52b1effc79dc41aaac"
     },
     "https://developer.apple.com/documentation/colorsync/colorsync_profile_install_entitlement": {
       "etag": "\"3a5b-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsync-profile-install-entitlement.md",
+      "file_path": "documentation/ColorSync/colorsync_profile_install_entitlement.md",
       "hash": "5f0a20ad2f83c56358b9e2254ab50ed438ec66bef9be1df660fcbb2c5225375a"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncalphainfo": {
@@ -82,12 +82,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncalphainfo/init(_:)": {
       "etag": "\"137f-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncalphainfo/init.md",
+      "file_path": "documentation/ColorSync/colorsyncalphainfo/init(_).md",
       "hash": "463b582394524422eecf45ee5259425fcdb698457998455c6f5b368e7d4af95b"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncalphainfo/init(rawvalue:)": {
       "etag": "\"1409-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncalphainfo/init-rawvalue.md",
+      "file_path": "documentation/ColorSync/colorsyncalphainfo/init(rawvalue).md",
       "hash": "446429fc7e4f05601563768dacc352e5fac0b20b4cbd0b8a9fd362617bfdbd6b"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncalphainfo/rawvalue": {
@@ -97,7 +97,7 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncapiversion()": {
       "etag": "\"2a7f-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncapiversion.md",
+      "file_path": "documentation/ColorSync/colorsyncapiversion().md",
       "hash": "5300c86b6e53f612e4a40df9df2f4fcea34792f7b7bb19ac44c549b4d0fa02fc"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynccmm": {
@@ -107,27 +107,27 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsynccmmcopycmmidentifier(_:)": {
       "etag": "\"445e-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmcopycmmidentifier.md",
+      "file_path": "documentation/ColorSync/colorsynccmmcopycmmidentifier(_).md",
       "hash": "c0e532c33c68cff72d746b2d0fc84bfc965d3a860e3fec9cbf957f6d747618ac"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynccmmcopylocalizedname(_:)": {
       "etag": "\"4464-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmcopylocalizedname.md",
+      "file_path": "documentation/ColorSync/colorsynccmmcopylocalizedname(_).md",
       "hash": "94403cfe90108342ab1ece67a50f01a7fc96d2a55f0369e1d9ac055b4494e8be"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynccmmcreate(_:)": {
       "etag": "\"46a0-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmcreate.md",
+      "file_path": "documentation/ColorSync/colorsynccmmcreate(_).md",
       "hash": "951a0dc2393a2f9d8e72cf06ad750890b596da4e8b78be8bf61709acbcbf4e00"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynccmmgetbundle(_:)": {
       "etag": "\"446d-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmgetbundle.md",
+      "file_path": "documentation/ColorSync/colorsynccmmgetbundle(_).md",
       "hash": "49bc000cfc4a838444f321d1e5939c4d5c11940f9262408ebe599cd846749e45"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynccmmgettypeid()": {
       "etag": "\"3b61-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmgettypeid.md",
+      "file_path": "documentation/ColorSync/colorsynccmmgettypeid().md",
       "hash": "e269b9ffb2dfcb98710c3778cc8ac5a388f8aea90193867aca89f09725fa9750"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynccmmiteratecallback": {
@@ -137,7 +137,7 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsynccreatecodefragment(_:_:)": {
       "etag": "\"6ce3-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsynccreatecodefragment.md",
+      "file_path": "documentation/ColorSync/colorsynccreatecodefragment(_,_).md",
       "hash": "f9ab3fd3a0b6bc2e1fe58d22de9a8986fbe5eefc1f0787efdae06a4c3ee7dc74"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncdatadepth": {
@@ -147,12 +147,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncdatadepth/init(_:)": {
       "etag": "\"136d-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncdatadepth/init.md",
+      "file_path": "documentation/ColorSync/colorsyncdatadepth/init(_).md",
       "hash": "68f699f2609d5d5137c8711fb748b6b60eae9eaea3263458f827e4a882fafdcc"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncdatadepth/init(rawvalue:)": {
       "etag": "\"13f7-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncdatadepth/init-rawvalue.md",
+      "file_path": "documentation/ColorSync/colorsyncdatadepth/init(rawvalue).md",
       "hash": "3bd2f52a324f713e9c5f83806ccbcbef71f0e24c4c0bcaf7d1196fc8ab1a41d4"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncdatadepth/rawvalue": {
@@ -167,7 +167,7 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncdevicecopydeviceinfo(_:_:)": {
       "etag": "\"5f48-65d55ad51ca49-df\"",
-      "file_path": "documentation/ColorSync/colorsyncdevicecopydeviceinfo.md",
+      "file_path": "documentation/ColorSync/colorsyncdevicecopydeviceinfo(_,_).md",
       "hash": "58af54e7eb5fc1573b6e1e71f77d9d9ec9c6216b6f00a63e40c04f92840fb6e4"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncdeviceprofileiteratecallback": {
@@ -177,27 +177,27 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncdevicesetcustomprofiles(_:_:_:)": {
       "etag": "\"7834-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncdevicesetcustomprofiles.md",
+      "file_path": "documentation/ColorSync/colorsyncdevicesetcustomprofiles(_,_,_).md",
       "hash": "13cbf679234c5213f1b37b7f4bc4a802a34228e43619d9ea82752700e538165d"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynciteratedeviceprofiles(_:_:)": {
       "etag": "\"48b1-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsynciteratedeviceprofiles.md",
+      "file_path": "documentation/ColorSync/colorsynciteratedeviceprofiles(_,_).md",
       "hash": "1e485eb6cbcd75670d445fbb71ae593cc62a13cf9e58d5ba1953b46bff0c8ea3"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynciterateinstalledcmms(_:_:)": {
       "etag": "\"46b2-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsynciterateinstalledcmms.md",
+      "file_path": "documentation/ColorSync/colorsynciterateinstalledcmms(_,_).md",
       "hash": "834adc3e828125aa914af15d9adbe445eebc58e5196956ae0594f3cfd60c8609"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynciterateinstalledprofiles(_:_:_:_:)": {
       "etag": "\"620c-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsynciterateinstalledprofiles.md",
+      "file_path": "documentation/ColorSync/colorsynciterateinstalledprofiles(_,_,_,_).md",
       "hash": "b8be7c9a4056771cf549fbf80464b7a3b014a3881dbf81b49e013496936f72a8"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynciterateinstalledprofileswithoptions(_:_:_:_:_:)": {
       "etag": "\"6cdf-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsynciterateinstalledprofileswithoptions.md",
+      "file_path": "documentation/ColorSync/colorsynciterateinstalledprofileswithoptions(_,_,_,_,_).md",
       "hash": "63a87e2521e04fc46134bdbb8f8eb812eec55373ebb3361dddf2ddfd314fa82e"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncmd5": {
@@ -212,12 +212,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncmd5/init()": {
       "etag": "\"eda-65d55ad51ca49-df\"",
-      "file_path": "documentation/ColorSync/colorsyncmd5/init.md",
+      "file_path": "documentation/ColorSync/colorsyncmd5/init().md",
       "hash": "cfe3c23a67a51d8481f107cc131afcd253afa1d2ffe2e6cec14b5b3e1ce9bf26"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncmd5/init(digest:)": {
       "etag": "\"29e6-65d55ad51ca49-df\"",
-      "file_path": "documentation/ColorSync/colorsyncmd5/init-digest.md",
+      "file_path": "documentation/ColorSync/colorsyncmd5/init(digest).md",
       "hash": "5f1b37d20d316945f549fbc58fa877c4fdbc780e4efbcb6b6cb8a44f8dafe756"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncmutableprofile": {
@@ -232,22 +232,22 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/adding(headroomadaptivegaincurve:)": {
       "etag": "\"2c26-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/adding-headroomadaptivegaincurve.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/adding(headroomadaptivegaincurve).md",
       "hash": "8fe0fc47f085cddf7f016f9f6cab5c25bcd8ab637a11df17cd5496652ef7154a"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/adding(headroomadaptivegaincurvemetadata:options:)": {
       "etag": "\"3011-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/adding-headroomadaptivegaincurvemetadataoptions.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/adding(headroomadaptivegaincurvemetadata,options).md",
       "hash": "c392c4d4aedbed6c76551d62cbf95204e83615010c0f390f6b0b2e42b6667eab"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.property": {
       "etag": "\"2165-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.property.md",
       "hash": "b588ba78467eeb2fb7738896a082f43334598a8f6a5f29dcc8dda7d8e927dd23"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct": {
       "etag": "\"39be-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swiftstruct.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct.md",
       "hash": "0d48d459741b892706b25f6e870602349cc442e38274ea04f5847b9356b030bd"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/applicationversion": {
@@ -257,12 +257,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property": {
       "etag": "\"20f3-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.md",
       "hash": "b6de45778b1746d2182977f93435224c4c129e8605ad946734b5ad83ff0fed32"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct": {
       "etag": "\"3a3b-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swiftstruct.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct.md",
       "hash": "b55f5a6c2a3c385cfad2fae86570b3da974e3281daafa884c75fc8291ace0917"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/adaptivetonemapping": {
@@ -277,7 +277,7 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/init(customhdrreferencewhite:adaptivetonemapping:)": {
       "etag": "\"37e7-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/init-customhdrreferencewhiteadaptivetonemapping.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/init(customhdrreferencewhite,adaptivetonemapping).md",
       "hash": "685d31003c4c8076435c695d6c0d4147a730a1af9bf545cc68e477d3c170b860"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping": {
@@ -292,12 +292,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/init(baselineheadroomstops:method:)": {
       "etag": "\"425f-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/init-baselineheadroomstopsmethod.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/init(baselineheadroomstops,method).md",
       "hash": "373a1d52b18381a6cbc29086479f9983d983957c8e70b907c64a78b5f85a9e43"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum": {
       "etag": "\"4344-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swiftenum.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum.md",
       "hash": "2e724b42bc07e3f4532df3348d5361d8b98b6a3d90d7d423b023e7ecea1c9a4b"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve": {
@@ -317,12 +317,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve/init(chromaticities:alternatecurves:)": {
       "etag": "\"6650-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve/init-chromaticitiesalternatecurves.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve/init(chromaticities,alternatecurves).md",
       "hash": "70f6dd7d7eba658c0dc5cf6f2b82b035e4c3dd59e27eb63d961e5154696949d8"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurvemapping(_:)": {
       "etag": "\"3a2b-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurvemapping.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurvemapping(_).md",
       "hash": "eb233da8d48657aad32d3b9cd1b2f5566d0517ef68cbaf756bc24bc3b2c1f4ef"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve": {
@@ -332,12 +332,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum": {
       "etag": "\"4590-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swiftenum.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum.md",
       "hash": "615b5f5860d9c12300774ea75079b3b0581a465a85795c6edbdbbb0cae5ec3a6"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum/freestyle(red:green:blue:maxrgb:minrgb:component:)": {
       "etag": "\"4327-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum/freestyle-redgreenbluemaxrgbminrgbcomponent.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum/freestyle(red,green,blue,maxrgb,minrgb,component).md",
       "hash": "e55a73ce7cc2dda43229daa7cc55b1e349da19f10d759b7224219ec4645a4422"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum/lumaa": {
@@ -357,27 +357,27 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.property": {
       "etag": "\"41d8-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.property.md",
       "hash": "85b98d71d28dbe0ade0c46cb7f36ff5ff2ec82342c83b5ccfa77437c9b786509"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.property": {
       "etag": "\"419c-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.property.md",
       "hash": "381d701f6636834bcdc6e3d08fbd79b62714f5ef13d5702e28fe3af84cf0cbe0"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct": {
       "etag": "\"5300-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swiftstruct.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct.md",
       "hash": "5cad78886c2ae0389c4ef3562e6fd438bc6aa623c84784cff15807eb24f3a09d"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/init(x:y:slopes:)": {
       "etag": "\"6f35-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/init-xyslopes.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/init(x,y,slopes).md",
       "hash": "c529eee7ea76a642bb5945b44b357f246f165b245a0cd61c18741740f50a0065"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum": {
       "etag": "\"3c42-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swiftenum.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum.md",
       "hash": "c94423ecbd4f518e8cac8dc5d6349b689316d6ecb2e1b8897a832f562dc8c0e0"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/interpolate": {
@@ -387,12 +387,12 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/tangent(_:)": {
       "etag": "\"42c7-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/tangent.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/tangent(_).md",
       "hash": "afcd67ed45a96f0b521e7702d4655b5d5e28fd94d39f5fc678bded6c5c4be089"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.property": {
       "etag": "\"4b25-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.property.md",
       "hash": "7ebe9a452ef780a1a33543f95340967ba344db17d9cc9d98d3faa1eb4b517f9f"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/x": {
@@ -412,7 +412,7 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/init(headroomstops:componentmix:controlpoints:)": {
       "etag": "\"6d45-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/init-headroomstopscomponentmixcontrolpoints.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/init(headroomstops,componentmix,controlpoints).md",
       "hash": "5bfbfb834e64dbb7c60af7e1e1c2749f740829c98f39bded1f87f1004fd3a12c"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities": {
@@ -432,7 +432,7 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/custom(red:green:blue:white:)": {
       "etag": "\"3677-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/custom-redgreenbluewhite.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/custom(red,green,blue,white).md",
       "hash": "1d141e197f227e3db89b64546856481c2a5f150547fd3b654880f9415374ce14"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/displayp3": {
@@ -447,7 +447,7 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.property": {
       "etag": "\"2fe1-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.property.md",
       "hash": "3362d134d79798e565d6e53289ba6f06b33ce3a0416403fdf026ce7dc6e22766"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error": {
@@ -462,42 +462,42 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/invalidhdrreferencewhite(_:)": {
       "etag": "\"1dff-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/invalidhdrreferencewhite.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/invalidhdrreferencewhite(_).md",
       "hash": "d1f793e7c8f8fb58749b17e3442969330731470cda41a40d4b484793d6fdb783"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedcontrolpointarrays(x:y:)": {
       "etag": "\"215a-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedcontrolpointarrays-xy.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedcontrolpointarrays(x,y).md",
       "hash": "24d14264f20b34217376fb94259b961b080b1a5207992c034a6c5d911ca57b25"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedtangentcount(got:expected:)": {
       "etag": "\"20b4-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedtangentcount-gotexpected.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedtangentcount(got,expected).md",
       "hash": "7ed9845bacb61bfb43aa80e5c9ba4462e86664be72f61c9cb99aefd2bbbd6db5"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativebaselineheadroom(_:)": {
       "etag": "\"1d4c-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativebaselineheadroom.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativebaselineheadroom(_).md",
       "hash": "7a0cfcc33d74a61500a3240446b67ef16734ed14edc431b88483f59c7a2b21fa"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativeheadroomstops(_:)": {
       "etag": "\"1d3e-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativeheadroomstops.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativeheadroomstops(_).md",
       "hash": "bf7de9d463213b251a6470571cb5bfb4a8843cb61e360aad8174d43c36291fdb"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanyalternatecurves(count:limit:)": {
       "etag": "\"2070-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanyalternatecurves-countlimit.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanyalternatecurves(count,limit).md",
       "hash": "27be5574e9e9b8eabb36f1fc2b0823750b1d15a28343a1c934e88c9dc9a4df4d"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanycontrolpoints(count:limit:)": {
       "etag": "\"2056-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanycontrolpoints-countlimit.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanycontrolpoints(count,limit).md",
       "hash": "7805cb4c553ec88e2c75caf655d23660ff572b9b2a6d4f1b38fe0a4da541ff63"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion(_:)": {
       "etag": "\"1e66-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion(_).md",
       "hash": "00e9c27d20abe22e7968ae37e9dc3823b72b8f5ce8e146dd0f386421844ea2d4"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/zerofreestyleweights": {
@@ -507,7 +507,7 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/init(applicationversion:colorvolumetransform:)": {
       "etag": "\"2ee3-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/init-applicationversioncolorvolumetransform.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/init(applicationversion,colorvolumetransform).md",
       "hash": "937ab046132115726511d096afd023742acd957560f1e42907e198a00972a80b"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurvemetadata": {
@@ -522,147 +522,147 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurveoptions/init()": {
       "etag": "\"1425-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurveoptions/init.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurveoptions/init().md",
       "hash": "d5fc0ca702485b5f28e497aaea2055a52e60e72ae1b59d58f219a8e669cdd17b"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecontainsheadroomadaptivegaincurve(_:)": {
       "etag": "\"26a8-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecontainsheadroomadaptivegaincurve.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecontainsheadroomadaptivegaincurve(_).md",
       "hash": "f359f5766651ecdeaca81260a928849d01cc4d819f4a3b7fb553891a6a66317e"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecontainstag(_:_:)": {
       "etag": "\"4c3b-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecontainstag.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecontainstag(_,_).md",
       "hash": "133a8c3b1ee2e96dc8b360ca61debe6d6bf3a6780668fce3c8cb1d1f47761f42"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecopydata(_:_:)": {
       "etag": "\"4023-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopydata.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopydata(_,_).md",
       "hash": "f3dfee193f9eeff1f7d99426acbb074d5c893be4602e3eb3c308957049e1a1bc"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecopydescriptionstring(_:)": {
       "etag": "\"3dd8-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopydescriptionstring.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopydescriptionstring(_).md",
       "hash": "ea0acb31a23270ed487ba96442c396217c30ca560fdf528a1d7ad8c1b70d7ac5"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecopyheader(_:)": {
       "etag": "\"3da9-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopyheader.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopyheader(_).md",
       "hash": "0b3be2970093e94a1c9d437f84610cdf98b4a14d797f9d4ff404ba754d261581"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecopytag(_:_:)": {
       "etag": "\"507f-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopytag.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopytag(_,_).md",
       "hash": "eb03a1de9d225c9ed1381346040baaa54331cd61b2c972816c3297d40015133d"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecopytagsignatures(_:)": {
       "etag": "\"49a1-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopytagsignatures.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopytagsignatures(_).md",
       "hash": "723c98b86ab77f156c0c00f208e26d9e7bc3fd9c94abd5933a7b08e780e47261"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreate(_:_:)": {
       "etag": "\"3fc6-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreate.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreate(_,_).md",
       "hash": "77a0685f890e96f84f6a8fd2555b1153223bb57f18abfd4ad00009c358ee7d24"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatedeviceprofile(_:_:_:)": {
       "etag": "\"67f5-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatedeviceprofile.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatedeviceprofile(_,_,_).md",
       "hash": "175d484caf44f7bfed1b7b71ac743975b517a6c7da5b40a355420fbcdb504b4f"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatedisplaytransfertablesfromvcgt(_:_:)": {
       "etag": "\"50de-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatedisplaytransfertablesfromvcgt.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatedisplaytransfertablesfromvcgt(_,_).md",
       "hash": "435e5e55487da0288fe28bf5ff9ef5bc29e2a2d5ae1f8c73f0466e3a91eb33eb"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatelink(_:_:)": {
       "etag": "\"63d2-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatelink.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatelink(_,_).md",
       "hash": "55d80148aadc1b8b3566257ee7c142ccc8f0b6a2b311112180204a7e2159bc75"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatemutable()": {
       "etag": "\"400d-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatemutable.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatemutable().md",
       "hash": "ae43313133d15e82822ecd5db1bae452a40a91748012d2bbda031b89a3376242"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatemutablecopy(_:)": {
       "etag": "\"494d-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatemutablecopy.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatemutablecopy(_).md",
       "hash": "9c6aefd5a1ca177cdf6aa763e164b2b061fa3c98b0cb9e8749d5b95e90d7c5f2"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatewithdisplayid(_:)": {
       "etag": "\"478d-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithdisplayid.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithdisplayid(_).md",
       "hash": "78b04c415daf37a4231ccf1e6df7fe1db7bb602d79c60a878a4cd9996f33fc20"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatewithname(_:)": {
       "etag": "\"47ab-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithname.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithname(_).md",
       "hash": "01511e134d8c0007da172669121c98ea901b8d40f943cc62ce80f0e218a79685"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatewithurl(_:_:)": {
       "etag": "\"5414-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurl.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurl(_,_).md",
       "hash": "18c07e2d3bf51b97d8d6fbbeb65c1ee3823ce6fb06d81481aea08e88126f5f5e"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilecreatewithurlandoptions(_:_:_:)": {
       "etag": "\"6362-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurlandoptions.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurlandoptions(_,_,_).md",
       "hash": "10b17a9f69a73ece73f2c039b227eb2bc652d2c25025f0f876937a5d61ef4d7b"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileestimategamma(_:_:)": {
       "etag": "\"53f1-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileestimategamma.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileestimategamma(_,_).md",
       "hash": "5dc460bb66a47da4cf765cf15f110d8a843564b14b6cfd9112755b9bd12c315b"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileestimategammawithdisplayid(_:_:)": {
       "etag": "\"4fb6-65d55ad51ca49-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileestimategammawithdisplayid.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileestimategammawithdisplayid(_,_).md",
       "hash": "c37fe766cdc3f508ea7365585a4c998253bbb4a9a3cbcee41ec7c01a10d3ecbd"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilegetdisplaytransferformulafromvcgt(_:_:_:_:_:_:_:_:_:_:)": {
       "etag": "\"65b8-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilegetdisplaytransferformulafromvcgt.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilegetdisplaytransferformulafromvcgt(_,_,_,_,_,_,_,_,_,_).md",
       "hash": "0edfa3aa48f8f96306fe7329084dc846d4ba3752c7f8aa2e9ac1de7a4b2fbabd"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilegetmd5(_:)": {
       "etag": "\"31cf-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilegetmd5.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilegetmd5(_).md",
       "hash": "886feccde85692a4966c27aa0f56fe1fa8a1d9c6c83448972fb7d974ef704fb0"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilegettypeid()": {
       "etag": "\"312c-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilegettypeid.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilegettypeid().md",
       "hash": "aa89cc62db85bfde808882a3830a6d40d5acf333df4a437caa00d3d5753f4f1d"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilegeturl(_:_:)": {
       "etag": "\"4a05-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilegeturl.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilegeturl(_,_).md",
       "hash": "f58fd1e8def2866519e0b54d737fc72f195134971e66f3c8d13a16363537a773"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileinstall(_:_:_:_:)": {
       "etag": "\"6d5f-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileinstall.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileinstall(_,_,_,_).md",
       "hash": "4fef2d6fdf7a7e5cf22b8db59fa155bc213106161d0851629bed0eb989cd8679"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileishlgbased(_:)": {
       "etag": "\"417b-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileishlgbased.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileishlgbased(_).md",
       "hash": "ebd257d85126620ee20547e2231428f0aaed1dc266965e37e03fee215ecd28dc"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileismatrixbased(_:)": {
       "etag": "\"417e-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileismatrixbased.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileismatrixbased(_).md",
       "hash": "bfd62c59d56bf4f9f48af19701fb147fecadcb2b114a06ccf51fe9a3b071848c"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileispqbased(_:)": {
       "etag": "\"4171-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileispqbased.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileispqbased(_).md",
       "hash": "285edbdd454b0fb2793648c88ef0b3aaccf4e755fdc61bb7302459830cb1ef65"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileiswidegamut(_:)": {
       "etag": "\"4187-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileiswidegamut.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileiswidegamut(_).md",
       "hash": "b9141b7451f51381ef35162f4dfbd957726efcf6a523a2c0fd9f88afd968cc6f"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileiteratecallback": {
@@ -672,32 +672,32 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileremovetag(_:_:)": {
       "etag": "\"4652-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileremovetag.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileremovetag(_,_).md",
       "hash": "473b359c6b444fbb9ac480edaa38918692e7370f2c86eac0de2e3c9a0be21074"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilesetheader(_:_:)": {
       "etag": "\"463a-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilesetheader.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilesetheader(_,_).md",
       "hash": "71b47b71a536467e2a6bb7ad807169d1e09afcecc42e168c2396488433e46b45"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofilesettag(_:_:_:)": {
       "etag": "\"4d87-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilesettag.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilesettag(_,_,_).md",
       "hash": "af2528602a39721528b80b388de540d521830476407ca2e6c0544194789f2495"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileuninstall(_:_:)": {
       "etag": "\"6741-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileuninstall.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileuninstall(_,_).md",
       "hash": "5ca3988a395bf6d73727109d3a0b8a3e234d07f5333d2e55293f115f48ef980d"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncprofileverify(_:_:_:)": {
       "etag": "\"5b9c-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileverify.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileverify(_,_,_).md",
       "hash": "3204dc132cf3bf5d4805255d63b4b3d76d8fcc343d8a7e09b78ea5d4b5da5495"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncregisterdevice(_:_:_:)": {
       "etag": "\"a065-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncregisterdevice.md",
+      "file_path": "documentation/ColorSync/colorsyncregisterdevice(_,_,_).md",
       "hash": "d1bf5ec980575cefccec2a51940a996d9c09aff8f6d1efbaa7fccea9574c7620"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynctransform": {
@@ -707,37 +707,37 @@
     },
     "https://developer.apple.com/documentation/colorsync/colorsynctransformconvert(_:_:_:_:_:_:_:_:_:_:_:_:)": {
       "etag": "\"8fb7-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformconvert.md",
+      "file_path": "documentation/ColorSync/colorsynctransformconvert(_,_,_,_,_,_,_,_,_,_,_,_).md",
       "hash": "e2342fa06f51b537f99753d0b5244ab4a1ebae051b9654497f7cc564c481801b"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynctransformcopyproperty(_:_:_:)": {
       "etag": "\"59c9-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformcopyproperty.md",
+      "file_path": "documentation/ColorSync/colorsynctransformcopyproperty(_,_,_).md",
       "hash": "b80a3eba381dea2e68ebfb0ee61ada99a361aa8f780614c6d09cb3ea3dfb3ab8"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynctransformcreate(_:_:)": {
       "etag": "\"7ba2-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformcreate.md",
+      "file_path": "documentation/ColorSync/colorsynctransformcreate(_,_).md",
       "hash": "666f7a461c030e00bb89c226ed08b88ac094df9564da4ccd3b957388dd566108"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynctransformgetprofilesequence(_:)": {
       "etag": "\"4eea-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformgetprofilesequence.md",
+      "file_path": "documentation/ColorSync/colorsynctransformgetprofilesequence(_).md",
       "hash": "413595a56af112dd680bee96a66b848450dfd4d972b7ae0ccc14c65763db7182"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynctransformgettypeid()": {
       "etag": "\"442a-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformgettypeid.md",
+      "file_path": "documentation/ColorSync/colorsynctransformgettypeid().md",
       "hash": "284f81091d8ff95ed2990a5b58868d6cbfcb67fb19a7f237909129b7738d2c23"
     },
     "https://developer.apple.com/documentation/colorsync/colorsynctransformsetproperty(_:_:_:)": {
       "etag": "\"5154-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformsetproperty.md",
+      "file_path": "documentation/ColorSync/colorsynctransformsetproperty(_,_,_).md",
       "hash": "cbec8259ebca5378478969f02473daa7513432986a504cf8ca4cf3a2fbe651d2"
     },
     "https://developer.apple.com/documentation/colorsync/colorsyncunregisterdevice(_:_:)": {
       "etag": "\"52bd-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncunregisterdevice.md",
+      "file_path": "documentation/ColorSync/colorsyncunregisterdevice(_,_).md",
       "hash": "934876bdc4bb2169aefa7a135660f2f9c1afc083d643a1fe569ee495ade2d44d"
     },
     "https://developer.apple.com/documentation/colorsync/headroom-adaptive-gain-curve": {
@@ -1767,12 +1767,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cgdisplaycreateuuidfromdisplayid(_:).json": {
       "etag": "\"2726-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/cgdisplaycreateuuidfromdisplayid.md",
+      "file_path": "documentation/ColorSync/cgdisplaycreateuuidfromdisplayid(_).md",
       "hash": "0663e37ef0798d013ab60e3f6a3c56f45c99a5247751aaf827780f8467fada2c"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cgdisplaygetdisplayidfromuuid(_:).json": {
       "etag": "\"23b2-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/cgdisplaygetdisplayidfromuuid.md",
+      "file_path": "documentation/ColorSync/cgdisplaygetdisplayidfromuuid(_).md",
       "hash": "a3543aeaa3f8b30ba38d77d7ee111b23a68349c5ca25d37feed6890f0ea9e41b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cmmapplytransformproc.json": {
@@ -1817,17 +1817,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync_api_version.json": {
       "etag": "\"245f-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsync-api-version.md",
+      "file_path": "documentation/ColorSync/colorsync_api_version.md",
       "hash": "749d8a2ed3dde3ab058bc07e30f0e57dcd0091dc63f41c848af85a75535645d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync_md5_length.json": {
       "etag": "\"2740-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsync-md5-length.md",
+      "file_path": "documentation/ColorSync/colorsync_md5_length.md",
       "hash": "61993344f8da49d937df3fb12bb7d571027d01cd614d9e52b1effc79dc41aaac"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync_profile_install_entitlement.json": {
       "etag": "\"3a5b-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsync-profile-install-entitlement.md",
+      "file_path": "documentation/ColorSync/colorsync_profile_install_entitlement.md",
       "hash": "5f0a20ad2f83c56358b9e2254ab50ed438ec66bef9be1df660fcbb2c5225375a"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncalphainfo.json": {
@@ -1837,12 +1837,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncalphainfo/init(_:).json": {
       "etag": "\"137f-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncalphainfo/init.md",
+      "file_path": "documentation/ColorSync/colorsyncalphainfo/init(_).md",
       "hash": "463b582394524422eecf45ee5259425fcdb698457998455c6f5b368e7d4af95b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncalphainfo/init(rawvalue:).json": {
       "etag": "\"1409-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncalphainfo/init-rawvalue.md",
+      "file_path": "documentation/ColorSync/colorsyncalphainfo/init(rawvalue).md",
       "hash": "446429fc7e4f05601563768dacc352e5fac0b20b4cbd0b8a9fd362617bfdbd6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncalphainfo/rawvalue.json": {
@@ -1852,7 +1852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncapiversion().json": {
       "etag": "\"2a7f-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncapiversion.md",
+      "file_path": "documentation/ColorSync/colorsyncapiversion().md",
       "hash": "5300c86b6e53f612e4a40df9df2f4fcea34792f7b7bb19ac44c549b4d0fa02fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmm.json": {
@@ -1862,27 +1862,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmcopycmmidentifier(_:).json": {
       "etag": "\"445e-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmcopycmmidentifier.md",
+      "file_path": "documentation/ColorSync/colorsynccmmcopycmmidentifier(_).md",
       "hash": "c0e532c33c68cff72d746b2d0fc84bfc965d3a860e3fec9cbf957f6d747618ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmcopylocalizedname(_:).json": {
       "etag": "\"4464-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmcopylocalizedname.md",
+      "file_path": "documentation/ColorSync/colorsynccmmcopylocalizedname(_).md",
       "hash": "94403cfe90108342ab1ece67a50f01a7fc96d2a55f0369e1d9ac055b4494e8be"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmcreate(_:).json": {
       "etag": "\"46a0-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmcreate.md",
+      "file_path": "documentation/ColorSync/colorsynccmmcreate(_).md",
       "hash": "951a0dc2393a2f9d8e72cf06ad750890b596da4e8b78be8bf61709acbcbf4e00"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmgetbundle(_:).json": {
       "etag": "\"446d-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmgetbundle.md",
+      "file_path": "documentation/ColorSync/colorsynccmmgetbundle(_).md",
       "hash": "49bc000cfc4a838444f321d1e5939c4d5c11940f9262408ebe599cd846749e45"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmgettypeid().json": {
       "etag": "\"3b61-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsynccmmgettypeid.md",
+      "file_path": "documentation/ColorSync/colorsynccmmgettypeid().md",
       "hash": "e269b9ffb2dfcb98710c3778cc8ac5a388f8aea90193867aca89f09725fa9750"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmiteratecallback.json": {
@@ -1892,7 +1892,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccreatecodefragment(_:_:).json": {
       "etag": "\"6ce3-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsynccreatecodefragment.md",
+      "file_path": "documentation/ColorSync/colorsynccreatecodefragment(_,_).md",
       "hash": "f9ab3fd3a0b6bc2e1fe58d22de9a8986fbe5eefc1f0787efdae06a4c3ee7dc74"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatadepth.json": {
@@ -1902,12 +1902,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatadepth/init(_:).json": {
       "etag": "\"136d-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncdatadepth/init.md",
+      "file_path": "documentation/ColorSync/colorsyncdatadepth/init(_).md",
       "hash": "68f699f2609d5d5137c8711fb748b6b60eae9eaea3263458f827e4a882fafdcc"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatadepth/init(rawvalue:).json": {
       "etag": "\"13f7-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncdatadepth/init-rawvalue.md",
+      "file_path": "documentation/ColorSync/colorsyncdatadepth/init(rawvalue).md",
       "hash": "3bd2f52a324f713e9c5f83806ccbcbef71f0e24c4c0bcaf7d1196fc8ab1a41d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatadepth/rawvalue.json": {
@@ -1922,7 +1922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdevicecopydeviceinfo(_:_:).json": {
       "etag": "\"5f48-65d55ad51ca49-df\"",
-      "file_path": "documentation/ColorSync/colorsyncdevicecopydeviceinfo.md",
+      "file_path": "documentation/ColorSync/colorsyncdevicecopydeviceinfo(_,_).md",
       "hash": "58af54e7eb5fc1573b6e1e71f77d9d9ec9c6216b6f00a63e40c04f92840fb6e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdeviceprofileiteratecallback.json": {
@@ -1932,27 +1932,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdevicesetcustomprofiles(_:_:_:).json": {
       "etag": "\"7834-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncdevicesetcustomprofiles.md",
+      "file_path": "documentation/ColorSync/colorsyncdevicesetcustomprofiles(_,_,_).md",
       "hash": "13cbf679234c5213f1b37b7f4bc4a802a34228e43619d9ea82752700e538165d"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynciteratedeviceprofiles(_:_:).json": {
       "etag": "\"48b1-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsynciteratedeviceprofiles.md",
+      "file_path": "documentation/ColorSync/colorsynciteratedeviceprofiles(_,_).md",
       "hash": "1e485eb6cbcd75670d445fbb71ae593cc62a13cf9e58d5ba1953b46bff0c8ea3"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynciterateinstalledcmms(_:_:).json": {
       "etag": "\"46b2-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsynciterateinstalledcmms.md",
+      "file_path": "documentation/ColorSync/colorsynciterateinstalledcmms(_,_).md",
       "hash": "834adc3e828125aa914af15d9adbe445eebc58e5196956ae0594f3cfd60c8609"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynciterateinstalledprofiles(_:_:_:_:).json": {
       "etag": "\"620c-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsynciterateinstalledprofiles.md",
+      "file_path": "documentation/ColorSync/colorsynciterateinstalledprofiles(_,_,_,_).md",
       "hash": "b8be7c9a4056771cf549fbf80464b7a3b014a3881dbf81b49e013496936f72a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynciterateinstalledprofileswithoptions(_:_:_:_:_:).json": {
       "etag": "\"6cdf-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsynciterateinstalledprofileswithoptions.md",
+      "file_path": "documentation/ColorSync/colorsynciterateinstalledprofileswithoptions(_,_,_,_,_).md",
       "hash": "63a87e2521e04fc46134bdbb8f8eb812eec55373ebb3361dddf2ddfd314fa82e"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmd5.json": {
@@ -1967,12 +1967,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmd5/init().json": {
       "etag": "\"eda-65d55ad51ca49-df\"",
-      "file_path": "documentation/ColorSync/colorsyncmd5/init.md",
+      "file_path": "documentation/ColorSync/colorsyncmd5/init().md",
       "hash": "cfe3c23a67a51d8481f107cc131afcd253afa1d2ffe2e6cec14b5b3e1ce9bf26"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmd5/init(digest:).json": {
       "etag": "\"29e6-65d55ad51ca49-df\"",
-      "file_path": "documentation/ColorSync/colorsyncmd5/init-digest.md",
+      "file_path": "documentation/ColorSync/colorsyncmd5/init(digest).md",
       "hash": "5f1b37d20d316945f549fbc58fa877c4fdbc780e4efbcb6b6cb8a44f8dafe756"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmutableprofile.json": {
@@ -1987,22 +1987,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/adding(headroomadaptivegaincurve:).json": {
       "etag": "\"2c26-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/adding-headroomadaptivegaincurve.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/adding(headroomadaptivegaincurve).md",
       "hash": "8fe0fc47f085cddf7f016f9f6cab5c25bcd8ab637a11df17cd5496652ef7154a"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/adding(headroomadaptivegaincurvemetadata:options:).json": {
       "etag": "\"3011-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/adding-headroomadaptivegaincurvemetadataoptions.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/adding(headroomadaptivegaincurvemetadata,options).md",
       "hash": "c392c4d4aedbed6c76551d62cbf95204e83615010c0f390f6b0b2e42b6667eab"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.property.json": {
       "etag": "\"2165-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.property.md",
       "hash": "b588ba78467eeb2fb7738896a082f43334598a8f6a5f29dcc8dda7d8e927dd23"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct.json": {
       "etag": "\"39be-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swiftstruct.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct.md",
       "hash": "0d48d459741b892706b25f6e870602349cc442e38274ea04f5847b9356b030bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/applicationversion.json": {
@@ -2012,12 +2012,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.json": {
       "etag": "\"20f3-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.md",
       "hash": "b6de45778b1746d2182977f93435224c4c129e8605ad946734b5ad83ff0fed32"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct.json": {
       "etag": "\"3a3b-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swiftstruct.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct.md",
       "hash": "b55f5a6c2a3c385cfad2fae86570b3da974e3281daafa884c75fc8291ace0917"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/adaptivetonemapping.json": {
@@ -2032,7 +2032,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/init(customhdrreferencewhite:adaptivetonemapping:).json": {
       "etag": "\"37e7-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/init-customhdrreferencewhiteadaptivetonemapping.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/init(customhdrreferencewhite,adaptivetonemapping).md",
       "hash": "685d31003c4c8076435c695d6c0d4147a730a1af9bf545cc68e477d3c170b860"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping.json": {
@@ -2047,12 +2047,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/init(baselineheadroomstops:method:).json": {
       "etag": "\"425f-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/init-baselineheadroomstopsmethod.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/init(baselineheadroomstops,method).md",
       "hash": "373a1d52b18381a6cbc29086479f9983d983957c8e70b907c64a78b5f85a9e43"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum.json": {
       "etag": "\"4344-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swiftenum.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum.md",
       "hash": "2e724b42bc07e3f4532df3348d5361d8b98b6a3d90d7d423b023e7ecea1c9a4b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve.json": {
@@ -2072,12 +2072,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve/init(chromaticities:alternatecurves:).json": {
       "etag": "\"6650-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve/init-chromaticitiesalternatecurves.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve/init(chromaticities,alternatecurves).md",
       "hash": "70f6dd7d7eba658c0dc5cf6f2b82b035e4c3dd59e27eb63d961e5154696949d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurvemapping(_:).json": {
       "etag": "\"3a2b-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurvemapping.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurvemapping(_).md",
       "hash": "eb233da8d48657aad32d3b9cd1b2f5566d0517ef68cbaf756bc24bc3b2c1f4ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve.json": {
@@ -2087,12 +2087,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum.json": {
       "etag": "\"4590-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swiftenum.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum.md",
       "hash": "615b5f5860d9c12300774ea75079b3b0581a465a85795c6edbdbbb0cae5ec3a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum/freestyle(red:green:blue:maxrgb:minrgb:component:).json": {
       "etag": "\"4327-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum/freestyle-redgreenbluemaxrgbminrgbcomponent.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum/freestyle(red,green,blue,maxrgb,minrgb,component).md",
       "hash": "e55a73ce7cc2dda43229daa7cc55b1e349da19f10d759b7224219ec4645a4422"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.enum/lumaa.json": {
@@ -2112,27 +2112,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.property.json": {
       "etag": "\"41d8-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/componentmix-swift.property.md",
       "hash": "85b98d71d28dbe0ade0c46cb7f36ff5ff2ec82342c83b5ccfa77437c9b786509"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.property.json": {
       "etag": "\"419c-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.property.md",
       "hash": "381d701f6636834bcdc6e3d08fbd79b62714f5ef13d5702e28fe3af84cf0cbe0"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct.json": {
       "etag": "\"5300-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swiftstruct.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct.md",
       "hash": "5cad78886c2ae0389c4ef3562e6fd438bc6aa623c84784cff15807eb24f3a09d"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/init(x:y:slopes:).json": {
       "etag": "\"6f35-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/init-xyslopes.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/init(x,y,slopes).md",
       "hash": "c529eee7ea76a642bb5945b44b357f246f165b245a0cd61c18741740f50a0065"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum.json": {
       "etag": "\"3c42-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swiftenum.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum.md",
       "hash": "c94423ecbd4f518e8cac8dc5d6349b689316d6ecb2e1b8897a832f562dc8c0e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/interpolate.json": {
@@ -2142,12 +2142,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/tangent(_:).json": {
       "etag": "\"42c7-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/tangent.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/tangent(_).md",
       "hash": "afcd67ed45a96f0b521e7702d4655b5d5e28fd94d39f5fc678bded6c5c4be089"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.property.json": {
       "etag": "\"4b25-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.property.md",
       "hash": "7ebe9a452ef780a1a33543f95340967ba344db17d9cc9d98d3faa1eb4b517f9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/x.json": {
@@ -2167,7 +2167,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/init(headroomstops:componentmix:controlpoints:).json": {
       "etag": "\"6d45-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/init-headroomstopscomponentmixcontrolpoints.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/init(headroomstops,componentmix,controlpoints).md",
       "hash": "5bfbfb834e64dbb7c60af7e1e1c2749f740829c98f39bded1f87f1004fd3a12c"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities.json": {
@@ -2187,7 +2187,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/custom(red:green:blue:white:).json": {
       "etag": "\"3677-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/custom-redgreenbluewhite.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/custom(red,green,blue,white).md",
       "hash": "1d141e197f227e3db89b64546856481c2a5f150547fd3b654880f9415374ce14"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/chromaticities/displayp3.json": {
@@ -2202,7 +2202,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.property.json": {
       "etag": "\"2fe1-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swiftproperty.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.property.md",
       "hash": "3362d134d79798e565d6e53289ba6f06b33ce3a0416403fdf026ce7dc6e22766"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error.json": {
@@ -2217,42 +2217,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/invalidhdrreferencewhite(_:).json": {
       "etag": "\"1dff-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/invalidhdrreferencewhite.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/invalidhdrreferencewhite(_).md",
       "hash": "d1f793e7c8f8fb58749b17e3442969330731470cda41a40d4b484793d6fdb783"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedcontrolpointarrays(x:y:).json": {
       "etag": "\"215a-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedcontrolpointarrays-xy.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedcontrolpointarrays(x,y).md",
       "hash": "24d14264f20b34217376fb94259b961b080b1a5207992c034a6c5d911ca57b25"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedtangentcount(got:expected:).json": {
       "etag": "\"20b4-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedtangentcount-gotexpected.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/mismatchedtangentcount(got,expected).md",
       "hash": "7ed9845bacb61bfb43aa80e5c9ba4462e86664be72f61c9cb99aefd2bbbd6db5"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativebaselineheadroom(_:).json": {
       "etag": "\"1d4c-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativebaselineheadroom.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativebaselineheadroom(_).md",
       "hash": "7a0cfcc33d74a61500a3240446b67ef16734ed14edc431b88483f59c7a2b21fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativeheadroomstops(_:).json": {
       "etag": "\"1d3e-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativeheadroomstops.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativeheadroomstops(_).md",
       "hash": "bf7de9d463213b251a6470571cb5bfb4a8843cb61e360aad8174d43c36291fdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanyalternatecurves(count:limit:).json": {
       "etag": "\"2070-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanyalternatecurves-countlimit.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanyalternatecurves(count,limit).md",
       "hash": "27be5574e9e9b8eabb36f1fc2b0823750b1d15a28343a1c934e88c9dc9a4df4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanycontrolpoints(count:limit:).json": {
       "etag": "\"2056-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanycontrolpoints-countlimit.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/toomanycontrolpoints(count,limit).md",
       "hash": "7805cb4c553ec88e2c75caf655d23660ff572b9b2a6d4f1b38fe0a4da541ff63"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion(_:).json": {
       "etag": "\"1e66-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion(_).md",
       "hash": "00e9c27d20abe22e7968ae37e9dc3823b72b8f5ce8e146dd0f386421844ea2d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/zerofreestyleweights.json": {
@@ -2262,7 +2262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/init(applicationversion:colorvolumetransform:).json": {
       "etag": "\"2ee3-65d55ad4526f4-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/init-applicationversioncolorvolumetransform.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurve-swift.struct/init(applicationversion,colorvolumetransform).md",
       "hash": "937ab046132115726511d096afd023742acd957560f1e42907e198a00972a80b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurvemetadata.json": {
@@ -2277,147 +2277,147 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile/headroomadaptivegaincurveoptions/init().json": {
       "etag": "\"1425-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurveoptions/init.md",
+      "file_path": "documentation/ColorSync/colorsyncprofile/headroomadaptivegaincurveoptions/init().md",
       "hash": "d5fc0ca702485b5f28e497aaea2055a52e60e72ae1b59d58f219a8e669cdd17b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecontainsheadroomadaptivegaincurve(_:).json": {
       "etag": "\"26a8-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecontainsheadroomadaptivegaincurve.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecontainsheadroomadaptivegaincurve(_).md",
       "hash": "f359f5766651ecdeaca81260a928849d01cc4d819f4a3b7fb553891a6a66317e"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecontainstag(_:_:).json": {
       "etag": "\"4c3b-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecontainstag.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecontainstag(_,_).md",
       "hash": "133a8c3b1ee2e96dc8b360ca61debe6d6bf3a6780668fce3c8cb1d1f47761f42"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopydata(_:_:).json": {
       "etag": "\"4023-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopydata.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopydata(_,_).md",
       "hash": "f3dfee193f9eeff1f7d99426acbb074d5c893be4602e3eb3c308957049e1a1bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopydescriptionstring(_:).json": {
       "etag": "\"3dd8-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopydescriptionstring.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopydescriptionstring(_).md",
       "hash": "ea0acb31a23270ed487ba96442c396217c30ca560fdf528a1d7ad8c1b70d7ac5"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopyheader(_:).json": {
       "etag": "\"3da9-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopyheader.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopyheader(_).md",
       "hash": "0b3be2970093e94a1c9d437f84610cdf98b4a14d797f9d4ff404ba754d261581"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopytag(_:_:).json": {
       "etag": "\"507f-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopytag.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopytag(_,_).md",
       "hash": "eb03a1de9d225c9ed1381346040baaa54331cd61b2c972816c3297d40015133d"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopytagsignatures(_:).json": {
       "etag": "\"49a1-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecopytagsignatures.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecopytagsignatures(_).md",
       "hash": "723c98b86ab77f156c0c00f208e26d9e7bc3fd9c94abd5933a7b08e780e47261"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreate(_:_:).json": {
       "etag": "\"3fc6-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreate.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreate(_,_).md",
       "hash": "77a0685f890e96f84f6a8fd2555b1153223bb57f18abfd4ad00009c358ee7d24"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatedeviceprofile(_:_:_:).json": {
       "etag": "\"67f5-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatedeviceprofile.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatedeviceprofile(_,_,_).md",
       "hash": "175d484caf44f7bfed1b7b71ac743975b517a6c7da5b40a355420fbcdb504b4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatedisplaytransfertablesfromvcgt(_:_:).json": {
       "etag": "\"50de-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatedisplaytransfertablesfromvcgt.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatedisplaytransfertablesfromvcgt(_,_).md",
       "hash": "435e5e55487da0288fe28bf5ff9ef5bc29e2a2d5ae1f8c73f0466e3a91eb33eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatelink(_:_:).json": {
       "etag": "\"63d2-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatelink.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatelink(_,_).md",
       "hash": "55d80148aadc1b8b3566257ee7c142ccc8f0b6a2b311112180204a7e2159bc75"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatemutable().json": {
       "etag": "\"400d-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatemutable.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatemutable().md",
       "hash": "ae43313133d15e82822ecd5db1bae452a40a91748012d2bbda031b89a3376242"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatemutablecopy(_:).json": {
       "etag": "\"494d-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatemutablecopy.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatemutablecopy(_).md",
       "hash": "9c6aefd5a1ca177cdf6aa763e164b2b061fa3c98b0cb9e8749d5b95e90d7c5f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatewithdisplayid(_:).json": {
       "etag": "\"478d-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithdisplayid.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithdisplayid(_).md",
       "hash": "78b04c415daf37a4231ccf1e6df7fe1db7bb602d79c60a878a4cd9996f33fc20"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatewithname(_:).json": {
       "etag": "\"47ab-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithname.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithname(_).md",
       "hash": "01511e134d8c0007da172669121c98ea901b8d40f943cc62ce80f0e218a79685"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatewithurl(_:_:).json": {
       "etag": "\"5414-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurl.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurl(_,_).md",
       "hash": "18c07e2d3bf51b97d8d6fbbeb65c1ee3823ce6fb06d81481aea08e88126f5f5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatewithurlandoptions(_:_:_:).json": {
       "etag": "\"6362-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurlandoptions.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurlandoptions(_,_,_).md",
       "hash": "10b17a9f69a73ece73f2c039b227eb2bc652d2c25025f0f876937a5d61ef4d7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileestimategamma(_:_:).json": {
       "etag": "\"53f1-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileestimategamma.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileestimategamma(_,_).md",
       "hash": "5dc460bb66a47da4cf765cf15f110d8a843564b14b6cfd9112755b9bd12c315b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileestimategammawithdisplayid(_:_:).json": {
       "etag": "\"4fb6-65d55ad51ca49-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileestimategammawithdisplayid.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileestimategammawithdisplayid(_,_).md",
       "hash": "c37fe766cdc3f508ea7365585a4c998253bbb4a9a3cbcee41ec7c01a10d3ecbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilegetdisplaytransferformulafromvcgt(_:_:_:_:_:_:_:_:_:_:).json": {
       "etag": "\"65b8-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilegetdisplaytransferformulafromvcgt.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilegetdisplaytransferformulafromvcgt(_,_,_,_,_,_,_,_,_,_).md",
       "hash": "0edfa3aa48f8f96306fe7329084dc846d4ba3752c7f8aa2e9ac1de7a4b2fbabd"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilegetmd5(_:).json": {
       "etag": "\"31cf-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilegetmd5.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilegetmd5(_).md",
       "hash": "886feccde85692a4966c27aa0f56fe1fa8a1d9c6c83448972fb7d974ef704fb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilegettypeid().json": {
       "etag": "\"312c-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilegettypeid.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilegettypeid().md",
       "hash": "aa89cc62db85bfde808882a3830a6d40d5acf333df4a437caa00d3d5753f4f1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilegeturl(_:_:).json": {
       "etag": "\"4a05-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilegeturl.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilegeturl(_,_).md",
       "hash": "f58fd1e8def2866519e0b54d737fc72f195134971e66f3c8d13a16363537a773"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileinstall(_:_:_:_:).json": {
       "etag": "\"6d5f-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileinstall.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileinstall(_,_,_,_).md",
       "hash": "4fef2d6fdf7a7e5cf22b8db59fa155bc213106161d0851629bed0eb989cd8679"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileishlgbased(_:).json": {
       "etag": "\"417b-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileishlgbased.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileishlgbased(_).md",
       "hash": "ebd257d85126620ee20547e2231428f0aaed1dc266965e37e03fee215ecd28dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileismatrixbased(_:).json": {
       "etag": "\"417e-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileismatrixbased.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileismatrixbased(_).md",
       "hash": "bfd62c59d56bf4f9f48af19701fb147fecadcb2b114a06ccf51fe9a3b071848c"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileispqbased(_:).json": {
       "etag": "\"4171-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileispqbased.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileispqbased(_).md",
       "hash": "285edbdd454b0fb2793648c88ef0b3aaccf4e755fdc61bb7302459830cb1ef65"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileiswidegamut(_:).json": {
       "etag": "\"4187-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileiswidegamut.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileiswidegamut(_).md",
       "hash": "b9141b7451f51381ef35162f4dfbd957726efcf6a523a2c0fd9f88afd968cc6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileiteratecallback.json": {
@@ -2427,32 +2427,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileremovetag(_:_:).json": {
       "etag": "\"4652-65d55ad4811b5-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileremovetag.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileremovetag(_,_).md",
       "hash": "473b359c6b444fbb9ac480edaa38918692e7370f2c86eac0de2e3c9a0be21074"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilesetheader(_:_:).json": {
       "etag": "\"463a-65d55ad4a26df-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilesetheader.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilesetheader(_,_).md",
       "hash": "71b47b71a536467e2a6bb7ad807169d1e09afcecc42e168c2396488433e46b45"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilesettag(_:_:_:).json": {
       "etag": "\"4d87-65d55ad4c16e0-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofilesettag.md",
+      "file_path": "documentation/ColorSync/colorsyncprofilesettag(_,_,_).md",
       "hash": "af2528602a39721528b80b388de540d521830476407ca2e6c0544194789f2495"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileuninstall(_:_:).json": {
       "etag": "\"6741-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileuninstall.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileuninstall(_,_).md",
       "hash": "5ca3988a395bf6d73727109d3a0b8a3e234d07f5333d2e55293f115f48ef980d"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileverify(_:_:_:).json": {
       "etag": "\"5b9c-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncprofileverify.md",
+      "file_path": "documentation/ColorSync/colorsyncprofileverify(_,_,_).md",
       "hash": "3204dc132cf3bf5d4805255d63b4b3d76d8fcc343d8a7e09b78ea5d4b5da5495"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncregisterdevice(_:_:_:).json": {
       "etag": "\"a065-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsyncregisterdevice.md",
+      "file_path": "documentation/ColorSync/colorsyncregisterdevice(_,_,_).md",
       "hash": "d1bf5ec980575cefccec2a51940a996d9c09aff8f6d1efbaa7fccea9574c7620"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransform.json": {
@@ -2462,37 +2462,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformconvert(_:_:_:_:_:_:_:_:_:_:_:_:).json": {
       "etag": "\"8fb7-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformconvert.md",
+      "file_path": "documentation/ColorSync/colorsynctransformconvert(_,_,_,_,_,_,_,_,_,_,_,_).md",
       "hash": "e2342fa06f51b537f99753d0b5244ab4a1ebae051b9654497f7cc564c481801b"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformcopyproperty(_:_:_:).json": {
       "etag": "\"59c9-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformcopyproperty.md",
+      "file_path": "documentation/ColorSync/colorsynctransformcopyproperty(_,_,_).md",
       "hash": "b80a3eba381dea2e68ebfb0ee61ada99a361aa8f780614c6d09cb3ea3dfb3ab8"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformcreate(_:_:).json": {
       "etag": "\"7ba2-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformcreate.md",
+      "file_path": "documentation/ColorSync/colorsynctransformcreate(_,_).md",
       "hash": "666f7a461c030e00bb89c226ed08b88ac094df9564da4ccd3b957388dd566108"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformgetprofilesequence(_:).json": {
       "etag": "\"4eea-65d55ad42f81d-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformgetprofilesequence.md",
+      "file_path": "documentation/ColorSync/colorsynctransformgetprofilesequence(_).md",
       "hash": "413595a56af112dd680bee96a66b848450dfd4d972b7ae0ccc14c65763db7182"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformgettypeid().json": {
       "etag": "\"442a-65d55ad509b06-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformgettypeid.md",
+      "file_path": "documentation/ColorSync/colorsynctransformgettypeid().md",
       "hash": "284f81091d8ff95ed2990a5b58868d6cbfcb67fb19a7f237909129b7738d2c23"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformsetproperty(_:_:_:).json": {
       "etag": "\"5154-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsynctransformsetproperty.md",
+      "file_path": "documentation/ColorSync/colorsynctransformsetproperty(_,_,_).md",
       "hash": "cbec8259ebca5378478969f02473daa7513432986a504cf8ca4cf3a2fbe651d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncunregisterdevice(_:_:).json": {
       "etag": "\"52bd-65d55ad4e60b1-df\"",
-      "file_path": "documentation/ColorSync/colorsyncunregisterdevice.md",
+      "file_path": "documentation/ColorSync/colorsyncunregisterdevice(_,_).md",
       "hash": "934876bdc4bb2169aefa7a135660f2f9c1afc083d643a1fe569ee495ade2d44d"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/headroom-adaptive-gain-curve.json": {

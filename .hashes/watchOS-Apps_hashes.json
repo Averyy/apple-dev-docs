@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/watchos-apps/building_a_watchos_app": {
       "etag": "\"9480-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/building-a-watchos-app.md",
+      "file_path": "documentation/watchOS-Apps/building_a_watchos_app.md",
       "hash": "0badb9657a59e4b176e3a2fded3a165301d93011330f0b99dcfcbb12ed7a834b"
     },
     "https://developer.apple.com/documentation/watchos-apps/create-accessible-experiences-for-watchos": {
@@ -157,7 +157,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-apps/building_a_watchos_app.json": {
       "etag": "\"9480-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/building-a-watchos-app.md",
+      "file_path": "documentation/watchOS-Apps/building_a_watchos_app.md",
       "hash": "0badb9657a59e4b176e3a2fded3a165301d93011330f0b99dcfcbb12ed7a834b"
     },
     "https://developer.apple.com/tutorials/data/documentation/watchos-apps/create-accessible-experiences-for-watchos.json": {

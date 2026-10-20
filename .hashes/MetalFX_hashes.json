@@ -17,7 +17,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtl4fxframeinterpolator/encode(commandbuffer:)": {
       "etag": "\"21fa-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtl4fxframeinterpolator/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtl4fxframeinterpolator/encode(commandbuffer).md",
       "hash": "0d030ede1e48ae553cda58def3163bbef37366e46f798f16db771704333226fb"
     },
     "https://developer.apple.com/documentation/metalfx/mtl4fxspatialscaler": {
@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtl4fxspatialscaler/encode(commandbuffer:)": {
       "etag": "\"2276-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtl4fxspatialscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtl4fxspatialscaler/encode(commandbuffer).md",
       "hash": "b164b96181470713f14ded990a470a5cd210b37bb55f001651c54e88ba6c6d46"
     },
     "https://developer.apple.com/documentation/metalfx/mtl4fxtemporaldenoisedscaler": {
@@ -37,7 +37,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtl4fxtemporaldenoisedscaler/encode(commandbuffer:)": {
       "etag": "\"2261-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtl4fxtemporaldenoisedscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtl4fxtemporaldenoisedscaler/encode(commandbuffer).md",
       "hash": "8a45c1df5c780dfb2c7134abb37c3fbf430deee00a196267fa5bdae0f208bbfe"
     },
     "https://developer.apple.com/documentation/metalfx/mtl4fxtemporalscaler": {
@@ -47,7 +47,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtl4fxtemporalscaler/encode(commandbuffer:)": {
       "etag": "\"2171-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtl4fxtemporalscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtl4fxtemporalscaler/encode(commandbuffer).md",
       "hash": "a595338ae1bb6d642983af3358884fce4516a37076f55a0ed8a462161ad4650a"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolatablescaler": {
@@ -62,7 +62,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolator/encode(commandbuffer:)": {
       "etag": "\"21fa-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolator/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolator/encode(commandbuffer).md",
       "hash": "76ff84b09c26244b8596487c72a61649278cbc892572b06e2c3a31fb93f6625c"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolatorbase": {
@@ -342,12 +342,12 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:)": {
       "etag": "\"2cb6-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator-device.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device).md",
       "hash": "5862c4b8f22e68a46dc76387f8b2ce5f32f8f607afcf9245e3271d8c49b917d4"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:compiler:)": {
       "etag": "\"3534-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator-devicecompiler.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device,compiler).md",
       "hash": "c4412a37247b0081a038a782e07fcc43bdca1af22a26dfcb56790be35967c18a"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolatordescriptor/motiontextureformat": {
@@ -382,12 +382,12 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolatordescriptor/supportsdevice(_:)": {
       "etag": "\"2eab-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsdevice.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsdevice(_).md",
       "hash": "8f7ca1690db3360c00fa45204bf5a1bfdb0e76e76436a06c675229fd964ffc67"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolatordescriptor/supportsmetal4fx(_:)": {
       "etag": "\"2f73-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsmetal4fx.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsmetal4fx(_).md",
       "hash": "b8902c2f98582d6af97dcbbbf5b0429d4ed589d564002f27097c303f06187ce8"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxframeinterpolatordescriptor/uitextureformat": {
@@ -402,7 +402,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscaler/encode(commandbuffer:)": {
       "etag": "\"238a-65d55e0f22790-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscaler/encode(commandbuffer).md",
       "hash": "4250b5590c9095eebca2e9f9f46e0000f67d78924145f88fbe7fcc44a065ba7d"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscalerbase": {
@@ -492,7 +492,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscalercolorprocessingmode/init(rawvalue:)": {
       "etag": "\"14b0-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode/init-rawvalue.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode/init(rawvalue).md",
       "hash": "d98b6f07fbfe45681c70b60b06a805249d03550bced148ac9dd7c076bf053fa1"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscalercolorprocessingmode/linear": {
@@ -532,12 +532,12 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscalerdescriptor/makespatialscaler(device:)": {
       "etag": "\"2b24-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler-device.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler(device).md",
       "hash": "f8fc48f93d9ec0eb76c9466dddd3bb4008499c40f539d4c2c9569aa5c2d3eb0f"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscalerdescriptor/makespatialscaler(device:compiler:)": {
       "etag": "\"350c-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler-devicecompiler.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler(device,compiler).md",
       "hash": "31125d6261f3548eb4f33ac2c49fb5e82d5aeb89b7da494638a154f5a8251e57"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscalerdescriptor/outputheight": {
@@ -557,12 +557,12 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscalerdescriptor/supportsdevice(_:)": {
       "etag": "\"2764-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsdevice.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsdevice(_).md",
       "hash": "fbef8584f087c0c8e362f01fb769cf416b91e771e2bd762e5860f3107080c02c"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxspatialscalerdescriptor/supportsmetal4fx(_:)": {
       "etag": "\"2f4a-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsmetal4fx.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsmetal4fx(_).md",
       "hash": "47449a1752bd6bbd0b96a5ae7699eca373f817d587d81e3516213ecc6ae18a99"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscaler": {
@@ -572,7 +572,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscaler/encode(commandbuffer:)": {
       "etag": "\"2261-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscaler/encode(commandbuffer).md",
       "hash": "23b298181beb32f18536196df93a3689275ec7ba395ad055a914bd1b0ebbc31e"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerbase": {
@@ -912,12 +912,12 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device:)": {
       "etag": "\"2d62-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device).md",
       "hash": "d00b6acf43e9f8754c3ceffe491e16a3b606f1d38760a11fdbc63ee90f6d0d23"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device:compiler:)": {
       "etag": "\"35e0-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler-devicecompiler.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device,compiler).md",
       "hash": "8c8b0ffe5f95895a97ee68ce9054b523bffa01294b8120bf8888e27c7f7a61c8"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/motiontextureformat": {
@@ -972,22 +972,22 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale(device:)": {
       "etag": "\"2a49-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale(device).md",
       "hash": "b039035c6598051917963b37301cd4b61b4d2ef9282099c0e9bd400e92c22c4f"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale(device:)": {
       "etag": "\"2a4b-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale(device).md",
       "hash": "d3c52fb2840d51c8b7697fb4087a4cb2978050b2b4fecca93b57771713891b3d"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportsdevice(_:)": {
       "etag": "\"2e97-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsdevice.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsdevice(_).md",
       "hash": "baf60800f8516713561f0337b03cac4cb411e2e7018f860a61244c651399a500"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportsmetal4fx(_:)": {
       "etag": "\"2f37-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsmetal4fx.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsmetal4fx(_).md",
       "hash": "494b5acc8bd9a36fce458221299d342c6cea5729a03f446f5f04f868757a29b1"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/transparencyoverlaytextureformat": {
@@ -1002,7 +1002,7 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscaler/encode(commandbuffer:)": {
       "etag": "\"223d-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscaler/encode(commandbuffer).md",
       "hash": "d1f9cf70194804049cc018beb9db5a6b2b64c7aa65825aa960bff01632ed7661"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerbase": {
@@ -1287,12 +1287,12 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/maketemporalscaler(device:)": {
       "etag": "\"2b24-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler(device).md",
       "hash": "a5ba131703f5f64c4f672e30fa7be859b2624ff33c8b12189e90739c378cd64b"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/maketemporalscaler(device:compiler:)": {
       "etag": "\"3464-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler-devicecompiler.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler(device,compiler).md",
       "hash": "0d182be5e11fc0a9485c8c5c8051b96ef6e86ad72f2f85f683725789efb5df0e"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/motiontextureformat": {
@@ -1327,22 +1327,22 @@
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportedinputcontentmaxscale(device:)": {
       "etag": "\"37ba-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentmaxscale-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentmaxscale(device).md",
       "hash": "6769a5e59d43a1a1cc2216b168b4bd401fdffe5f726836eece2c930637cbd91b"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportedinputcontentminscale(device:)": {
       "etag": "\"37bb-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentminscale-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentminscale(device).md",
       "hash": "47d4b0aafb265129502ed427f559b556865c1fa6ca4beca9aa8c357273f2712b"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportsdevice(_:)": {
       "etag": "\"375b-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsdevice.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsdevice(_).md",
       "hash": "6f7d3f35adf327c4961c58a81713ab35cc217d695aa1e1724e82a19780425276"
     },
     "https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportsmetal4fx(_:)": {
       "etag": "\"2f07-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsmetal4fx.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsmetal4fx(_).md",
       "hash": "6979beb4ca84b46b55be2fc9b438830e2b0d52f6f72cc458cf9d7066694cadde"
     },
     "https://developer.apple.com/tutorials/data/documentation/MetalFX.json": {
@@ -1362,7 +1362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxframeinterpolator/encode(commandbuffer:).json": {
       "etag": "\"21fa-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtl4fxframeinterpolator/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtl4fxframeinterpolator/encode(commandbuffer).md",
       "hash": "0d030ede1e48ae553cda58def3163bbef37366e46f798f16db771704333226fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxspatialscaler.json": {
@@ -1372,7 +1372,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxspatialscaler/encode(commandbuffer:).json": {
       "etag": "\"2276-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtl4fxspatialscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtl4fxspatialscaler/encode(commandbuffer).md",
       "hash": "b164b96181470713f14ded990a470a5cd210b37bb55f001651c54e88ba6c6d46"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxtemporaldenoisedscaler.json": {
@@ -1382,7 +1382,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxtemporaldenoisedscaler/encode(commandbuffer:).json": {
       "etag": "\"2261-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtl4fxtemporaldenoisedscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtl4fxtemporaldenoisedscaler/encode(commandbuffer).md",
       "hash": "8a45c1df5c780dfb2c7134abb37c3fbf430deee00a196267fa5bdae0f208bbfe"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxtemporalscaler.json": {
@@ -1392,7 +1392,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtl4fxtemporalscaler/encode(commandbuffer:).json": {
       "etag": "\"2171-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtl4fxtemporalscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtl4fxtemporalscaler/encode(commandbuffer).md",
       "hash": "a595338ae1bb6d642983af3358884fce4516a37076f55a0ed8a462161ad4650a"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatablescaler.json": {
@@ -1407,7 +1407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolator/encode(commandbuffer:).json": {
       "etag": "\"21fa-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolator/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolator/encode(commandbuffer).md",
       "hash": "76ff84b09c26244b8596487c72a61649278cbc892572b06e2c3a31fb93f6625c"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatorbase.json": {
@@ -1687,12 +1687,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:).json": {
       "etag": "\"2cb6-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator-device.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device).md",
       "hash": "5862c4b8f22e68a46dc76387f8b2ce5f32f8f607afcf9245e3271d8c49b917d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device:compiler:).json": {
       "etag": "\"3534-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator-devicecompiler.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/makeframeinterpolator(device,compiler).md",
       "hash": "c4412a37247b0081a038a782e07fcc43bdca1af22a26dfcb56790be35967c18a"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/motiontextureformat.json": {
@@ -1727,12 +1727,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/supportsdevice(_:).json": {
       "etag": "\"2eab-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsdevice.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsdevice(_).md",
       "hash": "8f7ca1690db3360c00fa45204bf5a1bfdb0e76e76436a06c675229fd964ffc67"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/supportsmetal4fx(_:).json": {
       "etag": "\"2f73-65d55e0f17e30-df\"",
-      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsmetal4fx.md",
+      "file_path": "documentation/MetalFX/mtlfxframeinterpolatordescriptor/supportsmetal4fx(_).md",
       "hash": "b8902c2f98582d6af97dcbbbf5b0429d4ed589d564002f27097c303f06187ce8"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxframeinterpolatordescriptor/uitextureformat.json": {
@@ -1747,7 +1747,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscaler/encode(commandbuffer:).json": {
       "etag": "\"238a-65d55e0f22790-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscaler/encode(commandbuffer).md",
       "hash": "4250b5590c9095eebca2e9f9f46e0000f67d78924145f88fbe7fcc44a065ba7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerbase.json": {
@@ -1837,7 +1837,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalercolorprocessingmode/init(rawvalue:).json": {
       "etag": "\"14b0-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode/init-rawvalue.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalercolorprocessingmode/init(rawvalue).md",
       "hash": "d98b6f07fbfe45681c70b60b06a805249d03550bced148ac9dd7c076bf053fa1"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalercolorprocessingmode/linear.json": {
@@ -1877,12 +1877,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/makespatialscaler(device:).json": {
       "etag": "\"2b24-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler-device.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler(device).md",
       "hash": "f8fc48f93d9ec0eb76c9466dddd3bb4008499c40f539d4c2c9569aa5c2d3eb0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/makespatialscaler(device:compiler:).json": {
       "etag": "\"350c-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler-devicecompiler.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/makespatialscaler(device,compiler).md",
       "hash": "31125d6261f3548eb4f33ac2c49fb5e82d5aeb89b7da494638a154f5a8251e57"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/outputheight.json": {
@@ -1902,12 +1902,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/supportsdevice(_:).json": {
       "etag": "\"2764-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsdevice.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsdevice(_).md",
       "hash": "fbef8584f087c0c8e362f01fb769cf416b91e771e2bd762e5860f3107080c02c"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxspatialscalerdescriptor/supportsmetal4fx(_:).json": {
       "etag": "\"2f4a-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsmetal4fx.md",
+      "file_path": "documentation/MetalFX/mtlfxspatialscalerdescriptor/supportsmetal4fx(_).md",
       "hash": "47449a1752bd6bbd0b96a5ae7699eca373f817d587d81e3516213ecc6ae18a99"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscaler.json": {
@@ -1917,7 +1917,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscaler/encode(commandbuffer:).json": {
       "etag": "\"2261-65d55e0e4af4d-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscaler/encode(commandbuffer).md",
       "hash": "23b298181beb32f18536196df93a3689275ec7ba395ad055a914bd1b0ebbc31e"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerbase.json": {
@@ -2257,12 +2257,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device:).json": {
       "etag": "\"2d62-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device).md",
       "hash": "d00b6acf43e9f8754c3ceffe491e16a3b606f1d38760a11fdbc63ee90f6d0d23"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device:compiler:).json": {
       "etag": "\"35e0-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler-devicecompiler.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/maketemporaldenoisedscaler(device,compiler).md",
       "hash": "8c8b0ffe5f95895a97ee68ce9054b523bffa01294b8120bf8888e27c7f7a61c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/motiontextureformat.json": {
@@ -2317,22 +2317,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale(device:).json": {
       "etag": "\"2a49-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentmaxscale(device).md",
       "hash": "b039035c6598051917963b37301cd4b61b4d2ef9282099c0e9bd400e92c22c4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale(device:).json": {
       "etag": "\"2a4b-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportedinputcontentminscale(device).md",
       "hash": "d3c52fb2840d51c8b7697fb4087a4cb2978050b2b4fecca93b57771713891b3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportsdevice(_:).json": {
       "etag": "\"2e97-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsdevice.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsdevice(_).md",
       "hash": "baf60800f8516713561f0337b03cac4cb411e2e7018f860a61244c651399a500"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/supportsmetal4fx(_:).json": {
       "etag": "\"2f37-65d55e0efb34a-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsmetal4fx.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporaldenoisedscalerdescriptor/supportsmetal4fx(_).md",
       "hash": "494b5acc8bd9a36fce458221299d342c6cea5729a03f446f5f04f868757a29b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporaldenoisedscalerdescriptor/transparencyoverlaytextureformat.json": {
@@ -2347,7 +2347,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscaler/encode(commandbuffer:).json": {
       "etag": "\"223d-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscaler/encode-commandbuffer.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscaler/encode(commandbuffer).md",
       "hash": "d1f9cf70194804049cc018beb9db5a6b2b64c7aa65825aa960bff01632ed7661"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerbase.json": {
@@ -2632,12 +2632,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/maketemporalscaler(device:).json": {
       "etag": "\"2b24-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler(device).md",
       "hash": "a5ba131703f5f64c4f672e30fa7be859b2624ff33c8b12189e90739c378cd64b"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/maketemporalscaler(device:compiler:).json": {
       "etag": "\"3464-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler-devicecompiler.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/maketemporalscaler(device,compiler).md",
       "hash": "0d182be5e11fc0a9485c8c5c8051b96ef6e86ad72f2f85f683725789efb5df0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/motiontextureformat.json": {
@@ -2672,22 +2672,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportedinputcontentmaxscale(device:).json": {
       "etag": "\"37ba-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentmaxscale-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentmaxscale(device).md",
       "hash": "6769a5e59d43a1a1cc2216b168b4bd401fdffe5f726836eece2c930637cbd91b"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportedinputcontentminscale(device:).json": {
       "etag": "\"37bb-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentminscale-device.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportedinputcontentminscale(device).md",
       "hash": "47d4b0aafb265129502ed427f559b556865c1fa6ca4beca9aa8c357273f2712b"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportsdevice(_:).json": {
       "etag": "\"375b-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsdevice.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsdevice(_).md",
       "hash": "6f7d3f35adf327c4961c58a81713ab35cc217d695aa1e1724e82a19780425276"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalfx/mtlfxtemporalscalerdescriptor/supportsmetal4fx(_:).json": {
       "etag": "\"2f07-65d55e0e326a4-df\"",
-      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsmetal4fx.md",
+      "file_path": "documentation/MetalFX/mtlfxtemporalscalerdescriptor/supportsmetal4fx(_).md",
       "hash": "6979beb4ca84b46b55be2fc9b438830e2b0d52f6f72cc458cf9d7066694cadde"
     }
   },

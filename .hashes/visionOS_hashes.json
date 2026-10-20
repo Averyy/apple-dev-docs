@@ -82,7 +82,7 @@
     },
     "https://developer.apple.com/documentation/visionos/building_local_experiences_with_room_tracking": {
       "etag": "W/\"f0e5ffa40b7829caf6f88ef21509a10a\"",
-      "file_path": "documentation/visionOS/building-local-experiences-with-room-tracking.md",
+      "file_path": "documentation/visionOS/building_local_experiences_with_room_tracking.md",
       "hash": "2e176a26fc2911b2339573263d8e7a7feb2ff794c5ef5b8c5a1065ec6d5d9d8e"
     },
     "https://developer.apple.com/documentation/visionos/canyon-crosser-building-a-volumetric-hike-planning-app": {
@@ -237,7 +237,7 @@
     },
     "https://developer.apple.com/documentation/visionos/exploring_object_tracking_with_arkit": {
       "etag": "\"9e0d-65d55acfb7d9f-df\"",
-      "file_path": "documentation/visionOS/exploring-object-tracking-with-arkit.md",
+      "file_path": "documentation/visionOS/exploring_object_tracking_with_arkit.md",
       "hash": "56018521704c812b90bafb37742347a38992fa45171e2106624f341f48415a6e"
     },
     "https://developer.apple.com/documentation/visionos/generating-procedural-textures-in-visionos": {
@@ -527,7 +527,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/building_local_experiences_with_room_tracking.json": {
       "etag": "W/\"f0e5ffa40b7829caf6f88ef21509a10a\"",
-      "file_path": "documentation/visionOS/building-local-experiences-with-room-tracking.md",
+      "file_path": "documentation/visionOS/building_local_experiences_with_room_tracking.md",
       "hash": "2e176a26fc2911b2339573263d8e7a7feb2ff794c5ef5b8c5a1065ec6d5d9d8e"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/canyon-crosser-building-a-volumetric-hike-planning-app.json": {
@@ -682,7 +682,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/exploring_object_tracking_with_arkit.json": {
       "etag": "\"9e0d-65d55acfb7d9f-df\"",
-      "file_path": "documentation/visionOS/exploring-object-tracking-with-arkit.md",
+      "file_path": "documentation/visionOS/exploring_object_tracking_with_arkit.md",
       "hash": "56018521704c812b90bafb37742347a38992fa45171e2106624f341f48415a6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos/generating-procedural-textures-in-visionos.json": {

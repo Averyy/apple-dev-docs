@@ -57,7 +57,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tcbuttondescriptor/init()": {
       "etag": "\"17a0-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tcbuttondescriptor/init.md",
+      "file_path": "documentation/TouchController/tcbuttondescriptor/init().md",
       "hash": "45daec0731834fa56dafc7ada116cea586743c72ddc4aeaa4d0a3f82ab230713"
     },
     "https://developer.apple.com/documentation/touchcontroller/tcbuttondescriptor/label": {
@@ -92,7 +92,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccollidershape/init(rawvalue:)": {
       "etag": "\"1322-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccollidershape/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccollidershape/init(rawvalue).md",
       "hash": "bce13a37bce83315d5be1f96249c4e44b2d46c75d0023c61fd2e3e7d972439d0"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccollidershape/leftside": {
@@ -122,17 +122,17 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrol/handletouchbegan(at:)": {
       "etag": "\"2d94-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrol/handletouchbegan-at.md",
+      "file_path": "documentation/TouchController/tccontrol/handletouchbegan(at).md",
       "hash": "55e8aaaacccfd31975d5ed2ca0228f65ff70933307860c3c6a2f20708e401b49"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrol/handletouchended(at:)": {
       "etag": "\"2d94-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrol/handletouchended-at.md",
+      "file_path": "documentation/TouchController/tccontrol/handletouchended(at).md",
       "hash": "c2afdd5e14a4d868ad6e1f5f90d786f63886f148f316932bac5e1d1628086406"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrol/handletouchmoved(at:)": {
       "etag": "\"2d9a-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrol/handletouchmoved-at.md",
+      "file_path": "documentation/TouchController/tccontrol/handletouchmoved(at).md",
       "hash": "13d37bc13f6df66fee6b5bdea9c6a292b63b03c15da568b2d773687a67f26faf"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrol/highlightduration": {
@@ -162,7 +162,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/buttoncontents(forsystemimagenamed:size:shape:controller:)": {
       "etag": "\"47b2-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/buttoncontents-forsystemimagenamedsizeshapecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/buttoncontents(forsystemimagenamed,size,shape,controller).md",
       "hash": "ad1634eb1f196cfe93f0a2dba689507324d10946af7872f3ef30ad4a47b11ef6"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/buttonshape": {
@@ -177,7 +177,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/buttonshape/init(rawvalue:)": {
       "etag": "\"18e5-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/buttonshape/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/buttonshape/init(rawvalue).md",
       "hash": "78293b8baa7f6ec4c696c26d3a50b36ba5701ce5c63be437e4aae03fb797d611"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/buttonshape/rect": {
@@ -187,7 +187,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/directionpadcontents(label:size:style:direction:controller:)": {
       "etag": "\"58fc-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/directionpadcontents-labelsizestyledirectioncontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/directionpadcontents(label,size,style,direction,controller).md",
       "hash": "255d951d7098fc0c964c0e685951ff18c88f5f227d36746764e04bfebfd36d20"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/dpaddirection": {
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/dpaddirection/init(rawvalue:)": {
       "etag": "\"1916-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/init(rawvalue).md",
       "hash": "a060be985fdc2a63ab133dbb048f2dab1e8b27ace34a65c7f34cf4f50b1ef813"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/dpaddirection/left": {
@@ -232,7 +232,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/dpadelementstyle/init(rawvalue:)": {
       "etag": "\"197c-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/dpadelementstyle/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/dpadelementstyle/init(rawvalue).md",
       "hash": "6ca038191879c58b8674b960d2634b35a134142f79e9061ca5650e4fec751b8b"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/dpadelementstyle/pentagon": {
@@ -247,32 +247,32 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/init(images:)": {
       "etag": "\"2554-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/init-images.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/init(images).md",
       "hash": "2c864bcf010b4166f27941753cf81715ddef515845c711e8fcffec8be7456892"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/switchedoncontents(forsystemimagenamed:size:shape:controller:)": {
       "etag": "\"4689-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/switchedoncontents-forsystemimagenamedsizeshapecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/switchedoncontents(forsystemimagenamed,size,shape,controller).md",
       "hash": "95cb8825e3b6c0bc218bec0832e42d1f544c62ee69d879a7a4007a6a3194c707"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/throttlebackgroundcontents(size:controller:)": {
       "etag": "\"3bf9-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/throttlebackgroundcontents-sizecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/throttlebackgroundcontents(size,controller).md",
       "hash": "ecca275b36722943298df0eade319306495ba6a46a84a7f0351fc711899b5888"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/throttleindicatorcontents(size:controller:)": {
       "etag": "\"3beb-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/throttleindicatorcontents-sizecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/throttleindicatorcontents(size,controller).md",
       "hash": "b4730631b03a95f03146b273b46ae93674d15dd27eb1e14308f2f98f4dd69cba"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/thumbstickstickbackgroundcontents(size:controller:)": {
       "etag": "\"3c5e-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickbackgroundcontents-sizecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickbackgroundcontents(size,controller).md",
       "hash": "eed8f8395b0cb510e38259c40a4dd3a9ba9bf035963e160d10a63213e90f8b88"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolcontents/thumbstickstickcontents(size:controller:)": {
       "etag": "\"3c04-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickcontents-sizecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickcontents(size,controller).md",
       "hash": "720977c40faeeb8a7b7499f014ea7537d8fa59079b93ce018aaa1a3c16cab2e4"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage": {
@@ -287,37 +287,37 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage/init(cgimage:size:device:)-22z05": {
       "etag": "\"4db1-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-cgimagesizedevice-22z05.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(cgimage,size,device)-22z05.md",
       "hash": "2cd80f8d6b66380e7092d36687fbb12a9eba4cdbb9fb5e082299a33fd052afcb"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage/init(cgimage:size:device:)-6wxv8": {
       "etag": "\"2186-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-cgimagesizedevice-6wxv8.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(cgimage,size,device)-6wxv8.md",
       "hash": "5154d1a89a23dd23626074e50f24c71f6c98c2a1ba4e9f7de52ac5895da9bfad"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage/init(texture:size:)": {
       "etag": "\"44a1-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-texturesize.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(texture,size).md",
       "hash": "de7ab862f747e11d0f5ac83e44df17fe6d99b4ed305cf53659b33b127a20c68c"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage/init(texture:size:highlight:offset:tintcolor:)": {
       "etag": "\"592b-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-texturesizehighlightoffsettintcolor.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(texture,size,highlight,offset,tintcolor).md",
       "hash": "771daa6e5f8fa0670d2842a6632697741f7e0d2560ec4b1087aac13a35958de3"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage/init(texture:size:highlighttexture:offset:tintcolor:)": {
       "etag": "\"28dd-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-texturesizehighlighttextureoffsettintcolor.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(texture,size,highlighttexture,offset,tintcolor).md",
       "hash": "3bd38dc3820713a401bdcacd07547b156909fc3f7c86a71d6d4a54bbebdfb1ed"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage/init(uiimage:size:device:)-3hqf": {
       "etag": "\"4d07-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-uiimagesizedevice-3hqf.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(uiimage,size,device)-3hqf.md",
       "hash": "b81c5c9f1a219bd914aab647604315640ef95a23565d4ccd36a5a5ebcfdc6d30"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage/init(uiimage:size:device:)-9csn2": {
       "etag": "\"203b-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-uiimagesizedevice-9csn2.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(uiimage,size,device)-9csn2.md",
       "hash": "b788fecf90241ce63eca49870458f27faae08cebcf64de49146af4034e6f1a0d"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrolimage/offset": {
@@ -352,7 +352,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttona()": {
       "etag": "W/\"044e3090a959687707d363de94d398b8\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttona.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttona().md",
       "hash": "09a857d1447243a23d9b82fdd3a4b8bf7efd76beafa83b5b6a5caaa0a2a9abd3"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonb": {
@@ -362,7 +362,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonb()": {
       "etag": "W/\"c8d518cc63d296fc7aea18cebacd5b7a\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonb.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonb().md",
       "hash": "363861921e2f341609b17c9896e658f3637e9ffb4efa3d023af318dc142f30fe"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonleftshoulder": {
@@ -372,7 +372,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonleftshoulder()": {
       "etag": "W/\"e7b24ca0d746dd5a2af2c53210966b10\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonleftshoulder.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonleftshoulder().md",
       "hash": "9dd5178e6fd43d8992a8de74be2e33eff19c98f2502d369089d577c66b324d15"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonlefttrigger": {
@@ -382,7 +382,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonlefttrigger()": {
       "etag": "W/\"32d56f1e220e69a7987c0d8a9122604a\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonlefttrigger.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonlefttrigger().md",
       "hash": "223046b90eb346cac33d8eede6606f879d2d30e17f806ab311d4c5bc9ba9151f"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonmenu": {
@@ -392,7 +392,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonmenu()": {
       "etag": "W/\"347915e41c0a7307dbaa7d12cfac9852\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonmenu.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonmenu().md",
       "hash": "93a7ede85599d116bd98e37d8f9bc57354ed94b07469f6577915def4f6d120ee"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonoptions": {
@@ -402,7 +402,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonoptions()": {
       "etag": "W/\"de99189e0a8c89b75ef84c2e4b011a3d\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonoptions.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonoptions().md",
       "hash": "7166261ee2e3b267853c17eb433f5ab591492d8bac4d1f020a2bbc1863a60589"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonrightshoulder": {
@@ -412,7 +412,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonrightshoulder()": {
       "etag": "W/\"cb8353d42e750343c57224e02b7387bb\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonrightshoulder.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonrightshoulder().md",
       "hash": "8a0aec700b3a3c27d6b0db4665ca1445ff612f48937ade0ad2c9ca9473b951fc"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonrighttrigger": {
@@ -422,7 +422,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonrighttrigger()": {
       "etag": "W/\"bd96a9caa8e84e3a7085f45ec260aa84\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonrighttrigger.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonrighttrigger().md",
       "hash": "f1006a080008091edc1cf2f4db37070f1687415e092063482bb9a8d68638cb29"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonx": {
@@ -432,7 +432,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttonx()": {
       "etag": "W/\"0a35b24dcbe860896df6588e45ec2d94\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonx.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonx().md",
       "hash": "e7346fc242dfe9003175e571d132280cbd1470e5c686fa6647503cb06ac78963"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttony": {
@@ -442,7 +442,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/buttony()": {
       "etag": "W/\"35da89ecf4fb3d0aa90d7a42f15c12a9\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttony.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttony().md",
       "hash": "37b4a1eb0090616e37122263c323f70f439eda08254a379ce6213591f5f47f63"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/directionpad": {
@@ -452,12 +452,12 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/directionpad()": {
       "etag": "W/\"bf7a5b06c245fe8c17142b4d213a50d6\"",
-      "file_path": "documentation/TouchController/tccontrollabel/directionpad.md",
+      "file_path": "documentation/TouchController/tccontrollabel/directionpad().md",
       "hash": "ebcf928a31050436776625973765d6b2789e235baf53ba72eb77788139a36968"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/init(name:role:)": {
       "etag": "\"2f0b-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrollabel/init-namerole.md",
+      "file_path": "documentation/TouchController/tccontrollabel/init(name,role).md",
       "hash": "d515351982804447b697ef5801c76e9d494ba2e26916a18701118ca7891fe073"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/leftthumbstick": {
@@ -467,7 +467,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/leftthumbstick()": {
       "etag": "W/\"150a417e56e04bae2f2d9fbfefa00822\"",
-      "file_path": "documentation/TouchController/tccontrollabel/leftthumbstick.md",
+      "file_path": "documentation/TouchController/tccontrollabel/leftthumbstick().md",
       "hash": "eff988f45bb64d1c4fe31b752984222b8575c053a8f3530f8bc114f99e37b13f"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/leftthumbstickbutton": {
@@ -477,7 +477,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/leftthumbstickbutton()": {
       "etag": "W/\"18f65018e7fcc0789e5fddd11448073e\"",
-      "file_path": "documentation/TouchController/tccontrollabel/leftthumbstickbutton.md",
+      "file_path": "documentation/TouchController/tccontrollabel/leftthumbstickbutton().md",
       "hash": "8c66829c37969f785ccca0431e803b7be9a69c62b94de772de8809a5046fffdc"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/name": {
@@ -492,7 +492,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/rightthumbstick()": {
       "etag": "W/\"7e5d39ed93726b570dbb71e4c51f9aeb\"",
-      "file_path": "documentation/TouchController/tccontrollabel/rightthumbstick.md",
+      "file_path": "documentation/TouchController/tccontrollabel/rightthumbstick().md",
       "hash": "218d2decc1c8290453ceb3cad278b8b638fd82f0254103f7ba4a2b052548a31b"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/rightthumbstickbutton": {
@@ -502,12 +502,12 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/rightthumbstickbutton()": {
       "etag": "W/\"0e6aa8305692ea62d847be5a6e4aaa62\"",
-      "file_path": "documentation/TouchController/tccontrollabel/rightthumbstickbutton.md",
+      "file_path": "documentation/TouchController/tccontrollabel/rightthumbstickbutton().md",
       "hash": "af95734b5c9fcc5d49ee975430fd01822c1b70371ad05b68c0e034f94785faef"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/role-swift.enum": {
       "etag": "\"3e90-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrollabel/role-swiftenum.md",
+      "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum.md",
       "hash": "751cd7fa99f34747b4f29e2a598fbdc62b4d2ec0466a981eb99112ceb8b21406"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/role-swift.enum/button": {
@@ -522,12 +522,12 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/role-swift.enum/init(rawvalue:)": {
       "etag": "\"1934-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum/init(rawvalue).md",
       "hash": "c7675b8aee7e4f5e49f0a5873228dc6ab4a4b85ff4d20b49c9616f8ad1d8aff4"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollabel/role-swift.property": {
       "etag": "\"24e1-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrollabel/role-swiftproperty.md",
+      "file_path": "documentation/TouchController/tccontrollabel/role-swift.property.md",
       "hash": "7884f6035a5bf61c3d1d5f81ada8f6e85334035ae640e3695a171ac3359647c9"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollayout": {
@@ -602,7 +602,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollayoutanchor/init(rawvalue:)": {
       "etag": "\"1393-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrollayoutanchor/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrollayoutanchor/init(rawvalue).md",
       "hash": "d10c3a9e7de392aaaf111e3d911fde112a65c12c48f20ad2569f63f13309d31e"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollayoutanchor/topcenter": {
@@ -632,7 +632,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollayoutanchorcoordinatesystem/init(rawvalue:)": {
       "etag": "\"14cd-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrollayoutanchorcoordinatesystem/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrollayoutanchorcoordinatesystem/init(rawvalue).md",
       "hash": "ac10fcdaa620b7c29a521b46b016a55e5fa215af4b94f233395394ac385cb541"
     },
     "https://developer.apple.com/documentation/touchcontroller/tccontrollayoutanchorcoordinatesystem/relative": {
@@ -757,7 +757,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tcdirectionpaddescriptor/init()": {
       "etag": "\"1821-65d55d385f037-df\"",
-      "file_path": "documentation/TouchController/tcdirectionpaddescriptor/init.md",
+      "file_path": "documentation/TouchController/tcdirectionpaddescriptor/init().md",
       "hash": "ee6920c637eb66f570115392ea2a9001525eafd3d489aa479d1b8ec63d32196e"
     },
     "https://developer.apple.com/documentation/touchcontroller/tcdirectionpaddescriptor/inputismutuallyexclusive": {
@@ -887,7 +887,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tcswitchdescriptor/init()": {
       "etag": "\"17a0-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tcswitchdescriptor/init.md",
+      "file_path": "documentation/TouchController/tcswitchdescriptor/init().md",
       "hash": "27c836a82d439799e11137e01d546106702bbfefc3b18d728bffb599e7c50ff6"
     },
     "https://developer.apple.com/documentation/touchcontroller/tcswitchdescriptor/label": {
@@ -952,7 +952,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthrottle/orientation-swift.enum": {
       "etag": "\"3e4a-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tcthrottle/orientation-swiftenum.md",
+      "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum.md",
       "hash": "7de4d80ece6d97ad24cc5ef061dc36b52149ab4558de29f6807fb1fb86c18849"
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthrottle/orientation-swift.enum/horizontal": {
@@ -962,7 +962,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthrottle/orientation-swift.enum/init(rawvalue:)": {
       "etag": "\"18a2-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum/init(rawvalue).md",
       "hash": "b91652b925dede1f0756430b98c29b11ccd0f986b0956d5e310396d5082f38b4"
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthrottle/orientation-swift.enum/vertical": {
@@ -972,7 +972,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthrottle/orientation-swift.property": {
       "etag": "\"23f7-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tcthrottle/orientation-swiftproperty.md",
+      "file_path": "documentation/TouchController/tcthrottle/orientation-swift.property.md",
       "hash": "3d18b9708d65cdf691af1e4e9a0220df6f9a567e3a7e2c9a4b3ce5998aeb91e2"
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthrottle/snapstobasevalue": {
@@ -1032,7 +1032,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthrottledescriptor/init()": {
       "etag": "\"17d4-65d55d385f037-df\"",
-      "file_path": "documentation/TouchController/tcthrottledescriptor/init.md",
+      "file_path": "documentation/TouchController/tcthrottledescriptor/init().md",
       "hash": "9c45d56a87ae66753f7334e78af058141717a296645c3f7eae0fbec6f964c52e"
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthrottledescriptor/label": {
@@ -1142,7 +1142,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthumbstickdescriptor/init()": {
       "etag": "\"1808-65d55d385f037-df\"",
-      "file_path": "documentation/TouchController/tcthumbstickdescriptor/init.md",
+      "file_path": "documentation/TouchController/tcthumbstickdescriptor/init().md",
       "hash": "b8697d0bd4899137451a396306767178c1cda38a9655c920dc4af1b05886de09"
     },
     "https://developer.apple.com/documentation/touchcontroller/tcthumbstickdescriptor/label": {
@@ -1182,37 +1182,37 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/addbutton(descriptor:)": {
       "etag": "\"2ec4-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addbutton-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addbutton(descriptor).md",
       "hash": "a0269814d4c27f85c69ded2a3dba5607146cfec499e4b9afdb2768c2bb4afa77"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/adddirectionpad(descriptor:)": {
       "etag": "\"30ad-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/adddirectionpad-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/adddirectionpad(descriptor).md",
       "hash": "7a6d150f346e22a3fa05c2447a9d2283bc95f9e3798e4ff2fdbd42ea0257f1a9"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/addswitch(descriptor:)": {
       "etag": "\"2ec4-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addswitch-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addswitch(descriptor).md",
       "hash": "a5a9ecd463fa8534f90d0b109ec5d917568a71971ea15f2518b4837fb8af1d2e"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/addthrottle(descriptor:)": {
       "etag": "\"2f6a-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addthrottle-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addthrottle(descriptor).md",
       "hash": "cfe64546d25b050d7a8f2078988e6ba2f11647bae1d5ab5f859755353e7ad2e4"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/addthumbstick(descriptor:)": {
       "etag": "\"2ff9-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addthumbstick-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addthumbstick(descriptor).md",
       "hash": "eccf8992a6fedc4568623523f4746be60fc56def9c9b2ecc82ebcc9da2b4c5c5"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/addtouchpad(descriptor:)": {
       "etag": "\"2f8c-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addtouchpad-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addtouchpad(descriptor).md",
       "hash": "cc6d771fda02b19906dc18620d70b5f18bb7b0dcd9bf37ec88567e7da99a0324"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/automaticallylayoutcontrols(for:)": {
       "etag": "\"2c8a-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/automaticallylayoutcontrols-for.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/automaticallylayoutcontrols(for).md",
       "hash": "6ec47abae89a329692cdabe52e268c56140c903bc733bb80830f514fe0856636"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/buttons": {
@@ -1222,12 +1222,12 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/connect()": {
       "etag": "\"2029-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/connect.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/connect().md",
       "hash": "be23bbf3ebd97a2d0a6d141fe811ab252bf2ce07970b3335b7fbfea7c55d2ef7"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/control(at:)": {
       "etag": "\"2978-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/control-at.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/control(at).md",
       "hash": "6c42f7e7211f891b714195fdd83c4d01cb32a4502b4593438a919a97ce1baf98"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/controller": {
@@ -1237,7 +1237,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/controller()": {
       "etag": "W/\"a71288a6365cb817a7b5c87307ce1cb6\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/controller.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/controller().md",
       "hash": "c81f65eb55c9ac63a32b3a4c8c92a2538d6761cd87b44e11d1fb904b5f4ad34c"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/controls": {
@@ -1257,7 +1257,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/disconnect()": {
       "etag": "\"1fea-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/disconnect.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/disconnect().md",
       "hash": "c700a658f29bc94c0a1fe1933af4b0b0d830495ac9624648d6bfe9983196cf5e"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/drawablesize": {
@@ -1267,22 +1267,22 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/handletouchbegan(at:index:)": {
       "etag": "\"3dcc-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/handletouchbegan-atindex.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/handletouchbegan(at,index).md",
       "hash": "9a34cb94ce4f69f376a685ac04a3a1d16bafee3d03a188430dcbcf2f663bbe15"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/handletouchended(at:index:)": {
       "etag": "\"3dcc-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/handletouchended-atindex.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/handletouchended(at,index).md",
       "hash": "edc5a75d5423937677eacea342278ca9c4c5edad2ec5444eab60e0032d975fa4"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/handletouchmoved(at:index:)": {
       "etag": "\"3dd2-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/handletouchmoved-atindex.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/handletouchmoved(at,index).md",
       "hash": "fb8b5c9a7a96212ff7f1f3c5f7044c4494f03b8b9bd89845e5c99e4ccab0cd2e"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/init(descriptor:)": {
       "etag": "\"286a-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/init-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/init(descriptor).md",
       "hash": "8e6fce96268215623648ad7c3d85287a3ce5a3c9d7aa2fdd12100cfb3349624c"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/isconnected": {
@@ -1297,17 +1297,17 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/removeallcontrols()": {
       "etag": "\"2017-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/removeallcontrols.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/removeallcontrols().md",
       "hash": "7f348d43ba6c016e722aceb5c7ef5bf4ed26e35cc17605931e6d6632ca0a16de"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/removecontrol(_:)": {
       "etag": "\"26c7-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/removecontrol.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/removecontrol(_).md",
       "hash": "4d993adb6a0601b94aa48df8dedddc706cd0e5f0efdbbdae7e9c2bad991b1f67"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/render(using:)": {
       "etag": "\"2b24-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/render-using.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/render(using).md",
       "hash": "f007ad8d95ee9faea8307654fffa6eb83bcbeb1feeb55374846293f7fcabb9e5"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontroller/size": {
@@ -1362,17 +1362,17 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontrollerdescriptor/init()": {
       "etag": "\"1ee9-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init.md",
+      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init().md",
       "hash": "c73f1e36c0b51f635cf8a5fbe02d283ec6469783ae49b400f53108bbe9cd598b"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontrollerdescriptor/init(mtkview:)-25g2c": {
       "etag": "\"1691-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init-mtkview-25g2c.md",
+      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init(mtkview)-25g2c.md",
       "hash": "a4f6410a7db84d71713bce02b43f0e0ff886c185a57aa473d422fedc92d438e3"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontrollerdescriptor/init(mtkview:)-7cs6u": {
       "etag": "\"253e-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init-mtkview-7cs6u.md",
+      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init(mtkview)-7cs6u.md",
       "hash": "db09df7a5577f1274907a9c7e35abf4d3334ffc4f805a75e53a2a5a1768657af"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchcontrollerdescriptor/samplecount": {
@@ -1447,7 +1447,7 @@
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchpaddescriptor/init()": {
       "etag": "\"17d4-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tctouchpaddescriptor/init.md",
+      "file_path": "documentation/TouchController/tctouchpaddescriptor/init().md",
       "hash": "02d90b0f28598c41741fcbaeeb87e58e18aec1476aec085a6e3cbafacc377ce3"
     },
     "https://developer.apple.com/documentation/touchcontroller/tctouchpaddescriptor/label": {
@@ -1532,7 +1532,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/init().json": {
       "etag": "\"17a0-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tcbuttondescriptor/init.md",
+      "file_path": "documentation/TouchController/tcbuttondescriptor/init().md",
       "hash": "45daec0731834fa56dafc7ada116cea586743c72ddc4aeaa4d0a3f82ab230713"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/label.json": {
@@ -1567,7 +1567,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccollidershape/init(rawvalue:).json": {
       "etag": "\"1322-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccollidershape/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccollidershape/init(rawvalue).md",
       "hash": "bce13a37bce83315d5be1f96249c4e44b2d46c75d0023c61fd2e3e7d972439d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccollidershape/leftside.json": {
@@ -1597,17 +1597,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/handletouchbegan(at:).json": {
       "etag": "\"2d94-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrol/handletouchbegan-at.md",
+      "file_path": "documentation/TouchController/tccontrol/handletouchbegan(at).md",
       "hash": "55e8aaaacccfd31975d5ed2ca0228f65ff70933307860c3c6a2f20708e401b49"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/handletouchended(at:).json": {
       "etag": "\"2d94-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrol/handletouchended-at.md",
+      "file_path": "documentation/TouchController/tccontrol/handletouchended(at).md",
       "hash": "c2afdd5e14a4d868ad6e1f5f90d786f63886f148f316932bac5e1d1628086406"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/handletouchmoved(at:).json": {
       "etag": "\"2d9a-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrol/handletouchmoved-at.md",
+      "file_path": "documentation/TouchController/tccontrol/handletouchmoved(at).md",
       "hash": "13d37bc13f6df66fee6b5bdea9c6a292b63b03c15da568b2d773687a67f26faf"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/highlightduration.json": {
@@ -1637,7 +1637,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttoncontents(forsystemimagenamed:size:shape:controller:).json": {
       "etag": "\"47b2-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/buttoncontents-forsystemimagenamedsizeshapecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/buttoncontents(forsystemimagenamed,size,shape,controller).md",
       "hash": "ad1634eb1f196cfe93f0a2dba689507324d10946af7872f3ef30ad4a47b11ef6"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttonshape.json": {
@@ -1652,7 +1652,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttonshape/init(rawvalue:).json": {
       "etag": "\"18e5-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/buttonshape/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/buttonshape/init(rawvalue).md",
       "hash": "78293b8baa7f6ec4c696c26d3a50b36ba5701ce5c63be437e4aae03fb797d611"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttonshape/rect.json": {
@@ -1662,7 +1662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/directionpadcontents(label:size:style:direction:controller:).json": {
       "etag": "\"58fc-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/directionpadcontents-labelsizestyledirectioncontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/directionpadcontents(label,size,style,direction,controller).md",
       "hash": "255d951d7098fc0c964c0e685951ff18c88f5f227d36746764e04bfebfd36d20"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection.json": {
@@ -1677,7 +1677,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection/init(rawvalue:).json": {
       "etag": "\"1916-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/init(rawvalue).md",
       "hash": "a060be985fdc2a63ab133dbb048f2dab1e8b27ace34a65c7f34cf4f50b1ef813"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection/left.json": {
@@ -1707,7 +1707,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpadelementstyle/init(rawvalue:).json": {
       "etag": "\"197c-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/dpadelementstyle/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/dpadelementstyle/init(rawvalue).md",
       "hash": "6ca038191879c58b8674b960d2634b35a134142f79e9061ca5650e4fec751b8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpadelementstyle/pentagon.json": {
@@ -1722,32 +1722,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/init(images:).json": {
       "etag": "\"2554-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/init-images.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/init(images).md",
       "hash": "2c864bcf010b4166f27941753cf81715ddef515845c711e8fcffec8be7456892"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/switchedoncontents(forsystemimagenamed:size:shape:controller:).json": {
       "etag": "\"4689-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/switchedoncontents-forsystemimagenamedsizeshapecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/switchedoncontents(forsystemimagenamed,size,shape,controller).md",
       "hash": "95cb8825e3b6c0bc218bec0832e42d1f544c62ee69d879a7a4007a6a3194c707"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/throttlebackgroundcontents(size:controller:).json": {
       "etag": "\"3bf9-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/throttlebackgroundcontents-sizecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/throttlebackgroundcontents(size,controller).md",
       "hash": "ecca275b36722943298df0eade319306495ba6a46a84a7f0351fc711899b5888"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/throttleindicatorcontents(size:controller:).json": {
       "etag": "\"3beb-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/throttleindicatorcontents-sizecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/throttleindicatorcontents(size,controller).md",
       "hash": "b4730631b03a95f03146b273b46ae93674d15dd27eb1e14308f2f98f4dd69cba"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/thumbstickstickbackgroundcontents(size:controller:).json": {
       "etag": "\"3c5e-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickbackgroundcontents-sizecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickbackgroundcontents(size,controller).md",
       "hash": "eed8f8395b0cb510e38259c40a4dd3a9ba9bf035963e160d10a63213e90f8b88"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/thumbstickstickcontents(size:controller:).json": {
       "etag": "\"3c04-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickcontents-sizecontroller.md",
+      "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickcontents(size,controller).md",
       "hash": "720977c40faeeb8a7b7499f014ea7537d8fa59079b93ce018aaa1a3c16cab2e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage.json": {
@@ -1762,37 +1762,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(cgimage:size:device:)-22z05.json": {
       "etag": "\"4db1-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-cgimagesizedevice-22z05.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(cgimage,size,device)-22z05.md",
       "hash": "2cd80f8d6b66380e7092d36687fbb12a9eba4cdbb9fb5e082299a33fd052afcb"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(cgimage:size:device:)-6wxv8.json": {
       "etag": "\"2186-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-cgimagesizedevice-6wxv8.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(cgimage,size,device)-6wxv8.md",
       "hash": "5154d1a89a23dd23626074e50f24c71f6c98c2a1ba4e9f7de52ac5895da9bfad"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(texture:size:).json": {
       "etag": "\"44a1-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-texturesize.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(texture,size).md",
       "hash": "de7ab862f747e11d0f5ac83e44df17fe6d99b4ed305cf53659b33b127a20c68c"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(texture:size:highlight:offset:tintcolor:).json": {
       "etag": "\"592b-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-texturesizehighlightoffsettintcolor.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(texture,size,highlight,offset,tintcolor).md",
       "hash": "771daa6e5f8fa0670d2842a6632697741f7e0d2560ec4b1087aac13a35958de3"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(texture:size:highlighttexture:offset:tintcolor:).json": {
       "etag": "\"28dd-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-texturesizehighlighttextureoffsettintcolor.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(texture,size,highlighttexture,offset,tintcolor).md",
       "hash": "3bd38dc3820713a401bdcacd07547b156909fc3f7c86a71d6d4a54bbebdfb1ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(uiimage:size:device:)-3hqf.json": {
       "etag": "\"4d07-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-uiimagesizedevice-3hqf.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(uiimage,size,device)-3hqf.md",
       "hash": "b81c5c9f1a219bd914aab647604315640ef95a23565d4ccd36a5a5ebcfdc6d30"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(uiimage:size:device:)-9csn2.json": {
       "etag": "\"203b-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrolimage/init-uiimagesizedevice-9csn2.md",
+      "file_path": "documentation/TouchController/tccontrolimage/init(uiimage,size,device)-9csn2.md",
       "hash": "b788fecf90241ce63eca49870458f27faae08cebcf64de49146af4034e6f1a0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/offset.json": {
@@ -1822,7 +1822,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttona().json": {
       "etag": "W/\"044e3090a959687707d363de94d398b8\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttona.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttona().md",
       "hash": "09a857d1447243a23d9b82fdd3a4b8bf7efd76beafa83b5b6a5caaa0a2a9abd3"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttona.json": {
@@ -1832,7 +1832,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonb().json": {
       "etag": "W/\"c8d518cc63d296fc7aea18cebacd5b7a\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonb.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonb().md",
       "hash": "363861921e2f341609b17c9896e658f3637e9ffb4efa3d023af318dc142f30fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonb.json": {
@@ -1842,7 +1842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonleftshoulder().json": {
       "etag": "W/\"e7b24ca0d746dd5a2af2c53210966b10\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonleftshoulder.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonleftshoulder().md",
       "hash": "9dd5178e6fd43d8992a8de74be2e33eff19c98f2502d369089d577c66b324d15"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonleftshoulder.json": {
@@ -1852,7 +1852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonlefttrigger().json": {
       "etag": "W/\"32d56f1e220e69a7987c0d8a9122604a\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonlefttrigger.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonlefttrigger().md",
       "hash": "223046b90eb346cac33d8eede6606f879d2d30e17f806ab311d4c5bc9ba9151f"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonlefttrigger.json": {
@@ -1862,7 +1862,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonmenu().json": {
       "etag": "W/\"347915e41c0a7307dbaa7d12cfac9852\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonmenu.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonmenu().md",
       "hash": "93a7ede85599d116bd98e37d8f9bc57354ed94b07469f6577915def4f6d120ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonmenu.json": {
@@ -1872,7 +1872,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonoptions().json": {
       "etag": "W/\"de99189e0a8c89b75ef84c2e4b011a3d\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonoptions.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonoptions().md",
       "hash": "7166261ee2e3b267853c17eb433f5ab591492d8bac4d1f020a2bbc1863a60589"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonoptions.json": {
@@ -1882,7 +1882,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonrightshoulder().json": {
       "etag": "W/\"cb8353d42e750343c57224e02b7387bb\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonrightshoulder.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonrightshoulder().md",
       "hash": "8a0aec700b3a3c27d6b0db4665ca1445ff612f48937ade0ad2c9ca9473b951fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonrightshoulder.json": {
@@ -1892,7 +1892,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonrighttrigger().json": {
       "etag": "W/\"bd96a9caa8e84e3a7085f45ec260aa84\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonrighttrigger.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonrighttrigger().md",
       "hash": "f1006a080008091edc1cf2f4db37070f1687415e092063482bb9a8d68638cb29"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonrighttrigger.json": {
@@ -1902,7 +1902,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonx().json": {
       "etag": "W/\"0a35b24dcbe860896df6588e45ec2d94\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttonx.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttonx().md",
       "hash": "e7346fc242dfe9003175e571d132280cbd1470e5c686fa6647503cb06ac78963"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonx.json": {
@@ -1912,7 +1912,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttony().json": {
       "etag": "W/\"35da89ecf4fb3d0aa90d7a42f15c12a9\"",
-      "file_path": "documentation/TouchController/tccontrollabel/buttony.md",
+      "file_path": "documentation/TouchController/tccontrollabel/buttony().md",
       "hash": "37b4a1eb0090616e37122263c323f70f439eda08254a379ce6213591f5f47f63"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttony.json": {
@@ -1922,7 +1922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/directionpad().json": {
       "etag": "W/\"bf7a5b06c245fe8c17142b4d213a50d6\"",
-      "file_path": "documentation/TouchController/tccontrollabel/directionpad.md",
+      "file_path": "documentation/TouchController/tccontrollabel/directionpad().md",
       "hash": "ebcf928a31050436776625973765d6b2789e235baf53ba72eb77788139a36968"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/directionpad.json": {
@@ -1932,12 +1932,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/init(name:role:).json": {
       "etag": "\"2f0b-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrollabel/init-namerole.md",
+      "file_path": "documentation/TouchController/tccontrollabel/init(name,role).md",
       "hash": "d515351982804447b697ef5801c76e9d494ba2e26916a18701118ca7891fe073"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/leftthumbstick().json": {
       "etag": "W/\"150a417e56e04bae2f2d9fbfefa00822\"",
-      "file_path": "documentation/TouchController/tccontrollabel/leftthumbstick.md",
+      "file_path": "documentation/TouchController/tccontrollabel/leftthumbstick().md",
       "hash": "eff988f45bb64d1c4fe31b752984222b8575c053a8f3530f8bc114f99e37b13f"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/leftthumbstick.json": {
@@ -1947,7 +1947,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/leftthumbstickbutton().json": {
       "etag": "W/\"18f65018e7fcc0789e5fddd11448073e\"",
-      "file_path": "documentation/TouchController/tccontrollabel/leftthumbstickbutton.md",
+      "file_path": "documentation/TouchController/tccontrollabel/leftthumbstickbutton().md",
       "hash": "8c66829c37969f785ccca0431e803b7be9a69c62b94de772de8809a5046fffdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/leftthumbstickbutton.json": {
@@ -1962,7 +1962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/rightthumbstick().json": {
       "etag": "W/\"7e5d39ed93726b570dbb71e4c51f9aeb\"",
-      "file_path": "documentation/TouchController/tccontrollabel/rightthumbstick.md",
+      "file_path": "documentation/TouchController/tccontrollabel/rightthumbstick().md",
       "hash": "218d2decc1c8290453ceb3cad278b8b638fd82f0254103f7ba4a2b052548a31b"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/rightthumbstick.json": {
@@ -1972,7 +1972,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/rightthumbstickbutton().json": {
       "etag": "W/\"0e6aa8305692ea62d847be5a6e4aaa62\"",
-      "file_path": "documentation/TouchController/tccontrollabel/rightthumbstickbutton.md",
+      "file_path": "documentation/TouchController/tccontrollabel/rightthumbstickbutton().md",
       "hash": "af95734b5c9fcc5d49ee975430fd01822c1b70371ad05b68c0e034f94785faef"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/rightthumbstickbutton.json": {
@@ -1982,7 +1982,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.enum.json": {
       "etag": "\"3e90-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrollabel/role-swiftenum.md",
+      "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum.md",
       "hash": "751cd7fa99f34747b4f29e2a598fbdc62b4d2ec0466a981eb99112ceb8b21406"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.enum/button.json": {
@@ -1997,12 +1997,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.enum/init(rawvalue:).json": {
       "etag": "\"1934-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum/init(rawvalue).md",
       "hash": "c7675b8aee7e4f5e49f0a5873228dc6ab4a4b85ff4d20b49c9616f8ad1d8aff4"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.property.json": {
       "etag": "\"24e1-65d55d38c7df2-df\"",
-      "file_path": "documentation/TouchController/tccontrollabel/role-swiftproperty.md",
+      "file_path": "documentation/TouchController/tccontrollabel/role-swift.property.md",
       "hash": "7884f6035a5bf61c3d1d5f81ada8f6e85334035ae640e3695a171ac3359647c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayout.json": {
@@ -2077,7 +2077,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/init(rawvalue:).json": {
       "etag": "\"1393-65d55d391486e-df\"",
-      "file_path": "documentation/TouchController/tccontrollayoutanchor/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrollayoutanchor/init(rawvalue).md",
       "hash": "d10c3a9e7de392aaaf111e3d911fde112a65c12c48f20ad2569f63f13309d31e"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/topcenter.json": {
@@ -2107,7 +2107,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchorcoordinatesystem/init(rawvalue:).json": {
       "etag": "\"14cd-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tccontrollayoutanchorcoordinatesystem/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tccontrollayoutanchorcoordinatesystem/init(rawvalue).md",
       "hash": "ac10fcdaa620b7c29a521b46b016a55e5fa215af4b94f233395394ac385cb541"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchorcoordinatesystem/relative.json": {
@@ -2232,7 +2232,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/init().json": {
       "etag": "\"1821-65d55d385f037-df\"",
-      "file_path": "documentation/TouchController/tcdirectionpaddescriptor/init.md",
+      "file_path": "documentation/TouchController/tcdirectionpaddescriptor/init().md",
       "hash": "ee6920c637eb66f570115392ea2a9001525eafd3d489aa479d1b8ec63d32196e"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/inputismutuallyexclusive.json": {
@@ -2362,7 +2362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/init().json": {
       "etag": "\"17a0-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tcswitchdescriptor/init.md",
+      "file_path": "documentation/TouchController/tcswitchdescriptor/init().md",
       "hash": "27c836a82d439799e11137e01d546106702bbfefc3b18d728bffb599e7c50ff6"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/label.json": {
@@ -2427,7 +2427,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.enum.json": {
       "etag": "\"3e4a-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tcthrottle/orientation-swiftenum.md",
+      "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum.md",
       "hash": "7de4d80ece6d97ad24cc5ef061dc36b52149ab4558de29f6807fb1fb86c18849"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.enum/horizontal.json": {
@@ -2437,7 +2437,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.enum/init(rawvalue:).json": {
       "etag": "\"18a2-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum/init(rawvalue).md",
       "hash": "b91652b925dede1f0756430b98c29b11ccd0f986b0956d5e310396d5082f38b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.enum/vertical.json": {
@@ -2447,7 +2447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.property.json": {
       "etag": "\"23f7-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tcthrottle/orientation-swiftproperty.md",
+      "file_path": "documentation/TouchController/tcthrottle/orientation-swift.property.md",
       "hash": "3d18b9708d65cdf691af1e4e9a0220df6f9a567e3a7e2c9a4b3ce5998aeb91e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/snapstobasevalue.json": {
@@ -2507,7 +2507,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/init().json": {
       "etag": "\"17d4-65d55d385f037-df\"",
-      "file_path": "documentation/TouchController/tcthrottledescriptor/init.md",
+      "file_path": "documentation/TouchController/tcthrottledescriptor/init().md",
       "hash": "9c45d56a87ae66753f7334e78af058141717a296645c3f7eae0fbec6f964c52e"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/label.json": {
@@ -2617,7 +2617,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/init().json": {
       "etag": "\"1808-65d55d385f037-df\"",
-      "file_path": "documentation/TouchController/tcthumbstickdescriptor/init.md",
+      "file_path": "documentation/TouchController/tcthumbstickdescriptor/init().md",
       "hash": "b8697d0bd4899137451a396306767178c1cda38a9655c920dc4af1b05886de09"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/label.json": {
@@ -2657,37 +2657,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addbutton(descriptor:).json": {
       "etag": "\"2ec4-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addbutton-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addbutton(descriptor).md",
       "hash": "a0269814d4c27f85c69ded2a3dba5607146cfec499e4b9afdb2768c2bb4afa77"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/adddirectionpad(descriptor:).json": {
       "etag": "\"30ad-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/adddirectionpad-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/adddirectionpad(descriptor).md",
       "hash": "7a6d150f346e22a3fa05c2447a9d2283bc95f9e3798e4ff2fdbd42ea0257f1a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addswitch(descriptor:).json": {
       "etag": "\"2ec4-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addswitch-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addswitch(descriptor).md",
       "hash": "a5a9ecd463fa8534f90d0b109ec5d917568a71971ea15f2518b4837fb8af1d2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addthrottle(descriptor:).json": {
       "etag": "\"2f6a-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addthrottle-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addthrottle(descriptor).md",
       "hash": "cfe64546d25b050d7a8f2078988e6ba2f11647bae1d5ab5f859755353e7ad2e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addthumbstick(descriptor:).json": {
       "etag": "\"2ff9-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addthumbstick-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addthumbstick(descriptor).md",
       "hash": "eccf8992a6fedc4568623523f4746be60fc56def9c9b2ecc82ebcc9da2b4c5c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addtouchpad(descriptor:).json": {
       "etag": "\"2f8c-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/addtouchpad-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/addtouchpad(descriptor).md",
       "hash": "cc6d771fda02b19906dc18620d70b5f18bb7b0dcd9bf37ec88567e7da99a0324"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/automaticallylayoutcontrols(for:).json": {
       "etag": "\"2c8a-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/automaticallylayoutcontrols-for.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/automaticallylayoutcontrols(for).md",
       "hash": "6ec47abae89a329692cdabe52e268c56140c903bc733bb80830f514fe0856636"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/buttons.json": {
@@ -2697,17 +2697,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/connect().json": {
       "etag": "\"2029-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/connect.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/connect().md",
       "hash": "be23bbf3ebd97a2d0a6d141fe811ab252bf2ce07970b3335b7fbfea7c55d2ef7"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/control(at:).json": {
       "etag": "\"2978-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/control-at.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/control(at).md",
       "hash": "6c42f7e7211f891b714195fdd83c4d01cb32a4502b4593438a919a97ce1baf98"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/controller().json": {
       "etag": "W/\"a71288a6365cb817a7b5c87307ce1cb6\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/controller.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/controller().md",
       "hash": "c81f65eb55c9ac63a32b3a4c8c92a2538d6761cd87b44e11d1fb904b5f4ad34c"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/controller.json": {
@@ -2732,7 +2732,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/disconnect().json": {
       "etag": "\"1fea-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/disconnect.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/disconnect().md",
       "hash": "c700a658f29bc94c0a1fe1933af4b0b0d830495ac9624648d6bfe9983196cf5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/drawablesize.json": {
@@ -2742,22 +2742,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/handletouchbegan(at:index:).json": {
       "etag": "\"3dcc-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/handletouchbegan-atindex.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/handletouchbegan(at,index).md",
       "hash": "9a34cb94ce4f69f376a685ac04a3a1d16bafee3d03a188430dcbcf2f663bbe15"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/handletouchended(at:index:).json": {
       "etag": "\"3dcc-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/handletouchended-atindex.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/handletouchended(at,index).md",
       "hash": "edc5a75d5423937677eacea342278ca9c4c5edad2ec5444eab60e0032d975fa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/handletouchmoved(at:index:).json": {
       "etag": "\"3dd2-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/handletouchmoved-atindex.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/handletouchmoved(at,index).md",
       "hash": "fb8b5c9a7a96212ff7f1f3c5f7044c4494f03b8b9bd89845e5c99e4ccab0cd2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/init(descriptor:).json": {
       "etag": "\"286a-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/init-descriptor.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/init(descriptor).md",
       "hash": "8e6fce96268215623648ad7c3d85287a3ce5a3c9d7aa2fdd12100cfb3349624c"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/isconnected.json": {
@@ -2772,17 +2772,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/removeallcontrols().json": {
       "etag": "\"2017-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/removeallcontrols.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/removeallcontrols().md",
       "hash": "7f348d43ba6c016e722aceb5c7ef5bf4ed26e35cc17605931e6d6632ca0a16de"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/removecontrol(_:).json": {
       "etag": "\"26c7-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/removecontrol.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/removecontrol(_).md",
       "hash": "4d993adb6a0601b94aa48df8dedddc706cd0e5f0efdbbdae7e9c2bad991b1f67"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/render(using:).json": {
       "etag": "\"2b24-65d55d38e0d47-df\"",
-      "file_path": "documentation/TouchController/tctouchcontroller/render-using.md",
+      "file_path": "documentation/TouchController/tctouchcontroller/render(using).md",
       "hash": "f007ad8d95ee9faea8307654fffa6eb83bcbeb1feeb55374846293f7fcabb9e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/size.json": {
@@ -2837,17 +2837,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/init().json": {
       "etag": "\"1ee9-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init.md",
+      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init().md",
       "hash": "c73f1e36c0b51f635cf8a5fbe02d283ec6469783ae49b400f53108bbe9cd598b"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/init(mtkview:)-25g2c.json": {
       "etag": "\"1691-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init-mtkview-25g2c.md",
+      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init(mtkview)-25g2c.md",
       "hash": "a4f6410a7db84d71713bce02b43f0e0ff886c185a57aa473d422fedc92d438e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/init(mtkview:)-7cs6u.json": {
       "etag": "\"253e-65d55d38ab311-df\"",
-      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init-mtkview-7cs6u.md",
+      "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init(mtkview)-7cs6u.md",
       "hash": "db09df7a5577f1274907a9c7e35abf4d3334ffc4f805a75e53a2a5a1768657af"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/samplecount.json": {
@@ -2922,7 +2922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/init().json": {
       "etag": "\"17d4-65d55d38fedbe-df\"",
-      "file_path": "documentation/TouchController/tctouchpaddescriptor/init.md",
+      "file_path": "documentation/TouchController/tctouchpaddescriptor/init().md",
       "hash": "02d90b0f28598c41741fcbaeeb87e58e18aec1476aec085a6e3cbafacc377ce3"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/label.json": {

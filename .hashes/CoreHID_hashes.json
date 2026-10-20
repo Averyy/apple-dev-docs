@@ -32,12 +32,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/devicereference-swift.property": {
       "etag": "\"1a86-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/devicereference-swiftproperty.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/devicereference-swift.property.md",
       "hash": "ec9513aee9f49fcd75857fc58246c9eb07d8ae92b97afaa9a11579b96c2ccb1c"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/devicereference-swift.struct": {
       "etag": "\"2d67-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/devicereference-swiftstruct.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/devicereference-swift.struct.md",
       "hash": "679113798a14a6c97a5393b1fa04399cbf097f51b79ded028f5d76c8e04c5a13"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/devicereference-swift.struct/deviceid": {
@@ -52,12 +52,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/dispatchgetreportrequest(type:id:timeout:)": {
       "etag": "\"4083-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/dispatchgetreportrequest-typeidtimeout.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/dispatchgetreportrequest(type,id,timeout).md",
       "hash": "691fcd087f4d9fc7bd95065ff9bd94302e7f72078d0869df3e2394b1164d1a74"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/dispatchsetreportrequest(type:id:data:timeout:)": {
       "etag": "\"3bb1-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/dispatchsetreportrequest-typeiddatatimeout.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/dispatchsetreportrequest(type,id,data,timeout).md",
       "hash": "af60eda0fe96bf4f385f925584da257f8f9e5db36954e6cac26c132cadbe66f9"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/elements": {
@@ -72,17 +72,17 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/hidelementupdateresult/subscript(_:)-56db0": {
       "etag": "\"2ed4-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/hidelementupdateresult/subscript-56db0.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/hidelementupdateresult/subscript(_)-56db0.md",
       "hash": "e02580d604996fb727ae42c2e9fb65158b72d66b337fcb34567db8b6c091ac19"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/hidelementupdateresult/subscript(_:)-7mvq2": {
       "etag": "\"3306-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/hidelementupdateresult/subscript-7mvq2.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/hidelementupdateresult/subscript(_)-7mvq2.md",
       "hash": "639c7f6a60fd644d777202b266a5b110f2bda35a9731d665c5738518c6c040ba"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/init(devicereference:)": {
       "etag": "\"264e-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/init-devicereference.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/init(devicereference).md",
       "hash": "81d66ca5086ce9c3427f1e30f49256f5815b1bcb957dc3984a5d2a579067d32a"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/isbuiltin": {
@@ -112,7 +112,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/monitornotifications(reportidstomonitor:elementstomonitor:)": {
       "etag": "\"4729-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/monitornotifications-reportidstomonitorelementstomonitor.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/monitornotifications(reportidstomonitor,elementstomonitor).md",
       "hash": "66f8524db015de81995dd796d21499e1ac7140a660e95392905b72cbe0edfe55"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/notification": {
@@ -137,12 +137,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/notification/elementupdates(values:)": {
       "etag": "\"2611-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/notification/elementupdates-values.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/notification/elementupdates(values).md",
       "hash": "6d866f5af70c9ccff29d0961ec698ef2963b9919caff46a8abfb48512847d8d1"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/notification/inputreport(id:data:timestamp:)": {
       "etag": "\"2254-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/notification/inputreport-iddatatimestamp.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/notification/inputreport(id,data,timestamp).md",
       "hash": "f007ae9497d6b89c9405d80dcd1df23b0f5e2a61340441ff528ba85c98163ebe"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/primaryusage": {
@@ -167,7 +167,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/provideelementupdate/init(values:)": {
       "etag": "\"19fb-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/provideelementupdate/init-values.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/provideelementupdate/init(values).md",
       "hash": "ff293c94f5ec110a3bc46b0629aeac273a5d493f377570f72128ac9d451e31e2"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/provideelementupdate/values": {
@@ -187,7 +187,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/requestelementupdate/init(elements:polldevice:)": {
       "etag": "\"1b56-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/requestelementupdate/init-elementspolldevice.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/requestelementupdate/init(elements,polldevice).md",
       "hash": "cada38f2ce5d2c273980fe7f71c9d12480aab0e5ad34184452fb6f6f23870915"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/requestelementupdate/polldevice": {
@@ -197,7 +197,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/seizedevice()": {
       "etag": "\"359c-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/seizedevice.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/seizedevice().md",
       "hash": "9c88e0850e8fac6ddfe65c20e18f4f14fad855d267a018c31fa438d41d601a50"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/serialnumber": {
@@ -207,7 +207,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/subscript(_:)": {
       "etag": "\"1c0a-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/subscript.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/subscript(_).md",
       "hash": "08e3a5e4dfd965a2737e7da7878c8f41f764cd11af900aa4449d22ca17470de9"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/transport": {
@@ -232,7 +232,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/updateelements(_:timeout:)": {
       "etag": "\"34f4-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/updateelements-timeout.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/updateelements(_,timeout).md",
       "hash": "470eb466c8e6dd5ef8cdfe2bfd78cb8415a228a41b43d0a3acfe01627de08a3d"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceclient/vendorid": {
@@ -252,12 +252,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceerror/!=(_:_:)": {
       "etag": "W/\"856d294b561fabfd60840257dde85bd7\"",
-      "file_path": "documentation/CoreHID/hiddeviceerror/unknown.md",
+      "file_path": "documentation/CoreHID/hiddeviceerror/noteq(_,_).md",
       "hash": "c732d5009778c7b754f7825f5db26c901bcf25b953891e1280e4822e5dd753c6"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceerror/==(_:_:)": {
       "etag": "W/\"1844b79998fa8c384e1ee9ee75f4ce36\"",
-      "file_path": "documentation/CoreHID/hiddeviceerror/unknown.md",
+      "file_path": "documentation/CoreHID/hiddeviceerror/eqeq(_,_).md",
       "hash": "eab71b8cc4720b50dba10b5e6eae0b9b67201a3e6f02de0af93e66df3d46edae"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceerror/aborted": {
@@ -332,7 +332,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceerror/unknown(_:)": {
       "etag": "\"119f-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceerror/unknown.md",
+      "file_path": "documentation/CoreHID/hiddeviceerror/unknown(_).md",
       "hash": "a22ba1e914b3b61992873bc5dc570d917264ad519ef14636decf1d9147118f04"
     },
     "https://developer.apple.com/documentation/corehid/hiddeviceerror/unsupported": {
@@ -542,7 +542,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddevicemanager/devicematchingcriteria/init(primaryusage:deviceusages:vendorid:productid:transport:product:manufacturer:modelnumber:versionnumber:serialnumber:uniqueid:locationid:localizationcode:isbuiltin:extraproperties:)": {
       "etag": "\"97a6-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/devicematchingcriteria/init-primaryusagedeviceusagesvendoridproductidtransportproductmanufacturermodelnumberversionnumberserialnumberuniqueidlocationidlocalizationcodeisbuiltinextraproperties.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/devicematchingcriteria/init(primaryusage,deviceusages,vendorid,productid,transport,product,manufacturer,modelnumber,versionnumber,serialnumber,uniqueid,locationid,localizationcode,isbuiltin,extraproperties).md",
       "hash": "288d50c0d7c7ceb152a30f1d3539e592cde4fa7f558210cd72bc1e67fc550be5"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicemanager/devicematchingcriteria/isbuiltin": {
@@ -612,12 +612,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddevicemanager/init()": {
       "etag": "\"c3b-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/init.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/init().md",
       "hash": "cb58ecdf18fd80449beffe8e3de9dc6955082fd872f295a8898c06534409c09c"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicemanager/monitornotifications(matchingcriteria:)": {
       "etag": "\"4039-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/monitornotifications-matchingcriteria.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/monitornotifications(matchingcriteria).md",
       "hash": "e69b234bd100e3c22fd833e18d4e4cd520a05fc940be45d7817cf91b8c46b4fe"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicemanager/notification": {
@@ -627,12 +627,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddevicemanager/notification/devicematched(_:)": {
       "etag": "\"1973-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/notification/devicematched.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/notification/devicematched(_).md",
       "hash": "6d08a73e95dc747c4ac911a10b163ce13ad9c45dce63c101d3100638f70ebc1b"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicemanager/notification/deviceremoved(_:)": {
       "etag": "\"1e0b-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/notification/deviceremoved.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/notification/deviceremoved(_).md",
       "hash": "22787f7c3fa3db36f71744ea59bb0b28b8feb276a1959187ab1fbf67a12bd785"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport": {
@@ -642,12 +642,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport/!=(_:_:)": {
       "etag": "W/\"d38edf228bb4bfbe747fa03c9c043510\"",
-      "file_path": "documentation/CoreHID/hiddevicetransport/unknown.md",
+      "file_path": "documentation/CoreHID/hiddevicetransport/noteq(_,_).md",
       "hash": "807d425c4e5661c4a4b806e2403146368ec1e2da68a9dbc44432742819d67375"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport/==(_:_:)": {
       "etag": "W/\"850dd77c288c4941066fc33e5dd20d01\"",
-      "file_path": "documentation/CoreHID/hiddevicetransport/unknown.md",
+      "file_path": "documentation/CoreHID/hiddevicetransport/eqeq(_,_).md",
       "hash": "908932056863628956479d44657b7884c3d405b371be5a2ea7641b95ce4d7825"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport/aid": {
@@ -712,7 +712,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport/unknown(_:)": {
       "etag": "\"1026-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hiddevicetransport/unknown.md",
+      "file_path": "documentation/CoreHID/hiddevicetransport/unknown(_).md",
       "hash": "2de40ce5245745b13c8c270225106349c2984d237aea2dbc676fdbadb85b3e4c"
     },
     "https://developer.apple.com/documentation/corehid/hiddevicetransport/usb": {
@@ -807,37 +807,37 @@
     },
     "https://developer.apple.com/documentation/corehid/hidelement/value/init(element:frombytes:timestamp:)": {
       "etag": "\"377d-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/init-elementfrombytestimestamp.md",
+      "file_path": "documentation/CoreHID/hidelement/value/init(element,frombytes,timestamp).md",
       "hash": "44695e6a0387193ddabcb100a48a9faa5161c8025dd13e87270dfbf70fcbe3ad"
     },
     "https://developer.apple.com/documentation/corehid/hidelement/value/init(element:fromintegertruncatingifneeded:timestamp:)": {
       "etag": "\"3972-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/init-elementfromintegertruncatingifneededtimestamp.md",
+      "file_path": "documentation/CoreHID/hidelement/value/init(element,fromintegertruncatingifneeded,timestamp).md",
       "hash": "810491aba75546438854b424b9aaca5b268a224dd33599fcaed5b6d1faf6a430"
     },
     "https://developer.apple.com/documentation/corehid/hidelement/value/init(element:fromlogicalvaluetruncatingifneeded:timestamp:)": {
       "etag": "\"3993-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/init-elementfromlogicalvaluetruncatingifneededtimestamp.md",
+      "file_path": "documentation/CoreHID/hidelement/value/init(element,fromlogicalvaluetruncatingifneeded,timestamp).md",
       "hash": "0598d3e7076b830ad110576e5ec867f3fdb69b1c38605f62679ff09a671e4d28"
     },
     "https://developer.apple.com/documentation/corehid/hidelement/value/init(element:fromphysicalvalue:timestamp:)": {
       "etag": "\"358a-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/init-elementfromphysicalvaluetimestamp.md",
+      "file_path": "documentation/CoreHID/hidelement/value/init(element,fromphysicalvalue,timestamp).md",
       "hash": "a86e42846fe1535a716322ca2ac5af974405dbeaabb52fce44d8820fc7126d18"
     },
     "https://developer.apple.com/documentation/corehid/hidelement/value/integervalue(astypetruncatingifneeded:)": {
       "etag": "\"2ffe-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/integervalue-astypetruncatingifneeded.md",
+      "file_path": "documentation/CoreHID/hidelement/value/integervalue(astypetruncatingifneeded).md",
       "hash": "b08fc664e2c7ddedfe0a1b7a273dae98baa135ea4dadffa94d84d463208e00b7"
     },
     "https://developer.apple.com/documentation/corehid/hidelement/value/logicalvalue(astypetruncatingifneeded:)": {
       "etag": "\"2e5e-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/logicalvalue-astypetruncatingifneeded.md",
+      "file_path": "documentation/CoreHID/hidelement/value/logicalvalue(astypetruncatingifneeded).md",
       "hash": "2d28585a3417c875fdc5276d9502bf9c0a9900c0e612e9705d57b17288770a41"
     },
     "https://developer.apple.com/documentation/corehid/hidelement/value/physicalvalue(fromtypetruncatingifneeded:as:)": {
       "etag": "\"35e9-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/physicalvalue-fromtypetruncatingifneededas.md",
+      "file_path": "documentation/CoreHID/hidelement/value/physicalvalue(fromtypetruncatingifneeded,as).md",
       "hash": "492b17dc5e2ec3ac173d4ac8575bb781aa2d31c53a92d383b836ef03a8c73910"
     },
     "https://developer.apple.com/documentation/corehid/hidelement/value/timestamp": {
@@ -937,7 +937,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidreportid/init(rawvalue:)": {
       "etag": "\"1071-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hidreportid/init-rawvalue.md",
+      "file_path": "documentation/CoreHID/hidreportid/init(rawvalue).md",
       "hash": "c8909af0d87c936700320b4169bc8662fdac5b181410582fb6b79bd93d4954c6"
     },
     "https://developer.apple.com/documentation/corehid/hidreportid/rawvalue": {
@@ -972,7 +972,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/arcade(_:)": {
       "etag": "\"1176-65d55e9fdfb8a-df\"",
-      "file_path": "documentation/CoreHID/hidusage/arcade.md",
+      "file_path": "documentation/CoreHID/hidusage/arcade(_).md",
       "hash": "4b5eea340789ffe884e20c6d346e5da83ae8be494d97b55a683173db91237534"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/arcadeusage": {
@@ -1122,7 +1122,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/auxiliarydisplay(_:)": {
       "etag": "\"126c-65d55e9f299ba-df\"",
-      "file_path": "documentation/CoreHID/hidusage/auxiliarydisplay.md",
+      "file_path": "documentation/CoreHID/hidusage/auxiliarydisplay(_).md",
       "hash": "33ee029355d3ae6789cfeaaf3bbfd21b4adeda9e1628a27588ee2813cdd8bc87"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/auxiliarydisplayusage": {
@@ -1512,7 +1512,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/barcodescanner(_:)": {
       "etag": "\"123a-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/barcodescanner.md",
+      "file_path": "documentation/CoreHID/hidusage/barcodescanner(_).md",
       "hash": "265799feeee09a675ac0373dca49c71312d4c6df4ce6169b0d74e302e6486fdd"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/barcodescannerusage": {
@@ -2497,7 +2497,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/batterysystem(_:)": {
       "etag": "\"1222-65d55ea073f2d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/batterysystem.md",
+      "file_path": "documentation/CoreHID/hidusage/batterysystem(_).md",
       "hash": "9f30b8fafef7fee9945b33dd27e57c586e9d3aca18d52babae69328f057dfe6d"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/batterysystemusage": {
@@ -2967,7 +2967,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/brailledisplay(_:)": {
       "etag": "\"123a-65d55e9f8c0c2-df\"",
-      "file_path": "documentation/CoreHID/hidusage/brailledisplay.md",
+      "file_path": "documentation/CoreHID/hidusage/brailledisplay(_).md",
       "hash": "43fb869c42a41c49fbf7d96eab855e657b5e69680eaf720e719e6bd6546f6c27"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/brailledisplayusage": {
@@ -3197,7 +3197,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/button(_:)": {
       "etag": "\"fa6-65d55e9f8c0c2-df\"",
-      "file_path": "documentation/CoreHID/hidusage/button.md",
+      "file_path": "documentation/CoreHID/hidusage/button(_).md",
       "hash": "785379bea0d49a790b9ee9d050735c58bd11abc0c828db99577b486831033ada"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/buttonusage": {
@@ -3212,7 +3212,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/cameracontrol(_:)": {
       "etag": "\"1221-65d55ea0bb9bf-df\"",
-      "file_path": "documentation/CoreHID/hidusage/cameracontrol.md",
+      "file_path": "documentation/CoreHID/hidusage/cameracontrol(_).md",
       "hash": "ef51ff65e75cbc5a16fa882f37b8cc494aec2055b6625e1b9b1deb2473ac6f19"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/cameracontrolusage": {
@@ -3237,7 +3237,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/consumer(_:)": {
       "etag": "\"11a8-65d55e9eecede-df\"",
-      "file_path": "documentation/CoreHID/hidusage/consumer.md",
+      "file_path": "documentation/CoreHID/hidusage/consumer(_).md",
       "hash": "1eada5b84ce629ed0bc65ee76fc8d77259a0305808a9609f7f528956069e2a6a"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/consumerusage": {
@@ -5502,7 +5502,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/digitizers(_:)": {
       "etag": "\"11db-65d55ea09c85b-df\"",
-      "file_path": "documentation/CoreHID/hidusage/digitizers.md",
+      "file_path": "documentation/CoreHID/hidusage/digitizers(_).md",
       "hash": "484bdd722ef5a1401e3f4c18dd76ec6dd64c41ba1c0d0b2e3c567f8010d6272a"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/digitizersusage": {
@@ -6057,7 +6057,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/eyeandheadtrackers(_:)": {
       "etag": "\"1298-65d55ea257bbd-df\"",
-      "file_path": "documentation/CoreHID/hidusage/eyeandheadtrackers.md",
+      "file_path": "documentation/CoreHID/hidusage/eyeandheadtrackers(_).md",
       "hash": "039ed06137b2813a3b9c4a4f4aff71dd2a3722ebd0b5c750dcc9c978db817f8f"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/eyeandheadtrackersusage": {
@@ -6242,7 +6242,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/fidoalliance(_:)": {
       "etag": "\"120d-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hidusage/fidoalliance.md",
+      "file_path": "documentation/CoreHID/hidusage/fidoalliance(_).md",
       "hash": "f682c67dd592a5ece1e11eb264b128b0ae81a6c7bda33190196f9a4700af554c"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/fidoallianceusage": {
@@ -6272,7 +6272,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/gamecontrols(_:)": {
       "etag": "\"1207-65d55e9f8c0c2-df\"",
-      "file_path": "documentation/CoreHID/hidusage/gamecontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/gamecontrols(_).md",
       "hash": "8df1eef0a76b679f1637c62d9c663ac5772837bbfefefd33607a031e67219177"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/gamecontrolsusage": {
@@ -6432,12 +6432,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/generic(_:_:)": {
       "etag": "\"1148-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/generic.md",
+      "file_path": "documentation/CoreHID/hidusage/generic(_,_).md",
       "hash": "f5824e668a3f23377d8a386f3a4a45b2c4bf454cefc1e4f5bb4878106c82cdc4"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/genericdesktop(_:)": {
       "etag": "\"123a-65d55e9eecede-df\"",
-      "file_path": "documentation/CoreHID/hidusage/genericdesktop.md",
+      "file_path": "documentation/CoreHID/hidusage/genericdesktop(_).md",
       "hash": "e85ce045478211e90f499123be0088360a1883df2e3b43dd62571676b787f2ea"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/genericdesktopusage": {
@@ -7022,7 +7022,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/genericdevicecontrols(_:)": {
       "etag": "\"12e3-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/genericdevicecontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/genericdevicecontrols(_).md",
       "hash": "3f6b68ffdc8d92e7d42b89b69252269716d2d43de60ad946d89dbdd5f9f193cc"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/genericdevicecontrolsusage": {
@@ -7157,7 +7157,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/haptics(_:)": {
       "etag": "\"118f-65d55ea05065d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/haptics.md",
+      "file_path": "documentation/CoreHID/hidusage/haptics(_).md",
       "hash": "ca8692a08739585952f98150bddb08df2f644699b5c9d4b11f5fe8685ecb94de"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/hapticsusage": {
@@ -7317,12 +7317,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/init(page:usage:)": {
       "etag": "\"16d8-65d55ea1261e0-df\"",
-      "file_path": "documentation/CoreHID/hidusage/init-pageusage.md",
+      "file_path": "documentation/CoreHID/hidusage/init(page,usage).md",
       "hash": "7298c426d3ed793c394e7ae6163b66f6cdbaa4538c71d2e895605b7b322c7ac1"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/keyboardorkeypad(_:)": {
       "etag": "\"126c-65d55ea05065d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/keyboardorkeypad.md",
+      "file_path": "documentation/CoreHID/hidusage/keyboardorkeypad(_).md",
       "hash": "cc0c9009182f0e5f8410bd1119e71c9c2f5697fca1d42a9b88dcb093340c308a"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/keyboardorkeypadusage": {
@@ -8427,7 +8427,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/led(_:)": {
       "etag": "\"1127-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/led.md",
+      "file_path": "documentation/CoreHID/hidusage/led(_).md",
       "hash": "83c00e6ff174ba84d1301a165ca5dbec2caecfa9d9cd96ceed96fb1c1c2a4020"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/ledusage": {
@@ -8922,7 +8922,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/lightingandillumination(_:)": {
       "etag": "\"1314-65d55ea05065d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/lightingandillumination.md",
+      "file_path": "documentation/CoreHID/hidusage/lightingandillumination(_).md",
       "hash": "80008776f4452db742e2ebba9b04556da943518dfd420f4657c93f13f8eec52c"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/lightingandilluminationusage": {
@@ -9102,7 +9102,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/magneticstripereader(_:)": {
       "etag": "\"12cc-65d55ea241e8c-df\"",
-      "file_path": "documentation/CoreHID/hidusage/magneticstripereader.md",
+      "file_path": "documentation/CoreHID/hidusage/magneticstripereader(_).md",
       "hash": "0fb9281093cc404be613bf249d64ba8afb095bce8f3bb672638dfdcdb94111ff"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/magneticstripereaderusage": {
@@ -9167,7 +9167,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/medicalinstrument(_:)": {
       "etag": "\"1282-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hidusage/medicalinstrument.md",
+      "file_path": "documentation/CoreHID/hidusage/medicalinstrument(_).md",
       "hash": "13bad6c3346711c59bbd6855559a4a03ce62b46648978e734559c9c9a6229c19"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/medicalinstrumentusage": {
@@ -9327,12 +9327,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/monitor(_:)": {
       "etag": "\"118f-65d55ea241e8c-df\"",
-      "file_path": "documentation/CoreHID/hidusage/monitor.md",
+      "file_path": "documentation/CoreHID/hidusage/monitor(_).md",
       "hash": "f87303f8fc81e056f547d5e2e1100af0918d8664a03b65ba038e9ec890cca775"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/monitorenumerated(_:)": {
       "etag": "\"1020-65d55e9f3e6de-df\"",
-      "file_path": "documentation/CoreHID/hidusage/monitorenumerated.md",
+      "file_path": "documentation/CoreHID/hidusage/monitorenumerated(_).md",
       "hash": "4a43d9e1cb516722e0d0b8067112a3f0e01ec41f5717ba2ffdfd4c8f818187f9"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/monitorenumeratedusage": {
@@ -9377,7 +9377,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/ordinal(_:)": {
       "etag": "\"fb1-65d55e9f299ba-df\"",
-      "file_path": "documentation/CoreHID/hidusage/ordinal.md",
+      "file_path": "documentation/CoreHID/hidusage/ordinal(_).md",
       "hash": "f53dec15d8059d121714429ac3beedb2b32ad58c4f279d60d19c3760541a352d"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/ordinalusage": {
@@ -9397,7 +9397,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/physicalinputdevice(_:)": {
       "etag": "\"12b4-65d55e9eecede-df\"",
-      "file_path": "documentation/CoreHID/hidusage/physicalinputdevice.md",
+      "file_path": "documentation/CoreHID/hidusage/physicalinputdevice(_).md",
       "hash": "01463f46237bdfab7fd0309b7414381eed924e9bb154f4f100044d3963c17484"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/physicalinputdeviceusage": {
@@ -9937,7 +9937,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/power(_:)": {
       "etag": "\"115d-65d55e9eecede-df\"",
-      "file_path": "documentation/CoreHID/hidusage/power.md",
+      "file_path": "documentation/CoreHID/hidusage/power(_).md",
       "hash": "a2bb02020793187608a22ad36624e42ac99ea0c0a3fd10e625a4eaef4da09319"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/powerusage": {
@@ -10337,7 +10337,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/scales(_:)": {
       "etag": "\"1176-65d55ea1261e0-df\"",
-      "file_path": "documentation/CoreHID/hidusage/scales.md",
+      "file_path": "documentation/CoreHID/hidusage/scales(_).md",
       "hash": "d425c0d6d902f86aa156d8aa62ae016d381d0543085f1c3e8ec0fc728053ae74"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/scalesusage": {
@@ -10582,7 +10582,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/sensors(_:)": {
       "etag": "\"118f-65d55ea241e8c-df\"",
-      "file_path": "documentation/CoreHID/hidusage/sensors.md",
+      "file_path": "documentation/CoreHID/hidusage/sensors(_).md",
       "hash": "14cd9f59efbd7321f10673fc4aa318708c0c4e1ad87cd86231ef3a463b5391a5"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/sensorsusage": {
@@ -13922,7 +13922,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/simulationcontrols(_:)": {
       "etag": "\"129e-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hidusage/simulationcontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/simulationcontrols(_).md",
       "hash": "69cb536d15d93d26a1735e6dae466bb5ea8e798183d26c745af02c446b9c4671"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/simulationcontrolsusage": {
@@ -14192,7 +14192,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/soc(_:)": {
       "etag": "\"1127-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hidusage/soc.md",
+      "file_path": "documentation/CoreHID/hidusage/soc(_).md",
       "hash": "c3ac64dd883c61193c99aadca1352c87bbf12642dd34037b29daf6c523cf0d90"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/socusage": {
@@ -14257,7 +14257,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/sportcontrols(_:)": {
       "etag": "\"1220-65d55ea05065d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/sportcontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/sportcontrols(_).md",
       "hash": "929e4915d734fa335e8131bb1f79e04921babd3b855531eac06cbd6a8273957a"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/sportcontrolsusage": {
@@ -14442,7 +14442,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/telephonydevice(_:)": {
       "etag": "\"1254-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hidusage/telephonydevice.md",
+      "file_path": "documentation/CoreHID/hidusage/telephonydevice(_).md",
       "hash": "99dbff753c32d020bacc3147aac03a5b37b4f30030213c8a7a4c6408c5fd8eba"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/telephonydeviceusage": {
@@ -14957,7 +14957,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/vesavirtualcontrols(_:)": {
       "etag": "\"12b7-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrols(_).md",
       "hash": "219747369a9cf5d8f49fefbebafe3fe22f00f12e5729ade9886805fe32057a5b"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/vesavirtualcontrolsusage": {
@@ -15042,7 +15042,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/vesavirtualcontrolsusage/horizontalmoir_": {
       "etag": "\"f53-65d55e9eaf549-df\"",
-      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrolsusage/horizontalmoir.md",
+      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrolsusage/horizontalmoir_.md",
       "hash": "bfe3a5b2bad39cff5b0b15a7af1235ef728c25f13321fdbb8905a2fb0986f98d"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/vesavirtualcontrolsusage/horizontalpincushion": {
@@ -15172,7 +15172,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/vesavirtualcontrolsusage/verticalmoir_": {
       "etag": "\"f3d-65d55e9eaf549-df\"",
-      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrolsusage/verticalmoir.md",
+      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrolsusage/verticalmoir_.md",
       "hash": "c7a2e4aeabc6ab1e37770648e155edab47744645a0b8ee6fa604b311e7730225"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/vesavirtualcontrolsusage/verticalpincushion": {
@@ -15197,7 +15197,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidusage/vrcontrols(_:)": {
       "etag": "\"11db-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/vrcontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/vrcontrols(_).md",
       "hash": "0a7208ec9a903354b1a3b18a384047829a6931d0a907e90117f30407f66b45f7"
     },
     "https://developer.apple.com/documentation/corehid/hidusage/vrcontrolsusage": {
@@ -15277,7 +15277,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevice/activate(delegate:)": {
       "etag": "\"1e56-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevice/activate-delegate.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevice/activate(delegate).md",
       "hash": "41fe1b04621bfbd43093c096feba2c4df79851cf974a5684756ef5896095be90"
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevice/devicereference": {
@@ -15287,7 +15287,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevice/dispatchinputreport(data:timestamp:)": {
       "etag": "\"27f1-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevice/dispatchinputreport-datatimestamp.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevice/dispatchinputreport(data,timestamp).md",
       "hash": "86992b5dbaf56da7163800e1d119532fd905ec6b4df07b96bd65bc938cfb1421"
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevice/hiddevice": {
@@ -15297,7 +15297,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevice/init(properties:)": {
       "etag": "\"1eca-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevice/init-properties.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevice/init(properties).md",
       "hash": "f95f9106ec8fa514d92a24dc7c11ae06b33b09f8f0131b7b5b4f513dd75ca9f9"
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevice/properties": {
@@ -15312,7 +15312,7 @@
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevice/properties/init(descriptor:vendorid:productid:transport:product:manufacturer:modelnumber:versionnumber:serialnumber:uniqueid:locationid:localizationcode:extraproperties:)": {
       "etag": "\"7c92-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevice/properties/init-descriptorvendoridproductidtransportproductmanufacturermodelnumberversionnumberserialnumberuniqueidlocationidlocalizationcodeextraproperties.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevice/properties/init(descriptor,vendorid,productid,transport,product,manufacturer,modelnumber,versionnumber,serialnumber,uniqueid,locationid,localizationcode,extraproperties).md",
       "hash": "a0ea630eb961adb2e80ae94913129522f54d4f3c22a0fb078797ed871def5fab"
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevice/properties/localizationcode": {
@@ -15377,12 +15377,12 @@
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevicedelegate/hidvirtualdevice(_:receivedgetreportrequestoftype:id:maxsize:)": {
       "etag": "\"39df-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevicedelegate/hidvirtualdevice-receivedgetreportrequestoftypeidmaxsize.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevicedelegate/hidvirtualdevice(_,receivedgetreportrequestoftype,id,maxsize).md",
       "hash": "ca9fc1909334d0302ef72f064ce2413fe843b757ed3ee98f772e0b89ca08f1d4"
     },
     "https://developer.apple.com/documentation/corehid/hidvirtualdevicedelegate/hidvirtualdevice(_:receivedsetreportrequestoftype:id:data:)": {
       "etag": "\"35aa-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevicedelegate/hidvirtualdevice-receivedsetreportrequestoftypeiddata.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevicedelegate/hidvirtualdevice(_,receivedsetreportrequestoftype,id,data).md",
       "hash": "dee1254a15fa6c26c141a53182d18815d740053ed27a261fcf45d0914ec5e60a"
     },
     "https://developer.apple.com/tutorials/data/documentation/CoreHID.json": {
@@ -15417,12 +15417,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/devicereference-swift.property.json": {
       "etag": "\"1a86-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/devicereference-swiftproperty.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/devicereference-swift.property.md",
       "hash": "ec9513aee9f49fcd75857fc58246c9eb07d8ae92b97afaa9a11579b96c2ccb1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/devicereference-swift.struct.json": {
       "etag": "\"2d67-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/devicereference-swiftstruct.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/devicereference-swift.struct.md",
       "hash": "679113798a14a6c97a5393b1fa04399cbf097f51b79ded028f5d76c8e04c5a13"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/devicereference-swift.struct/deviceid.json": {
@@ -15437,12 +15437,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/dispatchgetreportrequest(type:id:timeout:).json": {
       "etag": "\"4083-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/dispatchgetreportrequest-typeidtimeout.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/dispatchgetreportrequest(type,id,timeout).md",
       "hash": "691fcd087f4d9fc7bd95065ff9bd94302e7f72078d0869df3e2394b1164d1a74"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/dispatchsetreportrequest(type:id:data:timeout:).json": {
       "etag": "\"3bb1-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/dispatchsetreportrequest-typeiddatatimeout.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/dispatchsetreportrequest(type,id,data,timeout).md",
       "hash": "af60eda0fe96bf4f385f925584da257f8f9e5db36954e6cac26c132cadbe66f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/elements.json": {
@@ -15457,17 +15457,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/hidelementupdateresult/subscript(_:)-56db0.json": {
       "etag": "\"2ed4-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/hidelementupdateresult/subscript-56db0.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/hidelementupdateresult/subscript(_)-56db0.md",
       "hash": "e02580d604996fb727ae42c2e9fb65158b72d66b337fcb34567db8b6c091ac19"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/hidelementupdateresult/subscript(_:)-7mvq2.json": {
       "etag": "\"3306-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/hidelementupdateresult/subscript-7mvq2.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/hidelementupdateresult/subscript(_)-7mvq2.md",
       "hash": "639c7f6a60fd644d777202b266a5b110f2bda35a9731d665c5738518c6c040ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/init(devicereference:).json": {
       "etag": "\"264e-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/init-devicereference.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/init(devicereference).md",
       "hash": "81d66ca5086ce9c3427f1e30f49256f5815b1bcb957dc3984a5d2a579067d32a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/isbuiltin.json": {
@@ -15497,7 +15497,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/monitornotifications(reportidstomonitor:elementstomonitor:).json": {
       "etag": "\"4729-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/monitornotifications-reportidstomonitorelementstomonitor.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/monitornotifications(reportidstomonitor,elementstomonitor).md",
       "hash": "66f8524db015de81995dd796d21499e1ac7140a660e95392905b72cbe0edfe55"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/notification.json": {
@@ -15522,12 +15522,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/notification/elementupdates(values:).json": {
       "etag": "\"2611-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/notification/elementupdates-values.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/notification/elementupdates(values).md",
       "hash": "6d866f5af70c9ccff29d0961ec698ef2963b9919caff46a8abfb48512847d8d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/notification/inputreport(id:data:timestamp:).json": {
       "etag": "\"2254-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/notification/inputreport-iddatatimestamp.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/notification/inputreport(id,data,timestamp).md",
       "hash": "f007ae9497d6b89c9405d80dcd1df23b0f5e2a61340441ff528ba85c98163ebe"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/primaryusage.json": {
@@ -15552,7 +15552,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/provideelementupdate/init(values:).json": {
       "etag": "\"19fb-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/provideelementupdate/init-values.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/provideelementupdate/init(values).md",
       "hash": "ff293c94f5ec110a3bc46b0629aeac273a5d493f377570f72128ac9d451e31e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/provideelementupdate/values.json": {
@@ -15572,7 +15572,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/requestelementupdate/init(elements:polldevice:).json": {
       "etag": "\"1b56-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/requestelementupdate/init-elementspolldevice.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/requestelementupdate/init(elements,polldevice).md",
       "hash": "cada38f2ce5d2c273980fe7f71c9d12480aab0e5ad34184452fb6f6f23870915"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/requestelementupdate/polldevice.json": {
@@ -15582,7 +15582,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/seizedevice().json": {
       "etag": "\"359c-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/seizedevice.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/seizedevice().md",
       "hash": "9c88e0850e8fac6ddfe65c20e18f4f14fad855d267a018c31fa438d41d601a50"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/serialnumber.json": {
@@ -15592,7 +15592,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/subscript(_:).json": {
       "etag": "\"1c0a-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/subscript.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/subscript(_).md",
       "hash": "08e3a5e4dfd965a2737e7da7878c8f41f764cd11af900aa4449d22ca17470de9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/transport.json": {
@@ -15617,7 +15617,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/updateelements(_:timeout:).json": {
       "etag": "\"34f4-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceclient/updateelements-timeout.md",
+      "file_path": "documentation/CoreHID/hiddeviceclient/updateelements(_,timeout).md",
       "hash": "470eb466c8e6dd5ef8cdfe2bfd78cb8415a228a41b43d0a3acfe01627de08a3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceclient/vendorid.json": {
@@ -15637,12 +15637,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceerror/!=(_:_:).json": {
       "etag": "W/\"856d294b561fabfd60840257dde85bd7\"",
-      "file_path": "documentation/CoreHID/hiddeviceerror/unknown.md",
+      "file_path": "documentation/CoreHID/hiddeviceerror/noteq(_,_).md",
       "hash": "c732d5009778c7b754f7825f5db26c901bcf25b953891e1280e4822e5dd753c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceerror/==(_:_:).json": {
       "etag": "W/\"1844b79998fa8c384e1ee9ee75f4ce36\"",
-      "file_path": "documentation/CoreHID/hiddeviceerror/unknown.md",
+      "file_path": "documentation/CoreHID/hiddeviceerror/eqeq(_,_).md",
       "hash": "eab71b8cc4720b50dba10b5e6eae0b9b67201a3e6f02de0af93e66df3d46edae"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceerror/aborted.json": {
@@ -15717,7 +15717,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceerror/unknown(_:).json": {
       "etag": "\"119f-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hiddeviceerror/unknown.md",
+      "file_path": "documentation/CoreHID/hiddeviceerror/unknown(_).md",
       "hash": "a22ba1e914b3b61992873bc5dc570d917264ad519ef14636decf1d9147118f04"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddeviceerror/unsupported.json": {
@@ -15927,7 +15927,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicemanager/devicematchingcriteria/init(primaryusage:deviceusages:vendorid:productid:transport:product:manufacturer:modelnumber:versionnumber:serialnumber:uniqueid:locationid:localizationcode:isbuiltin:extraproperties:).json": {
       "etag": "\"97a6-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/devicematchingcriteria/init-primaryusagedeviceusagesvendoridproductidtransportproductmanufacturermodelnumberversionnumberserialnumberuniqueidlocationidlocalizationcodeisbuiltinextraproperties.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/devicematchingcriteria/init(primaryusage,deviceusages,vendorid,productid,transport,product,manufacturer,modelnumber,versionnumber,serialnumber,uniqueid,locationid,localizationcode,isbuiltin,extraproperties).md",
       "hash": "288d50c0d7c7ceb152a30f1d3539e592cde4fa7f558210cd72bc1e67fc550be5"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicemanager/devicematchingcriteria/isbuiltin.json": {
@@ -15997,12 +15997,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicemanager/init().json": {
       "etag": "\"c3b-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/init.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/init().md",
       "hash": "cb58ecdf18fd80449beffe8e3de9dc6955082fd872f295a8898c06534409c09c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicemanager/monitornotifications(matchingcriteria:).json": {
       "etag": "\"4039-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/monitornotifications-matchingcriteria.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/monitornotifications(matchingcriteria).md",
       "hash": "e69b234bd100e3c22fd833e18d4e4cd520a05fc940be45d7817cf91b8c46b4fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicemanager/notification.json": {
@@ -16012,12 +16012,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicemanager/notification/devicematched(_:).json": {
       "etag": "\"1973-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/notification/devicematched.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/notification/devicematched(_).md",
       "hash": "6d08a73e95dc747c4ac911a10b163ce13ad9c45dce63c101d3100638f70ebc1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicemanager/notification/deviceremoved(_:).json": {
       "etag": "\"1e0b-65d55ea3eb848-df\"",
-      "file_path": "documentation/CoreHID/hiddevicemanager/notification/deviceremoved.md",
+      "file_path": "documentation/CoreHID/hiddevicemanager/notification/deviceremoved(_).md",
       "hash": "22787f7c3fa3db36f71744ea59bb0b28b8feb276a1959187ab1fbf67a12bd785"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport.json": {
@@ -16027,12 +16027,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport/!=(_:_:).json": {
       "etag": "W/\"d38edf228bb4bfbe747fa03c9c043510\"",
-      "file_path": "documentation/CoreHID/hiddevicetransport/unknown.md",
+      "file_path": "documentation/CoreHID/hiddevicetransport/noteq(_,_).md",
       "hash": "807d425c4e5661c4a4b806e2403146368ec1e2da68a9dbc44432742819d67375"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport/==(_:_:).json": {
       "etag": "W/\"850dd77c288c4941066fc33e5dd20d01\"",
-      "file_path": "documentation/CoreHID/hiddevicetransport/unknown.md",
+      "file_path": "documentation/CoreHID/hiddevicetransport/eqeq(_,_).md",
       "hash": "908932056863628956479d44657b7884c3d405b371be5a2ea7641b95ce4d7825"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport/aid.json": {
@@ -16097,7 +16097,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport/unknown(_:).json": {
       "etag": "\"1026-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hiddevicetransport/unknown.md",
+      "file_path": "documentation/CoreHID/hiddevicetransport/unknown(_).md",
       "hash": "2de40ce5245745b13c8c270225106349c2984d237aea2dbc676fdbadb85b3e4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hiddevicetransport/usb.json": {
@@ -16192,37 +16192,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidelement/value/init(element:frombytes:timestamp:).json": {
       "etag": "\"377d-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/init-elementfrombytestimestamp.md",
+      "file_path": "documentation/CoreHID/hidelement/value/init(element,frombytes,timestamp).md",
       "hash": "44695e6a0387193ddabcb100a48a9faa5161c8025dd13e87270dfbf70fcbe3ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidelement/value/init(element:fromintegertruncatingifneeded:timestamp:).json": {
       "etag": "\"3972-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/init-elementfromintegertruncatingifneededtimestamp.md",
+      "file_path": "documentation/CoreHID/hidelement/value/init(element,fromintegertruncatingifneeded,timestamp).md",
       "hash": "810491aba75546438854b424b9aaca5b268a224dd33599fcaed5b6d1faf6a430"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidelement/value/init(element:fromlogicalvaluetruncatingifneeded:timestamp:).json": {
       "etag": "\"3993-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/init-elementfromlogicalvaluetruncatingifneededtimestamp.md",
+      "file_path": "documentation/CoreHID/hidelement/value/init(element,fromlogicalvaluetruncatingifneeded,timestamp).md",
       "hash": "0598d3e7076b830ad110576e5ec867f3fdb69b1c38605f62679ff09a671e4d28"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidelement/value/init(element:fromphysicalvalue:timestamp:).json": {
       "etag": "\"358a-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/init-elementfromphysicalvaluetimestamp.md",
+      "file_path": "documentation/CoreHID/hidelement/value/init(element,fromphysicalvalue,timestamp).md",
       "hash": "a86e42846fe1535a716322ca2ac5af974405dbeaabb52fce44d8820fc7126d18"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidelement/value/integervalue(astypetruncatingifneeded:).json": {
       "etag": "\"2ffe-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/integervalue-astypetruncatingifneeded.md",
+      "file_path": "documentation/CoreHID/hidelement/value/integervalue(astypetruncatingifneeded).md",
       "hash": "b08fc664e2c7ddedfe0a1b7a273dae98baa135ea4dadffa94d84d463208e00b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidelement/value/logicalvalue(astypetruncatingifneeded:).json": {
       "etag": "\"2e5e-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/logicalvalue-astypetruncatingifneeded.md",
+      "file_path": "documentation/CoreHID/hidelement/value/logicalvalue(astypetruncatingifneeded).md",
       "hash": "2d28585a3417c875fdc5276d9502bf9c0a9900c0e612e9705d57b17288770a41"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidelement/value/physicalvalue(fromtypetruncatingifneeded:as:).json": {
       "etag": "\"35e9-65d55ea3c5d0e-df\"",
-      "file_path": "documentation/CoreHID/hidelement/value/physicalvalue-fromtypetruncatingifneededas.md",
+      "file_path": "documentation/CoreHID/hidelement/value/physicalvalue(fromtypetruncatingifneeded,as).md",
       "hash": "492b17dc5e2ec3ac173d4ac8575bb781aa2d31c53a92d383b836ef03a8c73910"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidelement/value/timestamp.json": {
@@ -16342,7 +16342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidreportid/init(rawvalue:).json": {
       "etag": "\"1071-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hidreportid/init-rawvalue.md",
+      "file_path": "documentation/CoreHID/hidreportid/init(rawvalue).md",
       "hash": "c8909af0d87c936700320b4169bc8662fdac5b181410582fb6b79bd93d4954c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidreportid/rawvalue.json": {
@@ -16377,7 +16377,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/arcade(_:).json": {
       "etag": "\"1176-65d55e9fdfb8a-df\"",
-      "file_path": "documentation/CoreHID/hidusage/arcade.md",
+      "file_path": "documentation/CoreHID/hidusage/arcade(_).md",
       "hash": "4b5eea340789ffe884e20c6d346e5da83ae8be494d97b55a683173db91237534"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/arcadeusage.json": {
@@ -16527,7 +16527,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/auxiliarydisplay(_:).json": {
       "etag": "\"126c-65d55e9f299ba-df\"",
-      "file_path": "documentation/CoreHID/hidusage/auxiliarydisplay.md",
+      "file_path": "documentation/CoreHID/hidusage/auxiliarydisplay(_).md",
       "hash": "33ee029355d3ae6789cfeaaf3bbfd21b4adeda9e1628a27588ee2813cdd8bc87"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/auxiliarydisplayusage.json": {
@@ -16917,7 +16917,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/barcodescanner(_:).json": {
       "etag": "\"123a-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/barcodescanner.md",
+      "file_path": "documentation/CoreHID/hidusage/barcodescanner(_).md",
       "hash": "265799feeee09a675ac0373dca49c71312d4c6df4ce6169b0d74e302e6486fdd"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/barcodescannerusage.json": {
@@ -17902,7 +17902,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/batterysystem(_:).json": {
       "etag": "\"1222-65d55ea073f2d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/batterysystem.md",
+      "file_path": "documentation/CoreHID/hidusage/batterysystem(_).md",
       "hash": "9f30b8fafef7fee9945b33dd27e57c586e9d3aca18d52babae69328f057dfe6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/batterysystemusage.json": {
@@ -18372,7 +18372,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/brailledisplay(_:).json": {
       "etag": "\"123a-65d55e9f8c0c2-df\"",
-      "file_path": "documentation/CoreHID/hidusage/brailledisplay.md",
+      "file_path": "documentation/CoreHID/hidusage/brailledisplay(_).md",
       "hash": "43fb869c42a41c49fbf7d96eab855e657b5e69680eaf720e719e6bd6546f6c27"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/brailledisplayusage.json": {
@@ -18602,7 +18602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/button(_:).json": {
       "etag": "\"fa6-65d55e9f8c0c2-df\"",
-      "file_path": "documentation/CoreHID/hidusage/button.md",
+      "file_path": "documentation/CoreHID/hidusage/button(_).md",
       "hash": "785379bea0d49a790b9ee9d050735c58bd11abc0c828db99577b486831033ada"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/buttonusage.json": {
@@ -18617,7 +18617,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/cameracontrol(_:).json": {
       "etag": "\"1221-65d55ea0bb9bf-df\"",
-      "file_path": "documentation/CoreHID/hidusage/cameracontrol.md",
+      "file_path": "documentation/CoreHID/hidusage/cameracontrol(_).md",
       "hash": "ef51ff65e75cbc5a16fa882f37b8cc494aec2055b6625e1b9b1deb2473ac6f19"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/cameracontrolusage.json": {
@@ -18642,7 +18642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/consumer(_:).json": {
       "etag": "\"11a8-65d55e9eecede-df\"",
-      "file_path": "documentation/CoreHID/hidusage/consumer.md",
+      "file_path": "documentation/CoreHID/hidusage/consumer(_).md",
       "hash": "1eada5b84ce629ed0bc65ee76fc8d77259a0305808a9609f7f528956069e2a6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/consumerusage.json": {
@@ -20907,7 +20907,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/digitizers(_:).json": {
       "etag": "\"11db-65d55ea09c85b-df\"",
-      "file_path": "documentation/CoreHID/hidusage/digitizers.md",
+      "file_path": "documentation/CoreHID/hidusage/digitizers(_).md",
       "hash": "484bdd722ef5a1401e3f4c18dd76ec6dd64c41ba1c0d0b2e3c567f8010d6272a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/digitizersusage.json": {
@@ -21462,7 +21462,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/eyeandheadtrackers(_:).json": {
       "etag": "\"1298-65d55ea257bbd-df\"",
-      "file_path": "documentation/CoreHID/hidusage/eyeandheadtrackers.md",
+      "file_path": "documentation/CoreHID/hidusage/eyeandheadtrackers(_).md",
       "hash": "039ed06137b2813a3b9c4a4f4aff71dd2a3722ebd0b5c750dcc9c978db817f8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/eyeandheadtrackersusage.json": {
@@ -21647,7 +21647,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/fidoalliance(_:).json": {
       "etag": "\"120d-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hidusage/fidoalliance.md",
+      "file_path": "documentation/CoreHID/hidusage/fidoalliance(_).md",
       "hash": "f682c67dd592a5ece1e11eb264b128b0ae81a6c7bda33190196f9a4700af554c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/fidoallianceusage.json": {
@@ -21677,7 +21677,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/gamecontrols(_:).json": {
       "etag": "\"1207-65d55e9f8c0c2-df\"",
-      "file_path": "documentation/CoreHID/hidusage/gamecontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/gamecontrols(_).md",
       "hash": "8df1eef0a76b679f1637c62d9c663ac5772837bbfefefd33607a031e67219177"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/gamecontrolsusage.json": {
@@ -21837,12 +21837,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/generic(_:_:).json": {
       "etag": "\"1148-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/generic.md",
+      "file_path": "documentation/CoreHID/hidusage/generic(_,_).md",
       "hash": "f5824e668a3f23377d8a386f3a4a45b2c4bf454cefc1e4f5bb4878106c82cdc4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/genericdesktop(_:).json": {
       "etag": "\"123a-65d55e9eecede-df\"",
-      "file_path": "documentation/CoreHID/hidusage/genericdesktop.md",
+      "file_path": "documentation/CoreHID/hidusage/genericdesktop(_).md",
       "hash": "e85ce045478211e90f499123be0088360a1883df2e3b43dd62571676b787f2ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/genericdesktopusage.json": {
@@ -22427,7 +22427,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/genericdevicecontrols(_:).json": {
       "etag": "\"12e3-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/genericdevicecontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/genericdevicecontrols(_).md",
       "hash": "3f6b68ffdc8d92e7d42b89b69252269716d2d43de60ad946d89dbdd5f9f193cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/genericdevicecontrolsusage.json": {
@@ -22562,7 +22562,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/haptics(_:).json": {
       "etag": "\"118f-65d55ea05065d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/haptics.md",
+      "file_path": "documentation/CoreHID/hidusage/haptics(_).md",
       "hash": "ca8692a08739585952f98150bddb08df2f644699b5c9d4b11f5fe8685ecb94de"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/hapticsusage.json": {
@@ -22722,12 +22722,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/init(page:usage:).json": {
       "etag": "\"16d8-65d55ea1261e0-df\"",
-      "file_path": "documentation/CoreHID/hidusage/init-pageusage.md",
+      "file_path": "documentation/CoreHID/hidusage/init(page,usage).md",
       "hash": "7298c426d3ed793c394e7ae6163b66f6cdbaa4538c71d2e895605b7b322c7ac1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/keyboardorkeypad(_:).json": {
       "etag": "\"126c-65d55ea05065d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/keyboardorkeypad.md",
+      "file_path": "documentation/CoreHID/hidusage/keyboardorkeypad(_).md",
       "hash": "cc0c9009182f0e5f8410bd1119e71c9c2f5697fca1d42a9b88dcb093340c308a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/keyboardorkeypadusage.json": {
@@ -23832,7 +23832,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/led(_:).json": {
       "etag": "\"1127-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/led.md",
+      "file_path": "documentation/CoreHID/hidusage/led(_).md",
       "hash": "83c00e6ff174ba84d1301a165ca5dbec2caecfa9d9cd96ceed96fb1c1c2a4020"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/ledusage.json": {
@@ -24327,7 +24327,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/lightingandillumination(_:).json": {
       "etag": "\"1314-65d55ea05065d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/lightingandillumination.md",
+      "file_path": "documentation/CoreHID/hidusage/lightingandillumination(_).md",
       "hash": "80008776f4452db742e2ebba9b04556da943518dfd420f4657c93f13f8eec52c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/lightingandilluminationusage.json": {
@@ -24507,7 +24507,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/magneticstripereader(_:).json": {
       "etag": "\"12cc-65d55ea241e8c-df\"",
-      "file_path": "documentation/CoreHID/hidusage/magneticstripereader.md",
+      "file_path": "documentation/CoreHID/hidusage/magneticstripereader(_).md",
       "hash": "0fb9281093cc404be613bf249d64ba8afb095bce8f3bb672638dfdcdb94111ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/magneticstripereaderusage.json": {
@@ -24572,7 +24572,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/medicalinstrument(_:).json": {
       "etag": "\"1282-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hidusage/medicalinstrument.md",
+      "file_path": "documentation/CoreHID/hidusage/medicalinstrument(_).md",
       "hash": "13bad6c3346711c59bbd6855559a4a03ce62b46648978e734559c9c9a6229c19"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/medicalinstrumentusage.json": {
@@ -24732,12 +24732,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/monitor(_:).json": {
       "etag": "\"118f-65d55ea241e8c-df\"",
-      "file_path": "documentation/CoreHID/hidusage/monitor.md",
+      "file_path": "documentation/CoreHID/hidusage/monitor(_).md",
       "hash": "f87303f8fc81e056f547d5e2e1100af0918d8664a03b65ba038e9ec890cca775"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/monitorenumerated(_:).json": {
       "etag": "\"1020-65d55e9f3e6de-df\"",
-      "file_path": "documentation/CoreHID/hidusage/monitorenumerated.md",
+      "file_path": "documentation/CoreHID/hidusage/monitorenumerated(_).md",
       "hash": "4a43d9e1cb516722e0d0b8067112a3f0e01ec41f5717ba2ffdfd4c8f818187f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/monitorenumeratedusage.json": {
@@ -24782,7 +24782,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/ordinal(_:).json": {
       "etag": "\"fb1-65d55e9f299ba-df\"",
-      "file_path": "documentation/CoreHID/hidusage/ordinal.md",
+      "file_path": "documentation/CoreHID/hidusage/ordinal(_).md",
       "hash": "f53dec15d8059d121714429ac3beedb2b32ad58c4f279d60d19c3760541a352d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/ordinalusage.json": {
@@ -24802,7 +24802,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/physicalinputdevice(_:).json": {
       "etag": "\"12b4-65d55e9eecede-df\"",
-      "file_path": "documentation/CoreHID/hidusage/physicalinputdevice.md",
+      "file_path": "documentation/CoreHID/hidusage/physicalinputdevice(_).md",
       "hash": "01463f46237bdfab7fd0309b7414381eed924e9bb154f4f100044d3963c17484"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/physicalinputdeviceusage.json": {
@@ -25342,7 +25342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/power(_:).json": {
       "etag": "\"115d-65d55e9eecede-df\"",
-      "file_path": "documentation/CoreHID/hidusage/power.md",
+      "file_path": "documentation/CoreHID/hidusage/power(_).md",
       "hash": "a2bb02020793187608a22ad36624e42ac99ea0c0a3fd10e625a4eaef4da09319"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/powerusage.json": {
@@ -25742,7 +25742,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/scales(_:).json": {
       "etag": "\"1176-65d55ea1261e0-df\"",
-      "file_path": "documentation/CoreHID/hidusage/scales.md",
+      "file_path": "documentation/CoreHID/hidusage/scales(_).md",
       "hash": "d425c0d6d902f86aa156d8aa62ae016d381d0543085f1c3e8ec0fc728053ae74"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/scalesusage.json": {
@@ -25987,7 +25987,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/sensors(_:).json": {
       "etag": "\"118f-65d55ea241e8c-df\"",
-      "file_path": "documentation/CoreHID/hidusage/sensors.md",
+      "file_path": "documentation/CoreHID/hidusage/sensors(_).md",
       "hash": "14cd9f59efbd7321f10673fc4aa318708c0c4e1ad87cd86231ef3a463b5391a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/sensorsusage.json": {
@@ -29327,7 +29327,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/simulationcontrols(_:).json": {
       "etag": "\"129e-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hidusage/simulationcontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/simulationcontrols(_).md",
       "hash": "69cb536d15d93d26a1735e6dae466bb5ea8e798183d26c745af02c446b9c4671"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/simulationcontrolsusage.json": {
@@ -29597,7 +29597,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/soc(_:).json": {
       "etag": "\"1127-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hidusage/soc.md",
+      "file_path": "documentation/CoreHID/hidusage/soc(_).md",
       "hash": "c3ac64dd883c61193c99aadca1352c87bbf12642dd34037b29daf6c523cf0d90"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/socusage.json": {
@@ -29662,7 +29662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/sportcontrols(_:).json": {
       "etag": "\"1220-65d55ea05065d-df\"",
-      "file_path": "documentation/CoreHID/hidusage/sportcontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/sportcontrols(_).md",
       "hash": "929e4915d734fa335e8131bb1f79e04921babd3b855531eac06cbd6a8273957a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/sportcontrolsusage.json": {
@@ -29847,7 +29847,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/telephonydevice(_:).json": {
       "etag": "\"1254-65d55ea3ae5e3-df\"",
-      "file_path": "documentation/CoreHID/hidusage/telephonydevice.md",
+      "file_path": "documentation/CoreHID/hidusage/telephonydevice(_).md",
       "hash": "99dbff753c32d020bacc3147aac03a5b37b4f30030213c8a7a4c6408c5fd8eba"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/telephonydeviceusage.json": {
@@ -30362,7 +30362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/vesavirtualcontrols(_:).json": {
       "etag": "\"12b7-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrols(_).md",
       "hash": "219747369a9cf5d8f49fefbebafe3fe22f00f12e5729ade9886805fe32057a5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/vesavirtualcontrolsusage.json": {
@@ -30447,7 +30447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/vesavirtualcontrolsusage/horizontalmoir_.json": {
       "etag": "\"f53-65d55e9eaf549-df\"",
-      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrolsusage/horizontalmoir.md",
+      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrolsusage/horizontalmoir_.md",
       "hash": "bfe3a5b2bad39cff5b0b15a7af1235ef728c25f13321fdbb8905a2fb0986f98d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/vesavirtualcontrolsusage/horizontalpincushion.json": {
@@ -30577,7 +30577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/vesavirtualcontrolsusage/verticalmoir_.json": {
       "etag": "\"f3d-65d55e9eaf549-df\"",
-      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrolsusage/verticalmoir.md",
+      "file_path": "documentation/CoreHID/hidusage/vesavirtualcontrolsusage/verticalmoir_.md",
       "hash": "c7a2e4aeabc6ab1e37770648e155edab47744645a0b8ee6fa604b311e7730225"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/vesavirtualcontrolsusage/verticalpincushion.json": {
@@ -30602,7 +30602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/vrcontrols(_:).json": {
       "etag": "\"11db-65d55ea006e10-df\"",
-      "file_path": "documentation/CoreHID/hidusage/vrcontrols.md",
+      "file_path": "documentation/CoreHID/hidusage/vrcontrols(_).md",
       "hash": "0a7208ec9a903354b1a3b18a384047829a6931d0a907e90117f30407f66b45f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidusage/vrcontrolsusage.json": {
@@ -30682,7 +30682,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevice/activate(delegate:).json": {
       "etag": "\"1e56-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevice/activate-delegate.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevice/activate(delegate).md",
       "hash": "41fe1b04621bfbd43093c096feba2c4df79851cf974a5684756ef5896095be90"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevice/devicereference.json": {
@@ -30692,7 +30692,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevice/dispatchinputreport(data:timestamp:).json": {
       "etag": "\"27f1-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevice/dispatchinputreport-datatimestamp.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevice/dispatchinputreport(data,timestamp).md",
       "hash": "86992b5dbaf56da7163800e1d119532fd905ec6b4df07b96bd65bc938cfb1421"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevice/hiddevice.json": {
@@ -30702,7 +30702,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevice/init(properties:).json": {
       "etag": "\"1eca-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevice/init-properties.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevice/init(properties).md",
       "hash": "f95f9106ec8fa514d92a24dc7c11ae06b33b09f8f0131b7b5b4f513dd75ca9f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevice/properties.json": {
@@ -30717,7 +30717,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevice/properties/init(descriptor:vendorid:productid:transport:product:manufacturer:modelnumber:versionnumber:serialnumber:uniqueid:locationid:localizationcode:extraproperties:).json": {
       "etag": "\"7c92-65d55ea3dd98f-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevice/properties/init-descriptorvendoridproductidtransportproductmanufacturermodelnumberversionnumberserialnumberuniqueidlocationidlocalizationcodeextraproperties.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevice/properties/init(descriptor,vendorid,productid,transport,product,manufacturer,modelnumber,versionnumber,serialnumber,uniqueid,locationid,localizationcode,extraproperties).md",
       "hash": "a0ea630eb961adb2e80ae94913129522f54d4f3c22a0fb078797ed871def5fab"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevice/properties/localizationcode.json": {
@@ -30782,12 +30782,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevicedelegate/hidvirtualdevice(_:receivedgetreportrequestoftype:id:maxsize:).json": {
       "etag": "\"39df-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevicedelegate/hidvirtualdevice-receivedgetreportrequestoftypeidmaxsize.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevicedelegate/hidvirtualdevice(_,receivedgetreportrequestoftype,id,maxsize).md",
       "hash": "ca9fc1909334d0302ef72f064ce2413fe843b757ed3ee98f772e0b89ca08f1d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehid/hidvirtualdevicedelegate/hidvirtualdevice(_:receivedsetreportrequestoftype:id:data:).json": {
       "etag": "\"35aa-65d55e9e980fb-df\"",
-      "file_path": "documentation/CoreHID/hidvirtualdevicedelegate/hidvirtualdevice-receivedsetreportrequestoftypeiddata.md",
+      "file_path": "documentation/CoreHID/hidvirtualdevicedelegate/hidvirtualdevice(_,receivedsetreportrequestoftype,id,data).md",
       "hash": "dee1254a15fa6c26c141a53182d18815d740053ed27a261fcf45d0914ec5e60a"
     }
   },

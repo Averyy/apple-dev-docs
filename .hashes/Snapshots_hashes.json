@@ -32,12 +32,12 @@
     },
     "https://developer.apple.com/documentation/snapshots/overlay/linegradient-data.dictionary": {
       "etag": "\"11a1-65d55a2277a64-df\"",
-      "file_path": "documentation/Snapshots/overlay/linegradient-datadictionary.md",
+      "file_path": "documentation/Snapshots/overlay/linegradient-data.dictionary.md",
       "hash": "82a85df469dc56deeeba0a428309ca81114cddbf4fa27141a6129cf82721377d"
     },
     "https://developer.apple.com/documentation/snapshots/overlay/linegradientindexes-data.dictionary": {
       "etag": "\"11d5-65d55a2277a64-df\"",
-      "file_path": "documentation/Snapshots/overlay/linegradientindexes-datadictionary.md",
+      "file_path": "documentation/Snapshots/overlay/linegradientindexes-data.dictionary.md",
       "hash": "c7d3a5ec04347ed8bb9bb85c8f55d2d83a33e22759b43ffcfeb0a69dc9fc2bae"
     },
     "https://developer.apple.com/documentation/snapshots/overlaystyle": {
@@ -47,12 +47,12 @@
     },
     "https://developer.apple.com/documentation/snapshots/overlaystyle/linegradient-data.dictionary": {
       "etag": "\"11c3-65d55a2277a64-df\"",
-      "file_path": "documentation/Snapshots/overlaystyle/linegradient-datadictionary.md",
+      "file_path": "documentation/Snapshots/overlaystyle/linegradient-data.dictionary.md",
       "hash": "f41bffe1c0abc6b179f2cfd2ba23b1bab3a4d99b755373811abba9f3f9116ecf"
     },
     "https://developer.apple.com/documentation/snapshots/overlaystyle/linegradientindexes-data.dictionary": {
       "etag": "\"11f7-65d55a2277a64-df\"",
-      "file_path": "documentation/Snapshots/overlaystyle/linegradientindexes-datadictionary.md",
+      "file_path": "documentation/Snapshots/overlaystyle/linegradientindexes-data.dictionary.md",
       "hash": "2a7daa1f8c5d45d63788f98ea395999a99e225e451df2742c822bffc1943ef74"
     },
     "https://developer.apple.com/tutorials/data/documentation/Snapshots.json": {
@@ -87,12 +87,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlay/linegradient-data.dictionary.json": {
       "etag": "\"11a1-65d55a2277a64-df\"",
-      "file_path": "documentation/Snapshots/overlay/linegradient-datadictionary.md",
+      "file_path": "documentation/Snapshots/overlay/linegradient-data.dictionary.md",
       "hash": "82a85df469dc56deeeba0a428309ca81114cddbf4fa27141a6129cf82721377d"
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlay/linegradientindexes-data.dictionary.json": {
       "etag": "\"11d5-65d55a2277a64-df\"",
-      "file_path": "documentation/Snapshots/overlay/linegradientindexes-datadictionary.md",
+      "file_path": "documentation/Snapshots/overlay/linegradientindexes-data.dictionary.md",
       "hash": "c7d3a5ec04347ed8bb9bb85c8f55d2d83a33e22759b43ffcfeb0a69dc9fc2bae"
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlaystyle.json": {
@@ -102,12 +102,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlaystyle/linegradient-data.dictionary.json": {
       "etag": "\"11c3-65d55a2277a64-df\"",
-      "file_path": "documentation/Snapshots/overlaystyle/linegradient-datadictionary.md",
+      "file_path": "documentation/Snapshots/overlaystyle/linegradient-data.dictionary.md",
       "hash": "f41bffe1c0abc6b179f2cfd2ba23b1bab3a4d99b755373811abba9f3f9116ecf"
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlaystyle/linegradientindexes-data.dictionary.json": {
       "etag": "\"11f7-65d55a2277a64-df\"",
-      "file_path": "documentation/Snapshots/overlaystyle/linegradientindexes-datadictionary.md",
+      "file_path": "documentation/Snapshots/overlaystyle/linegradientindexes-data.dictionary.md",
       "hash": "2a7daa1f8c5d45d63788f98ea395999a99e225e451df2742c822bffc1943ef74"
     }
   },

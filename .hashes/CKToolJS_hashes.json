@@ -562,12 +562,12 @@
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbpermissiontype/read_only": {
       "etag": "\"b0c-65d55ab21bd1b-df\"",
-      "file_path": "documentation/CKToolJS/ckdbpermissiontype/read-only.md",
+      "file_path": "documentation/CKToolJS/ckdbpermissiontype/read_only.md",
       "hash": "c566178827a456dd6309869e155668a90d969253834c9899c80ccb76a9649cfc"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbpermissiontype/read_write": {
       "etag": "\"b15-65d55ab21bd1b-df\"",
-      "file_path": "documentation/CKToolJS/ckdbpermissiontype/read-write.md",
+      "file_path": "documentation/CKToolJS/ckdbpermissiontype/read_write.md",
       "hash": "270aaaa709c16a8ab3ab9fc2bc275f1632c4034c05a0d31e2fc0eb4f2ad5b2a4"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbpermissiontype/unknown": {
@@ -627,17 +627,17 @@
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/begins_with": {
       "etag": "\"b69-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/begins-with.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/begins_with.md",
       "hash": "0234a5ff0f5e5e513af390630fb5443010a3726ea7b772f605629d5c6c727568"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/contains_all_tokens": {
       "etag": "\"bb1-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/contains-all-tokens.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/contains_all_tokens.md",
       "hash": "c9a68dcafd28c519247b34e11c793d2dcd428a1b24522e4dc4f59379b8c565ca"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/contains_any_tokens": {
       "etag": "\"bb1-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/contains-any-tokens.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/contains_any_tokens.md",
       "hash": "0c558685f087e3b43a76be0bd0883a4d915c8d575691d0499c6c6628be4bd245"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/equals": {
@@ -647,12 +647,12 @@
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/greater_than": {
       "etag": "\"b72-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/greater-than.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/greater_than.md",
       "hash": "fd3ae57e9c54482f08578a6a30c5c99a82348c12c6d29b7ad1ad2de3857cb5be"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/greater_than_or_equals": {
       "etag": "\"bcc-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/greater-than-or-equals.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/greater_than_or_equals.md",
       "hash": "b1746ded615498a6524da3a4d2e3bbc9ecfaf32ed426ba7890d3ef84713afe90"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/in": {
@@ -662,42 +662,42 @@
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/less_than": {
       "etag": "\"b57-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/less-than.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/less_than.md",
       "hash": "3708463e7d3a34868aefb081ef7d1c74be55468bc655535b0282d79e24412f81"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/less_than_or_equals": {
       "etag": "\"bb1-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/less-than-or-equals.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/less_than_or_equals.md",
       "hash": "bac3bdf58c3ad2e93e955143a3b802f7d2ebf27ef6b44f7430071f01c97eddae"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/list_contains": {
       "etag": "\"b7b-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-contains.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_contains.md",
       "hash": "d203feeb690a192a85a5e2b5d53235055ede5aef0267dc5cd1ffd68699a7a59a"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/list_contains_all": {
       "etag": "\"b9f-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-contains-all.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_contains_all.md",
       "hash": "2f15531580b20226ff82f579e0b8bed179cd82893616704039257a0b709886b6"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/list_contains_any": {
       "etag": "\"b9f-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-contains-any.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_contains_any.md",
       "hash": "270930e04f47b54420e973071826b848da1c969c6d19c223e183be199e55cfd8"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/list_member_begins_with": {
       "etag": "\"bd5-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-member-begins-with.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_member_begins_with.md",
       "hash": "8c05a630d4d8b7b11e93651acf1cea7d82b1b8d5960be0193fe4ee25429a86d9"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/list_not_contains": {
       "etag": "\"b9f-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-not-contains.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_not_contains.md",
       "hash": "b3113ee84ddc36436fca8ce24076b6c670687329638963c041a7bffa3cee5434"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/list_not_contains_any": {
       "etag": "\"bc3-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-not-contains-any.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_not_contains_any.md",
       "hash": "1231c77bc163448b8556d8ba972630a3ef54e945c9d0bf486137190264eac8e8"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/near": {
@@ -707,27 +707,27 @@
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/not_begins_with": {
       "etag": "\"b8d-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-begins-with.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_begins_with.md",
       "hash": "2f0a1fbb7ca8c7ccc194487ffa15bbec2097c5fd0062de0786aeaf4178715804"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/not_equals": {
       "etag": "\"b60-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-equals.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_equals.md",
       "hash": "960059ba88fdd8e4cf677aae0772e7babdd078c31f0c724c9f50e585a6138401"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/not_in": {
       "etag": "\"b3c-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-in.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_in.md",
       "hash": "fdeee58168d8ae1c0df4b05754023372e1bdc3cc190d29c79c9ae240574c9d75"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/not_list_contains_all": {
       "etag": "\"bc3-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-list-contains-all.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_list_contains_all.md",
       "hash": "ec560eb163ad6a60b1e6fd2f9d5c90f5ff4548aa5427f15bd52d9b1e26fb8c86"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryfiltertype/not_list_member_begins_with": {
       "etag": "\"bf9-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-list-member-begins-with.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_list_member_begins_with.md",
       "hash": "4168d56e53f70852962b51c3aacb1109054e2d5641acc6c8d69f83fe9de89692"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbqueryrecordsrequestbody": {
@@ -1392,7 +1392,7 @@
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbrecordreferenceaction/delete_self": {
       "etag": "\"b8b-65d55ab1d3ff1-df\"",
-      "file_path": "documentation/CKToolJS/ckdbrecordreferenceaction/delete-self.md",
+      "file_path": "documentation/CKToolJS/ckdbrecordreferenceaction/delete_self.md",
       "hash": "9601991632423caac889ff9cec43c68302caeebc4205e736db30beefb6c34ed0"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbrecordreferenceaction/none": {
@@ -1657,7 +1657,7 @@
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbshareparticipanttype/public_user": {
       "etag": "\"b70-65d55ab1bcd71-df\"",
-      "file_path": "documentation/CKToolJS/ckdbshareparticipanttype/public-user.md",
+      "file_path": "documentation/CKToolJS/ckdbshareparticipanttype/public_user.md",
       "hash": "f32af39287a94a7a51e489fe052b656f4fdba18785df413f87fcc7699e91febf"
     },
     "https://developer.apple.com/documentation/cktooljs/ckdbshareparticipanttype/unknown": {
@@ -3232,12 +3232,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbpermissiontype/read_only.json": {
       "etag": "\"b0c-65d55ab21bd1b-df\"",
-      "file_path": "documentation/CKToolJS/ckdbpermissiontype/read-only.md",
+      "file_path": "documentation/CKToolJS/ckdbpermissiontype/read_only.md",
       "hash": "c566178827a456dd6309869e155668a90d969253834c9899c80ccb76a9649cfc"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbpermissiontype/read_write.json": {
       "etag": "\"b15-65d55ab21bd1b-df\"",
-      "file_path": "documentation/CKToolJS/ckdbpermissiontype/read-write.md",
+      "file_path": "documentation/CKToolJS/ckdbpermissiontype/read_write.md",
       "hash": "270aaaa709c16a8ab3ab9fc2bc275f1632c4034c05a0d31e2fc0eb4f2ad5b2a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbpermissiontype/unknown.json": {
@@ -3297,17 +3297,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/begins_with.json": {
       "etag": "\"b69-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/begins-with.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/begins_with.md",
       "hash": "0234a5ff0f5e5e513af390630fb5443010a3726ea7b772f605629d5c6c727568"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/contains_all_tokens.json": {
       "etag": "\"bb1-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/contains-all-tokens.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/contains_all_tokens.md",
       "hash": "c9a68dcafd28c519247b34e11c793d2dcd428a1b24522e4dc4f59379b8c565ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/contains_any_tokens.json": {
       "etag": "\"bb1-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/contains-any-tokens.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/contains_any_tokens.md",
       "hash": "0c558685f087e3b43a76be0bd0883a4d915c8d575691d0499c6c6628be4bd245"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/equals.json": {
@@ -3317,12 +3317,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/greater_than.json": {
       "etag": "\"b72-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/greater-than.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/greater_than.md",
       "hash": "fd3ae57e9c54482f08578a6a30c5c99a82348c12c6d29b7ad1ad2de3857cb5be"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/greater_than_or_equals.json": {
       "etag": "\"bcc-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/greater-than-or-equals.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/greater_than_or_equals.md",
       "hash": "b1746ded615498a6524da3a4d2e3bbc9ecfaf32ed426ba7890d3ef84713afe90"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/in.json": {
@@ -3332,42 +3332,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/less_than.json": {
       "etag": "\"b57-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/less-than.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/less_than.md",
       "hash": "3708463e7d3a34868aefb081ef7d1c74be55468bc655535b0282d79e24412f81"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/less_than_or_equals.json": {
       "etag": "\"bb1-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/less-than-or-equals.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/less_than_or_equals.md",
       "hash": "bac3bdf58c3ad2e93e955143a3b802f7d2ebf27ef6b44f7430071f01c97eddae"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/list_contains.json": {
       "etag": "\"b7b-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-contains.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_contains.md",
       "hash": "d203feeb690a192a85a5e2b5d53235055ede5aef0267dc5cd1ffd68699a7a59a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/list_contains_all.json": {
       "etag": "\"b9f-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-contains-all.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_contains_all.md",
       "hash": "2f15531580b20226ff82f579e0b8bed179cd82893616704039257a0b709886b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/list_contains_any.json": {
       "etag": "\"b9f-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-contains-any.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_contains_any.md",
       "hash": "270930e04f47b54420e973071826b848da1c969c6d19c223e183be199e55cfd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/list_member_begins_with.json": {
       "etag": "\"bd5-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-member-begins-with.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_member_begins_with.md",
       "hash": "8c05a630d4d8b7b11e93651acf1cea7d82b1b8d5960be0193fe4ee25429a86d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/list_not_contains.json": {
       "etag": "\"b9f-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-not-contains.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_not_contains.md",
       "hash": "b3113ee84ddc36436fca8ce24076b6c670687329638963c041a7bffa3cee5434"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/list_not_contains_any.json": {
       "etag": "\"bc3-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list-not-contains-any.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/list_not_contains_any.md",
       "hash": "1231c77bc163448b8556d8ba972630a3ef54e945c9d0bf486137190264eac8e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/near.json": {
@@ -3377,27 +3377,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/not_begins_with.json": {
       "etag": "\"b8d-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-begins-with.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_begins_with.md",
       "hash": "2f0a1fbb7ca8c7ccc194487ffa15bbec2097c5fd0062de0786aeaf4178715804"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/not_equals.json": {
       "etag": "\"b60-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-equals.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_equals.md",
       "hash": "960059ba88fdd8e4cf677aae0772e7babdd078c31f0c724c9f50e585a6138401"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/not_in.json": {
       "etag": "\"b3c-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-in.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_in.md",
       "hash": "fdeee58168d8ae1c0df4b05754023372e1bdc3cc190d29c79c9ae240574c9d75"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/not_list_contains_all.json": {
       "etag": "\"bc3-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-list-contains-all.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_list_contains_all.md",
       "hash": "ec560eb163ad6a60b1e6fd2f9d5c90f5ff4548aa5427f15bd52d9b1e26fb8c86"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryfiltertype/not_list_member_begins_with.json": {
       "etag": "\"bf9-65d55ab207316-df\"",
-      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not-list-member-begins-with.md",
+      "file_path": "documentation/CKToolJS/ckdbqueryfiltertype/not_list_member_begins_with.md",
       "hash": "4168d56e53f70852962b51c3aacb1109054e2d5641acc6c8d69f83fe9de89692"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbqueryrecordsrequestbody.json": {
@@ -4062,7 +4062,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbrecordreferenceaction/delete_self.json": {
       "etag": "\"b8b-65d55ab1d3ff1-df\"",
-      "file_path": "documentation/CKToolJS/ckdbrecordreferenceaction/delete-self.md",
+      "file_path": "documentation/CKToolJS/ckdbrecordreferenceaction/delete_self.md",
       "hash": "9601991632423caac889ff9cec43c68302caeebc4205e736db30beefb6c34ed0"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbrecordreferenceaction/none.json": {
@@ -4327,7 +4327,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbshareparticipanttype/public_user.json": {
       "etag": "\"b70-65d55ab1bcd71-df\"",
-      "file_path": "documentation/CKToolJS/ckdbshareparticipanttype/public-user.md",
+      "file_path": "documentation/CKToolJS/ckdbshareparticipanttype/public_user.md",
       "hash": "f32af39287a94a7a51e489fe052b656f4fdba18785df413f87fcc7699e91febf"
     },
     "https://developer.apple.com/tutorials/data/documentation/cktooljs/ckdbshareparticipanttype/unknown.json": {

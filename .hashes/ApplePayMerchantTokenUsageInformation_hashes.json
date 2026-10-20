@@ -27,12 +27,12 @@
     },
     "https://developer.apple.com/documentation/applepaymerchanttokenusageinformation/pastpayment/lineitems-data.dictionary": {
       "etag": "\"15d0-659022369e820-df\"",
-      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/lineitems-datadictionary.md",
+      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/lineitems-data.dictionary.md",
       "hash": "ba3b66e76a87f1d001769c317afd30aa92b7e15a397987bdca0b0b80f19058c8"
     },
     "https://developer.apple.com/documentation/applepaymerchanttokenusageinformation/pastpayment/summaryitems-data.dictionary": {
       "etag": "\"156e-659022369e820-df\"",
-      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/summaryitems-datadictionary.md",
+      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/summaryitems-data.dictionary.md",
       "hash": "7de3ebdc23b7f7dff14c9dff3601c8628fd0c3af8fed50e1e2d0babff9b39efa"
     },
     "https://developer.apple.com/documentation/applepaymerchanttokenusageinformation/paymentissuedetails": {
@@ -47,12 +47,12 @@
     },
     "https://developer.apple.com/documentation/applepaymerchanttokenusageinformation/recurringpaymentdetails/interval-data.dictionary": {
       "etag": "\"13d3-659022369e820-df\"",
-      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/interval-datadictionary.md",
+      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/interval-data.dictionary.md",
       "hash": "6f05eca34672c8ff27c7786e0b9ca429662caaec66d7faf448203d4c07383a81"
     },
     "https://developer.apple.com/documentation/applepaymerchanttokenusageinformation/recurringpaymentdetails/scheduledpayments-data.dictionary": {
       "etag": "\"17f0-659022369e820-df\"",
-      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/scheduledpayments-datadictionary.md",
+      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/scheduledpayments-data.dictionary.md",
       "hash": "25a447ea3239cf703ad3a22469e1bef4d61e2728f798d2a5e369a4d7b9d085e7"
     },
     "https://developer.apple.com/documentation/applepaymerchanttokenusageinformation/upcomingpayment": {
@@ -92,12 +92,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/pastpayment/lineitems-data.dictionary.json": {
       "etag": "\"15d0-659022369e820-df\"",
-      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/lineitems-datadictionary.md",
+      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/lineitems-data.dictionary.md",
       "hash": "ba3b66e76a87f1d001769c317afd30aa92b7e15a397987bdca0b0b80f19058c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/pastpayment/summaryitems-data.dictionary.json": {
       "etag": "\"156e-659022369e820-df\"",
-      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/summaryitems-datadictionary.md",
+      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/summaryitems-data.dictionary.md",
       "hash": "7de3ebdc23b7f7dff14c9dff3601c8628fd0c3af8fed50e1e2d0babff9b39efa"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/paymentissuedetails.json": {
@@ -112,12 +112,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/recurringpaymentdetails/interval-data.dictionary.json": {
       "etag": "\"13d3-659022369e820-df\"",
-      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/interval-datadictionary.md",
+      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/interval-data.dictionary.md",
       "hash": "6f05eca34672c8ff27c7786e0b9ca429662caaec66d7faf448203d4c07383a81"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/recurringpaymentdetails/scheduledpayments-data.dictionary.json": {
       "etag": "\"17f0-659022369e820-df\"",
-      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/scheduledpayments-datadictionary.md",
+      "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/scheduledpayments-data.dictionary.md",
       "hash": "25a447ea3239cf703ad3a22469e1bef4d61e2728f798d2a5e369a4d7b9d085e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/upcomingpayment.json": {

@@ -102,157 +102,157 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetbillboarddescriptor(_:)": {
       "etag": "\"522d-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetbillboarddescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetbillboarddescriptor(_).md",
       "hash": "ec32b7db5c3587a8bb2c613d9269750a2977579bb268d4959fc0010011f687ab"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetconfigurationmaxpowermilliamps(_:_:)": {
       "etag": "\"5e77-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetconfigurationmaxpowermilliamps.md",
+      "file_path": "documentation/IOUSBHost/iousbgetconfigurationmaxpowermilliamps(_,_).md",
       "hash": "bcda7033a8f4a4efdbe4dabeae56dff68382337b5773c94035763b25be949ea7"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetcontaineriddescriptor(_:)": {
       "etag": "\"526a-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetcontaineriddescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetcontaineriddescriptor(_).md",
       "hash": "a98e90ee2567285b2f7e048afec8f24d4fdc635df4d17c673874e89dbd8b2d04"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointaddress(_:)": {
       "etag": "\"6aa2-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointaddress.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointaddress(_).md",
       "hash": "b5781ccd632d7d031a118edb1307e3d20f54db95e0d373abbfb9013b09b6837b"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointburstsize(_:_:_:_:)": {
       "etag": "\"95a6-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointburstsize.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointburstsize(_,_,_,_).md",
       "hash": "9eca551f03afafc5d932661de4f5cc60313b416d719cb82682fa2b9e07ae6e54"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointdirection(_:)": {
       "etag": "\"6e30-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointdirection.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointdirection(_).md",
       "hash": "8c04933a4d1f7c940aff5cde2a94cacc54d6e987fb70e28551a217d8c3692195"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointintervalencodedmicroframes(_:_:)": {
       "etag": "\"6f8c-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalencodedmicroframes.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalencodedmicroframes(_,_).md",
       "hash": "c1a7a61f110e7e1c1f50e5466373f209bf06c48b907f888ed08f724587135c59"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointintervalframes(_:_:)": {
       "etag": "\"6e5c-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalframes.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalframes(_,_).md",
       "hash": "f6560e9efdc6f1d050c27c11ce4806b24a8c8b25bd3cf432abaaa41e072bcc94"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointintervalmicroframes(_:_:)": {
       "etag": "\"6e98-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalmicroframes.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalmicroframes(_,_).md",
       "hash": "82d50e0cefb099888eac92e12e2a40a34360ffe9a21f18a0c8acc9cf4a29d95e"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointmaxpacketsize(_:_:)": {
       "etag": "\"70a7-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxpacketsize.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxpacketsize(_,_).md",
       "hash": "cfa09480fd4700c2897e4f187235c4e0d008bb66a28570d8e1ec28cbadea1438"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointmaxstreams(_:_:_:)": {
       "etag": "\"7735-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxstreams.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxstreams(_,_,_).md",
       "hash": "ccffb692879c32ed2ba8ee1c385f88a3e170f7ec5f5d2423cd8e580ae3daaf40"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointmaxstreamsencoded(_:_:_:)": {
       "etag": "\"784c-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxstreamsencoded.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxstreamsencoded(_,_,_).md",
       "hash": "19297bcdcbdb22c652e1b577b5d49b97f5baaede440818be8d8a566687f3477c"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointmult(_:_:_:_:)": {
       "etag": "\"9788-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointmult.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointmult(_,_,_,_).md",
       "hash": "13b01a5c52fb4b8da92a71c87b75b145015636f9738d0d714bffe3c6c154bc34"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointnumber(_:)": {
       "etag": "\"6ab3-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointnumber.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointnumber(_).md",
       "hash": "a8e2332d2690e028e5348c8192a6d1fde21baf68df64ea3c567b96562ba14455"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointsynchronizationtype(_:)": {
       "etag": "\"82c0-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointsynchronizationtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointsynchronizationtype(_).md",
       "hash": "3661f9b8773a3685269928dba6a3b956dabe726aa913f55fe14102585f2433bd"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointtype(_:)": {
       "etag": "\"6967-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointtype(_).md",
       "hash": "330e499ae82c547aa73664f81e0aa7cab954cfa315d7a1c68a8353e1e01f91bd"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetendpointusagetype(_:)": {
       "etag": "\"8266-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointusagetype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointusagetype(_).md",
       "hash": "fe3f49efa7f19a45b8896e7b72fee8c71e8f2e798fe0f16a79b0c56d6f959363"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextassociateddescriptor(_:_:_:)": {
       "etag": "\"6e4b-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextassociateddescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextassociateddescriptor(_,_,_).md",
       "hash": "1cb990e400c300825efee299a1e57b42fc7c7f2b1bf0e64bdf8fd8d3787a4f69"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextassociateddescriptorwithtype(_:_:_:_:)": {
       "etag": "\"7284-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextassociateddescriptorwithtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextassociateddescriptorwithtype(_,_,_,_).md",
       "hash": "a6388c9507c4bd7eb1c79e6fc0579a599c5ed64407f4eca8e63e2a62a8fc308a"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextcapabilitydescriptor(_:_:)": {
       "etag": "\"5a91-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextcapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextcapabilitydescriptor(_,_).md",
       "hash": "3efa821f0d0b4825842e0fd6a6bdbb19fe8cd4b80b439a23054ac3125a8aa186"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextcapabilitydescriptorwithtype(_:_:_:)": {
       "etag": "\"605d-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextcapabilitydescriptorwithtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextcapabilitydescriptorwithtype(_,_,_).md",
       "hash": "84ee294cc284ea991b3cfbd81a037b65adcb50075b7b195a0d1b26294383bd0c"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextdescriptor(_:_:)": {
       "etag": "\"65fc-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextdescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextdescriptor(_,_).md",
       "hash": "d9b3f369d619a2e533718f56dec6cd1f6def5689c97afe3d1300e53dea40f44a"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextdescriptorwithtype(_:_:_:)": {
       "etag": "\"6ba0-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextdescriptorwithtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextdescriptorwithtype(_,_,_).md",
       "hash": "f4648cc02f74e7387c760f12f638d425eaac6c5ef3ef3cc0ea9f5c7c679c24de"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextendpointdescriptor(_:_:_:)": {
       "etag": "\"8aa2-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextendpointdescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextendpointdescriptor(_,_,_).md",
       "hash": "b82c280389a1526b7d5975eeacc6a37440be5165647013de068d12f31cf66514"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextinterfaceassociationdescriptor(_:_:)": {
       "etag": "\"6930-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextinterfaceassociationdescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextinterfaceassociationdescriptor(_,_).md",
       "hash": "bef82d6e00513abd758e4e9bb17fed6513859e19caf6630e33bfaf1d17a148b0"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetnextinterfacedescriptor(_:_:)": {
       "etag": "\"6812-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextinterfacedescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextinterfacedescriptor(_,_).md",
       "hash": "24c02a73648388f60ad2ad2fd53ec22f710a22c53c3acfb0496d83cd3540535a"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetplatformcapabilitydescriptor(_:)": {
       "etag": "\"85c2-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetplatformcapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetplatformcapabilitydescriptor(_).md",
       "hash": "f70da75b22dda9e40496cf70b4f7eb7d30f3b11cb813d05faac0ffb24b59665a"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetplatformcapabilitydescriptorwithuuid(_:_:)": {
       "etag": "\"8e2f-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetplatformcapabilitydescriptorwithuuid.md",
+      "file_path": "documentation/IOUSBHost/iousbgetplatformcapabilitydescriptorwithuuid(_,_).md",
       "hash": "a51a2e14047e0be75a000d495d5c36452aca2fe8164fa2ca9f3b284a5ebd871e"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetsuperspeeddevicecapabilitydescriptor(_:)": {
       "etag": "\"52f2-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetsuperspeeddevicecapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetsuperspeeddevicecapabilitydescriptor(_).md",
       "hash": "5b231996c2b11ce037756030789395ae5b23173460f1449b454b0d7b90ffa8db"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetsuperspeedplusdevicecapabilitydescriptor(_:)": {
       "etag": "\"867c-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetsuperspeedplusdevicecapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetsuperspeedplusdevicecapabilitydescriptor(_).md",
       "hash": "17b1fdafa1eb3d9d8b1621917908215b11034abf193ed5202982a1fbe272d2f4"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbgetusb20extensiondevicecapabilitydescriptor(_:)": {
       "etag": "\"5328-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetusb20extensiondevicecapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetusb20extensiondevicecapabilitydescriptor(_).md",
       "hash": "d2f5525fc0c58d45d2a32bf26271cdcf805ea6d94ef7fa9b1cef7a01e6e6eadd"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhost-constants": {
@@ -292,7 +292,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostabortoption/init(rawvalue:)": {
       "etag": "\"1290-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostabortoption/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostabortoption/init(rawvalue).md",
       "hash": "5f06d4d42a9f2ad963ccf1861bc4cf57b3166d884b6302ebdc380798de467692"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostabortoption/synchronous": {
@@ -387,12 +387,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstate/init(_:)": {
       "etag": "\"15d2-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstate/init(_).md",
       "hash": "547ba82f7cb4e09fb3506b5c6283c916cb969970150511787fd3afaa2196517f"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstate/init(rawvalue:)": {
       "etag": "\"15f2-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstate/init(rawvalue).md",
       "hash": "f3887bcfcbbebf3b93a08b8e82bdf13381dba367b3e2067428d5be3af46009f2"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstate/rawvalue": {
@@ -422,22 +422,22 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstatemachine/enqueueupdatedframe(_:timestamp:)": {
       "etag": "\"44da-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/enqueueupdatedframe-timestamp.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/enqueueupdatedframe(_,timestamp).md",
       "hash": "c2402b0956d14ee13fdd40781b7bfece8bdd36ae5f1b348f937598e7ddbb40be"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstatemachine/inspectcommand(_:)": {
       "etag": "\"4636-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/inspectcommand.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/inspectcommand(_).md",
       "hash": "5209ef51d98bf16fe071256bac245a12dd1cb4d6f2d998452c4a13cc7dee3083"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstatemachine/respond(tocommand:status:)": {
       "etag": "\"4eab-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/respond-tocommandstatus.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/respond(tocommand,status).md",
       "hash": "88dc6556a8856d1a3d07c30647fe46081653da0913ea3f6b24230af97c058452"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstatemachine/respond(tocommand:status:frame:timestamp:)": {
       "etag": "\"580b-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/respond-tocommandstatusframetimestamp.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/respond(tocommand,status,frame,timestamp).md",
       "hash": "db8b985c03e16629ebf1348eaab408816c8e426a8746707d7f3b2cc23df404c0"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstateoff": {
@@ -452,7 +452,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcicontrollerstatetostring(_:)": {
       "etag": "\"84e8-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatetostring(_).md",
       "hash": "c032b00da23206f44395deea904e45403e8af28f8688736eeecbd6d8bc3fb4e4"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicecreatecommanddata0rootport": {
@@ -492,12 +492,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicespeed/init(_:)": {
       "etag": "\"1576-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeed/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeed/init(_).md",
       "hash": "1b5f85279863247570c5b37af1cd2ac8e9a62b8b66f5ac486873324d50b3010b"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicespeed/init(rawvalue:)": {
       "etag": "\"1596-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeed/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeed/init(rawvalue).md",
       "hash": "fa4b0bedb1acfbd01c075c6754d15289b930531fed122041e664c48cc2db8a29"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicespeed/rawvalue": {
@@ -547,7 +547,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicespeedtostring(_:)": {
       "etag": "\"8460-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeedtostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeedtostring(_).md",
       "hash": "f495fee53e19fd00dd61b7b8bb044af760b116e0df35d003e21881c3c63c5401"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestate": {
@@ -557,12 +557,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestate/init(_:)": {
       "etag": "\"1576-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestate/init(_).md",
       "hash": "40a395c8551b900e2cc60b4623891b0154bdfc9430719422575097d6bdc822d4"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestate/init(rawvalue:)": {
       "etag": "\"1596-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestate/init(rawvalue).md",
       "hash": "dd435f18baac716a10ba5b595bc0ab558ef34945c87ace2b25e00116249ac732"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestate/rawvalue": {
@@ -607,17 +607,17 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestatemachine/inspectcommand(_:)": {
       "etag": "\"3dee-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/inspectcommand.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/inspectcommand(_).md",
       "hash": "f7e1e31f7f684347822f2a52faa53ecce288413e2a2ee62d650773cdf10e7994"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestatemachine/respond(tocommand:status:)": {
       "etag": "\"4663-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/respond-tocommandstatus.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/respond(tocommand,status).md",
       "hash": "58775b7f7579f92c5ff06cb44d53fb43125ff64b86a3f558dd5daecd23f4e4ac"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestatemachine/respond(tocommand:status:deviceaddress:)": {
       "etag": "\"4d46-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/respond-tocommandstatusdeviceaddress.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/respond(tocommand,status,deviceaddress).md",
       "hash": "2c8dd8e2a2c820028b198d636f28f634b804603b4007a888b2fe0288019cf2a1"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestatepaused": {
@@ -627,7 +627,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcidevicestatetostring(_:)": {
       "etag": "\"846c-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatetostring(_).md",
       "hash": "b029c763861d2465e1d397f488c28fb01d3dddae37c746a6400095f00653dc5a"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcideviceupdatecommanddata1descriptoraddress": {
@@ -707,12 +707,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstate/init(_:)": {
       "etag": "\"15a4-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstate/init(_).md",
       "hash": "d872e2e1b8e4cef0e769efa5fde393b1041b0250610c7ddab8e6690d4e79e729"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstate/init(rawvalue:)": {
       "etag": "\"15c4-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstate/init(rawvalue).md",
       "hash": "bc6d5d3ddafcc018a96031e8774852ae0436e3e7d19e641837e4c09ab01133b6"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstate/rawvalue": {
@@ -767,22 +767,22 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstatemachine/enqueuetransfercompletion(for:status:transferlength:)": {
       "etag": "\"546f-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/enqueuetransfercompletion-forstatustransferlength.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/enqueuetransfercompletion(for,status,transferlength).md",
       "hash": "f0ddeef2b46a07b65e68fa7e72ebfed139fb5c6e5e613b21a107837adea330ba"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstatemachine/inspectcommand(_:)": {
       "etag": "\"44bb-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/inspectcommand.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/inspectcommand(_).md",
       "hash": "9826c6719d01288b3689d325dd70c4d9d66278e721bdfd627aa96e94743ab2b1"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstatemachine/processdoorbell(_:)": {
       "etag": "\"419a-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/processdoorbell.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/processdoorbell(_).md",
       "hash": "e641b00cffba599eb9a3759e36c80b72c45e5c89e886ce570c95026be6a6be7d"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstatemachine/respond(tocommand:status:)": {
       "etag": "\"4d30-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/respond-tocommandstatus.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/respond(tocommand,status).md",
       "hash": "4c167b8261406871bbb4327bc00f54fd03d0593173deeb17bd8e7a27b9052874"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstatepaused": {
@@ -792,7 +792,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointstatetostring(_:)": {
       "etag": "\"84aa-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatetostring(_).md",
       "hash": "93b542ddd8ebc53c88ca86d92c3b0e9bf44c3874e411aa1e5764b8241c28f2d4"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciendpointupdatecommanddata1descriptor": {
@@ -812,12 +812,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciexceptiontype/init(_:)": {
       "etag": "\"15a4-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontype/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontype/init(_).md",
       "hash": "8d576f72b5e09cbfab651d0cc17b19dd7c6dc03f1679b5e80cfb8016183f271d"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciexceptiontype/init(rawvalue:)": {
       "etag": "\"15c4-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontype/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontype/init(rawvalue).md",
       "hash": "6ce7e5e0c5db7856356cee72450458e82b505f92caf1dd17e04f9abc4ad2ef4d"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciexceptiontype/rawvalue": {
@@ -887,7 +887,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciexceptiontypetostring(_:)": {
       "etag": "\"84aa-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontypetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontypetostring(_).md",
       "hash": "a5bba7fbc93669e55e86321bd9a74f9fe9d00af12f37d4dd29fffa446a1630c4"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciexceptiontypeunknown": {
@@ -947,12 +947,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcilinkstate/init(_:)": {
       "etag": "\"1548-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcilinkstate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcilinkstate/init(_).md",
       "hash": "772513326cb1e1c30839333512ac1ce88bd8587ff72c35336ca5058d084e344a"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcilinkstate/init(rawvalue:)": {
       "etag": "\"1568-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcilinkstate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcilinkstate/init(rawvalue).md",
       "hash": "d42e0d0d34473f6f357f2e44b80593c103a550928aae6203b10dd748a58ad600"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcilinkstate/rawvalue": {
@@ -972,7 +972,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcilinkstateenabled(_:)": {
       "etag": "\"8127-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcilinkstateenabled.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcilinkstateenabled(_).md",
       "hash": "937c1206760a22e06d0217f91f0910170a10e718f2690ef20f71fdcec60d6291"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcilinkstateinactive": {
@@ -1012,7 +1012,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcilinkstatetostring(_:)": {
       "etag": "\"842e-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcilinkstatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcilinkstatetostring(_).md",
       "hash": "21745354599f8c0326dfb3620f82abf51928d823e2e2c0f60e63896b9c1bf7e9"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcilinkstateu0": {
@@ -1057,12 +1057,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessage/init()": {
       "etag": "\"1270-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessage/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessage/init().md",
       "hash": "e98e1e44e95c79634992d6b67f16e03801f5cb7793a5922da12d04bff8e32bb0"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessage/init(control:data0:data1:)": {
       "etag": "\"1be8-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessage/init-controldata0data1.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessage/init(control,data0,data1).md",
       "hash": "18cf98e0ae629fc53ceeebdf960e9ae0109fec1b9dd0b11f9f2c82b6f6630edb"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagecontrolnoresponse": {
@@ -1102,12 +1102,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagestatus/init(_:)": {
       "etag": "\"15a4-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatus/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatus/init(_).md",
       "hash": "22a299db0b0e346c34ee742f0f6bf274b34e7ac53312bdc58aead38b779afa30"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagestatus/init(rawvalue:)": {
       "etag": "\"15c4-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatus/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatus/init(rawvalue).md",
       "hash": "30c79d1dfbeee47358d1b93f34fc625f9e69301b5fa4ee325de2ad3998a849f2"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagestatus/rawvalue": {
@@ -1132,7 +1132,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagestatusfromioreturn(_:)": {
       "etag": "\"80ad-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatusfromioreturn.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatusfromioreturn(_).md",
       "hash": "a0f71e98cfdb7e28a92bff325c9313655cc1b2de88e4dddf559941a7f86822eb"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagestatusmissedserviceerror": {
@@ -1187,12 +1187,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagestatustoioreturn(_:)": {
       "etag": "\"809b-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatustoioreturn.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatustoioreturn(_).md",
       "hash": "30388ddf72268bdde62d7b6dcac87cc132dfcce74b99661d2debc41380899370"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagestatustostring(_:)": {
       "etag": "\"8501-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatustostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatustostring(_).md",
       "hash": "2b4e91bb2da26dbf0cf4ad1d0e855ebc793309d0c2cb850f0f651b85ed8f69bb"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagestatustransactionerror": {
@@ -1207,12 +1207,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagetype/init(_:)": {
       "etag": "\"1576-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagetype/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagetype/init(_).md",
       "hash": "2493233747f4a1f6b634751f85cc17d6f06e0a0deba9a51c0e534ff34a74a706"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagetype/init(rawvalue:)": {
       "etag": "\"1596-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagetype/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagetype/init(rawvalue).md",
       "hash": "f22fb2a69be730e1bb3c3f44bcabc51ef5f6614217f0694f3fcaa80e3ffda77b"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagetype/rawvalue": {
@@ -1287,7 +1287,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagetypeendpoint_reserved_": {
       "etag": "\"639a-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagetypeendpoint-reserved.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagetypeendpoint_reserved_.md",
       "hash": "6022ee89213d072c3b22fd3597f653f6d315d56d7629da6ec7fbcd47a19af8eb"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagetypeendpointcreate": {
@@ -1402,7 +1402,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagetypetostring(_:)": {
       "etag": "\"84a7-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagetypetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagetypetostring(_).md",
       "hash": "8e7d596d55d6e23fb78c73ea478b06c6d53656386518c70770f2a45bfcc9bc8b"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcimessagetypetransfercomplete": {
@@ -1482,12 +1482,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstate/init(_:)": {
       "etag": "\"1548-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstate/init(_).md",
       "hash": "1f4b649edcb9cd630b112539d1637c2d2dfa8475e7b927f9004d0c4521138492"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstate/init(rawvalue:)": {
       "etag": "\"1568-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstate/init(rawvalue).md",
       "hash": "b70ec29b5ea616611fd5471b73644e5d8d41c66c104beffb439aaf33fe45d67e"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstate/rawvalue": {
@@ -1517,7 +1517,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstatemachine/inspectcommand(_:)": {
       "etag": "\"3d65-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/inspectcommand.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/inspectcommand(_).md",
       "hash": "06ec539f9b88b17f1f18796195e2e93522e8345e9d17787d2b43271575a08bf5"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstatemachine/linkstate": {
@@ -1552,7 +1552,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstatemachine/respond(tocommand:status:)": {
       "etag": "\"45da-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/respond-tocommandstatus.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/respond(tocommand,status).md",
       "hash": "db0a261221d8899999203f638b4246c7b4211c2d6c74c48d886d6caad0113b20"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstatemachine/speed": {
@@ -1562,7 +1562,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstatemachine/updatelinkstate(_:speed:inhibitlinkstatechange:)": {
       "etag": "\"4882-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/updatelinkstate-speedinhibitlinkstatechange.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/updatelinkstate(_,speed,inhibitlinkstatechange).md",
       "hash": "8f9f9a00b9a8e6d43b77313f3769829255d6ac49ae762d8d0a5b1da8cd6f48dc"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstateoff": {
@@ -1582,7 +1582,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstatetostring(_:)": {
       "etag": "\"845b-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstatetostring(_).md",
       "hash": "2a1e97bbe771fc76dcbfed9926c5fd4aacd416e04627a8b2b0215c9ae5f705c1"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciportstatus": {
@@ -1807,12 +1807,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciuserclientversion/init(_:)": {
       "etag": "\"1600-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciuserclientversion/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciuserclientversion/init(_).md",
       "hash": "3a3b82a559a68246c257df64b27a4d17236c216b445338040dff9f4fe3a8f8e6"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciuserclientversion/init(rawvalue:)": {
       "etag": "\"1620-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciuserclientversion/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciuserclientversion/init(rawvalue).md",
       "hash": "850c3454cf93bdf17f16553c3bef3a3b8ecb2c128359c70f88ea09c7f48f59dc"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostciuserclientversion/rawvalue": {
@@ -1842,7 +1842,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/capabilities(forport:)": {
       "etag": "\"65e0-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/capabilities-forport.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/capabilities(forport).md",
       "hash": "7208bd7a04ea9fb4024d80e3548646c21aa2862eadaafd5d5375f977dd4a51b1"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/controllerstatemachine": {
@@ -1852,42 +1852,42 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/description(for:)": {
       "etag": "\"66ca-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/description-for.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/description(for).md",
       "hash": "e8a1dbe134d73ffab4ab08a0c997eada915b5f0b9e55922d959b853c8e57ebad"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/destroy()": {
       "etag": "\"55b1-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/destroy.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/destroy().md",
       "hash": "8f229b8302d9cfe212c75a954c134924c6e2ea9a30be263f217ec95b3d60ffe5"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/enqueueinterrupt(_:)": {
       "etag": "\"672e-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupt.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupt(_).md",
       "hash": "097dfb73f25b125eb3e00b96286c896f5d2771a3e7cba8786333d99c22a63c15"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/enqueueinterrupt(_:expedite:)": {
       "etag": "\"6c98-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupt-expedite.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupt(_,expedite).md",
       "hash": "79fcf0a175a0f2357b1762343225cfaefd33990c351ed8fafca37aa5b08d1d93"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/enqueueinterrupts(_:count:)": {
       "etag": "\"6dcc-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupts-count.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupts(_,count).md",
       "hash": "9800ef9e868c0497935ba8ab7f33829692f49a0649cd088c4a3dc9930cb9f17c"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/enqueueinterrupts(_:count:expedite:)": {
       "etag": "\"7336-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupts-countexpedite.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupts(_,count,expedite).md",
       "hash": "98965f6298a508dae6fb8488ad64101bf295defeb6c5047da28e1739edaf1e09"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/getportstatemachine(forcommand:error:)": {
       "etag": "\"6fe0-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/getportstatemachine-forcommanderror.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/getportstatemachine(forcommand,error).md",
       "hash": "f61b62576491b370fa6314b2fc7c99025a7cb2f758233b219778f77f18e1a7e7"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/getportstatemachine(forport:error:)": {
       "etag": "\"6b6d-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/getportstatemachine-forporterror.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/getportstatemachine(forport,error).md",
       "hash": "4ff39b553fc29d9401dc87976aa141ca94283cc33d706e511b480a2f8ff8ae67"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostcontrollerinterface/interruptratehz": {
@@ -1932,7 +1932,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostdevice/reset()": {
       "etag": "\"2e76-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostdevice/reset.md",
+      "file_path": "documentation/IOUSBHost/iousbhostdevice/reset().md",
       "hash": "76e6a96be69bb866c6ffa6002015d2183ac569eeb8761bb1573052f0189ae0c9"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostdevicepropertykey": {
@@ -1952,7 +1952,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostdevicepropertykey/init(rawvalue:)": {
       "etag": "\"1449-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostdevicepropertykey/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostdevicepropertykey/init(rawvalue).md",
       "hash": "3c5c8c665f3337af0f5464fcbc87c5bde9a8b0a57494a4e3e3993fe9bcde3e84"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostdevicepropertykey/serialnumberstring": {
@@ -1967,7 +1967,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostdevicerequesttype(_:_:_:)": {
       "etag": "\"447f-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostdevicerequesttype.md",
+      "file_path": "documentation/IOUSBHost/iousbhostdevicerequesttype(_,_,_).md",
       "hash": "d6f9a8ad98c978b2d83189e774bbd6419e557dca275deae795b8f031f23c0c43"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhosterrordomain": {
@@ -1992,7 +1992,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostinterface/copypipe(withaddress:)": {
       "etag": "\"3dbd-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostinterface/copypipe-withaddress.md",
+      "file_path": "documentation/IOUSBHost/iousbhostinterface/copypipe(withaddress).md",
       "hash": "d5cc6b5756cafb3985c64a5b3536321b0d80df914829830d4efe3d20228a22f1"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostinterface/idletimeout": {
@@ -2007,12 +2007,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostinterface/selectalternatesetting(_:)": {
       "etag": "\"3aeb-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostinterface/selectalternatesetting.md",
+      "file_path": "documentation/IOUSBHost/iousbhostinterface/selectalternatesetting(_).md",
       "hash": "c139b8749aad6dbd88cb840bb1e846943bdbbd43511acfc4aeea8aa70b7d34b5"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostinterface/setidletimeout(_:)": {
       "etag": "\"336c-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostinterface/setidletimeout.md",
+      "file_path": "documentation/IOUSBHost/iousbhostinterface/setidletimeout(_).md",
       "hash": "6cfe2b957ac47ccfc9e2f8147d0fbeb9eaa3f72abc838ab0a71dfee3eb73df20"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostinterfacepropertykey": {
@@ -2027,7 +2027,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostinterfacepropertykey/init(rawvalue:)": {
       "etag": "\"1485-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostinterfacepropertykey/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostinterfacepropertykey/init(rawvalue).md",
       "hash": "b11c265d373c6b610b226be85a785c6fe57ee3cfbfb8afeb54c5c7accbba11b0"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostiosource": {
@@ -2067,12 +2067,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostiosourcedescriptors/init()": {
       "etag": "\"1700-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostiosourcedescriptors/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostiosourcedescriptors/init().md",
       "hash": "f88f5df7fa863126d2453ab0d7f742b2a65e83076f93e402a6ae7b36485517e3"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostiosourcedescriptors/init(bcdusb:descriptor:sscompaniondescriptor:sspcompaniondescriptor:)": {
       "etag": "\"3018-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostiosourcedescriptors/init-bcdusbdescriptorsscompaniondescriptorsspcompaniondescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbhostiosourcedescriptors/init(bcdusb,descriptor,sscompaniondescriptor,sspcompaniondescriptor).md",
       "hash": "f97eebd4efffb4475725b272a077d44b98ed0ad06b98398edc29e57ef758a793"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostiosourcedescriptors/sscompaniondescriptor": {
@@ -2102,12 +2102,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronousframe/init()": {
       "etag": "\"f38-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronousframe/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronousframe/init().md",
       "hash": "3f419e50a7eaa93bc6c82c6784fdf5b85258e92fe5988284fc8e0f983f7fc7cf"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronousframe/init(status:requestcount:completecount:reserved:timestamp:)": {
       "etag": "\"23b0-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronousframe/init-statusrequestcountcompletecountreservedtimestamp.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronousframe/init(status,requestcount,completecount,reserved,timestamp).md",
       "hash": "5404d4e124067ee53a1193af52377e69ff0882952d6087ed67f5be9a2b1636e4"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronousframe/requestcount": {
@@ -2142,12 +2142,12 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronoustransaction/init()": {
       "etag": "\"16c9-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransaction/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransaction/init().md",
       "hash": "999e7ef97d9e2dc39a1501947e2940e4263f6c82a9dc63bb149ef4327fe5b295"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronoustransaction/init(status:requestcount:offset:completecount:timestamp:options:)": {
       "etag": "\"2e8a-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransaction/init-statusrequestcountoffsetcompletecounttimestampoptions.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransaction/init(status,requestcount,offset,completecount,timestamp,options).md",
       "hash": "8071d2825060c8e7d7c2867ab3af7daffc6e1d13ea7828b12310adffc01670ae"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronoustransaction/offset": {
@@ -2187,7 +2187,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronoustransactionoptions/init(rawvalue:)": {
       "etag": "\"1400-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransactionoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransactionoptions/init(rawvalue).md",
       "hash": "0f0e25c3a2d08b92bbd5a26c6a3542ec70ea1a5f4afae954e24693643d497bf6"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronoustransactionoptions/wrap": {
@@ -2202,7 +2202,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostisochronoustransferoptions/init(rawvalue:)": {
       "etag": "\"13c7-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransferoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransferoptions/init(rawvalue).md",
       "hash": "edf90590177e418b020ddd518229e2b3b9ccd1ee821f7290c4f770710ee56ac8"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostmatchingpropertykey": {
@@ -2237,7 +2237,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostmatchingpropertykey/init(rawvalue:)": {
       "etag": "\"146d-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostmatchingpropertykey/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostmatchingpropertykey/init(rawvalue).md",
       "hash": "5a56b799704ed7d7609d027d8ed170a61a9404835b062027a1d54eb4932b00ea"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostmatchingpropertykey/interfaceclass": {
@@ -2297,27 +2297,27 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/configurationdescriptor(with:)": {
       "etag": "\"3640-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/configurationdescriptor-with.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/configurationdescriptor(with).md",
       "hash": "31c732cc635fe014ad712579e9f52731320c373c65e9bd0aea72b4d9886a98f3"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/configurationdescriptor(withconfigurationvalue:)": {
       "etag": "\"36e3-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/configurationdescriptor-withconfigurationvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/configurationdescriptor(withconfigurationvalue).md",
       "hash": "ccdfb5e13a5bbc043c850dd99a6c7e11af86180ec57636d1fd38714fd996cf0e"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/data(withcapacity:options:)": {
       "etag": "\"3d9e-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/data-withcapacityoptions.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/data(withcapacity,options).md",
       "hash": "35a4e51ff6bdad1ea26fa5e6278e62edf1fe12843dd46fc94c1dcfe0a1d59002"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/destroy()": {
       "etag": "\"379e-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/destroy.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/destroy().md",
       "hash": "a0cd7cbab3d6f5eb481768f5f67eee41593a196b6d7e5df8395b34d6b5dc83af"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/destroy(options:)": {
       "etag": "\"2322-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/destroy-options.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/destroy(options).md",
       "hash": "82bc786611c812e9639c24916a622c6c88121123f56a58645db817f050f37f46"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/deviceaddress": {
@@ -2332,7 +2332,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/iodata(withcapacity:)": {
       "etag": "\"3348-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/iodata-withcapacity.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/iodata(withcapacity).md",
       "hash": "c5d710d5141bf3d692f69564f557ac2ad27cf140060c189066789d086a91e023"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobject/ioservice": {
@@ -2352,7 +2352,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobjectdataoptions/init(rawvalue:)": {
       "etag": "\"12b2-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobjectdataoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobjectdataoptions/init(rawvalue).md",
       "hash": "5e3a57ee2904f8f20d4ca129c86ec6509170e2bfa45b825f9448e4fc4cb013c9"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobjectdataoptions/kernelusershared": {
@@ -2372,7 +2372,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobjectdestroyoptions/init(rawvalue:)": {
       "etag": "\"12eb-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobjectdestroyoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobjectdestroyoptions/init(rawvalue).md",
       "hash": "37b7e5810981ed7e7faec5bbf1447fafef67ea421577e302b1126a4d42832196"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobjectinitoptions": {
@@ -2392,7 +2392,7 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostobjectinitoptions/init(rawvalue:)": {
       "etag": "\"1407-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobjectinitoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobjectinitoptions/init(rawvalue).md",
       "hash": "fde8d87a9b703b956c24de62b623723068fd772e5e7e789a36ee058c179e7c89"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe": {
@@ -2402,17 +2402,17 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/adjust(with:)": {
       "etag": "\"44a2-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/adjust-with.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/adjust(with).md",
       "hash": "2dd59691e51a0851d3eb22f0b716ec29618e0b8e39d19595a7a76d14784884a8"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/clearstall()": {
       "etag": "\"42a9-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/clearstall.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/clearstall().md",
       "hash": "38e99cb44cd70d1bebec1f2275a56fec969eb31c4b163bd69ca837cf543c209b"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/copystream(withstreamid:)": {
       "etag": "\"4be5-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/copystream-withstreamid.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/copystream(withstreamid).md",
       "hash": "ee504396363a24e5bc566e3cd8f5e02f8a7a46a7077d1e78e736bd5a269325f9"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/descriptors": {
@@ -2422,27 +2422,27 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/disablestreams()": {
       "etag": "\"379f-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/disablestreams.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/disablestreams().md",
       "hash": "0ab2f62c29ccf44359e2591f0bed2280fd403d384977b8f7168e9e8e4dab4aa0"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/enablestreams()": {
       "etag": "\"3119-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/enablestreams.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/enablestreams().md",
       "hash": "cc73ce1b7c40fc780f863add1cab85321441976ccf7f151abbcfaef343e5390a"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/enqueueiorequest(with:completiontimeout:completionhandler:)": {
       "etag": "\"7547-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest-withcompletiontimeoutcompletionhandler.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest(with,completiontimeout,completionhandler).md",
       "hash": "5320fab83f538477c6fbc5a1c5e3d9039cc9b659a8f6ca8475ec2516c309119c"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/enqueueiorequest(with:framelist:framelistcount:firstframenumber:completionhandler:)": {
       "etag": "\"9688-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest-withframelistframelistcountfirstframenumbercompletionhandler.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest(with,framelist,framelistcount,firstframenumber,completionhandler).md",
       "hash": "2a3e56b4b85ddd815319e56fb6b5e77c1593a27b915279b2408e81e0aa1e2f06"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/enqueueiorequest(with:transactionlist:transactionlistcount:firstframenumber:options:completionhandler:)": {
       "etag": "\"814c-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest-withtransactionlisttransactionlistcountfirstframenumberoptionscompletionhandler.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest(with,transactionlist,transactionlistcount,firstframenumber,options,completionhandler).md",
       "hash": "241bd5adde948b7175af1f84e8d9d6043258fa227c57c1d0d59fed4150860d65"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/idletimeout": {
@@ -2457,17 +2457,17 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/sendiorequest(with:framelist:framelistcount:firstframenumber:)": {
       "etag": "\"7636-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/sendiorequest-withframelistframelistcountfirstframenumber.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/sendiorequest(with,framelist,framelistcount,firstframenumber).md",
       "hash": "ec19baf983aa391a915f7d01759276c397c84da4393b604e50f27398a2fe8e12"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/sendiorequest(with:transactionlist:transactionlistcount:firstframenumber:options:)": {
       "etag": "\"5e68-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/sendiorequest-withtransactionlisttransactionlistcountfirstframenumberoptions.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/sendiorequest(with,transactionlist,transactionlistcount,firstframenumber,options).md",
       "hash": "d52c0f433401cc02e3ce2415192616bebf67fc33560b4b423d845a3117b13b37"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpipe/setidletimeout(_:)": {
       "etag": "\"32f9-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/setidletimeout.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/setidletimeout(_).md",
       "hash": "d533028c0e14ddd689fc39ba6b8cfcf1d4473ec75e7955c58f33a8589d8672d2"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhostpropertykey": {
@@ -2487,17 +2487,17 @@
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhoststream/abort()": {
       "etag": "\"39c4-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhoststream/abort.md",
+      "file_path": "documentation/IOUSBHost/iousbhoststream/abort().md",
       "hash": "12d60d2fe6d04391a61c72939244136ac9caacba50e32a0cf780151545f39422"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhoststream/abort(with:)": {
       "etag": "\"499c-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhoststream/abort-with.md",
+      "file_path": "documentation/IOUSBHost/iousbhoststream/abort(with).md",
       "hash": "daa02a4dbd43bfd63d705f4d6d58994733c57fc3e4ee0ad9a75702278f17ce94"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhoststream/enqueueiorequest(with:completionhandler:)": {
       "etag": "\"5d84-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhoststream/enqueueiorequest-withcompletionhandler.md",
+      "file_path": "documentation/IOUSBHost/iousbhoststream/enqueueiorequest(with,completionhandler).md",
       "hash": "6281961f6a652e7dfd4bc88c4118cbefd5bb3e87192a43ef49214eec4e1d54d2"
     },
     "https://developer.apple.com/documentation/iousbhost/iousbhoststream/hostpipe": {
@@ -2622,157 +2622,157 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetbillboarddescriptor(_:).json": {
       "etag": "\"522d-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetbillboarddescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetbillboarddescriptor(_).md",
       "hash": "ec32b7db5c3587a8bb2c613d9269750a2977579bb268d4959fc0010011f687ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetconfigurationmaxpowermilliamps(_:_:).json": {
       "etag": "\"5e77-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetconfigurationmaxpowermilliamps.md",
+      "file_path": "documentation/IOUSBHost/iousbgetconfigurationmaxpowermilliamps(_,_).md",
       "hash": "bcda7033a8f4a4efdbe4dabeae56dff68382337b5773c94035763b25be949ea7"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetcontaineriddescriptor(_:).json": {
       "etag": "\"526a-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetcontaineriddescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetcontaineriddescriptor(_).md",
       "hash": "a98e90ee2567285b2f7e048afec8f24d4fdc635df4d17c673874e89dbd8b2d04"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointaddress(_:).json": {
       "etag": "\"6aa2-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointaddress.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointaddress(_).md",
       "hash": "b5781ccd632d7d031a118edb1307e3d20f54db95e0d373abbfb9013b09b6837b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointburstsize(_:_:_:_:).json": {
       "etag": "\"95a6-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointburstsize.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointburstsize(_,_,_,_).md",
       "hash": "9eca551f03afafc5d932661de4f5cc60313b416d719cb82682fa2b9e07ae6e54"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointdirection(_:).json": {
       "etag": "\"6e30-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointdirection.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointdirection(_).md",
       "hash": "8c04933a4d1f7c940aff5cde2a94cacc54d6e987fb70e28551a217d8c3692195"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointintervalencodedmicroframes(_:_:).json": {
       "etag": "\"6f8c-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalencodedmicroframes.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalencodedmicroframes(_,_).md",
       "hash": "c1a7a61f110e7e1c1f50e5466373f209bf06c48b907f888ed08f724587135c59"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointintervalframes(_:_:).json": {
       "etag": "\"6e5c-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalframes.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalframes(_,_).md",
       "hash": "f6560e9efdc6f1d050c27c11ce4806b24a8c8b25bd3cf432abaaa41e072bcc94"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointintervalmicroframes(_:_:).json": {
       "etag": "\"6e98-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalmicroframes.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointintervalmicroframes(_,_).md",
       "hash": "82d50e0cefb099888eac92e12e2a40a34360ffe9a21f18a0c8acc9cf4a29d95e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointmaxpacketsize(_:_:).json": {
       "etag": "\"70a7-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxpacketsize.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxpacketsize(_,_).md",
       "hash": "cfa09480fd4700c2897e4f187235c4e0d008bb66a28570d8e1ec28cbadea1438"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointmaxstreams(_:_:_:).json": {
       "etag": "\"7735-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxstreams.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxstreams(_,_,_).md",
       "hash": "ccffb692879c32ed2ba8ee1c385f88a3e170f7ec5f5d2423cd8e580ae3daaf40"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointmaxstreamsencoded(_:_:_:).json": {
       "etag": "\"784c-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxstreamsencoded.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointmaxstreamsencoded(_,_,_).md",
       "hash": "19297bcdcbdb22c652e1b577b5d49b97f5baaede440818be8d8a566687f3477c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointmult(_:_:_:_:).json": {
       "etag": "\"9788-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointmult.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointmult(_,_,_,_).md",
       "hash": "13b01a5c52fb4b8da92a71c87b75b145015636f9738d0d714bffe3c6c154bc34"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointnumber(_:).json": {
       "etag": "\"6ab3-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointnumber.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointnumber(_).md",
       "hash": "a8e2332d2690e028e5348c8192a6d1fde21baf68df64ea3c567b96562ba14455"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointsynchronizationtype(_:).json": {
       "etag": "\"82c0-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointsynchronizationtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointsynchronizationtype(_).md",
       "hash": "3661f9b8773a3685269928dba6a3b956dabe726aa913f55fe14102585f2433bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointtype(_:).json": {
       "etag": "\"6967-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointtype(_).md",
       "hash": "330e499ae82c547aa73664f81e0aa7cab954cfa315d7a1c68a8353e1e01f91bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetendpointusagetype(_:).json": {
       "etag": "\"8266-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetendpointusagetype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetendpointusagetype(_).md",
       "hash": "fe3f49efa7f19a45b8896e7b72fee8c71e8f2e798fe0f16a79b0c56d6f959363"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextassociateddescriptor(_:_:_:).json": {
       "etag": "\"6e4b-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextassociateddescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextassociateddescriptor(_,_,_).md",
       "hash": "1cb990e400c300825efee299a1e57b42fc7c7f2b1bf0e64bdf8fd8d3787a4f69"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextassociateddescriptorwithtype(_:_:_:_:).json": {
       "etag": "\"7284-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextassociateddescriptorwithtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextassociateddescriptorwithtype(_,_,_,_).md",
       "hash": "a6388c9507c4bd7eb1c79e6fc0579a599c5ed64407f4eca8e63e2a62a8fc308a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextcapabilitydescriptor(_:_:).json": {
       "etag": "\"5a91-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextcapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextcapabilitydescriptor(_,_).md",
       "hash": "3efa821f0d0b4825842e0fd6a6bdbb19fe8cd4b80b439a23054ac3125a8aa186"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextcapabilitydescriptorwithtype(_:_:_:).json": {
       "etag": "\"605d-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextcapabilitydescriptorwithtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextcapabilitydescriptorwithtype(_,_,_).md",
       "hash": "84ee294cc284ea991b3cfbd81a037b65adcb50075b7b195a0d1b26294383bd0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextdescriptor(_:_:).json": {
       "etag": "\"65fc-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextdescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextdescriptor(_,_).md",
       "hash": "d9b3f369d619a2e533718f56dec6cd1f6def5689c97afe3d1300e53dea40f44a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextdescriptorwithtype(_:_:_:).json": {
       "etag": "\"6ba0-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextdescriptorwithtype.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextdescriptorwithtype(_,_,_).md",
       "hash": "f4648cc02f74e7387c760f12f638d425eaac6c5ef3ef3cc0ea9f5c7c679c24de"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextendpointdescriptor(_:_:_:).json": {
       "etag": "\"8aa2-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextendpointdescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextendpointdescriptor(_,_,_).md",
       "hash": "b82c280389a1526b7d5975eeacc6a37440be5165647013de068d12f31cf66514"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextinterfaceassociationdescriptor(_:_:).json": {
       "etag": "\"6930-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextinterfaceassociationdescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextinterfaceassociationdescriptor(_,_).md",
       "hash": "bef82d6e00513abd758e4e9bb17fed6513859e19caf6630e33bfaf1d17a148b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetnextinterfacedescriptor(_:_:).json": {
       "etag": "\"6812-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetnextinterfacedescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetnextinterfacedescriptor(_,_).md",
       "hash": "24c02a73648388f60ad2ad2fd53ec22f710a22c53c3acfb0496d83cd3540535a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetplatformcapabilitydescriptor(_:).json": {
       "etag": "\"85c2-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetplatformcapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetplatformcapabilitydescriptor(_).md",
       "hash": "f70da75b22dda9e40496cf70b4f7eb7d30f3b11cb813d05faac0ffb24b59665a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetplatformcapabilitydescriptorwithuuid(_:_:).json": {
       "etag": "\"8e2f-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetplatformcapabilitydescriptorwithuuid.md",
+      "file_path": "documentation/IOUSBHost/iousbgetplatformcapabilitydescriptorwithuuid(_,_).md",
       "hash": "a51a2e14047e0be75a000d495d5c36452aca2fe8164fa2ca9f3b284a5ebd871e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetsuperspeeddevicecapabilitydescriptor(_:).json": {
       "etag": "\"52f2-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetsuperspeeddevicecapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetsuperspeeddevicecapabilitydescriptor(_).md",
       "hash": "5b231996c2b11ce037756030789395ae5b23173460f1449b454b0d7b90ffa8db"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetsuperspeedplusdevicecapabilitydescriptor(_:).json": {
       "etag": "\"867c-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetsuperspeedplusdevicecapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetsuperspeedplusdevicecapabilitydescriptor(_).md",
       "hash": "17b1fdafa1eb3d9d8b1621917908215b11034abf193ed5202982a1fbe272d2f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbgetusb20extensiondevicecapabilitydescriptor(_:).json": {
       "etag": "\"5328-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbgetusb20extensiondevicecapabilitydescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbgetusb20extensiondevicecapabilitydescriptor(_).md",
       "hash": "d2f5525fc0c58d45d2a32bf26271cdcf805ea6d94ef7fa9b1cef7a01e6e6eadd"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhost-constants.json": {
@@ -2812,7 +2812,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostabortoption/init(rawvalue:).json": {
       "etag": "\"1290-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostabortoption/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostabortoption/init(rawvalue).md",
       "hash": "5f06d4d42a9f2ad963ccf1861bc4cf57b3166d884b6302ebdc380798de467692"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostabortoption/synchronous.json": {
@@ -2907,12 +2907,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstate/init(_:).json": {
       "etag": "\"15d2-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstate/init(_).md",
       "hash": "547ba82f7cb4e09fb3506b5c6283c916cb969970150511787fd3afaa2196517f"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstate/init(rawvalue:).json": {
       "etag": "\"15f2-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstate/init(rawvalue).md",
       "hash": "f3887bcfcbbebf3b93a08b8e82bdf13381dba367b3e2067428d5be3af46009f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstate/rawvalue.json": {
@@ -2942,22 +2942,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstatemachine/enqueueupdatedframe(_:timestamp:).json": {
       "etag": "\"44da-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/enqueueupdatedframe-timestamp.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/enqueueupdatedframe(_,timestamp).md",
       "hash": "c2402b0956d14ee13fdd40781b7bfece8bdd36ae5f1b348f937598e7ddbb40be"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstatemachine/inspectcommand(_:).json": {
       "etag": "\"4636-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/inspectcommand.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/inspectcommand(_).md",
       "hash": "5209ef51d98bf16fe071256bac245a12dd1cb4d6f2d998452c4a13cc7dee3083"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstatemachine/respond(tocommand:status:).json": {
       "etag": "\"4eab-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/respond-tocommandstatus.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/respond(tocommand,status).md",
       "hash": "88dc6556a8856d1a3d07c30647fe46081653da0913ea3f6b24230af97c058452"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstatemachine/respond(tocommand:status:frame:timestamp:).json": {
       "etag": "\"580b-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/respond-tocommandstatusframetimestamp.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatemachine/respond(tocommand,status,frame,timestamp).md",
       "hash": "db8b985c03e16629ebf1348eaab408816c8e426a8746707d7f3b2cc23df404c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstateoff.json": {
@@ -2972,7 +2972,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcicontrollerstatetostring(_:).json": {
       "etag": "\"84e8-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcicontrollerstatetostring(_).md",
       "hash": "c032b00da23206f44395deea904e45403e8af28f8688736eeecbd6d8bc3fb4e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicecreatecommanddata0rootport.json": {
@@ -3012,12 +3012,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicespeed/init(_:).json": {
       "etag": "\"1576-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeed/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeed/init(_).md",
       "hash": "1b5f85279863247570c5b37af1cd2ac8e9a62b8b66f5ac486873324d50b3010b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicespeed/init(rawvalue:).json": {
       "etag": "\"1596-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeed/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeed/init(rawvalue).md",
       "hash": "fa4b0bedb1acfbd01c075c6754d15289b930531fed122041e664c48cc2db8a29"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicespeed/rawvalue.json": {
@@ -3067,7 +3067,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicespeedtostring(_:).json": {
       "etag": "\"8460-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeedtostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicespeedtostring(_).md",
       "hash": "f495fee53e19fd00dd61b7b8bb044af760b116e0df35d003e21881c3c63c5401"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestate.json": {
@@ -3077,12 +3077,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestate/init(_:).json": {
       "etag": "\"1576-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestate/init(_).md",
       "hash": "40a395c8551b900e2cc60b4623891b0154bdfc9430719422575097d6bdc822d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestate/init(rawvalue:).json": {
       "etag": "\"1596-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestate/init(rawvalue).md",
       "hash": "dd435f18baac716a10ba5b595bc0ab558ef34945c87ace2b25e00116249ac732"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestate/rawvalue.json": {
@@ -3127,17 +3127,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestatemachine/inspectcommand(_:).json": {
       "etag": "\"3dee-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/inspectcommand.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/inspectcommand(_).md",
       "hash": "f7e1e31f7f684347822f2a52faa53ecce288413e2a2ee62d650773cdf10e7994"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestatemachine/respond(tocommand:status:).json": {
       "etag": "\"4663-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/respond-tocommandstatus.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/respond(tocommand,status).md",
       "hash": "58775b7f7579f92c5ff06cb44d53fb43125ff64b86a3f558dd5daecd23f4e4ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestatemachine/respond(tocommand:status:deviceaddress:).json": {
       "etag": "\"4d46-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/respond-tocommandstatusdeviceaddress.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatemachine/respond(tocommand,status,deviceaddress).md",
       "hash": "2c8dd8e2a2c820028b198d636f28f634b804603b4007a888b2fe0288019cf2a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestatepaused.json": {
@@ -3147,7 +3147,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcidevicestatetostring(_:).json": {
       "etag": "\"846c-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcidevicestatetostring(_).md",
       "hash": "b029c763861d2465e1d397f488c28fb01d3dddae37c746a6400095f00653dc5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcideviceupdatecommanddata1descriptoraddress.json": {
@@ -3227,12 +3227,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstate/init(_:).json": {
       "etag": "\"15a4-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstate/init(_).md",
       "hash": "d872e2e1b8e4cef0e769efa5fde393b1041b0250610c7ddab8e6690d4e79e729"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstate/init(rawvalue:).json": {
       "etag": "\"15c4-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstate/init(rawvalue).md",
       "hash": "bc6d5d3ddafcc018a96031e8774852ae0436e3e7d19e641837e4c09ab01133b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstate/rawvalue.json": {
@@ -3287,22 +3287,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstatemachine/enqueuetransfercompletion(for:status:transferlength:).json": {
       "etag": "\"546f-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/enqueuetransfercompletion-forstatustransferlength.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/enqueuetransfercompletion(for,status,transferlength).md",
       "hash": "f0ddeef2b46a07b65e68fa7e72ebfed139fb5c6e5e613b21a107837adea330ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstatemachine/inspectcommand(_:).json": {
       "etag": "\"44bb-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/inspectcommand.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/inspectcommand(_).md",
       "hash": "9826c6719d01288b3689d325dd70c4d9d66278e721bdfd627aa96e94743ab2b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstatemachine/processdoorbell(_:).json": {
       "etag": "\"419a-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/processdoorbell.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/processdoorbell(_).md",
       "hash": "e641b00cffba599eb9a3759e36c80b72c45e5c89e886ce570c95026be6a6be7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstatemachine/respond(tocommand:status:).json": {
       "etag": "\"4d30-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/respond-tocommandstatus.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatemachine/respond(tocommand,status).md",
       "hash": "4c167b8261406871bbb4327bc00f54fd03d0593173deeb17bd8e7a27b9052874"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstatepaused.json": {
@@ -3312,7 +3312,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointstatetostring(_:).json": {
       "etag": "\"84aa-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciendpointstatetostring(_).md",
       "hash": "93b542ddd8ebc53c88ca86d92c3b0e9bf44c3874e411aa1e5764b8241c28f2d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciendpointupdatecommanddata1descriptor.json": {
@@ -3332,12 +3332,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciexceptiontype/init(_:).json": {
       "etag": "\"15a4-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontype/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontype/init(_).md",
       "hash": "8d576f72b5e09cbfab651d0cc17b19dd7c6dc03f1679b5e80cfb8016183f271d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciexceptiontype/init(rawvalue:).json": {
       "etag": "\"15c4-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontype/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontype/init(rawvalue).md",
       "hash": "6ce7e5e0c5db7856356cee72450458e82b505f92caf1dd17e04f9abc4ad2ef4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciexceptiontype/rawvalue.json": {
@@ -3407,7 +3407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciexceptiontypetostring(_:).json": {
       "etag": "\"84aa-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontypetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciexceptiontypetostring(_).md",
       "hash": "a5bba7fbc93669e55e86321bd9a74f9fe9d00af12f37d4dd29fffa446a1630c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciexceptiontypeunknown.json": {
@@ -3467,12 +3467,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcilinkstate/init(_:).json": {
       "etag": "\"1548-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcilinkstate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcilinkstate/init(_).md",
       "hash": "772513326cb1e1c30839333512ac1ce88bd8587ff72c35336ca5058d084e344a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcilinkstate/init(rawvalue:).json": {
       "etag": "\"1568-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcilinkstate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcilinkstate/init(rawvalue).md",
       "hash": "d42e0d0d34473f6f357f2e44b80593c103a550928aae6203b10dd748a58ad600"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcilinkstate/rawvalue.json": {
@@ -3492,7 +3492,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcilinkstateenabled(_:).json": {
       "etag": "\"8127-65d560735fee7-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcilinkstateenabled.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcilinkstateenabled(_).md",
       "hash": "937c1206760a22e06d0217f91f0910170a10e718f2690ef20f71fdcec60d6291"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcilinkstateinactive.json": {
@@ -3532,7 +3532,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcilinkstatetostring(_:).json": {
       "etag": "\"842e-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcilinkstatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcilinkstatetostring(_).md",
       "hash": "21745354599f8c0326dfb3620f82abf51928d823e2e2c0f60e63896b9c1bf7e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcilinkstateu0.json": {
@@ -3577,12 +3577,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessage/init().json": {
       "etag": "\"1270-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessage/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessage/init().md",
       "hash": "e98e1e44e95c79634992d6b67f16e03801f5cb7793a5922da12d04bff8e32bb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessage/init(control:data0:data1:).json": {
       "etag": "\"1be8-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessage/init-controldata0data1.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessage/init(control,data0,data1).md",
       "hash": "18cf98e0ae629fc53ceeebdf960e9ae0109fec1b9dd0b11f9f2c82b6f6630edb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagecontrolnoresponse.json": {
@@ -3622,12 +3622,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagestatus/init(_:).json": {
       "etag": "\"15a4-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatus/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatus/init(_).md",
       "hash": "22a299db0b0e346c34ee742f0f6bf274b34e7ac53312bdc58aead38b779afa30"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagestatus/init(rawvalue:).json": {
       "etag": "\"15c4-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatus/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatus/init(rawvalue).md",
       "hash": "30c79d1dfbeee47358d1b93f34fc625f9e69301b5fa4ee325de2ad3998a849f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagestatus/rawvalue.json": {
@@ -3652,7 +3652,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagestatusfromioreturn(_:).json": {
       "etag": "\"80ad-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatusfromioreturn.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatusfromioreturn(_).md",
       "hash": "a0f71e98cfdb7e28a92bff325c9313655cc1b2de88e4dddf559941a7f86822eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagestatusmissedserviceerror.json": {
@@ -3707,12 +3707,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagestatustoioreturn(_:).json": {
       "etag": "\"809b-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatustoioreturn.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatustoioreturn(_).md",
       "hash": "30388ddf72268bdde62d7b6dcac87cc132dfcce74b99661d2debc41380899370"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagestatustostring(_:).json": {
       "etag": "\"8501-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatustostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagestatustostring(_).md",
       "hash": "2b4e91bb2da26dbf0cf4ad1d0e855ebc793309d0c2cb850f0f651b85ed8f69bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagestatustransactionerror.json": {
@@ -3727,12 +3727,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagetype/init(_:).json": {
       "etag": "\"1576-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagetype/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagetype/init(_).md",
       "hash": "2493233747f4a1f6b634751f85cc17d6f06e0a0deba9a51c0e534ff34a74a706"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagetype/init(rawvalue:).json": {
       "etag": "\"1596-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagetype/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagetype/init(rawvalue).md",
       "hash": "f22fb2a69be730e1bb3c3f44bcabc51ef5f6614217f0694f3fcaa80e3ffda77b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagetype/rawvalue.json": {
@@ -3807,7 +3807,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagetypeendpoint_reserved_.json": {
       "etag": "\"639a-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagetypeendpoint-reserved.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagetypeendpoint_reserved_.md",
       "hash": "6022ee89213d072c3b22fd3597f653f6d315d56d7629da6ec7fbcd47a19af8eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagetypeendpointcreate.json": {
@@ -3922,7 +3922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagetypetostring(_:).json": {
       "etag": "\"84a7-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcimessagetypetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcimessagetypetostring(_).md",
       "hash": "8e7d596d55d6e23fb78c73ea478b06c6d53656386518c70770f2a45bfcc9bc8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcimessagetypetransfercomplete.json": {
@@ -4002,12 +4002,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstate/init(_:).json": {
       "etag": "\"1548-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstate/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstate/init(_).md",
       "hash": "1f4b649edcb9cd630b112539d1637c2d2dfa8475e7b927f9004d0c4521138492"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstate/init(rawvalue:).json": {
       "etag": "\"1568-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstate/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstate/init(rawvalue).md",
       "hash": "b70ec29b5ea616611fd5471b73644e5d8d41c66c104beffb439aaf33fe45d67e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstate/rawvalue.json": {
@@ -4037,7 +4037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstatemachine/inspectcommand(_:).json": {
       "etag": "\"3d65-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/inspectcommand.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/inspectcommand(_).md",
       "hash": "06ec539f9b88b17f1f18796195e2e93522e8345e9d17787d2b43271575a08bf5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstatemachine/linkstate.json": {
@@ -4072,7 +4072,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstatemachine/respond(tocommand:status:).json": {
       "etag": "\"45da-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/respond-tocommandstatus.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/respond(tocommand,status).md",
       "hash": "db0a261221d8899999203f638b4246c7b4211c2d6c74c48d886d6caad0113b20"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstatemachine/speed.json": {
@@ -4082,7 +4082,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstatemachine/updatelinkstate(_:speed:inhibitlinkstatechange:).json": {
       "etag": "\"4882-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/updatelinkstate-speedinhibitlinkstatechange.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstatemachine/updatelinkstate(_,speed,inhibitlinkstatechange).md",
       "hash": "8f9f9a00b9a8e6d43b77313f3769829255d6ac49ae762d8d0a5b1da8cd6f48dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstateoff.json": {
@@ -4102,7 +4102,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstatetostring(_:).json": {
       "etag": "\"845b-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciportstatetostring.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciportstatetostring(_).md",
       "hash": "2a1e97bbe771fc76dcbfed9926c5fd4aacd416e04627a8b2b0215c9ae5f705c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciportstatus.json": {
@@ -4327,12 +4327,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciuserclientversion/init(_:).json": {
       "etag": "\"1600-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciuserclientversion/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciuserclientversion/init(_).md",
       "hash": "3a3b82a559a68246c257df64b27a4d17236c216b445338040dff9f4fe3a8f8e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciuserclientversion/init(rawvalue:).json": {
       "etag": "\"1620-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostciuserclientversion/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostciuserclientversion/init(rawvalue).md",
       "hash": "850c3454cf93bdf17f16553c3bef3a3b8ecb2c128359c70f88ea09c7f48f59dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostciuserclientversion/rawvalue.json": {
@@ -4357,7 +4357,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/capabilities(forport:).json": {
       "etag": "\"65e0-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/capabilities-forport.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/capabilities(forport).md",
       "hash": "7208bd7a04ea9fb4024d80e3548646c21aa2862eadaafd5d5375f977dd4a51b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/capabilities.json": {
@@ -4372,42 +4372,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/description(for:).json": {
       "etag": "\"66ca-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/description-for.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/description(for).md",
       "hash": "e8a1dbe134d73ffab4ab08a0c997eada915b5f0b9e55922d959b853c8e57ebad"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/destroy().json": {
       "etag": "\"55b1-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/destroy.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/destroy().md",
       "hash": "8f229b8302d9cfe212c75a954c134924c6e2ea9a30be263f217ec95b3d60ffe5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/enqueueinterrupt(_:).json": {
       "etag": "\"672e-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupt.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupt(_).md",
       "hash": "097dfb73f25b125eb3e00b96286c896f5d2771a3e7cba8786333d99c22a63c15"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/enqueueinterrupt(_:expedite:).json": {
       "etag": "\"6c98-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupt-expedite.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupt(_,expedite).md",
       "hash": "79fcf0a175a0f2357b1762343225cfaefd33990c351ed8fafca37aa5b08d1d93"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/enqueueinterrupts(_:count:).json": {
       "etag": "\"6dcc-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupts-count.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupts(_,count).md",
       "hash": "9800ef9e868c0497935ba8ab7f33829692f49a0649cd088c4a3dc9930cb9f17c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/enqueueinterrupts(_:count:expedite:).json": {
       "etag": "\"7336-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupts-countexpedite.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/enqueueinterrupts(_,count,expedite).md",
       "hash": "98965f6298a508dae6fb8488ad64101bf295defeb6c5047da28e1739edaf1e09"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/getportstatemachine(forcommand:error:).json": {
       "etag": "\"6fe0-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/getportstatemachine-forcommanderror.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/getportstatemachine(forcommand,error).md",
       "hash": "f61b62576491b370fa6314b2fc7c99025a7cb2f758233b219778f77f18e1a7e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/getportstatemachine(forport:error:).json": {
       "etag": "\"6b6d-65d5607412cf0-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/getportstatemachine-forporterror.md",
+      "file_path": "documentation/IOUSBHost/iousbhostcontrollerinterface/getportstatemachine(forport,error).md",
       "hash": "4ff39b553fc29d9401dc87976aa141ca94283cc33d706e511b480a2f8ff8ae67"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostcontrollerinterface/interruptratehz.json": {
@@ -4452,7 +4452,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostdevice/reset().json": {
       "etag": "\"2e76-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostdevice/reset.md",
+      "file_path": "documentation/IOUSBHost/iousbhostdevice/reset().md",
       "hash": "76e6a96be69bb866c6ffa6002015d2183ac569eeb8761bb1573052f0189ae0c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostdevicepropertykey.json": {
@@ -4472,7 +4472,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostdevicepropertykey/init(rawvalue:).json": {
       "etag": "\"1449-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostdevicepropertykey/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostdevicepropertykey/init(rawvalue).md",
       "hash": "3c5c8c665f3337af0f5464fcbc87c5bde9a8b0a57494a4e3e3993fe9bcde3e84"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostdevicepropertykey/serialnumberstring.json": {
@@ -4487,7 +4487,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostdevicerequesttype(_:_:_:).json": {
       "etag": "\"447f-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostdevicerequesttype.md",
+      "file_path": "documentation/IOUSBHost/iousbhostdevicerequesttype(_,_,_).md",
       "hash": "d6f9a8ad98c978b2d83189e774bbd6419e557dca275deae795b8f031f23c0c43"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhosterrordomain.json": {
@@ -4512,7 +4512,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostinterface/copypipe(withaddress:).json": {
       "etag": "\"3dbd-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostinterface/copypipe-withaddress.md",
+      "file_path": "documentation/IOUSBHost/iousbhostinterface/copypipe(withaddress).md",
       "hash": "d5cc6b5756cafb3985c64a5b3536321b0d80df914829830d4efe3d20228a22f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostinterface/idletimeout.json": {
@@ -4527,12 +4527,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostinterface/selectalternatesetting(_:).json": {
       "etag": "\"3aeb-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostinterface/selectalternatesetting.md",
+      "file_path": "documentation/IOUSBHost/iousbhostinterface/selectalternatesetting(_).md",
       "hash": "c139b8749aad6dbd88cb840bb1e846943bdbbd43511acfc4aeea8aa70b7d34b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostinterface/setidletimeout(_:).json": {
       "etag": "\"336c-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostinterface/setidletimeout.md",
+      "file_path": "documentation/IOUSBHost/iousbhostinterface/setidletimeout(_).md",
       "hash": "6cfe2b957ac47ccfc9e2f8147d0fbeb9eaa3f72abc838ab0a71dfee3eb73df20"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostinterfacepropertykey.json": {
@@ -4547,7 +4547,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostinterfacepropertykey/init(rawvalue:).json": {
       "etag": "\"1485-65d560737ec78-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostinterfacepropertykey/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostinterfacepropertykey/init(rawvalue).md",
       "hash": "b11c265d373c6b610b226be85a785c6fe57ee3cfbfb8afeb54c5c7accbba11b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostiosource.json": {
@@ -4587,12 +4587,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostiosourcedescriptors/init().json": {
       "etag": "\"1700-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostiosourcedescriptors/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostiosourcedescriptors/init().md",
       "hash": "f88f5df7fa863126d2453ab0d7f742b2a65e83076f93e402a6ae7b36485517e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostiosourcedescriptors/init(bcdusb:descriptor:sscompaniondescriptor:sspcompaniondescriptor:).json": {
       "etag": "\"3018-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostiosourcedescriptors/init-bcdusbdescriptorsscompaniondescriptorsspcompaniondescriptor.md",
+      "file_path": "documentation/IOUSBHost/iousbhostiosourcedescriptors/init(bcdusb,descriptor,sscompaniondescriptor,sspcompaniondescriptor).md",
       "hash": "f97eebd4efffb4475725b272a077d44b98ed0ad06b98398edc29e57ef758a793"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostiosourcedescriptors/sscompaniondescriptor.json": {
@@ -4622,12 +4622,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronousframe/init().json": {
       "etag": "\"f38-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronousframe/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronousframe/init().md",
       "hash": "3f419e50a7eaa93bc6c82c6784fdf5b85258e92fe5988284fc8e0f983f7fc7cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronousframe/init(status:requestcount:completecount:reserved:timestamp:).json": {
       "etag": "\"23b0-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronousframe/init-statusrequestcountcompletecountreservedtimestamp.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronousframe/init(status,requestcount,completecount,reserved,timestamp).md",
       "hash": "5404d4e124067ee53a1193af52377e69ff0882952d6087ed67f5be9a2b1636e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronousframe/requestcount.json": {
@@ -4662,12 +4662,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronoustransaction/init().json": {
       "etag": "\"16c9-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransaction/init.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransaction/init().md",
       "hash": "999e7ef97d9e2dc39a1501947e2940e4263f6c82a9dc63bb149ef4327fe5b295"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronoustransaction/init(status:requestcount:offset:completecount:timestamp:options:).json": {
       "etag": "\"2e8a-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransaction/init-statusrequestcountoffsetcompletecounttimestampoptions.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransaction/init(status,requestcount,offset,completecount,timestamp,options).md",
       "hash": "8071d2825060c8e7d7c2867ab3af7daffc6e1d13ea7828b12310adffc01670ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronoustransaction/offset.json": {
@@ -4707,7 +4707,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronoustransactionoptions/init(rawvalue:).json": {
       "etag": "\"1400-65d56073b8667-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransactionoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransactionoptions/init(rawvalue).md",
       "hash": "0f0e25c3a2d08b92bbd5a26c6a3542ec70ea1a5f4afae954e24693643d497bf6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronoustransactionoptions/wrap.json": {
@@ -4722,7 +4722,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostisochronoustransferoptions/init(rawvalue:).json": {
       "etag": "\"13c7-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransferoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostisochronoustransferoptions/init(rawvalue).md",
       "hash": "edf90590177e418b020ddd518229e2b3b9ccd1ee821f7290c4f770710ee56ac8"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostmatchingpropertykey.json": {
@@ -4757,7 +4757,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostmatchingpropertykey/init(rawvalue:).json": {
       "etag": "\"146d-65d560739fade-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostmatchingpropertykey/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostmatchingpropertykey/init(rawvalue).md",
       "hash": "5a56b799704ed7d7609d027d8ed170a61a9404835b062027a1d54eb4932b00ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostmatchingpropertykey/interfaceclass.json": {
@@ -4817,27 +4817,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/configurationdescriptor(with:).json": {
       "etag": "\"3640-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/configurationdescriptor-with.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/configurationdescriptor(with).md",
       "hash": "31c732cc635fe014ad712579e9f52731320c373c65e9bd0aea72b4d9886a98f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/configurationdescriptor(withconfigurationvalue:).json": {
       "etag": "\"36e3-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/configurationdescriptor-withconfigurationvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/configurationdescriptor(withconfigurationvalue).md",
       "hash": "ccdfb5e13a5bbc043c850dd99a6c7e11af86180ec57636d1fd38714fd996cf0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/data(withcapacity:options:).json": {
       "etag": "\"3d9e-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/data-withcapacityoptions.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/data(withcapacity,options).md",
       "hash": "35a4e51ff6bdad1ea26fa5e6278e62edf1fe12843dd46fc94c1dcfe0a1d59002"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/destroy().json": {
       "etag": "\"379e-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/destroy.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/destroy().md",
       "hash": "a0cd7cbab3d6f5eb481768f5f67eee41593a196b6d7e5df8395b34d6b5dc83af"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/destroy(options:).json": {
       "etag": "\"2322-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/destroy-options.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/destroy(options).md",
       "hash": "82bc786611c812e9639c24916a622c6c88121123f56a58645db817f050f37f46"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/deviceaddress.json": {
@@ -4852,7 +4852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/iodata(withcapacity:).json": {
       "etag": "\"3348-65d560742c8c9-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobject/iodata-withcapacity.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobject/iodata(withcapacity).md",
       "hash": "c5d710d5141bf3d692f69564f557ac2ad27cf140060c189066789d086a91e023"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobject/ioservice.json": {
@@ -4872,7 +4872,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobjectdataoptions/init(rawvalue:).json": {
       "etag": "\"12b2-65d56073d22c8-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobjectdataoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobjectdataoptions/init(rawvalue).md",
       "hash": "5e3a57ee2904f8f20d4ca129c86ec6509170e2bfa45b825f9448e4fc4cb013c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobjectdataoptions/kernelusershared.json": {
@@ -4892,7 +4892,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobjectdestroyoptions/init(rawvalue:).json": {
       "etag": "\"12eb-65d56072fbbdf-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobjectdestroyoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobjectdestroyoptions/init(rawvalue).md",
       "hash": "37b7e5810981ed7e7faec5bbf1447fafef67ea421577e302b1126a4d42832196"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobjectinitoptions.json": {
@@ -4912,7 +4912,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostobjectinitoptions/init(rawvalue:).json": {
       "etag": "\"1407-65d56073f3c26-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostobjectinitoptions/init-rawvalue.md",
+      "file_path": "documentation/IOUSBHost/iousbhostobjectinitoptions/init(rawvalue).md",
       "hash": "fde8d87a9b703b956c24de62b623723068fd772e5e7e789a36ee058c179e7c89"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe.json": {
@@ -4922,17 +4922,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/adjust(with:).json": {
       "etag": "\"44a2-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/adjust-with.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/adjust(with).md",
       "hash": "2dd59691e51a0851d3eb22f0b716ec29618e0b8e39d19595a7a76d14784884a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/clearstall().json": {
       "etag": "\"42a9-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/clearstall.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/clearstall().md",
       "hash": "38e99cb44cd70d1bebec1f2275a56fec969eb31c4b163bd69ca837cf543c209b"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/copystream(withstreamid:).json": {
       "etag": "\"4be5-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/copystream-withstreamid.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/copystream(withstreamid).md",
       "hash": "ee504396363a24e5bc566e3cd8f5e02f8a7a46a7077d1e78e736bd5a269325f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/descriptors.json": {
@@ -4942,27 +4942,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/disablestreams().json": {
       "etag": "\"379f-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/disablestreams.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/disablestreams().md",
       "hash": "0ab2f62c29ccf44359e2591f0bed2280fd403d384977b8f7168e9e8e4dab4aa0"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/enablestreams().json": {
       "etag": "\"3119-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/enablestreams.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/enablestreams().md",
       "hash": "cc73ce1b7c40fc780f863add1cab85321441976ccf7f151abbcfaef343e5390a"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/enqueueiorequest(with:completiontimeout:completionhandler:).json": {
       "etag": "\"7547-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest-withcompletiontimeoutcompletionhandler.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest(with,completiontimeout,completionhandler).md",
       "hash": "5320fab83f538477c6fbc5a1c5e3d9039cc9b659a8f6ca8475ec2516c309119c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/enqueueiorequest(with:framelist:framelistcount:firstframenumber:completionhandler:).json": {
       "etag": "\"9688-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest-withframelistframelistcountfirstframenumbercompletionhandler.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest(with,framelist,framelistcount,firstframenumber,completionhandler).md",
       "hash": "2a3e56b4b85ddd815319e56fb6b5e77c1593a27b915279b2408e81e0aa1e2f06"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/enqueueiorequest(with:transactionlist:transactionlistcount:firstframenumber:options:completionhandler:).json": {
       "etag": "\"814c-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest-withtransactionlisttransactionlistcountfirstframenumberoptionscompletionhandler.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/enqueueiorequest(with,transactionlist,transactionlistcount,firstframenumber,options,completionhandler).md",
       "hash": "241bd5adde948b7175af1f84e8d9d6043258fa227c57c1d0d59fed4150860d65"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/idletimeout.json": {
@@ -4977,17 +4977,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/sendiorequest(with:framelist:framelistcount:firstframenumber:).json": {
       "etag": "\"7636-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/sendiorequest-withframelistframelistcountfirstframenumber.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/sendiorequest(with,framelist,framelistcount,firstframenumber).md",
       "hash": "ec19baf983aa391a915f7d01759276c397c84da4393b604e50f27398a2fe8e12"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/sendiorequest(with:transactionlist:transactionlistcount:firstframenumber:options:).json": {
       "etag": "\"5e68-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/sendiorequest-withtransactionlisttransactionlistcountfirstframenumberoptions.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/sendiorequest(with,transactionlist,transactionlistcount,firstframenumber,options).md",
       "hash": "d52c0f433401cc02e3ce2415192616bebf67fc33560b4b423d845a3117b13b37"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpipe/setidletimeout(_:).json": {
       "etag": "\"32f9-65d5607447bf6-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhostpipe/setidletimeout.md",
+      "file_path": "documentation/IOUSBHost/iousbhostpipe/setidletimeout(_).md",
       "hash": "d533028c0e14ddd689fc39ba6b8cfcf1d4473ec75e7955c58f33a8589d8672d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhostpropertykey.json": {
@@ -5007,17 +5007,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhoststream/abort().json": {
       "etag": "\"39c4-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhoststream/abort.md",
+      "file_path": "documentation/IOUSBHost/iousbhoststream/abort().md",
       "hash": "12d60d2fe6d04391a61c72939244136ac9caacba50e32a0cf780151545f39422"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhoststream/abort(with:).json": {
       "etag": "\"499c-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhoststream/abort-with.md",
+      "file_path": "documentation/IOUSBHost/iousbhoststream/abort(with).md",
       "hash": "daa02a4dbd43bfd63d705f4d6d58994733c57fc3e4ee0ad9a75702278f17ce94"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhoststream/enqueueiorequest(with:completionhandler:).json": {
       "etag": "\"5d84-65d560731ba33-df\"",
-      "file_path": "documentation/IOUSBHost/iousbhoststream/enqueueiorequest-withcompletionhandler.md",
+      "file_path": "documentation/IOUSBHost/iousbhoststream/enqueueiorequest(with,completionhandler).md",
       "hash": "6281961f6a652e7dfd4bc88c4118cbefd5bb3e87192a43ef49214eec4e1d54d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/iousbhost/iousbhoststream/hostpipe.json": {

@@ -32,7 +32,7 @@
     },
     "https://developer.apple.com/documentation/hvf/compositeextremumindex/init(row:column:)": {
       "etag": "\"13b6-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/compositeextremumindex/init-rowcolumn.md",
+      "file_path": "documentation/hvf/compositeextremumindex/init(row,column).md",
       "hash": "fd325772c23b7441e156bca26dcaa5b361f89fc40362436dae46dd15865c6cff"
     },
     "https://developer.apple.com/documentation/hvf/compositeextremumindex/row": {
@@ -47,7 +47,7 @@
     },
     "https://developer.apple.com/documentation/hvf/compositesubpart/init(partindex:treepartoffset:treeaxisoffset:)": {
       "etag": "\"18df-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/compositesubpart/init-partindextreepartoffsettreeaxisoffset.md",
+      "file_path": "documentation/hvf/compositesubpart/init(partindex,treepartoffset,treeaxisoffset).md",
       "hash": "eeda46aad289e621c61c1c4cdd59d010d7952d78789eff05719eb802dfcfc66d"
     },
     "https://developer.apple.com/documentation/hvf/compositesubpart/partindex": {
@@ -82,7 +82,7 @@
     },
     "https://developer.apple.com/documentation/hvf/compositesubparttranslation/init(dx:dy:)": {
       "etag": "\"1344-65d55d98a7bf0-df\"",
-      "file_path": "documentation/hvf/compositesubparttranslation/init-dxdy.md",
+      "file_path": "documentation/hvf/compositesubparttranslation/init(dx,dy).md",
       "hash": "ad6b2b5a6dda8b5c5028de67a0fccdbcd38d63398cfd5416b72bad72bd77b820"
     },
     "https://developer.apple.com/documentation/hvf/compositewriter": {
@@ -97,7 +97,7 @@
     },
     "https://developer.apple.com/documentation/hvf/compositewriter/column(axis:extremum:)": {
       "etag": "\"17cb-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/compositewriter/column-axisextremum.md",
+      "file_path": "documentation/hvf/compositewriter/column(axis,extremum).md",
       "hash": "aa632bb0e098d0160070ab285553f9d3c12957b96c0c1816b1a5f2259b5c1ab8"
     },
     "https://developer.apple.com/documentation/hvf/compositewriter/extremumcscaxisvalues": {
@@ -137,7 +137,7 @@
     },
     "https://developer.apple.com/documentation/hvf/compositewriter/finalize()": {
       "etag": "\"1161-65d55d98a7bf0-df\"",
-      "file_path": "documentation/hvf/compositewriter/finalize.md",
+      "file_path": "documentation/hvf/compositewriter/finalize().md",
       "hash": "13a5ea385ad63a8d8b50fd52d6944899e6724f8bf596b5c900ff8ebc75093252"
     },
     "https://developer.apple.com/documentation/hvf/compositewriter/mastercscaxisvalues": {
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/hvf/hvflibraryversion-swift.var": {
       "etag": "\"12ad-65d55d98a7bf0-df\"",
-      "file_path": "documentation/hvf/hvflibraryversion-swiftvar.md",
+      "file_path": "documentation/hvf/hvflibraryversion-swift.var.md",
       "hash": "22f990ca1ca3d18141aceaf5ad65c540dbd98bae6a7151ea8be7076c3755e5df"
     },
     "https://developer.apple.com/documentation/hvf/hvglpartloader": {
@@ -217,7 +217,7 @@
     },
     "https://developer.apple.com/documentation/hvf/hvglpartloader/init(hvgltable:hvpmtable:)": {
       "etag": "\"1596-65d55d98a7bf0-df\"",
-      "file_path": "documentation/hvf/hvglpartloader/init-hvgltablehvpmtable.md",
+      "file_path": "documentation/hvf/hvglpartloader/init(hvgltable,hvpmtable).md",
       "hash": "f9718e3b54087273f74c635f8eb5212d7a37d1cce72aaf8010a173a02869b8b6"
     },
     "https://developer.apple.com/documentation/hvf/hvglpartloader/partcount": {
@@ -237,12 +237,12 @@
     },
     "https://developer.apple.com/documentation/hvf/partgenerator/makecomposite(_:)": {
       "etag": "\"15ba-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/partgenerator/makecomposite.md",
+      "file_path": "documentation/hvf/partgenerator/makecomposite(_).md",
       "hash": "fed2c23af54e2643d02e4404fa893d3b411f6f62091ca1a441012f8779b4cb51"
     },
     "https://developer.apple.com/documentation/hvf/partgenerator/makeshape(_:)": {
       "etag": "\"1547-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/partgenerator/makeshape.md",
+      "file_path": "documentation/hvf/partgenerator/makeshape(_).md",
       "hash": "534f017c73fcb3aeff014eb0c102cb86f7bbe052285160c2561a4ede9c5ad81c"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer": {
@@ -277,7 +277,7 @@
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/axisvalues/blendedvalue(axis:)": {
       "etag": "\"19fe-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/axisvalues/blendedvalue-axis.md",
+      "file_path": "documentation/hvf/partrenderer/axisvalues/blendedvalue(axis).md",
       "hash": "a2a1b908682853b51256741d008540cad6e2890b7c1685bd53ec9df84b074c2c"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/axisvalues/isnested": {
@@ -292,17 +292,17 @@
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/clearpartcache()": {
       "etag": "\"e61-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/clearpartcache.md",
+      "file_path": "documentation/hvf/partrenderer/clearpartcache().md",
       "hash": "1603c12d120ba44a9dd3aae9fcdacf7f891efb77ec1311f791f9348f968648a1"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/init(custom:reusable:)": {
       "etag": "\"1a12-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/init-customreusable.md",
+      "file_path": "documentation/hvf/partrenderer/init(custom,reusable).md",
       "hash": "b46c0587bb6e8af7506a85099432c7f38ea442b3830bc39edaa006509942069e"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/init(hvglloader:reusable:)": {
       "etag": "\"18bc-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/init-hvglloaderreusable.md",
+      "file_path": "documentation/hvf/partrenderer/init(hvglloader,reusable).md",
       "hash": "c66b1f9d2cadd53eef7ffcd951326d16a6318b825a51a162dc0404399721ea42"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction": {
@@ -312,27 +312,27 @@
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction/addcubic(cp1:cp2:on:)": {
       "etag": "\"1eee-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/addcubic-cp1cp2on.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/addcubic(cp1,cp2,on).md",
       "hash": "a6090f6c3dd03d7a7bdd2b3503abe4fba4359d48499327ed487ef165601ecec9"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction/addline(_:)": {
       "etag": "\"158c-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/addline.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/addline(_).md",
       "hash": "97c256f208bbef84ee4aaff4a7a9334fbdc90a8721d4c66827a195644e4b949a"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction/addpoint(_:)": {
       "etag": "\"1594-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/addpoint.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/addpoint(_).md",
       "hash": "83386f6ea8c292f4245f73cd4b34926596867017be6e1a825d4a93f10d290521"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction/addquad(off:on:)": {
       "etag": "\"1a9e-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/addquad-offon.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/addquad(off,on).md",
       "hash": "79af96ffff6795dce88d3398f59cb3495143c6c77df3828ddbc1b6a482338cbd"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction/beginpart(id:name:)": {
       "etag": "\"196b-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/beginpart-idname.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/beginpart(id,name).md",
       "hash": "fbca34d7f340552872cdfa397a096d0728811bd62404f7bbd6f7816129d38967"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction/beginpath": {
@@ -347,7 +347,7 @@
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction/endpart(id:name:)": {
       "etag": "\"1955-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/endpart-idname.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/endpart(id,name).md",
       "hash": "42df2875f78c48b39e5872bbc5ab043aec750c74ad828958229633440510f03f"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/instruction/endpath": {
@@ -422,7 +422,7 @@
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/point/init(x:y:)": {
       "etag": "\"1531-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/point/init-xy.md",
+      "file_path": "documentation/hvf/partrenderer/point/init(x,y).md",
       "hash": "d61a98fb143602904f6a150380b538c1ecbf79aa1636ff2b6cf33cca5943c444"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/point/x": {
@@ -437,7 +437,7 @@
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/render(to:)": {
       "etag": "\"2077-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/partrenderer/render-to.md",
+      "file_path": "documentation/hvf/partrenderer/render(to).md",
       "hash": "f331b6fdaeac3b45087ae37ec189352d482f3c9c97af6e2029c2f9d5a9787ccd"
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/subparts": {
@@ -462,7 +462,7 @@
     },
     "https://developer.apple.com/documentation/hvf/partrenderer/translation/init(dx:dy:)": {
       "etag": "\"1598-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/translation/init-dxdy.md",
+      "file_path": "documentation/hvf/partrenderer/translation/init(dx,dy).md",
       "hash": "8751bcf22a633c9c28a10a634064a457e95f7dd678a23aaed12f860e5a4e20a5"
     },
     "https://developer.apple.com/documentation/hvf/partresult": {
@@ -472,7 +472,7 @@
     },
     "https://developer.apple.com/documentation/hvf/partresult/composite(_:)": {
       "etag": "\"11b2-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/partresult/composite.md",
+      "file_path": "documentation/hvf/partresult/composite(_).md",
       "hash": "f68aaf9d5ca8560a97de5d75fc16eff6dcc90e019e913c0aaa9837bad2f2a22e"
     },
     "https://developer.apple.com/documentation/hvf/partresult/notfound": {
@@ -482,7 +482,7 @@
     },
     "https://developer.apple.com/documentation/hvf/partresult/shape(_:)": {
       "etag": "\"113c-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/partresult/shape.md",
+      "file_path": "documentation/hvf/partresult/shape(_).md",
       "hash": "fd046b3fb2db236459e5e774b12a9b906e8ec10936b2062785a45ac29644659c"
     },
     "https://developer.apple.com/documentation/hvf/pointcoordinate": {
@@ -567,17 +567,17 @@
     },
     "https://developer.apple.com/documentation/hvf/shapewriter/densedeltaoffset(axis:extremum:segment:point:coordinate:)": {
       "etag": "\"2544-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/shapewriter/densedeltaoffset-axisextremumsegmentpointcoordinate.md",
+      "file_path": "documentation/hvf/shapewriter/densedeltaoffset(axis,extremum,segment,point,coordinate).md",
       "hash": "30ce23fc241c8b9ab6baba3541d182cf6f69fa673c5249a86840a0f67c636513"
     },
     "https://developer.apple.com/documentation/hvf/shapewriter/finalize()": {
       "etag": "\"1123-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/shapewriter/finalize.md",
+      "file_path": "documentation/hvf/shapewriter/finalize().md",
       "hash": "777d01fb8b9d24bfdaad202bc9196c4115f63ad4dc5dcd4c21f0bc9d01e712be"
     },
     "https://developer.apple.com/documentation/hvf/shapewriter/masteroffset(segment:point:coordinate:)": {
       "etag": "\"1cea-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/shapewriter/masteroffset-segmentpointcoordinate.md",
+      "file_path": "documentation/hvf/shapewriter/masteroffset(segment,point,coordinate).md",
       "hash": "d24ea526cf44b2f8fa2afda9a160974039fa6acecd115437c6d14fea94f919fd"
     },
     "https://developer.apple.com/documentation/hvf/shapewriter/mastervector": {
@@ -627,7 +627,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositeextremumindex/init(row:column:).json": {
       "etag": "\"13b6-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/compositeextremumindex/init-rowcolumn.md",
+      "file_path": "documentation/hvf/compositeextremumindex/init(row,column).md",
       "hash": "fd325772c23b7441e156bca26dcaa5b361f89fc40362436dae46dd15865c6cff"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositeextremumindex/row.json": {
@@ -642,7 +642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubpart/init(partindex:treepartoffset:treeaxisoffset:).json": {
       "etag": "\"18df-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/compositesubpart/init-partindextreepartoffsettreeaxisoffset.md",
+      "file_path": "documentation/hvf/compositesubpart/init(partindex,treepartoffset,treeaxisoffset).md",
       "hash": "eeda46aad289e621c61c1c4cdd59d010d7952d78789eff05719eb802dfcfc66d"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubpart/partindex.json": {
@@ -677,7 +677,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositesubparttranslation/init(dx:dy:).json": {
       "etag": "\"1344-65d55d98a7bf0-df\"",
-      "file_path": "documentation/hvf/compositesubparttranslation/init-dxdy.md",
+      "file_path": "documentation/hvf/compositesubparttranslation/init(dx,dy).md",
       "hash": "ad6b2b5a6dda8b5c5028de67a0fccdbcd38d63398cfd5416b72bad72bd77b820"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter.json": {
@@ -692,7 +692,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/column(axis:extremum:).json": {
       "etag": "\"17cb-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/compositewriter/column-axisextremum.md",
+      "file_path": "documentation/hvf/compositewriter/column(axis,extremum).md",
       "hash": "aa632bb0e098d0160070ab285553f9d3c12957b96c0c1816b1a5f2259b5c1ab8"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/extremumcscaxisvalues.json": {
@@ -732,7 +732,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/finalize().json": {
       "etag": "\"1161-65d55d98a7bf0-df\"",
-      "file_path": "documentation/hvf/compositewriter/finalize.md",
+      "file_path": "documentation/hvf/compositewriter/finalize().md",
       "hash": "13a5ea385ad63a8d8b50fd52d6944899e6724f8bf596b5c900ff8ebc75093252"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/compositewriter/mastercscaxisvalues.json": {
@@ -797,7 +797,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvflibraryversion-swift.var.json": {
       "etag": "\"12ad-65d55d98a7bf0-df\"",
-      "file_path": "documentation/hvf/hvflibraryversion-swiftvar.md",
+      "file_path": "documentation/hvf/hvflibraryversion-swift.var.md",
       "hash": "22f990ca1ca3d18141aceaf5ad65c540dbd98bae6a7151ea8be7076c3755e5df"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader.json": {
@@ -812,7 +812,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader/init(hvgltable:hvpmtable:).json": {
       "etag": "\"1596-65d55d98a7bf0-df\"",
-      "file_path": "documentation/hvf/hvglpartloader/init-hvgltablehvpmtable.md",
+      "file_path": "documentation/hvf/hvglpartloader/init(hvgltable,hvpmtable).md",
       "hash": "f9718e3b54087273f74c635f8eb5212d7a37d1cce72aaf8010a173a02869b8b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/hvglpartloader/partcount.json": {
@@ -832,12 +832,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partgenerator/makecomposite(_:).json": {
       "etag": "\"15ba-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/partgenerator/makecomposite.md",
+      "file_path": "documentation/hvf/partgenerator/makecomposite(_).md",
       "hash": "fed2c23af54e2643d02e4404fa893d3b411f6f62091ca1a441012f8779b4cb51"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partgenerator/makeshape(_:).json": {
       "etag": "\"1547-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/partgenerator/makeshape.md",
+      "file_path": "documentation/hvf/partgenerator/makeshape(_).md",
       "hash": "534f017c73fcb3aeff014eb0c102cb86f7bbe052285160c2561a4ede9c5ad81c"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer.json": {
@@ -872,7 +872,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/axisvalues/blendedvalue(axis:).json": {
       "etag": "\"19fe-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/axisvalues/blendedvalue-axis.md",
+      "file_path": "documentation/hvf/partrenderer/axisvalues/blendedvalue(axis).md",
       "hash": "a2a1b908682853b51256741d008540cad6e2890b7c1685bd53ec9df84b074c2c"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/axisvalues/isnested.json": {
@@ -887,17 +887,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/clearpartcache().json": {
       "etag": "\"e61-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/clearpartcache.md",
+      "file_path": "documentation/hvf/partrenderer/clearpartcache().md",
       "hash": "1603c12d120ba44a9dd3aae9fcdacf7f891efb77ec1311f791f9348f968648a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/init(custom:reusable:).json": {
       "etag": "\"1a12-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/init-customreusable.md",
+      "file_path": "documentation/hvf/partrenderer/init(custom,reusable).md",
       "hash": "b46c0587bb6e8af7506a85099432c7f38ea442b3830bc39edaa006509942069e"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/init(hvglloader:reusable:).json": {
       "etag": "\"18bc-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/init-hvglloaderreusable.md",
+      "file_path": "documentation/hvf/partrenderer/init(hvglloader,reusable).md",
       "hash": "c66b1f9d2cadd53eef7ffcd951326d16a6318b825a51a162dc0404399721ea42"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction.json": {
@@ -907,27 +907,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/addcubic(cp1:cp2:on:).json": {
       "etag": "\"1eee-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/addcubic-cp1cp2on.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/addcubic(cp1,cp2,on).md",
       "hash": "a6090f6c3dd03d7a7bdd2b3503abe4fba4359d48499327ed487ef165601ecec9"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/addline(_:).json": {
       "etag": "\"158c-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/addline.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/addline(_).md",
       "hash": "97c256f208bbef84ee4aaff4a7a9334fbdc90a8721d4c66827a195644e4b949a"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/addpoint(_:).json": {
       "etag": "\"1594-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/addpoint.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/addpoint(_).md",
       "hash": "83386f6ea8c292f4245f73cd4b34926596867017be6e1a825d4a93f10d290521"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/addquad(off:on:).json": {
       "etag": "\"1a9e-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/addquad-offon.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/addquad(off,on).md",
       "hash": "79af96ffff6795dce88d3398f59cb3495143c6c77df3828ddbc1b6a482338cbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/beginpart(id:name:).json": {
       "etag": "\"196b-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/beginpart-idname.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/beginpart(id,name).md",
       "hash": "fbca34d7f340552872cdfa397a096d0728811bd62404f7bbd6f7816129d38967"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/beginpath.json": {
@@ -942,7 +942,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/endpart(id:name:).json": {
       "etag": "\"1955-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/instruction/endpart-idname.md",
+      "file_path": "documentation/hvf/partrenderer/instruction/endpart(id,name).md",
       "hash": "42df2875f78c48b39e5872bbc5ab043aec750c74ad828958229633440510f03f"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/instruction/endpath.json": {
@@ -1017,7 +1017,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/point/init(x:y:).json": {
       "etag": "\"1531-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/point/init-xy.md",
+      "file_path": "documentation/hvf/partrenderer/point/init(x,y).md",
       "hash": "d61a98fb143602904f6a150380b538c1ecbf79aa1636ff2b6cf33cca5943c444"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/point/x.json": {
@@ -1032,7 +1032,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/render(to:).json": {
       "etag": "\"2077-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/partrenderer/render-to.md",
+      "file_path": "documentation/hvf/partrenderer/render(to).md",
       "hash": "f331b6fdaeac3b45087ae37ec189352d482f3c9c97af6e2029c2f9d5a9787ccd"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/subparts.json": {
@@ -1057,7 +1057,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partrenderer/translation/init(dx:dy:).json": {
       "etag": "\"1598-65d55d98d05cd-df\"",
-      "file_path": "documentation/hvf/partrenderer/translation/init-dxdy.md",
+      "file_path": "documentation/hvf/partrenderer/translation/init(dx,dy).md",
       "hash": "8751bcf22a633c9c28a10a634064a457e95f7dd678a23aaed12f860e5a4e20a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partresult.json": {
@@ -1067,7 +1067,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partresult/composite(_:).json": {
       "etag": "\"11b2-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/partresult/composite.md",
+      "file_path": "documentation/hvf/partresult/composite(_).md",
       "hash": "f68aaf9d5ca8560a97de5d75fc16eff6dcc90e019e913c0aaa9837bad2f2a22e"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partresult/notfound.json": {
@@ -1077,7 +1077,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/partresult/shape(_:).json": {
       "etag": "\"113c-65d55d98bf9cb-df\"",
-      "file_path": "documentation/hvf/partresult/shape.md",
+      "file_path": "documentation/hvf/partresult/shape(_).md",
       "hash": "fd046b3fb2db236459e5e774b12a9b906e8ec10936b2062785a45ac29644659c"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/pointcoordinate.json": {
@@ -1162,17 +1162,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/densedeltaoffset(axis:extremum:segment:point:coordinate:).json": {
       "etag": "\"2544-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/shapewriter/densedeltaoffset-axisextremumsegmentpointcoordinate.md",
+      "file_path": "documentation/hvf/shapewriter/densedeltaoffset(axis,extremum,segment,point,coordinate).md",
       "hash": "30ce23fc241c8b9ab6baba3541d182cf6f69fa673c5249a86840a0f67c636513"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/finalize().json": {
       "etag": "\"1123-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/shapewriter/finalize.md",
+      "file_path": "documentation/hvf/shapewriter/finalize().md",
       "hash": "777d01fb8b9d24bfdaad202bc9196c4115f63ad4dc5dcd4c21f0bc9d01e712be"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/masteroffset(segment:point:coordinate:).json": {
       "etag": "\"1cea-65d55d988f830-df\"",
-      "file_path": "documentation/hvf/shapewriter/masteroffset-segmentpointcoordinate.md",
+      "file_path": "documentation/hvf/shapewriter/masteroffset(segment,point,coordinate).md",
       "hash": "d24ea526cf44b2f8fa2afda9a160974039fa6acecd115437c6d14fea94f919fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/hvf/shapewriter/mastervector.json": {

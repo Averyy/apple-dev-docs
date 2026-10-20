@@ -167,7 +167,7 @@
     },
     "https://developer.apple.com/documentation/installer_js/system/1812277-users_desktopsessioncount": {
       "etag": "\"14c8-659023167924a-df\"",
-      "file_path": "documentation/installer_js/system/api-1812277-users-desktopsessioncount.md",
+      "file_path": "documentation/installer_js/system/api-1812277-users_desktopsessioncount.md",
       "hash": "7ce028432fa15d25a2e4d41919c9d2da05b99ad927ebf4da507a725c86d1ef24"
     },
     "https://developer.apple.com/documentation/installer_js/system/1812284-version": {
@@ -422,7 +422,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812277-users_desktopsessioncount.json": {
       "etag": "\"14c8-659023167924a-df\"",
-      "file_path": "documentation/installer_js/system/api-1812277-users-desktopsessioncount.md",
+      "file_path": "documentation/installer_js/system/api-1812277-users_desktopsessioncount.md",
       "hash": "7ce028432fa15d25a2e4d41919c9d2da05b99ad927ebf4da507a725c86d1ef24"
     },
     "https://developer.apple.com/tutorials/data/documentation/installer_js/system/1812284-version.json": {

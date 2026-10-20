@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/init(rawvalue:)": {
       "etag": "\"1ed5-65d55dd03bc15-df\"",
-      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/init(rawvalue).md",
       "hash": "766502d1cde54bb41040fa253831368bbc8be6a46de448e505ec1fe4ca75f558"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/notdetermined": {
@@ -42,12 +42,12 @@
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(completionhandler:)": {
       "etag": "\"79fd-65da2d9d1e69a-df\"",
-      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization-completionhandler.md",
+      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization(completionhandler).md",
       "hash": "36b8e405377c3a77f678b78dcd8a1ba1bf0ca3e55fbd3ab976339243284dd612"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:)": {
       "etag": "\"988e-65da2d9d1e69a-df\"",
-      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization-preferexpandedinterfaceadditionalinformationactioncompletionhandler.md",
+      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface,additionalinformationaction,completionhandler).md",
       "hash": "7a8d82946ba6e8c2e2523aa6cc4b870ba4b53f65fa2a68c8633be0d786aa302b"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/trackingauthorizationstatus": {
@@ -82,7 +82,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/init(rawvalue:).json": {
       "etag": "\"1ed5-65d55dd03bc15-df\"",
-      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/init(rawvalue).md",
       "hash": "766502d1cde54bb41040fa253831368bbc8be6a46de448e505ec1fe4ca75f558"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/notdetermined.json": {
@@ -97,12 +97,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(completionhandler:).json": {
       "etag": "\"79fd-65da2d9d1e69a-df\"",
-      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization-completionhandler.md",
+      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization(completionhandler).md",
       "hash": "36b8e405377c3a77f678b78dcd8a1ba1bf0ca3e55fbd3ab976339243284dd612"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface:additionalinformationaction:completionhandler:).json": {
       "etag": "\"988e-65da2d9d1e69a-df\"",
-      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization-preferexpandedinterfaceadditionalinformationactioncompletionhandler.md",
+      "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization(preferexpandedinterface,additionalinformationaction,completionhandler).md",
       "hash": "7a8d82946ba6e8c2e2523aa6cc4b870ba4b53f65fa2a68c8633be0d786aa302b"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/trackingauthorizationstatus.json": {

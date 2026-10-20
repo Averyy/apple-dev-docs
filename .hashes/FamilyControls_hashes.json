@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/familycontrols/authorizationcenter/$authorizationstatus": {
       "etag": "\"1f7e-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/authorizationcenter/authorizationstatus.md",
+      "file_path": "documentation/FamilyControls/authorizationcenter/dollarauthorizationstatus.md",
       "hash": "82173e5263f50fce4cedf6254f8d5a2d4799a37afeab3ffc52c1eaebadc54055"
     },
     "https://developer.apple.com/documentation/familycontrols/authorizationcenter/authorizationstatus": {
@@ -22,17 +22,17 @@
     },
     "https://developer.apple.com/documentation/familycontrols/authorizationcenter/requestauthorization(completionhandler:)": {
       "etag": "\"240f-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization-completionhandler.md",
+      "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization(completionhandler).md",
       "hash": "fdc1eef4786ada15c147e95f19c33e703c5279b31c41e62a2b65ec6309d8760e"
     },
     "https://developer.apple.com/documentation/familycontrols/authorizationcenter/requestauthorization(for:)": {
       "etag": "\"2db2-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization-for.md",
+      "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization(for).md",
       "hash": "a58a9b57f5191289adeec3488b0804e051e645a2026cf00fddb6ad1a2100b109"
     },
     "https://developer.apple.com/documentation/familycontrols/authorizationcenter/revokeauthorization(completionhandler:)": {
       "etag": "\"3074-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/authorizationcenter/revokeauthorization-completionhandler.md",
+      "file_path": "documentation/FamilyControls/authorizationcenter/revokeauthorization(completionhandler).md",
       "hash": "76156efe8e323ef920e17cb86464e44159696898264763d9c71c97472592e69c"
     },
     "https://developer.apple.com/documentation/familycontrols/authorizationcenter/shared": {
@@ -122,12 +122,12 @@
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivitypicker/init(headertext:footertext:selection:)": {
       "etag": "\"31c2-65d55eafe1ad0-df\"",
-      "file_path": "documentation/FamilyControls/familyactivitypicker/init-headertextfootertextselection.md",
+      "file_path": "documentation/FamilyControls/familyactivitypicker/init(headertext,footertext,selection).md",
       "hash": "ed09e4d9a15a7c520dd85c60966449b87fab7a79881b1bad827916481dc65ff2"
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivitypicker/init(selection:)": {
       "etag": "\"2ab0-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/familyactivitypicker/init-selection.md",
+      "file_path": "documentation/FamilyControls/familyactivitypicker/init(selection).md",
       "hash": "55f950d226d0a8047e708acc29a997ea7921869a19c8533b359260c03a14b48d"
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivityselection": {
@@ -162,12 +162,12 @@
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivityselection/init()": {
       "etag": "\"d7f-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/familyactivityselection/init.md",
+      "file_path": "documentation/FamilyControls/familyactivityselection/init().md",
       "hash": "166697d00576fb2b5347117cec806221730dbc9f235bd9ed674e4321955a716a"
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivityselection/init(includeentirecategory:)": {
       "etag": "\"1c56-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/familyactivityselection/init-includeentirecategory.md",
+      "file_path": "documentation/FamilyControls/familyactivityselection/init(includeentirecategory).md",
       "hash": "e5fce33f69dc54da024744fc5c40ca771357707feef66a4923837a3c6e93b11b"
     },
     "https://developer.apple.com/documentation/familycontrols/familyactivityselection/webdomains": {
@@ -277,7 +277,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/$authorizationstatus.json": {
       "etag": "\"1f7e-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/authorizationcenter/authorizationstatus.md",
+      "file_path": "documentation/FamilyControls/authorizationcenter/dollarauthorizationstatus.md",
       "hash": "82173e5263f50fce4cedf6254f8d5a2d4799a37afeab3ffc52c1eaebadc54055"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/authorizationstatus.json": {
@@ -287,17 +287,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/requestauthorization(completionhandler:).json": {
       "etag": "\"240f-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization-completionhandler.md",
+      "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization(completionhandler).md",
       "hash": "fdc1eef4786ada15c147e95f19c33e703c5279b31c41e62a2b65ec6309d8760e"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/requestauthorization(for:).json": {
       "etag": "\"2db2-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization-for.md",
+      "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization(for).md",
       "hash": "a58a9b57f5191289adeec3488b0804e051e645a2026cf00fddb6ad1a2100b109"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/revokeauthorization(completionhandler:).json": {
       "etag": "\"3074-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/authorizationcenter/revokeauthorization-completionhandler.md",
+      "file_path": "documentation/FamilyControls/authorizationcenter/revokeauthorization(completionhandler).md",
       "hash": "76156efe8e323ef920e17cb86464e44159696898264763d9c71c97472592e69c"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/shared.json": {
@@ -387,12 +387,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker/init(headertext:footertext:selection:).json": {
       "etag": "\"31c2-65d55eafe1ad0-df\"",
-      "file_path": "documentation/FamilyControls/familyactivitypicker/init-headertextfootertextselection.md",
+      "file_path": "documentation/FamilyControls/familyactivitypicker/init(headertext,footertext,selection).md",
       "hash": "ed09e4d9a15a7c520dd85c60966449b87fab7a79881b1bad827916481dc65ff2"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker/init(selection:).json": {
       "etag": "\"2ab0-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/familyactivitypicker/init-selection.md",
+      "file_path": "documentation/FamilyControls/familyactivitypicker/init(selection).md",
       "hash": "55f950d226d0a8047e708acc29a997ea7921869a19c8533b359260c03a14b48d"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection.json": {
@@ -427,12 +427,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/init().json": {
       "etag": "\"d7f-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/familyactivityselection/init.md",
+      "file_path": "documentation/FamilyControls/familyactivityselection/init().md",
       "hash": "166697d00576fb2b5347117cec806221730dbc9f235bd9ed674e4321955a716a"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/init(includeentirecategory:).json": {
       "etag": "\"1c56-65d55eafd390a-df\"",
-      "file_path": "documentation/FamilyControls/familyactivityselection/init-includeentirecategory.md",
+      "file_path": "documentation/FamilyControls/familyactivityselection/init(includeentirecategory).md",
       "hash": "e5fce33f69dc54da024744fc5c40ca771357707feef66a4923837a3c6e93b11b"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/webdomains.json": {

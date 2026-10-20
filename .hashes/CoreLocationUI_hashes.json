@@ -47,7 +47,7 @@
     },
     "https://developer.apple.com/documentation/corelocationui/cllocationbuttonicon/init(rawvalue:)": {
       "etag": "\"137e-65d560cf4855e-df\"",
-      "file_path": "documentation/CoreLocationUI/cllocationbuttonicon/init-rawvalue.md",
+      "file_path": "documentation/CoreLocationUI/cllocationbuttonicon/init(rawvalue).md",
       "hash": "8694a374e86dd2318c35bf53d598223433efe6a96136824a773c2976be732700"
     },
     "https://developer.apple.com/documentation/corelocationui/cllocationbuttonicon/none": {
@@ -67,7 +67,7 @@
     },
     "https://developer.apple.com/documentation/corelocationui/cllocationbuttonlabel/init(rawvalue:)": {
       "etag": "\"137d-65d560cf4855e-df\"",
-      "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/init-rawvalue.md",
+      "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/init(rawvalue).md",
       "hash": "2e4fa48eaa687f99aacd3c835a266498f438aa713e1a22e40870f39cdb241d66"
     },
     "https://developer.apple.com/documentation/corelocationui/cllocationbuttonlabel/none": {
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/documentation/corelocationui/locationbutton/init(_:action:)": {
       "etag": "\"1cef-65d560cf4855e-df\"",
-      "file_path": "documentation/CoreLocationUI/locationbutton/init-action.md",
+      "file_path": "documentation/CoreLocationUI/locationbutton/init(_,action).md",
       "hash": "82bff2210ec6e8d455d1a578cfe6882a012a0db441a892be59cd708c438ad20f"
     },
     "https://developer.apple.com/documentation/corelocationui/locationbutton/title": {
@@ -187,7 +187,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonicon/init(rawvalue:).json": {
       "etag": "\"137e-65d560cf4855e-df\"",
-      "file_path": "documentation/CoreLocationUI/cllocationbuttonicon/init-rawvalue.md",
+      "file_path": "documentation/CoreLocationUI/cllocationbuttonicon/init(rawvalue).md",
       "hash": "8694a374e86dd2318c35bf53d598223433efe6a96136824a773c2976be732700"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonicon/none.json": {
@@ -207,7 +207,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/init(rawvalue:).json": {
       "etag": "\"137d-65d560cf4855e-df\"",
-      "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/init-rawvalue.md",
+      "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/init(rawvalue).md",
       "hash": "2e4fa48eaa687f99aacd3c835a266498f438aa713e1a22e40870f39cdb241d66"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/none.json": {
@@ -246,7 +246,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/init(_:action:).json": {
       "etag": "\"1cef-65d560cf4855e-df\"",
-      "file_path": "documentation/CoreLocationUI/locationbutton/init-action.md",
+      "file_path": "documentation/CoreLocationUI/locationbutton/init(_,action).md",
       "hash": "82bff2210ec6e8d455d1a578cfe6882a012a0db441a892be59cd708c438ad20f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/title.json": {

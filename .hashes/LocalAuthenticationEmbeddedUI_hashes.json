@@ -22,12 +22,12 @@
     },
     "https://developer.apple.com/documentation/localauthenticationembeddedui/laauthenticationview/init(context:)": {
       "etag": "\"4287-65d55d09262e7-df\"",
-      "file_path": "documentation/LocalAuthenticationEmbeddedUI/laauthenticationview/init-context.md",
+      "file_path": "documentation/LocalAuthenticationEmbeddedUI/laauthenticationview/init(context).md",
       "hash": "df78b305a411bef615ba334ac77c7f3bd2504b6d7dde2909c97a8eb16c715080"
     },
     "https://developer.apple.com/documentation/localauthenticationembeddedui/laauthenticationview/init(context:controlsize:)": {
       "etag": "\"49e1-65d55d09262e7-df\"",
-      "file_path": "documentation/LocalAuthenticationEmbeddedUI/laauthenticationview/init-contextcontrolsize.md",
+      "file_path": "documentation/LocalAuthenticationEmbeddedUI/laauthenticationview/init(context,controlsize).md",
       "hash": "42bc140651b3f1fc9384dd6134be1d21d126eefd584f8106154596583623708c"
     },
     "https://developer.apple.com/documentation/localauthenticationembeddedui/lapresentationcontext": {
@@ -62,12 +62,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/localauthenticationembeddedui/laauthenticationview/init(context:).json": {
       "etag": "\"4287-65d55d09262e7-df\"",
-      "file_path": "documentation/LocalAuthenticationEmbeddedUI/laauthenticationview/init-context.md",
+      "file_path": "documentation/LocalAuthenticationEmbeddedUI/laauthenticationview/init(context).md",
       "hash": "df78b305a411bef615ba334ac77c7f3bd2504b6d7dde2909c97a8eb16c715080"
     },
     "https://developer.apple.com/tutorials/data/documentation/localauthenticationembeddedui/laauthenticationview/init(context:controlsize:).json": {
       "etag": "\"49e1-65d55d09262e7-df\"",
-      "file_path": "documentation/LocalAuthenticationEmbeddedUI/laauthenticationview/init-contextcontrolsize.md",
+      "file_path": "documentation/LocalAuthenticationEmbeddedUI/laauthenticationview/init(context,controlsize).md",
       "hash": "42bc140651b3f1fc9384dd6134be1d21d126eefd584f8106154596583623708c"
     },
     "https://developer.apple.com/tutorials/data/documentation/localauthenticationembeddedui/lapresentationcontext.json": {

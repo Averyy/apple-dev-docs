@@ -17,22 +17,22 @@
     },
     "https://developer.apple.com/documentation/classkitcatalogapi/context/data-data.dictionary": {
       "etag": "\"7b8f-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/context/data-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/context/data-data.dictionary.md",
       "hash": "752d73d1ba4de9254e370aeedf93669ecd5135f159fe6c8cd7605b2abdc345c8"
     },
     "https://developer.apple.com/documentation/classkitcatalogapi/context/data-data.dictionary/progressreportingcapabilities-data.dictionary": {
       "etag": "\"2278-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/context/data-data.dictionary/progressreportingcapabilities-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/context/data-data.dictionary/progressreportingcapabilities-data.dictionary.md",
       "hash": "ca5bc8521d99c03fc3918e4db0d6269ec0904c265a3196469f4cb028fbe03979"
     },
     "https://developer.apple.com/documentation/classkitcatalogapi/context/metadata-data.dictionary": {
       "etag": "\"2e92-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/context/metadata-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/context/metadata-data.dictionary.md",
       "hash": "de55b2e4dc01bfa6fdcb971979342ef61ca7532c1798ad6f4c3e17ba415630e7"
     },
     "https://developer.apple.com/documentation/classkitcatalogapi/context/metadata-data.dictionary/presentablepaths-data.dictionary": {
       "etag": "\"20c3-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/context/metadata-data.dictionary/presentablepaths-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/context/metadata-data.dictionary/presentablepaths-data.dictionary.md",
       "hash": "7b9f3d1028464d4b398b93962836e63e00e15184462d947f7592db597d3bff5e"
     },
     "https://developer.apple.com/documentation/classkitcatalogapi/contextsrequest": {
@@ -92,7 +92,7 @@
     },
     "https://developer.apple.com/documentation/classkitcatalogapi/status/error-data.dictionary": {
       "etag": "\"143b-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/status/error-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/status/error-data.dictionary.md",
       "hash": "1f4f18a63bf1a134aeec56f93aecba6a7d86a5f224aaf9d1f16faddf9d3a5ec9"
     },
     "https://developer.apple.com/documentation/classkitcatalogapi/testing-your-classkit-catalog-implementation": {
@@ -117,22 +117,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitcatalogapi/context/data-data.dictionary.json": {
       "etag": "\"7b8f-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/context/data-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/context/data-data.dictionary.md",
       "hash": "752d73d1ba4de9254e370aeedf93669ecd5135f159fe6c8cd7605b2abdc345c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitcatalogapi/context/data-data.dictionary/progressreportingcapabilities-data.dictionary.json": {
       "etag": "\"2278-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/context/data-data.dictionary/progressreportingcapabilities-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/context/data-data.dictionary/progressreportingcapabilities-data.dictionary.md",
       "hash": "ca5bc8521d99c03fc3918e4db0d6269ec0904c265a3196469f4cb028fbe03979"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitcatalogapi/context/metadata-data.dictionary.json": {
       "etag": "\"2e92-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/context/metadata-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/context/metadata-data.dictionary.md",
       "hash": "de55b2e4dc01bfa6fdcb971979342ef61ca7532c1798ad6f4c3e17ba415630e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitcatalogapi/context/metadata-data.dictionary/presentablepaths-data.dictionary.json": {
       "etag": "\"20c3-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/context/metadata-data.dictionary/presentablepaths-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/context/metadata-data.dictionary/presentablepaths-data.dictionary.md",
       "hash": "7b9f3d1028464d4b398b93962836e63e00e15184462d947f7592db597d3bff5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitcatalogapi/contextsrequest.json": {
@@ -192,7 +192,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitcatalogapi/status/error-data.dictionary.json": {
       "etag": "\"143b-65d55a8b1df24-df\"",
-      "file_path": "documentation/ClassKitCatalogAPI/status/error-datadictionary.md",
+      "file_path": "documentation/ClassKitCatalogAPI/status/error-data.dictionary.md",
       "hash": "1f4f18a63bf1a134aeec56f93aecba6a7d86a5f224aaf9d1f16faddf9d3a5ec9"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitcatalogapi/testing-your-classkit-catalog-implementation.json": {

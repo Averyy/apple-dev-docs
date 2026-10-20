@@ -1232,7 +1232,7 @@
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypecram_md5": {
       "etag": "\"6ffc-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypecram-md5.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypecram_md5.md",
       "hash": "1d74fda86799dfc9b578f78e12b391e08024875d515f83d2f50eebe37497a29c"
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypecrypt": {
@@ -1247,7 +1247,7 @@
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypedigest_md5": {
       "etag": "\"7010-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypedigest-md5.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypedigest_md5.md",
       "hash": "5a84a6e192eff05af8928a30a47b4bd15ce06eeb3bc7678cf5ea1421f005d873"
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypegeteffectivepolicy": {
@@ -1392,22 +1392,22 @@
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypesmb_lm_key": {
       "etag": "\"6fc2-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb-lm-key.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb_lm_key.md",
       "hash": "518d596b4e80b7f4eea5101a6ea5977794250775e89b85764e40a83b40a55c27"
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypesmb_nt_key": {
       "etag": "\"6fb0-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb-nt-key.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb_nt_key.md",
       "hash": "deebd3f3338bea162d6c5a637c38a0fb2aab3cf481e3ed692c41fdea35c50b6b"
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypesmb_nt_usersessionkey": {
       "etag": "\"70cd-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb-nt-usersessionkey.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb_nt_usersessionkey.md",
       "hash": "577a5e0e1cc1520bf55a43f7bbe214baa33aee6e0a2ddf92c55e2e522ce9894b"
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypesmb_nt_withusersessionkey": {
       "etag": "\"7143-65d55b3ba8670-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb-nt-withusersessionkey.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb_nt_withusersessionkey.md",
       "hash": "8958547468932cabd9899f357a15779c2f7c6c8ae69005e06d118f8c2d3dbd2e"
     },
     "https://developer.apple.com/documentation/opendirectory/kodauthenticationtypesmbntv2usersessionkey": {
@@ -2402,42 +2402,42 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odattributemap/customattributes-swift.property": {
       "etag": "\"1c15-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/customattributes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/customattributes-swift.property.md",
       "hash": "db0ae6f4de2588ae23906cd2ab64ce2f713fd6d94875219cebed8d4bea97c9b1"
     },
     "https://developer.apple.com/documentation/opendirectory/odattributemap/customqueryfunction-swift.property": {
       "etag": "\"1f16-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/customqueryfunction-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/customqueryfunction-swift.property.md",
       "hash": "51fe815120de7f2452e2dbc512ce2e48b841a83451a0f60cc0e8a401d10c0594"
     },
     "https://developer.apple.com/documentation/opendirectory/odattributemap/customtranslationfunction-swift.property": {
       "etag": "\"1f94-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/customtranslationfunction-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/customtranslationfunction-swift.property.md",
       "hash": "92a87d82d6cc2680573808bd0b19143d2e0243716da65d8c1e6ed9d69dea8402"
     },
     "https://developer.apple.com/documentation/opendirectory/odattributemap/init(staticvalue:)": {
       "etag": "\"1fb6-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/init-staticvalue.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/init(staticvalue).md",
       "hash": "a2e4d847555a5ca1829bf86e204907a66fbcd6dbcb579624c583e776b7ca12b1"
     },
     "https://developer.apple.com/documentation/opendirectory/odattributemap/init(value:)": {
       "etag": "\"1f32-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/init-value.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/init(value).md",
       "hash": "d0dabdd3dafc937c30dc28dbeb28f2e40ab802e2e5f51bc8f8cef4a0b6275458"
     },
     "https://developer.apple.com/documentation/opendirectory/odattributemap/setstaticvalue(_:)": {
       "etag": "\"1f25-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/setstaticvalue.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/setstaticvalue(_).md",
       "hash": "348be5394177a001fabeb6288223526bb59eab88a3cdc471b5675dd80319c3de"
     },
     "https://developer.apple.com/documentation/opendirectory/odattributemap/setvariablesubstitution(_:)": {
       "etag": "\"1ff4-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/setvariablesubstitution.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/setvariablesubstitution(_).md",
       "hash": "0e91d01fa8591b4fc2113ba4d81bf9b0a7c4a7ba4c8449aed6ab806cd1f5eb6d"
     },
     "https://developer.apple.com/documentation/opendirectory/odattributemap/value-swift.property": {
       "etag": "\"1df0-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/value-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/value-swift.property.md",
       "hash": "a77d55e335278e609c4463c19e82f9ad507e54148a07b4d800c0ff482d41d9ec"
     },
     "https://developer.apple.com/documentation/opendirectory/odattributetype": {
@@ -2457,152 +2457,152 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/addtrusttype(_:trustaccount:trustpassword:username:password:joinexisting:)": {
       "etag": "\"3f0a-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/addtrusttype-trustaccounttrustpasswordusernamepasswordjoinexisting.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/addtrusttype(_,trustaccount,trustpassword,username,password,joinexisting).md",
       "hash": "188798787a508b91e809f1b1264f24dadbf93ce2cc1b8944a782ad3a234282b7"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/authenticationmoduleentries-swift.property": {
       "etag": "\"1d13-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/authenticationmoduleentries-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/authenticationmoduleentries-swift.property.md",
       "hash": "a685272f8fe16dff38e8f006c9f0331623961740f2d0ade7c43a7eb1fd34a841"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/comment-swift.property": {
       "etag": "\"1e31-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/comment-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/comment-swift.property.md",
       "hash": "10fcc3823704d6bbcd6fe1d33bdeef244169e561a8b38e659fe8d8e378f42e30"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/connectionidletimeoutinseconds-swift.property": {
       "etag": "\"1f95-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/connectionidletimeoutinseconds-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/connectionidletimeoutinseconds-swift.property.md",
       "hash": "b9762076e406a823794af7b053356c0f00ba2fc7156197c602f4b319be537ce7"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/connectionsetuptimeoutinseconds-swift.property": {
       "etag": "\"1faa-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/connectionsetuptimeoutinseconds-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/connectionsetuptimeoutinseconds-swift.property.md",
       "hash": "5c411e3db2eca1b6c2698cdfa3a41bccdd3bce0da136c770414fda50cdbc041c"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/defaultmappings-swift.property": {
       "etag": "\"1e4b-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/defaultmappings-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/defaultmappings-swift.property.md",
       "hash": "1f22832321867104b2b46732d44d2c3593a79dab0cd2425a5060c838a6ad04bc"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/defaultmoduleentries-swift.property": {
       "etag": "\"1c80-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/defaultmoduleentries-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/defaultmoduleentries-swift.property.md",
       "hash": "d82939ab5cca3696d171392c22d4abe270fd8e41e20f03673c45b0f43eab6f22"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/discoverymoduleentries-swift.property": {
       "etag": "\"1caa-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/discoverymoduleentries-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/discoverymoduleentries-swift.property.md",
       "hash": "7cd844a0737bf36f6bf3c8714a8e567f54e35eac0c17f133b78e65ff411cf31c"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/generalmoduleentries-swift.property": {
       "etag": "\"1c80-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/generalmoduleentries-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/generalmoduleentries-swift.property.md",
       "hash": "a58156b4d79a0903b02500e66b6123a359e1e6e09ff85e83b6899b70a7ce1182"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/hideregistration-swift.property": {
       "etag": "\"1df8-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/hideregistration-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/hideregistration-swift.property.md",
       "hash": "fbcbeebc46949cb095e0e9cf872dd37785615d778db7db1a9e972458e3a1f53b"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/maninthemiddleprotection-swift.property": {
       "etag": "\"1ea0-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/maninthemiddleprotection-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/maninthemiddleprotection-swift.property.md",
       "hash": "32fadd199a829f658837a7874bf2d855136d99c8dad1f0c9c63f50eaf6e1f191"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/nodename-swift.property": {
       "etag": "\"1e46-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/nodename-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/nodename-swift.property.md",
       "hash": "41e9a30912f993a3514eccf5ae3691dbc874ab8367b53876b0bee0da7ea2bd29"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/packetencryption-swift.property": {
       "etag": "\"1e6f-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/packetencryption-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/packetencryption-swift.property.md",
       "hash": "cdf78376f07d9a3abfec99b86619d06fd7703c08de62b3af61f257c20d3557a6"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/packetsigning-swift.property": {
       "etag": "\"1e30-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/packetsigning-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/packetsigning-swift.property.md",
       "hash": "48c67235a788d4eaa3c2d25186ea6d1925763334958a6672ed70d789323a76f0"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/preferreddestinationhostname-swift.property": {
       "etag": "\"1fea-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/preferreddestinationhostname-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/preferreddestinationhostname-swift.property.md",
       "hash": "05348845e2b19bb5652d9b6e1eebc7af6a9c494b45227637b3ba02742ccbf256"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/preferreddestinationhostport-swift.property": {
       "etag": "\"1e36-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/preferreddestinationhostport-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/preferreddestinationhostport-swift.property.md",
       "hash": "a09792c4a7d31e7093fff240198250133e5743e1c021a2cbf999966eadd7d007"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/querytimeoutinseconds-swift.property": {
       "etag": "\"1ed8-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/querytimeoutinseconds-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/querytimeoutinseconds-swift.property.md",
       "hash": "f61fe6164774a59ad268e2710114fb3bac806779627a540d4df839552ada4288"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/removetrust(usingusername:password:deletetrustaccount:)": {
       "etag": "\"331c-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/removetrust-usingusernamepassworddeletetrustaccount.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/removetrust(usingusername,password,deletetrustaccount).md",
       "hash": "70775a7e0d82f2dd9f7ffef4a7a69fad36253cc244978ee8e86c5c16a7945693"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/save(using:)": {
       "etag": "\"25b0-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/save-using.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/save(using).md",
       "hash": "e026a8e6911b2d48b8e75e1a03ae65b072c708baba84656dfd1c2aa756dde91a"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/suggestedtrustaccount(_:)": {
       "etag": "\"225a-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/suggestedtrustaccount.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/suggestedtrustaccount(_).md",
       "hash": "6fc997b26a11118eda6916e8659475c6c9f98e41353e4310cba508626ab9c885"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/suggestedtrustpassword(_:)": {
       "etag": "\"23ca-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/suggestedtrustpassword.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/suggestedtrustpassword(_).md",
       "hash": "9d245bcdc665f214dde72b8c1f7bdb0be6d4398d56dd0d97df428f4c496f348d"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/templatename-swift.property": {
       "etag": "\"1e9a-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/templatename-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/templatename-swift.property.md",
       "hash": "bc45e44e163ff4b975ab70ec29de9ff99f49920b75c2d55846f8916690ad8f72"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/trustaccount-swift.property": {
       "etag": "\"1ea0-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustaccount-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustaccount-swift.property.md",
       "hash": "957ff78aeaae6db94ff4a44317563822ef490a54c79c55ba5ee92cb7011745cb"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/trustkerberosprincipal-swift.property": {
       "etag": "\"1f72-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustkerberosprincipal-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustkerberosprincipal-swift.property.md",
       "hash": "c29ec1f6a7179af7d4866c9feaf48dd77df8d89bf557b2eba5fc8246cd0f5c25"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/trustmetaaccount-swift.property": {
       "etag": "\"1ef4-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustmetaaccount-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustmetaaccount-swift.property.md",
       "hash": "538895f0d248cc068b0d8f70c4592274d8a3edac4bc1a7d2923185fdae4c06b2"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/trusttype-swift.property": {
       "etag": "\"1e61-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trusttype-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trusttype-swift.property.md",
       "hash": "02d3678b864ee1ab6c80bc5741c10e0351b926d8140ec9779dd8a74e92b3991b"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/trustuseskerberoskeytab-swift.property": {
       "etag": "\"1e52-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustuseskerberoskeytab-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustuseskerberoskeytab-swift.property.md",
       "hash": "7f964b702fa1532da8eabe0d55635ac63da6e98b924b27d5f64afaa1a76b3429"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/trustusesmutualauthentication-swift.property": {
       "etag": "\"1ed0-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustusesmutualauthentication-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustusesmutualauthentication-swift.property.md",
       "hash": "832c354bba14f4c5eb077d50e6ce2f7580ed12fd59cca4f81f56b4b053dd79be"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/trustusessystemkeychain-swift.property": {
       "etag": "\"1e52-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustusessystemkeychain-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustusessystemkeychain-swift.property.md",
       "hash": "78375f61aaf66eacca4f45a7bbbbaf6b2ecae208a4e2d7a7c98b39a964dc58da"
     },
     "https://developer.apple.com/documentation/opendirectory/odconfiguration/virtualsubnodes-swift.property": {
       "etag": "\"1c17-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/virtualsubnodes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/virtualsubnodes-swift.property.md",
       "hash": "164c490439870703be7f451d9940acefa2872577b04c33cd7c2d94fa1f37a3a9"
     },
     "https://developer.apple.com/documentation/opendirectory/odcontext": {
@@ -2612,7 +2612,7 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odcontextgettypeid()": {
       "etag": "\"192e-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odcontextgettypeid.md",
+      "file_path": "documentation/OpenDirectory/odcontextgettypeid().md",
       "hash": "062a01e13946d9992cc0cc3cbd4c418b03a6c6e4e3431301687f69a3808e8ae2"
     },
     "https://developer.apple.com/documentation/opendirectory/odcontextref": {
@@ -2637,12 +2637,12 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odframeworkerrors/init(_:)": {
       "etag": "\"1299-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odframeworkerrors/init.md",
+      "file_path": "documentation/OpenDirectory/odframeworkerrors/init(_).md",
       "hash": "4072a3efc47c6e494f0ef9f3ef7d85e327594e3c6a137924fd4a4ab5e6a571f7"
     },
     "https://developer.apple.com/documentation/opendirectory/odframeworkerrors/init(rawvalue:)": {
       "etag": "\"1323-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odframeworkerrors/init-rawvalue.md",
+      "file_path": "documentation/OpenDirectory/odframeworkerrors/init(rawvalue).md",
       "hash": "e7101105e60c9f6d2f321ae3c74253d086e30a4134ec35474c5a6b13f4cb836e"
     },
     "https://developer.apple.com/documentation/opendirectory/odframeworkerrors/rawvalue": {
@@ -2657,42 +2657,42 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odmappings/comment-swift.property": {
       "etag": "\"1dbe-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/comment-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/comment-swift.property.md",
       "hash": "21a2de97688cb4f88035c29fc2bac2e820cb6de706fc88806752067427387b67"
     },
     "https://developer.apple.com/documentation/opendirectory/odmappings/function-swift.property": {
       "etag": "\"1dd3-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/function-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/function-swift.property.md",
       "hash": "ee26ebb531c7528c2e2cb65e0a24d15f0e80122d6acab259e1f873e76b23b642"
     },
     "https://developer.apple.com/documentation/opendirectory/odmappings/functionattributes-swift.property": {
       "etag": "\"1be3-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/functionattributes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/functionattributes-swift.property.md",
       "hash": "7de34ca2c535ca59db9a52f3ea2ddebfb15cbac1abf34e23667f220f2548a654"
     },
     "https://developer.apple.com/documentation/opendirectory/odmappings/identifier-swift.property": {
       "etag": "\"1dfd-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/identifier-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/identifier-swift.property.md",
       "hash": "7c8439d036f63c257bf660969947cefb4543d9ffe05c2ec0be5a65d58664cd97"
     },
     "https://developer.apple.com/documentation/opendirectory/odmappings/recordmap(forstandardrecordtype:)": {
       "etag": "\"269b-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/recordmap-forstandardrecordtype.md",
+      "file_path": "documentation/OpenDirectory/odmappings/recordmap(forstandardrecordtype).md",
       "hash": "6bb5e9237d940cc6c7a134679401d31f85a6a5454fcdcb9f4590a4b21bf3504a"
     },
     "https://developer.apple.com/documentation/opendirectory/odmappings/recordtypes-swift.property": {
       "etag": "\"1b56-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/recordtypes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/recordtypes-swift.property.md",
       "hash": "6e3c12bb08079c33c4c1c82768dab612a4d8b334959cbc49e1375b04534041bb"
     },
     "https://developer.apple.com/documentation/opendirectory/odmappings/setrecordmap(_:forstandardrecordtype:)": {
       "etag": "\"284b-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/setrecordmap-forstandardrecordtype.md",
+      "file_path": "documentation/OpenDirectory/odmappings/setrecordmap(_,forstandardrecordtype).md",
       "hash": "afa12cfbef66d6a96d9fdf0c36d1970dcdb13e098efe7c6dc1e5394d8589bfdc"
     },
     "https://developer.apple.com/documentation/opendirectory/odmappings/templatename-swift.property": {
       "etag": "\"1e27-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/templatename-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/templatename-swift.property.md",
       "hash": "c7910884fa13014cc3f629a08e0d84a8fcadb5977069eff12caf19a046d145e7"
     },
     "https://developer.apple.com/documentation/opendirectory/odmatchtype": {
@@ -2707,42 +2707,42 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odmoduleentry/init(name:xpcservicename:)": {
       "etag": "\"23b3-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/init-namexpcservicename.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/init(name,xpcservicename).md",
       "hash": "934e21d68d117cda34be0ac17e573448ac27e40e4289c538d2d6b0c5d2993e63"
     },
     "https://developer.apple.com/documentation/opendirectory/odmoduleentry/mappings-swift.property": {
       "etag": "\"1d8a-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/mappings-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/mappings-swift.property.md",
       "hash": "858bddb6c84edfc4efd2c3fd6a9e8f8cbd68d5e79ba98a88658a7a753325f405"
     },
     "https://developer.apple.com/documentation/opendirectory/odmoduleentry/name-swift.property": {
       "etag": "\"1dc4-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/name-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/name-swift.property.md",
       "hash": "7e5daed2cfc681b6e1a082507433fbd760f967fd74c62e23d17b7ee2e8774eae"
     },
     "https://developer.apple.com/documentation/opendirectory/odmoduleentry/option(_:)": {
       "etag": "\"1efe-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/option.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/option(_).md",
       "hash": "ba37cc62330733ae0e860c61ee430f55e417de697159af2f552cd36289e75cc3"
     },
     "https://developer.apple.com/documentation/opendirectory/odmoduleentry/setoption(_:value:)": {
       "etag": "\"214b-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/setoption-value.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/setoption(_,value).md",
       "hash": "602e692e095cf80366a339140eb486a47558c1e2ae591cfd08d92b36b36d057f"
     },
     "https://developer.apple.com/documentation/opendirectory/odmoduleentry/supportedoptions-swift.property": {
       "etag": "\"1c04-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/supportedoptions-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/supportedoptions-swift.property.md",
       "hash": "6e709c0a6f19ddd8dd917ab8f15638eeb033de1182e8efdd49221270808b2b95"
     },
     "https://developer.apple.com/documentation/opendirectory/odmoduleentry/uuidstring-swift.property": {
       "etag": "\"1e42-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/uuidstring-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/uuidstring-swift.property.md",
       "hash": "366032494eb3cd49d94966f5920fafcccb3491e1d7884308b1e1270bf5bca464"
     },
     "https://developer.apple.com/documentation/opendirectory/odmoduleentry/xpcservicename-swift.property": {
       "etag": "\"1e96-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/xpcservicename-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/xpcservicename-swift.property.md",
       "hash": "9a50bf9a3d456dfe957651c30ed3eaffe7b273cd67670ebae874374ec5291835"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode": {
@@ -2752,12 +2752,12 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/accountpolicies()": {
       "etag": "\"2443-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/accountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnode/accountpolicies().md",
       "hash": "1870800ee74dcb80e74c648b7e956328efff7ac2d73ada8ef709620bc6430531"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/addaccountpolicy(_:tocategory:)": {
       "etag": "\"323f-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/addaccountpolicy-tocategory.md",
+      "file_path": "documentation/OpenDirectory/odnode/addaccountpolicy(_,tocategory).md",
       "hash": "992c391d2f6533139a2293c78b9f754e7aa450bcffc410cba61103493e056559"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/configuration": {
@@ -2767,32 +2767,32 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/createrecord(withrecordtype:name:attributes:)": {
       "etag": "\"6422-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/createrecord-withrecordtypenameattributes.md",
+      "file_path": "documentation/OpenDirectory/odnode/createrecord(withrecordtype,name,attributes).md",
       "hash": "3a960c4a27521f9d6f66b3d41af2ad6dddce7d0449166aae1527751a0d3aad6f"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/customcall(_:send:)": {
       "etag": "\"4ffc-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/customcall-send.md",
+      "file_path": "documentation/OpenDirectory/odnode/customcall(_,send).md",
       "hash": "b0fc0b34804f1836f803ef19222241da9f36893c63d693171af347aa8a173827"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/customfunction(_:payload:)": {
       "etag": "\"2744-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/customfunction-payload.md",
+      "file_path": "documentation/OpenDirectory/odnode/customfunction(_,payload).md",
       "hash": "334d5ea3a5c05a37db7a1e10595bccb091a544577cc532362b8c4a0faaa183a7"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/init(session:name:)": {
       "etag": "\"458e-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/init-sessionname.md",
+      "file_path": "documentation/OpenDirectory/odnode/init(session,name).md",
       "hash": "64c1c28a839eb68f8e19994c604914a0c37b45b9f8ce7e2c8a007d8a9db487f9"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/init(session:type:)": {
       "etag": "\"4502-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/init-sessiontype.md",
+      "file_path": "documentation/OpenDirectory/odnode/init(session,type).md",
       "hash": "8d3ad4bc80f8a67b35cfb624403ec4f794dbd21c4e22825131482ff68e23fa57"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/nodedetails(forkeys:)": {
       "etag": "\"4e44-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/nodedetails-forkeys.md",
+      "file_path": "documentation/OpenDirectory/odnode/nodedetails(forkeys).md",
       "hash": "769d5463917b1e61f18ec0265a93a381e980ff541431a602f09867a7eb16cb8c"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/nodename": {
@@ -2802,172 +2802,172 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/passwordcontentcheck(_:forrecordname:)": {
       "etag": "\"2b3e-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/passwordcontentcheck-forrecordname.md",
+      "file_path": "documentation/OpenDirectory/odnode/passwordcontentcheck(_,forrecordname).md",
       "hash": "07a346f5d42663669d202fee662a04287a6d4275873dcdbc4a6af58f9332072d"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/policies()": {
       "etag": "\"240b-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/policies.md",
+      "file_path": "documentation/OpenDirectory/odnode/policies().md",
       "hash": "c8ea149c5a97a88d4b14f13642d96351c0142aaa7e6a7fa104774d7d88a2ba9c"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/record(withrecordtype:name:attributes:)": {
       "etag": "\"5c5c-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/record-withrecordtypenameattributes.md",
+      "file_path": "documentation/OpenDirectory/odnode/record(withrecordtype,name,attributes).md",
       "hash": "1f24e463040bb992137477edeb3c3b229153acec9523bc5db5b776476e1c65fe"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/removeaccountpolicy(_:fromcategory:)": {
       "etag": "\"32a8-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/removeaccountpolicy-fromcategory.md",
+      "file_path": "documentation/OpenDirectory/odnode/removeaccountpolicy(_,fromcategory).md",
       "hash": "527c08e7d294369bd6f344c914f27613d9f0fcc13127e98ac60e82199ff98e53"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/removepolicy(_:)": {
       "etag": "\"2751-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/removepolicy.md",
+      "file_path": "documentation/OpenDirectory/odnode/removepolicy(_).md",
       "hash": "49ebd936f64678fc253875ba6f9ca9de7fd90f4b412eec753f934f0017974298"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/setaccountpolicies(_:)": {
       "etag": "\"2764-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnode/setaccountpolicies(_).md",
       "hash": "5625dee1acfb4d941c3c78bbfd0c5754d69fcf286f69f7012148b113ac0ba7e5"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/setcredentialswithrecordtype(_:authenticationtype:authenticationitems:continueitems:context:)": {
       "etag": "\"6cce-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setcredentialswithrecordtype-authenticationtypeauthenticationitemscontinueitemscontext.md",
+      "file_path": "documentation/OpenDirectory/odnode/setcredentialswithrecordtype(_,authenticationtype,authenticationitems,continueitems,context).md",
       "hash": "975366b7b60cbc9b1e8ad20e6d13d88b29bdafad6bfab69a1137ea235a926481"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/setcredentialswithrecordtype(_:recordname:password:)": {
       "etag": "\"565e-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setcredentialswithrecordtype-recordnamepassword.md",
+      "file_path": "documentation/OpenDirectory/odnode/setcredentialswithrecordtype(_,recordname,password).md",
       "hash": "feccd4324dc4a60d0943d941f2fc23b374c93c44cda8a1a07ea2db1e7658e281"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/setpolicies(_:)": {
       "etag": "\"2727-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnode/setpolicies(_).md",
       "hash": "06cc1786f7d06bf6f3b4041e672a3b7e955c04d442a4cc195e997c4e38412f70"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/setpolicy(_:value:)": {
       "etag": "\"29b5-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setpolicy-value.md",
+      "file_path": "documentation/OpenDirectory/odnode/setpolicy(_,value).md",
       "hash": "ab8c0d518db4de59244d85bf624648f1f43d59cff8374d1557bd603789b49f04"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/subnodenames()": {
       "etag": "\"431b-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/subnodenames.md",
+      "file_path": "documentation/OpenDirectory/odnode/subnodenames().md",
       "hash": "99cf01877ff31943594e22d39ba9a0b49ecc094f2e0c79980e7c8fba0f3edcbc"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/supportedattributes(forrecordtype:)": {
       "etag": "\"51db-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/supportedattributes-forrecordtype.md",
+      "file_path": "documentation/OpenDirectory/odnode/supportedattributes(forrecordtype).md",
       "hash": "a14a8ea767029cfd586354c0d4c29788feba41b68051028d444821359bf7347b"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/supportedpolicies()": {
       "etag": "\"2499-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/supportedpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnode/supportedpolicies().md",
       "hash": "ce2d7ecab479b288046ce47dc08507490892aebcecfa5808844287e1157333a8"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/supportedrecordtypes()": {
       "etag": "\"455f-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/supportedrecordtypes.md",
+      "file_path": "documentation/OpenDirectory/odnode/supportedrecordtypes().md",
       "hash": "7ff7e60a0c61081900d7888ca382bd7eba9ebfa9c0272d4ccaf004cbb4e74b76"
     },
     "https://developer.apple.com/documentation/opendirectory/odnode/unreachablesubnodenames()": {
       "etag": "\"43b1-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/unreachablesubnodenames.md",
+      "file_path": "documentation/OpenDirectory/odnode/unreachablesubnodenames().md",
       "hash": "2063ffb04bc277fb92be7d776008aa1e8dd1f982263529545b0a303593e0d6fa"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodeaddaccountpolicy(_:_:_:_:)": {
       "etag": "\"a9e5-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodeaddaccountpolicy.md",
+      "file_path": "documentation/OpenDirectory/odnodeaddaccountpolicy(_,_,_,_).md",
       "hash": "eef63afc0e653cb1da5b2b5ed9bcde591890d3df2d66cab089d24f1aaf88559d"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopyaccountpolicies(_:_:)": {
       "etag": "\"9c78-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopyaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodecopyaccountpolicies(_,_).md",
       "hash": "fc8393056d02bcf274e5167a787afe169013619997c5012588da5dc35ea56e49"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopydetails(_:_:_:)": {
       "etag": "\"b12c-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopydetails.md",
+      "file_path": "documentation/OpenDirectory/odnodecopydetails(_,_,_).md",
       "hash": "951a5efae60fccffe3422d40f5dd7aa529204e751a7af130bb06fc46aabb44e4"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopypolicies(_:_:)": {
       "etag": "\"9dbb-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopypolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodecopypolicies(_,_).md",
       "hash": "0564bfd4a94730a12cd37110db2bd9331ee8feccda83d507d31a1a349b0ac5ce"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopyrecord(_:_:_:_:_:)": {
       "etag": "\"c685-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopyrecord.md",
+      "file_path": "documentation/OpenDirectory/odnodecopyrecord(_,_,_,_,_).md",
       "hash": "5a8f5fe8beee1fdd1bb6a74711eb6c57a1d4e0bb895329d814a737580b7fd32c"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopysubnodenames(_:_:)": {
       "etag": "\"a7cc-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopysubnodenames.md",
+      "file_path": "documentation/OpenDirectory/odnodecopysubnodenames(_,_).md",
       "hash": "88aabf163ea149da33a305e0219feb5bb998772d33240a49a76a4ffc0fc0e91f"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopysupportedattributes(_:_:_:)": {
       "etag": "\"b77c-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopysupportedattributes.md",
+      "file_path": "documentation/OpenDirectory/odnodecopysupportedattributes(_,_,_).md",
       "hash": "0f1766a612739e08a779970d6e2b26f2aa86da13f69578f0add8cd1298fb665b"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopysupportedpolicies(_:_:)": {
       "etag": "\"9de2-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopysupportedpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodecopysupportedpolicies(_,_).md",
       "hash": "d4296ad190743d7c184bad01e328c5928101c29142bbda57698ba3e1a70f6ce3"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopysupportedrecordtypes(_:_:)": {
       "etag": "\"a97d-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopysupportedrecordtypes.md",
+      "file_path": "documentation/OpenDirectory/odnodecopysupportedrecordtypes(_,_).md",
       "hash": "d9eea87d2842954812caee7f66ad83abd15fcba217e6796364865ef840b8ca45"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecopyunreachablesubnodenames(_:_:)": {
       "etag": "\"aa0f-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopyunreachablesubnodenames.md",
+      "file_path": "documentation/OpenDirectory/odnodecopyunreachablesubnodenames(_,_).md",
       "hash": "1bd03b959d632a2889773d1428038f93edc776482495144cfa9d2352355710dc"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecreatecopy(_:_:_:)": {
       "etag": "\"adc9-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecreatecopy.md",
+      "file_path": "documentation/OpenDirectory/odnodecreatecopy(_,_,_).md",
       "hash": "52aacb1f63d7bae715a35321473b24451e0a7961761be7639e67e34a5ab41ea4"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecreaterecord(_:_:_:_:_:)": {
       "etag": "\"cb4e-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecreaterecord.md",
+      "file_path": "documentation/OpenDirectory/odnodecreaterecord(_,_,_,_,_).md",
       "hash": "1be935882de0d8303739acdc8808da8c65f2a0930270219cd042da3843199f65"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecreatewithname(_:_:_:_:)": {
       "etag": "\"b87d-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecreatewithname.md",
+      "file_path": "documentation/OpenDirectory/odnodecreatewithname(_,_,_,_).md",
       "hash": "eadeb56c4a4e5d6fe679d9ed480806ef194a2ff6513eea3aa057bd27e7e76a8f"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecreatewithnodetype(_:_:_:_:)": {
       "etag": "\"b8e3-65d55b3ba8670-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecreatewithnodetype.md",
+      "file_path": "documentation/OpenDirectory/odnodecreatewithnodetype(_,_,_,_).md",
       "hash": "2c905778128df2ce01b74948fc64d48b8d0f34b2b1894d462e749f14d4048d6b"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecustomcall(_:_:_:_:)": {
       "etag": "\"b193-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecustomcall.md",
+      "file_path": "documentation/OpenDirectory/odnodecustomcall(_,_,_,_).md",
       "hash": "d2d68217477cad49d2787c3f5735e435e91338053152f0d2781993fa6bb4c0bb"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodecustomfunction(_:_:_:_:)": {
       "etag": "\"a477-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecustomfunction.md",
+      "file_path": "documentation/OpenDirectory/odnodecustomfunction(_,_,_,_).md",
       "hash": "249d92319e091d7ed394c30a7ee3ea91ea9f2337d9817e411079b733ff79e427"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodegetname(_:)": {
       "etag": "\"9add-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odnodegetname.md",
+      "file_path": "documentation/OpenDirectory/odnodegetname(_).md",
       "hash": "d33b25e7e1e77ae956cfe7a3f1beb18a5962b294fc31bd972fc55ce201d3ae36"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodegettypeid()": {
       "etag": "\"8e8a-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodegettypeid.md",
+      "file_path": "documentation/OpenDirectory/odnodegettypeid().md",
       "hash": "efb3f30b2b14ae5fd232f7cdbe383b729a146ef5143a18c37130d5acd428c1b2"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodepasswordcontentcheck(_:_:_:_:)": {
       "etag": "\"a384-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odnodepasswordcontentcheck.md",
+      "file_path": "documentation/OpenDirectory/odnodepasswordcontentcheck(_,_,_,_).md",
       "hash": "25bf49872a49ab3600341f33e7704b41d07848a258e7343940036820ff8d8865"
     },
     "https://developer.apple.com/documentation/opendirectory/odnoderef": {
@@ -2977,37 +2977,37 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odnoderemoveaccountpolicy(_:_:_:_:)": {
       "etag": "\"aa00-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnoderemoveaccountpolicy.md",
+      "file_path": "documentation/OpenDirectory/odnoderemoveaccountpolicy(_,_,_,_).md",
       "hash": "0ea81e5733b0f5ee77c80549b01150fbe25ae2b8624dceab019856b384d6df21"
     },
     "https://developer.apple.com/documentation/opendirectory/odnoderemovepolicy(_:_:_:)": {
       "etag": "\"a2c0-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odnoderemovepolicy.md",
+      "file_path": "documentation/OpenDirectory/odnoderemovepolicy(_,_,_).md",
       "hash": "2cac5a9ec1875272fb94e802927bfc97c36089c36cb1f0d0b5d629af34adffee"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodesetaccountpolicies(_:_:_:)": {
       "etag": "\"a0ec-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodesetaccountpolicies(_,_,_).md",
       "hash": "21cd76c19d9b333425ce812e833679be16283a41e6a044fe4a22ab72c1c83f77"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodesetcredentials(_:_:_:_:_:)": {
       "etag": "\"c920-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetcredentials.md",
+      "file_path": "documentation/OpenDirectory/odnodesetcredentials(_,_,_,_,_).md",
       "hash": "f1af4113e13e925c4481db3e3297be2719b56b3aee95e239c66647e0a6da33e0"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodesetcredentialsextended(_:_:_:_:_:_:_:)": {
       "etag": "\"e8aa-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetcredentialsextended.md",
+      "file_path": "documentation/OpenDirectory/odnodesetcredentialsextended(_,_,_,_,_,_,_).md",
       "hash": "c6457f49980828eadde3ecf82d7d7337f8d9bb97d86bc9950ad863c8031251c6"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodesetpolicies(_:_:_:)": {
       "etag": "\"a102-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodesetpolicies(_,_,_).md",
       "hash": "e15e1b5d624bbfd22968edbe3f34673de63185802fed4e240ffa7b71c498b93e"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodesetpolicy(_:_:_:_:)": {
       "etag": "\"a84e-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetpolicy.md",
+      "file_path": "documentation/OpenDirectory/odnodesetpolicy(_,_,_,_).md",
       "hash": "8299de2131d127efefa96ad67d522dbeae955f4d5fec80ab80c05e0d7440024b"
     },
     "https://developer.apple.com/documentation/opendirectory/odnodetype": {
@@ -3087,7 +3087,7 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odquery/init(node:forrecordtypes:attribute:matchtype:queryvalues:returnattributes:maximumresults:)": {
       "etag": "\"6bf0-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/init-nodeforrecordtypesattributematchtypequeryvaluesreturnattributesmaximumresults.md",
+      "file_path": "documentation/OpenDirectory/odquery/init(node,forrecordtypes,attribute,matchtype,queryvalues,returnattributes,maximumresults).md",
       "hash": "5efa45eadba7abda031c4afa9ba9f8b5f036b4b9519e44c3c06732eea9b661ab"
     },
     "https://developer.apple.com/documentation/opendirectory/odquery/operationqueue": {
@@ -3097,22 +3097,22 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odquery/remove(from:formode:)": {
       "etag": "\"40f2-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/remove-fromformode.md",
+      "file_path": "documentation/OpenDirectory/odquery/remove(from,formode).md",
       "hash": "b080b5a1d3e9de4de20d3d7503c566cde16a758c8010caeebfc84271f4528fe3"
     },
     "https://developer.apple.com/documentation/opendirectory/odquery/resultsallowingpartial(_:)": {
       "etag": "\"38fb-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/resultsallowingpartial.md",
+      "file_path": "documentation/OpenDirectory/odquery/resultsallowingpartial(_).md",
       "hash": "967ca04297516dd4190980273cba24d7e84d57a4c1017ada0eefcfa01edfceae"
     },
     "https://developer.apple.com/documentation/opendirectory/odquery/schedule(in:formode:)": {
       "etag": "\"4221-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/schedule-informode.md",
+      "file_path": "documentation/OpenDirectory/odquery/schedule(in,formode).md",
       "hash": "3be114a7e8346209ae65085abf8b72ef09df60bd0ec38fb5982ff53c3fe77703"
     },
     "https://developer.apple.com/documentation/opendirectory/odquery/synchronize()": {
       "etag": "\"32e6-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/synchronize.md",
+      "file_path": "documentation/OpenDirectory/odquery/synchronize().md",
       "hash": "1e02dfc1c4d80d506dbdeaf52d1a96a28fdd41d473be25d64a41fab743ef97c1"
     },
     "https://developer.apple.com/documentation/opendirectory/odquerycallback": {
@@ -3122,17 +3122,17 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odquerycopyresults(_:_:_:)": {
       "etag": "\"7662-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odquerycopyresults.md",
+      "file_path": "documentation/OpenDirectory/odquerycopyresults(_,_,_).md",
       "hash": "8811fb74d258f5818fd70c6e1a939b5129ea0578e3610a4d0c17acd4493d58b5"
     },
     "https://developer.apple.com/documentation/opendirectory/odquerycreatewithnode(_:_:_:_:_:_:_:_:_:)": {
       "etag": "\"a87f-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odquerycreatewithnode.md",
+      "file_path": "documentation/OpenDirectory/odquerycreatewithnode(_,_,_,_,_,_,_,_,_).md",
       "hash": "ce4ce309efa3cf256feeeb00515c3c4701ad0bfcac2bab59641176c43f90933a"
     },
     "https://developer.apple.com/documentation/opendirectory/odquerycreatewithnodetype(_:_:_:_:_:_:_:_:_:)": {
       "etag": "\"a8e2-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odquerycreatewithnodetype.md",
+      "file_path": "documentation/OpenDirectory/odquerycreatewithnodetype(_,_,_,_,_,_,_,_,_).md",
       "hash": "a8e789f25212736ec23399f5b054ec52a8bac7ed5af08d472409cea42302f1d3"
     },
     "https://developer.apple.com/documentation/opendirectory/odquerydelegate": {
@@ -3142,12 +3142,12 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odquerydelegate/query(_:foundresults:error:)": {
       "etag": "\"357a-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquerydelegate/query-foundresultserror.md",
+      "file_path": "documentation/OpenDirectory/odquerydelegate/query(_,foundresults,error).md",
       "hash": "f137f870efb554fbc3a8785efa68db943c406d2ca707896360648f8dd6bdf6e2"
     },
     "https://developer.apple.com/documentation/opendirectory/odquerygettypeid()": {
       "etag": "\"55a3-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odquerygettypeid.md",
+      "file_path": "documentation/OpenDirectory/odquerygettypeid().md",
       "hash": "e9fcf91a87ead8cd7ac1f3baa3f12c4505ae24764ba1fdd69ea27908e83a3793"
     },
     "https://developer.apple.com/documentation/opendirectory/odqueryref": {
@@ -3157,27 +3157,27 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odqueryschedulewithrunloop(_:_:_:)": {
       "etag": "\"6ffe-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odqueryschedulewithrunloop.md",
+      "file_path": "documentation/OpenDirectory/odqueryschedulewithrunloop(_,_,_).md",
       "hash": "005b042572fe08990344228d215ee36b294fecd9253f313b1e4ef492fea97c50"
     },
     "https://developer.apple.com/documentation/opendirectory/odquerysetcallback(_:_:_:)": {
       "etag": "\"674e-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odquerysetcallback.md",
+      "file_path": "documentation/OpenDirectory/odquerysetcallback(_,_,_).md",
       "hash": "6f336c0e0abf84f6315a142d88c3abdde7406cb0cf411b2afe20dfacf8d26ca7"
     },
     "https://developer.apple.com/documentation/opendirectory/odquerysetdispatchqueue(_:_:)": {
       "etag": "\"6653-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odquerysetdispatchqueue.md",
+      "file_path": "documentation/OpenDirectory/odquerysetdispatchqueue(_,_).md",
       "hash": "34b4cd9e078b7aaa6a11d7d366f658576f148a1b7bb60aacd09e3a5a38b4fa34"
     },
     "https://developer.apple.com/documentation/opendirectory/odquerysynchronize(_:)": {
       "etag": "\"5b64-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odquerysynchronize.md",
+      "file_path": "documentation/OpenDirectory/odquerysynchronize(_).md",
       "hash": "0e8df47fdcb6fbac12c88887dd7c34c537ac047ea6b033be86aa42a6f9d4a9c3"
     },
     "https://developer.apple.com/documentation/opendirectory/odqueryunschedulefromrunloop(_:_:_:)": {
       "etag": "\"6713-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odqueryunschedulefromrunloop.md",
+      "file_path": "documentation/OpenDirectory/odqueryunschedulefromrunloop(_,_,_).md",
       "hash": "04fb46d12c491316093d7c0b5dfa1a9fd3f2aa6a1212c8cc90c1360f6358b2ee"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord": {
@@ -3187,62 +3187,62 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/accountpolicies()": {
       "etag": "\"2475-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/accountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/accountpolicies().md",
       "hash": "232efa86a63b96cd9a76f9d1b66a97791ca41679636c382383b3011176073e85"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/addaccountpolicy(_:tocategory:)": {
       "etag": "\"3271-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/addaccountpolicy-tocategory.md",
+      "file_path": "documentation/OpenDirectory/odrecord/addaccountpolicy(_,tocategory).md",
       "hash": "c624adf4988c90aacf18588ac24a80157b768dca705bf23805589f6c7f0c5c76"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/addmemberrecord(_:)": {
       "etag": "\"3f6f-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/addmemberrecord.md",
+      "file_path": "documentation/OpenDirectory/odrecord/addmemberrecord(_).md",
       "hash": "0b24151793b45e6f82d05e11b1bba22ca06d45719b5f0ce0c7fea7ebdd46de5b"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/addvalue(_:toattribute:)": {
       "etag": "\"6c8c-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/addvalue-toattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/addvalue(_,toattribute).md",
       "hash": "6c8b848c142aaeef122b30880349a9ae6eb9432b2c6591ca8ed41abe6e762dc2"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/authenticationallowed()": {
       "etag": "\"1ee2-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/authenticationallowed.md",
+      "file_path": "documentation/OpenDirectory/odrecord/authenticationallowed().md",
       "hash": "d4b644e91ee4680a56148e716e629c4d79d2a469229e4d78aa494970089a2b23"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/changepassword(_:topassword:)": {
       "etag": "\"67dd-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/changepassword-topassword.md",
+      "file_path": "documentation/OpenDirectory/odrecord/changepassword(_,topassword).md",
       "hash": "35549f9fcd158991d9f203a6d8ffbb7cf00bae5aea5c4f2ea0076995c7c5f5c6"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/delete()": {
       "etag": "\"2dc0-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/delete.md",
+      "file_path": "documentation/OpenDirectory/odrecord/delete().md",
       "hash": "224bc1b60021a81929a04a860417dfe4d08a0b3cf8b2ca2591f7537bba5d992f"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/effectivepolicies()": {
       "etag": "\"2514-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/effectivepolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/effectivepolicies().md",
       "hash": "57730edf491394afe8d7ba31b2e001193f3274000ac2927d116a4d374a4000c1"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/ismemberrecord(_:)": {
       "etag": "\"3feb-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/ismemberrecord.md",
+      "file_path": "documentation/OpenDirectory/odrecord/ismemberrecord(_).md",
       "hash": "1b8c1053397200217a1b55133c57b36b1a098941a66587b4ea9f77bb11bcb05f"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/passwordchangeallowed(_:)": {
       "etag": "\"26a6-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/passwordchangeallowed.md",
+      "file_path": "documentation/OpenDirectory/odrecord/passwordchangeallowed(_).md",
       "hash": "47078165a7341a76ba173c81c6e551415f3951c74855f65b0bac33ff7d1310e8"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/policies()": {
       "etag": "\"243d-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/policies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/policies().md",
       "hash": "b301e21043915a7f75216df8ec8c9c96f4373e8700a12ddea9fa95d2a4f62641"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/recorddetails(forattributes:)": {
       "etag": "\"67e7-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/recorddetails-forattributes.md",
+      "file_path": "documentation/OpenDirectory/odrecord/recorddetails(forattributes).md",
       "hash": "6e2fd24a1671e30d651f11c08b4ae231fecde5458f58df6f6ddda347ebfd9e17"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/recordname": {
@@ -3257,27 +3257,27 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/removeaccountpolicy(_:fromcategory:)": {
       "etag": "\"32da-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removeaccountpolicy-fromcategory.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removeaccountpolicy(_,fromcategory).md",
       "hash": "1c157123ba54141465ec6576d7a699f6631792d51a9f1616730fb3ffda23d92b"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/removememberrecord(_:)": {
       "etag": "\"3fcd-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removememberrecord.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removememberrecord(_).md",
       "hash": "9fea5c9bb03ac602fe3bfc0ef84c2273a8dcb9e9cb2c5cb277c03b8962539f70"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/removepolicy(_:)": {
       "etag": "\"2783-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removepolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removepolicy(_).md",
       "hash": "4a8ac89a09a87547833fe7b42933b3e32dc8bb93e9e0cda52540e6469f367a6b"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/removevalue(_:fromattribute:)": {
       "etag": "\"6cc0-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removevalue-fromattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removevalue(_,fromattribute).md",
       "hash": "f166858f57e25aed1e27815eda8707eb18c7a63ee15477d6e4b5ab66148d6273"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/removevalues(forattribute:)": {
       "etag": "\"68fe-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removevalues-forattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removevalues(forattribute).md",
       "hash": "9a75ce249b21da502dbe8fc62cd9fe19dda30f89ff65427b7765225212708a6c"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/secondsuntilauthenticationsexpire": {
@@ -3292,147 +3292,147 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/setaccountpolicies(_:)": {
       "etag": "\"2796-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setaccountpolicies(_).md",
       "hash": "41c6c7b31847783c4271a5636675b3f487f59aa45d0be077ce4af39311effc52"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/setnodecredentials(_:password:)": {
       "etag": "\"680e-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setnodecredentials-password.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setnodecredentials(_,password).md",
       "hash": "9b40dd1584b80e65adbf32f10e634ed6abd55a2e62c8413c229f08006199822c"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/setnodecredentialswithrecordtype(_:authenticationtype:authenticationitems:continueitems:context:)": {
       "etag": "\"8930-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setnodecredentialswithrecordtype-authenticationtypeauthenticationitemscontinueitemscontext.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setnodecredentialswithrecordtype(_,authenticationtype,authenticationitems,continueitems,context).md",
       "hash": "e25fb519694268bbdf970f63cb4cdb2e9c442fbc4490a936fd3cac1e64a9225f"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/setpolicies(_:)": {
       "etag": "\"2759-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setpolicies(_).md",
       "hash": "0cc3a3d916a70de58b05c8860dfa05702327bc862d6243784ef00f730e0f4652"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/setpolicy(_:value:)": {
       "etag": "\"29e7-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setpolicy-value.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setpolicy(_,value).md",
       "hash": "a4fd3866ca4cbb7965fe7a64dfffaf7793c08059ca39fde905aa9cb384567dfb"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/setvalue(_:forattribute:)": {
       "etag": "\"6d8e-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setvalue-forattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setvalue(_,forattribute).md",
       "hash": "6f7f8015764a3dad9b5693f7efa07e5a16dfad70ba782da885a094256e716782"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/supportedpolicies()": {
       "etag": "\"24cb-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/supportedpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/supportedpolicies().md",
       "hash": "9a78f564e682059ed5dd8c8f16874ae0fbe9ca544440a77b5e7c2f8f5eeb383a"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/synchronize()": {
       "etag": "\"5ed6-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/synchronize.md",
+      "file_path": "documentation/OpenDirectory/odrecord/synchronize().md",
       "hash": "7361401223f7bc77988f232822894834ed64b23a6c9e575d24fdae019fe915a5"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/values(forattribute:)": {
       "etag": "\"671e-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/values-forattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/values(forattribute).md",
       "hash": "95b4e0f89f47daed206d659a332d64d24f5d4c0a66ada5108c6f9408bb49d9c9"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/verifyextended(withauthenticationtype:authenticationitems:continueitems:context:)": {
       "etag": "\"7eaf-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/verifyextended-withauthenticationtypeauthenticationitemscontinueitemscontext.md",
+      "file_path": "documentation/OpenDirectory/odrecord/verifyextended(withauthenticationtype,authenticationitems,continueitems,context).md",
       "hash": "663ca1b91e8f909e88cac201e33578f393f390941a1ba83b59a0a5923f05d5a1"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/verifypassword(_:)": {
       "etag": "\"62c2-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/verifypassword.md",
+      "file_path": "documentation/OpenDirectory/odrecord/verifypassword(_).md",
       "hash": "01918853b59671737e9695ccfed13a813617c9fd7e9b5ce0d2883a9d1f8b9513"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/willauthenticationsexpire(_:)": {
       "etag": "\"22c5-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/willauthenticationsexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecord/willauthenticationsexpire(_).md",
       "hash": "9ab46d4dd3fa7b9fba4bd638737e83760a3f4661a1850ea46d736fb64fe4b37c"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecord/willpasswordexpire(_:)": {
       "etag": "\"2232-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/willpasswordexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecord/willpasswordexpire(_).md",
       "hash": "688c3ac10e40070181b380c48f6d2174b9a84757985b1a91a47421ff5229da12"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordaddaccountpolicy(_:_:_:_:)": {
       "etag": "\"aa25-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordaddaccountpolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecordaddaccountpolicy(_,_,_,_).md",
       "hash": "f784ef6c5711dd978c920c3000a1ccb27d707ee979288eb8bf3420fae300d83a"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordaddmember(_:_:_:)": {
       "etag": "\"aba6-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordaddmember.md",
+      "file_path": "documentation/OpenDirectory/odrecordaddmember(_,_,_).md",
       "hash": "253bac17b06d06c60a44b424043d974d4c1a549f2368a9dea310dcbc6881b1b4"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordaddvalue(_:_:_:_:)": {
       "etag": "\"b827-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordaddvalue.md",
+      "file_path": "documentation/OpenDirectory/odrecordaddvalue(_,_,_,_).md",
       "hash": "6b2e758db486754c07c81d30fe7f88ad1a35c860c6acd6bdb4d410210483b841"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordauthenticationallowed(_:_:)": {
       "etag": "\"9a60-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordauthenticationallowed.md",
+      "file_path": "documentation/OpenDirectory/odrecordauthenticationallowed(_,_).md",
       "hash": "982483287abf7e328d43f555cc76d1802a86ccedbc27a0c4a50d7579b6fccecb"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordchangepassword(_:_:_:_:)": {
       "etag": "\"b2ca-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordchangepassword.md",
+      "file_path": "documentation/OpenDirectory/odrecordchangepassword(_,_,_,_).md",
       "hash": "b55e72c40048d6ff1661ed47449dea514ecf310dc7e387c449923ce368171387"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordcontainsmember(_:_:_:)": {
       "etag": "\"b1cd-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcontainsmember.md",
+      "file_path": "documentation/OpenDirectory/odrecordcontainsmember(_,_,_).md",
       "hash": "117659abc96ea8a34b6f8dbfdd5631a2682014df5e7d803f540048c65b7dfa21"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordcopyaccountpolicies(_:_:)": {
       "etag": "\"9cb8-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopyaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopyaccountpolicies(_,_).md",
       "hash": "f616315d70c7f818ca56de6046384da89e551fcf460470046e851e4482c0bfd6"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordcopydetails(_:_:_:)": {
       "etag": "\"b81e-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopydetails.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopydetails(_,_,_).md",
       "hash": "1b7682cdfc62f415aa0a2baf256d029a4a5e6c2029651f565ac13e397d94ac05"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordcopyeffectivepolicies(_:_:)": {
       "etag": "\"9e66-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopyeffectivepolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopyeffectivepolicies(_,_).md",
       "hash": "9cccdbbb8d9e32a679cea33a077f7ee93f8c12466b48b9fb7550fdd940891b46"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordcopypolicies(_:_:)": {
       "etag": "\"9dfd-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopypolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopypolicies(_,_).md",
       "hash": "4dc55c04eae3fb56bafb7793879cb9159fcfcda4030067f2f50a8a7eb7baf775"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordcopysupportedpolicies(_:_:)": {
       "etag": "\"9e8e-65d55b3ba8670-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopysupportedpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopysupportedpolicies(_,_).md",
       "hash": "a58a33971c8db48df86733582fb3f1bf26184e89d9f5105c110a9a7253171820"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordcopyvalues(_:_:_:)": {
       "etag": "\"b4a3-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopyvalues.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopyvalues(_,_,_).md",
       "hash": "1a012cdbec9af5c20f13e8517ce35eae5b25a3cdcd6a80f7076a929e78f59fe4"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecorddelete(_:_:)": {
       "etag": "\"a783-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecorddelete.md",
+      "file_path": "documentation/OpenDirectory/odrecorddelete(_,_).md",
       "hash": "9eaa4e6e7a46e39e39f5c2ed1d61c8fc92defde2e767f154ee1d2302ec593236"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordgetrecordname(_:)": {
       "etag": "\"9d0e-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordgetrecordname.md",
+      "file_path": "documentation/OpenDirectory/odrecordgetrecordname(_).md",
       "hash": "5ddd498bf01f50e682e876d26dbddf46d0cb9e042e6b230c3063aabc09c9a17a"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordgetrecordtype(_:)": {
       "etag": "\"9b8e-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordgetrecordtype.md",
+      "file_path": "documentation/OpenDirectory/odrecordgetrecordtype(_).md",
       "hash": "cdc0f2710f26f0550e5da3d0a04383170f6264f61bd0d9f981f6fe9fecfb19df"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordgettypeid()": {
       "etag": "\"8f0d-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordgettypeid.md",
+      "file_path": "documentation/OpenDirectory/odrecordgettypeid().md",
       "hash": "96d37933f1b934f2b4d4a4bc11a926e86ecb08f6eb10393010029c2c69c13b08"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordmap": {
@@ -3442,27 +3442,27 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordmap/attributemap(forstandardattribute:)": {
       "etag": "\"2732-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/attributemap-forstandardattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/attributemap(forstandardattribute).md",
       "hash": "ec7d3407aea3125a2d6a756070fc491e8973c33282ecb203f02fc81b56341424"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordmap/attributes-swift.property": {
       "etag": "\"1f4f-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/attributes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/attributes-swift.property.md",
       "hash": "1c0229cd9104644c58ecbd041825d73489b2a0494e9f1304b0cef847d25a6277"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordmap/native-swift.property": {
       "etag": "\"1dc0-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/native-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/native-swift.property.md",
       "hash": "9a899d5567c2ac683535dbae7f859414489dc8cf70622fdb3e4bb9efbcc24bde"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordmap/odpredicate-swift.property": {
       "etag": "\"1f5e-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/odpredicate-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/odpredicate-swift.property.md",
       "hash": "92c9e6da73ac64715a134eb8059713a6c17af70ee04e77bc2b31475dc1afd698"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordmap/setattribute(_:forstandardattribute:)": {
       "etag": "\"28cd-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/setattribute-forstandardattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/setattribute(_,forstandardattribute).md",
       "hash": "937e3d39acd1a7400cd75f316b33d83e3d75a13537bbd3bd24290442ed08d3f4"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordmap/standardattributetypes": {
@@ -3472,7 +3472,7 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordpasswordchangeallowed(_:_:_:)": {
       "etag": "\"a148-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordpasswordchangeallowed.md",
+      "file_path": "documentation/OpenDirectory/odrecordpasswordchangeallowed(_,_,_).md",
       "hash": "aa0035e59fdf4892f429cb73a20db372f6aa28bd33da22dd30d156090e98d3de"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordref": {
@@ -3482,67 +3482,67 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordremoveaccountpolicy(_:_:_:_:)": {
       "etag": "\"aaed-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordremoveaccountpolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecordremoveaccountpolicy(_,_,_,_).md",
       "hash": "bfef2770e5ff93d2e82c1a803b360c497f82c443714a521d0be99c14fef9c44d"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordremovemember(_:_:_:)": {
       "etag": "\"ab51-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordremovemember.md",
+      "file_path": "documentation/OpenDirectory/odrecordremovemember(_,_,_).md",
       "hash": "99d347a7bb7477d7ee11ee14ec7ac580855d32252a289024f82446abadf98dff"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordremovepolicy(_:_:_:)": {
       "etag": "\"a2cb-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordremovepolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecordremovepolicy(_,_,_).md",
       "hash": "f2253b92c75fc6ff78b494ef6fba749ffe972beb1263d3e3d27b060406e23f6d"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordremovevalue(_:_:_:_:)": {
       "etag": "\"b940-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordremovevalue.md",
+      "file_path": "documentation/OpenDirectory/odrecordremovevalue(_,_,_,_).md",
       "hash": "0eac50fd68706f1dc8644243e56eca4fe11e1e284cb37d0bad68d22fc973584d"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsecondsuntilauthenticationsexpire(_:)": {
       "etag": "\"8c28-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsecondsuntilauthenticationsexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecordsecondsuntilauthenticationsexpire(_).md",
       "hash": "2be11bfc72b11a78c45fa4d2114579ad15f17ca3d12d2dbd11dbaf7b16fba12e"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsecondsuntilpasswordexpires(_:)": {
       "etag": "\"8baa-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsecondsuntilpasswordexpires.md",
+      "file_path": "documentation/OpenDirectory/odrecordsecondsuntilpasswordexpires(_).md",
       "hash": "c65ea75a8b93f40f1e95cabca8f0264bfb0bd66e40508d7d0ffacc6f8a407c24"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsetaccountpolicies(_:_:_:)": {
       "etag": "\"a15b-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetaccountpolicies(_,_,_).md",
       "hash": "6743093243ae094ae23c38771ecc536e103af9910af9aa70af4b81cc3869cc84"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsetnodecredentials(_:_:_:_:)": {
       "etag": "\"bbfc-65d55b3ba8670-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetnodecredentials.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetnodecredentials(_,_,_,_).md",
       "hash": "bd5d0e8b8bab81310c4f6c1d18fbaaffda68b3d35495e97949c495417fad3727"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsetnodecredentialsextended(_:_:_:_:_:_:_:)": {
       "etag": "\"e893-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetnodecredentialsextended.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetnodecredentialsextended(_,_,_,_,_,_,_).md",
       "hash": "f3ba4d94b1f9e0d96e4b6156383f2f6f1ec0869c2e4a9f4f48177e5096042f96"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsetpolicies(_:_:_:)": {
       "etag": "\"a11f-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetpolicies(_,_,_).md",
       "hash": "80656318cbec492eb2095768871556e353987a1fdac8f2554fbdbea858427d34"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsetpolicy(_:_:_:_:)": {
       "etag": "\"a8b4-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetpolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetpolicy(_,_,_,_).md",
       "hash": "147b3457880e43ddd7e5e1871ecf58edcd2f689afc858942b967d7ff49c42bf0"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsetvalue(_:_:_:_:)": {
       "etag": "\"bbc2-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetvalue.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetvalue(_,_,_,_).md",
       "hash": "abb25acad8760c49be9986464321c2fc0718c2279cde88a9f7712cf7ee06b01e"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordsynchronize(_:_:)": {
       "etag": "\"a548-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsynchronize.md",
+      "file_path": "documentation/OpenDirectory/odrecordsynchronize(_,_).md",
       "hash": "4cc854bcf1ac9d4642e6b61d48740aa1f448c54158dc3293d3437eb3f9707784"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordtype": {
@@ -3552,22 +3552,22 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordverifypassword(_:_:_:)": {
       "etag": "\"abdc-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordverifypassword.md",
+      "file_path": "documentation/OpenDirectory/odrecordverifypassword(_,_,_).md",
       "hash": "ec241bca929bb54e5a048119c52126fe4f575fa80216bba3644c8bf54a37fc98"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordverifypasswordextended(_:_:_:_:_:_:)": {
       "etag": "\"d2c3-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordverifypasswordextended.md",
+      "file_path": "documentation/OpenDirectory/odrecordverifypasswordextended(_,_,_,_,_,_).md",
       "hash": "c1fa7e8e7232ae906474deb36de6420bdafa216e44b3984adf426b52504b2987"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordwillauthenticationsexpire(_:_:)": {
       "etag": "\"909e-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordwillauthenticationsexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecordwillauthenticationsexpire(_,_).md",
       "hash": "5c6689b1f6e3ca2ebd7875aa8ae36b5b835f507460cdb7fd075eb77ea43fb0dc"
     },
     "https://developer.apple.com/documentation/opendirectory/odrecordwillpasswordexpire(_:_:)": {
       "etag": "\"900b-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordwillpasswordexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecordwillpasswordexpire(_,_).md",
       "hash": "19a9d7a8d7a239398d2a7f6c4fff89349447676ca024e8ce079d59aba385ca83"
     },
     "https://developer.apple.com/documentation/opendirectory/odsession": {
@@ -3582,17 +3582,17 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/add(_:authorization:)": {
       "etag": "\"2e00-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/add-authorization.md",
+      "file_path": "documentation/OpenDirectory/odsession/add(_,authorization).md",
       "hash": "b2fdebdc9ad20862b74e669a1c32e99ddeb5b76b30a810eff533342527c216e6"
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/configuration(fornodename:)": {
       "etag": "\"26fe-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/configuration-fornodename.md",
+      "file_path": "documentation/OpenDirectory/odsession/configuration(fornodename).md",
       "hash": "ae08fddc6b71fc15ddd4492cc28ecccb0a3d72cad64cc2e17e6bd8cd3c1890ba"
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/configurationauthorizationallowinguserinteraction(_:)": {
       "etag": "\"2c01-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/configurationauthorizationallowinguserinteraction.md",
+      "file_path": "documentation/OpenDirectory/odsession/configurationauthorizationallowinguserinteraction(_).md",
       "hash": "58f74454a09c4cb3f3c7c1a3a90f059d6d02347a508b82ebe1ecbfc1e0eaf5e4"
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/configurationtemplatenames": {
@@ -3602,22 +3602,22 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/default()": {
       "etag": "\"25f9-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/default.md",
+      "file_path": "documentation/OpenDirectory/odsession/default().md",
       "hash": "fc6996eeefdb5a769a3297fc26fe0b72b4908d37694b68aa54772a326a965c25"
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/delete(_:authorization:)": {
       "etag": "\"2e3f-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/delete-authorization.md",
+      "file_path": "documentation/OpenDirectory/odsession/delete(_,authorization).md",
       "hash": "30e9b505e2b661858018826d84aa74aad6dcb9a85fdc1509ad43fa2685613ac8"
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/deleteconfiguration(withnodename:authorization:)": {
       "etag": "\"306f-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/deleteconfiguration-withnodenameauthorization.md",
+      "file_path": "documentation/OpenDirectory/odsession/deleteconfiguration(withnodename,authorization).md",
       "hash": "0d0b8270ea7dc6221b9d2b6cb1991bf974ff3d28544e410c5f4de8a89ac85b04"
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/init(options:)": {
       "etag": "\"3bdf-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/init-options.md",
+      "file_path": "documentation/OpenDirectory/odsession/init(options).md",
       "hash": "30babe3b61c88c31f0c21701f7e9ff1c7552127e5db98b0579403f81f1f4f7d7"
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/mappingtemplatenames": {
@@ -3627,22 +3627,22 @@
     },
     "https://developer.apple.com/documentation/opendirectory/odsession/nodenames()": {
       "etag": "\"2b1a-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/nodenames.md",
+      "file_path": "documentation/OpenDirectory/odsession/nodenames().md",
       "hash": "06f798affdd43dda84b416f4c841fb66e417eae8b05a4031cbb980ec9ff2cc44"
     },
     "https://developer.apple.com/documentation/opendirectory/odsessioncopynodenames(_:_:_:)": {
       "etag": "\"4c0d-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsessioncopynodenames.md",
+      "file_path": "documentation/OpenDirectory/odsessioncopynodenames(_,_,_).md",
       "hash": "51324acc1df1a03bf87d7c4b6497f1513117ef4d4547b24edd9b9d1474c47f36"
     },
     "https://developer.apple.com/documentation/opendirectory/odsessioncreate(_:_:_:)": {
       "etag": "\"4f04-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odsessioncreate.md",
+      "file_path": "documentation/OpenDirectory/odsessioncreate(_,_,_).md",
       "hash": "5ee5cf78398d3c7b648ce6d6460c4d107b3a95be9dcce059e2da9d2fd73dfa8b"
     },
     "https://developer.apple.com/documentation/opendirectory/odsessiongettypeid()": {
       "etag": "\"29a1-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odsessiongettypeid.md",
+      "file_path": "documentation/OpenDirectory/odsessiongettypeid().md",
       "hash": "fbb7c403d07bafea89176168637306b5d6d04ae776e3e16288a65d0658e3f785"
     },
     "https://developer.apple.com/documentation/opendirectory/odsessionproxyaddress": {
@@ -4947,7 +4947,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypecram_md5.json": {
       "etag": "\"6ffc-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypecram-md5.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypecram_md5.md",
       "hash": "1d74fda86799dfc9b578f78e12b391e08024875d515f83d2f50eebe37497a29c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypecrypt.json": {
@@ -4962,7 +4962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypedigest_md5.json": {
       "etag": "\"7010-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypedigest-md5.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypedigest_md5.md",
       "hash": "5a84a6e192eff05af8928a30a47b4bd15ce06eeb3bc7678cf5ea1421f005d873"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypegeteffectivepolicy.json": {
@@ -5107,22 +5107,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypesmb_lm_key.json": {
       "etag": "\"6fc2-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb-lm-key.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb_lm_key.md",
       "hash": "518d596b4e80b7f4eea5101a6ea5977794250775e89b85764e40a83b40a55c27"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypesmb_nt_key.json": {
       "etag": "\"6fb0-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb-nt-key.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb_nt_key.md",
       "hash": "deebd3f3338bea162d6c5a637c38a0fb2aab3cf481e3ed692c41fdea35c50b6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypesmb_nt_usersessionkey.json": {
       "etag": "\"70cd-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb-nt-usersessionkey.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb_nt_usersessionkey.md",
       "hash": "577a5e0e1cc1520bf55a43f7bbe214baa33aee6e0a2ddf92c55e2e522ce9894b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypesmb_nt_withusersessionkey.json": {
       "etag": "\"7143-65d55b3ba8670-df\"",
-      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb-nt-withusersessionkey.md",
+      "file_path": "documentation/OpenDirectory/kodauthenticationtypesmb_nt_withusersessionkey.md",
       "hash": "8958547468932cabd9899f357a15779c2f7c6c8ae69005e06d118f8c2d3dbd2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/kodauthenticationtypesmbntv2usersessionkey.json": {
@@ -6117,42 +6117,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributemap/customattributes-swift.property.json": {
       "etag": "\"1c15-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/customattributes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/customattributes-swift.property.md",
       "hash": "db0ae6f4de2588ae23906cd2ab64ce2f713fd6d94875219cebed8d4bea97c9b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributemap/customqueryfunction-swift.property.json": {
       "etag": "\"1f16-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/customqueryfunction-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/customqueryfunction-swift.property.md",
       "hash": "51fe815120de7f2452e2dbc512ce2e48b841a83451a0f60cc0e8a401d10c0594"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributemap/customtranslationfunction-swift.property.json": {
       "etag": "\"1f94-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/customtranslationfunction-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/customtranslationfunction-swift.property.md",
       "hash": "92a87d82d6cc2680573808bd0b19143d2e0243716da65d8c1e6ed9d69dea8402"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributemap/init(staticvalue:).json": {
       "etag": "\"1fb6-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/init-staticvalue.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/init(staticvalue).md",
       "hash": "a2e4d847555a5ca1829bf86e204907a66fbcd6dbcb579624c583e776b7ca12b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributemap/init(value:).json": {
       "etag": "\"1f32-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/init-value.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/init(value).md",
       "hash": "d0dabdd3dafc937c30dc28dbeb28f2e40ab802e2e5f51bc8f8cef4a0b6275458"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributemap/setstaticvalue(_:).json": {
       "etag": "\"1f25-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/setstaticvalue.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/setstaticvalue(_).md",
       "hash": "348be5394177a001fabeb6288223526bb59eab88a3cdc471b5675dd80319c3de"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributemap/setvariablesubstitution(_:).json": {
       "etag": "\"1ff4-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/setvariablesubstitution.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/setvariablesubstitution(_).md",
       "hash": "0e91d01fa8591b4fc2113ba4d81bf9b0a7c4a7ba4c8449aed6ab806cd1f5eb6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributemap/value-swift.property.json": {
       "etag": "\"1df0-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odattributemap/value-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odattributemap/value-swift.property.md",
       "hash": "a77d55e335278e609c4463c19e82f9ad507e54148a07b4d800c0ff482d41d9ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odattributetype.json": {
@@ -6172,152 +6172,152 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/addtrusttype(_:trustaccount:trustpassword:username:password:joinexisting:).json": {
       "etag": "\"3f0a-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/addtrusttype-trustaccounttrustpasswordusernamepasswordjoinexisting.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/addtrusttype(_,trustaccount,trustpassword,username,password,joinexisting).md",
       "hash": "188798787a508b91e809f1b1264f24dadbf93ce2cc1b8944a782ad3a234282b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/authenticationmoduleentries-swift.property.json": {
       "etag": "\"1d13-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/authenticationmoduleentries-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/authenticationmoduleentries-swift.property.md",
       "hash": "a685272f8fe16dff38e8f006c9f0331623961740f2d0ade7c43a7eb1fd34a841"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/comment-swift.property.json": {
       "etag": "\"1e31-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/comment-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/comment-swift.property.md",
       "hash": "10fcc3823704d6bbcd6fe1d33bdeef244169e561a8b38e659fe8d8e378f42e30"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/connectionidletimeoutinseconds-swift.property.json": {
       "etag": "\"1f95-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/connectionidletimeoutinseconds-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/connectionidletimeoutinseconds-swift.property.md",
       "hash": "b9762076e406a823794af7b053356c0f00ba2fc7156197c602f4b319be537ce7"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/connectionsetuptimeoutinseconds-swift.property.json": {
       "etag": "\"1faa-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/connectionsetuptimeoutinseconds-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/connectionsetuptimeoutinseconds-swift.property.md",
       "hash": "5c411e3db2eca1b6c2698cdfa3a41bccdd3bce0da136c770414fda50cdbc041c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/defaultmappings-swift.property.json": {
       "etag": "\"1e4b-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/defaultmappings-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/defaultmappings-swift.property.md",
       "hash": "1f22832321867104b2b46732d44d2c3593a79dab0cd2425a5060c838a6ad04bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/defaultmoduleentries-swift.property.json": {
       "etag": "\"1c80-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/defaultmoduleentries-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/defaultmoduleentries-swift.property.md",
       "hash": "d82939ab5cca3696d171392c22d4abe270fd8e41e20f03673c45b0f43eab6f22"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/discoverymoduleentries-swift.property.json": {
       "etag": "\"1caa-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/discoverymoduleentries-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/discoverymoduleentries-swift.property.md",
       "hash": "7cd844a0737bf36f6bf3c8714a8e567f54e35eac0c17f133b78e65ff411cf31c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/generalmoduleentries-swift.property.json": {
       "etag": "\"1c80-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/generalmoduleentries-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/generalmoduleentries-swift.property.md",
       "hash": "a58156b4d79a0903b02500e66b6123a359e1e6e09ff85e83b6899b70a7ce1182"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/hideregistration-swift.property.json": {
       "etag": "\"1df8-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/hideregistration-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/hideregistration-swift.property.md",
       "hash": "fbcbeebc46949cb095e0e9cf872dd37785615d778db7db1a9e972458e3a1f53b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/maninthemiddleprotection-swift.property.json": {
       "etag": "\"1ea0-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/maninthemiddleprotection-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/maninthemiddleprotection-swift.property.md",
       "hash": "32fadd199a829f658837a7874bf2d855136d99c8dad1f0c9c63f50eaf6e1f191"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/nodename-swift.property.json": {
       "etag": "\"1e46-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/nodename-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/nodename-swift.property.md",
       "hash": "41e9a30912f993a3514eccf5ae3691dbc874ab8367b53876b0bee0da7ea2bd29"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/packetencryption-swift.property.json": {
       "etag": "\"1e6f-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/packetencryption-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/packetencryption-swift.property.md",
       "hash": "cdf78376f07d9a3abfec99b86619d06fd7703c08de62b3af61f257c20d3557a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/packetsigning-swift.property.json": {
       "etag": "\"1e30-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/packetsigning-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/packetsigning-swift.property.md",
       "hash": "48c67235a788d4eaa3c2d25186ea6d1925763334958a6672ed70d789323a76f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/preferreddestinationhostname-swift.property.json": {
       "etag": "\"1fea-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/preferreddestinationhostname-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/preferreddestinationhostname-swift.property.md",
       "hash": "05348845e2b19bb5652d9b6e1eebc7af6a9c494b45227637b3ba02742ccbf256"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/preferreddestinationhostport-swift.property.json": {
       "etag": "\"1e36-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/preferreddestinationhostport-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/preferreddestinationhostport-swift.property.md",
       "hash": "a09792c4a7d31e7093fff240198250133e5743e1c021a2cbf999966eadd7d007"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/querytimeoutinseconds-swift.property.json": {
       "etag": "\"1ed8-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/querytimeoutinseconds-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/querytimeoutinseconds-swift.property.md",
       "hash": "f61fe6164774a59ad268e2710114fb3bac806779627a540d4df839552ada4288"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/removetrust(usingusername:password:deletetrustaccount:).json": {
       "etag": "\"331c-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/removetrust-usingusernamepassworddeletetrustaccount.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/removetrust(usingusername,password,deletetrustaccount).md",
       "hash": "70775a7e0d82f2dd9f7ffef4a7a69fad36253cc244978ee8e86c5c16a7945693"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/save(using:).json": {
       "etag": "\"25b0-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/save-using.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/save(using).md",
       "hash": "e026a8e6911b2d48b8e75e1a03ae65b072c708baba84656dfd1c2aa756dde91a"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/suggestedtrustaccount(_:).json": {
       "etag": "\"225a-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/suggestedtrustaccount.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/suggestedtrustaccount(_).md",
       "hash": "6fc997b26a11118eda6916e8659475c6c9f98e41353e4310cba508626ab9c885"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/suggestedtrustpassword(_:).json": {
       "etag": "\"23ca-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/suggestedtrustpassword.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/suggestedtrustpassword(_).md",
       "hash": "9d245bcdc665f214dde72b8c1f7bdb0be6d4398d56dd0d97df428f4c496f348d"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/templatename-swift.property.json": {
       "etag": "\"1e9a-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/templatename-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/templatename-swift.property.md",
       "hash": "bc45e44e163ff4b975ab70ec29de9ff99f49920b75c2d55846f8916690ad8f72"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/trustaccount-swift.property.json": {
       "etag": "\"1ea0-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustaccount-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustaccount-swift.property.md",
       "hash": "957ff78aeaae6db94ff4a44317563822ef490a54c79c55ba5ee92cb7011745cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/trustkerberosprincipal-swift.property.json": {
       "etag": "\"1f72-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustkerberosprincipal-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustkerberosprincipal-swift.property.md",
       "hash": "c29ec1f6a7179af7d4866c9feaf48dd77df8d89bf557b2eba5fc8246cd0f5c25"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/trustmetaaccount-swift.property.json": {
       "etag": "\"1ef4-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustmetaaccount-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustmetaaccount-swift.property.md",
       "hash": "538895f0d248cc068b0d8f70c4592274d8a3edac4bc1a7d2923185fdae4c06b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/trusttype-swift.property.json": {
       "etag": "\"1e61-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trusttype-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trusttype-swift.property.md",
       "hash": "02d3678b864ee1ab6c80bc5741c10e0351b926d8140ec9779dd8a74e92b3991b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/trustuseskerberoskeytab-swift.property.json": {
       "etag": "\"1e52-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustuseskerberoskeytab-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustuseskerberoskeytab-swift.property.md",
       "hash": "7f964b702fa1532da8eabe0d55635ac63da6e98b924b27d5f64afaa1a76b3429"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/trustusesmutualauthentication-swift.property.json": {
       "etag": "\"1ed0-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustusesmutualauthentication-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustusesmutualauthentication-swift.property.md",
       "hash": "832c354bba14f4c5eb077d50e6ce2f7580ed12fd59cca4f81f56b4b053dd79be"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/trustusessystemkeychain-swift.property.json": {
       "etag": "\"1e52-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/trustusessystemkeychain-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/trustusessystemkeychain-swift.property.md",
       "hash": "78375f61aaf66eacca4f45a7bbbbaf6b2ecae208a4e2d7a7c98b39a964dc58da"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odconfiguration/virtualsubnodes-swift.property.json": {
       "etag": "\"1c17-65d55b3b07a75-df\"",
-      "file_path": "documentation/OpenDirectory/odconfiguration/virtualsubnodes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odconfiguration/virtualsubnodes-swift.property.md",
       "hash": "164c490439870703be7f451d9940acefa2872577b04c33cd7c2d94fa1f37a3a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odcontext.json": {
@@ -6327,7 +6327,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odcontextgettypeid().json": {
       "etag": "\"192e-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odcontextgettypeid.md",
+      "file_path": "documentation/OpenDirectory/odcontextgettypeid().md",
       "hash": "062a01e13946d9992cc0cc3cbd4c418b03a6c6e4e3431301687f69a3808e8ae2"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odcontextref.json": {
@@ -6352,12 +6352,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odframeworkerrors/init(_:).json": {
       "etag": "\"1299-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odframeworkerrors/init.md",
+      "file_path": "documentation/OpenDirectory/odframeworkerrors/init(_).md",
       "hash": "4072a3efc47c6e494f0ef9f3ef7d85e327594e3c6a137924fd4a4ab5e6a571f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odframeworkerrors/init(rawvalue:).json": {
       "etag": "\"1323-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odframeworkerrors/init-rawvalue.md",
+      "file_path": "documentation/OpenDirectory/odframeworkerrors/init(rawvalue).md",
       "hash": "e7101105e60c9f6d2f321ae3c74253d086e30a4134ec35474c5a6b13f4cb836e"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odframeworkerrors/rawvalue.json": {
@@ -6372,42 +6372,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmappings/comment-swift.property.json": {
       "etag": "\"1dbe-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/comment-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/comment-swift.property.md",
       "hash": "21a2de97688cb4f88035c29fc2bac2e820cb6de706fc88806752067427387b67"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmappings/function-swift.property.json": {
       "etag": "\"1dd3-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/function-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/function-swift.property.md",
       "hash": "ee26ebb531c7528c2e2cb65e0a24d15f0e80122d6acab259e1f873e76b23b642"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmappings/functionattributes-swift.property.json": {
       "etag": "\"1be3-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/functionattributes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/functionattributes-swift.property.md",
       "hash": "7de34ca2c535ca59db9a52f3ea2ddebfb15cbac1abf34e23667f220f2548a654"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmappings/identifier-swift.property.json": {
       "etag": "\"1dfd-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/identifier-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/identifier-swift.property.md",
       "hash": "7c8439d036f63c257bf660969947cefb4543d9ffe05c2ec0be5a65d58664cd97"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmappings/recordmap(forstandardrecordtype:).json": {
       "etag": "\"269b-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/recordmap-forstandardrecordtype.md",
+      "file_path": "documentation/OpenDirectory/odmappings/recordmap(forstandardrecordtype).md",
       "hash": "6bb5e9237d940cc6c7a134679401d31f85a6a5454fcdcb9f4590a4b21bf3504a"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmappings/recordtypes-swift.property.json": {
       "etag": "\"1b56-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/recordtypes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/recordtypes-swift.property.md",
       "hash": "6e3c12bb08079c33c4c1c82768dab612a4d8b334959cbc49e1375b04534041bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmappings/setrecordmap(_:forstandardrecordtype:).json": {
       "etag": "\"284b-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/setrecordmap-forstandardrecordtype.md",
+      "file_path": "documentation/OpenDirectory/odmappings/setrecordmap(_,forstandardrecordtype).md",
       "hash": "afa12cfbef66d6a96d9fdf0c36d1970dcdb13e098efe7c6dc1e5394d8589bfdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmappings/templatename-swift.property.json": {
       "etag": "\"1e27-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odmappings/templatename-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmappings/templatename-swift.property.md",
       "hash": "c7910884fa13014cc3f629a08e0d84a8fcadb5977069eff12caf19a046d145e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmatchtype.json": {
@@ -6422,42 +6422,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmoduleentry/init(name:xpcservicename:).json": {
       "etag": "\"23b3-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/init-namexpcservicename.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/init(name,xpcservicename).md",
       "hash": "934e21d68d117cda34be0ac17e573448ac27e40e4289c538d2d6b0c5d2993e63"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmoduleentry/mappings-swift.property.json": {
       "etag": "\"1d8a-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/mappings-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/mappings-swift.property.md",
       "hash": "858bddb6c84edfc4efd2c3fd6a9e8f8cbd68d5e79ba98a88658a7a753325f405"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmoduleentry/name-swift.property.json": {
       "etag": "\"1dc4-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/name-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/name-swift.property.md",
       "hash": "7e5daed2cfc681b6e1a082507433fbd760f967fd74c62e23d17b7ee2e8774eae"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmoduleentry/option(_:).json": {
       "etag": "\"1efe-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/option.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/option(_).md",
       "hash": "ba37cc62330733ae0e860c61ee430f55e417de697159af2f552cd36289e75cc3"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmoduleentry/setoption(_:value:).json": {
       "etag": "\"214b-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/setoption-value.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/setoption(_,value).md",
       "hash": "602e692e095cf80366a339140eb486a47558c1e2ae591cfd08d92b36b36d057f"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmoduleentry/supportedoptions-swift.property.json": {
       "etag": "\"1c04-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/supportedoptions-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/supportedoptions-swift.property.md",
       "hash": "6e709c0a6f19ddd8dd917ab8f15638eeb033de1182e8efdd49221270808b2b95"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmoduleentry/uuidstring-swift.property.json": {
       "etag": "\"1e42-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/uuidstring-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/uuidstring-swift.property.md",
       "hash": "366032494eb3cd49d94966f5920fafcccb3491e1d7884308b1e1270bf5bca464"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odmoduleentry/xpcservicename-swift.property.json": {
       "etag": "\"1e96-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odmoduleentry/xpcservicename-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odmoduleentry/xpcservicename-swift.property.md",
       "hash": "9a50bf9a3d456dfe957651c30ed3eaffe7b273cd67670ebae874374ec5291835"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode.json": {
@@ -6467,12 +6467,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/accountpolicies().json": {
       "etag": "\"2443-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/accountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnode/accountpolicies().md",
       "hash": "1870800ee74dcb80e74c648b7e956328efff7ac2d73ada8ef709620bc6430531"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/addaccountpolicy(_:tocategory:).json": {
       "etag": "\"323f-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/addaccountpolicy-tocategory.md",
+      "file_path": "documentation/OpenDirectory/odnode/addaccountpolicy(_,tocategory).md",
       "hash": "992c391d2f6533139a2293c78b9f754e7aa450bcffc410cba61103493e056559"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/configuration.json": {
@@ -6482,32 +6482,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/createrecord(withrecordtype:name:attributes:).json": {
       "etag": "\"6422-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/createrecord-withrecordtypenameattributes.md",
+      "file_path": "documentation/OpenDirectory/odnode/createrecord(withrecordtype,name,attributes).md",
       "hash": "3a960c4a27521f9d6f66b3d41af2ad6dddce7d0449166aae1527751a0d3aad6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/customcall(_:send:).json": {
       "etag": "\"4ffc-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/customcall-send.md",
+      "file_path": "documentation/OpenDirectory/odnode/customcall(_,send).md",
       "hash": "b0fc0b34804f1836f803ef19222241da9f36893c63d693171af347aa8a173827"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/customfunction(_:payload:).json": {
       "etag": "\"2744-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/customfunction-payload.md",
+      "file_path": "documentation/OpenDirectory/odnode/customfunction(_,payload).md",
       "hash": "334d5ea3a5c05a37db7a1e10595bccb091a544577cc532362b8c4a0faaa183a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/init(session:name:).json": {
       "etag": "\"458e-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/init-sessionname.md",
+      "file_path": "documentation/OpenDirectory/odnode/init(session,name).md",
       "hash": "64c1c28a839eb68f8e19994c604914a0c37b45b9f8ce7e2c8a007d8a9db487f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/init(session:type:).json": {
       "etag": "\"4502-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/init-sessiontype.md",
+      "file_path": "documentation/OpenDirectory/odnode/init(session,type).md",
       "hash": "8d3ad4bc80f8a67b35cfb624403ec4f794dbd21c4e22825131482ff68e23fa57"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/nodedetails(forkeys:).json": {
       "etag": "\"4e44-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/nodedetails-forkeys.md",
+      "file_path": "documentation/OpenDirectory/odnode/nodedetails(forkeys).md",
       "hash": "769d5463917b1e61f18ec0265a93a381e980ff541431a602f09867a7eb16cb8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/nodename.json": {
@@ -6517,172 +6517,172 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/passwordcontentcheck(_:forrecordname:).json": {
       "etag": "\"2b3e-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/passwordcontentcheck-forrecordname.md",
+      "file_path": "documentation/OpenDirectory/odnode/passwordcontentcheck(_,forrecordname).md",
       "hash": "07a346f5d42663669d202fee662a04287a6d4275873dcdbc4a6af58f9332072d"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/policies().json": {
       "etag": "\"240b-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/policies.md",
+      "file_path": "documentation/OpenDirectory/odnode/policies().md",
       "hash": "c8ea149c5a97a88d4b14f13642d96351c0142aaa7e6a7fa104774d7d88a2ba9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/record(withrecordtype:name:attributes:).json": {
       "etag": "\"5c5c-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/record-withrecordtypenameattributes.md",
+      "file_path": "documentation/OpenDirectory/odnode/record(withrecordtype,name,attributes).md",
       "hash": "1f24e463040bb992137477edeb3c3b229153acec9523bc5db5b776476e1c65fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/removeaccountpolicy(_:fromcategory:).json": {
       "etag": "\"32a8-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/removeaccountpolicy-fromcategory.md",
+      "file_path": "documentation/OpenDirectory/odnode/removeaccountpolicy(_,fromcategory).md",
       "hash": "527c08e7d294369bd6f344c914f27613d9f0fcc13127e98ac60e82199ff98e53"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/removepolicy(_:).json": {
       "etag": "\"2751-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/removepolicy.md",
+      "file_path": "documentation/OpenDirectory/odnode/removepolicy(_).md",
       "hash": "49ebd936f64678fc253875ba6f9ca9de7fd90f4b412eec753f934f0017974298"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/setaccountpolicies(_:).json": {
       "etag": "\"2764-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnode/setaccountpolicies(_).md",
       "hash": "5625dee1acfb4d941c3c78bbfd0c5754d69fcf286f69f7012148b113ac0ba7e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/setcredentialswithrecordtype(_:authenticationtype:authenticationitems:continueitems:context:).json": {
       "etag": "\"6cce-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setcredentialswithrecordtype-authenticationtypeauthenticationitemscontinueitemscontext.md",
+      "file_path": "documentation/OpenDirectory/odnode/setcredentialswithrecordtype(_,authenticationtype,authenticationitems,continueitems,context).md",
       "hash": "975366b7b60cbc9b1e8ad20e6d13d88b29bdafad6bfab69a1137ea235a926481"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/setcredentialswithrecordtype(_:recordname:password:).json": {
       "etag": "\"565e-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setcredentialswithrecordtype-recordnamepassword.md",
+      "file_path": "documentation/OpenDirectory/odnode/setcredentialswithrecordtype(_,recordname,password).md",
       "hash": "feccd4324dc4a60d0943d941f2fc23b374c93c44cda8a1a07ea2db1e7658e281"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/setpolicies(_:).json": {
       "etag": "\"2727-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnode/setpolicies(_).md",
       "hash": "06cc1786f7d06bf6f3b4041e672a3b7e955c04d442a4cc195e997c4e38412f70"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/setpolicy(_:value:).json": {
       "etag": "\"29b5-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/setpolicy-value.md",
+      "file_path": "documentation/OpenDirectory/odnode/setpolicy(_,value).md",
       "hash": "ab8c0d518db4de59244d85bf624648f1f43d59cff8374d1557bd603789b49f04"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/subnodenames().json": {
       "etag": "\"431b-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/subnodenames.md",
+      "file_path": "documentation/OpenDirectory/odnode/subnodenames().md",
       "hash": "99cf01877ff31943594e22d39ba9a0b49ecc094f2e0c79980e7c8fba0f3edcbc"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/supportedattributes(forrecordtype:).json": {
       "etag": "\"51db-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/supportedattributes-forrecordtype.md",
+      "file_path": "documentation/OpenDirectory/odnode/supportedattributes(forrecordtype).md",
       "hash": "a14a8ea767029cfd586354c0d4c29788feba41b68051028d444821359bf7347b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/supportedpolicies().json": {
       "etag": "\"2499-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/supportedpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnode/supportedpolicies().md",
       "hash": "ce2d7ecab479b288046ce47dc08507490892aebcecfa5808844287e1157333a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/supportedrecordtypes().json": {
       "etag": "\"455f-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/supportedrecordtypes.md",
+      "file_path": "documentation/OpenDirectory/odnode/supportedrecordtypes().md",
       "hash": "7ff7e60a0c61081900d7888ca382bd7eba9ebfa9c0272d4ccaf004cbb4e74b76"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnode/unreachablesubnodenames().json": {
       "etag": "\"43b1-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odnode/unreachablesubnodenames.md",
+      "file_path": "documentation/OpenDirectory/odnode/unreachablesubnodenames().md",
       "hash": "2063ffb04bc277fb92be7d776008aa1e8dd1f982263529545b0a303593e0d6fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodeaddaccountpolicy(_:_:_:_:).json": {
       "etag": "\"a9e5-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodeaddaccountpolicy.md",
+      "file_path": "documentation/OpenDirectory/odnodeaddaccountpolicy(_,_,_,_).md",
       "hash": "eef63afc0e653cb1da5b2b5ed9bcde591890d3df2d66cab089d24f1aaf88559d"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopyaccountpolicies(_:_:).json": {
       "etag": "\"9c78-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopyaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodecopyaccountpolicies(_,_).md",
       "hash": "fc8393056d02bcf274e5167a787afe169013619997c5012588da5dc35ea56e49"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopydetails(_:_:_:).json": {
       "etag": "\"b12c-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopydetails.md",
+      "file_path": "documentation/OpenDirectory/odnodecopydetails(_,_,_).md",
       "hash": "951a5efae60fccffe3422d40f5dd7aa529204e751a7af130bb06fc46aabb44e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopypolicies(_:_:).json": {
       "etag": "\"9dbb-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopypolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodecopypolicies(_,_).md",
       "hash": "0564bfd4a94730a12cd37110db2bd9331ee8feccda83d507d31a1a349b0ac5ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopyrecord(_:_:_:_:_:).json": {
       "etag": "\"c685-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopyrecord.md",
+      "file_path": "documentation/OpenDirectory/odnodecopyrecord(_,_,_,_,_).md",
       "hash": "5a8f5fe8beee1fdd1bb6a74711eb6c57a1d4e0bb895329d814a737580b7fd32c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopysubnodenames(_:_:).json": {
       "etag": "\"a7cc-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopysubnodenames.md",
+      "file_path": "documentation/OpenDirectory/odnodecopysubnodenames(_,_).md",
       "hash": "88aabf163ea149da33a305e0219feb5bb998772d33240a49a76a4ffc0fc0e91f"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopysupportedattributes(_:_:_:).json": {
       "etag": "\"b77c-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopysupportedattributes.md",
+      "file_path": "documentation/OpenDirectory/odnodecopysupportedattributes(_,_,_).md",
       "hash": "0f1766a612739e08a779970d6e2b26f2aa86da13f69578f0add8cd1298fb665b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopysupportedpolicies(_:_:).json": {
       "etag": "\"9de2-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopysupportedpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodecopysupportedpolicies(_,_).md",
       "hash": "d4296ad190743d7c184bad01e328c5928101c29142bbda57698ba3e1a70f6ce3"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopysupportedrecordtypes(_:_:).json": {
       "etag": "\"a97d-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopysupportedrecordtypes.md",
+      "file_path": "documentation/OpenDirectory/odnodecopysupportedrecordtypes(_,_).md",
       "hash": "d9eea87d2842954812caee7f66ad83abd15fcba217e6796364865ef840b8ca45"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecopyunreachablesubnodenames(_:_:).json": {
       "etag": "\"aa0f-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecopyunreachablesubnodenames.md",
+      "file_path": "documentation/OpenDirectory/odnodecopyunreachablesubnodenames(_,_).md",
       "hash": "1bd03b959d632a2889773d1428038f93edc776482495144cfa9d2352355710dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecreatecopy(_:_:_:).json": {
       "etag": "\"adc9-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecreatecopy.md",
+      "file_path": "documentation/OpenDirectory/odnodecreatecopy(_,_,_).md",
       "hash": "52aacb1f63d7bae715a35321473b24451e0a7961761be7639e67e34a5ab41ea4"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecreaterecord(_:_:_:_:_:).json": {
       "etag": "\"cb4e-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecreaterecord.md",
+      "file_path": "documentation/OpenDirectory/odnodecreaterecord(_,_,_,_,_).md",
       "hash": "1be935882de0d8303739acdc8808da8c65f2a0930270219cd042da3843199f65"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecreatewithname(_:_:_:_:).json": {
       "etag": "\"b87d-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecreatewithname.md",
+      "file_path": "documentation/OpenDirectory/odnodecreatewithname(_,_,_,_).md",
       "hash": "eadeb56c4a4e5d6fe679d9ed480806ef194a2ff6513eea3aa057bd27e7e76a8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecreatewithnodetype(_:_:_:_:).json": {
       "etag": "\"b8e3-65d55b3ba8670-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecreatewithnodetype.md",
+      "file_path": "documentation/OpenDirectory/odnodecreatewithnodetype(_,_,_,_).md",
       "hash": "2c905778128df2ce01b74948fc64d48b8d0f34b2b1894d462e749f14d4048d6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecustomcall(_:_:_:_:).json": {
       "etag": "\"b193-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecustomcall.md",
+      "file_path": "documentation/OpenDirectory/odnodecustomcall(_,_,_,_).md",
       "hash": "d2d68217477cad49d2787c3f5735e435e91338053152f0d2781993fa6bb4c0bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodecustomfunction(_:_:_:_:).json": {
       "etag": "\"a477-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odnodecustomfunction.md",
+      "file_path": "documentation/OpenDirectory/odnodecustomfunction(_,_,_,_).md",
       "hash": "249d92319e091d7ed394c30a7ee3ea91ea9f2337d9817e411079b733ff79e427"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodegetname(_:).json": {
       "etag": "\"9add-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odnodegetname.md",
+      "file_path": "documentation/OpenDirectory/odnodegetname(_).md",
       "hash": "d33b25e7e1e77ae956cfe7a3f1beb18a5962b294fc31bd972fc55ce201d3ae36"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodegettypeid().json": {
       "etag": "\"8e8a-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodegettypeid.md",
+      "file_path": "documentation/OpenDirectory/odnodegettypeid().md",
       "hash": "efb3f30b2b14ae5fd232f7cdbe383b729a146ef5143a18c37130d5acd428c1b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodepasswordcontentcheck(_:_:_:_:).json": {
       "etag": "\"a384-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odnodepasswordcontentcheck.md",
+      "file_path": "documentation/OpenDirectory/odnodepasswordcontentcheck(_,_,_,_).md",
       "hash": "25bf49872a49ab3600341f33e7704b41d07848a258e7343940036820ff8d8865"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnoderef.json": {
@@ -6692,37 +6692,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnoderemoveaccountpolicy(_:_:_:_:).json": {
       "etag": "\"aa00-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnoderemoveaccountpolicy.md",
+      "file_path": "documentation/OpenDirectory/odnoderemoveaccountpolicy(_,_,_,_).md",
       "hash": "0ea81e5733b0f5ee77c80549b01150fbe25ae2b8624dceab019856b384d6df21"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnoderemovepolicy(_:_:_:).json": {
       "etag": "\"a2c0-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odnoderemovepolicy.md",
+      "file_path": "documentation/OpenDirectory/odnoderemovepolicy(_,_,_).md",
       "hash": "2cac5a9ec1875272fb94e802927bfc97c36089c36cb1f0d0b5d629af34adffee"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodesetaccountpolicies(_:_:_:).json": {
       "etag": "\"a0ec-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodesetaccountpolicies(_,_,_).md",
       "hash": "21cd76c19d9b333425ce812e833679be16283a41e6a044fe4a22ab72c1c83f77"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodesetcredentials(_:_:_:_:_:).json": {
       "etag": "\"c920-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetcredentials.md",
+      "file_path": "documentation/OpenDirectory/odnodesetcredentials(_,_,_,_,_).md",
       "hash": "f1af4113e13e925c4481db3e3297be2719b56b3aee95e239c66647e0a6da33e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodesetcredentialsextended(_:_:_:_:_:_:_:).json": {
       "etag": "\"e8aa-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetcredentialsextended.md",
+      "file_path": "documentation/OpenDirectory/odnodesetcredentialsextended(_,_,_,_,_,_,_).md",
       "hash": "c6457f49980828eadde3ecf82d7d7337f8d9bb97d86bc9950ad863c8031251c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodesetpolicies(_:_:_:).json": {
       "etag": "\"a102-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetpolicies.md",
+      "file_path": "documentation/OpenDirectory/odnodesetpolicies(_,_,_).md",
       "hash": "e15e1b5d624bbfd22968edbe3f34673de63185802fed4e240ffa7b71c498b93e"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodesetpolicy(_:_:_:_:).json": {
       "etag": "\"a84e-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odnodesetpolicy.md",
+      "file_path": "documentation/OpenDirectory/odnodesetpolicy(_,_,_,_).md",
       "hash": "8299de2131d127efefa96ad67d522dbeae955f4d5fec80ab80c05e0d7440024b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odnodetype.json": {
@@ -6802,7 +6802,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquery/init(node:forrecordtypes:attribute:matchtype:queryvalues:returnattributes:maximumresults:).json": {
       "etag": "\"6bf0-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/init-nodeforrecordtypesattributematchtypequeryvaluesreturnattributesmaximumresults.md",
+      "file_path": "documentation/OpenDirectory/odquery/init(node,forrecordtypes,attribute,matchtype,queryvalues,returnattributes,maximumresults).md",
       "hash": "5efa45eadba7abda031c4afa9ba9f8b5f036b4b9519e44c3c06732eea9b661ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquery/operationqueue.json": {
@@ -6812,22 +6812,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquery/remove(from:formode:).json": {
       "etag": "\"40f2-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/remove-fromformode.md",
+      "file_path": "documentation/OpenDirectory/odquery/remove(from,formode).md",
       "hash": "b080b5a1d3e9de4de20d3d7503c566cde16a758c8010caeebfc84271f4528fe3"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquery/resultsallowingpartial(_:).json": {
       "etag": "\"38fb-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/resultsallowingpartial.md",
+      "file_path": "documentation/OpenDirectory/odquery/resultsallowingpartial(_).md",
       "hash": "967ca04297516dd4190980273cba24d7e84d57a4c1017ada0eefcfa01edfceae"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquery/schedule(in:formode:).json": {
       "etag": "\"4221-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/schedule-informode.md",
+      "file_path": "documentation/OpenDirectory/odquery/schedule(in,formode).md",
       "hash": "3be114a7e8346209ae65085abf8b72ef09df60bd0ec38fb5982ff53c3fe77703"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquery/synchronize().json": {
       "etag": "\"32e6-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquery/synchronize.md",
+      "file_path": "documentation/OpenDirectory/odquery/synchronize().md",
       "hash": "1e02dfc1c4d80d506dbdeaf52d1a96a28fdd41d473be25d64a41fab743ef97c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerycallback.json": {
@@ -6837,17 +6837,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerycopyresults(_:_:_:).json": {
       "etag": "\"7662-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odquerycopyresults.md",
+      "file_path": "documentation/OpenDirectory/odquerycopyresults(_,_,_).md",
       "hash": "8811fb74d258f5818fd70c6e1a939b5129ea0578e3610a4d0c17acd4493d58b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerycreatewithnode(_:_:_:_:_:_:_:_:_:).json": {
       "etag": "\"a87f-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odquerycreatewithnode.md",
+      "file_path": "documentation/OpenDirectory/odquerycreatewithnode(_,_,_,_,_,_,_,_,_).md",
       "hash": "ce4ce309efa3cf256feeeb00515c3c4701ad0bfcac2bab59641176c43f90933a"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerycreatewithnodetype(_:_:_:_:_:_:_:_:_:).json": {
       "etag": "\"a8e2-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odquerycreatewithnodetype.md",
+      "file_path": "documentation/OpenDirectory/odquerycreatewithnodetype(_,_,_,_,_,_,_,_,_).md",
       "hash": "a8e789f25212736ec23399f5b054ec52a8bac7ed5af08d472409cea42302f1d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerydelegate.json": {
@@ -6857,12 +6857,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerydelegate/query(_:foundresults:error:).json": {
       "etag": "\"357a-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odquerydelegate/query-foundresultserror.md",
+      "file_path": "documentation/OpenDirectory/odquerydelegate/query(_,foundresults,error).md",
       "hash": "f137f870efb554fbc3a8785efa68db943c406d2ca707896360648f8dd6bdf6e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerygettypeid().json": {
       "etag": "\"55a3-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odquerygettypeid.md",
+      "file_path": "documentation/OpenDirectory/odquerygettypeid().md",
       "hash": "e9fcf91a87ead8cd7ac1f3baa3f12c4505ae24764ba1fdd69ea27908e83a3793"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odqueryref.json": {
@@ -6872,27 +6872,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odqueryschedulewithrunloop(_:_:_:).json": {
       "etag": "\"6ffe-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odqueryschedulewithrunloop.md",
+      "file_path": "documentation/OpenDirectory/odqueryschedulewithrunloop(_,_,_).md",
       "hash": "005b042572fe08990344228d215ee36b294fecd9253f313b1e4ef492fea97c50"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerysetcallback(_:_:_:).json": {
       "etag": "\"674e-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odquerysetcallback.md",
+      "file_path": "documentation/OpenDirectory/odquerysetcallback(_,_,_).md",
       "hash": "6f336c0e0abf84f6315a142d88c3abdde7406cb0cf411b2afe20dfacf8d26ca7"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerysetdispatchqueue(_:_:).json": {
       "etag": "\"6653-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odquerysetdispatchqueue.md",
+      "file_path": "documentation/OpenDirectory/odquerysetdispatchqueue(_,_).md",
       "hash": "34b4cd9e078b7aaa6a11d7d366f658576f148a1b7bb60aacd09e3a5a38b4fa34"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odquerysynchronize(_:).json": {
       "etag": "\"5b64-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odquerysynchronize.md",
+      "file_path": "documentation/OpenDirectory/odquerysynchronize(_).md",
       "hash": "0e8df47fdcb6fbac12c88887dd7c34c537ac047ea6b033be86aa42a6f9d4a9c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odqueryunschedulefromrunloop(_:_:_:).json": {
       "etag": "\"6713-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odqueryunschedulefromrunloop.md",
+      "file_path": "documentation/OpenDirectory/odqueryunschedulefromrunloop(_,_,_).md",
       "hash": "04fb46d12c491316093d7c0b5dfa1a9fd3f2aa6a1212c8cc90c1360f6358b2ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord.json": {
@@ -6902,62 +6902,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/accountpolicies().json": {
       "etag": "\"2475-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/accountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/accountpolicies().md",
       "hash": "232efa86a63b96cd9a76f9d1b66a97791ca41679636c382383b3011176073e85"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/addaccountpolicy(_:tocategory:).json": {
       "etag": "\"3271-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/addaccountpolicy-tocategory.md",
+      "file_path": "documentation/OpenDirectory/odrecord/addaccountpolicy(_,tocategory).md",
       "hash": "c624adf4988c90aacf18588ac24a80157b768dca705bf23805589f6c7f0c5c76"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/addmemberrecord(_:).json": {
       "etag": "\"3f6f-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/addmemberrecord.md",
+      "file_path": "documentation/OpenDirectory/odrecord/addmemberrecord(_).md",
       "hash": "0b24151793b45e6f82d05e11b1bba22ca06d45719b5f0ce0c7fea7ebdd46de5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/addvalue(_:toattribute:).json": {
       "etag": "\"6c8c-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/addvalue-toattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/addvalue(_,toattribute).md",
       "hash": "6c8b848c142aaeef122b30880349a9ae6eb9432b2c6591ca8ed41abe6e762dc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/authenticationallowed().json": {
       "etag": "\"1ee2-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/authenticationallowed.md",
+      "file_path": "documentation/OpenDirectory/odrecord/authenticationallowed().md",
       "hash": "d4b644e91ee4680a56148e716e629c4d79d2a469229e4d78aa494970089a2b23"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/changepassword(_:topassword:).json": {
       "etag": "\"67dd-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/changepassword-topassword.md",
+      "file_path": "documentation/OpenDirectory/odrecord/changepassword(_,topassword).md",
       "hash": "35549f9fcd158991d9f203a6d8ffbb7cf00bae5aea5c4f2ea0076995c7c5f5c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/delete().json": {
       "etag": "\"2dc0-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/delete.md",
+      "file_path": "documentation/OpenDirectory/odrecord/delete().md",
       "hash": "224bc1b60021a81929a04a860417dfe4d08a0b3cf8b2ca2591f7537bba5d992f"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/effectivepolicies().json": {
       "etag": "\"2514-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/effectivepolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/effectivepolicies().md",
       "hash": "57730edf491394afe8d7ba31b2e001193f3274000ac2927d116a4d374a4000c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/ismemberrecord(_:).json": {
       "etag": "\"3feb-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/ismemberrecord.md",
+      "file_path": "documentation/OpenDirectory/odrecord/ismemberrecord(_).md",
       "hash": "1b8c1053397200217a1b55133c57b36b1a098941a66587b4ea9f77bb11bcb05f"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/passwordchangeallowed(_:).json": {
       "etag": "\"26a6-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/passwordchangeallowed.md",
+      "file_path": "documentation/OpenDirectory/odrecord/passwordchangeallowed(_).md",
       "hash": "47078165a7341a76ba173c81c6e551415f3951c74855f65b0bac33ff7d1310e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/policies().json": {
       "etag": "\"243d-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/policies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/policies().md",
       "hash": "b301e21043915a7f75216df8ec8c9c96f4373e8700a12ddea9fa95d2a4f62641"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/recorddetails(forattributes:).json": {
       "etag": "\"67e7-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/recorddetails-forattributes.md",
+      "file_path": "documentation/OpenDirectory/odrecord/recorddetails(forattributes).md",
       "hash": "6e2fd24a1671e30d651f11c08b4ae231fecde5458f58df6f6ddda347ebfd9e17"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/recordname.json": {
@@ -6972,27 +6972,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/removeaccountpolicy(_:fromcategory:).json": {
       "etag": "\"32da-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removeaccountpolicy-fromcategory.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removeaccountpolicy(_,fromcategory).md",
       "hash": "1c157123ba54141465ec6576d7a699f6631792d51a9f1616730fb3ffda23d92b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/removememberrecord(_:).json": {
       "etag": "\"3fcd-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removememberrecord.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removememberrecord(_).md",
       "hash": "9fea5c9bb03ac602fe3bfc0ef84c2273a8dcb9e9cb2c5cb277c03b8962539f70"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/removepolicy(_:).json": {
       "etag": "\"2783-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removepolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removepolicy(_).md",
       "hash": "4a8ac89a09a87547833fe7b42933b3e32dc8bb93e9e0cda52540e6469f367a6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/removevalue(_:fromattribute:).json": {
       "etag": "\"6cc0-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removevalue-fromattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removevalue(_,fromattribute).md",
       "hash": "f166858f57e25aed1e27815eda8707eb18c7a63ee15477d6e4b5ab66148d6273"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/removevalues(forattribute:).json": {
       "etag": "\"68fe-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/removevalues-forattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/removevalues(forattribute).md",
       "hash": "9a75ce249b21da502dbe8fc62cd9fe19dda30f89ff65427b7765225212708a6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/secondsuntilauthenticationsexpire.json": {
@@ -7007,147 +7007,147 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/setaccountpolicies(_:).json": {
       "etag": "\"2796-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setaccountpolicies(_).md",
       "hash": "41c6c7b31847783c4271a5636675b3f487f59aa45d0be077ce4af39311effc52"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/setnodecredentials(_:password:).json": {
       "etag": "\"680e-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setnodecredentials-password.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setnodecredentials(_,password).md",
       "hash": "9b40dd1584b80e65adbf32f10e634ed6abd55a2e62c8413c229f08006199822c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/setnodecredentialswithrecordtype(_:authenticationtype:authenticationitems:continueitems:context:).json": {
       "etag": "\"8930-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setnodecredentialswithrecordtype-authenticationtypeauthenticationitemscontinueitemscontext.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setnodecredentialswithrecordtype(_,authenticationtype,authenticationitems,continueitems,context).md",
       "hash": "e25fb519694268bbdf970f63cb4cdb2e9c442fbc4490a936fd3cac1e64a9225f"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/setpolicies(_:).json": {
       "etag": "\"2759-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setpolicies(_).md",
       "hash": "0cc3a3d916a70de58b05c8860dfa05702327bc862d6243784ef00f730e0f4652"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/setpolicy(_:value:).json": {
       "etag": "\"29e7-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setpolicy-value.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setpolicy(_,value).md",
       "hash": "a4fd3866ca4cbb7965fe7a64dfffaf7793c08059ca39fde905aa9cb384567dfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/setvalue(_:forattribute:).json": {
       "etag": "\"6d8e-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/setvalue-forattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/setvalue(_,forattribute).md",
       "hash": "6f7f8015764a3dad9b5693f7efa07e5a16dfad70ba782da885a094256e716782"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/supportedpolicies().json": {
       "etag": "\"24cb-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/supportedpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecord/supportedpolicies().md",
       "hash": "9a78f564e682059ed5dd8c8f16874ae0fbe9ca544440a77b5e7c2f8f5eeb383a"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/synchronize().json": {
       "etag": "\"5ed6-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/synchronize.md",
+      "file_path": "documentation/OpenDirectory/odrecord/synchronize().md",
       "hash": "7361401223f7bc77988f232822894834ed64b23a6c9e575d24fdae019fe915a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/values(forattribute:).json": {
       "etag": "\"671e-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/values-forattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecord/values(forattribute).md",
       "hash": "95b4e0f89f47daed206d659a332d64d24f5d4c0a66ada5108c6f9408bb49d9c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/verifyextended(withauthenticationtype:authenticationitems:continueitems:context:).json": {
       "etag": "\"7eaf-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/verifyextended-withauthenticationtypeauthenticationitemscontinueitemscontext.md",
+      "file_path": "documentation/OpenDirectory/odrecord/verifyextended(withauthenticationtype,authenticationitems,continueitems,context).md",
       "hash": "663ca1b91e8f909e88cac201e33578f393f390941a1ba83b59a0a5923f05d5a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/verifypassword(_:).json": {
       "etag": "\"62c2-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/verifypassword.md",
+      "file_path": "documentation/OpenDirectory/odrecord/verifypassword(_).md",
       "hash": "01918853b59671737e9695ccfed13a813617c9fd7e9b5ce0d2883a9d1f8b9513"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/willauthenticationsexpire(_:).json": {
       "etag": "\"22c5-65d55b3ac13f4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/willauthenticationsexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecord/willauthenticationsexpire(_).md",
       "hash": "9ab46d4dd3fa7b9fba4bd638737e83760a3f4661a1850ea46d736fb64fe4b37c"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecord/willpasswordexpire(_:).json": {
       "etag": "\"2232-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecord/willpasswordexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecord/willpasswordexpire(_).md",
       "hash": "688c3ac10e40070181b380c48f6d2174b9a84757985b1a91a47421ff5229da12"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordaddaccountpolicy(_:_:_:_:).json": {
       "etag": "\"aa25-65d55b3b65ddc-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordaddaccountpolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecordaddaccountpolicy(_,_,_,_).md",
       "hash": "f784ef6c5711dd978c920c3000a1ccb27d707ee979288eb8bf3420fae300d83a"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordaddmember(_:_:_:).json": {
       "etag": "\"aba6-65d55b3d35851-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordaddmember.md",
+      "file_path": "documentation/OpenDirectory/odrecordaddmember(_,_,_).md",
       "hash": "253bac17b06d06c60a44b424043d974d4c1a549f2368a9dea310dcbc6881b1b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordaddvalue(_:_:_:_:).json": {
       "etag": "\"b827-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordaddvalue.md",
+      "file_path": "documentation/OpenDirectory/odrecordaddvalue(_,_,_,_).md",
       "hash": "6b2e758db486754c07c81d30fe7f88ad1a35c860c6acd6bdb4d410210483b841"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordauthenticationallowed(_:_:).json": {
       "etag": "\"9a60-65d55b3c5f502-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordauthenticationallowed.md",
+      "file_path": "documentation/OpenDirectory/odrecordauthenticationallowed(_,_).md",
       "hash": "982483287abf7e328d43f555cc76d1802a86ccedbc27a0c4a50d7579b6fccecb"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordchangepassword(_:_:_:_:).json": {
       "etag": "\"b2ca-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordchangepassword.md",
+      "file_path": "documentation/OpenDirectory/odrecordchangepassword(_,_,_,_).md",
       "hash": "b55e72c40048d6ff1661ed47449dea514ecf310dc7e387c449923ce368171387"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordcontainsmember(_:_:_:).json": {
       "etag": "\"b1cd-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcontainsmember.md",
+      "file_path": "documentation/OpenDirectory/odrecordcontainsmember(_,_,_).md",
       "hash": "117659abc96ea8a34b6f8dbfdd5631a2682014df5e7d803f540048c65b7dfa21"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordcopyaccountpolicies(_:_:).json": {
       "etag": "\"9cb8-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopyaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopyaccountpolicies(_,_).md",
       "hash": "f616315d70c7f818ca56de6046384da89e551fcf460470046e851e4482c0bfd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordcopydetails(_:_:_:).json": {
       "etag": "\"b81e-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopydetails.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopydetails(_,_,_).md",
       "hash": "1b7682cdfc62f415aa0a2baf256d029a4a5e6c2029651f565ac13e397d94ac05"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordcopyeffectivepolicies(_:_:).json": {
       "etag": "\"9e66-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopyeffectivepolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopyeffectivepolicies(_,_).md",
       "hash": "9cccdbbb8d9e32a679cea33a077f7ee93f8c12466b48b9fb7550fdd940891b46"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordcopypolicies(_:_:).json": {
       "etag": "\"9dfd-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopypolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopypolicies(_,_).md",
       "hash": "4dc55c04eae3fb56bafb7793879cb9159fcfcda4030067f2f50a8a7eb7baf775"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordcopysupportedpolicies(_:_:).json": {
       "etag": "\"9e8e-65d55b3ba8670-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopysupportedpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopysupportedpolicies(_,_).md",
       "hash": "a58a33971c8db48df86733582fb3f1bf26184e89d9f5105c110a9a7253171820"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordcopyvalues(_:_:_:).json": {
       "etag": "\"b4a3-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordcopyvalues.md",
+      "file_path": "documentation/OpenDirectory/odrecordcopyvalues(_,_,_).md",
       "hash": "1a012cdbec9af5c20f13e8517ce35eae5b25a3cdcd6a80f7076a929e78f59fe4"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecorddelete(_:_:).json": {
       "etag": "\"a783-65d55b3ae6058-df\"",
-      "file_path": "documentation/OpenDirectory/odrecorddelete.md",
+      "file_path": "documentation/OpenDirectory/odrecorddelete(_,_).md",
       "hash": "9eaa4e6e7a46e39e39f5c2ed1d61c8fc92defde2e767f154ee1d2302ec593236"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordgetrecordname(_:).json": {
       "etag": "\"9d0e-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordgetrecordname.md",
+      "file_path": "documentation/OpenDirectory/odrecordgetrecordname(_).md",
       "hash": "5ddd498bf01f50e682e876d26dbddf46d0cb9e042e6b230c3063aabc09c9a17a"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordgetrecordtype(_:).json": {
       "etag": "\"9b8e-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordgetrecordtype.md",
+      "file_path": "documentation/OpenDirectory/odrecordgetrecordtype(_).md",
       "hash": "cdc0f2710f26f0550e5da3d0a04383170f6264f61bd0d9f981f6fe9fecfb19df"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordgettypeid().json": {
       "etag": "\"8f0d-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordgettypeid.md",
+      "file_path": "documentation/OpenDirectory/odrecordgettypeid().md",
       "hash": "96d37933f1b934f2b4d4a4bc11a926e86ecb08f6eb10393010029c2c69c13b08"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordmap.json": {
@@ -7157,27 +7157,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordmap/attributemap(forstandardattribute:).json": {
       "etag": "\"2732-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/attributemap-forstandardattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/attributemap(forstandardattribute).md",
       "hash": "ec7d3407aea3125a2d6a756070fc491e8973c33282ecb203f02fc81b56341424"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordmap/attributes-swift.property.json": {
       "etag": "\"1f4f-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/attributes-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/attributes-swift.property.md",
       "hash": "1c0229cd9104644c58ecbd041825d73489b2a0494e9f1304b0cef847d25a6277"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordmap/native-swift.property.json": {
       "etag": "\"1dc0-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/native-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/native-swift.property.md",
       "hash": "9a899d5567c2ac683535dbae7f859414489dc8cf70622fdb3e4bb9efbcc24bde"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordmap/odpredicate-swift.property.json": {
       "etag": "\"1f5e-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/odpredicate-swiftproperty.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/odpredicate-swift.property.md",
       "hash": "92c9e6da73ac64715a134eb8059713a6c17af70ee04e77bc2b31475dc1afd698"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordmap/setattribute(_:forstandardattribute:).json": {
       "etag": "\"28cd-65d55b3b41688-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordmap/setattribute-forstandardattribute.md",
+      "file_path": "documentation/OpenDirectory/odrecordmap/setattribute(_,forstandardattribute).md",
       "hash": "937e3d39acd1a7400cd75f316b33d83e3d75a13537bbd3bd24290442ed08d3f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordmap/standardattributetypes.json": {
@@ -7187,7 +7187,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordpasswordchangeallowed(_:_:_:).json": {
       "etag": "\"a148-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordpasswordchangeallowed.md",
+      "file_path": "documentation/OpenDirectory/odrecordpasswordchangeallowed(_,_,_).md",
       "hash": "aa0035e59fdf4892f429cb73a20db372f6aa28bd33da22dd30d156090e98d3de"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordref.json": {
@@ -7197,67 +7197,67 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordremoveaccountpolicy(_:_:_:_:).json": {
       "etag": "\"aaed-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordremoveaccountpolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecordremoveaccountpolicy(_,_,_,_).md",
       "hash": "bfef2770e5ff93d2e82c1a803b360c497f82c443714a521d0be99c14fef9c44d"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordremovemember(_:_:_:).json": {
       "etag": "\"ab51-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordremovemember.md",
+      "file_path": "documentation/OpenDirectory/odrecordremovemember(_,_,_).md",
       "hash": "99d347a7bb7477d7ee11ee14ec7ac580855d32252a289024f82446abadf98dff"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordremovepolicy(_:_:_:).json": {
       "etag": "\"a2cb-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordremovepolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecordremovepolicy(_,_,_).md",
       "hash": "f2253b92c75fc6ff78b494ef6fba749ffe972beb1263d3e3d27b060406e23f6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordremovevalue(_:_:_:_:).json": {
       "etag": "\"b940-65d55b3b874a9-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordremovevalue.md",
+      "file_path": "documentation/OpenDirectory/odrecordremovevalue(_,_,_,_).md",
       "hash": "0eac50fd68706f1dc8644243e56eca4fe11e1e284cb37d0bad68d22fc973584d"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsecondsuntilauthenticationsexpire(_:).json": {
       "etag": "\"8c28-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsecondsuntilauthenticationsexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecordsecondsuntilauthenticationsexpire(_).md",
       "hash": "2be11bfc72b11a78c45fa4d2114579ad15f17ca3d12d2dbd11dbaf7b16fba12e"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsecondsuntilpasswordexpires(_:).json": {
       "etag": "\"8baa-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsecondsuntilpasswordexpires.md",
+      "file_path": "documentation/OpenDirectory/odrecordsecondsuntilpasswordexpires(_).md",
       "hash": "c65ea75a8b93f40f1e95cabca8f0264bfb0bd66e40508d7d0ffacc6f8a407c24"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsetaccountpolicies(_:_:_:).json": {
       "etag": "\"a15b-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetaccountpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetaccountpolicies(_,_,_).md",
       "hash": "6743093243ae094ae23c38771ecc536e103af9910af9aa70af4b81cc3869cc84"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsetnodecredentials(_:_:_:_:).json": {
       "etag": "\"bbfc-65d55b3ba8670-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetnodecredentials.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetnodecredentials(_,_,_,_).md",
       "hash": "bd5d0e8b8bab81310c4f6c1d18fbaaffda68b3d35495e97949c495417fad3727"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsetnodecredentialsextended(_:_:_:_:_:_:_:).json": {
       "etag": "\"e893-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetnodecredentialsextended.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetnodecredentialsextended(_,_,_,_,_,_,_).md",
       "hash": "f3ba4d94b1f9e0d96e4b6156383f2f6f1ec0869c2e4a9f4f48177e5096042f96"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsetpolicies(_:_:_:).json": {
       "etag": "\"a11f-65d55b3b24794-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetpolicies.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetpolicies(_,_,_).md",
       "hash": "80656318cbec492eb2095768871556e353987a1fdac8f2554fbdbea858427d34"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsetpolicy(_:_:_:_:).json": {
       "etag": "\"a8b4-65d55b3d134b0-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetpolicy.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetpolicy(_,_,_,_).md",
       "hash": "147b3457880e43ddd7e5e1871ecf58edcd2f689afc858942b967d7ff49c42bf0"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsetvalue(_:_:_:_:).json": {
       "etag": "\"bbc2-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsetvalue.md",
+      "file_path": "documentation/OpenDirectory/odrecordsetvalue(_,_,_,_).md",
       "hash": "abb25acad8760c49be9986464321c2fc0718c2279cde88a9f7712cf7ee06b01e"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordsynchronize(_:_:).json": {
       "etag": "\"a548-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordsynchronize.md",
+      "file_path": "documentation/OpenDirectory/odrecordsynchronize(_,_).md",
       "hash": "4cc854bcf1ac9d4642e6b61d48740aa1f448c54158dc3293d3437eb3f9707784"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordtype.json": {
@@ -7267,22 +7267,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordverifypassword(_:_:_:).json": {
       "etag": "\"abdc-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordverifypassword.md",
+      "file_path": "documentation/OpenDirectory/odrecordverifypassword(_,_,_).md",
       "hash": "ec241bca929bb54e5a048119c52126fe4f575fa80216bba3644c8bf54a37fc98"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordverifypasswordextended(_:_:_:_:_:_:).json": {
       "etag": "\"d2c3-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordverifypasswordextended.md",
+      "file_path": "documentation/OpenDirectory/odrecordverifypasswordextended(_,_,_,_,_,_).md",
       "hash": "c1fa7e8e7232ae906474deb36de6420bdafa216e44b3984adf426b52504b2987"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordwillauthenticationsexpire(_:_:).json": {
       "etag": "\"909e-65d55b3c3e534-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordwillauthenticationsexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecordwillauthenticationsexpire(_,_).md",
       "hash": "5c6689b1f6e3ca2ebd7875aa8ae36b5b835f507460cdb7fd075eb77ea43fb0dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odrecordwillpasswordexpire(_:_:).json": {
       "etag": "\"900b-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odrecordwillpasswordexpire.md",
+      "file_path": "documentation/OpenDirectory/odrecordwillpasswordexpire(_,_).md",
       "hash": "19a9d7a8d7a239398d2a7f6c4fff89349447676ca024e8ce079d59aba385ca83"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession-option-keys.json": {
@@ -7297,17 +7297,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/add(_:authorization:).json": {
       "etag": "\"2e00-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/add-authorization.md",
+      "file_path": "documentation/OpenDirectory/odsession/add(_,authorization).md",
       "hash": "b2fdebdc9ad20862b74e669a1c32e99ddeb5b76b30a810eff533342527c216e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/configuration(fornodename:).json": {
       "etag": "\"26fe-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/configuration-fornodename.md",
+      "file_path": "documentation/OpenDirectory/odsession/configuration(fornodename).md",
       "hash": "ae08fddc6b71fc15ddd4492cc28ecccb0a3d72cad64cc2e17e6bd8cd3c1890ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/configurationauthorizationallowinguserinteraction(_:).json": {
       "etag": "\"2c01-65d55b3c83b99-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/configurationauthorizationallowinguserinteraction.md",
+      "file_path": "documentation/OpenDirectory/odsession/configurationauthorizationallowinguserinteraction(_).md",
       "hash": "58f74454a09c4cb3f3c7c1a3a90f059d6d02347a508b82ebe1ecbfc1e0eaf5e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/configurationtemplatenames.json": {
@@ -7317,22 +7317,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/default().json": {
       "etag": "\"25f9-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/default.md",
+      "file_path": "documentation/OpenDirectory/odsession/default().md",
       "hash": "fc6996eeefdb5a769a3297fc26fe0b72b4908d37694b68aa54772a326a965c25"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/delete(_:authorization:).json": {
       "etag": "\"2e3f-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/delete-authorization.md",
+      "file_path": "documentation/OpenDirectory/odsession/delete(_,authorization).md",
       "hash": "30e9b505e2b661858018826d84aa74aad6dcb9a85fdc1509ad43fa2685613ac8"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/deleteconfiguration(withnodename:authorization:).json": {
       "etag": "\"306f-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/deleteconfiguration-withnodenameauthorization.md",
+      "file_path": "documentation/OpenDirectory/odsession/deleteconfiguration(withnodename,authorization).md",
       "hash": "0d0b8270ea7dc6221b9d2b6cb1991bf974ff3d28544e410c5f4de8a89ac85b04"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/init(options:).json": {
       "etag": "\"3bdf-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/init-options.md",
+      "file_path": "documentation/OpenDirectory/odsession/init(options).md",
       "hash": "30babe3b61c88c31f0c21701f7e9ff1c7552127e5db98b0579403f81f1f4f7d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/mappingtemplatenames.json": {
@@ -7342,22 +7342,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsession/nodenames().json": {
       "etag": "\"2b1a-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsession/nodenames.md",
+      "file_path": "documentation/OpenDirectory/odsession/nodenames().md",
       "hash": "06f798affdd43dda84b416f4c841fb66e417eae8b05a4031cbb980ec9ff2cc44"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsessioncopynodenames(_:_:_:).json": {
       "etag": "\"4c0d-65d55b3ca22a4-df\"",
-      "file_path": "documentation/OpenDirectory/odsessioncopynodenames.md",
+      "file_path": "documentation/OpenDirectory/odsessioncopynodenames(_,_,_).md",
       "hash": "51324acc1df1a03bf87d7c4b6497f1513117ef4d4547b24edd9b9d1474c47f36"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsessioncreate(_:_:_:).json": {
       "etag": "\"4f04-65d55b3ced1c4-df\"",
-      "file_path": "documentation/OpenDirectory/odsessioncreate.md",
+      "file_path": "documentation/OpenDirectory/odsessioncreate(_,_,_).md",
       "hash": "5ee5cf78398d3c7b648ce6d6460c4d107b3a95be9dcce059e2da9d2fd73dfa8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsessiongettypeid().json": {
       "etag": "\"29a1-65d55b3cc948f-df\"",
-      "file_path": "documentation/OpenDirectory/odsessiongettypeid.md",
+      "file_path": "documentation/OpenDirectory/odsessiongettypeid().md",
       "hash": "fbb7c403d07bafea89176168637306b5d6d04ae776e3e16288a65d0658e3f785"
     },
     "https://developer.apple.com/tutorials/data/documentation/opendirectory/odsessionproxyaddress.json": {

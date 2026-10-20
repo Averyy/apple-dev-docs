@@ -27,32 +27,32 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/attributes-data.dictionary": {
       "etag": "\"1416-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/attributes-data.dictionary.md",
       "hash": "3ffcf908601f3c3d97ccf8ebe047d8536ddc37e0d6d373002682222439efc42d"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary": {
       "etag": "\"1ad2-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary.md",
       "hash": "9ebac31fc66cb39fc18ba9450c8b2a3f0fc6bb08b60d74561ab0b0b91adac488"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary": {
       "etag": "\"2924-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary.md",
       "hash": "0201019b07e3743f6578d1acc226a5014facbff40e744d07b7488f98fa12ba0c"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-data.dictionary": {
       "etag": "\"1d3a-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-data.dictionary.md",
       "hash": "562b3552b2b4d95286fbe087ed50abe06de7b1294aa2a19a6e88471382b8f6a0"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary": {
       "etag": "\"2834-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-data.dictionary.md",
       "hash": "35bcffee5a06d428df9762ffa27de6882e93119fa4a41ac67883c0826daf3d2f"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-data.dictionary": {
       "etag": "\"1c0e-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-data.dictionary.md",
       "hash": "630a07b2ed31578182c748ff8329e73745464c257d1bc430a51238790569e109"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilitiesresponse": {
@@ -72,7 +72,7 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapability/attributes-data.dictionary": {
       "etag": "\"1711-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapability/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapability/attributes-data.dictionary.md",
       "hash": "c1dcf1d2fdef63c66ee66b7bf537a41f230604bcd288d9ea9a42986bec4fb65d"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest": {
@@ -82,27 +82,27 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary": {
       "etag": "\"1d81-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary.md",
       "hash": "d2e413e4298dd9395302f0cf57ab84385beddf3da2ea2e7692463727cefa9988"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"1c0d-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "711a94762d9edb39cd56da7ef1be6c496f11f4a23376ecd15fcc9b549f05be78"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary": {
       "etag": "\"1c1d-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary.md",
       "hash": "5940d0b1c8da9739ea1754c30f80eda9fa2b13f5c02ea94073b08397de8ffa1f"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary": {
       "etag": "\"21ba-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md",
       "hash": "c010bb08eb1b53d26eb0c70e1ac587357ddc5d04de96a1709ebd80776658280b"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary": {
       "etag": "\"20cf-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md",
       "hash": "80e0bc0fabd7ab62dd80d4ee7ea3065b6f5d668088468cd7ec41e1a28ff3487c"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilityresponse": {
@@ -117,12 +117,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilityupdaterequest/data-data.dictionary": {
       "etag": "\"17dd-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-data.dictionary.md",
       "hash": "5e2ec9e04a0379d5ed219af0fe3662b65454951ca434c13a89a560d8c8114903"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcapabilityupdaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"1c30-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "08742bcdcbf068e7b27a01a452f7692510dca0ea481a6499ca2c80b98a3e2d71"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcreaterequest": {
@@ -132,12 +132,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcreaterequest/data-data.dictionary": {
       "etag": "\"15ff-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-data.dictionary.md",
       "hash": "8af45bffccbbb11b39ddc3ec713558e744cc16aebc7c2ed3ee3aea7ec2d1cd19"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidcreaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"18e3-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "318cc6f46f71cbd3916eb3b3031f0960096a6a1b79152475038f49917c0e1a6b"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidplatform": {
@@ -162,12 +162,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidupdaterequest/data-data.dictionary": {
       "etag": "\"169b-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-data.dictionary.md",
       "hash": "8a1f62d5b64f84ca6d07c0e2a2c864d2cd996d74c25eb20acf6b61060e74d3e7"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidupdaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"1453-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "da01da8aa31f8a9670fc8f7e2df3d2e082bca3a3c1281048ac9db1fcb6be7599"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/bundleidwithoutincludesresponse": {
@@ -202,22 +202,22 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificate/attributes-data.dictionary": {
       "etag": "\"1cc9-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificate/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificate/attributes-data.dictionary.md",
       "hash": "a061bcd2356798ada14ee9d38f1da87deb312faa59c288947f730857f1928c47"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary": {
       "etag": "\"18c8-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary.md",
       "hash": "e0be53511e9520c6ef22624d49ac174c1d5a0333d6c59bcc99a0303b4875e034"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary/passtypeid-data.dictionary": {
       "etag": "\"1d71-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-data.dictionary.md",
       "hash": "555799f81aad1c6b2f0c4918f58d5f31b8e0d13b7d66afe7291fe0f2f0bf5da5"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary": {
       "etag": "\"1910-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.md",
       "hash": "e19628410a755dd7e9e26c08162a80ae53bbfef07f1ed80f8ae9833cd519a7f3"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificatecreaterequest": {
@@ -227,27 +227,27 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary": {
       "etag": "\"1c2f-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary.md",
       "hash": "fc08787aa26e603da480d3f365a5e28e61069649a5d434765b2b1ce9d07e229b"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"1811-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "d2c4389a9e526977d238220e8757ab0bb226ad9b08a8706c33f79d78beefaaa9"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary": {
       "etag": "\"1a12-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary.md",
       "hash": "4b3029cfe2fd4f6c89c6cd6891b2b911e2bad1a4defb20a1b5695c12de152815"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary": {
       "etag": "\"1f22-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary.md",
       "hash": "a54eda8865c2df27c010d90f55c6e96ea9050514a8994551d3d7a19952f9c1bc"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary": {
       "etag": "\"1e19-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.md",
       "hash": "d296f278ecad20f422d6e357b5963ff5064f323c66f5fd5efe3440902c2e4f43"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/certificateresponse": {
@@ -332,7 +332,7 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/device/attributes-data.dictionary": {
       "etag": "\"162a-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/device/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/device/attributes-data.dictionary.md",
       "hash": "da436962c2ded3a8fd5f0edffc13520ec3725c98be4a970578caaedad054aec9"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/devicecreaterequest": {
@@ -342,12 +342,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/devicecreaterequest/data-data.dictionary": {
       "etag": "\"15be-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-data.dictionary.md",
       "hash": "a8d8e0495dd961b52e1bd6a257b012ac287b6738ebc473869fb0b93c4b0acdea"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/devicecreaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"1815-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "fe0423a0db6908ee42fcf6d7daba8682a2bf8c50f771cbfc7937626fd2aeef60"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/deviceresponse": {
@@ -377,12 +377,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/deviceupdaterequest/data-data.dictionary": {
       "etag": "\"165a-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-data.dictionary.md",
       "hash": "e4b1819bc6bf21fa17f952b4c4dbed35370577d3106650181c966f6d468c3e46"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/deviceupdaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"14e1-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "35712f176915d97aa4a6cbba89f08f1f2f96a306cc3074fd1929caebfde1557e"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/documentlinks": {
@@ -407,12 +407,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/errorlinks/associated-data.dictionary": {
       "etag": "\"13d7-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-data.dictionary.md",
       "hash": "12b91c3ef5e24d0fd6f16af07e3bec07fc64cdcd50758b7cf81a55f7a3414ccd"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/errorlinks/associated-data.dictionary/meta-data.dictionary": {
       "etag": "\"1200-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-data.dictionary/meta-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-data.dictionary/meta-data.dictionary.md",
       "hash": "5ced8a5b65c7f9bbe4d18cebe88f95ecd72c6364f30385fb5e859ce60717a7b8"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/errorresponse": {
@@ -422,17 +422,17 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary": {
       "etag": "\"2eff-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary.md",
       "hash": "7ddc96d810a84320f7eaacf48e900600e4e8957538c2a0440f89c6d741fbde73"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary/meta-data.dictionary": {
       "etag": "\"1ebb-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-data.dictionary.md",
       "hash": "875ffe4e99ec0ed92ffe6d2d2e0ad97ecd9cfef93bf5dd62f3cd5116a9cb724c"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary": {
       "etag": "\"170e-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary.md",
       "hash": "db957d102fcbb5a3d700df4edbf9037f68277a1c08d219ee3a76d4dd1ea16c14"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/generating-tokens-for-api-requests": {
@@ -562,7 +562,7 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/paginginformation/paging-data.dictionary": {
       "etag": "\"13b1-65d55a79ce300-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/paginginformation/paging-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/paginginformation/paging-data.dictionary.md",
       "hash": "639ba93fb43a36cbfe90bcd4fe2b8abcff6cfa729c66633fe5ce2ab294827a9b"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/parameter": {
@@ -582,22 +582,22 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeid/attributes-data.dictionary": {
       "etag": "\"13b6-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/attributes-data.dictionary.md",
       "hash": "89ba6f24fc9858fe07923c81180f04ca6c3b818ad3ea446e4734790a2358d8ca"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary": {
       "etag": "\"18ac-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary.md",
       "hash": "02e68033d8e31854b20e79e1c375faa4ac4271d4afb47310bfeb565aaa9afcf1"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary/certificates-data.dictionary": {
       "etag": "\"215d-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-data.dictionary.md",
       "hash": "d0daf1b0c93ddad6a445a23f4136164b981d118bb46155c66848706ccf2ed2e4"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary": {
       "etag": "\"1961-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md",
       "hash": "ec5f6b5d8ccdf2c6cf55eff21d532a273d5c7b55fcf604a93d908f1e6dd3eaae"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeidcreaterequest": {
@@ -607,12 +607,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeidcreaterequest/data-data.dictionary": {
       "etag": "\"1640-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-data.dictionary.md",
       "hash": "f7bcbad0b6369725cc0c588da3f5e89e1d660f779bc5b377edff7b9b389f368f"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeidcreaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"14fb-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "daa28d5050fcc22323bf8d5b6c10fb5c2b24276d53610104c573462f2ea59ef3"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeidresponse": {
@@ -637,12 +637,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeidupdaterequest/data-data.dictionary": {
       "etag": "\"16e1-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-data.dictionary.md",
       "hash": "944392edcf38803ec06408c771c59a97622ccb449366dbecb247cb534ce3328e"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"1491-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "ee1591858a1ab484cf6f39e26199a78c23cf71b73244c4e99af2bb25bedbba1c"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/pinpointing-the-location-of-errors": {
@@ -657,42 +657,42 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profile/attributes-data.dictionary": {
       "etag": "\"1b6b-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/attributes-data.dictionary.md",
       "hash": "91c81b252cea5685d089d176ffd1a750e09a13d83b7e2c0bec98610e61b6395c"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary": {
       "etag": "\"22fc-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary.md",
       "hash": "992e3c04eabaa3fa5a78c1a0b98b1eeb07d5c7e0104f8622ab4e0aadb298e7e5"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary": {
       "etag": "\"27b4-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-data.dictionary.md",
       "hash": "2aef1e2e97554309a0912704007d5a96e8f48c520a5787f143de7a1d8009534c"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary": {
       "etag": "\"1be8-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md",
       "hash": "859f017e55715fa2adde8fe40e7269caa796f072b841f3e6562791a700eda67d"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary": {
       "etag": "\"2bc7-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-data.dictionary.md",
       "hash": "e7fd5ebc3fb8922f9f0ddd0b504463764b7422822e71b76f658912745ea402d8"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary": {
       "etag": "\"1c4b-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md",
       "hash": "ce7afde25e6a0b1c2e7f953a787346cf038504558e9258b4b76c6fd501310823"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/devices-data.dictionary": {
       "etag": "\"28a2-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-data.dictionary.md",
       "hash": "a6a1a2048a6a383316c5bc1c8c62eed97cbc3e66b645edafeee13a08596afd23"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary": {
       "etag": "\"1b75-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md",
       "hash": "de6a4b95db45f81f7c887ae4cc0251771249b66be47cfdcf825cb2384fc06e66"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest": {
@@ -702,47 +702,47 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary": {
       "etag": "\"1b95-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary.md",
       "hash": "65702cc5fe213887905e894a2cb22de7d898ff0f810510db34f135a60b6981ee"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"1a34-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "d3519b8c9924592778574b85ece1e867558ba48d4a705c92f18e333a846b8623"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary": {
       "etag": "\"2b83-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary.md",
       "hash": "89dd86fd8cd7644ba9f615835c2c465c002ae8fa5f1c0a8da0a5fc27a60bb446"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary": {
       "etag": "\"2922-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md",
       "hash": "e05796fb73036645ae6598bfe8681c437f6eede1d55e51fd5dff749390df6cf5"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary": {
       "etag": "\"1eff-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md",
       "hash": "78099e8fe4f9dcded48b81e46f174f7cb8b0b05143d82be5c60e51e1fd1a885e"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary": {
       "etag": "\"29a9-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary.md",
       "hash": "e77987bc0a9a468d80cd231cc3ded9547ebc95ffec403cb8bdba60a65d85acf5"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary": {
       "etag": "\"1f52-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md",
       "hash": "f6e73a665001f55904c46903ac07e1015a861e5ee8f6b6f3cd11e1dd1bb13e84"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary": {
       "etag": "\"295a-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.md",
       "hash": "c2670b5f91e7abe5df5d5d901f12f1fb4375935a676517200ce9938924f3f920"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary": {
       "etag": "\"1ee9-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md",
       "hash": "81aea3f68bdbe5cc4708c49bd4f8a13759516c95659053d1b11ccd32b09a6643"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/profileresponse": {
@@ -852,7 +852,7 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/user/attributes-data.dictionary": {
       "etag": "\"16c7-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/user/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/user/attributes-data.dictionary.md",
       "hash": "d344bbb1472da7e60c4dacf90d3fd490a2a11b971307144ff0d95585014bd678"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/userinvitation": {
@@ -862,7 +862,7 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/userinvitation/attributes-data.dictionary": {
       "etag": "\"19a3-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userinvitation/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userinvitation/attributes-data.dictionary.md",
       "hash": "682aaa8cd6aa0e2349ba240d74d931b5f61793143bfe268edc5ea7369cc853bc"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/userinvitationcreaterequest": {
@@ -872,12 +872,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/userinvitationcreaterequest/data-data.dictionary": {
       "etag": "\"176d-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-data.dictionary.md",
       "hash": "d1e3fcff136ed68e1a688731e302e470653734e6c735ebd5e01cc64a3572d9df"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/userinvitationcreaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"1d64-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "792a3eb107669f3f04e67fb35e8554b6bd28afb9e19cca31ddada770c29c9e9f"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/userinvitationresponse": {
@@ -917,12 +917,12 @@
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/userupdaterequest/data-data.dictionary": {
       "etag": "\"1742-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-data.dictionary.md",
       "hash": "f684a4514d18e8a066ab137102780a5fa778ad9d218633a96cf7ec0d98c1da50"
     },
     "https://developer.apple.com/documentation/enterpriseprogramapi/userupdaterequest/data-data.dictionary/attributes-data.dictionary": {
       "etag": "\"18e8-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "6eeb7926cd67255f99742dfc3b81c501e19e0d70c01b5fdbdae8881916879a60"
     },
     "https://developer.apple.com/tutorials/data/documentation/EnterpriseProgramAPI.json": {
@@ -952,22 +952,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/attributes-data.dictionary.json": {
       "etag": "\"1416-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/attributes-data.dictionary.md",
       "hash": "3ffcf908601f3c3d97ccf8ebe047d8536ddc37e0d6d373002682222439efc42d"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary.json": {
       "etag": "\"1ad2-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary.md",
       "hash": "9ebac31fc66cb39fc18ba9450c8b2a3f0fc6bb08b60d74561ab0b0b91adac488"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary.json": {
       "etag": "\"2924-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary.md",
       "hash": "0201019b07e3743f6578d1acc226a5014facbff40e744d07b7488f98fa12ba0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1d3a-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-data.dictionary.md",
       "hash": "562b3552b2b4d95286fbe087ed50abe06de7b1294aa2a19a6e88471382b8f6a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/links.json": {
@@ -976,12 +976,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary.json": {
       "etag": "\"2834-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-data.dictionary.md",
       "hash": "35bcffee5a06d428df9762ffa27de6882e93119fa4a41ac67883c0826daf3d2f"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1c0e-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-data.dictionary.md",
       "hash": "630a07b2ed31578182c748ff8329e73745464c257d1bc430a51238790569e109"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary/links.json": {
@@ -1005,7 +1005,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapability/attributes-data.dictionary.json": {
       "etag": "\"1711-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapability/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapability/attributes-data.dictionary.md",
       "hash": "c1dcf1d2fdef63c66ee66b7bf537a41f230604bcd288d9ea9a42986bec4fb65d"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest.json": {
@@ -1015,27 +1015,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary.json": {
       "etag": "\"1d81-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary.md",
       "hash": "d2e413e4298dd9395302f0cf57ab84385beddf3da2ea2e7692463727cefa9988"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"1c0d-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "711a94762d9edb39cd56da7ef1be6c496f11f4a23376ecd15fcc9b549f05be78"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary.json": {
       "etag": "\"1c1d-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary.md",
       "hash": "5940d0b1c8da9739ea1754c30f80eda9fa2b13f5c02ea94073b08397de8ffa1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.json": {
       "etag": "\"21ba-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md",
       "hash": "c010bb08eb1b53d26eb0c70e1ac587357ddc5d04de96a1709ebd80776658280b"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.json": {
       "etag": "\"20cf-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md",
       "hash": "80e0bc0fabd7ab62dd80d4ee7ea3065b6f5d668088468cd7ec41e1a28ff3487c"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilityresponse.json": {
@@ -1050,12 +1050,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilityupdaterequest/data-data.dictionary.json": {
       "etag": "\"17dd-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-data.dictionary.md",
       "hash": "5e2ec9e04a0379d5ed219af0fe3662b65454951ca434c13a89a560d8c8114903"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilityupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"1c30-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "08742bcdcbf068e7b27a01a452f7692510dca0ea481a6499ca2c80b98a3e2d71"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcreaterequest.json": {
@@ -1065,12 +1065,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcreaterequest/data-data.dictionary.json": {
       "etag": "\"15ff-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-data.dictionary.md",
       "hash": "8af45bffccbbb11b39ddc3ec713558e744cc16aebc7c2ed3ee3aea7ec2d1cd19"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"18e3-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "318cc6f46f71cbd3916eb3b3031f0960096a6a1b79152475038f49917c0e1a6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidplatform.json": {
@@ -1095,12 +1095,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidupdaterequest/data-data.dictionary.json": {
       "etag": "\"169b-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-data.dictionary.md",
       "hash": "8a1f62d5b64f84ca6d07c0e2a2c864d2cd996d74c25eb20acf6b61060e74d3e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"1453-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "da01da8aa31f8a9670fc8f7e2df3d2e082bca3a3c1281048ac9db1fcb6be7599"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidwithoutincludesresponse.json": {
@@ -1135,22 +1135,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate/attributes-data.dictionary.json": {
       "etag": "\"1cc9-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificate/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificate/attributes-data.dictionary.md",
       "hash": "a061bcd2356798ada14ee9d38f1da87deb312faa59c288947f730857f1928c47"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary.json": {
       "etag": "\"18c8-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary.md",
       "hash": "e0be53511e9520c6ef22624d49ac174c1d5a0333d6c59bcc99a0303b4875e034"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary/passtypeid-data.dictionary.json": {
       "etag": "\"1d71-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-data.dictionary.md",
       "hash": "555799f81aad1c6b2f0c4918f58d5f31b8e0d13b7d66afe7291fe0f2f0bf5da5"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1910-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.md",
       "hash": "e19628410a755dd7e9e26c08162a80ae53bbfef07f1ed80f8ae9833cd519a7f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest.json": {
@@ -1160,27 +1160,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary.json": {
       "etag": "\"1c2f-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary.md",
       "hash": "fc08787aa26e603da480d3f365a5e28e61069649a5d434765b2b1ce9d07e229b"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"1811-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "d2c4389a9e526977d238220e8757ab0bb226ad9b08a8706c33f79d78beefaaa9"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary.json": {
       "etag": "\"1a12-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary.md",
       "hash": "4b3029cfe2fd4f6c89c6cd6891b2b911e2bad1a4defb20a1b5695c12de152815"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary.json": {
       "etag": "\"1f22-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary.md",
       "hash": "a54eda8865c2df27c010d90f55c6e96ea9050514a8994551d3d7a19952f9c1bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1e19-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.md",
       "hash": "d296f278ecad20f422d6e357b5963ff5064f323c66f5fd5efe3440902c2e4f43"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificateresponse.json": {
@@ -1265,7 +1265,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/device/attributes-data.dictionary.json": {
       "etag": "\"162a-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/device/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/device/attributes-data.dictionary.md",
       "hash": "da436962c2ded3a8fd5f0edffc13520ec3725c98be4a970578caaedad054aec9"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/devicecreaterequest.json": {
@@ -1275,12 +1275,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/devicecreaterequest/data-data.dictionary.json": {
       "etag": "\"15be-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-data.dictionary.md",
       "hash": "a8d8e0495dd961b52e1bd6a257b012ac287b6738ebc473869fb0b93c4b0acdea"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/devicecreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"1815-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "fe0423a0db6908ee42fcf6d7daba8682a2bf8c50f771cbfc7937626fd2aeef60"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/deviceresponse.json": {
@@ -1310,12 +1310,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/deviceupdaterequest/data-data.dictionary.json": {
       "etag": "\"165a-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-data.dictionary.md",
       "hash": "e4b1819bc6bf21fa17f952b4c4dbed35370577d3106650181c966f6d468c3e46"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/deviceupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"14e1-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "35712f176915d97aa4a6cbba89f08f1f2f96a306cc3074fd1929caebfde1557e"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/documentlinks.json": {
@@ -1340,12 +1340,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorlinks/associated-data.dictionary.json": {
       "etag": "\"13d7-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-data.dictionary.md",
       "hash": "12b91c3ef5e24d0fd6f16af07e3bec07fc64cdcd50758b7cf81a55f7a3414ccd"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorlinks/associated-data.dictionary/meta-data.dictionary.json": {
       "etag": "\"1200-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-data.dictionary/meta-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-data.dictionary/meta-data.dictionary.md",
       "hash": "5ced8a5b65c7f9bbe4d18cebe88f95ecd72c6364f30385fb5e859ce60717a7b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorresponse.json": {
@@ -1355,17 +1355,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary.json": {
       "etag": "\"2eff-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary.md",
       "hash": "7ddc96d810a84320f7eaacf48e900600e4e8957538c2a0440f89c6d741fbde73"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary/meta-data.dictionary.json": {
       "etag": "\"1ebb-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-data.dictionary.md",
       "hash": "875ffe4e99ec0ed92ffe6d2d2e0ad97ecd9cfef93bf5dd62f3cd5116a9cb724c"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary.json": {
       "etag": "\"170e-659022a244899-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary.md",
       "hash": "db957d102fcbb5a3d700df4edbf9037f68277a1c08d219ee3a76d4dd1ea16c14"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/generating-tokens-for-api-requests.json": {
@@ -1495,7 +1495,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/paginginformation/paging-data.dictionary.json": {
       "etag": "\"13b1-65d55a79ce300-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/paginginformation/paging-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/paginginformation/paging-data.dictionary.md",
       "hash": "639ba93fb43a36cbfe90bcd4fe2b8abcff6cfa729c66633fe5ce2ab294827a9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/parameter.json": {
@@ -1515,22 +1515,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid/attributes-data.dictionary.json": {
       "etag": "\"13b6-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/attributes-data.dictionary.md",
       "hash": "89ba6f24fc9858fe07923c81180f04ca6c3b818ad3ea446e4734790a2358d8ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary.json": {
       "etag": "\"18ac-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary.md",
       "hash": "02e68033d8e31854b20e79e1c375faa4ac4271d4afb47310bfeb565aaa9afcf1"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary/certificates-data.dictionary.json": {
       "etag": "\"215d-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-data.dictionary.md",
       "hash": "d0daf1b0c93ddad6a445a23f4136164b981d118bb46155c66848706ccf2ed2e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1961-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md",
       "hash": "ec5f6b5d8ccdf2c6cf55eff21d532a273d5c7b55fcf604a93d908f1e6dd3eaae"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidcreaterequest.json": {
@@ -1540,12 +1540,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidcreaterequest/data-data.dictionary.json": {
       "etag": "\"1640-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-data.dictionary.md",
       "hash": "f7bcbad0b6369725cc0c588da3f5e89e1d660f779bc5b377edff7b9b389f368f"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidcreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"14fb-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "daa28d5050fcc22323bf8d5b6c10fb5c2b24276d53610104c573462f2ea59ef3"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidresponse.json": {
@@ -1570,12 +1570,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidupdaterequest/data-data.dictionary.json": {
       "etag": "\"16e1-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-data.dictionary.md",
       "hash": "944392edcf38803ec06408c771c59a97622ccb449366dbecb247cb534ce3328e"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"1491-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "ee1591858a1ab484cf6f39e26199a78c23cf71b73244c4e99af2bb25bedbba1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/pinpointing-the-location-of-errors.json": {
@@ -1590,22 +1590,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/attributes-data.dictionary.json": {
       "etag": "\"1b6b-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/attributes-data.dictionary.md",
       "hash": "91c81b252cea5685d089d176ffd1a750e09a13d83b7e2c0bec98610e61b6395c"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary.json": {
       "etag": "\"22fc-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary.md",
       "hash": "992e3c04eabaa3fa5a78c1a0b98b1eeb07d5c7e0104f8622ab4e0aadb298e7e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary.json": {
       "etag": "\"27b4-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-data.dictionary.md",
       "hash": "2aef1e2e97554309a0912704007d5a96e8f48c520a5787f143de7a1d8009534c"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1be8-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md",
       "hash": "859f017e55715fa2adde8fe40e7269caa796f072b841f3e6562791a700eda67d"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary/links.json": {
@@ -1614,12 +1614,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary.json": {
       "etag": "\"2bc7-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-data.dictionary.md",
       "hash": "e7fd5ebc3fb8922f9f0ddd0b504463764b7422822e71b76f658912745ea402d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1c4b-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md",
       "hash": "ce7afde25e6a0b1c2e7f953a787346cf038504558e9258b4b76c6fd501310823"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary/links.json": {
@@ -1628,12 +1628,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/devices-data.dictionary.json": {
       "etag": "\"28a2-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-data.dictionary.md",
       "hash": "a6a1a2048a6a383316c5bc1c8c62eed97cbc3e66b645edafeee13a08596afd23"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1b75-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md",
       "hash": "de6a4b95db45f81f7c887ae4cc0251771249b66be47cfdcf825cb2384fc06e66"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest.json": {
@@ -1643,47 +1643,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary.json": {
       "etag": "\"1b95-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary.md",
       "hash": "65702cc5fe213887905e894a2cb22de7d898ff0f810510db34f135a60b6981ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"1a34-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "d3519b8c9924592778574b85ece1e867558ba48d4a705c92f18e333a846b8623"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary.json": {
       "etag": "\"2b83-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary.md",
       "hash": "89dd86fd8cd7644ba9f615835c2c465c002ae8fa5f1c0a8da0a5fc27a60bb446"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.json": {
       "etag": "\"2922-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md",
       "hash": "e05796fb73036645ae6598bfe8681c437f6eede1d55e51fd5dff749390df6cf5"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1eff-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.md",
       "hash": "78099e8fe4f9dcded48b81e46f174f7cb8b0b05143d82be5c60e51e1fd1a885e"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary.json": {
       "etag": "\"29a9-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary.md",
       "hash": "e77987bc0a9a468d80cd231cc3ded9547ebc95ffec403cb8bdba60a65d85acf5"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1f52-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md",
       "hash": "f6e73a665001f55904c46903ac07e1015a861e5ee8f6b6f3cd11e1dd1bb13e84"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.json": {
       "etag": "\"295a-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.md",
       "hash": "c2670b5f91e7abe5df5d5d901f12f1fb4375935a676517200ce9938924f3f920"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.json": {
       "etag": "\"1ee9-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md",
       "hash": "81aea3f68bdbe5cc4708c49bd4f8a13759516c95659053d1b11ccd32b09a6643"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profileresponse.json": {
@@ -1793,7 +1793,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/user/attributes-data.dictionary.json": {
       "etag": "\"16c7-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/user/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/user/attributes-data.dictionary.md",
       "hash": "d344bbb1472da7e60c4dacf90d3fd490a2a11b971307144ff0d95585014bd678"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitation.json": {
@@ -1803,7 +1803,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitation/attributes-data.dictionary.json": {
       "etag": "\"19a3-659022a28b301-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userinvitation/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userinvitation/attributes-data.dictionary.md",
       "hash": "682aaa8cd6aa0e2349ba240d74d931b5f61793143bfe268edc5ea7369cc853bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationcreaterequest.json": {
@@ -1813,12 +1813,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationcreaterequest/data-data.dictionary.json": {
       "etag": "\"176d-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-data.dictionary.md",
       "hash": "d1e3fcff136ed68e1a688731e302e470653734e6c735ebd5e01cc64a3572d9df"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationcreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"1d64-659022a261d93-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "792a3eb107669f3f04e67fb35e8554b6bd28afb9e19cca31ddada770c29c9e9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationresponse.json": {
@@ -1858,12 +1858,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userupdaterequest/data-data.dictionary.json": {
       "etag": "\"1742-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-data.dictionary.md",
       "hash": "f684a4514d18e8a066ab137102780a5fa778ad9d218633a96cf7ec0d98c1da50"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "etag": "\"18e8-659022a2a733d-df\"",
-      "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-data.dictionary/attributes-datadictionary.md",
+      "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-data.dictionary/attributes-data.dictionary.md",
       "hash": "6eeb7926cd67255f99742dfc3b81c501e19e0d70c01b5fdbdae8881916879a60"
     }
   },

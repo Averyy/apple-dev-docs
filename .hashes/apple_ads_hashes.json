@@ -197,7 +197,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/apppreviewdevicesmappingresponse/data-data.dictionary": {
       "etag": "\"1293-65d55ab00bc37-df\"",
-      "file_path": "documentation/apple_ads/apppreviewdevicesmappingresponse/data-datadictionary.md",
+      "file_path": "documentation/apple_ads/apppreviewdevicesmappingresponse/data-data.dictionary.md",
       "hash": "b3f8a146f893200c91f9a68561a594b6bdf3cec09f080272d8cfa71d25d2593e"
     },
     "https://developer.apple.com/documentation/apple_ads/billingeventtype": {
@@ -222,7 +222,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/budgetordercreate/bo-data.dictionary": {
       "etag": "\"1d65-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/budgetordercreate/bo-datadictionary.md",
+      "file_path": "documentation/apple_ads/budgetordercreate/bo-data.dictionary.md",
       "hash": "867c46fc564959174ba9211ef0faa4ef07bf0bb067832936f3ad697b9147d7dd"
     },
     "https://developer.apple.com/documentation/apple_ads/budgetorderinfo": {
@@ -247,7 +247,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/budgetorderupdate/bo-data.dictionary": {
       "etag": "\"1d3f-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/budgetorderupdate/bo-datadictionary.md",
+      "file_path": "documentation/apple_ads/budgetorderupdate/bo-data.dictionary.md",
       "hash": "347ed3195f3e0008d843ce800c20567dd10611ab3c0e3e517bc036f5bbee24ff"
     },
     "https://developer.apple.com/documentation/apple_ads/calling-the-apple-search-ads-api": {
@@ -262,7 +262,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/campaign/countryorregionservingstatereasons-data.dictionary": {
       "etag": "\"1d1c-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/campaign/countryorregionservingstatereasons-datadictionary.md",
+      "file_path": "documentation/apple_ads/campaign/countryorregionservingstatereasons-data.dictionary.md",
       "hash": "25a772e96a989510437d2cb4b1180368f747102c7f1387fd7d2566f4aaf943ea"
     },
     "https://developer.apple.com/documentation/apple_ads/campaignappdetail": {
@@ -402,7 +402,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/creativelocalizationwithassets/apppreviewdevicewithassets-data.dictionary": {
       "etag": "\"1018-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/creativelocalizationwithassets/apppreviewdevicewithassets-datadictionary.md",
+      "file_path": "documentation/apple_ads/creativelocalizationwithassets/apppreviewdevicewithassets-data.dictionary.md",
       "hash": "8a3fabac1795b6ff9e249eedcb82952c350f55f3b6bcce1ce894245173f09a33"
     },
     "https://developer.apple.com/documentation/apple_ads/creativeresponse": {
@@ -447,12 +447,12 @@
     },
     "https://developer.apple.com/documentation/apple_ads/customreportrequest/selector-data.dictionary": {
       "etag": "\"1424-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/customreportrequest/selector-datadictionary.md",
+      "file_path": "documentation/apple_ads/customreportrequest/selector-data.dictionary.md",
       "hash": "82ba6b5dbb7c478d81e5555bcf3c026c5dc776107156a0fef4f659296ff0875e"
     },
     "https://developer.apple.com/documentation/apple_ads/customreportrequest/selector-data.dictionary/conditions-data.dictionary": {
       "etag": "\"122f-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/customreportrequest/selector-data.dictionary/conditions-datadictionary.md",
+      "file_path": "documentation/apple_ads/customreportrequest/selector-data.dictionary/conditions-data.dictionary.md",
       "hash": "e1c7d3bdbfe15cab4d754ab4dfa71bf01a1768fc334ca6b7f9f9cbb18fc624cf"
     },
     "https://developer.apple.com/documentation/apple_ads/customreportresponse": {
@@ -462,12 +462,12 @@
     },
     "https://developer.apple.com/documentation/apple_ads/customreportresponse/selector-data.dictionary": {
       "etag": "\"1449-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/customreportresponse/selector-datadictionary.md",
+      "file_path": "documentation/apple_ads/customreportresponse/selector-data.dictionary.md",
       "hash": "2b4d2c22ba2e41851f2a3a413a3dc8b84e3013c3b0ebb548a8d627ff29e44374"
     },
     "https://developer.apple.com/documentation/apple_ads/customreportresponse/selector-data.dictionary/conditions-data.dictionary": {
       "etag": "\"1251-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/customreportresponse/selector-data.dictionary/conditions-datadictionary.md",
+      "file_path": "documentation/apple_ads/customreportresponse/selector-data.dictionary/conditions-data.dictionary.md",
       "hash": "4dc7b2594b17fbc9a185d70e636bd222d2b453a5b539c8e4d318022e3d103341"
     },
     "https://developer.apple.com/documentation/apple_ads/customreportresponsebody": {
@@ -577,7 +577,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/find-ad-groups-(org-level)": {
       "etag": "\"4913-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/find-ad-groups-org-level.md",
+      "file_path": "documentation/apple_ads/find-ad-groups-(org-level).md",
       "hash": "506913be5ce95a2f04d5b97e5a2fba55fc3f978da137cbd0a0bcb6db77d04a54"
     },
     "https://developer.apple.com/documentation/apple_ads/find-ads": {
@@ -587,7 +587,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/find-ads-(org-level)": {
       "etag": "\"4180-65d55aafa5e59-df\"",
-      "file_path": "documentation/apple_ads/find-ads-org-level.md",
+      "file_path": "documentation/apple_ads/find-ads-(org-level).md",
       "hash": "8181beadd1b63f70caecfeb45d74524c6ef771fc4aad40ef554669eeae064ce7"
     },
     "https://developer.apple.com/documentation/apple_ads/find-app-assets": {
@@ -932,12 +932,12 @@
     },
     "https://developer.apple.com/documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary": {
       "etag": "\"164b-65c09a001d416-df\"",
-      "file_path": "documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-datadictionary.md",
+      "file_path": "documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary.md",
       "hash": "b27adaa01e7c800402f575c55ccdfc708f108cb52e991540002d3814c60fab25"
     },
     "https://developer.apple.com/documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary": {
       "etag": "\"1343-65c09a001d416-df\"",
-      "file_path": "documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-datadictionary.md",
+      "file_path": "documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary.md",
       "hash": "e742dea2065ccce65f50e1fc22b1bca17d6159afb5fb25c9bcb5b1de123048ec"
     },
     "https://developer.apple.com/documentation/apple_ads/medialocaledetailresponse": {
@@ -1022,12 +1022,12 @@
     },
     "https://developer.apple.com/documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary": {
       "etag": "\"1695-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-datadictionary.md",
+      "file_path": "documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary.md",
       "hash": "0e4a9c1bab123bf838a8f5b9d7e704ef7bb5707672463b4c716dade721f011f2"
     },
     "https://developer.apple.com/documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary": {
       "etag": "\"1b63-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-datadictionary.md",
+      "file_path": "documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary.md",
       "hash": "9a389cfd3283557562b88870056ba0471301cd832b74dae6381a1b02e46ea2ca"
     },
     "https://developer.apple.com/documentation/apple_ads/productpagelocaledetaillistresponse": {
@@ -1072,7 +1072,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/reportingadgroup/cpagoal-data.dictionary": {
       "etag": "\"fb9-65c09a001d416-df\"",
-      "file_path": "documentation/apple_ads/reportingadgroup/cpagoal-datadictionary.md",
+      "file_path": "documentation/apple_ads/reportingadgroup/cpagoal-data.dictionary.md",
       "hash": "77805f984ed30cff2945240c215e549508448986f38509299ea01ff4864c6a5e"
     },
     "https://developer.apple.com/documentation/apple_ads/reportingcampaign": {
@@ -1082,12 +1082,12 @@
     },
     "https://developer.apple.com/documentation/apple_ads/reportingcampaign/countryorregionservingstatereasons-data.dictionary": {
       "etag": "\"16e6-65d55aafa5e59-df\"",
-      "file_path": "documentation/apple_ads/reportingcampaign/countryorregionservingstatereasons-datadictionary.md",
+      "file_path": "documentation/apple_ads/reportingcampaign/countryorregionservingstatereasons-data.dictionary.md",
       "hash": "6f627a55f3000d73970d0a012f156ccc9aee6612c17856fec2be59c1ab628059"
     },
     "https://developer.apple.com/documentation/apple_ads/reportingcampaign/targetcpa-data.dictionary": {
       "etag": "\"fe7-65c099ffba1f9-df\"",
-      "file_path": "documentation/apple_ads/reportingcampaign/targetcpa-datadictionary.md",
+      "file_path": "documentation/apple_ads/reportingcampaign/targetcpa-data.dictionary.md",
       "hash": "0d0183045e80ae8ee8a0241e92ee1cfb6d0b8188b201e6311177c8ff91c61cc7"
     },
     "https://developer.apple.com/documentation/apple_ads/reportingdataresponse": {
@@ -1262,7 +1262,7 @@
     },
     "https://developer.apple.com/documentation/apple_ads/voidresponse/data-data.dictionary": {
       "etag": "\"d8b-65d55ab00bc37-df\"",
-      "file_path": "documentation/apple_ads/voidresponse/data-datadictionary.md",
+      "file_path": "documentation/apple_ads/voidresponse/data-data.dictionary.md",
       "hash": "00878dceffb658b632bd4e1838c2788d9cf65c7163a9e2d16c3f4ba094232082"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads.json": {
@@ -1462,7 +1462,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/apppreviewdevicesmappingresponse/data-data.dictionary.json": {
       "etag": "\"1293-65d55ab00bc37-df\"",
-      "file_path": "documentation/apple_ads/apppreviewdevicesmappingresponse/data-datadictionary.md",
+      "file_path": "documentation/apple_ads/apppreviewdevicesmappingresponse/data-data.dictionary.md",
       "hash": "b3f8a146f893200c91f9a68561a594b6bdf3cec09f080272d8cfa71d25d2593e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/billingeventtype.json": {
@@ -1487,7 +1487,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/budgetordercreate/bo-data.dictionary.json": {
       "etag": "\"1d65-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/budgetordercreate/bo-datadictionary.md",
+      "file_path": "documentation/apple_ads/budgetordercreate/bo-data.dictionary.md",
       "hash": "867c46fc564959174ba9211ef0faa4ef07bf0bb067832936f3ad697b9147d7dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/budgetorderinfo.json": {
@@ -1512,7 +1512,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/budgetorderupdate/bo-data.dictionary.json": {
       "etag": "\"1d3f-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/budgetorderupdate/bo-datadictionary.md",
+      "file_path": "documentation/apple_ads/budgetorderupdate/bo-data.dictionary.md",
       "hash": "347ed3195f3e0008d843ce800c20567dd10611ab3c0e3e517bc036f5bbee24ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/calling-the-apple-search-ads-api.json": {
@@ -1527,7 +1527,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/campaign/countryorregionservingstatereasons-data.dictionary.json": {
       "etag": "\"1d1c-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/campaign/countryorregionservingstatereasons-datadictionary.md",
+      "file_path": "documentation/apple_ads/campaign/countryorregionservingstatereasons-data.dictionary.md",
       "hash": "25a772e96a989510437d2cb4b1180368f747102c7f1387fd7d2566f4aaf943ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/campaignappdetail.json": {
@@ -1667,7 +1667,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/creativelocalizationwithassets/apppreviewdevicewithassets-data.dictionary.json": {
       "etag": "\"1018-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/creativelocalizationwithassets/apppreviewdevicewithassets-datadictionary.md",
+      "file_path": "documentation/apple_ads/creativelocalizationwithassets/apppreviewdevicewithassets-data.dictionary.md",
       "hash": "8a3fabac1795b6ff9e249eedcb82952c350f55f3b6bcce1ce894245173f09a33"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/creativeresponse.json": {
@@ -1712,12 +1712,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/customreportrequest/selector-data.dictionary.json": {
       "etag": "\"1424-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/customreportrequest/selector-datadictionary.md",
+      "file_path": "documentation/apple_ads/customreportrequest/selector-data.dictionary.md",
       "hash": "82ba6b5dbb7c478d81e5555bcf3c026c5dc776107156a0fef4f659296ff0875e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/customreportrequest/selector-data.dictionary/conditions-data.dictionary.json": {
       "etag": "\"122f-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/customreportrequest/selector-data.dictionary/conditions-datadictionary.md",
+      "file_path": "documentation/apple_ads/customreportrequest/selector-data.dictionary/conditions-data.dictionary.md",
       "hash": "e1c7d3bdbfe15cab4d754ab4dfa71bf01a1768fc334ca6b7f9f9cbb18fc624cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/customreportresponse.json": {
@@ -1727,12 +1727,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/customreportresponse/selector-data.dictionary.json": {
       "etag": "\"1449-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/customreportresponse/selector-datadictionary.md",
+      "file_path": "documentation/apple_ads/customreportresponse/selector-data.dictionary.md",
       "hash": "2b4d2c22ba2e41851f2a3a413a3dc8b84e3013c3b0ebb548a8d627ff29e44374"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/customreportresponse/selector-data.dictionary/conditions-data.dictionary.json": {
       "etag": "\"1251-65d55aaf862e7-df\"",
-      "file_path": "documentation/apple_ads/customreportresponse/selector-data.dictionary/conditions-datadictionary.md",
+      "file_path": "documentation/apple_ads/customreportresponse/selector-data.dictionary/conditions-data.dictionary.md",
       "hash": "4dc7b2594b17fbc9a185d70e636bd222d2b453a5b539c8e4d318022e3d103341"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/customreportresponsebody.json": {
@@ -1837,7 +1837,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/find-ad-groups-(org-level).json": {
       "etag": "\"4913-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/find-ad-groups-org-level.md",
+      "file_path": "documentation/apple_ads/find-ad-groups-(org-level).md",
       "hash": "506913be5ce95a2f04d5b97e5a2fba55fc3f978da137cbd0a0bcb6db77d04a54"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/find-ad-groups.json": {
@@ -1847,7 +1847,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/find-ads-(org-level).json": {
       "etag": "\"4180-65d55aafa5e59-df\"",
-      "file_path": "documentation/apple_ads/find-ads-org-level.md",
+      "file_path": "documentation/apple_ads/find-ads-(org-level).md",
       "hash": "8181beadd1b63f70caecfeb45d74524c6ef771fc4aad40ef554669eeae064ce7"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/find-ads.json": {
@@ -2197,12 +2197,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary.json": {
       "etag": "\"164b-65c09a001d416-df\"",
-      "file_path": "documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-datadictionary.md",
+      "file_path": "documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary.md",
       "hash": "b27adaa01e7c800402f575c55ccdfc708f108cb52e991540002d3814c60fab25"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary.json": {
       "etag": "\"1343-65c09a001d416-df\"",
-      "file_path": "documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-datadictionary.md",
+      "file_path": "documentation/apple_ads/medialocaledetail/apppreviewdevicewithassets-data.dictionary/mediaappprevieworscreenshotsdetail-data.dictionary.md",
       "hash": "e742dea2065ccce65f50e1fc22b1bca17d6159afb5fb25c9bcb5b1de123048ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/medialocaledetailresponse.json": {
@@ -2287,12 +2287,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary.json": {
       "etag": "\"1695-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-datadictionary.md",
+      "file_path": "documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary.md",
       "hash": "0e4a9c1bab123bf838a8f5b9d7e704ef7bb5707672463b4c716dade721f011f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary.json": {
       "etag": "\"1b63-65d55aafec594-df\"",
-      "file_path": "documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-datadictionary.md",
+      "file_path": "documentation/apple_ads/productpagelocaledetail/apppreviewdevicewithassets-data.dictionary/any-key-data.dictionary.md",
       "hash": "9a389cfd3283557562b88870056ba0471301cd832b74dae6381a1b02e46ea2ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/productpagelocaledetaillistresponse.json": {
@@ -2337,7 +2337,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/reportingadgroup/cpagoal-data.dictionary.json": {
       "etag": "\"fb9-65c09a001d416-df\"",
-      "file_path": "documentation/apple_ads/reportingadgroup/cpagoal-datadictionary.md",
+      "file_path": "documentation/apple_ads/reportingadgroup/cpagoal-data.dictionary.md",
       "hash": "77805f984ed30cff2945240c215e549508448986f38509299ea01ff4864c6a5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/reportingcampaign.json": {
@@ -2347,12 +2347,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/reportingcampaign/countryorregionservingstatereasons-data.dictionary.json": {
       "etag": "\"16e6-65d55aafa5e59-df\"",
-      "file_path": "documentation/apple_ads/reportingcampaign/countryorregionservingstatereasons-datadictionary.md",
+      "file_path": "documentation/apple_ads/reportingcampaign/countryorregionservingstatereasons-data.dictionary.md",
       "hash": "6f627a55f3000d73970d0a012f156ccc9aee6612c17856fec2be59c1ab628059"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/reportingcampaign/targetcpa-data.dictionary.json": {
       "etag": "\"fe7-65c099ffba1f9-df\"",
-      "file_path": "documentation/apple_ads/reportingcampaign/targetcpa-datadictionary.md",
+      "file_path": "documentation/apple_ads/reportingcampaign/targetcpa-data.dictionary.md",
       "hash": "0d0183045e80ae8ee8a0241e92ee1cfb6d0b8188b201e6311177c8ff91c61cc7"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/reportingdataresponse.json": {
@@ -2527,7 +2527,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple_ads/voidresponse/data-data.dictionary.json": {
       "etag": "\"d8b-65d55ab00bc37-df\"",
-      "file_path": "documentation/apple_ads/voidresponse/data-datadictionary.md",
+      "file_path": "documentation/apple_ads/voidresponse/data-data.dictionary.md",
       "hash": "00878dceffb658b632bd4e1838c2788d9cf65c7163a9e2d16c3f4ba094232082"
     }
   },

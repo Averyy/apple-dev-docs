@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibility_design_for_mac_catalyst": {
       "etag": "\"1c10-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/accessibility-design-for-mac-catalyst.md",
+      "file_path": "documentation/Accessibility/accessibility_design_for_mac_catalyst.md",
       "hash": "63ee540018a029405400faed77eae23a068c958dad9c7c05d8422e996f8e68f9"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification": {
@@ -37,17 +37,17 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/announcement/init(_:)-46byj": {
       "etag": "\"2200-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init-46byj.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init(_)-46byj.md",
       "hash": "00b3104cedf5c3317762e8004f3692be5e048131fd6b5935d9803bc7b6a50a79"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/announcement/init(_:)-621va": {
       "etag": "\"1fea-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init-621va.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init(_)-621va.md",
       "hash": "800ec6b6d140b0c99adefe35f8880983dddf9796f4ad25cfbfbd26c0d0a49609"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/announcement/init(_:)-btpf": {
       "etag": "\"20d5-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init-btpf.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init(_)-btpf.md",
       "hash": "bf9807d7c52acd859c20c883c268b29645b084cf874374a917b0ea9f36436724"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/layoutchanged": {
@@ -57,7 +57,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/layoutchanged/init(_:)": {
       "etag": "\"1582-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/layoutchanged/init.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/layoutchanged/init(_).md",
       "hash": "6720c0950bf0307ec0c111f0d023ccc34433c54e34883c0282297b1428c587c6"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/pagescrolled": {
@@ -67,17 +67,17 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/pagescrolled/init(_:)-28520": {
       "etag": "\"1f8d-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init-28520.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init(_)-28520.md",
       "hash": "e0fe38c26dfac00dee5967e47997b4361f38e6f8ec4e7cd589614dabc1ee481b"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/pagescrolled/init(_:)-2lkx": {
       "etag": "\"21a3-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init-2lkx.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init(_)-2lkx.md",
       "hash": "fc54fce6501071baf48807e03a6eaac60b0c471336fe960ab681a64332543e64"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/pagescrolled/init(_:)-39fee": {
       "etag": "\"2078-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init-39fee.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init(_)-39fee.md",
       "hash": "27cd9b2f33820489ee262b4a6fbd5b8cdcbddb9efa7d9378e637b5600e58ba0b"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/screenchanged": {
@@ -87,7 +87,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitynotification/screenchanged/init(_:)": {
       "etag": "\"15d6-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/screenchanged/init.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/screenchanged/init(_).md",
       "hash": "a345866935214491e92498a19f1aec7231715a8a79c07b16e8f7a7e275a6caaa"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilityrequest": {
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilityrequest/init(coder:)": {
       "etag": "\"179b-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/accessibilityrequest/init-coder.md",
+      "file_path": "documentation/Accessibility/accessibilityrequest/init(coder).md",
       "hash": "0ccc701a3416e1541e95e4e62645654f6f5803c113cebbe294e632465ab7c819"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilityrequest/technology": {
@@ -132,7 +132,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/applicationaccessibilityenableddidchangemessage/init()": {
       "etag": "\"1c6b-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/applicationaccessibilityenableddidchangemessage/init.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/applicationaccessibilityenableddidchangemessage/init().md",
       "hash": "11cd3c3708708beac08df13fc7607d0f0b4ac63eb7531825b87498f5402fc2ff"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/applicationaccessibilityenableddidchangenotification": {
@@ -142,7 +142,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/canopensettings(for:)": {
       "etag": "\"1f9a-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/canopensettings-for.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/canopensettings(for).md",
       "hash": "b885cf354d46d91f6741f5d78ddef25ecd875265d5ac136b75c77fc4c7f5e90c"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/feature": {
@@ -177,7 +177,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/feature/init(rawvalue:)": {
       "etag": "\"19ea-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/feature/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/feature/init(rawvalue).md",
       "hash": "6175387558e77446eea6e274cf68a329eb3c447f4f45c876cccd7e7d71cfebed"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/feature/personalvoiceallowappstorequesttouse": {
@@ -187,7 +187,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/init()": {
       "etag": "\"ffe-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/init.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/init().md",
       "hash": "aa733e75f1508a799ae78aeb4a9c1434868dfadc3cd4a191e09041c7c5ad891a"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/isapplicationaccessibilityenabled": {
@@ -207,7 +207,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/opensettings(for:)": {
       "etag": "\"239a-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/opensettings-for.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/opensettings(for).md",
       "hash": "4a00edee98db766d9e9117460a14d831c4e98b59653db2cc25ac05cc4e1b2482"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitysettings/prefersactionslideralternative": {
@@ -287,7 +287,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitytechnology/init(rawvalue:)": {
       "etag": "\"16aa-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/accessibilitytechnology/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/accessibilitytechnology/init(rawvalue).md",
       "hash": "e58ab6eaeed9b0cf57a410957e9935f6dee7cd6d715961e5fdc6ede1e0577d8a"
     },
     "https://developer.apple.com/documentation/accessibility/accessibilitytechnology/speakscreen": {
@@ -337,7 +337,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axanimatedimagesenabled()": {
       "etag": "\"2786-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axanimatedimagesenabled.md",
+      "file_path": "documentation/Accessibility/axanimatedimagesenabled().md",
       "hash": "2646102399cbca88f2663cbb7fac1c39ea9ff3988ba9caa32f3f9209aed9eed6"
     },
     "https://developer.apple.com/documentation/accessibility/axbraillemap": {
@@ -352,27 +352,27 @@
     },
     "https://developer.apple.com/documentation/accessibility/axbraillemap/height(at:)": {
       "etag": "\"3900-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/height-at.md",
+      "file_path": "documentation/Accessibility/axbraillemap/height(at).md",
       "hash": "4ed9a3deb05f47474ea27375ea70060307e95adf8cd7b202be0f96d8aeb419ce"
     },
     "https://developer.apple.com/documentation/accessibility/axbraillemap/init(coder:)": {
       "etag": "\"177d-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/init-coder.md",
+      "file_path": "documentation/Accessibility/axbraillemap/init(coder).md",
       "hash": "688ab2437b783968633e6585892bdf66b1a1a066f96eb5274e4aaba815765a08"
     },
     "https://developer.apple.com/documentation/accessibility/axbraillemap/present(_:)": {
       "etag": "\"2c54-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/present.md",
+      "file_path": "documentation/Accessibility/axbraillemap/present(_).md",
       "hash": "a3fa47247d1a9e4ec3996cb12af16de2ddf945e33a2399d83955b898357ae4e2"
     },
     "https://developer.apple.com/documentation/accessibility/axbraillemap/setheight(_:at:)": {
       "etag": "\"39c0-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/setheight-at.md",
+      "file_path": "documentation/Accessibility/axbraillemap/setheight(_,at).md",
       "hash": "7e4325e7621304d24cf3050e20a819b593a1aa49d7e0a54a1d7d2c26c1da1efe"
     },
     "https://developer.apple.com/documentation/accessibility/axbraillemap/subscript(_:)": {
       "etag": "\"293e-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/subscript.md",
+      "file_path": "documentation/Accessibility/axbraillemap/subscript(_).md",
       "hash": "0f35f48a6a53d1d4689fdb9f53f4cef41ceb7096cc535574795c234ad22e8f5d"
     },
     "https://developer.apple.com/documentation/accessibility/axbraillemaprenderer": {
@@ -397,7 +397,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/defaulttable(for:)": {
       "etag": "\"2660-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/defaulttable-for.md",
+      "file_path": "documentation/Accessibility/axbrailletable/defaulttable(for).md",
       "hash": "995fd71995641b95b6f764702d4652c84e202a71034eb66f289aa587e1c7b66b"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/identifier": {
@@ -407,12 +407,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/init(coder:)": {
       "etag": "\"17c8-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/init-coder.md",
+      "file_path": "documentation/Accessibility/axbrailletable/init(coder).md",
       "hash": "05f09ade46a5f9cc9759ff2904056913629982b42cf7efcd21e921c5f4fa05f5"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/init(identifier:)": {
       "etag": "\"243e-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/init-identifier.md",
+      "file_path": "documentation/Accessibility/axbrailletable/init(identifier).md",
       "hash": "205e6c4c930ab1f8a546ad5d6b4ae79d21b3ee8f8bf708068c64b85b10a5e781"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/iseightdot": {
@@ -427,7 +427,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/languageagnostictables()": {
       "etag": "\"237a-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/languageagnostictables.md",
+      "file_path": "documentation/Accessibility/axbrailletable/languageagnostictables().md",
       "hash": "64a69b586e15d40354c821d9374e5cafabc5d84ba67190e10a9b797b81b9d328"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/locales": {
@@ -452,12 +452,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/supportedlocales()": {
       "etag": "\"2501-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/supportedlocales.md",
+      "file_path": "documentation/Accessibility/axbrailletable/supportedlocales().md",
       "hash": "15edcfbdf74c3481d6b2c82865119d5214149d8d25dd5b2636ccc29ff5dd7fd7"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletable/tables(for:)": {
       "etag": "\"2878-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/tables-for.md",
+      "file_path": "documentation/Accessibility/axbrailletable/tables(for).md",
       "hash": "157fb32bb08b371002f934f6cd86e6b8d08a51abb6f9bf35b3d4a520d61a852b"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletranslationresult": {
@@ -467,12 +467,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletranslationresult/init(coder:)": {
       "etag": "\"1881-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslationresult/init-coder.md",
+      "file_path": "documentation/Accessibility/axbrailletranslationresult/init(coder).md",
       "hash": "985c41721ace67dcaee73e6788fc94e1cda8a488fc071b50df7361a21990d4dd"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletranslationresult/inputindex(forresultindex:)": {
       "etag": "\"2084-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslationresult/inputindex-forresultindex.md",
+      "file_path": "documentation/Accessibility/axbrailletranslationresult/inputindex(forresultindex).md",
       "hash": "c96065fc41e3f6a1410749f5e1139d779882de7d36d27a9ab56f850892fc7db6"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletranslationresult/resultstring": {
@@ -487,17 +487,17 @@
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletranslator/backtranslatebraille(_:)": {
       "etag": "\"2d29-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslator/backtranslatebraille.md",
+      "file_path": "documentation/Accessibility/axbrailletranslator/backtranslatebraille(_).md",
       "hash": "b7fb3ed11b7c5bbcaa81d6c37322a91cec7c8b7603ed8aa818cadc12b78a7361"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletranslator/init(brailletable:)": {
       "etag": "\"2465-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslator/init-brailletable.md",
+      "file_path": "documentation/Accessibility/axbrailletranslator/init(brailletable).md",
       "hash": "4731c460c0a0362cfb39af96863f9740ab5d8439a23d10828d253f75eb24bb1f"
     },
     "https://developer.apple.com/documentation/accessibility/axbrailletranslator/translateprinttext(_:)": {
       "etag": "\"2cf9-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslator/translateprinttext.md",
+      "file_path": "documentation/Accessibility/axbrailletranslator/translateprinttext(_).md",
       "hash": "df542b8d20ef50440c0dab31c400c519ee686eaccdfda50baf1f7a0012a0bcd9"
     },
     "https://developer.apple.com/documentation/accessibility/axcategoricaldataaxisdescriptor": {
@@ -512,12 +512,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axcategoricaldataaxisdescriptor/init(attributedtitle:categoryorder:)": {
       "etag": "\"34e6-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axcategoricaldataaxisdescriptor/init-attributedtitlecategoryorder.md",
+      "file_path": "documentation/Accessibility/axcategoricaldataaxisdescriptor/init(attributedtitle,categoryorder).md",
       "hash": "5162e8a89184abdc2dc2266f06ce10ca30f1521d63dd8ca5bb5c6fe5dbbec913"
     },
     "https://developer.apple.com/documentation/accessibility/axcategoricaldataaxisdescriptor/init(title:categoryorder:)": {
       "etag": "\"3367-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axcategoricaldataaxisdescriptor/init-titlecategoryorder.md",
+      "file_path": "documentation/Accessibility/axcategoricaldataaxisdescriptor/init(title,categoryorder).md",
       "hash": "4f9e7085fd6c53dc066712f6e460c77a8e088207632578205fc71eeab2064ac4"
     },
     "https://developer.apple.com/documentation/accessibility/axchart": {
@@ -547,7 +547,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/contentdirection-swift.enum": {
       "etag": "\"65fc-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swiftenum.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swift.enum.md",
       "hash": "ab99b51f6ae3e9ec0d37f40aa58872fab86a56459947a18bf92b38b27ba28d6e"
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/contentdirection-swift.enum/bottomtotop": {
@@ -557,7 +557,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/contentdirection-swift.enum/init(rawvalue:)": {
       "etag": "\"1d07-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swift.enum/init(rawvalue).md",
       "hash": "d2cebaaa2560193ba9a1c4811f848a9e757a51c59210d7729902879f838803ab"
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/contentdirection-swift.enum/lefttoright": {
@@ -587,7 +587,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/contentdirection-swift.property": {
       "etag": "\"2f3b-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swiftproperty.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swift.property.md",
       "hash": "6a9863670ac70bc300e94b02e45f0dbd567c64229efc6828d32c3e4f76124743"
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/contentframe": {
@@ -597,12 +597,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/init(attributedtitle:summary:xaxis:yaxis:additionalaxes:series:)": {
       "etag": "\"44dc-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/init-attributedtitlesummaryxaxisyaxisadditionalaxesseries.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/init(attributedtitle,summary,xaxis,yaxis,additionalaxes,series).md",
       "hash": "edd016970181d3082575c2fc11b0571fe6fa5aba8bb61a7f82f9484a4a41558a"
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/init(title:summary:xaxis:yaxis:additionalaxes:series:)": {
       "etag": "\"40e3-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/init-titlesummaryxaxisyaxisadditionalaxesseries.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/init(title,summary,xaxis,yaxis,additionalaxes,series).md",
       "hash": "f500fce24ef26f9cdcaa42d2ce11f73a1a4a26bccba9acc9a0429ef41b1c41e9"
     },
     "https://developer.apple.com/documentation/accessibility/axchartdescriptor/series": {
@@ -647,7 +647,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axcustomcontent/importance-swift.enum": {
       "etag": "\"56dc-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/importance-swiftenum.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/importance-swift.enum.md",
       "hash": "93764a004ec79a9cb4fa806ef0d25fb69def2fcf9a071a747b6c7c0746ce6091"
     },
     "https://developer.apple.com/documentation/accessibility/axcustomcontent/importance-swift.enum/default": {
@@ -662,27 +662,27 @@
     },
     "https://developer.apple.com/documentation/accessibility/axcustomcontent/importance-swift.enum/init(rawvalue:)": {
       "etag": "\"1c4c-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/importance-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/importance-swift.enum/init(rawvalue).md",
       "hash": "0d168d3696daa2b24bb19ec0897c2ecb41261090be0cf3df2cc9943af81c072a"
     },
     "https://developer.apple.com/documentation/accessibility/axcustomcontent/importance-swift.property": {
       "etag": "\"3c74-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/importance-swiftproperty.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/importance-swift.property.md",
       "hash": "e627e92ddb20005206ff273a3bee4bf92dbd83bd5a49c80ce7a5b96c8e0f3209"
     },
     "https://developer.apple.com/documentation/accessibility/axcustomcontent/init(attributedlabel:attributedvalue:)": {
       "etag": "\"381c-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/init-attributedlabelattributedvalue.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/init(attributedlabel,attributedvalue).md",
       "hash": "f5072f73977a4ed52613cdd5da6cf96464be32594b4f77468e5b104d76ce61e5"
     },
     "https://developer.apple.com/documentation/accessibility/axcustomcontent/init(coder:)": {
       "etag": "\"25ba-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/init-coder.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/init(coder).md",
       "hash": "65facb01a06c70a44157c5d9fad264aed9ca74a8fbf134d093017240f5669801"
     },
     "https://developer.apple.com/documentation/accessibility/axcustomcontent/init(label:value:)": {
       "etag": "\"3714-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/init-labelvalue.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/init(label,value).md",
       "hash": "ff90b99c0f68468063182aa45c332e985dfd25f8331eeeb3d52342dd50ad9093"
     },
     "https://developer.apple.com/documentation/accessibility/axcustomcontent/label": {
@@ -742,12 +742,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axdatapoint/init(x:y:additionalvalues:label:)-4v3sb": {
       "etag": "\"2da3-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axdatapoint/init-xyadditionalvalueslabel-4v3sb.md",
+      "file_path": "documentation/Accessibility/axdatapoint/init(x,y,additionalvalues,label)-4v3sb.md",
       "hash": "c560af43b13c81bb2e0ce311a4305f1183863a684532d9e6465b73a866652770"
     },
     "https://developer.apple.com/documentation/accessibility/axdatapoint/init(x:y:additionalvalues:label:)-83xvg": {
       "etag": "\"2da3-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axdatapoint/init-xyadditionalvalueslabel-83xvg.md",
+      "file_path": "documentation/Accessibility/axdatapoint/init(x,y,additionalvalues,label)-83xvg.md",
       "hash": "e304b19597c13908b68f95b5ce6a6af0c67e4e9fa24b34ebe2982c7ec1c366c7"
     },
     "https://developer.apple.com/documentation/accessibility/axdatapoint/label": {
@@ -762,12 +762,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axdatapoint/value/category(_:)": {
       "etag": "\"1cb7-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axdatapoint/value/category.md",
+      "file_path": "documentation/Accessibility/axdatapoint/value/category(_).md",
       "hash": "ef1a70f2a08819aa451c7ab29f4aa4c1033f1a5a79dfc60415c8d3c31e9f3357"
     },
     "https://developer.apple.com/documentation/accessibility/axdatapoint/value/number(_:)": {
       "etag": "\"1ca6-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axdatapoint/value/number.md",
+      "file_path": "documentation/Accessibility/axdatapoint/value/number(_).md",
       "hash": "4fe7a5b7d782902f77e315a5bee74acf00f829b96ad627854cfd238293862a2f"
     },
     "https://developer.apple.com/documentation/accessibility/axdatapoint/xvalue": {
@@ -802,12 +802,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axdataseriesdescriptor/init(attributedname:iscontinuous:datapoints:)": {
       "etag": "\"3fa8-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axdataseriesdescriptor/init-attributednameiscontinuousdatapoints.md",
+      "file_path": "documentation/Accessibility/axdataseriesdescriptor/init(attributedname,iscontinuous,datapoints).md",
       "hash": "d42f26735f4974e4965279d6866748b7311598a35a4e11698d0e49a73faef63f"
     },
     "https://developer.apple.com/documentation/accessibility/axdataseriesdescriptor/init(name:iscontinuous:datapoints:)": {
       "etag": "\"4026-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axdataseriesdescriptor/init-nameiscontinuousdatapoints.md",
+      "file_path": "documentation/Accessibility/axdataseriesdescriptor/init(name,iscontinuous,datapoints).md",
       "hash": "6458e97d4aea13e0e49776b36701f057125138dc6223153092885deed1eced60"
     },
     "https://developer.apple.com/documentation/accessibility/axdataseriesdescriptor/iscontinuous": {
@@ -837,7 +837,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesession/options/init(rawvalue:)": {
       "etag": "\"1bf2-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesession/options/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesession/options/init(rawvalue).md",
       "hash": "39559778a6603cbee1e6f01151a2823835af21d8aa2256b1741ee6a16d068618"
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesession/options/invertcolors": {
@@ -862,7 +862,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesessionerror-swift.struct": {
       "etag": "\"510d-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesessionerror-swiftstruct.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesessionerror-swift.struct.md",
       "hash": "9274b843f08308744327b65f6339fb4a57f93f15b3a326d75a1eda45b25c8543"
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesessionerror-swift.struct/appnotentitled": {
@@ -882,7 +882,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesessionerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"19b3-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesessionerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesessionerror-swift.struct/code/init(rawvalue).md",
       "hash": "d5d9b9f4366eba88ec7439f4ea339ce9a0a2893a3ccb11cbc9eb978ba82afb3f"
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesessionerror-swift.struct/code/overrideisalreadyactive": {
@@ -932,12 +932,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesessionmanager/beginoverridesession(enabling:disabling:)": {
       "etag": "\"3e0f-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesessionmanager/beginoverridesession-enablingdisabling.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesessionmanager/beginoverridesession(enabling,disabling).md",
       "hash": "16f7be7ba11ec425af374b68de2fcfa23209b815b5a7093151637933cd7fc672"
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesessionmanager/end(_:)": {
       "etag": "\"2c16-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesessionmanager/end.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesessionmanager/end(_).md",
       "hash": "0e33270528133065e8df58e1f43f157b7217e8b3eb4f2870cb5dff7a332af339"
     },
     "https://developer.apple.com/documentation/accessibility/axfeatureoverridesessionmanager/sharedinstance": {
@@ -952,17 +952,17 @@
     },
     "https://developer.apple.com/documentation/accessibility/axliveaudiograph/start()": {
       "etag": "\"22bf-65d55cdcda16e-df\"",
-      "file_path": "documentation/Accessibility/axliveaudiograph/start.md",
+      "file_path": "documentation/Accessibility/axliveaudiograph/start().md",
       "hash": "e2f282cca5ea3f5672957398521655392efc47171657287abbc61096173a12f2"
     },
     "https://developer.apple.com/documentation/accessibility/axliveaudiograph/stop()": {
       "etag": "\"22b4-65d55cdcda16e-df\"",
-      "file_path": "documentation/Accessibility/axliveaudiograph/stop.md",
+      "file_path": "documentation/Accessibility/axliveaudiograph/stop().md",
       "hash": "72ff63602dc3650fc70c414e8ae917a0f3510ddb905a518ee871b7bdcab71204"
     },
     "https://developer.apple.com/documentation/accessibility/axliveaudiograph/updatevalue(_:)": {
       "etag": "\"27c6-65d55cdcda16e-df\"",
-      "file_path": "documentation/Accessibility/axliveaudiograph/updatevalue.md",
+      "file_path": "documentation/Accessibility/axliveaudiograph/updatevalue(_).md",
       "hash": "ee200018305de4f71470ff5d9a581d50f18d5fd392628e03222164ffba02735b"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpression": {
@@ -987,12 +987,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionfenced/init(expressions:open:close:)": {
       "etag": "\"30ee-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionfenced/init-expressionsopenclose.md",
+      "file_path": "documentation/Accessibility/axmathexpressionfenced/init(expressions,open,close).md",
       "hash": "933033fa7d0944503c44def4dd665ae068640c37c07b45d68224cfa0cab38d70"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionfenced/init(expressions:openstring:closestring:)": {
       "etag": "\"20f8-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionfenced/init-expressionsopenstringclosestring.md",
+      "file_path": "documentation/Accessibility/axmathexpressionfenced/init(expressions,openstring,closestring).md",
       "hash": "051a02117cdebce3a26995e231f3bce0043b5a1482025fa2a5d3a9bfd4a30c82"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionfenced/openstring": {
@@ -1012,7 +1012,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionfraction/init(numeratorexpression:denimonatorexpression:)": {
       "etag": "\"2a8b-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionfraction/init-numeratorexpressiondenimonatorexpression.md",
+      "file_path": "documentation/Accessibility/axmathexpressionfraction/init(numeratorexpression,denimonatorexpression).md",
       "hash": "9cc7ad86ab2abbd6b33f2c716730fba8c165878a4b2d2b455b060818e28df2b2"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionfraction/numeratorexpression": {
@@ -1032,7 +1032,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionidentifier/init(content:)": {
       "etag": "\"23e3-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionidentifier/init-content.md",
+      "file_path": "documentation/Accessibility/axmathexpressionidentifier/init(content).md",
       "hash": "b285f82a64a348e9f82cdee0adef65750fa19d7f6eb85376d950c00ff2533ea4"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionmultiscript": {
@@ -1047,7 +1047,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionmultiscript/init(baseexpression:prescriptexpressions:postscriptexpressions:)": {
       "etag": "\"351a-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionmultiscript/init-baseexpressionprescriptexpressionspostscriptexpressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressionmultiscript/init(baseexpression,prescriptexpressions,postscriptexpressions).md",
       "hash": "4475701f3746318b6aeca0c9e01f1e19341858ee4c8270d1374665aab4a985d4"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionmultiscript/postscriptexpressions": {
@@ -1072,7 +1072,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionnumber/init(content:)": {
       "etag": "\"2387-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionnumber/init-content.md",
+      "file_path": "documentation/Accessibility/axmathexpressionnumber/init(content).md",
       "hash": "8a961f3a0a79ab997ed8601976970837892ed314135e15840d3c4eb0fd4e9f3e"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionoperator": {
@@ -1087,7 +1087,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionoperator/init(content:)": {
       "etag": "\"23b5-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionoperator/init-content.md",
+      "file_path": "documentation/Accessibility/axmathexpressionoperator/init(content).md",
       "hash": "bcc2fce13fae30b13bf5cc6d461cfb1f96b810862f05b3895bd608df4d3ce64f"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionprovider": {
@@ -1097,7 +1097,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionprovider/accessibilitymathexpression()": {
       "etag": "\"246f-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionprovider/accessibilitymathexpression.md",
+      "file_path": "documentation/Accessibility/axmathexpressionprovider/accessibilitymathexpression().md",
       "hash": "9843086bf7a34305673c66e548aa9d2ae45c93c98e6cccf790920262fbcc1399"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionroot": {
@@ -1107,7 +1107,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionroot/init(radicandexpressions:rootindexexpression:)": {
       "etag": "\"29ae-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionroot/init-radicandexpressionsrootindexexpression.md",
+      "file_path": "documentation/Accessibility/axmathexpressionroot/init(radicandexpressions,rootindexexpression).md",
       "hash": "6e61649c565973054bbaec671c92c54c3bd01f6f2f555d76979e0cd8223af815"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionroot/radicandexpressions": {
@@ -1132,7 +1132,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionrow/init(expressions:)": {
       "etag": "\"2339-65d55cdcda16e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionrow/init-expressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressionrow/init(expressions).md",
       "hash": "8e23e166a2a9a557b246e5721509d7a42b83afe0bdae30064b62eb32c1678588"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionsubsuperscript": {
@@ -1147,7 +1147,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionsubsuperscript/init(baseexpression:subscriptexpressions:superscriptexpressions:)": {
       "etag": "\"2f82-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionsubsuperscript/init-baseexpressionsubscriptexpressionssuperscriptexpressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressionsubsuperscript/init(baseexpression,subscriptexpressions,superscriptexpressions).md",
       "hash": "c116b40bb9f3e8590a1ea9d76885e28c7b9a76ee852771942e13ff3b5863b879"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionsubsuperscript/subscriptexpressions": {
@@ -1172,7 +1172,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressiontable/init(expressions:)": {
       "etag": "\"2367-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressiontable/init-expressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressiontable/init(expressions).md",
       "hash": "e456d27f0e26d8ed1ab8f5c7122089b2f3d563fbd8b5b1277d0fcfd54f1197c2"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressiontablecell": {
@@ -1187,7 +1187,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressiontablecell/init(expressions:)": {
       "etag": "\"23c3-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressiontablecell/init-expressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressiontablecell/init(expressions).md",
       "hash": "9c41140472c207673651986f186fe02b5d528edb8cdf4aa091c695280bf6ef3b"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressiontablerow": {
@@ -1202,7 +1202,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressiontablerow/init(expressions:)": {
       "etag": "\"23ac-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressiontablerow/init-expressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressiontablerow/init(expressions).md",
       "hash": "7767ebbcede828b7be9242a78f20eff79ff01944874f70140e08a929133c65d0"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressiontext": {
@@ -1217,7 +1217,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressiontext/init(content:)": {
       "etag": "\"2359-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressiontext/init-content.md",
+      "file_path": "documentation/Accessibility/axmathexpressiontext/init(content).md",
       "hash": "45eccaf1b33c3141a8d903d348993e192c9fc4ce46370c4334befab50f62b27e"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionunderover": {
@@ -1232,7 +1232,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionunderover/init(baseexpression:underexpression:overexpression:)": {
       "etag": "\"2ef0-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionunderover/init-baseexpressionunderexpressionoverexpression.md",
+      "file_path": "documentation/Accessibility/axmathexpressionunderover/init(baseexpression,underexpression,overexpression).md",
       "hash": "2c8869c1b97b1d095af40b44ba28187acbed792f520879211324742bdf7ca0a9"
     },
     "https://developer.apple.com/documentation/accessibility/axmathexpressionunderover/overexpression": {
@@ -1262,7 +1262,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmfihearingdevice/ear/init(rawvalue:)": {
       "etag": "\"19f8-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmfihearingdevice/ear/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axmfihearingdevice/ear/init(rawvalue).md",
       "hash": "e72930648bf54c6bd2b00d3fb93747a42f9301fd4340226f670a5d11e08d67e9"
     },
     "https://developer.apple.com/documentation/accessibility/axmfihearingdevice/ear/left": {
@@ -1277,7 +1277,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmfihearingdevice/paireddeviceidentifiers()": {
       "etag": "\"380d-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmfihearingdevice/paireddeviceidentifiers.md",
+      "file_path": "documentation/Accessibility/axmfihearingdevice/paireddeviceidentifiers().md",
       "hash": "50123df14a3469068a32ff62fa583bee825f1e1d68138815ec67ec48013093f7"
     },
     "https://developer.apple.com/documentation/accessibility/axmfihearingdevice/paireduuidsdidchangenotification": {
@@ -1287,7 +1287,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmfihearingdevice/streamingear()": {
       "etag": "\"2f5a-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmfihearingdevice/streamingear.md",
+      "file_path": "documentation/Accessibility/axmfihearingdevice/streamingear().md",
       "hash": "361b3331b903f8b09cedc0001782e1e2cab7f3ca96ee47f2f1cb2a1eadee5dfd"
     },
     "https://developer.apple.com/documentation/accessibility/axmfihearingdevice/streamingeardidchangenotification": {
@@ -1297,12 +1297,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axmfihearingdevice/supportsbidirectionalstreaming()": {
       "etag": "\"2b56-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmfihearingdevice/supportsbidirectionalstreaming.md",
+      "file_path": "documentation/Accessibility/axmfihearingdevice/supportsbidirectionalstreaming().md",
       "hash": "499c77abcaf1e2f0062c58fbe2d52efbe3ef52505d5e90ce36456778ff539889"
     },
     "https://developer.apple.com/documentation/accessibility/axnamefromcolor(_:)": {
       "etag": "\"30b9-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axnamefromcolor.md",
+      "file_path": "documentation/Accessibility/axnamefromcolor(_).md",
       "hash": "d428f6e80ee5ed728a5dc16fb4a7a70a0eef6b594499266649b797ff26bd15b0"
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor": {
@@ -1317,12 +1317,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor/init(attributedtitle:range:gridlinepositions:valuedescriptionprovider:)": {
       "etag": "\"3694-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/init-attributedtitlerangegridlinepositionsvaluedescriptionprovider.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/init(attributedtitle,range,gridlinepositions,valuedescriptionprovider).md",
       "hash": "cda3cab87b77323ba37cf02101aed2bf6b6c456aec5e1cfd8a45971cf635884b"
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor/init(title:range:gridlinepositions:valuedescriptionprovider:)": {
       "etag": "\"329d-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/init-titlerangegridlinepositionsvaluedescriptionprovider.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/init(title,range,gridlinepositions,valuedescriptionprovider).md",
       "hash": "80aca604959f213bb08d97ddf6935442e6cc13ad175dc0f1865d73134c5c5ab5"
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor/range": {
@@ -1332,12 +1332,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum": {
       "etag": "\"4996-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swiftenum.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum.md",
       "hash": "69994d3e47a6ba78584b0a75f505644465ca3a8ef46091aa4f27410407e6875b"
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum/init(rawvalue:)": {
       "etag": "\"1d7a-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum/init(rawvalue).md",
       "hash": "5d340324c6312b3bedfcc2dd9b259148803459fb973e39c0b2158cf220a9ac64"
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum/linear": {
@@ -1357,7 +1357,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor/scaletype-swift.property": {
       "etag": "\"30c2-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swiftproperty.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swift.property.md",
       "hash": "ac5596a41eef796b25d1583ddaba88bdfa9fc51f5c557ab644bd2cc104e0f6a6"
     },
     "https://developer.apple.com/documentation/accessibility/axnumericdataaxisdescriptor/valuedescriptionprovider": {
@@ -1367,12 +1367,12 @@
     },
     "https://developer.apple.com/documentation/accessibility/axprefersheadanchoralternative()": {
       "etag": "\"2629-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axprefersheadanchoralternative.md",
+      "file_path": "documentation/Accessibility/axprefersheadanchoralternative().md",
       "hash": "df24474c3d2cbc943b076db3c0c74a3a9f88cb80e367a161639814737e4f9fc4"
     },
     "https://developer.apple.com/documentation/accessibility/axprefershorizontaltextlayout()": {
       "etag": "\"283c-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axprefershorizontaltextlayout.md",
+      "file_path": "documentation/Accessibility/axprefershorizontaltextlayout().md",
       "hash": "210538299e82087ea1e20a3a955e00b1748687681fa11fde57b5b60d3fb96261"
     },
     "https://developer.apple.com/documentation/accessibility/braille-displays": {
@@ -1402,7 +1402,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/delivering_an_exceptional_accessibility_experience": {
       "etag": "\"8639-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/delivering-an-exceptional-accessibility-experience.md",
+      "file_path": "documentation/Accessibility/delivering_an_exceptional_accessibility_experience.md",
       "hash": "bc1483bc0416977b84b9f6c3931dc9183968125098c3eb5f5fd82b2fcb82fa50"
     },
     "https://developer.apple.com/documentation/accessibility/enhancing-the-accessibility-of-your-swiftui-app": {
@@ -1437,7 +1437,7 @@
     },
     "https://developer.apple.com/documentation/accessibility/integrating_accessibility_into_your_app": {
       "etag": "W/\"181b91a1024fee5bd66da9b68bfa058d\"",
-      "file_path": "documentation/Accessibility/integrating-accessibility-into-your-app.md",
+      "file_path": "documentation/Accessibility/integrating_accessibility_into_your_app.md",
       "hash": "9d98d9f0dcd9320509d563fb1499c2fb004d0b0e5c617d9a862eb2a8d4f3ebfa"
     },
     "https://developer.apple.com/documentation/accessibility/mobility": {
@@ -1502,22 +1502,22 @@
     },
     "https://developer.apple.com/documentation/accessibility/wwdc21_challenge_large_text_challenge": {
       "etag": "\"1de5-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/wwdc21-challenge-large-text-challenge.md",
+      "file_path": "documentation/Accessibility/wwdc21_challenge_large_text_challenge.md",
       "hash": "4e94e9ec248b53925964cf2ab03bf04a0fde6854de9c42d193750635c20b0ab9"
     },
     "https://developer.apple.com/documentation/accessibility/wwdc21_challenge_speech_synthesizer_simulator": {
       "etag": "\"1da9-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/wwdc21-challenge-speech-synthesizer-simulator.md",
+      "file_path": "documentation/Accessibility/wwdc21_challenge_speech_synthesizer_simulator.md",
       "hash": "55c79be37a7254f773e4638f9c410e1cd1c602170e61fc57ab1e2090c48f9803"
     },
     "https://developer.apple.com/documentation/accessibility/wwdc21_challenge_voiceover_maze": {
       "etag": "\"23ab-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/wwdc21-challenge-voiceover-maze.md",
+      "file_path": "documentation/Accessibility/wwdc21_challenge_voiceover_maze.md",
       "hash": "6f1e0a4cd928c2fb7fd9904cef648d1eb651409c9572568c8e2136d3e53f170a"
     },
     "https://developer.apple.com/documentation/accessibility/wwdc22_challenge_learn_switch_control_through_gaming": {
       "etag": "\"2ddd-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/wwdc22-challenge-learn-switch-control-through-gaming.md",
+      "file_path": "documentation/Accessibility/wwdc22_challenge_learn_switch_control_through_gaming.md",
       "hash": "c13d44b6068ea7c4afacca591e5879f72de5288a0368a29f404bb0b55fd3bc4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/Accessibility.json": {
@@ -1542,7 +1542,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibility_design_for_mac_catalyst.json": {
       "etag": "\"1c10-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/accessibility-design-for-mac-catalyst.md",
+      "file_path": "documentation/Accessibility/accessibility_design_for_mac_catalyst.md",
       "hash": "63ee540018a029405400faed77eae23a068c958dad9c7c05d8422e996f8e68f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification.json": {
@@ -1557,17 +1557,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/announcement/init(_:)-46byj.json": {
       "etag": "\"2200-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init-46byj.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init(_)-46byj.md",
       "hash": "00b3104cedf5c3317762e8004f3692be5e048131fd6b5935d9803bc7b6a50a79"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/announcement/init(_:)-621va.json": {
       "etag": "\"1fea-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init-621va.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init(_)-621va.md",
       "hash": "800ec6b6d140b0c99adefe35f8880983dddf9796f4ad25cfbfbd26c0d0a49609"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/announcement/init(_:)-btpf.json": {
       "etag": "\"20d5-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init-btpf.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/announcement/init(_)-btpf.md",
       "hash": "bf9807d7c52acd859c20c883c268b29645b084cf874374a917b0ea9f36436724"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/layoutchanged.json": {
@@ -1577,7 +1577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/layoutchanged/init(_:).json": {
       "etag": "\"1582-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/layoutchanged/init.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/layoutchanged/init(_).md",
       "hash": "6720c0950bf0307ec0c111f0d023ccc34433c54e34883c0282297b1428c587c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/pagescrolled.json": {
@@ -1587,17 +1587,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/pagescrolled/init(_:)-28520.json": {
       "etag": "\"1f8d-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init-28520.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init(_)-28520.md",
       "hash": "e0fe38c26dfac00dee5967e47997b4361f38e6f8ec4e7cd589614dabc1ee481b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/pagescrolled/init(_:)-2lkx.json": {
       "etag": "\"21a3-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init-2lkx.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init(_)-2lkx.md",
       "hash": "fc54fce6501071baf48807e03a6eaac60b0c471336fe960ab681a64332543e64"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/pagescrolled/init(_:)-39fee.json": {
       "etag": "\"2078-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init-39fee.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/pagescrolled/init(_)-39fee.md",
       "hash": "27cd9b2f33820489ee262b4a6fbd5b8cdcbddb9efa7d9378e637b5600e58ba0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/screenchanged.json": {
@@ -1607,7 +1607,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitynotification/screenchanged/init(_:).json": {
       "etag": "\"15d6-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/accessibilitynotification/screenchanged/init.md",
+      "file_path": "documentation/Accessibility/accessibilitynotification/screenchanged/init(_).md",
       "hash": "a345866935214491e92498a19f1aec7231715a8a79c07b16e8f7a7e275a6caaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilityrequest.json": {
@@ -1622,7 +1622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilityrequest/init(coder:).json": {
       "etag": "\"179b-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/accessibilityrequest/init-coder.md",
+      "file_path": "documentation/Accessibility/accessibilityrequest/init(coder).md",
       "hash": "0ccc701a3416e1541e95e4e62645654f6f5803c113cebbe294e632465ab7c819"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilityrequest/technology.json": {
@@ -1652,7 +1652,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/applicationaccessibilityenableddidchangemessage/init().json": {
       "etag": "\"1c6b-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/applicationaccessibilityenableddidchangemessage/init.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/applicationaccessibilityenableddidchangemessage/init().md",
       "hash": "11cd3c3708708beac08df13fc7607d0f0b4ac63eb7531825b87498f5402fc2ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/applicationaccessibilityenableddidchangenotification.json": {
@@ -1662,7 +1662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/canopensettings(for:).json": {
       "etag": "\"1f9a-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/canopensettings-for.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/canopensettings(for).md",
       "hash": "b885cf354d46d91f6741f5d78ddef25ecd875265d5ac136b75c77fc4c7f5e90c"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/feature.json": {
@@ -1697,7 +1697,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/feature/init(rawvalue:).json": {
       "etag": "\"19ea-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/feature/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/feature/init(rawvalue).md",
       "hash": "6175387558e77446eea6e274cf68a329eb3c447f4f45c876cccd7e7d71cfebed"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/feature/personalvoiceallowappstorequesttouse.json": {
@@ -1707,7 +1707,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/init().json": {
       "etag": "\"ffe-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/init.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/init().md",
       "hash": "aa733e75f1508a799ae78aeb4a9c1434868dfadc3cd4a191e09041c7c5ad891a"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/isapplicationaccessibilityenabled.json": {
@@ -1727,7 +1727,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/opensettings(for:).json": {
       "etag": "\"239a-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/accessibilitysettings/opensettings-for.md",
+      "file_path": "documentation/Accessibility/accessibilitysettings/opensettings(for).md",
       "hash": "4a00edee98db766d9e9117460a14d831c4e98b59653db2cc25ac05cc4e1b2482"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitysettings/prefersactionslideralternative.json": {
@@ -1807,7 +1807,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitytechnology/init(rawvalue:).json": {
       "etag": "\"16aa-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/accessibilitytechnology/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/accessibilitytechnology/init(rawvalue).md",
       "hash": "e58ab6eaeed9b0cf57a410957e9935f6dee7cd6d715961e5fdc6ede1e0577d8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/accessibilitytechnology/speakscreen.json": {
@@ -1857,7 +1857,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axanimatedimagesenabled().json": {
       "etag": "\"2786-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axanimatedimagesenabled.md",
+      "file_path": "documentation/Accessibility/axanimatedimagesenabled().md",
       "hash": "2646102399cbca88f2663cbb7fac1c39ea9ff3988ba9caa32f3f9209aed9eed6"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbraillemap.json": {
@@ -1872,27 +1872,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbraillemap/height(at:).json": {
       "etag": "\"3900-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/height-at.md",
+      "file_path": "documentation/Accessibility/axbraillemap/height(at).md",
       "hash": "4ed9a3deb05f47474ea27375ea70060307e95adf8cd7b202be0f96d8aeb419ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbraillemap/init(coder:).json": {
       "etag": "\"177d-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/init-coder.md",
+      "file_path": "documentation/Accessibility/axbraillemap/init(coder).md",
       "hash": "688ab2437b783968633e6585892bdf66b1a1a066f96eb5274e4aaba815765a08"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbraillemap/present(_:).json": {
       "etag": "\"2c54-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/present.md",
+      "file_path": "documentation/Accessibility/axbraillemap/present(_).md",
       "hash": "a3fa47247d1a9e4ec3996cb12af16de2ddf945e33a2399d83955b898357ae4e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbraillemap/setheight(_:at:).json": {
       "etag": "\"39c0-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/setheight-at.md",
+      "file_path": "documentation/Accessibility/axbraillemap/setheight(_,at).md",
       "hash": "7e4325e7621304d24cf3050e20a819b593a1aa49d7e0a54a1d7d2c26c1da1efe"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbraillemap/subscript(_:).json": {
       "etag": "\"293e-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axbraillemap/subscript.md",
+      "file_path": "documentation/Accessibility/axbraillemap/subscript(_).md",
       "hash": "0f35f48a6a53d1d4689fdb9f53f4cef41ceb7096cc535574795c234ad22e8f5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbraillemaprenderer.json": {
@@ -1917,7 +1917,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/defaulttable(for:).json": {
       "etag": "\"2660-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/defaulttable-for.md",
+      "file_path": "documentation/Accessibility/axbrailletable/defaulttable(for).md",
       "hash": "995fd71995641b95b6f764702d4652c84e202a71034eb66f289aa587e1c7b66b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/identifier.json": {
@@ -1927,12 +1927,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/init(coder:).json": {
       "etag": "\"17c8-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/init-coder.md",
+      "file_path": "documentation/Accessibility/axbrailletable/init(coder).md",
       "hash": "05f09ade46a5f9cc9759ff2904056913629982b42cf7efcd21e921c5f4fa05f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/init(identifier:).json": {
       "etag": "\"243e-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/init-identifier.md",
+      "file_path": "documentation/Accessibility/axbrailletable/init(identifier).md",
       "hash": "205e6c4c930ab1f8a546ad5d6b4ae79d21b3ee8f8bf708068c64b85b10a5e781"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/iseightdot.json": {
@@ -1947,7 +1947,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/languageagnostictables().json": {
       "etag": "\"237a-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/languageagnostictables.md",
+      "file_path": "documentation/Accessibility/axbrailletable/languageagnostictables().md",
       "hash": "64a69b586e15d40354c821d9374e5cafabc5d84ba67190e10a9b797b81b9d328"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/locales.json": {
@@ -1972,12 +1972,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/supportedlocales().json": {
       "etag": "\"2501-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/supportedlocales.md",
+      "file_path": "documentation/Accessibility/axbrailletable/supportedlocales().md",
       "hash": "15edcfbdf74c3481d6b2c82865119d5214149d8d25dd5b2636ccc29ff5dd7fd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletable/tables(for:).json": {
       "etag": "\"2878-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletable/tables-for.md",
+      "file_path": "documentation/Accessibility/axbrailletable/tables(for).md",
       "hash": "157fb32bb08b371002f934f6cd86e6b8d08a51abb6f9bf35b3d4a520d61a852b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletranslationresult.json": {
@@ -1987,12 +1987,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletranslationresult/init(coder:).json": {
       "etag": "\"1881-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslationresult/init-coder.md",
+      "file_path": "documentation/Accessibility/axbrailletranslationresult/init(coder).md",
       "hash": "985c41721ace67dcaee73e6788fc94e1cda8a488fc071b50df7361a21990d4dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletranslationresult/inputindex(forresultindex:).json": {
       "etag": "\"2084-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslationresult/inputindex-forresultindex.md",
+      "file_path": "documentation/Accessibility/axbrailletranslationresult/inputindex(forresultindex).md",
       "hash": "c96065fc41e3f6a1410749f5e1139d779882de7d36d27a9ab56f850892fc7db6"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletranslationresult/resultstring.json": {
@@ -2007,17 +2007,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletranslator/backtranslatebraille(_:).json": {
       "etag": "\"2d29-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslator/backtranslatebraille.md",
+      "file_path": "documentation/Accessibility/axbrailletranslator/backtranslatebraille(_).md",
       "hash": "b7fb3ed11b7c5bbcaa81d6c37322a91cec7c8b7603ed8aa818cadc12b78a7361"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletranslator/init(brailletable:).json": {
       "etag": "\"2465-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslator/init-brailletable.md",
+      "file_path": "documentation/Accessibility/axbrailletranslator/init(brailletable).md",
       "hash": "4731c460c0a0362cfb39af96863f9740ab5d8439a23d10828d253f75eb24bb1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axbrailletranslator/translateprinttext(_:).json": {
       "etag": "\"2cf9-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axbrailletranslator/translateprinttext.md",
+      "file_path": "documentation/Accessibility/axbrailletranslator/translateprinttext(_).md",
       "hash": "df542b8d20ef50440c0dab31c400c519ee686eaccdfda50baf1f7a0012a0bcd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcategoricaldataaxisdescriptor.json": {
@@ -2032,12 +2032,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcategoricaldataaxisdescriptor/init(attributedtitle:categoryorder:).json": {
       "etag": "\"34e6-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axcategoricaldataaxisdescriptor/init-attributedtitlecategoryorder.md",
+      "file_path": "documentation/Accessibility/axcategoricaldataaxisdescriptor/init(attributedtitle,categoryorder).md",
       "hash": "5162e8a89184abdc2dc2266f06ce10ca30f1521d63dd8ca5bb5c6fe5dbbec913"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcategoricaldataaxisdescriptor/init(title:categoryorder:).json": {
       "etag": "\"3367-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axcategoricaldataaxisdescriptor/init-titlecategoryorder.md",
+      "file_path": "documentation/Accessibility/axcategoricaldataaxisdescriptor/init(title,categoryorder).md",
       "hash": "4f9e7085fd6c53dc066712f6e460c77a8e088207632578205fc71eeab2064ac4"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchart.json": {
@@ -2067,7 +2067,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/contentdirection-swift.enum.json": {
       "etag": "\"65fc-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swiftenum.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swift.enum.md",
       "hash": "ab99b51f6ae3e9ec0d37f40aa58872fab86a56459947a18bf92b38b27ba28d6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/contentdirection-swift.enum/bottomtotop.json": {
@@ -2077,7 +2077,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/contentdirection-swift.enum/init(rawvalue:).json": {
       "etag": "\"1d07-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swift.enum/init(rawvalue).md",
       "hash": "d2cebaaa2560193ba9a1c4811f848a9e757a51c59210d7729902879f838803ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/contentdirection-swift.enum/lefttoright.json": {
@@ -2107,7 +2107,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/contentdirection-swift.property.json": {
       "etag": "\"2f3b-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swiftproperty.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/contentdirection-swift.property.md",
       "hash": "6a9863670ac70bc300e94b02e45f0dbd567c64229efc6828d32c3e4f76124743"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/contentframe.json": {
@@ -2117,12 +2117,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/init(attributedtitle:summary:xaxis:yaxis:additionalaxes:series:).json": {
       "etag": "\"44dc-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/init-attributedtitlesummaryxaxisyaxisadditionalaxesseries.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/init(attributedtitle,summary,xaxis,yaxis,additionalaxes,series).md",
       "hash": "edd016970181d3082575c2fc11b0571fe6fa5aba8bb61a7f82f9484a4a41558a"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/init(title:summary:xaxis:yaxis:additionalaxes:series:).json": {
       "etag": "\"40e3-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axchartdescriptor/init-titlesummaryxaxisyaxisadditionalaxesseries.md",
+      "file_path": "documentation/Accessibility/axchartdescriptor/init(title,summary,xaxis,yaxis,additionalaxes,series).md",
       "hash": "f500fce24ef26f9cdcaa42d2ce11f73a1a4a26bccba9acc9a0429ef41b1c41e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axchartdescriptor/series.json": {
@@ -2167,7 +2167,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcustomcontent/importance-swift.enum.json": {
       "etag": "\"56dc-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/importance-swiftenum.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/importance-swift.enum.md",
       "hash": "93764a004ec79a9cb4fa806ef0d25fb69def2fcf9a071a747b6c7c0746ce6091"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcustomcontent/importance-swift.enum/default.json": {
@@ -2182,27 +2182,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcustomcontent/importance-swift.enum/init(rawvalue:).json": {
       "etag": "\"1c4c-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/importance-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/importance-swift.enum/init(rawvalue).md",
       "hash": "0d168d3696daa2b24bb19ec0897c2ecb41261090be0cf3df2cc9943af81c072a"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcustomcontent/importance-swift.property.json": {
       "etag": "\"3c74-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/importance-swiftproperty.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/importance-swift.property.md",
       "hash": "e627e92ddb20005206ff273a3bee4bf92dbd83bd5a49c80ce7a5b96c8e0f3209"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcustomcontent/init(attributedlabel:attributedvalue:).json": {
       "etag": "\"381c-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/init-attributedlabelattributedvalue.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/init(attributedlabel,attributedvalue).md",
       "hash": "f5072f73977a4ed52613cdd5da6cf96464be32594b4f77468e5b104d76ce61e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcustomcontent/init(coder:).json": {
       "etag": "\"25ba-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/init-coder.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/init(coder).md",
       "hash": "65facb01a06c70a44157c5d9fad264aed9ca74a8fbf134d093017240f5669801"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcustomcontent/init(label:value:).json": {
       "etag": "\"3714-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axcustomcontent/init-labelvalue.md",
+      "file_path": "documentation/Accessibility/axcustomcontent/init(label,value).md",
       "hash": "ff90b99c0f68468063182aa45c332e985dfd25f8331eeeb3d52342dd50ad9093"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axcustomcontent/label.json": {
@@ -2262,12 +2262,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdatapoint/init(x:y:additionalvalues:label:)-4v3sb.json": {
       "etag": "\"2da3-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axdatapoint/init-xyadditionalvalueslabel-4v3sb.md",
+      "file_path": "documentation/Accessibility/axdatapoint/init(x,y,additionalvalues,label)-4v3sb.md",
       "hash": "c560af43b13c81bb2e0ce311a4305f1183863a684532d9e6465b73a866652770"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdatapoint/init(x:y:additionalvalues:label:)-83xvg.json": {
       "etag": "\"2da3-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axdatapoint/init-xyadditionalvalueslabel-83xvg.md",
+      "file_path": "documentation/Accessibility/axdatapoint/init(x,y,additionalvalues,label)-83xvg.md",
       "hash": "e304b19597c13908b68f95b5ce6a6af0c67e4e9fa24b34ebe2982c7ec1c366c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdatapoint/label.json": {
@@ -2282,12 +2282,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdatapoint/value/category(_:).json": {
       "etag": "\"1cb7-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axdatapoint/value/category.md",
+      "file_path": "documentation/Accessibility/axdatapoint/value/category(_).md",
       "hash": "ef1a70f2a08819aa451c7ab29f4aa4c1033f1a5a79dfc60415c8d3c31e9f3357"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdatapoint/value/number(_:).json": {
       "etag": "\"1ca6-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axdatapoint/value/number.md",
+      "file_path": "documentation/Accessibility/axdatapoint/value/number(_).md",
       "hash": "4fe7a5b7d782902f77e315a5bee74acf00f829b96ad627854cfd238293862a2f"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdatapoint/xvalue.json": {
@@ -2322,12 +2322,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdataseriesdescriptor/init(attributedname:iscontinuous:datapoints:).json": {
       "etag": "\"3fa8-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axdataseriesdescriptor/init-attributednameiscontinuousdatapoints.md",
+      "file_path": "documentation/Accessibility/axdataseriesdescriptor/init(attributedname,iscontinuous,datapoints).md",
       "hash": "d42f26735f4974e4965279d6866748b7311598a35a4e11698d0e49a73faef63f"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdataseriesdescriptor/init(name:iscontinuous:datapoints:).json": {
       "etag": "\"4026-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axdataseriesdescriptor/init-nameiscontinuousdatapoints.md",
+      "file_path": "documentation/Accessibility/axdataseriesdescriptor/init(name,iscontinuous,datapoints).md",
       "hash": "6458e97d4aea13e0e49776b36701f057125138dc6223153092885deed1eced60"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axdataseriesdescriptor/iscontinuous.json": {
@@ -2357,7 +2357,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesession/options/init(rawvalue:).json": {
       "etag": "\"1bf2-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesession/options/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesession/options/init(rawvalue).md",
       "hash": "39559778a6603cbee1e6f01151a2823835af21d8aa2256b1741ee6a16d068618"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesession/options/invertcolors.json": {
@@ -2382,7 +2382,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesessionerror-swift.struct.json": {
       "etag": "\"510d-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesessionerror-swiftstruct.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesessionerror-swift.struct.md",
       "hash": "9274b843f08308744327b65f6339fb4a57f93f15b3a326d75a1eda45b25c8543"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesessionerror-swift.struct/appnotentitled.json": {
@@ -2402,7 +2402,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesessionerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"19b3-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesessionerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesessionerror-swift.struct/code/init(rawvalue).md",
       "hash": "d5d9b9f4366eba88ec7439f4ea339ce9a0a2893a3ccb11cbc9eb978ba82afb3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesessionerror-swift.struct/code/overrideisalreadyactive.json": {
@@ -2452,12 +2452,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesessionmanager/beginoverridesession(enabling:disabling:).json": {
       "etag": "\"3e0f-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesessionmanager/beginoverridesession-enablingdisabling.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesessionmanager/beginoverridesession(enabling,disabling).md",
       "hash": "16f7be7ba11ec425af374b68de2fcfa23209b815b5a7093151637933cd7fc672"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesessionmanager/end(_:).json": {
       "etag": "\"2c16-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axfeatureoverridesessionmanager/end.md",
+      "file_path": "documentation/Accessibility/axfeatureoverridesessionmanager/end(_).md",
       "hash": "0e33270528133065e8df58e1f43f157b7217e8b3eb4f2870cb5dff7a332af339"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axfeatureoverridesessionmanager/sharedinstance.json": {
@@ -2472,17 +2472,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axliveaudiograph/start().json": {
       "etag": "\"22bf-65d55cdcda16e-df\"",
-      "file_path": "documentation/Accessibility/axliveaudiograph/start.md",
+      "file_path": "documentation/Accessibility/axliveaudiograph/start().md",
       "hash": "e2f282cca5ea3f5672957398521655392efc47171657287abbc61096173a12f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axliveaudiograph/stop().json": {
       "etag": "\"22b4-65d55cdcda16e-df\"",
-      "file_path": "documentation/Accessibility/axliveaudiograph/stop.md",
+      "file_path": "documentation/Accessibility/axliveaudiograph/stop().md",
       "hash": "72ff63602dc3650fc70c414e8ae917a0f3510ddb905a518ee871b7bdcab71204"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axliveaudiograph/updatevalue(_:).json": {
       "etag": "\"27c6-65d55cdcda16e-df\"",
-      "file_path": "documentation/Accessibility/axliveaudiograph/updatevalue.md",
+      "file_path": "documentation/Accessibility/axliveaudiograph/updatevalue(_).md",
       "hash": "ee200018305de4f71470ff5d9a581d50f18d5fd392628e03222164ffba02735b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpression.json": {
@@ -2507,12 +2507,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionfenced/init(expressions:open:close:).json": {
       "etag": "\"30ee-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionfenced/init-expressionsopenclose.md",
+      "file_path": "documentation/Accessibility/axmathexpressionfenced/init(expressions,open,close).md",
       "hash": "933033fa7d0944503c44def4dd665ae068640c37c07b45d68224cfa0cab38d70"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionfenced/init(expressions:openstring:closestring:).json": {
       "etag": "\"20f8-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionfenced/init-expressionsopenstringclosestring.md",
+      "file_path": "documentation/Accessibility/axmathexpressionfenced/init(expressions,openstring,closestring).md",
       "hash": "051a02117cdebce3a26995e231f3bce0043b5a1482025fa2a5d3a9bfd4a30c82"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionfenced/openstring.json": {
@@ -2532,7 +2532,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionfraction/init(numeratorexpression:denimonatorexpression:).json": {
       "etag": "\"2a8b-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionfraction/init-numeratorexpressiondenimonatorexpression.md",
+      "file_path": "documentation/Accessibility/axmathexpressionfraction/init(numeratorexpression,denimonatorexpression).md",
       "hash": "9cc7ad86ab2abbd6b33f2c716730fba8c165878a4b2d2b455b060818e28df2b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionfraction/numeratorexpression.json": {
@@ -2552,7 +2552,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionidentifier/init(content:).json": {
       "etag": "\"23e3-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionidentifier/init-content.md",
+      "file_path": "documentation/Accessibility/axmathexpressionidentifier/init(content).md",
       "hash": "b285f82a64a348e9f82cdee0adef65750fa19d7f6eb85376d950c00ff2533ea4"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionmultiscript.json": {
@@ -2567,7 +2567,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionmultiscript/init(baseexpression:prescriptexpressions:postscriptexpressions:).json": {
       "etag": "\"351a-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionmultiscript/init-baseexpressionprescriptexpressionspostscriptexpressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressionmultiscript/init(baseexpression,prescriptexpressions,postscriptexpressions).md",
       "hash": "4475701f3746318b6aeca0c9e01f1e19341858ee4c8270d1374665aab4a985d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionmultiscript/postscriptexpressions.json": {
@@ -2592,7 +2592,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionnumber/init(content:).json": {
       "etag": "\"2387-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionnumber/init-content.md",
+      "file_path": "documentation/Accessibility/axmathexpressionnumber/init(content).md",
       "hash": "8a961f3a0a79ab997ed8601976970837892ed314135e15840d3c4eb0fd4e9f3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionoperator.json": {
@@ -2607,7 +2607,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionoperator/init(content:).json": {
       "etag": "\"23b5-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionoperator/init-content.md",
+      "file_path": "documentation/Accessibility/axmathexpressionoperator/init(content).md",
       "hash": "bcc2fce13fae30b13bf5cc6d461cfb1f96b810862f05b3895bd608df4d3ce64f"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionprovider.json": {
@@ -2617,7 +2617,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionprovider/accessibilitymathexpression().json": {
       "etag": "\"246f-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionprovider/accessibilitymathexpression.md",
+      "file_path": "documentation/Accessibility/axmathexpressionprovider/accessibilitymathexpression().md",
       "hash": "9843086bf7a34305673c66e548aa9d2ae45c93c98e6cccf790920262fbcc1399"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionroot.json": {
@@ -2627,7 +2627,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionroot/init(radicandexpressions:rootindexexpression:).json": {
       "etag": "\"29ae-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionroot/init-radicandexpressionsrootindexexpression.md",
+      "file_path": "documentation/Accessibility/axmathexpressionroot/init(radicandexpressions,rootindexexpression).md",
       "hash": "6e61649c565973054bbaec671c92c54c3bd01f6f2f555d76979e0cd8223af815"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionroot/radicandexpressions.json": {
@@ -2652,7 +2652,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionrow/init(expressions:).json": {
       "etag": "\"2339-65d55cdcda16e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionrow/init-expressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressionrow/init(expressions).md",
       "hash": "8e23e166a2a9a557b246e5721509d7a42b83afe0bdae30064b62eb32c1678588"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionsubsuperscript.json": {
@@ -2667,7 +2667,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionsubsuperscript/init(baseexpression:subscriptexpressions:superscriptexpressions:).json": {
       "etag": "\"2f82-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionsubsuperscript/init-baseexpressionsubscriptexpressionssuperscriptexpressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressionsubsuperscript/init(baseexpression,subscriptexpressions,superscriptexpressions).md",
       "hash": "c116b40bb9f3e8590a1ea9d76885e28c7b9a76ee852771942e13ff3b5863b879"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionsubsuperscript/subscriptexpressions.json": {
@@ -2692,7 +2692,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressiontable/init(expressions:).json": {
       "etag": "\"2367-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressiontable/init-expressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressiontable/init(expressions).md",
       "hash": "e456d27f0e26d8ed1ab8f5c7122089b2f3d563fbd8b5b1277d0fcfd54f1197c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressiontablecell.json": {
@@ -2707,7 +2707,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressiontablecell/init(expressions:).json": {
       "etag": "\"23c3-65d55cdd370e7-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressiontablecell/init-expressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressiontablecell/init(expressions).md",
       "hash": "9c41140472c207673651986f186fe02b5d528edb8cdf4aa091c695280bf6ef3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressiontablerow.json": {
@@ -2722,7 +2722,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressiontablerow/init(expressions:).json": {
       "etag": "\"23ac-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressiontablerow/init-expressions.md",
+      "file_path": "documentation/Accessibility/axmathexpressiontablerow/init(expressions).md",
       "hash": "7767ebbcede828b7be9242a78f20eff79ff01944874f70140e08a929133c65d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressiontext.json": {
@@ -2737,7 +2737,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressiontext/init(content:).json": {
       "etag": "\"2359-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressiontext/init-content.md",
+      "file_path": "documentation/Accessibility/axmathexpressiontext/init(content).md",
       "hash": "45eccaf1b33c3141a8d903d348993e192c9fc4ce46370c4334befab50f62b27e"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionunderover.json": {
@@ -2752,7 +2752,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionunderover/init(baseexpression:underexpression:overexpression:).json": {
       "etag": "\"2ef0-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmathexpressionunderover/init-baseexpressionunderexpressionoverexpression.md",
+      "file_path": "documentation/Accessibility/axmathexpressionunderover/init(baseexpression,underexpression,overexpression).md",
       "hash": "2c8869c1b97b1d095af40b44ba28187acbed792f520879211324742bdf7ca0a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmathexpressionunderover/overexpression.json": {
@@ -2782,7 +2782,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmfihearingdevice/ear/init(rawvalue:).json": {
       "etag": "\"19f8-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmfihearingdevice/ear/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axmfihearingdevice/ear/init(rawvalue).md",
       "hash": "e72930648bf54c6bd2b00d3fb93747a42f9301fd4340226f670a5d11e08d67e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmfihearingdevice/ear/left.json": {
@@ -2797,7 +2797,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmfihearingdevice/paireddeviceidentifiers().json": {
       "etag": "\"380d-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmfihearingdevice/paireddeviceidentifiers.md",
+      "file_path": "documentation/Accessibility/axmfihearingdevice/paireddeviceidentifiers().md",
       "hash": "50123df14a3469068a32ff62fa583bee825f1e1d68138815ec67ec48013093f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmfihearingdevice/paireduuidsdidchangenotification.json": {
@@ -2807,7 +2807,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmfihearingdevice/streamingear().json": {
       "etag": "\"2f5a-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmfihearingdevice/streamingear.md",
+      "file_path": "documentation/Accessibility/axmfihearingdevice/streamingear().md",
       "hash": "361b3331b903f8b09cedc0001782e1e2cab7f3ca96ee47f2f1cb2a1eadee5dfd"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmfihearingdevice/streamingeardidchangenotification.json": {
@@ -2817,12 +2817,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axmfihearingdevice/supportsbidirectionalstreaming().json": {
       "etag": "\"2b56-65d55cdd4ec4e-df\"",
-      "file_path": "documentation/Accessibility/axmfihearingdevice/supportsbidirectionalstreaming.md",
+      "file_path": "documentation/Accessibility/axmfihearingdevice/supportsbidirectionalstreaming().md",
       "hash": "499c77abcaf1e2f0062c58fbe2d52efbe3ef52505d5e90ce36456778ff539889"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnamefromcolor(_:).json": {
       "etag": "\"30b9-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/axnamefromcolor.md",
+      "file_path": "documentation/Accessibility/axnamefromcolor(_).md",
       "hash": "d428f6e80ee5ed728a5dc16fb4a7a70a0eef6b594499266649b797ff26bd15b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor.json": {
@@ -2837,12 +2837,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor/init(attributedtitle:range:gridlinepositions:valuedescriptionprovider:).json": {
       "etag": "\"3694-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/init-attributedtitlerangegridlinepositionsvaluedescriptionprovider.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/init(attributedtitle,range,gridlinepositions,valuedescriptionprovider).md",
       "hash": "cda3cab87b77323ba37cf02101aed2bf6b6c456aec5e1cfd8a45971cf635884b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor/init(title:range:gridlinepositions:valuedescriptionprovider:).json": {
       "etag": "\"329d-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/init-titlerangegridlinepositionsvaluedescriptionprovider.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/init(title,range,gridlinepositions,valuedescriptionprovider).md",
       "hash": "80aca604959f213bb08d97ddf6935442e6cc13ad175dc0f1865d73134c5c5ab5"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor/range.json": {
@@ -2852,12 +2852,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum.json": {
       "etag": "\"4996-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swiftenum.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum.md",
       "hash": "69994d3e47a6ba78584b0a75f505644465ca3a8ef46091aa4f27410407e6875b"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum/init(rawvalue:).json": {
       "etag": "\"1d7a-65d55cddc6fca-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum/init(rawvalue).md",
       "hash": "5d340324c6312b3bedfcc2dd9b259148803459fb973e39c0b2158cf220a9ac64"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor/scaletype-swift.enum/linear.json": {
@@ -2877,7 +2877,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor/scaletype-swift.property.json": {
       "etag": "\"30c2-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swiftproperty.md",
+      "file_path": "documentation/Accessibility/axnumericdataaxisdescriptor/scaletype-swift.property.md",
       "hash": "ac5596a41eef796b25d1583ddaba88bdfa9fc51f5c557ab644bd2cc104e0f6a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axnumericdataaxisdescriptor/valuedescriptionprovider.json": {
@@ -2887,12 +2887,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axprefersheadanchoralternative().json": {
       "etag": "\"2629-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/axprefersheadanchoralternative.md",
+      "file_path": "documentation/Accessibility/axprefersheadanchoralternative().md",
       "hash": "df24474c3d2cbc943b076db3c0c74a3a9f88cb80e367a161639814737e4f9fc4"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/axprefershorizontaltextlayout().json": {
       "etag": "\"283c-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/axprefershorizontaltextlayout.md",
+      "file_path": "documentation/Accessibility/axprefershorizontaltextlayout().md",
       "hash": "210538299e82087ea1e20a3a955e00b1748687681fa11fde57b5b60d3fb96261"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/braille-displays.json": {
@@ -2922,7 +2922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/delivering_an_exceptional_accessibility_experience.json": {
       "etag": "\"8639-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/delivering-an-exceptional-accessibility-experience.md",
+      "file_path": "documentation/Accessibility/delivering_an_exceptional_accessibility_experience.md",
       "hash": "bc1483bc0416977b84b9f6c3931dc9183968125098c3eb5f5fd82b2fcb82fa50"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/enhancing-the-accessibility-of-your-swiftui-app.json": {
@@ -2957,7 +2957,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/integrating_accessibility_into_your_app.json": {
       "etag": "W/\"181b91a1024fee5bd66da9b68bfa058d\"",
-      "file_path": "documentation/Accessibility/integrating-accessibility-into-your-app.md",
+      "file_path": "documentation/Accessibility/integrating_accessibility_into_your_app.md",
       "hash": "9d98d9f0dcd9320509d563fb1499c2fb004d0b0e5c617d9a862eb2a8d4f3ebfa"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/mobility.json": {
@@ -3022,22 +3022,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/wwdc21_challenge_large_text_challenge.json": {
       "etag": "\"1de5-65d55cdd6848d-df\"",
-      "file_path": "documentation/Accessibility/wwdc21-challenge-large-text-challenge.md",
+      "file_path": "documentation/Accessibility/wwdc21_challenge_large_text_challenge.md",
       "hash": "4e94e9ec248b53925964cf2ab03bf04a0fde6854de9c42d193750635c20b0ab9"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/wwdc21_challenge_speech_synthesizer_simulator.json": {
       "etag": "\"1da9-65d55cdcf15cf-df\"",
-      "file_path": "documentation/Accessibility/wwdc21-challenge-speech-synthesizer-simulator.md",
+      "file_path": "documentation/Accessibility/wwdc21_challenge_speech_synthesizer_simulator.md",
       "hash": "55c79be37a7254f773e4638f9c410e1cd1c602170e61fc57ab1e2090c48f9803"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/wwdc21_challenge_voiceover_maze.json": {
       "etag": "\"23ab-65d55cdd150f2-df\"",
-      "file_path": "documentation/Accessibility/wwdc21-challenge-voiceover-maze.md",
+      "file_path": "documentation/Accessibility/wwdc21_challenge_voiceover_maze.md",
       "hash": "6f1e0a4cd928c2fb7fd9904cef648d1eb651409c9572568c8e2136d3e53f170a"
     },
     "https://developer.apple.com/tutorials/data/documentation/accessibility/wwdc22_challenge_learn_switch_control_through_gaming.json": {
       "etag": "\"2ddd-65d55cdddfdee-df\"",
-      "file_path": "documentation/Accessibility/wwdc22-challenge-learn-switch-control-through-gaming.md",
+      "file_path": "documentation/Accessibility/wwdc22_challenge_learn_switch_control_through_gaming.md",
       "hash": "c13d44b6068ea7c4afacca591e5879f72de5288a0368a29f404bb0b55fd3bc4f"
     }
   },

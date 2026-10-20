@@ -1727,42 +1727,42 @@
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/status_failure": {
       "etag": "\"1ecf-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-failure.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_failure.md",
       "hash": "d33133b5aeac57e145c1209a73fca5cfcf17ea88beb460f271ccbf184e1a0e53"
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/status_invalid_billing_postal_address": {
       "etag": "\"2625-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-invalid-billing-postal-address.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_invalid_billing_postal_address.md",
       "hash": "7be36404a0f87e8ac3104414475e6ddc851df1d3193ec5deb1cda07ac52462b8"
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/status_invalid_shipping_contact": {
       "etag": "\"25d2-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-invalid-shipping-contact.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_invalid_shipping_contact.md",
       "hash": "0a4d4aefb6cb918f213733de8d6f399dd963c6ce580c4acde87bcacc5ae8d13d"
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/status_invalid_shipping_postal_address": {
       "etag": "\"2630-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-invalid-shipping-postal-address.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_invalid_shipping_postal_address.md",
       "hash": "cc3ddf1d92f52f928cf091be12544d9e93bfbcce5806b5e0ee5c20acbb752d93"
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/status_pin_incorrect": {
       "etag": "\"1ee3-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-pin-incorrect.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_pin_incorrect.md",
       "hash": "3794a453b21c470dd12a0cc776e9141757fecf7182f6766761a1f831e0068899"
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/status_pin_lockout": {
       "etag": "\"1f12-65d55a4d64c82-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-pin-lockout.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_pin_lockout.md",
       "hash": "96f462e0f7ba211b4a139377d7e7ef34d5aee4d03ff825b5260e79a343713103"
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/status_pin_required": {
       "etag": "\"1f14-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-pin-required.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_pin_required.md",
       "hash": "e8bf45cc318ca8fb01c49c03c9efe4286d9ebf7f04ce36bae918dc3c4c9e8c15"
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/status_success": {
       "etag": "\"2266-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-success.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_success.md",
       "hash": "3be90ffdd417a8d893d4195d0b7ee87e5a2b006d09aa1d1dde42550846a01240"
     },
     "https://developer.apple.com/documentation/applepayontheweb/applepaysession/supportsversion": {
@@ -3817,42 +3817,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/status_failure.json": {
       "etag": "\"1ecf-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-failure.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_failure.md",
       "hash": "d33133b5aeac57e145c1209a73fca5cfcf17ea88beb460f271ccbf184e1a0e53"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/status_invalid_billing_postal_address.json": {
       "etag": "\"2625-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-invalid-billing-postal-address.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_invalid_billing_postal_address.md",
       "hash": "7be36404a0f87e8ac3104414475e6ddc851df1d3193ec5deb1cda07ac52462b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/status_invalid_shipping_contact.json": {
       "etag": "\"25d2-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-invalid-shipping-contact.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_invalid_shipping_contact.md",
       "hash": "0a4d4aefb6cb918f213733de8d6f399dd963c6ce580c4acde87bcacc5ae8d13d"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/status_invalid_shipping_postal_address.json": {
       "etag": "\"2630-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-invalid-shipping-postal-address.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_invalid_shipping_postal_address.md",
       "hash": "cc3ddf1d92f52f928cf091be12544d9e93bfbcce5806b5e0ee5c20acbb752d93"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/status_pin_incorrect.json": {
       "etag": "\"1ee3-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-pin-incorrect.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_pin_incorrect.md",
       "hash": "3794a453b21c470dd12a0cc776e9141757fecf7182f6766761a1f831e0068899"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/status_pin_lockout.json": {
       "etag": "\"1f12-65d55a4d64c82-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-pin-lockout.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_pin_lockout.md",
       "hash": "96f462e0f7ba211b4a139377d7e7ef34d5aee4d03ff825b5260e79a343713103"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/status_pin_required.json": {
       "etag": "\"1f14-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-pin-required.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_pin_required.md",
       "hash": "e8bf45cc318ca8fb01c49c03c9efe4286d9ebf7f04ce36bae918dc3c4c9e8c15"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/status_success.json": {
       "etag": "\"2266-65d55a4d45e21-df\"",
-      "file_path": "documentation/ApplePayontheWeb/applepaysession/status-success.md",
+      "file_path": "documentation/ApplePayontheWeb/applepaysession/status_success.md",
       "hash": "3be90ffdd417a8d893d4195d0b7ee87e5a2b006d09aa1d1dde42550846a01240"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepayontheweb/applepaysession/supportsversion.json": {

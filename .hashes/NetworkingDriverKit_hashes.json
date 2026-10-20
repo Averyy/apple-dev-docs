@@ -42,22 +42,22 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ifdrv_t": {
       "etag": "\"2a90-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ifdrv-t.md",
+      "file_path": "documentation/NetworkingDriverKit/ifdrv_t.md",
       "hash": "367eea2eda586a67b7c33a6abf0e59dff57576dd9d941ddc3477f01a78dc1d26"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ifnet_family_any": {
       "etag": "\"1433-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ifnet-family-any.md",
+      "file_path": "documentation/NetworkingDriverKit/ifnet_family_any.md",
       "hash": "60692055339f2835256f69d967686eb34eb1787c706efe03c33191b0480d9e30"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ifnet_family_ethernet": {
       "etag": "\"1451-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ifnet-family-ethernet.md",
+      "file_path": "documentation/NetworkingDriverKit/ifnet_family_ethernet.md",
       "hash": "d389cbd0ee6ecf0b4bcf51724ee4e068844f3c1da9dcbc70e19b0d19a996799b"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ifnet_subfamily_any": {
       "etag": "\"1448-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ifnet-subfamily-any.md",
+      "file_path": "documentation/NetworkingDriverKit/ifnet_subfamily_any.md",
       "hash": "588846a17ce8256aaa4aa66a608884d4a737ade1136e5c36d44509aca7d5fd5e"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ionetworkpackettype": {
@@ -387,7 +387,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkethernet_ivars": {
       "etag": "\"1638-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkethernet-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkethernet_ivars.md",
       "hash": "ab9d962d200b76047787d77317c6eeabb9f7c89c2d2d35bcfd59ca07f529c460"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkethernet_ivars/bsdname": {
@@ -422,12 +422,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/bytes_in": {
       "etag": "\"e01-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/bytes-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/bytes_in.md",
       "hash": "b44a3a3c7e1ffdda584aa3e883b97fa817fa8754b98703c08755187df3eea219"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/bytes_out": {
       "etag": "\"e0d-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/bytes-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/bytes_out.md",
       "hash": "edf37b13df66c0b07dd6e4ff8b7e4c14c558bedc222193d0a6624f35ef5d6bb2"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/collisions": {
@@ -442,77 +442,77 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/errors_in": {
       "etag": "\"e0d-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/errors-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/errors_in.md",
       "hash": "4ece8b4792eeec4bc4f99e23d3c86486925ba7fc220cd6b580e7b1ad0ebdc624"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/errors_out": {
       "etag": "\"e19-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/errors-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/errors_out.md",
       "hash": "d03e4fac8fbf6bdec30e81b137f4288cc76e7406f4edff47396244eb5dc27a95"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/multicasts_in": {
       "etag": "\"e3d-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/multicasts-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/multicasts_in.md",
       "hash": "2eae5a9c8bb02d8096317c6a1b498bd515af2c7fbba5134801ddd68ffd1db584"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/multicasts_out": {
       "etag": "\"e49-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/multicasts-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/multicasts_out.md",
       "hash": "5199ea02ae52084e804b0a945b2fc17213ac825573b5b2e7bebda133aba1124c"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/no_protocol": {
       "etag": "\"e25-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/no-protocol.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/no_protocol.md",
       "hash": "e34b9579d915d3bc1e5aa47c0662e547b2cedaa295ac4fdc4dea27eba000f336"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/packets_in": {
       "etag": "\"e19-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/packets-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/packets_in.md",
       "hash": "3e1e8dab196f5747c0504e5665f099b872655c3681defeb7e61e56e2c60ebabc"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/packets_out": {
       "etag": "\"e25-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/packets-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/packets_out.md",
       "hash": "158b2e6a5213ea2156afef385e94900bc63b110a8d5c8f0884fe4b757264fbda"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/reserved_in": {
       "etag": "\"e5f-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved_in.md",
       "hash": "88d5aab167126dda72038723e834e90770644aac24c0a9cb50fe2fd8fc1f8a0d"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/reserved_misc": {
       "etag": "\"e77-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved-misc.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved_misc.md",
       "hash": "cab2ed0b693cf00667e2830afe150b8361bfd24a37df009b2a6f606dfd5fba70"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkhardwarecounts/reserved_out": {
       "etag": "\"e6b-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved_out.md",
       "hash": "e51fbb5eaac070c605cbf4a2c9594da2d8779acb6fb69f105b11a84d234e5992"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_data_size": {
       "etag": "\"2d3e-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-data-size.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_data_size.md",
       "hash": "6dcc8a1dc15eeeb8488f13e729e41b132732133ff0580645603e3f38a96b9691"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_ethertype_ipv4": {
       "etag": "\"2d5c-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-ethertype-ipv4.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_ethertype_ipv4.md",
       "hash": "b227de580a0c2f90ed0269345026148079e7fc875acd6e876e41e848ae819a6a"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_ethertype_ipv6": {
       "etag": "\"2d5c-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-ethertype-ipv6.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_ethertype_ipv6.md",
       "hash": "694a986a1239fd634820db9721a0117fea177bfe6e7bc4e04f65c7b75a7f0e7b"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_flag_nowakefromsleep": {
       "etag": "\"2d80-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-flag-nowakefromsleep.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_flag_nowakefromsleep.md",
       "hash": "7717d17c2ce44497d540a5932a6b903b86e974f6e5d7c12ca82f67e97ab7b92c"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_max_addr_size": {
       "etag": "\"2d56-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-max-addr-size.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_max_addr_size.md",
       "hash": "5a5b740f10abc56c5179958ab54d974868e55fdc4ac7922b417fe97a98d5b241"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe": {
@@ -522,7 +522,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/addr_length": {
       "etag": "\"e72-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/addr-length.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/addr_length.md",
       "hash": "c57f2fda9e69de65975cf00cc18e1e137b67b8198e9ff1760128e3c0ba5f843b"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/data": {
@@ -532,7 +532,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/ether_type": {
       "etag": "\"e66-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/ether-type.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/ether_type.md",
       "hash": "324fc6fedf8ac809b0811d02d82457e3c9cf1160d8a9fca3d2bf30ec25223f67"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/flags": {
@@ -547,12 +547,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/keep_cnt": {
       "etag": "\"e4e-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/keep-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/keep_cnt.md",
       "hash": "c4dcefdfa62141175cbd81d5b804b8d07e5ec15592c2d55fe0931ba31a635f35"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/keep_retry": {
       "etag": "\"e6d-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/keep-retry.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/keep_retry.md",
       "hash": "afc9ed6eb2dfe3f46f8c2ede7bae178bb2d48d5ad94604b827e924029dbd2ed6"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/length": {
@@ -562,42 +562,42 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/local_addr": {
       "etag": "\"ea0-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local_addr.md",
       "hash": "cd74321ac822b678e1bc24db7f0ea5b524bd5738ec6707c10dfd2b348fe63d70"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/local_port": {
       "etag": "\"e6d-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local-port.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local_port.md",
       "hash": "dfffd98c473dfd0e9cb0d407854c5623d425bd89a16d1b9248bb5d1c5f702755"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/local_seq": {
       "etag": "\"e61-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local-seq.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local_seq.md",
       "hash": "dee4c574de8d23b294a7bf2770ff4e3d7a2f1c1296832ea7685bfc7086069ae5"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/remote_addr": {
       "etag": "\"eac-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote_addr.md",
       "hash": "cb5097c5479d5e69c4905a0d57f7393f90e483a5a0eff6aa80d4898ab24c8c58"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/remote_port": {
       "etag": "\"e79-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote-port.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote_port.md",
       "hash": "e1e1afb5ec1f96b717afcc6c22d4f2c5880835a7cbed8e87270e215387aa554a"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/remote_seq": {
       "etag": "\"e6d-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote-seq.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote_seq.md",
       "hash": "0d778f7659b45bdb7bc6da975f5cf5f7bceca180d025855264ce5a71e1a943c2"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/reply_data": {
       "etag": "\"ea1-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/reply-data.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/reply_data.md",
       "hash": "9cf5a215038e672dca769184160a659b98748aa09a4b3b7029f55d9b969d9d92"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/reply_length": {
       "etag": "\"e7e-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/reply-length.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/reply_length.md",
       "hash": "4756904639bcd34620ae1086db70fed95a4f61679b78996639d3cc78725aad46"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/reserved": {
@@ -612,17 +612,17 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe_airplay": {
       "etag": "\"2d50-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe-airplay.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe_airplay.md",
       "hash": "80854f491f3df4f488268907760256f2e689b2df8901e9d935388f1fea8f4ed5"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe_ipsec": {
       "etag": "\"2d44-65d55ea1e8bdc-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe-ipsec.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe_ipsec.md",
       "hash": "5a92568505749735a09a6a7ad5c97c521d5a31c9880d76fba55afa14559d990e"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe_tcp": {
       "etag": "\"2d38-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe-tcp.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe_tcp.md",
       "hash": "1b7beec6e9d60ff001ce709266983cd173e609ff53eb192635efc72d9ae20f63"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo": {
@@ -662,7 +662,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo/rcv_expire": {
       "etag": "\"e9d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo/rcv-expire.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo/rcv_expire.md",
       "hash": "8e10e8f5dab5a1db860d01609e3de8ae276043f790f28bfd7293dc2cd24d68dd"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo/refcnt": {
@@ -677,12 +677,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo/snd_expire": {
       "etag": "\"e9d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo/snd-expire.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo/snd_expire.md",
       "hash": "fff25ebf467eca320d321b49b91a20e2fcc0f26c33a51b826ce4a0ab5ef3b624"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo_addrlen": {
       "etag": "\"2d68-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo-addrlen.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo_addrlen.md",
       "hash": "244056fb8308d2f6cf3bb0588477e2d2a49c270889b050f4d40fa6656db9b966"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworklinkquality": {
@@ -1342,7 +1342,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkpacketqueue_ivars": {
       "etag": "\"5307-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkpacketqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkpacketqueue_ivars.md",
       "hash": "22cdd4da47a90d488271412cf4f80ac7c020c1a00c7a3491c11b5e0c41cb7430"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkpacketqueue_ivars/dataqueue": {
@@ -1512,7 +1512,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkpacketqueuecompat_ivars": {
       "etag": "\"31ea-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkpacketqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkpacketqueuecompat_ivars.md",
       "hash": "ea2156316ad0884de90ca07fb8e3ed90d70effe7d4065f51ed257f298be9d9f4"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkpacketqueuecompat_ivars/dataqueue": {
@@ -1662,7 +1662,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxcompletionqueue_ivars": {
       "etag": "\"32c9-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxcompletionqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxcompletionqueue_ivars.md",
       "hash": "b53848b5c878a0c3de8135bc9d0aaa8356ce913e4a1f20da13ec369e3f034d32"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxcompletionqueue_ivars/dataqueue": {
@@ -1712,7 +1712,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxcompletionqueuecompat_ivars": {
       "etag": "\"1080-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxcompletionqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxcompletionqueuecompat_ivars.md",
       "hash": "15dadef537eb19ebacf3b9a8f125e0814fc2c9dacf17816cc960a214424390fc"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxcompletionqueuecompat_ivars/dataqueue": {
@@ -1757,7 +1757,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxsubmissionqueue_ivars": {
       "etag": "\"3311-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxsubmissionqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxsubmissionqueue_ivars.md",
       "hash": "1303799871651840b4c36c5e61bcb239423a7d1de986e89c40d23e3e1bd06a4f"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxsubmissionqueue_ivars/dataavailableaction": {
@@ -1802,7 +1802,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxsubmissionqueuecompat_ivars": {
       "etag": "\"10c8-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxsubmissionqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxsubmissionqueuecompat_ivars.md",
       "hash": "b56b3f1e412fdf2a0e718f3fc33d449d1b47128a8c0a2c16808f3594baa2b186"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxsubmissionqueuecompat_ivars/dataavailableaction": {
@@ -1827,12 +1827,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/bytes_in": {
       "etag": "\"dd1-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/bytes-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/bytes_in.md",
       "hash": "7e357f24f9fede228770da68d9a6bad765f57783effac7dd52b4c2a48dc6a252"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/bytes_out": {
       "etag": "\"ddd-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/bytes-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/bytes_out.md",
       "hash": "87e8d4ba0d666627c2af33280488923c6d84c3ed4fb6f12446cc3f8ee11379b8"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/collisions": {
@@ -1847,37 +1847,37 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/errors_in": {
       "etag": "\"ddd-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/errors-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/errors_in.md",
       "hash": "d7096d800a96007f327ef46edfcfe56c8cd27478aaa44f8ee102b8dd3b253000"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/errors_out": {
       "etag": "\"de9-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/errors-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/errors_out.md",
       "hash": "8e977728ce273086e1f5ac1890c5498b018050bd72f386b55644fac1fbd60893"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/multicasts_in": {
       "etag": "\"e0d-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/multicasts-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/multicasts_in.md",
       "hash": "4f7630ada2654de8a764a7a7ccca6ebd5e9dea9244c0cea532790c2af85a6a97"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/multicasts_out": {
       "etag": "\"e19-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/multicasts-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/multicasts_out.md",
       "hash": "f763462670d89cdedb5dfc281c0b4a50c91b92baf511f022e5ee34c519ddc481"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/no_protocol": {
       "etag": "\"df5-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/no-protocol.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/no_protocol.md",
       "hash": "8bf070353f24da2cbb62836991b5d643471649b1fece21f5b7c6a2f7c17c9714"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/packets_in": {
       "etag": "\"de9-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/packets-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/packets_in.md",
       "hash": "f8a7400d49f7c3339716fb6e66d656df7e9069ce6ca18064d350ff84c988a4cc"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworkstatistics/packets_out": {
       "etag": "\"df5-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/packets-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/packets_out.md",
       "hash": "cc34b01d5aa18ceaec77eced7f229078dd7dc7b924587b603eec46885e8cd437"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktsooptions": {
@@ -1902,12 +1902,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktsooptions/tso_mtu4": {
       "etag": "\"dd7-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktsooptions/tso-mtu4.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktsooptions/tso_mtu4.md",
       "hash": "7e12f091f935ec28da461ccd961b96a937b17d95e82a40ada594be6cdf3a30d2"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktsooptions/tso_mtu6": {
       "etag": "\"dd7-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktsooptions/tso-mtu6.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktsooptions/tso_mtu6.md",
       "hash": "1317ecbc6dd00a43929287dd2ee0ab6a327b4f5153a34ff43ff7bfce992676b0"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxcompletionqueue": {
@@ -1947,7 +1947,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxcompletionqueue_ivars": {
       "etag": "\"32c9-65d55ea1e8bdc-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktxcompletionqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktxcompletionqueue_ivars.md",
       "hash": "b0a6b78dcd42c6883608d103938fa9553a3f5dfa59e38a16ec0ab5493f966768"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxcompletionqueue_ivars/dataqueue": {
@@ -1997,7 +1997,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxcompletionqueuecompat_ivars": {
       "etag": "\"1080-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktxcompletionqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktxcompletionqueuecompat_ivars.md",
       "hash": "4f09738a54fbebaababdd5a0b3faee6bddd32cbcb7cd4cd3d503067e6962eb45"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxcompletionqueuecompat_ivars/dataqueue": {
@@ -2057,7 +2057,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxsubmissionqueue_ivars": {
       "etag": "\"37e3-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktxsubmissionqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktxsubmissionqueue_ivars.md",
       "hash": "e8a4db21603ac6adb603a242cf55efc53e5119dd89ba3f0a4ad1fdfab01f62fe"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxsubmissionqueue_ivars/dataavailableaction": {
@@ -2127,7 +2127,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxsubmissionqueuecompat_ivars": {
       "etag": "\"15ca-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktxsubmissionqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktxsubmissionqueuecompat_ivars.md",
       "hash": "b9ab413733416d2679effcd1e82cef12f911d37cfefbefdcc560aef2382052ca"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxsubmissionqueuecompat_ivars/dataavailableaction": {
@@ -2152,7 +2152,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ip_portrange_bitfield_len": {
       "etag": "\"2cea-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ip-portrange-bitfield-len.md",
+      "file_path": "documentation/NetworkingDriverKit/ip_portrange_bitfield_len.md",
       "hash": "33946e1e0905ecad1e84dc0dfef9585fb01ae9e96d3bdb2e1ba3bfa4d9c5d179"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/kiousernetworkblocking": {
@@ -2347,7 +2347,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/kiousernetworkmediaethernet1000basecx_sgmii": {
       "etag": "\"2fa6-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/kiousernetworkmediaethernet1000basecx-sgmii.md",
+      "file_path": "documentation/NetworkingDriverKit/kiousernetworkmediaethernet1000basecx_sgmii.md",
       "hash": "e6348bdc1191218cd73c0ec5ea3bb5d9be71d079a389e63ae40ac7477e1f8385"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/kiousernetworkmediaethernet1000basekx": {
@@ -2807,32 +2807,32 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ndk_20": {
       "etag": "\"2c78-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-20.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_20.md",
       "hash": "88bb81fe6caf85d2e49ee98e72f530ca80c62b33f40d5851d6e5053118d08659"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ndk_21": {
       "etag": "\"2c78-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-21.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_21.md",
       "hash": "7cd2778eb342ddf0c6c4507958bb6864b604fc25d1ea23880f662c48369c408c"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ndk_22": {
       "etag": "\"2c78-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-22.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_22.md",
       "hash": "f08092349c2b59e9851397cffed9c7f9f692f1a5c531f978fabd7d74bbf5d1be"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ndk_23": {
       "etag": "\"2c78-65d55ea1e8bdc-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-23.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_23.md",
       "hash": "95b8a188d64dfce24650d5bcc4e4f5feacd761dc04ca40f7e34273783bab0c41"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ndk_24": {
       "etag": "\"2c78-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-24.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_24.md",
       "hash": "5b3b21de1d41816f4c8046d4efdf10730ea8e469b69f9dc31b0f8e96d30c0158"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/ndk_25": {
       "etag": "\"953-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-25.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_25.md",
       "hash": "995e38f0fffbee4509985f514933d36d73136ee8341a170a6b862944d354323c"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/networkingdriverkit-constants": {
@@ -2852,17 +2852,17 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nic_proxy_flags_womp": {
       "etag": "\"2d20-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nic-proxy-flags-womp.md",
+      "file_path": "documentation/NetworkingDriverKit/nic_proxy_flags_womp.md",
       "hash": "ca7e0bb29eb8bc13b8fe60352e18105312a4612d4d9e21d8e2a4710913ccbc24"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nic_proxy_flags_wonlink": {
       "etag": "\"2d44-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nic-proxy-flags-wonlink.md",
+      "file_path": "documentation/NetworkingDriverKit/nic_proxy_flags_wonlink.md",
       "hash": "ded6f2902952ca107ab10957aaf9d268563dd284b145b55dda1a60f8e79117da"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_inet_info_s": {
       "etag": "\"3f75-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-inet-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_inet_info_s.md",
       "hash": "25f46b24c03283b9fa3641f2cf6e900e166bf7245b3cecf00f691a030e27b3a8"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_inet_info_s/v4addrcount": {
@@ -2907,12 +2907,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_inet_info_t": {
       "etag": "\"2c1d-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-inet-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_inet_info_t.md",
       "hash": "f3e4a603efc0e0d94b1d49127d1c890454c164fef9a315bf3edf51bd10fff2a1"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_info_s": {
       "etag": "\"3f3d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_info_s.md",
       "hash": "55683a5d786c7c13ef984f657fcf08e207975deae24c028b510cc06544efa597"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_info_s/buf": {
@@ -2942,7 +2942,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_info_s/mac_addr": {
       "etag": "\"c1d-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_info_s/mac-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_info_s/mac_addr.md",
       "hash": "90180738b96c70b0a8dcd5d830db92170b6a5066c9a82ac8c80084bce5639bca"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_info_s/ports": {
@@ -2962,12 +2962,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_info_t": {
       "etag": "\"2bb9-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_info_t.md",
       "hash": "02c0145423d5308694213dd597bf8fb209f9c882d374a30fb0e8ce7c8e8b8932"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_keep_alive_info_s": {
       "etag": "\"3b53-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-keep-alive-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_keep_alive_info_s.md",
       "hash": "97df603f72a1ac7174bd06603966904cb3d68d58e735c4b0983aff425d2831b6"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_keep_alive_info_s/retrycount": {
@@ -3002,22 +3002,22 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_keep_alive_info_t": {
       "etag": "\"2c95-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-keep-alive-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_keep_alive_info_t.md",
       "hash": "b0737c6b8d0e5a137e0bf021fb300b9ef1d9170df0412c446dcebe9cecd45c88"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_keepalive_ethertype_ip": {
       "etag": "\"cf0-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-keepalive-ethertype-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_keepalive_ethertype_ip.md",
       "hash": "124831bd2b9e25917cae4b394e0e7d694f7be60f363d8de337cdb5243f1203f4"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_keepalive_tcp": {
       "etag": "\"cba-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-keepalive-tcp.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_keepalive_tcp.md",
       "hash": "0f35bdc60334c8b15757b361801f0a13fa29a580e9e26ecee423e2a6e84ed274"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_s": {
       "etag": "\"43b7-65d55ea1e8bdc-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-limits-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s.md",
       "hash": "dc6fdc23e4fbc0d71ebb234f3554b3cc8b2e3ca54397f966fb7cd0e3baaf0909"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_s/ethcount": {
@@ -3027,12 +3027,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_s/ipv4_cnt": {
       "etag": "\"dbe-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/ipv4-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/ipv4_cnt.md",
       "hash": "4979035db68e1f162d6a31a90be110449b22dea70cd22c71543c19b06082117f"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_s/ipv6_cnt": {
       "etag": "\"dbe-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/ipv6-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/ipv6_cnt.md",
       "hash": "21b46e0abf521e5ae51b6a8c7438927d2837bbb5b8f65db17d5a3e359897757e"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_s/kaipv4count": {
@@ -3052,12 +3052,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_s/rr_buf_size": {
       "etag": "\"de9-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/rr-buf-size.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/rr_buf_size.md",
       "hash": "0dcd86c3ab439630da1a24adee9c865cafb6647bb97e5c749e51cc69587f7625"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_s/rr_cnt": {
       "etag": "\"dad-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/rr-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/rr_cnt.md",
       "hash": "8dec3b02780702b3eb3079a7c264957d2dd3d5093670a6ac70ef046190aa5292"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_s/waketcpcount": {
@@ -3072,12 +3072,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_limits_info_t": {
       "etag": "\"2c45-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-limits-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_t.md",
       "hash": "0809e2952a8bdfce9c6b9cb098d3aa1e7d66a90b89475ef74aad401db5cb9a70"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_port_info_s": {
       "etag": "\"3659-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-port-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_port_info_s.md",
       "hash": "bdde22db1bbce1a012da77488634f72b6bb43c2304e9663a389333593bf508a4"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_port_info_s/tcpportcount": {
@@ -3102,12 +3102,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_port_info_t": {
       "etag": "\"2c1d-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-port-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_port_info_t.md",
       "hash": "21a647501dff7456097ae3e05d006e0465ce3b6d16af2a5369e26026f8f4dc0b"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_rr_info_s": {
       "etag": "\"35d3-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-rr-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_rr_info_s.md",
       "hash": "176142442ebf9bb0cc4aebfd5ab94651aa73575669fe252789482f6c248e1c5d"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_rr_info_s/rrbuflen": {
@@ -3132,47 +3132,47 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_rr_info_t": {
       "etag": "\"2bf5-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-rr-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_rr_info_t.md",
       "hash": "dd839dbda34a663ad83cd6b7ffefbf402347037752091feedc2dcd55bfdbca7f"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s": {
       "etag": "\"41a1-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-v4-keep-alive-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s.md",
       "hash": "c5463001af08d4c368a20bc4af7acd8f255c2f0f7a371005bcf85dfa19dc3111"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/ack_num": {
       "etag": "\"dd1-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/ack-num.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/ack_num.md",
       "hash": "c7c57861b4c0bdd7d62fa6eb190681205eab80a3472d9b58d8f1582f0b25a6ad"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/local_ip": {
       "etag": "\"de4-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/local-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/local_ip.md",
       "hash": "7659ec2410d3baefe62837096b6c809df14941c6b93c71e20b685a4f9a4a8038"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/local_port": {
       "etag": "\"dfc-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/local-port.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/local_port.md",
       "hash": "dfd6ab8b7e4a1f725b3970024b2f936c4b809fde102cae230cd257f3073abca0"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/remote_ip": {
       "etag": "\"df0-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote_ip.md",
       "hash": "fd87338474a3d6b152a9064cf416f044b6f76d331a38047c85a7e149bcd4c182"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/remote_mac_addr": {
       "etag": "\"cdd-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote-mac-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote_mac_addr.md",
       "hash": "6c8b76b89766b079cd6867d30c598a74a3862b74c1dcde3628be2332e75d72e8"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/remote_port": {
       "etag": "\"e08-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote-port.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote_port.md",
       "hash": "04a6d280ab8b7f29361f873f8b28913c09df79a3db38524279caeb253005eca7"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/seq_num": {
       "etag": "\"dd1-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/seq-num.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/seq_num.md",
       "hash": "d8140e55374fa4add842f11883947fe7b0edff8f73df66f72b3480012a894522"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/timeout": {
@@ -3182,52 +3182,52 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/win_size": {
       "etag": "\"ddd-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/win-size.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/win_size.md",
       "hash": "4cbcc6d7c3d10d336561a64e8038f2c6513f9424a527c73d2ed2b96dd517ea42"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v4_keep_alive_t": {
       "etag": "\"2c6d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-v4-keep-alive-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_t.md",
       "hash": "fcd55ee58248d639af521f54eb1ab5c2711aeb4295071e44e5fcba802e4ac62a"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s": {
       "etag": "\"41a1-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-v6-keep-alive-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s.md",
       "hash": "632aa1f6fa2365ce0f3252e064cc9e3ea6d57c66897cb1ccb02074f183aa5eb1"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/ack_num": {
       "etag": "\"dd1-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/ack-num.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/ack_num.md",
       "hash": "92de69fc553515f8e461b85f7e3a1d9ce3051e9ef6b7519e19cb29dc4cc7d2f3"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/local_ip": {
       "etag": "\"c85-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/local-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/local_ip.md",
       "hash": "68f5270068b426422821bcbc9d13bd9063c43f1f213dea2ae62d4e28480f6582"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/local_port": {
       "etag": "\"dfc-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/local-port.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/local_port.md",
       "hash": "5e52e80ee95dd48eec2b638399548f6d47fb6b5b51f0239c23f9eb8bc1715345"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/remote_ip": {
       "etag": "\"c91-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote_ip.md",
       "hash": "82a09518e122f186d83355b4ddd9c72f390d7957f2fa8cb66771792008735919"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/remote_mac_addr": {
       "etag": "\"cdd-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote-mac-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote_mac_addr.md",
       "hash": "8f4d01b06b1fc5bc388496edab3bf83c7b17c052a750b95767979187c1133172"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/remote_port": {
       "etag": "\"e08-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote-port.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote_port.md",
       "hash": "9c224e5c42cd511e9099bba0711a52f146419575883b858f4f7cd8ad7bfaa40c"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/seq_num": {
       "etag": "\"dd1-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/seq-num.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/seq_num.md",
       "hash": "612888cfd103c993ddc29fb99bb7a3e74010a92488e53fdf7d654d3a4aeddc07"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/timeout": {
@@ -3237,12 +3237,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/win_size": {
       "etag": "\"ddd-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/win-size.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/win_size.md",
       "hash": "caa4bde457b338a4af681a5502c9c6c9ff35c154e521918a6c6302919f978577"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/nicproxy_v6_keep_alive_t": {
       "etag": "\"2c6d-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-v6-keep-alive-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_t.md",
       "hash": "2b96ca40ff20a83a0def9c44b226987a6feb4b37f3c89cdae289b552f12f6627"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/pollaction": {
@@ -3262,12 +3262,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_length_mask": {
       "etag": "\"1422-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-length-mask.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_length_mask.md",
       "hash": "873e00768dd416adc56b10e6adc86f9a382000f710b22039c46623a2211598ae"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_null_record_s": {
       "etag": "\"3163-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-null-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_null_record_s.md",
       "hash": "c904a4714b9158debdea26bd26d40326ee587ab2947af164e2414b1661745658"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_null_record_s/data": {
@@ -3277,22 +3277,22 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_null_record_s/rr_record": {
       "etag": "\"e1d-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_null_record_s/rr-record.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_null_record_s/rr_record.md",
       "hash": "2406b63227f048a997a2bb35af2f934b453b8887995a3d6c5597650788a55122"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_null_record_t": {
       "etag": "\"2bcd-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-null-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_null_record_t.md",
       "hash": "fe3006b24db36da8f73f06113275321321549a8f4b77ec71bb8d1423c066ec0d"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_ptr_mask": {
       "etag": "\"1410-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-ptr-mask.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_ptr_mask.md",
       "hash": "89bbfc2980dcb36c3ec27555d2c1da431c350f95bb6a41c541b2e1ad02ec2151"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_ptr_record_s": {
       "etag": "\"314f-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-ptr-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_s.md",
       "hash": "510ad0cb44061b9aa6148d57806d535aa0d2c0721f86075aeb8c45d085d380ed"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_ptr_record_s/name": {
@@ -3302,17 +3302,17 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_ptr_record_s/rr_record": {
       "etag": "\"e11-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_s/rr-record.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_s/rr_record.md",
       "hash": "1c9ff390c5c0d31918c71262b2ee41e72374b3b958643789dbd7a7e3cdc46ec7"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_ptr_record_t": {
       "etag": "\"2bb9-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-ptr-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_t.md",
       "hash": "59683825ed0e74371240a145abacb0586f7768c3b211d63a8d02305c954847b6"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_record_s": {
       "etag": "\"32b3-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_record_s.md",
       "hash": "dff09e6d6eb1f105f05cbe3513665a00e19e25f1840fe2641ef7f07e834c7e0e"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_record_s/label": {
@@ -3367,7 +3367,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_record_s/rr/rr_class": {
       "etag": "\"f53-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_record_s/rr/rr-class.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_record_s/rr/rr_class.md",
       "hash": "d952dc8da1f8ba5c5e7f45a51d017c55c86b5912c6ed77a0c1fba72b7d2c610d"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_record_s/rr/ttl": {
@@ -3382,12 +3382,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_record_t": {
       "etag": "\"2b68-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_record_t.md",
       "hash": "e725d659ec1c3662437d811c4fab0f1909e41416d5e11f3fb5e2a48ff5dc82f9"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_srv_record_s": {
       "etag": "\"3967-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-srv-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s.md",
       "hash": "1692dd69933ff32d379b74d4b3c1dfc6dc6066782f5f35315d2f6cbe6f06bc87"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_srv_record_s/port": {
@@ -3402,12 +3402,12 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_srv_record_s/rr_record": {
       "etag": "\"e11-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s/rr-record.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s/rr_record.md",
       "hash": "954e3f2e08df82452ef5687d3083be36a013152cede00ca529190aae5300fc03"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_srv_record_s/sub_type": {
       "etag": "\"e15-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s/sub-type.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s/sub_type.md",
       "hash": "dcb82761b1df9a6d8b9ef16d3eb258366b4451f2361259ee164d28ac23ee8bf8"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_srv_record_s/target": {
@@ -3422,37 +3422,37 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_srv_record_t": {
       "etag": "\"2bb9-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-srv-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_t.md",
       "hash": "41a1732137164ac56c8619f7dcd6d83d8c8de6e5a1931e2863ecf0a28738a936"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_sub_type_s": {
       "etag": "\"3163-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-sub-type-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s.md",
       "hash": "5861c46d59f5de2da065d745d35dd2ea8d5175354ab1a5397491fc59ffaf38a5"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_sub_type_s/sub_typ_cnt": {
       "etag": "\"d7d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s/sub-typ-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s/sub_typ_cnt.md",
       "hash": "55fcd084b221041f8f8f7cf004bebd5545e78d37e490fcf639dbeeaae40f3fa0"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_sub_type_s/sub_typ_name": {
       "etag": "\"dbb-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s/sub-typ-name.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s/sub_typ_name.md",
       "hash": "9963baf3b2ab34e23195d8b43e4751a003b6c8bb1ca00874ed69908242adb3b6"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_sub_type_t": {
       "etag": "\"2b91-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-sub-type-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_t.md",
       "hash": "3eaa381d259acaf3eb7059349f32a5f0f5b0d9e48747dd210b21b0a2332fe09a"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_txt_record_s": {
       "etag": "\"3149-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-txt-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_txt_record_s.md",
       "hash": "11b4626fd321be71085ed7ebed5bda11771749dd6787d8858a2adc59dc48ef3b"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_txt_record_s/rr_record": {
       "etag": "\"e11-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_txt_record_s/rr-record.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_txt_record_s/rr_record.md",
       "hash": "8e3e5be0bc6548e03e731eba3e339e175132136302975920397365d07db345df"
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_txt_record_s/txt": {
@@ -3462,7 +3462,7 @@
     },
     "https://developer.apple.com/documentation/networkingdriverkit/rr_txt_record_t": {
       "etag": "\"2bb9-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-txt-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_txt_record_t.md",
       "hash": "7a22e520955993725e2a472735543ccf3226da55ec62ed444caedca61f590c37"
     },
     "https://developer.apple.com/tutorials/data/documentation/NetworkingDriverKit.json": {
@@ -3507,22 +3507,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ifdrv_t.json": {
       "etag": "\"2a90-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ifdrv-t.md",
+      "file_path": "documentation/NetworkingDriverKit/ifdrv_t.md",
       "hash": "367eea2eda586a67b7c33a6abf0e59dff57576dd9d941ddc3477f01a78dc1d26"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ifnet_family_any.json": {
       "etag": "\"1433-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ifnet-family-any.md",
+      "file_path": "documentation/NetworkingDriverKit/ifnet_family_any.md",
       "hash": "60692055339f2835256f69d967686eb34eb1787c706efe03c33191b0480d9e30"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ifnet_family_ethernet.json": {
       "etag": "\"1451-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ifnet-family-ethernet.md",
+      "file_path": "documentation/NetworkingDriverKit/ifnet_family_ethernet.md",
       "hash": "d389cbd0ee6ecf0b4bcf51724ee4e068844f3c1da9dcbc70e19b0d19a996799b"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ifnet_subfamily_any.json": {
       "etag": "\"1448-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ifnet-subfamily-any.md",
+      "file_path": "documentation/NetworkingDriverKit/ifnet_subfamily_any.md",
       "hash": "588846a17ce8256aaa4aa66a608884d4a737ade1136e5c36d44509aca7d5fd5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ionetworkpackettype.json": {
@@ -3852,7 +3852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkethernet_ivars.json": {
       "etag": "\"1638-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkethernet-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkethernet_ivars.md",
       "hash": "ab9d962d200b76047787d77317c6eeabb9f7c89c2d2d35bcfd59ca07f529c460"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkethernet_ivars/bsdname.json": {
@@ -3887,12 +3887,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/bytes_in.json": {
       "etag": "\"e01-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/bytes-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/bytes_in.md",
       "hash": "b44a3a3c7e1ffdda584aa3e883b97fa817fa8754b98703c08755187df3eea219"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/bytes_out.json": {
       "etag": "\"e0d-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/bytes-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/bytes_out.md",
       "hash": "edf37b13df66c0b07dd6e4ff8b7e4c14c558bedc222193d0a6624f35ef5d6bb2"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/collisions.json": {
@@ -3907,77 +3907,77 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/errors_in.json": {
       "etag": "\"e0d-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/errors-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/errors_in.md",
       "hash": "4ece8b4792eeec4bc4f99e23d3c86486925ba7fc220cd6b580e7b1ad0ebdc624"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/errors_out.json": {
       "etag": "\"e19-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/errors-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/errors_out.md",
       "hash": "d03e4fac8fbf6bdec30e81b137f4288cc76e7406f4edff47396244eb5dc27a95"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/multicasts_in.json": {
       "etag": "\"e3d-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/multicasts-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/multicasts_in.md",
       "hash": "2eae5a9c8bb02d8096317c6a1b498bd515af2c7fbba5134801ddd68ffd1db584"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/multicasts_out.json": {
       "etag": "\"e49-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/multicasts-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/multicasts_out.md",
       "hash": "5199ea02ae52084e804b0a945b2fc17213ac825573b5b2e7bebda133aba1124c"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/no_protocol.json": {
       "etag": "\"e25-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/no-protocol.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/no_protocol.md",
       "hash": "e34b9579d915d3bc1e5aa47c0662e547b2cedaa295ac4fdc4dea27eba000f336"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/packets_in.json": {
       "etag": "\"e19-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/packets-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/packets_in.md",
       "hash": "3e1e8dab196f5747c0504e5665f099b872655c3681defeb7e61e56e2c60ebabc"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/packets_out.json": {
       "etag": "\"e25-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/packets-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/packets_out.md",
       "hash": "158b2e6a5213ea2156afef385e94900bc63b110a8d5c8f0884fe4b757264fbda"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/reserved_in.json": {
       "etag": "\"e5f-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved_in.md",
       "hash": "88d5aab167126dda72038723e834e90770644aac24c0a9cb50fe2fd8fc1f8a0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/reserved_misc.json": {
       "etag": "\"e77-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved-misc.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved_misc.md",
       "hash": "cab2ed0b693cf00667e2830afe150b8361bfd24a37df009b2a6f606dfd5fba70"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkhardwarecounts/reserved_out.json": {
       "etag": "\"e6b-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkhardwarecounts/reserved_out.md",
       "hash": "e51fbb5eaac070c605cbf4a2c9594da2d8779acb6fb69f105b11a84d234e5992"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_data_size.json": {
       "etag": "\"2d3e-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-data-size.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_data_size.md",
       "hash": "6dcc8a1dc15eeeb8488f13e729e41b132732133ff0580645603e3f38a96b9691"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_ethertype_ipv4.json": {
       "etag": "\"2d5c-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-ethertype-ipv4.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_ethertype_ipv4.md",
       "hash": "b227de580a0c2f90ed0269345026148079e7fc875acd6e876e41e848ae819a6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_ethertype_ipv6.json": {
       "etag": "\"2d5c-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-ethertype-ipv6.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_ethertype_ipv6.md",
       "hash": "694a986a1239fd634820db9721a0117fea177bfe6e7bc4e04f65c7b75a7f0e7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_flag_nowakefromsleep.json": {
       "etag": "\"2d80-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-flag-nowakefromsleep.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_flag_nowakefromsleep.md",
       "hash": "7717d17c2ce44497d540a5932a6b903b86e974f6e5d7c12ca82f67e97ab7b92c"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffload_max_addr_size.json": {
       "etag": "\"2d56-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload-max-addr-size.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffload_max_addr_size.md",
       "hash": "5a5b740f10abc56c5179958ab54d974868e55fdc4ac7922b417fe97a98d5b241"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe.json": {
@@ -3987,7 +3987,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/addr_length.json": {
       "etag": "\"e72-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/addr-length.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/addr_length.md",
       "hash": "c57f2fda9e69de65975cf00cc18e1e137b67b8198e9ff1760128e3c0ba5f843b"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/data.json": {
@@ -3997,7 +3997,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/ether_type.json": {
       "etag": "\"e66-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/ether-type.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/ether_type.md",
       "hash": "324fc6fedf8ac809b0811d02d82457e3c9cf1160d8a9fca3d2bf30ec25223f67"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/flags.json": {
@@ -4012,12 +4012,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/keep_cnt.json": {
       "etag": "\"e4e-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/keep-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/keep_cnt.md",
       "hash": "c4dcefdfa62141175cbd81d5b804b8d07e5ec15592c2d55fe0931ba31a635f35"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/keep_retry.json": {
       "etag": "\"e6d-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/keep-retry.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/keep_retry.md",
       "hash": "afc9ed6eb2dfe3f46f8c2ede7bae178bb2d48d5ad94604b827e924029dbd2ed6"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/length.json": {
@@ -4027,42 +4027,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/local_addr.json": {
       "etag": "\"ea0-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local_addr.md",
       "hash": "cd74321ac822b678e1bc24db7f0ea5b524bd5738ec6707c10dfd2b348fe63d70"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/local_port.json": {
       "etag": "\"e6d-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local-port.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local_port.md",
       "hash": "dfffd98c473dfd0e9cb0d407854c5623d425bd89a16d1b9248bb5d1c5f702755"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/local_seq.json": {
       "etag": "\"e61-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local-seq.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/local_seq.md",
       "hash": "dee4c574de8d23b294a7bf2770ff4e3d7a2f1c1296832ea7685bfc7086069ae5"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/remote_addr.json": {
       "etag": "\"eac-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote_addr.md",
       "hash": "cb5097c5479d5e69c4905a0d57f7393f90e483a5a0eff6aa80d4898ab24c8c58"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/remote_port.json": {
       "etag": "\"e79-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote-port.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote_port.md",
       "hash": "e1e1afb5ec1f96b717afcc6c22d4f2c5880835a7cbed8e87270e215387aa554a"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/remote_seq.json": {
       "etag": "\"e6d-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote-seq.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/remote_seq.md",
       "hash": "0d778f7659b45bdb7bc6da975f5cf5f7bceca180d025855264ce5a71e1a943c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/reply_data.json": {
       "etag": "\"ea1-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/reply-data.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/reply_data.md",
       "hash": "9cf5a215038e672dca769184160a659b98748aa09a4b3b7029f55d9b969d9d92"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/reply_length.json": {
       "etag": "\"e7e-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/reply-length.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe/reply_length.md",
       "hash": "4756904639bcd34620ae1086db70fed95a4f61679b78996639d3cc78725aad46"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe/reserved.json": {
@@ -4077,17 +4077,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe_airplay.json": {
       "etag": "\"2d50-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe-airplay.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe_airplay.md",
       "hash": "80854f491f3df4f488268907760256f2e689b2df8901e9d935388f1fea8f4ed5"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe_ipsec.json": {
       "etag": "\"2d44-65d55ea1e8bdc-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe-ipsec.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe_ipsec.md",
       "hash": "5a92568505749735a09a6a7ad5c97c521d5a31c9880d76fba55afa14559d990e"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkkeepaliveoffloadframe_tcp.json": {
       "etag": "\"2d38-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe-tcp.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkkeepaliveoffloadframe_tcp.md",
       "hash": "1b7beec6e9d60ff001ce709266983cd173e609ff53eb192635efc72d9ae20f63"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo.json": {
@@ -4127,7 +4127,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo/rcv_expire.json": {
       "etag": "\"e9d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo/rcv-expire.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo/rcv_expire.md",
       "hash": "8e10e8f5dab5a1db860d01609e3de8ae276043f790f28bfd7293dc2cd24d68dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo/refcnt.json": {
@@ -4142,12 +4142,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo/snd_expire.json": {
       "etag": "\"e9d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo/snd-expire.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo/snd_expire.md",
       "hash": "fff25ebf467eca320d321b49b91a20e2fcc0f26c33a51b826ce4a0ab5ef3b624"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworklinklayerreachabilityinfo_addrlen.json": {
       "etag": "\"2d68-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo-addrlen.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworklinklayerreachabilityinfo_addrlen.md",
       "hash": "244056fb8308d2f6cf3bb0588477e2d2a49c270889b050f4d40fa6656db9b966"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworklinkquality.json": {
@@ -4807,7 +4807,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkpacketqueue_ivars.json": {
       "etag": "\"5307-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkpacketqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkpacketqueue_ivars.md",
       "hash": "22cdd4da47a90d488271412cf4f80ac7c020c1a00c7a3491c11b5e0c41cb7430"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkpacketqueue_ivars/dataqueue.json": {
@@ -4977,7 +4977,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkpacketqueuecompat_ivars.json": {
       "etag": "\"31ea-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkpacketqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkpacketqueuecompat_ivars.md",
       "hash": "ea2156316ad0884de90ca07fb8e3ed90d70effe7d4065f51ed257f298be9d9f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkpacketqueuecompat_ivars/dataqueue.json": {
@@ -5127,7 +5127,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkrxcompletionqueue_ivars.json": {
       "etag": "\"32c9-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxcompletionqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxcompletionqueue_ivars.md",
       "hash": "b53848b5c878a0c3de8135bc9d0aaa8356ce913e4a1f20da13ec369e3f034d32"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkrxcompletionqueue_ivars/dataqueue.json": {
@@ -5177,7 +5177,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkrxcompletionqueuecompat_ivars.json": {
       "etag": "\"1080-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxcompletionqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxcompletionqueuecompat_ivars.md",
       "hash": "15dadef537eb19ebacf3b9a8f125e0814fc2c9dacf17816cc960a214424390fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkrxcompletionqueuecompat_ivars/dataqueue.json": {
@@ -5222,7 +5222,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkrxsubmissionqueue_ivars.json": {
       "etag": "\"3311-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxsubmissionqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxsubmissionqueue_ivars.md",
       "hash": "1303799871651840b4c36c5e61bcb239423a7d1de986e89c40d23e3e1bd06a4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkrxsubmissionqueue_ivars/dataavailableaction.json": {
@@ -5267,7 +5267,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkrxsubmissionqueuecompat_ivars.json": {
       "etag": "\"10c8-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxsubmissionqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkrxsubmissionqueuecompat_ivars.md",
       "hash": "b56b3f1e412fdf2a0e718f3fc33d449d1b47128a8c0a2c16808f3594baa2b186"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkrxsubmissionqueuecompat_ivars/dataavailableaction.json": {
@@ -5292,12 +5292,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/bytes_in.json": {
       "etag": "\"dd1-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/bytes-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/bytes_in.md",
       "hash": "7e357f24f9fede228770da68d9a6bad765f57783effac7dd52b4c2a48dc6a252"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/bytes_out.json": {
       "etag": "\"ddd-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/bytes-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/bytes_out.md",
       "hash": "87e8d4ba0d666627c2af33280488923c6d84c3ed4fb6f12446cc3f8ee11379b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/collisions.json": {
@@ -5312,37 +5312,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/errors_in.json": {
       "etag": "\"ddd-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/errors-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/errors_in.md",
       "hash": "d7096d800a96007f327ef46edfcfe56c8cd27478aaa44f8ee102b8dd3b253000"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/errors_out.json": {
       "etag": "\"de9-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/errors-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/errors_out.md",
       "hash": "8e977728ce273086e1f5ac1890c5498b018050bd72f386b55644fac1fbd60893"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/multicasts_in.json": {
       "etag": "\"e0d-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/multicasts-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/multicasts_in.md",
       "hash": "4f7630ada2654de8a764a7a7ccca6ebd5e9dea9244c0cea532790c2af85a6a97"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/multicasts_out.json": {
       "etag": "\"e19-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/multicasts-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/multicasts_out.md",
       "hash": "f763462670d89cdedb5dfc281c0b4a50c91b92baf511f022e5ee34c519ddc481"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/no_protocol.json": {
       "etag": "\"df5-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/no-protocol.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/no_protocol.md",
       "hash": "8bf070353f24da2cbb62836991b5d643471649b1fece21f5b7c6a2f7c17c9714"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/packets_in.json": {
       "etag": "\"de9-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/packets-in.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/packets_in.md",
       "hash": "f8a7400d49f7c3339716fb6e66d656df7e9069ce6ca18064d350ff84c988a4cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworkstatistics/packets_out.json": {
       "etag": "\"df5-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/packets-out.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworkstatistics/packets_out.md",
       "hash": "cc34b01d5aa18ceaec77eced7f229078dd7dc7b924587b603eec46885e8cd437"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktsooptions.json": {
@@ -5367,12 +5367,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktsooptions/tso_mtu4.json": {
       "etag": "\"dd7-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktsooptions/tso-mtu4.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktsooptions/tso_mtu4.md",
       "hash": "7e12f091f935ec28da461ccd961b96a937b17d95e82a40ada594be6cdf3a30d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktsooptions/tso_mtu6.json": {
       "etag": "\"dd7-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktsooptions/tso-mtu6.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktsooptions/tso_mtu6.md",
       "hash": "1317ecbc6dd00a43929287dd2ee0ab6a327b4f5153a34ff43ff7bfce992676b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxcompletionqueue.json": {
@@ -5412,7 +5412,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxcompletionqueue_ivars.json": {
       "etag": "\"32c9-65d55ea1e8bdc-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktxcompletionqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktxcompletionqueue_ivars.md",
       "hash": "b0a6b78dcd42c6883608d103938fa9553a3f5dfa59e38a16ec0ab5493f966768"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxcompletionqueue_ivars/dataqueue.json": {
@@ -5462,7 +5462,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxcompletionqueuecompat_ivars.json": {
       "etag": "\"1080-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktxcompletionqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktxcompletionqueuecompat_ivars.md",
       "hash": "4f09738a54fbebaababdd5a0b3faee6bddd32cbcb7cd4cd3d503067e6962eb45"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxcompletionqueuecompat_ivars/dataqueue.json": {
@@ -5522,7 +5522,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxsubmissionqueue_ivars.json": {
       "etag": "\"37e3-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktxsubmissionqueue-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktxsubmissionqueue_ivars.md",
       "hash": "e8a4db21603ac6adb603a242cf55efc53e5119dd89ba3f0a4ad1fdfab01f62fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxsubmissionqueue_ivars/dataavailableaction.json": {
@@ -5592,7 +5592,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxsubmissionqueuecompat_ivars.json": {
       "etag": "\"15ca-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/iousernetworktxsubmissionqueuecompat-ivars.md",
+      "file_path": "documentation/NetworkingDriverKit/iousernetworktxsubmissionqueuecompat_ivars.md",
       "hash": "b9ab413733416d2679effcd1e82cef12f911d37cfefbefdcc560aef2382052ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/iousernetworktxsubmissionqueuecompat_ivars/dataavailableaction.json": {
@@ -5617,7 +5617,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ip_portrange_bitfield_len.json": {
       "etag": "\"2cea-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ip-portrange-bitfield-len.md",
+      "file_path": "documentation/NetworkingDriverKit/ip_portrange_bitfield_len.md",
       "hash": "33946e1e0905ecad1e84dc0dfef9585fb01ae9e96d3bdb2e1ba3bfa4d9c5d179"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/kiousernetworkblocking.json": {
@@ -5812,7 +5812,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/kiousernetworkmediaethernet1000basecx_sgmii.json": {
       "etag": "\"2fa6-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/kiousernetworkmediaethernet1000basecx-sgmii.md",
+      "file_path": "documentation/NetworkingDriverKit/kiousernetworkmediaethernet1000basecx_sgmii.md",
       "hash": "e6348bdc1191218cd73c0ec5ea3bb5d9be71d079a389e63ae40ac7477e1f8385"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/kiousernetworkmediaethernet1000basekx.json": {
@@ -6272,32 +6272,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ndk_20.json": {
       "etag": "\"2c78-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-20.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_20.md",
       "hash": "88bb81fe6caf85d2e49ee98e72f530ca80c62b33f40d5851d6e5053118d08659"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ndk_21.json": {
       "etag": "\"2c78-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-21.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_21.md",
       "hash": "7cd2778eb342ddf0c6c4507958bb6864b604fc25d1ea23880f662c48369c408c"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ndk_22.json": {
       "etag": "\"2c78-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-22.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_22.md",
       "hash": "f08092349c2b59e9851397cffed9c7f9f692f1a5c531f978fabd7d74bbf5d1be"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ndk_23.json": {
       "etag": "\"2c78-65d55ea1e8bdc-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-23.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_23.md",
       "hash": "95b8a188d64dfce24650d5bcc4e4f5feacd761dc04ca40f7e34273783bab0c41"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ndk_24.json": {
       "etag": "\"2c78-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-24.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_24.md",
       "hash": "5b3b21de1d41816f4c8046d4efdf10730ea8e469b69f9dc31b0f8e96d30c0158"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/ndk_25.json": {
       "etag": "\"953-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/ndk-25.md",
+      "file_path": "documentation/NetworkingDriverKit/ndk_25.md",
       "hash": "995e38f0fffbee4509985f514933d36d73136ee8341a170a6b862944d354323c"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/networkingdriverkit-constants.json": {
@@ -6317,17 +6317,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nic_proxy_flags_womp.json": {
       "etag": "\"2d20-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nic-proxy-flags-womp.md",
+      "file_path": "documentation/NetworkingDriverKit/nic_proxy_flags_womp.md",
       "hash": "ca7e0bb29eb8bc13b8fe60352e18105312a4612d4d9e21d8e2a4710913ccbc24"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nic_proxy_flags_wonlink.json": {
       "etag": "\"2d44-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nic-proxy-flags-wonlink.md",
+      "file_path": "documentation/NetworkingDriverKit/nic_proxy_flags_wonlink.md",
       "hash": "ded6f2902952ca107ab10957aaf9d268563dd284b145b55dda1a60f8e79117da"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_inet_info_s.json": {
       "etag": "\"3f75-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-inet-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_inet_info_s.md",
       "hash": "25f46b24c03283b9fa3641f2cf6e900e166bf7245b3cecf00f691a030e27b3a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_inet_info_s/v4addrcount.json": {
@@ -6372,12 +6372,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_inet_info_t.json": {
       "etag": "\"2c1d-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-inet-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_inet_info_t.md",
       "hash": "f3e4a603efc0e0d94b1d49127d1c890454c164fef9a315bf3edf51bd10fff2a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_info_s.json": {
       "etag": "\"3f3d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_info_s.md",
       "hash": "55683a5d786c7c13ef984f657fcf08e207975deae24c028b510cc06544efa597"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_info_s/buf.json": {
@@ -6407,7 +6407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_info_s/mac_addr.json": {
       "etag": "\"c1d-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_info_s/mac-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_info_s/mac_addr.md",
       "hash": "90180738b96c70b0a8dcd5d830db92170b6a5066c9a82ac8c80084bce5639bca"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_info_s/ports.json": {
@@ -6427,12 +6427,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_info_t.json": {
       "etag": "\"2bb9-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_info_t.md",
       "hash": "02c0145423d5308694213dd597bf8fb209f9c882d374a30fb0e8ce7c8e8b8932"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_keep_alive_info_s.json": {
       "etag": "\"3b53-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-keep-alive-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_keep_alive_info_s.md",
       "hash": "97df603f72a1ac7174bd06603966904cb3d68d58e735c4b0983aff425d2831b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_keep_alive_info_s/retrycount.json": {
@@ -6467,22 +6467,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_keep_alive_info_t.json": {
       "etag": "\"2c95-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-keep-alive-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_keep_alive_info_t.md",
       "hash": "b0737c6b8d0e5a137e0bf021fb300b9ef1d9170df0412c446dcebe9cecd45c88"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_keepalive_ethertype_ip.json": {
       "etag": "\"cf0-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-keepalive-ethertype-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_keepalive_ethertype_ip.md",
       "hash": "124831bd2b9e25917cae4b394e0e7d694f7be60f363d8de337cdb5243f1203f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_keepalive_tcp.json": {
       "etag": "\"cba-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-keepalive-tcp.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_keepalive_tcp.md",
       "hash": "0f35bdc60334c8b15757b361801f0a13fa29a580e9e26ecee423e2a6e84ed274"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_s.json": {
       "etag": "\"43b7-65d55ea1e8bdc-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-limits-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s.md",
       "hash": "dc6fdc23e4fbc0d71ebb234f3554b3cc8b2e3ca54397f966fb7cd0e3baaf0909"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_s/ethcount.json": {
@@ -6492,12 +6492,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_s/ipv4_cnt.json": {
       "etag": "\"dbe-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/ipv4-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/ipv4_cnt.md",
       "hash": "4979035db68e1f162d6a31a90be110449b22dea70cd22c71543c19b06082117f"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_s/ipv6_cnt.json": {
       "etag": "\"dbe-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/ipv6-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/ipv6_cnt.md",
       "hash": "21b46e0abf521e5ae51b6a8c7438927d2837bbb5b8f65db17d5a3e359897757e"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_s/kaipv4count.json": {
@@ -6517,12 +6517,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_s/rr_buf_size.json": {
       "etag": "\"de9-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/rr-buf-size.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/rr_buf_size.md",
       "hash": "0dcd86c3ab439630da1a24adee9c865cafb6647bb97e5c749e51cc69587f7625"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_s/rr_cnt.json": {
       "etag": "\"dad-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/rr-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_s/rr_cnt.md",
       "hash": "8dec3b02780702b3eb3079a7c264957d2dd3d5093670a6ac70ef046190aa5292"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_s/waketcpcount.json": {
@@ -6537,12 +6537,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_limits_info_t.json": {
       "etag": "\"2c45-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-limits-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_limits_info_t.md",
       "hash": "0809e2952a8bdfce9c6b9cb098d3aa1e7d66a90b89475ef74aad401db5cb9a70"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_port_info_s.json": {
       "etag": "\"3659-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-port-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_port_info_s.md",
       "hash": "bdde22db1bbce1a012da77488634f72b6bb43c2304e9663a389333593bf508a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_port_info_s/tcpportcount.json": {
@@ -6567,12 +6567,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_port_info_t.json": {
       "etag": "\"2c1d-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-port-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_port_info_t.md",
       "hash": "21a647501dff7456097ae3e05d006e0465ce3b6d16af2a5369e26026f8f4dc0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_rr_info_s.json": {
       "etag": "\"35d3-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-rr-info-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_rr_info_s.md",
       "hash": "176142442ebf9bb0cc4aebfd5ab94651aa73575669fe252789482f6c248e1c5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_rr_info_s/rrbuflen.json": {
@@ -6597,47 +6597,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_rr_info_t.json": {
       "etag": "\"2bf5-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-rr-info-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_rr_info_t.md",
       "hash": "dd839dbda34a663ad83cd6b7ffefbf402347037752091feedc2dcd55bfdbca7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s.json": {
       "etag": "\"41a1-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-v4-keep-alive-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s.md",
       "hash": "c5463001af08d4c368a20bc4af7acd8f255c2f0f7a371005bcf85dfa19dc3111"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/ack_num.json": {
       "etag": "\"dd1-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/ack-num.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/ack_num.md",
       "hash": "c7c57861b4c0bdd7d62fa6eb190681205eab80a3472d9b58d8f1582f0b25a6ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/local_ip.json": {
       "etag": "\"de4-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/local-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/local_ip.md",
       "hash": "7659ec2410d3baefe62837096b6c809df14941c6b93c71e20b685a4f9a4a8038"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/local_port.json": {
       "etag": "\"dfc-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/local-port.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/local_port.md",
       "hash": "dfd6ab8b7e4a1f725b3970024b2f936c4b809fde102cae230cd257f3073abca0"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/remote_ip.json": {
       "etag": "\"df0-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote_ip.md",
       "hash": "fd87338474a3d6b152a9064cf416f044b6f76d331a38047c85a7e149bcd4c182"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/remote_mac_addr.json": {
       "etag": "\"cdd-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote-mac-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote_mac_addr.md",
       "hash": "6c8b76b89766b079cd6867d30c598a74a3862b74c1dcde3628be2332e75d72e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/remote_port.json": {
       "etag": "\"e08-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote-port.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/remote_port.md",
       "hash": "04a6d280ab8b7f29361f873f8b28913c09df79a3db38524279caeb253005eca7"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/seq_num.json": {
       "etag": "\"dd1-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/seq-num.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/seq_num.md",
       "hash": "d8140e55374fa4add842f11883947fe7b0edff8f73df66f72b3480012a894522"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/timeout.json": {
@@ -6647,52 +6647,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_s/win_size.json": {
       "etag": "\"ddd-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/win-size.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_s/win_size.md",
       "hash": "4cbcc6d7c3d10d336561a64e8038f2c6513f9424a527c73d2ed2b96dd517ea42"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v4_keep_alive_t.json": {
       "etag": "\"2c6d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-v4-keep-alive-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v4_keep_alive_t.md",
       "hash": "fcd55ee58248d639af521f54eb1ab5c2711aeb4295071e44e5fcba802e4ac62a"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s.json": {
       "etag": "\"41a1-65d55ea221e3c-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-v6-keep-alive-s.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s.md",
       "hash": "632aa1f6fa2365ce0f3252e064cc9e3ea6d57c66897cb1ccb02074f183aa5eb1"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/ack_num.json": {
       "etag": "\"dd1-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/ack-num.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/ack_num.md",
       "hash": "92de69fc553515f8e461b85f7e3a1d9ce3051e9ef6b7519e19cb29dc4cc7d2f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/local_ip.json": {
       "etag": "\"c85-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/local-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/local_ip.md",
       "hash": "68f5270068b426422821bcbc9d13bd9063c43f1f213dea2ae62d4e28480f6582"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/local_port.json": {
       "etag": "\"dfc-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/local-port.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/local_port.md",
       "hash": "5e52e80ee95dd48eec2b638399548f6d47fb6b5b51f0239c23f9eb8bc1715345"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/remote_ip.json": {
       "etag": "\"c91-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote-ip.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote_ip.md",
       "hash": "82a09518e122f186d83355b4ddd9c72f390d7957f2fa8cb66771792008735919"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/remote_mac_addr.json": {
       "etag": "\"cdd-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote-mac-addr.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote_mac_addr.md",
       "hash": "8f4d01b06b1fc5bc388496edab3bf83c7b17c052a750b95767979187c1133172"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/remote_port.json": {
       "etag": "\"e08-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote-port.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/remote_port.md",
       "hash": "9c224e5c42cd511e9099bba0711a52f146419575883b858f4f7cd8ad7bfaa40c"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/seq_num.json": {
       "etag": "\"dd1-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/seq-num.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/seq_num.md",
       "hash": "612888cfd103c993ddc29fb99bb7a3e74010a92488e53fdf7d654d3a4aeddc07"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/timeout.json": {
@@ -6702,12 +6702,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_s/win_size.json": {
       "etag": "\"ddd-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/win-size.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_s/win_size.md",
       "hash": "caa4bde457b338a4af681a5502c9c6c9ff35c154e521918a6c6302919f978577"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/nicproxy_v6_keep_alive_t.json": {
       "etag": "\"2c6d-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/nicproxy-v6-keep-alive-t.md",
+      "file_path": "documentation/NetworkingDriverKit/nicproxy_v6_keep_alive_t.md",
       "hash": "2b96ca40ff20a83a0def9c44b226987a6feb4b37f3c89cdae289b552f12f6627"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/pollaction.json": {
@@ -6727,12 +6727,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_length_mask.json": {
       "etag": "\"1422-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-length-mask.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_length_mask.md",
       "hash": "873e00768dd416adc56b10e6adc86f9a382000f710b22039c46623a2211598ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_null_record_s.json": {
       "etag": "\"3163-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-null-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_null_record_s.md",
       "hash": "c904a4714b9158debdea26bd26d40326ee587ab2947af164e2414b1661745658"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_null_record_s/data.json": {
@@ -6742,22 +6742,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_null_record_s/rr_record.json": {
       "etag": "\"e1d-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_null_record_s/rr-record.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_null_record_s/rr_record.md",
       "hash": "2406b63227f048a997a2bb35af2f934b453b8887995a3d6c5597650788a55122"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_null_record_t.json": {
       "etag": "\"2bcd-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-null-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_null_record_t.md",
       "hash": "fe3006b24db36da8f73f06113275321321549a8f4b77ec71bb8d1423c066ec0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_ptr_mask.json": {
       "etag": "\"1410-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-ptr-mask.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_ptr_mask.md",
       "hash": "89bbfc2980dcb36c3ec27555d2c1da431c350f95bb6a41c541b2e1ad02ec2151"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_ptr_record_s.json": {
       "etag": "\"314f-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-ptr-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_s.md",
       "hash": "510ad0cb44061b9aa6148d57806d535aa0d2c0721f86075aeb8c45d085d380ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_ptr_record_s/name.json": {
@@ -6767,17 +6767,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_ptr_record_s/rr_record.json": {
       "etag": "\"e11-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_s/rr-record.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_s/rr_record.md",
       "hash": "1c9ff390c5c0d31918c71262b2ee41e72374b3b958643789dbd7a7e3cdc46ec7"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_ptr_record_t.json": {
       "etag": "\"2bb9-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-ptr-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_ptr_record_t.md",
       "hash": "59683825ed0e74371240a145abacb0586f7768c3b211d63a8d02305c954847b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_record_s.json": {
       "etag": "\"32b3-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_record_s.md",
       "hash": "dff09e6d6eb1f105f05cbe3513665a00e19e25f1840fe2641ef7f07e834c7e0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_record_s/label.json": {
@@ -6832,7 +6832,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_record_s/rr/rr_class.json": {
       "etag": "\"f53-65d55ea15b288-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_record_s/rr/rr-class.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_record_s/rr/rr_class.md",
       "hash": "d952dc8da1f8ba5c5e7f45a51d017c55c86b5912c6ed77a0c1fba72b7d2c610d"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_record_s/rr/ttl.json": {
@@ -6847,12 +6847,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_record_t.json": {
       "etag": "\"2b68-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_record_t.md",
       "hash": "e725d659ec1c3662437d811c4fab0f1909e41416d5e11f3fb5e2a48ff5dc82f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_srv_record_s.json": {
       "etag": "\"3967-65d55ea2467aa-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-srv-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s.md",
       "hash": "1692dd69933ff32d379b74d4b3c1dfc6dc6066782f5f35315d2f6cbe6f06bc87"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_srv_record_s/port.json": {
@@ -6867,12 +6867,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_srv_record_s/rr_record.json": {
       "etag": "\"e11-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s/rr-record.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s/rr_record.md",
       "hash": "954e3f2e08df82452ef5687d3083be36a013152cede00ca529190aae5300fc03"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_srv_record_s/sub_type.json": {
       "etag": "\"e15-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s/sub-type.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_s/sub_type.md",
       "hash": "dcb82761b1df9a6d8b9ef16d3eb258366b4451f2361259ee164d28ac23ee8bf8"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_srv_record_s/target.json": {
@@ -6887,37 +6887,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_srv_record_t.json": {
       "etag": "\"2bb9-65d55ea233fa3-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-srv-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_srv_record_t.md",
       "hash": "41a1732137164ac56c8619f7dcd6d83d8c8de6e5a1931e2863ecf0a28738a936"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_sub_type_s.json": {
       "etag": "\"3163-65d55ea1d3327-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-sub-type-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s.md",
       "hash": "5861c46d59f5de2da065d745d35dd2ea8d5175354ab1a5397491fc59ffaf38a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_sub_type_s/sub_typ_cnt.json": {
       "etag": "\"d7d-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s/sub-typ-cnt.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s/sub_typ_cnt.md",
       "hash": "55fcd084b221041f8f8f7cf004bebd5545e78d37e490fcf639dbeeaae40f3fa0"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_sub_type_s/sub_typ_name.json": {
       "etag": "\"dbb-65d55ea206727-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s/sub-typ-name.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_s/sub_typ_name.md",
       "hash": "9963baf3b2ab34e23195d8b43e4751a003b6c8bb1ca00874ed69908242adb3b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_sub_type_t.json": {
       "etag": "\"2b91-65d55ea1b0b60-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-sub-type-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_sub_type_t.md",
       "hash": "3eaa381d259acaf3eb7059349f32a5f0f5b0d9e48747dd210b21b0a2332fe09a"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_txt_record_s.json": {
       "etag": "\"3149-65d55ea1c1e89-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-txt-record-s.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_txt_record_s.md",
       "hash": "11b4626fd321be71085ed7ebed5bda11771749dd6787d8858a2adc59dc48ef3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_txt_record_s/rr_record.json": {
       "etag": "\"e11-65d55ea259c54-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr_txt_record_s/rr-record.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_txt_record_s/rr_record.md",
       "hash": "8e3e5be0bc6548e03e731eba3e339e175132136302975920397365d07db345df"
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_txt_record_s/txt.json": {
@@ -6927,7 +6927,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/networkingdriverkit/rr_txt_record_t.json": {
       "etag": "\"2bb9-65d55ea192380-df\"",
-      "file_path": "documentation/NetworkingDriverKit/rr-txt-record-t.md",
+      "file_path": "documentation/NetworkingDriverKit/rr_txt_record_t.md",
       "hash": "7a22e520955993725e2a472735543ccf3226da55ec62ed444caedca61f590c37"
     }
   },

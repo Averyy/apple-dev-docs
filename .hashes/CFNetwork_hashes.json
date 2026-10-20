@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfftpcreateparsedresourcelisting(_:_:_:_:)": {
       "etag": "\"7500-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfftpcreateparsedresourcelisting.md",
+      "file_path": "documentation/CFNetwork/cfftpcreateparsedresourcelisting(_,_,_,_).md",
       "hash": "1eb5e680860bb17f9359604396a6591bdd8132712063c259510a5756cbde209d"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhost": {
@@ -37,7 +37,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostcancelinforesolution(_:_:)": {
       "etag": "\"7c7f-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhostcancelinforesolution.md",
+      "file_path": "documentation/CFNetwork/cfhostcancelinforesolution(_,_).md",
       "hash": "419fe95968a80419f03c1d8f6b8d4975497d005d36748d7b36a1d0266679f646"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostclientcallback": {
@@ -62,12 +62,12 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostclientcontext/init()": {
       "etag": "\"1850-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhostclientcontext/init.md",
+      "file_path": "documentation/CFNetwork/cfhostclientcontext/init().md",
       "hash": "502efc3ce7078ece4eb8b20c80ef53bf6f5bd30d2fd2c9da993841a8b70f0a92"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostclientcontext/init(version:info:retain:release:copydescription:)": {
       "etag": "\"32d1-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhostclientcontext/init-versioninforetainreleasecopydescription.md",
+      "file_path": "documentation/CFNetwork/cfhostclientcontext/init(version,info,retain,release,copydescription).md",
       "hash": "ae8cf94d54faea7e3c935e8a57a0e413bdd7fb310f13946d7ac36d04f516de88"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostclientcontext/release": {
@@ -87,37 +87,37 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostcreatecopy(_:_:)": {
       "etag": "\"881e-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhostcreatecopy.md",
+      "file_path": "documentation/CFNetwork/cfhostcreatecopy(_,_).md",
       "hash": "d204f0262188d26682a1c2a4910ca93e7cba9d25219dcb922fd00cf54607d83b"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostcreatewithaddress(_:_:)": {
       "etag": "\"8d92-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfhostcreatewithaddress.md",
+      "file_path": "documentation/CFNetwork/cfhostcreatewithaddress(_,_).md",
       "hash": "41000266244b7838da3b25bd75bc802dd5834faf092b57046426e777bd2fa67f"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostcreatewithname(_:_:)": {
       "etag": "\"8cef-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhostcreatewithname.md",
+      "file_path": "documentation/CFNetwork/cfhostcreatewithname(_,_).md",
       "hash": "feaad697ac7faebcad8fa630d99b7d403de90c65f08fb03f951304fd1d951a0a"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostgetaddressing(_:_:)": {
       "etag": "\"89bd-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhostgetaddressing.md",
+      "file_path": "documentation/CFNetwork/cfhostgetaddressing(_,_).md",
       "hash": "c47d8d3cf6a5295beafec739878d8ff77d5f076fddaf17b360b7609bcccc1787"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostgetnames(_:_:)": {
       "etag": "\"8c91-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhostgetnames.md",
+      "file_path": "documentation/CFNetwork/cfhostgetnames(_,_).md",
       "hash": "f095d534f3c4fe4854632fd7e2b2a97f54c94b1412005450cb22e4b8c1e3a1a1"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostgetreachability(_:_:)": {
       "etag": "\"8e54-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhostgetreachability.md",
+      "file_path": "documentation/CFNetwork/cfhostgetreachability(_,_).md",
       "hash": "44cbe870ce1b3510cce8260f8a0f2f5ebfa02ecdb3035fe776be617360dbba2e"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostgettypeid()": {
       "etag": "\"7618-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhostgettypeid.md",
+      "file_path": "documentation/CFNetwork/cfhostgettypeid().md",
       "hash": "1db7cc13b6f4981cbe6ff1ff7528457aed7f857ea8ef5f27bd14f067b94f7343"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostinfotype": {
@@ -132,7 +132,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostinfotype/init(rawvalue:)": {
       "etag": "\"141f-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhostinfotype/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfhostinfotype/init(rawvalue).md",
       "hash": "9a2118905d518e7634f8d35e5235075097d520cefa79ca5e1793463c1ac19e6c"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostinfotype/names": {
@@ -147,22 +147,22 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostschedulewithrunloop(_:_:_:)": {
       "etag": "\"881c-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhostschedulewithrunloop.md",
+      "file_path": "documentation/CFNetwork/cfhostschedulewithrunloop(_,_,_).md",
       "hash": "9d99b0b642d694d47110cace33ff082f7b34261dc688e0dae204316aba13b708"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostsetclient(_:_:_:)": {
       "etag": "\"976d-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhostsetclient.md",
+      "file_path": "documentation/CFNetwork/cfhostsetclient(_,_,_).md",
       "hash": "a7050162cd3a6058e5f8863f2ab08e1f93374be046c6cddde94b07326e2740f5"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhoststartinforesolution(_:_:_:)": {
       "etag": "\"a094-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhoststartinforesolution.md",
+      "file_path": "documentation/CFNetwork/cfhoststartinforesolution(_,_,_).md",
       "hash": "b230e626b4b64064d618274d17d8d1833232ce999ffec9b55869d5582c7f294f"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhostunschedulefromrunloop(_:_:_:)": {
       "etag": "\"83c5-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfhostunschedulefromrunloop.md",
+      "file_path": "documentation/CFNetwork/cfhostunschedulefromrunloop(_,_,_).md",
       "hash": "214ec8678961aa4e58bc76ee1a86b1cf475d52ae634bc076780d8930e414713d"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthentication": {
@@ -172,52 +172,52 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationappliestorequest(_:_:)": {
       "etag": "\"8a15-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationappliestorequest.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationappliestorequest(_,_).md",
       "hash": "470419709b4d968c5907001c6c8b5b39e4ffc2566fd50ba36bec161c6c0df16f"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationcopydomains(_:)": {
       "etag": "\"87c1-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopydomains.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopydomains(_).md",
       "hash": "a0af939e830ce231feb0ea24bcc709fe6d526007cdabbc8d6d592f814ba55d3a"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationcopymethod(_:)": {
       "etag": "\"87e7-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopymethod.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopymethod(_).md",
       "hash": "ab914e7862263216e4f2593eaa734538cbc9bf6a647aac8a989b4db730fa8179"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationcopyrealm(_:)": {
       "etag": "\"878b-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopyrealm.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopyrealm(_).md",
       "hash": "80497263d5626842e387a99ce5412d3ea1af6b5e5a8635751daf144eb8099dce"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationcreatefromresponse(_:_:)": {
       "etag": "\"ae78-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationcreatefromresponse.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationcreatefromresponse(_,_).md",
       "hash": "2517131d3a043c050dda610b7c4515748a0002158d8f23d89f6d4679c65e6701"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationgettypeid()": {
       "etag": "\"78f4-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationgettypeid.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationgettypeid().md",
       "hash": "79f798b609d3bdda025aff7fd1dcee24bb16529026fb0643a3c8b801925ef920"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationisvalid(_:_:)": {
       "etag": "\"a7d7-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationisvalid.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationisvalid(_,_).md",
       "hash": "2cfaed9a3ecc8830ce374dbed738ca1b9748b0aebe036f2868f3dbd93ae26070"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationrequiresaccountdomain(_:)": {
       "etag": "\"7fec-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresaccountdomain.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresaccountdomain(_).md",
       "hash": "75e7c01a9e30523b2701b9f41820aed8c77d4b90570eb18e816bd074cec38dcf"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationrequiresorderedrequests(_:)": {
       "etag": "\"8179-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresorderedrequests.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresorderedrequests(_).md",
       "hash": "c29f631d222c821aed91f7abdffffa9583c084597c09ce9c18022ca0a133ad73"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpauthenticationrequiresusernameandpassword(_:)": {
       "etag": "\"8032-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresusernameandpassword.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresusernameandpassword(_).md",
       "hash": "52c8608b52c6088b50b92f15b1d0f9e9081ac2294bb43bc1a942e629d3d37c9f"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessage": {
@@ -227,112 +227,112 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessageaddauthentication(_:_:_:_:_:_:)": {
       "etag": "\"b13f-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageaddauthentication.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageaddauthentication(_,_,_,_,_,_).md",
       "hash": "5c2a8cb9aca76b77bceeda6216cfe75ca4ef69f2ae8a9f4bf74457eabb0c326c"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessageappendbytes(_:_:_:)": {
       "etag": "\"aad0-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageappendbytes.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageappendbytes(_,_,_).md",
       "hash": "42233527ddc0b9dfa31ce4a2b798b7624c6f5ce2b0f914280fa53ddae7829522"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessageapplycredentialdictionary(_:_:_:_:)": {
       "etag": "\"c0bd-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageapplycredentialdictionary.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageapplycredentialdictionary(_,_,_,_).md",
       "hash": "5cb6e571b638753d8daf3bcfa9092361c50db7a94a23cc2cb4f1851094813851"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessageapplycredentials(_:_:_:_:_:)": {
       "etag": "\"bc52-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageapplycredentials.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageapplycredentials(_,_,_,_,_).md",
       "hash": "31c74b1b8911f51772d1690a71fa16c898f280055e0002b54eb34a7c070e61eb"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecopyallheaderfields(_:)": {
       "etag": "\"9ad7-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyallheaderfields.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyallheaderfields(_).md",
       "hash": "0009bcd0d5d6c97204c2accd0d84c35a3d41de479349184b746cb0074828d232"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecopybody(_:)": {
       "etag": "\"93b0-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopybody.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopybody(_).md",
       "hash": "e76b6664bb402a3f95c3a6955a45c1853e927958d2b9ce996f84911e8acc1b5f"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecopyheaderfieldvalue(_:_:)": {
       "etag": "\"991d-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyheaderfieldvalue.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyheaderfieldvalue(_,_).md",
       "hash": "81ec7537ed4e48b21ad217da8ad3dac7207b7394c417f38298709246aef20249"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecopyrequestmethod(_:)": {
       "etag": "\"949b-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyrequestmethod.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyrequestmethod(_).md",
       "hash": "99d7819622a0dc8a98153449f2f359413e7993e344217f3ee1510d6d01ab02a7"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecopyrequesturl(_:)": {
       "etag": "\"93f5-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyrequesturl.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyrequesturl(_).md",
       "hash": "0e987cf169f23ea66951b4e11221f804e4d0f31a4ef8da95ddea60b1a8115fa5"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecopyresponsestatusline(_:)": {
       "etag": "\"94db-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyresponsestatusline.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyresponsestatusline(_).md",
       "hash": "7fd75985295ee110fc82caaab189db3c02c26264f8895ae00992fdb3d45d8d0c"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecopyserializedmessage(_:)": {
       "etag": "\"93b9-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyserializedmessage.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyserializedmessage(_).md",
       "hash": "619a4801019d2162a5c209aecc25a9db7a822c5e6d892442d449c9e15f387282"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecopyversion(_:)": {
       "etag": "\"93b9-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyversion.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyversion(_).md",
       "hash": "81b7a931e2470b27b6f79cc637a80d9690e0ae748be00b5297d64b5744fdfd96"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecreatecopy(_:_:)": {
       "etag": "\"a01c-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecreatecopy.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecreatecopy(_,_).md",
       "hash": "20e23727d0bc99e893811351867ac0c0423e3d04c927632aa4bda186315bd117"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecreateempty(_:_:)": {
       "etag": "\"9de5-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecreateempty.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecreateempty(_,_).md",
       "hash": "b34e689f11dd41e01b7830d1438ed070d29302112ad182d6ce22c3f5509a6949"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecreaterequest(_:_:_:_:)": {
       "etag": "\"b97e-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecreaterequest.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecreaterequest(_,_,_,_).md",
       "hash": "6a451812d6f5a8c60bd75e027fdffbc9f21d8d83f45aab9a01a90febf7764e2e"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagecreateresponse(_:_:_:_:)": {
       "etag": "\"b6f3-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecreateresponse.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecreateresponse(_,_,_,_).md",
       "hash": "a4317951e8baa4480412a1f6d15de25cbc2f3d75930eed386a46cd682500954c"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagegetresponsestatuscode(_:)": {
       "etag": "\"86cd-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagegetresponsestatuscode.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagegetresponsestatuscode(_).md",
       "hash": "71006d6061a5af17be44ce2ef7913be80ba17b81bffbe5d3ce1f523578a0a9d4"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagegettypeid()": {
       "etag": "\"838c-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagegettypeid.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagegettypeid().md",
       "hash": "1da385b020749fa5173e3c3e61ba2f7bc8597e31b29380a2aa92aa10d6812742"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessageisheadercomplete(_:)": {
       "etag": "\"877b-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageisheadercomplete.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageisheadercomplete(_).md",
       "hash": "b0b84b4eb5f5e54462fec7ac37461163251fd2f6d92a17b3564616400d66044d"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessageisrequest(_:)": {
       "etag": "\"841d-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageisrequest.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageisrequest(_).md",
       "hash": "4d27f84e3113867027cea986291cf1dd1adf9ab7ca68f022cc868311fb384d28"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagesetbody(_:_:)": {
       "etag": "\"88bd-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagesetbody.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagesetbody(_,_).md",
       "hash": "65a63ccf4514be6a0736ac2cc08f9761942618a02e080c65b7227e8efa0b40a8"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfhttpmessagesetheaderfieldvalue(_:_:_:)": {
       "etag": "\"8d85-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagesetheaderfieldvalue.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagesetheaderfieldvalue(_,_,_).md",
       "hash": "24701bedd9659df1aa243e956315401ba0ff01c94cb7db7ae9951c32476d465b"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnostic": {
@@ -342,27 +342,27 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnosticcopynetworkstatuspassively(_:_:)": {
       "etag": "\"671a-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticcopynetworkstatuspassively.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticcopynetworkstatuspassively(_,_).md",
       "hash": "ebfb5402a171a3e30b9969cdc4f8f09338906cdced3c32cd64235cc32126aff6"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnosticcreatewithstreams(_:_:_:)": {
       "etag": "\"6473-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticcreatewithstreams.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticcreatewithstreams(_,_,_).md",
       "hash": "c8970fb3930eb7fbda8b3eaf7994fa05d618a31cba80ed30d938a3fed8767e6c"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnosticcreatewithurl(_:_:)": {
       "etag": "\"6245-65d55ee72c197-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticcreatewithurl.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticcreatewithurl(_,_).md",
       "hash": "90cd96b2c6fa6ffd5b2a7d8f2c4d121caa772d15ca950b85b6677ed780176be4"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnosticdiagnoseprobleminteractively(_:)": {
       "etag": "\"53bf-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticdiagnoseprobleminteractively.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticdiagnoseprobleminteractively(_).md",
       "hash": "52eaaab52094e04cb749569f8e694aefb78c618e4cc9331319092b1f32574a24"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnosticsetname(_:_:)": {
       "etag": "\"4d87-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticsetname.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticsetname(_,_).md",
       "hash": "60961b7867ef2b26b9ee50127f8d7d4220322833788a26450cd233adca770cb6"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnosticstatus": {
@@ -397,7 +397,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnosticstatusvalues/init(rawvalue:)": {
       "etag": "\"1585-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticstatusvalues/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticstatusvalues/init(rawvalue).md",
       "hash": "02598bd24fc4d29c83c63b8195bbcb1489487061d815a993be5ad1b6a7a74417"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetdiagnosticstatusvalues/noerr": {
@@ -422,7 +422,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowsercreate(_:_:_:)": {
       "etag": "\"b43a-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowsercreate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowsercreate(_,_,_).md",
       "hash": "2ff60ef7efd457b682ddd5de4a0be9583797c0a5ff2d216653695a548804b7ba"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserflags": {
@@ -432,7 +432,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserflags/init(rawvalue:)": {
       "etag": "\"175d-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserflags/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserflags/init(rawvalue).md",
       "hash": "120abd77cddb50b62206c26cd255fe2aa188a9118542292573a5ae2de155ba21"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserflags/isdefault": {
@@ -462,42 +462,42 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowsergettypeid()": {
       "etag": "\"7bd3-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowsergettypeid.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowsergettypeid().md",
       "hash": "9c83646f285084a2b5a093edcc6afa96323b225eee6712b94273ee7e51f8fa6a"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserinvalidate(_:)": {
       "etag": "\"7e08-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserinvalidate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserinvalidate(_).md",
       "hash": "4a99db48d280c5fc24402a12aa1b6bfe4ceaa286546e381da46a499c647240f8"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserschedulewithrunloop(_:_:_:)": {
       "etag": "\"8e13-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserschedulewithrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserschedulewithrunloop(_,_,_).md",
       "hash": "88a1b3136d94ce7cf1bd04aba27faaef564d86150929d26824395b85403a45d5"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowsersearchfordomains(_:_:_:)": {
       "etag": "\"a95c-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowsersearchfordomains.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowsersearchfordomains(_,_,_).md",
       "hash": "ea5186d3751fd4572b42ebf5929b7f46e3a869d9e16d2b5db556c2bb984af89f"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowsersearchforservices(_:_:_:_:)": {
       "etag": "\"ae45-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowsersearchforservices.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowsersearchforservices(_,_,_,_).md",
       "hash": "f6faa0dff756fd0683d645b72af75e4cfb955fdc55beb07d3c0e7a0e86a01597"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserstopsearch(_:_:)": {
       "etag": "\"9fca-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserstopsearch.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserstopsearch(_,_).md",
       "hash": "6bd36401c1563d2e756a75b8eff84c2bfb5f7869db93ca32acf5eb667a50d141"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicebrowserunschedulefromrunloop(_:_:_:)": {
       "etag": "\"8e41-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserunschedulefromrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserunschedulefromrunloop(_,_,_).md",
       "hash": "942f6c6f34936e96b0fc738d7410c0f1fd59c302915631a08b3efe29f2d67c64"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicecancel(_:)": {
       "etag": "\"9e37-65d55ee72c197-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecancel.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecancel(_).md",
       "hash": "7f66bd47b5ca919ca9ae7f46611f60868857f549ca180a661f137c4b04a1e191"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceclientcallback": {
@@ -522,12 +522,12 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceclientcontext/init()": {
       "etag": "\"190f-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceclientcontext/init.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceclientcontext/init().md",
       "hash": "cdfd1015a1fe563d38d7cad1ef8675dbbcfcecc3f7740ff2550c35a263b2bba3"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceclientcontext/init(version:info:retain:release:copydescription:)": {
       "etag": "\"3390-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceclientcontext/init-versioninforetainreleasecopydescription.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceclientcontext/init(version,info,retain,release,copydescription).md",
       "hash": "5fe0e8cd41a69ac1ee7f374d7f78e87c00365d4c284476e34b0cfb24facb028b"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceclientcontext/release": {
@@ -547,62 +547,62 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicecreate(_:_:_:_:_:)": {
       "etag": "\"cd3c-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecreate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecreate(_,_,_,_,_).md",
       "hash": "2a29846c5875bf62ff8cc174085494e1bbd78e0075bdd645abe3c6728d2dbb9a"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicecreatecopy(_:_:)": {
       "etag": "\"9786-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecreatecopy.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecreatecopy(_,_).md",
       "hash": "aaf715b0a490d0307a76df09f5a9c77dd9c51b935f8768a02b4cb65b26484973"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicecreatedictionarywithtxtdata(_:_:)": {
       "etag": "\"a512-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecreatedictionarywithtxtdata.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecreatedictionarywithtxtdata(_,_).md",
       "hash": "84822ed0defdea54ca9fdc03b7e03dac04784136370bc8d8b717a7ae92c56ee3"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicecreatetxtdatawithdictionary(_:_:)": {
       "etag": "\"b280-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecreatetxtdatawithdictionary.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecreatetxtdatawithdictionary(_,_).md",
       "hash": "54fc5dcb5d103e07ed9a72b2f42b9816ff03613e6583c55ccfd52baaf2fd2d6b"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicegetaddressing(_:)": {
       "etag": "\"8ec7-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegetaddressing.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegetaddressing(_).md",
       "hash": "f9d47ea0143e7df35efb95d4b3edf6776c1432464206c4a6ea8274ea846e951c"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicegetdomain(_:)": {
       "etag": "\"8529-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegetdomain.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegetdomain(_).md",
       "hash": "d8a4bf58d3f1be349b09df900e7d13e96f1927669d79c5f1217de4bc77365640"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicegetname(_:)": {
       "etag": "\"8527-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegetname.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegetname(_).md",
       "hash": "1e00c4bae91411a9e3500fa021b3bce12652f297f50a2e34ccfc17206979a33e"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicegetportnumber(_:)": {
       "etag": "\"9030-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegetportnumber.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegetportnumber(_).md",
       "hash": "09028489313de20b092d9e1939fe2142384c210d84353ae58448f93f7197a39f"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicegettargethost(_:)": {
       "etag": "\"8541-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegettargethost.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegettargethost(_).md",
       "hash": "221a5cb00f28e0ba107e084f6da85b3fe377e7192575eb39413441fe1361bb7a"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicegettxtdata(_:)": {
       "etag": "\"a0f8-65d55ee72c197-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegettxtdata.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegettxtdata(_).md",
       "hash": "e81ad4230d0d543206885f51cb8851fcf81242504bc5577f2aa9498fc7d704d9"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicegettype(_:)": {
       "etag": "\"84ef-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegettype.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegettype(_).md",
       "hash": "e0746e48c9f38bca6009d6045f747cb5642f3e2e3cda78f00cc6b1837caa1745"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicegettypeid()": {
       "etag": "\"7976-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegettypeid.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegettypeid().md",
       "hash": "bd207cc54e90a3909051bca363a71e9bb33940b4dcae58f99c93a69995a5abe0"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitor": {
@@ -617,32 +617,32 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitorcreate(_:_:_:_:)": {
       "etag": "\"d50d-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorcreate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorcreate(_,_,_,_).md",
       "hash": "23f22deb847272e0e4d621efab1b9434a6b9a7a7d5effe85f8c5d3b2ae8dfd80"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitorgettypeid()": {
       "etag": "\"7abe-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorgettypeid.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorgettypeid().md",
       "hash": "2124b828f25a27c420daa3d5e753db160420adf85f519f14af6b241650453f46"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitorinvalidate(_:)": {
       "etag": "\"80f3-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorinvalidate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorinvalidate(_).md",
       "hash": "8672d8db7f0f7affaa49b4e9b19fc399414b897cffb272a929fea0b8d011d1dc"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitorschedulewithrunloop(_:_:_:)": {
       "etag": "\"8b91-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorschedulewithrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorschedulewithrunloop(_,_,_).md",
       "hash": "5263aa7e39f7aefba1a06348a2a27b4c09347b80f1a7dfd74bd58c4025d1bc78"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitorstart(_:_:_:)": {
       "etag": "\"b45a-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorstart.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorstart(_,_,_).md",
       "hash": "1b7f61b075aff2ab5ef817fbbbdf915d52408f07221e911d0b022523d5cde044"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitorstop(_:_:)": {
       "etag": "\"a751-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorstop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorstop(_,_).md",
       "hash": "570d5bbba97502b03224732691de0472d8613a62137277584cf6493f857adc30"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitortype": {
@@ -652,7 +652,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitortype/init(rawvalue:)": {
       "etag": "\"14c7-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitortype/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitortype/init(rawvalue).md",
       "hash": "be160cb50bd100da0dad340c562f6678f16ec8ca72cb24860d57f8642a228d97"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitortype/txt": {
@@ -662,7 +662,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicemonitorunschedulefromrunloop(_:_:_:)": {
       "etag": "\"9318-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorunschedulefromrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorunschedulefromrunloop(_,_,_).md",
       "hash": "79ef93c7aef39368106a1120ed301a168c0bf49df8851d545143935cda8fa155"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceregisterflags": {
@@ -672,7 +672,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceregisterflags/init(rawvalue:)": {
       "etag": "\"176b-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceregisterflags/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceregisterflags/init(rawvalue).md",
       "hash": "902dd454b1f8fbe95d8ac88ae9e02ae17025fd944834d2cdc920871345775bc8"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceregisterflags/noautorename": {
@@ -682,17 +682,17 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceregisterwithoptions(_:_:_:)": {
       "etag": "\"c020-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceregisterwithoptions.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceregisterwithoptions(_,_,_).md",
       "hash": "8b555885eed7979d7b155ed37fd67b94a45e732a8743104beed60825a421b4cf"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceresolvewithtimeout(_:_:_:)": {
       "etag": "\"bb30-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceresolvewithtimeout.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceresolvewithtimeout(_,_,_).md",
       "hash": "fe81d700a3cc60dfd4f7b3215f9c0f6ce1395a45d3d6c9950f3f7b66493abd7d"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceschedulewithrunloop(_:_:_:)": {
       "etag": "\"9444-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceschedulewithrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceschedulewithrunloop(_,_,_).md",
       "hash": "59014b3cc630402dba93be1a48f6f0a4a6f800e83ab8e7ea439c60d1d1b6b41e"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceserror": {
@@ -717,7 +717,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceserror/init(rawvalue:)": {
       "etag": "\"1475-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceserror/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceserror/init(rawvalue).md",
       "hash": "d6b082d8d2fb024ad76f01c4d949ef2ea1711c586bef7dc8ce3db8f0b4f268cb"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceserror/inprogress": {
@@ -752,17 +752,17 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicesetclient(_:_:_:)": {
       "etag": "\"abe2-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicesetclient.md",
+      "file_path": "documentation/CFNetwork/cfnetservicesetclient(_,_,_).md",
       "hash": "3919ed82e8678afa09f804fd7a2d7d49fe6af152ce7bb92cd5976b75ca97d934"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetservicesettxtdata(_:_:)": {
       "etag": "\"8a1d-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicesettxtdata.md",
+      "file_path": "documentation/CFNetwork/cfnetservicesettxtdata(_,_).md",
       "hash": "5101a9460ef8d9c09587e786fe4b4abc1fe4d9d07a6794a5fb1d3b5629b43186"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetserviceunschedulefromrunloop(_:_:_:)": {
       "etag": "\"98e4-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceunschedulefromrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceunschedulefromrunloop(_,_,_).md",
       "hash": "c6190ef503a509013ebbb68bded61266def7afbd6a6635931bc49b759e28bdb1"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetwork-constants": {
@@ -782,17 +782,17 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetworkcopyproxiesforautoconfigurationscript(_:_:_:)": {
       "etag": "\"826f-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkcopyproxiesforautoconfigurationscript.md",
+      "file_path": "documentation/CFNetwork/cfnetworkcopyproxiesforautoconfigurationscript(_,_,_).md",
       "hash": "cf38630970b649e09d8ed062c2b716ca959433963a3f6f9ce77be66dea59f9c9"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetworkcopyproxiesforurl(_:_:)": {
       "etag": "\"7fcd-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkcopyproxiesforurl.md",
+      "file_path": "documentation/CFNetwork/cfnetworkcopyproxiesforurl(_,_).md",
       "hash": "3c10366995655eb8f7dbdd8b38a1858c1699a86c25523edc3f9240b4e977793f"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetworkcopysystemproxysettings()": {
       "etag": "\"5ed9-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkcopysystemproxysettings.md",
+      "file_path": "documentation/CFNetwork/cfnetworkcopysystemproxysettings().md",
       "hash": "97efbf7d201b289e96ab1d13eee5a18234f760b76d367196c3d585cfef2d1490"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetworkerrors": {
@@ -1222,17 +1222,17 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetworkerrors/init(rawvalue:)": {
       "etag": "\"1899-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkerrors/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetworkerrors/init(rawvalue).md",
       "hash": "1f414ba70086b83801a02e2c7afd1e503f16c100ccc12094928edfd076384f46"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetworkexecuteproxyautoconfigurationscript(_:_:_:_:)": {
       "etag": "\"7dd7-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkexecuteproxyautoconfigurationscript.md",
+      "file_path": "documentation/CFNetwork/cfnetworkexecuteproxyautoconfigurationscript(_,_,_,_).md",
       "hash": "803d0600cd52e40b45f5d152a8d8233beb5209defff8a53c27aef87ab8282fce"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfnetworkexecuteproxyautoconfigurationurl(_:_:_:_:)": {
       "etag": "\"7909-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkexecuteproxyautoconfigurationurl.md",
+      "file_path": "documentation/CFNetwork/cfnetworkexecuteproxyautoconfigurationurl(_,_,_,_).md",
       "hash": "68dcaf1c78e34a8cf8eec2c16189d792e7470a17c77e984ad439494c076a7e4a"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfproxyautoconfigurationresultcallback": {
@@ -1242,37 +1242,37 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfreadstreamcreateforhttprequest(_:_:)": {
       "etag": "\"aadb-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfreadstreamcreateforhttprequest.md",
+      "file_path": "documentation/CFNetwork/cfreadstreamcreateforhttprequest(_,_).md",
       "hash": "f86eae3f67b28fa507de87b0e5094f27d0d30474277adad01bae200de43f67e5"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfreadstreamcreateforstreamedhttprequest(_:_:_:)": {
       "etag": "\"b2af-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfreadstreamcreateforstreamedhttprequest.md",
+      "file_path": "documentation/CFNetwork/cfreadstreamcreateforstreamedhttprequest(_,_,_).md",
       "hash": "646917e21dc334aa9adc0e712589e67796b0937d10bcfba44676b04402acb11a"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfreadstreamcreatewithftpurl(_:_:)": {
       "etag": "\"babf-65d55ee72c197-df\"",
-      "file_path": "documentation/CFNetwork/cfreadstreamcreatewithftpurl.md",
+      "file_path": "documentation/CFNetwork/cfreadstreamcreatewithftpurl(_,_).md",
       "hash": "8b376991a5fb72220ffbc0fcd5d44f31b312777165a33b75c1e72d87f832831e"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfsocketstreamsocksgeterror(_:)": {
       "etag": "\"9c4b-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfsocketstreamsocksgeterror.md",
+      "file_path": "documentation/CFNetwork/cfsocketstreamsocksgeterror(_).md",
       "hash": "d620feb6c85048bbb1b37563d69d76beb1fd22392d0f3ced7018e8219e93ed54"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfsocketstreamsocksgeterrorsubdomain(_:)": {
       "etag": "\"9bc0-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfsocketstreamsocksgeterrorsubdomain.md",
+      "file_path": "documentation/CFNetwork/cfsocketstreamsocksgeterrorsubdomain(_).md",
       "hash": "98f37c00f9a801ea09df8c996683dbf63fd9eddc7b71954b6999199a7cb285b0"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfstreamcreatepairwithsockettocfhost(_:_:_:_:_:)": {
       "etag": "\"bf5f-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfstreamcreatepairwithsockettocfhost.md",
+      "file_path": "documentation/CFNetwork/cfstreamcreatepairwithsockettocfhost(_,_,_,_,_).md",
       "hash": "a856f61fdd09c0738f17f32b0dd319cc642963537ad8d5f52fc12d86b1ca8687"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfstreamcreatepairwithsockettonetservice(_:_:_:_:)": {
       "etag": "\"b3b6-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfstreamcreatepairwithsockettonetservice.md",
+      "file_path": "documentation/CFNetwork/cfstreamcreatepairwithsockettonetservice(_,_,_,_).md",
       "hash": "eca02b4a2582ab622a2621b472f1735c381ffb6e7f75b202a0ba7b1dfabeb1f2"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfstreamerrorhttp": {
@@ -1287,7 +1287,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfstreamerrorhttp/init(rawvalue:)": {
       "etag": "\"1436-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfstreamerrorhttp/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfstreamerrorhttp/init(rawvalue).md",
       "hash": "c66e6037d0847f9b255233c14052b99b81d260d88e1eddb18c243329c83ae690"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfstreamerrorhttp/parsefailure": {
@@ -1317,7 +1317,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfstreamerrorhttpauthentication/init(rawvalue:)": {
       "etag": "\"1563-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfstreamerrorhttpauthentication/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfstreamerrorhttpauthentication/init(rawvalue).md",
       "hash": "093879ef8c7848e96e9b100d838cdc318caef7a5aedb4e56367cd5174108ca71"
     },
     "https://developer.apple.com/documentation/cfnetwork/cfstreamerrorhttpauthentication/typeunsupported": {
@@ -1327,7 +1327,7 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/cfwritestreamcreatewithftpurl(_:_:)": {
       "etag": "\"c2c4-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfwritestreamcreatewithftpurl.md",
+      "file_path": "documentation/CFNetwork/cfwritestreamcreatewithftpurl(_,_).md",
       "hash": "4e0abf1532313ee5627e8a8303c52fe4d9d6e0e6fe620aacf9f65aa1905c2c66"
     },
     "https://developer.apple.com/documentation/cfnetwork/error-dictionary-keys": {
@@ -1462,22 +1462,22 @@
     },
     "https://developer.apple.com/documentation/cfnetwork/kcfhttpversion1_0": {
       "etag": "\"80b3-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/kcfhttpversion1-0.md",
+      "file_path": "documentation/CFNetwork/kcfhttpversion1_0.md",
       "hash": "dfa6d3bf303705f0332bc13024b2926055c110300be6745711df1409d4a052ad"
     },
     "https://developer.apple.com/documentation/cfnetwork/kcfhttpversion1_1": {
       "etag": "\"80b3-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/kcfhttpversion1-1.md",
+      "file_path": "documentation/CFNetwork/kcfhttpversion1_1.md",
       "hash": "a1b3de0a77f3bad66a30a09f5a679eb19fde98c592fad36e8431bd50fea8725f"
     },
     "https://developer.apple.com/documentation/cfnetwork/kcfhttpversion2_0": {
       "etag": "\"80a1-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/kcfhttpversion2-0.md",
+      "file_path": "documentation/CFNetwork/kcfhttpversion2_0.md",
       "hash": "e4f455763cc873496114310e2d068496b9b093d262a932c298b5bc862a39efdb"
     },
     "https://developer.apple.com/documentation/cfnetwork/kcfhttpversion3_0": {
       "etag": "\"3d24-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/kcfhttpversion3-0.md",
+      "file_path": "documentation/CFNetwork/kcfhttpversion3_0.md",
       "hash": "84f650aad083b9549e073d895d06506b106d20768e134a721a1edc17b35e0e61"
     },
     "https://developer.apple.com/documentation/cfnetwork/kcfnetworkproxiesexceptionslist": {
@@ -2107,7 +2107,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfftpcreateparsedresourcelisting(_:_:_:_:).json": {
       "etag": "\"7500-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfftpcreateparsedresourcelisting.md",
+      "file_path": "documentation/CFNetwork/cfftpcreateparsedresourcelisting(_,_,_,_).md",
       "hash": "1eb5e680860bb17f9359604396a6591bdd8132712063c259510a5756cbde209d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhost.json": {
@@ -2117,7 +2117,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostcancelinforesolution(_:_:).json": {
       "etag": "\"7c7f-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhostcancelinforesolution.md",
+      "file_path": "documentation/CFNetwork/cfhostcancelinforesolution(_,_).md",
       "hash": "419fe95968a80419f03c1d8f6b8d4975497d005d36748d7b36a1d0266679f646"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostclientcallback.json": {
@@ -2142,12 +2142,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostclientcontext/init().json": {
       "etag": "\"1850-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhostclientcontext/init.md",
+      "file_path": "documentation/CFNetwork/cfhostclientcontext/init().md",
       "hash": "502efc3ce7078ece4eb8b20c80ef53bf6f5bd30d2fd2c9da993841a8b70f0a92"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostclientcontext/init(version:info:retain:release:copydescription:).json": {
       "etag": "\"32d1-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhostclientcontext/init-versioninforetainreleasecopydescription.md",
+      "file_path": "documentation/CFNetwork/cfhostclientcontext/init(version,info,retain,release,copydescription).md",
       "hash": "ae8cf94d54faea7e3c935e8a57a0e413bdd7fb310f13946d7ac36d04f516de88"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostclientcontext/release.json": {
@@ -2167,37 +2167,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostcreatecopy(_:_:).json": {
       "etag": "\"881e-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhostcreatecopy.md",
+      "file_path": "documentation/CFNetwork/cfhostcreatecopy(_,_).md",
       "hash": "d204f0262188d26682a1c2a4910ca93e7cba9d25219dcb922fd00cf54607d83b"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostcreatewithaddress(_:_:).json": {
       "etag": "\"8d92-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfhostcreatewithaddress.md",
+      "file_path": "documentation/CFNetwork/cfhostcreatewithaddress(_,_).md",
       "hash": "41000266244b7838da3b25bd75bc802dd5834faf092b57046426e777bd2fa67f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostcreatewithname(_:_:).json": {
       "etag": "\"8cef-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhostcreatewithname.md",
+      "file_path": "documentation/CFNetwork/cfhostcreatewithname(_,_).md",
       "hash": "feaad697ac7faebcad8fa630d99b7d403de90c65f08fb03f951304fd1d951a0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostgetaddressing(_:_:).json": {
       "etag": "\"89bd-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhostgetaddressing.md",
+      "file_path": "documentation/CFNetwork/cfhostgetaddressing(_,_).md",
       "hash": "c47d8d3cf6a5295beafec739878d8ff77d5f076fddaf17b360b7609bcccc1787"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostgetnames(_:_:).json": {
       "etag": "\"8c91-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhostgetnames.md",
+      "file_path": "documentation/CFNetwork/cfhostgetnames(_,_).md",
       "hash": "f095d534f3c4fe4854632fd7e2b2a97f54c94b1412005450cb22e4b8c1e3a1a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostgetreachability(_:_:).json": {
       "etag": "\"8e54-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhostgetreachability.md",
+      "file_path": "documentation/CFNetwork/cfhostgetreachability(_,_).md",
       "hash": "44cbe870ce1b3510cce8260f8a0f2f5ebfa02ecdb3035fe776be617360dbba2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostgettypeid().json": {
       "etag": "\"7618-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhostgettypeid.md",
+      "file_path": "documentation/CFNetwork/cfhostgettypeid().md",
       "hash": "1db7cc13b6f4981cbe6ff1ff7528457aed7f857ea8ef5f27bd14f067b94f7343"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostinfotype.json": {
@@ -2212,7 +2212,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostinfotype/init(rawvalue:).json": {
       "etag": "\"141f-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhostinfotype/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfhostinfotype/init(rawvalue).md",
       "hash": "9a2118905d518e7634f8d35e5235075097d520cefa79ca5e1793463c1ac19e6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostinfotype/names.json": {
@@ -2227,22 +2227,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostschedulewithrunloop(_:_:_:).json": {
       "etag": "\"881c-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhostschedulewithrunloop.md",
+      "file_path": "documentation/CFNetwork/cfhostschedulewithrunloop(_,_,_).md",
       "hash": "9d99b0b642d694d47110cace33ff082f7b34261dc688e0dae204316aba13b708"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostsetclient(_:_:_:).json": {
       "etag": "\"976d-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhostsetclient.md",
+      "file_path": "documentation/CFNetwork/cfhostsetclient(_,_,_).md",
       "hash": "a7050162cd3a6058e5f8863f2ab08e1f93374be046c6cddde94b07326e2740f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhoststartinforesolution(_:_:_:).json": {
       "etag": "\"a094-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhoststartinforesolution.md",
+      "file_path": "documentation/CFNetwork/cfhoststartinforesolution(_,_,_).md",
       "hash": "b230e626b4b64064d618274d17d8d1833232ce999ffec9b55869d5582c7f294f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhostunschedulefromrunloop(_:_:_:).json": {
       "etag": "\"83c5-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfhostunschedulefromrunloop.md",
+      "file_path": "documentation/CFNetwork/cfhostunschedulefromrunloop(_,_,_).md",
       "hash": "214ec8678961aa4e58bc76ee1a86b1cf475d52ae634bc076780d8930e414713d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthentication.json": {
@@ -2252,52 +2252,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationappliestorequest(_:_:).json": {
       "etag": "\"8a15-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationappliestorequest.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationappliestorequest(_,_).md",
       "hash": "470419709b4d968c5907001c6c8b5b39e4ffc2566fd50ba36bec161c6c0df16f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationcopydomains(_:).json": {
       "etag": "\"87c1-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopydomains.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopydomains(_).md",
       "hash": "a0af939e830ce231feb0ea24bcc709fe6d526007cdabbc8d6d592f814ba55d3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationcopymethod(_:).json": {
       "etag": "\"87e7-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopymethod.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopymethod(_).md",
       "hash": "ab914e7862263216e4f2593eaa734538cbc9bf6a647aac8a989b4db730fa8179"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationcopyrealm(_:).json": {
       "etag": "\"878b-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopyrealm.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationcopyrealm(_).md",
       "hash": "80497263d5626842e387a99ce5412d3ea1af6b5e5a8635751daf144eb8099dce"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationcreatefromresponse(_:_:).json": {
       "etag": "\"ae78-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationcreatefromresponse.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationcreatefromresponse(_,_).md",
       "hash": "2517131d3a043c050dda610b7c4515748a0002158d8f23d89f6d4679c65e6701"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationgettypeid().json": {
       "etag": "\"78f4-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationgettypeid.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationgettypeid().md",
       "hash": "79f798b609d3bdda025aff7fd1dcee24bb16529026fb0643a3c8b801925ef920"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationisvalid(_:_:).json": {
       "etag": "\"a7d7-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationisvalid.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationisvalid(_,_).md",
       "hash": "2cfaed9a3ecc8830ce374dbed738ca1b9748b0aebe036f2868f3dbd93ae26070"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationrequiresaccountdomain(_:).json": {
       "etag": "\"7fec-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresaccountdomain.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresaccountdomain(_).md",
       "hash": "75e7c01a9e30523b2701b9f41820aed8c77d4b90570eb18e816bd074cec38dcf"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationrequiresorderedrequests(_:).json": {
       "etag": "\"8179-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresorderedrequests.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresorderedrequests(_).md",
       "hash": "c29f631d222c821aed91f7abdffffa9583c084597c09ce9c18022ca0a133ad73"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpauthenticationrequiresusernameandpassword(_:).json": {
       "etag": "\"8032-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresusernameandpassword.md",
+      "file_path": "documentation/CFNetwork/cfhttpauthenticationrequiresusernameandpassword(_).md",
       "hash": "52c8608b52c6088b50b92f15b1d0f9e9081ac2294bb43bc1a942e629d3d37c9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessage.json": {
@@ -2307,112 +2307,112 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessageaddauthentication(_:_:_:_:_:_:).json": {
       "etag": "\"b13f-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageaddauthentication.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageaddauthentication(_,_,_,_,_,_).md",
       "hash": "5c2a8cb9aca76b77bceeda6216cfe75ca4ef69f2ae8a9f4bf74457eabb0c326c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessageappendbytes(_:_:_:).json": {
       "etag": "\"aad0-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageappendbytes.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageappendbytes(_,_,_).md",
       "hash": "42233527ddc0b9dfa31ce4a2b798b7624c6f5ce2b0f914280fa53ddae7829522"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessageapplycredentialdictionary(_:_:_:_:).json": {
       "etag": "\"c0bd-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageapplycredentialdictionary.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageapplycredentialdictionary(_,_,_,_).md",
       "hash": "5cb6e571b638753d8daf3bcfa9092361c50db7a94a23cc2cb4f1851094813851"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessageapplycredentials(_:_:_:_:_:).json": {
       "etag": "\"bc52-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageapplycredentials.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageapplycredentials(_,_,_,_,_).md",
       "hash": "31c74b1b8911f51772d1690a71fa16c898f280055e0002b54eb34a7c070e61eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecopyallheaderfields(_:).json": {
       "etag": "\"9ad7-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyallheaderfields.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyallheaderfields(_).md",
       "hash": "0009bcd0d5d6c97204c2accd0d84c35a3d41de479349184b746cb0074828d232"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecopybody(_:).json": {
       "etag": "\"93b0-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopybody.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopybody(_).md",
       "hash": "e76b6664bb402a3f95c3a6955a45c1853e927958d2b9ce996f84911e8acc1b5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecopyheaderfieldvalue(_:_:).json": {
       "etag": "\"991d-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyheaderfieldvalue.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyheaderfieldvalue(_,_).md",
       "hash": "81ec7537ed4e48b21ad217da8ad3dac7207b7394c417f38298709246aef20249"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecopyrequestmethod(_:).json": {
       "etag": "\"949b-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyrequestmethod.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyrequestmethod(_).md",
       "hash": "99d7819622a0dc8a98153449f2f359413e7993e344217f3ee1510d6d01ab02a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecopyrequesturl(_:).json": {
       "etag": "\"93f5-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyrequesturl.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyrequesturl(_).md",
       "hash": "0e987cf169f23ea66951b4e11221f804e4d0f31a4ef8da95ddea60b1a8115fa5"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecopyresponsestatusline(_:).json": {
       "etag": "\"94db-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyresponsestatusline.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyresponsestatusline(_).md",
       "hash": "7fd75985295ee110fc82caaab189db3c02c26264f8895ae00992fdb3d45d8d0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecopyserializedmessage(_:).json": {
       "etag": "\"93b9-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyserializedmessage.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyserializedmessage(_).md",
       "hash": "619a4801019d2162a5c209aecc25a9db7a822c5e6d892442d449c9e15f387282"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecopyversion(_:).json": {
       "etag": "\"93b9-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecopyversion.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecopyversion(_).md",
       "hash": "81b7a931e2470b27b6f79cc637a80d9690e0ae748be00b5297d64b5744fdfd96"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecreatecopy(_:_:).json": {
       "etag": "\"a01c-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecreatecopy.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecreatecopy(_,_).md",
       "hash": "20e23727d0bc99e893811351867ac0c0423e3d04c927632aa4bda186315bd117"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecreateempty(_:_:).json": {
       "etag": "\"9de5-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecreateempty.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecreateempty(_,_).md",
       "hash": "b34e689f11dd41e01b7830d1438ed070d29302112ad182d6ce22c3f5509a6949"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecreaterequest(_:_:_:_:).json": {
       "etag": "\"b97e-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecreaterequest.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecreaterequest(_,_,_,_).md",
       "hash": "6a451812d6f5a8c60bd75e027fdffbc9f21d8d83f45aab9a01a90febf7764e2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagecreateresponse(_:_:_:_:).json": {
       "etag": "\"b6f3-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagecreateresponse.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagecreateresponse(_,_,_,_).md",
       "hash": "a4317951e8baa4480412a1f6d15de25cbc2f3d75930eed386a46cd682500954c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagegetresponsestatuscode(_:).json": {
       "etag": "\"86cd-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagegetresponsestatuscode.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagegetresponsestatuscode(_).md",
       "hash": "71006d6061a5af17be44ce2ef7913be80ba17b81bffbe5d3ce1f523578a0a9d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagegettypeid().json": {
       "etag": "\"838c-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagegettypeid.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagegettypeid().md",
       "hash": "1da385b020749fa5173e3c3e61ba2f7bc8597e31b29380a2aa92aa10d6812742"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessageisheadercomplete(_:).json": {
       "etag": "\"877b-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageisheadercomplete.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageisheadercomplete(_).md",
       "hash": "b0b84b4eb5f5e54462fec7ac37461163251fd2f6d92a17b3564616400d66044d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessageisrequest(_:).json": {
       "etag": "\"841d-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessageisrequest.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessageisrequest(_).md",
       "hash": "4d27f84e3113867027cea986291cf1dd1adf9ab7ca68f022cc868311fb384d28"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagesetbody(_:_:).json": {
       "etag": "\"88bd-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagesetbody.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagesetbody(_,_).md",
       "hash": "65a63ccf4514be6a0736ac2cc08f9761942618a02e080c65b7227e8efa0b40a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfhttpmessagesetheaderfieldvalue(_:_:_:).json": {
       "etag": "\"8d85-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfhttpmessagesetheaderfieldvalue.md",
+      "file_path": "documentation/CFNetwork/cfhttpmessagesetheaderfieldvalue(_,_,_).md",
       "hash": "24701bedd9659df1aa243e956315401ba0ff01c94cb7db7ae9951c32476d465b"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnostic.json": {
@@ -2422,27 +2422,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnosticcopynetworkstatuspassively(_:_:).json": {
       "etag": "\"671a-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticcopynetworkstatuspassively.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticcopynetworkstatuspassively(_,_).md",
       "hash": "ebfb5402a171a3e30b9969cdc4f8f09338906cdced3c32cd64235cc32126aff6"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnosticcreatewithstreams(_:_:_:).json": {
       "etag": "\"6473-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticcreatewithstreams.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticcreatewithstreams(_,_,_).md",
       "hash": "c8970fb3930eb7fbda8b3eaf7994fa05d618a31cba80ed30d938a3fed8767e6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnosticcreatewithurl(_:_:).json": {
       "etag": "\"6245-65d55ee72c197-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticcreatewithurl.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticcreatewithurl(_,_).md",
       "hash": "90cd96b2c6fa6ffd5b2a7d8f2c4d121caa772d15ca950b85b6677ed780176be4"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnosticdiagnoseprobleminteractively(_:).json": {
       "etag": "\"53bf-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticdiagnoseprobleminteractively.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticdiagnoseprobleminteractively(_).md",
       "hash": "52eaaab52094e04cb749569f8e694aefb78c618e4cc9331319092b1f32574a24"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnosticsetname(_:_:).json": {
       "etag": "\"4d87-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticsetname.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticsetname(_,_).md",
       "hash": "60961b7867ef2b26b9ee50127f8d7d4220322833788a26450cd233adca770cb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnosticstatus.json": {
@@ -2477,7 +2477,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnosticstatusvalues/init(rawvalue:).json": {
       "etag": "\"1585-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetdiagnosticstatusvalues/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetdiagnosticstatusvalues/init(rawvalue).md",
       "hash": "02598bd24fc4d29c83c63b8195bbcb1489487061d815a993be5ad1b6a7a74417"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetdiagnosticstatusvalues/noerr.json": {
@@ -2502,7 +2502,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowsercreate(_:_:_:).json": {
       "etag": "\"b43a-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowsercreate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowsercreate(_,_,_).md",
       "hash": "2ff60ef7efd457b682ddd5de4a0be9583797c0a5ff2d216653695a548804b7ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowserflags.json": {
@@ -2512,7 +2512,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowserflags/init(rawvalue:).json": {
       "etag": "\"175d-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserflags/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserflags/init(rawvalue).md",
       "hash": "120abd77cddb50b62206c26cd255fe2aa188a9118542292573a5ae2de155ba21"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowserflags/isdefault.json": {
@@ -2542,42 +2542,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowsergettypeid().json": {
       "etag": "\"7bd3-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowsergettypeid.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowsergettypeid().md",
       "hash": "9c83646f285084a2b5a093edcc6afa96323b225eee6712b94273ee7e51f8fa6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowserinvalidate(_:).json": {
       "etag": "\"7e08-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserinvalidate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserinvalidate(_).md",
       "hash": "4a99db48d280c5fc24402a12aa1b6bfe4ceaa286546e381da46a499c647240f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowserschedulewithrunloop(_:_:_:).json": {
       "etag": "\"8e13-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserschedulewithrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserschedulewithrunloop(_,_,_).md",
       "hash": "88a1b3136d94ce7cf1bd04aba27faaef564d86150929d26824395b85403a45d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowsersearchfordomains(_:_:_:).json": {
       "etag": "\"a95c-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowsersearchfordomains.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowsersearchfordomains(_,_,_).md",
       "hash": "ea5186d3751fd4572b42ebf5929b7f46e3a869d9e16d2b5db556c2bb984af89f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowsersearchforservices(_:_:_:_:).json": {
       "etag": "\"ae45-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowsersearchforservices.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowsersearchforservices(_,_,_,_).md",
       "hash": "f6faa0dff756fd0683d645b72af75e4cfb955fdc55beb07d3c0e7a0e86a01597"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowserstopsearch(_:_:).json": {
       "etag": "\"9fca-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserstopsearch.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserstopsearch(_,_).md",
       "hash": "6bd36401c1563d2e756a75b8eff84c2bfb5f7869db93ca32acf5eb667a50d141"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicebrowserunschedulefromrunloop(_:_:_:).json": {
       "etag": "\"8e41-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicebrowserunschedulefromrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicebrowserunschedulefromrunloop(_,_,_).md",
       "hash": "942f6c6f34936e96b0fc738d7410c0f1fd59c302915631a08b3efe29f2d67c64"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicecancel(_:).json": {
       "etag": "\"9e37-65d55ee72c197-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecancel.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecancel(_).md",
       "hash": "7f66bd47b5ca919ca9ae7f46611f60868857f549ca180a661f137c4b04a1e191"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceclientcallback.json": {
@@ -2602,12 +2602,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceclientcontext/init().json": {
       "etag": "\"190f-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceclientcontext/init.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceclientcontext/init().md",
       "hash": "cdfd1015a1fe563d38d7cad1ef8675dbbcfcecc3f7740ff2550c35a263b2bba3"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceclientcontext/init(version:info:retain:release:copydescription:).json": {
       "etag": "\"3390-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceclientcontext/init-versioninforetainreleasecopydescription.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceclientcontext/init(version,info,retain,release,copydescription).md",
       "hash": "5fe0e8cd41a69ac1ee7f374d7f78e87c00365d4c284476e34b0cfb24facb028b"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceclientcontext/release.json": {
@@ -2627,62 +2627,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicecreate(_:_:_:_:_:).json": {
       "etag": "\"cd3c-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecreate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecreate(_,_,_,_,_).md",
       "hash": "2a29846c5875bf62ff8cc174085494e1bbd78e0075bdd645abe3c6728d2dbb9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicecreatecopy(_:_:).json": {
       "etag": "\"9786-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecreatecopy.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecreatecopy(_,_).md",
       "hash": "aaf715b0a490d0307a76df09f5a9c77dd9c51b935f8768a02b4cb65b26484973"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicecreatedictionarywithtxtdata(_:_:).json": {
       "etag": "\"a512-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecreatedictionarywithtxtdata.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecreatedictionarywithtxtdata(_,_).md",
       "hash": "84822ed0defdea54ca9fdc03b7e03dac04784136370bc8d8b717a7ae92c56ee3"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicecreatetxtdatawithdictionary(_:_:).json": {
       "etag": "\"b280-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicecreatetxtdatawithdictionary.md",
+      "file_path": "documentation/CFNetwork/cfnetservicecreatetxtdatawithdictionary(_,_).md",
       "hash": "54fc5dcb5d103e07ed9a72b2f42b9816ff03613e6583c55ccfd52baaf2fd2d6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicegetaddressing(_:).json": {
       "etag": "\"8ec7-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegetaddressing.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegetaddressing(_).md",
       "hash": "f9d47ea0143e7df35efb95d4b3edf6776c1432464206c4a6ea8274ea846e951c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicegetdomain(_:).json": {
       "etag": "\"8529-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegetdomain.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegetdomain(_).md",
       "hash": "d8a4bf58d3f1be349b09df900e7d13e96f1927669d79c5f1217de4bc77365640"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicegetname(_:).json": {
       "etag": "\"8527-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegetname.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegetname(_).md",
       "hash": "1e00c4bae91411a9e3500fa021b3bce12652f297f50a2e34ccfc17206979a33e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicegetportnumber(_:).json": {
       "etag": "\"9030-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegetportnumber.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegetportnumber(_).md",
       "hash": "09028489313de20b092d9e1939fe2142384c210d84353ae58448f93f7197a39f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicegettargethost(_:).json": {
       "etag": "\"8541-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegettargethost.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegettargethost(_).md",
       "hash": "221a5cb00f28e0ba107e084f6da85b3fe377e7192575eb39413441fe1361bb7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicegettxtdata(_:).json": {
       "etag": "\"a0f8-65d55ee72c197-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegettxtdata.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegettxtdata(_).md",
       "hash": "e81ad4230d0d543206885f51cb8851fcf81242504bc5577f2aa9498fc7d704d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicegettype(_:).json": {
       "etag": "\"84ef-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegettype.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegettype(_).md",
       "hash": "e0746e48c9f38bca6009d6045f747cb5642f3e2e3cda78f00cc6b1837caa1745"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicegettypeid().json": {
       "etag": "\"7976-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicegettypeid.md",
+      "file_path": "documentation/CFNetwork/cfnetservicegettypeid().md",
       "hash": "bd207cc54e90a3909051bca363a71e9bb33940b4dcae58f99c93a69995a5abe0"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitor.json": {
@@ -2697,32 +2697,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitorcreate(_:_:_:_:).json": {
       "etag": "\"d50d-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorcreate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorcreate(_,_,_,_).md",
       "hash": "23f22deb847272e0e4d621efab1b9434a6b9a7a7d5effe85f8c5d3b2ae8dfd80"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitorgettypeid().json": {
       "etag": "\"7abe-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorgettypeid.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorgettypeid().md",
       "hash": "2124b828f25a27c420daa3d5e753db160420adf85f519f14af6b241650453f46"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitorinvalidate(_:).json": {
       "etag": "\"80f3-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorinvalidate.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorinvalidate(_).md",
       "hash": "8672d8db7f0f7affaa49b4e9b19fc399414b897cffb272a929fea0b8d011d1dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitorschedulewithrunloop(_:_:_:).json": {
       "etag": "\"8b91-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorschedulewithrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorschedulewithrunloop(_,_,_).md",
       "hash": "5263aa7e39f7aefba1a06348a2a27b4c09347b80f1a7dfd74bd58c4025d1bc78"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitorstart(_:_:_:).json": {
       "etag": "\"b45a-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorstart.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorstart(_,_,_).md",
       "hash": "1b7f61b075aff2ab5ef817fbbbdf915d52408f07221e911d0b022523d5cde044"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitorstop(_:_:).json": {
       "etag": "\"a751-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorstop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorstop(_,_).md",
       "hash": "570d5bbba97502b03224732691de0472d8613a62137277584cf6493f857adc30"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitortype.json": {
@@ -2732,7 +2732,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitortype/init(rawvalue:).json": {
       "etag": "\"14c7-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitortype/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitortype/init(rawvalue).md",
       "hash": "be160cb50bd100da0dad340c562f6678f16ec8ca72cb24860d57f8642a228d97"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitortype/txt.json": {
@@ -2742,7 +2742,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicemonitorunschedulefromrunloop(_:_:_:).json": {
       "etag": "\"9318-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicemonitorunschedulefromrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetservicemonitorunschedulefromrunloop(_,_,_).md",
       "hash": "79ef93c7aef39368106a1120ed301a168c0bf49df8851d545143935cda8fa155"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceregisterflags.json": {
@@ -2752,7 +2752,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceregisterflags/init(rawvalue:).json": {
       "etag": "\"176b-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceregisterflags/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceregisterflags/init(rawvalue).md",
       "hash": "902dd454b1f8fbe95d8ac88ae9e02ae17025fd944834d2cdc920871345775bc8"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceregisterflags/noautorename.json": {
@@ -2762,17 +2762,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceregisterwithoptions(_:_:_:).json": {
       "etag": "\"c020-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceregisterwithoptions.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceregisterwithoptions(_,_,_).md",
       "hash": "8b555885eed7979d7b155ed37fd67b94a45e732a8743104beed60825a421b4cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceresolvewithtimeout(_:_:_:).json": {
       "etag": "\"bb30-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceresolvewithtimeout.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceresolvewithtimeout(_,_,_).md",
       "hash": "fe81d700a3cc60dfd4f7b3215f9c0f6ce1395a45d3d6c9950f3f7b66493abd7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceschedulewithrunloop(_:_:_:).json": {
       "etag": "\"9444-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceschedulewithrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceschedulewithrunloop(_,_,_).md",
       "hash": "59014b3cc630402dba93be1a48f6f0a4a6f800e83ab8e7ea439c60d1d1b6b41e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceserror.json": {
@@ -2797,7 +2797,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceserror/init(rawvalue:).json": {
       "etag": "\"1475-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceserror/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceserror/init(rawvalue).md",
       "hash": "d6b082d8d2fb024ad76f01c4d949ef2ea1711c586bef7dc8ce3db8f0b4f268cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceserror/inprogress.json": {
@@ -2832,17 +2832,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicesetclient(_:_:_:).json": {
       "etag": "\"abe2-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicesetclient.md",
+      "file_path": "documentation/CFNetwork/cfnetservicesetclient(_,_,_).md",
       "hash": "3919ed82e8678afa09f804fd7a2d7d49fe6af152ce7bb92cd5976b75ca97d934"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetservicesettxtdata(_:_:).json": {
       "etag": "\"8a1d-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetservicesettxtdata.md",
+      "file_path": "documentation/CFNetwork/cfnetservicesettxtdata(_,_).md",
       "hash": "5101a9460ef8d9c09587e786fe4b4abc1fe4d9d07a6794a5fb1d3b5629b43186"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetserviceunschedulefromrunloop(_:_:_:).json": {
       "etag": "\"98e4-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetserviceunschedulefromrunloop.md",
+      "file_path": "documentation/CFNetwork/cfnetserviceunschedulefromrunloop(_,_,_).md",
       "hash": "c6190ef503a509013ebbb68bded61266def7afbd6a6635931bc49b759e28bdb1"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetwork-constants.json": {
@@ -2862,17 +2862,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetworkcopyproxiesforautoconfigurationscript(_:_:_:).json": {
       "etag": "\"826f-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkcopyproxiesforautoconfigurationscript.md",
+      "file_path": "documentation/CFNetwork/cfnetworkcopyproxiesforautoconfigurationscript(_,_,_).md",
       "hash": "cf38630970b649e09d8ed062c2b716ca959433963a3f6f9ce77be66dea59f9c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetworkcopyproxiesforurl(_:_:).json": {
       "etag": "\"7fcd-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkcopyproxiesforurl.md",
+      "file_path": "documentation/CFNetwork/cfnetworkcopyproxiesforurl(_,_).md",
       "hash": "3c10366995655eb8f7dbdd8b38a1858c1699a86c25523edc3f9240b4e977793f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetworkcopysystemproxysettings().json": {
       "etag": "\"5ed9-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkcopysystemproxysettings.md",
+      "file_path": "documentation/CFNetwork/cfnetworkcopysystemproxysettings().md",
       "hash": "97efbf7d201b289e96ab1d13eee5a18234f760b76d367196c3d585cfef2d1490"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetworkerrors.json": {
@@ -3302,17 +3302,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetworkerrors/init(rawvalue:).json": {
       "etag": "\"1899-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkerrors/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfnetworkerrors/init(rawvalue).md",
       "hash": "1f414ba70086b83801a02e2c7afd1e503f16c100ccc12094928edfd076384f46"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetworkexecuteproxyautoconfigurationscript(_:_:_:_:).json": {
       "etag": "\"7dd7-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkexecuteproxyautoconfigurationscript.md",
+      "file_path": "documentation/CFNetwork/cfnetworkexecuteproxyautoconfigurationscript(_,_,_,_).md",
       "hash": "803d0600cd52e40b45f5d152a8d8233beb5209defff8a53c27aef87ab8282fce"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfnetworkexecuteproxyautoconfigurationurl(_:_:_:_:).json": {
       "etag": "\"7909-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfnetworkexecuteproxyautoconfigurationurl.md",
+      "file_path": "documentation/CFNetwork/cfnetworkexecuteproxyautoconfigurationurl(_,_,_,_).md",
       "hash": "68dcaf1c78e34a8cf8eec2c16189d792e7470a17c77e984ad439494c076a7e4a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfproxyautoconfigurationresultcallback.json": {
@@ -3322,37 +3322,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfreadstreamcreateforhttprequest(_:_:).json": {
       "etag": "\"aadb-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfreadstreamcreateforhttprequest.md",
+      "file_path": "documentation/CFNetwork/cfreadstreamcreateforhttprequest(_,_).md",
       "hash": "f86eae3f67b28fa507de87b0e5094f27d0d30474277adad01bae200de43f67e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfreadstreamcreateforstreamedhttprequest(_:_:_:).json": {
       "etag": "\"b2af-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfreadstreamcreateforstreamedhttprequest.md",
+      "file_path": "documentation/CFNetwork/cfreadstreamcreateforstreamedhttprequest(_,_,_).md",
       "hash": "646917e21dc334aa9adc0e712589e67796b0937d10bcfba44676b04402acb11a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfreadstreamcreatewithftpurl(_:_:).json": {
       "etag": "\"babf-65d55ee72c197-df\"",
-      "file_path": "documentation/CFNetwork/cfreadstreamcreatewithftpurl.md",
+      "file_path": "documentation/CFNetwork/cfreadstreamcreatewithftpurl(_,_).md",
       "hash": "8b376991a5fb72220ffbc0fcd5d44f31b312777165a33b75c1e72d87f832831e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfsocketstreamsocksgeterror(_:).json": {
       "etag": "\"9c4b-65d55ee71826f-df\"",
-      "file_path": "documentation/CFNetwork/cfsocketstreamsocksgeterror.md",
+      "file_path": "documentation/CFNetwork/cfsocketstreamsocksgeterror(_).md",
       "hash": "d620feb6c85048bbb1b37563d69d76beb1fd22392d0f3ced7018e8219e93ed54"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfsocketstreamsocksgeterrorsubdomain(_:).json": {
       "etag": "\"9bc0-65d55ee633066-df\"",
-      "file_path": "documentation/CFNetwork/cfsocketstreamsocksgeterrorsubdomain.md",
+      "file_path": "documentation/CFNetwork/cfsocketstreamsocksgeterrorsubdomain(_).md",
       "hash": "98f37c00f9a801ea09df8c996683dbf63fd9eddc7b71954b6999199a7cb285b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfstreamcreatepairwithsockettocfhost(_:_:_:_:_:).json": {
       "etag": "\"bf5f-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfstreamcreatepairwithsockettocfhost.md",
+      "file_path": "documentation/CFNetwork/cfstreamcreatepairwithsockettocfhost(_,_,_,_,_).md",
       "hash": "a856f61fdd09c0738f17f32b0dd319cc642963537ad8d5f52fc12d86b1ca8687"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfstreamcreatepairwithsockettonetservice(_:_:_:_:).json": {
       "etag": "\"b3b6-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/cfstreamcreatepairwithsockettonetservice.md",
+      "file_path": "documentation/CFNetwork/cfstreamcreatepairwithsockettonetservice(_,_,_,_).md",
       "hash": "eca02b4a2582ab622a2621b472f1735c381ffb6e7f75b202a0ba7b1dfabeb1f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfstreamerrorhttp.json": {
@@ -3367,7 +3367,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfstreamerrorhttp/init(rawvalue:).json": {
       "etag": "\"1436-65d55ee6dc6a2-df\"",
-      "file_path": "documentation/CFNetwork/cfstreamerrorhttp/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfstreamerrorhttp/init(rawvalue).md",
       "hash": "c66e6037d0847f9b255233c14052b99b81d260d88e1eddb18c243329c83ae690"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfstreamerrorhttp/parsefailure.json": {
@@ -3397,7 +3397,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfstreamerrorhttpauthentication/init(rawvalue:).json": {
       "etag": "\"1563-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/cfstreamerrorhttpauthentication/init-rawvalue.md",
+      "file_path": "documentation/CFNetwork/cfstreamerrorhttpauthentication/init(rawvalue).md",
       "hash": "093879ef8c7848e96e9b100d838cdc318caef7a5aedb4e56367cd5174108ca71"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfstreamerrorhttpauthentication/typeunsupported.json": {
@@ -3407,7 +3407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/cfwritestreamcreatewithftpurl(_:_:).json": {
       "etag": "\"c2c4-65d55ee69d104-df\"",
-      "file_path": "documentation/CFNetwork/cfwritestreamcreatewithftpurl.md",
+      "file_path": "documentation/CFNetwork/cfwritestreamcreatewithftpurl(_,_).md",
       "hash": "4e0abf1532313ee5627e8a8303c52fe4d9d6e0e6fe620aacf9f65aa1905c2c66"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/error-dictionary-keys.json": {
@@ -3542,22 +3542,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/kcfhttpversion1_0.json": {
       "etag": "\"80b3-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/kcfhttpversion1-0.md",
+      "file_path": "documentation/CFNetwork/kcfhttpversion1_0.md",
       "hash": "dfa6d3bf303705f0332bc13024b2926055c110300be6745711df1409d4a052ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/kcfhttpversion1_1.json": {
       "etag": "\"80b3-65d55ee65aacb-df\"",
-      "file_path": "documentation/CFNetwork/kcfhttpversion1-1.md",
+      "file_path": "documentation/CFNetwork/kcfhttpversion1_1.md",
       "hash": "a1b3de0a77f3bad66a30a09f5a679eb19fde98c592fad36e8431bd50fea8725f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/kcfhttpversion2_0.json": {
       "etag": "\"80a1-65d55ee6f7f2e-df\"",
-      "file_path": "documentation/CFNetwork/kcfhttpversion2-0.md",
+      "file_path": "documentation/CFNetwork/kcfhttpversion2_0.md",
       "hash": "e4f455763cc873496114310e2d068496b9b093d262a932c298b5bc862a39efdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/kcfhttpversion3_0.json": {
       "etag": "\"3d24-65d55ee67cf9d-df\"",
-      "file_path": "documentation/CFNetwork/kcfhttpversion3-0.md",
+      "file_path": "documentation/CFNetwork/kcfhttpversion3_0.md",
       "hash": "84f650aad083b9549e073d895d06506b106d20768e134a721a1edc17b35e0e61"
     },
     "https://developer.apple.com/tutorials/data/documentation/cfnetwork/kcfnetworkproxiesexceptionslist.json": {

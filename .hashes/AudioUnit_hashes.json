@@ -7,7 +7,7 @@
     },
     "https://developer.apple.com/documentation/audiounit/audio_unit_version": {
       "etag": "\"167e-65d55e5af1620-df\"",
-      "file_path": "documentation/AudioUnit/audio-unit-version.md",
+      "file_path": "documentation/AudioUnit/audio_unit_version.md",
       "hash": "64bcae60fec5a1b38c0f72f9ccf2e53721e0186e7e3896c4072637a7313ecb24"
     },
     "https://developer.apple.com/tutorials/data/documentation/AudioUnit.json": {
@@ -17,7 +17,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/audiounit/audio_unit_version.json": {
       "etag": "\"167e-65d55e5af1620-df\"",
-      "file_path": "documentation/AudioUnit/audio-unit-version.md",
+      "file_path": "documentation/AudioUnit/audio_unit_version.md",
       "hash": "64bcae60fec5a1b38c0f72f9ccf2e53721e0186e7e3896c4072637a7313ecb24"
     }
   },

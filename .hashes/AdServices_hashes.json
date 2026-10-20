@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/adservices/aaattribution/attributiontoken()": {
       "etag": "\"8082-65d560ae3098a-df\"",
-      "file_path": "documentation/AdServices/aaattribution/attributiontoken.md",
+      "file_path": "documentation/AdServices/aaattribution/attributiontoken().md",
       "hash": "c24d7a6a6fa7b3f610fecc1e69c6489dec05b4757755ff389b1df1a166615870"
     },
     "https://developer.apple.com/documentation/adservices/aaattributionerror": {
@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/adservices/aaattributionerror/code/init(rawvalue:)": {
       "etag": "\"16b6-65d560ae3098a-df\"",
-      "file_path": "documentation/AdServices/aaattributionerror/code/init-rawvalue.md",
+      "file_path": "documentation/AdServices/aaattributionerror/code/init(rawvalue).md",
       "hash": "45de18cffe2600a1315a07454e5d6669c903863ae1d05a5154cb4c6c00485074"
     },
     "https://developer.apple.com/documentation/adservices/aaattributionerror/code/internalerror": {
@@ -87,7 +87,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattribution/attributiontoken().json": {
       "etag": "\"8082-65d560ae3098a-df\"",
-      "file_path": "documentation/AdServices/aaattribution/attributiontoken.md",
+      "file_path": "documentation/AdServices/aaattribution/attributiontoken().md",
       "hash": "c24d7a6a6fa7b3f610fecc1e69c6489dec05b4757755ff389b1df1a166615870"
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror.json": {
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/code/init(rawvalue:).json": {
       "etag": "\"16b6-65d560ae3098a-df\"",
-      "file_path": "documentation/AdServices/aaattributionerror/code/init-rawvalue.md",
+      "file_path": "documentation/AdServices/aaattributionerror/code/init(rawvalue).md",
       "hash": "45de18cffe2600a1315a07454e5d6669c903863ae1d05a5154cb4c6c00485074"
     },
     "https://developer.apple.com/tutorials/data/documentation/adservices/aaattributionerror/code/internalerror.json": {

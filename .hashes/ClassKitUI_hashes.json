@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/classkitui/assigneddocumentdeferredmenuelement/init(documenturl:willsubmit:didsubmit:willwithdraw:didwithdraw:)": {
       "etag": "\"346c-65d55f15db103-df\"",
-      "file_path": "documentation/ClassKitUI/assigneddocumentdeferredmenuelement/init-documenturlwillsubmitdidsubmitwillwithdrawdidwithdraw.md",
+      "file_path": "documentation/ClassKitUI/assigneddocumentdeferredmenuelement/init(documenturl,willsubmit,didsubmit,willwithdraw,didwithdraw).md",
       "hash": "adddb350d032658d755e36e2bdcc4b1403753c78b3a01bbae0d42f5e1fff701b"
     },
     "https://developer.apple.com/documentation/classkitui/assigneddocumentlabel": {
@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/classkitui/assigneddocumentlabel/init(role:documenturl:)": {
       "etag": "\"1ec6-65d55f15db103-df\"",
-      "file_path": "documentation/ClassKitUI/assigneddocumentlabel/init-roledocumenturl.md",
+      "file_path": "documentation/ClassKitUI/assigneddocumentlabel/init(role,documenturl).md",
       "hash": "fed1e92b0fb2d8a72667bd6219ac3940f11ebd7633ca104b861527fcb9d690df"
     },
     "https://developer.apple.com/documentation/classkitui/assigneddocumentlabel/role": {
@@ -47,7 +47,7 @@
     },
     "https://developer.apple.com/documentation/classkitui/assigneddocumentmenuitem/init(documenturl:willsubmit:didsubmit:willwithdraw:didwithdraw:)": {
       "etag": "\"2ee9-65d55f15db103-df\"",
-      "file_path": "documentation/ClassKitUI/assigneddocumentmenuitem/init-documenturlwillsubmitdidsubmitwillwithdrawdidwithdraw.md",
+      "file_path": "documentation/ClassKitUI/assigneddocumentmenuitem/init(documenturl,willsubmit,didsubmit,willwithdraw,didwithdraw).md",
       "hash": "23edf549d76e89536f85b3f0efa399814fad5bbaffa9251e8121a8e51e287bac"
     },
     "https://developer.apple.com/documentation/classkitui/assigneddocumentsubmissionbutton": {
@@ -57,7 +57,7 @@
     },
     "https://developer.apple.com/documentation/classkitui/assigneddocumentsubmissionbutton/init(documenturl:)": {
       "etag": "\"174d-65d55f15db103-df\"",
-      "file_path": "documentation/ClassKitUI/assigneddocumentsubmissionbutton/init-documenturl.md",
+      "file_path": "documentation/ClassKitUI/assigneddocumentsubmissionbutton/init(documenturl).md",
       "hash": "8769bb0e90465c6fa87b663156d08e1f0903de4c988ef15b801563ddd46897f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/ClassKitUI.json": {
@@ -72,7 +72,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentdeferredmenuelement/init(documenturl:willsubmit:didsubmit:willwithdraw:didwithdraw:).json": {
       "etag": "\"346c-65d55f15db103-df\"",
-      "file_path": "documentation/ClassKitUI/assigneddocumentdeferredmenuelement/init-documenturlwillsubmitdidsubmitwillwithdrawdidwithdraw.md",
+      "file_path": "documentation/ClassKitUI/assigneddocumentdeferredmenuelement/init(documenturl,willsubmit,didsubmit,willwithdraw,didwithdraw).md",
       "hash": "adddb350d032658d755e36e2bdcc4b1403753c78b3a01bbae0d42f5e1fff701b"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentlabel.json": {
@@ -82,7 +82,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentlabel/init(role:documenturl:).json": {
       "etag": "\"1ec6-65d55f15db103-df\"",
-      "file_path": "documentation/ClassKitUI/assigneddocumentlabel/init-roledocumenturl.md",
+      "file_path": "documentation/ClassKitUI/assigneddocumentlabel/init(role,documenturl).md",
       "hash": "fed1e92b0fb2d8a72667bd6219ac3940f11ebd7633ca104b861527fcb9d690df"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentlabel/role.json": {
@@ -107,7 +107,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentmenuitem/init(documenturl:willsubmit:didsubmit:willwithdraw:didwithdraw:).json": {
       "etag": "\"2ee9-65d55f15db103-df\"",
-      "file_path": "documentation/ClassKitUI/assigneddocumentmenuitem/init-documenturlwillsubmitdidsubmitwillwithdrawdidwithdraw.md",
+      "file_path": "documentation/ClassKitUI/assigneddocumentmenuitem/init(documenturl,willsubmit,didsubmit,willwithdraw,didwithdraw).md",
       "hash": "23edf549d76e89536f85b3f0efa399814fad5bbaffa9251e8121a8e51e287bac"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentsubmissionbutton.json": {
@@ -117,7 +117,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentsubmissionbutton/init(documenturl:).json": {
       "etag": "\"174d-65d55f15db103-df\"",
-      "file_path": "documentation/ClassKitUI/assigneddocumentsubmissionbutton/init-documenturl.md",
+      "file_path": "documentation/ClassKitUI/assigneddocumentsubmissionbutton/init(documenturl).md",
       "hash": "8769bb0e90465c6fa87b663156d08e1f0903de4c988ef15b801563ddd46897f9"
     }
   },

@@ -57,7 +57,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbatterror-swift.struct": {
       "etag": "\"7ce7-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbatterror-swiftstruct.md",
+      "file_path": "documentation/CoreBluetooth/cbatterror-swift.struct.md",
       "hash": "4d71c659a7f2a6a869bfb3e12be5880b20695058fb38272c4ef5b45150a1ecb8"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbatterror-swift.struct/attributenotfound": {
@@ -87,7 +87,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbatterror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"1760-65d56055c1ac7-df\"",
-      "file_path": "documentation/CoreBluetooth/cbatterror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbatterror-swift.struct/code/init(rawvalue).md",
       "hash": "cb8063afb41cdcffa89bff19b1f1bf33db30e1edb7bd8b14d59e01531eb11771"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbatterror-swift.struct/code/insufficientauthentication": {
@@ -302,7 +302,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbattributepermissions/init(rawvalue:)": {
       "etag": "\"155b-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbattributepermissions/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbattributepermissions/init(rawvalue).md",
       "hash": "d575dfc35c8be4c6c00e07fa2e484e3cd78824324e0e5fabe97388ed5395a59d"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbattributepermissions/readable": {
@@ -342,12 +342,12 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/cancelperipheralconnection(_:)": {
       "etag": "\"3b8b-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/cancelperipheralconnection.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/cancelperipheralconnection(_).md",
       "hash": "cd2a3d7a1bbf322efaa66cfd3b47af78073accc0c1b162f72c43da258dc07ba9"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/connect(_:options:)": {
       "etag": "\"4aa4-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/connect-options.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/connect(_,options).md",
       "hash": "c84fa5e67ca41abbed7527cea7dabc9f1e3dba9e534e66963ecdbee868b56a1b"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/delegate": {
@@ -372,22 +372,22 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/feature/init(rawvalue:)": {
       "etag": "\"19da-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/feature/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/feature/init(rawvalue).md",
       "hash": "138adc4219d2f180517a15700b90917c19494d1ec38377978c74ea0e25863d31"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/init()": {
       "etag": "\"2f6c-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init().md",
       "hash": "ae9e803f8015ea83842a688fa8d9cee519d24615f755c3039078b23657f5a543"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/init(delegate:queue:)": {
       "etag": "\"48db-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init-delegatequeue.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init(delegate,queue).md",
       "hash": "3d9ddd6bd25cda8030d199115fb913c6aae0f170fcc4601ab264b11079624a83"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/init(delegate:queue:options:)": {
       "etag": "\"4da0-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init-delegatequeueoptions.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init(delegate,queue,options).md",
       "hash": "a13b8525f39419ff7eeb3fe98854db35a6b2fb5b77d5177c4f2397eb2723d5bd"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/isscanning": {
@@ -397,32 +397,32 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/registerforconnectionevents(options:)": {
       "etag": "\"3c94-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/registerforconnectionevents-options.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/registerforconnectionevents(options).md",
       "hash": "cb3e24aff2a92f3d901b0b3ad9c9e19f3aed689264c1b995ddc7c1c58b8ab986"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/retrieveconnectedperipherals(withservices:)": {
       "etag": "\"40b8-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/retrieveconnectedperipherals-withservices.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/retrieveconnectedperipherals(withservices).md",
       "hash": "ed6b0480a31b81037f5826bd9c56beefcb756008982e329959fc988b5ef49727"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/retrieveperipherals(withidentifiers:)": {
       "etag": "\"3a1a-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/retrieveperipherals-withidentifiers.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/retrieveperipherals(withidentifiers).md",
       "hash": "17d60e19b036b3c8f30615837d6b597c8d3649fe3321e4bf666f45e296434548"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/scanforperipherals(withservices:options:)": {
       "etag": "\"50cf-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/scanforperipherals-withservicesoptions.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/scanforperipherals(withservices,options).md",
       "hash": "e88355cb4c5fb6ac7fc31bcbe8f5a1e6b1ac5de2c7e7d26ce8ef26e72905c6e2"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/stopscan()": {
       "etag": "\"2a86-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/stopscan.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/stopscan().md",
       "hash": "67ef53d960335a5ded59424599c7c8bc6d2922ec21ce8cfaf6467e08cbf9f05b"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/supports(_:)": {
       "etag": "\"2c19-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/supports.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/supports(_).md",
       "hash": "0eb2ff05d010e5e84389d53bf85b3a07666ce127d77057c800fe808433e8d6ce"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate": {
@@ -432,47 +432,47 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:connectioneventdidoccur:for:)": {
       "etag": "\"591a-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-connectioneventdidoccurfor.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,connectioneventdidoccur,for).md",
       "hash": "f3d3115844263ca1e036ea2736087b283d10caa6451847f31665ff45db97044b"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:didconnect:)": {
       "etag": "\"5764-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-didconnect.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,didconnect).md",
       "hash": "fa557af766fd0d2146a1730dd4dbc4012b52bf865377d908b351bc137dc6038f"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:diddisconnectperipheral:error:)": {
       "etag": "\"665a-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-diddisconnectperipheralerror.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,diddisconnectperipheral,error).md",
       "hash": "483d3975826166e56463513cd764ebd98e14873927814c882ac313b3189d5ee4"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:diddisconnectperipheral:timestamp:isreconnecting:error:)": {
       "etag": "\"418b-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-diddisconnectperipheraltimestampisreconnectingerror.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,diddisconnectperipheral,timestamp,isreconnecting,error).md",
       "hash": "104f77403eadb44f5758aa8e2c49a98d83c8e0b698d2836b7e8e028e9aa0bb38"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:diddiscover:advertisementdata:rssi:)": {
       "etag": "\"4793-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-diddiscoveradvertisementdatarssi.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,diddiscover,advertisementdata,rssi).md",
       "hash": "0663da055ae2208a5343e7f52a4d9f1b76c10fa1fe4d9085558eaa6ec8c7ea14"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:didfailtoconnect:error:)": {
       "etag": "\"5a2c-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-didfailtoconnecterror.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,didfailtoconnect,error).md",
       "hash": "125a76a8f5861602e511f734715ba83a3b4a38906fb78304db27c12b2d63a6d9"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:didupdateancsauthorizationfor:)": {
       "etag": "\"329c-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-didupdateancsauthorizationfor.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,didupdateancsauthorizationfor).md",
       "hash": "267ab46950bef583821ad3fe8a42ef9b0db79efdef822437d9669199b447c389"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:willrestorestate:)": {
       "etag": "\"46f4-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-willrestorestate.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,willrestorestate).md",
       "hash": "39c7cac165b94290b85d1a4cfc3ffbcc52ec45f9254fd91edd37bae6c4d7ee9c"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanagerdidupdatestate(_:)": {
       "etag": "\"4945-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanagerdidupdatestate.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanagerdidupdatestate(_).md",
       "hash": "5226c834c461a4b065bfa0bb224a30b8f6cdc62babe26d70966262f3aee413b0"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanageroptiondeviceaccessformedia": {
@@ -522,7 +522,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerstate/init(rawvalue:)": {
       "etag": "\"16ab-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerstate/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerstate/init(rawvalue).md",
       "hash": "a7bef8a10ad2ab9f643a53324077fb177a3934d77f264adeec7887a878664a2a"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcentralmanagerstate/poweredoff": {
@@ -572,17 +572,17 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/init(role:)": {
       "etag": "\"24fa-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/init-role.md",
+      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/init(role).md",
       "hash": "ebada7a0ba2ad9db2b29f513a35f6a956f0ae4ef72c0016bcdc0466a343a0bdb"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum": {
       "etag": "\"3624-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swiftenum.md",
+      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum.md",
       "hash": "5c7d957eb419efa82fc2ae9ffa519de1c33478c591965042c00c2be9689ce478"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum/init(rawvalue:)": {
       "etag": "\"1a95-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum/init(rawvalue).md",
       "hash": "489c82c09557b5baf928bc0659c6935695060352d8d02f9b8551d909a354cfd8"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum/initiator": {
@@ -592,7 +592,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/role-swift.property": {
       "etag": "\"256e-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swiftproperty.md",
+      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swift.property.md",
       "hash": "9dac61bcb5f5b9e73d1822c5c5af6fe9ff471643f3f638a5c266dcbe95de7d8e"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcharacteristic": {
@@ -662,7 +662,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcharacteristicproperties/init(rawvalue:)": {
       "etag": "\"159f-65d560561130a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcharacteristicproperties/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbcharacteristicproperties/init(rawvalue).md",
       "hash": "71f2af51fb0368888595ea25467f6313f8b83445acbd733b0375e2eab6f0176d"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcharacteristicproperties/notify": {
@@ -697,7 +697,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcharacteristicwritetype/init(rawvalue:)": {
       "etag": "\"14bf-65d56055a7ab6-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcharacteristicwritetype/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbcharacteristicwritetype/init(rawvalue).md",
       "hash": "70ec6ab728e421770f7e47f5fa4ccd3c3761875a0b1f45493e5dcf497fcd051d"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbcharacteristicwritetype/withoutresponse": {
@@ -717,7 +717,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbconnectionevent/init(rawvalue:)": {
       "etag": "\"1407-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbconnectionevent/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbconnectionevent/init(rawvalue).md",
       "hash": "43a323fc5a4b40b0d95270d61b2d7b160bc651ac5e9c8460abc478148f95c9f5"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbconnectionevent/peerconnected": {
@@ -737,7 +737,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbconnectioneventmatchingoption/init(rawvalue:)": {
       "etag": "\"160a-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbconnectioneventmatchingoption/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbconnectioneventmatchingoption/init(rawvalue).md",
       "hash": "266cbddd6d6061091bf9559b68f22c73ee09411b7e40d79a9fbdc4216c2b2d15"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbconnectioneventmatchingoption/peripheraluuids": {
@@ -802,7 +802,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cberror-swift.struct": {
       "etag": "\"87ac-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cberror-swiftstruct.md",
+      "file_path": "documentation/CoreBluetooth/cberror-swift.struct.md",
       "hash": "2ddf5c2497cbd5422c8bc72925b2e8a1ae51e4b895faabeb1926359c9c850926"
     },
     "https://developer.apple.com/documentation/corebluetooth/cberror-swift.struct/alreadyadvertising": {
@@ -862,7 +862,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cberror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"16ee-65d56055a7ab6-df\"",
-      "file_path": "documentation/CoreBluetooth/cberror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cberror-swift.struct/code/init(rawvalue).md",
       "hash": "3ae5250724f6d018af90c4d9f1c4eaf5b85dc1581960e1a6bce57f95f769e921"
     },
     "https://developer.apple.com/documentation/corebluetooth/cberror-swift.struct/code/invalidhandle": {
@@ -1082,12 +1082,12 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmanager/authorization-swift.property": {
       "etag": "\"2a88-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmanager/authorization-swiftproperty.md",
+      "file_path": "documentation/CoreBluetooth/cbmanager/authorization-swift.property.md",
       "hash": "cdd8713fb567618090a13dea2558b91aa374b429d2a16ec13f929a2e3b1f7d01"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmanager/authorization-swift.type.property": {
       "etag": "\"3976-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmanager/authorization-swifttypeproperty.md",
+      "file_path": "documentation/CoreBluetooth/cbmanager/authorization-swift.type.property.md",
       "hash": "a8547a9bbed9b74b225b245f17672bc99d2b096a4b9fab1902fe1b0b9f181b4d"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmanager/state": {
@@ -1112,7 +1112,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmanagerauthorization/init(rawvalue:)": {
       "etag": "\"147a-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmanagerauthorization/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbmanagerauthorization/init(rawvalue).md",
       "hash": "7e4979d2381a27b9a5f8d1743972394cc1608aea6cdf4fff614fa045834e5054"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmanagerauthorization/notdetermined": {
@@ -1132,7 +1132,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmanagerstate/init(rawvalue:)": {
       "etag": "\"13d6-65d560561130a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmanagerstate/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbmanagerstate/init(rawvalue).md",
       "hash": "2bd75461d10c89acfb80909f3486927efa4f846ffb340062483f6c87d4b3f80a"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmanagerstate/poweredoff": {
@@ -1177,7 +1177,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmutablecharacteristic/init(type:properties:value:permissions:)": {
       "etag": "\"64cf-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmutablecharacteristic/init-typepropertiesvaluepermissions.md",
+      "file_path": "documentation/CoreBluetooth/cbmutablecharacteristic/init(type,properties,value,permissions).md",
       "hash": "82b7b3d4210c87ed46f1b5591419196dcbec48b7364d68a81101d3d4fb7a5f51"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmutablecharacteristic/permissions": {
@@ -1207,7 +1207,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmutabledescriptor/init(type:value:)": {
       "etag": "\"442e-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmutabledescriptor/init-typevalue.md",
+      "file_path": "documentation/CoreBluetooth/cbmutabledescriptor/init(type,value).md",
       "hash": "55123a6a2889d930da78a29d40a73caf0463665941d8cb921cd7af73c2492c09"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmutableservice": {
@@ -1227,7 +1227,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbmutableservice/init(type:primary:)": {
       "etag": "\"3713-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmutableservice/init-typeprimary.md",
+      "file_path": "documentation/CoreBluetooth/cbmutableservice/init(type,primary).md",
       "hash": "ffce0ec48edefc1b882b3bc9f27749fa973fde9a656093d09af191df4db449e9"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbpeer": {
@@ -1252,7 +1252,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/cancelchannelsoundingsession()": {
       "etag": "\"1a15-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/cancelchannelsoundingsession.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/cancelchannelsoundingsession().md",
       "hash": "ff1c774377b3515c42ecaed66f403c92b77be3d0e810a4fcc029b287044cc91c"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/cansendwritewithoutresponse": {
@@ -1267,27 +1267,27 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/discovercharacteristics(_:for:)": {
       "etag": "\"4be7-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/discovercharacteristics-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/discovercharacteristics(_,for).md",
       "hash": "b4711b099eb37dc2c90c02d9b52558409ee4aca5e19a1f6117d89dcf29f230d7"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/discoverdescriptors(for:)": {
       "etag": "\"3cac-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverdescriptors-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverdescriptors(for).md",
       "hash": "7211300c638d5df6ad958768ba7a2fc09b252fab4ba3541cf668f7436630f2ee"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/discoverincludedservices(_:for:)": {
       "etag": "\"4f5b-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverincludedservices-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverincludedservices(_,for).md",
       "hash": "a5154564a08d0ccc45db6a9385dd5c9bf5887ee3cd911ad00e7dfa3685a9a1d0"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/discoverservices(_:)": {
       "etag": "\"3f48-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverservices.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverservices(_).md",
       "hash": "46147215c81dde6859ad561a7113e068f3cf5479ec77deddef96fb761c6f28ee"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/maximumwritevaluelength(for:)": {
       "etag": "\"38cf-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/maximumwritevaluelength-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/maximumwritevaluelength(for).md",
       "hash": "0cf3589e18efde85596b61345d83b1729f67f8eb503df79d358927fad4d59e57"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/name": {
@@ -1297,22 +1297,22 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/openl2capchannel(_:)": {
       "etag": "\"29ee-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/openl2capchannel.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/openl2capchannel(_).md",
       "hash": "83885852c60c681b0f824a5da9261b8dee03611582f3d040090d2213401997a9"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/readrssi()": {
       "etag": "\"3296-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/readrssi.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/readrssi().md",
       "hash": "a75b25e908a0d2d085d429e79cf68b45dd105142b5f77f9b55c9e57eaebf5e48"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/readvalue(for:)-6u2kr": {
       "etag": "\"411e-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/readvalue-for-6u2kr.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/readvalue(for)-6u2kr.md",
       "hash": "03c59105e454f937eaf41cf169e1a78a873740ec415b7010cf9dbcd40889a654"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/readvalue(for:)-91hhp": {
       "etag": "\"3a11-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/readvalue-for-91hhp.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/readvalue(for)-91hhp.md",
       "hash": "cd8ec0fd896c6c8b8903134a115dea800a24b238335164b7ecb17cb745038491"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/rssi": {
@@ -1327,12 +1327,12 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/setnotifyvalue(_:for:)": {
       "etag": "\"5072-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/setnotifyvalue-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/setnotifyvalue(_,for).md",
       "hash": "df8c0abc562ae6a05e359c0ada23d2274f4918e55cf7243004dac3fb3b255d0e"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/startchannelsoundingsession(_:)": {
       "etag": "\"2552-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/startchannelsoundingsession.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/startchannelsoundingsession(_).md",
       "hash": "2a9b1a68eb2aeeed694ae613d5e578e2d416940cefe661ad1a6a2bafa152aa38"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/state": {
@@ -1342,12 +1342,12 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/writevalue(_:for:)": {
       "etag": "\"5740-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/writevalue-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/writevalue(_,for).md",
       "hash": "aecf5c32f9221b448c28986b0ee1960e805d649a49650047760bc7e1848382ad"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheral/writevalue(_:for:type:)": {
       "etag": "\"6fb1-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/writevalue-fortype.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/writevalue(_,for,type).md",
       "hash": "de1667ffcfd741785413339ddbb9d30117e44d1a3816edf04f0895154df751a1"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate": {
@@ -1357,87 +1357,87 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didcompletechannelsoundingsession:)": {
       "etag": "\"2c56-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didcompletechannelsoundingsession.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didcompletechannelsoundingsession).md",
       "hash": "f6c0204ea9648cb9970e1abd4666e76a8c7cfae5942ae2062a5f2384a40fa31a"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:diddiscovercharacteristicsfor:error:)": {
       "etag": "\"4ffc-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-diddiscovercharacteristicsforerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,diddiscovercharacteristicsfor,error).md",
       "hash": "d76dc5975ab427694d88c14f8930457ecab0b98d1fa962471c2e7d61546fdcbf"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:diddiscoverdescriptorsfor:error:)": {
       "etag": "\"5014-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-diddiscoverdescriptorsforerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,diddiscoverdescriptorsfor,error).md",
       "hash": "3e37e211252b8eab60aabb7269e72b56492c0a790fefa62dab49317cd3ccf1b1"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:diddiscoverincludedservicesfor:error:)": {
       "etag": "\"4f5d-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-diddiscoverincludedservicesforerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,diddiscoverincludedservicesfor,error).md",
       "hash": "436c803b8fadecfcd8fa582458aace4ab5d030eb6fadcb7e047c51df0629756a"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:diddiscoverservices:)": {
       "etag": "\"47a2-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-diddiscoverservices.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,diddiscoverservices).md",
       "hash": "f9e2e30ab356d5aa55be50fd01630a3d1dd17baced04a636cfef5955f6d4d387"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didmodifyservices:)": {
       "etag": "\"40f0-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didmodifyservices.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didmodifyservices).md",
       "hash": "08440c2e97b947428d34dd2588603b8bc45960e4b07279a3827694b6005e9fe5"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didopen:error:)": {
       "etag": "\"3846-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didopenerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didopen,error).md",
       "hash": "606d74dbc13c1d32729a0764da51a251673c2f12c8a8eef08abca887f93c77c3"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didreadrssi:error:)": {
       "etag": "\"44c5-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didreadrssierror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didreadrssi,error).md",
       "hash": "b3e8eaddfd1824260c64d8b0dc1122e088512390175d6ac01aeeea00423c3f22"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didreceive:error:)": {
       "etag": "\"36ba-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didreceiveerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didreceive,error).md",
       "hash": "d1df9fea51e1b1911494be56c08d8c0748d94403d2a2665f08aa6f73cbaa4eb6"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didupdatenotificationstatefor:error:)": {
       "etag": "\"4186-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didupdatenotificationstateforerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didupdatenotificationstatefor,error).md",
       "hash": "fb35867176776f8e652f0ff1351126998b1aeb4b144c8c05500a5caf4f78e850"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didupdatevaluefor:error:)-1t3wm": {
       "etag": "\"492f-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didupdatevalueforerror-1t3wm.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didupdatevaluefor,error)-1t3wm.md",
       "hash": "76ffc5261fa4050ed8e749af5fff0d7081d5bab9f89bef447df2e6290293de28"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didupdatevaluefor:error:)-1xyna": {
       "etag": "\"50b8-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didupdatevalueforerror-1xyna.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didupdatevaluefor,error)-1xyna.md",
       "hash": "9cf75ff65b1fad5ba27f0477e7383a18190a9c02860ad6699aeaeb500fb8abdc"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didwritevaluefor:error:)-1ybl3": {
       "etag": "\"5082-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didwritevalueforerror-1ybl3.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didwritevaluefor,error)-1ybl3.md",
       "hash": "db75b5599dcf2792529c8cb6e23eee22e10a23cf2c011e6b45278946bf08925d"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didwritevaluefor:error:)-4f5ea": {
       "etag": "\"5746-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didwritevalueforerror-4f5ea.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didwritevaluefor,error)-4f5ea.md",
       "hash": "8356a10619dd085267728279a5bb83bcf83cf5ec41bf2db2bf5e4efe1269f734"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheraldidupdatename(_:)": {
       "etag": "\"2f62-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheraldidupdatename.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheraldidupdatename(_).md",
       "hash": "6d0171666a1e0bae7d1b8cd4d310c3beabd6ae485c001eec0df20e112ea47370"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheraldidupdaterssi(_:error:)": {
       "etag": "\"40f1-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheraldidupdaterssi-error.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheraldidupdaterssi(_,error).md",
       "hash": "150e50808a525fc9943672a5859ea356653255828b2882692ae867a5fe6b65f1"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse:)": {
       "etag": "\"422a-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheralisready-tosendwritewithoutresponse.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse).md",
       "hash": "5cddf90d9627b88020983dce3f2b39c7b0bc320a90e3f972d2bfb0e4fb74c8dc"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager": {
@@ -1447,12 +1447,12 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/add(_:)": {
       "etag": "\"396e-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/add.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/add(_).md",
       "hash": "76831f725f94ec0efd63f5a651808d0ef5fc6cd9afab46bb44ac82c645945eff"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/authorizationstatus()": {
       "etag": "\"3706-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/authorizationstatus.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/authorizationstatus().md",
       "hash": "170200a8dd08bde41d8c645db41f072a68ee266b8685e8dad60a5ef8c83c86b4"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/delegate": {
@@ -1462,17 +1462,17 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/init()": {
       "etag": "\"327f-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init().md",
       "hash": "2aa65006f9258a52dc99d2699ecbe89b99d49b51ea958a1afdc103665c5a3e7e"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/init(delegate:queue:)": {
       "etag": "\"4b58-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init-delegatequeue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init(delegate,queue).md",
       "hash": "e219f22bb40cd58393a9a2517df74a440ef4793326f8153b4911eb1d67bec60e"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/init(delegate:queue:options:)": {
       "etag": "\"5020-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init-delegatequeueoptions.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init(delegate,queue,options).md",
       "hash": "6f90305d8cf3cb308026e94e642d6979143acf1e605f172ca07077c547c68ad3"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/isadvertising": {
@@ -1482,47 +1482,47 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/publishl2capchannel(withencryption:)": {
       "etag": "\"3bed-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/publishl2capchannel-withencryption.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/publishl2capchannel(withencryption).md",
       "hash": "f3a9ab926a31960a07924f96f1870557cb5368642b0b09684e9ada88c4d1c8d3"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/remove(_:)": {
       "etag": "\"327c-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/remove.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/remove(_).md",
       "hash": "6e06eded6b4e0b724aa2a7fff71e1a2c4c8e72c3d2b8decad478da1b810ca687"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/removeallservices()": {
       "etag": "\"2a3d-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/removeallservices.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/removeallservices().md",
       "hash": "14c9d4aa17e84e5cfb0eb97577c77066adc3023dc273520f83d784c501d47a43"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/respond(to:withresult:)": {
       "etag": "\"4771-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/respond-towithresult.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/respond(to,withresult).md",
       "hash": "5f46e1935023b2796c3e7c9fe9bcaa5bb7587b5c365912227ae0bb60483b421d"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/setdesiredconnectionlatency(_:for:)": {
       "etag": "\"389a-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/setdesiredconnectionlatency-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/setdesiredconnectionlatency(_,for).md",
       "hash": "95f0157c334a30d9fba356aa7351521a352cc41e6d93d5c7423133529a41e962"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/startadvertising(_:)": {
       "etag": "\"51c8-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/startadvertising.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/startadvertising(_).md",
       "hash": "005f3a9d6ca8997b82097641980147f7470732ba9f9a5f7c038fa90ad5ce2fc6"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/stopadvertising()": {
       "etag": "\"29a1-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/stopadvertising.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/stopadvertising().md",
       "hash": "186194b2867ae53e18186a54aa98fa97c18760d0af76a86a476721867500e4f6"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/unpublishl2capchannel(_:)": {
       "etag": "\"2d59-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/unpublishl2capchannel.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/unpublishl2capchannel(_).md",
       "hash": "9b6f6d54c781d01214b1fd84c90f6e31ea2400cbda7199456ae8777defa3ac03"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/updatevalue(_:for:onsubscribedcentrals:)": {
       "etag": "\"5944-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/updatevalue-foronsubscribedcentrals.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/updatevalue(_,for,onsubscribedcentrals).md",
       "hash": "2d3746630335462905050219057c015e0fec3a48fd3bc0bc99fd1c6163d16da3"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerauthorizationstatus": {
@@ -1542,7 +1542,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerauthorizationstatus/init(rawvalue:)": {
       "etag": "\"1838-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerauthorizationstatus/init(rawvalue).md",
       "hash": "39a04b19b2df2994f7cc80365fc5dc59919ac00a7deb0fef7db4abd5fc17632a"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerauthorizationstatus/notdetermined": {
@@ -1567,7 +1567,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerconnectionlatency/init(rawvalue:)": {
       "etag": "\"1589-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerconnectionlatency/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerconnectionlatency/init(rawvalue).md",
       "hash": "b1039c921675cc1805ca3bad4943b76851092dc30d6f92dd778bd153a9184781"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerconnectionlatency/low": {
@@ -1587,62 +1587,62 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:central:didsubscribeto:)": {
       "etag": "\"598a-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-centraldidsubscribeto.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,central,didsubscribeto).md",
       "hash": "3e010a8d90e071bb478ee92ed51059f75236d4e41ebc84e9c6f6c6789be1bd7d"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:central:didunsubscribefrom:)": {
       "etag": "\"5020-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-centraldidunsubscribefrom.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,central,didunsubscribefrom).md",
       "hash": "626c63d398b3ecacf4a9a6d0c5089eb43dada26e49c7c0e93467bf00ee09946a"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didadd:error:)": {
       "etag": "\"3fe5-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didadderror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didadd,error).md",
       "hash": "4ddbf61e49ce0bbf4b9eceabb13927d4b646ac2a3879e03e7d0cff651cd0bf45"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didopen:error:)": {
       "etag": "\"528d-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didopenerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didopen,error).md",
       "hash": "1d4ea354cd2659ef23f78429b57d8205c5e0c478353d0ae196ffb1777a7b07bd"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didpublishl2capchannel:error:)": {
       "etag": "\"5354-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didpublishl2capchannelerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didpublishl2capchannel,error).md",
       "hash": "4194e78ba0984d5782b35d1b3405252d86a00d37f9eac907f4514ab4dfbbb6b1"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didreceiveread:)": {
       "etag": "\"4539-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didreceiveread.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didreceiveread).md",
       "hash": "a5804fae3b728dba8cdec0bf62357c9c76d6d985550ad18565114c308bf260e9"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didreceivewrite:)": {
       "etag": "\"4aed-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didreceivewrite.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didreceivewrite).md",
       "hash": "41e3b925721e32d8e55e74a55723ad9cbb207dfbd4a69d19463c6a8def662598"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didunpublishl2capchannel:error:)": {
       "etag": "\"5223-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didunpublishl2capchannelerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didunpublishl2capchannel,error).md",
       "hash": "8ed716dc26dc49067bc7385c7fcdb54e77bdc73a3c586fdda52686b1d4d7de09"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:willrestorestate:)": {
       "etag": "\"4628-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-willrestorestate.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,willrestorestate).md",
       "hash": "61c6d4f4359e2de09e6ffff33d3f83065cb6fefe1d7e9d7d02dd7489e3ef094b"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising(_:error:)": {
       "etag": "\"37a1-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising-error.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising(_,error).md",
       "hash": "6c2470d0a1ebf7e8a31b876df2bfbc8ea0d35d6981013f681c7c89131f210a2b"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate(_:)": {
       "etag": "\"4cac-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate(_).md",
       "hash": "a72ee5d71690c1eb2063d579a40ad436b61482a17be29b03afeefbd9b29b7bce"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanagerisready(toupdatesubscribers:)": {
       "etag": "\"47e3-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerisready-toupdatesubscribers.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerisready(toupdatesubscribers).md",
       "hash": "6073e1302f9db96ed8fcdcd2080fc5d8ce8ca96ad43c10cf6faecbda43d4a156"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanageroptionrestoreidentifierkey": {
@@ -1672,7 +1672,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerstate/init(rawvalue:)": {
       "etag": "\"16e2-65d560561130a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerstate/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerstate/init(rawvalue).md",
       "hash": "7d3554316bc8b3b39d179fad2b5048d376face7714aae8f3309ea2ec6fbccfd6"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralmanagerstate/poweredoff": {
@@ -1732,7 +1732,7 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbperipheralstate/init(rawvalue:)": {
       "etag": "\"1414-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralstate/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralstate/init(rawvalue).md",
       "hash": "e883cbdb187fda1d2ad40c4fad26e1f7340040c997946f8d3359067647a4a6d9"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbservice": {
@@ -1772,32 +1772,32 @@
     },
     "https://developer.apple.com/documentation/corebluetooth/cbuuid/init(cfuuid:)-3h0ry": {
       "etag": "\"3864-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-cfuuid-3h0ry.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(cfuuid)-3h0ry.md",
       "hash": "37587c84c76771fa27dad906fd1b075bffa55064de45d237355bbbc8d9e103b1"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbuuid/init(cfuuid:)-9ehvy": {
       "etag": "\"1676-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-cfuuid-9ehvy.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(cfuuid)-9ehvy.md",
       "hash": "6db3e5b8a063a29fbb1830bef90ffaa66823b8423c9cdc147f105f7acf12b8c4"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbuuid/init(data:)": {
       "etag": "\"34fd-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-data.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(data).md",
       "hash": "95c537943b42fa817c62f6b20f1d4cc0b77c6558391bd64530e34fd660d91288"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbuuid/init(nsuuid:)-2amob": {
       "etag": "\"380f-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-nsuuid-2amob.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(nsuuid)-2amob.md",
       "hash": "5b27a9babf6009f30860ba7a63acf3c0a41a19075778a79d16faea71382777e1"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbuuid/init(nsuuid:)-hoyn": {
       "etag": "\"1432-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-nsuuid-hoyn.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(nsuuid)-hoyn.md",
       "hash": "5e8852adf6267bc74cfd84837a5ed824768a7c9052aecea179e2aea835dbbdce"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbuuid/init(string:)": {
       "etag": "\"43fc-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-string.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(string).md",
       "hash": "df9ea1a96a6f55e090fe0d2c02a38cbbff791200eb77110342b0e2887b5d3fdb"
     },
     "https://developer.apple.com/documentation/corebluetooth/cbuuid/uuidstring": {
@@ -1962,7 +1962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbatterror-swift.struct.json": {
       "etag": "\"7ce7-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbatterror-swiftstruct.md",
+      "file_path": "documentation/CoreBluetooth/cbatterror-swift.struct.md",
       "hash": "4d71c659a7f2a6a869bfb3e12be5880b20695058fb38272c4ef5b45150a1ecb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbatterror-swift.struct/attributenotfound.json": {
@@ -1992,7 +1992,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbatterror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"1760-65d56055c1ac7-df\"",
-      "file_path": "documentation/CoreBluetooth/cbatterror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbatterror-swift.struct/code/init(rawvalue).md",
       "hash": "cb8063afb41cdcffa89bff19b1f1bf33db30e1edb7bd8b14d59e01531eb11771"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbatterror-swift.struct/code/insufficientauthentication.json": {
@@ -2207,7 +2207,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbattributepermissions/init(rawvalue:).json": {
       "etag": "\"155b-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbattributepermissions/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbattributepermissions/init(rawvalue).md",
       "hash": "d575dfc35c8be4c6c00e07fa2e484e3cd78824324e0e5fabe97388ed5395a59d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbattributepermissions/readable.json": {
@@ -2247,12 +2247,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/cancelperipheralconnection(_:).json": {
       "etag": "\"3b8b-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/cancelperipheralconnection.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/cancelperipheralconnection(_).md",
       "hash": "cd2a3d7a1bbf322efaa66cfd3b47af78073accc0c1b162f72c43da258dc07ba9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/connect(_:options:).json": {
       "etag": "\"4aa4-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/connect-options.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/connect(_,options).md",
       "hash": "c84fa5e67ca41abbed7527cea7dabc9f1e3dba9e534e66963ecdbee868b56a1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/delegate.json": {
@@ -2277,22 +2277,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/feature/init(rawvalue:).json": {
       "etag": "\"19da-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/feature/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/feature/init(rawvalue).md",
       "hash": "138adc4219d2f180517a15700b90917c19494d1ec38377978c74ea0e25863d31"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/init().json": {
       "etag": "\"2f6c-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init().md",
       "hash": "ae9e803f8015ea83842a688fa8d9cee519d24615f755c3039078b23657f5a543"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/init(delegate:queue:).json": {
       "etag": "\"48db-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init-delegatequeue.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init(delegate,queue).md",
       "hash": "3d9ddd6bd25cda8030d199115fb913c6aae0f170fcc4601ab264b11079624a83"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/init(delegate:queue:options:).json": {
       "etag": "\"4da0-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init-delegatequeueoptions.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/init(delegate,queue,options).md",
       "hash": "a13b8525f39419ff7eeb3fe98854db35a6b2fb5b77d5177c4f2397eb2723d5bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/isscanning.json": {
@@ -2302,32 +2302,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/registerforconnectionevents(options:).json": {
       "etag": "\"3c94-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/registerforconnectionevents-options.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/registerforconnectionevents(options).md",
       "hash": "cb3e24aff2a92f3d901b0b3ad9c9e19f3aed689264c1b995ddc7c1c58b8ab986"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/retrieveconnectedperipherals(withservices:).json": {
       "etag": "\"40b8-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/retrieveconnectedperipherals-withservices.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/retrieveconnectedperipherals(withservices).md",
       "hash": "ed6b0480a31b81037f5826bd9c56beefcb756008982e329959fc988b5ef49727"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/retrieveperipherals(withidentifiers:).json": {
       "etag": "\"3a1a-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/retrieveperipherals-withidentifiers.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/retrieveperipherals(withidentifiers).md",
       "hash": "17d60e19b036b3c8f30615837d6b597c8d3649fe3321e4bf666f45e296434548"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/scanforperipherals(withservices:options:).json": {
       "etag": "\"50cf-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/scanforperipherals-withservicesoptions.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/scanforperipherals(withservices,options).md",
       "hash": "e88355cb4c5fb6ac7fc31bcbe8f5a1e6b1ac5de2c7e7d26ce8ef26e72905c6e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/stopscan().json": {
       "etag": "\"2a86-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/stopscan.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/stopscan().md",
       "hash": "67ef53d960335a5ded59424599c7c8bc6d2922ec21ce8cfaf6467e08cbf9f05b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanager/supports(_:).json": {
       "etag": "\"2c19-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanager/supports.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanager/supports(_).md",
       "hash": "0eb2ff05d010e5e84389d53bf85b3a07666ce127d77057c800fe808433e8d6ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate.json": {
@@ -2337,47 +2337,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:connectioneventdidoccur:for:).json": {
       "etag": "\"591a-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-connectioneventdidoccurfor.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,connectioneventdidoccur,for).md",
       "hash": "f3d3115844263ca1e036ea2736087b283d10caa6451847f31665ff45db97044b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:didconnect:).json": {
       "etag": "\"5764-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-didconnect.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,didconnect).md",
       "hash": "fa557af766fd0d2146a1730dd4dbc4012b52bf865377d908b351bc137dc6038f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:diddisconnectperipheral:error:).json": {
       "etag": "\"665a-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-diddisconnectperipheralerror.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,diddisconnectperipheral,error).md",
       "hash": "483d3975826166e56463513cd764ebd98e14873927814c882ac313b3189d5ee4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:diddisconnectperipheral:timestamp:isreconnecting:error:).json": {
       "etag": "\"418b-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-diddisconnectperipheraltimestampisreconnectingerror.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,diddisconnectperipheral,timestamp,isreconnecting,error).md",
       "hash": "104f77403eadb44f5758aa8e2c49a98d83c8e0b698d2836b7e8e028e9aa0bb38"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:diddiscover:advertisementdata:rssi:).json": {
       "etag": "\"4793-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-diddiscoveradvertisementdatarssi.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,diddiscover,advertisementdata,rssi).md",
       "hash": "0663da055ae2208a5343e7f52a4d9f1b76c10fa1fe4d9085558eaa6ec8c7ea14"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:didfailtoconnect:error:).json": {
       "etag": "\"5a2c-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-didfailtoconnecterror.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,didfailtoconnect,error).md",
       "hash": "125a76a8f5861602e511f734715ba83a3b4a38906fb78304db27c12b2d63a6d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:didupdateancsauthorizationfor:).json": {
       "etag": "\"329c-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-didupdateancsauthorizationfor.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,didupdateancsauthorizationfor).md",
       "hash": "267ab46950bef583821ad3fe8a42ef9b0db79efdef822437d9669199b447c389"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanager(_:willrestorestate:).json": {
       "etag": "\"46f4-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager-willrestorestate.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanager(_,willrestorestate).md",
       "hash": "39c7cac165b94290b85d1a4cfc3ffbcc52ec45f9254fd91edd37bae6c4d7ee9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerdelegate/centralmanagerdidupdatestate(_:).json": {
       "etag": "\"4945-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanagerdidupdatestate.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerdelegate/centralmanagerdidupdatestate(_).md",
       "hash": "5226c834c461a4b065bfa0bb224a30b8f6cdc62babe26d70966262f3aee413b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanageroptiondeviceaccessformedia.json": {
@@ -2427,7 +2427,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerstate/init(rawvalue:).json": {
       "etag": "\"16ab-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcentralmanagerstate/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbcentralmanagerstate/init(rawvalue).md",
       "hash": "a7bef8a10ad2ab9f643a53324077fb177a3934d77f264adeec7887a878664a2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcentralmanagerstate/poweredoff.json": {
@@ -2477,17 +2477,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/init(role:).json": {
       "etag": "\"24fa-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/init-role.md",
+      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/init(role).md",
       "hash": "ebada7a0ba2ad9db2b29f513a35f6a956f0ae4ef72c0016bcdc0466a343a0bdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum.json": {
       "etag": "\"3624-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swiftenum.md",
+      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum.md",
       "hash": "5c7d957eb419efa82fc2ae9ffa519de1c33478c591965042c00c2be9689ce478"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum/init(rawvalue:).json": {
       "etag": "\"1a95-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum/init(rawvalue).md",
       "hash": "489c82c09557b5baf928bc0659c6935695060352d8d02f9b8551d909a354cfd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/role-swift.enum/initiator.json": {
@@ -2497,7 +2497,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbchannelsoundingsessionconfiguration/role-swift.property.json": {
       "etag": "\"256e-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swiftproperty.md",
+      "file_path": "documentation/CoreBluetooth/cbchannelsoundingsessionconfiguration/role-swift.property.md",
       "hash": "9dac61bcb5f5b9e73d1822c5c5af6fe9ff471643f3f638a5c266dcbe95de7d8e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcharacteristic.json": {
@@ -2567,7 +2567,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcharacteristicproperties/init(rawvalue:).json": {
       "etag": "\"159f-65d560561130a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcharacteristicproperties/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbcharacteristicproperties/init(rawvalue).md",
       "hash": "71f2af51fb0368888595ea25467f6313f8b83445acbd733b0375e2eab6f0176d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcharacteristicproperties/notify.json": {
@@ -2602,7 +2602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcharacteristicwritetype/init(rawvalue:).json": {
       "etag": "\"14bf-65d56055a7ab6-df\"",
-      "file_path": "documentation/CoreBluetooth/cbcharacteristicwritetype/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbcharacteristicwritetype/init(rawvalue).md",
       "hash": "70ec6ab728e421770f7e47f5fa4ccd3c3761875a0b1f45493e5dcf497fcd051d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbcharacteristicwritetype/withoutresponse.json": {
@@ -2622,7 +2622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbconnectionevent/init(rawvalue:).json": {
       "etag": "\"1407-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbconnectionevent/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbconnectionevent/init(rawvalue).md",
       "hash": "43a323fc5a4b40b0d95270d61b2d7b160bc651ac5e9c8460abc478148f95c9f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbconnectionevent/peerconnected.json": {
@@ -2642,7 +2642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbconnectioneventmatchingoption/init(rawvalue:).json": {
       "etag": "\"160a-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbconnectioneventmatchingoption/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbconnectioneventmatchingoption/init(rawvalue).md",
       "hash": "266cbddd6d6061091bf9559b68f22c73ee09411b7e40d79a9fbdc4216c2b2d15"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbconnectioneventmatchingoption/peripheraluuids.json": {
@@ -2707,7 +2707,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cberror-swift.struct.json": {
       "etag": "\"87ac-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cberror-swiftstruct.md",
+      "file_path": "documentation/CoreBluetooth/cberror-swift.struct.md",
       "hash": "2ddf5c2497cbd5422c8bc72925b2e8a1ae51e4b895faabeb1926359c9c850926"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cberror-swift.struct/alreadyadvertising.json": {
@@ -2767,7 +2767,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cberror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"16ee-65d56055a7ab6-df\"",
-      "file_path": "documentation/CoreBluetooth/cberror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cberror-swift.struct/code/init(rawvalue).md",
       "hash": "3ae5250724f6d018af90c4d9f1c4eaf5b85dc1581960e1a6bce57f95f769e921"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cberror-swift.struct/code/invalidhandle.json": {
@@ -2987,12 +2987,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmanager/authorization-swift.property.json": {
       "etag": "\"2a88-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmanager/authorization-swiftproperty.md",
+      "file_path": "documentation/CoreBluetooth/cbmanager/authorization-swift.property.md",
       "hash": "cdd8713fb567618090a13dea2558b91aa374b429d2a16ec13f929a2e3b1f7d01"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmanager/authorization-swift.type.property.json": {
       "etag": "\"3976-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmanager/authorization-swifttypeproperty.md",
+      "file_path": "documentation/CoreBluetooth/cbmanager/authorization-swift.type.property.md",
       "hash": "a8547a9bbed9b74b225b245f17672bc99d2b096a4b9fab1902fe1b0b9f181b4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmanager/state.json": {
@@ -3017,7 +3017,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmanagerauthorization/init(rawvalue:).json": {
       "etag": "\"147a-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmanagerauthorization/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbmanagerauthorization/init(rawvalue).md",
       "hash": "7e4979d2381a27b9a5f8d1743972394cc1608aea6cdf4fff614fa045834e5054"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmanagerauthorization/notdetermined.json": {
@@ -3037,7 +3037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmanagerstate/init(rawvalue:).json": {
       "etag": "\"13d6-65d560561130a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmanagerstate/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbmanagerstate/init(rawvalue).md",
       "hash": "2bd75461d10c89acfb80909f3486927efa4f846ffb340062483f6c87d4b3f80a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmanagerstate/poweredoff.json": {
@@ -3082,7 +3082,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmutablecharacteristic/init(type:properties:value:permissions:).json": {
       "etag": "\"64cf-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmutablecharacteristic/init-typepropertiesvaluepermissions.md",
+      "file_path": "documentation/CoreBluetooth/cbmutablecharacteristic/init(type,properties,value,permissions).md",
       "hash": "82b7b3d4210c87ed46f1b5591419196dcbec48b7364d68a81101d3d4fb7a5f51"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmutablecharacteristic/permissions.json": {
@@ -3112,7 +3112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmutabledescriptor/init(type:value:).json": {
       "etag": "\"442e-65d560565ea6a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmutabledescriptor/init-typevalue.md",
+      "file_path": "documentation/CoreBluetooth/cbmutabledescriptor/init(type,value).md",
       "hash": "55123a6a2889d930da78a29d40a73caf0463665941d8cb921cd7af73c2492c09"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmutableservice.json": {
@@ -3132,7 +3132,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbmutableservice/init(type:primary:).json": {
       "etag": "\"3713-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbmutableservice/init-typeprimary.md",
+      "file_path": "documentation/CoreBluetooth/cbmutableservice/init(type,primary).md",
       "hash": "ffce0ec48edefc1b882b3bc9f27749fa973fde9a656093d09af191df4db449e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbpeer.json": {
@@ -3157,7 +3157,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/cancelchannelsoundingsession().json": {
       "etag": "\"1a15-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/cancelchannelsoundingsession.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/cancelchannelsoundingsession().md",
       "hash": "ff1c774377b3515c42ecaed66f403c92b77be3d0e810a4fcc029b287044cc91c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/cansendwritewithoutresponse.json": {
@@ -3172,27 +3172,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/discovercharacteristics(_:for:).json": {
       "etag": "\"4be7-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/discovercharacteristics-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/discovercharacteristics(_,for).md",
       "hash": "b4711b099eb37dc2c90c02d9b52558409ee4aca5e19a1f6117d89dcf29f230d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/discoverdescriptors(for:).json": {
       "etag": "\"3cac-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverdescriptors-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverdescriptors(for).md",
       "hash": "7211300c638d5df6ad958768ba7a2fc09b252fab4ba3541cf668f7436630f2ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/discoverincludedservices(_:for:).json": {
       "etag": "\"4f5b-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverincludedservices-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverincludedservices(_,for).md",
       "hash": "a5154564a08d0ccc45db6a9385dd5c9bf5887ee3cd911ad00e7dfa3685a9a1d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/discoverservices(_:).json": {
       "etag": "\"3f48-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverservices.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/discoverservices(_).md",
       "hash": "46147215c81dde6859ad561a7113e068f3cf5479ec77deddef96fb761c6f28ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/maximumwritevaluelength(for:).json": {
       "etag": "\"38cf-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/maximumwritevaluelength-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/maximumwritevaluelength(for).md",
       "hash": "0cf3589e18efde85596b61345d83b1729f67f8eb503df79d358927fad4d59e57"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/name.json": {
@@ -3202,22 +3202,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/openl2capchannel(_:).json": {
       "etag": "\"29ee-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/openl2capchannel.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/openl2capchannel(_).md",
       "hash": "83885852c60c681b0f824a5da9261b8dee03611582f3d040090d2213401997a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/readrssi().json": {
       "etag": "\"3296-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/readrssi.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/readrssi().md",
       "hash": "a75b25e908a0d2d085d429e79cf68b45dd105142b5f77f9b55c9e57eaebf5e48"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/readvalue(for:)-6u2kr.json": {
       "etag": "\"411e-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/readvalue-for-6u2kr.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/readvalue(for)-6u2kr.md",
       "hash": "03c59105e454f937eaf41cf169e1a78a873740ec415b7010cf9dbcd40889a654"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/readvalue(for:)-91hhp.json": {
       "etag": "\"3a11-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/readvalue-for-91hhp.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/readvalue(for)-91hhp.md",
       "hash": "cd8ec0fd896c6c8b8903134a115dea800a24b238335164b7ecb17cb745038491"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/rssi.json": {
@@ -3232,12 +3232,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/setnotifyvalue(_:for:).json": {
       "etag": "\"5072-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/setnotifyvalue-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/setnotifyvalue(_,for).md",
       "hash": "df8c0abc562ae6a05e359c0ada23d2274f4918e55cf7243004dac3fb3b255d0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/startchannelsoundingsession(_:).json": {
       "etag": "\"2552-65d560562c518-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/startchannelsoundingsession.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/startchannelsoundingsession(_).md",
       "hash": "2a9b1a68eb2aeeed694ae613d5e578e2d416940cefe661ad1a6a2bafa152aa38"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/state.json": {
@@ -3247,12 +3247,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/writevalue(_:for:).json": {
       "etag": "\"5740-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/writevalue-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/writevalue(_,for).md",
       "hash": "aecf5c32f9221b448c28986b0ee1960e805d649a49650047760bc7e1848382ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheral/writevalue(_:for:type:).json": {
       "etag": "\"6fb1-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheral/writevalue-fortype.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheral/writevalue(_,for,type).md",
       "hash": "de1667ffcfd741785413339ddbb9d30117e44d1a3816edf04f0895154df751a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate.json": {
@@ -3262,87 +3262,87 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didcompletechannelsoundingsession:).json": {
       "etag": "\"2c56-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didcompletechannelsoundingsession.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didcompletechannelsoundingsession).md",
       "hash": "f6c0204ea9648cb9970e1abd4666e76a8c7cfae5942ae2062a5f2384a40fa31a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:diddiscovercharacteristicsfor:error:).json": {
       "etag": "\"4ffc-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-diddiscovercharacteristicsforerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,diddiscovercharacteristicsfor,error).md",
       "hash": "d76dc5975ab427694d88c14f8930457ecab0b98d1fa962471c2e7d61546fdcbf"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:diddiscoverdescriptorsfor:error:).json": {
       "etag": "\"5014-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-diddiscoverdescriptorsforerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,diddiscoverdescriptorsfor,error).md",
       "hash": "3e37e211252b8eab60aabb7269e72b56492c0a790fefa62dab49317cd3ccf1b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:diddiscoverincludedservicesfor:error:).json": {
       "etag": "\"4f5d-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-diddiscoverincludedservicesforerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,diddiscoverincludedservicesfor,error).md",
       "hash": "436c803b8fadecfcd8fa582458aace4ab5d030eb6fadcb7e047c51df0629756a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:diddiscoverservices:).json": {
       "etag": "\"47a2-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-diddiscoverservices.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,diddiscoverservices).md",
       "hash": "f9e2e30ab356d5aa55be50fd01630a3d1dd17baced04a636cfef5955f6d4d387"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didmodifyservices:).json": {
       "etag": "\"40f0-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didmodifyservices.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didmodifyservices).md",
       "hash": "08440c2e97b947428d34dd2588603b8bc45960e4b07279a3827694b6005e9fe5"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didopen:error:).json": {
       "etag": "\"3846-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didopenerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didopen,error).md",
       "hash": "606d74dbc13c1d32729a0764da51a251673c2f12c8a8eef08abca887f93c77c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didreadrssi:error:).json": {
       "etag": "\"44c5-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didreadrssierror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didreadrssi,error).md",
       "hash": "b3e8eaddfd1824260c64d8b0dc1122e088512390175d6ac01aeeea00423c3f22"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didreceive:error:).json": {
       "etag": "\"36ba-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didreceiveerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didreceive,error).md",
       "hash": "d1df9fea51e1b1911494be56c08d8c0748d94403d2a2665f08aa6f73cbaa4eb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didupdatenotificationstatefor:error:).json": {
       "etag": "\"4186-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didupdatenotificationstateforerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didupdatenotificationstatefor,error).md",
       "hash": "fb35867176776f8e652f0ff1351126998b1aeb4b144c8c05500a5caf4f78e850"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didupdatevaluefor:error:)-1t3wm.json": {
       "etag": "\"492f-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didupdatevalueforerror-1t3wm.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didupdatevaluefor,error)-1t3wm.md",
       "hash": "76ffc5261fa4050ed8e749af5fff0d7081d5bab9f89bef447df2e6290293de28"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didupdatevaluefor:error:)-1xyna.json": {
       "etag": "\"50b8-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didupdatevalueforerror-1xyna.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didupdatevaluefor,error)-1xyna.md",
       "hash": "9cf75ff65b1fad5ba27f0477e7383a18190a9c02860ad6699aeaeb500fb8abdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didwritevaluefor:error:)-1ybl3.json": {
       "etag": "\"5082-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didwritevalueforerror-1ybl3.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didwritevaluefor,error)-1ybl3.md",
       "hash": "db75b5599dcf2792529c8cb6e23eee22e10a23cf2c011e6b45278946bf08925d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheral(_:didwritevaluefor:error:)-4f5ea.json": {
       "etag": "\"5746-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral-didwritevalueforerror-4f5ea.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheral(_,didwritevaluefor,error)-4f5ea.md",
       "hash": "8356a10619dd085267728279a5bb83bcf83cf5ec41bf2db2bf5e4efe1269f734"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheraldidupdatename(_:).json": {
       "etag": "\"2f62-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheraldidupdatename.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheraldidupdatename(_).md",
       "hash": "6d0171666a1e0bae7d1b8cd4d310c3beabd6ae485c001eec0df20e112ea47370"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheraldidupdaterssi(_:error:).json": {
       "etag": "\"40f1-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheraldidupdaterssi-error.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheraldidupdaterssi(_,error).md",
       "hash": "150e50808a525fc9943672a5859ea356653255828b2882692ae867a5fe6b65f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse:).json": {
       "etag": "\"422a-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheralisready-tosendwritewithoutresponse.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheraldelegate/peripheralisready(tosendwritewithoutresponse).md",
       "hash": "5cddf90d9627b88020983dce3f2b39c7b0bc320a90e3f972d2bfb0e4fb74c8dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager.json": {
@@ -3352,12 +3352,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/add(_:).json": {
       "etag": "\"396e-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/add.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/add(_).md",
       "hash": "76831f725f94ec0efd63f5a651808d0ef5fc6cd9afab46bb44ac82c645945eff"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/authorizationstatus().json": {
       "etag": "\"3706-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/authorizationstatus.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/authorizationstatus().md",
       "hash": "170200a8dd08bde41d8c645db41f072a68ee266b8685e8dad60a5ef8c83c86b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/delegate.json": {
@@ -3367,17 +3367,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/init().json": {
       "etag": "\"327f-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init().md",
       "hash": "2aa65006f9258a52dc99d2699ecbe89b99d49b51ea958a1afdc103665c5a3e7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/init(delegate:queue:).json": {
       "etag": "\"4b58-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init-delegatequeue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init(delegate,queue).md",
       "hash": "e219f22bb40cd58393a9a2517df74a440ef4793326f8153b4911eb1d67bec60e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/init(delegate:queue:options:).json": {
       "etag": "\"5020-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init-delegatequeueoptions.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/init(delegate,queue,options).md",
       "hash": "6f90305d8cf3cb308026e94e642d6979143acf1e605f172ca07077c547c68ad3"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/isadvertising.json": {
@@ -3387,47 +3387,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/publishl2capchannel(withencryption:).json": {
       "etag": "\"3bed-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/publishl2capchannel-withencryption.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/publishl2capchannel(withencryption).md",
       "hash": "f3a9ab926a31960a07924f96f1870557cb5368642b0b09684e9ada88c4d1c8d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/remove(_:).json": {
       "etag": "\"327c-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/remove.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/remove(_).md",
       "hash": "6e06eded6b4e0b724aa2a7fff71e1a2c4c8e72c3d2b8decad478da1b810ca687"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/removeallservices().json": {
       "etag": "\"2a3d-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/removeallservices.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/removeallservices().md",
       "hash": "14c9d4aa17e84e5cfb0eb97577c77066adc3023dc273520f83d784c501d47a43"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/respond(to:withresult:).json": {
       "etag": "\"4771-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/respond-towithresult.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/respond(to,withresult).md",
       "hash": "5f46e1935023b2796c3e7c9fe9bcaa5bb7587b5c365912227ae0bb60483b421d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/setdesiredconnectionlatency(_:for:).json": {
       "etag": "\"389a-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/setdesiredconnectionlatency-for.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/setdesiredconnectionlatency(_,for).md",
       "hash": "95f0157c334a30d9fba356aa7351521a352cc41e6d93d5c7423133529a41e962"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/startadvertising(_:).json": {
       "etag": "\"51c8-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/startadvertising.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/startadvertising(_).md",
       "hash": "005f3a9d6ca8997b82097641980147f7470732ba9f9a5f7c038fa90ad5ce2fc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/stopadvertising().json": {
       "etag": "\"29a1-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/stopadvertising.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/stopadvertising().md",
       "hash": "186194b2867ae53e18186a54aa98fa97c18760d0af76a86a476721867500e4f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/unpublishl2capchannel(_:).json": {
       "etag": "\"2d59-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/unpublishl2capchannel.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/unpublishl2capchannel(_).md",
       "hash": "9b6f6d54c781d01214b1fd84c90f6e31ea2400cbda7199456ae8777defa3ac03"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanager/updatevalue(_:for:onsubscribedcentrals:).json": {
       "etag": "\"5944-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/updatevalue-foronsubscribedcentrals.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanager/updatevalue(_,for,onsubscribedcentrals).md",
       "hash": "2d3746630335462905050219057c015e0fec3a48fd3bc0bc99fd1c6163d16da3"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerauthorizationstatus.json": {
@@ -3447,7 +3447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerauthorizationstatus/init(rawvalue:).json": {
       "etag": "\"1838-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerauthorizationstatus/init(rawvalue).md",
       "hash": "39a04b19b2df2994f7cc80365fc5dc59919ac00a7deb0fef7db4abd5fc17632a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerauthorizationstatus/notdetermined.json": {
@@ -3472,7 +3472,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerconnectionlatency/init(rawvalue:).json": {
       "etag": "\"1589-65d56055f7039-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerconnectionlatency/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerconnectionlatency/init(rawvalue).md",
       "hash": "b1039c921675cc1805ca3bad4943b76851092dc30d6f92dd778bd153a9184781"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerconnectionlatency/low.json": {
@@ -3492,62 +3492,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:central:didsubscribeto:).json": {
       "etag": "\"598a-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-centraldidsubscribeto.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,central,didsubscribeto).md",
       "hash": "3e010a8d90e071bb478ee92ed51059f75236d4e41ebc84e9c6f6c6789be1bd7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:central:didunsubscribefrom:).json": {
       "etag": "\"5020-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-centraldidunsubscribefrom.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,central,didunsubscribefrom).md",
       "hash": "626c63d398b3ecacf4a9a6d0c5089eb43dada26e49c7c0e93467bf00ee09946a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didadd:error:).json": {
       "etag": "\"3fe5-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didadderror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didadd,error).md",
       "hash": "4ddbf61e49ce0bbf4b9eceabb13927d4b646ac2a3879e03e7d0cff651cd0bf45"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didopen:error:).json": {
       "etag": "\"528d-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didopenerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didopen,error).md",
       "hash": "1d4ea354cd2659ef23f78429b57d8205c5e0c478353d0ae196ffb1777a7b07bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didpublishl2capchannel:error:).json": {
       "etag": "\"5354-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didpublishl2capchannelerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didpublishl2capchannel,error).md",
       "hash": "4194e78ba0984d5782b35d1b3405252d86a00d37f9eac907f4514ab4dfbbb6b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didreceiveread:).json": {
       "etag": "\"4539-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didreceiveread.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didreceiveread).md",
       "hash": "a5804fae3b728dba8cdec0bf62357c9c76d6d985550ad18565114c308bf260e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didreceivewrite:).json": {
       "etag": "\"4aed-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didreceivewrite.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didreceivewrite).md",
       "hash": "41e3b925721e32d8e55e74a55723ad9cbb207dfbd4a69d19463c6a8def662598"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:didunpublishl2capchannel:error:).json": {
       "etag": "\"5223-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-didunpublishl2capchannelerror.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,didunpublishl2capchannel,error).md",
       "hash": "8ed716dc26dc49067bc7385c7fcdb54e77bdc73a3c586fdda52686b1d4d7de09"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanager(_:willrestorestate:).json": {
       "etag": "\"4628-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager-willrestorestate.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanager(_,willrestorestate).md",
       "hash": "61c6d4f4359e2de09e6ffff33d3f83065cb6fefe1d7e9d7d02dd7489e3ef094b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising(_:error:).json": {
       "etag": "\"37a1-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising-error.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising(_,error).md",
       "hash": "6c2470d0a1ebf7e8a31b876df2bfbc8ea0d35d6981013f681c7c89131f210a2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate(_:).json": {
       "etag": "\"4cac-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate(_).md",
       "hash": "a72ee5d71690c1eb2063d579a40ad436b61482a17be29b03afeefbd9b29b7bce"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerdelegate/peripheralmanagerisready(toupdatesubscribers:).json": {
       "etag": "\"47e3-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerisready-toupdatesubscribers.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerdelegate/peripheralmanagerisready(toupdatesubscribers).md",
       "hash": "6073e1302f9db96ed8fcdcd2080fc5d8ce8ca96ad43c10cf6faecbda43d4a156"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanageroptionrestoreidentifierkey.json": {
@@ -3577,7 +3577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerstate/init(rawvalue:).json": {
       "etag": "\"16e2-65d560561130a-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerstate/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralmanagerstate/init(rawvalue).md",
       "hash": "7d3554316bc8b3b39d179fad2b5048d376face7714aae8f3309ea2ec6fbccfd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralmanagerstate/poweredoff.json": {
@@ -3637,7 +3637,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbperipheralstate/init(rawvalue:).json": {
       "etag": "\"1414-65d56056420c3-df\"",
-      "file_path": "documentation/CoreBluetooth/cbperipheralstate/init-rawvalue.md",
+      "file_path": "documentation/CoreBluetooth/cbperipheralstate/init(rawvalue).md",
       "hash": "e883cbdb187fda1d2ad40c4fad26e1f7340040c997946f8d3359067647a4a6d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbservice.json": {
@@ -3677,32 +3677,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbuuid/init(cfuuid:)-3h0ry.json": {
       "etag": "\"3864-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-cfuuid-3h0ry.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(cfuuid)-3h0ry.md",
       "hash": "37587c84c76771fa27dad906fd1b075bffa55064de45d237355bbbc8d9e103b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbuuid/init(cfuuid:)-9ehvy.json": {
       "etag": "\"1676-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-cfuuid-9ehvy.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(cfuuid)-9ehvy.md",
       "hash": "6db3e5b8a063a29fbb1830bef90ffaa66823b8423c9cdc147f105f7acf12b8c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbuuid/init(data:).json": {
       "etag": "\"34fd-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-data.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(data).md",
       "hash": "95c537943b42fa817c62f6b20f1d4cc0b77c6558391bd64530e34fd660d91288"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbuuid/init(nsuuid:)-2amob.json": {
       "etag": "\"380f-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-nsuuid-2amob.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(nsuuid)-2amob.md",
       "hash": "5b27a9babf6009f30860ba7a63acf3c0a41a19075778a79d16faea71382777e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbuuid/init(nsuuid:)-hoyn.json": {
       "etag": "\"1432-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-nsuuid-hoyn.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(nsuuid)-hoyn.md",
       "hash": "5e8852adf6267bc74cfd84837a5ed824768a7c9052aecea179e2aea835dbbdce"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbuuid/init(string:).json": {
       "etag": "\"43fc-65d56055dad34-df\"",
-      "file_path": "documentation/CoreBluetooth/cbuuid/init-string.md",
+      "file_path": "documentation/CoreBluetooth/cbuuid/init(string).md",
       "hash": "df9ea1a96a6f55e090fe0d2c02a38cbbff791200eb77110342b0e2887b5d3fdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/corebluetooth/cbuuid/uuidstring.json": {

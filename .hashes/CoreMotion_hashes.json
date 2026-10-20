@@ -47,12 +47,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmacceleration/init()": {
       "etag": "\"1348-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmacceleration/init.md",
+      "file_path": "documentation/CoreMotion/cmacceleration/init().md",
       "hash": "5e4cc0a8d56c517ae1e99da5b1467284aeb31bbbebd5fa4eca76de3b03bb2e15"
     },
     "https://developer.apple.com/documentation/coremotion/cmacceleration/init(x:y:z:)": {
       "etag": "\"1a03-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmacceleration/init-xyz.md",
+      "file_path": "documentation/CoreMotion/cmacceleration/init(x,y,z).md",
       "hash": "db2794518af06e5a30e6bb886cba142bb04b16791eb48b3553028e9a7df70e77"
     },
     "https://developer.apple.com/documentation/coremotion/cmacceleration/x": {
@@ -92,37 +92,37 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmaltimeter/authorizationstatus()": {
       "etag": "\"2e90-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/authorizationstatus().md",
       "hash": "d0f3972d9cdda7baf8c475cf9e43ae3327fd5404d501a25262e01ac53137e139"
     },
     "https://developer.apple.com/documentation/coremotion/cmaltimeter/isabsolutealtitudeavailable()": {
       "etag": "\"3a15-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/isabsolutealtitudeavailable.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/isabsolutealtitudeavailable().md",
       "hash": "d862b3ce43afd249bdb5679d5706a0212d0887ae61a65cc8eba2147868e3c217"
     },
     "https://developer.apple.com/documentation/coremotion/cmaltimeter/isrelativealtitudeavailable()": {
       "etag": "\"415e-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/isrelativealtitudeavailable.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/isrelativealtitudeavailable().md",
       "hash": "3754401a155b68a3c1298f06ae118c40fef5ba6c455d960a2a9edfcc5592a946"
     },
     "https://developer.apple.com/documentation/coremotion/cmaltimeter/startabsolutealtitudeupdates(to:withhandler:)": {
       "etag": "\"5520-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/startabsolutealtitudeupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/startabsolutealtitudeupdates(to,withhandler).md",
       "hash": "9fcdc49da1aeb0e2241c4162ab88329d74fc1a11acc9a61d3c3011ec94328de0"
     },
     "https://developer.apple.com/documentation/coremotion/cmaltimeter/startrelativealtitudeupdates(to:withhandler:)": {
       "etag": "\"501d-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/startrelativealtitudeupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/startrelativealtitudeupdates(to,withhandler).md",
       "hash": "4e0e5b930ca2a7c776a02405a2a6aeb7cf4fc91aeed08839c024e500f57e7f51"
     },
     "https://developer.apple.com/documentation/coremotion/cmaltimeter/stopabsolutealtitudeupdates()": {
       "etag": "\"3df7-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/stopabsolutealtitudeupdates.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/stopabsolutealtitudeupdates().md",
       "hash": "9b0bfd9c18bf8fb62ef1d5084ade39a1e88d7aabd6ed2667b24ef42c7be85160"
     },
     "https://developer.apple.com/documentation/coremotion/cmaltimeter/stoprelativealtitudeupdates()": {
       "etag": "\"3d41-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/stoprelativealtitudeupdates.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/stoprelativealtitudeupdates().md",
       "hash": "6ed285166a1258fb02283e5d39819d6dfb62dd6287263bef641b29975171e894"
     },
     "https://developer.apple.com/documentation/coremotion/cmaltitudedata": {
@@ -167,12 +167,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmattitude/init(coder:)": {
       "etag": "\"1487-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmattitude/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmattitude/init(coder).md",
       "hash": "a2096515d73d61a773a45f497aca357e7a1a4cf0a65dd4d6fd56338d768865de"
     },
     "https://developer.apple.com/documentation/coremotion/cmattitude/multiply(byinverseof:)": {
       "etag": "\"22da-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmattitude/multiply-byinverseof.md",
+      "file_path": "documentation/CoreMotion/cmattitude/multiply(byinverseof).md",
       "hash": "c82186ba7d915aca5fed21de645c3e11c862ef50598ad14e960894ae02837fdc"
     },
     "https://developer.apple.com/documentation/coremotion/cmattitude/pitch": {
@@ -207,7 +207,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmattitudereferenceframe/init(rawvalue:)": {
       "etag": "\"1434-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmattitudereferenceframe/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmattitudereferenceframe/init(rawvalue).md",
       "hash": "6d5e11b335394b161560b05cb9cb9c4ef86fceb981e4925c73e317e36dc10f98"
     },
     "https://developer.apple.com/documentation/coremotion/cmattitudereferenceframe/xarbitrarycorrectedzvertical": {
@@ -247,7 +247,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmauthorizationstatus/init(rawvalue:)": {
       "etag": "\"13d8-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmauthorizationstatus/init(rawvalue).md",
       "hash": "7af123a0b3edf6b81f76e69668d81beba6c65c6c052e3ad5306f08ac2909012d"
     },
     "https://developer.apple.com/documentation/coremotion/cmauthorizationstatus/notdetermined": {
@@ -282,7 +282,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/accelerometerupdates()": {
       "etag": "\"3176-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/accelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/accelerometerupdates().md",
       "hash": "85bf7b8de8f71f76665228c0985ef1050410cfc27e0c126e8bfdcead96ecfc81"
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/accelerometerupdates/iterator": {
@@ -312,7 +312,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/devicemotionupdates()": {
       "etag": "\"30fb-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/devicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/devicemotionupdates().md",
       "hash": "b65dfee9ab11c5a998ba2229582794c3929539c574a586cc45d6e3a7ce398923"
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/devicemotionupdates/iterator": {
@@ -342,32 +342,32 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/startaccelerometerupdates()": {
       "etag": "\"3822-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startaccelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startaccelerometerupdates().md",
       "hash": "afb9ee47a395aab501324b539a2115e3b72f51935b138985cc7890704599df1e"
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/startaccelerometerupdates(handler:)": {
       "etag": "\"47fb-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startaccelerometerupdates-handler.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startaccelerometerupdates(handler).md",
       "hash": "ca1e18de95870b0651537f78657acf81a275059fe8f29ac18ae6abd0caaccc26"
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/startdevicemotionupdates()": {
       "etag": "\"37b6-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startdevicemotionupdates().md",
       "hash": "b1eff94c24c3c8cceb3e4e987ebabdf571ced07ca6661b0a850ea8a8b907de5d"
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/startdevicemotionupdates(handler:)": {
       "etag": "\"4755-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startdevicemotionupdates-handler.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startdevicemotionupdates(handler).md",
       "hash": "0d38cdd753a5e41fe662a3a943bfc101f2005806be30b9896d490520a3660dd4"
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/stopaccelerometerupdates()": {
       "etag": "\"3819-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/stopaccelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/stopaccelerometerupdates().md",
       "hash": "18a42232aa0cf3c943276a4d3c692f5226a63c35587c2dfe47a96c06d7f56c9b"
     },
     "https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager/stopdevicemotionupdates()": {
       "etag": "\"37ad-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/stopdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/stopdevicemotionupdates().md",
       "hash": "cb7a82da7bc367f14f843c6e78c2f1fb896b469b5ac275cf9a43c5ce757da302"
     },
     "https://developer.apple.com/documentation/coremotion/cmbodyidentifiable": {
@@ -392,12 +392,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmcalibratedmagneticfield/init()": {
       "etag": "\"1554-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield/init.md",
+      "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield/init().md",
       "hash": "4f540b194f771d5854e0bc6ed74c02ba5a2f7d115901d1516f5aee63c6879ac7"
     },
     "https://developer.apple.com/documentation/coremotion/cmcalibratedmagneticfield/init(field:accuracy:)": {
       "etag": "\"2314-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield/init-fieldaccuracy.md",
+      "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield/init(field,accuracy).md",
       "hash": "40bd4f38e1323fb0cc55cbe331efb85b6904eb398e70052416aa9917993945ec"
     },
     "https://developer.apple.com/documentation/coremotion/cmdevicemotion": {
@@ -437,7 +437,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmdevicemotion/sensorlocation-swift.enum": {
       "etag": "\"45b7-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swiftenum.md",
+      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swift.enum.md",
       "hash": "a1aad4d5c588e00ec165327366e4686bdb28abe55e52e9ae15d5ef476cc2750e"
     },
     "https://developer.apple.com/documentation/coremotion/cmdevicemotion/sensorlocation-swift.enum/default": {
@@ -457,12 +457,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmdevicemotion/sensorlocation-swift.enum/init(rawvalue:)": {
       "etag": "\"1964-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swift.enum/init(rawvalue).md",
       "hash": "2301d17ced2889c26beeb92023c35fe7a3478610b103fd0ef4bd20a3bcfc9c8f"
     },
     "https://developer.apple.com/documentation/coremotion/cmdevicemotion/sensorlocation-swift.property": {
       "etag": "\"259c-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swiftproperty.md",
+      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swift.property.md",
       "hash": "34146c8f7f536e1bcbfb9293ef2305f71b7c30aca5a222838d1bffce71d18f42"
     },
     "https://developer.apple.com/documentation/coremotion/cmdevicemotion/useracceleration": {
@@ -487,7 +487,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmdyskineticsymptomresult/init(coder:)": {
       "etag": "\"155e-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmdyskineticsymptomresult/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmdyskineticsymptomresult/init(coder).md",
       "hash": "5bb1b23a4c22b71de47d01a6690fe53c415cfcebcbc0090da630f917a562b0de"
     },
     "https://developer.apple.com/documentation/coremotion/cmdyskineticsymptomresult/percentlikely": {
@@ -517,12 +517,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmerror/init(_:)": {
       "etag": "\"1591-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmerror/init.md",
+      "file_path": "documentation/CoreMotion/cmerror/init(_).md",
       "hash": "ac4675adf359ab37260ca2cb159b4f7fc3435e435a1d0c2de6f235e02cc644ad"
     },
     "https://developer.apple.com/documentation/coremotion/cmerror/init(rawvalue:)": {
       "etag": "\"15b1-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmerror/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmerror/init(rawvalue).md",
       "hash": "5f4fac9006e50b0ead8f66ac5a03caaf98f5990cc2060030cdfabb237590635f"
     },
     "https://developer.apple.com/documentation/coremotion/cmerror/rawvalue": {
@@ -612,12 +612,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmfalldetectiondelegate/falldetectionmanager(_:diddetect:completionhandler:)": {
       "etag": "\"44b0-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmfalldetectiondelegate/falldetectionmanager-diddetectcompletionhandler.md",
+      "file_path": "documentation/CoreMotion/cmfalldetectiondelegate/falldetectionmanager(_,diddetect,completionhandler).md",
       "hash": "960240659bc3956c958dc92267edd646e089133b0b81cfbf9d10f145ab685106"
     },
     "https://developer.apple.com/documentation/coremotion/cmfalldetectiondelegate/falldetectionmanagerdidchangeauthorization(_:)": {
       "etag": "\"2c35-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmfalldetectiondelegate/falldetectionmanagerdidchangeauthorization.md",
+      "file_path": "documentation/CoreMotion/cmfalldetectiondelegate/falldetectionmanagerdidchangeauthorization(_).md",
       "hash": "99cae28f15ea0436e5b37af2ead4b0ef744dedcdeb6fc0e0b787a0ec3c1c9a7c"
     },
     "https://developer.apple.com/documentation/coremotion/cmfalldetectionevent": {
@@ -652,7 +652,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmfalldetectionevent/userresolution/init(rawvalue:)": {
       "etag": "\"187f-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmfalldetectionevent/userresolution/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmfalldetectionevent/userresolution/init(rawvalue).md",
       "hash": "078edde7c5f3e45f51601f8adab93400ea70a36788a135bacd11aee6a7501ca5"
     },
     "https://developer.apple.com/documentation/coremotion/cmfalldetectionevent/userresolution/rejected": {
@@ -687,7 +687,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmfalldetectionmanager/requestauthorization(handler:)": {
       "etag": "\"3ca1-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmfalldetectionmanager/requestauthorization-handler.md",
+      "file_path": "documentation/CoreMotion/cmfalldetectionmanager/requestauthorization(handler).md",
       "hash": "07fed645f11ffa621c522b6de8f9fc9486e63bbb9cebf49a346f3ec11230db85"
     },
     "https://developer.apple.com/documentation/coremotion/cmgyrodata": {
@@ -717,7 +717,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/authorizationstatus()": {
       "etag": "\"386e-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/authorizationstatus().md",
       "hash": "8ab68e34bc6149b20914572566474c82d4c1055aa1e00bc46496a4f78e01acc6"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/isactivityactive": {
@@ -742,12 +742,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/startactivityupdates(to:withhandler:)": {
       "etag": "\"44ab-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/startactivityupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/startactivityupdates(to,withhandler).md",
       "hash": "2b18746cbacbdc1308211b4865c1d0e274b3569a352c1d3bb926de5a45340d60"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/startstatusupdates(to:withhandler:)": {
       "etag": "\"4adc-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/startstatusupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/startstatusupdates(to,withhandler).md",
       "hash": "aef3a7f117a4a9ffd59e8925985e01c9a289b7fa5d4f9f09a02cbb71eeb4e43d"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/status": {
@@ -767,7 +767,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/status/init(rawvalue:)": {
       "etag": "\"1943-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/status/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/status/init(rawvalue).md",
       "hash": "e48de3a00dc17cb9dd2c54ba04fca66ed45e2f9f8c9cda9431a28926f3652ce0"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/statushandler": {
@@ -777,12 +777,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/stopactivityupdates()": {
       "etag": "\"319d-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/stopactivityupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/stopactivityupdates().md",
       "hash": "4898d1920d53eb6857e8cfc1ce498f28649f44ad3dce0833319219aadd8e72d5"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager/stopstatusupdates()": {
       "etag": "\"3189-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/stopstatusupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/stopstatusupdates().md",
       "hash": "444340d5de643508bc9b3e1748d7e02d848951c13d37dffc0cf7a252d4c76704"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager": {
@@ -792,7 +792,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager/authorizationstatus()": {
       "etag": "\"3334-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/authorizationstatus().md",
       "hash": "d2050cb81ff1ce4da3c4a9503f421e53a9e2bb78f7453955f4b8f19269f255cb"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager/delegate": {
@@ -827,27 +827,27 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager/startconnectionstatusupdates()": {
       "etag": "\"345e-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startconnectionstatusupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startconnectionstatusupdates().md",
       "hash": "b416ce65f0972ee779c3a2e69cc030e033968bcd5d96a023e297413af1b9a79a"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager/startdevicemotionupdates()": {
       "etag": "\"3a72-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startdevicemotionupdates().md",
       "hash": "7e283fa96a4ead0abf0eafdd9175b5a3c5cf3715e255f6a0a4371de2fc2091c9"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager/startdevicemotionupdates(to:withhandler:)": {
       "etag": "\"49fe-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startdevicemotionupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startdevicemotionupdates(to,withhandler).md",
       "hash": "ac4a35bc8622b20fcf87e854f6349df80d6682271c6f3cfacb1915f19f6a0993"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager/stopconnectionstatusupdates()": {
       "etag": "\"3455-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/stopconnectionstatusupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/stopconnectionstatusupdates().md",
       "hash": "8468df8f2f609a7368497e0ee1d795c55d6bc3edf2c76c19c1004384ecf170b2"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager/stopdevicemotionupdates()": {
       "etag": "\"3474-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/stopdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/stopdevicemotionupdates().md",
       "hash": "c8dc99abcaab72f3ba40729b36bdb25fee3c1d5aa5e366b35205d0e679ecb9c7"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanagerdelegate": {
@@ -857,12 +857,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect(_:)": {
       "etag": "\"3538-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect(_).md",
       "hash": "3ad947f63fcab03c566fb643972a6fd330d97c366847f84c9c6f96c77b02156e"
     },
     "https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect(_:)": {
       "etag": "\"355c-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect(_).md",
       "hash": "6da75bfeee157570306c25972e344073c84453aaaeeab953c7313480be8c9314"
     },
     "https://developer.apple.com/documentation/coremotion/cmhighfrequencyheartratedata": {
@@ -902,7 +902,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmhighfrequencyheartratedataconfidence/init(rawvalue:)": {
       "etag": "\"14f6-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmhighfrequencyheartratedataconfidence/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmhighfrequencyheartratedataconfidence/init(rawvalue).md",
       "hash": "3f7502886df10c2d738e1ab425d57a1e8f49dac23147fc59f23bf931ac4d6406"
     },
     "https://developer.apple.com/documentation/coremotion/cmhighfrequencyheartratedataconfidence/low": {
@@ -922,7 +922,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmlogitem/init(coder:)": {
       "etag": "\"1452-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmlogitem/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmlogitem/init(coder).md",
       "hash": "0a625fcdb4e1ab41af0f32d16cd155201735de82ffa7a1633c18740244c7ab2f"
     },
     "https://developer.apple.com/documentation/coremotion/cmlogitem/timestamp": {
@@ -937,12 +937,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmmagneticfield/init()": {
       "etag": "\"1350-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmagneticfield/init.md",
+      "file_path": "documentation/CoreMotion/cmmagneticfield/init().md",
       "hash": "50bcf6ca23ebbcb13f24f3e1323c6b230b3fe4ab43cda26e6637503d1decf300"
     },
     "https://developer.apple.com/documentation/coremotion/cmmagneticfield/init(x:y:z:)": {
       "etag": "\"1a0b-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmagneticfield/init-xyz.md",
+      "file_path": "documentation/CoreMotion/cmmagneticfield/init(x,y,z).md",
       "hash": "38fb290ce70855fbb3259993dbcc18cf5922050ba6edf31fa0fb7f98557e654d"
     },
     "https://developer.apple.com/documentation/coremotion/cmmagneticfield/x": {
@@ -972,7 +972,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmmagneticfieldcalibrationaccuracy/init(rawvalue:)": {
       "etag": "\"153e-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmmagneticfieldcalibrationaccuracy/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmmagneticfieldcalibrationaccuracy/init(rawvalue).md",
       "hash": "39a63db2a0c1a1e7ad1cb260ebe84b4412f2dfddaeeb93d9f20a3c2055e1e459"
     },
     "https://developer.apple.com/documentation/coremotion/cmmagneticfieldcalibrationaccuracy/low": {
@@ -1062,7 +1062,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionactivityconfidence/init(rawvalue:)": {
       "etag": "\"1430-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivityconfidence/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivityconfidence/init(rawvalue).md",
       "hash": "af7225c796e02d9f9950e0e46cced6ae705419f1f618cfbd2d254e2d6989a88c"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionactivityconfidence/low": {
@@ -1087,27 +1087,27 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionactivitymanager/authorizationstatus()": {
       "etag": "\"296d-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/authorizationstatus().md",
       "hash": "03d3e6275937a6c08efc24a91a1c01ca349fe276ace96c1a54aaad153bc36aae"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionactivitymanager/isactivityavailable()": {
       "etag": "\"3434-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/isactivityavailable.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/isactivityavailable().md",
       "hash": "03960f76a2443e8d785ac4a56c25f735852d8b727a1fc9f1feb471b864923a07"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionactivitymanager/queryactivitystarting(from:to:to:withhandler:)": {
       "etag": "\"4b67-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/queryactivitystarting-fromtotowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/queryactivitystarting(from,to,to,withhandler).md",
       "hash": "a0f0badd1e7de4a3540ef36c7d3804ffdc3b492743ef05ca3b8536dc5e38f180"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionactivitymanager/startactivityupdates(to:withhandler:)": {
       "etag": "\"4bb2-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/startactivityupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/startactivityupdates(to,withhandler).md",
       "hash": "1f1566942db436cdb41d15324d831ca378778135e5397d1fa67613fa544345d2"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionactivitymanager/stopactivityupdates()": {
       "etag": "\"33a5-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/stopactivityupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/stopactivityupdates().md",
       "hash": "245b7a4e64e2dd3fe2ffc517e6fd2f81e66c63a29c13109db00c3cbc93c531d0"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionactivityqueryhandler": {
@@ -1142,12 +1142,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/authorizationstatus()": {
       "etag": "\"2279-65b7906431b49-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/authorizationstatus().md",
       "hash": "b75582a71f611369b154f79fa94b21b55b75909901b29b0bab051ab30c6a7b0c"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/availableattitudereferenceframes()": {
       "etag": "\"371c-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/availableattitudereferenceframes.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/availableattitudereferenceframes().md",
       "hash": "33f05dd1ca5bf002c98b9163ba63088e22896a4591781787ca2a820309eb05f1"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/devicemotion": {
@@ -1232,72 +1232,72 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startaccelerometerupdates()": {
       "etag": "\"3d0f-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startaccelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startaccelerometerupdates().md",
       "hash": "423115e07e3bf52785c613c77a73880aa3e408df5c0056dc51dd1c4ea0b17545"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startaccelerometerupdates(to:withhandler:)": {
       "etag": "\"4d62-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startaccelerometerupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startaccelerometerupdates(to,withhandler).md",
       "hash": "6e38cf0ad5b740abaf03b2c9a4c0a7328ab148e17439f7124bc813e459eaeacc"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startdevicemotionupdates()": {
       "etag": "\"5a9a-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates().md",
       "hash": "edb994197ec198ba5107630ebab5cf7f90fc4706052901a7b2d0920235d800ce"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startdevicemotionupdates(to:withhandler:)": {
       "etag": "\"6ae9-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates(to,withhandler).md",
       "hash": "0093de84e6c827f494afcadd12b0529f5829c9714f9df6954aa2875879768eb8"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startdevicemotionupdates(using:)": {
       "etag": "\"6808-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates-using.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates(using).md",
       "hash": "bdec13db2884cda00f7288d02bf2ad82a17d4c3f45e375dfd479518b07f045b5"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startdevicemotionupdates(using:to:withhandler:)": {
       "etag": "\"7806-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates-usingtowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates(using,to,withhandler).md",
       "hash": "ee959328a46439db6e6a32492e4ce7da863768d785213afe9e174408015a4cd4"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startgyroupdates()": {
       "etag": "\"39a2-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startgyroupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startgyroupdates().md",
       "hash": "9f5b90c9ed46ee1f73245f5eca58198a13ef82ad72ade52a8a3c842a57bf71cf"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startgyroupdates(to:withhandler:)": {
       "etag": "\"49a0-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startgyroupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startgyroupdates(to,withhandler).md",
       "hash": "10bd6755ad8fe10e92c4bd835e831a571dfea06e6fd2618c5d7abf602126c993"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startmagnetometerupdates()": {
       "etag": "\"3a2e-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startmagnetometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startmagnetometerupdates().md",
       "hash": "cdf9c5fb96081c5beeb88cd0b48038654fe0ee10fbec1e5e1f79711491a34d71"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/startmagnetometerupdates(to:withhandler:)": {
       "etag": "\"4a71-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startmagnetometerupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startmagnetometerupdates(to,withhandler).md",
       "hash": "70778bff280dc7c9c79642e9e8d8af3eeff8c9f5785c67e83e5f9ef20ff1829c"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/stopaccelerometerupdates()": {
       "etag": "\"3827-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/stopaccelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/stopaccelerometerupdates().md",
       "hash": "0cc82920bb5e56c70846264fb9389c5cf837e5c4159d33036fbc7e1c793d5a69"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/stopdevicemotionupdates()": {
       "etag": "\"54a8-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/stopdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/stopdevicemotionupdates().md",
       "hash": "61f4f165b02c4202e220b5158406ff74f5a23c4411323623d28fe0a60cf15210"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/stopgyroupdates()": {
       "etag": "\"34ec-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/stopgyroupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/stopgyroupdates().md",
       "hash": "60fb9ad14d2462c8c577aaaf77cddf8edb3482f42cb841ef7e64b3b1c175fa23"
     },
     "https://developer.apple.com/documentation/coremotion/cmmotionmanager/stopmagnetometerupdates()": {
       "etag": "\"377a-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/stopmagnetometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/stopmagnetometerupdates().md",
       "hash": "9e95735c573e4a02b14dce9185659e8c336c183b64495182eaadfa10b43daf51"
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager": {
@@ -1307,42 +1307,42 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager/authorizationstatus()": {
       "etag": "\"31dd-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/authorizationstatus().md",
       "hash": "8d4615f0f27187755aece8638aae509e513b3e58dfade164109bca71811a7849"
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager/isavailable()": {
       "etag": "\"29c8-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/isavailable.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/isavailable().md",
       "hash": "2220c51c6a9d245b5a2e6b768dfa17d0109d4bcf5c6f85510b5fba20f8067ec5"
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager/lastprocesseddate()": {
       "etag": "\"3f31-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/lastprocesseddate.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/lastprocesseddate().md",
       "hash": "da7dec84ae501ca17d58e92d9a0290b761a76a466edc890486b9de1edcd18b95"
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager/monitorkinesias(forduration:)": {
       "etag": "\"4603-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/monitorkinesias-forduration.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/monitorkinesias(forduration).md",
       "hash": "fa32bbe52c35392750a6f595de042018353532446cfa638ef17fe969a82cdef0"
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager/monitorkinesiasexpirationdate()": {
       "etag": "\"2d13-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/monitorkinesiasexpirationdate.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/monitorkinesiasexpirationdate().md",
       "hash": "537eb486a11d1dd5ea5d5b51fef026041acd08d48587b0199f2752b5e9a15a66"
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager/querydyskineticsymptom(from:to:withhandler:)": {
       "etag": "\"5271-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/querydyskineticsymptom-fromtowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/querydyskineticsymptom(from,to,withhandler).md",
       "hash": "f1d41bae88aaa4b6b9e4440226e825a0a989b1acbfc8e5df000ee3aa65484ca2"
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager/querytremor(from:to:withhandler:)": {
       "etag": "\"5188-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/querytremor-fromtowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/querytremor(from,to,withhandler).md",
       "hash": "139c4e3f6a6fc46b3cab119f313a8c2a2865fac728da8b75f1f412f03fb90394"
     },
     "https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager/version()": {
       "etag": "\"3707-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/version.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/version().md",
       "hash": "7b3e9615d8707cbf539904b36804008c77d6aef4ea5d525bc0c1115001c69770"
     },
     "https://developer.apple.com/documentation/coremotion/cmodometerdata": {
@@ -1377,7 +1377,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmodometerdata/init(coder:)": {
       "etag": "\"14b1-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmodometerdata/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmodometerdata/init(coder).md",
       "hash": "b727008cb2d2120572f1f748618910f61d596ee393c80ab83369c1cd7cb0a8da"
     },
     "https://developer.apple.com/documentation/coremotion/cmodometerdata/maxabsslope-9mnfd": {
@@ -1422,7 +1422,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmodometerorigindevice/init(rawvalue:)": {
       "etag": "\"13ea-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmodometerorigindevice/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmodometerorigindevice/init(rawvalue).md",
       "hash": "39ccfe839eb7ff37a1aa75f972f967c3d2da465a4e4985ea9839c4ed8ef391bd"
     },
     "https://developer.apple.com/documentation/coremotion/cmodometerorigindevice/local": {
@@ -1447,62 +1447,62 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/authorizationstatus()": {
       "etag": "\"4540-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/authorizationstatus().md",
       "hash": "953ee3fb10e41a2ad453f019625faa0e24c325f910dcfa5f22d1762e27915bc9"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/iscadenceavailable()": {
       "etag": "\"504a-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/iscadenceavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/iscadenceavailable().md",
       "hash": "04cb07de0b43270bca5562415e703594b8b1be6173ddb6088e39c0b1670a098b"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/isdistanceavailable()": {
       "etag": "\"50b2-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/isdistanceavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/isdistanceavailable().md",
       "hash": "62b825dc57f61f035912bdaff9597b8ad6d9663079f1b22bedfee5b031ee1a74"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/isfloorcountingavailable()": {
       "etag": "\"50c0-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/isfloorcountingavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/isfloorcountingavailable().md",
       "hash": "2c790234ecc03907133e6eee5ae6ebf42692720ab68e78710293e5db482aa3a7"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/ispaceavailable()": {
       "etag": "\"5066-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/ispaceavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/ispaceavailable().md",
       "hash": "3188bfd0a6578e9a961b3073adeefac715a6d419c46f0dd981ffb04a16aa9aaa"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/ispedometereventtrackingavailable()": {
       "etag": "\"4f8a-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/ispedometereventtrackingavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/ispedometereventtrackingavailable().md",
       "hash": "d19645a2521b24e97274e07a067572e9ff7f6af2baf86a7dea1f061176e7e8b0"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/isstepcountingavailable()": {
       "etag": "\"4f72-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/isstepcountingavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/isstepcountingavailable().md",
       "hash": "0bba08a13dc45ec0aa69e5ce6426abc57cf4f2303ff394d3f854a25b7aa88260"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/querypedometerdata(from:to:withhandler:)": {
       "etag": "\"3e6c-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/querypedometerdata-fromtowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/querypedometerdata(from,to,withhandler).md",
       "hash": "ac57be78149dbae0bf24a98dbd377f7732b935de4e8e7b9654beed722915d9c8"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/starteventupdates(handler:)": {
       "etag": "\"3d45-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/starteventupdates-handler.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/starteventupdates(handler).md",
       "hash": "92052237477ca4baf42314eddc02331dfeda2558e40e6491e6b31be123ce445e"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/startupdates(from:withhandler:)": {
       "etag": "\"58d5-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/startupdates-fromwithhandler.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/startupdates(from,withhandler).md",
       "hash": "3beca10ede1237f7b66980256486131faf8998e3585d4909c31fea5fdfd01693"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/stopeventupdates()": {
       "etag": "\"3644-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/stopeventupdates.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/stopeventupdates().md",
       "hash": "c0374b6f3bbd4d48a740f56a9b038b0594f646c0a49780cf8d1677c57a97b7b7"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometer/stopupdates()": {
       "etag": "\"383c-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/stopupdates.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/stopupdates().md",
       "hash": "ec1198ff0d11d1baea4f871a7f9811f54983e4e2202ff992d0a9b67f580e5955"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometerdata": {
@@ -1547,7 +1547,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometerdata/init(coder:)": {
       "etag": "\"1497-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometerdata/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmpedometerdata/init(coder).md",
       "hash": "7989743c216539e10e5c2e9a51061fa798b69f2f256cf5111a26c9e0c7edf393"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometerdata/numberofsteps": {
@@ -1572,7 +1572,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometerevent/init(coder:)": {
       "etag": "\"14d3-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometerevent/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmpedometerevent/init(coder).md",
       "hash": "78a51010c3d2d79108a098cf9f0f647d94a9aa153f3fbf71343957656019b99f"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometerevent/type": {
@@ -1592,7 +1592,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometereventtype/init(rawvalue:)": {
       "etag": "\"13e2-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometereventtype/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmpedometereventtype/init(rawvalue).md",
       "hash": "348956fc6a20cbe85a0e6fac451d21a454e794277b59306057860e321b4c2e6f"
     },
     "https://developer.apple.com/documentation/coremotion/cmpedometereventtype/pause": {
@@ -1617,12 +1617,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmquaternion/init()": {
       "etag": "\"13e6-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmquaternion/init.md",
+      "file_path": "documentation/CoreMotion/cmquaternion/init().md",
       "hash": "e8a2ee68037e41e156bf699cbbfaaf73ad50b42c0bd725a6731a3e431e335595"
     },
     "https://developer.apple.com/documentation/coremotion/cmquaternion/init(x:y:z:w:)": {
       "etag": "\"1c36-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmquaternion/init-xyzw.md",
+      "file_path": "documentation/CoreMotion/cmquaternion/init(x,y,z,w).md",
       "hash": "099b112fdef1758d45f36e2151e3e722a434b3ddd9beb132486491974aea45f9"
     },
     "https://developer.apple.com/documentation/coremotion/cmquaternion/w": {
@@ -1707,12 +1707,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmrotationmatrix/init()": {
       "etag": "\"17dd-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmrotationmatrix/init.md",
+      "file_path": "documentation/CoreMotion/cmrotationmatrix/init().md",
       "hash": "d43405c9d9ff9d2d26e364738215453109df50bdf4ccaca8488d9e172ead0ca2"
     },
     "https://developer.apple.com/documentation/coremotion/cmrotationmatrix/init(m11:m12:m13:m21:m22:m23:m31:m32:m33:)": {
       "etag": "\"2870-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmrotationmatrix/init-m11m12m13m21m22m23m31m32m33.md",
+      "file_path": "documentation/CoreMotion/cmrotationmatrix/init(m11,m12,m13,m21,m22,m23,m31,m32,m33).md",
       "hash": "ae6ca23430a8638ca980def06ea8a9582bb9180c907bd2549077d813522380a4"
     },
     "https://developer.apple.com/documentation/coremotion/cmrotationmatrix/m11": {
@@ -1767,12 +1767,12 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmrotationrate/init()": {
       "etag": "\"134d-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmrotationrate/init.md",
+      "file_path": "documentation/CoreMotion/cmrotationrate/init().md",
       "hash": "03475e6a07bbd54f7821c53cf3df01b40d65aa8ac8628b6eb99eb8e1903014c9"
     },
     "https://developer.apple.com/documentation/coremotion/cmrotationrate/init(x:y:z:)": {
       "etag": "\"1a08-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmrotationrate/init-xyz.md",
+      "file_path": "documentation/CoreMotion/cmrotationrate/init(x,y,z).md",
       "hash": "71c2f1891a0ff7ade2a9f873c0daef2b7e5a818e7d32745b08402daacb6673d9"
     },
     "https://developer.apple.com/documentation/coremotion/cmrotationrate/x": {
@@ -1812,27 +1812,27 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmsensorrecorder/accelerometerdata(from:to:)": {
       "etag": "\"3353-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/accelerometerdata-fromto.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/accelerometerdata(from,to).md",
       "hash": "0371bc355eac6cc25e308f45833b851512ba9384cd73a6fdf1569dd127c70b97"
     },
     "https://developer.apple.com/documentation/coremotion/cmsensorrecorder/authorizationstatus()": {
       "etag": "\"2f8a-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/authorizationstatus().md",
       "hash": "8c8f86426bf1b42ff568b771207c60095ff17046e23ef49f21efd47079f07760"
     },
     "https://developer.apple.com/documentation/coremotion/cmsensorrecorder/isaccelerometerrecordingavailable()": {
       "etag": "\"3b30-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/isaccelerometerrecordingavailable.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/isaccelerometerrecordingavailable().md",
       "hash": "c4508ba60c113df0827dcaba4541dd71ca3be7844db2254c31d798ebaff249a8"
     },
     "https://developer.apple.com/documentation/coremotion/cmsensorrecorder/isauthorizedforrecording()": {
       "etag": "\"3c85-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/isauthorizedforrecording.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/isauthorizedforrecording().md",
       "hash": "b37641a205e1c23d4869160f223055bbcedaf4007217280f004aca8393f97099"
     },
     "https://developer.apple.com/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:)": {
       "etag": "\"267c-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/recordaccelerometer-forduration.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/recordaccelerometer(forduration).md",
       "hash": "80b5faf8350b0f41c73c19495d6a093c3f56a0917589b2e43c3def2bbdc83d9a"
     },
     "https://developer.apple.com/documentation/coremotion/cmstepcounter": {
@@ -1842,22 +1842,22 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmstepcounter/isstepcountingavailable()": {
       "etag": "\"29d7-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmstepcounter/isstepcountingavailable.md",
+      "file_path": "documentation/CoreMotion/cmstepcounter/isstepcountingavailable().md",
       "hash": "03790e6775df7f10734ce550bccbe1492b68087c2134de78a56ca1a4a6926539"
     },
     "https://developer.apple.com/documentation/coremotion/cmstepcounter/querystepcountstarting(from:to:to:withhandler:)": {
       "etag": "\"46c4-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmstepcounter/querystepcountstarting-fromtotowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmstepcounter/querystepcountstarting(from,to,to,withhandler).md",
       "hash": "ca895fa9ea08f6657fa4e1c4a11c4fda09c4f3ce8040af24e9f2e2ad55c88916"
     },
     "https://developer.apple.com/documentation/coremotion/cmstepcounter/startstepcountingupdates(to:updateon:withhandler:)": {
       "etag": "\"4b84-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmstepcounter/startstepcountingupdates-toupdateonwithhandler.md",
+      "file_path": "documentation/CoreMotion/cmstepcounter/startstepcountingupdates(to,updateon,withhandler).md",
       "hash": "726310ce47cb759e736a7203365e9542bacd5ca2d7862daad16f9d3adf77cc5f"
     },
     "https://developer.apple.com/documentation/coremotion/cmstepcounter/stopstepcountingupdates()": {
       "etag": "\"360c-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmstepcounter/stopstepcountingupdates.md",
+      "file_path": "documentation/CoreMotion/cmstepcounter/stopstepcountingupdates().md",
       "hash": "dd60e8cdf507b5da37cbf593febc3fd8b92d33d83d0f03b2256c641a1a90c440"
     },
     "https://developer.apple.com/documentation/coremotion/cmstepqueryhandler": {
@@ -1882,7 +1882,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmtremorresult/init(coder:)": {
       "etag": "\"14bb-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmtremorresult/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmtremorresult/init(coder).md",
       "hash": "cce6eb841fe86d9994e80896348d854488b29cbf0e9995f5cb80ac7004d3bdde"
     },
     "https://developer.apple.com/documentation/coremotion/cmtremorresult/percentmild": {
@@ -1937,17 +1937,17 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionevent/init(coder:)": {
       "etag": "\"14ff-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/init(coder).md",
       "hash": "5c76473262be4774823d37ec47942a7928e92fb119714332f853c47d4d84fed4"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionevent/state-swift.enum": {
       "etag": "\"48e5-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swiftenum.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swift.enum.md",
       "hash": "ec7219b99de8cee7bfe0a66fc83dcc811364e808bb2d639bf63ef5484488322a"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionevent/state-swift.enum/init(rawvalue:)": {
       "etag": "\"191d-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swift.enum/init(rawvalue).md",
       "hash": "b2300b700835f7431a79f44eaaef3ed1b5eeb5e0cd0ba1ec7c2ebedf043c8316"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionevent/state-swift.enum/notsubmerged": {
@@ -1967,7 +1967,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionevent/state-swift.property": {
       "etag": "\"28ea-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swiftproperty.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swift.property.md",
       "hash": "5603ab685f0fc930f7b4519b3e1ea501c07e90e0e812a519fe4d91a575c7033d"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanager": {
@@ -2002,22 +2002,22 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanagerdelegate/manager(_:didupdate:)-18wua": {
       "etag": "\"4a90-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager-didupdate-18wua.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager(_,didupdate)-18wua.md",
       "hash": "45aa97786ae39815e8ff9701be7f2f7064b836e0a673e35e2d7ea2208f7f73a9"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanagerdelegate/manager(_:didupdate:)-6qux6": {
       "etag": "\"4add-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager-didupdate-6qux6.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager(_,didupdate)-6qux6.md",
       "hash": "506cf38827827fe49c8be5ff79c3aa3c237af2b982288bed51107a358847e460"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanagerdelegate/manager(_:didupdate:)-7nhjb": {
       "etag": "\"51ae-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager-didupdate-7nhjb.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager(_,didupdate)-7nhjb.md",
       "hash": "8cfb991d4101890c163dffbaa346c2278b79c734fabd21fc756a7c66c1c14c34"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanagerdelegate/manager(_:erroroccurred:)": {
       "etag": "\"4762-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager-erroroccurred.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager(_,erroroccurred).md",
       "hash": "52df88e71b253938af72a0755a046496a515845953a45255d706cfef5b2ceb69"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmeasurement": {
@@ -2047,7 +2047,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmeasurement/depthstate/init(rawvalue:)": {
       "etag": "\"199b-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmeasurement/depthstate/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmeasurement/depthstate/init(rawvalue).md",
       "hash": "35368dacc438da2b65042e122f7d70bb4c6757d8f3af17684aca049e6e4c455a"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmeasurement/depthstate/notsubmerged": {
@@ -2082,7 +2082,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmeasurement/init(coder:)": {
       "etag": "\"1566-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmeasurement/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmeasurement/init(coder).md",
       "hash": "992a0dab0f583e1ec645a8ff5bcaeb936af47c740eeffcc52adf19cf9e2dbf53"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatersubmersionmeasurement/pressure": {
@@ -2112,7 +2112,7 @@
     },
     "https://developer.apple.com/documentation/coremotion/cmwatertemperature/init(coder:)": {
       "etag": "\"14a7-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatertemperature/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmwatertemperature/init(coder).md",
       "hash": "f6c38ab0e0f840301bd1b67215344a49b8d333ee9807b6c23b9829ba6074b16c"
     },
     "https://developer.apple.com/documentation/coremotion/cmwatertemperature/temperature": {
@@ -2202,12 +2202,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmacceleration/init().json": {
       "etag": "\"1348-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmacceleration/init.md",
+      "file_path": "documentation/CoreMotion/cmacceleration/init().md",
       "hash": "5e4cc0a8d56c517ae1e99da5b1467284aeb31bbbebd5fa4eca76de3b03bb2e15"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmacceleration/init(x:y:z:).json": {
       "etag": "\"1a03-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmacceleration/init-xyz.md",
+      "file_path": "documentation/CoreMotion/cmacceleration/init(x,y,z).md",
       "hash": "db2794518af06e5a30e6bb886cba142bb04b16791eb48b3553028e9a7df70e77"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmacceleration/x.json": {
@@ -2247,37 +2247,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmaltimeter/authorizationstatus().json": {
       "etag": "\"2e90-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/authorizationstatus().md",
       "hash": "d0f3972d9cdda7baf8c475cf9e43ae3327fd5404d501a25262e01ac53137e139"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmaltimeter/isabsolutealtitudeavailable().json": {
       "etag": "\"3a15-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/isabsolutealtitudeavailable.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/isabsolutealtitudeavailable().md",
       "hash": "d862b3ce43afd249bdb5679d5706a0212d0887ae61a65cc8eba2147868e3c217"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmaltimeter/isrelativealtitudeavailable().json": {
       "etag": "\"415e-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/isrelativealtitudeavailable.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/isrelativealtitudeavailable().md",
       "hash": "3754401a155b68a3c1298f06ae118c40fef5ba6c455d960a2a9edfcc5592a946"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmaltimeter/startabsolutealtitudeupdates(to:withhandler:).json": {
       "etag": "\"5520-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/startabsolutealtitudeupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/startabsolutealtitudeupdates(to,withhandler).md",
       "hash": "9fcdc49da1aeb0e2241c4162ab88329d74fc1a11acc9a61d3c3011ec94328de0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmaltimeter/startrelativealtitudeupdates(to:withhandler:).json": {
       "etag": "\"501d-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/startrelativealtitudeupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/startrelativealtitudeupdates(to,withhandler).md",
       "hash": "4e0e5b930ca2a7c776a02405a2a6aeb7cf4fc91aeed08839c024e500f57e7f51"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmaltimeter/stopabsolutealtitudeupdates().json": {
       "etag": "\"3df7-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/stopabsolutealtitudeupdates.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/stopabsolutealtitudeupdates().md",
       "hash": "9b0bfd9c18bf8fb62ef1d5084ade39a1e88d7aabd6ed2667b24ef42c7be85160"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmaltimeter/stoprelativealtitudeupdates().json": {
       "etag": "\"3d41-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmaltimeter/stoprelativealtitudeupdates.md",
+      "file_path": "documentation/CoreMotion/cmaltimeter/stoprelativealtitudeupdates().md",
       "hash": "6ed285166a1258fb02283e5d39819d6dfb62dd6287263bef641b29975171e894"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmaltitudedata.json": {
@@ -2322,12 +2322,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmattitude/init(coder:).json": {
       "etag": "\"1487-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmattitude/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmattitude/init(coder).md",
       "hash": "a2096515d73d61a773a45f497aca357e7a1a4cf0a65dd4d6fd56338d768865de"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmattitude/multiply(byinverseof:).json": {
       "etag": "\"22da-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmattitude/multiply-byinverseof.md",
+      "file_path": "documentation/CoreMotion/cmattitude/multiply(byinverseof).md",
       "hash": "c82186ba7d915aca5fed21de645c3e11c862ef50598ad14e960894ae02837fdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmattitude/pitch.json": {
@@ -2362,7 +2362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmattitudereferenceframe/init(rawvalue:).json": {
       "etag": "\"1434-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmattitudereferenceframe/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmattitudereferenceframe/init(rawvalue).md",
       "hash": "6d5e11b335394b161560b05cb9cb9c4ef86fceb981e4925c73e317e36dc10f98"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmattitudereferenceframe/xarbitrarycorrectedzvertical.json": {
@@ -2402,7 +2402,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmauthorizationstatus/init(rawvalue:).json": {
       "etag": "\"13d8-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmauthorizationstatus/init(rawvalue).md",
       "hash": "7af123a0b3edf6b81f76e69668d81beba6c65c6c052e3ad5306f08ac2909012d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmauthorizationstatus/notdetermined.json": {
@@ -2432,7 +2432,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/accelerometerupdates().json": {
       "etag": "\"3176-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/accelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/accelerometerupdates().md",
       "hash": "85bf7b8de8f71f76665228c0985ef1050410cfc27e0c126e8bfdcead96ecfc81"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/accelerometerupdates.json": {
@@ -2462,7 +2462,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/devicemotionupdates().json": {
       "etag": "\"30fb-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/devicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/devicemotionupdates().md",
       "hash": "b65dfee9ab11c5a998ba2229582794c3929539c574a586cc45d6e3a7ce398923"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/devicemotionupdates.json": {
@@ -2497,32 +2497,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/startaccelerometerupdates().json": {
       "etag": "\"3822-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startaccelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startaccelerometerupdates().md",
       "hash": "afb9ee47a395aab501324b539a2115e3b72f51935b138985cc7890704599df1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/startaccelerometerupdates(handler:).json": {
       "etag": "\"47fb-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startaccelerometerupdates-handler.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startaccelerometerupdates(handler).md",
       "hash": "ca1e18de95870b0651537f78657acf81a275059fe8f29ac18ae6abd0caaccc26"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/startdevicemotionupdates().json": {
       "etag": "\"37b6-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startdevicemotionupdates().md",
       "hash": "b1eff94c24c3c8cceb3e4e987ebabdf571ced07ca6661b0a850ea8a8b907de5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/startdevicemotionupdates(handler:).json": {
       "etag": "\"4755-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startdevicemotionupdates-handler.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/startdevicemotionupdates(handler).md",
       "hash": "0d38cdd753a5e41fe662a3a943bfc101f2005806be30b9896d490520a3660dd4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/stopaccelerometerupdates().json": {
       "etag": "\"3819-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/stopaccelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/stopaccelerometerupdates().md",
       "hash": "18a42232aa0cf3c943276a4d3c692f5226a63c35587c2dfe47a96c06d7f56c9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbatchedsensormanager/stopdevicemotionupdates().json": {
       "etag": "\"37ad-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/stopdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmbatchedsensormanager/stopdevicemotionupdates().md",
       "hash": "cb7a82da7bc367f14f843c6e78c2f1fb896b469b5ac275cf9a43c5ce757da302"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmbodyidentifiable.json": {
@@ -2547,12 +2547,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmcalibratedmagneticfield/init().json": {
       "etag": "\"1554-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield/init.md",
+      "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield/init().md",
       "hash": "4f540b194f771d5854e0bc6ed74c02ba5a2f7d115901d1516f5aee63c6879ac7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmcalibratedmagneticfield/init(field:accuracy:).json": {
       "etag": "\"2314-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield/init-fieldaccuracy.md",
+      "file_path": "documentation/CoreMotion/cmcalibratedmagneticfield/init(field,accuracy).md",
       "hash": "40bd4f38e1323fb0cc55cbe331efb85b6904eb398e70052416aa9917993945ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmdevicemotion.json": {
@@ -2592,7 +2592,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmdevicemotion/sensorlocation-swift.enum.json": {
       "etag": "\"45b7-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swiftenum.md",
+      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swift.enum.md",
       "hash": "a1aad4d5c588e00ec165327366e4686bdb28abe55e52e9ae15d5ef476cc2750e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmdevicemotion/sensorlocation-swift.enum/default.json": {
@@ -2612,12 +2612,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmdevicemotion/sensorlocation-swift.enum/init(rawvalue:).json": {
       "etag": "\"1964-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swift.enum/init(rawvalue).md",
       "hash": "2301d17ced2889c26beeb92023c35fe7a3478610b103fd0ef4bd20a3bcfc9c8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmdevicemotion/sensorlocation-swift.property.json": {
       "etag": "\"259c-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swiftproperty.md",
+      "file_path": "documentation/CoreMotion/cmdevicemotion/sensorlocation-swift.property.md",
       "hash": "34146c8f7f536e1bcbfb9293ef2305f71b7c30aca5a222838d1bffce71d18f42"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmdevicemotion/useracceleration.json": {
@@ -2642,7 +2642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmdyskineticsymptomresult/init(coder:).json": {
       "etag": "\"155e-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmdyskineticsymptomresult/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmdyskineticsymptomresult/init(coder).md",
       "hash": "5bb1b23a4c22b71de47d01a6690fe53c415cfcebcbc0090da630f917a562b0de"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmdyskineticsymptomresult/percentlikely.json": {
@@ -2672,12 +2672,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmerror/init(_:).json": {
       "etag": "\"1591-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmerror/init.md",
+      "file_path": "documentation/CoreMotion/cmerror/init(_).md",
       "hash": "ac4675adf359ab37260ca2cb159b4f7fc3435e435a1d0c2de6f235e02cc644ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmerror/init(rawvalue:).json": {
       "etag": "\"15b1-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmerror/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmerror/init(rawvalue).md",
       "hash": "5f4fac9006e50b0ead8f66ac5a03caaf98f5990cc2060030cdfabb237590635f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmerror/rawvalue.json": {
@@ -2767,12 +2767,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmfalldetectiondelegate/falldetectionmanager(_:diddetect:completionhandler:).json": {
       "etag": "\"44b0-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmfalldetectiondelegate/falldetectionmanager-diddetectcompletionhandler.md",
+      "file_path": "documentation/CoreMotion/cmfalldetectiondelegate/falldetectionmanager(_,diddetect,completionhandler).md",
       "hash": "960240659bc3956c958dc92267edd646e089133b0b81cfbf9d10f145ab685106"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmfalldetectiondelegate/falldetectionmanagerdidchangeauthorization(_:).json": {
       "etag": "\"2c35-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmfalldetectiondelegate/falldetectionmanagerdidchangeauthorization.md",
+      "file_path": "documentation/CoreMotion/cmfalldetectiondelegate/falldetectionmanagerdidchangeauthorization(_).md",
       "hash": "99cae28f15ea0436e5b37af2ead4b0ef744dedcdeb6fc0e0b787a0ec3c1c9a7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmfalldetectionevent.json": {
@@ -2807,7 +2807,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmfalldetectionevent/userresolution/init(rawvalue:).json": {
       "etag": "\"187f-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmfalldetectionevent/userresolution/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmfalldetectionevent/userresolution/init(rawvalue).md",
       "hash": "078edde7c5f3e45f51601f8adab93400ea70a36788a135bacd11aee6a7501ca5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmfalldetectionevent/userresolution/rejected.json": {
@@ -2842,7 +2842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmfalldetectionmanager/requestauthorization(handler:).json": {
       "etag": "\"3ca1-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmfalldetectionmanager/requestauthorization-handler.md",
+      "file_path": "documentation/CoreMotion/cmfalldetectionmanager/requestauthorization(handler).md",
       "hash": "07fed645f11ffa621c522b6de8f9fc9486e63bbb9cebf49a346f3ec11230db85"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmgyrodata.json": {
@@ -2872,7 +2872,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/authorizationstatus().json": {
       "etag": "\"386e-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/authorizationstatus().md",
       "hash": "8ab68e34bc6149b20914572566474c82d4c1055aa1e00bc46496a4f78e01acc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/isactivityactive.json": {
@@ -2897,12 +2897,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/startactivityupdates(to:withhandler:).json": {
       "etag": "\"44ab-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/startactivityupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/startactivityupdates(to,withhandler).md",
       "hash": "2b18746cbacbdc1308211b4865c1d0e274b3569a352c1d3bb926de5a45340d60"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/startstatusupdates(to:withhandler:).json": {
       "etag": "\"4adc-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/startstatusupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/startstatusupdates(to,withhandler).md",
       "hash": "aef3a7f117a4a9ffd59e8925985e01c9a289b7fa5d4f9f09a02cbb71eeb4e43d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/status.json": {
@@ -2922,7 +2922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/status/init(rawvalue:).json": {
       "etag": "\"1943-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/status/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/status/init(rawvalue).md",
       "hash": "e48de3a00dc17cb9dd2c54ba04fca66ed45e2f9f8c9cda9431a28926f3652ce0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/statushandler.json": {
@@ -2932,12 +2932,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/stopactivityupdates().json": {
       "etag": "\"319d-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/stopactivityupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/stopactivityupdates().md",
       "hash": "4898d1920d53eb6857e8cfc1ce498f28649f44ad3dce0833319219aadd8e72d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphoneactivitymanager/stopstatusupdates().json": {
       "etag": "\"3189-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/stopstatusupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphoneactivitymanager/stopstatusupdates().md",
       "hash": "444340d5de643508bc9b3e1748d7e02d848951c13d37dffc0cf7a252d4c76704"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanager.json": {
@@ -2947,7 +2947,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanager/authorizationstatus().json": {
       "etag": "\"3334-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/authorizationstatus().md",
       "hash": "d2050cb81ff1ce4da3c4a9503f421e53a9e2bb78f7453955f4b8f19269f255cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanager/delegate.json": {
@@ -2982,27 +2982,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanager/startconnectionstatusupdates().json": {
       "etag": "\"345e-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startconnectionstatusupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startconnectionstatusupdates().md",
       "hash": "b416ce65f0972ee779c3a2e69cc030e033968bcd5d96a023e297413af1b9a79a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanager/startdevicemotionupdates().json": {
       "etag": "\"3a72-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startdevicemotionupdates().md",
       "hash": "7e283fa96a4ead0abf0eafdd9175b5a3c5cf3715e255f6a0a4371de2fc2091c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanager/startdevicemotionupdates(to:withhandler:).json": {
       "etag": "\"49fe-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startdevicemotionupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/startdevicemotionupdates(to,withhandler).md",
       "hash": "ac4a35bc8622b20fcf87e854f6349df80d6682271c6f3cfacb1915f19f6a0993"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanager/stopconnectionstatusupdates().json": {
       "etag": "\"3455-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/stopconnectionstatusupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/stopconnectionstatusupdates().md",
       "hash": "8468df8f2f609a7368497e0ee1d795c55d6bc3edf2c76c19c1004384ecf170b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanager/stopdevicemotionupdates().json": {
       "etag": "\"3474-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/stopdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanager/stopdevicemotionupdates().md",
       "hash": "c8dc99abcaab72f3ba40729b36bdb25fee3c1d5aa5e366b35205d0e679ecb9c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanagerdelegate.json": {
@@ -3012,12 +3012,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect(_:).json": {
       "etag": "\"3538-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect(_).md",
       "hash": "3ad947f63fcab03c566fb643972a6fd330d97c366847f84c9c6f96c77b02156e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect(_:).json": {
       "etag": "\"355c-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect.md",
+      "file_path": "documentation/CoreMotion/cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect(_).md",
       "hash": "6da75bfeee157570306c25972e344073c84453aaaeeab953c7313480be8c9314"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmhighfrequencyheartratedata.json": {
@@ -3057,7 +3057,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmhighfrequencyheartratedataconfidence/init(rawvalue:).json": {
       "etag": "\"14f6-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmhighfrequencyheartratedataconfidence/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmhighfrequencyheartratedataconfidence/init(rawvalue).md",
       "hash": "3f7502886df10c2d738e1ab425d57a1e8f49dac23147fc59f23bf931ac4d6406"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmhighfrequencyheartratedataconfidence/low.json": {
@@ -3077,7 +3077,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmlogitem/init(coder:).json": {
       "etag": "\"1452-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmlogitem/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmlogitem/init(coder).md",
       "hash": "0a625fcdb4e1ab41af0f32d16cd155201735de82ffa7a1633c18740244c7ab2f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmlogitem/timestamp.json": {
@@ -3092,12 +3092,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmagneticfield/init().json": {
       "etag": "\"1350-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmagneticfield/init.md",
+      "file_path": "documentation/CoreMotion/cmmagneticfield/init().md",
       "hash": "50bcf6ca23ebbcb13f24f3e1323c6b230b3fe4ab43cda26e6637503d1decf300"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmagneticfield/init(x:y:z:).json": {
       "etag": "\"1a0b-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmagneticfield/init-xyz.md",
+      "file_path": "documentation/CoreMotion/cmmagneticfield/init(x,y,z).md",
       "hash": "38fb290ce70855fbb3259993dbcc18cf5922050ba6edf31fa0fb7f98557e654d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmagneticfield/x.json": {
@@ -3127,7 +3127,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmagneticfieldcalibrationaccuracy/init(rawvalue:).json": {
       "etag": "\"153e-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmmagneticfieldcalibrationaccuracy/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmmagneticfieldcalibrationaccuracy/init(rawvalue).md",
       "hash": "39a63db2a0c1a1e7ad1cb260ebe84b4412f2dfddaeeb93d9f20a3c2055e1e459"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmagneticfieldcalibrationaccuracy/low.json": {
@@ -3217,7 +3217,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionactivityconfidence/init(rawvalue:).json": {
       "etag": "\"1430-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivityconfidence/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivityconfidence/init(rawvalue).md",
       "hash": "af7225c796e02d9f9950e0e46cced6ae705419f1f618cfbd2d254e2d6989a88c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionactivityconfidence/low.json": {
@@ -3242,27 +3242,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionactivitymanager/authorizationstatus().json": {
       "etag": "\"296d-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/authorizationstatus().md",
       "hash": "03d3e6275937a6c08efc24a91a1c01ca349fe276ace96c1a54aaad153bc36aae"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionactivitymanager/isactivityavailable().json": {
       "etag": "\"3434-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/isactivityavailable.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/isactivityavailable().md",
       "hash": "03960f76a2443e8d785ac4a56c25f735852d8b727a1fc9f1feb471b864923a07"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionactivitymanager/queryactivitystarting(from:to:to:withhandler:).json": {
       "etag": "\"4b67-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/queryactivitystarting-fromtotowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/queryactivitystarting(from,to,to,withhandler).md",
       "hash": "a0f0badd1e7de4a3540ef36c7d3804ffdc3b492743ef05ca3b8536dc5e38f180"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionactivitymanager/startactivityupdates(to:withhandler:).json": {
       "etag": "\"4bb2-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/startactivityupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/startactivityupdates(to,withhandler).md",
       "hash": "1f1566942db436cdb41d15324d831ca378778135e5397d1fa67613fa544345d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionactivitymanager/stopactivityupdates().json": {
       "etag": "\"33a5-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/stopactivityupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionactivitymanager/stopactivityupdates().md",
       "hash": "245b7a4e64e2dd3fe2ffc517e6fd2f81e66c63a29c13109db00c3cbc93c531d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionactivityqueryhandler.json": {
@@ -3292,7 +3292,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/authorizationstatus().json": {
       "etag": "\"2279-65b7906431b49-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/authorizationstatus().md",
       "hash": "b75582a71f611369b154f79fa94b21b55b75909901b29b0bab051ab30c6a7b0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/authorizationstatus.json": {
@@ -3302,7 +3302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/availableattitudereferenceframes().json": {
       "etag": "\"371c-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/availableattitudereferenceframes.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/availableattitudereferenceframes().md",
       "hash": "33f05dd1ca5bf002c98b9163ba63088e22896a4591781787ca2a820309eb05f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/devicemotion.json": {
@@ -3387,72 +3387,72 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startaccelerometerupdates().json": {
       "etag": "\"3d0f-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startaccelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startaccelerometerupdates().md",
       "hash": "423115e07e3bf52785c613c77a73880aa3e408df5c0056dc51dd1c4ea0b17545"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startaccelerometerupdates(to:withhandler:).json": {
       "etag": "\"4d62-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startaccelerometerupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startaccelerometerupdates(to,withhandler).md",
       "hash": "6e38cf0ad5b740abaf03b2c9a4c0a7328ab148e17439f7124bc813e459eaeacc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startdevicemotionupdates().json": {
       "etag": "\"5a9a-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates().md",
       "hash": "edb994197ec198ba5107630ebab5cf7f90fc4706052901a7b2d0920235d800ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startdevicemotionupdates(to:withhandler:).json": {
       "etag": "\"6ae9-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates(to,withhandler).md",
       "hash": "0093de84e6c827f494afcadd12b0529f5829c9714f9df6954aa2875879768eb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startdevicemotionupdates(using:).json": {
       "etag": "\"6808-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates-using.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates(using).md",
       "hash": "bdec13db2884cda00f7288d02bf2ad82a17d4c3f45e375dfd479518b07f045b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startdevicemotionupdates(using:to:withhandler:).json": {
       "etag": "\"7806-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates-usingtowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startdevicemotionupdates(using,to,withhandler).md",
       "hash": "ee959328a46439db6e6a32492e4ce7da863768d785213afe9e174408015a4cd4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startgyroupdates().json": {
       "etag": "\"39a2-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startgyroupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startgyroupdates().md",
       "hash": "9f5b90c9ed46ee1f73245f5eca58198a13ef82ad72ade52a8a3c842a57bf71cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startgyroupdates(to:withhandler:).json": {
       "etag": "\"49a0-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startgyroupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startgyroupdates(to,withhandler).md",
       "hash": "10bd6755ad8fe10e92c4bd835e831a571dfea06e6fd2618c5d7abf602126c993"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startmagnetometerupdates().json": {
       "etag": "\"3a2e-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startmagnetometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startmagnetometerupdates().md",
       "hash": "cdf9c5fb96081c5beeb88cd0b48038654fe0ee10fbec1e5e1f79711491a34d71"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/startmagnetometerupdates(to:withhandler:).json": {
       "etag": "\"4a71-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/startmagnetometerupdates-towithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/startmagnetometerupdates(to,withhandler).md",
       "hash": "70778bff280dc7c9c79642e9e8d8af3eeff8c9f5785c67e83e5f9ef20ff1829c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/stopaccelerometerupdates().json": {
       "etag": "\"3827-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/stopaccelerometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/stopaccelerometerupdates().md",
       "hash": "0cc82920bb5e56c70846264fb9389c5cf837e5c4159d33036fbc7e1c793d5a69"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/stopdevicemotionupdates().json": {
       "etag": "\"54a8-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/stopdevicemotionupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/stopdevicemotionupdates().md",
       "hash": "61f4f165b02c4202e220b5158406ff74f5a23c4411323623d28fe0a60cf15210"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/stopgyroupdates().json": {
       "etag": "\"34ec-65d55cc0e4ba0-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/stopgyroupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/stopgyroupdates().md",
       "hash": "60fb9ad14d2462c8c577aaaf77cddf8edb3482f42cb841ef7e64b3b1c175fa23"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmotionmanager/stopmagnetometerupdates().json": {
       "etag": "\"377a-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmmotionmanager/stopmagnetometerupdates.md",
+      "file_path": "documentation/CoreMotion/cmmotionmanager/stopmagnetometerupdates().md",
       "hash": "9e95735c573e4a02b14dce9185659e8c336c183b64495182eaadfa10b43daf51"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager.json": {
@@ -3462,42 +3462,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager/authorizationstatus().json": {
       "etag": "\"31dd-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/authorizationstatus().md",
       "hash": "8d4615f0f27187755aece8638aae509e513b3e58dfade164109bca71811a7849"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager/isavailable().json": {
       "etag": "\"29c8-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/isavailable.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/isavailable().md",
       "hash": "2220c51c6a9d245b5a2e6b768dfa17d0109d4bcf5c6f85510b5fba20f8067ec5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager/lastprocesseddate().json": {
       "etag": "\"3f31-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/lastprocesseddate.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/lastprocesseddate().md",
       "hash": "da7dec84ae501ca17d58e92d9a0290b761a76a466edc890486b9de1edcd18b95"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager/monitorkinesias(forduration:).json": {
       "etag": "\"4603-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/monitorkinesias-forduration.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/monitorkinesias(forduration).md",
       "hash": "fa32bbe52c35392750a6f595de042018353532446cfa638ef17fe969a82cdef0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager/monitorkinesiasexpirationdate().json": {
       "etag": "\"2d13-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/monitorkinesiasexpirationdate.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/monitorkinesiasexpirationdate().md",
       "hash": "537eb486a11d1dd5ea5d5b51fef026041acd08d48587b0199f2752b5e9a15a66"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager/querydyskineticsymptom(from:to:withhandler:).json": {
       "etag": "\"5271-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/querydyskineticsymptom-fromtowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/querydyskineticsymptom(from,to,withhandler).md",
       "hash": "f1d41bae88aaa4b6b9e4440226e825a0a989b1acbfc8e5df000ee3aa65484ca2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager/querytremor(from:to:withhandler:).json": {
       "etag": "\"5188-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/querytremor-fromtowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/querytremor(from,to,withhandler).md",
       "hash": "139c4e3f6a6fc46b3cab119f313a8c2a2865fac728da8b75f1f412f03fb90394"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmmovementdisordermanager/version().json": {
       "etag": "\"3707-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/version.md",
+      "file_path": "documentation/CoreMotion/cmmovementdisordermanager/version().md",
       "hash": "7b3e9615d8707cbf539904b36804008c77d6aef4ea5d525bc0c1115001c69770"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerdata.json": {
@@ -3532,7 +3532,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerdata/init(coder:).json": {
       "etag": "\"14b1-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmodometerdata/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmodometerdata/init(coder).md",
       "hash": "b727008cb2d2120572f1f748618910f61d596ee393c80ab83369c1cd7cb0a8da"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerdata/maxabsslope-9mnfd.json": {
@@ -3577,7 +3577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerorigindevice/init(rawvalue:).json": {
       "etag": "\"13ea-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmodometerorigindevice/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmodometerorigindevice/init(rawvalue).md",
       "hash": "39ccfe839eb7ff37a1aa75f972f967c3d2da465a4e4985ea9839c4ed8ef391bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmodometerorigindevice/local.json": {
@@ -3602,62 +3602,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/authorizationstatus().json": {
       "etag": "\"4540-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/authorizationstatus().md",
       "hash": "953ee3fb10e41a2ad453f019625faa0e24c325f910dcfa5f22d1762e27915bc9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/iscadenceavailable().json": {
       "etag": "\"504a-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/iscadenceavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/iscadenceavailable().md",
       "hash": "04cb07de0b43270bca5562415e703594b8b1be6173ddb6088e39c0b1670a098b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/isdistanceavailable().json": {
       "etag": "\"50b2-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/isdistanceavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/isdistanceavailable().md",
       "hash": "62b825dc57f61f035912bdaff9597b8ad6d9663079f1b22bedfee5b031ee1a74"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/isfloorcountingavailable().json": {
       "etag": "\"50c0-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/isfloorcountingavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/isfloorcountingavailable().md",
       "hash": "2c790234ecc03907133e6eee5ae6ebf42692720ab68e78710293e5db482aa3a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/ispaceavailable().json": {
       "etag": "\"5066-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/ispaceavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/ispaceavailable().md",
       "hash": "3188bfd0a6578e9a961b3073adeefac715a6d419c46f0dd981ffb04a16aa9aaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/ispedometereventtrackingavailable().json": {
       "etag": "\"4f8a-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/ispedometereventtrackingavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/ispedometereventtrackingavailable().md",
       "hash": "d19645a2521b24e97274e07a067572e9ff7f6af2baf86a7dea1f061176e7e8b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/isstepcountingavailable().json": {
       "etag": "\"4f72-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/isstepcountingavailable.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/isstepcountingavailable().md",
       "hash": "0bba08a13dc45ec0aa69e5ce6426abc57cf4f2303ff394d3f854a25b7aa88260"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/querypedometerdata(from:to:withhandler:).json": {
       "etag": "\"3e6c-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/querypedometerdata-fromtowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/querypedometerdata(from,to,withhandler).md",
       "hash": "ac57be78149dbae0bf24a98dbd377f7732b935de4e8e7b9654beed722915d9c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/starteventupdates(handler:).json": {
       "etag": "\"3d45-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/starteventupdates-handler.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/starteventupdates(handler).md",
       "hash": "92052237477ca4baf42314eddc02331dfeda2558e40e6491e6b31be123ce445e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/startupdates(from:withhandler:).json": {
       "etag": "\"58d5-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/startupdates-fromwithhandler.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/startupdates(from,withhandler).md",
       "hash": "3beca10ede1237f7b66980256486131faf8998e3585d4909c31fea5fdfd01693"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/stopeventupdates().json": {
       "etag": "\"3644-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/stopeventupdates.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/stopeventupdates().md",
       "hash": "c0374b6f3bbd4d48a740f56a9b038b0594f646c0a49780cf8d1677c57a97b7b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometer/stopupdates().json": {
       "etag": "\"383c-65d55cc057297-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometer/stopupdates.md",
+      "file_path": "documentation/CoreMotion/cmpedometer/stopupdates().md",
       "hash": "ec1198ff0d11d1baea4f871a7f9811f54983e4e2202ff992d0a9b67f580e5955"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometerdata.json": {
@@ -3702,7 +3702,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometerdata/init(coder:).json": {
       "etag": "\"1497-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometerdata/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmpedometerdata/init(coder).md",
       "hash": "7989743c216539e10e5c2e9a51061fa798b69f2f256cf5111a26c9e0c7edf393"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometerdata/numberofsteps.json": {
@@ -3727,7 +3727,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometerevent/init(coder:).json": {
       "etag": "\"14d3-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometerevent/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmpedometerevent/init(coder).md",
       "hash": "78a51010c3d2d79108a098cf9f0f647d94a9aa153f3fbf71343957656019b99f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometerevent/type.json": {
@@ -3747,7 +3747,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometereventtype/init(rawvalue:).json": {
       "etag": "\"13e2-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmpedometereventtype/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmpedometereventtype/init(rawvalue).md",
       "hash": "348956fc6a20cbe85a0e6fac451d21a454e794277b59306057860e321b4c2e6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmpedometereventtype/pause.json": {
@@ -3772,12 +3772,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmquaternion/init().json": {
       "etag": "\"13e6-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmquaternion/init.md",
+      "file_path": "documentation/CoreMotion/cmquaternion/init().md",
       "hash": "e8a2ee68037e41e156bf699cbbfaaf73ad50b42c0bd725a6731a3e431e335595"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmquaternion/init(x:y:z:w:).json": {
       "etag": "\"1c36-65d55cc076a72-df\"",
-      "file_path": "documentation/CoreMotion/cmquaternion/init-xyzw.md",
+      "file_path": "documentation/CoreMotion/cmquaternion/init(x,y,z,w).md",
       "hash": "099b112fdef1758d45f36e2151e3e722a434b3ddd9beb132486491974aea45f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmquaternion/w.json": {
@@ -3862,12 +3862,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmrotationmatrix/init().json": {
       "etag": "\"17dd-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmrotationmatrix/init.md",
+      "file_path": "documentation/CoreMotion/cmrotationmatrix/init().md",
       "hash": "d43405c9d9ff9d2d26e364738215453109df50bdf4ccaca8488d9e172ead0ca2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmrotationmatrix/init(m11:m12:m13:m21:m22:m23:m31:m32:m33:).json": {
       "etag": "\"2870-65d55cc10153d-df\"",
-      "file_path": "documentation/CoreMotion/cmrotationmatrix/init-m11m12m13m21m22m23m31m32m33.md",
+      "file_path": "documentation/CoreMotion/cmrotationmatrix/init(m11,m12,m13,m21,m22,m23,m31,m32,m33).md",
       "hash": "ae6ca23430a8638ca980def06ea8a9582bb9180c907bd2549077d813522380a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmrotationmatrix/m11.json": {
@@ -3922,12 +3922,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmrotationrate/init().json": {
       "etag": "\"134d-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmrotationrate/init.md",
+      "file_path": "documentation/CoreMotion/cmrotationrate/init().md",
       "hash": "03475e6a07bbd54f7821c53cf3df01b40d65aa8ac8628b6eb99eb8e1903014c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmrotationrate/init(x:y:z:).json": {
       "etag": "\"1a08-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmrotationrate/init-xyz.md",
+      "file_path": "documentation/CoreMotion/cmrotationrate/init(x,y,z).md",
       "hash": "71c2f1891a0ff7ade2a9f873c0daef2b7e5a818e7d32745b08402daacb6673d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmrotationrate/x.json": {
@@ -3967,27 +3967,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/accelerometerdata(from:to:).json": {
       "etag": "\"3353-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/accelerometerdata-fromto.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/accelerometerdata(from,to).md",
       "hash": "0371bc355eac6cc25e308f45833b851512ba9384cd73a6fdf1569dd127c70b97"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/authorizationstatus().json": {
       "etag": "\"2f8a-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/authorizationstatus.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/authorizationstatus().md",
       "hash": "8c8f86426bf1b42ff568b771207c60095ff17046e23ef49f21efd47079f07760"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/isaccelerometerrecordingavailable().json": {
       "etag": "\"3b30-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/isaccelerometerrecordingavailable.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/isaccelerometerrecordingavailable().md",
       "hash": "c4508ba60c113df0827dcaba4541dd71ca3be7844db2254c31d798ebaff249a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/isauthorizedforrecording().json": {
       "etag": "\"3c85-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/isauthorizedforrecording.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/isauthorizedforrecording().md",
       "hash": "b37641a205e1c23d4869160f223055bbcedaf4007217280f004aca8393f97099"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmsensorrecorder/recordaccelerometer(forduration:).json": {
       "etag": "\"267c-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmsensorrecorder/recordaccelerometer-forduration.md",
+      "file_path": "documentation/CoreMotion/cmsensorrecorder/recordaccelerometer(forduration).md",
       "hash": "80b5faf8350b0f41c73c19495d6a093c3f56a0917589b2e43c3def2bbdc83d9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmstepcounter.json": {
@@ -3997,22 +3997,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmstepcounter/isstepcountingavailable().json": {
       "etag": "\"29d7-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmstepcounter/isstepcountingavailable.md",
+      "file_path": "documentation/CoreMotion/cmstepcounter/isstepcountingavailable().md",
       "hash": "03790e6775df7f10734ce550bccbe1492b68087c2134de78a56ca1a4a6926539"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmstepcounter/querystepcountstarting(from:to:to:withhandler:).json": {
       "etag": "\"46c4-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmstepcounter/querystepcountstarting-fromtotowithhandler.md",
+      "file_path": "documentation/CoreMotion/cmstepcounter/querystepcountstarting(from,to,to,withhandler).md",
       "hash": "ca895fa9ea08f6657fa4e1c4a11c4fda09c4f3ce8040af24e9f2e2ad55c88916"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmstepcounter/startstepcountingupdates(to:updateon:withhandler:).json": {
       "etag": "\"4b84-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmstepcounter/startstepcountingupdates-toupdateonwithhandler.md",
+      "file_path": "documentation/CoreMotion/cmstepcounter/startstepcountingupdates(to,updateon,withhandler).md",
       "hash": "726310ce47cb759e736a7203365e9542bacd5ca2d7862daad16f9d3adf77cc5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmstepcounter/stopstepcountingupdates().json": {
       "etag": "\"360c-65d55cc0c4227-df\"",
-      "file_path": "documentation/CoreMotion/cmstepcounter/stopstepcountingupdates.md",
+      "file_path": "documentation/CoreMotion/cmstepcounter/stopstepcountingupdates().md",
       "hash": "dd60e8cdf507b5da37cbf593febc3fd8b92d33d83d0f03b2256c641a1a90c440"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmstepqueryhandler.json": {
@@ -4037,7 +4037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmtremorresult/init(coder:).json": {
       "etag": "\"14bb-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmtremorresult/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmtremorresult/init(coder).md",
       "hash": "cce6eb841fe86d9994e80896348d854488b29cbf0e9995f5cb80ac7004d3bdde"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmtremorresult/percentmild.json": {
@@ -4092,17 +4092,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionevent/init(coder:).json": {
       "etag": "\"14ff-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/init(coder).md",
       "hash": "5c76473262be4774823d37ec47942a7928e92fb119714332f853c47d4d84fed4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionevent/state-swift.enum.json": {
       "etag": "\"48e5-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swiftenum.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swift.enum.md",
       "hash": "ec7219b99de8cee7bfe0a66fc83dcc811364e808bb2d639bf63ef5484488322a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionevent/state-swift.enum/init(rawvalue:).json": {
       "etag": "\"191d-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swift.enum/init(rawvalue).md",
       "hash": "b2300b700835f7431a79f44eaaef3ed1b5eeb5e0cd0ba1ec7c2ebedf043c8316"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionevent/state-swift.enum/notsubmerged.json": {
@@ -4122,7 +4122,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionevent/state-swift.property.json": {
       "etag": "\"28ea-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swiftproperty.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionevent/state-swift.property.md",
       "hash": "5603ab685f0fc930f7b4519b3e1ea501c07e90e0e812a519fe4d91a575c7033d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmanager.json": {
@@ -4157,22 +4157,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmanagerdelegate/manager(_:didupdate:)-18wua.json": {
       "etag": "\"4a90-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager-didupdate-18wua.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager(_,didupdate)-18wua.md",
       "hash": "45aa97786ae39815e8ff9701be7f2f7064b836e0a673e35e2d7ea2208f7f73a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmanagerdelegate/manager(_:didupdate:)-6qux6.json": {
       "etag": "\"4add-65d55cc09206f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager-didupdate-6qux6.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager(_,didupdate)-6qux6.md",
       "hash": "506cf38827827fe49c8be5ff79c3aa3c237af2b982288bed51107a358847e460"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmanagerdelegate/manager(_:didupdate:)-7nhjb.json": {
       "etag": "\"51ae-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager-didupdate-7nhjb.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager(_,didupdate)-7nhjb.md",
       "hash": "8cfb991d4101890c163dffbaa346c2278b79c734fabd21fc756a7c66c1c14c34"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmanagerdelegate/manager(_:erroroccurred:).json": {
       "etag": "\"4762-65d55cc0aaf89-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager-erroroccurred.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmanagerdelegate/manager(_,erroroccurred).md",
       "hash": "52df88e71b253938af72a0755a046496a515845953a45255d706cfef5b2ceb69"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmeasurement.json": {
@@ -4202,7 +4202,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmeasurement/depthstate/init(rawvalue:).json": {
       "etag": "\"199b-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmeasurement/depthstate/init-rawvalue.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmeasurement/depthstate/init(rawvalue).md",
       "hash": "35368dacc438da2b65042e122f7d70bb4c6757d8f3af17684aca049e6e4c455a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmeasurement/depthstate/notsubmerged.json": {
@@ -4237,7 +4237,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmeasurement/init(coder:).json": {
       "etag": "\"1566-65d55cc03b225-df\"",
-      "file_path": "documentation/CoreMotion/cmwatersubmersionmeasurement/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmwatersubmersionmeasurement/init(coder).md",
       "hash": "992a0dab0f583e1ec645a8ff5bcaeb936af47c740eeffcc52adf19cf9e2dbf53"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatersubmersionmeasurement/pressure.json": {
@@ -4267,7 +4267,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatertemperature/init(coder:).json": {
       "etag": "\"14a7-65d55cc11c84f-df\"",
-      "file_path": "documentation/CoreMotion/cmwatertemperature/init-coder.md",
+      "file_path": "documentation/CoreMotion/cmwatertemperature/init(coder).md",
       "hash": "f6c38ab0e0f840301bd1b67215344a49b8d333ee9807b6c23b9829ba6074b16c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremotion/cmwatertemperature/temperature.json": {

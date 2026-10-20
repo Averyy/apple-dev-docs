@@ -12,12 +12,12 @@
     },
     "https://developer.apple.com/documentation/appclip/apactivationpayload/confirmacquired(in:completionhandler:)": {
       "etag": "\"5590-65d55e6c60a5f-df\"",
-      "file_path": "documentation/AppClip/apactivationpayload/confirmacquired-incompletionhandler.md",
+      "file_path": "documentation/AppClip/apactivationpayload/confirmacquired(in,completionhandler).md",
       "hash": "faf7ec64fc5ff4b69982bbfcee9fbd1f387403aaf472c8c613b2be9f71114289"
     },
     "https://developer.apple.com/documentation/appclip/apactivationpayload/init(coder:)": {
       "etag": "\"1441-65d55e6c60a5f-df\"",
-      "file_path": "documentation/AppClip/apactivationpayload/init-coder.md",
+      "file_path": "documentation/AppClip/apactivationpayload/init(coder).md",
       "hash": "5d402fcdeb49bc8008b2041e70baa217f3959561ca05229e5f976d54800003e3"
     },
     "https://developer.apple.com/documentation/appclip/apactivationpayload/url": {
@@ -47,7 +47,7 @@
     },
     "https://developer.apple.com/documentation/appclip/apactivationpayloaderror/code/init(rawvalue:)": {
       "etag": "\"1620-65d55e6c741a9-df\"",
-      "file_path": "documentation/AppClip/apactivationpayloaderror/code/init-rawvalue.md",
+      "file_path": "documentation/AppClip/apactivationpayloaderror/code/init(rawvalue).md",
       "hash": "f3062547637f9cc4bd521a579c11493668192e90c4a04509df9792e7cd6dc903"
     },
     "https://developer.apple.com/documentation/appclip/apactivationpayloaderror/disallowed": {
@@ -132,7 +132,7 @@
     },
     "https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui": {
       "etag": "W/\"676410f76179ea24db64eb0f5e5212e3\"",
-      "file_path": "documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui.md",
+      "file_path": "documentation/AppClip/fruta_building_a_feature-rich_app_with_swiftui.md",
       "hash": "656d26247c19d138484709a540566f8f3dab6700d4bf9f3eb2626a49a2e7de78"
     },
     "https://developer.apple.com/documentation/appclip/interacting-with-app-clip-codes-in-ar": {
@@ -192,12 +192,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayload/confirmacquired(in:completionhandler:).json": {
       "etag": "\"5590-65d55e6c60a5f-df\"",
-      "file_path": "documentation/AppClip/apactivationpayload/confirmacquired-incompletionhandler.md",
+      "file_path": "documentation/AppClip/apactivationpayload/confirmacquired(in,completionhandler).md",
       "hash": "faf7ec64fc5ff4b69982bbfcee9fbd1f387403aaf472c8c613b2be9f71114289"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayload/init(coder:).json": {
       "etag": "\"1441-65d55e6c60a5f-df\"",
-      "file_path": "documentation/AppClip/apactivationpayload/init-coder.md",
+      "file_path": "documentation/AppClip/apactivationpayload/init(coder).md",
       "hash": "5d402fcdeb49bc8008b2041e70baa217f3959561ca05229e5f976d54800003e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayload/url.json": {
@@ -227,7 +227,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/code/init(rawvalue:).json": {
       "etag": "\"1620-65d55e6c741a9-df\"",
-      "file_path": "documentation/AppClip/apactivationpayloaderror/code/init-rawvalue.md",
+      "file_path": "documentation/AppClip/apactivationpayloaderror/code/init(rawvalue).md",
       "hash": "f3062547637f9cc4bd521a579c11493668192e90c4a04509df9792e7cd6dc903"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/disallowed.json": {
@@ -312,7 +312,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui.json": {
       "etag": "W/\"676410f76179ea24db64eb0f5e5212e3\"",
-      "file_path": "documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui.md",
+      "file_path": "documentation/AppClip/fruta_building_a_feature-rich_app_with_swiftui.md",
       "hash": "656d26247c19d138484709a540566f8f3dab6700d4bf9f3eb2626a49a2e7de78"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/interacting-with-app-clip-codes-in-ar.json": {

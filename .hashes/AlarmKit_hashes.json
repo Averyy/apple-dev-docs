@@ -12,17 +12,17 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/countdownduration-swift.property": {
       "etag": "\"1e86-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarm/countdownduration-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.property.md",
       "hash": "b518bcff2efbdc0fea5e4604946414ccf3b1ffd7ad32735c30beea37d3fb6c4e"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/countdownduration-swift.struct": {
       "etag": "\"3410-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarm/countdownduration-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct.md",
       "hash": "098065815b1215cc8470d099e00673e98bee52356cd6750aebc3fe45806d0cc1"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/countdownduration-swift.struct/init(prealert:postalert:)": {
       "etag": "\"22a9-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct/init-prealertpostalert.md",
+      "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct/init(prealert,postalert).md",
       "hash": "d9a2fb9684e00d2c292a0aad4810ff8991684adcbb0da4c7533ce1ed52a4c919"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/countdownduration-swift.struct/postalert": {
@@ -42,12 +42,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum": {
       "etag": "\"2bfc-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum.md",
       "hash": "16e0279a8a403bfc8088202c507549317177b5eae74cb1c82771115783e96271"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/fixed(_:)": {
       "etag": "\"1e1a-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/fixed.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/fixed(_).md",
       "hash": "ce52a165e8ed63c8e4805e60f882189e7eea5f08dd371b1344b0ed97c58bf49b"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative": {
@@ -57,12 +57,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative(_:)": {
       "etag": "\"1e6b-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative(_).md",
       "hash": "49336526ef27c405c18aa29dbf42ebc107f54fd03f5ed1202a5a672d3d024141"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/init(time:repeats:)": {
       "etag": "\"2a54-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/init-timerepeats.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/init(time,repeats).md",
       "hash": "bb71375c5076eef0a8f32a946a62714f4aeafb908008fe1d86318403db4f0dfe"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/recurrence": {
@@ -77,7 +77,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/recurrence/weekly(_:)": {
       "etag": "\"21f8-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/recurrence/weekly.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/recurrence/weekly(_).md",
       "hash": "f3069f9bfeac377de12e1c91b12422e0931d02d62a5065c549a5c8c74e4a44ab"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/repeats": {
@@ -87,12 +87,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.property": {
       "etag": "\"257b-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.property.md",
       "hash": "623232eca3870753f08a141cade86d2d3769899ab77f6c40702d4233a94a594d"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct": {
       "etag": "\"358f-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct.md",
       "hash": "cc4d970c419e26ddf34e7788f3daad8021504a07c094fe6f2d1dbf1b9c2319fb"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/hour": {
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/init(hour:minute:)": {
       "etag": "\"23ff-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct/init-hourminute.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct/init(hour,minute).md",
       "hash": "476a80ad854e51bdbe5bcb4b3c494c3dd6e3e678e182ba5f98ff441e8f0d02c6"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/minute": {
@@ -112,12 +112,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/schedule-swift.property": {
       "etag": "\"14c8-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.property.md",
       "hash": "bbac58819f8b031e46888e27c3d3493c33971f3cd923f76af824bcf2e3982dd7"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/state-swift.enum": {
       "etag": "\"334d-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/state-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarm/state-swift.enum.md",
       "hash": "6658ebc415320585f1567afff3139d9b9b1d37865bb56b0456507cea8de9b3f7"
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/state-swift.enum/alerting": {
@@ -142,7 +142,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarm/state-swift.property": {
       "etag": "\"1d54-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/state-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarm/state-swift.property.md",
       "hash": "2675a143c159847bd7323368fb4c26652d34511cc0f2c5b1daee9f92962113e5"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmattributes": {
@@ -157,17 +157,17 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmattributes/encode(to:)": {
       "etag": "\"16ed-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarmattributes/encode-to.md",
+      "file_path": "documentation/AlarmKit/alarmattributes/encode(to).md",
       "hash": "2ecfacba2caa75d672cb7caeb1bca9e97c5f4685b36830e80bc7b5b23c3a0b97"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmattributes/init(from:)": {
       "etag": "\"1665-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarmattributes/init-from.md",
+      "file_path": "documentation/AlarmKit/alarmattributes/init(from).md",
       "hash": "f36849712c9bcab06a4520b24639cdd0f2c9f2d511376ac87146d69811f65c22"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmattributes/init(presentation:metadata:tintcolor:)": {
       "etag": "\"2628-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarmattributes/init-presentationmetadatatintcolor.md",
+      "file_path": "documentation/AlarmKit/alarmattributes/init(presentation,metadata,tintcolor).md",
       "hash": "2a469afe71f31f419738ecc06a2dfd16eca7f343fb81e5fbd2de30e159a4e3b8"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmattributes/metadata": {
@@ -192,17 +192,17 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmbutton/encode(to:)": {
       "etag": "\"166d-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmbutton/encode-to.md",
+      "file_path": "documentation/AlarmKit/alarmbutton/encode(to).md",
       "hash": "7cff214ec05a65ef12c23edfd25e2d606cf301e10dd98ab951f3a71e9fa23032"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmbutton/init(from:)": {
       "etag": "\"15f0-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmbutton/init-from.md",
+      "file_path": "documentation/AlarmKit/alarmbutton/init(from).md",
       "hash": "d35fb68d49a1f7496d09db2a0d93fb6328c5e007634939c81648c991bc424900"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmbutton/init(text:textcolor:systemimagename:)": {
       "etag": "\"2584-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmbutton/init-texttextcolorsystemimagename.md",
+      "file_path": "documentation/AlarmKit/alarmbutton/init(text,textcolor,systemimagename).md",
       "hash": "368c376cca4c7ec1684c07a65e754a5821aed833ffcc87a2735249b098303643"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmbutton/systemimagename": {
@@ -242,12 +242,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates/iterator/next()": {
       "etag": "\"1c6a-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/iterator/next.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/iterator/next().md",
       "hash": "50a5097bbf9161b85aa3eb26fd05548f9e496233ef18526d11d7cade18dd4e49"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates/makeasynciterator()": {
       "etag": "\"1f1c-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/makeasynciterator.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/makeasynciterator().md",
       "hash": "95d1749a3dc700be7445b058a8910f79dd8a677444b2ffdfded086b80b31a2fb"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmconfiguration": {
@@ -257,32 +257,32 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmconfiguration/alarm(schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:)": {
       "etag": "\"4678-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm-scheduleattributesappentityidentifierstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm(schedule,attributes,appentityidentifier,stopintent,secondaryintent,sound).md",
       "hash": "fe95b3abc92426c408c9975360a4b6ca2fbd569e5c786c4a9d5cef1395782167"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmconfiguration/alarm(schedule:attributes:stopintent:secondaryintent:sound:)": {
       "etag": "\"3d79-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm-scheduleattributesstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm(schedule,attributes,stopintent,secondaryintent,sound).md",
       "hash": "8e41098762bd8c6ee52dae87a0663b2ae8d0ad1715b78fce60ebd42ca16e68bc"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:)": {
       "etag": "\"4746-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init-countdowndurationscheduleattributesappentityidentifierstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init(countdownduration,schedule,attributes,appentityidentifier,stopintent,secondaryintent,sound).md",
       "hash": "3c69d7da56762937de0c58c16c1b418918f94b4c08d9f3f1cbfb128502c2d5af"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:stopintent:secondaryintent:sound:)": {
       "etag": "\"4920-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init-countdowndurationscheduleattributesstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init(countdownduration,schedule,attributes,stopintent,secondaryintent,sound).md",
       "hash": "82b0bb65995228f9a365b48bd781b9bfd7cb3bd618d6ec436328b4410db8f428"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmconfiguration/timer(duration:attributes:appentityidentifier:stopintent:secondaryintent:sound:)": {
       "etag": "\"457c-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer-durationattributesappentityidentifierstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer(duration,attributes,appentityidentifier,stopintent,secondaryintent,sound).md",
       "hash": "1f5c24f627f59eb675e224d9ff4916e3bf213a7b8e2479ae381d6a60343dcb07"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmconfiguration/timer(duration:attributes:stopintent:secondaryintent:sound:)": {
       "etag": "\"471a-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer-durationattributesstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer(duration,attributes,stopintent,secondaryintent,sound).md",
       "hash": "e9eccee88556f3bc1e75c03f2272cb0782343b6fa5854f634d7cd6266bc88709"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmerror": {
@@ -302,12 +302,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmupdates-swift.property": {
       "etag": "\"2441-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.property.md",
       "hash": "02b174ff451c066c7095e943ca7766007dc5c465ad916c1048b97cdb8fe8fceb"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct": {
       "etag": "\"23d4-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct.md",
       "hash": "b79c0915ce0f44b76db47e0e311d6cd331d80a47e60637a9277df1a124861f5f"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/element": {
@@ -322,17 +322,17 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/iterator/next()": {
       "etag": "\"1d21-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/iterator/next.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/iterator/next().md",
       "hash": "7816f4a5f8cb3f1165f298f04ba226c200cb1485969704c054f49cb3f468a69d"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/makeasynciterator()": {
       "etag": "\"1d33-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/makeasynciterator().md",
       "hash": "2fae56a8b2709acdcff6924e2210bb6669024619b4ab3ffc08a7df3254f5e569"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/authorizationstate-swift.enum": {
       "etag": "\"3440-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swift.enum.md",
       "hash": "0f8660a4f32e96099e1f1120dfe9779253c14eee622b6f0f545f85c6ae6cdec0"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/authorizationstate-swift.enum/authorized": {
@@ -352,7 +352,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/authorizationstate-swift.property": {
       "etag": "\"1e3c-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swift.property.md",
       "hash": "671461853a3d4049682c6d456b3c2a51d5b9f51bc0118083c927068369b52f8a"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/authorizationupdates": {
@@ -362,32 +362,32 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/cancel(id:)": {
       "etag": "\"248d-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/cancel-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/cancel(id).md",
       "hash": "c21abfde92858456dde54558f5caac5955013f6b1980fb1ef710dfbcea4f5866"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/countdown(id:)": {
       "etag": "\"2539-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/countdown-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/countdown(id).md",
       "hash": "d44a8f193c4f1761977a6fdba37e82faefbafa5c8a2c574e68c357f58dcf7a99"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/pause(id:)": {
       "etag": "\"2958-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/pause-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/pause(id).md",
       "hash": "3351e230656687f3770b2a136e87047e6742c6651e6bff5620217be7e74c89ff"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/requestauthorization()": {
       "etag": "\"16dd-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/requestauthorization.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/requestauthorization().md",
       "hash": "9d39e367f40d66b1e8e551e301801739856614fcb16ef0b2503a78bce6287826"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/resume(id:)": {
       "etag": "\"27b9-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/resume-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/resume(id).md",
       "hash": "148a43438c6c439375a04c4a29a512a7f97b5c2b40bb2a34826583fa250c733e"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/schedule(id:configuration:)": {
       "etag": "\"306c-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/schedule-idconfiguration.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/schedule(id,configuration).md",
       "hash": "81c2f33d2cdc20181f9dc8dd955be0e3a91b0ae3fa175fc8a9d668840d168394"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/shared": {
@@ -397,7 +397,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmanager/stop(id:)": {
       "etag": "\"2572-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/stop-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/stop(id).md",
       "hash": "b2aafdc4436ed3585d7ee0eddc4e347c5c83042460d335a4e22a36af8928e1ed"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmmetadata": {
@@ -412,22 +412,22 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.property": {
       "etag": "\"21d6-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.property.md",
       "hash": "ebf948044bc7e5a19d71c40a46445da5fd484d8513b8730d3f614524eb18e620"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct": {
       "etag": "\"4444-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct.md",
       "hash": "c68fd072c833d954b268d9494d9382440aebdbb90976f53f0356609a109cfc9c"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct/init(title:secondarybutton:secondarybuttonbehavior:)": {
       "etag": "\"2b9f-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init-titlesecondarybuttonsecondarybuttonbehavior.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init(title,secondarybutton,secondarybuttonbehavior).md",
       "hash": "99147322b12cd254cf2cf37f6e1c6b242afe607c6b22253f51ee04ccbd955851"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct/init(title:stopbutton:secondarybutton:secondarybuttonbehavior:)": {
       "etag": "\"302a-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init-titlestopbuttonsecondarybuttonsecondarybuttonbehavior.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init(title,stopbutton,secondarybutton,secondarybuttonbehavior).md",
       "hash": "5f70333f6f73749ef57af793971eb4cc37a98d2eb00c887f107446a08ca6a76c"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybutton": {
@@ -437,7 +437,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum": {
       "etag": "\"33fe-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.md",
       "hash": "365d3845890f0864e7828e2e6b4ae92c8ebc4d60dd884a6dd0727ea49758e72f"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/countdown": {
@@ -452,7 +452,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property": {
       "etag": "\"20eb-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.md",
       "hash": "f3d151592d4bcea6bfbd417630511a13d7c2f90ed98a6c8d299e2e33a4958c70"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/alert-swift.struct/stopbutton": {
@@ -467,17 +467,17 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/countdown-swift.property": {
       "etag": "\"23ad-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.property.md",
       "hash": "3ff7fb4de7a5020126a724577e67ded0874700d03bc61e20446ff75d5cfa39e5"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/countdown-swift.struct": {
       "etag": "\"2d35-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct.md",
       "hash": "5b353228681ce3c999861953f8747fc51dd78f490044c7c2f64ac41a4b4f48a5"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/countdown-swift.struct/init(title:pausebutton:)": {
       "etag": "\"22e3-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct/init-titlepausebutton.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct/init(title,pausebutton).md",
       "hash": "e6280350e58bf22ccb189d251edc98eb828f2e01dfa25672ade6b683387c1819"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/countdown-swift.struct/pausebutton": {
@@ -492,22 +492,22 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/init(alert:countdown:paused:)": {
       "etag": "\"3260-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/init-alertcountdownpaused.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/init(alert,countdown,paused).md",
       "hash": "95049e4158816a2f43510889982762e97338cc3b41ffcebe476bb4bfe5a4730d"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/paused-swift.property": {
       "etag": "\"235f-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.property.md",
       "hash": "d10314dfa818f36edf1d1f6225120d92a0743784cdb3cabca69b5cc2204acf4a"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/paused-swift.struct": {
       "etag": "\"2d1e-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct.md",
       "hash": "e4b4776610dd1673127ffbcf63ccce644685c3c55cd32b74d27357e90a2ab7e3"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/paused-swift.struct/init(title:resumebutton:)": {
       "etag": "\"2286-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct/init-titleresumebutton.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct/init(title,resumebutton).md",
       "hash": "a810506ba1c3aba61382c359d23f7e6e65ba717dca9b6785e1e40b6bdf85901a"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentation/paused-swift.struct/resumebutton": {
@@ -532,12 +532,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/init(alarmid:mode:)": {
       "etag": "\"22f4-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/init-alarmidmode.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/init(alarmid,mode).md",
       "hash": "3f462ccf1dfbcd7d832d4b40323ba6f91ce739dbefe4767015dc549a03a7970c"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum": {
       "etag": "\"435e-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum.md",
       "hash": "edf5751e755cf434d56540c03d0fe9d4ecab5c12c8223cea51b041b89a02f05e"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert": {
@@ -547,12 +547,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert(_:)": {
       "etag": "\"1b43-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert(_).md",
       "hash": "c27c4d86657bd09bde30e5fc93c284bb6d2a094550608ddc38f95cfa11d42ad6"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert/init(time:)": {
       "etag": "\"2a5a-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert/init-time.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert/init(time).md",
       "hash": "8793c4006e9da18f58054580a92e94346d94ce4e2866c9a809317af103d363e6"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert/time": {
@@ -567,7 +567,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown(_:)": {
       "etag": "\"1bb4-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown(_).md",
       "hash": "bdeff43531b5b8e69ec5cf8097db1225e5dacf5ca15b981443336b858d95fe28"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/firedate": {
@@ -577,7 +577,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/init(totalcountdownduration:previouslyelapsedduration:startdate:firedate:)": {
       "etag": "\"37e4-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/init-totalcountdowndurationpreviouslyelapseddurationstartdatefiredate.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/init(totalcountdownduration,previouslyelapsedduration,startdate,firedate).md",
       "hash": "f8f8383e539878790208ccf40ec34b7b819befc32e4050492d942b1df90f1a23"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/previouslyelapsedduration": {
@@ -602,12 +602,12 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused(_:)": {
       "etag": "\"1b6b-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused(_).md",
       "hash": "7ec6e25c4c3b1a1d8c8b68c04282cd438806f72cc452f7ae6c5cf4e04e009f85"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused/init(totalcountdownduration:previouslyelapsedduration:)": {
       "etag": "\"27e3-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused/init-totalcountdowndurationpreviouslyelapsedduration.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused/init(totalcountdownduration,previouslyelapsedduration).md",
       "hash": "f12f941273b3bfc1b8530bf1a9763c8c049eeedb3e683e25dad88aa4572260e9"
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused/previouslyelapsedduration": {
@@ -622,7 +622,7 @@
     },
     "https://developer.apple.com/documentation/alarmkit/alarmpresentationstate/mode-swift.property": {
       "etag": "\"1e6d-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.property.md",
       "hash": "d547c3be1a52a41aede85d54e7eb61a83b2ac850f7bb5d1648206cc93541f5ef"
     },
     "https://developer.apple.com/documentation/alarmkit/scheduling-an-alarm-with-alarmkit": {
@@ -642,17 +642,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.property.json": {
       "etag": "\"1e86-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarm/countdownduration-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.property.md",
       "hash": "b518bcff2efbdc0fea5e4604946414ccf3b1ffd7ad32735c30beea37d3fb6c4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.struct.json": {
       "etag": "\"3410-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarm/countdownduration-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct.md",
       "hash": "098065815b1215cc8470d099e00673e98bee52356cd6750aebc3fe45806d0cc1"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.struct/init(prealert:postalert:).json": {
       "etag": "\"22a9-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct/init-prealertpostalert.md",
+      "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct/init(prealert,postalert).md",
       "hash": "d9a2fb9684e00d2c292a0aad4810ff8991684adcbb0da4c7533ce1ed52a4c919"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.struct/postalert.json": {
@@ -672,17 +672,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum.json": {
       "etag": "\"2bfc-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum.md",
       "hash": "16e0279a8a403bfc8088202c507549317177b5eae74cb1c82771115783e96271"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/fixed(_:).json": {
       "etag": "\"1e1a-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/fixed.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/fixed(_).md",
       "hash": "ce52a165e8ed63c8e4805e60f882189e7eea5f08dd371b1344b0ed97c58bf49b"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative(_:).json": {
       "etag": "\"1e6b-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative(_).md",
       "hash": "49336526ef27c405c18aa29dbf42ebc107f54fd03f5ed1202a5a672d3d024141"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative.json": {
@@ -692,7 +692,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/init(time:repeats:).json": {
       "etag": "\"2a54-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/init-timerepeats.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/init(time,repeats).md",
       "hash": "bb71375c5076eef0a8f32a946a62714f4aeafb908008fe1d86318403db4f0dfe"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/recurrence.json": {
@@ -707,7 +707,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/recurrence/weekly(_:).json": {
       "etag": "\"21f8-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/recurrence/weekly.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/recurrence/weekly(_).md",
       "hash": "f3069f9bfeac377de12e1c91b12422e0931d02d62a5065c549a5c8c74e4a44ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/repeats.json": {
@@ -717,12 +717,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.property.json": {
       "etag": "\"257b-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.property.md",
       "hash": "623232eca3870753f08a141cade86d2d3769899ab77f6c40702d4233a94a594d"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct.json": {
       "etag": "\"358f-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct.md",
       "hash": "cc4d970c419e26ddf34e7788f3daad8021504a07c094fe6f2d1dbf1b9c2319fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/hour.json": {
@@ -732,7 +732,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/init(hour:minute:).json": {
       "etag": "\"23ff-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct/init-hourminute.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct/init(hour,minute).md",
       "hash": "476a80ad854e51bdbe5bcb4b3c494c3dd6e3e678e182ba5f98ff441e8f0d02c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/minute.json": {
@@ -742,12 +742,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.property.json": {
       "etag": "\"14c8-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/schedule-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarm/schedule-swift.property.md",
       "hash": "bbac58819f8b031e46888e27c3d3493c33971f3cd923f76af824bcf2e3982dd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.enum.json": {
       "etag": "\"334d-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/state-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarm/state-swift.enum.md",
       "hash": "6658ebc415320585f1567afff3139d9b9b1d37865bb56b0456507cea8de9b3f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.enum/alerting.json": {
@@ -772,7 +772,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.property.json": {
       "etag": "\"1d54-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarm/state-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarm/state-swift.property.md",
       "hash": "2675a143c159847bd7323368fb4c26652d34511cc0f2c5b1daee9f92962113e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes.json": {
@@ -787,17 +787,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/encode(to:).json": {
       "etag": "\"16ed-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarmattributes/encode-to.md",
+      "file_path": "documentation/AlarmKit/alarmattributes/encode(to).md",
       "hash": "2ecfacba2caa75d672cb7caeb1bca9e97c5f4685b36830e80bc7b5b23c3a0b97"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/init(from:).json": {
       "etag": "\"1665-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarmattributes/init-from.md",
+      "file_path": "documentation/AlarmKit/alarmattributes/init(from).md",
       "hash": "f36849712c9bcab06a4520b24639cdd0f2c9f2d511376ac87146d69811f65c22"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/init(presentation:metadata:tintcolor:).json": {
       "etag": "\"2628-65d55e4da432c-df\"",
-      "file_path": "documentation/AlarmKit/alarmattributes/init-presentationmetadatatintcolor.md",
+      "file_path": "documentation/AlarmKit/alarmattributes/init(presentation,metadata,tintcolor).md",
       "hash": "2a469afe71f31f419738ecc06a2dfd16eca7f343fb81e5fbd2de30e159a4e3b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/metadata.json": {
@@ -822,17 +822,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/encode(to:).json": {
       "etag": "\"166d-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmbutton/encode-to.md",
+      "file_path": "documentation/AlarmKit/alarmbutton/encode(to).md",
       "hash": "7cff214ec05a65ef12c23edfd25e2d606cf301e10dd98ab951f3a71e9fa23032"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/init(from:).json": {
       "etag": "\"15f0-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmbutton/init-from.md",
+      "file_path": "documentation/AlarmKit/alarmbutton/init(from).md",
       "hash": "d35fb68d49a1f7496d09db2a0d93fb6328c5e007634939c81648c991bc424900"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/init(text:textcolor:systemimagename:).json": {
       "etag": "\"2584-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmbutton/init-texttextcolorsystemimagename.md",
+      "file_path": "documentation/AlarmKit/alarmbutton/init(text,textcolor,systemimagename).md",
       "hash": "368c376cca4c7ec1684c07a65e754a5821aed833ffcc87a2735249b098303643"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/systemimagename.json": {
@@ -872,12 +872,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates/iterator/next().json": {
       "etag": "\"1c6a-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/iterator/next.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/iterator/next().md",
       "hash": "50a5097bbf9161b85aa3eb26fd05548f9e496233ef18526d11d7cade18dd4e49"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates/makeasynciterator().json": {
       "etag": "\"1f1c-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/makeasynciterator.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/makeasynciterator().md",
       "hash": "95d1749a3dc700be7445b058a8910f79dd8a677444b2ffdfded086b80b31a2fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration.json": {
@@ -887,32 +887,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/alarm(schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:).json": {
       "etag": "\"4678-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm-scheduleattributesappentityidentifierstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm(schedule,attributes,appentityidentifier,stopintent,secondaryintent,sound).md",
       "hash": "fe95b3abc92426c408c9975360a4b6ca2fbd569e5c786c4a9d5cef1395782167"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/alarm(schedule:attributes:stopintent:secondaryintent:sound:).json": {
       "etag": "\"3d79-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm-scheduleattributesstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm(schedule,attributes,stopintent,secondaryintent,sound).md",
       "hash": "8e41098762bd8c6ee52dae87a0663b2ae8d0ad1715b78fce60ebd42ca16e68bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:).json": {
       "etag": "\"4746-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init-countdowndurationscheduleattributesappentityidentifierstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init(countdownduration,schedule,attributes,appentityidentifier,stopintent,secondaryintent,sound).md",
       "hash": "3c69d7da56762937de0c58c16c1b418918f94b4c08d9f3f1cbfb128502c2d5af"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:stopintent:secondaryintent:sound:).json": {
       "etag": "\"4920-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init-countdowndurationscheduleattributesstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init(countdownduration,schedule,attributes,stopintent,secondaryintent,sound).md",
       "hash": "82b0bb65995228f9a365b48bd781b9bfd7cb3bd618d6ec436328b4410db8f428"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/timer(duration:attributes:appentityidentifier:stopintent:secondaryintent:sound:).json": {
       "etag": "\"457c-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer-durationattributesappentityidentifierstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer(duration,attributes,appentityidentifier,stopintent,secondaryintent,sound).md",
       "hash": "1f5c24f627f59eb675e224d9ff4916e3bf213a7b8e2479ae381d6a60343dcb07"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/timer(duration:attributes:stopintent:secondaryintent:sound:).json": {
       "etag": "\"471a-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer-durationattributesstopintentsecondaryintentsound.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer(duration,attributes,stopintent,secondaryintent,sound).md",
       "hash": "e9eccee88556f3bc1e75c03f2272cb0782343b6fa5854f634d7cd6266bc88709"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmerror.json": {
@@ -932,12 +932,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.property.json": {
       "etag": "\"2441-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.property.md",
       "hash": "02b174ff451c066c7095e943ca7766007dc5c465ad916c1048b97cdb8fe8fceb"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct.json": {
       "etag": "\"23d4-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct.md",
       "hash": "b79c0915ce0f44b76db47e0e311d6cd331d80a47e60637a9277df1a124861f5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/element.json": {
@@ -952,17 +952,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/iterator/next().json": {
       "etag": "\"1d21-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/iterator/next.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/iterator/next().md",
       "hash": "7816f4a5f8cb3f1165f298f04ba226c200cb1485969704c054f49cb3f468a69d"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/makeasynciterator().json": {
       "etag": "\"1d33-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/makeasynciterator().md",
       "hash": "2fae56a8b2709acdcff6924e2210bb6669024619b4ab3ffc08a7df3254f5e569"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationstate-swift.enum.json": {
       "etag": "\"3440-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swift.enum.md",
       "hash": "0f8660a4f32e96099e1f1120dfe9779253c14eee622b6f0f545f85c6ae6cdec0"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationstate-swift.enum/authorized.json": {
@@ -982,7 +982,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationstate-swift.property.json": {
       "etag": "\"1e3c-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swift.property.md",
       "hash": "671461853a3d4049682c6d456b3c2a51d5b9f51bc0118083c927068369b52f8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationupdates.json": {
@@ -992,32 +992,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/cancel(id:).json": {
       "etag": "\"248d-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/cancel-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/cancel(id).md",
       "hash": "c21abfde92858456dde54558f5caac5955013f6b1980fb1ef710dfbcea4f5866"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/countdown(id:).json": {
       "etag": "\"2539-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/countdown-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/countdown(id).md",
       "hash": "d44a8f193c4f1761977a6fdba37e82faefbafa5c8a2c574e68c357f58dcf7a99"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/pause(id:).json": {
       "etag": "\"2958-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/pause-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/pause(id).md",
       "hash": "3351e230656687f3770b2a136e87047e6742c6651e6bff5620217be7e74c89ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/requestauthorization().json": {
       "etag": "\"16dd-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/requestauthorization.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/requestauthorization().md",
       "hash": "9d39e367f40d66b1e8e551e301801739856614fcb16ef0b2503a78bce6287826"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/resume(id:).json": {
       "etag": "\"27b9-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/resume-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/resume(id).md",
       "hash": "148a43438c6c439375a04c4a29a512a7f97b5c2b40bb2a34826583fa250c733e"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/schedule(id:configuration:).json": {
       "etag": "\"306c-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/schedule-idconfiguration.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/schedule(id,configuration).md",
       "hash": "81c2f33d2cdc20181f9dc8dd955be0e3a91b0ae3fa175fc8a9d668840d168394"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/shared.json": {
@@ -1027,7 +1027,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/stop(id:).json": {
       "etag": "\"2572-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmmanager/stop-id.md",
+      "file_path": "documentation/AlarmKit/alarmmanager/stop(id).md",
       "hash": "b2aafdc4436ed3585d7ee0eddc4e347c5c83042460d335a4e22a36af8928e1ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmetadata.json": {
@@ -1042,22 +1042,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.property.json": {
       "etag": "\"21d6-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.property.md",
       "hash": "ebf948044bc7e5a19d71c40a46445da5fd484d8513b8730d3f614524eb18e620"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct.json": {
       "etag": "\"4444-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct.md",
       "hash": "c68fd072c833d954b268d9494d9382440aebdbb90976f53f0356609a109cfc9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/init(title:secondarybutton:secondarybuttonbehavior:).json": {
       "etag": "\"2b9f-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init-titlesecondarybuttonsecondarybuttonbehavior.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init(title,secondarybutton,secondarybuttonbehavior).md",
       "hash": "99147322b12cd254cf2cf37f6e1c6b242afe607c6b22253f51ee04ccbd955851"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/init(title:stopbutton:secondarybutton:secondarybuttonbehavior:).json": {
       "etag": "\"302a-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init-titlestopbuttonsecondarybuttonsecondarybuttonbehavior.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init(title,stopbutton,secondarybutton,secondarybuttonbehavior).md",
       "hash": "5f70333f6f73749ef57af793971eb4cc37a98d2eb00c887f107446a08ca6a76c"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybutton.json": {
@@ -1067,7 +1067,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.json": {
       "etag": "\"33fe-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.md",
       "hash": "365d3845890f0864e7828e2e6b4ae92c8ebc4d60dd884a6dd0727ea49758e72f"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/countdown.json": {
@@ -1082,7 +1082,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.json": {
       "etag": "\"20eb-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.md",
       "hash": "f3d151592d4bcea6bfbd417630511a13d7c2f90ed98a6c8d299e2e33a4958c70"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/stopbutton.json": {
@@ -1097,17 +1097,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.property.json": {
       "etag": "\"23ad-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.property.md",
       "hash": "3ff7fb4de7a5020126a724577e67ded0874700d03bc61e20446ff75d5cfa39e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.struct.json": {
       "etag": "\"2d35-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct.md",
       "hash": "5b353228681ce3c999861953f8747fc51dd78f490044c7c2f64ac41a4b4f48a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.struct/init(title:pausebutton:).json": {
       "etag": "\"22e3-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct/init-titlepausebutton.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct/init(title,pausebutton).md",
       "hash": "e6280350e58bf22ccb189d251edc98eb828f2e01dfa25672ade6b683387c1819"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.struct/pausebutton.json": {
@@ -1122,22 +1122,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/init(alert:countdown:paused:).json": {
       "etag": "\"3260-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/init-alertcountdownpaused.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/init(alert,countdown,paused).md",
       "hash": "95049e4158816a2f43510889982762e97338cc3b41ffcebe476bb4bfe5a4730d"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.property.json": {
       "etag": "\"235f-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.property.md",
       "hash": "d10314dfa818f36edf1d1f6225120d92a0743784cdb3cabca69b5cc2204acf4a"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.struct.json": {
       "etag": "\"2d1e-65d55e4d7e700-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swiftstruct.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct.md",
       "hash": "e4b4776610dd1673127ffbcf63ccce644685c3c55cd32b74d27357e90a2ab7e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.struct/init(title:resumebutton:).json": {
       "etag": "\"2286-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct/init-titleresumebutton.md",
+      "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct/init(title,resumebutton).md",
       "hash": "a810506ba1c3aba61382c359d23f7e6e65ba717dca9b6785e1e40b6bdf85901a"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.struct/resumebutton.json": {
@@ -1162,17 +1162,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/init(alarmid:mode:).json": {
       "etag": "\"22f4-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/init-alarmidmode.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/init(alarmid,mode).md",
       "hash": "3f462ccf1dfbcd7d832d4b40323ba6f91ce739dbefe4767015dc549a03a7970c"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum.json": {
       "etag": "\"435e-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swiftenum.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum.md",
       "hash": "edf5751e755cf434d56540c03d0fe9d4ecab5c12c8223cea51b041b89a02f05e"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert(_:).json": {
       "etag": "\"1b43-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert(_).md",
       "hash": "c27c4d86657bd09bde30e5fc93c284bb6d2a094550608ddc38f95cfa11d42ad6"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert.json": {
@@ -1182,7 +1182,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert/init(time:).json": {
       "etag": "\"2a5a-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert/init-time.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert/init(time).md",
       "hash": "8793c4006e9da18f58054580a92e94346d94ce4e2866c9a809317af103d363e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert/time.json": {
@@ -1192,7 +1192,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown(_:).json": {
       "etag": "\"1bb4-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown(_).md",
       "hash": "bdeff43531b5b8e69ec5cf8097db1225e5dacf5ca15b981443336b858d95fe28"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown.json": {
@@ -1207,7 +1207,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/init(totalcountdownduration:previouslyelapsedduration:startdate:firedate:).json": {
       "etag": "\"37e4-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/init-totalcountdowndurationpreviouslyelapseddurationstartdatefiredate.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/init(totalcountdownduration,previouslyelapsedduration,startdate,firedate).md",
       "hash": "f8f8383e539878790208ccf40ec34b7b819befc32e4050492d942b1df90f1a23"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/previouslyelapsedduration.json": {
@@ -1227,7 +1227,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused(_:).json": {
       "etag": "\"1b6b-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused(_).md",
       "hash": "7ec6e25c4c3b1a1d8c8b68c04282cd438806f72cc452f7ae6c5cf4e04e009f85"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused.json": {
@@ -1237,7 +1237,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused/init(totalcountdownduration:previouslyelapsedduration:).json": {
       "etag": "\"27e3-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused/init-totalcountdowndurationpreviouslyelapsedduration.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused/init(totalcountdownduration,previouslyelapsedduration).md",
       "hash": "f12f941273b3bfc1b8530bf1a9763c8c049eeedb3e683e25dad88aa4572260e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused/previouslyelapsedduration.json": {
@@ -1252,7 +1252,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.property.json": {
       "etag": "\"1e6d-65d55e4d94e14-df\"",
-      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swiftproperty.md",
+      "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.property.md",
       "hash": "d547c3be1a52a41aede85d54e7eb61a83b2ac850f7bb5d1648206cc93541f5ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/scheduling-an-alarm-with-alarmkit.json": {

@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/adsupport/asidentifiermanager/shared()": {
       "etag": "\"2455-65d55d9b311af-df\"",
-      "file_path": "documentation/AdSupport/asidentifiermanager/shared.md",
+      "file_path": "documentation/AdSupport/asidentifiermanager/shared().md",
       "hash": "c1b920194c3c37d1bf8724f89377e336c059823cd494d791564fe439ee733b8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/AdSupport.json": {
@@ -47,7 +47,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/adsupport/asidentifiermanager/shared().json": {
       "etag": "\"2455-65d55d9b311af-df\"",
-      "file_path": "documentation/AdSupport/asidentifiermanager/shared.md",
+      "file_path": "documentation/AdSupport/asidentifiermanager/shared().md",
       "hash": "c1b920194c3c37d1bf8724f89377e336c059823cd494d791564fe439ee733b8f"
     }
   },

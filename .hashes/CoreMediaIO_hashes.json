@@ -72,12 +72,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodeviceavccommand/init()": {
       "etag": "\"e72-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodeviceavccommand/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiodeviceavccommand/init().md",
       "hash": "f4e6154d4d2ebbba277122a9e355b1ae006c5709b122c33d10cf9c5a31047bd2"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodeviceavccommand/init(mcommand:mcommandlength:mresponse:mresponselength:mresponseused:)": {
       "etag": "\"2676-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodeviceavccommand/init-mcommandmcommandlengthmresponsemresponselengthmresponseused.md",
+      "file_path": "documentation/CoreMediaIO/cmiodeviceavccommand/init(mcommand,mcommandlength,mresponse,mresponselength,mresponseused).md",
       "hash": "a0338b34f35b2f146246990df4ed9ff081e25bde044b09920e6cd7568dae80c1"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodeviceavccommand/mcommand": {
@@ -122,12 +122,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodeviceprocessavccommand(_:_:)": {
       "etag": "\"97f1-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodeviceprocessavccommand.md",
+      "file_path": "documentation/CoreMediaIO/cmiodeviceprocessavccommand(_,_).md",
       "hash": "00c03c04f403b62df33db3dfd5cb651ffa5dac7d49409a607ddd8f06e67e1b36"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodeviceprocessrs422command(_:_:)": {
       "etag": "\"982f-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodeviceprocessrs422command.md",
+      "file_path": "documentation/CoreMediaIO/cmiodeviceprocessrs422command(_,_).md",
       "hash": "d2d6ff9f5df9b945ef65f81eea0298fbbe0ad4d3dc3816688eb74f3eae7d8ca4"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicepropertyid": {
@@ -147,12 +147,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicers422command/init()": {
       "etag": "\"e98-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicers422command/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicers422command/init().md",
       "hash": "e531d102678913b4205d44cd54973d522603a4609bc86c4860e8a008ee835208"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicers422command/init(mcommand:mcommandlength:mresponse:mresponselength:mresponseused:)": {
       "etag": "\"2698-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicers422command/init-mcommandmcommandlengthmresponsemresponselengthmresponseused.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicers422command/init(mcommand,mcommandlength,mresponse,mresponselength,mresponseused).md",
       "hash": "3940d25f08ff2be740aef7118aca40484f4c1cdf60ca3e3c122717be7878c83a"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicers422command/mcommand": {
@@ -187,12 +187,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicesmptetimecallback/init()": {
       "etag": "\"ef7-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicesmptetimecallback/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicesmptetimecallback/init().md",
       "hash": "4fbb0a9dcbf9d053456e78da68e64f05a4d6afbf1f08d147d6d9af5a3c47050d"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicesmptetimecallback/init(mgetsmptetimeproc:mrefcon:)": {
       "etag": "\"1c76-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicesmptetimecallback/init-mgetsmptetimeprocmrefcon.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicesmptetimecallback/init(mgetsmptetimeproc,mrefcon).md",
       "hash": "5741a87b1b8e48ab56110eb0412053e962938c86584d252f1ec4711258f8b0ec"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicesmptetimecallback/mgetsmptetimeproc": {
@@ -207,12 +207,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicestartstream(_:_:)": {
       "etag": "\"934e-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicestartstream.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicestartstream(_,_).md",
       "hash": "12807459117f65d187449a1c3e3f93fa1d4acb6a13fc77faba12b02ee025e980"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicestopstream(_:_:)": {
       "etag": "\"9345-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicestopstream.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicestopstream(_,_).md",
       "hash": "9f9392b17c5376bb7f91fd3b180005aab40300a02f7cee440c6e78616578c7a3"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicestreamconfiguration": {
@@ -222,7 +222,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicestreamconfiguration/init()": {
       "etag": "\"f1d-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicestreamconfiguration/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicestreamconfiguration/init().md",
       "hash": "e7f1e520e650dc484f214fa75962dd7e432759780616792a42de20849670ac90"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiodevicestreamconfiguration/mnumberstreams": {
@@ -267,7 +267,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevice/addstream(_:)": {
       "etag": "\"3748-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/addstream.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/addstream(_).md",
       "hash": "66afe22763022f8140d172bbb681a6890bcc7a5c01c16275a966c67d4cb1db8a"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevice/deviceid": {
@@ -277,12 +277,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevice/init(localizedname:deviceid:legacydeviceid:source:)": {
       "etag": "\"5004-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/init-localizednamedeviceidlegacydeviceidsource.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/init(localizedname,deviceid,legacydeviceid,source).md",
       "hash": "a909a560a8d0879858e91ccfaab11cca1d8b75dcee57c0c5c53a4c75c157a8a8"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevice/init(localizedname:deviceid:source:)": {
       "etag": "\"48bb-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/init-localizednamedeviceidsource.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/init(localizedname,deviceid,source).md",
       "hash": "5b9323418c665049bd7437ae605f74ec1bbf88adec32a4639d65d8bebe93e9ee"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevice/legacydeviceid": {
@@ -297,12 +297,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevice/notifypropertieschanged(_:)": {
       "etag": "\"2a10-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/notifypropertieschanged.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/notifypropertieschanged(_).md",
       "hash": "99741b72334ed38277e16980d0e7ed40f378b8ee64404f99a4eed0b651aea8fe"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevice/removestream(_:)": {
       "etag": "\"377f-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/removestream.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/removestream(_).md",
       "hash": "355217c2dcdddb1d587caa976a2d6c3acfc5a0636f6a7508f44a7071e27bfa03"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevice/source": {
@@ -322,7 +322,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondeviceproperties/init(dictionary:)": {
       "etag": "\"2dd2-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondeviceproperties/init-dictionary.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondeviceproperties/init(dictionary).md",
       "hash": "0cec1e22aba2fa7e57b6048e335f7242f2fba39afcaab4092daf2dbc700eb8df"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondeviceproperties/linkedcoreaudiodeviceuid": {
@@ -342,7 +342,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondeviceproperties/setpropertystate(_:forproperty:)": {
       "etag": "\"4dd3-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondeviceproperties/setpropertystate-forproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondeviceproperties/setpropertystate(_,forproperty).md",
       "hash": "7f2e4090dccbae2afee6ff1d9c911fdc40b755c547828e7a1b2a48906cf3c262"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondeviceproperties/suspended-eru0": {
@@ -367,12 +367,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevicesource/deviceproperties(forproperties:)": {
       "etag": "\"4572-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevicesource/deviceproperties-forproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevicesource/deviceproperties(forproperties).md",
       "hash": "2990dbc8aa355c4f50ec75322bc1b45d13468b57e525c315c3ac580c70db0ae1"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensiondevicesource/setdeviceproperties(_:)": {
       "etag": "\"45db-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevicesource/setdeviceproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevicesource/setdeviceproperties(_).md",
       "hash": "3776aa2a64a89483dd2c2683bf3351d731d6ef167ef63a1e279a64272fa24123"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensioninfodictionarykey": {
@@ -427,7 +427,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionproperty/init(rawvalue:)": {
       "etag": "\"14d0-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionproperty/init-rawvalue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionproperty/init(rawvalue).md",
       "hash": "5caa2549b9dd63eca1d0ecca16427f33fb76f07cec62bb59c8cb4a8ab4d0a7f2"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionproperty/providermanufacturer": {
@@ -487,12 +487,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionpropertyattributes/init(coder:)": {
       "etag": "\"1542-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertyattributes/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertyattributes/init(coder).md",
       "hash": "8d95f893bc43b04afdb1505957a59e306d8efda15153bd6709f18611dd348c1f"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionpropertyattributes/init(minvalue:maxvalue:validvalues:readonly:)": {
       "etag": "\"3630-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertyattributes/init-minvaluemaxvaluevalidvaluesreadonly.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertyattributes/init(minvalue,maxvalue,validvalues,readonly).md",
       "hash": "3c11f337768f25ec943740b5dc90da61e38f43f6c92ddaaeea6ab6621771f424"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionpropertyattributes/isreadonly": {
@@ -532,17 +532,17 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionpropertystate/init(coder:)": {
       "etag": "\"14de-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init(coder).md",
       "hash": "386f181a270eeac46725598be3b730ecb3d559ba6a83a7105e114206faabb627"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionpropertystate/init(value:)": {
       "etag": "\"3b9c-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init-value.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init(value).md",
       "hash": "a68028c31a6e5434a6d6516c69e8f06a34d5a3efe1b50641964e065590975748"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionpropertystate/init(value:attributes:)": {
       "etag": "\"3431-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init-valueattributes.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init(value,attributes).md",
       "hash": "d5ff9d5f2655385c5b6d93a2fe6bb2b3c5a937721f28316af5bda99500e2be41"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionpropertystate/value": {
@@ -557,7 +557,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/adddevice(_:)": {
       "etag": "\"3790-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/adddevice.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/adddevice(_).md",
       "hash": "6ff16a927cc14f0b4d14d4e8e07cd264989e97b8e993022c0f656d12dc44e0d3"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/clientqueue": {
@@ -577,22 +577,22 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/ignoresigterm()": {
       "etag": "\"1faf-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/ignoresigterm.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/ignoresigterm().md",
       "hash": "ae6976d359192c8a7c4d608c2946fa511522b2f83ce7ea37e8929c0b4a2c8246"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/init(source:clientqueue:)": {
       "etag": "\"30a2-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/init-sourceclientqueue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/init(source,clientqueue).md",
       "hash": "a5af929d367e95fb58fc674588c26f46af94a8f65d014cd9d99ca17a60e3963b"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/notifypropertieschanged(_:)": {
       "etag": "\"308b-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/notifypropertieschanged.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/notifypropertieschanged(_).md",
       "hash": "107923307238932ea375cdfe8a0d7424e9336e361617275d11f6b3911cbd98b7"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/removedevice(_:)": {
       "etag": "\"37bd-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/removedevice.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/removedevice(_).md",
       "hash": "67694fefed704b7d0525513639b932b969045db460117dc8f7e784321884615d"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/source": {
@@ -602,12 +602,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/startservice(provider:)": {
       "etag": "\"1f50-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/startservice-provider.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/startservice(provider).md",
       "hash": "fa378f35f5edeb7eb073195e423fd9438273349b0a91d9a0f4e69eba8300d665"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovider/stopservice(provider:)": {
       "etag": "\"2299-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/stopservice-provider.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/stopservice(provider).md",
       "hash": "d2bc601099bcca5985f8c7e9c6c1d554256fd4e5fdc4efefd9575cb096ff2ad4"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionproviderproperties": {
@@ -617,7 +617,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionproviderproperties/init(dictionary:)": {
       "etag": "\"2e0f-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionproviderproperties/init-dictionary.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionproviderproperties/init(dictionary).md",
       "hash": "83be5f72257e2214feaebaceb5b1bd713b9b472fb8e26d15e0cef00c0fdac27d"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionproviderproperties/manufacturer": {
@@ -637,7 +637,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionproviderproperties/setpropertystate(_:forproperty:)": {
       "etag": "\"41c2-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionproviderproperties/setpropertystate-forproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionproviderproperties/setpropertystate(_,forproperty).md",
       "hash": "07f4958a7e8406f0a27498cdfabf30abdc66e738ca0ca152900e474a8ec815e8"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovidersource": {
@@ -652,22 +652,22 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovidersource/connect(to:)": {
       "etag": "\"32f7-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/connect-to.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/connect(to).md",
       "hash": "9ce14e03bd706350dbf2965e79380654d9baa79e14c22f7e755e8f30ac423e13"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovidersource/disconnect(from:)": {
       "etag": "\"2aaf-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/disconnect-from.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/disconnect(from).md",
       "hash": "b33d73c19fa645d7252449dfa818d8dc33d8addb21cacad026e69c60bcecf506"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovidersource/providerproperties(forproperties:)": {
       "etag": "\"4682-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/providerproperties-forproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/providerproperties(forproperties).md",
       "hash": "306dfb1f2e413dbec5e8f15067fa543914c03723375651ab7108e459756bc743"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionprovidersource/setproviderproperties(_:)": {
       "etag": "\"4584-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/setproviderproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/setproviderproperties(_).md",
       "hash": "2c25c969a5886d7821519a0e74c23c44933a2d076b9a7b72e68390dc30f94922"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionscheduledoutput": {
@@ -682,12 +682,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionscheduledoutput/init(coder:)": {
       "etag": "\"14fe-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionscheduledoutput/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionscheduledoutput/init(coder).md",
       "hash": "44a8147124187deeb8be79ad32e8028485472dcb67e1ca287e892f50d0cd683d"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionscheduledoutput/init(sequencenumber:hosttimeinnanoseconds:)": {
       "etag": "\"2b8c-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionscheduledoutput/init-sequencenumberhosttimeinnanoseconds.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionscheduledoutput/init(sequencenumber,hosttimeinnanoseconds).md",
       "hash": "127a35bf0b70c22719a9d0789de41e82739e0b46b71a5e99ea30d7e2acf3c3ac"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionscheduledoutput/sequencenumber": {
@@ -702,7 +702,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/clocktype-swift.enum": {
       "etag": "\"61bd-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swiftenum.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swift.enum.md",
       "hash": "d112c63bcb1c548eadd71b1a387626581f3ff118e3c69af79709fefdc2905d9b"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/clocktype-swift.enum/custom": {
@@ -717,7 +717,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/clocktype-swift.enum/init(rawvalue:)": {
       "etag": "\"18d8-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swift.enum/init(rawvalue).md",
       "hash": "d65255ac29204af4f3a8fcfecc8ca8a85e083732060df077fae4724d518df09c"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/clocktype-swift.enum/linkedcoreaudiodeviceuid": {
@@ -727,12 +727,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/clocktype-swift.property": {
       "etag": "\"470f-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swiftproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swift.property.md",
       "hash": "d1ab58537b5253e160eafc8e156cd997a1250eefa1627714a72504814847fe59"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/consumesamplebuffer(from:completionhandler:)": {
       "etag": "\"69ec-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/consumesamplebuffer-fromcompletionhandler.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/consumesamplebuffer(from,completionhandler).md",
       "hash": "a48e9ad46dc49c4c6136d13dbbafe6289cd88e46693b905a424a9f6d2201e7e7"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/customclockconfiguration": {
@@ -742,12 +742,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/direction-swift.enum": {
       "etag": "\"5c41-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swiftenum.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swift.enum.md",
       "hash": "f0a0fb3cdff700daf425b5f529e4fa082fb258ef718eccc8e1154bf3bc656bc1"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/direction-swift.enum/init(rawvalue:)": {
       "etag": "\"18e1-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swift.enum/init(rawvalue).md",
       "hash": "3b87c2d100105b0287c1dbac64c62e80a1556df92eada9561ac22422f32f23c1"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/direction-swift.enum/sink": {
@@ -762,7 +762,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/direction-swift.property": {
       "etag": "\"40cd-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swiftproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swift.property.md",
       "hash": "bb1a0ca50fd8fcd7e1001f5df187f38d2439599004b95b8ad26caae5ca610576"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/discontinuityflags": {
@@ -772,7 +772,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/discontinuityflags/init(rawvalue:)": {
       "etag": "\"1ae0-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/discontinuityflags/init-rawvalue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/discontinuityflags/init(rawvalue).md",
       "hash": "307450c7a99eb90e6f30adc9282af6c8e07c4c0f56889992788b3bd7563fc8c4"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/discontinuityflags/sampledropped": {
@@ -792,12 +792,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/init(localizedname:streamid:direction:clocktype:source:)": {
       "etag": "\"643b-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/init-localizednamestreamiddirectionclocktypesource.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/init(localizedname,streamid,direction,clocktype,source).md",
       "hash": "e569f4e40043999685823779c59a26c1b3befacf511afa373844a6220a7c622c"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/init(localizedname:streamid:direction:customclockconfiguration:source:)": {
       "etag": "\"651b-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/init-localizednamestreamiddirectioncustomclockconfigurationsource.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/init(localizedname,streamid,direction,customclockconfiguration,source).md",
       "hash": "2bd16f2916c5092323e4a2fe24e14fe6c3a0658ace55964573dc623da572d624"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/localizedname": {
@@ -807,17 +807,17 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/notifypropertieschanged(_:)": {
       "etag": "\"2a4a-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/notifypropertieschanged.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/notifypropertieschanged(_).md",
       "hash": "7bfa12ef98a318c9d9fbed2310c2c95b8fd8d0f98895fbe3d4695aa4cd257b6e"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/notifyscheduledoutputchanged(_:)": {
       "etag": "\"25cf-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/notifyscheduledoutputchanged.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/notifyscheduledoutputchanged(_).md",
       "hash": "0dbe7550041a2876b5ebf03de7ce1b8f99e559ccd141f8246ea408a01294e89d"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/send(_:discontinuity:hosttimeinnanoseconds:)": {
       "etag": "\"4d7b-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/send-discontinuityhosttimeinnanoseconds.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/send(_,discontinuity,hosttimeinnanoseconds).md",
       "hash": "4114cc42f1385e9ec47af545ecd7af7551606184fdc4911139f99971956f6650"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstream/source": {
@@ -852,12 +852,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamcustomclockconfiguration/init(clockname:sourceidentifier:gettimecallminimuminterval:numberofeventsforratesmoothing:numberofaveragesforratesmoothing:)": {
       "etag": "\"52f6-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamcustomclockconfiguration/init-clocknamesourceidentifiergettimecallminimumintervalnumberofeventsforratesmoothingnumberofaveragesforratesmoothing.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamcustomclockconfiguration/init(clockname,sourceidentifier,gettimecallminimuminterval,numberofeventsforratesmoothing,numberofaveragesforratesmoothing).md",
       "hash": "dacffbc2575fb2110f61d1325429dcf906f82b525a84fd611cea45e6b8b2e1cf"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamcustomclockconfiguration/init(coder:)": {
       "etag": "\"1642-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamcustomclockconfiguration/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamcustomclockconfiguration/init(coder).md",
       "hash": "799ac096331030e48dea51349bbce782300e2a8c044412c058a4d0de62da1d8f"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamcustomclockconfiguration/numberofaveragesforratesmoothing": {
@@ -887,12 +887,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamformat/init(coder:)": {
       "etag": "\"14d0-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamformat/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamformat/init(coder).md",
       "hash": "2123d7fb48371fd9a2bd0e1066af77293c918d1cc2f0224059f6dc78af0951ec"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamformat/init(formatdescription:maxframeduration:minframeduration:validframedurations:)": {
       "etag": "\"2790-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamformat/init-formatdescriptionmaxframedurationminframedurationvalidframedurations.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamformat/init(formatdescription,maxframeduration,minframeduration,validframedurations).md",
       "hash": "848109c396ea42bd39ee1352ac15482011b56f9eb7abfcd7b3654351625114fa"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamformat/maxframeduration": {
@@ -927,7 +927,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamproperties/init(dictionary:)": {
       "etag": "\"2e2a-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamproperties/init-dictionary.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamproperties/init(dictionary).md",
       "hash": "20530280fa08cf8bcc1024047199aaa3002d4a98c026d865ab68cc1759498b15"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamproperties/maxframeduration-5qqg": {
@@ -942,7 +942,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamproperties/setpropertystate(_:forproperty:)": {
       "etag": "\"3661-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamproperties/setpropertystate-forproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamproperties/setpropertystate(_,forproperty).md",
       "hash": "ff27cef130b06475d4eba1e9ba3216568fed75a16614958a1e56dbd064c72d8c"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamproperties/sinkbufferqueuesize-9b80c": {
@@ -972,7 +972,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamsource/authorizedtostartstream(for:)": {
       "etag": "\"3db9-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/authorizedtostartstream-for.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/authorizedtostartstream(for).md",
       "hash": "38ce916c496783abbf6a5122fed27c1a6ee8d43592bed58dffcea4181707bb98"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamsource/availableproperties": {
@@ -987,22 +987,22 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamsource/setstreamproperties(_:)": {
       "etag": "\"3c11-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/setstreamproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/setstreamproperties(_).md",
       "hash": "94de6f7b74544de1ec6b562be7eb5e05346bc7796b75d3a3f138a9938e0f2203"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamsource/startstream()": {
       "etag": "\"298c-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/startstream.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/startstream().md",
       "hash": "0581953ad7269d524c2a1271d0bd55223675aa8f76c38b2d50eb14bddcc0f1bc"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamsource/stopstream()": {
       "etag": "\"2982-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/stopstream.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/stopstream().md",
       "hash": "5594cb13e6a894f8ed7a36526b9d2aa46b9a877a4506ea49f8d7e8350fbc8746"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioextensionstreamsource/streamproperties(forproperties:)": {
       "etag": "\"45a3-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/streamproperties-forproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/streamproperties(forproperties).md",
       "hash": "e0490f40cbdf673eb6001d32f379dd07bda0f45c21f93c0b8d35337d11631182"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiofeaturecontrol-properties": {
@@ -1037,27 +1037,27 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectaddpropertylistener(_:_:_:_:)": {
       "etag": "\"a508-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectaddpropertylistener.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectaddpropertylistener(_,_,_,_).md",
       "hash": "831e42a3b4cacb9ce48b62b7553d40a570a0f2fe0182431a2e0145cef8f3883f"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectaddpropertylistenerblock(_:_:_:_:)": {
       "etag": "\"a68d-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectaddpropertylistenerblock.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectaddpropertylistenerblock(_,_,_,_).md",
       "hash": "14efe8c103ce98726d3db3e5156d7d09a6d276eb7de77d8e71d5a25324fa8601"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectgetpropertydata(_:_:_:_:_:_:_:)": {
       "etag": "\"b0ed-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectgetpropertydata.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectgetpropertydata(_,_,_,_,_,_,_).md",
       "hash": "3ed02cf1044c6c4f4dab06b143474a271e3c7c4e8bbb60f848ce9767ba3e1930"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectgetpropertydatasize(_:_:_:_:_:)": {
       "etag": "\"a99d-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectgetpropertydatasize.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectgetpropertydatasize(_,_,_,_,_).md",
       "hash": "888d1010659eec4d9363022b93247432b02da090eb9053328515ed05e069dd9c"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjecthasproperty(_:_:)": {
       "etag": "\"9a5c-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjecthasproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjecthasproperty(_,_).md",
       "hash": "d16daba79b1ba390c4fd53e00784a2b109c9ce609ca08ba970ba6374f155e9d6"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectid": {
@@ -1067,7 +1067,7 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectispropertysettable(_:_:_:)": {
       "etag": "\"9e03-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectispropertysettable.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectispropertysettable(_,_,_).md",
       "hash": "828bd57e6774b9c621912208aab9024a8bd41680f774300922d7e8f105eec8e3"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectpropertyaddress": {
@@ -1077,12 +1077,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectpropertyaddress/init()": {
       "etag": "\"ed1-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectpropertyaddress/init.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectpropertyaddress/init().md",
       "hash": "d51fd94a799e80816527753d68db217ef235b342218f76a8f733c4784261c972"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectpropertyaddress/init(mselector:mscope:melement:)": {
       "etag": "\"258b-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectpropertyaddress/init-mselectormscopemelement.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectpropertyaddress/init(mselector,mscope,melement).md",
       "hash": "172db50488b9d699bd3e2bc420e417aa8c940371b058c9226e2f2b59ab2c39a2"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectpropertyaddress/melement": {
@@ -1127,22 +1127,22 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectremovepropertylistener(_:_:_:_:)": {
       "etag": "\"a523-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectremovepropertylistener.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectremovepropertylistener(_,_,_,_).md",
       "hash": "bd6816ef104617229b1e8cf9b3e47133c610672b92a34d54fd1887cd2b3c65b1"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectremovepropertylistenerblock(_:_:_:_:)": {
       "etag": "\"a6a8-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectremovepropertylistenerblock.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectremovepropertylistenerblock(_,_,_,_).md",
       "hash": "85c5e4be9486533ae07b2bc49d15099c08c5c5b8fbcb27d128c0f5291fe324ae"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectsetpropertydata(_:_:_:_:_:_:)": {
       "etag": "\"a844-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectsetpropertydata.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectsetpropertydata(_,_,_,_,_,_).md",
       "hash": "bae41401e04f7d94835c39258690b575d971043fdaea386be36abf112dc4405c"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioobjectshow(_:)": {
       "etag": "\"8bab-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectshow.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectshow(_).md",
       "hash": "ad5042fa475bd717625cf6a3740af9edd40942400e2b34e24bdad621609c472f"
     },
     "https://developer.apple.com/documentation/coremediaio/cmioplugin-constants": {
@@ -1192,27 +1192,27 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamclockconverthosttimetodevicetime(_:_:)": {
       "etag": "\"93f2-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamclockconverthosttimetodevicetime.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamclockconverthosttimetodevicetime(_,_).md",
       "hash": "997b2089ac2842da6bdbbed1bdbef40e4a53f1addcce8c9b5b5ea571f60e1c7b"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamclockcreate(_:_:_:_:_:_:_:)": {
       "etag": "\"b1a2-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamclockcreate.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamclockcreate(_,_,_,_,_,_,_).md",
       "hash": "482f74a5d54c699668c0945115110aea673376de629c1d0c2a5821faa05989f0"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamclockinvalidate(_:)": {
       "etag": "\"864d-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamclockinvalidate.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamclockinvalidate(_).md",
       "hash": "a22f9ba28ac53997f8687bd18df543c873d3c0fdd32052a29d442eafbd3aa6b2"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamclockposttimingevent(_:_:_:_:)": {
       "etag": "\"9840-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamclockposttimingevent.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamclockposttimingevent(_,_,_,_).md",
       "hash": "b21f33e09c7a63ba0c8306e5210b7627f2a2ba136734c12c94b7a682643d4d83"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamcopybufferqueue(_:_:_:_:)": {
       "etag": "\"a556-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamcopybufferqueue.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamcopybufferqueue(_,_,_,_).md",
       "hash": "a34b2c9306c1e5c5387ad963074ed1155e298a843b6703c57868702cac698ae2"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamdeck": {
@@ -1222,12 +1222,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamdeck/init()": {
       "etag": "\"e00-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeck/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeck/init().md",
       "hash": "ee4f91ec81a7e16b8e8031f6f4cf8a077606af94268e191f263e61f53d526074"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamdeck/init(mstatus:mstate:mstate2:)": {
       "etag": "\"17dd-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeck/init-mstatusmstatemstate2.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeck/init(mstatus,mstate,mstate2).md",
       "hash": "6f1939a83cefa5b87d0c02f219b3a176f4663e7c75eb7413a7710d0e487865e4"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamdeck/mstate": {
@@ -1247,22 +1247,22 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamdeckcueto(_:_:_:)": {
       "etag": "\"92a1-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeckcueto.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeckcueto(_,_,_).md",
       "hash": "60648869aeb98747c54b3d34061ce5129ca0980526f550b20837eb20c9ee49c3"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamdeckjog(_:_:)": {
       "etag": "\"8b80-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeckjog.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeckjog(_,_).md",
       "hash": "a85874b41c488e04ef13bc6fbbc0801758c63336b790d978cc74b4f1eb71c4b7"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamdeckplay(_:)": {
       "etag": "\"86c1-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeckplay.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeckplay(_).md",
       "hash": "9362d5db2780113bf1aa32647e5f5a4e87408af0f2b39340cb0dfab4f1efcf92"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamdeckstop(_:)": {
       "etag": "\"86c1-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeckstop.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeckstop(_).md",
       "hash": "d4f4eb99719be17f15150714645bcd811af5ce1fcf0f6f5343ef981bf8736c0b"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamid": {
@@ -1282,12 +1282,12 @@
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamscheduledoutputnotificationprocandrefcon/init()": {
       "etag": "\"10ac-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamscheduledoutputnotificationprocandrefcon/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamscheduledoutputnotificationprocandrefcon/init().md",
       "hash": "8c3a902d70eff3b68402c845b6bd8098d93d9a3f4e5577e45c1552c65163ec79"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamscheduledoutputnotificationprocandrefcon/init(scheduledoutputnotificationproc:scheduledoutputnotificationrefcon:)": {
       "etag": "\"20a8-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamscheduledoutputnotificationprocandrefcon/init-scheduledoutputnotificationprocscheduledoutputnotificationrefcon.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamscheduledoutputnotificationprocandrefcon/init(scheduledoutputnotificationproc,scheduledoutputnotificationrefcon).md",
       "hash": "db3e3d200d918a4cec6f170096ea476526133a95d03a42937d6c7225074e5251"
     },
     "https://developer.apple.com/documentation/coremediaio/cmiostreamscheduledoutputnotificationprocandrefcon/scheduledoutputnotificationproc": {
@@ -1347,67 +1347,67 @@
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dv_ntsc": {
       "etag": "\"50c1-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dv-ntsc.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dv_ntsc.md",
       "hash": "f069d658b5877dfb2d5b1be3a2203f34acf52c7a799282485c8f3ed65cd5ff52"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dv_pal": {
       "etag": "\"50b9-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dv-pal.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dv_pal.md",
       "hash": "6ae6731129626deb38781d7186891754d31c7968e05d5bb5d0a115a5f0679497"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcpro100_720p": {
       "etag": "\"5101-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro100-720p.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro100_720p.md",
       "hash": "b20d3ca61141c19adcf0674b6e921430fc48c02e6a40e47a82b0bc9160e4cc28"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcpro100_ntsc": {
       "etag": "\"5101-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro100-ntsc.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro100_ntsc.md",
       "hash": "250caedb2edfdca6a5c2a495776090fd456ccba6e33c6c342f77f3bfc538884b"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcpro100_pal": {
       "etag": "\"50f8-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro100-pal.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro100_pal.md",
       "hash": "a5ac84a01d6b3ab34c308542f4d29fc0ae8ce3075a44d1e075d536d1c91ca6c6"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcpro50_ntsc": {
       "etag": "\"50f8-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro50-ntsc.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro50_ntsc.md",
       "hash": "21789d73f7c8075ce8e6c9cf163b1cd606960175b3c12622abad96cf146de6d0"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcpro50_pal": {
       "etag": "\"50ef-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro50-pal.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro50_pal.md",
       "hash": "0a2c2e0c8fb2fce3f4a291c71d0e8ac945798f6c365b85935570d069de5503a5"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcpro_ntsc": {
       "etag": "\"50e5-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro-ntsc.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro_ntsc.md",
       "hash": "c0277c979f7a422f09403c087470d7b569d5b408d8123bc09fbd8dba625027e7"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcpro_pal": {
       "etag": "\"50dd-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro-pal.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro_pal.md",
       "hash": "43e60465de24a950ece411b98b941c8dfb310f2c60b08528eb5c3e7d33a2441b"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcprohd_1080i50": {
       "etag": "\"5112-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcprohd-1080i50.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcprohd_1080i50.md",
       "hash": "7c82052850f19495ded477eebd6a2fb85ce010b6a788d7508ae307eb9b7a1ebd"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_dvcprohd_1080i60": {
       "etag": "\"5113-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcprohd-1080i60.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcprohd_1080i60.md",
       "hash": "78fb08b42f27188535c814910b5ea0207438d9d3c49a7a504d96a81d29dd65f0"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_mpeg2": {
       "etag": "\"50af-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-mpeg2.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_mpeg2.md",
       "hash": "606b1b357dd508686b997f0824300a1b0b138b2c83be849571094979142c7b24"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmioavcdevicetype_unknown": {
       "etag": "\"50c1-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-unknown.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_unknown.md",
       "hash": "cdb56c48327150239f88d4534a1a32bf4c266abba2a439b08128f8362cf5884a"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiobacklightcompensationcontrolclassid": {
@@ -1667,32 +1667,32 @@
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro100_50": {
       "etag": "\"625c-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro100-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro100_50.md",
       "hash": "cc3a63cbaa1c79337375ede0b36964d48aabef5ea8fc022bf8b6f0f387165de5"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro100_60": {
       "etag": "\"625c-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro100-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro100_60.md",
       "hash": "41896325aa261f01faa20934e7ccac1e633ac9923b67799e8e321f55f55cce9d"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro25_525_60": {
       "etag": "\"6277-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro25-525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro25_525_60.md",
       "hash": "e7115a4e1fb744a0165498af73ff7d3fa25a53e43b3c12b4921ce71025496abc"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro25_625_50": {
       "etag": "\"6277-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro25-625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro25_625_50.md",
       "hash": "75ae49d59bcdcd83858fc844da170017bacbdc71aadb4c5a14f96265cc5f8a11"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro50_525_60": {
       "etag": "\"6277-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro50-525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro50_525_60.md",
       "hash": "72f15f32e756396d415a6e6fc1399d90044a5501dee346febcb17e0300d6ca20"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro50_625_50": {
       "etag": "\"6277-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro50-625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro50_625_50.md",
       "hash": "f1b313cda0114a540f4cbb161a9f6ec62f5e8061e3a8b93f34a618a0dd5f9c7a"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodedvhs": {
@@ -1702,32 +1702,32 @@
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodehd1125_60": {
       "etag": "\"6241-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehd1125-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehd1125_60.md",
       "hash": "b91e3271a75745c9a709bcb341f5a15fc7f202ef8faefb055a9d241446b63436"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodehd1250_50": {
       "etag": "\"6241-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehd1250-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehd1250_50.md",
       "hash": "1f43734f0c52f18b2990143ded1e61a404a561a13ce5276c860785a2c3459a87"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodehdv1_50": {
       "etag": "\"622e-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv1-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv1_50.md",
       "hash": "3baf9887720a294890e4120b3eb18f60ebbc65e5c7217e5b6891c2a8a0cdb649"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodehdv1_60": {
       "etag": "\"622e-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv1-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv1_60.md",
       "hash": "2d9880e7d6c02a47b04b255f0f603cce312a11684774d0126119cb393542f96e"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodehdv2_50": {
       "etag": "\"622f-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv2-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv2_50.md",
       "hash": "4ee6fd01c3f3a3094879dda947bc7e7f9568fe2f336d627605a3c9858c787e49"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodehdv2_60": {
       "etag": "\"622f-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv2-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv2_60.md",
       "hash": "234d242fe2df8e55d269238c1f3e7c1a89f07e9b559fcc188fff700dbc17455b"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodehi8ntsc": {
@@ -1742,82 +1742,82 @@
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodemicromv12mbps_50": {
       "etag": "\"62eb-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv12mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv12mbps_50.md",
       "hash": "47924b051f89d198d8f397d0c578a6c66b957272ce0a6b30efe5a311c7853201"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodemicromv12mbps_60": {
       "etag": "\"62ec-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv12mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv12mbps_60.md",
       "hash": "3a43c0a9857449b13f50430301c4bb99c6f57b333154e2e2d68a6587b44f14b9"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodemicromv6mbps_50": {
       "etag": "\"62d7-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv6mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv6mbps_50.md",
       "hash": "3cb93c7e8fb0c7a2800b15bbf37e769eea6bfb0853ee49bafdc8993ed2cd0d30"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodemicromv6mbps_60": {
       "etag": "\"62d7-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv6mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv6mbps_60.md",
       "hash": "601cf0208fc4a917495f0c73bf750c9d1f131a0137640e8108b1ad0c88aff595"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodempeg12mbps_50": {
       "etag": "\"62ac-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg12mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg12mbps_50.md",
       "hash": "d8c6e9aac039505118dc80695a0655d3b757dcdd04eb77b75a0cf7ba0772c54a"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodempeg12mbps_60": {
       "etag": "\"62ad-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg12mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg12mbps_60.md",
       "hash": "2d1f19cfc2b85b8bacdc7a7ed56560ca1a9f46700b660107d2dc5ddc72810141"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodempeg25mbps_50": {
       "etag": "\"62ad-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg25mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg25mbps_50.md",
       "hash": "8d5ec44cea830b564fc3dd21ac04929d03e04c6b505b95f09e87ef801499269e"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodempeg25mbps_60": {
       "etag": "\"62ad-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg25mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg25mbps_60.md",
       "hash": "fc3071e03286a83eaf030beafc82e8da66e33cd89b288f5c3ef3b6dacdefb277"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodempeg6mbps_50": {
       "etag": "\"6298-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg6mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg6mbps_50.md",
       "hash": "102cb6bf0e3ce851bad3de499c8d5a523c32436876a0131cdc67748bdfc8f88b"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodempeg6mbps_60": {
       "etag": "\"6298-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg6mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg6mbps_60.md",
       "hash": "7a121f72006632ffc4d4187ea2caa3baa98afa0a9f2f1ac5fb9f65b6692b7bd9"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodesd525_60": {
       "etag": "\"6244-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesd525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesd525_60.md",
       "hash": "1adba7210ca13e626fa57c361f9a9a4a2c008b43cf1d6680f836db8908fbc2c9"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodesd625_50": {
       "etag": "\"6243-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesd625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesd625_50.md",
       "hash": "f3f7a2d2f8f1edd0a13e92a45b2f1816a45a8c4650b89d6076dda436c705f6e0"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodesdl525_60": {
       "etag": "\"6259-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesdl525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesdl525_60.md",
       "hash": "2589c7d86b6bd00777a37cc9a1cc662a82864929d174477a7e91e5ba2f6089be"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodesdl625_50": {
       "etag": "\"6258-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesdl625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesdl625_50.md",
       "hash": "ab389cfb160ef6f92a49cecd20bf1bbb11d0a1e547d516efa9369fba18f302fd"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodesvhs525_60": {
       "etag": "\"626e-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesvhs525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesvhs525_60.md",
       "hash": "7dd29041d78c8d8c2676a0c395f6987ffb2e0bb9c3d688be51eb3ec4262e5460"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodesvhs625_50": {
       "etag": "\"626e-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesvhs625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesvhs625_50.md",
       "hash": "9c2bb94ef513c55faa1ef66930fdda39e898f56f2f66b65964545da75ee89161"
     },
     "https://developer.apple.com/documentation/coremediaio/kcmiodeviceavcsignalmodevhsmesecam": {
@@ -2847,12 +2847,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodeviceavccommand/init().json": {
       "etag": "\"e72-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodeviceavccommand/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiodeviceavccommand/init().md",
       "hash": "f4e6154d4d2ebbba277122a9e355b1ae006c5709b122c33d10cf9c5a31047bd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodeviceavccommand/init(mcommand:mcommandlength:mresponse:mresponselength:mresponseused:).json": {
       "etag": "\"2676-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodeviceavccommand/init-mcommandmcommandlengthmresponsemresponselengthmresponseused.md",
+      "file_path": "documentation/CoreMediaIO/cmiodeviceavccommand/init(mcommand,mcommandlength,mresponse,mresponselength,mresponseused).md",
       "hash": "a0338b34f35b2f146246990df4ed9ff081e25bde044b09920e6cd7568dae80c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodeviceavccommand/mcommand.json": {
@@ -2897,12 +2897,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodeviceprocessavccommand(_:_:).json": {
       "etag": "\"97f1-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodeviceprocessavccommand.md",
+      "file_path": "documentation/CoreMediaIO/cmiodeviceprocessavccommand(_,_).md",
       "hash": "00c03c04f403b62df33db3dfd5cb651ffa5dac7d49409a607ddd8f06e67e1b36"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodeviceprocessrs422command(_:_:).json": {
       "etag": "\"982f-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodeviceprocessrs422command.md",
+      "file_path": "documentation/CoreMediaIO/cmiodeviceprocessrs422command(_,_).md",
       "hash": "d2d6ff9f5df9b945ef65f81eea0298fbbe0ad4d3dc3816688eb74f3eae7d8ca4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicepropertyid.json": {
@@ -2922,12 +2922,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicers422command/init().json": {
       "etag": "\"e98-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicers422command/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicers422command/init().md",
       "hash": "e531d102678913b4205d44cd54973d522603a4609bc86c4860e8a008ee835208"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicers422command/init(mcommand:mcommandlength:mresponse:mresponselength:mresponseused:).json": {
       "etag": "\"2698-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicers422command/init-mcommandmcommandlengthmresponsemresponselengthmresponseused.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicers422command/init(mcommand,mcommandlength,mresponse,mresponselength,mresponseused).md",
       "hash": "3940d25f08ff2be740aef7118aca40484f4c1cdf60ca3e3c122717be7878c83a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicers422command/mcommand.json": {
@@ -2962,12 +2962,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicesmptetimecallback/init().json": {
       "etag": "\"ef7-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicesmptetimecallback/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicesmptetimecallback/init().md",
       "hash": "4fbb0a9dcbf9d053456e78da68e64f05a4d6afbf1f08d147d6d9af5a3c47050d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicesmptetimecallback/init(mgetsmptetimeproc:mrefcon:).json": {
       "etag": "\"1c76-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicesmptetimecallback/init-mgetsmptetimeprocmrefcon.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicesmptetimecallback/init(mgetsmptetimeproc,mrefcon).md",
       "hash": "5741a87b1b8e48ab56110eb0412053e962938c86584d252f1ec4711258f8b0ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicesmptetimecallback/mgetsmptetimeproc.json": {
@@ -2982,12 +2982,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicestartstream(_:_:).json": {
       "etag": "\"934e-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicestartstream.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicestartstream(_,_).md",
       "hash": "12807459117f65d187449a1c3e3f93fa1d4acb6a13fc77faba12b02ee025e980"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicestopstream(_:_:).json": {
       "etag": "\"9345-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicestopstream.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicestopstream(_,_).md",
       "hash": "9f9392b17c5376bb7f91fd3b180005aab40300a02f7cee440c6e78616578c7a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicestreamconfiguration.json": {
@@ -2997,7 +2997,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicestreamconfiguration/init().json": {
       "etag": "\"f1d-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiodevicestreamconfiguration/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiodevicestreamconfiguration/init().md",
       "hash": "e7f1e520e650dc484f214fa75962dd7e432759780616792a42de20849670ac90"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiodevicestreamconfiguration/mnumberstreams.json": {
@@ -3042,7 +3042,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevice/addstream(_:).json": {
       "etag": "\"3748-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/addstream.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/addstream(_).md",
       "hash": "66afe22763022f8140d172bbb681a6890bcc7a5c01c16275a966c67d4cb1db8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevice/deviceid.json": {
@@ -3052,12 +3052,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevice/init(localizedname:deviceid:legacydeviceid:source:).json": {
       "etag": "\"5004-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/init-localizednamedeviceidlegacydeviceidsource.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/init(localizedname,deviceid,legacydeviceid,source).md",
       "hash": "a909a560a8d0879858e91ccfaab11cca1d8b75dcee57c0c5c53a4c75c157a8a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevice/init(localizedname:deviceid:source:).json": {
       "etag": "\"48bb-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/init-localizednamedeviceidsource.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/init(localizedname,deviceid,source).md",
       "hash": "5b9323418c665049bd7437ae605f74ec1bbf88adec32a4639d65d8bebe93e9ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevice/legacydeviceid.json": {
@@ -3072,12 +3072,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevice/notifypropertieschanged(_:).json": {
       "etag": "\"2a10-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/notifypropertieschanged.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/notifypropertieschanged(_).md",
       "hash": "99741b72334ed38277e16980d0e7ed40f378b8ee64404f99a4eed0b651aea8fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevice/removestream(_:).json": {
       "etag": "\"377f-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/removestream.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevice/removestream(_).md",
       "hash": "355217c2dcdddb1d587caa976a2d6c3acfc5a0636f6a7508f44a7071e27bfa03"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevice/source.json": {
@@ -3097,7 +3097,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondeviceproperties/init(dictionary:).json": {
       "etag": "\"2dd2-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondeviceproperties/init-dictionary.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondeviceproperties/init(dictionary).md",
       "hash": "0cec1e22aba2fa7e57b6048e335f7242f2fba39afcaab4092daf2dbc700eb8df"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondeviceproperties/linkedcoreaudiodeviceuid.json": {
@@ -3117,7 +3117,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondeviceproperties/setpropertystate(_:forproperty:).json": {
       "etag": "\"4dd3-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondeviceproperties/setpropertystate-forproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondeviceproperties/setpropertystate(_,forproperty).md",
       "hash": "7f2e4090dccbae2afee6ff1d9c911fdc40b755c547828e7a1b2a48906cf3c262"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondeviceproperties/suspended-eru0.json": {
@@ -3142,12 +3142,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevicesource/deviceproperties(forproperties:).json": {
       "etag": "\"4572-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevicesource/deviceproperties-forproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevicesource/deviceproperties(forproperties).md",
       "hash": "2990dbc8aa355c4f50ec75322bc1b45d13468b57e525c315c3ac580c70db0ae1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensiondevicesource/setdeviceproperties(_:).json": {
       "etag": "\"45db-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensiondevicesource/setdeviceproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensiondevicesource/setdeviceproperties(_).md",
       "hash": "3776aa2a64a89483dd2c2683bf3351d731d6ef167ef63a1e279a64272fa24123"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensioninfodictionarykey.json": {
@@ -3202,7 +3202,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionproperty/init(rawvalue:).json": {
       "etag": "\"14d0-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionproperty/init-rawvalue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionproperty/init(rawvalue).md",
       "hash": "5caa2549b9dd63eca1d0ecca16427f33fb76f07cec62bb59c8cb4a8ab4d0a7f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionproperty/providermanufacturer.json": {
@@ -3262,12 +3262,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionpropertyattributes/init(coder:).json": {
       "etag": "\"1542-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertyattributes/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertyattributes/init(coder).md",
       "hash": "8d95f893bc43b04afdb1505957a59e306d8efda15153bd6709f18611dd348c1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionpropertyattributes/init(minvalue:maxvalue:validvalues:readonly:).json": {
       "etag": "\"3630-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertyattributes/init-minvaluemaxvaluevalidvaluesreadonly.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertyattributes/init(minvalue,maxvalue,validvalues,readonly).md",
       "hash": "3c11f337768f25ec943740b5dc90da61e38f43f6c92ddaaeea6ab6621771f424"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionpropertyattributes/isreadonly.json": {
@@ -3307,17 +3307,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionpropertystate/init(coder:).json": {
       "etag": "\"14de-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init(coder).md",
       "hash": "386f181a270eeac46725598be3b730ecb3d559ba6a83a7105e114206faabb627"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionpropertystate/init(value:).json": {
       "etag": "\"3b9c-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init-value.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init(value).md",
       "hash": "a68028c31a6e5434a6d6516c69e8f06a34d5a3efe1b50641964e065590975748"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionpropertystate/init(value:attributes:).json": {
       "etag": "\"3431-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init-valueattributes.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionpropertystate/init(value,attributes).md",
       "hash": "d5ff9d5f2655385c5b6d93a2fe6bb2b3c5a937721f28316af5bda99500e2be41"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionpropertystate/value.json": {
@@ -3332,7 +3332,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/adddevice(_:).json": {
       "etag": "\"3790-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/adddevice.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/adddevice(_).md",
       "hash": "6ff16a927cc14f0b4d14d4e8e07cd264989e97b8e993022c0f656d12dc44e0d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/clientqueue.json": {
@@ -3352,22 +3352,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/ignoresigterm().json": {
       "etag": "\"1faf-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/ignoresigterm.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/ignoresigterm().md",
       "hash": "ae6976d359192c8a7c4d608c2946fa511522b2f83ce7ea37e8929c0b4a2c8246"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/init(source:clientqueue:).json": {
       "etag": "\"30a2-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/init-sourceclientqueue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/init(source,clientqueue).md",
       "hash": "a5af929d367e95fb58fc674588c26f46af94a8f65d014cd9d99ca17a60e3963b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/notifypropertieschanged(_:).json": {
       "etag": "\"308b-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/notifypropertieschanged.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/notifypropertieschanged(_).md",
       "hash": "107923307238932ea375cdfe8a0d7424e9336e361617275d11f6b3911cbd98b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/removedevice(_:).json": {
       "etag": "\"37bd-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/removedevice.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/removedevice(_).md",
       "hash": "67694fefed704b7d0525513639b932b969045db460117dc8f7e784321884615d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/source.json": {
@@ -3377,12 +3377,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/startservice(provider:).json": {
       "etag": "\"1f50-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/startservice-provider.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/startservice(provider).md",
       "hash": "fa378f35f5edeb7eb073195e423fd9438273349b0a91d9a0f4e69eba8300d665"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovider/stopservice(provider:).json": {
       "etag": "\"2299-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/stopservice-provider.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovider/stopservice(provider).md",
       "hash": "d2bc601099bcca5985f8c7e9c6c1d554256fd4e5fdc4efefd9575cb096ff2ad4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionproviderproperties.json": {
@@ -3392,7 +3392,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionproviderproperties/init(dictionary:).json": {
       "etag": "\"2e0f-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionproviderproperties/init-dictionary.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionproviderproperties/init(dictionary).md",
       "hash": "83be5f72257e2214feaebaceb5b1bd713b9b472fb8e26d15e0cef00c0fdac27d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionproviderproperties/manufacturer.json": {
@@ -3412,7 +3412,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionproviderproperties/setpropertystate(_:forproperty:).json": {
       "etag": "\"41c2-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionproviderproperties/setpropertystate-forproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionproviderproperties/setpropertystate(_,forproperty).md",
       "hash": "07f4958a7e8406f0a27498cdfabf30abdc66e738ca0ca152900e474a8ec815e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovidersource.json": {
@@ -3427,22 +3427,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovidersource/connect(to:).json": {
       "etag": "\"32f7-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/connect-to.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/connect(to).md",
       "hash": "9ce14e03bd706350dbf2965e79380654d9baa79e14c22f7e755e8f30ac423e13"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovidersource/disconnect(from:).json": {
       "etag": "\"2aaf-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/disconnect-from.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/disconnect(from).md",
       "hash": "b33d73c19fa645d7252449dfa818d8dc33d8addb21cacad026e69c60bcecf506"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovidersource/providerproperties(forproperties:).json": {
       "etag": "\"4682-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/providerproperties-forproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/providerproperties(forproperties).md",
       "hash": "306dfb1f2e413dbec5e8f15067fa543914c03723375651ab7108e459756bc743"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionprovidersource/setproviderproperties(_:).json": {
       "etag": "\"4584-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/setproviderproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionprovidersource/setproviderproperties(_).md",
       "hash": "2c25c969a5886d7821519a0e74c23c44933a2d076b9a7b72e68390dc30f94922"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionscheduledoutput.json": {
@@ -3457,12 +3457,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionscheduledoutput/init(coder:).json": {
       "etag": "\"14fe-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionscheduledoutput/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionscheduledoutput/init(coder).md",
       "hash": "44a8147124187deeb8be79ad32e8028485472dcb67e1ca287e892f50d0cd683d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionscheduledoutput/init(sequencenumber:hosttimeinnanoseconds:).json": {
       "etag": "\"2b8c-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionscheduledoutput/init-sequencenumberhosttimeinnanoseconds.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionscheduledoutput/init(sequencenumber,hosttimeinnanoseconds).md",
       "hash": "127a35bf0b70c22719a9d0789de41e82739e0b46b71a5e99ea30d7e2acf3c3ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionscheduledoutput/sequencenumber.json": {
@@ -3477,7 +3477,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/clocktype-swift.enum.json": {
       "etag": "\"61bd-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swiftenum.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swift.enum.md",
       "hash": "d112c63bcb1c548eadd71b1a387626581f3ff118e3c69af79709fefdc2905d9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/clocktype-swift.enum/custom.json": {
@@ -3492,7 +3492,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/clocktype-swift.enum/init(rawvalue:).json": {
       "etag": "\"18d8-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swift.enum/init(rawvalue).md",
       "hash": "d65255ac29204af4f3a8fcfecc8ca8a85e083732060df077fae4724d518df09c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/clocktype-swift.enum/linkedcoreaudiodeviceuid.json": {
@@ -3502,12 +3502,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/clocktype-swift.property.json": {
       "etag": "\"470f-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swiftproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/clocktype-swift.property.md",
       "hash": "d1ab58537b5253e160eafc8e156cd997a1250eefa1627714a72504814847fe59"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/consumesamplebuffer(from:completionhandler:).json": {
       "etag": "\"69ec-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/consumesamplebuffer-fromcompletionhandler.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/consumesamplebuffer(from,completionhandler).md",
       "hash": "a48e9ad46dc49c4c6136d13dbbafe6289cd88e46693b905a424a9f6d2201e7e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/customclockconfiguration.json": {
@@ -3517,12 +3517,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/direction-swift.enum.json": {
       "etag": "\"5c41-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swiftenum.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swift.enum.md",
       "hash": "f0a0fb3cdff700daf425b5f529e4fa082fb258ef718eccc8e1154bf3bc656bc1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/direction-swift.enum/init(rawvalue:).json": {
       "etag": "\"18e1-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swift.enum/init(rawvalue).md",
       "hash": "3b87c2d100105b0287c1dbac64c62e80a1556df92eada9561ac22422f32f23c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/direction-swift.enum/sink.json": {
@@ -3537,7 +3537,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/direction-swift.property.json": {
       "etag": "\"40cd-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swiftproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/direction-swift.property.md",
       "hash": "bb1a0ca50fd8fcd7e1001f5df187f38d2439599004b95b8ad26caae5ca610576"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/discontinuityflags.json": {
@@ -3547,7 +3547,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/discontinuityflags/init(rawvalue:).json": {
       "etag": "\"1ae0-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/discontinuityflags/init-rawvalue.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/discontinuityflags/init(rawvalue).md",
       "hash": "307450c7a99eb90e6f30adc9282af6c8e07c4c0f56889992788b3bd7563fc8c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/discontinuityflags/sampledropped.json": {
@@ -3567,12 +3567,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/init(localizedname:streamid:direction:clocktype:source:).json": {
       "etag": "\"643b-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/init-localizednamestreamiddirectionclocktypesource.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/init(localizedname,streamid,direction,clocktype,source).md",
       "hash": "e569f4e40043999685823779c59a26c1b3befacf511afa373844a6220a7c622c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/init(localizedname:streamid:direction:customclockconfiguration:source:).json": {
       "etag": "\"651b-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/init-localizednamestreamiddirectioncustomclockconfigurationsource.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/init(localizedname,streamid,direction,customclockconfiguration,source).md",
       "hash": "2bd16f2916c5092323e4a2fe24e14fe6c3a0658ace55964573dc623da572d624"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/localizedname.json": {
@@ -3582,17 +3582,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/notifypropertieschanged(_:).json": {
       "etag": "\"2a4a-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/notifypropertieschanged.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/notifypropertieschanged(_).md",
       "hash": "7bfa12ef98a318c9d9fbed2310c2c95b8fd8d0f98895fbe3d4695aa4cd257b6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/notifyscheduledoutputchanged(_:).json": {
       "etag": "\"25cf-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/notifyscheduledoutputchanged.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/notifyscheduledoutputchanged(_).md",
       "hash": "0dbe7550041a2876b5ebf03de7ce1b8f99e559ccd141f8246ea408a01294e89d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/send(_:discontinuity:hosttimeinnanoseconds:).json": {
       "etag": "\"4d7b-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstream/send-discontinuityhosttimeinnanoseconds.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstream/send(_,discontinuity,hosttimeinnanoseconds).md",
       "hash": "4114cc42f1385e9ec47af545ecd7af7551606184fdc4911139f99971956f6650"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstream/source.json": {
@@ -3627,12 +3627,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamcustomclockconfiguration/init(clockname:sourceidentifier:gettimecallminimuminterval:numberofeventsforratesmoothing:numberofaveragesforratesmoothing:).json": {
       "etag": "\"52f6-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamcustomclockconfiguration/init-clocknamesourceidentifiergettimecallminimumintervalnumberofeventsforratesmoothingnumberofaveragesforratesmoothing.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamcustomclockconfiguration/init(clockname,sourceidentifier,gettimecallminimuminterval,numberofeventsforratesmoothing,numberofaveragesforratesmoothing).md",
       "hash": "dacffbc2575fb2110f61d1325429dcf906f82b525a84fd611cea45e6b8b2e1cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamcustomclockconfiguration/init(coder:).json": {
       "etag": "\"1642-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamcustomclockconfiguration/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamcustomclockconfiguration/init(coder).md",
       "hash": "799ac096331030e48dea51349bbce782300e2a8c044412c058a4d0de62da1d8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamcustomclockconfiguration/numberofaveragesforratesmoothing.json": {
@@ -3662,12 +3662,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamformat/init(coder:).json": {
       "etag": "\"14d0-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamformat/init-coder.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamformat/init(coder).md",
       "hash": "2123d7fb48371fd9a2bd0e1066af77293c918d1cc2f0224059f6dc78af0951ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamformat/init(formatdescription:maxframeduration:minframeduration:validframedurations:).json": {
       "etag": "\"2790-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamformat/init-formatdescriptionmaxframedurationminframedurationvalidframedurations.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamformat/init(formatdescription,maxframeduration,minframeduration,validframedurations).md",
       "hash": "848109c396ea42bd39ee1352ac15482011b56f9eb7abfcd7b3654351625114fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamformat/maxframeduration.json": {
@@ -3702,7 +3702,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamproperties/init(dictionary:).json": {
       "etag": "\"2e2a-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamproperties/init-dictionary.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamproperties/init(dictionary).md",
       "hash": "20530280fa08cf8bcc1024047199aaa3002d4a98c026d865ab68cc1759498b15"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamproperties/maxframeduration-5qqg.json": {
@@ -3717,7 +3717,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamproperties/setpropertystate(_:forproperty:).json": {
       "etag": "\"3661-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamproperties/setpropertystate-forproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamproperties/setpropertystate(_,forproperty).md",
       "hash": "ff27cef130b06475d4eba1e9ba3216568fed75a16614958a1e56dbd064c72d8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamproperties/sinkbufferqueuesize-9b80c.json": {
@@ -3747,7 +3747,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamsource/authorizedtostartstream(for:).json": {
       "etag": "\"3db9-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/authorizedtostartstream-for.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/authorizedtostartstream(for).md",
       "hash": "38ce916c496783abbf6a5122fed27c1a6ee8d43592bed58dffcea4181707bb98"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamsource/availableproperties.json": {
@@ -3762,22 +3762,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamsource/setstreamproperties(_:).json": {
       "etag": "\"3c11-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/setstreamproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/setstreamproperties(_).md",
       "hash": "94de6f7b74544de1ec6b562be7eb5e05346bc7796b75d3a3f138a9938e0f2203"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamsource/startstream().json": {
       "etag": "\"298c-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/startstream.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/startstream().md",
       "hash": "0581953ad7269d524c2a1271d0bd55223675aa8f76c38b2d50eb14bddcc0f1bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamsource/stopstream().json": {
       "etag": "\"2982-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/stopstream.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/stopstream().md",
       "hash": "5594cb13e6a894f8ed7a36526b9d2aa46b9a877a4506ea49f8d7e8350fbc8746"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioextensionstreamsource/streamproperties(forproperties:).json": {
       "etag": "\"45a3-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/streamproperties-forproperties.md",
+      "file_path": "documentation/CoreMediaIO/cmioextensionstreamsource/streamproperties(forproperties).md",
       "hash": "e0490f40cbdf673eb6001d32f379dd07bda0f45c21f93c0b8d35337d11631182"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiofeaturecontrol-properties.json": {
@@ -3812,27 +3812,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectaddpropertylistener(_:_:_:_:).json": {
       "etag": "\"a508-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectaddpropertylistener.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectaddpropertylistener(_,_,_,_).md",
       "hash": "831e42a3b4cacb9ce48b62b7553d40a570a0f2fe0182431a2e0145cef8f3883f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectaddpropertylistenerblock(_:_:_:_:).json": {
       "etag": "\"a68d-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectaddpropertylistenerblock.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectaddpropertylistenerblock(_,_,_,_).md",
       "hash": "14efe8c103ce98726d3db3e5156d7d09a6d276eb7de77d8e71d5a25324fa8601"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectgetpropertydata(_:_:_:_:_:_:_:).json": {
       "etag": "\"b0ed-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectgetpropertydata.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectgetpropertydata(_,_,_,_,_,_,_).md",
       "hash": "3ed02cf1044c6c4f4dab06b143474a271e3c7c4e8bbb60f848ce9767ba3e1930"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectgetpropertydatasize(_:_:_:_:_:).json": {
       "etag": "\"a99d-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectgetpropertydatasize.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectgetpropertydatasize(_,_,_,_,_).md",
       "hash": "888d1010659eec4d9363022b93247432b02da090eb9053328515ed05e069dd9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjecthasproperty(_:_:).json": {
       "etag": "\"9a5c-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjecthasproperty.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjecthasproperty(_,_).md",
       "hash": "d16daba79b1ba390c4fd53e00784a2b109c9ce609ca08ba970ba6374f155e9d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectid.json": {
@@ -3842,7 +3842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectispropertysettable(_:_:_:).json": {
       "etag": "\"9e03-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectispropertysettable.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectispropertysettable(_,_,_).md",
       "hash": "828bd57e6774b9c621912208aab9024a8bd41680f774300922d7e8f105eec8e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectpropertyaddress.json": {
@@ -3852,12 +3852,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectpropertyaddress/init().json": {
       "etag": "\"ed1-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectpropertyaddress/init.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectpropertyaddress/init().md",
       "hash": "d51fd94a799e80816527753d68db217ef235b342218f76a8f733c4784261c972"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectpropertyaddress/init(mselector:mscope:melement:).json": {
       "etag": "\"258b-65d55e16e759b-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectpropertyaddress/init-mselectormscopemelement.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectpropertyaddress/init(mselector,mscope,melement).md",
       "hash": "172db50488b9d699bd3e2bc420e417aa8c940371b058c9226e2f2b59ab2c39a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectpropertyaddress/melement.json": {
@@ -3902,22 +3902,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectremovepropertylistener(_:_:_:_:).json": {
       "etag": "\"a523-65d55e174dda8-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectremovepropertylistener.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectremovepropertylistener(_,_,_,_).md",
       "hash": "bd6816ef104617229b1e8cf9b3e47133c610672b92a34d54fd1887cd2b3c65b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectremovepropertylistenerblock(_:_:_:_:).json": {
       "etag": "\"a6a8-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectremovepropertylistenerblock.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectremovepropertylistenerblock(_,_,_,_).md",
       "hash": "85c5e4be9486533ae07b2bc49d15099c08c5c5b8fbcb27d128c0f5291fe324ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectsetpropertydata(_:_:_:_:_:_:).json": {
       "etag": "\"a844-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectsetpropertydata.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectsetpropertydata(_,_,_,_,_,_).md",
       "hash": "bae41401e04f7d94835c39258690b575d971043fdaea386be36abf112dc4405c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioobjectshow(_:).json": {
       "etag": "\"8bab-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmioobjectshow.md",
+      "file_path": "documentation/CoreMediaIO/cmioobjectshow(_).md",
       "hash": "ad5042fa475bd717625cf6a3740af9edd40942400e2b34e24bdad621609c472f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmioplugin-constants.json": {
@@ -3967,27 +3967,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamclockconverthosttimetodevicetime(_:_:).json": {
       "etag": "\"93f2-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamclockconverthosttimetodevicetime.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamclockconverthosttimetodevicetime(_,_).md",
       "hash": "997b2089ac2842da6bdbbed1bdbef40e4a53f1addcce8c9b5b5ea571f60e1c7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamclockcreate(_:_:_:_:_:_:_:).json": {
       "etag": "\"b1a2-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamclockcreate.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamclockcreate(_,_,_,_,_,_,_).md",
       "hash": "482f74a5d54c699668c0945115110aea673376de629c1d0c2a5821faa05989f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamclockinvalidate(_:).json": {
       "etag": "\"864d-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamclockinvalidate.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamclockinvalidate(_).md",
       "hash": "a22f9ba28ac53997f8687bd18df543c873d3c0fdd32052a29d442eafbd3aa6b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamclockposttimingevent(_:_:_:_:).json": {
       "etag": "\"9840-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamclockposttimingevent.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamclockposttimingevent(_,_,_,_).md",
       "hash": "b21f33e09c7a63ba0c8306e5210b7627f2a2ba136734c12c94b7a682643d4d83"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamcopybufferqueue(_:_:_:_:).json": {
       "etag": "\"a556-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamcopybufferqueue.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamcopybufferqueue(_,_,_,_).md",
       "hash": "a34b2c9306c1e5c5387ad963074ed1155e298a843b6703c57868702cac698ae2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamdeck.json": {
@@ -3997,12 +3997,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamdeck/init().json": {
       "etag": "\"e00-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeck/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeck/init().md",
       "hash": "ee4f91ec81a7e16b8e8031f6f4cf8a077606af94268e191f263e61f53d526074"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamdeck/init(mstatus:mstate:mstate2:).json": {
       "etag": "\"17dd-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeck/init-mstatusmstatemstate2.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeck/init(mstatus,mstate,mstate2).md",
       "hash": "6f1939a83cefa5b87d0c02f219b3a176f4663e7c75eb7413a7710d0e487865e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamdeck/mstate.json": {
@@ -4022,22 +4022,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamdeckcueto(_:_:_:).json": {
       "etag": "\"92a1-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeckcueto.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeckcueto(_,_,_).md",
       "hash": "60648869aeb98747c54b3d34061ce5129ca0980526f550b20837eb20c9ee49c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamdeckjog(_:_:).json": {
       "etag": "\"8b80-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeckjog.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeckjog(_,_).md",
       "hash": "a85874b41c488e04ef13bc6fbbc0801758c63336b790d978cc74b4f1eb71c4b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamdeckplay(_:).json": {
       "etag": "\"86c1-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeckplay.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeckplay(_).md",
       "hash": "9362d5db2780113bf1aa32647e5f5a4e87408af0f2b39340cb0dfab4f1efcf92"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamdeckstop(_:).json": {
       "etag": "\"86c1-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamdeckstop.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamdeckstop(_).md",
       "hash": "d4f4eb99719be17f15150714645bcd811af5ce1fcf0f6f5343ef981bf8736c0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamid.json": {
@@ -4057,12 +4057,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamscheduledoutputnotificationprocandrefcon/init().json": {
       "etag": "\"10ac-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamscheduledoutputnotificationprocandrefcon/init.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamscheduledoutputnotificationprocandrefcon/init().md",
       "hash": "8c3a902d70eff3b68402c845b6bd8098d93d9a3f4e5577e45c1552c65163ec79"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamscheduledoutputnotificationprocandrefcon/init(scheduledoutputnotificationproc:scheduledoutputnotificationrefcon:).json": {
       "etag": "\"20a8-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/cmiostreamscheduledoutputnotificationprocandrefcon/init-scheduledoutputnotificationprocscheduledoutputnotificationrefcon.md",
+      "file_path": "documentation/CoreMediaIO/cmiostreamscheduledoutputnotificationprocandrefcon/init(scheduledoutputnotificationproc,scheduledoutputnotificationrefcon).md",
       "hash": "db3e3d200d918a4cec6f170096ea476526133a95d03a42937d6c7225074e5251"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/cmiostreamscheduledoutputnotificationprocandrefcon/scheduledoutputnotificationproc.json": {
@@ -4122,67 +4122,67 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dv_ntsc.json": {
       "etag": "\"50c1-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dv-ntsc.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dv_ntsc.md",
       "hash": "f069d658b5877dfb2d5b1be3a2203f34acf52c7a799282485c8f3ed65cd5ff52"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dv_pal.json": {
       "etag": "\"50b9-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dv-pal.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dv_pal.md",
       "hash": "6ae6731129626deb38781d7186891754d31c7968e05d5bb5d0a115a5f0679497"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcpro100_720p.json": {
       "etag": "\"5101-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro100-720p.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro100_720p.md",
       "hash": "b20d3ca61141c19adcf0674b6e921430fc48c02e6a40e47a82b0bc9160e4cc28"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcpro100_ntsc.json": {
       "etag": "\"5101-65d55e163fb22-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro100-ntsc.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro100_ntsc.md",
       "hash": "250caedb2edfdca6a5c2a495776090fd456ccba6e33c6c342f77f3bfc538884b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcpro100_pal.json": {
       "etag": "\"50f8-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro100-pal.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro100_pal.md",
       "hash": "a5ac84a01d6b3ab34c308542f4d29fc0ae8ce3075a44d1e075d536d1c91ca6c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcpro50_ntsc.json": {
       "etag": "\"50f8-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro50-ntsc.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro50_ntsc.md",
       "hash": "21789d73f7c8075ce8e6c9cf163b1cd606960175b3c12622abad96cf146de6d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcpro50_pal.json": {
       "etag": "\"50ef-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro50-pal.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro50_pal.md",
       "hash": "0a2c2e0c8fb2fce3f4a291c71d0e8ac945798f6c365b85935570d069de5503a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcpro_ntsc.json": {
       "etag": "\"50e5-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro-ntsc.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro_ntsc.md",
       "hash": "c0277c979f7a422f09403c087470d7b569d5b408d8123bc09fbd8dba625027e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcpro_pal.json": {
       "etag": "\"50dd-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcpro-pal.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcpro_pal.md",
       "hash": "43e60465de24a950ece411b98b941c8dfb310f2c60b08528eb5c3e7d33a2441b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcprohd_1080i50.json": {
       "etag": "\"5112-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcprohd-1080i50.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcprohd_1080i50.md",
       "hash": "7c82052850f19495ded477eebd6a2fb85ce010b6a788d7508ae307eb9b7a1ebd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_dvcprohd_1080i60.json": {
       "etag": "\"5113-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-dvcprohd-1080i60.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_dvcprohd_1080i60.md",
       "hash": "78fb08b42f27188535c814910b5ea0207438d9d3c49a7a504d96a81d29dd65f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_mpeg2.json": {
       "etag": "\"50af-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-mpeg2.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_mpeg2.md",
       "hash": "606b1b357dd508686b997f0824300a1b0b138b2c83be849571094979142c7b24"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmioavcdevicetype_unknown.json": {
       "etag": "\"50c1-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype-unknown.md",
+      "file_path": "documentation/CoreMediaIO/kcmioavcdevicetype_unknown.md",
       "hash": "cdb56c48327150239f88d4534a1a32bf4c266abba2a439b08128f8362cf5884a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiobacklightcompensationcontrolclassid.json": {
@@ -4442,32 +4442,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro100_50.json": {
       "etag": "\"625c-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro100-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro100_50.md",
       "hash": "cc3a63cbaa1c79337375ede0b36964d48aabef5ea8fc022bf8b6f0f387165de5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro100_60.json": {
       "etag": "\"625c-65d55e1719af3-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro100-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro100_60.md",
       "hash": "41896325aa261f01faa20934e7ccac1e633ac9923b67799e8e321f55f55cce9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro25_525_60.json": {
       "etag": "\"6277-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro25-525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro25_525_60.md",
       "hash": "e7115a4e1fb744a0165498af73ff7d3fa25a53e43b3c12b4921ce71025496abc"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro25_625_50.json": {
       "etag": "\"6277-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro25-625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro25_625_50.md",
       "hash": "75ae49d59bcdcd83858fc844da170017bacbdc71aadb4c5a14f96265cc5f8a11"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro50_525_60.json": {
       "etag": "\"6277-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro50-525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro50_525_60.md",
       "hash": "72f15f32e756396d415a6e6fc1399d90044a5501dee346febcb17e0300d6ca20"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodedvcpro50_625_50.json": {
       "etag": "\"6277-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro50-625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodedvcpro50_625_50.md",
       "hash": "f1b313cda0114a540f4cbb161a9f6ec62f5e8061e3a8b93f34a618a0dd5f9c7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodedvhs.json": {
@@ -4477,32 +4477,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodehd1125_60.json": {
       "etag": "\"6241-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehd1125-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehd1125_60.md",
       "hash": "b91e3271a75745c9a709bcb341f5a15fc7f202ef8faefb055a9d241446b63436"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodehd1250_50.json": {
       "etag": "\"6241-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehd1250-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehd1250_50.md",
       "hash": "1f43734f0c52f18b2990143ded1e61a404a561a13ce5276c860785a2c3459a87"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodehdv1_50.json": {
       "etag": "\"622e-65d55e15df850-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv1-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv1_50.md",
       "hash": "3baf9887720a294890e4120b3eb18f60ebbc65e5c7217e5b6891c2a8a0cdb649"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodehdv1_60.json": {
       "etag": "\"622e-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv1-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv1_60.md",
       "hash": "2d9880e7d6c02a47b04b255f0f603cce312a11684774d0126119cb393542f96e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodehdv2_50.json": {
       "etag": "\"622f-65d55e166db0c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv2-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv2_50.md",
       "hash": "4ee6fd01c3f3a3094879dda947bc7e7f9568fe2f336d627605a3c9858c787e49"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodehdv2_60.json": {
       "etag": "\"622f-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv2-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodehdv2_60.md",
       "hash": "234d242fe2df8e55d269238c1f3e7c1a89f07e9b559fcc188fff700dbc17455b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodehi8ntsc.json": {
@@ -4517,82 +4517,82 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodemicromv12mbps_50.json": {
       "etag": "\"62eb-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv12mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv12mbps_50.md",
       "hash": "47924b051f89d198d8f397d0c578a6c66b957272ce0a6b30efe5a311c7853201"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodemicromv12mbps_60.json": {
       "etag": "\"62ec-65d55e16ae80c-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv12mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv12mbps_60.md",
       "hash": "3a43c0a9857449b13f50430301c4bb99c6f57b333154e2e2d68a6587b44f14b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodemicromv6mbps_50.json": {
       "etag": "\"62d7-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv6mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv6mbps_50.md",
       "hash": "3cb93c7e8fb0c7a2800b15bbf37e769eea6bfb0853ee49bafdc8993ed2cd0d30"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodemicromv6mbps_60.json": {
       "etag": "\"62d7-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv6mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodemicromv6mbps_60.md",
       "hash": "601cf0208fc4a917495f0c73bf750c9d1f131a0137640e8108b1ad0c88aff595"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodempeg12mbps_50.json": {
       "etag": "\"62ac-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg12mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg12mbps_50.md",
       "hash": "d8c6e9aac039505118dc80695a0655d3b757dcdd04eb77b75a0cf7ba0772c54a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodempeg12mbps_60.json": {
       "etag": "\"62ad-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg12mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg12mbps_60.md",
       "hash": "2d1f19cfc2b85b8bacdc7a7ed56560ca1a9f46700b660107d2dc5ddc72810141"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodempeg25mbps_50.json": {
       "etag": "\"62ad-65d55e1656f13-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg25mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg25mbps_50.md",
       "hash": "8d5ec44cea830b564fc3dd21ac04929d03e04c6b505b95f09e87ef801499269e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodempeg25mbps_60.json": {
       "etag": "\"62ad-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg25mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg25mbps_60.md",
       "hash": "fc3071e03286a83eaf030beafc82e8da66e33cd89b288f5c3ef3b6dacdefb277"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodempeg6mbps_50.json": {
       "etag": "\"6298-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg6mbps-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg6mbps_50.md",
       "hash": "102cb6bf0e3ce851bad3de499c8d5a523c32436876a0131cdc67748bdfc8f88b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodempeg6mbps_60.json": {
       "etag": "\"6298-65d55e16fe6c2-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg6mbps-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodempeg6mbps_60.md",
       "hash": "7a121f72006632ffc4d4187ea2caa3baa98afa0a9f2f1ac5fb9f65b6692b7bd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodesd525_60.json": {
       "etag": "\"6244-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesd525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesd525_60.md",
       "hash": "1adba7210ca13e626fa57c361f9a9a4a2c008b43cf1d6680f836db8908fbc2c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodesd625_50.json": {
       "etag": "\"6243-65d55e161acbc-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesd625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesd625_50.md",
       "hash": "f3f7a2d2f8f1edd0a13e92a45b2f1816a45a8c4650b89d6076dda436c705f6e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodesdl525_60.json": {
       "etag": "\"6259-65d55e17360a3-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesdl525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesdl525_60.md",
       "hash": "2589c7d86b6bd00777a37cc9a1cc662a82864929d174477a7e91e5ba2f6089be"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodesdl625_50.json": {
       "etag": "\"6258-65d55e168f185-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesdl625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesdl625_50.md",
       "hash": "ab389cfb160ef6f92a49cecd20bf1bbb11d0a1e547d516efa9369fba18f302fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodesvhs525_60.json": {
       "etag": "\"626e-65d55e15fc4a4-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesvhs525-60.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesvhs525_60.md",
       "hash": "7dd29041d78c8d8c2676a0c395f6987ffb2e0bb9c3d688be51eb3ec4262e5460"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodesvhs625_50.json": {
       "etag": "\"626e-65d55e16ce62d-df\"",
-      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesvhs625-50.md",
+      "file_path": "documentation/CoreMediaIO/kcmiodeviceavcsignalmodesvhs625_50.md",
       "hash": "9c2bb94ef513c55faa1ef66930fdda39e898f56f2f66b65964545da75ee89161"
     },
     "https://developer.apple.com/tutorials/data/documentation/coremediaio/kcmiodeviceavcsignalmodevhsmesecam.json": {

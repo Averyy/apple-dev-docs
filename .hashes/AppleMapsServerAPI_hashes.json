@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/applemapsserverapi/-v1-place-:id": {
       "etag": "\"3c6a-65d55a4860dac-df\"",
-      "file_path": "documentation/AppleMapsServerAPI/v1-place-id.md",
+      "file_path": "documentation/AppleMapsServerAPI/v1-place-_id.md",
       "hash": "8efbbaabb99ba478e4ee9050f075160630ede539238f4409e4852c0da18f11e2"
     },
     "https://developer.apple.com/documentation/applemapsserverapi/-v1-place-alternateids": {
@@ -212,7 +212,7 @@
     },
     "https://developer.apple.com/documentation/applemapsserverapi/searchresponse/paginationinfo-data.dictionary": {
       "etag": "\"168a-65d55a4860dac-df\"",
-      "file_path": "documentation/AppleMapsServerAPI/searchresponse/paginationinfo-datadictionary.md",
+      "file_path": "documentation/AppleMapsServerAPI/searchresponse/paginationinfo-data.dictionary.md",
       "hash": "4a4f39f18dfaa6af1ce93f1fff3bd43d1c43233ca3b9afb5b7f29d902b60715f"
     },
     "https://developer.apple.com/documentation/applemapsserverapi/searchresponse/place": {
@@ -262,7 +262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-place-:id.json": {
       "etag": "\"3c6a-65d55a4860dac-df\"",
-      "file_path": "documentation/AppleMapsServerAPI/v1-place-id.md",
+      "file_path": "documentation/AppleMapsServerAPI/v1-place-_id.md",
       "hash": "8efbbaabb99ba478e4ee9050f075160630ede539238f4409e4852c0da18f11e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-place-alternateids.json": {
@@ -452,7 +452,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchresponse/paginationinfo-data.dictionary.json": {
       "etag": "\"168a-65d55a4860dac-df\"",
-      "file_path": "documentation/AppleMapsServerAPI/searchresponse/paginationinfo-datadictionary.md",
+      "file_path": "documentation/AppleMapsServerAPI/searchresponse/paginationinfo-data.dictionary.md",
       "hash": "4a4f39f18dfaa6af1ce93f1fff3bd43d1c43233ca3b9afb5b7f29d902b60715f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchresponse/place.json": {

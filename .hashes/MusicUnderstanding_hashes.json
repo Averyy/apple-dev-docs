@@ -287,27 +287,27 @@
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/analyze()": {
       "etag": "\"2340-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze().md",
       "hash": "05fd0fe4f886a4674b94d1bbea3323a7e0d77615b13e4fae827e163794c9755b"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/analyze(for:)": {
       "etag": "\"2c46-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze-for.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze(for).md",
       "hash": "f6a9d9095277bafe4e2c35782011d1c099d43afafbd2a1cb0745a9c4ad9f025b"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/cancel()": {
       "etag": "\"10e1-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/cancel.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/cancel().md",
       "hash": "401916255ead6e0de3317dbe7225267e088e1a938afce1b1a5d30ad66905c6df"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/init(asset:)": {
       "etag": "\"23ab-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init-asset.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init(asset).md",
       "hash": "f662c0e32672afafbad7a0f078ccb3b77af57a91803c0bf32ff29f1177846977"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/init(audioprovider:)": {
       "etag": "\"29f2-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init-audioprovider.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init(audioprovider).md",
       "hash": "ffcf4e8bb129b0901d4c37c68e6e542aeb9f6c38012f0008f1e13977f2fa555b"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/loudnessresults": {
@@ -322,12 +322,12 @@
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/encode(to:)": {
       "etag": "\"18a9-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/encode-to.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/encode(to).md",
       "hash": "7267e3165bd1dc69e9940796eee609f0e9f94f01b8111fe8508792656f79b1ca"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/init(from:)": {
       "etag": "\"1805-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/init-from.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/init(from).md",
       "hash": "7e593fb81144bab2475f11562fbe35922685e928abfd8210c43636eb524812fe"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/range": {
@@ -382,12 +382,12 @@
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/timedvalue/encode(to:)": {
       "etag": "\"1894-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/encode-to.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/encode(to).md",
       "hash": "01fd16348798cf7db2ec597c90d8a47f36ab2f7ad0536a68f8e0af578a850be3"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/timedvalue/init(from:)": {
       "etag": "\"17f0-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/init-from.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/init(from).md",
       "hash": "811ea1294fa06b5f963ed493d735d294435e6060448b446a00e01f8ead191f2a"
     },
     "https://developer.apple.com/documentation/musicunderstanding/musicunderstandingsession/timedvalue/time": {
@@ -737,27 +737,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/analyze().json": {
       "etag": "\"2340-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze().md",
       "hash": "05fd0fe4f886a4674b94d1bbea3323a7e0d77615b13e4fae827e163794c9755b"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/analyze(for:).json": {
       "etag": "\"2c46-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze-for.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze(for).md",
       "hash": "f6a9d9095277bafe4e2c35782011d1c099d43afafbd2a1cb0745a9c4ad9f025b"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/cancel().json": {
       "etag": "\"10e1-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/cancel.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/cancel().md",
       "hash": "401916255ead6e0de3317dbe7225267e088e1a938afce1b1a5d30ad66905c6df"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/init(asset:).json": {
       "etag": "\"23ab-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init-asset.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init(asset).md",
       "hash": "f662c0e32672afafbad7a0f078ccb3b77af57a91803c0bf32ff29f1177846977"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/init(audioprovider:).json": {
       "etag": "\"29f2-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init-audioprovider.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init(audioprovider).md",
       "hash": "ffcf4e8bb129b0901d4c37c68e6e542aeb9f6c38012f0008f1e13977f2fa555b"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/loudnessresults.json": {
@@ -772,12 +772,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/encode(to:).json": {
       "etag": "\"18a9-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/encode-to.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/encode(to).md",
       "hash": "7267e3165bd1dc69e9940796eee609f0e9f94f01b8111fe8508792656f79b1ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/init(from:).json": {
       "etag": "\"1805-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/init-from.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/init(from).md",
       "hash": "7e593fb81144bab2475f11562fbe35922685e928abfd8210c43636eb524812fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/range.json": {
@@ -832,12 +832,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/timedvalue/encode(to:).json": {
       "etag": "\"1894-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/encode-to.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/encode(to).md",
       "hash": "01fd16348798cf7db2ec597c90d8a47f36ab2f7ad0536a68f8e0af578a850be3"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/timedvalue/init(from:).json": {
       "etag": "\"17f0-65d55d3865bbe-df\"",
-      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/init-from.md",
+      "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/init(from).md",
       "hash": "811ea1294fa06b5f963ed493d735d294435e6060448b446a00e01f8ead191f2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/timedvalue/time.json": {

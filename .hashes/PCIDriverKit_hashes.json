@@ -287,27 +287,27 @@
     },
     "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_16_gts": {
       "etag": "\"b95-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-16-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_16_gts.md",
       "hash": "0e08cc7bd195c806182d00b3f3afeec5905a93fc00d2787c611c33c3b90ab484"
     },
     "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_2_5_gts": {
       "etag": "\"ba1-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-2-5-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_2_5_gts.md",
       "hash": "823a5d5d46bdbd1d2bbbdde731b2344291d534bde0faaa15ebc7fdc21af459b2"
     },
     "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_32_gts": {
       "etag": "\"b95-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-32-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_32_gts.md",
       "hash": "144cc88e2092f82d65d0395f2c81b328ce79fae05a665c0c5ce9acfff67036d9"
     },
     "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_5_gts": {
       "etag": "\"b89-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-5-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_5_gts.md",
       "hash": "dba331af63b6153381d062b229591f558ee1013babd67a68807133191a9fc2fb"
     },
     "https://developer.apple.com/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_8_gts": {
       "etag": "\"b89-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-8-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_8_gts.md",
       "hash": "38bf2d91f6c4972fcacf0e9eda9aeac5092f59bb939105a39fcdc8d7c18f1632"
     },
     "https://developer.apple.com/documentation/pcidriverkit/iopcimemoryrange": {
@@ -1042,7 +1042,7 @@
     },
     "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidvc_mfvcpresent": {
       "etag": "\"a79-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/kiopciexpresscapabilityidvc-mfvcpresent.md",
+      "file_path": "documentation/PCIDriverKit/kiopciexpresscapabilityidvc_mfvcpresent.md",
       "hash": "e32390035aa2c941a6cfe20d6652a738977adad63f09b025494ca77cb23c0535"
     },
     "https://developer.apple.com/documentation/pcidriverkit/kiopciexpresscapabilityidvfresizablebar": {
@@ -1742,27 +1742,27 @@
     },
     "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_16_gts": {
       "etag": "\"bb9-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-16-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_16_gts.md",
       "hash": "a1ff1d04ad05672133800c9c4e6c1cc78b43be5e09928f9945120e33bbf6b141"
     },
     "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_2_5_gts": {
       "etag": "\"bc5-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-2-5-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_2_5_gts.md",
       "hash": "c76c9ce01d40fc36daa345e3929c94bd7e24d432f7bee9be93ded07659cc11f4"
     },
     "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_32_gts": {
       "etag": "\"bb9-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-32-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_32_gts.md",
       "hash": "d1be58c264db834a98d63b6cd3e6f875746417801f4dc949b439d3b1d2d7ccca"
     },
     "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_5_gts": {
       "etag": "\"bad-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-5-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_5_gts.md",
       "hash": "9797073bcf0f8dba54e3dd986c61922d9b83eef5464e890974e4b2abdadc15ec"
     },
     "https://developer.apple.com/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_8_gts": {
       "etag": "\"bad-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-8-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_8_gts.md",
       "hash": "886b1059af1bde3e86f027275889ee9018d58d4d07b222a8d10065d96a41ff52"
     },
     "https://developer.apple.com/documentation/pcidriverkit/uncorrectable-error-bits-enum": {
@@ -2057,27 +2057,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_16_gts.json": {
       "etag": "\"b95-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-16-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_16_gts.md",
       "hash": "0e08cc7bd195c806182d00b3f3afeec5905a93fc00d2787c611c33c3b90ab484"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_2_5_gts.json": {
       "etag": "\"ba1-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-2-5-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_2_5_gts.md",
       "hash": "823a5d5d46bdbd1d2bbbdde731b2344291d534bde0faaa15ebc7fdc21af459b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_32_gts.json": {
       "etag": "\"b95-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-32-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_32_gts.md",
       "hash": "144cc88e2092f82d65d0395f2c81b328ce79fae05a665c0c5ce9acfff67036d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_5_gts.json": {
       "etag": "\"b89-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-5-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_5_gts.md",
       "hash": "dba331af63b6153381d062b229591f558ee1013babd67a68807133191a9fc2fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcilinkspeed/kpcilinkspeed_8_gts.json": {
       "etag": "\"b89-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed-8-gts.md",
+      "file_path": "documentation/PCIDriverKit/iopcilinkspeed/kpcilinkspeed_8_gts.md",
       "hash": "38bf2d91f6c4972fcacf0e9eda9aeac5092f59bb939105a39fcdc8d7c18f1632"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/iopcimemoryrange.json": {
@@ -2812,7 +2812,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidvc_mfvcpresent.json": {
       "etag": "\"a79-65d560812580c-df\"",
-      "file_path": "documentation/PCIDriverKit/kiopciexpresscapabilityidvc-mfvcpresent.md",
+      "file_path": "documentation/PCIDriverKit/kiopciexpresscapabilityidvc_mfvcpresent.md",
       "hash": "e32390035aa2c941a6cfe20d6652a738977adad63f09b025494ca77cb23c0535"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/kiopciexpresscapabilityidvfresizablebar.json": {
@@ -3512,27 +3512,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_16_gts.json": {
       "etag": "\"bb9-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-16-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_16_gts.md",
       "hash": "a1ff1d04ad05672133800c9c4e6c1cc78b43be5e09928f9945120e33bbf6b141"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_2_5_gts.json": {
       "etag": "\"bc5-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-2-5-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_2_5_gts.md",
       "hash": "c76c9ce01d40fc36daa345e3929c94bd7e24d432f7bee9be93ded07659cc11f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_32_gts.json": {
       "etag": "\"bb9-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-32-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_32_gts.md",
       "hash": "d1be58c264db834a98d63b6cd3e6f875746417801f4dc949b439d3b1d2d7ccca"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_5_gts.json": {
       "etag": "\"bad-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-5-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_5_gts.md",
       "hash": "9797073bcf0f8dba54e3dd986c61922d9b83eef5464e890974e4b2abdadc15ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/tiopcilinkspeed/kiopcilinkspeed_8_gts.json": {
       "etag": "\"bad-65d560810c0f6-df\"",
-      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed-8-gts.md",
+      "file_path": "documentation/PCIDriverKit/tiopcilinkspeed/kiopcilinkspeed_8_gts.md",
       "hash": "886b1059af1bde3e86f027275889ee9018d58d4d07b222a8d10065d96a41ff52"
     },
     "https://developer.apple.com/tutorials/data/documentation/pcidriverkit/uncorrectable-error-bits-enum.json": {

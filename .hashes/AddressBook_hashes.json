@@ -42,12 +42,12 @@
     },
     "https://developer.apple.com/documentation/addressbook/abaddpropertiesandtypes(_:_:_:)": {
       "etag": "\"5f0a-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abaddpropertiesandtypes.md",
+      "file_path": "documentation/AddressBook/abaddpropertiesandtypes(_,_,_).md",
       "hash": "6b70b9cdeb0af384a857021f9c41675a4850b3d477f94961be2744519b0dc131"
     },
     "https://developer.apple.com/documentation/addressbook/abaddrecord(_:_:)": {
       "etag": "\"7287-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abaddrecord.md",
+      "file_path": "documentation/AddressBook/abaddrecord(_,_).md",
       "hash": "3bacfceb43c97af10c406079e8dd9c0e5fc821ba68e939c563625dcd21b999b6"
     },
     "https://developer.apple.com/documentation/addressbook/abaddrecordserror": {
@@ -57,162 +57,162 @@
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class": {
       "etag": "\"bbe1-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swiftclass.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class.md",
       "hash": "72d19d8627d5d64e9655594c70f8354a97888e92b16b9348f908eec487c8209b"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/add(_:)": {
       "etag": "\"495c-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/add.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/add(_).md",
       "hash": "dbbd22f93a8735535bea071e414c6d24c916a29291365814e63f649607a21907"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/add(_:error:)": {
       "etag": "\"4fad-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/add-error.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/add(_,error).md",
       "hash": "58f056c5d0a0e7225538823fa9f9b60a83683e3a1e1d76a43e5b221b959d4237"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/defaultcountrycode()": {
       "etag": "\"2ddc-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/defaultcountrycode.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/defaultcountrycode().md",
       "hash": "4f5e91ee5d4c4a4a72725c59ce4718689af7ca1be7746a1afa219e9b3b15004e"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/defaultnameordering()": {
       "etag": "\"2621-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/defaultnameordering.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/defaultnameordering().md",
       "hash": "c7ea239056a6d8bddf5f28072db90b88c6d72ab963585f128fc340b4ca2f4683"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/formattedaddress(from:)": {
       "etag": "\"3249-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/formattedaddress-from.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/formattedaddress(from).md",
       "hash": "e720952c786b0f2a7ce14dac2d74b4b3083e702fa2b235e5a58011f2fd5d87a1"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/groups()": {
       "etag": "\"2481-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/groups.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/groups().md",
       "hash": "0c5b12df8ccd671c7bcc2f7f59ccfa187dd486d38b5d84ba2857217aa3c35cba"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/hasunsavedchanges()": {
       "etag": "\"2b9a-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/hasunsavedchanges.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/hasunsavedchanges().md",
       "hash": "43ac609e40dc461d51e9ff37b999cb1d6c8ca5cee07e3ff363f816f82ce819e1"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/me()": {
       "etag": "\"2814-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/me.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/me().md",
       "hash": "ca1382ef477613cf9a831cb9a61ae6f19e31d40290aa4e4e61fad309c5df456f"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/people()": {
       "etag": "\"2481-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/people.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/people().md",
       "hash": "c5b4030607fb226a01961f13fa777e57b3c2a7c6ce1b3d207aadf2376e155689"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/record(foruniqueid:)": {
       "etag": "\"2ce2-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/record-foruniqueid.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/record(foruniqueid).md",
       "hash": "66237feb54d239317644fdda4e5c29c6f51e710155e553adc93d30d2ad781bf3"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/recordclass(fromuniqueid:)": {
       "etag": "\"2757-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/recordclass-fromuniqueid.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/recordclass(fromuniqueid).md",
       "hash": "c2b38007e2e65ee07eaea9acabf69740ae4f1d2a771445a2b82a9592887f146e"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/records(matching:)": {
       "etag": "\"2ae9-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/records-matching.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/records(matching).md",
       "hash": "4bd082fa66644f56806349500e5a45549f3ff217e73462c5d57eb58549a40c03"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/remove(_:)": {
       "etag": "\"42d8-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/remove.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/remove(_).md",
       "hash": "b4dc328da3985aace3ec9e305090511bb0bb5a4a677cb901279591442d8c8ebb"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/remove(_:error:)": {
       "etag": "\"4926-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/remove-error.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/remove(_,error).md",
       "hash": "1caee4a7911942d0cbd57197a4a7c506a734bc42009ce693716598c2518c1d57"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/save()": {
       "etag": "\"2f5d-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/save.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/save().md",
       "hash": "892a5369b1be3d5caf6ed989026f6ce75748516fc0fe3e73be15ea4998e007dc"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/saveandreturnerror()": {
       "etag": "\"347a-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/saveandreturnerror.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/saveandreturnerror().md",
       "hash": "f19224a37fdbfb91350e3eb61745f399b2897d0c9b755efb99c2386b9342420c"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/setme(_:)": {
       "etag": "\"28dd-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/setme.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/setme(_).md",
       "hash": "ec70445d0ec8061e4f2612708349b8a40dd2bb9dafe7e21fe568d98c9b3cec19"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.class/shared()": {
       "etag": "\"353e-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/shared.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/shared().md",
       "hash": "0abacbe6a7c38a1a42f7b806f86727b9e492cdf02d6da9a7dc64dc9e3cdec545"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbook-swift.typealias": {
       "etag": "\"2198-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swifttypealias.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.typealias.md",
       "hash": "b0ddeb8eb359aebec78cab518f420dbbad92baf253b54fafed9cfaa00ed3c97f"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookaddrecord(_:_:_:)": {
       "etag": "\"a85b-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookaddrecord.md",
+      "file_path": "documentation/AddressBook/abaddressbookaddrecord(_,_,_).md",
       "hash": "676eeab3b86a09dea46bd558291cbe929877814cf0c2f81cdf4c22d1154519cd"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopyarrayofallgroups(_:)": {
       "etag": "\"93cf-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallgroups.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallgroups(_).md",
       "hash": "a4e5c93f3ada4894f3822224f9b6d6a4cfd0173cc24a361d9276161535a5984e"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopyarrayofallgroupsinsource(_:_:)": {
       "etag": "\"9d1e-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallgroupsinsource.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallgroupsinsource(_,_).md",
       "hash": "0301e6228e0e7beb4b446a45b644ebef98a3600566275553b505ed896fe9a247"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopyarrayofallpeople(_:)": {
       "etag": "\"93b6-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeople.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeople(_).md",
       "hash": "912c5d0f0ba9e55c65b817a223cf6cc9d7b17a8bb7ffd86f8635d62a1edc277c"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopyarrayofallpeopleinsource(_:_:)": {
       "etag": "\"9d8d-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeopleinsource.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeopleinsource(_,_).md",
       "hash": "519440316b481f71f9b784f16ee154ca234f0ffc5b0017e4498a06e404b4d2ca"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopyarrayofallpeopleinsourcewithsortordering(_:_:_:)": {
       "etag": "\"aae4-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeopleinsourcewithsortordering.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeopleinsourcewithsortordering(_,_,_).md",
       "hash": "19495f641d0639c33b69ac333bb843af65a1eb9e9f9ddbea1b741f0e30080f7e"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopyarrayofallsources(_:)": {
       "etag": "\"9402-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallsources.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallsources(_).md",
       "hash": "916547785a0eb313f6523ebbc469ea926979358665b18ed454369f489cfe7083"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopydefaultsource(_:)": {
       "etag": "\"96c9-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopydefaultsource.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopydefaultsource(_).md",
       "hash": "157377b1f17d98b298a27e58a25253dabe3bf7b23a2e003aba23fac18f2240e1"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopylocalizedlabel(_:)": {
       "etag": "\"8dff-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopylocalizedlabel.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopylocalizedlabel(_).md",
       "hash": "6c8d314e85d9a33ec0376238b7e554f9840ba8e6ad0e1e9ffd0a7ab0cc6b2e53"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcopypeoplewithname(_:_:)": {
       "etag": "\"9eea-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopypeoplewithname.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopypeoplewithname(_,_).md",
       "hash": "c7240290baddad56167cbf3ca9bb3043486065d49b22dcf0d46bb313e27102e7"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcreate()": {
       "etag": "\"9470-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcreate.md",
+      "file_path": "documentation/AddressBook/abaddressbookcreate().md",
       "hash": "68005378ddb74ca8884c262a0c2adece3c00424b834e7893ae1599d606dc34a1"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookcreatewithoptions(_:_:)": {
       "etag": "\"af3d-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcreatewithoptions.md",
+      "file_path": "documentation/AddressBook/abaddressbookcreatewithoptions(_,_).md",
       "hash": "3fab55d1edbf89fe339e2e010b6fae901c00af0e9ba3bc4ae361e6e214185747"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookerrordomain": {
@@ -222,47 +222,47 @@
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookgetauthorizationstatus()": {
       "etag": "\"882b-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetauthorizationstatus.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetauthorizationstatus().md",
       "hash": "cd6718a0bd497ffcbf7dbbe88563cd55e018bb1bfbc556cb255e5cf391e26532"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookgetgroupcount(_:)": {
       "etag": "\"8fa9-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetgroupcount.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetgroupcount(_).md",
       "hash": "c20f1829915a824a4077d4ce338d5d89f0ffb8febd52477d1b3e7650cb6b63f8"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookgetgroupwithrecordid(_:_:)": {
       "etag": "\"9df6-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetgroupwithrecordid.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetgroupwithrecordid(_,_).md",
       "hash": "282e0c8187d3d89cbb515ae633db3766f1bcb625a2b34a4fbb2f9dbb720e556e"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookgetpersoncount(_:)": {
       "etag": "\"9225-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetpersoncount.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetpersoncount(_).md",
       "hash": "ac6dab43403a263c25112e710ab857b388a73d3ef6df5f4b7c474a949f6b4c92"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookgetpersonwithrecordid(_:_:)": {
       "etag": "\"9fce-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetpersonwithrecordid.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetpersonwithrecordid(_,_).md",
       "hash": "7c83a884c12f1058e48c028a29d3a41a39401dfc965a75704343a1975f1414b2"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookgetsourcewithrecordid(_:_:)": {
       "etag": "\"a09a-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetsourcewithrecordid.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetsourcewithrecordid(_,_).md",
       "hash": "3d26f1acca75c10ddc2ce3b733a52a7ddbfc0d68e22517d87a3af986493cd19c"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookhasunsavedchanges(_:)": {
       "etag": "\"8dbd-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookhasunsavedchanges.md",
+      "file_path": "documentation/AddressBook/abaddressbookhasunsavedchanges(_).md",
       "hash": "94839c51b43d3ddde1ea0fa4d7ec6b5e18f9c4683eba5070f9b60c8ca07aac00"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookregisterexternalchangecallback(_:_:_:)": {
       "etag": "\"9a71-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookregisterexternalchangecallback.md",
+      "file_path": "documentation/AddressBook/abaddressbookregisterexternalchangecallback(_,_,_).md",
       "hash": "33d2b4d855dd6e6d0c0721912cf8adb78bb05104e55228e4655b6d843aa379ac"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookremoverecord(_:_:_:)": {
       "etag": "\"aa40-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookremoverecord.md",
+      "file_path": "documentation/AddressBook/abaddressbookremoverecord(_,_,_).md",
       "hash": "0a3ba4132775919e95c8ef0540b8f422f762d36b8b830c8d08bbf23143efac6c"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookrequestaccesscompletionhandler": {
@@ -272,22 +272,22 @@
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookrequestaccesswithcompletion(_:_:)": {
       "etag": "\"9e6d-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookrequestaccesswithcompletion.md",
+      "file_path": "documentation/AddressBook/abaddressbookrequestaccesswithcompletion(_,_).md",
       "hash": "ad20845a9c49e1e0e43ba4b4da75c605f3b454a1ec0376d6eb51fe956b1164cb"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookrevert(_:)": {
       "etag": "\"87c0-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookrevert.md",
+      "file_path": "documentation/AddressBook/abaddressbookrevert(_).md",
       "hash": "35a52f4739ddb850e184ec3584279714cfcab5df9e0465d93b743ac0d9e5fe3f"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbooksave(_:_:)": {
       "etag": "\"a047-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abaddressbooksave.md",
+      "file_path": "documentation/AddressBook/abaddressbooksave(_,_).md",
       "hash": "0c43d5d29ca96a283cec85808ea4d40ad2be6215aa258b0db0327711e6a588e9"
     },
     "https://developer.apple.com/documentation/addressbook/abaddressbookunregisterexternalchangecallback(_:_:_:)": {
       "etag": "\"99f5-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookunregisterexternalchangecallback.md",
+      "file_path": "documentation/AddressBook/abaddressbookunregisterexternalchangecallback(_,_,_).md",
       "hash": "5eb14e57ea6c7a066fc536972bd508d5dd2a538c2d4be3a49423b3c6d09ad5be"
     },
     "https://developer.apple.com/documentation/addressbook/abauthorizationstatus": {
@@ -307,7 +307,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abauthorizationstatus/init(rawvalue:)": {
       "etag": "\"15e4-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/AddressBook/abauthorizationstatus/init(rawvalue).md",
       "hash": "0bd87c3f9bba884374d2fc96b4e0304b2e55fe16a433e10bc4d8617b8138f702"
     },
     "https://developer.apple.com/documentation/addressbook/abauthorizationstatus/notdetermined": {
@@ -322,57 +322,57 @@
     },
     "https://developer.apple.com/documentation/addressbook/abbeginloadingimagedataforclient(_:_:_:)": {
       "etag": "\"3b22-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abbeginloadingimagedataforclient.md",
+      "file_path": "documentation/AddressBook/abbeginloadingimagedataforclient(_,_,_).md",
       "hash": "f01693d98d107924a3f20d86a23965f16c2fd293a57ffd35b465d1691c70feb3"
     },
     "https://developer.apple.com/documentation/addressbook/abcancelloadingimagedatafortag(_:)": {
       "etag": "\"2656-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abcancelloadingimagedatafortag.md",
+      "file_path": "documentation/AddressBook/abcancelloadingimagedatafortag(_).md",
       "hash": "9dfb3bac050fb08155286ff2c2645e1769d5ac13fe1b24eb91e7239cba4e02be"
     },
     "https://developer.apple.com/documentation/addressbook/abcopyarrayofallgroups(_:)": {
       "etag": "\"7263-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abcopyarrayofallgroups.md",
+      "file_path": "documentation/AddressBook/abcopyarrayofallgroups(_).md",
       "hash": "6d086cf20247cada0e863e6e5d038e77fbeba5b78d0f2a9d6b95a4e484fa107e"
     },
     "https://developer.apple.com/documentation/addressbook/abcopyarrayofallpeople(_:)": {
       "etag": "\"61fd-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abcopyarrayofallpeople.md",
+      "file_path": "documentation/AddressBook/abcopyarrayofallpeople(_).md",
       "hash": "140eb7534b5639b9f87fb96dee353b8a7db1d972e48fd01b14d0ef11dd4376e3"
     },
     "https://developer.apple.com/documentation/addressbook/abcopyarrayofmatchingrecords(_:_:)": {
       "etag": "\"5724-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abcopyarrayofmatchingrecords.md",
+      "file_path": "documentation/AddressBook/abcopyarrayofmatchingrecords(_,_).md",
       "hash": "7ce9652656e63f06d3ff96f54aa2ada4ede68241a1ec51fab2cb52444b071b5f"
     },
     "https://developer.apple.com/documentation/addressbook/abcopyarrayofpropertiesforrecordtype(_:_:)": {
       "etag": "\"533c-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abcopyarrayofpropertiesforrecordtype.md",
+      "file_path": "documentation/AddressBook/abcopyarrayofpropertiesforrecordtype(_,_).md",
       "hash": "7a13f44be68678f36dd1ef635363f52a92d9367d8c317f3aa12ca5759f1c4ee0"
     },
     "https://developer.apple.com/documentation/addressbook/abcopydefaultcountrycode(_:)": {
       "etag": "\"38af-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abcopydefaultcountrycode.md",
+      "file_path": "documentation/AddressBook/abcopydefaultcountrycode(_).md",
       "hash": "4674710bfead23646ef45fa431b7330aa7ab3234833ee7faa62163d00b375938"
     },
     "https://developer.apple.com/documentation/addressbook/abcopylocalizedpropertyorlabel(_:)": {
       "etag": "\"46cd-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abcopylocalizedpropertyorlabel.md",
+      "file_path": "documentation/AddressBook/abcopylocalizedpropertyorlabel(_).md",
       "hash": "bd1c7d98f17b7947f6b104d87cf42835e45ffa3584e46cd271745e4f9e1f0a2b"
     },
     "https://developer.apple.com/documentation/addressbook/abcopyrecordforuniqueid(_:_:)": {
       "etag": "\"78b8-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abcopyrecordforuniqueid.md",
+      "file_path": "documentation/AddressBook/abcopyrecordforuniqueid(_,_).md",
       "hash": "e19ea227499785e3f93d2c6f897c421dbd5036aab8061b6824eec5e83ffb9710"
     },
     "https://developer.apple.com/documentation/addressbook/abcopyrecordtypefromuniqueid(_:_:)": {
       "etag": "\"737e-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abcopyrecordtypefromuniqueid.md",
+      "file_path": "documentation/AddressBook/abcopyrecordtypefromuniqueid(_,_).md",
       "hash": "39728965302c3ecb34d069ff79164b77b863679db515889ae891b5941d2c2381"
     },
     "https://developer.apple.com/documentation/addressbook/abcreateformattedaddressfromdictionary(_:_:)": {
       "etag": "\"76d4-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abcreateformattedaddressfromdictionary.md",
+      "file_path": "documentation/AddressBook/abcreateformattedaddressfromdictionary(_,_).md",
       "hash": "a976e986605bfaa2752c3f8490887dbf2756b2010f0dbcac426d2bccfa657d07"
     },
     "https://developer.apple.com/documentation/addressbook/abexternalchangecallback": {
@@ -382,12 +382,12 @@
     },
     "https://developer.apple.com/documentation/addressbook/abgetme(_:)": {
       "etag": "\"61df-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abgetme.md",
+      "file_path": "documentation/AddressBook/abgetme(_).md",
       "hash": "050142189bf28c9f304f7a5fbac695d145c6c1fdaf65cd76b00402df0a07d137"
     },
     "https://developer.apple.com/documentation/addressbook/abgetsharedaddressbook()": {
       "etag": "\"31d5-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abgetsharedaddressbook.md",
+      "file_path": "documentation/AddressBook/abgetsharedaddressbook().md",
       "hash": "d6a6c3159e5b199aa202dc491db4d8c344df8e7b21f3c92db35f8eea75dacfa4"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup": {
@@ -397,132 +397,132 @@
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/addmember(_:)": {
       "etag": "\"397a-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/addmember.md",
+      "file_path": "documentation/AddressBook/abgroup/addmember(_).md",
       "hash": "6b0f624076c03511523c895fe3554661eb8d7e19d396118ad26af0f74008ea9e"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/addpropertiesandtypes(_:)": {
       "etag": "\"4052-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/addpropertiesandtypes.md",
+      "file_path": "documentation/AddressBook/abgroup/addpropertiesandtypes(_).md",
       "hash": "a94c93d616049e90307d363cf6d79b3f831d1bb870dbdb076fdc2f28168fcf0b"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/addsubgroup(_:)": {
       "etag": "\"3ad9-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/addsubgroup.md",
+      "file_path": "documentation/AddressBook/abgroup/addsubgroup(_).md",
       "hash": "dad5657a2caa60eace76e9c44604cab787a69dccf0a1e9ad2b7eb181426076d7"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/distributionidentifier(forproperty:person:)": {
       "etag": "\"419a-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/distributionidentifier-forpropertyperson.md",
+      "file_path": "documentation/AddressBook/abgroup/distributionidentifier(forproperty,person).md",
       "hash": "dbda551e91181e27e72d9978f90a8e9c9628ed93efbe1cb9e453ad1fa269befa"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/members()": {
       "etag": "\"264a-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/members.md",
+      "file_path": "documentation/AddressBook/abgroup/members().md",
       "hash": "5af82e02a33949138e12473d5c28425a3da6f3bd0f915352d733899c653fa6e9"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/parentgroups()": {
       "etag": "\"2c18-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/parentgroups.md",
+      "file_path": "documentation/AddressBook/abgroup/parentgroups().md",
       "hash": "7e473ff2ff91bc4586ed70a809ce8ceb433ab95872f23ff4ed9f7cb9661d9fa4"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/properties()": {
       "etag": "\"2e96-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/properties.md",
+      "file_path": "documentation/AddressBook/abgroup/properties().md",
       "hash": "6c14670da2cad75e78ad501997f3e80b1184aa6afdc012ba0bca1f1ffb593eed"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/removemember(_:)": {
       "etag": "\"37e7-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/removemember.md",
+      "file_path": "documentation/AddressBook/abgroup/removemember(_).md",
       "hash": "42d3eb4526852827329b11bb3c337e842ce748f42c8069e62cf56393950b982c"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/removeproperties(_:)": {
       "etag": "\"3721-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/removeproperties.md",
+      "file_path": "documentation/AddressBook/abgroup/removeproperties(_).md",
       "hash": "328ada54e56f491f686d03c74ef2d8339ae4fccab76bb3e816e50b8f1980247b"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/removesubgroup(_:)": {
       "etag": "\"3946-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/removesubgroup.md",
+      "file_path": "documentation/AddressBook/abgroup/removesubgroup(_).md",
       "hash": "723443d7b452f1bb3b2eb028e445603ee4d6cf273d066cc93308a34559ab85e8"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/searchelement(forproperty:label:key:value:comparison:)": {
       "etag": "\"5ae9-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/searchelement-forpropertylabelkeyvaluecomparison.md",
+      "file_path": "documentation/AddressBook/abgroup/searchelement(forproperty,label,key,value,comparison).md",
       "hash": "7a52d2936a3f3eb64e2c48b26304694a21f9cbf3dae129b707d6bc68022efb66"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/setdistributionidentifier(_:forproperty:person:)": {
       "etag": "\"4ba7-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/setdistributionidentifier-forpropertyperson.md",
+      "file_path": "documentation/AddressBook/abgroup/setdistributionidentifier(_,forproperty,person).md",
       "hash": "c2a3a9b717b275c9dc69830d726aed98a8693c8ce10ccc44ddd116611200a2f8"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/subgroups()": {
       "etag": "\"2bcf-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/subgroups.md",
+      "file_path": "documentation/AddressBook/abgroup/subgroups().md",
       "hash": "a63c42c15dd4f3d2fa4868975788e55239aac4d7d05b81fa7e7750c0c4300af9"
     },
     "https://developer.apple.com/documentation/addressbook/abgroup/type(ofproperty:)": {
       "etag": "\"3d4a-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/type-ofproperty.md",
+      "file_path": "documentation/AddressBook/abgroup/type(ofproperty).md",
       "hash": "5261130ab0e6826f68a7c152088368835c71f49268303f4e93783bf4db047d45"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupaddgroup(_:_:)": {
       "etag": "\"7424-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abgroupaddgroup.md",
+      "file_path": "documentation/AddressBook/abgroupaddgroup(_,_).md",
       "hash": "298aad1a43ac9ecf9fe486a64e8f88e3551823424aa93c0dc4761fe5e34e15af"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupaddmember(_:_:)": {
       "etag": "W/\"dbd07984a4f9d30d9ee92a806a890730\"",
-      "file_path": "documentation/AddressBook/abgroupaddmember.md",
+      "file_path": "documentation/AddressBook/abgroupaddmember(_,_).md",
       "hash": "6126f2cc6d86c5109982bc2ab34f172120e035e5dfb35e71d039a0af710c8234"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupaddmember(_:_:_:)": {
       "etag": "\"961b-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abgroupaddmember.md",
+      "file_path": "documentation/AddressBook/abgroupaddmember(_,_,_).md",
       "hash": "5df1b7efdda8d7168725c93bb4413c2ba1c066f185178e9530f2a460695e9a2b"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcopyarrayofallmembers(_:)": {
       "etag": "\"80f5-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopyarrayofallmembers.md",
+      "file_path": "documentation/AddressBook/abgroupcopyarrayofallmembers(_).md",
       "hash": "54933a13fdd64679e7641a868fa61576e537189df95a5164be8821c1880d26e6"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcopyarrayofallmemberswithsortordering(_:_:)": {
       "etag": "\"a2ea-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopyarrayofallmemberswithsortordering.md",
+      "file_path": "documentation/AddressBook/abgroupcopyarrayofallmemberswithsortordering(_,_).md",
       "hash": "a61e7cd57f9c80deb4161ef8c767fec058ad12ce487b57fec9bdcb9aeb16bb11"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcopyarrayofallsubgroups(_:)": {
       "etag": "\"7254-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopyarrayofallsubgroups.md",
+      "file_path": "documentation/AddressBook/abgroupcopyarrayofallsubgroups(_).md",
       "hash": "fa4d2230ae7017ac65dbc40188ce58b53915f7381f65b0be37d2028201b39212"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcopydistributionidentifier(_:_:_:)": {
       "etag": "\"849a-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopydistributionidentifier.md",
+      "file_path": "documentation/AddressBook/abgroupcopydistributionidentifier(_,_,_).md",
       "hash": "be1ea2df46c0d4fbacbb99ac4cbd6fee8eea82db0a01f8fe156dda3ee0beda19"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcopyparentgroups(_:)": {
       "etag": "\"723d-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopyparentgroups.md",
+      "file_path": "documentation/AddressBook/abgroupcopyparentgroups(_).md",
       "hash": "3305b2334681e62f90d210cec2f8c6988ac3abd3da386555f70f5cbf6c4132b7"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcopysource(_:)": {
       "etag": "\"8fcb-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopysource.md",
+      "file_path": "documentation/AddressBook/abgroupcopysource(_).md",
       "hash": "0ce740321a8c0f85fec810f5703d45a081043f6bc641986ef528afdfb06e70ab"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcreate()": {
       "etag": "\"7345-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abgroupcreate.md",
+      "file_path": "documentation/AddressBook/abgroupcreate().md",
       "hash": "f829f93ffe4f4e6165f03ed274f59fc4875f969b7ea3a35d0f30b33d3a681212"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcreateinsource(_:)": {
       "etag": "\"90e4-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abgroupcreateinsource.md",
+      "file_path": "documentation/AddressBook/abgroupcreateinsource(_).md",
       "hash": "85225f47f5c654c7d9cdad42cb2ccd883df5d0de563f55103f7a6a4df8889887"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupcreatesearchelement(_:_:_:_:_:)": {
       "etag": "\"a23f-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abgroupcreatesearchelement.md",
+      "file_path": "documentation/AddressBook/abgroupcreatesearchelement(_,_,_,_,_).md",
       "hash": "0f022229fe8d7fd0374b7bfa69603ac1ca9685e626c70744ee51ea716f1d3d88"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupref": {
@@ -532,27 +532,27 @@
     },
     "https://developer.apple.com/documentation/addressbook/abgroupremovegroup(_:_:)": {
       "etag": "\"712a-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abgroupremovegroup.md",
+      "file_path": "documentation/AddressBook/abgroupremovegroup(_,_).md",
       "hash": "28f341cfcaeecbeab5dfb1841b553af3f71a14ca875c71b73fc2083584cb71e1"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupremovemember(_:_:)": {
       "etag": "W/\"fede2c4a17a58e1722848c819d90cc5f\"",
-      "file_path": "documentation/AddressBook/abgroupremovemember.md",
+      "file_path": "documentation/AddressBook/abgroupremovemember(_,_).md",
       "hash": "e9b28d886262a248231a93a85f24d67720f7ffa2906192caf7f995a4e46dd452"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupremovemember(_:_:_:)": {
       "etag": "\"938c-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abgroupremovemember.md",
+      "file_path": "documentation/AddressBook/abgroupremovemember(_,_,_).md",
       "hash": "9ac0c02df43ff04dd764fec823d4d3addd572e9f962b9fbc1047237f1da8f5e6"
     },
     "https://developer.apple.com/documentation/addressbook/abgroupsetdistributionidentifier(_:_:_:_:)": {
       "etag": "\"8708-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abgroupsetdistributionidentifier.md",
+      "file_path": "documentation/AddressBook/abgroupsetdistributionidentifier(_,_,_,_).md",
       "hash": "baf1b5e5fa1e4762ab33fa16c28dd231f59d0050b3c108f5e65b6b9b4a5bc9ef"
     },
     "https://developer.apple.com/documentation/addressbook/abhasunsavedchanges(_:)": {
       "etag": "\"349c-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abhasunsavedchanges.md",
+      "file_path": "documentation/AddressBook/abhasunsavedchanges(_).md",
       "hash": "9cc45c5b385b3b5c4c88ae862fe920c77aa755b9bc7e0a9591f5e72517ff7da8"
     },
     "https://developer.apple.com/documentation/addressbook/abimageclient": {
@@ -562,7 +562,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abimageclient/consumeimagedata(_:fortag:)": {
       "etag": "\"314b-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abimageclient/consumeimagedata-fortag.md",
+      "file_path": "documentation/AddressBook/abimageclient/consumeimagedata(_,fortag).md",
       "hash": "48d279d5ab39a67acb5070e2711827e07894e81d7dec8b8bca33aebedcd09691"
     },
     "https://developer.apple.com/documentation/addressbook/abimageclientcallback": {
@@ -572,7 +572,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/ablocalizedpropertyorlabel(_:)": {
       "etag": "\"4046-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/ablocalizedpropertyorlabel.md",
+      "file_path": "documentation/AddressBook/ablocalizedpropertyorlabel(_).md",
       "hash": "9f98ba852a94aa08725f67d43726f14173bfe57a4377d06fdc038683945ed3ad"
     },
     "https://developer.apple.com/documentation/addressbook/abmultiplevalueselection": {
@@ -582,147 +582,147 @@
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class": {
       "etag": "\"9262-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swiftclass.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class.md",
       "hash": "10ce67d651dceaf5957140c90b8e7c471829c891136a2b076f742ed3286eb01c"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/count()": {
       "etag": "\"20a2-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/count.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/count().md",
       "hash": "268eebe98784f46e8596e55fb0ffff3c446d4689d8693f325bc6cc78e712bf84"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/identifier(at:)": {
       "etag": "\"2d73-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/identifier-at.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/identifier(at).md",
       "hash": "3b7d58d2d055e7c2efdb66ec59bcacbbbac18fefab516c8fac8f4e1cfee2c1c2"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/index(foridentifier:)": {
       "etag": "\"2d5d-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/index-foridentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/index(foridentifier).md",
       "hash": "0a33924f89af360072476791f9f078c2309f21d2982ba5d3ac3ce157e202e559"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/label(at:)": {
       "etag": "\"38d9-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/label-at.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/label(at).md",
       "hash": "5675e686d3df2dcaa91d0337f4e594f8ab6509ffdf4482e1edac8ca380556ad4"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/label(foridentifier:)": {
       "etag": "\"36a8-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/label-foridentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/label(foridentifier).md",
       "hash": "ef790275e83e11086b9c17eab5dc81711fca33d4774fd9b314ecbb66e6e630c4"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/primaryidentifier()": {
       "etag": "\"1ee7-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/primaryidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/primaryidentifier().md",
       "hash": "86e4510251787b47ce1bd643a4f0535a96aee7ab910dcc9530c5484ea9aee0ab"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/propertytype()": {
       "etag": "\"2537-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/propertytype.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/propertytype().md",
       "hash": "f95885deea84b9402f55ec74eb50bb342665531955e90cf3b133f845fc064c15"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/value(at:)": {
       "etag": "\"3307-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/value-at.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/value(at).md",
       "hash": "a392542494609bdae9cc53107e4db5e1dbd4bc5abc15c1979a3401c21664c611"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.class/value(foridentifier:)": {
       "etag": "\"369c-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/value-foridentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/value(foridentifier).md",
       "hash": "125ea2cc0aa3ea31fe6f23b45a78e2abb0fdf062767377f7912bd260b1d37a98"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalue-swift.typealias": {
       "etag": "\"331d-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swifttypealias.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.typealias.md",
       "hash": "fe76bab583a8773165f1657def761a4f410d0032d06d2eb922aac5da74d6eb7a"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalueadd(_:_:_:_:)": {
       "etag": "\"b5dd-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueadd.md",
+      "file_path": "documentation/AddressBook/abmultivalueadd(_,_,_,_).md",
       "hash": "7be3671ee2af04b5c3e9b0486545479a164e4920f73ea94563fb41fadf39ce89"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalueaddvalueandlabel(_:_:_:_:)": {
       "etag": "\"b0f5-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueaddvalueandlabel.md",
+      "file_path": "documentation/AddressBook/abmultivalueaddvalueandlabel(_,_,_,_).md",
       "hash": "3a43b1619a22e545458f7de66320b7c6910555e1b2cd69126850681dd5b27d57"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecopyarrayofallvalues(_:)": {
       "etag": "\"95ce-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopyarrayofallvalues.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopyarrayofallvalues(_).md",
       "hash": "494e529d36b98125cf5acb58fa132a1f268f7d7175dd86904331f17c30d9dfd7"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecopyidentifieratindex(_:_:)": {
       "etag": "\"94f7-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopyidentifieratindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopyidentifieratindex(_,_).md",
       "hash": "2e901d4ab5056cb5533b04e80a25bb3cd70f3272d4f47461c2ef9df30c5d886c"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecopylabelatindex(_:_:)": {
       "etag": "\"9db4-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopylabelatindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopylabelatindex(_,_).md",
       "hash": "e91525f05387cad5d4b3ac33675a8cf6cec52bae02c3af8725e821ea01c0ab5a"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecopyprimaryidentifier(_:)": {
       "etag": "\"8ca5-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopyprimaryidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopyprimaryidentifier(_).md",
       "hash": "4a5bca2a68e0f1d601e01175ea9f31130344c448f971417aadd892681bd72663"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecopyvalueatindex(_:_:)": {
       "etag": "\"9ccf-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopyvalueatindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopyvalueatindex(_,_).md",
       "hash": "4093bc3aa4863b437d3007726d4fbd68c78cf20395bc483388b57cf5b9cbf4b1"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecount(_:)": {
       "etag": "\"8550-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecount.md",
+      "file_path": "documentation/AddressBook/abmultivaluecount(_).md",
       "hash": "1a7e04f7e8603196213bde0037a3b5638798ac1727ed35cead9dabad69bbb1cc"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecreate()": {
       "etag": "\"8152-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreate.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreate().md",
       "hash": "d2631a30b073d54e5b535a9049b595fb8e5c88b92065b688ba19a4de8451ec7a"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecreatecopy(_:)": {
       "etag": "\"868f-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreatecopy.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreatecopy(_).md",
       "hash": "09a82b84c85af1bd2effae3ee5e313567e1ced02bbd7cc1c540ae7bcfe7af886"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecreatemutable()": {
       "etag": "W/\"bf5f4527c31a08ec5422d2c8e5dcd74e\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreatemutable.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreatemutable().md",
       "hash": "13b8f9aba10f8f5fd852e45f96b00353c5537c47289db4573338a32bf4275db7"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecreatemutable(_:)": {
       "etag": "\"9045-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreatemutable.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreatemutable(_).md",
       "hash": "9952d05e15d73438683f8aa154c6a8ee619393dcb58ae819fc14f6c5765ade9d"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluecreatemutablecopy(_:)": {
       "etag": "\"9302-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreatemutablecopy.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreatemutablecopy(_).md",
       "hash": "7cdf19cea27279f42e298b4916ac25d0392c4218376becb4493e63a46cd57a6e"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluegetcount(_:)": {
       "etag": "\"8ee9-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetcount.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetcount(_).md",
       "hash": "00f476ddc1042beed2d9c9d88422cbcd25b0a74964a1bd44b402c3bbd6cf1d16"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluegetfirstindexofvalue(_:_:)": {
       "etag": "\"9af7-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetfirstindexofvalue.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetfirstindexofvalue(_,_).md",
       "hash": "32df5321cdd6fea4d3374386cebde765a9de173733127bdda2728a7a4dfc9572"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluegetidentifieratindex(_:_:)": {
       "etag": "\"9b11-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetidentifieratindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetidentifieratindex(_,_).md",
       "hash": "2ca06a72038a73d11c82c122f38c2655e1b1d95b7064a4665d5a6741bee1046d"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluegetindexforidentifier(_:_:)": {
       "etag": "\"9ccc-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetindexforidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetindexforidentifier(_,_).md",
       "hash": "1a2fd59f8b7a28f8570c976830a0ef385b8054d30073cf95c447fe3f4f93d0b3"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluegetpropertytype(_:)": {
       "etag": "\"909b-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetpropertytype.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetpropertytype(_).md",
       "hash": "3e72dcb43d9cfd93db512f853cfc00bb52bf4b70c88b6ca72b5b56aa47c470d0"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalueidentifier": {
@@ -737,97 +737,97 @@
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalueindexforidentifier(_:_:)": {
       "etag": "\"8d63-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueindexforidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalueindexforidentifier(_,_).md",
       "hash": "4252f37278af55fa7734b5d5a0261c939540c90c93753fa249e0ecd18d2995b7"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalueinsert(_:_:_:_:_:)": {
       "etag": "\"b70c-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueinsert.md",
+      "file_path": "documentation/AddressBook/abmultivalueinsert(_,_,_,_,_).md",
       "hash": "b8b733048d8fd547cec4324d8e7b785cec9f643a1a027474ea325f93eddd9cec"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalueinsertvalueandlabelatindex(_:_:_:_:_:)": {
       "etag": "\"c069-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueinsertvalueandlabelatindex.md",
+      "file_path": "documentation/AddressBook/abmultivalueinsertvalueandlabelatindex(_,_,_,_,_).md",
       "hash": "c4010a16ad6638ab254bc538ed149b598108fdcbdb66116a6dd4413bb0793a4a"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluepropertytype(_:)": {
       "etag": "\"8b51-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluepropertytype.md",
+      "file_path": "documentation/AddressBook/abmultivaluepropertytype(_).md",
       "hash": "2b24ce9e0ee5aed9caf0086f03d4c5e93261f980e81a80345d9023b4859590b8"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalueremove(_:_:)": {
       "etag": "\"8c4f-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueremove.md",
+      "file_path": "documentation/AddressBook/abmultivalueremove(_,_).md",
       "hash": "c39e5e836fc9814aacc509286e1f10fada14f16b2860767a97f9161d3a54d87c"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivalueremovevalueandlabelatindex(_:_:)": {
       "etag": "\"a068-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueremovevalueandlabelatindex.md",
+      "file_path": "documentation/AddressBook/abmultivalueremovevalueandlabelatindex(_,_).md",
       "hash": "b35090c1962893317268af3898c19781d6851b3d9e8d84cb08d731aea1aa94e1"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluereplacelabel(_:_:_:)": {
       "etag": "\"95e9-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluereplacelabel.md",
+      "file_path": "documentation/AddressBook/abmultivaluereplacelabel(_,_,_).md",
       "hash": "203349dc0e2c8f1c57d8cb212f939fb9ce91236abe8dbab108a40cceb430541f"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluereplacelabelatindex(_:_:_:)": {
       "etag": "\"a877-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluereplacelabelatindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluereplacelabelatindex(_,_,_).md",
       "hash": "c38435a57e8c237305815e5f6cbf56fed94e51d651a1497430932bc6039d57d8"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluereplacevalue(_:_:_:)": {
       "etag": "\"9832-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluereplacevalue.md",
+      "file_path": "documentation/AddressBook/abmultivaluereplacevalue(_,_,_).md",
       "hash": "0764f55fbe44a51b7bae37d4ed0300bf765b3d922e1d604c10fd912b22eddc83"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluereplacevalueatindex(_:_:_:)": {
       "etag": "\"a791-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluereplacevalueatindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluereplacevalueatindex(_,_,_).md",
       "hash": "9ab97b6dab5141308c7403e9b6aeb505e27eac7f4ea25e55fb317912cd3e6223"
     },
     "https://developer.apple.com/documentation/addressbook/abmultivaluesetprimaryidentifier(_:_:)": {
       "etag": "\"90e6-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluesetprimaryidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivaluesetprimaryidentifier(_,_).md",
       "hash": "48e52297960b066e5b59a4f7d0a93779c5cbb73af91e211b9b5025e0f189ccfe"
     },
     "https://developer.apple.com/documentation/addressbook/abmutablemultivalue-swift.class": {
       "etag": "\"81f3-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swiftclass.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class.md",
       "hash": "d180bad5d9244975bdc7c6424e6627764a2d8a433c01a17da47004705591127d"
     },
     "https://developer.apple.com/documentation/addressbook/abmutablemultivalue-swift.class/add(_:withlabel:)": {
       "etag": "\"489e-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/add-withlabel.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/add(_,withlabel).md",
       "hash": "5a83feae7e29701ce4d7ea6150a497837147c0ed93c023a20e73d0c14cf12b27"
     },
     "https://developer.apple.com/documentation/addressbook/abmutablemultivalue-swift.class/insert(_:withlabel:at:)": {
       "etag": "\"452b-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/insert-withlabelat.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/insert(_,withlabel,at).md",
       "hash": "1b8257ee6eaed4fdbe19b7662a455855baf2a70cf633610b3565c67188db9dc9"
     },
     "https://developer.apple.com/documentation/addressbook/abmutablemultivalue-swift.class/removeandlabel(at:)": {
       "etag": "\"2c48-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/removeandlabel-at.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/removeandlabel(at).md",
       "hash": "495e6c3360c3474b791361a1a99f6fec8f5d60024d3b1db0d8c581ba45bcf6e0"
     },
     "https://developer.apple.com/documentation/addressbook/abmutablemultivalue-swift.class/replace(at:withvalue:)": {
       "etag": "\"384d-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/replace-atwithvalue.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/replace(at,withvalue).md",
       "hash": "3ff7fed4133cff8e7e42f35f691408556314c8e020a1400c655974efc82f9481"
     },
     "https://developer.apple.com/documentation/addressbook/abmutablemultivalue-swift.class/replacelabel(at:withlabel:)": {
       "etag": "\"3e35-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/replacelabel-atwithlabel.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/replacelabel(at,withlabel).md",
       "hash": "b3c97071cce3a0935bb4d5085eca78c710fd849199b453286cff34bcd14c1578"
     },
     "https://developer.apple.com/documentation/addressbook/abmutablemultivalue-swift.class/setprimaryidentifier(_:)": {
       "etag": "\"360a-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/setprimaryidentifier.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/setprimaryidentifier(_).md",
       "hash": "eec72a6665ec60c67b6c1c0433560dbf5252bd0ff40bd954c02700d123a808b8"
     },
     "https://developer.apple.com/documentation/addressbook/abmutablemultivalue-swift.typealias": {
       "etag": "\"32d1-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swifttypealias.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.typealias.md",
       "hash": "6d6613fb18a4911303db6deca79bb1d90459a8a170b3e2ce485c690d7adc7b47"
     },
     "https://developer.apple.com/documentation/addressbook/abnovalueselection": {
@@ -842,12 +842,12 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerselectionbehavior/init(_:)": {
       "etag": "\"18f9-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/init.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/init(_).md",
       "hash": "fff8130b16fee205a029d44f12168a48f4fcf6831c7211b35b0fa07968be93d5"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerselectionbehavior/init(rawvalue:)": {
       "etag": "\"1914-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/init-rawvalue.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/init(rawvalue).md",
       "hash": "9b1a8d4bfb076e9b9f320be32ab656edbdd682f6cd6104ce18b3589ae7977af9"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerselectionbehavior/rawvalue": {
@@ -867,7 +867,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/addproperty(_:)": {
       "etag": "\"4093-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/addproperty.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/addproperty(_).md",
       "hash": "7030f390ed2643d90e43e394247727a7ec18af44a6b067c46e2c804db65f97c9"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/allowsgroupselection": {
@@ -887,32 +887,32 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/clearsearchfield(_:)": {
       "etag": "\"36a9-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/clearsearchfield.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/clearsearchfield(_).md",
       "hash": "ee6f5ab402eb8a0d3d665f6a93ed8289a3294d6eebf1697c186d2dfa802db6a4"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/columntitle(forproperty:)": {
       "etag": "\"43a3-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/columntitle-forproperty.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/columntitle(forproperty).md",
       "hash": "6b032c707e319a82a78a20f0b6e50340b7536b0a3c1553c2a8ab561f5c7e04a7"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/deselect(_:)-1yy11": {
       "etag": "\"6a70-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/deselect-1yy11.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/deselect(_)-1yy11.md",
       "hash": "fa1fe2d6e9d72f6c3ab3b8b3e4537eea8babd22e5eb14038c5faa65bf9cb1c75"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/deselect(_:)-3x7tl": {
       "etag": "\"69e7-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/deselect-3x7tl.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/deselect(_)-3x7tl.md",
       "hash": "83f6d515e70023406536ff381d80b492dcd5e107ca429c412783c8a90af93249"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/deselectall(_:)": {
       "etag": "\"64e3-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/deselectall.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/deselectall(_).md",
       "hash": "a10112e04d75023eca6b76d686221d004a026695fa8684007b6e14602bdcc38d"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/deselectidentifier(_:for:)": {
       "etag": "\"73b5-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/deselectidentifier-for.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/deselectidentifier(_,for).md",
       "hash": "84172567437ea93830164ee8a2535eb7395ac00a3ff9847ee6daa9c8c18b69c5"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/displayedproperty": {
@@ -922,7 +922,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/editinaddressbook(_:)": {
       "etag": "\"36a9-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/editinaddressbook.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/editinaddressbook(_).md",
       "hash": "92e83da6d2a024d22d99f190f36497598ecb5449a16695a2aecdf89de7bdee9c"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/groupdoubleaction": {
@@ -937,22 +937,22 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/properties()": {
       "etag": "\"3eb9-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/properties.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/properties().md",
       "hash": "68a06d39c8dfce233031a3d4563ccc7114c90751712af65d582244ba60400de5"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/removeproperty(_:)": {
       "etag": "\"442c-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/removeproperty.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/removeproperty(_).md",
       "hash": "8c9b4a3c445b05a1860a40dff4e0f8a50509598a5604937a0f61933eeef5bfd6"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/select(_:byextendingselection:)-6mrii": {
       "etag": "\"7755-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/select-byextendingselection-6mrii.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/select(_,byextendingselection)-6mrii.md",
       "hash": "c12f9db5c4bde489c7231bfe6df816db78e90aa256d569804beeabc31abadcf8"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/select(_:byextendingselection:)-9eldk": {
       "etag": "\"77df-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/select-byextendingselection-9eldk.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/select(_,byextendingselection)-9eldk.md",
       "hash": "be5391d0152569cb1d2765198d5cc9bbeb44495cb065a03065e2624f2171beac"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/selectedgroups": {
@@ -962,7 +962,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/selectedidentifiers(for:)": {
       "etag": "\"71ef-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/selectedidentifiers-for.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/selectedidentifiers(for).md",
       "hash": "af2b9e2c216ee4663e7192458a341364f4f5b52cd3ba1588151bcda3bdbcdba6"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/selectedrecords": {
@@ -972,22 +972,22 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/selectedvalues()": {
       "etag": "\"657c-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/selectedvalues.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/selectedvalues().md",
       "hash": "9973f3c0dc594f1442cac11e581178f19fea8ba78b25fe683445293386926acc"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/selectidentifier(_:for:byextendingselection:)": {
       "etag": "\"8115-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/selectidentifier-forbyextendingselection.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/selectidentifier(_,for,byextendingselection).md",
       "hash": "55f3f30a6cf8ce3d9e8e823d0a37de87b8fd18446bb372db8892a699718056c9"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/selectinaddressbook(_:)": {
       "etag": "\"36bf-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/selectinaddressbook.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/selectinaddressbook(_).md",
       "hash": "106e7dc81826d6e0cd9f16f777abaae13df3e48b3911b88ec08d7421686b6d36"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/setcolumntitle(_:forproperty:)": {
       "etag": "\"4426-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/setcolumntitle-forproperty.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/setcolumntitle(_,forproperty).md",
       "hash": "257be4251a87369c676ce74844d503dc4e59b683eef19150bf6113557a07d85f"
     },
     "https://developer.apple.com/documentation/addressbook/abpeoplepickerview/target": {
@@ -1012,77 +1012,77 @@
     },
     "https://developer.apple.com/documentation/addressbook/abperson/addpropertiesandtypes(_:)": {
       "etag": "\"412f-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/addpropertiesandtypes.md",
+      "file_path": "documentation/AddressBook/abperson/addpropertiesandtypes(_).md",
       "hash": "bb005d55b1822a4075514319df8233f17f1f789ee3d6b91487a53d1a26f3da43"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/beginloadingimagedata(for:)": {
       "etag": "\"4335-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/beginloadingimagedata-for.md",
+      "file_path": "documentation/AddressBook/abperson/beginloadingimagedata(for).md",
       "hash": "9606ef4491b886977959a68fd3ffcd5918eb8666de253c2d031bb928845f6293"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/cancelloadingimagedata(fortag:)": {
       "etag": "\"32d6-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/cancelloadingimagedata-fortag.md",
+      "file_path": "documentation/AddressBook/abperson/cancelloadingimagedata(fortag).md",
       "hash": "a808bf75b5cca73145ba9598d279580546a70198189eaea92d9e56e491f51476"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/imagedata()": {
       "etag": "\"378d-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/imagedata.md",
+      "file_path": "documentation/AddressBook/abperson/imagedata().md",
       "hash": "f0a9d9fcb038720931c290773d0618867bf21769e3d32f2013c86390dba21845"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/init(vcardrepresentation:)-1bqog": {
       "etag": "\"1c02-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/init-vcardrepresentation-1bqog.md",
+      "file_path": "documentation/AddressBook/abperson/init(vcardrepresentation)-1bqog.md",
       "hash": "998a18def94f43b3601ee16e724857200b369daeba2e2c285a5b07bd57c8b6d7"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/init(vcardrepresentation:)-5c7h8": {
       "etag": "\"1e2a-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/init-vcardrepresentation-5c7h8.md",
+      "file_path": "documentation/AddressBook/abperson/init(vcardrepresentation)-5c7h8.md",
       "hash": "3e2212613beb2000edd30d220c987d544213ddb851db1e54eface6145fa062c2"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/linkedpeople()": {
       "etag": "\"1e83-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/linkedpeople.md",
+      "file_path": "documentation/AddressBook/abperson/linkedpeople().md",
       "hash": "e4a635ff5d157ab1fc416a977b9a359991e7ece3b439050d9c02f4abe5a962d4"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/parentgroups()": {
       "etag": "\"1bdc-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/parentgroups.md",
+      "file_path": "documentation/AddressBook/abperson/parentgroups().md",
       "hash": "ee39b8f45dc8ab9abb1adccf7ee6ed801244e348ec649fcb7d6039262f19a83e"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/properties()": {
       "etag": "\"2ec9-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/properties.md",
+      "file_path": "documentation/AddressBook/abperson/properties().md",
       "hash": "2b30e04ec4303cfb6c719371888b942e652a9ad4fea2f875092d3d6a7ad3380a"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/removeproperties(_:)": {
       "etag": "\"37ef-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/removeproperties.md",
+      "file_path": "documentation/AddressBook/abperson/removeproperties(_).md",
       "hash": "547b972cbe6df98d717a039a7718fb49db82801a8da63f7d25ca720a48315975"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/searchelement(forproperty:label:key:value:comparison:)": {
       "etag": "\"5eba-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/searchelement-forpropertylabelkeyvaluecomparison.md",
+      "file_path": "documentation/AddressBook/abperson/searchelement(forproperty,label,key,value,comparison).md",
       "hash": "f0de669250f8b7a4b74bad9d0d0b31dcccd3912c9fd4f93ce8008febd49212ae"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/setimagedata(_:)": {
       "etag": "\"34ad-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/setimagedata.md",
+      "file_path": "documentation/AddressBook/abperson/setimagedata(_).md",
       "hash": "9394a11d71a9c2933c024ee87698090d6559076dc301366a018e3b1ec4a86762"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/type(ofproperty:)": {
       "etag": "\"3b3f-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/type-ofproperty.md",
+      "file_path": "documentation/AddressBook/abperson/type(ofproperty).md",
       "hash": "273730c51384b3432f848d8773146a1b9bf926ea5163cad15c4dcf6222030f9b"
     },
     "https://developer.apple.com/documentation/addressbook/abperson/vcardrepresentation()": {
       "etag": "\"21da-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/vcardrepresentation.md",
+      "file_path": "documentation/AddressBook/abperson/vcardrepresentation().md",
       "hash": "c4df4563ba2d83bf9435767c5cfcff62ed4b2310f3e9dfe0f5fbd6b3aa2269a5"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncomparepeoplebyname(_:_:_:)": {
       "etag": "\"a38b-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpersoncomparepeoplebyname.md",
+      "file_path": "documentation/AddressBook/abpersoncomparepeoplebyname(_,_,_).md",
       "hash": "eeb4d4d88f24056da296d4cc383a68e477fc73a4c2a325de5325cfe7ff20a4f4"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncompositenameformat": {
@@ -1092,97 +1092,97 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncopyarrayofalllinkedpeople(_:)": {
       "etag": "\"96fc-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyarrayofalllinkedpeople.md",
+      "file_path": "documentation/AddressBook/abpersoncopyarrayofalllinkedpeople(_).md",
       "hash": "9b9564e10b7b823420e9b86b9bdc5089884a2bfe0b8c26f948ad0b1d83a26c5f"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncopycompositenamedelimiterforrecord(_:)": {
       "etag": "\"93c9-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopycompositenamedelimiterforrecord.md",
+      "file_path": "documentation/AddressBook/abpersoncopycompositenamedelimiterforrecord(_).md",
       "hash": "cee24ab8104c0452370724c401208609a11c0a18bcd24538ac5b5935335e1b10"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncopyimagedata(_:)": {
       "etag": "\"74b3-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyimagedata.md",
+      "file_path": "documentation/AddressBook/abpersoncopyimagedata(_).md",
       "hash": "657137213a687726046e790cbce86dcfebc1d3f3f00f4a9c8900c75ac3e42f25"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncopyimagedatawithformat(_:_:)": {
       "etag": "\"9e3e-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyimagedatawithformat.md",
+      "file_path": "documentation/AddressBook/abpersoncopyimagedatawithformat(_,_).md",
       "hash": "76281936717310c15365a56414b764542fab1f094bdc4f6a1f978cccdda353b8"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncopylocalizedpropertyname(_:)": {
       "etag": "\"938e-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopylocalizedpropertyname.md",
+      "file_path": "documentation/AddressBook/abpersoncopylocalizedpropertyname(_).md",
       "hash": "941cc957556eb3f2380b31d648525b00ab900daf1204e189bcd04a057033aec9"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncopyparentgroups(_:)": {
       "etag": "\"60af-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyparentgroups.md",
+      "file_path": "documentation/AddressBook/abpersoncopyparentgroups(_).md",
       "hash": "83ddcdddd838da27f5213405eca9cc06ffd974cb3f7c5a017748bdbf8dd213d6"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncopysource(_:)": {
       "etag": "\"8fee-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopysource.md",
+      "file_path": "documentation/AddressBook/abpersoncopysource(_).md",
       "hash": "9e7a688c5cfa732dad6d4fea82bb7d03d37961cc4b9ab6a66c75ba1654104180"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncopyvcardrepresentation(_:)": {
       "etag": "\"6124-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyvcardrepresentation.md",
+      "file_path": "documentation/AddressBook/abpersoncopyvcardrepresentation(_).md",
       "hash": "f635c4026c6497c39995091aeac8bb0bc168e29a06b3c82c09d1e0bf8f2870f6"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncreate()": {
       "etag": "\"6310-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreate.md",
+      "file_path": "documentation/AddressBook/abpersoncreate().md",
       "hash": "67378d3111c0d6062098c37d3e89122814ac3378822a38454b821d89e08de779"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncreateinsource(_:)": {
       "etag": "\"9278-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreateinsource.md",
+      "file_path": "documentation/AddressBook/abpersoncreateinsource(_).md",
       "hash": "bc837d9cbc45822e8870bc858053e913c45b65d3339cc0f921995b2916b0a882"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncreatepeopleinsourcewithvcardrepresentation(_:_:)": {
       "etag": "\"9dd8-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreatepeopleinsourcewithvcardrepresentation.md",
+      "file_path": "documentation/AddressBook/abpersoncreatepeopleinsourcewithvcardrepresentation(_,_).md",
       "hash": "5378892e14a68cd8840f420ca4a6399857fca17403f318ef94359bc5c9ebca16"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncreatesearchelement(_:_:_:_:_:)": {
       "etag": "\"90c8-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreatesearchelement.md",
+      "file_path": "documentation/AddressBook/abpersoncreatesearchelement(_,_,_,_,_).md",
       "hash": "e17e2650c8f94d4f48a5337b5540ec6814ced7d928bdf61d5ab83e3624028cee"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncreatevcardrepresentationwithpeople(_:)": {
       "etag": "\"9381-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreatevcardrepresentationwithpeople.md",
+      "file_path": "documentation/AddressBook/abpersoncreatevcardrepresentationwithpeople(_).md",
       "hash": "063b0ba15f59069a4610e909d546196819d3c6b11ab04f30d0516e442b431c03"
     },
     "https://developer.apple.com/documentation/addressbook/abpersoncreatewithvcardrepresentation(_:)": {
       "etag": "\"60fc-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreatewithvcardrepresentation.md",
+      "file_path": "documentation/AddressBook/abpersoncreatewithvcardrepresentation(_).md",
       "hash": "dff9033e5c9c7ae7c6e8dae5466eb63a20ee5ca84c5fa71fdaaab4c17a83c7cb"
     },
     "https://developer.apple.com/documentation/addressbook/abpersongetcompositenameformat()": {
       "etag": "\"9122-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abpersongetcompositenameformat.md",
+      "file_path": "documentation/AddressBook/abpersongetcompositenameformat().md",
       "hash": "1b343b143136c7d38eb091fcd2d44b960023bbdbe4ad30eac56f8d9a54304535"
     },
     "https://developer.apple.com/documentation/addressbook/abpersongetcompositenameformatforrecord(_:)": {
       "etag": "\"9447-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpersongetcompositenameformatforrecord.md",
+      "file_path": "documentation/AddressBook/abpersongetcompositenameformatforrecord(_).md",
       "hash": "a74bfb5491da57f2ab6ad651976308a2aa1b295e6281764c7cf1033847c113dd"
     },
     "https://developer.apple.com/documentation/addressbook/abpersongetsortordering()": {
       "etag": "\"89a7-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abpersongetsortordering.md",
+      "file_path": "documentation/AddressBook/abpersongetsortordering().md",
       "hash": "7cf87ebb76d21e043d0f3295df4e72991a734f43839864770bf905ce81df20d6"
     },
     "https://developer.apple.com/documentation/addressbook/abpersongettypeofproperty(_:)": {
       "etag": "\"8db2-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abpersongettypeofproperty.md",
+      "file_path": "documentation/AddressBook/abpersongettypeofproperty(_).md",
       "hash": "f5a5daf941d3c0c1b6a9314b8ba4244aefcce23981aa49b7e4950ba71ffd3c7a"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonhasimagedata(_:)": {
       "etag": "\"8bf2-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abpersonhasimagedata.md",
+      "file_path": "documentation/AddressBook/abpersonhasimagedata(_).md",
       "hash": "60c675c1500dd0fc8cda241dae2a224c99cafd212c5116facc33eba81cac0e49"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonimageformat": {
@@ -1192,12 +1192,12 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpersonimageformat/init(_:)": {
       "etag": "\"183e-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abpersonimageformat/init.md",
+      "file_path": "documentation/AddressBook/abpersonimageformat/init(_).md",
       "hash": "c8239c6c1ff11e0163ddae6dd2b41dbcca49158b5cbefe1012025137a1560254"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonimageformat/init(rawvalue:)": {
       "etag": "\"1861-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abpersonimageformat/init-rawvalue.md",
+      "file_path": "documentation/AddressBook/abpersonimageformat/init(rawvalue).md",
       "hash": "fd77347c44ddeefdbe504f08161b6909b71eb840d0671e7aeaf20942ad12c78d"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonimageformat/rawvalue": {
@@ -1212,17 +1212,17 @@
     },
     "https://developer.apple.com/documentation/addressbook/abpersonremoveimagedata(_:_:)": {
       "etag": "\"9d44-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abpersonremoveimagedata.md",
+      "file_path": "documentation/AddressBook/abpersonremoveimagedata(_,_).md",
       "hash": "a81be7e7d14d3021d67c0b330597761a34bc248acd65c02264354d7dd48470bc"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonsetimagedata(_:_:)": {
       "etag": "W/\"ab3b4c2becfae96c6ed936b964628380\"",
-      "file_path": "documentation/AddressBook/abpersonsetimagedata.md",
+      "file_path": "documentation/AddressBook/abpersonsetimagedata(_,_).md",
       "hash": "fab9ee3489bfed27dc9bdb8b42e0c3395673edf2c2975af4c6df549035ac4d8a"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonsetimagedata(_:_:_:)": {
       "etag": "\"7f91-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abpersonsetimagedata.md",
+      "file_path": "documentation/AddressBook/abpersonsetimagedata(_,_,_).md",
       "hash": "30627e02df5881beb09687fa14b1218682cd1eac02331a0997bdb58cb4da6498"
     },
     "https://developer.apple.com/documentation/addressbook/abpersonsortordering": {
@@ -1277,7 +1277,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class": {
       "etag": "\"7f0b-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swiftclass.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class.md",
       "hash": "930dd8dd4fc03fa2402965a2683d93e63c32acdb7ba5d458de69a02e368ba4eb"
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/displayname": {
@@ -1287,32 +1287,32 @@
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/init()": {
       "etag": "\"1dda-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/init.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/init().md",
       "hash": "76b577d706934348385f666cd9c3546b8e7e3491930f23c0425ab4e9d5c3750c"
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/init(addressbook:)": {
       "etag": "\"2832-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/init-addressbook.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/init(addressbook).md",
       "hash": "49ee67c5f51cb2e047a8b6b5b85ccfbd89be82552c33c178464c0018586d8174"
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/isreadonly()": {
       "etag": "\"2336-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/isreadonly.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/isreadonly().md",
       "hash": "b0234b970e5c4f33c234c5b432887c814c232c8658520ef3950a929f7f20e43d"
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/removevalue(forproperty:)": {
       "etag": "\"4c57-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/removevalue-forproperty.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/removevalue(forproperty).md",
       "hash": "d88275930de4ccedd161100bddab766560c5a890f6be98a40ae07ad9a861177c"
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/setvalue(_:forproperty:)": {
       "etag": "\"51dd-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/setvalue-forproperty.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/setvalue(_,forproperty).md",
       "hash": "11912de65f374b3c89bd490184fdff3d645cac4e8c92ce1ff2cf913e8145fc06"
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/setvalue(_:forproperty:error:)": {
       "etag": "\"5bec-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/setvalue-forpropertyerror.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/setvalue(_,forproperty,error).md",
       "hash": "1a499769325a3e0c5341878ef06ea0b110a80148dc7fce06d4fb11d030139c20"
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/uniqueid": {
@@ -1322,47 +1322,47 @@
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.class/value(forproperty:)": {
       "etag": "\"4b1a-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/value-forproperty.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/value(forproperty).md",
       "hash": "5b3c295678314f92fc6ef346ff5d344486f609d9b49b347501e8f9cb7f5cf253"
     },
     "https://developer.apple.com/documentation/addressbook/abrecord-swift.typealias": {
       "etag": "\"4c2f-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swifttypealias.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.typealias.md",
       "hash": "bb094f712402cab2dd4be6d71cdd9308c1d271265ea5e3218ae9149297efb0f3"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordcopycompositename(_:)": {
       "etag": "\"9a08-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abrecordcopycompositename.md",
+      "file_path": "documentation/AddressBook/abrecordcopycompositename(_).md",
       "hash": "4956f23c51970a6fc962c0f4698db5c134d74b8fc77313b433c016638443a620"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordcopyrecordtype(_:)": {
       "etag": "\"6eaf-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abrecordcopyrecordtype.md",
+      "file_path": "documentation/AddressBook/abrecordcopyrecordtype(_).md",
       "hash": "08ea5662b6f81f1e5cd1512cd8b79dbda06197eb503f572d55716344107fa57a"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordcopyuniqueid(_:)": {
       "etag": "\"6e0e-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abrecordcopyuniqueid.md",
+      "file_path": "documentation/AddressBook/abrecordcopyuniqueid(_).md",
       "hash": "4358403d5efc6288d686e1e90ab2a1f4aa4ca3aa9fe893de92c2444bf1b15b8c"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordcopyvalue(_:_:)": {
       "etag": "\"89ae-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecordcopyvalue.md",
+      "file_path": "documentation/AddressBook/abrecordcopyvalue(_,_).md",
       "hash": "aa05f3230adab4479e0c20b82edb7297cfad89cbdb5c2fa3cd9ed1caa0c93306"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordcreatecopy(_:)": {
       "etag": "\"6986-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abrecordcreatecopy.md",
+      "file_path": "documentation/AddressBook/abrecordcreatecopy(_).md",
       "hash": "407041c50de8c1966f1f81b686c6f3e0ea7fc0cf752aec9e5938f872a9863093"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordgetrecordid(_:)": {
       "etag": "\"9472-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abrecordgetrecordid.md",
+      "file_path": "documentation/AddressBook/abrecordgetrecordid(_).md",
       "hash": "8ab6041347850c942bb73eaca27cdc08711fcea1adb523dfadf1eef99d0e2300"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordgetrecordtype(_:)": {
       "etag": "\"9b81-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abrecordgetrecordtype.md",
+      "file_path": "documentation/AddressBook/abrecordgetrecordtype(_).md",
       "hash": "8769e99f7419edde50234abfb495396bdf587c02958a135675d1e2d35fc81691"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordid": {
@@ -1372,27 +1372,27 @@
     },
     "https://developer.apple.com/documentation/addressbook/abrecordisreadonly(_:)": {
       "etag": "\"68e3-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abrecordisreadonly.md",
+      "file_path": "documentation/AddressBook/abrecordisreadonly(_).md",
       "hash": "df9acc577f6f89ba054203f48c85f2ac1c9a960d56a688a093b392e0ae18d609"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordremovevalue(_:_:)": {
       "etag": "W/\"d17705a5f7fe52a8a4ab005c7f625dbf\"",
-      "file_path": "documentation/AddressBook/abrecordremovevalue.md",
+      "file_path": "documentation/AddressBook/abrecordremovevalue(_,_).md",
       "hash": "50c8ddfb8d41256aa3519bed592a489a6675603b2884ba5aa9a171b5d95ce9f7"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordremovevalue(_:_:_:)": {
       "etag": "\"90e4-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abrecordremovevalue.md",
+      "file_path": "documentation/AddressBook/abrecordremovevalue(_,_,_).md",
       "hash": "0219f387b4987ab0995e95a0fae45424048f0dc541120caa37991460325b9f7a"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordsetvalue(_:_:_:)": {
       "etag": "W/\"1f86493b5e46965443f6ca891812d35e\"",
-      "file_path": "documentation/AddressBook/abrecordsetvalue.md",
+      "file_path": "documentation/AddressBook/abrecordsetvalue(_,_,_).md",
       "hash": "343062ecde913c0b49e762c30dbba519c59a7e9aa04c2010454f2d86df797622"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordsetvalue(_:_:_:_:)": {
       "etag": "\"9c7f-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abrecordsetvalue.md",
+      "file_path": "documentation/AddressBook/abrecordsetvalue(_,_,_,_).md",
       "hash": "e49b06970b00247c0690090bda65ebbb93efffa391f51154b1468e7b75299225"
     },
     "https://developer.apple.com/documentation/addressbook/abrecordtype": {
@@ -1402,12 +1402,12 @@
     },
     "https://developer.apple.com/documentation/addressbook/abremoveproperties(_:_:_:)": {
       "etag": "\"5621-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abremoveproperties.md",
+      "file_path": "documentation/AddressBook/abremoveproperties(_,_,_).md",
       "hash": "83e6c524d98465a039e68c01cee6c6cde2745c7f8fb3c81815e45f491b8a45cf"
     },
     "https://developer.apple.com/documentation/addressbook/abremoverecord(_:_:)": {
       "etag": "\"7265-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abremoverecord.md",
+      "file_path": "documentation/AddressBook/abremoverecord(_,_).md",
       "hash": "d703c13afa1ed932547c4b0314233edd2d8fc251c6508ce9a2af74ae7ede61bc"
     },
     "https://developer.apple.com/documentation/addressbook/abremoverecordserror": {
@@ -1417,7 +1417,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/absave(_:)": {
       "etag": "\"334e-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/absave.md",
+      "file_path": "documentation/AddressBook/absave(_).md",
       "hash": "bbe462b15655a3cf1885ae18c340abc83282ce20e1577aaed23e3d01be599826"
     },
     "https://developer.apple.com/documentation/addressbook/absearchcomparison": {
@@ -1437,22 +1437,22 @@
     },
     "https://developer.apple.com/documentation/addressbook/absearchelement/init(forconjunction:children:)": {
       "etag": "\"2f2e-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/absearchelement/init-forconjunctionchildren.md",
+      "file_path": "documentation/AddressBook/absearchelement/init(forconjunction,children).md",
       "hash": "1020ddd34495ffec931019c0114e2c76fc3cf095270b6f05dc7738f8020e9102"
     },
     "https://developer.apple.com/documentation/addressbook/absearchelement/matchesrecord(_:)": {
       "etag": "\"2ec4-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/absearchelement/matchesrecord.md",
+      "file_path": "documentation/AddressBook/absearchelement/matchesrecord(_).md",
       "hash": "c0878b51d13be9b0413ae4760d25a9ef5fbd5d06403f987ae269085df319af6d"
     },
     "https://developer.apple.com/documentation/addressbook/absearchelementcreatewithconjunction(_:_:)": {
       "etag": "\"4b03-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/absearchelementcreatewithconjunction.md",
+      "file_path": "documentation/AddressBook/absearchelementcreatewithconjunction(_,_).md",
       "hash": "1755a721c1c3d7147c531b7328110811147d1b5165b9118856db5ee823f388e6"
     },
     "https://developer.apple.com/documentation/addressbook/absearchelementmatchesrecord(_:_:)": {
       "etag": "\"3d1a-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/absearchelementmatchesrecord.md",
+      "file_path": "documentation/AddressBook/absearchelementmatchesrecord(_,_).md",
       "hash": "73a1572c91928bfdfe4217966e149ef38c26fc5ed5e48d9ed8fb1f0d3ede476a"
     },
     "https://developer.apple.com/documentation/addressbook/absearchelementref": {
@@ -1462,7 +1462,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/absetme(_:_:)": {
       "etag": "\"5ea4-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/absetme.md",
+      "file_path": "documentation/AddressBook/absetme(_,_).md",
       "hash": "37878587ceb94ff19b950565f9e427208af01d5d03d3dd661352bfebd106d448"
     },
     "https://developer.apple.com/documentation/addressbook/absinglevalueselection": {
@@ -1477,7 +1477,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/abtypeofproperty(_:_:_:)": {
       "etag": "\"596c-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abtypeofproperty.md",
+      "file_path": "documentation/AddressBook/abtypeofproperty(_,_,_).md",
       "hash": "ce87439384de91a36c7686cccbdaa6f9e92c25ff72f7f13cecd893ddf2c38a98"
     },
     "https://developer.apple.com/documentation/addressbook/address-book-constants": {
@@ -2942,7 +2942,7 @@
     },
     "https://developer.apple.com/documentation/addressbook/property_types": {
       "etag": "\"5b72-65902687b9272-df\"",
-      "file_path": "documentation/AddressBook/property-types.md",
+      "file_path": "documentation/AddressBook/property_types.md",
       "hash": "5c71518a929498ce7959a6748bae6e1eaa834821458c263f3367a15e67304126"
     },
     "https://developer.apple.com/documentation/addressbook/social-profile-services": {
@@ -2992,12 +2992,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddpropertiesandtypes(_:_:_:).json": {
       "etag": "\"5f0a-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abaddpropertiesandtypes.md",
+      "file_path": "documentation/AddressBook/abaddpropertiesandtypes(_,_,_).md",
       "hash": "6b70b9cdeb0af384a857021f9c41675a4850b3d477f94961be2744519b0dc131"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddrecord(_:_:).json": {
       "etag": "\"7287-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abaddrecord.md",
+      "file_path": "documentation/AddressBook/abaddrecord(_,_).md",
       "hash": "3bacfceb43c97af10c406079e8dd9c0e5fc821ba68e939c563625dcd21b999b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddrecordserror.json": {
@@ -3007,162 +3007,162 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class.json": {
       "etag": "\"bbe1-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swiftclass.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class.md",
       "hash": "72d19d8627d5d64e9655594c70f8354a97888e92b16b9348f908eec487c8209b"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/add(_:).json": {
       "etag": "\"495c-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/add.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/add(_).md",
       "hash": "dbbd22f93a8735535bea071e414c6d24c916a29291365814e63f649607a21907"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/add(_:error:).json": {
       "etag": "\"4fad-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/add-error.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/add(_,error).md",
       "hash": "58f056c5d0a0e7225538823fa9f9b60a83683e3a1e1d76a43e5b221b959d4237"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/defaultcountrycode().json": {
       "etag": "\"2ddc-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/defaultcountrycode.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/defaultcountrycode().md",
       "hash": "4f5e91ee5d4c4a4a72725c59ce4718689af7ca1be7746a1afa219e9b3b15004e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/defaultnameordering().json": {
       "etag": "\"2621-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/defaultnameordering.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/defaultnameordering().md",
       "hash": "c7ea239056a6d8bddf5f28072db90b88c6d72ab963585f128fc340b4ca2f4683"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/formattedaddress(from:).json": {
       "etag": "\"3249-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/formattedaddress-from.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/formattedaddress(from).md",
       "hash": "e720952c786b0f2a7ce14dac2d74b4b3083e702fa2b235e5a58011f2fd5d87a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/groups().json": {
       "etag": "\"2481-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/groups.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/groups().md",
       "hash": "0c5b12df8ccd671c7bcc2f7f59ccfa187dd486d38b5d84ba2857217aa3c35cba"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/hasunsavedchanges().json": {
       "etag": "\"2b9a-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/hasunsavedchanges.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/hasunsavedchanges().md",
       "hash": "43ac609e40dc461d51e9ff37b999cb1d6c8ca5cee07e3ff363f816f82ce819e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/me().json": {
       "etag": "\"2814-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/me.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/me().md",
       "hash": "ca1382ef477613cf9a831cb9a61ae6f19e31d40290aa4e4e61fad309c5df456f"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/people().json": {
       "etag": "\"2481-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/people.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/people().md",
       "hash": "c5b4030607fb226a01961f13fa777e57b3c2a7c6ce1b3d207aadf2376e155689"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/record(foruniqueid:).json": {
       "etag": "\"2ce2-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/record-foruniqueid.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/record(foruniqueid).md",
       "hash": "66237feb54d239317644fdda4e5c29c6f51e710155e553adc93d30d2ad781bf3"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/recordclass(fromuniqueid:).json": {
       "etag": "\"2757-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/recordclass-fromuniqueid.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/recordclass(fromuniqueid).md",
       "hash": "c2b38007e2e65ee07eaea9acabf69740ae4f1d2a771445a2b82a9592887f146e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/records(matching:).json": {
       "etag": "\"2ae9-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/records-matching.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/records(matching).md",
       "hash": "4bd082fa66644f56806349500e5a45549f3ff217e73462c5d57eb58549a40c03"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/remove(_:).json": {
       "etag": "\"42d8-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/remove.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/remove(_).md",
       "hash": "b4dc328da3985aace3ec9e305090511bb0bb5a4a677cb901279591442d8c8ebb"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/remove(_:error:).json": {
       "etag": "\"4926-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/remove-error.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/remove(_,error).md",
       "hash": "1caee4a7911942d0cbd57197a4a7c506a734bc42009ce693716598c2518c1d57"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/save().json": {
       "etag": "\"2f5d-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/save.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/save().md",
       "hash": "892a5369b1be3d5caf6ed989026f6ce75748516fc0fe3e73be15ea4998e007dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/saveandreturnerror().json": {
       "etag": "\"347a-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/saveandreturnerror.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/saveandreturnerror().md",
       "hash": "f19224a37fdbfb91350e3eb61745f399b2897d0c9b755efb99c2386b9342420c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/setme(_:).json": {
       "etag": "\"28dd-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/setme.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/setme(_).md",
       "hash": "ec70445d0ec8061e4f2612708349b8a40dd2bb9dafe7e21fe568d98c9b3cec19"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.class/shared().json": {
       "etag": "\"353e-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swift.class/shared.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.class/shared().md",
       "hash": "0abacbe6a7c38a1a42f7b806f86727b9e492cdf02d6da9a7dc64dc9e3cdec545"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbook-swift.typealias.json": {
       "etag": "\"2198-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abaddressbook-swifttypealias.md",
+      "file_path": "documentation/AddressBook/abaddressbook-swift.typealias.md",
       "hash": "b0ddeb8eb359aebec78cab518f420dbbad92baf253b54fafed9cfaa00ed3c97f"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookaddrecord(_:_:_:).json": {
       "etag": "\"a85b-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookaddrecord.md",
+      "file_path": "documentation/AddressBook/abaddressbookaddrecord(_,_,_).md",
       "hash": "676eeab3b86a09dea46bd558291cbe929877814cf0c2f81cdf4c22d1154519cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopyarrayofallgroups(_:).json": {
       "etag": "\"93cf-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallgroups.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallgroups(_).md",
       "hash": "a4e5c93f3ada4894f3822224f9b6d6a4cfd0173cc24a361d9276161535a5984e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopyarrayofallgroupsinsource(_:_:).json": {
       "etag": "\"9d1e-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallgroupsinsource.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallgroupsinsource(_,_).md",
       "hash": "0301e6228e0e7beb4b446a45b644ebef98a3600566275553b505ed896fe9a247"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopyarrayofallpeople(_:).json": {
       "etag": "\"93b6-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeople.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeople(_).md",
       "hash": "912c5d0f0ba9e55c65b817a223cf6cc9d7b17a8bb7ffd86f8635d62a1edc277c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopyarrayofallpeopleinsource(_:_:).json": {
       "etag": "\"9d8d-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeopleinsource.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeopleinsource(_,_).md",
       "hash": "519440316b481f71f9b784f16ee154ca234f0ffc5b0017e4498a06e404b4d2ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopyarrayofallpeopleinsourcewithsortordering(_:_:_:).json": {
       "etag": "\"aae4-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeopleinsourcewithsortordering.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallpeopleinsourcewithsortordering(_,_,_).md",
       "hash": "19495f641d0639c33b69ac333bb843af65a1eb9e9f9ddbea1b741f0e30080f7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopyarrayofallsources(_:).json": {
       "etag": "\"9402-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallsources.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopyarrayofallsources(_).md",
       "hash": "916547785a0eb313f6523ebbc469ea926979358665b18ed454369f489cfe7083"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopydefaultsource(_:).json": {
       "etag": "\"96c9-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopydefaultsource.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopydefaultsource(_).md",
       "hash": "157377b1f17d98b298a27e58a25253dabe3bf7b23a2e003aba23fac18f2240e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopylocalizedlabel(_:).json": {
       "etag": "\"8dff-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopylocalizedlabel.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopylocalizedlabel(_).md",
       "hash": "6c8d314e85d9a33ec0376238b7e554f9840ba8e6ad0e1e9ffd0a7ab0cc6b2e53"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcopypeoplewithname(_:_:).json": {
       "etag": "\"9eea-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcopypeoplewithname.md",
+      "file_path": "documentation/AddressBook/abaddressbookcopypeoplewithname(_,_).md",
       "hash": "c7240290baddad56167cbf3ca9bb3043486065d49b22dcf0d46bb313e27102e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcreate().json": {
       "etag": "\"9470-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcreate.md",
+      "file_path": "documentation/AddressBook/abaddressbookcreate().md",
       "hash": "68005378ddb74ca8884c262a0c2adece3c00424b834e7893ae1599d606dc34a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookcreatewithoptions(_:_:).json": {
       "etag": "\"af3d-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookcreatewithoptions.md",
+      "file_path": "documentation/AddressBook/abaddressbookcreatewithoptions(_,_).md",
       "hash": "3fab55d1edbf89fe339e2e010b6fae901c00af0e9ba3bc4ae361e6e214185747"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookerrordomain.json": {
@@ -3172,47 +3172,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookgetauthorizationstatus().json": {
       "etag": "\"882b-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetauthorizationstatus.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetauthorizationstatus().md",
       "hash": "cd6718a0bd497ffcbf7dbbe88563cd55e018bb1bfbc556cb255e5cf391e26532"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookgetgroupcount(_:).json": {
       "etag": "\"8fa9-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetgroupcount.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetgroupcount(_).md",
       "hash": "c20f1829915a824a4077d4ce338d5d89f0ffb8febd52477d1b3e7650cb6b63f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookgetgroupwithrecordid(_:_:).json": {
       "etag": "\"9df6-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetgroupwithrecordid.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetgroupwithrecordid(_,_).md",
       "hash": "282e0c8187d3d89cbb515ae633db3766f1bcb625a2b34a4fbb2f9dbb720e556e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookgetpersoncount(_:).json": {
       "etag": "\"9225-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetpersoncount.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetpersoncount(_).md",
       "hash": "ac6dab43403a263c25112e710ab857b388a73d3ef6df5f4b7c474a949f6b4c92"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookgetpersonwithrecordid(_:_:).json": {
       "etag": "\"9fce-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetpersonwithrecordid.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetpersonwithrecordid(_,_).md",
       "hash": "7c83a884c12f1058e48c028a29d3a41a39401dfc965a75704343a1975f1414b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookgetsourcewithrecordid(_:_:).json": {
       "etag": "\"a09a-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookgetsourcewithrecordid.md",
+      "file_path": "documentation/AddressBook/abaddressbookgetsourcewithrecordid(_,_).md",
       "hash": "3d26f1acca75c10ddc2ce3b733a52a7ddbfc0d68e22517d87a3af986493cd19c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookhasunsavedchanges(_:).json": {
       "etag": "\"8dbd-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookhasunsavedchanges.md",
+      "file_path": "documentation/AddressBook/abaddressbookhasunsavedchanges(_).md",
       "hash": "94839c51b43d3ddde1ea0fa4d7ec6b5e18f9c4683eba5070f9b60c8ca07aac00"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookregisterexternalchangecallback(_:_:_:).json": {
       "etag": "\"9a71-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookregisterexternalchangecallback.md",
+      "file_path": "documentation/AddressBook/abaddressbookregisterexternalchangecallback(_,_,_).md",
       "hash": "33d2b4d855dd6e6d0c0721912cf8adb78bb05104e55228e4655b6d843aa379ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookremoverecord(_:_:_:).json": {
       "etag": "\"aa40-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookremoverecord.md",
+      "file_path": "documentation/AddressBook/abaddressbookremoverecord(_,_,_).md",
       "hash": "0a3ba4132775919e95c8ef0540b8f422f762d36b8b830c8d08bbf23143efac6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookrequestaccesscompletionhandler.json": {
@@ -3222,22 +3222,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookrequestaccesswithcompletion(_:_:).json": {
       "etag": "\"9e6d-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookrequestaccesswithcompletion.md",
+      "file_path": "documentation/AddressBook/abaddressbookrequestaccesswithcompletion(_,_).md",
       "hash": "ad20845a9c49e1e0e43ba4b4da75c605f3b454a1ec0376d6eb51fe956b1164cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookrevert(_:).json": {
       "etag": "\"87c0-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookrevert.md",
+      "file_path": "documentation/AddressBook/abaddressbookrevert(_).md",
       "hash": "35a52f4739ddb850e184ec3584279714cfcab5df9e0465d93b743ac0d9e5fe3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbooksave(_:_:).json": {
       "etag": "\"a047-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abaddressbooksave.md",
+      "file_path": "documentation/AddressBook/abaddressbooksave(_,_).md",
       "hash": "0c43d5d29ca96a283cec85808ea4d40ad2be6215aa258b0db0327711e6a588e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abaddressbookunregisterexternalchangecallback(_:_:_:).json": {
       "etag": "\"99f5-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abaddressbookunregisterexternalchangecallback.md",
+      "file_path": "documentation/AddressBook/abaddressbookunregisterexternalchangecallback(_,_,_).md",
       "hash": "5eb14e57ea6c7a066fc536972bd508d5dd2a538c2d4be3a49423b3c6d09ad5be"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abauthorizationstatus.json": {
@@ -3257,7 +3257,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abauthorizationstatus/init(rawvalue:).json": {
       "etag": "\"15e4-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/AddressBook/abauthorizationstatus/init(rawvalue).md",
       "hash": "0bd87c3f9bba884374d2fc96b4e0304b2e55fe16a433e10bc4d8617b8138f702"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abauthorizationstatus/notdetermined.json": {
@@ -3272,57 +3272,57 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abbeginloadingimagedataforclient(_:_:_:).json": {
       "etag": "\"3b22-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abbeginloadingimagedataforclient.md",
+      "file_path": "documentation/AddressBook/abbeginloadingimagedataforclient(_,_,_).md",
       "hash": "f01693d98d107924a3f20d86a23965f16c2fd293a57ffd35b465d1691c70feb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcancelloadingimagedatafortag(_:).json": {
       "etag": "\"2656-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abcancelloadingimagedatafortag.md",
+      "file_path": "documentation/AddressBook/abcancelloadingimagedatafortag(_).md",
       "hash": "9dfb3bac050fb08155286ff2c2645e1769d5ac13fe1b24eb91e7239cba4e02be"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcopyarrayofallgroups(_:).json": {
       "etag": "\"7263-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abcopyarrayofallgroups.md",
+      "file_path": "documentation/AddressBook/abcopyarrayofallgroups(_).md",
       "hash": "6d086cf20247cada0e863e6e5d038e77fbeba5b78d0f2a9d6b95a4e484fa107e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcopyarrayofallpeople(_:).json": {
       "etag": "\"61fd-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abcopyarrayofallpeople.md",
+      "file_path": "documentation/AddressBook/abcopyarrayofallpeople(_).md",
       "hash": "140eb7534b5639b9f87fb96dee353b8a7db1d972e48fd01b14d0ef11dd4376e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcopyarrayofmatchingrecords(_:_:).json": {
       "etag": "\"5724-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abcopyarrayofmatchingrecords.md",
+      "file_path": "documentation/AddressBook/abcopyarrayofmatchingrecords(_,_).md",
       "hash": "7ce9652656e63f06d3ff96f54aa2ada4ede68241a1ec51fab2cb52444b071b5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcopyarrayofpropertiesforrecordtype(_:_:).json": {
       "etag": "\"533c-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abcopyarrayofpropertiesforrecordtype.md",
+      "file_path": "documentation/AddressBook/abcopyarrayofpropertiesforrecordtype(_,_).md",
       "hash": "7a13f44be68678f36dd1ef635363f52a92d9367d8c317f3aa12ca5759f1c4ee0"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcopydefaultcountrycode(_:).json": {
       "etag": "\"38af-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abcopydefaultcountrycode.md",
+      "file_path": "documentation/AddressBook/abcopydefaultcountrycode(_).md",
       "hash": "4674710bfead23646ef45fa431b7330aa7ab3234833ee7faa62163d00b375938"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcopylocalizedpropertyorlabel(_:).json": {
       "etag": "\"46cd-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abcopylocalizedpropertyorlabel.md",
+      "file_path": "documentation/AddressBook/abcopylocalizedpropertyorlabel(_).md",
       "hash": "bd1c7d98f17b7947f6b104d87cf42835e45ffa3584e46cd271745e4f9e1f0a2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcopyrecordforuniqueid(_:_:).json": {
       "etag": "\"78b8-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abcopyrecordforuniqueid.md",
+      "file_path": "documentation/AddressBook/abcopyrecordforuniqueid(_,_).md",
       "hash": "e19ea227499785e3f93d2c6f897c421dbd5036aab8061b6824eec5e83ffb9710"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcopyrecordtypefromuniqueid(_:_:).json": {
       "etag": "\"737e-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abcopyrecordtypefromuniqueid.md",
+      "file_path": "documentation/AddressBook/abcopyrecordtypefromuniqueid(_,_).md",
       "hash": "39728965302c3ecb34d069ff79164b77b863679db515889ae891b5941d2c2381"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abcreateformattedaddressfromdictionary(_:_:).json": {
       "etag": "\"76d4-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abcreateformattedaddressfromdictionary.md",
+      "file_path": "documentation/AddressBook/abcreateformattedaddressfromdictionary(_,_).md",
       "hash": "a976e986605bfaa2752c3f8490887dbf2756b2010f0dbcac426d2bccfa657d07"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abexternalchangecallback.json": {
@@ -3332,12 +3332,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgetme(_:).json": {
       "etag": "\"61df-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abgetme.md",
+      "file_path": "documentation/AddressBook/abgetme(_).md",
       "hash": "050142189bf28c9f304f7a5fbac695d145c6c1fdaf65cd76b00402df0a07d137"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgetsharedaddressbook().json": {
       "etag": "\"31d5-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abgetsharedaddressbook.md",
+      "file_path": "documentation/AddressBook/abgetsharedaddressbook().md",
       "hash": "d6a6c3159e5b199aa202dc491db4d8c344df8e7b21f3c92db35f8eea75dacfa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup.json": {
@@ -3347,132 +3347,132 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/addmember(_:).json": {
       "etag": "\"397a-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/addmember.md",
+      "file_path": "documentation/AddressBook/abgroup/addmember(_).md",
       "hash": "6b0f624076c03511523c895fe3554661eb8d7e19d396118ad26af0f74008ea9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/addpropertiesandtypes(_:).json": {
       "etag": "\"4052-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/addpropertiesandtypes.md",
+      "file_path": "documentation/AddressBook/abgroup/addpropertiesandtypes(_).md",
       "hash": "a94c93d616049e90307d363cf6d79b3f831d1bb870dbdb076fdc2f28168fcf0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/addsubgroup(_:).json": {
       "etag": "\"3ad9-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/addsubgroup.md",
+      "file_path": "documentation/AddressBook/abgroup/addsubgroup(_).md",
       "hash": "dad5657a2caa60eace76e9c44604cab787a69dccf0a1e9ad2b7eb181426076d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/distributionidentifier(forproperty:person:).json": {
       "etag": "\"419a-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/distributionidentifier-forpropertyperson.md",
+      "file_path": "documentation/AddressBook/abgroup/distributionidentifier(forproperty,person).md",
       "hash": "dbda551e91181e27e72d9978f90a8e9c9628ed93efbe1cb9e453ad1fa269befa"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/members().json": {
       "etag": "\"264a-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/members.md",
+      "file_path": "documentation/AddressBook/abgroup/members().md",
       "hash": "5af82e02a33949138e12473d5c28425a3da6f3bd0f915352d733899c653fa6e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/parentgroups().json": {
       "etag": "\"2c18-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/parentgroups.md",
+      "file_path": "documentation/AddressBook/abgroup/parentgroups().md",
       "hash": "7e473ff2ff91bc4586ed70a809ce8ceb433ab95872f23ff4ed9f7cb9661d9fa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/properties().json": {
       "etag": "\"2e96-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/properties.md",
+      "file_path": "documentation/AddressBook/abgroup/properties().md",
       "hash": "6c14670da2cad75e78ad501997f3e80b1184aa6afdc012ba0bca1f1ffb593eed"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/removemember(_:).json": {
       "etag": "\"37e7-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/removemember.md",
+      "file_path": "documentation/AddressBook/abgroup/removemember(_).md",
       "hash": "42d3eb4526852827329b11bb3c337e842ce748f42c8069e62cf56393950b982c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/removeproperties(_:).json": {
       "etag": "\"3721-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/removeproperties.md",
+      "file_path": "documentation/AddressBook/abgroup/removeproperties(_).md",
       "hash": "328ada54e56f491f686d03c74ef2d8339ae4fccab76bb3e816e50b8f1980247b"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/removesubgroup(_:).json": {
       "etag": "\"3946-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/removesubgroup.md",
+      "file_path": "documentation/AddressBook/abgroup/removesubgroup(_).md",
       "hash": "723443d7b452f1bb3b2eb028e445603ee4d6cf273d066cc93308a34559ab85e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/searchelement(forproperty:label:key:value:comparison:).json": {
       "etag": "\"5ae9-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/searchelement-forpropertylabelkeyvaluecomparison.md",
+      "file_path": "documentation/AddressBook/abgroup/searchelement(forproperty,label,key,value,comparison).md",
       "hash": "7a52d2936a3f3eb64e2c48b26304694a21f9cbf3dae129b707d6bc68022efb66"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/setdistributionidentifier(_:forproperty:person:).json": {
       "etag": "\"4ba7-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/setdistributionidentifier-forpropertyperson.md",
+      "file_path": "documentation/AddressBook/abgroup/setdistributionidentifier(_,forproperty,person).md",
       "hash": "c2a3a9b717b275c9dc69830d726aed98a8693c8ce10ccc44ddd116611200a2f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/subgroups().json": {
       "etag": "\"2bcf-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/subgroups.md",
+      "file_path": "documentation/AddressBook/abgroup/subgroups().md",
       "hash": "a63c42c15dd4f3d2fa4868975788e55239aac4d7d05b81fa7e7750c0c4300af9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroup/type(ofproperty:).json": {
       "etag": "\"3d4a-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abgroup/type-ofproperty.md",
+      "file_path": "documentation/AddressBook/abgroup/type(ofproperty).md",
       "hash": "5261130ab0e6826f68a7c152088368835c71f49268303f4e93783bf4db047d45"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupaddgroup(_:_:).json": {
       "etag": "\"7424-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abgroupaddgroup.md",
+      "file_path": "documentation/AddressBook/abgroupaddgroup(_,_).md",
       "hash": "298aad1a43ac9ecf9fe486a64e8f88e3551823424aa93c0dc4761fe5e34e15af"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupaddmember(_:_:).json": {
       "etag": "W/\"dbd07984a4f9d30d9ee92a806a890730\"",
-      "file_path": "documentation/AddressBook/abgroupaddmember.md",
+      "file_path": "documentation/AddressBook/abgroupaddmember(_,_).md",
       "hash": "6126f2cc6d86c5109982bc2ab34f172120e035e5dfb35e71d039a0af710c8234"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupaddmember(_:_:_:).json": {
       "etag": "\"961b-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abgroupaddmember.md",
+      "file_path": "documentation/AddressBook/abgroupaddmember(_,_,_).md",
       "hash": "5df1b7efdda8d7168725c93bb4413c2ba1c066f185178e9530f2a460695e9a2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcopyarrayofallmembers(_:).json": {
       "etag": "\"80f5-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopyarrayofallmembers.md",
+      "file_path": "documentation/AddressBook/abgroupcopyarrayofallmembers(_).md",
       "hash": "54933a13fdd64679e7641a868fa61576e537189df95a5164be8821c1880d26e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcopyarrayofallmemberswithsortordering(_:_:).json": {
       "etag": "\"a2ea-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopyarrayofallmemberswithsortordering.md",
+      "file_path": "documentation/AddressBook/abgroupcopyarrayofallmemberswithsortordering(_,_).md",
       "hash": "a61e7cd57f9c80deb4161ef8c767fec058ad12ce487b57fec9bdcb9aeb16bb11"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcopyarrayofallsubgroups(_:).json": {
       "etag": "\"7254-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopyarrayofallsubgroups.md",
+      "file_path": "documentation/AddressBook/abgroupcopyarrayofallsubgroups(_).md",
       "hash": "fa4d2230ae7017ac65dbc40188ce58b53915f7381f65b0be37d2028201b39212"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcopydistributionidentifier(_:_:_:).json": {
       "etag": "\"849a-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopydistributionidentifier.md",
+      "file_path": "documentation/AddressBook/abgroupcopydistributionidentifier(_,_,_).md",
       "hash": "be1ea2df46c0d4fbacbb99ac4cbd6fee8eea82db0a01f8fe156dda3ee0beda19"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcopyparentgroups(_:).json": {
       "etag": "\"723d-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopyparentgroups.md",
+      "file_path": "documentation/AddressBook/abgroupcopyparentgroups(_).md",
       "hash": "3305b2334681e62f90d210cec2f8c6988ac3abd3da386555f70f5cbf6c4132b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcopysource(_:).json": {
       "etag": "\"8fcb-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abgroupcopysource.md",
+      "file_path": "documentation/AddressBook/abgroupcopysource(_).md",
       "hash": "0ce740321a8c0f85fec810f5703d45a081043f6bc641986ef528afdfb06e70ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcreate().json": {
       "etag": "\"7345-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abgroupcreate.md",
+      "file_path": "documentation/AddressBook/abgroupcreate().md",
       "hash": "f829f93ffe4f4e6165f03ed274f59fc4875f969b7ea3a35d0f30b33d3a681212"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcreateinsource(_:).json": {
       "etag": "\"90e4-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abgroupcreateinsource.md",
+      "file_path": "documentation/AddressBook/abgroupcreateinsource(_).md",
       "hash": "85225f47f5c654c7d9cdad42cb2ccd883df5d0de563f55103f7a6a4df8889887"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupcreatesearchelement(_:_:_:_:_:).json": {
       "etag": "\"a23f-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abgroupcreatesearchelement.md",
+      "file_path": "documentation/AddressBook/abgroupcreatesearchelement(_,_,_,_,_).md",
       "hash": "0f022229fe8d7fd0374b7bfa69603ac1ca9685e626c70744ee51ea716f1d3d88"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupref.json": {
@@ -3482,27 +3482,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupremovegroup(_:_:).json": {
       "etag": "\"712a-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abgroupremovegroup.md",
+      "file_path": "documentation/AddressBook/abgroupremovegroup(_,_).md",
       "hash": "28f341cfcaeecbeab5dfb1841b553af3f71a14ca875c71b73fc2083584cb71e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupremovemember(_:_:).json": {
       "etag": "W/\"fede2c4a17a58e1722848c819d90cc5f\"",
-      "file_path": "documentation/AddressBook/abgroupremovemember.md",
+      "file_path": "documentation/AddressBook/abgroupremovemember(_,_).md",
       "hash": "e9b28d886262a248231a93a85f24d67720f7ffa2906192caf7f995a4e46dd452"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupremovemember(_:_:_:).json": {
       "etag": "\"938c-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abgroupremovemember.md",
+      "file_path": "documentation/AddressBook/abgroupremovemember(_,_,_).md",
       "hash": "9ac0c02df43ff04dd764fec823d4d3addd572e9f962b9fbc1047237f1da8f5e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abgroupsetdistributionidentifier(_:_:_:_:).json": {
       "etag": "\"8708-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abgroupsetdistributionidentifier.md",
+      "file_path": "documentation/AddressBook/abgroupsetdistributionidentifier(_,_,_,_).md",
       "hash": "baf1b5e5fa1e4762ab33fa16c28dd231f59d0050b3c108f5e65b6b9b4a5bc9ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abhasunsavedchanges(_:).json": {
       "etag": "\"349c-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abhasunsavedchanges.md",
+      "file_path": "documentation/AddressBook/abhasunsavedchanges(_).md",
       "hash": "9cc45c5b385b3b5c4c88ae862fe920c77aa755b9bc7e0a9591f5e72517ff7da8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abimageclient.json": {
@@ -3512,7 +3512,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abimageclient/consumeimagedata(_:fortag:).json": {
       "etag": "\"314b-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abimageclient/consumeimagedata-fortag.md",
+      "file_path": "documentation/AddressBook/abimageclient/consumeimagedata(_,fortag).md",
       "hash": "48d279d5ab39a67acb5070e2711827e07894e81d7dec8b8bca33aebedcd09691"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abimageclientcallback.json": {
@@ -3522,7 +3522,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/ablocalizedpropertyorlabel(_:).json": {
       "etag": "\"4046-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/ablocalizedpropertyorlabel.md",
+      "file_path": "documentation/AddressBook/ablocalizedpropertyorlabel(_).md",
       "hash": "9f98ba852a94aa08725f67d43726f14173bfe57a4377d06fdc038683945ed3ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultiplevalueselection.json": {
@@ -3532,147 +3532,147 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class.json": {
       "etag": "\"9262-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swiftclass.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class.md",
       "hash": "10ce67d651dceaf5957140c90b8e7c471829c891136a2b076f742ed3286eb01c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/count().json": {
       "etag": "\"20a2-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/count.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/count().md",
       "hash": "268eebe98784f46e8596e55fb0ffff3c446d4689d8693f325bc6cc78e712bf84"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/identifier(at:).json": {
       "etag": "\"2d73-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/identifier-at.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/identifier(at).md",
       "hash": "3b7d58d2d055e7c2efdb66ec59bcacbbbac18fefab516c8fac8f4e1cfee2c1c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/index(foridentifier:).json": {
       "etag": "\"2d5d-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/index-foridentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/index(foridentifier).md",
       "hash": "0a33924f89af360072476791f9f078c2309f21d2982ba5d3ac3ce157e202e559"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/label(at:).json": {
       "etag": "\"38d9-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/label-at.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/label(at).md",
       "hash": "5675e686d3df2dcaa91d0337f4e594f8ab6509ffdf4482e1edac8ca380556ad4"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/label(foridentifier:).json": {
       "etag": "\"36a8-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/label-foridentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/label(foridentifier).md",
       "hash": "ef790275e83e11086b9c17eab5dc81711fca33d4774fd9b314ecbb66e6e630c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/primaryidentifier().json": {
       "etag": "\"1ee7-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/primaryidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/primaryidentifier().md",
       "hash": "86e4510251787b47ce1bd643a4f0535a96aee7ab910dcc9530c5484ea9aee0ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/propertytype().json": {
       "etag": "\"2537-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/propertytype.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/propertytype().md",
       "hash": "f95885deea84b9402f55ec74eb50bb342665531955e90cf3b133f845fc064c15"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/value(at:).json": {
       "etag": "\"3307-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/value-at.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/value(at).md",
       "hash": "a392542494609bdae9cc53107e4db5e1dbd4bc5abc15c1979a3401c21664c611"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.class/value(foridentifier:).json": {
       "etag": "\"369c-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swift.class/value-foridentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.class/value(foridentifier).md",
       "hash": "125ea2cc0aa3ea31fe6f23b45a78e2abb0fdf062767377f7912bd260b1d37a98"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalue-swift.typealias.json": {
       "etag": "\"331d-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmultivalue-swifttypealias.md",
+      "file_path": "documentation/AddressBook/abmultivalue-swift.typealias.md",
       "hash": "fe76bab583a8773165f1657def761a4f410d0032d06d2eb922aac5da74d6eb7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalueadd(_:_:_:_:).json": {
       "etag": "\"b5dd-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueadd.md",
+      "file_path": "documentation/AddressBook/abmultivalueadd(_,_,_,_).md",
       "hash": "7be3671ee2af04b5c3e9b0486545479a164e4920f73ea94563fb41fadf39ce89"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalueaddvalueandlabel(_:_:_:_:).json": {
       "etag": "\"b0f5-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueaddvalueandlabel.md",
+      "file_path": "documentation/AddressBook/abmultivalueaddvalueandlabel(_,_,_,_).md",
       "hash": "3a43b1619a22e545458f7de66320b7c6910555e1b2cd69126850681dd5b27d57"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecopyarrayofallvalues(_:).json": {
       "etag": "\"95ce-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopyarrayofallvalues.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopyarrayofallvalues(_).md",
       "hash": "494e529d36b98125cf5acb58fa132a1f268f7d7175dd86904331f17c30d9dfd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecopyidentifieratindex(_:_:).json": {
       "etag": "\"94f7-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopyidentifieratindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopyidentifieratindex(_,_).md",
       "hash": "2e901d4ab5056cb5533b04e80a25bb3cd70f3272d4f47461c2ef9df30c5d886c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecopylabelatindex(_:_:).json": {
       "etag": "\"9db4-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopylabelatindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopylabelatindex(_,_).md",
       "hash": "e91525f05387cad5d4b3ac33675a8cf6cec52bae02c3af8725e821ea01c0ab5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecopyprimaryidentifier(_:).json": {
       "etag": "\"8ca5-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopyprimaryidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopyprimaryidentifier(_).md",
       "hash": "4a5bca2a68e0f1d601e01175ea9f31130344c448f971417aadd892681bd72663"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecopyvalueatindex(_:_:).json": {
       "etag": "\"9ccf-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecopyvalueatindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluecopyvalueatindex(_,_).md",
       "hash": "4093bc3aa4863b437d3007726d4fbd68c78cf20395bc483388b57cf5b9cbf4b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecount(_:).json": {
       "etag": "\"8550-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecount.md",
+      "file_path": "documentation/AddressBook/abmultivaluecount(_).md",
       "hash": "1a7e04f7e8603196213bde0037a3b5638798ac1727ed35cead9dabad69bbb1cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecreate().json": {
       "etag": "\"8152-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreate.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreate().md",
       "hash": "d2631a30b073d54e5b535a9049b595fb8e5c88b92065b688ba19a4de8451ec7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecreatecopy(_:).json": {
       "etag": "\"868f-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreatecopy.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreatecopy(_).md",
       "hash": "09a82b84c85af1bd2effae3ee5e313567e1ced02bbd7cc1c540ae7bcfe7af886"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecreatemutable().json": {
       "etag": "W/\"bf5f4527c31a08ec5422d2c8e5dcd74e\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreatemutable.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreatemutable().md",
       "hash": "13b8f9aba10f8f5fd852e45f96b00353c5537c47289db4573338a32bf4275db7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecreatemutable(_:).json": {
       "etag": "\"9045-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreatemutable.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreatemutable(_).md",
       "hash": "9952d05e15d73438683f8aa154c6a8ee619393dcb58ae819fc14f6c5765ade9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluecreatemutablecopy(_:).json": {
       "etag": "\"9302-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluecreatemutablecopy.md",
+      "file_path": "documentation/AddressBook/abmultivaluecreatemutablecopy(_).md",
       "hash": "7cdf19cea27279f42e298b4916ac25d0392c4218376becb4493e63a46cd57a6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluegetcount(_:).json": {
       "etag": "\"8ee9-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetcount.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetcount(_).md",
       "hash": "00f476ddc1042beed2d9c9d88422cbcd25b0a74964a1bd44b402c3bbd6cf1d16"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluegetfirstindexofvalue(_:_:).json": {
       "etag": "\"9af7-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetfirstindexofvalue.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetfirstindexofvalue(_,_).md",
       "hash": "32df5321cdd6fea4d3374386cebde765a9de173733127bdda2728a7a4dfc9572"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluegetidentifieratindex(_:_:).json": {
       "etag": "\"9b11-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetidentifieratindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetidentifieratindex(_,_).md",
       "hash": "2ca06a72038a73d11c82c122f38c2655e1b1d95b7064a4665d5a6741bee1046d"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluegetindexforidentifier(_:_:).json": {
       "etag": "\"9ccc-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetindexforidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetindexforidentifier(_,_).md",
       "hash": "1a2fd59f8b7a28f8570c976830a0ef385b8054d30073cf95c447fe3f4f93d0b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluegetpropertytype(_:).json": {
       "etag": "\"909b-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluegetpropertytype.md",
+      "file_path": "documentation/AddressBook/abmultivaluegetpropertytype(_).md",
       "hash": "3e72dcb43d9cfd93db512f853cfc00bb52bf4b70c88b6ca72b5b56aa47c470d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalueidentifier.json": {
@@ -3687,97 +3687,97 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalueindexforidentifier(_:_:).json": {
       "etag": "\"8d63-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueindexforidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivalueindexforidentifier(_,_).md",
       "hash": "4252f37278af55fa7734b5d5a0261c939540c90c93753fa249e0ecd18d2995b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalueinsert(_:_:_:_:_:).json": {
       "etag": "\"b70c-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueinsert.md",
+      "file_path": "documentation/AddressBook/abmultivalueinsert(_,_,_,_,_).md",
       "hash": "b8b733048d8fd547cec4324d8e7b785cec9f643a1a027474ea325f93eddd9cec"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalueinsertvalueandlabelatindex(_:_:_:_:_:).json": {
       "etag": "\"c069-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueinsertvalueandlabelatindex.md",
+      "file_path": "documentation/AddressBook/abmultivalueinsertvalueandlabelatindex(_,_,_,_,_).md",
       "hash": "c4010a16ad6638ab254bc538ed149b598108fdcbdb66116a6dd4413bb0793a4a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluepropertytype(_:).json": {
       "etag": "\"8b51-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluepropertytype.md",
+      "file_path": "documentation/AddressBook/abmultivaluepropertytype(_).md",
       "hash": "2b24ce9e0ee5aed9caf0086f03d4c5e93261f980e81a80345d9023b4859590b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalueremove(_:_:).json": {
       "etag": "\"8c4f-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueremove.md",
+      "file_path": "documentation/AddressBook/abmultivalueremove(_,_).md",
       "hash": "c39e5e836fc9814aacc509286e1f10fada14f16b2860767a97f9161d3a54d87c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivalueremovevalueandlabelatindex(_:_:).json": {
       "etag": "\"a068-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abmultivalueremovevalueandlabelatindex.md",
+      "file_path": "documentation/AddressBook/abmultivalueremovevalueandlabelatindex(_,_).md",
       "hash": "b35090c1962893317268af3898c19781d6851b3d9e8d84cb08d731aea1aa94e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluereplacelabel(_:_:_:).json": {
       "etag": "\"95e9-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluereplacelabel.md",
+      "file_path": "documentation/AddressBook/abmultivaluereplacelabel(_,_,_).md",
       "hash": "203349dc0e2c8f1c57d8cb212f939fb9ce91236abe8dbab108a40cceb430541f"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluereplacelabelatindex(_:_:_:).json": {
       "etag": "\"a877-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluereplacelabelatindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluereplacelabelatindex(_,_,_).md",
       "hash": "c38435a57e8c237305815e5f6cbf56fed94e51d651a1497430932bc6039d57d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluereplacevalue(_:_:_:).json": {
       "etag": "\"9832-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluereplacevalue.md",
+      "file_path": "documentation/AddressBook/abmultivaluereplacevalue(_,_,_).md",
       "hash": "0764f55fbe44a51b7bae37d4ed0300bf765b3d922e1d604c10fd912b22eddc83"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluereplacevalueatindex(_:_:_:).json": {
       "etag": "\"a791-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluereplacevalueatindex.md",
+      "file_path": "documentation/AddressBook/abmultivaluereplacevalueatindex(_,_,_).md",
       "hash": "9ab97b6dab5141308c7403e9b6aeb505e27eac7f4ea25e55fb317912cd3e6223"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmultivaluesetprimaryidentifier(_:_:).json": {
       "etag": "\"90e6-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abmultivaluesetprimaryidentifier.md",
+      "file_path": "documentation/AddressBook/abmultivaluesetprimaryidentifier(_,_).md",
       "hash": "48e52297960b066e5b59a4f7d0a93779c5cbb73af91e211b9b5025e0f189ccfe"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmutablemultivalue-swift.class.json": {
       "etag": "\"81f3-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swiftclass.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class.md",
       "hash": "d180bad5d9244975bdc7c6424e6627764a2d8a433c01a17da47004705591127d"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmutablemultivalue-swift.class/add(_:withlabel:).json": {
       "etag": "\"489e-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/add-withlabel.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/add(_,withlabel).md",
       "hash": "5a83feae7e29701ce4d7ea6150a497837147c0ed93c023a20e73d0c14cf12b27"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmutablemultivalue-swift.class/insert(_:withlabel:at:).json": {
       "etag": "\"452b-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/insert-withlabelat.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/insert(_,withlabel,at).md",
       "hash": "1b8257ee6eaed4fdbe19b7662a455855baf2a70cf633610b3565c67188db9dc9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmutablemultivalue-swift.class/removeandlabel(at:).json": {
       "etag": "\"2c48-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/removeandlabel-at.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/removeandlabel(at).md",
       "hash": "495e6c3360c3474b791361a1a99f6fec8f5d60024d3b1db0d8c581ba45bcf6e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmutablemultivalue-swift.class/replace(at:withvalue:).json": {
       "etag": "\"384d-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/replace-atwithvalue.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/replace(at,withvalue).md",
       "hash": "3ff7fed4133cff8e7e42f35f691408556314c8e020a1400c655974efc82f9481"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmutablemultivalue-swift.class/replacelabel(at:withlabel:).json": {
       "etag": "\"3e35-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/replacelabel-atwithlabel.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/replacelabel(at,withlabel).md",
       "hash": "b3c97071cce3a0935bb4d5085eca78c710fd849199b453286cff34bcd14c1578"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmutablemultivalue-swift.class/setprimaryidentifier(_:).json": {
       "etag": "\"360a-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/setprimaryidentifier.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.class/setprimaryidentifier(_).md",
       "hash": "eec72a6665ec60c67b6c1c0433560dbf5252bd0ff40bd954c02700d123a808b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abmutablemultivalue-swift.typealias.json": {
       "etag": "\"32d1-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abmutablemultivalue-swifttypealias.md",
+      "file_path": "documentation/AddressBook/abmutablemultivalue-swift.typealias.md",
       "hash": "6d6613fb18a4911303db6deca79bb1d90459a8a170b3e2ce485c690d7adc7b47"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abnovalueselection.json": {
@@ -3792,12 +3792,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerselectionbehavior/init(_:).json": {
       "etag": "\"18f9-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/init.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/init(_).md",
       "hash": "fff8130b16fee205a029d44f12168a48f4fcf6831c7211b35b0fa07968be93d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerselectionbehavior/init(rawvalue:).json": {
       "etag": "\"1914-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/init-rawvalue.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerselectionbehavior/init(rawvalue).md",
       "hash": "9b1a8d4bfb076e9b9f320be32ab656edbdd682f6cd6104ce18b3589ae7977af9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerselectionbehavior/rawvalue.json": {
@@ -3817,7 +3817,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/addproperty(_:).json": {
       "etag": "\"4093-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/addproperty.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/addproperty(_).md",
       "hash": "7030f390ed2643d90e43e394247727a7ec18af44a6b067c46e2c804db65f97c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/allowsgroupselection.json": {
@@ -3837,32 +3837,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/clearsearchfield(_:).json": {
       "etag": "\"36a9-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/clearsearchfield.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/clearsearchfield(_).md",
       "hash": "ee6f5ab402eb8a0d3d665f6a93ed8289a3294d6eebf1697c186d2dfa802db6a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/columntitle(forproperty:).json": {
       "etag": "\"43a3-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/columntitle-forproperty.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/columntitle(forproperty).md",
       "hash": "6b032c707e319a82a78a20f0b6e50340b7536b0a3c1553c2a8ab561f5c7e04a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/deselect(_:)-1yy11.json": {
       "etag": "\"6a70-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/deselect-1yy11.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/deselect(_)-1yy11.md",
       "hash": "fa1fe2d6e9d72f6c3ab3b8b3e4537eea8babd22e5eb14038c5faa65bf9cb1c75"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/deselect(_:)-3x7tl.json": {
       "etag": "\"69e7-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/deselect-3x7tl.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/deselect(_)-3x7tl.md",
       "hash": "83f6d515e70023406536ff381d80b492dcd5e107ca429c412783c8a90af93249"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/deselectall(_:).json": {
       "etag": "\"64e3-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/deselectall.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/deselectall(_).md",
       "hash": "a10112e04d75023eca6b76d686221d004a026695fa8684007b6e14602bdcc38d"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/deselectidentifier(_:for:).json": {
       "etag": "\"73b5-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/deselectidentifier-for.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/deselectidentifier(_,for).md",
       "hash": "84172567437ea93830164ee8a2535eb7395ac00a3ff9847ee6daa9c8c18b69c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/displayedproperty.json": {
@@ -3872,7 +3872,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/editinaddressbook(_:).json": {
       "etag": "\"36a9-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/editinaddressbook.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/editinaddressbook(_).md",
       "hash": "92e83da6d2a024d22d99f190f36497598ecb5449a16695a2aecdf89de7bdee9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/groupdoubleaction.json": {
@@ -3887,22 +3887,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/properties().json": {
       "etag": "\"3eb9-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/properties.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/properties().md",
       "hash": "68a06d39c8dfce233031a3d4563ccc7114c90751712af65d582244ba60400de5"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/removeproperty(_:).json": {
       "etag": "\"442c-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/removeproperty.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/removeproperty(_).md",
       "hash": "8c9b4a3c445b05a1860a40dff4e0f8a50509598a5604937a0f61933eeef5bfd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/select(_:byextendingselection:)-6mrii.json": {
       "etag": "\"7755-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/select-byextendingselection-6mrii.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/select(_,byextendingselection)-6mrii.md",
       "hash": "c12f9db5c4bde489c7231bfe6df816db78e90aa256d569804beeabc31abadcf8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/select(_:byextendingselection:)-9eldk.json": {
       "etag": "\"77df-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/select-byextendingselection-9eldk.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/select(_,byextendingselection)-9eldk.md",
       "hash": "be5391d0152569cb1d2765198d5cc9bbeb44495cb065a03065e2624f2171beac"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/selectedgroups.json": {
@@ -3912,7 +3912,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/selectedidentifiers(for:).json": {
       "etag": "\"71ef-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/selectedidentifiers-for.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/selectedidentifiers(for).md",
       "hash": "af2b9e2c216ee4663e7192458a341364f4f5b52cd3ba1588151bcda3bdbcdba6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/selectedrecords.json": {
@@ -3922,22 +3922,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/selectedvalues().json": {
       "etag": "\"657c-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/selectedvalues.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/selectedvalues().md",
       "hash": "9973f3c0dc594f1442cac11e581178f19fea8ba78b25fe683445293386926acc"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/selectidentifier(_:for:byextendingselection:).json": {
       "etag": "\"8115-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/selectidentifier-forbyextendingselection.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/selectidentifier(_,for,byextendingselection).md",
       "hash": "55f3f30a6cf8ce3d9e8e823d0a37de87b8fd18446bb372db8892a699718056c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/selectinaddressbook(_:).json": {
       "etag": "\"36bf-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/selectinaddressbook.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/selectinaddressbook(_).md",
       "hash": "106e7dc81826d6e0cd9f16f777abaae13df3e48b3911b88ec08d7421686b6d36"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/setcolumntitle(_:forproperty:).json": {
       "etag": "\"4426-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpeoplepickerview/setcolumntitle-forproperty.md",
+      "file_path": "documentation/AddressBook/abpeoplepickerview/setcolumntitle(_,forproperty).md",
       "hash": "257be4251a87369c676ce74844d503dc4e59b683eef19150bf6113557a07d85f"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpeoplepickerview/target.json": {
@@ -3962,77 +3962,77 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/addpropertiesandtypes(_:).json": {
       "etag": "\"412f-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/addpropertiesandtypes.md",
+      "file_path": "documentation/AddressBook/abperson/addpropertiesandtypes(_).md",
       "hash": "bb005d55b1822a4075514319df8233f17f1f789ee3d6b91487a53d1a26f3da43"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/beginloadingimagedata(for:).json": {
       "etag": "\"4335-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/beginloadingimagedata-for.md",
+      "file_path": "documentation/AddressBook/abperson/beginloadingimagedata(for).md",
       "hash": "9606ef4491b886977959a68fd3ffcd5918eb8666de253c2d031bb928845f6293"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/cancelloadingimagedata(fortag:).json": {
       "etag": "\"32d6-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/cancelloadingimagedata-fortag.md",
+      "file_path": "documentation/AddressBook/abperson/cancelloadingimagedata(fortag).md",
       "hash": "a808bf75b5cca73145ba9598d279580546a70198189eaea92d9e56e491f51476"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/imagedata().json": {
       "etag": "\"378d-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/imagedata.md",
+      "file_path": "documentation/AddressBook/abperson/imagedata().md",
       "hash": "f0a9d9fcb038720931c290773d0618867bf21769e3d32f2013c86390dba21845"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/init(vcardrepresentation:)-1bqog.json": {
       "etag": "\"1c02-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/init-vcardrepresentation-1bqog.md",
+      "file_path": "documentation/AddressBook/abperson/init(vcardrepresentation)-1bqog.md",
       "hash": "998a18def94f43b3601ee16e724857200b369daeba2e2c285a5b07bd57c8b6d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/init(vcardrepresentation:)-5c7h8.json": {
       "etag": "\"1e2a-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/init-vcardrepresentation-5c7h8.md",
+      "file_path": "documentation/AddressBook/abperson/init(vcardrepresentation)-5c7h8.md",
       "hash": "3e2212613beb2000edd30d220c987d544213ddb851db1e54eface6145fa062c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/linkedpeople().json": {
       "etag": "\"1e83-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/linkedpeople.md",
+      "file_path": "documentation/AddressBook/abperson/linkedpeople().md",
       "hash": "e4a635ff5d157ab1fc416a977b9a359991e7ece3b439050d9c02f4abe5a962d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/parentgroups().json": {
       "etag": "\"1bdc-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/parentgroups.md",
+      "file_path": "documentation/AddressBook/abperson/parentgroups().md",
       "hash": "ee39b8f45dc8ab9abb1adccf7ee6ed801244e348ec649fcb7d6039262f19a83e"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/properties().json": {
       "etag": "\"2ec9-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/properties.md",
+      "file_path": "documentation/AddressBook/abperson/properties().md",
       "hash": "2b30e04ec4303cfb6c719371888b942e652a9ad4fea2f875092d3d6a7ad3380a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/removeproperties(_:).json": {
       "etag": "\"37ef-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/removeproperties.md",
+      "file_path": "documentation/AddressBook/abperson/removeproperties(_).md",
       "hash": "547b972cbe6df98d717a039a7718fb49db82801a8da63f7d25ca720a48315975"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/searchelement(forproperty:label:key:value:comparison:).json": {
       "etag": "\"5eba-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/searchelement-forpropertylabelkeyvaluecomparison.md",
+      "file_path": "documentation/AddressBook/abperson/searchelement(forproperty,label,key,value,comparison).md",
       "hash": "f0de669250f8b7a4b74bad9d0d0b31dcccd3912c9fd4f93ce8008febd49212ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/setimagedata(_:).json": {
       "etag": "\"34ad-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/setimagedata.md",
+      "file_path": "documentation/AddressBook/abperson/setimagedata(_).md",
       "hash": "9394a11d71a9c2933c024ee87698090d6559076dc301366a018e3b1ec4a86762"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/type(ofproperty:).json": {
       "etag": "\"3b3f-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/type-ofproperty.md",
+      "file_path": "documentation/AddressBook/abperson/type(ofproperty).md",
       "hash": "273730c51384b3432f848d8773146a1b9bf926ea5163cad15c4dcf6222030f9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abperson/vcardrepresentation().json": {
       "etag": "\"21da-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abperson/vcardrepresentation.md",
+      "file_path": "documentation/AddressBook/abperson/vcardrepresentation().md",
       "hash": "c4df4563ba2d83bf9435767c5cfcff62ed4b2310f3e9dfe0f5fbd6b3aa2269a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncomparepeoplebyname(_:_:_:).json": {
       "etag": "\"a38b-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpersoncomparepeoplebyname.md",
+      "file_path": "documentation/AddressBook/abpersoncomparepeoplebyname(_,_,_).md",
       "hash": "eeb4d4d88f24056da296d4cc383a68e477fc73a4c2a325de5325cfe7ff20a4f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncompositenameformat.json": {
@@ -4042,97 +4042,97 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncopyarrayofalllinkedpeople(_:).json": {
       "etag": "\"96fc-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyarrayofalllinkedpeople.md",
+      "file_path": "documentation/AddressBook/abpersoncopyarrayofalllinkedpeople(_).md",
       "hash": "9b9564e10b7b823420e9b86b9bdc5089884a2bfe0b8c26f948ad0b1d83a26c5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncopycompositenamedelimiterforrecord(_:).json": {
       "etag": "\"93c9-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopycompositenamedelimiterforrecord.md",
+      "file_path": "documentation/AddressBook/abpersoncopycompositenamedelimiterforrecord(_).md",
       "hash": "cee24ab8104c0452370724c401208609a11c0a18bcd24538ac5b5935335e1b10"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncopyimagedata(_:).json": {
       "etag": "\"74b3-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyimagedata.md",
+      "file_path": "documentation/AddressBook/abpersoncopyimagedata(_).md",
       "hash": "657137213a687726046e790cbce86dcfebc1d3f3f00f4a9c8900c75ac3e42f25"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncopyimagedatawithformat(_:_:).json": {
       "etag": "\"9e3e-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyimagedatawithformat.md",
+      "file_path": "documentation/AddressBook/abpersoncopyimagedatawithformat(_,_).md",
       "hash": "76281936717310c15365a56414b764542fab1f094bdc4f6a1f978cccdda353b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncopylocalizedpropertyname(_:).json": {
       "etag": "\"938e-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopylocalizedpropertyname.md",
+      "file_path": "documentation/AddressBook/abpersoncopylocalizedpropertyname(_).md",
       "hash": "941cc957556eb3f2380b31d648525b00ab900daf1204e189bcd04a057033aec9"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncopyparentgroups(_:).json": {
       "etag": "\"60af-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyparentgroups.md",
+      "file_path": "documentation/AddressBook/abpersoncopyparentgroups(_).md",
       "hash": "83ddcdddd838da27f5213405eca9cc06ffd974cb3f7c5a017748bdbf8dd213d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncopysource(_:).json": {
       "etag": "\"8fee-65d55dfc66e16-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopysource.md",
+      "file_path": "documentation/AddressBook/abpersoncopysource(_).md",
       "hash": "9e7a688c5cfa732dad6d4fea82bb7d03d37961cc4b9ab6a66c75ba1654104180"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncopyvcardrepresentation(_:).json": {
       "etag": "\"6124-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpersoncopyvcardrepresentation.md",
+      "file_path": "documentation/AddressBook/abpersoncopyvcardrepresentation(_).md",
       "hash": "f635c4026c6497c39995091aeac8bb0bc168e29a06b3c82c09d1e0bf8f2870f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncreate().json": {
       "etag": "\"6310-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreate.md",
+      "file_path": "documentation/AddressBook/abpersoncreate().md",
       "hash": "67378d3111c0d6062098c37d3e89122814ac3378822a38454b821d89e08de779"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncreateinsource(_:).json": {
       "etag": "\"9278-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreateinsource.md",
+      "file_path": "documentation/AddressBook/abpersoncreateinsource(_).md",
       "hash": "bc837d9cbc45822e8870bc858053e913c45b65d3339cc0f921995b2916b0a882"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncreatepeopleinsourcewithvcardrepresentation(_:_:).json": {
       "etag": "\"9dd8-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreatepeopleinsourcewithvcardrepresentation.md",
+      "file_path": "documentation/AddressBook/abpersoncreatepeopleinsourcewithvcardrepresentation(_,_).md",
       "hash": "5378892e14a68cd8840f420ca4a6399857fca17403f318ef94359bc5c9ebca16"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncreatesearchelement(_:_:_:_:_:).json": {
       "etag": "\"90c8-65d55dfd01276-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreatesearchelement.md",
+      "file_path": "documentation/AddressBook/abpersoncreatesearchelement(_,_,_,_,_).md",
       "hash": "e17e2650c8f94d4f48a5337b5540ec6814ced7d928bdf61d5ab83e3624028cee"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncreatevcardrepresentationwithpeople(_:).json": {
       "etag": "\"9381-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreatevcardrepresentationwithpeople.md",
+      "file_path": "documentation/AddressBook/abpersoncreatevcardrepresentationwithpeople(_).md",
       "hash": "063b0ba15f59069a4610e909d546196819d3c6b11ab04f30d0516e442b431c03"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersoncreatewithvcardrepresentation(_:).json": {
       "etag": "\"60fc-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/abpersoncreatewithvcardrepresentation.md",
+      "file_path": "documentation/AddressBook/abpersoncreatewithvcardrepresentation(_).md",
       "hash": "dff9033e5c9c7ae7c6e8dae5466eb63a20ee5ca84c5fa71fdaaab4c17a83c7cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersongetcompositenameformat().json": {
       "etag": "\"9122-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abpersongetcompositenameformat.md",
+      "file_path": "documentation/AddressBook/abpersongetcompositenameformat().md",
       "hash": "1b343b143136c7d38eb091fcd2d44b960023bbdbe4ad30eac56f8d9a54304535"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersongetcompositenameformatforrecord(_:).json": {
       "etag": "\"9447-65d55dfbc8513-df\"",
-      "file_path": "documentation/AddressBook/abpersongetcompositenameformatforrecord.md",
+      "file_path": "documentation/AddressBook/abpersongetcompositenameformatforrecord(_).md",
       "hash": "a74bfb5491da57f2ab6ad651976308a2aa1b295e6281764c7cf1033847c113dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersongetsortordering().json": {
       "etag": "\"89a7-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abpersongetsortordering.md",
+      "file_path": "documentation/AddressBook/abpersongetsortordering().md",
       "hash": "7cf87ebb76d21e043d0f3295df4e72991a734f43839864770bf905ce81df20d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersongettypeofproperty(_:).json": {
       "etag": "\"8db2-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abpersongettypeofproperty.md",
+      "file_path": "documentation/AddressBook/abpersongettypeofproperty(_).md",
       "hash": "f5a5daf941d3c0c1b6a9314b8ba4244aefcce23981aa49b7e4950ba71ffd3c7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonhasimagedata(_:).json": {
       "etag": "\"8bf2-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abpersonhasimagedata.md",
+      "file_path": "documentation/AddressBook/abpersonhasimagedata(_).md",
       "hash": "60c675c1500dd0fc8cda241dae2a224c99cafd212c5116facc33eba81cac0e49"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonimageformat.json": {
@@ -4142,12 +4142,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonimageformat/init(_:).json": {
       "etag": "\"183e-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abpersonimageformat/init.md",
+      "file_path": "documentation/AddressBook/abpersonimageformat/init(_).md",
       "hash": "c8239c6c1ff11e0163ddae6dd2b41dbcca49158b5cbefe1012025137a1560254"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonimageformat/init(rawvalue:).json": {
       "etag": "\"1861-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abpersonimageformat/init-rawvalue.md",
+      "file_path": "documentation/AddressBook/abpersonimageformat/init(rawvalue).md",
       "hash": "fd77347c44ddeefdbe504f08161b6909b71eb840d0671e7aeaf20942ad12c78d"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonimageformat/rawvalue.json": {
@@ -4162,17 +4162,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonremoveimagedata(_:_:).json": {
       "etag": "\"9d44-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abpersonremoveimagedata.md",
+      "file_path": "documentation/AddressBook/abpersonremoveimagedata(_,_).md",
       "hash": "a81be7e7d14d3021d67c0b330597761a34bc248acd65c02264354d7dd48470bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonsetimagedata(_:_:).json": {
       "etag": "W/\"ab3b4c2becfae96c6ed936b964628380\"",
-      "file_path": "documentation/AddressBook/abpersonsetimagedata.md",
+      "file_path": "documentation/AddressBook/abpersonsetimagedata(_,_).md",
       "hash": "fab9ee3489bfed27dc9bdb8b42e0c3395673edf2c2975af4c6df549035ac4d8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonsetimagedata(_:_:_:).json": {
       "etag": "\"7f91-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abpersonsetimagedata.md",
+      "file_path": "documentation/AddressBook/abpersonsetimagedata(_,_,_).md",
       "hash": "30627e02df5881beb09687fa14b1218682cd1eac02331a0997bdb58cb4da6498"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abpersonsortordering.json": {
@@ -4227,7 +4227,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class.json": {
       "etag": "\"7f0b-65d55dfbed411-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swiftclass.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class.md",
       "hash": "930dd8dd4fc03fa2402965a2683d93e63c32acdb7ba5d458de69a02e368ba4eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/displayname.json": {
@@ -4237,32 +4237,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/init().json": {
       "etag": "\"1dda-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/init.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/init().md",
       "hash": "76b577d706934348385f666cd9c3546b8e7e3491930f23c0425ab4e9d5c3750c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/init(addressbook:).json": {
       "etag": "\"2832-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/init-addressbook.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/init(addressbook).md",
       "hash": "49ee67c5f51cb2e047a8b6b5b85ccfbd89be82552c33c178464c0018586d8174"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/isreadonly().json": {
       "etag": "\"2336-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/isreadonly.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/isreadonly().md",
       "hash": "b0234b970e5c4f33c234c5b432887c814c232c8658520ef3950a929f7f20e43d"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/removevalue(forproperty:).json": {
       "etag": "\"4c57-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/removevalue-forproperty.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/removevalue(forproperty).md",
       "hash": "d88275930de4ccedd161100bddab766560c5a890f6be98a40ae07ad9a861177c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/setvalue(_:forproperty:).json": {
       "etag": "\"51dd-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/setvalue-forproperty.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/setvalue(_,forproperty).md",
       "hash": "11912de65f374b3c89bd490184fdff3d645cac4e8c92ce1ff2cf913e8145fc06"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/setvalue(_:forproperty:error:).json": {
       "etag": "\"5bec-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/setvalue-forpropertyerror.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/setvalue(_,forproperty,error).md",
       "hash": "1a499769325a3e0c5341878ef06ea0b110a80148dc7fce06d4fb11d030139c20"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/uniqueid.json": {
@@ -4272,47 +4272,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.class/value(forproperty:).json": {
       "etag": "\"4b1a-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swift.class/value-forproperty.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.class/value(forproperty).md",
       "hash": "5b3c295678314f92fc6ef346ff5d344486f609d9b49b347501e8f9cb7f5cf253"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecord-swift.typealias.json": {
       "etag": "\"4c2f-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abrecord-swifttypealias.md",
+      "file_path": "documentation/AddressBook/abrecord-swift.typealias.md",
       "hash": "bb094f712402cab2dd4be6d71cdd9308c1d271265ea5e3218ae9149297efb0f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordcopycompositename(_:).json": {
       "etag": "\"9a08-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abrecordcopycompositename.md",
+      "file_path": "documentation/AddressBook/abrecordcopycompositename(_).md",
       "hash": "4956f23c51970a6fc962c0f4698db5c134d74b8fc77313b433c016638443a620"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordcopyrecordtype(_:).json": {
       "etag": "\"6eaf-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abrecordcopyrecordtype.md",
+      "file_path": "documentation/AddressBook/abrecordcopyrecordtype(_).md",
       "hash": "08ea5662b6f81f1e5cd1512cd8b79dbda06197eb503f572d55716344107fa57a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordcopyuniqueid(_:).json": {
       "etag": "\"6e0e-65d55dfd5dbfe-df\"",
-      "file_path": "documentation/AddressBook/abrecordcopyuniqueid.md",
+      "file_path": "documentation/AddressBook/abrecordcopyuniqueid(_).md",
       "hash": "4358403d5efc6288d686e1e90ab2a1f4aa4ca3aa9fe893de92c2444bf1b15b8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordcopyvalue(_:_:).json": {
       "etag": "\"89ae-65d55dfc4458c-df\"",
-      "file_path": "documentation/AddressBook/abrecordcopyvalue.md",
+      "file_path": "documentation/AddressBook/abrecordcopyvalue(_,_).md",
       "hash": "aa05f3230adab4479e0c20b82edb7297cfad89cbdb5c2fa3cd9ed1caa0c93306"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordcreatecopy(_:).json": {
       "etag": "\"6986-65d55dfd1e29c-df\"",
-      "file_path": "documentation/AddressBook/abrecordcreatecopy.md",
+      "file_path": "documentation/AddressBook/abrecordcreatecopy(_).md",
       "hash": "407041c50de8c1966f1f81b686c6f3e0ea7fc0cf752aec9e5938f872a9863093"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordgetrecordid(_:).json": {
       "etag": "\"9472-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abrecordgetrecordid.md",
+      "file_path": "documentation/AddressBook/abrecordgetrecordid(_).md",
       "hash": "8ab6041347850c942bb73eaca27cdc08711fcea1adb523dfadf1eef99d0e2300"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordgetrecordtype(_:).json": {
       "etag": "\"9b81-65d55dfd421a9-df\"",
-      "file_path": "documentation/AddressBook/abrecordgetrecordtype.md",
+      "file_path": "documentation/AddressBook/abrecordgetrecordtype(_).md",
       "hash": "8769e99f7419edde50234abfb495396bdf587c02958a135675d1e2d35fc81691"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordid.json": {
@@ -4322,27 +4322,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordisreadonly(_:).json": {
       "etag": "\"68e3-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/abrecordisreadonly.md",
+      "file_path": "documentation/AddressBook/abrecordisreadonly(_).md",
       "hash": "df9acc577f6f89ba054203f48c85f2ac1c9a960d56a688a093b392e0ae18d609"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordremovevalue(_:_:).json": {
       "etag": "W/\"d17705a5f7fe52a8a4ab005c7f625dbf\"",
-      "file_path": "documentation/AddressBook/abrecordremovevalue.md",
+      "file_path": "documentation/AddressBook/abrecordremovevalue(_,_).md",
       "hash": "50c8ddfb8d41256aa3519bed592a489a6675603b2884ba5aa9a171b5d95ce9f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordremovevalue(_:_:_:).json": {
       "etag": "\"90e4-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abrecordremovevalue.md",
+      "file_path": "documentation/AddressBook/abrecordremovevalue(_,_,_).md",
       "hash": "0219f387b4987ab0995e95a0fae45424048f0dc541120caa37991460325b9f7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordsetvalue(_:_:_:).json": {
       "etag": "W/\"1f86493b5e46965443f6ca891812d35e\"",
-      "file_path": "documentation/AddressBook/abrecordsetvalue.md",
+      "file_path": "documentation/AddressBook/abrecordsetvalue(_,_,_).md",
       "hash": "343062ecde913c0b49e762c30dbba519c59a7e9aa04c2010454f2d86df797622"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordsetvalue(_:_:_:_:).json": {
       "etag": "\"9c7f-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abrecordsetvalue.md",
+      "file_path": "documentation/AddressBook/abrecordsetvalue(_,_,_,_).md",
       "hash": "e49b06970b00247c0690090bda65ebbb93efffa391f51154b1468e7b75299225"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abrecordtype.json": {
@@ -4352,12 +4352,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abremoveproperties(_:_:_:).json": {
       "etag": "\"5621-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/abremoveproperties.md",
+      "file_path": "documentation/AddressBook/abremoveproperties(_,_,_).md",
       "hash": "83e6c524d98465a039e68c01cee6c6cde2745c7f8fb3c81815e45f491b8a45cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abremoverecord(_:_:).json": {
       "etag": "\"7265-65d55dfc83d15-df\"",
-      "file_path": "documentation/AddressBook/abremoverecord.md",
+      "file_path": "documentation/AddressBook/abremoverecord(_,_).md",
       "hash": "d703c13afa1ed932547c4b0314233edd2d8fc251c6508ce9a2af74ae7ede61bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abremoverecordserror.json": {
@@ -4367,7 +4367,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absave(_:).json": {
       "etag": "\"334e-65d55dfd705b7-df\"",
-      "file_path": "documentation/AddressBook/absave.md",
+      "file_path": "documentation/AddressBook/absave(_).md",
       "hash": "bbe462b15655a3cf1885ae18c340abc83282ce20e1577aaed23e3d01be599826"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absearchcomparison.json": {
@@ -4387,22 +4387,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absearchelement/init(forconjunction:children:).json": {
       "etag": "\"2f2e-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/absearchelement/init-forconjunctionchildren.md",
+      "file_path": "documentation/AddressBook/absearchelement/init(forconjunction,children).md",
       "hash": "1020ddd34495ffec931019c0114e2c76fc3cf095270b6f05dc7738f8020e9102"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absearchelement/matchesrecord(_:).json": {
       "etag": "\"2ec4-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/absearchelement/matchesrecord.md",
+      "file_path": "documentation/AddressBook/absearchelement/matchesrecord(_).md",
       "hash": "c0878b51d13be9b0413ae4760d25a9ef5fbd5d06403f987ae269085df319af6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absearchelementcreatewithconjunction(_:_:).json": {
       "etag": "\"4b03-65d55dfce5ceb-df\"",
-      "file_path": "documentation/AddressBook/absearchelementcreatewithconjunction.md",
+      "file_path": "documentation/AddressBook/absearchelementcreatewithconjunction(_,_).md",
       "hash": "1755a721c1c3d7147c531b7328110811147d1b5165b9118856db5ee823f388e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absearchelementmatchesrecord(_:_:).json": {
       "etag": "\"3d1a-65d55dfba3ce4-df\"",
-      "file_path": "documentation/AddressBook/absearchelementmatchesrecord.md",
+      "file_path": "documentation/AddressBook/absearchelementmatchesrecord(_,_).md",
       "hash": "73a1572c91928bfdfe4217966e149ef38c26fc5ed5e48d9ed8fb1f0d3ede476a"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absearchelementref.json": {
@@ -4412,7 +4412,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absetme(_:_:).json": {
       "etag": "\"5ea4-65d55dfcc237d-df\"",
-      "file_path": "documentation/AddressBook/absetme.md",
+      "file_path": "documentation/AddressBook/absetme(_,_).md",
       "hash": "37878587ceb94ff19b950565f9e427208af01d5d03d3dd661352bfebd106d448"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/absinglevalueselection.json": {
@@ -4427,7 +4427,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/abtypeofproperty(_:_:_:).json": {
       "etag": "\"596c-65d55dfca62bd-df\"",
-      "file_path": "documentation/AddressBook/abtypeofproperty.md",
+      "file_path": "documentation/AddressBook/abtypeofproperty(_,_,_).md",
       "hash": "ce87439384de91a36c7686cccbdaa6f9e92c25ff72f7f13cecd893ddf2c38a98"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/address-book-constants.json": {
@@ -5892,7 +5892,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/property_types.json": {
       "etag": "\"5b72-65902687b9272-df\"",
-      "file_path": "documentation/AddressBook/property-types.md",
+      "file_path": "documentation/AddressBook/property_types.md",
       "hash": "5c71518a929498ce7959a6748bae6e1eaa834821458c263f3367a15e67304126"
     },
     "https://developer.apple.com/tutorials/data/documentation/addressbook/social-profile-services.json": {

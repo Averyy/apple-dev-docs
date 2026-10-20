@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/iad/adclient/requestattributiondetailswithblock:": {
       "etag": "\"1288-65902357e26a0-df\"",
-      "file_path": "documentation/iAd/adclient/requestattributiondetailswithblock.md",
+      "file_path": "documentation/iAd/adclient/requestattributiondetailswithblock_.md",
       "hash": "8a77ee24eacc9d696137da641e8b6eeef2847b4cc0f51b614ca054855950ace1"
     },
     "https://developer.apple.com/documentation/iad/adclient/sharedclient": {
@@ -22,42 +22,42 @@
     },
     "https://developer.apple.com/documentation/iad/adclient_deprecated_ios_71_145_obsoleted_180": {
       "etag": "\"ad8-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-ios-71-145-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_ios_71_145_obsoleted_180.md",
       "hash": "75c0861ce8d81aa56af9300fee2fc7ee7e6774c6f8ffa7a463fd99f5d312e6ad"
     },
     "https://developer.apple.com/documentation/iad/adclient_deprecated_ios_71_150_obsoleted_180": {
       "etag": "\"ad8-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-ios-71-150-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_ios_71_150_obsoleted_180.md",
       "hash": "bd9e07e1a31089f1806672269403d990ec6ecf0fa86eb529d49253a7dd63b4ec"
     },
     "https://developer.apple.com/documentation/iad/adclient_deprecated_ios_90_145_obsoleted_180": {
       "etag": "\"ad8-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-ios-90-145-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_ios_90_145_obsoleted_180.md",
       "hash": "d56f7bb383bf307c5d5167767fa3c46dba30bd832cc4fb1e223f9ef6324aadd6"
     },
     "https://developer.apple.com/documentation/iad/adclient_deprecated_macos_1014_113_obsoleted_180": {
       "etag": "\"b08-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-macos-1014-113-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_macos_1014_113_obsoleted_180.md",
       "hash": "0f08070f62434a12383297611760d532e593f7c562bc03b93b7b3a129a3fd91d"
     },
     "https://developer.apple.com/documentation/iad/adclient_deprecated_macos_1014_120_obsoleted_180": {
       "etag": "\"b08-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-macos-1014-120-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_macos_1014_120_obsoleted_180.md",
       "hash": "e7b40815515726bfd3f7f77750771a7f31828a40b1c12e1aa743fcfb4d88759c"
     },
     "https://developer.apple.com/documentation/iad/adclient_deprecated_tvos_71_145_obsoleted_180": {
       "etag": "\"ae4-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-tvos-71-145-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_tvos_71_145_obsoleted_180.md",
       "hash": "29a7d8f29c44462be5a3dd423491418c494b53ca1c0513a4a21186b731a148db"
     },
     "https://developer.apple.com/documentation/iad/adclient_deprecated_tvos_71_150_obsoleted_180": {
       "etag": "\"ae4-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-tvos-71-150-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_tvos_71_150_obsoleted_180.md",
       "hash": "234a3c063468eb87771e31e8f6122c1b746e6ee8fe00da60018a29c9b78343f9"
     },
     "https://developer.apple.com/documentation/iad/adclient_deprecated_tvos_90_145_obsoleted_180": {
       "etag": "\"ae4-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-tvos-90-145-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_tvos_90_145_obsoleted_180.md",
       "hash": "f9ee02ba85f53407a8acbaefca0ccb0c13cb092241ab720feab7eaf6c412e4b5"
     },
     "https://developer.apple.com/documentation/iad/adclienterror": {
@@ -142,7 +142,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient/requestattributiondetailswithblock:.json": {
       "etag": "\"1288-65902357e26a0-df\"",
-      "file_path": "documentation/iAd/adclient/requestattributiondetailswithblock.md",
+      "file_path": "documentation/iAd/adclient/requestattributiondetailswithblock_.md",
       "hash": "8a77ee24eacc9d696137da641e8b6eeef2847b4cc0f51b614ca054855950ace1"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient/sharedclient.json": {
@@ -152,42 +152,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient_deprecated_ios_71_145_obsoleted_180.json": {
       "etag": "\"ad8-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-ios-71-145-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_ios_71_145_obsoleted_180.md",
       "hash": "75c0861ce8d81aa56af9300fee2fc7ee7e6774c6f8ffa7a463fd99f5d312e6ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient_deprecated_ios_71_150_obsoleted_180.json": {
       "etag": "\"ad8-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-ios-71-150-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_ios_71_150_obsoleted_180.md",
       "hash": "bd9e07e1a31089f1806672269403d990ec6ecf0fa86eb529d49253a7dd63b4ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient_deprecated_ios_90_145_obsoleted_180.json": {
       "etag": "\"ad8-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-ios-90-145-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_ios_90_145_obsoleted_180.md",
       "hash": "d56f7bb383bf307c5d5167767fa3c46dba30bd832cc4fb1e223f9ef6324aadd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient_deprecated_macos_1014_113_obsoleted_180.json": {
       "etag": "\"b08-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-macos-1014-113-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_macos_1014_113_obsoleted_180.md",
       "hash": "0f08070f62434a12383297611760d532e593f7c562bc03b93b7b3a129a3fd91d"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient_deprecated_macos_1014_120_obsoleted_180.json": {
       "etag": "\"b08-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-macos-1014-120-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_macos_1014_120_obsoleted_180.md",
       "hash": "e7b40815515726bfd3f7f77750771a7f31828a40b1c12e1aa743fcfb4d88759c"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient_deprecated_tvos_71_145_obsoleted_180.json": {
       "etag": "\"ae4-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-tvos-71-145-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_tvos_71_145_obsoleted_180.md",
       "hash": "29a7d8f29c44462be5a3dd423491418c494b53ca1c0513a4a21186b731a148db"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient_deprecated_tvos_71_150_obsoleted_180.json": {
       "etag": "\"ae4-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-tvos-71-150-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_tvos_71_150_obsoleted_180.md",
       "hash": "234a3c063468eb87771e31e8f6122c1b746e6ee8fe00da60018a29c9b78343f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient_deprecated_tvos_90_145_obsoleted_180.json": {
       "etag": "\"ae4-65d55eb431c47-df\"",
-      "file_path": "documentation/iAd/adclient-deprecated-tvos-90-145-obsoleted-180.md",
+      "file_path": "documentation/iAd/adclient_deprecated_tvos_90_145_obsoleted_180.md",
       "hash": "f9ee02ba85f53407a8acbaefca0ccb0c13cb092241ab720feab7eaf6c412e4b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror.json": {

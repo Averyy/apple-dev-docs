@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/aeacontexttraits/aadestroy(_:)": {
       "etag": "\"152c-65d55f73e0fb4-df\"",
-      "file_path": "documentation/AppleArchive/aeacontexttraits/aadestroy.md",
+      "file_path": "documentation/AppleArchive/aeacontexttraits/aadestroy(_).md",
       "hash": "e4654ffd257f547845a81c3347413f426e1c9ecf0aae08e76cd406a386bdd332"
     },
     "https://developer.apple.com/documentation/applearchive/aeacontexttraits/aatype": {
@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/apple_archive_api_version": {
       "etag": "\"171c-65d55f74d60bb-df\"",
-      "file_path": "documentation/AppleArchive/apple-archive-api-version.md",
+      "file_path": "documentation/AppleArchive/apple_archive_api_version.md",
       "hash": "b23f2689b6672997bda7a97276d85d9aa8ccb1873e1cdafb760082c6a0965546"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream": {
@@ -37,122 +37,122 @@
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/close(updatingcontext:)": {
       "etag": "\"174d-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/close-updatingcontext.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/close(updatingcontext).md",
       "hash": "6f20120be2fb7c5e06a19100eba5b4c3ff5a19584b328304d3e9c348e0ff2714"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/compressionstream(appendingto:flags:threadcount:)": {
       "etag": "\"4d79-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/compressionstream-appendingtoflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/compressionstream(appendingto,flags,threadcount).md",
       "hash": "c5cd5eadd5a63c331eacaeea920d065bbe6587aaeca33e206143e80bd0a15229"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/compressionstream(using:writingto:blocksize:flags:threadcount:)": {
       "etag": "\"50b8-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/compressionstream-usingwritingtoblocksizeflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/compressionstream(using,writingto,blocksize,flags,threadcount).md",
       "hash": "d47ba4ea78f05421e543482f31ab6f14ec3227c147cd118b5b5a51c436a70cb5"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/customstream(instance:)": {
       "etag": "\"2674-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/customstream-instance.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/customstream(instance).md",
       "hash": "b609e9140407866bf7e04d1b54bb8739a14564a006e85cf113297d6459b16f34"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/decompressionstream(readingfrom:flags:threadcount:)": {
       "etag": "\"449f-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/decompressionstream-readingfromflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/decompressionstream(readingfrom,flags,threadcount).md",
       "hash": "85d8237132c0cca72e94ab394857d55089bbd2c509b6b8764728e674378bf296"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/decryptionstream(readingfrom:encryptioncontext:flags:threadcount:)": {
       "etag": "\"3246-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/decryptionstream-readingfromencryptioncontextflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/decryptionstream(readingfrom,encryptioncontext,flags,threadcount).md",
       "hash": "5d6583eef98c30c2d3d74e6215b8998f66992e9c7c331f2f0aef42fb3f3c2bdb"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/encryptionstream(appendingto:encryptioncontext:flags:threadcount:)": {
       "etag": "\"3f2c-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/encryptionstream-appendingtoencryptioncontextflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/encryptionstream(appendingto,encryptioncontext,flags,threadcount).md",
       "hash": "50215ccdf0ef9c3311798856de8c59300e978b14844090a6b8213ae37f4361c6"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/encryptionstream(writingto:encryptioncontext:flags:threadcount:)": {
       "etag": "\"3f0e-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/encryptionstream-writingtoencryptioncontextflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/encryptionstream(writingto,encryptioncontext,flags,threadcount).md",
       "hash": "b8c711e61d35eb7842c552b1ed0fc210e60d7c2001ea1f554204618bd1fb47db"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(fd:automaticclose:)": {
       "etag": "\"3fb1-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/filestream-fdautomaticclose.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/filestream(fd,automaticclose).md",
       "hash": "d089bf1ee73177e6f3dc48738805eb89ae9f190c45f8f6c439a1acfaa51f2a9f"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)": {
       "etag": "\"4e07-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/filestream-pathmodeoptionspermissions.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/filestream(path,mode,options,permissions).md",
       "hash": "0236bd51fde3bfa30ddb44fcc41dd881f2c1be0bc24ea35c2760393d4867a258"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/init(object:owned:)": {
       "etag": "\"1a07-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/init-objectowned.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/init(object,owned).md",
       "hash": "1c457dc446801048652baf321b59f3269d1e930feb210142bc7f89d3529d303f"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/process(readingfrom:writingto:)": {
       "etag": "\"1da6-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/process-readingfromwritingto.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/process(readingfrom,writingto).md",
       "hash": "baa726300c50c483747e30e5f3a5e70388d5446c6edd900bc3d4417cfd3434e4"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/randomaccessdecompressionstream(readingfrom:allocationlimit:flags:threadcount:)": {
       "etag": "\"43b1-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/randomaccessdecompressionstream-readingfromallocationlimitflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/randomaccessdecompressionstream(readingfrom,allocationlimit,flags,threadcount).md",
       "hash": "04d34ecb6bbceb05b1f3cabf744a6042b097a6198329a3f7ba07bbdca342328b"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/randomaccessdecryptionstream(readingfrom:encryptioncontext:allocationlimit:flags:threadcount:)": {
       "etag": "\"3833-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/randomaccessdecryptionstream-readingfromencryptioncontextallocationlimitflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/randomaccessdecryptionstream(readingfrom,encryptioncontext,allocationlimit,flags,threadcount).md",
       "hash": "90ceb4a2e0fb8b65a0a5b27ad94b83e1e3ac9548ad5ff6452ec89f6da012ab3c"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/sharedbufferpipe(capacity:)": {
       "etag": "\"3165-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/sharedbufferpipe-capacity.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/sharedbufferpipe(capacity).md",
       "hash": "458fd63a1be9b0d4ab9fb1fb9f8084f67f569593d470795ee605f5a249f06b3a"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/temporaryfilestream()": {
       "etag": "\"34a7-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/temporaryfilestream.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/temporaryfilestream().md",
       "hash": "d62c45d4fa075e7549a2f320224f48befd405282a973aedc4a1bd50fe2bd941a"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/withcompressionstream(appendingto:flags:threadcount:_:)": {
       "etag": "\"40e9-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withcompressionstream-appendingtoflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withcompressionstream(appendingto,flags,threadcount,_).md",
       "hash": "f24239d24a4134035987a1d5aac89bddf3711b6742cfd2079fc64a7dd4e57e68"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/withcompressionstream(using:writingto:blocksize:flags:threadcount:_:)": {
       "etag": "\"468c-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withcompressionstream-usingwritingtoblocksizeflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withcompressionstream(using,writingto,blocksize,flags,threadcount,_).md",
       "hash": "36b5c024ad2e6d298a647509d54a8153901de559d2718ea8b749a0572e52ecf4"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/withdecompressionstream(readingfrom:flags:threadcount:_:)": {
       "etag": "\"4a18-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withdecompressionstream-readingfromflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withdecompressionstream(readingfrom,flags,threadcount,_).md",
       "hash": "fdd9e1dff944a7618fd5c86b655cee0b6760d56128c9f6411658d55cf69ae4b3"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/withfilestream(fd:automaticclose:_:)": {
       "etag": "\"4365-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withfilestream-fdautomaticclose.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withfilestream(fd,automaticclose,_).md",
       "hash": "b7eb85888d09a9d8e1b11098767e6ac695c55dcb2cd99580e2388aa682007f62"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/withfilestream(path:mode:options:permissions:_:)": {
       "etag": "\"514f-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withfilestream-pathmodeoptionspermissions.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withfilestream(path,mode,options,permissions,_).md",
       "hash": "6826fe5695cbad241cbae16eccc625a2828d7e55938a56dcc8d3dcaacbade6d0"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/withrandomaccessdecompressionstream(readingfrom:allocationlimit:flags:threadcount:_:)": {
       "etag": "\"462f-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withrandomaccessdecompressionstream-readingfromallocationlimitflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withrandomaccessdecompressionstream(readingfrom,allocationlimit,flags,threadcount,_).md",
       "hash": "c1f77e537117b96d46264599f6157d039d91686772132486bc3a5542ed558a7f"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/withstream(wrapping:_:)": {
       "etag": "\"2a5a-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withstream-wrapping.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withstream(wrapping,_).md",
       "hash": "9fef1eaeea3da88d9d2206e19e22924331532aafa8a15702f06166f3f3b8e6be"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestream/withtemporaryfilestream(_:)": {
       "etag": "\"392b-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withtemporaryfilestream.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withtemporaryfilestream(_).md",
       "hash": "93d227a88a01671eae41f5ffb447e3bf7b89eb229b017616cca805d561328d19"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestreamprotocol": {
@@ -162,37 +162,37 @@
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestreamprotocol/cancel()": {
       "etag": "\"19ff-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/cancel.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/cancel().md",
       "hash": "d25fc1aaac81f22fac58d4055b90cee5803967882c8e98bca34ffcbb5db8aa2a"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestreamprotocol/close()": {
       "etag": "\"1b00-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/close.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/close().md",
       "hash": "02150e4c365274651c9362278a0d3da014cf489e5ace09e3cad17acb129165d0"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestreamprotocol/read(into:)": {
       "etag": "\"2a88-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/read-into.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/read(into).md",
       "hash": "fa56adcb45d36ac77829205aef8150ba2d2c74182198546675e8f01457f724e4"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestreamprotocol/read(into:atoffset:)": {
       "etag": "\"2e49-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/read-intoatoffset.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/read(into,atoffset).md",
       "hash": "be212f3420a1fc41776a5c0b2f1bb0506d0feb93fca8cc62becc793d9506f65b"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestreamprotocol/seek(tooffset:relativeto:)": {
       "etag": "\"2922-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/seek-tooffsetrelativeto.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/seek(tooffset,relativeto).md",
       "hash": "7ba8b4f93d476ad44971b6847899eb051aecdf56a94f10193978865ae4e9853a"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestreamprotocol/write(from:)": {
       "etag": "\"2a3e-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/write-from.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/write(from).md",
       "hash": "5853263f7cbf02dee12b2140d466068dafa252b0b0622ba98726fba988172d2e"
     },
     "https://developer.apple.com/documentation/applearchive/archivebytestreamprotocol/write(from:atoffset:)": {
       "etag": "\"2e08-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/write-fromatoffset.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/write(from,atoffset).md",
       "hash": "2ff768c0a0278f5eb3d4efde43c8c3745e1081be7312f7a6c25249c0f5e83bc4"
     },
     "https://developer.apple.com/documentation/applearchive/archivecompression": {
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/archivecompression/init(algo:)": {
       "etag": "\"1213-65d55f73e0fb4-df\"",
-      "file_path": "documentation/AppleArchive/archivecompression/init-algo.md",
+      "file_path": "documentation/AppleArchive/archivecompression/init(algo).md",
       "hash": "bf09e4ed5c6355ae529d4a5f9add2dc7e412392107d78f1d47c40bc758557254"
     },
     "https://developer.apple.com/documentation/applearchive/archivecompression/lz4": {
@@ -257,12 +257,12 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/checksummode-swift.property": {
       "etag": "\"4695-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/checksummode-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/checksummode-swift.property.md",
       "hash": "e22d49c91744e00bbbdee4a88854749b0211ae0f4d20b9132e41abf50ed8f7a7"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/checksummode-swift.struct": {
       "etag": "\"5b25-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/checksummode-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/checksummode-swift.struct.md",
       "hash": "14a8a372e0cc64094ef866ebc6257c9f967b6c417b0d81e182aacccb0f777949"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/checksummode-swift.struct/murmurhash64": {
@@ -297,22 +297,22 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/decryptattributes()": {
       "etag": "\"5ad7-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/decryptattributes.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/decryptattributes().md",
       "hash": "f250246da8f28ccf3ef5e03a2cb07fca74beedc15dbc7e98024887ead6e43bea"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/encryptionmode-swift.property": {
       "etag": "\"4652-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swift.property.md",
       "hash": "597f27a57b50ff011d01937a533cc3611669d7a30f8818120683c4bbd50dbb31"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/encryptionmode-swift.struct": {
       "etag": "\"5fa3-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swift.struct.md",
       "hash": "6a6d4090c802ea7f512e738edbe5f20f813b1e8293e351db3587ac5a78006c59"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/encryptionmode-swift.struct/ecdhe_p256": {
       "etag": "\"25ce-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swift.struct/ecdhe-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swift.struct/ecdhe_p256.md",
       "hash": "59d1219d48d57031e08daf57b9cdb230d30e84714b095209c8b423d83f44911e"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/encryptionmode-swift.struct/none": {
@@ -332,22 +332,22 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/generatepassword()": {
       "etag": "\"1bfa-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/generatepassword.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/generatepassword().md",
       "hash": "1488d3a54ed99c6134253846b73e9a64b875e710eab38c2a92025c4ab786cc8f"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/generatesymmetrickey()": {
       "etag": "\"3403-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/generatesymmetrickey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/generatesymmetrickey().md",
       "hash": "77607099519e895aa9f884f65da49eb3d7e722bcb16274e8c2759ce355f3a1b5"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/init(from:)": {
       "etag": "\"241d-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/init-from.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/init(from).md",
       "hash": "f7acea5a5d3de3ac36a5450e5677432cbd072e50d020e9760c7b7941e6a3d68e"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/init(profile:compressionalgorithm:compressionblocksize:)": {
       "etag": "\"2782-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/init-profilecompressionalgorithmcompressionblocksize.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/init(profile,compressionalgorithm,compressionblocksize).md",
       "hash": "bc1cb6905189bfab8a33c7e13cae7420f8412a21318b0313851e327ce08345a9"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/mainkey": {
@@ -367,42 +367,42 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/profile-swift.property": {
       "etag": "\"4603-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.property.md",
       "hash": "249e79e511d5d80bb228641490fde484c63ff88907eb89adf5c60fe6ea08be2e"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/profile-swift.struct": {
       "etag": "\"6d23-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct.md",
       "hash": "556b0da2be79be3ab66468b1ab9289f5050ff0cdb7a591b26b8487f2f1dba540"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__ecdhe_p256__ecdsa_p256": {
       "etag": "\"34f0-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-ecdhe-p256-ecdsa-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__ecdhe_p256__ecdsa_p256.md",
       "hash": "a700818a53f301f69980695e2683adff04630eadeafb915add87859966065c65"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__ecdhe_p256__none": {
       "etag": "\"3413-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-ecdhe-p256-none.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__ecdhe_p256__none.md",
       "hash": "962fd06b26517c208ca667c3001d440ea4b288acb7a2539caa1e46503df192d8"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__scrypt__none": {
       "etag": "\"33ae-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-scrypt-none.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__scrypt__none.md",
       "hash": "4d76e44d4c7a43e35436c8551168822468992b6533fbb053a3869c8b1018fb46"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__symmetric__ecdsa_p256": {
       "etag": "\"33f2-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-symmetric-ecdsa-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__symmetric__ecdsa_p256.md",
       "hash": "be8aea1c98c0405c14aca33fe577f800912f6566d6024a51965cc482ed4aeaf6"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__symmetric__none": {
       "etag": "\"33b6-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-symmetric-none.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__symmetric__none.md",
       "hash": "85b9e2d817af1fbd41c40e21edfa1ed94721e3b9a7f1681174d4ed867d24f76b"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_hmac__none__ecdsa_p256": {
       "etag": "\"33b4-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-hmac-none-ecdsa-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_hmac__none__ecdsa_p256.md",
       "hash": "b0346e948c9615a7ecd05859aeaa29b42c61160cd7d476312f79065e84bf2e6f"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/rawsize": {
@@ -412,37 +412,37 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/setpassword(_:)": {
       "etag": "\"20e5-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setpassword.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setpassword(_).md",
       "hash": "b486ef6319801c042b401c063835d3347d6d77d043ef4c833306595442729fca"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/setrecipientprivatekey(_:)": {
       "etag": "\"3bcc-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setrecipientprivatekey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setrecipientprivatekey(_).md",
       "hash": "ec2c51cf9c177a2fa7a8b7f9f6678e3c259edd3d3e9268ca2500f2ef4662e60f"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/setrecipientpublickey(_:)": {
       "etag": "\"3bb9-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setrecipientpublickey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setrecipientpublickey(_).md",
       "hash": "a6e3060a5563b38124add66e1f2bad9a9ab0cc4e91a2f277d6d0b71aec94e441"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/setsigningprivatekey(_:)": {
       "etag": "\"3d89-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsigningprivatekey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsigningprivatekey(_).md",
       "hash": "c1dd8ca295a74afcd2c5266620cf249cfe8c230458281e08c7aec1705a31b3f6"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/setsigningpublickey(_:)": {
       "etag": "\"3cc0-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsigningpublickey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsigningpublickey(_).md",
       "hash": "080fc09da1f2ae3afeac4b50c0269b3e7fd1308317bf3d34756ac867d0f2e9ca"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/setsymmetrickey(_:)": {
       "etag": "\"3907-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsymmetrickey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsymmetrickey(_).md",
       "hash": "63a3f6eb98c5a44f127a1ec14da36b6854ec72281596b38c2d00fa9bbb0fb1b6"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/sign(encryptedstream:encryptioncontext:)": {
       "etag": "\"2a34-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/sign-encryptedstreamencryptioncontext.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/sign(encryptedstream,encryptioncontext).md",
       "hash": "788a79b20508b71867ada12b5265799e2ef25a33d6305dcfd13617bf38929a75"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/signatureencryptionkey": {
@@ -452,17 +452,17 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/signaturemode-swift.property": {
       "etag": "\"1dd3-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swift.property.md",
       "hash": "06e1fe4f5e80d3cb1f4abadc389f349bbfbf6939c05da68657a9e3629eb12294"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/signaturemode-swift.struct": {
       "etag": "\"31d3-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swift.struct.md",
       "hash": "724355155c92922782c5e6a836afca761f36f0108b917200ff992fa6c8f2fe0f"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/signaturemode-swift.struct/ecdsa_p256": {
       "etag": "\"1d02-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swift.struct/ecdsa-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swift.struct/ecdsa_p256.md",
       "hash": "0c56ed252235acdaa3b7618eba97e8c4ce40ba2f172958063196b5c52564a503"
     },
     "https://developer.apple.com/documentation/applearchive/archiveencryptioncontext/signaturemode-swift.struct/none": {
@@ -527,7 +527,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveflags/verbosity(level:)": {
       "etag": "\"1405-65d55f74c1440-df\"",
-      "file_path": "documentation/AppleArchive/archiveflags/verbosity-level.md",
+      "file_path": "documentation/AppleArchive/archiveflags/verbosity(level).md",
       "hash": "17de82261a557b5abf269bf025115632f1841295d7520efb25d71d0d917ed6eb"
     },
     "https://developer.apple.com/documentation/applearchive/archivehash": {
@@ -547,7 +547,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/archivehash/init(rawvalue:)": {
       "etag": "\"115d-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivehash/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archivehash/init(rawvalue).md",
       "hash": "bdfb105dd3861f91b2fe7148f8ea28f5b6987cedcec5bab45e468616228d1817"
     },
     "https://developer.apple.com/documentation/applearchive/archivehash/maxsize": {
@@ -592,7 +592,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/append(_:)": {
       "etag": "\"1ae0-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/append.md",
+      "file_path": "documentation/AppleArchive/archiveheader/append(_).md",
       "hash": "aec363717403ae2308b326615b0f6645b12c83a0c939037827856c7bda593bfc"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryattributes": {
@@ -647,17 +647,17 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryfilterdata/entryattributes(_:)": {
       "etag": "\"2061-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/entryattributes.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/entryattributes(_).md",
       "hash": "d18df89a5cb57c067c8e51fc8c3e2dcf3774d21a68e74c5d861d7fdbed1b46d3"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryfilterdata/entryxat(_:)": {
       "etag": "\"2038-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/entryxat.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/entryxat(_).md",
       "hash": "3f5e1ff3df105105e64e53c217daabb855b50c18aa72fc51af2434e1db28a6bd"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryfilterdata/header(_:)": {
       "etag": "\"1c2b-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/header.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/header(_).md",
       "hash": "6a0589d478ec8de112a1b5ef8ac629ea2111e65cf3de7cbef461c5711e31413c"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrymessage": {
@@ -722,7 +722,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrymessage/init(rawvalue:)": {
       "etag": "\"17e4-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrymessage/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrymessage/init(rawvalue).md",
       "hash": "e854576b61e9167fc07147b9803d040ecd966cf15deefe0b0a739c6c72238d17"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrymessage/processexclude": {
@@ -767,7 +767,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrymessagestatus/init(rawvalue:)": {
       "etag": "\"1853-65d55f745b01f-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrymessagestatus/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrymessagestatus/init(rawvalue).md",
       "hash": "3502e3d6347fa03bb49b480a7dfc318fed03ed54b5cf03f98d080d3414c8f0de"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrymessagestatus/ok": {
@@ -792,12 +792,12 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrytype-swift.property": {
       "etag": "\"28aa-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swift.property.md",
       "hash": "13cffbedd1a2825b5137645fcf3a99700613ef2a95e392b335681e4d0ddc3dbd"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrytype-swift.struct": {
       "etag": "\"653f-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swift.struct.md",
       "hash": "ca3a04c9edce0821f19c303aac144be9787f61f3a2d7a7113345bd6235f40b11"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrytype-swift.struct/blockspecial": {
@@ -832,7 +832,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrytype-swift.struct/init(rawvalue:)": {
       "etag": "\"1845-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swift.struct/init(rawvalue).md",
       "hash": "d7512b1a67eb2d4d878dc470833313abfa54302866b3933bc482721487e0f0f9"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entrytype-swift.struct/link": {
@@ -877,12 +877,12 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/append(_:)": {
       "etag": "\"26f7-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/append.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/append(_).md",
       "hash": "8321fcd66365fedead253b46ee9b63d30d60097dc6bf2fa81bb1cfd972d34911"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/apply(directory:path:flags:)": {
       "etag": "\"202a-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/apply-directorypathflags.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/apply(directory,path,flags).md",
       "hash": "7383a4d95e706400c288b227a620e2f6fdc06a60adb13c8ed06b735497ed2e21"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/extendedattribute": {
@@ -892,37 +892,37 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/extendedattribute/init(key:data:)": {
       "etag": "\"2223-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/extendedattribute/init-keydata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/extendedattribute/init(key,data).md",
       "hash": "1c95f9f46ca5a0cfce456afcbf1198748299cd5fda18161e5a72fd0353e92a8b"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/init()": {
       "etag": "\"1a70-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init().md",
       "hash": "c35b9bfeb7649620cc5f135dba832635bf571e477591efc832f3e65719c70f6b"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/init(directory:path:flags:)": {
       "etag": "\"25f5-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init-directorypathflags.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init(directory,path,flags).md",
       "hash": "0145a6adc53f3a695f1a4d48dfaa029e232aed3da00c6c0a290335fd5a36d5db"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/init(withaaencodeddata:)": {
       "etag": "\"232c-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init-withaaencodeddata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init(withaaencodeddata).md",
       "hash": "72e8c1fa98786b83bd38c1458bc70be29678e4d6f944ce49addd7ef2ad32eb89"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/remove(at:)": {
       "etag": "\"29da-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/remove-at.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/remove(at).md",
       "hash": "018f893dadb9b28237c21523a75bb8142a339dce226d0381ae27d4473fe0a222"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/removeall()": {
       "etag": "\"1f06-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/removeall.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/removeall().md",
       "hash": "e7c69ae71a7e55a4a8bd0e7e546924372b547153dbe44436601b868da55a833c"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/entryxatblob/withaaencodeddata(_:)": {
       "etag": "\"2901-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/withaaencodeddata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/withaaencodeddata(_).md",
       "hash": "beb6f922735de9b442839815abef15cbe9f3aae29a807e63c32a0102f40388d5"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field": {
@@ -932,22 +932,22 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field(forkey:)": {
       "etag": "\"2b26-65d55f745b01f-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field-forkey.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field(forkey).md",
       "hash": "65dc9f8fd463e09523b4b5b7d336e6ffc2236e73459a98a15d95da4907c88636"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field/blob(key:size:offset:)": {
       "etag": "\"386f-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/blob-keysizeoffset.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/blob(key,size,offset).md",
       "hash": "4a911589a6888c85f87277f8df1d3afcd4ecf963541fec390e5bdc5eab12d2b4"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field/flag(key:)": {
       "etag": "\"32dd-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/flag-key.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/flag(key).md",
       "hash": "790fc99c3d534e9202cb7c3ffed0761c99d415fb7b80cd9f44827623b2c722a3"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field/hash(key:hashfunction:value:)": {
       "etag": "\"3dfe-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/hash-keyhashfunctionvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/hash(key,hashfunction,value).md",
       "hash": "44e44d8afe4a1ff5b9839ccea40adfbd553a8dc8a55805aad808e8b072e38205"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field/key": {
@@ -957,12 +957,12 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field/string(key:value:)": {
       "etag": "\"368b-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/string-keyvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/string(key,value).md",
       "hash": "b00765f61641493114afd79f47e9bac0f63fa358db963221bf1218e6623b3a2a"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field/timespec(key:value:)": {
       "etag": "\"35c2-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/timespec-keyvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/timespec(key,value).md",
       "hash": "cc2d0a2cb9513fc7f96fc8efa9b6991e322d1e8965cf22f8be4d1ee275462c08"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field/type": {
@@ -972,22 +972,22 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/field/uint(key:value:)": {
       "etag": "\"36c0-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/uint-keyvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/uint(key,value).md",
       "hash": "c3a6e19496f054296fedb50a8240d3c5725f06a3a38a6da729e5b90fde1d2c3b"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkey-swift.property": {
       "etag": "\"252a-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.property.md",
       "hash": "74b0af82fd29b02a886a78dfa0bee633f83665dce460b834ee726119fff651f8"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkey-swift.struct": {
       "etag": "\"8355-65d55f745b01f-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct.md",
       "hash": "10fc418757e3c46fa10d97a16ae96e360e6e803fd05cde550eff124f4a041b7b"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkey-swift.struct/==(_:_:)": {
       "etag": "\"1e08-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/equal.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/eqeq(_,_).md",
       "hash": "a65362643d55b054f4ccdf72356c56ccea7cec85c9c448c13142a273fd8b5e1c"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkey-swift.struct/description": {
@@ -997,12 +997,12 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkey-swift.struct/hash(into:)": {
       "etag": "\"1745-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/hash-into.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/hash(into).md",
       "hash": "0774d3c3b2b6ae36096032ca692a62843a0819e55cd22a8514754e2202318679"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkey-swift.struct/init(_:)": {
       "etag": "\"15f4-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/init(_).md",
       "hash": "4594eb6d98d4323f829b20d238e5b16112313a094fe9e7d0793625df2f737ba1"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkeyset": {
@@ -1022,27 +1022,27 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkeyset/init()": {
       "etag": "\"17eb-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init().md",
       "hash": "fb9e3cd99b43c9e0e3759110fe1c1dc92e95de56515823c52bc11ddfc4e5fdcf"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkeyset/init(_:)": {
       "etag": "\"2f0e-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init(_).md",
       "hash": "b1a6ca4eb628aa3e79f11d8a519f15b7233c2719c459c2dceb7d2d90ebe68621"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldkeyset/init(copying:)": {
       "etag": "\"1bff-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init-copying.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init(copying).md",
       "hash": "ccf1d378b2ef2431313bdd10fb7cdb85ccbbef1e1270489c6bd0296f6343b65b"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldtype-swift.property": {
       "etag": "\"2533-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swift.property.md",
       "hash": "03757c812049341e5028d500516114ff6e53f679a9213e06dac85ad3e8b1c780"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldtype-swift.struct": {
       "etag": "\"4f10-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swift.struct.md",
       "hash": "1b6d0699092f80a10bbb2233be0808440b320e26d7c072642c5f0e36809f2d3d"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldtype-swift.struct/blob": {
@@ -1067,7 +1067,7 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldtype-swift.struct/init(rawvalue:)": {
       "etag": "\"184e-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swift.struct/init(rawvalue).md",
       "hash": "c23add0d8362a0986b337794ab6a6e969ab951d8212b0b58453c6974e16aa158"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/fieldtype-swift.struct/rawvalue": {
@@ -1092,37 +1092,37 @@
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/init()": {
       "etag": "\"1b51-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/init().md",
       "hash": "ed4f172f394401b44826470e9df614577a9ef6896e647827db6684d647a8d14f"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/init(copying:)": {
       "etag": "\"1dda-65d55f745b01f-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/init-copying.md",
+      "file_path": "documentation/AppleArchive/archiveheader/init(copying).md",
       "hash": "549dbc9aab225be8a1ae6966399be9636946de22f267e927afa1130f192ee0bf"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/init(keyset:directory:path:flags:)": {
       "etag": "\"2d63-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/init-keysetdirectorypathflags.md",
+      "file_path": "documentation/AppleArchive/archiveheader/init(keyset,directory,path,flags).md",
       "hash": "2fa32eec52b79e5853b3f93aa7ae574da928593ad4992ecc3611a5ff28e36244"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/init(withaaencodeddata:)": {
       "etag": "\"2416-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/init-withaaencodeddata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/init(withaaencodeddata).md",
       "hash": "0955e39bc6a385353aba4dd6299b56d6e42c5f1d07d83a1b9e36e6c2a7fdc396"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/remove(at:)": {
       "etag": "\"1dc3-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/remove-at.md",
+      "file_path": "documentation/AppleArchive/archiveheader/remove(at).md",
       "hash": "af989954aebf917c4564ced2ac63cd6cc10dff7db3c19a70a6c6c96dc0bb98a3"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/removeall()": {
       "etag": "\"155e-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/removeall.md",
+      "file_path": "documentation/AppleArchive/archiveheader/removeall().md",
       "hash": "efad5969d9c057debdf9542c281c902e9cf4fed1084f9bdaf1cb52f224594501"
     },
     "https://developer.apple.com/documentation/applearchive/archiveheader/withaaencodeddata(_:)": {
       "etag": "\"1b64-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/withaaencodeddata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/withaaencodeddata(_).md",
       "hash": "e804b41c8804d765382a5ab8d06d15b8b38e4ae40cae95c4f08cc988589b6ee5"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream": {
@@ -1132,67 +1132,67 @@
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/convertstream(writingto:insertkeyset:removekeyset:selectusing:flags:threadcount:)": {
       "etag": "\"4670-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/convertstream-writingtoinsertkeysetremovekeysetselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/convertstream(writingto,insertkeyset,removekeyset,selectusing,flags,threadcount).md",
       "hash": "db6046277399673907365faa680e3116cb563d2c1d4000449d1d618533a010e7"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/customstream(instance:)": {
       "etag": "\"2084-65d55f73e0fb4-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/customstream-instance.md",
+      "file_path": "documentation/AppleArchive/archivestream/customstream(instance).md",
       "hash": "3a06c7bf9cfd3a9f06aa859b198830e623686051e29dd53fecc52a61ccf197cd"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/decodestream(readingfrom:selectusing:flags:threadcount:)": {
       "etag": "\"37c4-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/decodestream-readingfromselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/decodestream(readingfrom,selectusing,flags,threadcount).md",
       "hash": "f9eeef0d437f70190e54c11df2adf474b39d6a868c4971d1428a45ef268f8360"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/encodestream(writingto:selectusing:flags:threadcount:)": {
       "etag": "\"37a7-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/encodestream-writingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/encodestream(writingto,selectusing,flags,threadcount).md",
       "hash": "b9f41b42af314f64f2ea171d8189fe1982bf70b0f09ed79c301b58b6b99e356d"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/extractstream(extractingto:selectusing:flags:threadcount:)": {
       "etag": "\"644f-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/extractstream-extractingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/extractstream(extractingto,selectusing,flags,threadcount).md",
       "hash": "06c5ec4e57d9ae49a1060592cfcee6d6ede4365d25ecac366a5b94e2a23d8067"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/init(object:owned:messageproc:)": {
       "etag": "\"214a-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/init-objectownedmessageproc.md",
+      "file_path": "documentation/AppleArchive/archivestream/init(object,owned,messageproc).md",
       "hash": "8e52b47bec261fdb440cb129a6f9a6281f2dfbbfe9859136828e9b7a13eab9d7"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/process(readingfrom:writingto:selectusing:flags:threadcount:)": {
       "etag": "\"2f62-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/process-readingfromwritingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/process(readingfrom,writingto,selectusing,flags,threadcount).md",
       "hash": "360f636cd1c37c74c454700ef83a2d7dcdc7245c0c7d41668cac427e03495fef"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/withconvertstream(writingto:insertkeyset:removekeyset:selectusing:flags:threadcount:_:)": {
       "etag": "\"4c06-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withconvertstream-writingtoinsertkeysetremovekeysetselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/withconvertstream(writingto,insertkeyset,removekeyset,selectusing,flags,threadcount,_).md",
       "hash": "d7ad6b7792a4cb2857bf0f8cd4c96d87dbd10a56b1efd3d7e02a7d8eb1324f07"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/withdecodestream(readingfrom:selectusing:flags:threadcount:_:)": {
       "etag": "\"3d41-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withdecodestream-readingfromselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/withdecodestream(readingfrom,selectusing,flags,threadcount,_).md",
       "hash": "f068a8a96d4ce68ee2c561632dbf1d4233cf8e1b366f818d5e5b617788262097"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/withencodestream(writingto:selectusing:flags:threadcount:_:)": {
       "etag": "\"3d22-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withencodestream-writingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/withencodestream(writingto,selectusing,flags,threadcount,_).md",
       "hash": "a6bd83a1c897c91ed2080a34acf99da749c689fecf83433dfd074e4de8e90f47"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/withextractstream(extractingto:selectusing:flags:threadcount:_:)": {
       "etag": "\"3cce-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withextractstream-extractingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/withextractstream(extractingto,selectusing,flags,threadcount,_).md",
       "hash": "8d94987e6d30092219aeb0f2676b872455ea8528394ec7f8c4868d73c5dcf4c1"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/withstream(wrapping:_:)": {
       "etag": "\"246a-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withstream-wrapping.md",
+      "file_path": "documentation/AppleArchive/archivestream/withstream(wrapping,_).md",
       "hash": "6b5adbd4c015c3b66e0435d0565cfaebd70e0a7d81895340a44d349489b9fa9a"
     },
     "https://developer.apple.com/documentation/applearchive/archivestream/writedirectorycontents(archivefrom:path:keyset:selectusing:flags:threadcount:)": {
       "etag": "\"3663-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/writedirectorycontents-archivefrompathkeysetselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/writedirectorycontents(archivefrom,path,keyset,selectusing,flags,threadcount).md",
       "hash": "e2eaeca9e93b41ce95082f724b654a5802a64bda5f57fcafdf024966b4de1628"
     },
     "https://developer.apple.com/documentation/applearchive/archivestreamprotocol": {
@@ -1202,32 +1202,32 @@
     },
     "https://developer.apple.com/documentation/applearchive/archivestreamprotocol/cancel()": {
       "etag": "\"124f-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/cancel.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/cancel().md",
       "hash": "5f3844faa8e3c90dd66885f94395c3fd45ff80f2d97c954230e13dc540c317be"
     },
     "https://developer.apple.com/documentation/applearchive/archivestreamprotocol/close()": {
       "etag": "\"12ad-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/close.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/close().md",
       "hash": "0cff03ce7a796982c78d69e5e18f2e6afb409234db5535340773460e4fccebbc"
     },
     "https://developer.apple.com/documentation/applearchive/archivestreamprotocol/readblob(key:into:)": {
       "etag": "\"2564-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/readblob-keyinto.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/readblob(key,into).md",
       "hash": "33a40bbe01da8cbef928a1b5c58d77fecc99d2e13aedccfc8064c7c92372ff5f"
     },
     "https://developer.apple.com/documentation/applearchive/archivestreamprotocol/readheader()": {
       "etag": "\"190e-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/readheader.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/readheader().md",
       "hash": "a4c65918f6963d9229393baa17c73183f735304cb24cbe2d096cc5cd287a5528"
     },
     "https://developer.apple.com/documentation/applearchive/archivestreamprotocol/writeblob(key:from:)": {
       "etag": "\"2525-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/writeblob-keyfrom.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/writeblob(key,from).md",
       "hash": "3e0c72cdb1ae6d2cd3e0d97d31bb9808db7b1c83456375daee6fdbb2d0cf1515"
     },
     "https://developer.apple.com/documentation/applearchive/archivestreamprotocol/writeheader(_:)": {
       "etag": "\"18d1-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/writeheader.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/writeheader(_).md",
       "hash": "439950612f5b7e623f68c6ba13f226d9a7b3f665e4acc6151aac2fc7c9f4e716"
     },
     "https://developer.apple.com/documentation/applearchive/encrypting-and-decrypting-a-single-file": {
@@ -1257,7 +1257,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/aeacontexttraits/aadestroy(_:).json": {
       "etag": "\"152c-65d55f73e0fb4-df\"",
-      "file_path": "documentation/AppleArchive/aeacontexttraits/aadestroy.md",
+      "file_path": "documentation/AppleArchive/aeacontexttraits/aadestroy(_).md",
       "hash": "e4654ffd257f547845a81c3347413f426e1c9ecf0aae08e76cd406a386bdd332"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/aeacontexttraits/aatype.json": {
@@ -1272,7 +1272,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/apple_archive_api_version.json": {
       "etag": "\"171c-65d55f74d60bb-df\"",
-      "file_path": "documentation/AppleArchive/apple-archive-api-version.md",
+      "file_path": "documentation/AppleArchive/apple_archive_api_version.md",
       "hash": "b23f2689b6672997bda7a97276d85d9aa8ccb1873e1cdafb760082c6a0965546"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream.json": {
@@ -1282,122 +1282,122 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/close(updatingcontext:).json": {
       "etag": "\"174d-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/close-updatingcontext.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/close(updatingcontext).md",
       "hash": "6f20120be2fb7c5e06a19100eba5b4c3ff5a19584b328304d3e9c348e0ff2714"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/compressionstream(appendingto:flags:threadcount:).json": {
       "etag": "\"4d79-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/compressionstream-appendingtoflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/compressionstream(appendingto,flags,threadcount).md",
       "hash": "c5cd5eadd5a63c331eacaeea920d065bbe6587aaeca33e206143e80bd0a15229"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/compressionstream(using:writingto:blocksize:flags:threadcount:).json": {
       "etag": "\"50b8-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/compressionstream-usingwritingtoblocksizeflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/compressionstream(using,writingto,blocksize,flags,threadcount).md",
       "hash": "d47ba4ea78f05421e543482f31ab6f14ec3227c147cd118b5b5a51c436a70cb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/customstream(instance:).json": {
       "etag": "\"2674-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/customstream-instance.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/customstream(instance).md",
       "hash": "b609e9140407866bf7e04d1b54bb8739a14564a006e85cf113297d6459b16f34"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/decompressionstream(readingfrom:flags:threadcount:).json": {
       "etag": "\"449f-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/decompressionstream-readingfromflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/decompressionstream(readingfrom,flags,threadcount).md",
       "hash": "85d8237132c0cca72e94ab394857d55089bbd2c509b6b8764728e674378bf296"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/decryptionstream(readingfrom:encryptioncontext:flags:threadcount:).json": {
       "etag": "\"3246-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/decryptionstream-readingfromencryptioncontextflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/decryptionstream(readingfrom,encryptioncontext,flags,threadcount).md",
       "hash": "5d6583eef98c30c2d3d74e6215b8998f66992e9c7c331f2f0aef42fb3f3c2bdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/encryptionstream(appendingto:encryptioncontext:flags:threadcount:).json": {
       "etag": "\"3f2c-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/encryptionstream-appendingtoencryptioncontextflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/encryptionstream(appendingto,encryptioncontext,flags,threadcount).md",
       "hash": "50215ccdf0ef9c3311798856de8c59300e978b14844090a6b8213ae37f4361c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/encryptionstream(writingto:encryptioncontext:flags:threadcount:).json": {
       "etag": "\"3f0e-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/encryptionstream-writingtoencryptioncontextflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/encryptionstream(writingto,encryptioncontext,flags,threadcount).md",
       "hash": "b8c711e61d35eb7842c552b1ed0fc210e60d7c2001ea1f554204618bd1fb47db"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/filestream(fd:automaticclose:).json": {
       "etag": "\"3fb1-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/filestream-fdautomaticclose.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/filestream(fd,automaticclose).md",
       "hash": "d089bf1ee73177e6f3dc48738805eb89ae9f190c45f8f6c439a1acfaa51f2a9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:).json": {
       "etag": "\"4e07-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/filestream-pathmodeoptionspermissions.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/filestream(path,mode,options,permissions).md",
       "hash": "0236bd51fde3bfa30ddb44fcc41dd881f2c1be0bc24ea35c2760393d4867a258"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/init(object:owned:).json": {
       "etag": "\"1a07-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/init-objectowned.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/init(object,owned).md",
       "hash": "1c457dc446801048652baf321b59f3269d1e930feb210142bc7f89d3529d303f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/process(readingfrom:writingto:).json": {
       "etag": "\"1da6-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/process-readingfromwritingto.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/process(readingfrom,writingto).md",
       "hash": "baa726300c50c483747e30e5f3a5e70388d5446c6edd900bc3d4417cfd3434e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/randomaccessdecompressionstream(readingfrom:allocationlimit:flags:threadcount:).json": {
       "etag": "\"43b1-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/randomaccessdecompressionstream-readingfromallocationlimitflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/randomaccessdecompressionstream(readingfrom,allocationlimit,flags,threadcount).md",
       "hash": "04d34ecb6bbceb05b1f3cabf744a6042b097a6198329a3f7ba07bbdca342328b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/randomaccessdecryptionstream(readingfrom:encryptioncontext:allocationlimit:flags:threadcount:).json": {
       "etag": "\"3833-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/randomaccessdecryptionstream-readingfromencryptioncontextallocationlimitflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/randomaccessdecryptionstream(readingfrom,encryptioncontext,allocationlimit,flags,threadcount).md",
       "hash": "90ceb4a2e0fb8b65a0a5b27ad94b83e1e3ac9548ad5ff6452ec89f6da012ab3c"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/sharedbufferpipe(capacity:).json": {
       "etag": "\"3165-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/sharedbufferpipe-capacity.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/sharedbufferpipe(capacity).md",
       "hash": "458fd63a1be9b0d4ab9fb1fb9f8084f67f569593d470795ee605f5a249f06b3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/temporaryfilestream().json": {
       "etag": "\"34a7-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/temporaryfilestream.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/temporaryfilestream().md",
       "hash": "d62c45d4fa075e7549a2f320224f48befd405282a973aedc4a1bd50fe2bd941a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/withcompressionstream(appendingto:flags:threadcount:_:).json": {
       "etag": "\"40e9-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withcompressionstream-appendingtoflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withcompressionstream(appendingto,flags,threadcount,_).md",
       "hash": "f24239d24a4134035987a1d5aac89bddf3711b6742cfd2079fc64a7dd4e57e68"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/withcompressionstream(using:writingto:blocksize:flags:threadcount:_:).json": {
       "etag": "\"468c-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withcompressionstream-usingwritingtoblocksizeflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withcompressionstream(using,writingto,blocksize,flags,threadcount,_).md",
       "hash": "36b5c024ad2e6d298a647509d54a8153901de559d2718ea8b749a0572e52ecf4"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/withdecompressionstream(readingfrom:flags:threadcount:_:).json": {
       "etag": "\"4a18-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withdecompressionstream-readingfromflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withdecompressionstream(readingfrom,flags,threadcount,_).md",
       "hash": "fdd9e1dff944a7618fd5c86b655cee0b6760d56128c9f6411658d55cf69ae4b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/withfilestream(fd:automaticclose:_:).json": {
       "etag": "\"4365-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withfilestream-fdautomaticclose.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withfilestream(fd,automaticclose,_).md",
       "hash": "b7eb85888d09a9d8e1b11098767e6ac695c55dcb2cd99580e2388aa682007f62"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/withfilestream(path:mode:options:permissions:_:).json": {
       "etag": "\"514f-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withfilestream-pathmodeoptionspermissions.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withfilestream(path,mode,options,permissions,_).md",
       "hash": "6826fe5695cbad241cbae16eccc625a2828d7e55938a56dcc8d3dcaacbade6d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/withrandomaccessdecompressionstream(readingfrom:allocationlimit:flags:threadcount:_:).json": {
       "etag": "\"462f-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withrandomaccessdecompressionstream-readingfromallocationlimitflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withrandomaccessdecompressionstream(readingfrom,allocationlimit,flags,threadcount,_).md",
       "hash": "c1f77e537117b96d46264599f6157d039d91686772132486bc3a5542ed558a7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/withstream(wrapping:_:).json": {
       "etag": "\"2a5a-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withstream-wrapping.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withstream(wrapping,_).md",
       "hash": "9fef1eaeea3da88d9d2206e19e22924331532aafa8a15702f06166f3f3b8e6be"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestream/withtemporaryfilestream(_:).json": {
       "etag": "\"392b-65d55f74a7a95-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestream/withtemporaryfilestream.md",
+      "file_path": "documentation/AppleArchive/archivebytestream/withtemporaryfilestream(_).md",
       "hash": "93d227a88a01671eae41f5ffb447e3bf7b89eb229b017616cca805d561328d19"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestreamprotocol.json": {
@@ -1407,37 +1407,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestreamprotocol/cancel().json": {
       "etag": "\"19ff-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/cancel.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/cancel().md",
       "hash": "d25fc1aaac81f22fac58d4055b90cee5803967882c8e98bca34ffcbb5db8aa2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestreamprotocol/close().json": {
       "etag": "\"1b00-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/close.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/close().md",
       "hash": "02150e4c365274651c9362278a0d3da014cf489e5ace09e3cad17acb129165d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestreamprotocol/read(into:).json": {
       "etag": "\"2a88-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/read-into.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/read(into).md",
       "hash": "fa56adcb45d36ac77829205aef8150ba2d2c74182198546675e8f01457f724e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestreamprotocol/read(into:atoffset:).json": {
       "etag": "\"2e49-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/read-intoatoffset.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/read(into,atoffset).md",
       "hash": "be212f3420a1fc41776a5c0b2f1bb0506d0feb93fca8cc62becc793d9506f65b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestreamprotocol/seek(tooffset:relativeto:).json": {
       "etag": "\"2922-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/seek-tooffsetrelativeto.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/seek(tooffset,relativeto).md",
       "hash": "7ba8b4f93d476ad44971b6847899eb051aecdf56a94f10193978865ae4e9853a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestreamprotocol/write(from:).json": {
       "etag": "\"2a3e-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/write-from.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/write(from).md",
       "hash": "5853263f7cbf02dee12b2140d466068dafa252b0b0622ba98726fba988172d2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivebytestreamprotocol/write(from:atoffset:).json": {
       "etag": "\"2e08-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/write-fromatoffset.md",
+      "file_path": "documentation/AppleArchive/archivebytestreamprotocol/write(from,atoffset).md",
       "hash": "2ff768c0a0278f5eb3d4efde43c8c3745e1081be7312f7a6c25249c0f5e83bc4"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivecompression.json": {
@@ -1447,7 +1447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivecompression/init(algo:).json": {
       "etag": "\"1213-65d55f73e0fb4-df\"",
-      "file_path": "documentation/AppleArchive/archivecompression/init-algo.md",
+      "file_path": "documentation/AppleArchive/archivecompression/init(algo).md",
       "hash": "bf09e4ed5c6355ae529d4a5f9add2dc7e412392107d78f1d47c40bc758557254"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivecompression/lz4.json": {
@@ -1502,12 +1502,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/checksummode-swift.property.json": {
       "etag": "\"4695-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/checksummode-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/checksummode-swift.property.md",
       "hash": "e22d49c91744e00bbbdee4a88854749b0211ae0f4d20b9132e41abf50ed8f7a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/checksummode-swift.struct.json": {
       "etag": "\"5b25-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/checksummode-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/checksummode-swift.struct.md",
       "hash": "14a8a372e0cc64094ef866ebc6257c9f967b6c417b0d81e182aacccb0f777949"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/checksummode-swift.struct/murmurhash64.json": {
@@ -1542,22 +1542,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/decryptattributes().json": {
       "etag": "\"5ad7-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/decryptattributes.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/decryptattributes().md",
       "hash": "f250246da8f28ccf3ef5e03a2cb07fca74beedc15dbc7e98024887ead6e43bea"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/encryptionmode-swift.property.json": {
       "etag": "\"4652-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swift.property.md",
       "hash": "597f27a57b50ff011d01937a533cc3611669d7a30f8818120683c4bbd50dbb31"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/encryptionmode-swift.struct.json": {
       "etag": "\"5fa3-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swift.struct.md",
       "hash": "6a6d4090c802ea7f512e738edbe5f20f813b1e8293e351db3587ac5a78006c59"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/encryptionmode-swift.struct/ecdhe_p256.json": {
       "etag": "\"25ce-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swift.struct/ecdhe-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/encryptionmode-swift.struct/ecdhe_p256.md",
       "hash": "59d1219d48d57031e08daf57b9cdb230d30e84714b095209c8b423d83f44911e"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/encryptionmode-swift.struct/none.json": {
@@ -1577,22 +1577,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/generatepassword().json": {
       "etag": "\"1bfa-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/generatepassword.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/generatepassword().md",
       "hash": "1488d3a54ed99c6134253846b73e9a64b875e710eab38c2a92025c4ab786cc8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/generatesymmetrickey().json": {
       "etag": "\"3403-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/generatesymmetrickey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/generatesymmetrickey().md",
       "hash": "77607099519e895aa9f884f65da49eb3d7e722bcb16274e8c2759ce355f3a1b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/init(from:).json": {
       "etag": "\"241d-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/init-from.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/init(from).md",
       "hash": "f7acea5a5d3de3ac36a5450e5677432cbd072e50d020e9760c7b7941e6a3d68e"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/init(profile:compressionalgorithm:compressionblocksize:).json": {
       "etag": "\"2782-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/init-profilecompressionalgorithmcompressionblocksize.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/init(profile,compressionalgorithm,compressionblocksize).md",
       "hash": "bc1cb6905189bfab8a33c7e13cae7420f8412a21318b0313851e327ce08345a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/mainkey.json": {
@@ -1612,42 +1612,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/profile-swift.property.json": {
       "etag": "\"4603-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.property.md",
       "hash": "249e79e511d5d80bb228641490fde484c63ff88907eb89adf5c60fe6ea08be2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/profile-swift.struct.json": {
       "etag": "\"6d23-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct.md",
       "hash": "556b0da2be79be3ab66468b1ab9289f5050ff0cdb7a591b26b8487f2f1dba540"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__ecdhe_p256__ecdsa_p256.json": {
       "etag": "\"34f0-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-ecdhe-p256-ecdsa-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__ecdhe_p256__ecdsa_p256.md",
       "hash": "a700818a53f301f69980695e2683adff04630eadeafb915add87859966065c65"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__ecdhe_p256__none.json": {
       "etag": "\"3413-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-ecdhe-p256-none.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__ecdhe_p256__none.md",
       "hash": "962fd06b26517c208ca667c3001d440ea4b288acb7a2539caa1e46503df192d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__scrypt__none.json": {
       "etag": "\"33ae-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-scrypt-none.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__scrypt__none.md",
       "hash": "4d76e44d4c7a43e35436c8551168822468992b6533fbb053a3869c8b1018fb46"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__symmetric__ecdsa_p256.json": {
       "etag": "\"33f2-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-symmetric-ecdsa-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__symmetric__ecdsa_p256.md",
       "hash": "be8aea1c98c0405c14aca33fe577f800912f6566d6024a51965cc482ed4aeaf6"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__symmetric__none.json": {
       "etag": "\"33b6-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-aesctr-hmac-symmetric-none.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_aesctr_hmac__symmetric__none.md",
       "hash": "85b9e2d817af1fbd41c40e21edfa1ed94721e3b9a7f1681174d4ed867d24f76b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_hmac__none__ecdsa_p256.json": {
       "etag": "\"33b4-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf-sha256-hmac-none-ecdsa-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/profile-swift.struct/hkdf_sha256_hmac__none__ecdsa_p256.md",
       "hash": "b0346e948c9615a7ecd05859aeaa29b42c61160cd7d476312f79065e84bf2e6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/rawsize.json": {
@@ -1657,37 +1657,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/setpassword(_:).json": {
       "etag": "\"20e5-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setpassword.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setpassword(_).md",
       "hash": "b486ef6319801c042b401c063835d3347d6d77d043ef4c833306595442729fca"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/setrecipientprivatekey(_:).json": {
       "etag": "\"3bcc-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setrecipientprivatekey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setrecipientprivatekey(_).md",
       "hash": "ec2c51cf9c177a2fa7a8b7f9f6678e3c259edd3d3e9268ca2500f2ef4662e60f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/setrecipientpublickey(_:).json": {
       "etag": "\"3bb9-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setrecipientpublickey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setrecipientpublickey(_).md",
       "hash": "a6e3060a5563b38124add66e1f2bad9a9ab0cc4e91a2f277d6d0b71aec94e441"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/setsigningprivatekey(_:).json": {
       "etag": "\"3d89-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsigningprivatekey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsigningprivatekey(_).md",
       "hash": "c1dd8ca295a74afcd2c5266620cf249cfe8c230458281e08c7aec1705a31b3f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/setsigningpublickey(_:).json": {
       "etag": "\"3cc0-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsigningpublickey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsigningpublickey(_).md",
       "hash": "080fc09da1f2ae3afeac4b50c0269b3e7fd1308317bf3d34756ac867d0f2e9ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/setsymmetrickey(_:).json": {
       "etag": "\"3907-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsymmetrickey.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/setsymmetrickey(_).md",
       "hash": "63a3f6eb98c5a44f127a1ec14da36b6854ec72281596b38c2d00fa9bbb0fb1b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/sign(encryptedstream:encryptioncontext:).json": {
       "etag": "\"2a34-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/sign-encryptedstreamencryptioncontext.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/sign(encryptedstream,encryptioncontext).md",
       "hash": "788a79b20508b71867ada12b5265799e2ef25a33d6305dcfd13617bf38929a75"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/signatureencryptionkey.json": {
@@ -1697,17 +1697,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/signaturemode-swift.property.json": {
       "etag": "\"1dd3-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swift.property.md",
       "hash": "06e1fe4f5e80d3cb1f4abadc389f349bbfbf6939c05da68657a9e3629eb12294"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/signaturemode-swift.struct.json": {
       "etag": "\"31d3-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swift.struct.md",
       "hash": "724355155c92922782c5e6a836afca761f36f0108b917200ff992fa6c8f2fe0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/signaturemode-swift.struct/ecdsa_p256.json": {
       "etag": "\"1d02-65d55f73a45ed-df\"",
-      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swift.struct/ecdsa-p256.md",
+      "file_path": "documentation/AppleArchive/archiveencryptioncontext/signaturemode-swift.struct/ecdsa_p256.md",
       "hash": "0c56ed252235acdaa3b7618eba97e8c4ce40ba2f172958063196b5c52564a503"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveencryptioncontext/signaturemode-swift.struct/none.json": {
@@ -1772,7 +1772,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveflags/verbosity(level:).json": {
       "etag": "\"1405-65d55f74c1440-df\"",
-      "file_path": "documentation/AppleArchive/archiveflags/verbosity-level.md",
+      "file_path": "documentation/AppleArchive/archiveflags/verbosity(level).md",
       "hash": "17de82261a557b5abf269bf025115632f1841295d7520efb25d71d0d917ed6eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivehash.json": {
@@ -1792,7 +1792,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivehash/init(rawvalue:).json": {
       "etag": "\"115d-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivehash/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archivehash/init(rawvalue).md",
       "hash": "bdfb105dd3861f91b2fe7148f8ea28f5b6987cedcec5bab45e468616228d1817"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivehash/maxsize.json": {
@@ -1837,7 +1837,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/append(_:).json": {
       "etag": "\"1ae0-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/append.md",
+      "file_path": "documentation/AppleArchive/archiveheader/append(_).md",
       "hash": "aec363717403ae2308b326615b0f6645b12c83a0c939037827856c7bda593bfc"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryattributes.json": {
@@ -1892,17 +1892,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryfilterdata/entryattributes(_:).json": {
       "etag": "\"2061-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/entryattributes.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/entryattributes(_).md",
       "hash": "d18df89a5cb57c067c8e51fc8c3e2dcf3774d21a68e74c5d861d7fdbed1b46d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryfilterdata/entryxat(_:).json": {
       "etag": "\"2038-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/entryxat.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/entryxat(_).md",
       "hash": "3f5e1ff3df105105e64e53c217daabb855b50c18aa72fc51af2434e1db28a6bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryfilterdata/header(_:).json": {
       "etag": "\"1c2b-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/header.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryfilterdata/header(_).md",
       "hash": "6a0589d478ec8de112a1b5ef8ac629ea2111e65cf3de7cbef461c5711e31413c"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrymessage.json": {
@@ -1967,7 +1967,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrymessage/init(rawvalue:).json": {
       "etag": "\"17e4-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrymessage/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrymessage/init(rawvalue).md",
       "hash": "e854576b61e9167fc07147b9803d040ecd966cf15deefe0b0a739c6c72238d17"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrymessage/processexclude.json": {
@@ -2012,7 +2012,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrymessagestatus/init(rawvalue:).json": {
       "etag": "\"1853-65d55f745b01f-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrymessagestatus/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrymessagestatus/init(rawvalue).md",
       "hash": "3502e3d6347fa03bb49b480a7dfc318fed03ed54b5cf03f98d080d3414c8f0de"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrymessagestatus/ok.json": {
@@ -2037,12 +2037,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrytype-swift.property.json": {
       "etag": "\"28aa-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swift.property.md",
       "hash": "13cffbedd1a2825b5137645fcf3a99700613ef2a95e392b335681e4d0ddc3dbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrytype-swift.struct.json": {
       "etag": "\"653f-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swift.struct.md",
       "hash": "ca3a04c9edce0821f19c303aac144be9787f61f3a2d7a7113345bd6235f40b11"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrytype-swift.struct/blockspecial.json": {
@@ -2077,7 +2077,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrytype-swift.struct/init(rawvalue:).json": {
       "etag": "\"1845-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entrytype-swift.struct/init(rawvalue).md",
       "hash": "d7512b1a67eb2d4d878dc470833313abfa54302866b3933bc482721487e0f0f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entrytype-swift.struct/link.json": {
@@ -2122,12 +2122,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/append(_:).json": {
       "etag": "\"26f7-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/append.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/append(_).md",
       "hash": "8321fcd66365fedead253b46ee9b63d30d60097dc6bf2fa81bb1cfd972d34911"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/apply(directory:path:flags:).json": {
       "etag": "\"202a-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/apply-directorypathflags.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/apply(directory,path,flags).md",
       "hash": "7383a4d95e706400c288b227a620e2f6fdc06a60adb13c8ed06b735497ed2e21"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/extendedattribute.json": {
@@ -2137,42 +2137,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/extendedattribute/init(key:data:).json": {
       "etag": "\"2223-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/extendedattribute/init-keydata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/extendedattribute/init(key,data).md",
       "hash": "1c95f9f46ca5a0cfce456afcbf1198748299cd5fda18161e5a72fd0353e92a8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/init().json": {
       "etag": "\"1a70-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init().md",
       "hash": "c35b9bfeb7649620cc5f135dba832635bf571e477591efc832f3e65719c70f6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/init(directory:path:flags:).json": {
       "etag": "\"25f5-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init-directorypathflags.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init(directory,path,flags).md",
       "hash": "0145a6adc53f3a695f1a4d48dfaa029e232aed3da00c6c0a290335fd5a36d5db"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/init(withaaencodeddata:).json": {
       "etag": "\"232c-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init-withaaencodeddata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/init(withaaencodeddata).md",
       "hash": "72e8c1fa98786b83bd38c1458bc70be29678e4d6f944ce49addd7ef2ad32eb89"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/remove(at:).json": {
       "etag": "\"29da-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/remove-at.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/remove(at).md",
       "hash": "018f893dadb9b28237c21523a75bb8142a339dce226d0381ae27d4473fe0a222"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/removeall().json": {
       "etag": "\"1f06-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/removeall.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/removeall().md",
       "hash": "e7c69ae71a7e55a4a8bd0e7e546924372b547153dbe44436601b868da55a833c"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/entryxatblob/withaaencodeddata(_:).json": {
       "etag": "\"2901-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/withaaencodeddata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/entryxatblob/withaaencodeddata(_).md",
       "hash": "beb6f922735de9b442839815abef15cbe9f3aae29a807e63c32a0102f40388d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field(forkey:).json": {
       "etag": "\"2b26-65d55f745b01f-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field-forkey.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field(forkey).md",
       "hash": "65dc9f8fd463e09523b4b5b7d336e6ffc2236e73459a98a15d95da4907c88636"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field.json": {
@@ -2182,17 +2182,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field/blob(key:size:offset:).json": {
       "etag": "\"386f-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/blob-keysizeoffset.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/blob(key,size,offset).md",
       "hash": "4a911589a6888c85f87277f8df1d3afcd4ecf963541fec390e5bdc5eab12d2b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field/flag(key:).json": {
       "etag": "\"32dd-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/flag-key.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/flag(key).md",
       "hash": "790fc99c3d534e9202cb7c3ffed0761c99d415fb7b80cd9f44827623b2c722a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field/hash(key:hashfunction:value:).json": {
       "etag": "\"3dfe-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/hash-keyhashfunctionvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/hash(key,hashfunction,value).md",
       "hash": "44e44d8afe4a1ff5b9839ccea40adfbd553a8dc8a55805aad808e8b072e38205"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field/key.json": {
@@ -2202,12 +2202,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field/string(key:value:).json": {
       "etag": "\"368b-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/string-keyvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/string(key,value).md",
       "hash": "b00765f61641493114afd79f47e9bac0f63fa358db963221bf1218e6623b3a2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field/timespec(key:value:).json": {
       "etag": "\"35c2-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/timespec-keyvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/timespec(key,value).md",
       "hash": "cc2d0a2cb9513fc7f96fc8efa9b6991e322d1e8965cf22f8be4d1ee275462c08"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field/type.json": {
@@ -2217,22 +2217,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/field/uint(key:value:).json": {
       "etag": "\"36c0-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/field/uint-keyvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/field/uint(key,value).md",
       "hash": "c3a6e19496f054296fedb50a8240d3c5725f06a3a38a6da729e5b90fde1d2c3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkey-swift.property.json": {
       "etag": "\"252a-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.property.md",
       "hash": "74b0af82fd29b02a886a78dfa0bee633f83665dce460b834ee726119fff651f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkey-swift.struct.json": {
       "etag": "\"8355-65d55f745b01f-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct.md",
       "hash": "10fc418757e3c46fa10d97a16ae96e360e6e803fd05cde550eff124f4a041b7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkey-swift.struct/==(_:_:).json": {
       "etag": "\"1e08-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/equal.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/eqeq(_,_).md",
       "hash": "a65362643d55b054f4ccdf72356c56ccea7cec85c9c448c13142a273fd8b5e1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkey-swift.struct/description.json": {
@@ -2242,12 +2242,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkey-swift.struct/hash(into:).json": {
       "etag": "\"1745-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/hash-into.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/hash(into).md",
       "hash": "0774d3c3b2b6ae36096032ca692a62843a0819e55cd22a8514754e2202318679"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkey-swift.struct/init(_:).json": {
       "etag": "\"15f4-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkey-swift.struct/init(_).md",
       "hash": "4594eb6d98d4323f829b20d238e5b16112313a094fe9e7d0793625df2f737ba1"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkeyset.json": {
@@ -2267,27 +2267,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkeyset/init().json": {
       "etag": "\"17eb-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init().md",
       "hash": "fb9e3cd99b43c9e0e3759110fe1c1dc92e95de56515823c52bc11ddfc4e5fdcf"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkeyset/init(_:).json": {
       "etag": "\"2f0e-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init(_).md",
       "hash": "b1a6ca4eb628aa3e79f11d8a519f15b7233c2719c459c2dceb7d2d90ebe68621"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldkeyset/init(copying:).json": {
       "etag": "\"1bff-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init-copying.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldkeyset/init(copying).md",
       "hash": "ccf1d378b2ef2431313bdd10fb7cdb85ccbbef1e1270489c6bd0296f6343b65b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldtype-swift.property.json": {
       "etag": "\"2533-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swiftproperty.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swift.property.md",
       "hash": "03757c812049341e5028d500516114ff6e53f679a9213e06dac85ad3e8b1c780"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldtype-swift.struct.json": {
       "etag": "\"4f10-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swiftstruct.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swift.struct.md",
       "hash": "1b6d0699092f80a10bbb2233be0808440b320e26d7c072642c5f0e36809f2d3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldtype-swift.struct/blob.json": {
@@ -2312,7 +2312,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldtype-swift.struct/init(rawvalue:).json": {
       "etag": "\"184e-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/AppleArchive/archiveheader/fieldtype-swift.struct/init(rawvalue).md",
       "hash": "c23add0d8362a0986b337794ab6a6e969ab951d8212b0b58453c6974e16aa158"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/fieldtype-swift.struct/rawvalue.json": {
@@ -2337,37 +2337,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/init().json": {
       "etag": "\"1b51-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/init.md",
+      "file_path": "documentation/AppleArchive/archiveheader/init().md",
       "hash": "ed4f172f394401b44826470e9df614577a9ef6896e647827db6684d647a8d14f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/init(copying:).json": {
       "etag": "\"1dda-65d55f745b01f-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/init-copying.md",
+      "file_path": "documentation/AppleArchive/archiveheader/init(copying).md",
       "hash": "549dbc9aab225be8a1ae6966399be9636946de22f267e927afa1130f192ee0bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/init(keyset:directory:path:flags:).json": {
       "etag": "\"2d63-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/init-keysetdirectorypathflags.md",
+      "file_path": "documentation/AppleArchive/archiveheader/init(keyset,directory,path,flags).md",
       "hash": "2fa32eec52b79e5853b3f93aa7ae574da928593ad4992ecc3611a5ff28e36244"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/init(withaaencodeddata:).json": {
       "etag": "\"2416-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/init-withaaencodeddata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/init(withaaencodeddata).md",
       "hash": "0955e39bc6a385353aba4dd6299b56d6e42c5f1d07d83a1b9e36e6c2a7fdc396"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/remove(at:).json": {
       "etag": "\"1dc3-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/remove-at.md",
+      "file_path": "documentation/AppleArchive/archiveheader/remove(at).md",
       "hash": "af989954aebf917c4564ced2ac63cd6cc10dff7db3c19a70a6c6c96dc0bb98a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/removeall().json": {
       "etag": "\"155e-65d55f748eb57-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/removeall.md",
+      "file_path": "documentation/AppleArchive/archiveheader/removeall().md",
       "hash": "efad5969d9c057debdf9542c281c902e9cf4fed1084f9bdaf1cb52f224594501"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archiveheader/withaaencodeddata(_:).json": {
       "etag": "\"1b64-65d55f74747dd-df\"",
-      "file_path": "documentation/AppleArchive/archiveheader/withaaencodeddata.md",
+      "file_path": "documentation/AppleArchive/archiveheader/withaaencodeddata(_).md",
       "hash": "e804b41c8804d765382a5ab8d06d15b8b38e4ae40cae95c4f08cc988589b6ee5"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream.json": {
@@ -2377,67 +2377,67 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/convertstream(writingto:insertkeyset:removekeyset:selectusing:flags:threadcount:).json": {
       "etag": "\"4670-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/convertstream-writingtoinsertkeysetremovekeysetselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/convertstream(writingto,insertkeyset,removekeyset,selectusing,flags,threadcount).md",
       "hash": "db6046277399673907365faa680e3116cb563d2c1d4000449d1d618533a010e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/customstream(instance:).json": {
       "etag": "\"2084-65d55f73e0fb4-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/customstream-instance.md",
+      "file_path": "documentation/AppleArchive/archivestream/customstream(instance).md",
       "hash": "3a06c7bf9cfd3a9f06aa859b198830e623686051e29dd53fecc52a61ccf197cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/decodestream(readingfrom:selectusing:flags:threadcount:).json": {
       "etag": "\"37c4-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/decodestream-readingfromselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/decodestream(readingfrom,selectusing,flags,threadcount).md",
       "hash": "f9eeef0d437f70190e54c11df2adf474b39d6a868c4971d1428a45ef268f8360"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/encodestream(writingto:selectusing:flags:threadcount:).json": {
       "etag": "\"37a7-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/encodestream-writingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/encodestream(writingto,selectusing,flags,threadcount).md",
       "hash": "b9f41b42af314f64f2ea171d8189fe1982bf70b0f09ed79c301b58b6b99e356d"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/extractstream(extractingto:selectusing:flags:threadcount:).json": {
       "etag": "\"644f-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/extractstream-extractingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/extractstream(extractingto,selectusing,flags,threadcount).md",
       "hash": "06c5ec4e57d9ae49a1060592cfcee6d6ede4365d25ecac366a5b94e2a23d8067"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/init(object:owned:messageproc:).json": {
       "etag": "\"214a-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/init-objectownedmessageproc.md",
+      "file_path": "documentation/AppleArchive/archivestream/init(object,owned,messageproc).md",
       "hash": "8e52b47bec261fdb440cb129a6f9a6281f2dfbbfe9859136828e9b7a13eab9d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/process(readingfrom:writingto:selectusing:flags:threadcount:).json": {
       "etag": "\"2f62-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/process-readingfromwritingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/process(readingfrom,writingto,selectusing,flags,threadcount).md",
       "hash": "360f636cd1c37c74c454700ef83a2d7dcdc7245c0c7d41668cac427e03495fef"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/withconvertstream(writingto:insertkeyset:removekeyset:selectusing:flags:threadcount:_:).json": {
       "etag": "\"4c06-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withconvertstream-writingtoinsertkeysetremovekeysetselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/withconvertstream(writingto,insertkeyset,removekeyset,selectusing,flags,threadcount,_).md",
       "hash": "d7ad6b7792a4cb2857bf0f8cd4c96d87dbd10a56b1efd3d7e02a7d8eb1324f07"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/withdecodestream(readingfrom:selectusing:flags:threadcount:_:).json": {
       "etag": "\"3d41-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withdecodestream-readingfromselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/withdecodestream(readingfrom,selectusing,flags,threadcount,_).md",
       "hash": "f068a8a96d4ce68ee2c561632dbf1d4233cf8e1b366f818d5e5b617788262097"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/withencodestream(writingto:selectusing:flags:threadcount:_:).json": {
       "etag": "\"3d22-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withencodestream-writingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/withencodestream(writingto,selectusing,flags,threadcount,_).md",
       "hash": "a6bd83a1c897c91ed2080a34acf99da749c689fecf83433dfd074e4de8e90f47"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/withextractstream(extractingto:selectusing:flags:threadcount:_:).json": {
       "etag": "\"3cce-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withextractstream-extractingtoselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/withextractstream(extractingto,selectusing,flags,threadcount,_).md",
       "hash": "8d94987e6d30092219aeb0f2676b872455ea8528394ec7f8c4868d73c5dcf4c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/withstream(wrapping:_:).json": {
       "etag": "\"246a-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/withstream-wrapping.md",
+      "file_path": "documentation/AppleArchive/archivestream/withstream(wrapping,_).md",
       "hash": "6b5adbd4c015c3b66e0435d0565cfaebd70e0a7d81895340a44d349489b9fa9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestream/writedirectorycontents(archivefrom:path:keyset:selectusing:flags:threadcount:).json": {
       "etag": "\"3663-65d55f73c3993-df\"",
-      "file_path": "documentation/AppleArchive/archivestream/writedirectorycontents-archivefrompathkeysetselectusingflagsthreadcount.md",
+      "file_path": "documentation/AppleArchive/archivestream/writedirectorycontents(archivefrom,path,keyset,selectusing,flags,threadcount).md",
       "hash": "e2eaeca9e93b41ce95082f724b654a5802a64bda5f57fcafdf024966b4de1628"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestreamprotocol.json": {
@@ -2447,32 +2447,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestreamprotocol/cancel().json": {
       "etag": "\"124f-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/cancel.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/cancel().md",
       "hash": "5f3844faa8e3c90dd66885f94395c3fd45ff80f2d97c954230e13dc540c317be"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestreamprotocol/close().json": {
       "etag": "\"12ad-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/close.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/close().md",
       "hash": "0cff03ce7a796982c78d69e5e18f2e6afb409234db5535340773460e4fccebbc"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestreamprotocol/readblob(key:into:).json": {
       "etag": "\"2564-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/readblob-keyinto.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/readblob(key,into).md",
       "hash": "33a40bbe01da8cbef928a1b5c58d77fecc99d2e13aedccfc8064c7c92372ff5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestreamprotocol/readheader().json": {
       "etag": "\"190e-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/readheader.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/readheader().md",
       "hash": "a4c65918f6963d9229393baa17c73183f735304cb24cbe2d096cc5cd287a5528"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestreamprotocol/writeblob(key:from:).json": {
       "etag": "\"2525-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/writeblob-keyfrom.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/writeblob(key,from).md",
       "hash": "3e0c72cdb1ae6d2cd3e0d97d31bb9808db7b1c83456375daee6fdbb2d0cf1515"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/archivestreamprotocol/writeheader(_:).json": {
       "etag": "\"18d1-65d55f73fb14a-df\"",
-      "file_path": "documentation/AppleArchive/archivestreamprotocol/writeheader.md",
+      "file_path": "documentation/AppleArchive/archivestreamprotocol/writeheader(_).md",
       "hash": "439950612f5b7e623f68c6ba13f226d9a7b3f665e4acc6151aac2fc7c9f4e716"
     },
     "https://developer.apple.com/tutorials/data/documentation/applearchive/encrypting-and-decrypting-a-single-file.json": {

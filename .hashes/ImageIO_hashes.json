@@ -17,12 +17,12 @@
     },
     "https://developer.apple.com/documentation/imageio/cganimateimageaturlwithblock(_:_:_:)": {
       "etag": "\"62da-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/cganimateimageaturlwithblock.md",
+      "file_path": "documentation/ImageIO/cganimateimageaturlwithblock(_,_,_).md",
       "hash": "93655d96102931d073c93f716cceb5b94d6ac6c0e228c38ab909318a7031078b"
     },
     "https://developer.apple.com/documentation/imageio/cganimateimagedatawithblock(_:_:_:)": {
       "etag": "\"62e5-65d55e84b58cf-df\"",
-      "file_path": "documentation/ImageIO/cganimateimagedatawithblock.md",
+      "file_path": "documentation/ImageIO/cganimateimagedatawithblock(_,_,_).md",
       "hash": "a5b5068fd468936a8fd3feacd315570555e0c4ec4d6aa641b8411ab074f9c242"
     },
     "https://developer.apple.com/documentation/imageio/cgimageanimationstatus": {
@@ -47,7 +47,7 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimageanimationstatus/init(rawvalue:)": {
       "etag": "\"11e0-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimageanimationstatus/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimageanimationstatus/init(rawvalue).md",
       "hash": "5cd962ca696c9d852cccc81b1411536f4c1e5d5e16b771483fb5c6f6c56cfa39"
     },
     "https://developer.apple.com/documentation/imageio/cgimageanimationstatus/parametererror": {
@@ -67,62 +67,62 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationaddauxiliarydatainfo(_:_:_:)": {
       "etag": "\"4e16-65d55e8447f0f-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationaddauxiliarydatainfo.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationaddauxiliarydatainfo(_,_,_).md",
       "hash": "811634f5c0a26ce863383107ba695ecda2050f0c13a1e1273d495ff6f3c6b7a9"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationaddimage(_:_:_:)": {
       "etag": "\"3d18-65d55e84b58cf-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationaddimage.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationaddimage(_,_,_).md",
       "hash": "03a93dd6449bad655c171f5467d5f33a0e275e38825759f5f2a284834f712d12"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationaddimageandmetadata(_:_:_:_:)": {
       "etag": "\"4d9a-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationaddimageandmetadata.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationaddimageandmetadata(_,_,_,_).md",
       "hash": "df536d8382608e23a2fa998eebff634141a63f5f6726f293aa6470c897eb02b6"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationaddimagefromsource(_:_:_:_:)": {
       "etag": "\"4530-65d55e8447f0f-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationaddimagefromsource.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationaddimagefromsource(_,_,_,_).md",
       "hash": "5cae6c8c0a83c3de4012c89269c27c729a9e879e0bfb7decf3e8cc38a285e513"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationcopyimagesource(_:_:_:_:)": {
       "etag": "\"575e-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcopyimagesource.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcopyimagesource(_,_,_,_).md",
       "hash": "f8387900c64bd972149156438f3811fc6d641cfd68d33d01feb7df622aeda5ca"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationcopytypeidentifiers()": {
       "etag": "\"26e3-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcopytypeidentifiers.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcopytypeidentifiers().md",
       "hash": "f2ee99bde5daeec2e95cde093fc12b2014ecaa5605c52cc1898f9197039f4dbc"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationcreatewithdata(_:_:_:_:)": {
       "etag": "\"55d0-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithdata.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithdata(_,_,_,_).md",
       "hash": "f2360c7f26815d9a2d7273bed50e4091b97d7e5d257aac13ffe3bc37dda74d5c"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationcreatewithdataconsumer(_:_:_:_:)": {
       "etag": "\"5694-65d55e8384ab1-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithdataconsumer.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithdataconsumer(_,_,_,_).md",
       "hash": "ca72d5411f7cbc0f3547e0d461327f36caf403d6b438aaad96cc2ce08998bb2b"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationcreatewithurl(_:_:_:_:)": {
       "etag": "\"5576-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithurl.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithurl(_,_,_,_).md",
       "hash": "a40cd7e54acf8ff25a215f1d54380daf7a091af4a19b91ec33c9c2335c28e7e0"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationfinalize(_:)": {
       "etag": "\"26e0-65d55e839e985-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationfinalize.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationfinalize(_).md",
       "hash": "ffc66d257ffc81e43d9741b6dc580c950bf2405ac47414bdeec055e6642aed12"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationgettypeid()": {
       "etag": "\"23d3-65d55e833c431-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationgettypeid.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationgettypeid().md",
       "hash": "fa4639fb11a16bbe67f3e1bd218492a9e5efbf5e947c858450e26072d52a394f"
     },
     "https://developer.apple.com/documentation/imageio/cgimagedestinationsetproperties(_:_:)": {
       "etag": "\"3359-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationsetproperties.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationsetproperties(_,_).md",
       "hash": "30023ac451d9229ad92c1074851d2fcc7e22e3037b1d201dc0c64b12ff5e81ac"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadata": {
@@ -132,47 +132,47 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatacopystringvaluewithpath(_:_:_:)": {
       "etag": "\"6456-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacopystringvaluewithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacopystringvaluewithpath(_,_,_).md",
       "hash": "2ca3aad0dc59922088862edbc0de615a363c3ea4a7eed0f0e57cf44cc86deb2d"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatacopytagmatchingimageproperty(_:_:_:)": {
       "etag": "\"6863-65d55e8539bac-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacopytagmatchingimageproperty.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacopytagmatchingimageproperty(_,_,_).md",
       "hash": "b9b0c73f632fff7f6329a27329bbc278da95f7eb4b93f2658cd54ade6b42858e"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatacopytags(_:)": {
       "etag": "\"42fd-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacopytags.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacopytags(_).md",
       "hash": "73f799c641e1a62caaaddabb6cc07eb82198a1ab6c63eef054edd88cf2416d27"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatacopytagwithpath(_:_:_:)": {
       "etag": "\"6765-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacopytagwithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacopytagwithpath(_,_,_).md",
       "hash": "8efc8924075ce6fce2596065695520ec901ee1537e83217300f3e288c3ffec8d"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatacreatefromxmpdata(_:)": {
       "etag": "\"2aaf-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacreatefromxmpdata.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacreatefromxmpdata(_).md",
       "hash": "18073369f5cb4ef637d529ae31bb368b3a4fc3f1e530e11b0c707a89f6b1fe1d"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatacreatemutable()": {
       "etag": "\"26ee-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacreatemutable.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacreatemutable().md",
       "hash": "bbe4bc86d991330e85eeae10b0edd503e069e4197c6cb8c99e6014b4783746ac"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatacreatemutablecopy(_:)": {
       "etag": "\"370a-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacreatemutablecopy.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacreatemutablecopy(_).md",
       "hash": "55301b467a8bba0b18a0242415e43f3ce8bfeec737bce3d63e67ac8610035f92"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatacreatexmpdata(_:_:)": {
       "etag": "\"3392-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacreatexmpdata.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacreatexmpdata(_,_).md",
       "hash": "a8a4d381ed15285585b8a8b9ae080efdb470952b97e3f6a6c0c3fd58dacdf021"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadataenumeratetagsusingblock(_:_:_:_:)": {
       "etag": "\"557f-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadataenumeratetagsusingblock.md",
+      "file_path": "documentation/ImageIO/cgimagemetadataenumeratetagsusingblock(_,_,_,_).md",
       "hash": "a407ac4f619d45d5ba725dd937d0b5eee8b569a5015d0a2d62f6f7adecf682c6"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadataerrors": {
@@ -192,7 +192,7 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadataerrors/init(rawvalue:)": {
       "etag": "\"1426-65d55e833c431-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadataerrors/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagemetadataerrors/init(rawvalue).md",
       "hash": "bce8c1c740b8ca2732dafd401a847ce57794e0f6494d35f1fc01e4c5b4de697c"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadataerrors/prefixconflict": {
@@ -212,32 +212,32 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatagettypeid()": {
       "etag": "\"2643-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatagettypeid.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatagettypeid().md",
       "hash": "2445403bbfb5e71b894d016063659ecf55f29caa1f1049a0ae7e23c9e2169a46"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadataregisternamespaceforprefix(_:_:_:_:)": {
       "etag": "\"4b3d-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadataregisternamespaceforprefix.md",
+      "file_path": "documentation/ImageIO/cgimagemetadataregisternamespaceforprefix(_,_,_,_).md",
       "hash": "b3796e4b0600c2e345524005172d607dc10446c71f1a989d41615daead2dad67"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadataremovetagwithpath(_:_:_:)": {
       "etag": "\"60f7-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadataremovetagwithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadataremovetagwithpath(_,_,_).md",
       "hash": "accf167c995af7c79a0006be322bd7c482703a44b95c0b8f45df8f83d744ab17"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatasettagwithpath(_:_:_:_:)": {
       "etag": "\"661b-65d55e858df68-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatasettagwithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatasettagwithpath(_,_,_,_).md",
       "hash": "600f9b2724f389f13266f110b1920a0296ae161a9fc7cb3e9c788d073ebe4ce1"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatasetvaluematchingimageproperty(_:_:_:_:)": {
       "etag": "\"6e22-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatasetvaluematchingimageproperty.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatasetvaluematchingimageproperty(_,_,_,_).md",
       "hash": "3c417adec84d32933d5bb5894a0f8368b225bb38a24ea88705b524264c02f369"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatasetvaluewithpath(_:_:_:_:)": {
       "etag": "\"6ac9-65d55e8447f0f-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatasetvaluewithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatasetvaluewithpath(_,_,_,_).md",
       "hash": "85ce81dba397e6eb1ea622453947af7076cf35fbdf4e2ba4f2f60b66fd1628e3"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatag": {
@@ -252,42 +252,42 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatagcopyname(_:)": {
       "etag": "\"3ee5-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyname.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyname(_).md",
       "hash": "7646f20972bfd3c467658ba655c066dc17ab00d8653a5fdad26878dbaff49514"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatagcopynamespace(_:)": {
       "etag": "\"4492-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopynamespace.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopynamespace(_).md",
       "hash": "122fdcf02bd3d76076f6068f7cd97510d1b9103b09d23b56cadfb078c4df88a9"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatagcopyprefix(_:)": {
       "etag": "\"3fe7-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyprefix.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyprefix(_).md",
       "hash": "afea7dec5dc3550ae4e227ec9517ec33a98f4d6085f93fc14ab35bf8dc7b788b"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatagcopyqualifiers(_:)": {
       "etag": "\"435a-65d55e84f95a9-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyqualifiers.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyqualifiers(_).md",
       "hash": "a6c72a48824e84dba1102c585de128b313910cfa724ee2161f3ca50726ee0c83"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatagcopyvalue(_:)": {
       "etag": "\"671b-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyvalue.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyvalue(_).md",
       "hash": "b33e583d3a773401629fe41f21b309bbfd9c6089f275417e8d480a4d497bd002"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatagcreate(_:_:_:_:_:)": {
       "etag": "\"6acc-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcreate.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcreate(_,_,_,_,_).md",
       "hash": "3c068402d18c1ca14d263f00172183fe16b75d3392d645ef5d19b736de7807c6"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatataggettype(_:)": {
       "etag": "\"349e-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatataggettype.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatataggettype(_).md",
       "hash": "e0dbef8448f37d30e06452468c9c9ad3ee0186a23632d70fcf589e88ea231da0"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatataggettypeid()": {
       "etag": "\"2137-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatataggettypeid.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatataggettypeid().md",
       "hash": "ff3b8aefbfed42aaa16f142bc607e012192c1126657544356789cc069bf17187"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatype": {
@@ -322,7 +322,7 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatype/init(rawvalue:)": {
       "etag": "\"13eb-65d55e842a1b5-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatype/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatype/init(rawvalue).md",
       "hash": "f75d6bb6667192ea90fcc450fafaa248178d9d642007c282925338aef991cc7b"
     },
     "https://developer.apple.com/documentation/imageio/cgimagemetadatatype/invalid": {
@@ -357,7 +357,7 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagepropertyorientation/init(rawvalue:)": {
       "etag": "\"1489-65d55e839e985-df\"",
-      "file_path": "documentation/ImageIO/cgimagepropertyorientation/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagepropertyorientation/init(rawvalue).md",
       "hash": "b1e6a7bab02059d6f235d22158aac21a80dcb30a548cb9d3ab7175eb41d52b86"
     },
     "https://developer.apple.com/documentation/imageio/cgimagepropertyorientation/left": {
@@ -397,7 +397,7 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagepropertytgacompression/init(rawvalue:)": {
       "etag": "\"1468-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagepropertytgacompression/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagepropertytgacompression/init(rawvalue).md",
       "hash": "86d60dffcbd92c425a47a301cdaa6d4824ffbc23b24780ae11f71fca202ad8af"
     },
     "https://developer.apple.com/documentation/imageio/cgimagepropertytgacompression/tgacompressionnone": {
@@ -422,97 +422,97 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)": {
       "etag": "\"601f-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopyauxiliarydatainfoatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopyauxiliarydatainfoatindex(_,_,_).md",
       "hash": "7ff1aca89f6a16dd6065ef02662412bbed97b2219335f1ba8a9434bf5aba5ca0"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecopymetadataatindex(_:_:_:)": {
       "etag": "\"4929-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopymetadataatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopymetadataatindex(_,_,_).md",
       "hash": "a98dcf35b8007525f5405419e0decbabfe7b14761f067febe1de8d42be7df927"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecopyproperties(_:_:)": {
       "etag": "\"5489-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopyproperties.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopyproperties(_,_).md",
       "hash": "8625e582526dfbf228395fefd60d9a4c7791c7b4a03b9e47f821ea1191d45335"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecopypropertiesatindex(_:_:_:)": {
       "etag": "\"59b3-65d55e8539bac-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopypropertiesatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopypropertiesatindex(_,_,_).md",
       "hash": "2092dd9d0c5ecabc2577c587edb815da549b37a85d4e9fbb5d68196b6f56e266"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecopytypeidentifiers()": {
       "etag": "\"456c-65d55e846b4cc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopytypeidentifiers.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopytypeidentifiers().md",
       "hash": "e10918ad212364445f4c6d8ff6148ffde6724ea7142bc42c32be8d327d0eaade"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecreateimageatindex(_:_:_:)": {
       "etag": "\"4abb-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreateimageatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreateimageatindex(_,_,_).md",
       "hash": "5de6638466fb6294a4d50fa65e43a6d9a59859bbcd72df8dac692c8d5a724120"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecreateincremental(_:)": {
       "etag": "\"4e4a-65d55e846b4cc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreateincremental.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreateincremental(_).md",
       "hash": "782606a2facd6a5b631d75e8ae91c625a02769db8eb0f65af9c1167fcb6f5936"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecreatethumbnailatindex(_:_:_:)": {
       "etag": "\"5860-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreatethumbnailatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreatethumbnailatindex(_,_,_).md",
       "hash": "5353bdb35dafb6d4cc2c0eaea3422b87fc0ef8a000be2a47b2eba169a9b436a8"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecreatewithdata(_:_:)": {
       "etag": "\"4db4-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreatewithdata.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreatewithdata(_,_).md",
       "hash": "0af544872606f648792b48e5aac9e9adde63a671ba26954443af3427acd91f6e"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecreatewithdataprovider(_:_:)": {
       "etag": "\"4fb7-65d55e858df68-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreatewithdataprovider.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreatewithdataprovider(_,_).md",
       "hash": "adcfc85d47f5ba699105c81e0f016022720d702a6fa6e6abb6a3cfd8018746a4"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcecreatewithurl(_:_:)": {
       "etag": "\"47cf-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreatewithurl.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreatewithurl(_,_).md",
       "hash": "9e0d446aac186dc0f62edd7f229d640a0b8393b63d40dddbeecebaf3385ac0b9"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcegetcount(_:)": {
       "etag": "\"49a0-65d55e85a038e-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegetcount.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegetcount(_).md",
       "hash": "00640a2880118920020d0a0d541350e7516d1e4f7a3a045d65e7bf26dc700bb0"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcegetprimaryimageindex(_:)": {
       "etag": "\"339d-65d55e839e985-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegetprimaryimageindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegetprimaryimageindex(_).md",
       "hash": "53ce6b8baf1d9c59bb0e9208f3bbb2fcbf12a9f651f2f5614c8d9003bdf43f7d"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcegetstatus(_:)": {
       "etag": "\"3042-65d55e842a1b5-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegetstatus.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegetstatus(_).md",
       "hash": "cde290304274ac59b24dc7eb81ed7d8847c2851f91978d47484bbefa06e20867"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcegetstatusatindex(_:_:)": {
       "etag": "\"36ac-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegetstatusatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegetstatusatindex(_,_).md",
       "hash": "7b8f617b1a056fecb71f653cea6471006d4d3545e1184441568ad4295b20abb7"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcegettype(_:)": {
       "etag": "\"4fc2-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegettype.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegettype(_).md",
       "hash": "4f623dcbcce0c6735314da70dae889284bac5fd4296483e67838affaa45b8873"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcegettypeid()": {
       "etag": "\"42cd-65d55e842a1b5-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegettypeid.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegettypeid().md",
       "hash": "757873ac2b96b855bc4828c36159a8d69e4e399177f4060e2cc25c0df059a41a"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourceremovecacheatindex(_:_:)": {
       "etag": "\"3c5a-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourceremovecacheatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourceremovecacheatindex(_,_).md",
       "hash": "00de48e452b9ef2161a1a525d86d98a787deb2ae542efa6d9cbd58635f6ff83e"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcesetallowabletypes(_:)": {
       "etag": "\"4cad-65d55e858df68-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcesetallowabletypes.md",
+      "file_path": "documentation/ImageIO/cgimagesourcesetallowabletypes(_).md",
       "hash": "3281a1047e5ddb0aeb271974c73a13787c31cad1d778099e0fe11615b6a8a41e"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcestatus": {
@@ -522,7 +522,7 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcestatus/init(rawvalue:)": {
       "etag": "\"13e9-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcestatus/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagesourcestatus/init(rawvalue).md",
       "hash": "b1b21a8c93fe208dcc54898ea13bb7dc0d0b04604b6e9678c59be621e21977d8"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourcestatus/statuscomplete": {
@@ -557,12 +557,12 @@
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourceupdatedata(_:_:_:)": {
       "etag": "\"3782-65d55e846b4cc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourceupdatedata.md",
+      "file_path": "documentation/ImageIO/cgimagesourceupdatedata(_,_,_).md",
       "hash": "de2bd618c531f61c96b2951275d5a6621cbe4fa3db776d5ef2bf41e1c52a0df4"
     },
     "https://developer.apple.com/documentation/imageio/cgimagesourceupdatedataprovider(_:_:_:)": {
       "etag": "\"374d-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourceupdatedataprovider.md",
+      "file_path": "documentation/ImageIO/cgimagesourceupdatedataprovider(_,_,_).md",
       "hash": "6e42d413d9c9e2f2bb08be0c98c35216e99c8fd96ede444f938d215aa0b571fe"
     },
     "https://developer.apple.com/documentation/imageio/cgmutableimagemetadata": {
@@ -607,7 +607,7 @@
     },
     "https://developer.apple.com/documentation/imageio/iio_has_iosurface": {
       "etag": "\"3399-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/iio-has-iosurface.md",
+      "file_path": "documentation/ImageIO/iio_has_iosurface.md",
       "hash": "e37c1fee7a1a3e987c6d093ab75e1ad198e9cdbac5e34a424ab36d21afa1f7dd"
     },
     "https://developer.apple.com/documentation/imageio/image-i-o-constants": {
@@ -632,32 +632,32 @@
     },
     "https://developer.apple.com/documentation/imageio/imageio_png_filter_avg": {
       "etag": "\"382d-65d55e858df68-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-avg.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_avg.md",
       "hash": "a18e125a9948b270085602bbc08fb8326403c03fcbabb4253095e63f2504f449"
     },
     "https://developer.apple.com/documentation/imageio/imageio_png_filter_none": {
       "etag": "\"37e2-65d55e84f95a9-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-none.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_none.md",
       "hash": "acefe59ca656a13e6f79e6396dd34581028fec418fb34cf170784fe76b765f91"
     },
     "https://developer.apple.com/documentation/imageio/imageio_png_filter_paeth": {
       "etag": "\"3851-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-paeth.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_paeth.md",
       "hash": "8c4a82262349a244ff2f011ff83144dc52639fb91d3f107ae588e0fdeb8bbf41"
     },
     "https://developer.apple.com/documentation/imageio/imageio_png_filter_sub": {
       "etag": "\"381e-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-sub.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_sub.md",
       "hash": "1cb3554abc9ff52589c380f61ba1f8f8287d4bfeee347d1bf4d2686db087edd7"
     },
     "https://developer.apple.com/documentation/imageio/imageio_png_filter_up": {
       "etag": "\"3804-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-up.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_up.md",
       "hash": "fc738a0befe23fdc583451ef3436bde1a96d2b02ed6b86e27e304f63c90e259f"
     },
     "https://developer.apple.com/documentation/imageio/imageio_png_no_filters": {
       "etag": "\"37bf-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-no-filters.md",
+      "file_path": "documentation/ImageIO/imageio_png_no_filters.md",
       "hash": "de3dd0648739cda6558b77f5e72f84c356b4bba9c8757e69cd01c0b3881b870e"
     },
     "https://developer.apple.com/documentation/imageio/individual-image-properties": {
@@ -4362,82 +4362,82 @@
     },
     "https://developer.apple.com/documentation/imageio/kiiocameraextrinsics_coordinatesystemid": {
       "etag": "\"68a2-65d55e8539bac-df\"",
-      "file_path": "documentation/ImageIO/kiiocameraextrinsics-coordinatesystemid.md",
+      "file_path": "documentation/ImageIO/kiiocameraextrinsics_coordinatesystemid.md",
       "hash": "90322bbd19665a9a4198560cd664779d17b81a2f3bef5a20409d550da2af25e2"
     },
     "https://developer.apple.com/documentation/imageio/kiiocameraextrinsics_position": {
       "etag": "\"67d0-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/kiiocameraextrinsics-position.md",
+      "file_path": "documentation/ImageIO/kiiocameraextrinsics_position.md",
       "hash": "52ed1e50e354d57502eeacbca622a2334896ca5f16abd5ca55022bc0e9c41a0b"
     },
     "https://developer.apple.com/documentation/imageio/kiiocameraextrinsics_rotation": {
       "etag": "\"67d0-65d55e833c431-df\"",
-      "file_path": "documentation/ImageIO/kiiocameraextrinsics-rotation.md",
+      "file_path": "documentation/ImageIO/kiiocameraextrinsics_rotation.md",
       "hash": "0c55deb9fe6e84fcfbe1a8d6d49b0ed19617cbba24416d272740a499f119a6fa"
     },
     "https://developer.apple.com/documentation/imageio/kiiocameramodel_intrinsics": {
       "etag": "\"6791-65d55e8447f0f-df\"",
-      "file_path": "documentation/ImageIO/kiiocameramodel-intrinsics.md",
+      "file_path": "documentation/ImageIO/kiiocameramodel_intrinsics.md",
       "hash": "a7960dfdeba3dee3a7ded4008cecf8ecc913dbc3779deff2a8e2c7e3c2bcc7a5"
     },
     "https://developer.apple.com/documentation/imageio/kiiocameramodel_modeltype": {
       "etag": "\"677c-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/kiiocameramodel-modeltype.md",
+      "file_path": "documentation/ImageIO/kiiocameramodel_modeltype.md",
       "hash": "3d0300f3bab09538a6e1522db5459479f2efcaf78a53787f605b765f2dcc8c28"
     },
     "https://developer.apple.com/documentation/imageio/kiiocameramodeltype_genericpinhole": {
       "etag": "\"6839-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/kiiocameramodeltype-genericpinhole.md",
+      "file_path": "documentation/ImageIO/kiiocameramodeltype_genericpinhole.md",
       "hash": "5f3f392d697ebea692d7f3b1a9aa248ecfdb7d0f8a854be80c643116e0c94e1e"
     },
     "https://developer.apple.com/documentation/imageio/kiiocameramodeltype_simplifiedpinhole": {
       "etag": "\"6878-65d55e839e985-df\"",
-      "file_path": "documentation/ImageIO/kiiocameramodeltype-simplifiedpinhole.md",
+      "file_path": "documentation/ImageIO/kiiocameramodeltype_simplifiedpinhole.md",
       "hash": "93460532da740b8157787d21b31548014d7b832e05d582f7cd2e78c869b03e87"
     },
     "https://developer.apple.com/documentation/imageio/kiiometadata_cameraextrinsicskey": {
       "etag": "\"680f-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/kiiometadata-cameraextrinsicskey.md",
+      "file_path": "documentation/ImageIO/kiiometadata_cameraextrinsicskey.md",
       "hash": "8ccbbb5bc76f50c5afc5033028034c6d838f019750f1e8211760b25ea1212a2d"
     },
     "https://developer.apple.com/documentation/imageio/kiiometadata_cameramodelkey": {
       "etag": "\"67a6-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/kiiometadata-cameramodelkey.md",
+      "file_path": "documentation/ImageIO/kiiometadata_cameramodelkey.md",
       "hash": "cf1bb629a742289b4d6d0f3f5e8510d76dfb23f73a0a5b942cd5eb4f0b0c8326"
     },
     "https://developer.apple.com/documentation/imageio/kiiomonoscopicimagelocation_center": {
       "etag": "\"683b-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation-center.md",
+      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation_center.md",
       "hash": "4136407a26b32850056e481821f61808ee66bd7a0eadc2e20d025507f82677f8"
     },
     "https://developer.apple.com/documentation/imageio/kiiomonoscopicimagelocation_left": {
       "etag": "\"6811-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation-left.md",
+      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation_left.md",
       "hash": "a602e62f7f77b8b811c55fd2726caa16cbb20f768d8b0220806d3a316d88c69e"
     },
     "https://developer.apple.com/documentation/imageio/kiiomonoscopicimagelocation_right": {
       "etag": "\"6826-65d55e833c431-df\"",
-      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation-right.md",
+      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation_right.md",
       "hash": "2952b251d7099a9d9f3a2e33c09631e00b4dd71b326259cd6afc801676052818"
     },
     "https://developer.apple.com/documentation/imageio/kiiomonoscopicimagelocation_unspecified": {
       "etag": "\"68a4-65d55e8384ab1-df\"",
-      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation-unspecified.md",
+      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation_unspecified.md",
       "hash": "05298c331c783485ed48d22e7e1a95f409912fa770c8b8ffd306a57950b5f403"
     },
     "https://developer.apple.com/documentation/imageio/kiiostereoaggressors_severity": {
       "etag": "\"67d2-65d55e8384ab1-df\"",
-      "file_path": "documentation/ImageIO/kiiostereoaggressors-severity.md",
+      "file_path": "documentation/ImageIO/kiiostereoaggressors_severity.md",
       "hash": "d0cffb64e6a7d61d83df3b66019da8d03fb76786f365a8db9aa54cf9bf76c72f"
     },
     "https://developer.apple.com/documentation/imageio/kiiostereoaggressors_subtypeuri": {
       "etag": "\"67fc-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/kiiostereoaggressors-subtypeuri.md",
+      "file_path": "documentation/ImageIO/kiiostereoaggressors_subtypeuri.md",
       "hash": "bd9fc585b7f64087dcafb7e4e89a48417ba2e7de4d274665496572de14d9e4d4"
     },
     "https://developer.apple.com/documentation/imageio/kiiostereoaggressors_type": {
       "etag": "\"677e-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/kiiostereoaggressors-type.md",
+      "file_path": "documentation/ImageIO/kiiostereoaggressors_type.md",
       "hash": "db628ab33f28dd6018a98ddf44aff8de1457daea5a5a7026766b9521b6b01256"
     },
     "https://developer.apple.com/documentation/imageio/nikon-camera-dictionary-keys": {
@@ -4492,12 +4492,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cganimateimageaturlwithblock(_:_:_:).json": {
       "etag": "\"62da-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/cganimateimageaturlwithblock.md",
+      "file_path": "documentation/ImageIO/cganimateimageaturlwithblock(_,_,_).md",
       "hash": "93655d96102931d073c93f716cceb5b94d6ac6c0e228c38ab909318a7031078b"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cganimateimagedatawithblock(_:_:_:).json": {
       "etag": "\"62e5-65d55e84b58cf-df\"",
-      "file_path": "documentation/ImageIO/cganimateimagedatawithblock.md",
+      "file_path": "documentation/ImageIO/cganimateimagedatawithblock(_,_,_).md",
       "hash": "a5b5068fd468936a8fd3feacd315570555e0c4ec4d6aa641b8411ab074f9c242"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimageanimationstatus.json": {
@@ -4522,7 +4522,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimageanimationstatus/init(rawvalue:).json": {
       "etag": "\"11e0-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimageanimationstatus/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimageanimationstatus/init(rawvalue).md",
       "hash": "5cd962ca696c9d852cccc81b1411536f4c1e5d5e16b771483fb5c6f6c56cfa39"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimageanimationstatus/parametererror.json": {
@@ -4542,62 +4542,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationaddauxiliarydatainfo(_:_:_:).json": {
       "etag": "\"4e16-65d55e8447f0f-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationaddauxiliarydatainfo.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationaddauxiliarydatainfo(_,_,_).md",
       "hash": "811634f5c0a26ce863383107ba695ecda2050f0c13a1e1273d495ff6f3c6b7a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationaddimage(_:_:_:).json": {
       "etag": "\"3d18-65d55e84b58cf-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationaddimage.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationaddimage(_,_,_).md",
       "hash": "03a93dd6449bad655c171f5467d5f33a0e275e38825759f5f2a284834f712d12"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationaddimageandmetadata(_:_:_:_:).json": {
       "etag": "\"4d9a-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationaddimageandmetadata.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationaddimageandmetadata(_,_,_,_).md",
       "hash": "df536d8382608e23a2fa998eebff634141a63f5f6726f293aa6470c897eb02b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationaddimagefromsource(_:_:_:_:).json": {
       "etag": "\"4530-65d55e8447f0f-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationaddimagefromsource.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationaddimagefromsource(_,_,_,_).md",
       "hash": "5cae6c8c0a83c3de4012c89269c27c729a9e879e0bfb7decf3e8cc38a285e513"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationcopyimagesource(_:_:_:_:).json": {
       "etag": "\"575e-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcopyimagesource.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcopyimagesource(_,_,_,_).md",
       "hash": "f8387900c64bd972149156438f3811fc6d641cfd68d33d01feb7df622aeda5ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationcopytypeidentifiers().json": {
       "etag": "\"26e3-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcopytypeidentifiers.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcopytypeidentifiers().md",
       "hash": "f2ee99bde5daeec2e95cde093fc12b2014ecaa5605c52cc1898f9197039f4dbc"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationcreatewithdata(_:_:_:_:).json": {
       "etag": "\"55d0-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithdata.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithdata(_,_,_,_).md",
       "hash": "f2360c7f26815d9a2d7273bed50e4091b97d7e5d257aac13ffe3bc37dda74d5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationcreatewithdataconsumer(_:_:_:_:).json": {
       "etag": "\"5694-65d55e8384ab1-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithdataconsumer.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithdataconsumer(_,_,_,_).md",
       "hash": "ca72d5411f7cbc0f3547e0d461327f36caf403d6b438aaad96cc2ce08998bb2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationcreatewithurl(_:_:_:_:).json": {
       "etag": "\"5576-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithurl.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationcreatewithurl(_,_,_,_).md",
       "hash": "a40cd7e54acf8ff25a215f1d54380daf7a091af4a19b91ec33c9c2335c28e7e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationfinalize(_:).json": {
       "etag": "\"26e0-65d55e839e985-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationfinalize.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationfinalize(_).md",
       "hash": "ffc66d257ffc81e43d9741b6dc580c950bf2405ac47414bdeec055e6642aed12"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationgettypeid().json": {
       "etag": "\"23d3-65d55e833c431-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationgettypeid.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationgettypeid().md",
       "hash": "fa4639fb11a16bbe67f3e1bd218492a9e5efbf5e947c858450e26072d52a394f"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagedestinationsetproperties(_:_:).json": {
       "etag": "\"3359-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagedestinationsetproperties.md",
+      "file_path": "documentation/ImageIO/cgimagedestinationsetproperties(_,_).md",
       "hash": "30023ac451d9229ad92c1074851d2fcc7e22e3037b1d201dc0c64b12ff5e81ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadata.json": {
@@ -4607,47 +4607,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatacopystringvaluewithpath(_:_:_:).json": {
       "etag": "\"6456-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacopystringvaluewithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacopystringvaluewithpath(_,_,_).md",
       "hash": "2ca3aad0dc59922088862edbc0de615a363c3ea4a7eed0f0e57cf44cc86deb2d"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatacopytagmatchingimageproperty(_:_:_:).json": {
       "etag": "\"6863-65d55e8539bac-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacopytagmatchingimageproperty.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacopytagmatchingimageproperty(_,_,_).md",
       "hash": "b9b0c73f632fff7f6329a27329bbc278da95f7eb4b93f2658cd54ade6b42858e"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatacopytags(_:).json": {
       "etag": "\"42fd-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacopytags.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacopytags(_).md",
       "hash": "73f799c641e1a62caaaddabb6cc07eb82198a1ab6c63eef054edd88cf2416d27"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatacopytagwithpath(_:_:_:).json": {
       "etag": "\"6765-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacopytagwithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacopytagwithpath(_,_,_).md",
       "hash": "8efc8924075ce6fce2596065695520ec901ee1537e83217300f3e288c3ffec8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatacreatefromxmpdata(_:).json": {
       "etag": "\"2aaf-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacreatefromxmpdata.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacreatefromxmpdata(_).md",
       "hash": "18073369f5cb4ef637d529ae31bb368b3a4fc3f1e530e11b0c707a89f6b1fe1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatacreatemutable().json": {
       "etag": "\"26ee-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacreatemutable.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacreatemutable().md",
       "hash": "bbe4bc86d991330e85eeae10b0edd503e069e4197c6cb8c99e6014b4783746ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatacreatemutablecopy(_:).json": {
       "etag": "\"370a-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacreatemutablecopy.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacreatemutablecopy(_).md",
       "hash": "55301b467a8bba0b18a0242415e43f3ce8bfeec737bce3d63e67ac8610035f92"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatacreatexmpdata(_:_:).json": {
       "etag": "\"3392-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatacreatexmpdata.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatacreatexmpdata(_,_).md",
       "hash": "a8a4d381ed15285585b8a8b9ae080efdb470952b97e3f6a6c0c3fd58dacdf021"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadataenumeratetagsusingblock(_:_:_:_:).json": {
       "etag": "\"557f-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadataenumeratetagsusingblock.md",
+      "file_path": "documentation/ImageIO/cgimagemetadataenumeratetagsusingblock(_,_,_,_).md",
       "hash": "a407ac4f619d45d5ba725dd937d0b5eee8b569a5015d0a2d62f6f7adecf682c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadataerrors.json": {
@@ -4667,7 +4667,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadataerrors/init(rawvalue:).json": {
       "etag": "\"1426-65d55e833c431-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadataerrors/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagemetadataerrors/init(rawvalue).md",
       "hash": "bce8c1c740b8ca2732dafd401a847ce57794e0f6494d35f1fc01e4c5b4de697c"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadataerrors/prefixconflict.json": {
@@ -4687,32 +4687,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatagettypeid().json": {
       "etag": "\"2643-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatagettypeid.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatagettypeid().md",
       "hash": "2445403bbfb5e71b894d016063659ecf55f29caa1f1049a0ae7e23c9e2169a46"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadataregisternamespaceforprefix(_:_:_:_:).json": {
       "etag": "\"4b3d-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadataregisternamespaceforprefix.md",
+      "file_path": "documentation/ImageIO/cgimagemetadataregisternamespaceforprefix(_,_,_,_).md",
       "hash": "b3796e4b0600c2e345524005172d607dc10446c71f1a989d41615daead2dad67"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadataremovetagwithpath(_:_:_:).json": {
       "etag": "\"60f7-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadataremovetagwithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadataremovetagwithpath(_,_,_).md",
       "hash": "accf167c995af7c79a0006be322bd7c482703a44b95c0b8f45df8f83d744ab17"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatasettagwithpath(_:_:_:_:).json": {
       "etag": "\"661b-65d55e858df68-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatasettagwithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatasettagwithpath(_,_,_,_).md",
       "hash": "600f9b2724f389f13266f110b1920a0296ae161a9fc7cb3e9c788d073ebe4ce1"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatasetvaluematchingimageproperty(_:_:_:_:).json": {
       "etag": "\"6e22-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatasetvaluematchingimageproperty.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatasetvaluematchingimageproperty(_,_,_,_).md",
       "hash": "3c417adec84d32933d5bb5894a0f8368b225bb38a24ea88705b524264c02f369"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatasetvaluewithpath(_:_:_:_:).json": {
       "etag": "\"6ac9-65d55e8447f0f-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatasetvaluewithpath.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatasetvaluewithpath(_,_,_,_).md",
       "hash": "85ce81dba397e6eb1ea622453947af7076cf35fbdf4e2ba4f2f60b66fd1628e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatag.json": {
@@ -4727,42 +4727,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatagcopyname(_:).json": {
       "etag": "\"3ee5-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyname.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyname(_).md",
       "hash": "7646f20972bfd3c467658ba655c066dc17ab00d8653a5fdad26878dbaff49514"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatagcopynamespace(_:).json": {
       "etag": "\"4492-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopynamespace.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopynamespace(_).md",
       "hash": "122fdcf02bd3d76076f6068f7cd97510d1b9103b09d23b56cadfb078c4df88a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatagcopyprefix(_:).json": {
       "etag": "\"3fe7-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyprefix.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyprefix(_).md",
       "hash": "afea7dec5dc3550ae4e227ec9517ec33a98f4d6085f93fc14ab35bf8dc7b788b"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatagcopyqualifiers(_:).json": {
       "etag": "\"435a-65d55e84f95a9-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyqualifiers.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyqualifiers(_).md",
       "hash": "a6c72a48824e84dba1102c585de128b313910cfa724ee2161f3ca50726ee0c83"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatagcopyvalue(_:).json": {
       "etag": "\"671b-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyvalue.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcopyvalue(_).md",
       "hash": "b33e583d3a773401629fe41f21b309bbfd9c6089f275417e8d480a4d497bd002"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatagcreate(_:_:_:_:_:).json": {
       "etag": "\"6acc-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatagcreate.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatagcreate(_,_,_,_,_).md",
       "hash": "3c068402d18c1ca14d263f00172183fe16b75d3392d645ef5d19b736de7807c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatataggettype(_:).json": {
       "etag": "\"349e-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatataggettype.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatataggettype(_).md",
       "hash": "e0dbef8448f37d30e06452468c9c9ad3ee0186a23632d70fcf589e88ea231da0"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatataggettypeid().json": {
       "etag": "\"2137-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatataggettypeid.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatataggettypeid().md",
       "hash": "ff3b8aefbfed42aaa16f142bc607e012192c1126657544356789cc069bf17187"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatype.json": {
@@ -4797,7 +4797,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatype/init(rawvalue:).json": {
       "etag": "\"13eb-65d55e842a1b5-df\"",
-      "file_path": "documentation/ImageIO/cgimagemetadatatype/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagemetadatatype/init(rawvalue).md",
       "hash": "f75d6bb6667192ea90fcc450fafaa248178d9d642007c282925338aef991cc7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagemetadatatype/invalid.json": {
@@ -4832,7 +4832,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagepropertyorientation/init(rawvalue:).json": {
       "etag": "\"1489-65d55e839e985-df\"",
-      "file_path": "documentation/ImageIO/cgimagepropertyorientation/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagepropertyorientation/init(rawvalue).md",
       "hash": "b1e6a7bab02059d6f235d22158aac21a80dcb30a548cb9d3ab7175eb41d52b86"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagepropertyorientation/left.json": {
@@ -4872,7 +4872,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagepropertytgacompression/init(rawvalue:).json": {
       "etag": "\"1468-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagepropertytgacompression/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagepropertytgacompression/init(rawvalue).md",
       "hash": "86d60dffcbd92c425a47a301cdaa6d4824ffbc23b24780ae11f71fca202ad8af"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagepropertytgacompression/tgacompressionnone.json": {
@@ -4897,97 +4897,97 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:).json": {
       "etag": "\"601f-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopyauxiliarydatainfoatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopyauxiliarydatainfoatindex(_,_,_).md",
       "hash": "7ff1aca89f6a16dd6065ef02662412bbed97b2219335f1ba8a9434bf5aba5ca0"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecopymetadataatindex(_:_:_:).json": {
       "etag": "\"4929-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopymetadataatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopymetadataatindex(_,_,_).md",
       "hash": "a98dcf35b8007525f5405419e0decbabfe7b14761f067febe1de8d42be7df927"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecopyproperties(_:_:).json": {
       "etag": "\"5489-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopyproperties.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopyproperties(_,_).md",
       "hash": "8625e582526dfbf228395fefd60d9a4c7791c7b4a03b9e47f821ea1191d45335"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecopypropertiesatindex(_:_:_:).json": {
       "etag": "\"59b3-65d55e8539bac-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopypropertiesatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopypropertiesatindex(_,_,_).md",
       "hash": "2092dd9d0c5ecabc2577c587edb815da549b37a85d4e9fbb5d68196b6f56e266"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecopytypeidentifiers().json": {
       "etag": "\"456c-65d55e846b4cc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecopytypeidentifiers.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecopytypeidentifiers().md",
       "hash": "e10918ad212364445f4c6d8ff6148ffde6724ea7142bc42c32be8d327d0eaade"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecreateimageatindex(_:_:_:).json": {
       "etag": "\"4abb-65d55e851a825-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreateimageatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreateimageatindex(_,_,_).md",
       "hash": "5de6638466fb6294a4d50fa65e43a6d9a59859bbcd72df8dac692c8d5a724120"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecreateincremental(_:).json": {
       "etag": "\"4e4a-65d55e846b4cc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreateincremental.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreateincremental(_).md",
       "hash": "782606a2facd6a5b631d75e8ae91c625a02769db8eb0f65af9c1167fcb6f5936"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecreatethumbnailatindex(_:_:_:).json": {
       "etag": "\"5860-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreatethumbnailatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreatethumbnailatindex(_,_,_).md",
       "hash": "5353bdb35dafb6d4cc2c0eaea3422b87fc0ef8a000be2a47b2eba169a9b436a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecreatewithdata(_:_:).json": {
       "etag": "\"4db4-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreatewithdata.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreatewithdata(_,_).md",
       "hash": "0af544872606f648792b48e5aac9e9adde63a671ba26954443af3427acd91f6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecreatewithdataprovider(_:_:).json": {
       "etag": "\"4fb7-65d55e858df68-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreatewithdataprovider.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreatewithdataprovider(_,_).md",
       "hash": "adcfc85d47f5ba699105c81e0f016022720d702a6fa6e6abb6a3cfd8018746a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcecreatewithurl(_:_:).json": {
       "etag": "\"47cf-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcecreatewithurl.md",
+      "file_path": "documentation/ImageIO/cgimagesourcecreatewithurl(_,_).md",
       "hash": "9e0d446aac186dc0f62edd7f229d640a0b8393b63d40dddbeecebaf3385ac0b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcegetcount(_:).json": {
       "etag": "\"49a0-65d55e85a038e-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegetcount.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegetcount(_).md",
       "hash": "00640a2880118920020d0a0d541350e7516d1e4f7a3a045d65e7bf26dc700bb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcegetprimaryimageindex(_:).json": {
       "etag": "\"339d-65d55e839e985-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegetprimaryimageindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegetprimaryimageindex(_).md",
       "hash": "53ce6b8baf1d9c59bb0e9208f3bbb2fcbf12a9f651f2f5614c8d9003bdf43f7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcegetstatus(_:).json": {
       "etag": "\"3042-65d55e842a1b5-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegetstatus.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegetstatus(_).md",
       "hash": "cde290304274ac59b24dc7eb81ed7d8847c2851f91978d47484bbefa06e20867"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcegetstatusatindex(_:_:).json": {
       "etag": "\"36ac-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegetstatusatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegetstatusatindex(_,_).md",
       "hash": "7b8f617b1a056fecb71f653cea6471006d4d3545e1184441568ad4295b20abb7"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcegettype(_:).json": {
       "etag": "\"4fc2-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegettype.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegettype(_).md",
       "hash": "4f623dcbcce0c6735314da70dae889284bac5fd4296483e67838affaa45b8873"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcegettypeid().json": {
       "etag": "\"42cd-65d55e842a1b5-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcegettypeid.md",
+      "file_path": "documentation/ImageIO/cgimagesourcegettypeid().md",
       "hash": "757873ac2b96b855bc4828c36159a8d69e4e399177f4060e2cc25c0df059a41a"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourceremovecacheatindex(_:_:).json": {
       "etag": "\"3c5a-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourceremovecacheatindex.md",
+      "file_path": "documentation/ImageIO/cgimagesourceremovecacheatindex(_,_).md",
       "hash": "00de48e452b9ef2161a1a525d86d98a787deb2ae542efa6d9cbd58635f6ff83e"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcesetallowabletypes(_:).json": {
       "etag": "\"4cad-65d55e858df68-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcesetallowabletypes.md",
+      "file_path": "documentation/ImageIO/cgimagesourcesetallowabletypes(_).md",
       "hash": "3281a1047e5ddb0aeb271974c73a13787c31cad1d778099e0fe11615b6a8a41e"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcestatus.json": {
@@ -4997,7 +4997,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcestatus/init(rawvalue:).json": {
       "etag": "\"13e9-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourcestatus/init-rawvalue.md",
+      "file_path": "documentation/ImageIO/cgimagesourcestatus/init(rawvalue).md",
       "hash": "b1b21a8c93fe208dcc54898ea13bb7dc0d0b04604b6e9678c59be621e21977d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourcestatus/statuscomplete.json": {
@@ -5032,12 +5032,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourceupdatedata(_:_:_:).json": {
       "etag": "\"3782-65d55e846b4cc-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourceupdatedata.md",
+      "file_path": "documentation/ImageIO/cgimagesourceupdatedata(_,_,_).md",
       "hash": "de2bd618c531f61c96b2951275d5a6621cbe4fa3db776d5ef2bf41e1c52a0df4"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgimagesourceupdatedataprovider(_:_:_:).json": {
       "etag": "\"374d-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/cgimagesourceupdatedataprovider.md",
+      "file_path": "documentation/ImageIO/cgimagesourceupdatedataprovider(_,_,_).md",
       "hash": "6e42d413d9c9e2f2bb08be0c98c35216e99c8fd96ede444f938d215aa0b571fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/cgmutableimagemetadata.json": {
@@ -5082,7 +5082,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/iio_has_iosurface.json": {
       "etag": "\"3399-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/iio-has-iosurface.md",
+      "file_path": "documentation/ImageIO/iio_has_iosurface.md",
       "hash": "e37c1fee7a1a3e987c6d093ab75e1ad198e9cdbac5e34a424ab36d21afa1f7dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/image-i-o-constants.json": {
@@ -5107,32 +5107,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_png_filter_avg.json": {
       "etag": "\"382d-65d55e858df68-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-avg.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_avg.md",
       "hash": "a18e125a9948b270085602bbc08fb8326403c03fcbabb4253095e63f2504f449"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_png_filter_none.json": {
       "etag": "\"37e2-65d55e84f95a9-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-none.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_none.md",
       "hash": "acefe59ca656a13e6f79e6396dd34581028fec418fb34cf170784fe76b765f91"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_png_filter_paeth.json": {
       "etag": "\"3851-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-paeth.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_paeth.md",
       "hash": "8c4a82262349a244ff2f011ff83144dc52639fb91d3f107ae588e0fdeb8bbf41"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_png_filter_sub.json": {
       "etag": "\"381e-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-sub.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_sub.md",
       "hash": "1cb3554abc9ff52589c380f61ba1f8f8287d4bfeee347d1bf4d2686db087edd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_png_filter_up.json": {
       "etag": "\"3804-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-filter-up.md",
+      "file_path": "documentation/ImageIO/imageio_png_filter_up.md",
       "hash": "fc738a0befe23fdc583451ef3436bde1a96d2b02ed6b86e27e304f63c90e259f"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/imageio_png_no_filters.json": {
       "etag": "\"37bf-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/imageio-png-no-filters.md",
+      "file_path": "documentation/ImageIO/imageio_png_no_filters.md",
       "hash": "de3dd0648739cda6558b77f5e72f84c356b4bba9c8757e69cd01c0b3881b870e"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/individual-image-properties.json": {
@@ -8837,82 +8837,82 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiocameraextrinsics_coordinatesystemid.json": {
       "etag": "\"68a2-65d55e8539bac-df\"",
-      "file_path": "documentation/ImageIO/kiiocameraextrinsics-coordinatesystemid.md",
+      "file_path": "documentation/ImageIO/kiiocameraextrinsics_coordinatesystemid.md",
       "hash": "90322bbd19665a9a4198560cd664779d17b81a2f3bef5a20409d550da2af25e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiocameraextrinsics_position.json": {
       "etag": "\"67d0-65d55e8369842-df\"",
-      "file_path": "documentation/ImageIO/kiiocameraextrinsics-position.md",
+      "file_path": "documentation/ImageIO/kiiocameraextrinsics_position.md",
       "hash": "52ed1e50e354d57502eeacbca622a2334896ca5f16abd5ca55022bc0e9c41a0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiocameraextrinsics_rotation.json": {
       "etag": "\"67d0-65d55e833c431-df\"",
-      "file_path": "documentation/ImageIO/kiiocameraextrinsics-rotation.md",
+      "file_path": "documentation/ImageIO/kiiocameraextrinsics_rotation.md",
       "hash": "0c55deb9fe6e84fcfbe1a8d6d49b0ed19617cbba24416d272740a499f119a6fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiocameramodel_intrinsics.json": {
       "etag": "\"6791-65d55e8447f0f-df\"",
-      "file_path": "documentation/ImageIO/kiiocameramodel-intrinsics.md",
+      "file_path": "documentation/ImageIO/kiiocameramodel_intrinsics.md",
       "hash": "a7960dfdeba3dee3a7ded4008cecf8ecc913dbc3779deff2a8e2c7e3c2bcc7a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiocameramodel_modeltype.json": {
       "etag": "\"677c-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/kiiocameramodel-modeltype.md",
+      "file_path": "documentation/ImageIO/kiiocameramodel_modeltype.md",
       "hash": "3d0300f3bab09538a6e1522db5459479f2efcaf78a53787f605b765f2dcc8c28"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiocameramodeltype_genericpinhole.json": {
       "etag": "\"6839-65d55e8553bbc-df\"",
-      "file_path": "documentation/ImageIO/kiiocameramodeltype-genericpinhole.md",
+      "file_path": "documentation/ImageIO/kiiocameramodeltype_genericpinhole.md",
       "hash": "5f3f392d697ebea692d7f3b1a9aa248ecfdb7d0f8a854be80c643116e0c94e1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiocameramodeltype_simplifiedpinhole.json": {
       "etag": "\"6878-65d55e839e985-df\"",
-      "file_path": "documentation/ImageIO/kiiocameramodeltype-simplifiedpinhole.md",
+      "file_path": "documentation/ImageIO/kiiocameramodeltype_simplifiedpinhole.md",
       "hash": "93460532da740b8157787d21b31548014d7b832e05d582f7cd2e78c869b03e87"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiometadata_cameraextrinsicskey.json": {
       "etag": "\"680f-65d55e83fb0b3-df\"",
-      "file_path": "documentation/ImageIO/kiiometadata-cameraextrinsicskey.md",
+      "file_path": "documentation/ImageIO/kiiometadata_cameraextrinsicskey.md",
       "hash": "8ccbbb5bc76f50c5afc5033028034c6d838f019750f1e8211760b25ea1212a2d"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiometadata_cameramodelkey.json": {
       "etag": "\"67a6-65d55e84939de-df\"",
-      "file_path": "documentation/ImageIO/kiiometadata-cameramodelkey.md",
+      "file_path": "documentation/ImageIO/kiiometadata_cameramodelkey.md",
       "hash": "cf1bb629a742289b4d6d0f3f5e8510d76dfb23f73a0a5b942cd5eb4f0b0c8326"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiomonoscopicimagelocation_center.json": {
       "etag": "\"683b-65d55e8411262-df\"",
-      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation-center.md",
+      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation_center.md",
       "hash": "4136407a26b32850056e481821f61808ee66bd7a0eadc2e20d025507f82677f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiomonoscopicimagelocation_left.json": {
       "etag": "\"6811-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation-left.md",
+      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation_left.md",
       "hash": "a602e62f7f77b8b811c55fd2726caa16cbb20f768d8b0220806d3a316d88c69e"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiomonoscopicimagelocation_right.json": {
       "etag": "\"6826-65d55e833c431-df\"",
-      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation-right.md",
+      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation_right.md",
       "hash": "2952b251d7099a9d9f3a2e33c09631e00b4dd71b326259cd6afc801676052818"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiomonoscopicimagelocation_unspecified.json": {
       "etag": "\"68a4-65d55e8384ab1-df\"",
-      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation-unspecified.md",
+      "file_path": "documentation/ImageIO/kiiomonoscopicimagelocation_unspecified.md",
       "hash": "05298c331c783485ed48d22e7e1a95f409912fa770c8b8ffd306a57950b5f403"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiostereoaggressors_severity.json": {
       "etag": "\"67d2-65d55e8384ab1-df\"",
-      "file_path": "documentation/ImageIO/kiiostereoaggressors-severity.md",
+      "file_path": "documentation/ImageIO/kiiostereoaggressors_severity.md",
       "hash": "d0cffb64e6a7d61d83df3b66019da8d03fb76786f365a8db9aa54cf9bf76c72f"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiostereoaggressors_subtypeuri.json": {
       "etag": "\"67fc-65d55e83c0574-df\"",
-      "file_path": "documentation/ImageIO/kiiostereoaggressors-subtypeuri.md",
+      "file_path": "documentation/ImageIO/kiiostereoaggressors_subtypeuri.md",
       "hash": "bd9fc585b7f64087dcafb7e4e89a48417ba2e7de4d274665496572de14d9e4d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/kiiostereoaggressors_type.json": {
       "etag": "\"677e-65d55e85718a3-df\"",
-      "file_path": "documentation/ImageIO/kiiostereoaggressors-type.md",
+      "file_path": "documentation/ImageIO/kiiostereoaggressors_type.md",
       "hash": "db628ab33f28dd6018a98ddf44aff8de1457daea5a5a7026766b9521b6b01256"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageio/nikon-camera-dictionary-keys.json": {

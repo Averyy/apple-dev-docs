@@ -7,7 +7,7 @@
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/connecting_to_bluetooth_peripherals_in_swift_playgrounds": {
       "etag": "\"32dd-6593d0fb94532-df\"",
-      "file_path": "documentation/playgroundbluetooth/connecting-to-bluetooth-peripherals-in-swift-playgrounds.md",
+      "file_path": "documentation/playgroundbluetooth/connecting_to_bluetooth_peripherals_in_swift_playgrounds.md",
       "hash": "8b7bc8ad45b6c0fb1e746ed02c2f321f4e638214e06bf6a6e83f269c5b1bbb31"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager": {
@@ -327,7 +327,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/connecting_to_bluetooth_peripherals_in_swift_playgrounds.json": {
       "etag": "\"32dd-6593d0fb94532-df\"",
-      "file_path": "documentation/playgroundbluetooth/connecting-to-bluetooth-peripherals-in-swift-playgrounds.md",
+      "file_path": "documentation/playgroundbluetooth/connecting_to_bluetooth_peripherals_in_swift_playgrounds.md",
       "hash": "8b7bc8ad45b6c0fb1e746ed02c2f321f4e638214e06bf6a6e83f269c5b1bbb31"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager.json": {

@@ -132,12 +132,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/adduserresource(_:)": {
       "etag": "\"1738-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/adduserresource.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/adduserresource(_).md",
       "hash": "e0a3270a9a0f42f0836b5c61881df8f84a84c2a115421e32414198c5576a3562"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/advance(_:)": {
       "etag": "\"239e-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/advance.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/advance(_).md",
       "hash": "c7c88d057720e98725eb5d7579536835946721066cd6f36a44ff3faf81d4dc17"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/advanceparams": {
@@ -162,12 +162,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/advanceparams/init(deltatime:commandbuffer:computeencoder:)": {
       "etag": "\"259a-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/advanceparams/init-deltatimecommandbuffercomputeencoder.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/advanceparams/init(deltatime,commandbuffer,computeencoder).md",
       "hash": "995b9375a07fe70b52db384de02f5d92f29faea1565670f6218709a547cc0986"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/advanceparams/init(deltatime:commandbuffer:computeencoder:localtoworld:worldtolocal:viewposition:viewdirection:)": {
       "etag": "\"368a-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/advanceparams/init-deltatimecommandbuffercomputeencoderlocaltoworldworldtolocalviewpositionviewdirection.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/advanceparams/init(deltatime,commandbuffer,computeencoder,localtoworld,worldtolocal,viewposition,viewdirection).md",
       "hash": "e8dad489d9efca0c35b5cc7ab9dc78a6dd85a7251bfdd8130891aabf43ebe711"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/advanceparams/localtoworld": {
@@ -197,7 +197,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/buffer(at:)": {
       "etag": "\"19d8-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/buffer-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/buffer(at).md",
       "hash": "48f453083beed95a45d2afa07afd7a2d12c9f1dfe926648c043a6300683b536e"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/commandqueue": {
@@ -207,12 +207,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/fastforward()": {
       "etag": "\"f06-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/fastforward.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/fastforward().md",
       "hash": "6948c0cd6daed9e8e0f5d032a8a85bee18a88b5f7e06a37a8b4360d5fc72996f"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/fastforward(stepcount:stepdeltatime:)": {
       "etag": "\"1f0e-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/fastforward-stepcountstepdeltatime.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/fastforward(stepcount,stepdeltatime).md",
       "hash": "ddd5b05af5d53426dc414abd922deb9b660ed1e25496ccf6eab1e67656decac4"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/graphuniforms": {
@@ -222,22 +222,22 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/init(pipelines:)": {
       "etag": "\"1e51-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/init-pipelines.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/init(pipelines).md",
       "hash": "a1a6192d2bf88ec4b758c46735a088793ac91b33937882b5ba1a06b5bcc2d557"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/init(pipelines:commandqueue:)": {
       "etag": "\"237c-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/init-pipelinescommandqueue.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/init(pipelines,commandqueue).md",
       "hash": "afed049d40bf17e8c96ebb58c9422caf30e58c1309ea0503d5609901b3690437"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/isoutputenabled(_:)": {
       "etag": "\"194c-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/isoutputenabled.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/isoutputenabled(_).md",
       "hash": "06edfa5f0e4f0df0201f4b2cb50fdad6021f75fd7b1474f0c446aae2c0663099"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/modifyuniforms(_:)": {
       "etag": "\"1f8e-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/modifyuniforms.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/modifyuniforms(_).md",
       "hash": "18a9f8676af78aad82a38e6c2531eec01cb75a5b193dcd64f1a1f68da3aaf42f"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/pipelines": {
@@ -247,77 +247,77 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/reset(encoder:)": {
       "etag": "\"199a-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/reset-encoder.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/reset(encoder).md",
       "hash": "b28c51db8357fd74bb6bca3d92ffbc466e08d60e0b7dc193571c1c508be20f6a"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/resetrandomseeds(using:)": {
       "etag": "\"1609-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/resetrandomseeds-using.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/resetrandomseeds(using).md",
       "hash": "7df37381365b344bc720d11f8245cf423cc3f22d9518c03218f0070d6ab72fff"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setbuffer(_:bufferoffset:at:)-772ch": {
       "etag": "\"2698-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer-bufferoffsetat-772ch.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer(_,bufferoffset,at)-772ch.md",
       "hash": "2ff64dcf737c69ef6dcae9a177f538bcb177ebc64fbf55c002a0af9c02521734"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setbuffer(_:bufferoffset:at:)-bmmd": {
       "etag": "\"1b6a-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer-bufferoffsetat-bmmd.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer(_,bufferoffset,at)-bmmd.md",
       "hash": "68e90c9adeaf7c8177af61eaf73138aa02bc62aab887787ff3eb8f8253d2ac01"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setbuffer(_:bufferoffset:elementcount:at:)": {
       "etag": "\"291e-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer-bufferoffsetelementcountat.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer(_,bufferoffset,elementcount,at).md",
       "hash": "b4df6167bff9a7b77cfabf3744cf52172bb659e4aaefe07a5ff036e2e9969fa4"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setbuffers(_:bufferoffsets:)": {
       "etag": "\"1901-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffers-bufferoffsets.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffers(_,bufferoffsets).md",
       "hash": "7349b3d96e4879bce9f8f3d62ca90a1849204374f36682601ed9af7bcfc7909f"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setoutputenabled(_:enabled:)": {
       "etag": "\"1cc8-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setoutputenabled-enabled.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setoutputenabled(_,enabled).md",
       "hash": "70861dcfc3301c1ffbdfd0fb83e48f7f2fe3e55f86568f606713480a483d6d6d"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/settexture(_:at:)": {
       "etag": "\"1afc-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/settexture-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/settexture(_,at).md",
       "hash": "ae32d88e86ab56c788fdf81839fde47d69339d128e00fe6b7abb47fc2eb3b56e"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/settextures(_:)": {
       "etag": "\"146e-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/settextures.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/settextures(_).md",
       "hash": "c33032393c57f9199c7ce182a8ede46465b0a33515fc4c56d3c5c72884cf1650"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setuniform(_:named:)": {
       "etag": "\"1e81-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniform-named.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniform(_,named).md",
       "hash": "be557904a457978fb05c14ee7eb021eecdb92fa96d696bc5bf74bf43c0458b0d"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setuniformdata(_:at:)": {
       "etag": "\"20ea-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniformdata-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniformdata(_,at).md",
       "hash": "85063afe7fb6dfbfc47ee3229cf40570f1fd60d5e507b5d4528fe7174192d053"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setuniformvalue(_:at:)": {
       "etag": "\"23a0-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniformvalue-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniformvalue(_,at).md",
       "hash": "5acd8362e2e1dd77ffdc8a29f64e854c22ed786ce5f6265a6b3967fa8fda6b65"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/setuserresources(_:)": {
       "etag": "\"1812-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuserresources.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuserresources(_).md",
       "hash": "797a778b082c6e5d2b5e133e66217e4cc406eab3db655d7d326d8ec26a6dfc27"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/simulationrate-swift.property": {
       "etag": "\"171b-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.property.md",
       "hash": "2ac1e33694db51ada622cf79e1a8881333c0df4e236edf1b2a172ca319cf0530"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct": {
       "etag": "\"40d9-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swiftstruct.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct.md",
       "hash": "7a0ce4629cd081ddcee8a8dd99c8c5b00f243a1db053e6cda59e7819b595235a"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/default": {
@@ -332,12 +332,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/init()": {
       "etag": "\"1215-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/init.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/init().md",
       "hash": "9ae638a2a1f66f8b65f2a35dbac68f7f1f06c8b9d352b9fbc0c060f04fc9cfe6"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.enum": {
       "etag": "\"3695-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/mode-swiftenum.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.enum.md",
       "hash": "f8d82d7c0e53424312a9bd54082e65757a4bbe8c16b2b8ad79ae86160aa8d43a"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.enum/fixedfrequency": {
@@ -357,7 +357,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.property": {
       "etag": "\"1bbb-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/mode-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.property.md",
       "hash": "b994141fb2559dc1b318ef54554dae178e1dfcf5f52d38494a9488227cd465a2"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/timedelta": {
@@ -367,12 +367,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/spawn(elements:in:using:)": {
       "etag": "\"26a9-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/spawn-elementsinusing.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/spawn(elements,in,using).md",
       "hash": "0c4ef470af6efb395663bfb3391bff4ea2437c7164d582cbc1a981c617e5d99b"
     },
     "https://developer.apple.com/documentation/computegraph/computegraphsimulation/texture(at:)": {
       "etag": "\"17fa-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/texture-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/texture(at).md",
       "hash": "30b5737d263fde0a40129ab3aa3fca6539183ac720747dfd1aa5fe21e87ec219"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph": {
@@ -382,12 +382,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/addedge(_:)": {
       "etag": "\"14e4-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/addedge.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/addedge(_).md",
       "hash": "618f7d5fed5bc6dbd7b2af0e9ee834f1ae4ebe9e5b8beddb7d4c0530afb17671"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/addnode(_:)": {
       "etag": "\"1dbf-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/addnode.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/addnode(_).md",
       "hash": "49c5839b6756df49e9e16a0f95152076365034901ddd80e27ec573d2bc8f95c1"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/arraydefinition": {
@@ -422,12 +422,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/attachment/input(_:)": {
       "etag": "\"1f41-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/attachment/input.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/attachment/input(_).md",
       "hash": "4ac7e3abf31bf1f168ede5aaa98e8a7605128f2f4eb6f6466d73f9ba37cc67b3"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/attachment/output(_:)": {
       "etag": "\"1f56-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/attachment/output.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/attachment/output(_).md",
       "hash": "1ce66b5993139ed78f945a91ad44b530fd391daef39c2657b8c3c712d5c21097"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/bufferbinding": {
@@ -442,7 +442,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/bufferbinding/init(attachment:type:)": {
       "etag": "\"2469-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/bufferbinding/init-attachmenttype.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/bufferbinding/init(attachment,type).md",
       "hash": "80d4f2f0b84ef689d86c9f9aa5fc459e7c55c74a1aba58ac39d20e493d4a409f"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/bufferbinding/type": {
@@ -462,7 +462,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/init(_:)": {
       "etag": "\"1266-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/init(_).md",
       "hash": "c070afb6e6978dac23484fc917323ee605fbe188047bdaf189109b745ff6dbae"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location": {
@@ -472,17 +472,17 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/buffer(index:sizeoffset:)": {
       "etag": "\"1b91-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/buffer-indexsizeoffset.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/buffer(index,sizeoffset).md",
       "hash": "4f5311c8b61e3f1028bf4542f0bc91e83247e7e2504d02601f8d0ab72a284546"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/constant(value:)": {
       "etag": "\"18f8-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/constant-value.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/constant(value).md",
       "hash": "35789edd7b02c726b6207dca34f0d80929b3a0ea2ba82a57c0fb8052ff92f1dc"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/constantbuffer(index:offset:)": {
       "etag": "\"1b88-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/constantbuffer-indexoffset.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/constantbuffer(index,offset).md",
       "hash": "0a735a3e4a1f042cf265343ae650935530e4c8c014cea792431c179ead53cbb7"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/context": {
@@ -492,22 +492,22 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/devicebuffer(index:offset:)": {
       "etag": "\"1b6e-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/devicebuffer-indexoffset.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/devicebuffer(index,offset).md",
       "hash": "fe6ddde185afbafcc97088c28485bded9b3b8293ce3bb70d2cbe575c79d2549c"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/port(node:index:)": {
       "etag": "\"1abd-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/port-nodeindex.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/port(node,index).md",
       "hash": "c6ab3a66639a0889de0c77e0fb007f4249c9c3c9edb2cbf812d2645959f84cfa"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/state(index:offset:length:)": {
       "etag": "\"1e08-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/state-indexoffsetlength.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/state(index,offset,length).md",
       "hash": "0473f3fdbcca5ecc201a2cdedb6e8670969c0f6999066ad828f02e198a6e9ad2"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/texture(index:)": {
       "etag": "\"1894-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/texture-index.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/texture(index).md",
       "hash": "d2dd5ca29c35d203e052ba7ab528e2bb84a1cd1c465eda0b7a293cc252034979"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/unbound": {
@@ -517,7 +517,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/location/uniform(offset:length:)": {
       "etag": "\"1c5a-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/uniform-offsetlength.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/uniform(offset,length).md",
       "hash": "0c11c8beb9a319a36c52e43b73cf36447ab6f834c89d6fe8d7105d4f9ceada35"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/nameduniforms": {
@@ -542,7 +542,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/texturebinding/init(attachment:type:)": {
       "etag": "\"234f-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/texturebinding/init-attachmenttype.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/texturebinding/init(attachment,type).md",
       "hash": "a51e41468c5d3bef7ff221c8416e279533f961d6baf4b9c3cdd8983353d0a7ad"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/texturebinding/type": {
@@ -562,7 +562,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/uniformbinding/init(location:type:)": {
       "etag": "\"23e9-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/uniformbinding/init-locationtype.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/uniformbinding/init(location,type).md",
       "hash": "e6532187e618ed0cdf3f5bad19620ea60eada9a7b4965667437f8e94af7772dd"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/uniformbinding/location": {
@@ -587,27 +587,27 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/canaddedge(_:)": {
       "etag": "\"2049-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/canaddedge.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/canaddedge(_).md",
       "hash": "81e23fbc87e6552d7403f5c2cce09ef1dc0f061d26eb9b20c8c1222b2cb426b4"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/canaddnode(_:)": {
       "etag": "\"214e-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/canaddnode.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/canaddnode(_).md",
       "hash": "22d8b5b2b00156fd48bbe02277e2f5517fff2e8bf59622dfabc26b76e99cf889"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/contains(edge:)": {
       "etag": "\"1ab3-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/contains-edge.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/contains(edge).md",
       "hash": "260ad6a893e9842f817bbae014fdaed3ac31ab4e0cda17df0668ff3eb0be9de2"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/contains(node:)": {
       "etag": "\"1ae5-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/contains-node.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/contains(node).md",
       "hash": "563907239acb87268c39283630b17f604cd1d228d0328b78d4f8965cabc53bb7"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/data(using:)": {
       "etag": "\"209d-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/data-using.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/data(using).md",
       "hash": "b788ab9e43a4ace74c60ef8a304e2e88bfb729048ecbbb24aa647d5e8317bd48"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/datatype": {
@@ -622,7 +622,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/datatype/init(_:)": {
       "etag": "\"150b-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/datatype/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/datatype/init(_).md",
       "hash": "531b7639cb9feac6bafcd9f8e61575c17d481883e030df68af568b8cb6189c16"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/edge": {
@@ -632,7 +632,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/edge/init(source:target:)": {
       "etag": "\"216c-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/edge/init-sourcetarget.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/edge/init(source,target).md",
       "hash": "58a6515881a4bc89ba5c05f77f360f7f49780be9445f895d6efa48193e0c64f8"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/edge/source": {
@@ -667,12 +667,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/init()": {
       "etag": "\"cff-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/init().md",
       "hash": "8bb88b35b0de26bdafd9a6fbc9987b3f9326fa2d2b06c8f0151143547f0e5fb6"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/init(data:)": {
       "etag": "\"1e23-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/init-data.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/init(data).md",
       "hash": "f1d12ef5e4713f513db47bba1262272dc1ea6bb1c22a502603059aa3880b1d11"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library": {
@@ -682,12 +682,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/definition(named:in:)": {
       "etag": "\"2183-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definition-namedin.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definition(named,in).md",
       "hash": "1a52810ce203a6c0e4681797e2ea5f067e80fff0a8ae8164b045ca985dddc495"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/definition(stage:)": {
       "etag": "\"1f68-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definition-stage.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definition(stage).md",
       "hash": "2d664fc2134cc1740d9be54c10a90a70ccce9e2d6c2fd4121c9c5ede66215431"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/definitions": {
@@ -697,37 +697,37 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/definitionsmatching(input:)": {
       "etag": "\"20fb-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching-input.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching(input).md",
       "hash": "3520fd138c4ccd871e6ecb92948ec870471bb8cebd69dd49aa28f764eaca19cb"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/definitionsmatching(inputs:)": {
       "etag": "\"22a7-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching-inputs.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching(inputs).md",
       "hash": "ca8b3a3d92443c291a090d35985c2c9f66dd282d45b688ba5f856eca6c50f496"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/definitionsmatching(output:)": {
       "etag": "\"2108-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching-output.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching(output).md",
       "hash": "59401a33607433b87579f898fb89a1798a7b120d2ff9331d36954ea883e6e2d1"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/init()": {
       "etag": "\"107c-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/init().md",
       "hash": "d3960a1cfd96ca73261257974a3c2378e859b39be4f24378b8df5e3fe345d486"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/init(bundle:)": {
       "etag": "\"18c8-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/init-bundle.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/init(bundle).md",
       "hash": "4b7e1f931d0cc4c0732cebd1b872c5fc3d8274f0c9c8c2c03bb72fc79f0187df"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/init(from:bundleidentifier:)": {
       "etag": "\"1c95-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/init-frombundleidentifier.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/init(from,bundleidentifier).md",
       "hash": "b4e770a4aa089fb28c2abcaaa9b784e41310ff845e3201a0ffbb0ec1471cdaf5"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/merge(contentsof:)": {
       "etag": "\"18df-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/merge-contentsof.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/merge(contentsof).md",
       "hash": "8441837714ec9f43d47b1b280c756dbab329ece0c3255815e0cb763e06d3c78a"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/library/shared": {
@@ -747,7 +747,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/libraryreference/init(library:bundle:)": {
       "etag": "\"1ac4-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/libraryreference/init-librarybundle.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/libraryreference/init(library,bundle).md",
       "hash": "f1aa28bcc44809df87b7b74db963ef20a892dd9bf159317dca79e0e8db9e8a2e"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/libraryreference/library": {
@@ -762,7 +762,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/metadata/init(values:)": {
       "etag": "\"15a7-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/metadata/init-values.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/metadata/init(values).md",
       "hash": "8272853ddc34f1846370190bba3b1bfb2b02ce68dedbf3d41383b5c2262e267c"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/metadata/values": {
@@ -782,32 +782,32 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/init(definition:label:)": {
       "etag": "\"1b69-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/init-definitionlabel.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/init(definition,label).md",
       "hash": "8058a89bd7fb8fbf7ff62d5e9d440361ffad0810101c0329fbf6b7aaaf82a075"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/input(at:)": {
       "etag": "\"18e2-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/input-at.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/input(at).md",
       "hash": "addca347ca0eba352d9e4b754f48ec8a7b63e8094fbc3ce90a6a5a9ed237b254"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/input(named:)": {
       "etag": "\"193e-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/input-named.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/input(named).md",
       "hash": "493d54fb8281799b7f0d0d4b2ac35f33e32f4ad6cfa1e247b3d56f87a321c7fb"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/inputdata(named:)": {
       "etag": "\"183c-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/inputdata-named.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/inputdata(named).md",
       "hash": "1f82c902c656b1b90f8f9736f5e0e9381f98aa9f4e97fd090e78bae0ee2cebae"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/kind-swift.enum": {
       "etag": "\"25de-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swiftenum.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum.md",
       "hash": "94613fd641ab6782625ab0cacfa457e8a33c827106185e1c2f86f1277ab1d403"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/kind-swift.enum/grouping(nodes:)": {
       "etag": "\"1c2c-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum/grouping-nodes.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum/grouping(nodes).md",
       "hash": "13ea3de5eedcc3ba888b2bbaebb140662da17979775bf3f1fe127e53354fc0ab"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/kind-swift.enum/primitive": {
@@ -817,12 +817,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/kind-swift.enum/sequence(nodes:)": {
       "etag": "\"1b10-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum/sequence-nodes.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum/sequence(nodes).md",
       "hash": "3214f015c1f3e6f10fcd295337bad5c6164d09f394cba62f63a54da34eb1e5b9"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/kind-swift.property": {
       "etag": "\"1842-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.property.md",
       "hash": "3c055900d448d8f9e71b218020b9c38dd07057026345c8dc002956f3bcb76cbd"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/label": {
@@ -837,32 +837,32 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/setinput(_:_:)-2ittk": {
       "etag": "\"1a1c-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-2ittk.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(_,_)-2ittk.md",
       "hash": "dd00be63a6ca287fa94bc3c63ccc5beff4e9d25be586066ed95e3c02d57b11ea"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/setinput(_:_:)-35srn": {
       "etag": "\"1c37-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-35srn.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(_,_)-35srn.md",
       "hash": "29ac95c1ba29aa452b19e5f1e1f9e57b3c8cfccd2116910ec036bda7de54c5b4"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/setinput(_:_:)-3yk57": {
       "etag": "\"1a14-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-3yk57.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(_,_)-3yk57.md",
       "hash": "2ae277fa7722b1baaf530980587a535db76cec6529f2ef42d267bee497356fc9"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/setinput(_:_:)-9n5yb": {
       "etag": "\"1d7d-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-9n5yb.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(_,_)-9n5yb.md",
       "hash": "6a217525826353f0ce582cdc8df2871eccf7884eb1c2f8f42604b8f870248dc5"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/setinput(at:_:)-95j9n": {
       "etag": "\"19e9-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-at-95j9n.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(at,_)-95j9n.md",
       "hash": "a211757ef46d9239316069fd48e2cb6fe6ac43e88a84f344004cf1404ddc6ceb"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/setinput(at:_:)-9xg3z": {
       "etag": "\"18c2-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-at-9xg3z.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(at,_)-9xg3z.md",
       "hash": "a9e314ee90efe49d0456a211d1ce32a3b69a9e47f60dca61b5870874e76518bd"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/node/uniforms": {
@@ -882,12 +882,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/init(name:bundle:inputs:outputs:kind:)": {
       "etag": "\"2ca1-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/init-namebundleinputsoutputskind.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/init(name,bundle,inputs,outputs,kind).md",
       "hash": "dc81da16528c1ae2a92ee926e8844d8721de7b143bcd37ea6673450d764d36eb"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/init(name:inputs:outputs:kind:)": {
       "etag": "\"2a0b-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/init-nameinputsoutputskind.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/init(name,inputs,outputs,kind).md",
       "hash": "6655bf69d77eb1d2330fcc92e6bb9ef5affd488619ece8a5cbcccda915595a79"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/inputs": {
@@ -897,37 +897,37 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum": {
       "etag": "\"6fdc-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swiftenum.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum.md",
       "hash": "1a5969bf535881d0a150bcac39b1b6b45b0e85871ffd351dce03800f07b25402"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/binaryarithmetic(a:b:operation:)": {
       "etag": "\"262a-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/binaryarithmetic-aboperation.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/binaryarithmetic(a,b,operation).md",
       "hash": "b5e8ed320b58ca7bef6931ed57ab2ccb20181148fa33fb2462e064ac5485a705"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/compose(type:)": {
       "etag": "\"1c26-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/compose-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/compose(type).md",
       "hash": "700b37e6c90c2a25768a862c57162cf9c11bfa1ee2c9fe962fdc9d87197742eb"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/convert(from:to:)": {
       "etag": "\"2195-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/convert-fromto.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/convert(from,to).md",
       "hash": "173bd51407b14de85fbd5b73de5d8dd50b6e95e7efaee7c4f88cd287ecd9a558"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/decompose(type:)": {
       "etag": "\"1c6e-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/decompose-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/decompose(type).md",
       "hash": "1ceeb47c1ec54e0c70c49c50d5d025cc0f60f5dd791b9bb78f06b0ee1d298899"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/fieldreference(type:)": {
       "etag": "\"1cf8-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/fieldreference-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/fieldreference(type).md",
       "hash": "accfa2718a85c5706fccfe4e37b7b916a394f0512da2bc99334e77f0f7b3c4e8"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/function(name:bundle:)": {
       "etag": "\"1bc0-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/function-namebundle.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/function(name,bundle).md",
       "hash": "c1b53fc9f9cfa79f00dd4806abdd3cbdca1b2ac4d13be9cc03b7f0ab691dfd67"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/graphglobal": {
@@ -942,52 +942,52 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/loadstate(definition:)": {
       "etag": "\"1c9a-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/loadstate-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/loadstate(definition).md",
       "hash": "cfd90c9b2ce36ce165d26618629060d556f673b73d33e61bb9da8fb585744683"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/reinterpret(from:to:)": {
       "etag": "\"2221-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/reinterpret-fromto.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/reinterpret(from,to).md",
       "hash": "60873b7b09a9031d89193f9aaacab0ce290e8fe56154530ed5e2df791e180b9a"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/sampletexture(sampler:)": {
       "etag": "\"1c71-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/sampletexture-sampler.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/sampletexture(sampler).md",
       "hash": "a9ab903ba994803f4358f4bfaa0f020debfc76be41306f3e2b782f64e815aaf4"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/stage(type:)": {
       "etag": "\"1ca2-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/stage-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/stage(type).md",
       "hash": "bd85e4573d261ba3848ed97b88cd035c9ea24809f62378e966f7df7712b8f78b"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/standardlibrary(type:function:)": {
       "etag": "\"2197-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/standardlibrary-typefunction.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/standardlibrary(type,function).md",
       "hash": "9221781f3c0c00df70098783c3df894db14199b239b8284d3401e578819895c2"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/storestate(definition:)": {
       "etag": "\"1c9c-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/storestate-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/storestate(definition).md",
       "hash": "96888cad11b0f9397b654cd44bb070e4cf05bc0feb4de0fd9e3e1b0c60750b96"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/swizzle(type:channels:)": {
       "etag": "\"233a-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/swizzle-typechannels.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/swizzle(type,channels).md",
       "hash": "8b9cc2df0f136aae20d5b6aeffee13774a1b0e9519e58abe2de4e341b0617deb"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/texturereference(port:)": {
       "etag": "\"1995-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/texturereference-port.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/texturereference(port).md",
       "hash": "cba4c462ab53762b55bc6879790121a9392c99cf878fe5bef9c797142e8161e3"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/unaryarithmetic(type:operation:)": {
       "etag": "\"21a3-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/unaryarithmetic-typeoperation.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/unaryarithmetic(type,operation).md",
       "hash": "38b311f52c775dd2f3af71ae9411d407516a6a24fcc805b39e089fadce9c669a"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.property": {
       "etag": "\"1901-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.property.md",
       "hash": "3fe4012d8f2d8e977aceee6ccd025aa94d7e43c6a8a0ec141dda8936ffebf9f1"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/name": {
@@ -1002,7 +1002,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodedefinition/stage(_:)": {
       "etag": "\"1bd2-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/stage.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/stage(_).md",
       "hash": "46550b04bd0af46c5741bcd3e8b4bca6339f3d0cfefee2a088446add4887c6a8"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/nodeid": {
@@ -1027,32 +1027,32 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/init(_:)-2h68e": {
       "etag": "\"1545-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init-2h68e.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init(_)-2h68e.md",
       "hash": "e24293b67c6e7edec42851c8e05e65a0d1f5d6b8777b76187e6388eebc2e6bb3"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/init(_:)-5cutl": {
       "etag": "\"148b-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init-5cutl.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init(_)-5cutl.md",
       "hash": "d2180aadca261d434a955d4ad487d935315e236653ba64d1f2b4615862b3944c"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/init(descriptor:)-1jzxc": {
       "etag": "\"18fb-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init-descriptor-1jzxc.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init(descriptor)-1jzxc.md",
       "hash": "bd24688652973f3ba4643fb911d7188a49f5a0c377750b1d938d1a5a6b6dd9f3"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/init(descriptor:)-2t8g4": {
       "etag": "\"19b4-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init-descriptor-2t8g4.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init(descriptor)-2t8g4.md",
       "hash": "25ae56836b3e5ac200461ab6f3fbbe9ec6b724798c2ab1dea908dcfa386c9556"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/options-swift.property": {
       "etag": "\"196e-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.property.md",
       "hash": "38a74825b81357189fee2966076af858c41302f1b3edce1055a4daf2d7c26658"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/options-swift.struct": {
       "etag": "\"23a9-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swiftstruct.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct.md",
       "hash": "daaf6cbe791b36cc08f13e96d82cde3c9a784a108236b9c076b901d45711a1c2"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/options-swift.struct/debugdraw": {
@@ -1062,12 +1062,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/options-swift.struct/init()": {
       "etag": "\"1335-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct/init().md",
       "hash": "c6e5107c107d47eea542c69be69428e32dc0201d2075c1c2296b71d111fdbd7f"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelines/options-swift.struct/init(debugdraw:)": {
       "etag": "\"1829-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct/init-debugdraw.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct/init(debugdraw).md",
       "hash": "a24ca3f39e3649c62410cbb92ae9895278dbe7bceaa78be32cf7e75473a162c6"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelinesdescriptor": {
@@ -1077,7 +1077,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelinesdescriptor/addlibrary(_:bundle:)": {
       "etag": "\"1c0f-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/addlibrary-bundle.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/addlibrary(_,bundle).md",
       "hash": "d7fb6ddad88c0b00b579d6cb93e359599423e71e59b11fcdaa6be6f2538adb18"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelinesdescriptor/assembly": {
@@ -1087,7 +1087,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelinesdescriptor/init(assembly:)": {
       "etag": "\"2222-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/init-assembly.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/init(assembly).md",
       "hash": "331d88fb31289f79a8590cfc8ddc19939a3b65cffd8c87f1afc839d2ccf6be8a"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelinesdescriptor/libraries": {
@@ -1102,7 +1102,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pipelinesdescriptor/setlibrary(_:)": {
       "etag": "\"1914-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/setlibrary.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/setlibrary(_).md",
       "hash": "9c17dcab5b56be22af786f1e578535d485241a5fe3c801e71f7aa206649a7a9a"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/pointerdefinition": {
@@ -1127,7 +1127,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/port/address/init(node:index:)": {
       "etag": "\"1d6c-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/port/address/init-nodeindex.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/port/address/init(node,index).md",
       "hash": "ed0ac5974fc56299977d6d66fd2b388fee12ce56b5dd227bbafa9148451f0f1e"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/port/address/node": {
@@ -1207,7 +1207,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/portdefinition/init(name:kind:type:options:)": {
       "etag": "\"30da-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/portdefinition/init-namekindtypeoptions.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/portdefinition/init(name,kind,type,options).md",
       "hash": "5aebfb09df4699cf428dbfccf93bca3b67239a0eceb11b1c636fe421709550aa"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/portdefinition/kind": {
@@ -1232,17 +1232,17 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/removeedge(_:)": {
       "etag": "\"1b84-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/removeedge.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/removeedge(_).md",
       "hash": "25c49564278f4d4e3ff333aa5d81cb91a40688ec58c7977ef93d8df774e46081"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/removenode(_:)": {
       "etag": "\"1734-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/removenode.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/removenode(_).md",
       "hash": "3889464fc4a44d17f420202748040d8f77a7f407c68d8c587ea2266872f1e449"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/replaceall(nodes:edges:)": {
       "etag": "\"25df-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/replaceall-nodesedges.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/replaceall(nodes,edges).md",
       "hash": "bfd9454a3a46349b24d761cf2a111cfe2b813046ce356d1e74c72d4aae71138d"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/samplersettings": {
@@ -1262,7 +1262,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/samplersettings/init(texture:address:filter:)": {
       "etag": "\"22d2-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/samplersettings/init-textureaddressfilter.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/samplersettings/init(texture,address,filter).md",
       "hash": "fcb25054882c066a9dd2c139ea3613b1f32314737a52ca69382cf124f47f1c15"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/samplersettings/texture": {
@@ -1277,7 +1277,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/scope/init(_:)": {
       "etag": "\"13f1-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/scope/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/scope/init(_).md",
       "hash": "7de5811a8ae8d3ee575ab119ddbb1ba73d959e4dc9e2c276178422bf2395dc89"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/scope/name": {
@@ -1292,7 +1292,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/stage/canaddnode(with:)": {
       "etag": "\"1e86-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/stage/canaddnode-with.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/stage/canaddnode(with).md",
       "hash": "db32cd4f3ae06fd45072d12075ebfbee4ff23493ba7e7e25ec53d8c1884ccaad"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/stage/compute": {
@@ -1312,7 +1312,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/stage/init(_:)": {
       "etag": "\"1411-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/stage/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/stage/init(_).md",
       "hash": "7c6cb137eaa9fd98b47d8a5903ea89f3f55cd3f4444ca261d6ffd0bbe92523a8"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/stage/initialize": {
@@ -1347,17 +1347,17 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statedefinition/init(scope:options:type:)": {
       "etag": "\"2870-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/init-scopeoptionstype.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/init(scope,options,type).md",
       "hash": "c9f5e87daf3a01a1f67d4af0035cc013c7530030ad4a8aa782e1a8e4b2989326"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statedefinition/options-swift.property": {
       "etag": "\"1c0f-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/options-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/options-swift.property.md",
       "hash": "a215148f828bdb70738a68b7a093d3ccae4e8a1bf0e64214c9d713955eb7366e"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statedefinition/options-swift.struct": {
       "etag": "\"2e59-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/options-swiftstruct.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/options-swift.struct.md",
       "hash": "c33fdc78798392345a4b3703a6f106b12d9c1b0b09b9e077ac1e0bc58e936f12"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statedefinition/options-swift.struct/read": {
@@ -1387,32 +1387,32 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statetype/array(definition:)": {
       "etag": "\"1905-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/array-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/array(definition).md",
       "hash": "bb8836d7d3d63fa23c2b90ecb8d12091d488c6b3c65a2249d6b7e61bcf9a0cd3"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statetype/data(length:)": {
       "etag": "\"15ac-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/data-length.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/data(length).md",
       "hash": "65a56cc2d766b2f9029d44ab0e57aba5dd1f6f48bf2af5279931ffa2d913768d"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statetype/datatype(type:)": {
       "etag": "\"1776-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/datatype-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/datatype(type).md",
       "hash": "a354e71fd688480681a061003476d44ca866da6c2f2cb5bec781e0cf6455df0b"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statetype/loadbuffer(from:)": {
       "etag": "\"1c62-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/loadbuffer-from.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/loadbuffer(from).md",
       "hash": "485f5c3b755867cf897597b3d80f08b6c979cec2f1c8007eed4a8c6d1ddcfb8f"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statetype/primitive(type:)": {
       "etag": "\"1882-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/primitive-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/primitive(type).md",
       "hash": "395136c528d5079a452a85774dc0a013cc900f23e529a2bafd8fd50be1725ec1"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/statetype/structure(definition:)": {
       "etag": "\"19c0-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/structure-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/structure(definition).md",
       "hash": "8e485657e604b7714872a0844e2b8333adbdd2d019b5a187747bc93d2f3ac406"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/structuredefinition": {
@@ -1422,7 +1422,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/structuredefinition/init(typename:layout:)": {
       "etag": "\"1c66-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/structuredefinition/init-typenamelayout.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/structuredefinition/init(typename,layout).md",
       "hash": "31c00de7589b19527ca07dfd2c163c5bb5a92c980f8e4433d28eae2ce505ba20"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/structuredefinition/layout": {
@@ -1442,7 +1442,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/structurelayout/init()": {
       "etag": "\"fff-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/structurelayout/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/structurelayout/init().md",
       "hash": "5d7de881fb1b61e324b5f2186bd5ff0ce9b078937924b8d05439e7d3ef7fbd1d"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/structurelayout/member": {
@@ -1457,7 +1457,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/structurelayout/member/init(name:type:offset:)": {
       "etag": "\"215e-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/structurelayout/member/init-nametypeoffset.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/structurelayout/member/init(name,type,offset).md",
       "hash": "f1db5b5963f94e678ee42ebf9ad3ec5a035064e805b9a2c45aec398f1f9b0de3"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/structurelayout/member/lengthinbytes": {
@@ -1507,7 +1507,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/subscript(_:)": {
       "etag": "\"1bc6-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/subscript.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/subscript(_).md",
       "hash": "0ecfea92e9cae2ee8aab4c411125bbf212bdd005da92e925ff53ac8f37b945ad"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/swizzlechannels": {
@@ -1532,12 +1532,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/swizzlechannels/init()": {
       "etag": "\"fff-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/swizzlechannels/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/swizzlechannels/init().md",
       "hash": "402223631c41a38352104a7f966af583f9c8f40d8e26876aee954ecce26cd80a"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/swizzlechannels/init(red:green:blue:alpha:)": {
       "etag": "\"2eb7-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/swizzlechannels/init-redgreenbluealpha.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/swizzlechannels/init(red,green,blue,alpha).md",
       "hash": "2c8614eba982cc09b37005a702ba8c0f90a6f6a4e22f0d6b763a10a7130d7264"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/swizzlechannels/red": {
@@ -1617,7 +1617,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/updatenode(_:forkey:)": {
       "etag": "\"1e31-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/updatenode-forkey.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/updatenode(_,forkey).md",
       "hash": "0a5cb26e2100704ab756fbdec3b9c7b7776947d35577b4ef3606165801a8f939"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype": {
@@ -1627,17 +1627,17 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/data(length:)": {
       "etag": "\"164f-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/data-length.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/data(length).md",
       "hash": "6047b336abf7e79ca667210d6698de8c393c9e698074499e256755e544c5532e"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/datatype(type:)": {
       "etag": "\"17ff-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/datatype-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/datatype(type).md",
       "hash": "a470d25bd542394a8d8365360ef625d5518768bcc1ed731f79a3beeb60558d0a"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/enumeration(typename:)": {
       "etag": "\"16e5-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/enumeration-typename.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/enumeration(typename).md",
       "hash": "98a599d4a331a6830afaf0a141442707cbcd0e7b1f1541003ee54aa8e7d4f380"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/none": {
@@ -1647,27 +1647,27 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/opaque(typename:)": {
       "etag": "\"169f-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/opaque-typename.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/opaque(typename).md",
       "hash": "b8a2c8743d36d1663f369c1480ae29f7af8e2943cb39d74e5fabb282093f3676"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/pointer(type:)": {
       "etag": "\"18e8-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/pointer-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/pointer(type).md",
       "hash": "89ab800aa92a121253fdfc61c5da3802a8b6db6a5671b1182e5f18fe4f46c290"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/primitive(_:)": {
       "etag": "\"1b47-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/primitive.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/primitive(_).md",
       "hash": "eba12df2401f9300bf19a6202db86d6e4eb978717ab330e40c9688fc9ad81f09"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/primitive(type:)": {
       "etag": "\"190d-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/primitive-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/primitive(type).md",
       "hash": "e49026f9ed127df6280eea65f80f1a9e6f6c74853b38878fe249b32abd5b3e9b"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/state(definition:)": {
       "etag": "\"19cf-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/state-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/state(definition).md",
       "hash": "98094b5b365fe765225e44c35735abc8c8f72935f078c6b71b79ad01a32707f4"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/string": {
@@ -1677,17 +1677,17 @@
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/structure(definition:)": {
       "etag": "\"1a53-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/structure-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/structure(definition).md",
       "hash": "c04884c54372d9de6709e305edc426c00160c3c42498178e30b14a54c2f7dfe7"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/structure(typename:layout:)": {
       "etag": "\"21d1-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/structure-typenamelayout.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/structure(typename,layout).md",
       "hash": "4b7ad76c4001f036a8e2299bbaecf253dffd62afbc31b37edd421a617c39306e"
     },
     "https://developer.apple.com/documentation/computegraph/computenodegraph/valuetype/texture(typename:)": {
       "etag": "\"1704-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/texture-typename.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/texture(typename).md",
       "hash": "b72e365aaa207c3b0010f5741a05c0c0a0a12e68095074f95b87864f83cf94ac"
     },
     "https://developer.apple.com/documentation/computegraph/coordinatespace": {
@@ -1757,7 +1757,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/element_integrate": {
       "etag": "\"3322-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/element-integrate.md",
+      "file_path": "documentation/ComputeGraph/element_integrate.md",
       "hash": "97c2f2c88759139e84f7d52aff0895905b6748d5689076fdb0bba1d5a1445edd"
     },
     "https://developer.apple.com/documentation/computegraph/elementgrouping": {
@@ -1792,7 +1792,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/elementspawnparameters/init(position:velocity:size:color:lifetime:)": {
       "etag": "\"2dff-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/elementspawnparameters/init-positionvelocitysizecolorlifetime.md",
+      "file_path": "documentation/ComputeGraph/elementspawnparameters/init(position,velocity,size,color,lifetime).md",
       "hash": "a6740c735299cad83bda8a1813205e5394bea4280cdb008a594a3ca45da225fe"
     },
     "https://developer.apple.com/documentation/computegraph/elementspawnparameters/lifetime": {
@@ -2062,17 +2062,17 @@
     },
     "https://developer.apple.com/documentation/computegraph/mouseparams/has_value": {
       "etag": "\"1ceb-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/mouseparams/has-value.md",
+      "file_path": "documentation/ComputeGraph/mouseparams/has_value.md",
       "hash": "dc7e2dc3af1ef6b73e6d994dc21d1d474e9d6cfcf05bdd002bb2d6985774011b"
     },
     "https://developer.apple.com/documentation/computegraph/mouseparams/init()": {
       "etag": "\"ec1-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/mouseparams/init.md",
+      "file_path": "documentation/ComputeGraph/mouseparams/init().md",
       "hash": "75d4ccf84d44c8e2d30f71ad3e50ea02d3146a4bc90af13f74aaa9f804a8f284"
     },
     "https://developer.apple.com/documentation/computegraph/mouseparams/init(position:direction:has_value:)": {
       "etag": "\"1c0a-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/mouseparams/init-positiondirectionhas-value.md",
+      "file_path": "documentation/ComputeGraph/mouseparams/init(position,direction,has_value).md",
       "hash": "26d318133266cff1a878597f3f9c148c447fa54f3c40d6ff7d2a5ecfb8fc8ff9"
     },
     "https://developer.apple.com/documentation/computegraph/mouseparams/position": {
@@ -2082,7 +2082,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/orient_to_velocity": {
       "etag": "\"330b-65d55e2524a9c-df\"",
-      "file_path": "documentation/ComputeGraph/orient-to-velocity.md",
+      "file_path": "documentation/ComputeGraph/orient_to_velocity.md",
       "hash": "17eb8e842b0bcb460817812e6d3e0708ff35a631059a6a34c3a6580e49257938"
     },
     "https://developer.apple.com/documentation/computegraph/output": {
@@ -2182,7 +2182,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/portreference/init(group:port:)": {
       "etag": "\"13a3-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/portreference/init-groupport.md",
+      "file_path": "documentation/ComputeGraph/portreference/init(group,port).md",
       "hash": "fbc6c8bb1043199a6d7d12fd60e977aae8189c7a93c23c8a594a3ae7d620aec9"
     },
     "https://developer.apple.com/documentation/computegraph/portreference/port": {
@@ -2197,82 +2197,82 @@
     },
     "https://developer.apple.com/documentation/computegraph/random/float2_01": {
       "etag": "\"12f5-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float2-01.md",
+      "file_path": "documentation/ComputeGraph/random/float2_01.md",
       "hash": "4f5c997181d7e63d5f58e672abb497ee4f18655d3b2619868b451c5ff68cfb6a"
     },
     "https://developer.apple.com/documentation/computegraph/random/float2_01_using": {
       "etag": "\"156a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float2-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/float2_01_using.md",
       "hash": "62f6493c45f6029210ed59090fc29a4a68587d9a961a55c4d67b4ff6dbd46d47"
     },
     "https://developer.apple.com/documentation/computegraph/random/float3_01": {
       "etag": "\"12f5-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float3-01.md",
+      "file_path": "documentation/ComputeGraph/random/float3_01.md",
       "hash": "ac12aa99bc200eb47e428f929efa8c3835233bee222369412407e41a8bc4e424"
     },
     "https://developer.apple.com/documentation/computegraph/random/float3_01_using": {
       "etag": "\"1572-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float3-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/float3_01_using.md",
       "hash": "e0eecc5c85361c79bf1c68812b12bb7972d2b2aa968f135447bb6b599ab62c1d"
     },
     "https://developer.apple.com/documentation/computegraph/random/float4_01": {
       "etag": "\"12f5-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float4-01.md",
+      "file_path": "documentation/ComputeGraph/random/float4_01.md",
       "hash": "87b51db5fc596bf9925c39fbba6fce763c7a7ef0dd213a5ae6fa4d37e8db9cdf"
     },
     "https://developer.apple.com/documentation/computegraph/random/float4_01_using": {
       "etag": "\"157a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float4-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/float4_01_using.md",
       "hash": "01fd58dc8e5a8334be832feb5e64f212396ef84bb9ebcad0e760ab8609d63bc6"
     },
     "https://developer.apple.com/documentation/computegraph/random/float_01": {
       "etag": "\"123a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float-01.md",
+      "file_path": "documentation/ComputeGraph/random/float_01.md",
       "hash": "5b5a6d6189b03b1f687fd247285c3069a7d041a144979d38b1af31316d7ccbc2"
     },
     "https://developer.apple.com/documentation/computegraph/random/float_01_using": {
       "etag": "\"1497-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/float_01_using.md",
       "hash": "6b97ca54dc587540eedce908d7e46308ff72487a5033e6a719f6c0856edc5c26"
     },
     "https://developer.apple.com/documentation/computegraph/random/half2_01": {
       "etag": "\"12d7-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half2-01.md",
+      "file_path": "documentation/ComputeGraph/random/half2_01.md",
       "hash": "4e7f2e1a5e1b0de454124419bcb3c31491a047a82cb5d2f0186919efc313ca35"
     },
     "https://developer.apple.com/documentation/computegraph/random/half2_01_using": {
       "etag": "\"154c-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half2-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/half2_01_using.md",
       "hash": "24e432741e569b75ae4caa392ccec67518ec024cd2c32e437fdc2d34a40e700f"
     },
     "https://developer.apple.com/documentation/computegraph/random/half3_01": {
       "etag": "\"12d7-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half3-01.md",
+      "file_path": "documentation/ComputeGraph/random/half3_01.md",
       "hash": "9e7840ef992d6393bcce7a8a2ec7821a6025045fdcd615f9899aa2cdf17b7ece"
     },
     "https://developer.apple.com/documentation/computegraph/random/half3_01_using": {
       "etag": "\"1554-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half3-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/half3_01_using.md",
       "hash": "e6b2b3b1f567df5a0daca3b75693a5ab8c089cb10314094345c158435936461b"
     },
     "https://developer.apple.com/documentation/computegraph/random/half4_01": {
       "etag": "\"12d7-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half4-01.md",
+      "file_path": "documentation/ComputeGraph/random/half4_01.md",
       "hash": "62342b5c96a3c5d2ff555171c7fee20d7f4c733166cd185131209558cfd5dff5"
     },
     "https://developer.apple.com/documentation/computegraph/random/half4_01_using": {
       "etag": "\"155c-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half4-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/half4_01_using.md",
       "hash": "3df0acfb14ecee2e364bc97277bf2486931feba52a2b3e94d7351103f839e0ef"
     },
     "https://developer.apple.com/documentation/computegraph/random/half_01": {
       "etag": "\"121c-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half-01.md",
+      "file_path": "documentation/ComputeGraph/random/half_01.md",
       "hash": "3ad4fd828cce08f255d0b3ca7c95e4ad0a2bc20e2077665efa06c65d0582274b"
     },
     "https://developer.apple.com/documentation/computegraph/random/half_01_using": {
       "etag": "\"1479-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/half_01_using.md",
       "hash": "2e7a9cf75ac37c87951644f133b2d82ea628073df56c208ae011e70e612a334c"
     },
     "https://developer.apple.com/documentation/computegraph/random/integer": {
@@ -2282,7 +2282,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/random/integer_using": {
       "etag": "\"14d7-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/integer-using.md",
+      "file_path": "documentation/ComputeGraph/random/integer_using.md",
       "hash": "5a90a1cfdb1eba057b98e9bc213af0517119e80771a00c694299101f05041319"
     },
     "https://developer.apple.com/documentation/computegraph/random/seed": {
@@ -2322,7 +2322,7 @@
     },
     "https://developer.apple.com/documentation/computegraph/spawn_demo": {
       "etag": "\"2f81-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/spawn-demo.md",
+      "file_path": "documentation/ComputeGraph/spawn_demo.md",
       "hash": "830f4f38c4ecb39369fd1673e396e8e7a111172e30dd7a7b8463a68b44cb7e71"
     },
     "https://developer.apple.com/documentation/computegraph/standardlibraryfunction": {
@@ -2762,12 +2762,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/texture_sample": {
       "etag": "\"3103-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/texture-sample.md",
+      "file_path": "documentation/ComputeGraph/texture_sample.md",
       "hash": "4d294edef9e7a87fcd6bdadab0a7915c920563ae11d4790ccb47ef1d9fb11de6"
     },
     "https://developer.apple.com/documentation/computegraph/texture_sample1d": {
       "etag": "\"3116-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/texture-sample1d.md",
+      "file_path": "documentation/ComputeGraph/texture_sample1d.md",
       "hash": "103e99a50faca765d3928de204748270391730e13ca4c70291aaa82c6748851f"
     },
     "https://developer.apple.com/documentation/computegraph/unaryoperation": {
@@ -2797,12 +2797,12 @@
     },
     "https://developer.apple.com/documentation/computegraph/viewpoint-swift.func": {
       "etag": "\"321e-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swiftfunc.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.func.md",
       "hash": "7841b351f5ce8a759b0e9b7818b3c676ba8eb5e4ed79eab3d13b0930399f04bf"
     },
     "https://developer.apple.com/documentation/computegraph/viewpoint-swift.struct": {
       "etag": "\"48da-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swiftstruct.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct.md",
       "hash": "9aa061ba156c716f52e83447ff1d19f763dacd6ddb7dc1dd4b971ada11b9d8aa"
     },
     "https://developer.apple.com/documentation/computegraph/viewpoint-swift.struct/direction": {
@@ -2812,22 +2812,22 @@
     },
     "https://developer.apple.com/documentation/computegraph/viewpoint-swift.struct/has_direction": {
       "etag": "\"1d82-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/has-direction.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/has_direction.md",
       "hash": "ba625f93e85dc2147b0d22df13a4d59e3839a156d8af6aed3ead346def3e2301"
     },
     "https://developer.apple.com/documentation/computegraph/viewpoint-swift.struct/has_position": {
       "etag": "\"1d6a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/has-position.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/has_position.md",
       "hash": "8f12ef7789c3a744a3453a267a776bdaa246c96cc6f0a16bf218cc8293c0ad99"
     },
     "https://developer.apple.com/documentation/computegraph/viewpoint-swift.struct/init()": {
       "etag": "\"f2a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/init.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/init().md",
       "hash": "99f2c9bcf6931ef1e18730c096956c41e1d6e5dc3e1ed90201b706a070810f2b"
     },
     "https://developer.apple.com/documentation/computegraph/viewpoint-swift.struct/init(position:direction:has_position:has_direction:)": {
       "etag": "\"1f44-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/init-positiondirectionhas-positionhas-direction.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/init(position,direction,has_position,has_direction).md",
       "hash": "d0b76f7dadd013971e99bddd5b3e867c3ac2ace0ba954c837dbf45ec75b396ae"
     },
     "https://developer.apple.com/documentation/computegraph/viewpoint-swift.struct/position": {
@@ -2967,12 +2967,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/adduserresource(_:).json": {
       "etag": "\"1738-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/adduserresource.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/adduserresource(_).md",
       "hash": "e0a3270a9a0f42f0836b5c61881df8f84a84c2a115421e32414198c5576a3562"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/advance(_:).json": {
       "etag": "\"239e-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/advance.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/advance(_).md",
       "hash": "c7c88d057720e98725eb5d7579536835946721066cd6f36a44ff3faf81d4dc17"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/advanceparams.json": {
@@ -2997,12 +2997,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/advanceparams/init(deltatime:commandbuffer:computeencoder:).json": {
       "etag": "\"259a-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/advanceparams/init-deltatimecommandbuffercomputeencoder.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/advanceparams/init(deltatime,commandbuffer,computeencoder).md",
       "hash": "995b9375a07fe70b52db384de02f5d92f29faea1565670f6218709a547cc0986"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/advanceparams/init(deltatime:commandbuffer:computeencoder:localtoworld:worldtolocal:viewposition:viewdirection:).json": {
       "etag": "\"368a-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/advanceparams/init-deltatimecommandbuffercomputeencoderlocaltoworldworldtolocalviewpositionviewdirection.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/advanceparams/init(deltatime,commandbuffer,computeencoder,localtoworld,worldtolocal,viewposition,viewdirection).md",
       "hash": "e8dad489d9efca0c35b5cc7ab9dc78a6dd85a7251bfdd8130891aabf43ebe711"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/advanceparams/localtoworld.json": {
@@ -3032,7 +3032,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/buffer(at:).json": {
       "etag": "\"19d8-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/buffer-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/buffer(at).md",
       "hash": "48f453083beed95a45d2afa07afd7a2d12c9f1dfe926648c043a6300683b536e"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/commandqueue.json": {
@@ -3042,12 +3042,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/fastforward().json": {
       "etag": "\"f06-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/fastforward.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/fastforward().md",
       "hash": "6948c0cd6daed9e8e0f5d032a8a85bee18a88b5f7e06a37a8b4360d5fc72996f"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/fastforward(stepcount:stepdeltatime:).json": {
       "etag": "\"1f0e-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/fastforward-stepcountstepdeltatime.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/fastforward(stepcount,stepdeltatime).md",
       "hash": "ddd5b05af5d53426dc414abd922deb9b660ed1e25496ccf6eab1e67656decac4"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/graphuniforms.json": {
@@ -3057,22 +3057,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/init(pipelines:).json": {
       "etag": "\"1e51-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/init-pipelines.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/init(pipelines).md",
       "hash": "a1a6192d2bf88ec4b758c46735a088793ac91b33937882b5ba1a06b5bcc2d557"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/init(pipelines:commandqueue:).json": {
       "etag": "\"237c-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/init-pipelinescommandqueue.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/init(pipelines,commandqueue).md",
       "hash": "afed049d40bf17e8c96ebb58c9422caf30e58c1309ea0503d5609901b3690437"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/isoutputenabled(_:).json": {
       "etag": "\"194c-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/isoutputenabled.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/isoutputenabled(_).md",
       "hash": "06edfa5f0e4f0df0201f4b2cb50fdad6021f75fd7b1474f0c446aae2c0663099"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/modifyuniforms(_:).json": {
       "etag": "\"1f8e-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/modifyuniforms.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/modifyuniforms(_).md",
       "hash": "18a9f8676af78aad82a38e6c2531eec01cb75a5b193dcd64f1a1f68da3aaf42f"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/pipelines.json": {
@@ -3082,77 +3082,77 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/reset(encoder:).json": {
       "etag": "\"199a-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/reset-encoder.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/reset(encoder).md",
       "hash": "b28c51db8357fd74bb6bca3d92ffbc466e08d60e0b7dc193571c1c508be20f6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/resetrandomseeds(using:).json": {
       "etag": "\"1609-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/resetrandomseeds-using.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/resetrandomseeds(using).md",
       "hash": "7df37381365b344bc720d11f8245cf423cc3f22d9518c03218f0070d6ab72fff"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setbuffer(_:bufferoffset:at:)-772ch.json": {
       "etag": "\"2698-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer-bufferoffsetat-772ch.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer(_,bufferoffset,at)-772ch.md",
       "hash": "2ff64dcf737c69ef6dcae9a177f538bcb177ebc64fbf55c002a0af9c02521734"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setbuffer(_:bufferoffset:at:)-bmmd.json": {
       "etag": "\"1b6a-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer-bufferoffsetat-bmmd.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer(_,bufferoffset,at)-bmmd.md",
       "hash": "68e90c9adeaf7c8177af61eaf73138aa02bc62aab887787ff3eb8f8253d2ac01"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setbuffer(_:bufferoffset:elementcount:at:).json": {
       "etag": "\"291e-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer-bufferoffsetelementcountat.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffer(_,bufferoffset,elementcount,at).md",
       "hash": "b4df6167bff9a7b77cfabf3744cf52172bb659e4aaefe07a5ff036e2e9969fa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setbuffers(_:bufferoffsets:).json": {
       "etag": "\"1901-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffers-bufferoffsets.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setbuffers(_,bufferoffsets).md",
       "hash": "7349b3d96e4879bce9f8f3d62ca90a1849204374f36682601ed9af7bcfc7909f"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setoutputenabled(_:enabled:).json": {
       "etag": "\"1cc8-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setoutputenabled-enabled.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setoutputenabled(_,enabled).md",
       "hash": "70861dcfc3301c1ffbdfd0fb83e48f7f2fe3e55f86568f606713480a483d6d6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/settexture(_:at:).json": {
       "etag": "\"1afc-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/settexture-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/settexture(_,at).md",
       "hash": "ae32d88e86ab56c788fdf81839fde47d69339d128e00fe6b7abb47fc2eb3b56e"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/settextures(_:).json": {
       "etag": "\"146e-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/settextures.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/settextures(_).md",
       "hash": "c33032393c57f9199c7ce182a8ede46465b0a33515fc4c56d3c5c72884cf1650"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setuniform(_:named:).json": {
       "etag": "\"1e81-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniform-named.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniform(_,named).md",
       "hash": "be557904a457978fb05c14ee7eb021eecdb92fa96d696bc5bf74bf43c0458b0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setuniformdata(_:at:).json": {
       "etag": "\"20ea-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniformdata-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniformdata(_,at).md",
       "hash": "85063afe7fb6dfbfc47ee3229cf40570f1fd60d5e507b5d4528fe7174192d053"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setuniformvalue(_:at:).json": {
       "etag": "\"23a0-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniformvalue-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuniformvalue(_,at).md",
       "hash": "5acd8362e2e1dd77ffdc8a29f64e854c22ed786ce5f6265a6b3967fa8fda6b65"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/setuserresources(_:).json": {
       "etag": "\"1812-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuserresources.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/setuserresources(_).md",
       "hash": "797a778b082c6e5d2b5e133e66217e4cc406eab3db655d7d326d8ec26a6dfc27"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/simulationrate-swift.property.json": {
       "etag": "\"171b-65d55e2555a29-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.property.md",
       "hash": "2ac1e33694db51ada622cf79e1a8881333c0df4e236edf1b2a172ca319cf0530"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct.json": {
       "etag": "\"40d9-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swiftstruct.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct.md",
       "hash": "7a0ce4629cd081ddcee8a8dd99c8c5b00f243a1db053e6cda59e7819b595235a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/default.json": {
@@ -3167,12 +3167,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/init().json": {
       "etag": "\"1215-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/init.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/init().md",
       "hash": "9ae638a2a1f66f8b65f2a35dbac68f7f1f06c8b9d352b9fbc0c060f04fc9cfe6"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.enum.json": {
       "etag": "\"3695-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/mode-swiftenum.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.enum.md",
       "hash": "f8d82d7c0e53424312a9bd54082e65757a4bbe8c16b2b8ad79ae86160aa8d43a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.enum/fixedfrequency.json": {
@@ -3192,7 +3192,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.property.json": {
       "etag": "\"1bbb-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/mode-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/simulationrate-swift.struct/mode-swift.property.md",
       "hash": "b994141fb2559dc1b318ef54554dae178e1dfcf5f52d38494a9488227cd465a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/simulationrate-swift.struct/timedelta.json": {
@@ -3202,12 +3202,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/spawn(elements:in:using:).json": {
       "etag": "\"26a9-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/spawn-elementsinusing.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/spawn(elements,in,using).md",
       "hash": "0c4ef470af6efb395663bfb3391bff4ea2437c7164d582cbc1a981c617e5d99b"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computegraphsimulation/texture(at:).json": {
       "etag": "\"17fa-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/computegraphsimulation/texture-at.md",
+      "file_path": "documentation/ComputeGraph/computegraphsimulation/texture(at).md",
       "hash": "30b5737d263fde0a40129ab3aa3fca6539183ac720747dfd1aa5fe21e87ec219"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph.json": {
@@ -3217,12 +3217,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/addedge(_:).json": {
       "etag": "\"14e4-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/addedge.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/addedge(_).md",
       "hash": "618f7d5fed5bc6dbd7b2af0e9ee834f1ae4ebe9e5b8beddb7d4c0530afb17671"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/addnode(_:).json": {
       "etag": "\"1dbf-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/addnode.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/addnode(_).md",
       "hash": "49c5839b6756df49e9e16a0f95152076365034901ddd80e27ec573d2bc8f95c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/arraydefinition.json": {
@@ -3257,12 +3257,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/attachment/input(_:).json": {
       "etag": "\"1f41-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/attachment/input.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/attachment/input(_).md",
       "hash": "4ac7e3abf31bf1f168ede5aaa98e8a7605128f2f4eb6f6466d73f9ba37cc67b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/attachment/output(_:).json": {
       "etag": "\"1f56-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/attachment/output.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/attachment/output(_).md",
       "hash": "1ce66b5993139ed78f945a91ad44b530fd391daef39c2657b8c3c712d5c21097"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/bufferbinding.json": {
@@ -3277,7 +3277,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/bufferbinding/init(attachment:type:).json": {
       "etag": "\"2469-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/bufferbinding/init-attachmenttype.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/bufferbinding/init(attachment,type).md",
       "hash": "80d4f2f0b84ef689d86c9f9aa5fc459e7c55c74a1aba58ac39d20e493d4a409f"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/bufferbinding/type.json": {
@@ -3297,7 +3297,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/init(_:).json": {
       "etag": "\"1266-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/init(_).md",
       "hash": "c070afb6e6978dac23484fc917323ee605fbe188047bdaf189109b745ff6dbae"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location.json": {
@@ -3307,17 +3307,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/buffer(index:sizeoffset:).json": {
       "etag": "\"1b91-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/buffer-indexsizeoffset.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/buffer(index,sizeoffset).md",
       "hash": "4f5311c8b61e3f1028bf4542f0bc91e83247e7e2504d02601f8d0ab72a284546"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/constant(value:).json": {
       "etag": "\"18f8-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/constant-value.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/constant(value).md",
       "hash": "35789edd7b02c726b6207dca34f0d80929b3a0ea2ba82a57c0fb8052ff92f1dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/constantbuffer(index:offset:).json": {
       "etag": "\"1b88-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/constantbuffer-indexoffset.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/constantbuffer(index,offset).md",
       "hash": "0a735a3e4a1f042cf265343ae650935530e4c8c014cea792431c179ead53cbb7"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/context.json": {
@@ -3327,22 +3327,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/devicebuffer(index:offset:).json": {
       "etag": "\"1b6e-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/devicebuffer-indexoffset.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/devicebuffer(index,offset).md",
       "hash": "fe6ddde185afbafcc97088c28485bded9b3b8293ce3bb70d2cbe575c79d2549c"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/port(node:index:).json": {
       "etag": "\"1abd-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/port-nodeindex.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/port(node,index).md",
       "hash": "c6ab3a66639a0889de0c77e0fb007f4249c9c3c9edb2cbf812d2645959f84cfa"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/state(index:offset:length:).json": {
       "etag": "\"1e08-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/state-indexoffsetlength.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/state(index,offset,length).md",
       "hash": "0473f3fdbcca5ecc201a2cdedb6e8670969c0f6999066ad828f02e198a6e9ad2"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/texture(index:).json": {
       "etag": "\"1894-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/texture-index.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/texture(index).md",
       "hash": "d2dd5ca29c35d203e052ba7ab528e2bb84a1cd1c465eda0b7a293cc252034979"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/unbound.json": {
@@ -3352,7 +3352,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/location/uniform(offset:length:).json": {
       "etag": "\"1c5a-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/uniform-offsetlength.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/location/uniform(offset,length).md",
       "hash": "0c11c8beb9a319a36c52e43b73cf36447ab6f834c89d6fe8d7105d4f9ceada35"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/nameduniforms.json": {
@@ -3377,7 +3377,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/texturebinding/init(attachment:type:).json": {
       "etag": "\"234f-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/texturebinding/init-attachmenttype.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/texturebinding/init(attachment,type).md",
       "hash": "a51e41468c5d3bef7ff221c8416e279533f961d6baf4b9c3cdd8983353d0a7ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/texturebinding/type.json": {
@@ -3397,7 +3397,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/uniformbinding/init(location:type:).json": {
       "etag": "\"23e9-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/uniformbinding/init-locationtype.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/assembly/uniformbinding/init(location,type).md",
       "hash": "e6532187e618ed0cdf3f5bad19620ea60eada9a7b4965667437f8e94af7772dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/assembly/uniformbinding/location.json": {
@@ -3422,27 +3422,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/canaddedge(_:).json": {
       "etag": "\"2049-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/canaddedge.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/canaddedge(_).md",
       "hash": "81e23fbc87e6552d7403f5c2cce09ef1dc0f061d26eb9b20c8c1222b2cb426b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/canaddnode(_:).json": {
       "etag": "\"214e-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/canaddnode.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/canaddnode(_).md",
       "hash": "22d8b5b2b00156fd48bbe02277e2f5517fff2e8bf59622dfabc26b76e99cf889"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/contains(edge:).json": {
       "etag": "\"1ab3-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/contains-edge.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/contains(edge).md",
       "hash": "260ad6a893e9842f817bbae014fdaed3ac31ab4e0cda17df0668ff3eb0be9de2"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/contains(node:).json": {
       "etag": "\"1ae5-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/contains-node.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/contains(node).md",
       "hash": "563907239acb87268c39283630b17f604cd1d228d0328b78d4f8965cabc53bb7"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/data(using:).json": {
       "etag": "\"209d-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/data-using.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/data(using).md",
       "hash": "b788ab9e43a4ace74c60ef8a304e2e88bfb729048ecbbb24aa647d5e8317bd48"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/datatype.json": {
@@ -3457,7 +3457,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/datatype/init(_:).json": {
       "etag": "\"150b-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/datatype/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/datatype/init(_).md",
       "hash": "531b7639cb9feac6bafcd9f8e61575c17d481883e030df68af568b8cb6189c16"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/edge.json": {
@@ -3467,7 +3467,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/edge/init(source:target:).json": {
       "etag": "\"216c-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/edge/init-sourcetarget.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/edge/init(source,target).md",
       "hash": "58a6515881a4bc89ba5c05f77f360f7f49780be9445f895d6efa48193e0c64f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/edge/source.json": {
@@ -3502,12 +3502,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/init().json": {
       "etag": "\"cff-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/init().md",
       "hash": "8bb88b35b0de26bdafd9a6fbc9987b3f9326fa2d2b06c8f0151143547f0e5fb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/init(data:).json": {
       "etag": "\"1e23-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/init-data.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/init(data).md",
       "hash": "f1d12ef5e4713f513db47bba1262272dc1ea6bb1c22a502603059aa3880b1d11"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library.json": {
@@ -3517,12 +3517,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/definition(named:in:).json": {
       "etag": "\"2183-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definition-namedin.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definition(named,in).md",
       "hash": "1a52810ce203a6c0e4681797e2ea5f067e80fff0a8ae8164b045ca985dddc495"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/definition(stage:).json": {
       "etag": "\"1f68-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definition-stage.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definition(stage).md",
       "hash": "2d664fc2134cc1740d9be54c10a90a70ccce9e2d6c2fd4121c9c5ede66215431"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/definitions.json": {
@@ -3532,37 +3532,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/definitionsmatching(input:).json": {
       "etag": "\"20fb-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching-input.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching(input).md",
       "hash": "3520fd138c4ccd871e6ecb92948ec870471bb8cebd69dd49aa28f764eaca19cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/definitionsmatching(inputs:).json": {
       "etag": "\"22a7-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching-inputs.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching(inputs).md",
       "hash": "ca8b3a3d92443c291a090d35985c2c9f66dd282d45b688ba5f856eca6c50f496"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/definitionsmatching(output:).json": {
       "etag": "\"2108-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching-output.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/definitionsmatching(output).md",
       "hash": "59401a33607433b87579f898fb89a1798a7b120d2ff9331d36954ea883e6e2d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/init().json": {
       "etag": "\"107c-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/init().md",
       "hash": "d3960a1cfd96ca73261257974a3c2378e859b39be4f24378b8df5e3fe345d486"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/init(bundle:).json": {
       "etag": "\"18c8-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/init-bundle.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/init(bundle).md",
       "hash": "4b7e1f931d0cc4c0732cebd1b872c5fc3d8274f0c9c8c2c03bb72fc79f0187df"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/init(from:bundleidentifier:).json": {
       "etag": "\"1c95-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/init-frombundleidentifier.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/init(from,bundleidentifier).md",
       "hash": "b4e770a4aa089fb28c2abcaaa9b784e41310ff845e3201a0ffbb0ec1471cdaf5"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/merge(contentsof:).json": {
       "etag": "\"18df-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/library/merge-contentsof.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/library/merge(contentsof).md",
       "hash": "8441837714ec9f43d47b1b280c756dbab329ece0c3255815e0cb763e06d3c78a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/library/shared.json": {
@@ -3582,7 +3582,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/libraryreference/init(library:bundle:).json": {
       "etag": "\"1ac4-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/libraryreference/init-librarybundle.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/libraryreference/init(library,bundle).md",
       "hash": "f1aa28bcc44809df87b7b74db963ef20a892dd9bf159317dca79e0e8db9e8a2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/libraryreference/library.json": {
@@ -3597,7 +3597,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/metadata/init(values:).json": {
       "etag": "\"15a7-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/metadata/init-values.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/metadata/init(values).md",
       "hash": "8272853ddc34f1846370190bba3b1bfb2b02ce68dedbf3d41383b5c2262e267c"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/metadata/values.json": {
@@ -3617,32 +3617,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/init(definition:label:).json": {
       "etag": "\"1b69-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/init-definitionlabel.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/init(definition,label).md",
       "hash": "8058a89bd7fb8fbf7ff62d5e9d440361ffad0810101c0329fbf6b7aaaf82a075"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/input(at:).json": {
       "etag": "\"18e2-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/input-at.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/input(at).md",
       "hash": "addca347ca0eba352d9e4b754f48ec8a7b63e8094fbc3ce90a6a5a9ed237b254"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/input(named:).json": {
       "etag": "\"193e-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/input-named.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/input(named).md",
       "hash": "493d54fb8281799b7f0d0d4b2ac35f33e32f4ad6cfa1e247b3d56f87a321c7fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/inputdata(named:).json": {
       "etag": "\"183c-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/inputdata-named.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/inputdata(named).md",
       "hash": "1f82c902c656b1b90f8f9736f5e0e9381f98aa9f4e97fd090e78bae0ee2cebae"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/kind-swift.enum.json": {
       "etag": "\"25de-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swiftenum.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum.md",
       "hash": "94613fd641ab6782625ab0cacfa457e8a33c827106185e1c2f86f1277ab1d403"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/kind-swift.enum/grouping(nodes:).json": {
       "etag": "\"1c2c-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum/grouping-nodes.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum/grouping(nodes).md",
       "hash": "13ea3de5eedcc3ba888b2bbaebb140662da17979775bf3f1fe127e53354fc0ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/kind-swift.enum/primitive.json": {
@@ -3652,12 +3652,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/kind-swift.enum/sequence(nodes:).json": {
       "etag": "\"1b10-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum/sequence-nodes.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.enum/sequence(nodes).md",
       "hash": "3214f015c1f3e6f10fcd295337bad5c6164d09f394cba62f63a54da34eb1e5b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/kind-swift.property.json": {
       "etag": "\"1842-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/kind-swift.property.md",
       "hash": "3c055900d448d8f9e71b218020b9c38dd07057026345c8dc002956f3bcb76cbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/label.json": {
@@ -3672,32 +3672,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/setinput(_:_:)-2ittk.json": {
       "etag": "\"1a1c-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-2ittk.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(_,_)-2ittk.md",
       "hash": "dd00be63a6ca287fa94bc3c63ccc5beff4e9d25be586066ed95e3c02d57b11ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/setinput(_:_:)-35srn.json": {
       "etag": "\"1c37-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-35srn.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(_,_)-35srn.md",
       "hash": "29ac95c1ba29aa452b19e5f1e1f9e57b3c8cfccd2116910ec036bda7de54c5b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/setinput(_:_:)-3yk57.json": {
       "etag": "\"1a14-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-3yk57.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(_,_)-3yk57.md",
       "hash": "2ae277fa7722b1baaf530980587a535db76cec6529f2ef42d267bee497356fc9"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/setinput(_:_:)-9n5yb.json": {
       "etag": "\"1d7d-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-9n5yb.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(_,_)-9n5yb.md",
       "hash": "6a217525826353f0ce582cdc8df2871eccf7884eb1c2f8f42604b8f870248dc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/setinput(at:_:)-95j9n.json": {
       "etag": "\"19e9-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-at-95j9n.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(at,_)-95j9n.md",
       "hash": "a211757ef46d9239316069fd48e2cb6fe6ac43e88a84f344004cf1404ddc6ceb"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/setinput(at:_:)-9xg3z.json": {
       "etag": "\"18c2-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput-at-9xg3z.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/node/setinput(at,_)-9xg3z.md",
       "hash": "a9e314ee90efe49d0456a211d1ce32a3b69a9e47f60dca61b5870874e76518bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/node/uniforms.json": {
@@ -3717,12 +3717,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/init(name:bundle:inputs:outputs:kind:).json": {
       "etag": "\"2ca1-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/init-namebundleinputsoutputskind.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/init(name,bundle,inputs,outputs,kind).md",
       "hash": "dc81da16528c1ae2a92ee926e8844d8721de7b143bcd37ea6673450d764d36eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/init(name:inputs:outputs:kind:).json": {
       "etag": "\"2a0b-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/init-nameinputsoutputskind.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/init(name,inputs,outputs,kind).md",
       "hash": "6655bf69d77eb1d2330fcc92e6bb9ef5affd488619ece8a5cbcccda915595a79"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/inputs.json": {
@@ -3732,37 +3732,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum.json": {
       "etag": "\"6fdc-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swiftenum.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum.md",
       "hash": "1a5969bf535881d0a150bcac39b1b6b45b0e85871ffd351dce03800f07b25402"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/binaryarithmetic(a:b:operation:).json": {
       "etag": "\"262a-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/binaryarithmetic-aboperation.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/binaryarithmetic(a,b,operation).md",
       "hash": "b5e8ed320b58ca7bef6931ed57ab2ccb20181148fa33fb2462e064ac5485a705"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/compose(type:).json": {
       "etag": "\"1c26-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/compose-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/compose(type).md",
       "hash": "700b37e6c90c2a25768a862c57162cf9c11bfa1ee2c9fe962fdc9d87197742eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/convert(from:to:).json": {
       "etag": "\"2195-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/convert-fromto.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/convert(from,to).md",
       "hash": "173bd51407b14de85fbd5b73de5d8dd50b6e95e7efaee7c4f88cd287ecd9a558"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/decompose(type:).json": {
       "etag": "\"1c6e-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/decompose-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/decompose(type).md",
       "hash": "1ceeb47c1ec54e0c70c49c50d5d025cc0f60f5dd791b9bb78f06b0ee1d298899"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/fieldreference(type:).json": {
       "etag": "\"1cf8-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/fieldreference-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/fieldreference(type).md",
       "hash": "accfa2718a85c5706fccfe4e37b7b916a394f0512da2bc99334e77f0f7b3c4e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/function(name:bundle:).json": {
       "etag": "\"1bc0-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/function-namebundle.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/function(name,bundle).md",
       "hash": "c1b53fc9f9cfa79f00dd4806abdd3cbdca1b2ac4d13be9cc03b7f0ab691dfd67"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/graphglobal.json": {
@@ -3777,52 +3777,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/loadstate(definition:).json": {
       "etag": "\"1c9a-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/loadstate-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/loadstate(definition).md",
       "hash": "cfd90c9b2ce36ce165d26618629060d556f673b73d33e61bb9da8fb585744683"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/reinterpret(from:to:).json": {
       "etag": "\"2221-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/reinterpret-fromto.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/reinterpret(from,to).md",
       "hash": "60873b7b09a9031d89193f9aaacab0ce290e8fe56154530ed5e2df791e180b9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/sampletexture(sampler:).json": {
       "etag": "\"1c71-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/sampletexture-sampler.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/sampletexture(sampler).md",
       "hash": "a9ab903ba994803f4358f4bfaa0f020debfc76be41306f3e2b782f64e815aaf4"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/stage(type:).json": {
       "etag": "\"1ca2-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/stage-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/stage(type).md",
       "hash": "bd85e4573d261ba3848ed97b88cd035c9ea24809f62378e966f7df7712b8f78b"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/standardlibrary(type:function:).json": {
       "etag": "\"2197-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/standardlibrary-typefunction.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/standardlibrary(type,function).md",
       "hash": "9221781f3c0c00df70098783c3df894db14199b239b8284d3401e578819895c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/storestate(definition:).json": {
       "etag": "\"1c9c-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/storestate-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/storestate(definition).md",
       "hash": "96888cad11b0f9397b654cd44bb070e4cf05bc0feb4de0fd9e3e1b0c60750b96"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/swizzle(type:channels:).json": {
       "etag": "\"233a-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/swizzle-typechannels.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/swizzle(type,channels).md",
       "hash": "8b9cc2df0f136aae20d5b6aeffee13774a1b0e9519e58abe2de4e341b0617deb"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/texturereference(port:).json": {
       "etag": "\"1995-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/texturereference-port.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/texturereference(port).md",
       "hash": "cba4c462ab53762b55bc6879790121a9392c99cf878fe5bef9c797142e8161e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.enum/unaryarithmetic(type:operation:).json": {
       "etag": "\"21a3-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/unaryarithmetic-typeoperation.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.enum/unaryarithmetic(type,operation).md",
       "hash": "38b311f52c775dd2f3af71ae9411d407516a6a24fcc805b39e089fadce9c669a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/kind-swift.property.json": {
       "etag": "\"1901-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/kind-swift.property.md",
       "hash": "3fe4012d8f2d8e977aceee6ccd025aa94d7e43c6a8a0ec141dda8936ffebf9f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/name.json": {
@@ -3837,7 +3837,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodedefinition/stage(_:).json": {
       "etag": "\"1bd2-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/stage.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/nodedefinition/stage(_).md",
       "hash": "46550b04bd0af46c5741bcd3e8b4bca6339f3d0cfefee2a088446add4887c6a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/nodeid.json": {
@@ -3862,32 +3862,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/init(_:)-2h68e.json": {
       "etag": "\"1545-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init-2h68e.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init(_)-2h68e.md",
       "hash": "e24293b67c6e7edec42851c8e05e65a0d1f5d6b8777b76187e6388eebc2e6bb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/init(_:)-5cutl.json": {
       "etag": "\"148b-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init-5cutl.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init(_)-5cutl.md",
       "hash": "d2180aadca261d434a955d4ad487d935315e236653ba64d1f2b4615862b3944c"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/init(descriptor:)-1jzxc.json": {
       "etag": "\"18fb-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init-descriptor-1jzxc.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init(descriptor)-1jzxc.md",
       "hash": "bd24688652973f3ba4643fb911d7188a49f5a0c377750b1d938d1a5a6b6dd9f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/init(descriptor:)-2t8g4.json": {
       "etag": "\"19b4-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init-descriptor-2t8g4.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/init(descriptor)-2t8g4.md",
       "hash": "25ae56836b3e5ac200461ab6f3fbbe9ec6b724798c2ab1dea908dcfa386c9556"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/options-swift.property.json": {
       "etag": "\"196e-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.property.md",
       "hash": "38a74825b81357189fee2966076af858c41302f1b3edce1055a4daf2d7c26658"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/options-swift.struct.json": {
       "etag": "\"23a9-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swiftstruct.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct.md",
       "hash": "daaf6cbe791b36cc08f13e96d82cde3c9a784a108236b9c076b901d45711a1c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/options-swift.struct/debugdraw.json": {
@@ -3897,12 +3897,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/options-swift.struct/init().json": {
       "etag": "\"1335-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct/init().md",
       "hash": "c6e5107c107d47eea542c69be69428e32dc0201d2075c1c2296b71d111fdbd7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelines/options-swift.struct/init(debugdraw:).json": {
       "etag": "\"1829-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct/init-debugdraw.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelines/options-swift.struct/init(debugdraw).md",
       "hash": "a24ca3f39e3649c62410cbb92ae9895278dbe7bceaa78be32cf7e75473a162c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelinesdescriptor.json": {
@@ -3912,7 +3912,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelinesdescriptor/addlibrary(_:bundle:).json": {
       "etag": "\"1c0f-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/addlibrary-bundle.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/addlibrary(_,bundle).md",
       "hash": "d7fb6ddad88c0b00b579d6cb93e359599423e71e59b11fcdaa6be6f2538adb18"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelinesdescriptor/assembly.json": {
@@ -3922,7 +3922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelinesdescriptor/init(assembly:).json": {
       "etag": "\"2222-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/init-assembly.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/init(assembly).md",
       "hash": "331d88fb31289f79a8590cfc8ddc19939a3b65cffd8c87f1afc839d2ccf6be8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelinesdescriptor/libraries.json": {
@@ -3937,7 +3937,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pipelinesdescriptor/setlibrary(_:).json": {
       "etag": "\"1914-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/setlibrary.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/pipelinesdescriptor/setlibrary(_).md",
       "hash": "9c17dcab5b56be22af786f1e578535d485241a5fe3c801e71f7aa206649a7a9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/pointerdefinition.json": {
@@ -3962,7 +3962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/port/address/init(node:index:).json": {
       "etag": "\"1d6c-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/port/address/init-nodeindex.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/port/address/init(node,index).md",
       "hash": "ed0ac5974fc56299977d6d66fd2b388fee12ce56b5dd227bbafa9148451f0f1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/port/address/node.json": {
@@ -4042,7 +4042,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/portdefinition/init(name:kind:type:options:).json": {
       "etag": "\"30da-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/portdefinition/init-namekindtypeoptions.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/portdefinition/init(name,kind,type,options).md",
       "hash": "5aebfb09df4699cf428dbfccf93bca3b67239a0eceb11b1c636fe421709550aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/portdefinition/kind.json": {
@@ -4067,17 +4067,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/removeedge(_:).json": {
       "etag": "\"1b84-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/removeedge.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/removeedge(_).md",
       "hash": "25c49564278f4d4e3ff333aa5d81cb91a40688ec58c7977ef93d8df774e46081"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/removenode(_:).json": {
       "etag": "\"1734-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/removenode.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/removenode(_).md",
       "hash": "3889464fc4a44d17f420202748040d8f77a7f407c68d8c587ea2266872f1e449"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/replaceall(nodes:edges:).json": {
       "etag": "\"25df-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/replaceall-nodesedges.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/replaceall(nodes,edges).md",
       "hash": "bfd9454a3a46349b24d761cf2a111cfe2b813046ce356d1e74c72d4aae71138d"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/samplersettings.json": {
@@ -4097,7 +4097,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/samplersettings/init(texture:address:filter:).json": {
       "etag": "\"22d2-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/samplersettings/init-textureaddressfilter.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/samplersettings/init(texture,address,filter).md",
       "hash": "fcb25054882c066a9dd2c139ea3613b1f32314737a52ca69382cf124f47f1c15"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/samplersettings/texture.json": {
@@ -4112,7 +4112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/scope/init(_:).json": {
       "etag": "\"13f1-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/scope/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/scope/init(_).md",
       "hash": "7de5811a8ae8d3ee575ab119ddbb1ba73d959e4dc9e2c276178422bf2395dc89"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/scope/name.json": {
@@ -4127,7 +4127,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/stage/canaddnode(with:).json": {
       "etag": "\"1e86-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/stage/canaddnode-with.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/stage/canaddnode(with).md",
       "hash": "db32cd4f3ae06fd45072d12075ebfbee4ff23493ba7e7e25ec53d8c1884ccaad"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/stage/compute.json": {
@@ -4147,7 +4147,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/stage/init(_:).json": {
       "etag": "\"1411-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/stage/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/stage/init(_).md",
       "hash": "7c6cb137eaa9fd98b47d8a5903ea89f3f55cd3f4444ca261d6ffd0bbe92523a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/stage/initialize.json": {
@@ -4182,17 +4182,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statedefinition/init(scope:options:type:).json": {
       "etag": "\"2870-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/init-scopeoptionstype.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/init(scope,options,type).md",
       "hash": "c9f5e87daf3a01a1f67d4af0035cc013c7530030ad4a8aa782e1a8e4b2989326"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statedefinition/options-swift.property.json": {
       "etag": "\"1c0f-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/options-swiftproperty.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/options-swift.property.md",
       "hash": "a215148f828bdb70738a68b7a093d3ccae4e8a1bf0e64214c9d713955eb7366e"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statedefinition/options-swift.struct.json": {
       "etag": "\"2e59-65d55e26c43ba-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/options-swiftstruct.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statedefinition/options-swift.struct.md",
       "hash": "c33fdc78798392345a4b3703a6f106b12d9c1b0b09b9e077ac1e0bc58e936f12"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statedefinition/options-swift.struct/read.json": {
@@ -4222,32 +4222,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statetype/array(definition:).json": {
       "etag": "\"1905-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/array-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/array(definition).md",
       "hash": "bb8836d7d3d63fa23c2b90ecb8d12091d488c6b3c65a2249d6b7e61bcf9a0cd3"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statetype/data(length:).json": {
       "etag": "\"15ac-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/data-length.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/data(length).md",
       "hash": "65a56cc2d766b2f9029d44ab0e57aba5dd1f6f48bf2af5279931ffa2d913768d"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statetype/datatype(type:).json": {
       "etag": "\"1776-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/datatype-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/datatype(type).md",
       "hash": "a354e71fd688480681a061003476d44ca866da6c2f2cb5bec781e0cf6455df0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statetype/loadbuffer(from:).json": {
       "etag": "\"1c62-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/loadbuffer-from.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/loadbuffer(from).md",
       "hash": "485f5c3b755867cf897597b3d80f08b6c979cec2f1c8007eed4a8c6d1ddcfb8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statetype/primitive(type:).json": {
       "etag": "\"1882-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/primitive-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/primitive(type).md",
       "hash": "395136c528d5079a452a85774dc0a013cc900f23e529a2bafd8fd50be1725ec1"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/statetype/structure(definition:).json": {
       "etag": "\"19c0-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/structure-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/statetype/structure(definition).md",
       "hash": "8e485657e604b7714872a0844e2b8333adbdd2d019b5a187747bc93d2f3ac406"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/structuredefinition.json": {
@@ -4257,7 +4257,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/structuredefinition/init(typename:layout:).json": {
       "etag": "\"1c66-65d55e2622182-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/structuredefinition/init-typenamelayout.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/structuredefinition/init(typename,layout).md",
       "hash": "31c00de7589b19527ca07dfd2c163c5bb5a92c980f8e4433d28eae2ce505ba20"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/structuredefinition/layout.json": {
@@ -4277,7 +4277,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/structurelayout/init().json": {
       "etag": "\"fff-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/structurelayout/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/structurelayout/init().md",
       "hash": "5d7de881fb1b61e324b5f2186bd5ff0ce9b078937924b8d05439e7d3ef7fbd1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/structurelayout/member.json": {
@@ -4292,7 +4292,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/structurelayout/member/init(name:type:offset:).json": {
       "etag": "\"215e-65d55e26541eb-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/structurelayout/member/init-nametypeoffset.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/structurelayout/member/init(name,type,offset).md",
       "hash": "f1db5b5963f94e678ee42ebf9ad3ec5a035064e805b9a2c45aec398f1f9b0de3"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/structurelayout/member/lengthinbytes.json": {
@@ -4342,7 +4342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/subscript(_:).json": {
       "etag": "\"1bc6-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/subscript.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/subscript(_).md",
       "hash": "0ecfea92e9cae2ee8aab4c411125bbf212bdd005da92e925ff53ac8f37b945ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/swizzlechannels.json": {
@@ -4367,12 +4367,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/swizzlechannels/init().json": {
       "etag": "\"fff-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/swizzlechannels/init.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/swizzlechannels/init().md",
       "hash": "402223631c41a38352104a7f966af583f9c8f40d8e26876aee954ecce26cd80a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/swizzlechannels/init(red:green:blue:alpha:).json": {
       "etag": "\"2eb7-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/swizzlechannels/init-redgreenbluealpha.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/swizzlechannels/init(red,green,blue,alpha).md",
       "hash": "2c8614eba982cc09b37005a702ba8c0f90a6f6a4e22f0d6b763a10a7130d7264"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/swizzlechannels/red.json": {
@@ -4452,7 +4452,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/updatenode(_:forkey:).json": {
       "etag": "\"1e31-65d55e263be64-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/updatenode-forkey.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/updatenode(_,forkey).md",
       "hash": "0a5cb26e2100704ab756fbdec3b9c7b7776947d35577b4ef3606165801a8f939"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype.json": {
@@ -4462,17 +4462,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/data(length:).json": {
       "etag": "\"164f-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/data-length.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/data(length).md",
       "hash": "6047b336abf7e79ca667210d6698de8c393c9e698074499e256755e544c5532e"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/datatype(type:).json": {
       "etag": "\"17ff-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/datatype-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/datatype(type).md",
       "hash": "a470d25bd542394a8d8365360ef625d5518768bcc1ed731f79a3beeb60558d0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/enumeration(typename:).json": {
       "etag": "\"16e5-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/enumeration-typename.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/enumeration(typename).md",
       "hash": "98a599d4a331a6830afaf0a141442707cbcd0e7b1f1541003ee54aa8e7d4f380"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/none.json": {
@@ -4482,27 +4482,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/opaque(typename:).json": {
       "etag": "\"169f-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/opaque-typename.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/opaque(typename).md",
       "hash": "b8a2c8743d36d1663f369c1480ae29f7af8e2943cb39d74e5fabb282093f3676"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/pointer(type:).json": {
       "etag": "\"18e8-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/pointer-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/pointer(type).md",
       "hash": "89ab800aa92a121253fdfc61c5da3802a8b6db6a5671b1182e5f18fe4f46c290"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/primitive(_:).json": {
       "etag": "\"1b47-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/primitive.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/primitive(_).md",
       "hash": "eba12df2401f9300bf19a6202db86d6e4eb978717ab330e40c9688fc9ad81f09"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/primitive(type:).json": {
       "etag": "\"190d-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/primitive-type.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/primitive(type).md",
       "hash": "e49026f9ed127df6280eea65f80f1a9e6f6c74853b38878fe249b32abd5b3e9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/state(definition:).json": {
       "etag": "\"19cf-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/state-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/state(definition).md",
       "hash": "98094b5b365fe765225e44c35735abc8c8f72935f078c6b71b79ad01a32707f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/string.json": {
@@ -4512,17 +4512,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/structure(definition:).json": {
       "etag": "\"1a53-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/structure-definition.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/structure(definition).md",
       "hash": "c04884c54372d9de6709e305edc426c00160c3c42498178e30b14a54c2f7dfe7"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/structure(typename:layout:).json": {
       "etag": "\"21d1-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/structure-typenamelayout.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/structure(typename,layout).md",
       "hash": "4b7ad76c4001f036a8e2299bbaecf253dffd62afbc31b37edd421a617c39306e"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/computenodegraph/valuetype/texture(typename:).json": {
       "etag": "\"1704-65d55e26a8115-df\"",
-      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/texture-typename.md",
+      "file_path": "documentation/ComputeGraph/computenodegraph/valuetype/texture(typename).md",
       "hash": "b72e365aaa207c3b0010f5741a05c0c0a0a12e68095074f95b87864f83cf94ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/coordinatespace.json": {
@@ -4592,7 +4592,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/element_integrate.json": {
       "etag": "\"3322-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/element-integrate.md",
+      "file_path": "documentation/ComputeGraph/element_integrate.md",
       "hash": "97c2f2c88759139e84f7d52aff0895905b6748d5689076fdb0bba1d5a1445edd"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/elementgrouping.json": {
@@ -4627,7 +4627,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/elementspawnparameters/init(position:velocity:size:color:lifetime:).json": {
       "etag": "\"2dff-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/elementspawnparameters/init-positionvelocitysizecolorlifetime.md",
+      "file_path": "documentation/ComputeGraph/elementspawnparameters/init(position,velocity,size,color,lifetime).md",
       "hash": "a6740c735299cad83bda8a1813205e5394bea4280cdb008a594a3ca45da225fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/elementspawnparameters/lifetime.json": {
@@ -4897,17 +4897,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/mouseparams/has_value.json": {
       "etag": "\"1ceb-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/mouseparams/has-value.md",
+      "file_path": "documentation/ComputeGraph/mouseparams/has_value.md",
       "hash": "dc7e2dc3af1ef6b73e6d994dc21d1d474e9d6cfcf05bdd002bb2d6985774011b"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/mouseparams/init().json": {
       "etag": "\"ec1-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/mouseparams/init.md",
+      "file_path": "documentation/ComputeGraph/mouseparams/init().md",
       "hash": "75d4ccf84d44c8e2d30f71ad3e50ea02d3146a4bc90af13f74aaa9f804a8f284"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/mouseparams/init(position:direction:has_value:).json": {
       "etag": "\"1c0a-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/mouseparams/init-positiondirectionhas-value.md",
+      "file_path": "documentation/ComputeGraph/mouseparams/init(position,direction,has_value).md",
       "hash": "26d318133266cff1a878597f3f9c148c447fa54f3c40d6ff7d2a5ecfb8fc8ff9"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/mouseparams/position.json": {
@@ -4917,7 +4917,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/orient_to_velocity.json": {
       "etag": "\"330b-65d55e2524a9c-df\"",
-      "file_path": "documentation/ComputeGraph/orient-to-velocity.md",
+      "file_path": "documentation/ComputeGraph/orient_to_velocity.md",
       "hash": "17eb8e842b0bcb460817812e6d3e0708ff35a631059a6a34c3a6580e49257938"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/output.json": {
@@ -5017,7 +5017,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/portreference/init(group:port:).json": {
       "etag": "\"13a3-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/portreference/init-groupport.md",
+      "file_path": "documentation/ComputeGraph/portreference/init(group,port).md",
       "hash": "fbc6c8bb1043199a6d7d12fd60e977aae8189c7a93c23c8a594a3ae7d620aec9"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/portreference/port.json": {
@@ -5032,82 +5032,82 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/float2_01.json": {
       "etag": "\"12f5-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float2-01.md",
+      "file_path": "documentation/ComputeGraph/random/float2_01.md",
       "hash": "4f5c997181d7e63d5f58e672abb497ee4f18655d3b2619868b451c5ff68cfb6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/float2_01_using.json": {
       "etag": "\"156a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float2-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/float2_01_using.md",
       "hash": "62f6493c45f6029210ed59090fc29a4a68587d9a961a55c4d67b4ff6dbd46d47"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/float3_01.json": {
       "etag": "\"12f5-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float3-01.md",
+      "file_path": "documentation/ComputeGraph/random/float3_01.md",
       "hash": "ac12aa99bc200eb47e428f929efa8c3835233bee222369412407e41a8bc4e424"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/float3_01_using.json": {
       "etag": "\"1572-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float3-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/float3_01_using.md",
       "hash": "e0eecc5c85361c79bf1c68812b12bb7972d2b2aa968f135447bb6b599ab62c1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/float4_01.json": {
       "etag": "\"12f5-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float4-01.md",
+      "file_path": "documentation/ComputeGraph/random/float4_01.md",
       "hash": "87b51db5fc596bf9925c39fbba6fce763c7a7ef0dd213a5ae6fa4d37e8db9cdf"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/float4_01_using.json": {
       "etag": "\"157a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float4-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/float4_01_using.md",
       "hash": "01fd58dc8e5a8334be832feb5e64f212396ef84bb9ebcad0e760ab8609d63bc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/float_01.json": {
       "etag": "\"123a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float-01.md",
+      "file_path": "documentation/ComputeGraph/random/float_01.md",
       "hash": "5b5a6d6189b03b1f687fd247285c3069a7d041a144979d38b1af31316d7ccbc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/float_01_using.json": {
       "etag": "\"1497-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/float-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/float_01_using.md",
       "hash": "6b97ca54dc587540eedce908d7e46308ff72487a5033e6a719f6c0856edc5c26"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/half2_01.json": {
       "etag": "\"12d7-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half2-01.md",
+      "file_path": "documentation/ComputeGraph/random/half2_01.md",
       "hash": "4e7f2e1a5e1b0de454124419bcb3c31491a047a82cb5d2f0186919efc313ca35"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/half2_01_using.json": {
       "etag": "\"154c-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half2-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/half2_01_using.md",
       "hash": "24e432741e569b75ae4caa392ccec67518ec024cd2c32e437fdc2d34a40e700f"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/half3_01.json": {
       "etag": "\"12d7-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half3-01.md",
+      "file_path": "documentation/ComputeGraph/random/half3_01.md",
       "hash": "9e7840ef992d6393bcce7a8a2ec7821a6025045fdcd615f9899aa2cdf17b7ece"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/half3_01_using.json": {
       "etag": "\"1554-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half3-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/half3_01_using.md",
       "hash": "e6b2b3b1f567df5a0daca3b75693a5ab8c089cb10314094345c158435936461b"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/half4_01.json": {
       "etag": "\"12d7-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half4-01.md",
+      "file_path": "documentation/ComputeGraph/random/half4_01.md",
       "hash": "62342b5c96a3c5d2ff555171c7fee20d7f4c733166cd185131209558cfd5dff5"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/half4_01_using.json": {
       "etag": "\"155c-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half4-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/half4_01_using.md",
       "hash": "3df0acfb14ecee2e364bc97277bf2486931feba52a2b3e94d7351103f839e0ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/half_01.json": {
       "etag": "\"121c-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half-01.md",
+      "file_path": "documentation/ComputeGraph/random/half_01.md",
       "hash": "3ad4fd828cce08f255d0b3ca7c95e4ad0a2bc20e2077665efa06c65d0582274b"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/half_01_using.json": {
       "etag": "\"1479-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/half-01-using.md",
+      "file_path": "documentation/ComputeGraph/random/half_01_using.md",
       "hash": "2e7a9cf75ac37c87951644f133b2d82ea628073df56c208ae011e70e612a334c"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/integer.json": {
@@ -5117,7 +5117,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/integer_using.json": {
       "etag": "\"14d7-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/random/integer-using.md",
+      "file_path": "documentation/ComputeGraph/random/integer_using.md",
       "hash": "5a90a1cfdb1eba057b98e9bc213af0517119e80771a00c694299101f05041319"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/random/seed.json": {
@@ -5157,7 +5157,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/spawn_demo.json": {
       "etag": "\"2f81-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/spawn-demo.md",
+      "file_path": "documentation/ComputeGraph/spawn_demo.md",
       "hash": "830f4f38c4ecb39369fd1673e396e8e7a111172e30dd7a7b8463a68b44cb7e71"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/standardlibraryfunction.json": {
@@ -5597,12 +5597,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/texture_sample.json": {
       "etag": "\"3103-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/texture-sample.md",
+      "file_path": "documentation/ComputeGraph/texture_sample.md",
       "hash": "4d294edef9e7a87fcd6bdadab0a7915c920563ae11d4790ccb47ef1d9fb11de6"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/texture_sample1d.json": {
       "etag": "\"3116-65d55e26d1282-df\"",
-      "file_path": "documentation/ComputeGraph/texture-sample1d.md",
+      "file_path": "documentation/ComputeGraph/texture_sample1d.md",
       "hash": "103e99a50faca765d3928de204748270391730e13ca4c70291aaa82c6748851f"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/unaryoperation.json": {
@@ -5632,12 +5632,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/viewpoint-swift.func.json": {
       "etag": "\"321e-65d55e256bfe9-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swiftfunc.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.func.md",
       "hash": "7841b351f5ce8a759b0e9b7818b3c676ba8eb5e4ed79eab3d13b0930399f04bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/viewpoint-swift.struct.json": {
       "etag": "\"48da-65d55e25c1c04-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swiftstruct.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct.md",
       "hash": "9aa061ba156c716f52e83447ff1d19f763dacd6ddb7dc1dd4b971ada11b9d8aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/viewpoint-swift.struct/direction.json": {
@@ -5647,22 +5647,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/viewpoint-swift.struct/has_direction.json": {
       "etag": "\"1d82-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/has-direction.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/has_direction.md",
       "hash": "ba625f93e85dc2147b0d22df13a4d59e3839a156d8af6aed3ead346def3e2301"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/viewpoint-swift.struct/has_position.json": {
       "etag": "\"1d6a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/has-position.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/has_position.md",
       "hash": "8f12ef7789c3a744a3453a267a776bdaa246c96cc6f0a16bf218cc8293c0ad99"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/viewpoint-swift.struct/init().json": {
       "etag": "\"f2a-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/init.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/init().md",
       "hash": "99f2c9bcf6931ef1e18730c096956c41e1d6e5dc3e1ed90201b706a070810f2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/viewpoint-swift.struct/init(position:direction:has_position:has_direction:).json": {
       "etag": "\"1f44-65d55e2604d0e-df\"",
-      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/init-positiondirectionhas-positionhas-direction.md",
+      "file_path": "documentation/ComputeGraph/viewpoint-swift.struct/init(position,direction,has_position,has_direction).md",
       "hash": "d0b76f7dadd013971e99bddd5b3e867c3ac2ace0ba954c837dbf45ec75b396ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/computegraph/viewpoint-swift.struct/position.json": {

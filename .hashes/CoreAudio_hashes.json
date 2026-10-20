@@ -407,37 +407,37 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audioconverthosttimetonanos(_:)": {
       "etag": "\"831d-65d55e892a003-df\"",
-      "file_path": "documentation/CoreAudio/audioconverthosttimetonanos.md",
+      "file_path": "documentation/CoreAudio/audioconverthosttimetonanos(_).md",
       "hash": "098428e6f079bba6a12cbc6802423d1588b4012100116618e5e18f449e79944c"
     },
     "https://developer.apple.com/documentation/coreaudio/audioconvertnanostohosttime(_:)": {
       "etag": "\"8325-65d55e89abcf9-df\"",
-      "file_path": "documentation/CoreAudio/audioconvertnanostohosttime.md",
+      "file_path": "documentation/CoreAudio/audioconvertnanostohosttime(_).md",
       "hash": "0f74d80f97a61635a2a64cf48ef22a700c43da83b377ab1505b68aaed830de79"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicecreateioprocid(_:_:_:_:)": {
       "etag": "\"9e9b-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicecreateioprocid.md",
+      "file_path": "documentation/CoreAudio/audiodevicecreateioprocid(_,_,_,_).md",
       "hash": "79cb5be609aeebf757e6e64f0ad04532ee17619c38ca20abb0084ac2be33448e"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicecreateioprocidwithblock(_:_:_:_:)": {
       "etag": "\"a38c-65d55e89935fc-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicecreateioprocidwithblock.md",
+      "file_path": "documentation/CoreAudio/audiodevicecreateioprocidwithblock(_,_,_,_).md",
       "hash": "a25d59b622bf0ad774170288647444b2debd0b1acaa753304cadf21c29255b7f"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicedestroyioprocid(_:_:)": {
       "etag": "\"8bcc-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicedestroyioprocid.md",
+      "file_path": "documentation/CoreAudio/audiodevicedestroyioprocid(_,_).md",
       "hash": "d2b9fb4ffd3bbd26315fc1c638d40b0094dc7dcbb931a6e21e6b9aba304295b4"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicegetcurrenttime(_:_:)": {
       "etag": "\"91dd-65d55e894899e-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicegetcurrenttime.md",
+      "file_path": "documentation/CoreAudio/audiodevicegetcurrenttime(_,_).md",
       "hash": "e151085e1084152cd7ae7ac6c9a32b0ea14f8d617941159780ec3f0ee554823d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicegetneareststarttime(_:_:_:)": {
       "etag": "\"9e7d-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicegetneareststarttime.md",
+      "file_path": "documentation/CoreAudio/audiodevicegetneareststarttime(_,_,_).md",
       "hash": "b072ccef91a77480d680e8e2d9267f74ec35accf4d04f99a484e16d867b8c8f5"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodeviceid": {
@@ -472,37 +472,37 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicestart(_:_:)": {
       "etag": "\"8e69-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicestart.md",
+      "file_path": "documentation/CoreAudio/audiodevicestart(_,_).md",
       "hash": "690805d4b19c59fc84ff8241251718b3a13ec6285093c08cf6c8a0c9f2b88604"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicestartattime(_:_:_:_:)": {
       "etag": "\"a2c0-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicestartattime.md",
+      "file_path": "documentation/CoreAudio/audiodevicestartattime(_,_,_,_).md",
       "hash": "c53ced697630782c6bc244c579c67009c7ed913b2112b015477da951970828d6"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicestop(_:_:)": {
       "etag": "\"8a7f-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicestop.md",
+      "file_path": "documentation/CoreAudio/audiodevicestop(_,_).md",
       "hash": "d983a2fcd2c4e128315d329412f95f021d5ea05c089a76896b404a258d614a79"
     },
     "https://developer.apple.com/documentation/coreaudio/audiodevicetranslatetime(_:_:_:)": {
       "etag": "\"99eb-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicetranslatetime.md",
+      "file_path": "documentation/CoreAudio/audiodevicetranslatetime(_,_,_).md",
       "hash": "f08e30d74eb33ffb902f975fa8ca7c804fa1e05d9b17f4947ec3ef9ad806dcc2"
     },
     "https://developer.apple.com/documentation/coreaudio/audiogetcurrenthosttime()": {
       "etag": "\"7d0b-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiogetcurrenthosttime.md",
+      "file_path": "documentation/CoreAudio/audiogetcurrenthosttime().md",
       "hash": "87b02d0829af6c333410c5120a7540d3cb40267466fde57d9b4fce9155c29bdb"
     },
     "https://developer.apple.com/documentation/coreaudio/audiogethostclockfrequency()": {
       "etag": "\"7d3f-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiogethostclockfrequency.md",
+      "file_path": "documentation/CoreAudio/audiogethostclockfrequency().md",
       "hash": "de943d85a056465bb389ee6f346d4362f2b37f291dcc08e16f3c6818a2a40eab"
     },
     "https://developer.apple.com/documentation/coreaudio/audiogethostclockminimumtimedelta()": {
       "etag": "\"7ea8-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiogethostclockminimumtimedelta.md",
+      "file_path": "documentation/CoreAudio/audiogethostclockminimumtimedelta().md",
       "hash": "a20640d796ebf78178d4d0ce8afcb78fd00e26e934cd63aa25d1757e86069dd8"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareaggregatedevice": {
@@ -532,27 +532,27 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareaggregatedevice/init(id:)": {
       "etag": "\"1507-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/init(id).md",
       "hash": "06a65183a0682540eceb951b2484e72bb4004466083825056aeb2d6718cab48a"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareaggregatedevice/setclocksource(_:)": {
       "etag": "\"1740-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setclocksource.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setclocksource(_).md",
       "hash": "be8431bfee863ffc428af5331245d31f0b907ab3db6cc55a4e5c028d1bbddf7d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareaggregatedevice/setcomposition(_:)": {
       "etag": "\"15f9-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setcomposition.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setcomposition(_).md",
       "hash": "0d29e21c99cc98ed9e490f11e8008b714e5d9890098d30c7184d35ea496eef9d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareaggregatedevice/setsubdevices(_:)": {
       "etag": "\"17c1-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setsubdevices.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setsubdevices(_).md",
       "hash": "5cfc5a24bc2479927794e1f222cd3e87ec447490de9490553bdf81c9dcd44b62"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareaggregatedevice/setsubtaps(_:)": {
       "etag": "\"169f-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setsubtaps.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setsubtaps(_).md",
       "hash": "95d072bf4af6392e6fbaee94a8426c20dc418a2eab7dfe7a60220bb42ed1c9df"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareaggregatedevice/subdevices": {
@@ -582,12 +582,12 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarebox/disable()": {
       "etag": "\"f72-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarebox/disable.md",
+      "file_path": "documentation/CoreAudio/audiohardwarebox/disable().md",
       "hash": "2a03802aa1724640ccd6d44624ba0d89935e052447d151ff7d9ed88ccb88cdca"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarebox/enable()": {
       "etag": "\"f63-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarebox/enable.md",
+      "file_path": "documentation/CoreAudio/audiohardwarebox/enable().md",
       "hash": "d2ba14afe968c824323df4253a021a42f2ea70fbd12124ce7ccd6f50adad5768"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarebox/enabled": {
@@ -612,7 +612,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarebox/init(id:)": {
       "etag": "\"1464-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarebox/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwarebox/init(id).md",
       "hash": "089bcad9d161a2c7cbbdc92fe9059d9c3d4554ef0cf4763812a18e15a7748c6a"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarebox/isprotected": {
@@ -652,7 +652,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareclock/init(id:)": {
       "etag": "\"148c-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareclock/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareclock/init(id).md",
       "hash": "dcd94a82a422a272b8b6c46957174fd93893214105efd75f4181289f8383da9b"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareclock/inputlatency": {
@@ -682,7 +682,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareclock/setnominalsamplerate(_:)": {
       "etag": "\"1506-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareclock/setnominalsamplerate.md",
+      "file_path": "documentation/CoreAudio/audiohardwareclock/setnominalsamplerate(_).md",
       "hash": "3df59aeea6f0ccccc23f5f5a105893afca9901b4df0ae4841163b6f397980b27"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareclock/transporttype": {
@@ -712,12 +712,12 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/converttodecibels(fromscalar:)": {
       "etag": "\"1776-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/converttodecibels-fromscalar.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/converttodecibels(fromscalar).md",
       "hash": "ba117cbf698273951afe7932cef73a12b6567bf7f95df4608119eaf27cb7e9d5"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/converttoscalar(fromdecibels:)": {
       "etag": "\"177a-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/converttoscalar-fromdecibels.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/converttoscalar(fromdecibels).md",
       "hash": "73f0644485294de1af092c079745aefd3d21d9c95e854c7a2aa71bb9eabee24f"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/element": {
@@ -727,7 +727,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/init(id:)": {
       "etag": "\"1414-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/init(id).md",
       "hash": "ad4be619889d80f90481c3e97f8122cead5ff3845c0c46187f70e444410fe72c"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/scope": {
@@ -742,42 +742,42 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/selectoritemkind(fromid:)": {
       "etag": "\"194b-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/selectoritemkind-fromid.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/selectoritemkind(fromid).md",
       "hash": "ae1ca3e13c2eda38e81adbb6914b84fb7b551e89304c64df6c895731d1c07d1d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/selectoritemname(fromid:)": {
       "etag": "\"1977-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/selectoritemname-fromid.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/selectoritemname(fromid).md",
       "hash": "4a82a882229cf044d87ce7331fb0eafd8de0e14ca43e32bca10e8ee3517ec4dd"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/setbooleanvalue(_:)": {
       "etag": "\"145e-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setbooleanvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setbooleanvalue(_).md",
       "hash": "2e05f459d47cf5e7e2c40802175440f152f49773b6fac4984b6ca3b89949a551"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/setselecteditems(_:)": {
       "etag": "\"1463-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setselecteditems.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setselecteditems(_).md",
       "hash": "23b198afb2e28e9dcdce7de29a3a4226ec18f5df1fe7bddf6f3172a9703b95f0"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/setslidervalue(_:)": {
       "etag": "\"1433-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setslidervalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setslidervalue(_).md",
       "hash": "9a55b8b2dfb28abb0100f6e8c695c633ae3d19e2c78459e8db7325a31bbb9153"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/setstereopanvalue(_:)": {
       "etag": "\"141e-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setstereopanvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setstereopanvalue(_).md",
       "hash": "edb4bdf98e0ac508e94abfd897206a8a90a863d5bc591cb6df42418db731ca19"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/setvolumedecibelvalue(_:)": {
       "etag": "\"144b-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setvolumedecibelvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setvolumedecibelvalue(_).md",
       "hash": "9c9e8817c846e13b4096f02afd4c87c77dc274eb7b9711704c2375527c52cba7"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/setvolumescalarvalue(_:)": {
       "etag": "\"149a-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setvolumescalarvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setvolumescalarvalue(_).md",
       "hash": "e54827a6bb2cd6a43a9ab2fad108ca3375f7556146fb350ad298140beb27652b"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecontrol/sliderrange": {
@@ -817,22 +817,22 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecreateaggregatedevice(_:_:)": {
       "etag": "\"8f0c-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecreateaggregatedevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecreateaggregatedevice(_,_).md",
       "hash": "c986b96e1d04eca9df1e51d2e76f2ffdf968bd9496ab897603139640c65b1216"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarecreateprocesstap(_:_:)": {
       "etag": "\"8de5-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecreateprocesstap.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecreateprocesstap(_,_).md",
       "hash": "def01860c573fc3cc27294b727d99700a0011f942132195230ba323efbb88fc6"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredestroyaggregatedevice(_:)": {
       "etag": "\"82c4-65d55e897d431-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredestroyaggregatedevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredestroyaggregatedevice(_).md",
       "hash": "28452830ba285a9e341a8c093908516a085501978c63f3d64eb3c75eb9e66e13"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredestroyprocesstap(_:)": {
       "etag": "\"807d-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredestroyprocesstap.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredestroyprocesstap(_).md",
       "hash": "e71c116ceed756fcac446d9f0e1013f34d4ee74aaf2f5b4a642d153fdd04edeb"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice": {
@@ -897,7 +897,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/init(id:)": {
       "etag": "\"1417-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/init(id).md",
       "hash": "8ff90960253b5756770619a9b91658cca091a5edcf632b51bc6556d85e053fd6"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/inputsafetyoffset": {
@@ -947,7 +947,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/neareststarttime(attime:withflags:)": {
       "etag": "\"2477-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/neareststarttime-attimewithflags.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/neareststarttime(attime,withflags).md",
       "hash": "54f771c3ddb84c2d414cfad02523913559e7cf7822e17bf8f89c21c1fea4fc38"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/outputsafetyoffset": {
@@ -977,52 +977,52 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/setbufferframesize(_:)": {
       "etag": "\"13fc-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setbufferframesize.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setbufferframesize(_).md",
       "hash": "2c097ec4b5ccefb749cc22fe2a300e51880a0a6bfa9b519ceaa558135ef6fa4f"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/setclock(_:)": {
       "etag": "\"1620-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setclock.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setclock(_).md",
       "hash": "1df2782acdb94fa4c640adfc45500df71408e70585b89eb6d0a33fefb0b43fd5"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/setiocycleusage(_:)": {
       "etag": "\"1473-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setiocycleusage.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setiocycleusage(_).md",
       "hash": "e22e3b50f59b9d3a14a8ad3f773f778b9617dce1518bf377f3565938b0bb6ccf"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/setisprocessinputmuted(_:)": {
       "etag": "\"160e-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setisprocessinputmuted.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setisprocessinputmuted(_).md",
       "hash": "7df09f3fae9799058b1515adfb1a21cfc548448d9481b2a97a776ab364ddb9b5"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/setisprocessoutputmuted(_:)": {
       "etag": "\"161b-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setisprocessoutputmuted.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setisprocessoutputmuted(_).md",
       "hash": "613f6e8ddcef39793d69622370d6f486af993a1e29cf22d9f65331a8ea7effab"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/setpreferredinputchannelsforstereo(_:)": {
       "etag": "\"16d4-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setpreferredinputchannelsforstereo.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setpreferredinputchannelsforstereo(_).md",
       "hash": "3222af38200b187ae9949fbba7392afeb5292479c506ee4cadb654757735b67e"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/setpreferredoutputchannelsforstereo(_:)": {
       "etag": "\"16e2-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setpreferredoutputchannelsforstereo.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setpreferredoutputchannelsforstereo(_).md",
       "hash": "b02ca62f71b5ce0e107ec741f3b98e25169afed28c549bb43b48cb40efbdf527"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/start(at:flags:ioprocid:)": {
       "etag": "\"2a49-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/start-atflagsioprocid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/start(at,flags,ioprocid).md",
       "hash": "5dd937e486b2701d160bc6f2b42960bebe42336380c856526bfa7ffbd3488e4f"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/start(ioprocid:)": {
       "etag": "\"1ac7-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/start-ioprocid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/start(ioprocid).md",
       "hash": "3b4012857a20bd4d742cb5354e06e12c7256ec67fdb83cf86a35ab5189083d25"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/stop(ioprocid:)": {
       "etag": "\"17ca-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/stop-ioprocid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/stop(ioprocid).md",
       "hash": "515f81803c3738304827a8a89f25cceedb92d4ac631e23cb63e1f3e753dc7aff"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/streams": {
@@ -1032,12 +1032,12 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/togglehogmode()": {
       "etag": "\"173a-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/togglehogmode.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/togglehogmode().md",
       "hash": "717d26472765d6719fed757b6759e6c3f129666ff822b8ddf0eee7b3e7214e65"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/translatetime(_:)": {
       "etag": "\"1962-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/translatetime.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/translatetime(_).md",
       "hash": "99db047afafddfd821c02387e46436e99856dadbd8763f5ce24046f8e4444891"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaredevice/usesvariablebufferframesizes": {
@@ -1082,7 +1082,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareerror/init(_:)": {
       "etag": "\"dca-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareerror/init.md",
+      "file_path": "documentation/CoreAudio/audiohardwareerror/init(_).md",
       "hash": "98185d2cb5bdf594469a7ccb6fb9d7098ec2cefb98a3c9ea083723bad0f2f1ab"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareioprocstreamusage": {
@@ -1092,7 +1092,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareioprocstreamusage/init(mioproc:mnumberstreams:mstreamison:)": {
       "etag": "\"1c6d-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareioprocstreamusage/init-mioprocmnumberstreamsmstreamison.md",
+      "file_path": "documentation/CoreAudio/audiohardwareioprocstreamusage/init(mioproc,mnumberstreams,mstreamison).md",
       "hash": "a20c97ca7f76ade1f2c97af737714107a22bdd58e457f59e91130dbc87b89d80"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareioprocstreamusage/mioproc": {
@@ -1117,7 +1117,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/addlistener(forproperties:dispatchqueue:)": {
       "etag": "\"268c-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/addlistener-forpropertiesdispatchqueue.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/addlistener(forproperties,dispatchqueue).md",
       "hash": "1994eed514acdee55880ed9739220aa901468445eaa79b6c2f2ba66c56249faf"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/baseclassid": {
@@ -1147,7 +1147,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/hasproperty(address:)": {
       "etag": "\"1dec-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/hasproperty-address.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/hasproperty(address).md",
       "hash": "00be25562ad69b4ffb268bc80b7beef6ca13ac44e786c1e5b803d64de24d1795"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/id": {
@@ -1157,7 +1157,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/init(id:)": {
       "etag": "\"14ec-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/init(id).md",
       "hash": "65fa48ac212992824c33603b5579fb524a51cf17cd74e72f990f4e8bc662b5d8"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/isidentifying": {
@@ -1167,7 +1167,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/ispropertysettable(address:)": {
       "etag": "\"1f14-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/ispropertysettable-address.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/ispropertysettable(address).md",
       "hash": "7181dae307b9305c6fe76c88879c9c494ca793db4a8cf2902632a6f32777505f"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/manufacturer": {
@@ -1197,17 +1197,17 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/propertydata(address:qualifier:)": {
       "etag": "\"2295-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/propertydata-addressqualifier.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/propertydata(address,qualifier).md",
       "hash": "68bdca8dd9d76fc0cb2a7b90487e888f8d48716eac156603b9b3b58da6d31eed"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/propertydatasize(address:qualifier:)": {
       "etag": "\"2489-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/propertydatasize-addressqualifier.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/propertydatasize(address,qualifier).md",
       "hash": "262628c13f11731375c6fb075aec7f617bf818e4d21c75892ab44ec576140fd1"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/removelistener(forproperties:dispatchqueue:)": {
       "etag": "\"21e1-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/removelistener-forpropertiesdispatchqueue.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/removelistener(forproperties,dispatchqueue).md",
       "hash": "f9863a6f8cef2a21a5d34f6f0d3bbd2ff51d4ea33ff291f785bae92977befbab"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/serialnumber": {
@@ -1217,27 +1217,27 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/setcreatorbundleid(_:)": {
       "etag": "\"1556-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setcreatorbundleid.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setcreatorbundleid(_).md",
       "hash": "ec4f5980494c8222767de998ee0be426f64ccbf7355b91d7e17b58a3de3a2218"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/setisidentifying(_:)": {
       "etag": "\"162f-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setisidentifying.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setisidentifying(_).md",
       "hash": "29357e39d67d0ff554af49f31bf3ba5f79877520e02b9f18ca1a328c3c23cd37"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/setname(_:)": {
       "etag": "\"14b6-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setname.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setname(_).md",
       "hash": "f2a31b4e0064be02aba4e599c4a8f002d8ce5c4d2d64380536d6e824b95bc7f2"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/setpropertydata(address:qualifier:data:)-4kzgv": {
       "etag": "\"2520-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setpropertydata-addressqualifierdata-4kzgv.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setpropertydata(address,qualifier,data)-4kzgv.md",
       "hash": "f98edd5a02ab1dada6d2b36d9561fca6ef7f54fc1a1451f693ff0db47edda064"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareobject/setpropertydata(address:qualifier:data:)-7cfn": {
       "etag": "\"268b-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setpropertydata-addressqualifierdata-7cfn.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setpropertydata(address,qualifier,data)-7cfn.md",
       "hash": "de2fe86a8b525c2adcfe836262786a98dcb5ef9459a0b44948352c8f6906e681"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareplugin": {
@@ -1247,7 +1247,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareplugin/box(foruid:)": {
       "etag": "\"1aa7-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareplugin/box-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwareplugin/box(foruid).md",
       "hash": "6b8e1194d0014a3cc0d6e3b604291d8b547ead9acb3eb231f3ecac304f1c7e5e"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareplugin/boxes": {
@@ -1262,7 +1262,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareplugin/clock(foruid:)": {
       "etag": "\"1aeb-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareplugin/clock-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwareplugin/clock(foruid).md",
       "hash": "5ab58b9facdc69d88ea2dbefb0c151ad7b14deeb84c776a87fe36839b8c29c50"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareplugin/clocks": {
@@ -1272,7 +1272,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareplugin/device(foruid:)": {
       "etag": "\"1a8c-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareplugin/device-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwareplugin/device(foruid).md",
       "hash": "16a5361ae822329b10da3b83c3ad34b9f48af49c0355066d455c1ca5201aaed7"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareplugin/devices": {
@@ -1282,7 +1282,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareplugin/init(id:)": {
       "etag": "\"13b0-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareplugin/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareplugin/init(id).md",
       "hash": "515db5788d4d3cf17d5b2074eb236ac2bfbb0e5b62d598a2e6900081e9ad316d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarepowerhint": {
@@ -1297,7 +1297,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarepowerhint/init(rawvalue:)": {
       "etag": "\"1302-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarepowerhint/init-rawvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarepowerhint/init(rawvalue).md",
       "hash": "a73a803bc579295ce978fe05dcb563cbd28c94148c7ebd8484d7daae233f950d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarepowerhint/none": {
@@ -1322,7 +1322,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareprocess/init(id:)": {
       "etag": "\"139b-65d55e89abcf9-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareprocess/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareprocess/init(id).md",
       "hash": "1c421e348281a08f5d2cf6c661d41b8cfda533c9766aff29c6708d0b1176e6ef"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareprocess/isrunning": {
@@ -1377,7 +1377,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarestream/init(id:)": {
       "etag": "\"144c-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarestream/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwarestream/init(id).md",
       "hash": "177981886f31b76178185fbe4e141fece2b6d3beedc4883ef45b347781f1c62d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarestream/isactive": {
@@ -1397,17 +1397,17 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarestream/setisactive(_:)": {
       "etag": "\"1475-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarestream/setisactive.md",
+      "file_path": "documentation/CoreAudio/audiohardwarestream/setisactive(_).md",
       "hash": "e9798975c7ee095d64dfec438cf3bebcd5fddbdd1b26e834084310d09f4b9ae1"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarestream/setphysicalformat(_:)": {
       "etag": "\"1748-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarestream/setphysicalformat.md",
+      "file_path": "documentation/CoreAudio/audiohardwarestream/setphysicalformat(_).md",
       "hash": "310dee480b006f080c15d59208b7be532736bf9861f2c86edef899d40573aef9"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarestream/setvirtualformat(_:)": {
       "etag": "\"173a-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarestream/setvirtualformat.md",
+      "file_path": "documentation/CoreAudio/audiohardwarestream/setvirtualformat(_).md",
       "hash": "d7bf876b320634fbd06fc65ae33cf5612e0cc8f6e4d373fdb24bac282dbb9c33"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwarestream/startingchannel": {
@@ -1447,7 +1447,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/box(foruid:)": {
       "etag": "\"1b9f-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/box-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/box(foruid).md",
       "hash": "abac430d4135e0b6fab668b351c4b7520ec7f976560c53512b4f7b5e69d2b6a9"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/boxes": {
@@ -1457,7 +1457,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/clock(foruid:)": {
       "etag": "\"1be5-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/clock-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/clock(foruid).md",
       "hash": "ced417669acdd3337c073caa61e7319751928dc3b7cede8bf80cb45d0b2c73ad"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/clocks": {
@@ -1482,17 +1482,17 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/destroyaggregatedevice(_:)": {
       "etag": "\"1987-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/destroyaggregatedevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/destroyaggregatedevice(_).md",
       "hash": "7e5210f32f767d9b7b6a5317570aa55a90494336fec84ccb00291adbb4ed7c8b"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/destroyprocesstap(_:)": {
       "etag": "\"160c-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/destroyprocesstap.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/destroyprocesstap(_).md",
       "hash": "a4e092811074c175245f472d79cfd56e694767ba4b17f3dad2bda185b9c06a78"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/device(foruid:)": {
       "etag": "\"1b7f-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/device-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/device(foruid).md",
       "hash": "a5b9e4ec059d6d4502d7bc02bc6e9cce2eb5b65c0105a945df9fedb5820b7ac6"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/devices": {
@@ -1502,7 +1502,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/init(id:)": {
       "etag": "\"14a8-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/init(id).md",
       "hash": "36c4d304a9b071cc1240ff7d53de922807edf46503cde9750ad52a150f3e0a4e"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/isinitializingorexiting": {
@@ -1517,17 +1517,17 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/makeaggregatedevice(description:)": {
       "etag": "\"1efa-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/makeaggregatedevice-description.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/makeaggregatedevice(description).md",
       "hash": "96f3f606f963e3bca8e7adddfd41f3058acdf8f7bab4efc184005c0216807830"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/makeprocesstap(description:)": {
       "etag": "\"1ea5-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/makeprocesstap-description.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/makeprocesstap(description).md",
       "hash": "699f8f987725ff1554bdadd6feff88a5fdc46bec5d71abc6315f77b7a51f7457"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/plugin(forbundleid:)": {
       "etag": "\"1b59-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/plugin-forbundleid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/plugin(forbundleid).md",
       "hash": "c7d8a73fdf0e4f1b2d548be113ec0aea9c29cb62cc195b8f01968d5793d45e33"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/plugins": {
@@ -1542,7 +1542,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/process(for:)": {
       "etag": "\"1a8c-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/process-for.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/process(for).md",
       "hash": "44dcce681c06faa18632e53455a35d01ad5aeea18a98b6fa03ad2aa456126b24"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/processes": {
@@ -1552,47 +1552,47 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setallowshogmode(_:)": {
       "etag": "\"1573-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowshogmode.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowshogmode(_).md",
       "hash": "b63059676fe9002a3ee8153a573b65a32f2bc0f362842f2f32ae4a00566a247f"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setallowssleeping(_:)": {
       "etag": "\"1580-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowssleeping.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowssleeping(_).md",
       "hash": "433156bf827d295dcbb0bfbda3a6ddf3890d0359993f2b5b9719d96e2469c696"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setallowsunloading(_:)": {
       "etag": "\"15ca-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowsunloading.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowsunloading(_).md",
       "hash": "268a3d98a5822f4a1227a6f3b00a90d49983e1499e4b32d81f27d2d4b1ecafaf"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setdefaultinputdevice(_:)": {
       "etag": "\"16e5-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultinputdevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultinputdevice(_).md",
       "hash": "11422ff0c98adecae87d18a40166ffe099a7daac6b88bdf33211f4c034c41277"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setdefaultoutputdevice(_:)": {
       "etag": "\"16f3-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultoutputdevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultoutputdevice(_).md",
       "hash": "ec8f9de8527d1c7509ba5cdf674dc88513be341e0c57ad4914758798676f271d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setdefaultsoundeffectsdevice(_:)": {
       "etag": "\"1748-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultsoundeffectsdevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultsoundeffectsdevice(_).md",
       "hash": "583107a56a87872ee846aca2cc8d41d9370beead8530480bf56ba1b7164079dd"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setisprocessinputmuted(_:)": {
       "etag": "\"15aa-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setisprocessinputmuted.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setisprocessinputmuted(_).md",
       "hash": "5040a84ecb903d41c37fc443eb6febfa9f4ab36f40f6209c9c75b2b9c7583ed4"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setpowerhint(_:)": {
       "etag": "\"17e1-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setpowerhint.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setpowerhint(_).md",
       "hash": "487e897c38547af7129a6baae971fa6ea50bf36ae77630d065ee56ec24cb1e29"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/setshouldmixstereotomono(_:)": {
       "etag": "\"15be-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setshouldmixstereotomono.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setshouldmixstereotomono(_).md",
       "hash": "78c7997c8dd41c3ddef90983e245f8a49afb8c7d9602e3eeb02428cba84a8ac8"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/shared": {
@@ -1607,7 +1607,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/tap(foruid:)": {
       "etag": "\"1ae4-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/tap-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/tap(foruid).md",
       "hash": "e675b5dc20706f9a2254c6f6974770b95c38612f963d4e3ce8633730705451a7"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/taps": {
@@ -1617,7 +1617,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaresystem/unload()": {
       "etag": "\"10f7-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/unload.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/unload().md",
       "hash": "e52ebc08398e69bb4dfac070a268e34a1f5d8b4131764d75e35068c38421df83"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaretap": {
@@ -1637,12 +1637,12 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaretap/init(id:)": {
       "etag": "\"13a9-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaretap/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwaretap/init(id).md",
       "hash": "f5932610b058c74eb894deb947c96b3e3547a4dc8645ee5fb27e3d35b2edbb0d"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaretap/setdescription(_:)": {
       "etag": "\"168b-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaretap/setdescription.md",
+      "file_path": "documentation/CoreAudio/audiohardwaretap/setdescription(_).md",
       "hash": "b6ca88fd5e7c80f6e6d59de4702dd224ec14d28059a7672ac8bd7679796785db"
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwaretap/uid": {
@@ -1652,7 +1652,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiohardwareunload()": {
       "etag": "\"78b1-65d55e892a003-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareunload.md",
+      "file_path": "documentation/CoreAudio/audiohardwareunload().md",
       "hash": "17199227a6d610f3f0116c5cc57f1714cb9a4bce63acbe70eea09cdc73d1ba0e"
     },
     "https://developer.apple.com/documentation/coreaudio/audiolevelcontroltransferfunction": {
@@ -1662,7 +1662,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiolevelcontroltransferfunction/init(rawvalue:)": {
       "etag": "\"13d3-65d55e892a003-df\"",
-      "file_path": "documentation/CoreAudio/audiolevelcontroltransferfunction/init-rawvalue.md",
+      "file_path": "documentation/CoreAudio/audiolevelcontroltransferfunction/init(rawvalue).md",
       "hash": "3f1daa925d06a79d2539dbc208d5925711fd4c9e1c93aca3b783bc1e27f6b142"
     },
     "https://developer.apple.com/documentation/coreaudio/audiolevelcontroltransferfunction/tranferfunction10over1": {
@@ -1747,27 +1747,27 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectaddpropertylistener(_:_:_:_:)": {
       "etag": "\"a119-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectaddpropertylistener.md",
+      "file_path": "documentation/CoreAudio/audioobjectaddpropertylistener(_,_,_,_).md",
       "hash": "3e9d321b2140a234d06f64d7dbc2495eba22df437aa07903baad1dc5e694ee2a"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectaddpropertylistenerblock(_:_:_:_:)": {
       "etag": "\"aac2-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectaddpropertylistenerblock.md",
+      "file_path": "documentation/CoreAudio/audioobjectaddpropertylistenerblock(_,_,_,_).md",
       "hash": "6fc7f22302b9cdd65030f1e8c6b326b79a57313907e49e42abe87c46c548b47e"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectgetpropertydata(_:_:_:_:_:_:)": {
       "etag": "\"b202-65d55e894899e-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectgetpropertydata.md",
+      "file_path": "documentation/CoreAudio/audioobjectgetpropertydata(_,_,_,_,_,_).md",
       "hash": "da842d7613f71bbae3185f160684c1a5aa552ed02b5124845cb04b4292c2882d"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectgetpropertydatasize(_:_:_:_:_:)": {
       "etag": "\"aa1b-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectgetpropertydatasize.md",
+      "file_path": "documentation/CoreAudio/audioobjectgetpropertydatasize(_,_,_,_,_).md",
       "hash": "930ea2a9b23f646afd15404778ef8ea7e838483aedd6faf21f2b7de0185ff8ea"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjecthasproperty(_:_:)": {
       "etag": "\"92d4-65d55e8963015-df\"",
-      "file_path": "documentation/CoreAudio/audioobjecthasproperty.md",
+      "file_path": "documentation/CoreAudio/audioobjecthasproperty(_,_).md",
       "hash": "3c80b10d9b5ffc10e399fb0446d0bbd73bbd353290536ddde05f6d21f3ce4487"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectid": {
@@ -1777,7 +1777,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectispropertysettable(_:_:_:)": {
       "etag": "\"9932-65d55e89935fc-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectispropertysettable.md",
+      "file_path": "documentation/CoreAudio/audioobjectispropertysettable(_,_,_).md",
       "hash": "a72bc8ce9e30ea0c1e8495af9e5b900dd78da63bc1b1c331b755bdb21d561f47"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectpropertyaddress": {
@@ -1787,12 +1787,12 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectpropertyaddress/init()": {
       "etag": "\"f26-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectpropertyaddress/init.md",
+      "file_path": "documentation/CoreAudio/audioobjectpropertyaddress/init().md",
       "hash": "e6974834edec08012656ebb6eb672b9704a4df60bebafb4ac68a09e57d1078a1"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectpropertyaddress/init(mselector:mscope:melement:)": {
       "etag": "\"25cb-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectpropertyaddress/init-mselectormscopemelement.md",
+      "file_path": "documentation/CoreAudio/audioobjectpropertyaddress/init(mselector,mscope,melement).md",
       "hash": "7d9fab09f7f88bd519e145d71b905c54eb898a80fb7278b38a530a84fa4eb356"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectpropertyaddress/melement": {
@@ -1837,22 +1837,22 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectremovepropertylistener(_:_:_:_:)": {
       "etag": "\"a166-65d55e89935fc-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectremovepropertylistener.md",
+      "file_path": "documentation/CoreAudio/audioobjectremovepropertylistener(_,_,_,_).md",
       "hash": "deef694732b57e313041d98e25fb63bd552e28139b26b892726195a2f73175c3"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectremovepropertylistenerblock(_:_:_:_:)": {
       "etag": "\"a35f-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectremovepropertylistenerblock.md",
+      "file_path": "documentation/CoreAudio/audioobjectremovepropertylistenerblock(_,_,_,_).md",
       "hash": "cef62591f16d362257a88897b1a33c1f176688259a641986211529f951d4d23b"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectsetpropertydata(_:_:_:_:_:_:)": {
       "etag": "\"ab66-65d55e897d431-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectsetpropertydata.md",
+      "file_path": "documentation/CoreAudio/audioobjectsetpropertydata(_,_,_,_,_,_).md",
       "hash": "621d6e1d6a50686eac52dc731f487c65139f870d2889ffa4b150a10cc037da8c"
     },
     "https://developer.apple.com/documentation/coreaudio/audioobjectshow(_:)": {
       "etag": "\"7d0f-65d55e8963015-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectshow.md",
+      "file_path": "documentation/CoreAudio/audioobjectshow(_).md",
       "hash": "308b6b9e9ff4baa05c8b8d719c0f898844003f2a7410d8c096c5fc87e8f130f8"
     },
     "https://developer.apple.com/documentation/coreaudio/audiostreamid": {
@@ -1872,12 +1872,12 @@
     },
     "https://developer.apple.com/documentation/coreaudio/audiostreamrangeddescription/init()": {
       "etag": "\"f9a-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiostreamrangeddescription/init.md",
+      "file_path": "documentation/CoreAudio/audiostreamrangeddescription/init().md",
       "hash": "539fccd67f1cee6a8ae8bc9c0095de57adbaae77072e83a4b1628ea28d7d2a68"
     },
     "https://developer.apple.com/documentation/coreaudio/audiostreamrangeddescription/init(mformat:msampleraterange:)": {
       "etag": "\"1c8a-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiostreamrangeddescription/init-mformatmsampleraterange.md",
+      "file_path": "documentation/CoreAudio/audiostreamrangeddescription/init(mformat,msampleraterange).md",
       "hash": "1dfaf29b2d963481b568cb4a187d63adfee77266a8c10b92c4d51d623951d58a"
     },
     "https://developer.apple.com/documentation/coreaudio/audiostreamrangeddescription/mformat": {
@@ -1917,37 +1917,37 @@
     },
     "https://developer.apple.com/documentation/coreaudio/catapdescription/init()": {
       "etag": "\"2e02-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init().md",
       "hash": "39460f5cafa91a65b921a9ff0f8c0045e58ac45bf11f9fda27de86a4396c7418"
     },
     "https://developer.apple.com/documentation/coreaudio/catapdescription/init(excludingprocesses:deviceuid:stream:)": {
       "etag": "\"35e2-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-excludingprocessesdeviceuidstream.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(excludingprocesses,deviceuid,stream).md",
       "hash": "d2596fb61c184818899b99a6d574b2c73f9ce84143a75de26c9a1a3729b676c9"
     },
     "https://developer.apple.com/documentation/coreaudio/catapdescription/init(monoglobaltapbutexcludeprocesses:)": {
       "etag": "\"2eec-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-monoglobaltapbutexcludeprocesses.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(monoglobaltapbutexcludeprocesses).md",
       "hash": "a2af2b4d74262e7b6f66763085d093592f4e68143ceea22f8c6c3e0724f6b8e0"
     },
     "https://developer.apple.com/documentation/coreaudio/catapdescription/init(monomixdownofprocesses:)": {
       "etag": "\"2eb8-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-monomixdownofprocesses.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(monomixdownofprocesses).md",
       "hash": "9e1aa1f6e1816135c75a772d40a37a6b886a4a1ca01068f5bf4f3c1a68aa514c"
     },
     "https://developer.apple.com/documentation/coreaudio/catapdescription/init(processes:deviceuid:stream:)": {
       "etag": "\"35b2-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-processesdeviceuidstream.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(processes,deviceuid,stream).md",
       "hash": "2695aa11c7475ab92aa0be27b6dc07842eed0b098e58aa3448baf8233aaba399"
     },
     "https://developer.apple.com/documentation/coreaudio/catapdescription/init(stereoglobaltapbutexcludeprocesses:)": {
       "etag": "\"2ef6-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-stereoglobaltapbutexcludeprocesses.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(stereoglobaltapbutexcludeprocesses).md",
       "hash": "2d992871212ad6be2ac2799560519c18c30581132b70f55dff918ca893853af1"
     },
     "https://developer.apple.com/documentation/coreaudio/catapdescription/init(stereomixdownofprocesses:)": {
       "etag": "\"2ec2-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-stereomixdownofprocesses.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(stereomixdownofprocesses).md",
       "hash": "da9bba31e3916c2845502577a49a1466d17489608884966dc725cb703173d5e8"
     },
     "https://developer.apple.com/documentation/coreaudio/catapdescription/isexclusive": {
@@ -2007,7 +2007,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/catapmutebehavior/init(rawvalue:)": {
       "etag": "\"12a5-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/catapmutebehavior/init-rawvalue.md",
+      "file_path": "documentation/CoreAudio/catapmutebehavior/init(rawvalue).md",
       "hash": "f5003689bc0d3f17a52d0aca43119da4618643032200f4f15b99b092506bb18e"
     },
     "https://developer.apple.com/documentation/coreaudio/catapmutebehavior/muted": {
@@ -4142,32 +4142,32 @@
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/channeldescriptions-swift.property": {
       "etag": "\"17f8-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/channeldescriptions-swiftproperty.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/channeldescriptions-swift.property.md",
       "hash": "c77b6e8cb380385a245e6ea62d5b84c66830f4780839eba609dff21f6c96d5ed"
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/channeldescriptions-swift.struct": {
       "etag": "\"202e-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/channeldescriptions-swiftstruct.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/channeldescriptions-swift.struct.md",
       "hash": "978cbf149d8653bc3b3fef0c5559fd533e612bf64293731de76779d4fe159bd4"
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/init(audiochannellayoutpointer:deallocator:)": {
       "etag": "\"2894-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init-audiochannellayoutpointerdeallocator.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init(audiochannellayoutpointer,deallocator).md",
       "hash": "e84ffe6047dfc7631bf4ecaf47e4c60e4d022ac9c9d570aff5650478048cac14"
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/init(channeldescriptions:)": {
       "etag": "\"180e-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init-channeldescriptions.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init(channeldescriptions).md",
       "hash": "4ab69c3f3907b02e3cbe1761cdd1f15cd7c3ade9d8dfd8e264edc7c1a83b9603"
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/init(maximumdescriptions:)": {
       "etag": "\"17b9-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init-maximumdescriptions.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init(maximumdescriptions).md",
       "hash": "e5ff56065a9c80e33d07111c03d6c1fb3b1ea7e61dedb6f7b8d0a59ad47309fd"
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/init(tag:)": {
       "etag": "\"15d2-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init-tag.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init(tag).md",
       "hash": "987c421414fbd9deff923a89d0f05cc67124b49fa129b817e10ab046d5826002"
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/numberofchannels": {
@@ -4177,7 +4177,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/setalltounknown()": {
       "etag": "\"1082-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/setalltounknown.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/setalltounknown().md",
       "hash": "872b5cac0f8a84971694f095d204ad458b48e36892c3509db81749921c03affa"
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/sizeinbytes": {
@@ -4192,17 +4192,17 @@
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/withunsafemutablepointer(_:)": {
       "etag": "\"2083-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/withunsafemutablepointer.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/withunsafemutablepointer(_).md",
       "hash": "ec21e03a6a5556af99ec594a40c68b24baa201d239f34c2941556f98329164d4"
     },
     "https://developer.apple.com/documentation/coreaudio/managedaudiochannellayout/withunsafepointer(_:)": {
       "etag": "\"1e5d-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/withunsafepointer.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/withunsafepointer(_).md",
       "hash": "07dbb74b470d7bf25be06d0a8b1b6effbdf4b40d4045e84adfb16e624972a9c3"
     },
     "https://developer.apple.com/documentation/coreaudio/propertyaddress(_:scope:element:)": {
       "etag": "\"8105-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/propertyaddress-scopeelement.md",
+      "file_path": "documentation/CoreAudio/propertyaddress(_,scope,element).md",
       "hash": "a02a596d3e2ab279aeed071d88a8b46debd5dff99e1dadaaa3154824c2e7c940"
     },
     "https://developer.apple.com/documentation/coreaudio/propertylistenerdelegate": {
@@ -4212,7 +4212,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/propertylistenerdelegate/propertieschanged(properties:)": {
       "etag": "\"1b77-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/propertylistenerdelegate/propertieschanged-properties.md",
+      "file_path": "documentation/CoreAudio/propertylistenerdelegate/propertieschanged(properties).md",
       "hash": "71c9983a2c36d53263a48f86e26e519cfdc84d0656f2b28791b61f7f205177af"
     },
     "https://developer.apple.com/documentation/coreaudio/unsafemutableaudiobufferlistpointer": {
@@ -4232,12 +4232,12 @@
     },
     "https://developer.apple.com/documentation/coreaudio/unsafemutableaudiobufferlistpointer/init(_:)-4a7c5": {
       "etag": "\"1894-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/init-4a7c5.md",
+      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/init(_)-4a7c5.md",
       "hash": "cac58ab46d080e837c7a9f1e4316375261d9a6e6bcb7e1462523bff6e116c70f"
     },
     "https://developer.apple.com/documentation/coreaudio/unsafemutableaudiobufferlistpointer/init(_:)-6qwfh": {
       "etag": "\"189e-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/init-6qwfh.md",
+      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/init(_)-6qwfh.md",
       "hash": "13cdbd67a2d39512ba955ec587ff9b579f692a9cad4a09ffab36b0496d7e7c22"
     },
     "https://developer.apple.com/documentation/coreaudio/unsafemutableaudiobufferlistpointer/mutablecollection-implementations": {
@@ -4257,7 +4257,7 @@
     },
     "https://developer.apple.com/documentation/coreaudio/unsafemutableaudiobufferlistpointer/subscript(_:)": {
       "etag": "\"188a-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/subscript.md",
+      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/subscript(_).md",
       "hash": "40f91b79dfefab9d8042fd9697583c4e22dd0c6b8593b0b74cc52e9d5e08ed0c"
     },
     "https://developer.apple.com/documentation/coreaudio/unsafemutableaudiobufferlistpointer/unsafemutablepointer": {
@@ -4677,37 +4677,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioconverthosttimetonanos(_:).json": {
       "etag": "\"831d-65d55e892a003-df\"",
-      "file_path": "documentation/CoreAudio/audioconverthosttimetonanos.md",
+      "file_path": "documentation/CoreAudio/audioconverthosttimetonanos(_).md",
       "hash": "098428e6f079bba6a12cbc6802423d1588b4012100116618e5e18f449e79944c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioconvertnanostohosttime(_:).json": {
       "etag": "\"8325-65d55e89abcf9-df\"",
-      "file_path": "documentation/CoreAudio/audioconvertnanostohosttime.md",
+      "file_path": "documentation/CoreAudio/audioconvertnanostohosttime(_).md",
       "hash": "0f74d80f97a61635a2a64cf48ef22a700c43da83b377ab1505b68aaed830de79"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicecreateioprocid(_:_:_:_:).json": {
       "etag": "\"9e9b-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicecreateioprocid.md",
+      "file_path": "documentation/CoreAudio/audiodevicecreateioprocid(_,_,_,_).md",
       "hash": "79cb5be609aeebf757e6e64f0ad04532ee17619c38ca20abb0084ac2be33448e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicecreateioprocidwithblock(_:_:_:_:).json": {
       "etag": "\"a38c-65d55e89935fc-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicecreateioprocidwithblock.md",
+      "file_path": "documentation/CoreAudio/audiodevicecreateioprocidwithblock(_,_,_,_).md",
       "hash": "a25d59b622bf0ad774170288647444b2debd0b1acaa753304cadf21c29255b7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicedestroyioprocid(_:_:).json": {
       "etag": "\"8bcc-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicedestroyioprocid.md",
+      "file_path": "documentation/CoreAudio/audiodevicedestroyioprocid(_,_).md",
       "hash": "d2b9fb4ffd3bbd26315fc1c638d40b0094dc7dcbb931a6e21e6b9aba304295b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicegetcurrenttime(_:_:).json": {
       "etag": "\"91dd-65d55e894899e-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicegetcurrenttime.md",
+      "file_path": "documentation/CoreAudio/audiodevicegetcurrenttime(_,_).md",
       "hash": "e151085e1084152cd7ae7ac6c9a32b0ea14f8d617941159780ec3f0ee554823d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicegetneareststarttime(_:_:_:).json": {
       "etag": "\"9e7d-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicegetneareststarttime.md",
+      "file_path": "documentation/CoreAudio/audiodevicegetneareststarttime(_,_,_).md",
       "hash": "b072ccef91a77480d680e8e2d9267f74ec35accf4d04f99a484e16d867b8c8f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodeviceid.json": {
@@ -4742,37 +4742,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicestart(_:_:).json": {
       "etag": "\"8e69-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicestart.md",
+      "file_path": "documentation/CoreAudio/audiodevicestart(_,_).md",
       "hash": "690805d4b19c59fc84ff8241251718b3a13ec6285093c08cf6c8a0c9f2b88604"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicestartattime(_:_:_:_:).json": {
       "etag": "\"a2c0-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicestartattime.md",
+      "file_path": "documentation/CoreAudio/audiodevicestartattime(_,_,_,_).md",
       "hash": "c53ced697630782c6bc244c579c67009c7ed913b2112b015477da951970828d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicestop(_:_:).json": {
       "etag": "\"8a7f-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicestop.md",
+      "file_path": "documentation/CoreAudio/audiodevicestop(_,_).md",
       "hash": "d983a2fcd2c4e128315d329412f95f021d5ea05c089a76896b404a258d614a79"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiodevicetranslatetime(_:_:_:).json": {
       "etag": "\"99eb-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiodevicetranslatetime.md",
+      "file_path": "documentation/CoreAudio/audiodevicetranslatetime(_,_,_).md",
       "hash": "f08e30d74eb33ffb902f975fa8ca7c804fa1e05d9b17f4947ec3ef9ad806dcc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiogetcurrenthosttime().json": {
       "etag": "\"7d0b-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiogetcurrenthosttime.md",
+      "file_path": "documentation/CoreAudio/audiogetcurrenthosttime().md",
       "hash": "87b02d0829af6c333410c5120a7540d3cb40267466fde57d9b4fce9155c29bdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiogethostclockfrequency().json": {
       "etag": "\"7d3f-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiogethostclockfrequency.md",
+      "file_path": "documentation/CoreAudio/audiogethostclockfrequency().md",
       "hash": "de943d85a056465bb389ee6f346d4362f2b37f291dcc08e16f3c6818a2a40eab"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiogethostclockminimumtimedelta().json": {
       "etag": "\"7ea8-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiogethostclockminimumtimedelta.md",
+      "file_path": "documentation/CoreAudio/audiogethostclockminimumtimedelta().md",
       "hash": "a20640d796ebf78178d4d0ce8afcb78fd00e26e934cd63aa25d1757e86069dd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareaggregatedevice.json": {
@@ -4802,27 +4802,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareaggregatedevice/init(id:).json": {
       "etag": "\"1507-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/init(id).md",
       "hash": "06a65183a0682540eceb951b2484e72bb4004466083825056aeb2d6718cab48a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareaggregatedevice/setclocksource(_:).json": {
       "etag": "\"1740-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setclocksource.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setclocksource(_).md",
       "hash": "be8431bfee863ffc428af5331245d31f0b907ab3db6cc55a4e5c028d1bbddf7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareaggregatedevice/setcomposition(_:).json": {
       "etag": "\"15f9-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setcomposition.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setcomposition(_).md",
       "hash": "0d29e21c99cc98ed9e490f11e8008b714e5d9890098d30c7184d35ea496eef9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareaggregatedevice/setsubdevices(_:).json": {
       "etag": "\"17c1-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setsubdevices.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setsubdevices(_).md",
       "hash": "5cfc5a24bc2479927794e1f222cd3e87ec447490de9490553bdf81c9dcd44b62"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareaggregatedevice/setsubtaps(_:).json": {
       "etag": "\"169f-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setsubtaps.md",
+      "file_path": "documentation/CoreAudio/audiohardwareaggregatedevice/setsubtaps(_).md",
       "hash": "95d072bf4af6392e6fbaee94a8426c20dc418a2eab7dfe7a60220bb42ed1c9df"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareaggregatedevice/subdevices.json": {
@@ -4852,12 +4852,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarebox/disable().json": {
       "etag": "\"f72-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarebox/disable.md",
+      "file_path": "documentation/CoreAudio/audiohardwarebox/disable().md",
       "hash": "2a03802aa1724640ccd6d44624ba0d89935e052447d151ff7d9ed88ccb88cdca"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarebox/enable().json": {
       "etag": "\"f63-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarebox/enable.md",
+      "file_path": "documentation/CoreAudio/audiohardwarebox/enable().md",
       "hash": "d2ba14afe968c824323df4253a021a42f2ea70fbd12124ce7ccd6f50adad5768"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarebox/enabled.json": {
@@ -4882,7 +4882,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarebox/init(id:).json": {
       "etag": "\"1464-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarebox/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwarebox/init(id).md",
       "hash": "089bcad9d161a2c7cbbdc92fe9059d9c3d4554ef0cf4763812a18e15a7748c6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarebox/isprotected.json": {
@@ -4922,7 +4922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareclock/init(id:).json": {
       "etag": "\"148c-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareclock/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareclock/init(id).md",
       "hash": "dcd94a82a422a272b8b6c46957174fd93893214105efd75f4181289f8383da9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareclock/inputlatency.json": {
@@ -4952,7 +4952,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareclock/setnominalsamplerate(_:).json": {
       "etag": "\"1506-65d55e88e2f37-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareclock/setnominalsamplerate.md",
+      "file_path": "documentation/CoreAudio/audiohardwareclock/setnominalsamplerate(_).md",
       "hash": "3df59aeea6f0ccccc23f5f5a105893afca9901b4df0ae4841163b6f397980b27"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareclock/transporttype.json": {
@@ -4982,12 +4982,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/converttodecibels(fromscalar:).json": {
       "etag": "\"1776-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/converttodecibels-fromscalar.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/converttodecibels(fromscalar).md",
       "hash": "ba117cbf698273951afe7932cef73a12b6567bf7f95df4608119eaf27cb7e9d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/converttoscalar(fromdecibels:).json": {
       "etag": "\"177a-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/converttoscalar-fromdecibels.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/converttoscalar(fromdecibels).md",
       "hash": "73f0644485294de1af092c079745aefd3d21d9c95e854c7a2aa71bb9eabee24f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/element.json": {
@@ -4997,7 +4997,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/init(id:).json": {
       "etag": "\"1414-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/init(id).md",
       "hash": "ad4be619889d80f90481c3e97f8122cead5ff3845c0c46187f70e444410fe72c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/scope.json": {
@@ -5012,42 +5012,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/selectoritemkind(fromid:).json": {
       "etag": "\"194b-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/selectoritemkind-fromid.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/selectoritemkind(fromid).md",
       "hash": "ae1ca3e13c2eda38e81adbb6914b84fb7b551e89304c64df6c895731d1c07d1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/selectoritemname(fromid:).json": {
       "etag": "\"1977-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/selectoritemname-fromid.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/selectoritemname(fromid).md",
       "hash": "4a82a882229cf044d87ce7331fb0eafd8de0e14ca43e32bca10e8ee3517ec4dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/setbooleanvalue(_:).json": {
       "etag": "\"145e-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setbooleanvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setbooleanvalue(_).md",
       "hash": "2e05f459d47cf5e7e2c40802175440f152f49773b6fac4984b6ca3b89949a551"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/setselecteditems(_:).json": {
       "etag": "\"1463-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setselecteditems.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setselecteditems(_).md",
       "hash": "23b198afb2e28e9dcdce7de29a3a4226ec18f5df1fe7bddf6f3172a9703b95f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/setslidervalue(_:).json": {
       "etag": "\"1433-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setslidervalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setslidervalue(_).md",
       "hash": "9a55b8b2dfb28abb0100f6e8c695c633ae3d19e2c78459e8db7325a31bbb9153"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/setstereopanvalue(_:).json": {
       "etag": "\"141e-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setstereopanvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setstereopanvalue(_).md",
       "hash": "edb4bdf98e0ac508e94abfd897206a8a90a863d5bc591cb6df42418db731ca19"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/setvolumedecibelvalue(_:).json": {
       "etag": "\"144b-65d55e89d92a3-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setvolumedecibelvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setvolumedecibelvalue(_).md",
       "hash": "9c9e8817c846e13b4096f02afd4c87c77dc274eb7b9711704c2375527c52cba7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/setvolumescalarvalue(_:).json": {
       "etag": "\"149a-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setvolumescalarvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecontrol/setvolumescalarvalue(_).md",
       "hash": "e54827a6bb2cd6a43a9ab2fad108ca3375f7556146fb350ad298140beb27652b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecontrol/sliderrange.json": {
@@ -5087,22 +5087,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecreateaggregatedevice(_:_:).json": {
       "etag": "\"8f0c-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecreateaggregatedevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecreateaggregatedevice(_,_).md",
       "hash": "c986b96e1d04eca9df1e51d2e76f2ffdf968bd9496ab897603139640c65b1216"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarecreateprocesstap(_:_:).json": {
       "etag": "\"8de5-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarecreateprocesstap.md",
+      "file_path": "documentation/CoreAudio/audiohardwarecreateprocesstap(_,_).md",
       "hash": "def01860c573fc3cc27294b727d99700a0011f942132195230ba323efbb88fc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredestroyaggregatedevice(_:).json": {
       "etag": "\"82c4-65d55e897d431-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredestroyaggregatedevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredestroyaggregatedevice(_).md",
       "hash": "28452830ba285a9e341a8c093908516a085501978c63f3d64eb3c75eb9e66e13"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredestroyprocesstap(_:).json": {
       "etag": "\"807d-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredestroyprocesstap.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredestroyprocesstap(_).md",
       "hash": "e71c116ceed756fcac446d9f0e1013f34d4ee74aaf2f5b4a642d153fdd04edeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice.json": {
@@ -5167,7 +5167,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/init(id:).json": {
       "etag": "\"1417-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/init(id).md",
       "hash": "8ff90960253b5756770619a9b91658cca091a5edcf632b51bc6556d85e053fd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/inputsafetyoffset.json": {
@@ -5217,7 +5217,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/neareststarttime(attime:withflags:).json": {
       "etag": "\"2477-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/neareststarttime-attimewithflags.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/neareststarttime(attime,withflags).md",
       "hash": "54f771c3ddb84c2d414cfad02523913559e7cf7822e17bf8f89c21c1fea4fc38"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/outputsafetyoffset.json": {
@@ -5247,52 +5247,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/setbufferframesize(_:).json": {
       "etag": "\"13fc-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setbufferframesize.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setbufferframesize(_).md",
       "hash": "2c097ec4b5ccefb749cc22fe2a300e51880a0a6bfa9b519ceaa558135ef6fa4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/setclock(_:).json": {
       "etag": "\"1620-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setclock.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setclock(_).md",
       "hash": "1df2782acdb94fa4c640adfc45500df71408e70585b89eb6d0a33fefb0b43fd5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/setiocycleusage(_:).json": {
       "etag": "\"1473-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setiocycleusage.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setiocycleusage(_).md",
       "hash": "e22e3b50f59b9d3a14a8ad3f773f778b9617dce1518bf377f3565938b0bb6ccf"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/setisprocessinputmuted(_:).json": {
       "etag": "\"160e-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setisprocessinputmuted.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setisprocessinputmuted(_).md",
       "hash": "7df09f3fae9799058b1515adfb1a21cfc548448d9481b2a97a776ab364ddb9b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/setisprocessoutputmuted(_:).json": {
       "etag": "\"161b-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setisprocessoutputmuted.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setisprocessoutputmuted(_).md",
       "hash": "613f6e8ddcef39793d69622370d6f486af993a1e29cf22d9f65331a8ea7effab"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/setpreferredinputchannelsforstereo(_:).json": {
       "etag": "\"16d4-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setpreferredinputchannelsforstereo.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setpreferredinputchannelsforstereo(_).md",
       "hash": "3222af38200b187ae9949fbba7392afeb5292479c506ee4cadb654757735b67e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/setpreferredoutputchannelsforstereo(_:).json": {
       "etag": "\"16e2-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/setpreferredoutputchannelsforstereo.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/setpreferredoutputchannelsforstereo(_).md",
       "hash": "b02ca62f71b5ce0e107ec741f3b98e25169afed28c549bb43b48cb40efbdf527"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/start(at:flags:ioprocid:).json": {
       "etag": "\"2a49-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/start-atflagsioprocid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/start(at,flags,ioprocid).md",
       "hash": "5dd937e486b2701d160bc6f2b42960bebe42336380c856526bfa7ffbd3488e4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/start(ioprocid:).json": {
       "etag": "\"1ac7-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/start-ioprocid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/start(ioprocid).md",
       "hash": "3b4012857a20bd4d742cb5354e06e12c7256ec67fdb83cf86a35ab5189083d25"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/stop(ioprocid:).json": {
       "etag": "\"17ca-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/stop-ioprocid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/stop(ioprocid).md",
       "hash": "515f81803c3738304827a8a89f25cceedb92d4ac631e23cb63e1f3e753dc7aff"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/streams.json": {
@@ -5302,12 +5302,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/togglehogmode().json": {
       "etag": "\"173a-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/togglehogmode.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/togglehogmode().md",
       "hash": "717d26472765d6719fed757b6759e6c3f129666ff822b8ddf0eee7b3e7214e65"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/translatetime(_:).json": {
       "etag": "\"1962-65d55e8800062-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaredevice/translatetime.md",
+      "file_path": "documentation/CoreAudio/audiohardwaredevice/translatetime(_).md",
       "hash": "99db047afafddfd821c02387e46436e99856dadbd8763f5ce24046f8e4444891"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaredevice/usesvariablebufferframesizes.json": {
@@ -5352,7 +5352,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareerror/init(_:).json": {
       "etag": "\"dca-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareerror/init.md",
+      "file_path": "documentation/CoreAudio/audiohardwareerror/init(_).md",
       "hash": "98185d2cb5bdf594469a7ccb6fb9d7098ec2cefb98a3c9ea083723bad0f2f1ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareioprocstreamusage.json": {
@@ -5362,7 +5362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareioprocstreamusage/init(mioproc:mnumberstreams:mstreamison:).json": {
       "etag": "\"1c6d-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareioprocstreamusage/init-mioprocmnumberstreamsmstreamison.md",
+      "file_path": "documentation/CoreAudio/audiohardwareioprocstreamusage/init(mioproc,mnumberstreams,mstreamison).md",
       "hash": "a20c97ca7f76ade1f2c97af737714107a22bdd58e457f59e91130dbc87b89d80"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareioprocstreamusage/mioproc.json": {
@@ -5387,7 +5387,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/addlistener(forproperties:dispatchqueue:).json": {
       "etag": "\"268c-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/addlistener-forpropertiesdispatchqueue.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/addlistener(forproperties,dispatchqueue).md",
       "hash": "1994eed514acdee55880ed9739220aa901468445eaa79b6c2f2ba66c56249faf"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/baseclassid.json": {
@@ -5417,7 +5417,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/hasproperty(address:).json": {
       "etag": "\"1dec-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/hasproperty-address.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/hasproperty(address).md",
       "hash": "00be25562ad69b4ffb268bc80b7beef6ca13ac44e786c1e5b803d64de24d1795"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/id.json": {
@@ -5427,7 +5427,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/init(id:).json": {
       "etag": "\"14ec-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/init(id).md",
       "hash": "65fa48ac212992824c33603b5579fb524a51cf17cd74e72f990f4e8bc662b5d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/isidentifying.json": {
@@ -5437,7 +5437,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/ispropertysettable(address:).json": {
       "etag": "\"1f14-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/ispropertysettable-address.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/ispropertysettable(address).md",
       "hash": "7181dae307b9305c6fe76c88879c9c494ca793db4a8cf2902632a6f32777505f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/manufacturer.json": {
@@ -5467,17 +5467,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/propertydata(address:qualifier:).json": {
       "etag": "\"2295-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/propertydata-addressqualifier.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/propertydata(address,qualifier).md",
       "hash": "68bdca8dd9d76fc0cb2a7b90487e888f8d48716eac156603b9b3b58da6d31eed"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/propertydatasize(address:qualifier:).json": {
       "etag": "\"2489-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/propertydatasize-addressqualifier.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/propertydatasize(address,qualifier).md",
       "hash": "262628c13f11731375c6fb075aec7f617bf818e4d21c75892ab44ec576140fd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/removelistener(forproperties:dispatchqueue:).json": {
       "etag": "\"21e1-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/removelistener-forpropertiesdispatchqueue.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/removelistener(forproperties,dispatchqueue).md",
       "hash": "f9863a6f8cef2a21a5d34f6f0d3bbd2ff51d4ea33ff291f785bae92977befbab"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/serialnumber.json": {
@@ -5487,27 +5487,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/setcreatorbundleid(_:).json": {
       "etag": "\"1556-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setcreatorbundleid.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setcreatorbundleid(_).md",
       "hash": "ec4f5980494c8222767de998ee0be426f64ccbf7355b91d7e17b58a3de3a2218"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/setisidentifying(_:).json": {
       "etag": "\"162f-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setisidentifying.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setisidentifying(_).md",
       "hash": "29357e39d67d0ff554af49f31bf3ba5f79877520e02b9f18ca1a328c3c23cd37"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/setname(_:).json": {
       "etag": "\"14b6-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setname.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setname(_).md",
       "hash": "f2a31b4e0064be02aba4e599c4a8f002d8ce5c4d2d64380536d6e824b95bc7f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/setpropertydata(address:qualifier:data:)-4kzgv.json": {
       "etag": "\"2520-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setpropertydata-addressqualifierdata-4kzgv.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setpropertydata(address,qualifier,data)-4kzgv.md",
       "hash": "f98edd5a02ab1dada6d2b36d9561fca6ef7f54fc1a1451f693ff0db47edda064"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareobject/setpropertydata(address:qualifier:data:)-7cfn.json": {
       "etag": "\"268b-65d55e886313e-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareobject/setpropertydata-addressqualifierdata-7cfn.md",
+      "file_path": "documentation/CoreAudio/audiohardwareobject/setpropertydata(address,qualifier,data)-7cfn.md",
       "hash": "de2fe86a8b525c2adcfe836262786a98dcb5ef9459a0b44948352c8f6906e681"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareplugin.json": {
@@ -5517,7 +5517,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareplugin/box(foruid:).json": {
       "etag": "\"1aa7-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareplugin/box-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwareplugin/box(foruid).md",
       "hash": "6b8e1194d0014a3cc0d6e3b604291d8b547ead9acb3eb231f3ecac304f1c7e5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareplugin/boxes.json": {
@@ -5532,7 +5532,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareplugin/clock(foruid:).json": {
       "etag": "\"1aeb-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareplugin/clock-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwareplugin/clock(foruid).md",
       "hash": "5ab58b9facdc69d88ea2dbefb0c151ad7b14deeb84c776a87fe36839b8c29c50"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareplugin/clocks.json": {
@@ -5542,7 +5542,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareplugin/device(foruid:).json": {
       "etag": "\"1a8c-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareplugin/device-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwareplugin/device(foruid).md",
       "hash": "16a5361ae822329b10da3b83c3ad34b9f48af49c0355066d455c1ca5201aaed7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareplugin/devices.json": {
@@ -5552,7 +5552,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareplugin/init(id:).json": {
       "etag": "\"13b0-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareplugin/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareplugin/init(id).md",
       "hash": "515db5788d4d3cf17d5b2074eb236ac2bfbb0e5b62d598a2e6900081e9ad316d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarepowerhint.json": {
@@ -5567,7 +5567,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarepowerhint/init(rawvalue:).json": {
       "etag": "\"1302-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarepowerhint/init-rawvalue.md",
+      "file_path": "documentation/CoreAudio/audiohardwarepowerhint/init(rawvalue).md",
       "hash": "a73a803bc579295ce978fe05dcb563cbd28c94148c7ebd8484d7daae233f950d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarepowerhint/none.json": {
@@ -5592,7 +5592,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareprocess/init(id:).json": {
       "etag": "\"139b-65d55e89abcf9-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareprocess/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwareprocess/init(id).md",
       "hash": "1c421e348281a08f5d2cf6c661d41b8cfda533c9766aff29c6708d0b1176e6ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareprocess/isrunning.json": {
@@ -5647,7 +5647,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarestream/init(id:).json": {
       "etag": "\"144c-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarestream/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwarestream/init(id).md",
       "hash": "177981886f31b76178185fbe4e141fece2b6d3beedc4883ef45b347781f1c62d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarestream/isactive.json": {
@@ -5667,17 +5667,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarestream/setisactive(_:).json": {
       "etag": "\"1475-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarestream/setisactive.md",
+      "file_path": "documentation/CoreAudio/audiohardwarestream/setisactive(_).md",
       "hash": "e9798975c7ee095d64dfec438cf3bebcd5fddbdd1b26e834084310d09f4b9ae1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarestream/setphysicalformat(_:).json": {
       "etag": "\"1748-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarestream/setphysicalformat.md",
+      "file_path": "documentation/CoreAudio/audiohardwarestream/setphysicalformat(_).md",
       "hash": "310dee480b006f080c15d59208b7be532736bf9861f2c86edef899d40573aef9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarestream/setvirtualformat(_:).json": {
       "etag": "\"173a-65d55e88f953c-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwarestream/setvirtualformat.md",
+      "file_path": "documentation/CoreAudio/audiohardwarestream/setvirtualformat(_).md",
       "hash": "d7bf876b320634fbd06fc65ae33cf5612e0cc8f6e4d373fdb24bac282dbb9c33"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwarestream/startingchannel.json": {
@@ -5717,7 +5717,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/box(foruid:).json": {
       "etag": "\"1b9f-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/box-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/box(foruid).md",
       "hash": "abac430d4135e0b6fab668b351c4b7520ec7f976560c53512b4f7b5e69d2b6a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/boxes.json": {
@@ -5727,7 +5727,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/clock(foruid:).json": {
       "etag": "\"1be5-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/clock-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/clock(foruid).md",
       "hash": "ced417669acdd3337c073caa61e7319751928dc3b7cede8bf80cb45d0b2c73ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/clocks.json": {
@@ -5752,17 +5752,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/destroyaggregatedevice(_:).json": {
       "etag": "\"1987-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/destroyaggregatedevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/destroyaggregatedevice(_).md",
       "hash": "7e5210f32f767d9b7b6a5317570aa55a90494336fec84ccb00291adbb4ed7c8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/destroyprocesstap(_:).json": {
       "etag": "\"160c-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/destroyprocesstap.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/destroyprocesstap(_).md",
       "hash": "a4e092811074c175245f472d79cfd56e694767ba4b17f3dad2bda185b9c06a78"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/device(foruid:).json": {
       "etag": "\"1b7f-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/device-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/device(foruid).md",
       "hash": "a5b9e4ec059d6d4502d7bc02bc6e9cce2eb5b65c0105a945df9fedb5820b7ac6"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/devices.json": {
@@ -5772,7 +5772,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/init(id:).json": {
       "etag": "\"14a8-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/init(id).md",
       "hash": "36c4d304a9b071cc1240ff7d53de922807edf46503cde9750ad52a150f3e0a4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/isinitializingorexiting.json": {
@@ -5787,17 +5787,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/makeaggregatedevice(description:).json": {
       "etag": "\"1efa-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/makeaggregatedevice-description.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/makeaggregatedevice(description).md",
       "hash": "96f3f606f963e3bca8e7adddfd41f3058acdf8f7bab4efc184005c0216807830"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/makeprocesstap(description:).json": {
       "etag": "\"1ea5-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/makeprocesstap-description.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/makeprocesstap(description).md",
       "hash": "699f8f987725ff1554bdadd6feff88a5fdc46bec5d71abc6315f77b7a51f7457"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/plugin(forbundleid:).json": {
       "etag": "\"1b59-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/plugin-forbundleid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/plugin(forbundleid).md",
       "hash": "c7d8a73fdf0e4f1b2d548be113ec0aea9c29cb62cc195b8f01968d5793d45e33"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/plugins.json": {
@@ -5812,7 +5812,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/process(for:).json": {
       "etag": "\"1a8c-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/process-for.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/process(for).md",
       "hash": "44dcce681c06faa18632e53455a35d01ad5aeea18a98b6fa03ad2aa456126b24"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/processes.json": {
@@ -5822,47 +5822,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setallowshogmode(_:).json": {
       "etag": "\"1573-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowshogmode.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowshogmode(_).md",
       "hash": "b63059676fe9002a3ee8153a573b65a32f2bc0f362842f2f32ae4a00566a247f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setallowssleeping(_:).json": {
       "etag": "\"1580-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowssleeping.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowssleeping(_).md",
       "hash": "433156bf827d295dcbb0bfbda3a6ddf3890d0359993f2b5b9719d96e2469c696"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setallowsunloading(_:).json": {
       "etag": "\"15ca-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowsunloading.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setallowsunloading(_).md",
       "hash": "268a3d98a5822f4a1227a6f3b00a90d49983e1499e4b32d81f27d2d4b1ecafaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setdefaultinputdevice(_:).json": {
       "etag": "\"16e5-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultinputdevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultinputdevice(_).md",
       "hash": "11422ff0c98adecae87d18a40166ffe099a7daac6b88bdf33211f4c034c41277"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setdefaultoutputdevice(_:).json": {
       "etag": "\"16f3-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultoutputdevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultoutputdevice(_).md",
       "hash": "ec8f9de8527d1c7509ba5cdf674dc88513be341e0c57ad4914758798676f271d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setdefaultsoundeffectsdevice(_:).json": {
       "etag": "\"1748-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultsoundeffectsdevice.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setdefaultsoundeffectsdevice(_).md",
       "hash": "583107a56a87872ee846aca2cc8d41d9370beead8530480bf56ba1b7164079dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setisprocessinputmuted(_:).json": {
       "etag": "\"15aa-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setisprocessinputmuted.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setisprocessinputmuted(_).md",
       "hash": "5040a84ecb903d41c37fc443eb6febfa9f4ab36f40f6209c9c75b2b9c7583ed4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setpowerhint(_:).json": {
       "etag": "\"17e1-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setpowerhint.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setpowerhint(_).md",
       "hash": "487e897c38547af7129a6baae971fa6ea50bf36ae77630d065ee56ec24cb1e29"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/setshouldmixstereotomono(_:).json": {
       "etag": "\"15be-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/setshouldmixstereotomono.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/setshouldmixstereotomono(_).md",
       "hash": "78c7997c8dd41c3ddef90983e245f8a49afb8c7d9602e3eeb02428cba84a8ac8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/shared.json": {
@@ -5877,7 +5877,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/tap(foruid:).json": {
       "etag": "\"1ae4-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/tap-foruid.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/tap(foruid).md",
       "hash": "e675b5dc20706f9a2254c6f6974770b95c38612f963d4e3ce8633730705451a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/taps.json": {
@@ -5887,7 +5887,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaresystem/unload().json": {
       "etag": "\"10f7-65d55e887fd14-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaresystem/unload.md",
+      "file_path": "documentation/CoreAudio/audiohardwaresystem/unload().md",
       "hash": "e52ebc08398e69bb4dfac070a268e34a1f5d8b4131764d75e35068c38421df83"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaretap.json": {
@@ -5907,12 +5907,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaretap/init(id:).json": {
       "etag": "\"13a9-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaretap/init-id.md",
+      "file_path": "documentation/CoreAudio/audiohardwaretap/init(id).md",
       "hash": "f5932610b058c74eb894deb947c96b3e3547a4dc8645ee5fb27e3d35b2edbb0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaretap/setdescription(_:).json": {
       "etag": "\"168b-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwaretap/setdescription.md",
+      "file_path": "documentation/CoreAudio/audiohardwaretap/setdescription(_).md",
       "hash": "b6ca88fd5e7c80f6e6d59de4702dd224ec14d28059a7672ac8bd7679796785db"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwaretap/uid.json": {
@@ -5922,7 +5922,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiohardwareunload().json": {
       "etag": "\"78b1-65d55e892a003-df\"",
-      "file_path": "documentation/CoreAudio/audiohardwareunload.md",
+      "file_path": "documentation/CoreAudio/audiohardwareunload().md",
       "hash": "17199227a6d610f3f0116c5cc57f1714cb9a4bce63acbe70eea09cdc73d1ba0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiolevelcontroltransferfunction.json": {
@@ -5932,7 +5932,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiolevelcontroltransferfunction/init(rawvalue:).json": {
       "etag": "\"13d3-65d55e892a003-df\"",
-      "file_path": "documentation/CoreAudio/audiolevelcontroltransferfunction/init-rawvalue.md",
+      "file_path": "documentation/CoreAudio/audiolevelcontroltransferfunction/init(rawvalue).md",
       "hash": "3f1daa925d06a79d2539dbc208d5925711fd4c9e1c93aca3b783bc1e27f6b142"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiolevelcontroltransferfunction/tranferfunction10over1.json": {
@@ -6017,27 +6017,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectaddpropertylistener(_:_:_:_:).json": {
       "etag": "\"a119-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectaddpropertylistener.md",
+      "file_path": "documentation/CoreAudio/audioobjectaddpropertylistener(_,_,_,_).md",
       "hash": "3e9d321b2140a234d06f64d7dbc2495eba22df437aa07903baad1dc5e694ee2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectaddpropertylistenerblock(_:_:_:_:).json": {
       "etag": "\"aac2-65d55e890f033-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectaddpropertylistenerblock.md",
+      "file_path": "documentation/CoreAudio/audioobjectaddpropertylistenerblock(_,_,_,_).md",
       "hash": "6fc7f22302b9cdd65030f1e8c6b326b79a57313907e49e42abe87c46c548b47e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectgetpropertydata(_:_:_:_:_:_:).json": {
       "etag": "\"b202-65d55e894899e-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectgetpropertydata.md",
+      "file_path": "documentation/CoreAudio/audioobjectgetpropertydata(_,_,_,_,_,_).md",
       "hash": "da842d7613f71bbae3185f160684c1a5aa552ed02b5124845cb04b4292c2882d"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectgetpropertydatasize(_:_:_:_:_:).json": {
       "etag": "\"aa1b-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectgetpropertydatasize.md",
+      "file_path": "documentation/CoreAudio/audioobjectgetpropertydatasize(_,_,_,_,_).md",
       "hash": "930ea2a9b23f646afd15404778ef8ea7e838483aedd6faf21f2b7de0185ff8ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjecthasproperty(_:_:).json": {
       "etag": "\"92d4-65d55e8963015-df\"",
-      "file_path": "documentation/CoreAudio/audioobjecthasproperty.md",
+      "file_path": "documentation/CoreAudio/audioobjecthasproperty(_,_).md",
       "hash": "3c80b10d9b5ffc10e399fb0446d0bbd73bbd353290536ddde05f6d21f3ce4487"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectid.json": {
@@ -6047,7 +6047,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectispropertysettable(_:_:_:).json": {
       "etag": "\"9932-65d55e89935fc-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectispropertysettable.md",
+      "file_path": "documentation/CoreAudio/audioobjectispropertysettable(_,_,_).md",
       "hash": "a72bc8ce9e30ea0c1e8495af9e5b900dd78da63bc1b1c331b755bdb21d561f47"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectpropertyaddress.json": {
@@ -6057,12 +6057,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectpropertyaddress/init().json": {
       "etag": "\"f26-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectpropertyaddress/init.md",
+      "file_path": "documentation/CoreAudio/audioobjectpropertyaddress/init().md",
       "hash": "e6974834edec08012656ebb6eb672b9704a4df60bebafb4ac68a09e57d1078a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectpropertyaddress/init(mselector:mscope:melement:).json": {
       "etag": "\"25cb-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectpropertyaddress/init-mselectormscopemelement.md",
+      "file_path": "documentation/CoreAudio/audioobjectpropertyaddress/init(mselector,mscope,melement).md",
       "hash": "7d9fab09f7f88bd519e145d71b905c54eb898a80fb7278b38a530a84fa4eb356"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectpropertyaddress/melement.json": {
@@ -6107,22 +6107,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectremovepropertylistener(_:_:_:_:).json": {
       "etag": "\"a166-65d55e89935fc-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectremovepropertylistener.md",
+      "file_path": "documentation/CoreAudio/audioobjectremovepropertylistener(_,_,_,_).md",
       "hash": "deef694732b57e313041d98e25fb63bd552e28139b26b892726195a2f73175c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectremovepropertylistenerblock(_:_:_:_:).json": {
       "etag": "\"a35f-65d55e87eb043-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectremovepropertylistenerblock.md",
+      "file_path": "documentation/CoreAudio/audioobjectremovepropertylistenerblock(_,_,_,_).md",
       "hash": "cef62591f16d362257a88897b1a33c1f176688259a641986211529f951d4d23b"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectsetpropertydata(_:_:_:_:_:_:).json": {
       "etag": "\"ab66-65d55e897d431-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectsetpropertydata.md",
+      "file_path": "documentation/CoreAudio/audioobjectsetpropertydata(_,_,_,_,_,_).md",
       "hash": "621d6e1d6a50686eac52dc731f487c65139f870d2889ffa4b150a10cc037da8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audioobjectshow(_:).json": {
       "etag": "\"7d0f-65d55e8963015-df\"",
-      "file_path": "documentation/CoreAudio/audioobjectshow.md",
+      "file_path": "documentation/CoreAudio/audioobjectshow(_).md",
       "hash": "308b6b9e9ff4baa05c8b8d719c0f898844003f2a7410d8c096c5fc87e8f130f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiostreamid.json": {
@@ -6142,12 +6142,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiostreamrangeddescription/init().json": {
       "etag": "\"f9a-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiostreamrangeddescription/init.md",
+      "file_path": "documentation/CoreAudio/audiostreamrangeddescription/init().md",
       "hash": "539fccd67f1cee6a8ae8bc9c0095de57adbaae77072e83a4b1628ea28d7d2a68"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiostreamrangeddescription/init(mformat:msampleraterange:).json": {
       "etag": "\"1c8a-65d55e884d86b-df\"",
-      "file_path": "documentation/CoreAudio/audiostreamrangeddescription/init-mformatmsampleraterange.md",
+      "file_path": "documentation/CoreAudio/audiostreamrangeddescription/init(mformat,msampleraterange).md",
       "hash": "1dfaf29b2d963481b568cb4a187d63adfee77266a8c10b92c4d51d623951d58a"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/audiostreamrangeddescription/mformat.json": {
@@ -6187,37 +6187,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapdescription/init().json": {
       "etag": "\"2e02-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init().md",
       "hash": "39460f5cafa91a65b921a9ff0f8c0045e58ac45bf11f9fda27de86a4396c7418"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapdescription/init(excludingprocesses:deviceuid:stream:).json": {
       "etag": "\"35e2-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-excludingprocessesdeviceuidstream.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(excludingprocesses,deviceuid,stream).md",
       "hash": "d2596fb61c184818899b99a6d574b2c73f9ce84143a75de26c9a1a3729b676c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapdescription/init(monoglobaltapbutexcludeprocesses:).json": {
       "etag": "\"2eec-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-monoglobaltapbutexcludeprocesses.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(monoglobaltapbutexcludeprocesses).md",
       "hash": "a2af2b4d74262e7b6f66763085d093592f4e68143ceea22f8c6c3e0724f6b8e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapdescription/init(monomixdownofprocesses:).json": {
       "etag": "\"2eb8-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-monomixdownofprocesses.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(monomixdownofprocesses).md",
       "hash": "9e1aa1f6e1816135c75a772d40a37a6b886a4a1ca01068f5bf4f3c1a68aa514c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapdescription/init(processes:deviceuid:stream:).json": {
       "etag": "\"35b2-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-processesdeviceuidstream.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(processes,deviceuid,stream).md",
       "hash": "2695aa11c7475ab92aa0be27b6dc07842eed0b098e58aa3448baf8233aaba399"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapdescription/init(stereoglobaltapbutexcludeprocesses:).json": {
       "etag": "\"2ef6-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-stereoglobaltapbutexcludeprocesses.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(stereoglobaltapbutexcludeprocesses).md",
       "hash": "2d992871212ad6be2ac2799560519c18c30581132b70f55dff918ca893853af1"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapdescription/init(stereomixdownofprocesses:).json": {
       "etag": "\"2ec2-65d55e87a57d5-df\"",
-      "file_path": "documentation/CoreAudio/catapdescription/init-stereomixdownofprocesses.md",
+      "file_path": "documentation/CoreAudio/catapdescription/init(stereomixdownofprocesses).md",
       "hash": "da9bba31e3916c2845502577a49a1466d17489608884966dc725cb703173d5e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapdescription/isexclusive.json": {
@@ -6277,7 +6277,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapmutebehavior/init(rawvalue:).json": {
       "etag": "\"12a5-65d55e88a28dc-df\"",
-      "file_path": "documentation/CoreAudio/catapmutebehavior/init-rawvalue.md",
+      "file_path": "documentation/CoreAudio/catapmutebehavior/init(rawvalue).md",
       "hash": "f5003689bc0d3f17a52d0aca43119da4618643032200f4f15b99b092506bb18e"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/catapmutebehavior/muted.json": {
@@ -8412,32 +8412,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/channeldescriptions-swift.property.json": {
       "etag": "\"17f8-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/channeldescriptions-swiftproperty.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/channeldescriptions-swift.property.md",
       "hash": "c77b6e8cb380385a245e6ea62d5b84c66830f4780839eba609dff21f6c96d5ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/channeldescriptions-swift.struct.json": {
       "etag": "\"202e-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/channeldescriptions-swiftstruct.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/channeldescriptions-swift.struct.md",
       "hash": "978cbf149d8653bc3b3fef0c5559fd533e612bf64293731de76779d4fe159bd4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/init(audiochannellayoutpointer:deallocator:).json": {
       "etag": "\"2894-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init-audiochannellayoutpointerdeallocator.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init(audiochannellayoutpointer,deallocator).md",
       "hash": "e84ffe6047dfc7631bf4ecaf47e4c60e4d022ac9c9d570aff5650478048cac14"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/init(channeldescriptions:).json": {
       "etag": "\"180e-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init-channeldescriptions.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init(channeldescriptions).md",
       "hash": "4ab69c3f3907b02e3cbe1761cdd1f15cd7c3ade9d8dfd8e264edc7c1a83b9603"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/init(maximumdescriptions:).json": {
       "etag": "\"17b9-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init-maximumdescriptions.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init(maximumdescriptions).md",
       "hash": "e5ff56065a9c80e33d07111c03d6c1fb3b1ea7e61dedb6f7b8d0a59ad47309fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/init(tag:).json": {
       "etag": "\"15d2-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init-tag.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/init(tag).md",
       "hash": "987c421414fbd9deff923a89d0f05cc67124b49fa129b817e10ab046d5826002"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/numberofchannels.json": {
@@ -8447,7 +8447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/setalltounknown().json": {
       "etag": "\"1082-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/setalltounknown.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/setalltounknown().md",
       "hash": "872b5cac0f8a84971694f095d204ad458b48e36892c3509db81749921c03affa"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/sizeinbytes.json": {
@@ -8462,17 +8462,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/withunsafemutablepointer(_:).json": {
       "etag": "\"2083-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/withunsafemutablepointer.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/withunsafemutablepointer(_).md",
       "hash": "ec21e03a6a5556af99ec594a40c68b24baa201d239f34c2941556f98329164d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/managedaudiochannellayout/withunsafepointer(_:).json": {
       "etag": "\"1e5d-65d55e88377b7-df\"",
-      "file_path": "documentation/CoreAudio/managedaudiochannellayout/withunsafepointer.md",
+      "file_path": "documentation/CoreAudio/managedaudiochannellayout/withunsafepointer(_).md",
       "hash": "07dbb74b470d7bf25be06d0a8b1b6effbdf4b40d4045e84adfb16e624972a9c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/propertyaddress(_:scope:element:).json": {
       "etag": "\"8105-65d55e89c6d60-df\"",
-      "file_path": "documentation/CoreAudio/propertyaddress-scopeelement.md",
+      "file_path": "documentation/CoreAudio/propertyaddress(_,scope,element).md",
       "hash": "a02a596d3e2ab279aeed071d88a8b46debd5dff99e1dadaaa3154824c2e7c940"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/propertylistenerdelegate.json": {
@@ -8482,7 +8482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/propertylistenerdelegate/propertieschanged(properties:).json": {
       "etag": "\"1b77-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/propertylistenerdelegate/propertieschanged-properties.md",
+      "file_path": "documentation/CoreAudio/propertylistenerdelegate/propertieschanged(properties).md",
       "hash": "71c9983a2c36d53263a48f86e26e519cfdc84d0656f2b28791b61f7f205177af"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/unsafemutableaudiobufferlistpointer.json": {
@@ -8502,12 +8502,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/unsafemutableaudiobufferlistpointer/init(_:)-4a7c5.json": {
       "etag": "\"1894-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/init-4a7c5.md",
+      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/init(_)-4a7c5.md",
       "hash": "cac58ab46d080e837c7a9f1e4316375261d9a6e6bcb7e1462523bff6e116c70f"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/unsafemutableaudiobufferlistpointer/init(_:)-6qwfh.json": {
       "etag": "\"189e-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/init-6qwfh.md",
+      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/init(_)-6qwfh.md",
       "hash": "13cdbd67a2d39512ba955ec587ff9b579f692a9cad4a09ffab36b0496d7e7c22"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/unsafemutableaudiobufferlistpointer/mutablecollection-implementations.json": {
@@ -8527,7 +8527,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/unsafemutableaudiobufferlistpointer/subscript(_:).json": {
       "etag": "\"188a-65d55e881d4f1-df\"",
-      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/subscript.md",
+      "file_path": "documentation/CoreAudio/unsafemutableaudiobufferlistpointer/subscript(_).md",
       "hash": "40f91b79dfefab9d8042fd9697583c4e22dd0c6b8593b0b74cc52e9d5e08ed0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/coreaudio/unsafemutableaudiobufferlistpointer/unsafemutablepointer.json": {

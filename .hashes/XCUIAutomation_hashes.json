@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcui_ui_testing_available": {
       "etag": "\"1912-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcui-ui-testing-available.md",
+      "file_path": "documentation/XCUIAutomation/xcui_ui_testing_available.md",
       "hash": "0b88c67b9a1fc8ac0ebbb81b1296b9e2ff91470be41cf5592020fb753ca631e3"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiaccessibilityauditissue": {
@@ -77,7 +77,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiaccessibilityaudittype/init(rawvalue:)": {
       "etag": "\"150a-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiaccessibilityaudittype/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuiaccessibilityaudittype/init(rawvalue).md",
       "hash": "3d338168b541cab67274bab23292cbbf80ecdf26cb5658e994aeeeceb8746f63"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiaccessibilityaudittype/parentchild": {
@@ -107,32 +107,32 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/activate()": {
       "etag": "\"23f8-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/activate.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/activate().md",
       "hash": "a5e080c52fe2c29e5a81c444384dbe79bcb518ef0fdf8d9fcf9ccaf428e3ec7d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/init()": {
       "etag": "\"273e-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/init.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/init().md",
       "hash": "3c091f7bd9ae688936b361e7d74460c1e589b5d33eb4a1489332c1e1bdf2c353"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/init(bundleidentifier:)": {
       "etag": "\"3ea5-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/init-bundleidentifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/init(bundleidentifier).md",
       "hash": "f1a542f3d3fbabee867fd3c6c947731ba1c1dada2e16d80301d9903fc928526d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/init(url:)-6ga10": {
       "etag": "\"13c8-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/init-url-6ga10.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/init(url)-6ga10.md",
       "hash": "715d12fda3564637811595e391b83a643b813267783428339c5ba6940ea59a48"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/init(url:)-90e7z": {
       "etag": "\"2b53-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/init-url-90e7z.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/init(url)-90e7z.md",
       "hash": "98160754da950060125f5ab951732e5c4c3d092be2c5d6c8b58c81b9f23e554b"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/launch()": {
       "etag": "\"2c06-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/launch.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/launch().md",
       "hash": "7a539fe449521837418b6535d512a3ca28d2d659cc3baf1668cb33133e564ee7"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/launcharguments": {
@@ -147,32 +147,32 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/open(_:)": {
       "etag": "\"311d-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/open.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/open(_).md",
       "hash": "3983ea8092091deb8fe95aa0bc5d2ffa9a2d844cf5fc79d275852098fe23029f"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/performaccessibilityaudit(for:_:)": {
       "etag": "\"2b1c-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/performaccessibilityaudit-for.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/performaccessibilityaudit(for,_).md",
       "hash": "7921003e0e0f67abb79987f9d3e87b59c051497e245113128baf3efee793844e"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/resetauthorizationstatus(for:)": {
       "etag": "\"289b-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/resetauthorizationstatus-for.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/resetauthorizationstatus(for).md",
       "hash": "2a70c1cfe2e5b01810e1bcb7bae256fd07cf53545dd388a3921bc428434799a0"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/state-swift.enum": {
       "etag": "\"5015-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swiftenum.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum.md",
       "hash": "7c27b901a032c34038d888aec372abaf24eadc6f581b1e9d9ea977377e758625"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/state-swift.enum/!=(_:_:)": {
       "etag": "W/\"d7f9950eb4e7f187641e1ceccbfad625\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum/unknown.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum/noteq(_,_).md",
       "hash": "5a8eda0d977425bc6604a6c61ce9b000121ce272f0efcb7eaf2c61ecefdeacca"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/state-swift.enum/init(rawvalue:)": {
       "etag": "\"192a-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum/init(rawvalue).md",
       "hash": "fcdf513590f187bb65b26059c49f16836f92b9683a914e78428fe91e686e320b"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/state-swift.enum/notrunning": {
@@ -202,17 +202,17 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/state-swift.property": {
       "etag": "\"48d8-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swiftproperty.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.property.md",
       "hash": "3b2e3c44a48f410adc52b5674e6ebb35d2549c186e16ed04dc40105d04268165"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/terminate()": {
       "etag": "\"1aa8-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/terminate.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/terminate().md",
       "hash": "ed766a8adbc1461d0207bac6d96e03500330f14bf3b93185b45a323ea1c295d1"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/wait(for:timeout:)": {
       "etag": "\"37ae-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/wait-fortimeout.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/wait(for,timeout).md",
       "hash": "446a286dcdf25149bb9aae1e611ce3f1a806bc4f9809d3befbf85b955c7549a0"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate": {
@@ -222,47 +222,47 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/click()": {
       "etag": "\"34ec-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click().md",
       "hash": "58bebdc4af54bf3f91ca7d96c4a92c264cf7dfb618bd3c0ba0f3787a70ff5d9b"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/click(forduration:thendragto:)": {
       "etag": "\"439c-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click-fordurationthendragto.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click(forduration,thendragto).md",
       "hash": "f50897e2d4cb23fd2577bc722e314a55a09b8efed8ab9fd25f5c4c593f6a308c"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/click(forduration:thendragto:withvelocity:thenholdforduration:)": {
       "etag": "\"53a1-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click-fordurationthendragtowithvelocitythenholdforduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click(forduration,thendragto,withvelocity,thenholdforduration).md",
       "hash": "db52a9f95937f5e2eef6a71b47a0f3ead9017fded8185dbc63b678e992e8c2b9"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/doubleclick()": {
       "etag": "\"3529-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/doubleclick.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/doubleclick().md",
       "hash": "ed6dcc6bd6c8cfeddda7a5ed2e9a5a2f1936082bca86537b4db2873e5c4993f8"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/doubletap()": {
       "etag": "\"372d-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/doubletap.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/doubletap().md",
       "hash": "b774a1c34b7b818abf17d4561d78a4eeba630c1e86d5b15b5444305b689dcfe7"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/hover()": {
       "etag": "\"189f-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/hover.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/hover().md",
       "hash": "9a032a8b19e7b0fc9290dc29bf76df0d333b073733be87e060948c381af819c7"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/press(forduration:)": {
       "etag": "\"3f6f-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press-forduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press(forduration).md",
       "hash": "f5064f3ef4d8a92ffb22d9d7c1933615a15afc1156d692db340cfe58bd032697"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/press(forduration:thendragto:)": {
       "etag": "\"45bf-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press-fordurationthendragto.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press(forduration,thendragto).md",
       "hash": "d068a2061b8f2728540c0fed4c7c3c01b6b85de7a9962be44a4cb3e892de06d3"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/press(forduration:thendragto:withvelocity:thenholdforduration:)": {
       "etag": "\"55b2-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press-fordurationthendragtowithvelocitythenholdforduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press(forduration,thendragto,withvelocity,thenholdforduration).md",
       "hash": "6f267add99d5f675697a5f450dddb8af2a7a1591cf7d93f12f60266eaffcdd10"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/referencedelement": {
@@ -272,7 +272,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/rightclick()": {
       "etag": "\"3521-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/rightclick.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/rightclick().md",
       "hash": "41fb037e24c9cdee3cb69c7881d7150c71a15140b3def3960325b7ec4f1c0ad6"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/screenpoint": {
@@ -282,57 +282,57 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/scroll(bydeltax:deltay:)": {
       "etag": "\"2380-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/scroll-bydeltaxdeltay.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/scroll(bydeltax,deltay).md",
       "hash": "ae37218deebae41bfa47ee0a686e311e9046d194c9d11a7a0b9617d66c0d23d2"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/swipedown()": {
       "etag": "\"3ee6-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipedown.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipedown().md",
       "hash": "76da77787818fbfeefa1d5321b1e8733a89a8838ba90ff51dcbdd5f1ecc6852c"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/swipedown(velocity:)": {
       "etag": "\"490a-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipedown-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipedown(velocity).md",
       "hash": "a09c1dc521094bd8569fd6bcca35e5678079f7619b83590696dc9218b80f37bd"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/swipeleft()": {
       "etag": "\"3ee6-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeleft.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeleft().md",
       "hash": "9c0440d9ef32038c6a63ebe9c36e6db6e13b5593ec5e305c591efb521e12f48d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/swipeleft(velocity:)": {
       "etag": "\"490a-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeleft-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeleft(velocity).md",
       "hash": "40f077960d21b37c8538f9b7ef6eca4eb6392f3a3477ae340ce00548a676b7af"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/swiperight()": {
       "etag": "\"3ef0-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swiperight.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swiperight().md",
       "hash": "5b975942c70509a7e7ed8b43505de0aa6bed77a328e9170ed870b306c64604e8"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/swiperight(velocity:)": {
       "etag": "\"4916-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swiperight-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swiperight(velocity).md",
       "hash": "ff074a822ff06cedfa71adac967c751ef7ce6b7b2f69a2484228618c9257d667"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/swipeup()": {
       "etag": "\"3ed2-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeup.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeup().md",
       "hash": "040d52a2aca1b48c9451e49488215926ebbd3ad1a98d0c875f59d9080e30d09f"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/swipeup(velocity:)": {
       "etag": "\"48f2-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeup-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeup(velocity).md",
       "hash": "5a40d743a33dbee7721353fece8efbe376813a66ed674ecf39b5b4ff2fa077fa"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/tap()": {
       "etag": "\"36f0-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/tap.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/tap().md",
       "hash": "86f4320110d8834dce4fd8242d3eca38a1eabd5a748a45433056583db9046b88"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate/withoffset(_:)": {
       "etag": "\"21b5-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/withoffset.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/withoffset(_).md",
       "hash": "1940051069b67fff7819bf445081ac516701fc0bc41f430e81ca0a31ccd1d903"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice": {
@@ -342,7 +342,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/appearance-swift.enum": {
       "etag": "\"4816-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swiftenum.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.enum.md",
       "hash": "7b8f6e68dac5a882c6d4d343de50c672889677d2688e04b4f09d7bb45a8a9e1f"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/dark": {
@@ -352,7 +352,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/init(rawvalue:)": {
       "etag": "\"190f-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.enum/init(rawvalue).md",
       "hash": "9c24a60893c1e59a8514366fa3bbcf739c374e1dd9670828fa16a903a7faa282"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/light": {
@@ -367,7 +367,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/appearance-swift.property": {
       "etag": "\"2ce4-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swiftproperty.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.property.md",
       "hash": "68bb97e6d7e9e58f881b0dda1270d463254c52f2a4fbbfdd0c9c49aeee25b17e"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/button": {
@@ -392,7 +392,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/button/init(rawvalue:)": {
       "etag": "\"181e-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/button/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/button/init(rawvalue).md",
       "hash": "ed6a47edb37b49c4de85de3c680637c7c85c6a80005e5e43023cb03b9ca68dfa"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/button/volumedown": {
@@ -407,12 +407,12 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/hashardwarebutton(_:)": {
       "etag": "\"448a-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/hashardwarebutton.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/hashardwarebutton(_).md",
       "hash": "f4203f948f18b99c0645de5e082439aff6c12158c67b9498dd89e48b26f7d029"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/init()": {
       "etag": "\"1e2d-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/init.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/init().md",
       "hash": "7175e85f244457ffd1493f286703fe118a6ca9da3f6ee9932e2c326eb2201677"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/location": {
@@ -427,22 +427,22 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/perform(handgesture:)": {
       "etag": "\"224d-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/perform-handgesture.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/perform(handgesture).md",
       "hash": "6f1bc1fb7c699df445ece8f19c15c68982852531fff31b98f9904687466ac92d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/press(_:)": {
       "etag": "\"39cd-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/press.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/press(_).md",
       "hash": "dc82355ac789c000c1aade08819039c7278ccd813b50a3255ed71bf1ed9d4884"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/rotatedigitalcrown(delta:)": {
       "etag": "\"3d69-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/rotatedigitalcrown-delta.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/rotatedigitalcrown(delta).md",
       "hash": "1613cf6fdad37bee3da3641083a1e43f9893efd0cc3b5e69669ec2da2b65734b"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/rotatedigitalcrown(delta:velocity:)": {
       "etag": "\"482b-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/rotatedigitalcrown-deltavelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/rotatedigitalcrown(delta,velocity).md",
       "hash": "34dc4b6695d65aecdfc46daaea3ccbba27b708757b00aa3d640383149a671b38"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevice/shared": {
@@ -492,7 +492,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuidevicehandgesture/init(rawvalue:)": {
       "etag": "\"1334-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevicehandgesture/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevicehandgesture/init(rawvalue).md",
       "hash": "7a5fd4c23ab97a2ff09ca4e231a7f9390596494bd13f66d09a51b6186ab4a1ba"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement": {
@@ -502,12 +502,12 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/adjust(tonormalizedsliderposition:)": {
       "etag": "\"2a73-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/adjust-tonormalizedsliderposition.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/adjust(tonormalizedsliderposition).md",
       "hash": "c541e98bb99ef0449d89769bf2ff48165cf1ed10c956aa7ded3afcd11eb005c7"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/adjust(topickerwheelvalue:)": {
       "etag": "\"1f78-65d55d675598c-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/adjust-topickerwheelvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/adjust(topickerwheelvalue).md",
       "hash": "fdfb5dfbdf1357aa47e944cc3b9eccd113f3fcacfcae96baead9be329d637360"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/attributename": {
@@ -552,7 +552,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/attributename/init(rawvalue:)": {
       "etag": "\"1a6c-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/attributename/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/attributename/init(rawvalue).md",
       "hash": "41d602082028ff3706394622946fbb0105f6465c8bbf87b8dc485d4291bb5e41"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/attributename/label": {
@@ -587,27 +587,27 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/children(matching:)": {
       "etag": "\"32bc-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/children-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/children(matching).md",
       "hash": "4be0e76973bc3b1007742e599c57ae98b85aa8341e39033aaa1c0749fdc1c159"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/click()": {
       "etag": "\"35fb-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/click.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/click().md",
       "hash": "c99941ef0e0ec11e96e8346f85dd7c70d5932f2601ccfb62b3266285afab03c3"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/click(forduration:thendragto:)": {
       "etag": "\"4491-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/click-fordurationthendragto.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/click(forduration,thendragto).md",
       "hash": "5461aa0dcbf629c308c261a53da215ea40f6258a306e0f3ded68a59b9422195d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/click(forduration:thendragto:withvelocity:thenholdforduration:)": {
       "etag": "\"5493-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/click-fordurationthendragtowithvelocitythenholdforduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/click(forduration,thendragto,withvelocity,thenholdforduration).md",
       "hash": "4c296111361c2cc7d70a7fa2f55504a251031ea5fa2d6d4d256e516e2c8bea01"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/coordinate(withnormalizedoffset:)": {
       "etag": "\"28ca-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/coordinate-withnormalizedoffset.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/coordinate(withnormalizedoffset).md",
       "hash": "83ed20b1cffa48dfcc541966cae4d85f526b90a82e907448a5ccdb0102214398"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/debugdescription": {
@@ -617,17 +617,17 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/descendants(matching:)": {
       "etag": "\"410d-65d55d675598c-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/descendants-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/descendants(matching).md",
       "hash": "6ab1ac97ac0e1ab4fd3229430640b7d76b1799d2a09805348b96262a1d129c91"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/doubleclick()": {
       "etag": "\"364a-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/doubleclick.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/doubleclick().md",
       "hash": "a04bff895460ccad8abf161e1fb8f3532fd52c98ab948f0126ed1261bccbd15b"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/doubletap()": {
       "etag": "\"373a-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/doubletap.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/doubletap().md",
       "hash": "26b92c58d1a60341109288cad786ed3dbc93a8315ab335b8a575395492908804"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/elementtype": {
@@ -757,7 +757,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/elementtype/init(rawvalue:)": {
       "etag": "\"1878-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/elementtype/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/elementtype/init(rawvalue).md",
       "hash": "97c87cd530ad175673b2173074c609327e9f61ec71ccf826a4f0ddf217524d1e"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/elementtype/key": {
@@ -1062,7 +1062,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/hover()": {
       "etag": "\"198a-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/hover.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/hover().md",
       "hash": "7d7b69c51566aa15a40a553bad7a7cac3e09f24e3149036ae137890fd0bbd870"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/ishittable": {
@@ -1107,7 +1107,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/keymodifierflags/init(rawvalue:)": {
       "etag": "\"1aac-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/keymodifierflags/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/keymodifierflags/init(rawvalue).md",
       "hash": "cc122dfae4942cf65cdb45fe8a75733c8fe1f37276dbdcefa96a8282d50f1b15"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/keymodifierflags/option": {
@@ -1127,42 +1127,42 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/perform(withkeymodifiers:block:)": {
       "etag": "\"439f-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/perform-withkeymodifiersblock.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/perform(withkeymodifiers,block).md",
       "hash": "edfd73b72ed36be1aa7db3ce9d5752b47a717b3ed6495d0027652e588ee04e56"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/pinch(withscale:velocity:)": {
       "etag": "\"5ec3-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/pinch-withscalevelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/pinch(withscale,velocity).md",
       "hash": "565e9846c01d8894a7024ee178daafb4343552c9123e1233e030b5d8bf76ae33"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/press(forduration:)": {
       "etag": "\"405b-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/press-forduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/press(forduration).md",
       "hash": "5c3dd77346424f98e5771bfe5e39a065dc59b6002336b15d9dba40dde00e9432"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/press(forduration:thendragto:)": {
       "etag": "\"45d0-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/press-fordurationthendragto.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/press(forduration,thendragto).md",
       "hash": "7c0a0b34847c8f56ed2cab343ac66226354a83ccf13d10aabf22edd0a23dbf88"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/press(forduration:thendragto:withvelocity:thenholdforduration:)": {
       "etag": "\"5432-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/press-fordurationthendragtowithvelocitythenholdforduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/press(forduration,thendragto,withvelocity,thenholdforduration).md",
       "hash": "54a0f11176d2938dea125b7708f319ed7ca9818fa69f44e846a181315d77e12d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/rightclick()": {
       "etag": "\"363c-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/rightclick.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/rightclick().md",
       "hash": "b250256dcf1798f447b24a70bb150de27ad23558f34f02a1ae41005df2cb3cb3"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/rotate(_:withvelocity:)": {
       "etag": "\"5de2-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/rotate-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/rotate(_,withvelocity).md",
       "hash": "44ad56fc028c9df12577cf33505517f3977cc2c7e193bd7e7c11063455bdc56c"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/scroll(bydeltax:deltay:)": {
       "etag": "\"232c-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/scroll-bydeltaxdeltay.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/scroll(bydeltax,deltay).md",
       "hash": "fdc510badd3b48bd8fe1f76b0071fdd23d93d0512c41bef54a5d6a7c1b4b28ca"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/sizeclass": {
@@ -1177,7 +1177,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/sizeclass/init(rawvalue:)": {
       "etag": "\"1866-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/sizeclass/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/sizeclass/init(rawvalue).md",
       "hash": "4c2adbaa4545ab9e164d303436414c449f29832cff8665f59550770ea23b840a"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/sizeclass/regular": {
@@ -1192,107 +1192,107 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipedown()": {
       "etag": "\"5192-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown().md",
       "hash": "4a1603940aae848d969662b6c522da835dbbd29ba1620b25f253bfda19639237"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipedown(velocity:)": {
       "etag": "\"5713-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown(velocity).md",
       "hash": "b45b0d72a379efcedbfa01cfbf6bf2d7dacf27066df5e8122e5a4aac861a4882"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipedown(withvelocity:)": {
       "etag": "\"2e8a-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown(withvelocity).md",
       "hash": "2c6fbca79fae3cbe41cbf170e97610a3519d3c0ba6eaa7b4c53e9ee116709398"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipeleft()": {
       "etag": "\"5192-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft().md",
       "hash": "1ce9b2ae128eee48e44dd4da91a44f5c0da62c9721f73d2b2e66d71070ac1fac"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipeleft(velocity:)": {
       "etag": "\"5713-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft(velocity).md",
       "hash": "921299811534daf6998f3e1fd1922cc3a8991bfcaa9b0640655181fa31b183f0"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipeleft(withvelocity:)": {
       "etag": "\"2e8a-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft(withvelocity).md",
       "hash": "c7dbfb1c15851ae28baa3da18a8e3ffac292a9ce219521e8139b7f153215f09d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swiperight()": {
       "etag": "\"519c-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight().md",
       "hash": "a2fae9256cd2443f835b42acbb94c6468a0ad9eae53111282df103ffaab6c19a"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swiperight(velocity:)": {
       "etag": "\"571f-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight(velocity).md",
       "hash": "8bddc22c6e896f4cf43bca1508612a01d914ba7183bdf3cf53f232d87fce13d2"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swiperight(withvelocity:)": {
       "etag": "\"2e9e-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight(withvelocity).md",
       "hash": "307373ee4d7508452dfe31920643c6ad839561ab7c5615857cecdfded25723b2"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipeup()": {
       "etag": "\"517e-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup().md",
       "hash": "75eb2cc2cc9393b08537d0e5a2dacb206f08224118dbb6e3199cd6d6f0c2ce40"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipeup(velocity:)": {
       "etag": "\"56fb-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup(velocity).md",
       "hash": "49a777fa9fcfe8b7622a715db510f323ab78aa5647ff06b7f07c2372811bdb69"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/swipeup(withvelocity:)": {
       "etag": "\"2e64-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup(withvelocity).md",
       "hash": "572152038d116ecc50226cfdac1e6ba9d2fc4aae4eb2da8f299e4437b7f743ee"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/tap()": {
       "etag": "\"36f6-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/tap.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/tap().md",
       "hash": "5429ca76699293b684136cea91541fede4a1cb43cb550ba15762c2e515d8b55f"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/tap(withnumberoftaps:numberoftouches:)": {
       "etag": "\"2ada-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/tap-withnumberoftapsnumberoftouches.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/tap(withnumberoftaps,numberoftouches).md",
       "hash": "ff7bfaea677842bd75971acc0be62ff862b8b023270945ba4affd7fb4192e8ee"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/twofingertap()": {
       "etag": "\"20db-65d55d675598c-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/twofingertap.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/twofingertap().md",
       "hash": "f2971b17ce39c84c91b4a3b7c2be6c50917a57b9a4e4b1322776952aabd3f768"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/typekey(_:modifierflags:)-6gaoi": {
       "etag": "\"34cd-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/typekey-modifierflags-6gaoi.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/typekey(_,modifierflags)-6gaoi.md",
       "hash": "f081f42a9a4a358c696916b8f8762271758590e4367a1a438f57ada742549a33"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/typekey(_:modifierflags:)-9ubn": {
       "etag": "\"497d-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/typekey-modifierflags-9ubn.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/typekey(_,modifierflags)-9ubn.md",
       "hash": "9860a587fdf455aee3e63bdd45a04de85c8f4936c751a0714fe3ed1575d9ce41"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/typetext(_:)": {
       "etag": "\"2bc5-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/typetext.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/typetext(_).md",
       "hash": "1cb6f56a69e6e6297ed98fd420895d411b4492eb188c17b688b1b0cac941fc87"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/wait(for:toequal:timeout:)": {
       "etag": "\"4cc7-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/wait-fortoequaltimeout.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/wait(for,toequal,timeout).md",
       "hash": "a233fb20ee84d0011bec0c23382251635e2ed7de45eebf121cc8575cf794d62d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/waitforexistence(timeout:)": {
       "etag": "\"4860-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/waitforexistence-timeout.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/waitforexistence(timeout).md",
       "hash": "99a4c319607a46eb05ede01094d9bb0145a698954ca98c8e0ca728946d508da3"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielement/waitfornonexistence(timeout:)": {
       "etag": "\"464c-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/waitfornonexistence-timeout.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/waitfornonexistence(timeout).md",
       "hash": "47a73aa50f5a96c5e00acc25d0dab65ef0d3109ad5cc8da35f4b0705010cac98"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementattributes": {
@@ -1377,17 +1377,17 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/children(matching:)": {
       "etag": "\"5d4b-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/children-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/children(matching).md",
       "hash": "c183b8f90ea4badccc2dcbb041a09e90a1da684eb4977881f116600edf3de99d"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/containing(_:)": {
       "etag": "\"5e1b-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/containing.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/containing(_).md",
       "hash": "3561aa463375ae318382eaf1704b74c2fd6af53ed08d4a7d709aa3bddd7aea35"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/containing(_:identifier:)": {
       "etag": "\"7e50-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/containing-identifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/containing(_,identifier).md",
       "hash": "c75b9abe25021455c5e07afd120acb6199e7ca5aece2812232a84bb773ccb6ae"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/count": {
@@ -1402,7 +1402,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/descendants(matching:)": {
       "etag": "\"69f2-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/descendants-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/descendants(matching).md",
       "hash": "1cabea76d8cd9710709bbc4e02d2087dc14d4eb07dcd95715f645b395eb5a08c"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/element": {
@@ -1412,42 +1412,42 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/element(at:)": {
       "etag": "\"59b2-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/element-at.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/element(at).md",
       "hash": "82a8f2ca3287d3fb04323e43015abe5c4a6ffa55bf99c5fe7c8e21393a72ed39"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/element(boundby:)": {
       "etag": "\"57a5-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/element-boundby.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/element(boundby).md",
       "hash": "7130e0a9e0f8596ca30d36dc9e82d0b8072ab5c0457867abfebff750eb49201e"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/element(matching:)": {
       "etag": "\"6458-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/element-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/element(matching).md",
       "hash": "3a752a52b0d8b995d1f3909d98eded13374b4a7f10d397870cfc39fe291c5802"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/element(matching:identifier:)": {
       "etag": "\"7ee4-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/element-matchingidentifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/element(matching,identifier).md",
       "hash": "1e95a7ef4dfbaefc6e647d7b0a5a6b90dbb7cafbad7cc71969d99233db05ba7b"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/matching(_:)": {
       "etag": "\"5dbc-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching(_).md",
       "hash": "dc7c52627cbeb13c920c6feeff8f19509839fafad05c9b881690254deed03b77"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/matching(_:identifier:)": {
       "etag": "\"7deb-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching-identifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching(_,identifier).md",
       "hash": "93f1125362d144ea4c5228f7d641e8e3b539cf91c145c003dbe780467083f8e4"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/matching(identifier:)": {
       "etag": "\"6d93-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching-identifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching(identifier).md",
       "hash": "a806da4f5ce6e3b101e416ce17a5da713ceb6286c00e268bb4faeceb0a05b6f4"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementquery/subscript(_:)": {
       "etag": "\"737b-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/subscript.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/subscript(_).md",
       "hash": "0a1561d346efc3e66d00e03c7138c701c0bc1802de89f4a8f516f8b68bd02796"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementsnapshot": {
@@ -1472,7 +1472,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementsnapshotproviding/snapshot()": {
       "etag": "\"28e1-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementsnapshotproviding/snapshot.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementsnapshotproviding/snapshot().md",
       "hash": "d9dd383b4eadfff210d8d98f3ea5292c8ba6f79802e19abc10e11a69b04846b9"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuielementtypequeryprovider": {
@@ -1912,12 +1912,12 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuigesturevelocity/init(_:)": {
       "etag": "\"1996-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/init.md",
+      "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/init(_).md",
       "hash": "ff473865ea14a9fe7f81d5539693eec1f0c79ccb88320b4970e7ab8e5567e7a9"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuigesturevelocity/init(rawvalue:)": {
       "etag": "\"19cb-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/init(rawvalue).md",
       "hash": "2730de9eadc9001c974d6b62588f0de8ab5a9228c17c26373ff9606d717a80c1"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuigesturevelocity/slow": {
@@ -2107,12 +2107,12 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuikeyboardkey/init(_:)": {
       "etag": "\"1852-65d55d67bbb1e-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuikeyboardkey/init.md",
+      "file_path": "documentation/XCUIAutomation/xcuikeyboardkey/init(_).md",
       "hash": "6c8ed863911fe1f416d4ea5cd2763760410afb6df0f55aa8e36a5e2589a58e3e"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuikeyboardkey/init(rawvalue:)": {
       "etag": "\"1872-65d55d67bbb1e-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuikeyboardkey/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuikeyboardkey/init(rawvalue).md",
       "hash": "68ffdb10c7c83245ac627de4c0649a2df6303a43d0a7cdb7ad86eb264adb32ce"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuikeyboardkey/leftarrow": {
@@ -2202,7 +2202,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuilocation/init(location:)": {
       "etag": "\"22d6-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuilocation/init-location.md",
+      "file_path": "documentation/XCUIAutomation/xcuilocation/init(location).md",
       "hash": "d45a51ae1d35b3be1ddf742c9794310473e189dfdd88c3dccc1466bd88d9e40b"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuilocation/location": {
@@ -2257,7 +2257,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiprotectedresource/init(rawvalue:)": {
       "etag": "\"148f-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiprotectedresource/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuiprotectedresource/init(rawvalue).md",
       "hash": "82bbdb3988c173dfb80b21af841511ccc05a79b461086c1b65ea9a775bb3b6cf"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiprotectedresource/keyboardnetwork": {
@@ -2342,12 +2342,12 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiremote/press(_:)": {
       "etag": "\"2b72-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiremote/press.md",
+      "file_path": "documentation/XCUIAutomation/xcuiremote/press(_).md",
       "hash": "b75f66586308d8efa41b51fe74a3f3b0ac8cb48fe8a37d8f4a877fc600e2d996"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiremote/press(_:forduration:)": {
       "etag": "\"34a1-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiremote/press-forduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuiremote/press(_,forduration).md",
       "hash": "77c7e53dc2efc2701ebaf27c4a324e35be6fbed7f3d6d34879367dfb593ba1ef"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiremote/shared": {
@@ -2377,7 +2377,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiremotebutton/init(rawvalue:)": {
       "etag": "\"1398-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiremotebutton/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuiremotebutton/init(rawvalue).md",
       "hash": "476257d909c3423831960e612df245838341a87b4f76108352a739c9422fa8fb"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiremotebutton/left": {
@@ -2467,7 +2467,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuiscreenshotproviding/screenshot()": {
       "etag": "\"2242-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiscreenshotproviding/screenshot.md",
+      "file_path": "documentation/XCUIAutomation/xcuiscreenshotproviding/screenshot().md",
       "hash": "92301341842465ca66e911a768d9686a8f0b81eb0ce8962ad20b58fff762df49"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuisiriservice": {
@@ -2477,7 +2477,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuisiriservice/activate(voicerecognitiontext:)": {
       "etag": "\"21e7-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuisiriservice/activate-voicerecognitiontext.md",
+      "file_path": "documentation/XCUIAutomation/xcuisiriservice/activate(voicerecognitiontext).md",
       "hash": "cc6da5164b9a8b5e4795f57ff8abd6a6a0dacd4f67589f91d70fbf42df770446"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuisiriservice/debugdescription": {
@@ -2492,7 +2492,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuisystem/open(_:)": {
       "etag": "\"1f05-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuisystem/open.md",
+      "file_path": "documentation/XCUIAutomation/xcuisystem/open(_).md",
       "hash": "6d0fcbf522f9d49c6e75248b187022d2fcf5b87f2bc383bb97757a1d11a31379"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice": {
@@ -2502,7 +2502,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/currentspeech()": {
       "etag": "\"28a3-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/currentspeech.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/currentspeech().md",
       "hash": "29c784cf25eb0afa77f0a24d795a62603bd6eac96436ab07c67b728f299ad54f"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/debugdescription": {
@@ -2512,12 +2512,12 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/disable()": {
       "etag": "\"2103-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/disable.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/disable().md",
       "hash": "c8fb04aace85f86e547aace074edb3caf611e344182751d83040d244139f0490"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/enable()": {
       "etag": "\"20ec-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/enable.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/enable().md",
       "hash": "06fb0b03a2f5376c571bd34dc0c41ad10a68627db54fbb0341709d5174b10027"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/error": {
@@ -2542,7 +2542,7 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/error/code/init(rawvalue:)": {
       "etag": "\"1b8a-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/error/code/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/error/code/init(rawvalue).md",
       "hash": "1cd7b57dbc4cfa75adef552d39adf2702a16abc989a27acb57463567c9e76274"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/error/code/nospeech": {
@@ -2587,22 +2587,22 @@
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/movebackward()": {
       "etag": "\"28a0-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/movebackward.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/movebackward().md",
       "hash": "29865e560273fb51914db4c6fe63b932ac20e4c96499001b809b13a4d413fe2b"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/moveforward()": {
       "etag": "\"2883-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/moveforward.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/moveforward().md",
       "hash": "d2491a2170105bdb51156dba675a72e9f9f6e707762818d748d1aa9b94420d2c"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/movein()": {
       "etag": "\"26fe-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/movein.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/movein().md",
       "hash": "4802cfd633903ab9e6a71585c7a0af4ede3a0b72ac84dd3adf3f2fff2ac92f25"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/moveout()": {
       "etag": "\"2717-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/moveout.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/moveout().md",
       "hash": "0a32d0e3795ed3a75d819b092546fb92659584868beb672ca6f0b53df17646ee"
     },
     "https://developer.apple.com/documentation/xcuiautomation/xcuivoiceoverservice/output": {
@@ -2632,7 +2632,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcui_ui_testing_available.json": {
       "etag": "\"1912-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcui-ui-testing-available.md",
+      "file_path": "documentation/XCUIAutomation/xcui_ui_testing_available.md",
       "hash": "0b88c67b9a1fc8ac0ebbb81b1296b9e2ff91470be41cf5592020fb753ca631e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiaccessibilityauditissue.json": {
@@ -2697,7 +2697,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiaccessibilityaudittype/init(rawvalue:).json": {
       "etag": "\"150a-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiaccessibilityaudittype/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuiaccessibilityaudittype/init(rawvalue).md",
       "hash": "3d338168b541cab67274bab23292cbbf80ecdf26cb5658e994aeeeceb8746f63"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiaccessibilityaudittype/parentchild.json": {
@@ -2727,32 +2727,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/activate().json": {
       "etag": "\"23f8-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/activate.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/activate().md",
       "hash": "a5e080c52fe2c29e5a81c444384dbe79bcb518ef0fdf8d9fcf9ccaf428e3ec7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/init().json": {
       "etag": "\"273e-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/init.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/init().md",
       "hash": "3c091f7bd9ae688936b361e7d74460c1e589b5d33eb4a1489332c1e1bdf2c353"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/init(bundleidentifier:).json": {
       "etag": "\"3ea5-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/init-bundleidentifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/init(bundleidentifier).md",
       "hash": "f1a542f3d3fbabee867fd3c6c947731ba1c1dada2e16d80301d9903fc928526d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/init(url:)-6ga10.json": {
       "etag": "\"13c8-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/init-url-6ga10.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/init(url)-6ga10.md",
       "hash": "715d12fda3564637811595e391b83a643b813267783428339c5ba6940ea59a48"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/init(url:)-90e7z.json": {
       "etag": "\"2b53-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/init-url-90e7z.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/init(url)-90e7z.md",
       "hash": "98160754da950060125f5ab951732e5c4c3d092be2c5d6c8b58c81b9f23e554b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/launch().json": {
       "etag": "\"2c06-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/launch.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/launch().md",
       "hash": "7a539fe449521837418b6535d512a3ca28d2d659cc3baf1668cb33133e564ee7"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/launcharguments.json": {
@@ -2767,32 +2767,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/open(_:).json": {
       "etag": "\"311d-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/open.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/open(_).md",
       "hash": "3983ea8092091deb8fe95aa0bc5d2ffa9a2d844cf5fc79d275852098fe23029f"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/performaccessibilityaudit(for:_:).json": {
       "etag": "\"2b1c-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/performaccessibilityaudit-for.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/performaccessibilityaudit(for,_).md",
       "hash": "7921003e0e0f67abb79987f9d3e87b59c051497e245113128baf3efee793844e"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/resetauthorizationstatus(for:).json": {
       "etag": "\"289b-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/resetauthorizationstatus-for.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/resetauthorizationstatus(for).md",
       "hash": "2a70c1cfe2e5b01810e1bcb7bae256fd07cf53545dd388a3921bc428434799a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/state-swift.enum.json": {
       "etag": "\"5015-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swiftenum.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum.md",
       "hash": "7c27b901a032c34038d888aec372abaf24eadc6f581b1e9d9ea977377e758625"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/state-swift.enum/!=(_:_:).json": {
       "etag": "W/\"d7f9950eb4e7f187641e1ceccbfad625\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum/unknown.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum/noteq(_,_).md",
       "hash": "5a8eda0d977425bc6604a6c61ce9b000121ce272f0efcb7eaf2c61ecefdeacca"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/state-swift.enum/init(rawvalue:).json": {
       "etag": "\"192a-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.enum/init(rawvalue).md",
       "hash": "fcdf513590f187bb65b26059c49f16836f92b9683a914e78428fe91e686e320b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/state-swift.enum/notrunning.json": {
@@ -2822,17 +2822,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/state-swift.property.json": {
       "etag": "\"48d8-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swiftproperty.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/state-swift.property.md",
       "hash": "3b2e3c44a48f410adc52b5674e6ebb35d2549c186e16ed04dc40105d04268165"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/terminate().json": {
       "etag": "\"1aa8-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/terminate.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/terminate().md",
       "hash": "ed766a8adbc1461d0207bac6d96e03500330f14bf3b93185b45a323ea1c295d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiapplication/wait(for:timeout:).json": {
       "etag": "\"37ae-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiapplication/wait-fortimeout.md",
+      "file_path": "documentation/XCUIAutomation/xcuiapplication/wait(for,timeout).md",
       "hash": "446a286dcdf25149bb9aae1e611ce3f1a806bc4f9809d3befbf85b955c7549a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate.json": {
@@ -2842,47 +2842,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/click().json": {
       "etag": "\"34ec-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click().md",
       "hash": "58bebdc4af54bf3f91ca7d96c4a92c264cf7dfb618bd3c0ba0f3787a70ff5d9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/click(forduration:thendragto:).json": {
       "etag": "\"439c-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click-fordurationthendragto.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click(forduration,thendragto).md",
       "hash": "f50897e2d4cb23fd2577bc722e314a55a09b8efed8ab9fd25f5c4c593f6a308c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/click(forduration:thendragto:withvelocity:thenholdforduration:).json": {
       "etag": "\"53a1-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click-fordurationthendragtowithvelocitythenholdforduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/click(forduration,thendragto,withvelocity,thenholdforduration).md",
       "hash": "db52a9f95937f5e2eef6a71b47a0f3ead9017fded8185dbc63b678e992e8c2b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/doubleclick().json": {
       "etag": "\"3529-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/doubleclick.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/doubleclick().md",
       "hash": "ed6dcc6bd6c8cfeddda7a5ed2e9a5a2f1936082bca86537b4db2873e5c4993f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/doubletap().json": {
       "etag": "\"372d-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/doubletap.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/doubletap().md",
       "hash": "b774a1c34b7b818abf17d4561d78a4eeba630c1e86d5b15b5444305b689dcfe7"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/hover().json": {
       "etag": "\"189f-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/hover.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/hover().md",
       "hash": "9a032a8b19e7b0fc9290dc29bf76df0d333b073733be87e060948c381af819c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/press(forduration:).json": {
       "etag": "\"3f6f-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press-forduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press(forduration).md",
       "hash": "f5064f3ef4d8a92ffb22d9d7c1933615a15afc1156d692db340cfe58bd032697"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/press(forduration:thendragto:).json": {
       "etag": "\"45bf-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press-fordurationthendragto.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press(forduration,thendragto).md",
       "hash": "d068a2061b8f2728540c0fed4c7c3c01b6b85de7a9962be44a4cb3e892de06d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/press(forduration:thendragto:withvelocity:thenholdforduration:).json": {
       "etag": "\"55b2-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press-fordurationthendragtowithvelocitythenholdforduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/press(forduration,thendragto,withvelocity,thenholdforduration).md",
       "hash": "6f267add99d5f675697a5f450dddb8af2a7a1591cf7d93f12f60266eaffcdd10"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/referencedelement.json": {
@@ -2892,7 +2892,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/rightclick().json": {
       "etag": "\"3521-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/rightclick.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/rightclick().md",
       "hash": "41fb037e24c9cdee3cb69c7881d7150c71a15140b3def3960325b7ec4f1c0ad6"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/screenpoint.json": {
@@ -2902,57 +2902,57 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/scroll(bydeltax:deltay:).json": {
       "etag": "\"2380-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/scroll-bydeltaxdeltay.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/scroll(bydeltax,deltay).md",
       "hash": "ae37218deebae41bfa47ee0a686e311e9046d194c9d11a7a0b9617d66c0d23d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/swipedown().json": {
       "etag": "\"3ee6-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipedown.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipedown().md",
       "hash": "76da77787818fbfeefa1d5321b1e8733a89a8838ba90ff51dcbdd5f1ecc6852c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/swipedown(velocity:).json": {
       "etag": "\"490a-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipedown-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipedown(velocity).md",
       "hash": "a09c1dc521094bd8569fd6bcca35e5678079f7619b83590696dc9218b80f37bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/swipeleft().json": {
       "etag": "\"3ee6-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeleft.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeleft().md",
       "hash": "9c0440d9ef32038c6a63ebe9c36e6db6e13b5593ec5e305c591efb521e12f48d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/swipeleft(velocity:).json": {
       "etag": "\"490a-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeleft-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeleft(velocity).md",
       "hash": "40f077960d21b37c8538f9b7ef6eca4eb6392f3a3477ae340ce00548a676b7af"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/swiperight().json": {
       "etag": "\"3ef0-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swiperight.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swiperight().md",
       "hash": "5b975942c70509a7e7ed8b43505de0aa6bed77a328e9170ed870b306c64604e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/swiperight(velocity:).json": {
       "etag": "\"4916-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swiperight-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swiperight(velocity).md",
       "hash": "ff074a822ff06cedfa71adac967c751ef7ce6b7b2f69a2484228618c9257d667"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/swipeup().json": {
       "etag": "\"3ed2-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeup.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeup().md",
       "hash": "040d52a2aca1b48c9451e49488215926ebbd3ad1a98d0c875f59d9080e30d09f"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/swipeup(velocity:).json": {
       "etag": "\"48f2-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeup-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/swipeup(velocity).md",
       "hash": "5a40d743a33dbee7721353fece8efbe376813a66ed674ecf39b5b4ff2fa077fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/tap().json": {
       "etag": "\"36f0-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/tap.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/tap().md",
       "hash": "86f4320110d8834dce4fd8242d3eca38a1eabd5a748a45433056583db9046b88"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuicoordinate/withoffset(_:).json": {
       "etag": "\"21b5-65d55d66e681f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuicoordinate/withoffset.md",
+      "file_path": "documentation/XCUIAutomation/xcuicoordinate/withoffset(_).md",
       "hash": "1940051069b67fff7819bf445081ac516701fc0bc41f430e81ca0a31ccd1d903"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice.json": {
@@ -2962,7 +2962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/appearance-swift.enum.json": {
       "etag": "\"4816-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swiftenum.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.enum.md",
       "hash": "7b8f6e68dac5a882c6d4d343de50c672889677d2688e04b4f09d7bb45a8a9e1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/dark.json": {
@@ -2972,7 +2972,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/init(rawvalue:).json": {
       "etag": "\"190f-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.enum/init(rawvalue).md",
       "hash": "9c24a60893c1e59a8514366fa3bbcf739c374e1dd9670828fa16a903a7faa282"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/appearance-swift.enum/light.json": {
@@ -2987,7 +2987,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/appearance-swift.property.json": {
       "etag": "\"2ce4-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swiftproperty.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/appearance-swift.property.md",
       "hash": "68bb97e6d7e9e58f881b0dda1270d463254c52f2a4fbbfdd0c9c49aeee25b17e"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/button.json": {
@@ -3012,7 +3012,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/button/init(rawvalue:).json": {
       "etag": "\"181e-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/button/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/button/init(rawvalue).md",
       "hash": "ed6a47edb37b49c4de85de3c680637c7c85c6a80005e5e43023cb03b9ca68dfa"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/button/volumedown.json": {
@@ -3027,12 +3027,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/hashardwarebutton(_:).json": {
       "etag": "\"448a-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/hashardwarebutton.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/hashardwarebutton(_).md",
       "hash": "f4203f948f18b99c0645de5e082439aff6c12158c67b9498dd89e48b26f7d029"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/init().json": {
       "etag": "\"1e2d-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/init.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/init().md",
       "hash": "7175e85f244457ffd1493f286703fe118a6ca9da3f6ee9932e2c326eb2201677"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/location.json": {
@@ -3047,22 +3047,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/perform(handgesture:).json": {
       "etag": "\"224d-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/perform-handgesture.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/perform(handgesture).md",
       "hash": "6f1bc1fb7c699df445ece8f19c15c68982852531fff31b98f9904687466ac92d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/press(_:).json": {
       "etag": "\"39cd-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/press.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/press(_).md",
       "hash": "dc82355ac789c000c1aade08819039c7278ccd813b50a3255ed71bf1ed9d4884"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/rotatedigitalcrown(delta:).json": {
       "etag": "\"3d69-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/rotatedigitalcrown-delta.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/rotatedigitalcrown(delta).md",
       "hash": "1613cf6fdad37bee3da3641083a1e43f9893efd0cc3b5e69669ec2da2b65734b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/rotatedigitalcrown(delta:velocity:).json": {
       "etag": "\"482b-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevice/rotatedigitalcrown-deltavelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevice/rotatedigitalcrown(delta,velocity).md",
       "hash": "34dc4b6695d65aecdfc46daaea3ccbba27b708757b00aa3d640383149a671b38"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevice/shared.json": {
@@ -3112,7 +3112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuidevicehandgesture/init(rawvalue:).json": {
       "etag": "\"1334-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuidevicehandgesture/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuidevicehandgesture/init(rawvalue).md",
       "hash": "7a5fd4c23ab97a2ff09ca4e231a7f9390596494bd13f66d09a51b6186ab4a1ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement.json": {
@@ -3122,12 +3122,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/adjust(tonormalizedsliderposition:).json": {
       "etag": "\"2a73-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/adjust-tonormalizedsliderposition.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/adjust(tonormalizedsliderposition).md",
       "hash": "c541e98bb99ef0449d89769bf2ff48165cf1ed10c956aa7ded3afcd11eb005c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/adjust(topickerwheelvalue:).json": {
       "etag": "\"1f78-65d55d675598c-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/adjust-topickerwheelvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/adjust(topickerwheelvalue).md",
       "hash": "fdfb5dfbdf1357aa47e944cc3b9eccd113f3fcacfcae96baead9be329d637360"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/attributename.json": {
@@ -3172,7 +3172,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/attributename/init(rawvalue:).json": {
       "etag": "\"1a6c-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/attributename/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/attributename/init(rawvalue).md",
       "hash": "41d602082028ff3706394622946fbb0105f6465c8bbf87b8dc485d4291bb5e41"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/attributename/label.json": {
@@ -3207,27 +3207,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/children(matching:).json": {
       "etag": "\"32bc-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/children-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/children(matching).md",
       "hash": "4be0e76973bc3b1007742e599c57ae98b85aa8341e39033aaa1c0749fdc1c159"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/click().json": {
       "etag": "\"35fb-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/click.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/click().md",
       "hash": "c99941ef0e0ec11e96e8346f85dd7c70d5932f2601ccfb62b3266285afab03c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/click(forduration:thendragto:).json": {
       "etag": "\"4491-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/click-fordurationthendragto.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/click(forduration,thendragto).md",
       "hash": "5461aa0dcbf629c308c261a53da215ea40f6258a306e0f3ded68a59b9422195d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/click(forduration:thendragto:withvelocity:thenholdforduration:).json": {
       "etag": "\"5493-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/click-fordurationthendragtowithvelocitythenholdforduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/click(forduration,thendragto,withvelocity,thenholdforduration).md",
       "hash": "4c296111361c2cc7d70a7fa2f55504a251031ea5fa2d6d4d256e516e2c8bea01"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/coordinate(withnormalizedoffset:).json": {
       "etag": "\"28ca-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/coordinate-withnormalizedoffset.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/coordinate(withnormalizedoffset).md",
       "hash": "83ed20b1cffa48dfcc541966cae4d85f526b90a82e907448a5ccdb0102214398"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/debugdescription.json": {
@@ -3237,17 +3237,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/descendants(matching:).json": {
       "etag": "\"410d-65d55d675598c-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/descendants-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/descendants(matching).md",
       "hash": "6ab1ac97ac0e1ab4fd3229430640b7d76b1799d2a09805348b96262a1d129c91"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/doubleclick().json": {
       "etag": "\"364a-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/doubleclick.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/doubleclick().md",
       "hash": "a04bff895460ccad8abf161e1fb8f3532fd52c98ab948f0126ed1261bccbd15b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/doubletap().json": {
       "etag": "\"373a-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/doubletap.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/doubletap().md",
       "hash": "26b92c58d1a60341109288cad786ed3dbc93a8315ab335b8a575395492908804"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/elementtype.json": {
@@ -3377,7 +3377,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/elementtype/init(rawvalue:).json": {
       "etag": "\"1878-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/elementtype/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/elementtype/init(rawvalue).md",
       "hash": "97c87cd530ad175673b2173074c609327e9f61ec71ccf826a4f0ddf217524d1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/elementtype/key.json": {
@@ -3682,7 +3682,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/hover().json": {
       "etag": "\"198a-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/hover.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/hover().md",
       "hash": "7d7b69c51566aa15a40a553bad7a7cac3e09f24e3149036ae137890fd0bbd870"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/ishittable.json": {
@@ -3727,7 +3727,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/keymodifierflags/init(rawvalue:).json": {
       "etag": "\"1aac-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/keymodifierflags/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/keymodifierflags/init(rawvalue).md",
       "hash": "cc122dfae4942cf65cdb45fe8a75733c8fe1f37276dbdcefa96a8282d50f1b15"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/keymodifierflags/option.json": {
@@ -3747,42 +3747,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/perform(withkeymodifiers:block:).json": {
       "etag": "\"439f-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/perform-withkeymodifiersblock.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/perform(withkeymodifiers,block).md",
       "hash": "edfd73b72ed36be1aa7db3ce9d5752b47a717b3ed6495d0027652e588ee04e56"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/pinch(withscale:velocity:).json": {
       "etag": "\"5ec3-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/pinch-withscalevelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/pinch(withscale,velocity).md",
       "hash": "565e9846c01d8894a7024ee178daafb4343552c9123e1233e030b5d8bf76ae33"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/press(forduration:).json": {
       "etag": "\"405b-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/press-forduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/press(forduration).md",
       "hash": "5c3dd77346424f98e5771bfe5e39a065dc59b6002336b15d9dba40dde00e9432"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/press(forduration:thendragto:).json": {
       "etag": "\"45d0-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/press-fordurationthendragto.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/press(forduration,thendragto).md",
       "hash": "7c0a0b34847c8f56ed2cab343ac66226354a83ccf13d10aabf22edd0a23dbf88"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/press(forduration:thendragto:withvelocity:thenholdforduration:).json": {
       "etag": "\"5432-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/press-fordurationthendragtowithvelocitythenholdforduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/press(forduration,thendragto,withvelocity,thenholdforduration).md",
       "hash": "54a0f11176d2938dea125b7708f319ed7ca9818fa69f44e846a181315d77e12d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/rightclick().json": {
       "etag": "\"363c-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/rightclick.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/rightclick().md",
       "hash": "b250256dcf1798f447b24a70bb150de27ad23558f34f02a1ae41005df2cb3cb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/rotate(_:withvelocity:).json": {
       "etag": "\"5de2-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/rotate-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/rotate(_,withvelocity).md",
       "hash": "44ad56fc028c9df12577cf33505517f3977cc2c7e193bd7e7c11063455bdc56c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/scroll(bydeltax:deltay:).json": {
       "etag": "\"232c-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/scroll-bydeltaxdeltay.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/scroll(bydeltax,deltay).md",
       "hash": "fdc510badd3b48bd8fe1f76b0071fdd23d93d0512c41bef54a5d6a7c1b4b28ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/sizeclass.json": {
@@ -3797,7 +3797,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/sizeclass/init(rawvalue:).json": {
       "etag": "\"1866-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/sizeclass/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/sizeclass/init(rawvalue).md",
       "hash": "4c2adbaa4545ab9e164d303436414c449f29832cff8665f59550770ea23b840a"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/sizeclass/regular.json": {
@@ -3812,107 +3812,107 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipedown().json": {
       "etag": "\"5192-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown().md",
       "hash": "4a1603940aae848d969662b6c522da835dbbd29ba1620b25f253bfda19639237"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipedown(velocity:).json": {
       "etag": "\"5713-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown(velocity).md",
       "hash": "b45b0d72a379efcedbfa01cfbf6bf2d7dacf27066df5e8122e5a4aac861a4882"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipedown(withvelocity:).json": {
       "etag": "\"2e8a-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipedown(withvelocity).md",
       "hash": "2c6fbca79fae3cbe41cbf170e97610a3519d3c0ba6eaa7b4c53e9ee116709398"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipeleft().json": {
       "etag": "\"5192-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft().md",
       "hash": "1ce9b2ae128eee48e44dd4da91a44f5c0da62c9721f73d2b2e66d71070ac1fac"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipeleft(velocity:).json": {
       "etag": "\"5713-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft(velocity).md",
       "hash": "921299811534daf6998f3e1fd1922cc3a8991bfcaa9b0640655181fa31b183f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipeleft(withvelocity:).json": {
       "etag": "\"2e8a-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeleft(withvelocity).md",
       "hash": "c7dbfb1c15851ae28baa3da18a8e3ffac292a9ce219521e8139b7f153215f09d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swiperight().json": {
       "etag": "\"519c-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight().md",
       "hash": "a2fae9256cd2443f835b42acbb94c6468a0ad9eae53111282df103ffaab6c19a"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swiperight(velocity:).json": {
       "etag": "\"571f-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight(velocity).md",
       "hash": "8bddc22c6e896f4cf43bca1508612a01d914ba7183bdf3cf53f232d87fce13d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swiperight(withvelocity:).json": {
       "etag": "\"2e9e-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swiperight(withvelocity).md",
       "hash": "307373ee4d7508452dfe31920643c6ad839561ab7c5615857cecdfded25723b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipeup().json": {
       "etag": "\"517e-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup().md",
       "hash": "75eb2cc2cc9393b08537d0e5a2dacb206f08224118dbb6e3199cd6d6f0c2ce40"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipeup(velocity:).json": {
       "etag": "\"56fb-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup-velocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup(velocity).md",
       "hash": "49a777fa9fcfe8b7622a715db510f323ab78aa5647ff06b7f07c2372811bdb69"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/swipeup(withvelocity:).json": {
       "etag": "\"2e64-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup-withvelocity.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/swipeup(withvelocity).md",
       "hash": "572152038d116ecc50226cfdac1e6ba9d2fc4aae4eb2da8f299e4437b7f743ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/tap().json": {
       "etag": "\"36f6-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/tap.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/tap().md",
       "hash": "5429ca76699293b684136cea91541fede4a1cb43cb550ba15762c2e515d8b55f"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/tap(withnumberoftaps:numberoftouches:).json": {
       "etag": "\"2ada-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/tap-withnumberoftapsnumberoftouches.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/tap(withnumberoftaps,numberoftouches).md",
       "hash": "ff7bfaea677842bd75971acc0be62ff862b8b023270945ba4affd7fb4192e8ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/twofingertap().json": {
       "etag": "\"20db-65d55d675598c-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/twofingertap.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/twofingertap().md",
       "hash": "f2971b17ce39c84c91b4a3b7c2be6c50917a57b9a4e4b1322776952aabd3f768"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/typekey(_:modifierflags:)-6gaoi.json": {
       "etag": "\"34cd-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/typekey-modifierflags-6gaoi.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/typekey(_,modifierflags)-6gaoi.md",
       "hash": "f081f42a9a4a358c696916b8f8762271758590e4367a1a438f57ada742549a33"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/typekey(_:modifierflags:)-9ubn.json": {
       "etag": "\"497d-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/typekey-modifierflags-9ubn.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/typekey(_,modifierflags)-9ubn.md",
       "hash": "9860a587fdf455aee3e63bdd45a04de85c8f4936c751a0714fe3ed1575d9ce41"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/typetext(_:).json": {
       "etag": "\"2bc5-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/typetext.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/typetext(_).md",
       "hash": "1cb6f56a69e6e6297ed98fd420895d411b4492eb188c17b688b1b0cac941fc87"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/wait(for:toequal:timeout:).json": {
       "etag": "\"4cc7-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/wait-fortoequaltimeout.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/wait(for,toequal,timeout).md",
       "hash": "a233fb20ee84d0011bec0c23382251635e2ed7de45eebf121cc8575cf794d62d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/waitforexistence(timeout:).json": {
       "etag": "\"4860-65d55d6736ac9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/waitforexistence-timeout.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/waitforexistence(timeout).md",
       "hash": "99a4c319607a46eb05ede01094d9bb0145a698954ca98c8e0ca728946d508da3"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielement/waitfornonexistence(timeout:).json": {
       "etag": "\"464c-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielement/waitfornonexistence-timeout.md",
+      "file_path": "documentation/XCUIAutomation/xcuielement/waitfornonexistence(timeout).md",
       "hash": "47a73aa50f5a96c5e00acc25d0dab65ef0d3109ad5cc8da35f4b0705010cac98"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementattributes.json": {
@@ -3997,17 +3997,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/children(matching:).json": {
       "etag": "\"5d4b-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/children-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/children(matching).md",
       "hash": "c183b8f90ea4badccc2dcbb041a09e90a1da684eb4977881f116600edf3de99d"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/containing(_:).json": {
       "etag": "\"5e1b-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/containing.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/containing(_).md",
       "hash": "3561aa463375ae318382eaf1704b74c2fd6af53ed08d4a7d709aa3bddd7aea35"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/containing(_:identifier:).json": {
       "etag": "\"7e50-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/containing-identifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/containing(_,identifier).md",
       "hash": "c75b9abe25021455c5e07afd120acb6199e7ca5aece2812232a84bb773ccb6ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/count.json": {
@@ -4022,27 +4022,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/descendants(matching:).json": {
       "etag": "\"69f2-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/descendants-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/descendants(matching).md",
       "hash": "1cabea76d8cd9710709bbc4e02d2087dc14d4eb07dcd95715f645b395eb5a08c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/element(at:).json": {
       "etag": "\"59b2-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/element-at.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/element(at).md",
       "hash": "82a8f2ca3287d3fb04323e43015abe5c4a6ffa55bf99c5fe7c8e21393a72ed39"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/element(boundby:).json": {
       "etag": "\"57a5-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/element-boundby.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/element(boundby).md",
       "hash": "7130e0a9e0f8596ca30d36dc9e82d0b8072ab5c0457867abfebff750eb49201e"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/element(matching:).json": {
       "etag": "\"6458-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/element-matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/element(matching).md",
       "hash": "3a752a52b0d8b995d1f3909d98eded13374b4a7f10d397870cfc39fe291c5802"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/element(matching:identifier:).json": {
       "etag": "\"7ee4-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/element-matchingidentifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/element(matching,identifier).md",
       "hash": "1e95a7ef4dfbaefc6e647d7b0a5a6b90dbb7cafbad7cc71969d99233db05ba7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/element.json": {
@@ -4052,22 +4052,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/matching(_:).json": {
       "etag": "\"5dbc-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching(_).md",
       "hash": "dc7c52627cbeb13c920c6feeff8f19509839fafad05c9b881690254deed03b77"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/matching(_:identifier:).json": {
       "etag": "\"7deb-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching-identifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching(_,identifier).md",
       "hash": "93f1125362d144ea4c5228f7d641e8e3b539cf91c145c003dbe780467083f8e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/matching(identifier:).json": {
       "etag": "\"6d93-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching-identifier.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/matching(identifier).md",
       "hash": "a806da4f5ce6e3b101e416ce17a5da713ceb6286c00e268bb4faeceb0a05b6f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementquery/subscript(_:).json": {
       "etag": "\"737b-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementquery/subscript.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementquery/subscript(_).md",
       "hash": "0a1561d346efc3e66d00e03c7138c701c0bc1802de89f4a8f516f8b68bd02796"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementsnapshot.json": {
@@ -4092,7 +4092,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementsnapshotproviding/snapshot().json": {
       "etag": "\"28e1-65d55d671963b-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuielementsnapshotproviding/snapshot.md",
+      "file_path": "documentation/XCUIAutomation/xcuielementsnapshotproviding/snapshot().md",
       "hash": "d9dd383b4eadfff210d8d98f3ea5292c8ba6f79802e19abc10e11a69b04846b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuielementtypequeryprovider.json": {
@@ -4532,12 +4532,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuigesturevelocity/init(_:).json": {
       "etag": "\"1996-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/init.md",
+      "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/init(_).md",
       "hash": "ff473865ea14a9fe7f81d5539693eec1f0c79ccb88320b4970e7ab8e5567e7a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuigesturevelocity/init(rawvalue:).json": {
       "etag": "\"19cb-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuigesturevelocity/init(rawvalue).md",
       "hash": "2730de9eadc9001c974d6b62588f0de8ab5a9228c17c26373ff9606d717a80c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuigesturevelocity/slow.json": {
@@ -4727,12 +4727,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuikeyboardkey/init(_:).json": {
       "etag": "\"1852-65d55d67bbb1e-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuikeyboardkey/init.md",
+      "file_path": "documentation/XCUIAutomation/xcuikeyboardkey/init(_).md",
       "hash": "6c8ed863911fe1f416d4ea5cd2763760410afb6df0f55aa8e36a5e2589a58e3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuikeyboardkey/init(rawvalue:).json": {
       "etag": "\"1872-65d55d67bbb1e-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuikeyboardkey/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuikeyboardkey/init(rawvalue).md",
       "hash": "68ffdb10c7c83245ac627de4c0649a2df6303a43d0a7cdb7ad86eb264adb32ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuikeyboardkey/leftarrow.json": {
@@ -4822,7 +4822,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuilocation/init(location:).json": {
       "etag": "\"22d6-65d55d662c554-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuilocation/init-location.md",
+      "file_path": "documentation/XCUIAutomation/xcuilocation/init(location).md",
       "hash": "d45a51ae1d35b3be1ddf742c9794310473e189dfdd88c3dccc1466bd88d9e40b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuilocation/location.json": {
@@ -4877,7 +4877,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiprotectedresource/init(rawvalue:).json": {
       "etag": "\"148f-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiprotectedresource/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuiprotectedresource/init(rawvalue).md",
       "hash": "82bbdb3988c173dfb80b21af841511ccc05a79b461086c1b65ea9a775bb3b6cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiprotectedresource/keyboardnetwork.json": {
@@ -4962,12 +4962,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiremote/press(_:).json": {
       "etag": "\"2b72-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiremote/press.md",
+      "file_path": "documentation/XCUIAutomation/xcuiremote/press(_).md",
       "hash": "b75f66586308d8efa41b51fe74a3f3b0ac8cb48fe8a37d8f4a877fc600e2d996"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiremote/press(_:forduration:).json": {
       "etag": "\"34a1-65d55d6610e20-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiremote/press-forduration.md",
+      "file_path": "documentation/XCUIAutomation/xcuiremote/press(_,forduration).md",
       "hash": "77c7e53dc2efc2701ebaf27c4a324e35be6fbed7f3d6d34879367dfb593ba1ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiremote/shared.json": {
@@ -4997,7 +4997,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiremotebutton/init(rawvalue:).json": {
       "etag": "\"1398-65d55d679de25-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiremotebutton/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuiremotebutton/init(rawvalue).md",
       "hash": "476257d909c3423831960e612df245838341a87b4f76108352a739c9422fa8fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiremotebutton/left.json": {
@@ -5087,7 +5087,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuiscreenshotproviding/screenshot().json": {
       "etag": "\"2242-65d55d677cbf9-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuiscreenshotproviding/screenshot.md",
+      "file_path": "documentation/XCUIAutomation/xcuiscreenshotproviding/screenshot().md",
       "hash": "92301341842465ca66e911a768d9686a8f0b81eb0ce8962ad20b58fff762df49"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuisiriservice.json": {
@@ -5097,7 +5097,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuisiriservice/activate(voicerecognitiontext:).json": {
       "etag": "\"21e7-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuisiriservice/activate-voicerecognitiontext.md",
+      "file_path": "documentation/XCUIAutomation/xcuisiriservice/activate(voicerecognitiontext).md",
       "hash": "cc6da5164b9a8b5e4795f57ff8abd6a6a0dacd4f67589f91d70fbf42df770446"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuisiriservice/debugdescription.json": {
@@ -5112,7 +5112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuisystem/open(_:).json": {
       "etag": "\"1f05-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuisystem/open.md",
+      "file_path": "documentation/XCUIAutomation/xcuisystem/open(_).md",
       "hash": "6d0fcbf522f9d49c6e75248b187022d2fcf5b87f2bc383bb97757a1d11a31379"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice.json": {
@@ -5122,7 +5122,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/currentspeech().json": {
       "etag": "\"28a3-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/currentspeech.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/currentspeech().md",
       "hash": "29c784cf25eb0afa77f0a24d795a62603bd6eac96436ab07c67b728f299ad54f"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/debugdescription.json": {
@@ -5132,12 +5132,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/disable().json": {
       "etag": "\"2103-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/disable.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/disable().md",
       "hash": "c8fb04aace85f86e547aace074edb3caf611e344182751d83040d244139f0490"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/enable().json": {
       "etag": "\"20ec-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/enable.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/enable().md",
       "hash": "06fb0b03a2f5376c571bd34dc0c41ad10a68627db54fbb0341709d5174b10027"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/error.json": {
@@ -5162,7 +5162,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/error/code/init(rawvalue:).json": {
       "etag": "\"1b8a-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/error/code/init-rawvalue.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/error/code/init(rawvalue).md",
       "hash": "1cd7b57dbc4cfa75adef552d39adf2702a16abc989a27acb57463567c9e76274"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/error/code/nospeech.json": {
@@ -5207,22 +5207,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/movebackward().json": {
       "etag": "\"28a0-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/movebackward.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/movebackward().md",
       "hash": "29865e560273fb51914db4c6fe63b932ac20e4c96499001b809b13a4d413fe2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/moveforward().json": {
       "etag": "\"2883-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/moveforward.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/moveforward().md",
       "hash": "d2491a2170105bdb51156dba675a72e9f9f6e707762818d748d1aa9b94420d2c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/movein().json": {
       "etag": "\"26fe-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/movein.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/movein().md",
       "hash": "4802cfd633903ab9e6a71585c7a0af4ede3a0b72ac84dd3adf3f2fff2ac92f25"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/moveout().json": {
       "etag": "\"2717-65d55d667099f-df\"",
-      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/moveout.md",
+      "file_path": "documentation/XCUIAutomation/xcuivoiceoverservice/moveout().md",
       "hash": "0a32d0e3795ed3a75d819b092546fb92659584868beb672ca6f0b53df17646ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcuiautomation/xcuivoiceoverservice/output.json": {

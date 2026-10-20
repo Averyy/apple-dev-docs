@@ -87,7 +87,7 @@
     },
     "https://developer.apple.com/documentation/walletorders/payment/summaryitems-data.dictionary": {
       "etag": "\"3119-65d55a91bab15-df\"",
-      "file_path": "documentation/WalletOrders/payment/summaryitems-datadictionary.md",
+      "file_path": "documentation/WalletOrders/payment/summaryitems-data.dictionary.md",
       "hash": "f038962f5bcce3da4f12463190a1fddd1843e6c9fe0bdd0e5e1b5a1ec9c39226"
     },
     "https://developer.apple.com/documentation/walletorders/paymentmethod": {
@@ -147,7 +147,7 @@
     },
     "https://developer.apple.com/documentation/walletorders/shippingfulfillment/recipient-data.dictionary": {
       "etag": "\"3655-65d55a91bab15-df\"",
-      "file_path": "documentation/WalletOrders/shippingfulfillment/recipient-datadictionary.md",
+      "file_path": "documentation/WalletOrders/shippingfulfillment/recipient-data.dictionary.md",
       "hash": "e5201ba1b17323428d3da05aa1a908e4f3dbf4b8d125858768e69c9524b26b72"
     },
     "https://developer.apple.com/documentation/walletorders/unregister-a-device-from-update-notifications": {
@@ -242,7 +242,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/payment/summaryitems-data.dictionary.json": {
       "etag": "\"3119-65d55a91bab15-df\"",
-      "file_path": "documentation/WalletOrders/payment/summaryitems-datadictionary.md",
+      "file_path": "documentation/WalletOrders/payment/summaryitems-data.dictionary.md",
       "hash": "f038962f5bcce3da4f12463190a1fddd1843e6c9fe0bdd0e5e1b5a1ec9c39226"
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/paymentmethod.json": {
@@ -302,7 +302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/shippingfulfillment/recipient-data.dictionary.json": {
       "etag": "\"3655-65d55a91bab15-df\"",
-      "file_path": "documentation/WalletOrders/shippingfulfillment/recipient-datadictionary.md",
+      "file_path": "documentation/WalletOrders/shippingfulfillment/recipient-data.dictionary.md",
       "hash": "e5201ba1b17323428d3da05aa1a908e4f3dbf4b8d125858768e69c9524b26b72"
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/unregister-a-device-from-update-notifications.json": {

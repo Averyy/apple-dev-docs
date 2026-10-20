@@ -67,22 +67,22 @@
     },
     "https://developer.apple.com/documentation/weatherkitrestapi/get-api-v1-availability-_latitude_-_longitude_": {
       "etag": "\"237e-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-availability-latitude-longitude.md",
+      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-availability-_latitude_-_longitude_.md",
       "hash": "87cf7a19560d84d8aeb42a15a52d8a20b58c277166955a1b089714a442d8361f"
     },
     "https://developer.apple.com/documentation/weatherkitrestapi/get-api-v1-weather-_language_-_latitude_-_longitude_": {
       "etag": "\"2df5-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weather-language-latitude-longitude.md",
+      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weather-_language_-_latitude_-_longitude_.md",
       "hash": "0efa7c2fa87c2f7946ba0783f9fb6bfcfacde980d00092b39907be8856595019"
     },
     "https://developer.apple.com/documentation/weatherkitrestapi/get-api-v1-weatheralert-_language_-_id_": {
       "etag": "\"21ff-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weatheralert-language-id.md",
+      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weatheralert-_language_-_id_.md",
       "hash": "8777e335371264d30bb1202edcbc8c8ff4d87fd6e3b84168b1a27e94ec3fb55b"
     },
     "https://developer.apple.com/documentation/weatherkitrestapi/get-attribution-_language_": {
       "etag": "\"110d-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/get-attribution-language.md",
+      "file_path": "documentation/WeatherKitRESTAPI/get-attribution-_language_.md",
       "hash": "b266eb55a8930cceaac9c56a8b8de10dfdd39a05884daba403000e026cead903"
     },
     "https://developer.apple.com/documentation/weatherkitrestapi/hourlyforecast": {
@@ -187,7 +187,7 @@
     },
     "https://developer.apple.com/documentation/weatherkitrestapi/weatheralert/weatheralertdata/area-data.dictionary": {
       "etag": "\"11b1-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/weatheralert/weatheralertdata/area-datadictionary.md",
+      "file_path": "documentation/WeatherKitRESTAPI/weatheralert/weatheralertdata/area-data.dictionary.md",
       "hash": "a06fd4d1249ca741650508b9964584585a311868242d5f095a2c89adfba01ba2"
     },
     "https://developer.apple.com/documentation/weatherkitrestapi/weatheralertcollection": {
@@ -272,22 +272,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/get-api-v1-availability-_latitude_-_longitude_.json": {
       "etag": "\"237e-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-availability-latitude-longitude.md",
+      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-availability-_latitude_-_longitude_.md",
       "hash": "87cf7a19560d84d8aeb42a15a52d8a20b58c277166955a1b089714a442d8361f"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/get-api-v1-weather-_language_-_latitude_-_longitude_.json": {
       "etag": "\"2df5-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weather-language-latitude-longitude.md",
+      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weather-_language_-_latitude_-_longitude_.md",
       "hash": "0efa7c2fa87c2f7946ba0783f9fb6bfcfacde980d00092b39907be8856595019"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/get-api-v1-weatheralert-_language_-_id_.json": {
       "etag": "\"21ff-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weatheralert-language-id.md",
+      "file_path": "documentation/WeatherKitRESTAPI/get-api-v1-weatheralert-_language_-_id_.md",
       "hash": "8777e335371264d30bb1202edcbc8c8ff4d87fd6e3b84168b1a27e94ec3fb55b"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/get-attribution-_language_.json": {
       "etag": "\"110d-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/get-attribution-language.md",
+      "file_path": "documentation/WeatherKitRESTAPI/get-attribution-_language_.md",
       "hash": "b266eb55a8930cceaac9c56a8b8de10dfdd39a05884daba403000e026cead903"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/hourlyforecast.json": {
@@ -392,7 +392,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weatheralert/weatheralertdata/area-data.dictionary.json": {
       "etag": "\"11b1-65d55a95a962e-df\"",
-      "file_path": "documentation/WeatherKitRESTAPI/weatheralert/weatheralertdata/area-datadictionary.md",
+      "file_path": "documentation/WeatherKitRESTAPI/weatheralert/weatheralertdata/area-data.dictionary.md",
       "hash": "a06fd4d1249ca741650508b9964584585a311868242d5f095a2c89adfba01ba2"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkitrestapi/weatheralertcollection.json": {

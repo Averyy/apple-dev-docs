@@ -197,12 +197,12 @@
     },
     "https://developer.apple.com/documentation/mapkitjs/annotation/collisionmode-data.property": {
       "etag": "\"22a2-65d55a26fe17f-df\"",
-      "file_path": "documentation/MapKitJS/annotation/collisionmode-dataproperty.md",
+      "file_path": "documentation/MapKitJS/annotation/collisionmode-data.property.md",
       "hash": "3194f6e4876378e993ef340e03cd48093fe9a3b48ac5e1aee4ec170d0c64306d"
     },
     "https://developer.apple.com/documentation/mapkitjs/annotation/collisionmode-data.var": {
       "etag": "\"1711-65d55a26fe17f-df\"",
-      "file_path": "documentation/MapKitJS/annotation/collisionmode-datavar.md",
+      "file_path": "documentation/MapKitJS/annotation/collisionmode-data.var.md",
       "hash": "3384576f6cd736cc32cf2939f75542ee855f461a6e0335c82b38b82001e245e6"
     },
     "https://developer.apple.com/documentation/mapkitjs/annotation/coordinate": {
@@ -217,12 +217,12 @@
     },
     "https://developer.apple.com/documentation/mapkitjs/annotation/displaypriority-data.property": {
       "etag": "\"2ce6-65d55a26fe17f-df\"",
-      "file_path": "documentation/MapKitJS/annotation/displaypriority-dataproperty.md",
+      "file_path": "documentation/MapKitJS/annotation/displaypriority-data.property.md",
       "hash": "29fbb15bbced533ec2d9b0469d249b3f6fbaecc03a0fa5c0d565a49899c43f6e"
     },
     "https://developer.apple.com/documentation/mapkitjs/annotation/displaypriority-data.var": {
       "etag": "\"173a-65d55a26fe17f-df\"",
-      "file_path": "documentation/MapKitJS/annotation/displaypriority-datavar.md",
+      "file_path": "documentation/MapKitJS/annotation/displaypriority-data.var.md",
       "hash": "f932384ea7ea4ab178a06196b7f98fc245725b97cf04cba97c0b750cc6f9da1d"
     },
     "https://developer.apple.com/documentation/mapkitjs/annotation/draggable": {
@@ -1782,12 +1782,12 @@
     },
     "https://developer.apple.com/documentation/mapkitjs/map/distances-data.property": {
       "etag": "\"3004-65d55a280611f-df\"",
-      "file_path": "documentation/MapKitJS/map/distances-dataproperty.md",
+      "file_path": "documentation/MapKitJS/map/distances-data.property.md",
       "hash": "dc6f3ffb48d0cfe49967fa8fa9b8c616dde2186d8c8c530570515ec0362e7de7"
     },
     "https://developer.apple.com/documentation/mapkitjs/map/distances-data.var": {
       "etag": "\"19a2-65d55a27ddb67-df\"",
-      "file_path": "documentation/MapKitJS/map/distances-datavar.md",
+      "file_path": "documentation/MapKitJS/map/distances-data.var.md",
       "hash": "50bb22e4ec6402a227535ecd85626378dcaf4d0098806f4f18a97b0357784555"
     },
     "https://developer.apple.com/documentation/mapkitjs/map/element": {
@@ -4382,12 +4382,12 @@
     },
     "https://developer.apple.com/documentation/mapkitjs/search/regionpriority-data.property": {
       "etag": "\"1676-65d55a275d7c6-df\"",
-      "file_path": "documentation/MapKitJS/search/regionpriority-dataproperty.md",
+      "file_path": "documentation/MapKitJS/search/regionpriority-data.property.md",
       "hash": "255e1cdf675905b812aa00e8d4bb3afbe89b7c49676aa60340a972b260164af0"
     },
     "https://developer.apple.com/documentation/mapkitjs/search/regionpriority-data.var": {
       "etag": "\"1bea-65d55a275d7c6-df\"",
-      "file_path": "documentation/MapKitJS/search/regionpriority-datavar.md",
+      "file_path": "documentation/MapKitJS/search/regionpriority-data.var.md",
       "hash": "0f76f0dd81f2ea247f6d6d1d982f19e826790ca87b452c1cbf493f531da0fe90"
     },
     "https://developer.apple.com/documentation/mapkitjs/search/search": {
@@ -5187,12 +5187,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/annotation/collisionmode-data.property.json": {
       "etag": "\"22a2-65d55a26fe17f-df\"",
-      "file_path": "documentation/MapKitJS/annotation/collisionmode-dataproperty.md",
+      "file_path": "documentation/MapKitJS/annotation/collisionmode-data.property.md",
       "hash": "3194f6e4876378e993ef340e03cd48093fe9a3b48ac5e1aee4ec170d0c64306d"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/annotation/collisionmode-data.var.json": {
       "etag": "\"1711-65d55a26fe17f-df\"",
-      "file_path": "documentation/MapKitJS/annotation/collisionmode-datavar.md",
+      "file_path": "documentation/MapKitJS/annotation/collisionmode-data.var.md",
       "hash": "3384576f6cd736cc32cf2939f75542ee855f461a6e0335c82b38b82001e245e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/annotation/coordinate.json": {
@@ -5207,12 +5207,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/annotation/displaypriority-data.property.json": {
       "etag": "\"2ce6-65d55a26fe17f-df\"",
-      "file_path": "documentation/MapKitJS/annotation/displaypriority-dataproperty.md",
+      "file_path": "documentation/MapKitJS/annotation/displaypriority-data.property.md",
       "hash": "29fbb15bbced533ec2d9b0469d249b3f6fbaecc03a0fa5c0d565a49899c43f6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/annotation/displaypriority-data.var.json": {
       "etag": "\"173a-65d55a26fe17f-df\"",
-      "file_path": "documentation/MapKitJS/annotation/displaypriority-datavar.md",
+      "file_path": "documentation/MapKitJS/annotation/displaypriority-data.var.md",
       "hash": "f932384ea7ea4ab178a06196b7f98fc245725b97cf04cba97c0b750cc6f9da1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/annotation/draggable.json": {
@@ -6784,12 +6784,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/map/distances-data.property.json": {
       "etag": "\"3004-65d55a280611f-df\"",
-      "file_path": "documentation/MapKitJS/map/distances-dataproperty.md",
+      "file_path": "documentation/MapKitJS/map/distances-data.property.md",
       "hash": "dc6f3ffb48d0cfe49967fa8fa9b8c616dde2186d8c8c530570515ec0362e7de7"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/map/distances-data.var.json": {
       "etag": "\"19a2-65d55a27ddb67-df\"",
-      "file_path": "documentation/MapKitJS/map/distances-datavar.md",
+      "file_path": "documentation/MapKitJS/map/distances-data.var.md",
       "hash": "50bb22e4ec6402a227535ecd85626378dcaf4d0098806f4f18a97b0357784555"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/map/element.json": {
@@ -9384,12 +9384,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/search/regionpriority-data.property.json": {
       "etag": "\"1676-65d55a275d7c6-df\"",
-      "file_path": "documentation/MapKitJS/search/regionpriority-dataproperty.md",
+      "file_path": "documentation/MapKitJS/search/regionpriority-data.property.md",
       "hash": "255e1cdf675905b812aa00e8d4bb3afbe89b7c49676aa60340a972b260164af0"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/search/regionpriority-data.var.json": {
       "etag": "\"1bea-65d55a275d7c6-df\"",
-      "file_path": "documentation/MapKitJS/search/regionpriority-datavar.md",
+      "file_path": "documentation/MapKitJS/search/regionpriority-data.var.md",
       "hash": "0f76f0dd81f2ea247f6d6d1d982f19e826790ca87b452c1cbf493f531da0fe90"
     },
     "https://developer.apple.com/tutorials/data/documentation/mapkitjs/search/search.json": {

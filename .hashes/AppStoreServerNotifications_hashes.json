@@ -392,7 +392,7 @@
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/notification_type": {
       "etag": "\"9e8d-65d55a704568d-df\"",
-      "file_path": "documentation/AppStoreServerNotifications/notification-type.md",
+      "file_path": "documentation/AppStoreServerNotifications/notification_type.md",
       "hash": "aa34315741551b629b976d1de2aba24900f8bd8a548d5b09ebf4556206b35363"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/notificationtype": {
@@ -642,17 +642,17 @@
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt": {
       "etag": "\"2c1b-65d55a705df8e-df\"",
-      "file_path": "documentation/AppStoreServerNotifications/unified-receipt.md",
+      "file_path": "documentation/AppStoreServerNotifications/unified_receipt.md",
       "hash": "a01a7317b43452c0476328839c867bdc82fc21c10f792b2766b2b91059b80ff7"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt/latest_receipt_info-data.dictionary": {
       "etag": "\"841b-65d55a7022f16-df\"",
-      "file_path": "documentation/AppStoreServerNotifications/unified_receipt/latest-receipt-info-datadictionary.md",
+      "file_path": "documentation/AppStoreServerNotifications/unified_receipt/latest_receipt_info-data.dictionary.md",
       "hash": "148fd543ec8e4d434d1ee732b19c51043139f8ee1fc4b860bc8c0a9700e11f79"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt/pending_renewal_info-data.dictionary": {
       "etag": "\"49fa-65d55a7022f16-df\"",
-      "file_path": "documentation/AppStoreServerNotifications/unified_receipt/pending-renewal-info-datadictionary.md",
+      "file_path": "documentation/AppStoreServerNotifications/unified_receipt/pending_renewal_info-data.dictionary.md",
       "hash": "85134cf9159698f5d49cc6dedc85beeb636ceeee27652609149262bcbc94c912"
     },
     "https://developer.apple.com/documentation/appstoreservernotifications/version": {
@@ -1062,7 +1062,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notification_type.json": {
       "etag": "\"9e8d-65d55a704568d-df\"",
-      "file_path": "documentation/AppStoreServerNotifications/notification-type.md",
+      "file_path": "documentation/AppStoreServerNotifications/notification_type.md",
       "hash": "aa34315741551b629b976d1de2aba24900f8bd8a548d5b09ebf4556206b35363"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notificationtype.json": {
@@ -1312,17 +1312,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt.json": {
       "etag": "\"2c1b-65d55a705df8e-df\"",
-      "file_path": "documentation/AppStoreServerNotifications/unified-receipt.md",
+      "file_path": "documentation/AppStoreServerNotifications/unified_receipt.md",
       "hash": "a01a7317b43452c0476328839c867bdc82fc21c10f792b2766b2b91059b80ff7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt/latest_receipt_info-data.dictionary.json": {
       "etag": "\"841b-65d55a7022f16-df\"",
-      "file_path": "documentation/AppStoreServerNotifications/unified_receipt/latest-receipt-info-datadictionary.md",
+      "file_path": "documentation/AppStoreServerNotifications/unified_receipt/latest_receipt_info-data.dictionary.md",
       "hash": "148fd543ec8e4d434d1ee732b19c51043139f8ee1fc4b860bc8c0a9700e11f79"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt/pending_renewal_info-data.dictionary.json": {
       "etag": "\"49fa-65d55a7022f16-df\"",
-      "file_path": "documentation/AppStoreServerNotifications/unified_receipt/pending-renewal-info-datadictionary.md",
+      "file_path": "documentation/AppStoreServerNotifications/unified_receipt/pending_renewal_info-data.dictionary.md",
       "hash": "85134cf9159698f5d49cc6dedc85beeb636ceeee27652609149262bcbc94c912"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/version.json": {

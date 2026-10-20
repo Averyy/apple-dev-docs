@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sr_arkit_supported": {
       "etag": "\"1a92-6590247b87eae-df\"",
-      "file_path": "documentation/SensorKit/sr-arkit-supported.md",
+      "file_path": "documentation/SensorKit/sr_arkit_supported.md",
       "hash": "c93b7255060e3fe5473e56ec881983370148cd04806ec5745f8f54fd1b046827"
     },
     "https://developer.apple.com/documentation/sensorkit/srabsolutetime": {
@@ -22,22 +22,22 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srabsolutetime/current()": {
       "etag": "\"35c5-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srabsolutetime/current.md",
+      "file_path": "documentation/SensorKit/srabsolutetime/current().md",
       "hash": "91cfd39863215c216c11ac8cfdbd905c9411a3ba3e4bf5b11ffe9afed28fda28"
     },
     "https://developer.apple.com/documentation/sensorkit/srabsolutetime/init(_:)": {
       "etag": "\"181f-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srabsolutetime/init.md",
+      "file_path": "documentation/SensorKit/srabsolutetime/init(_).md",
       "hash": "cb78a74779087ca598ed1c83c66c555d79543bf806dee361e93664ff24309839"
     },
     "https://developer.apple.com/documentation/sensorkit/srabsolutetime/init(rawvalue:)": {
       "etag": "\"183f-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srabsolutetime/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srabsolutetime/init(rawvalue).md",
       "hash": "ad2341ea23becfe0428737a9c7b9578e8bc1266b0ec359fdcfdd3fa1eece9c60"
     },
     "https://developer.apple.com/documentation/sensorkit/srabsolutetime/tocfabsolutetime()": {
       "etag": "\"345f-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srabsolutetime/tocfabsolutetime.md",
+      "file_path": "documentation/SensorKit/srabsolutetime/tocfabsolutetime().md",
       "hash": "239757d7b5eb37a6e0f160be5781aec9d2506c11889cd8388b820c8ab8147167"
     },
     "https://developer.apple.com/documentation/sensorkit/sraccelerometersensor": {
@@ -47,7 +47,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sraccelerometersensor/init()": {
       "etag": "\"bf3-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/sraccelerometersensor/init.md",
+      "file_path": "documentation/SensorKit/sraccelerometersensor/init().md",
       "hash": "d91fc456b7b042165ddf5abdc86eeb0a1cc7d210635f21863d8b736b9a32ab53"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings": {
@@ -62,7 +62,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.class": {
       "etag": "\"734d-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swiftclass.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swift.class.md",
       "hash": "4095f17500fee15c35aa7ebde36aa8d0bff2a13472ab06b44eb519605e792ef8"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.class/isenabled": {
@@ -127,7 +127,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.class/name/init(rawvalue:)": {
       "etag": "\"247c-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swift.class/name/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swift.class/name/init(rawvalue).md",
       "hash": "3b1202acf4b3da9cda8e06fc36a8ab514deff39155650026641c2b31d4effe1f"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.class/name/night": {
@@ -187,12 +187,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.property": {
       "etag": "\"2b7b-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swift.property.md",
       "hash": "196c849c4e708e882ce17b83758ed1da03b07a439788572e17dba2f711c84482"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class": {
       "etag": "\"7f60-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swiftclass.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class.md",
       "hash": "a0eec9089b5ae7022cb6636fdba882b7972cb6a71b84527312e3139f5098bf8f"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/isenabled": {
@@ -202,12 +202,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum": {
       "etag": "\"5ae8-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swiftenum.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum.md",
       "hash": "b69ab01fb51fcc90c0f3f59a99fa9e790548d0e8a1d19cc239edd8479ece1a0c"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum/init(rawvalue:)": {
       "etag": "\"273b-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum/init(rawvalue).md",
       "hash": "b0cf47cd9894b073e01a60ec16950a5fa5f887915d1fdc6b4f60cbae65697302"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum/media": {
@@ -232,17 +232,17 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.property": {
       "etag": "\"394e-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.property.md",
       "hash": "52ee3f7a9318dbd5f0d0f0a6310455d61b68b9d302ef8c402df4922931bb11ab"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum": {
       "etag": "\"59ec-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swiftenum.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum.md",
       "hash": "4d928498337d32854ef91dcf9c1e7456edfd7f503c1d9955ad85adc85efd5df6"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum/init(rawvalue:)": {
       "etag": "\"2702-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum/init(rawvalue).md",
       "hash": "0070881f78612e226229f3807380889a0f2f7cb0b3835d4b9772ff3be78ad93b"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum/moderate": {
@@ -267,12 +267,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.property": {
       "etag": "\"38c6-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.property.md",
       "hash": "b9e6db893e9afa5c9d6bf6b8225124961b6adaec116f3e1953a694a3184512b0"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum": {
       "etag": "\"59ec-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swiftenum.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum.md",
       "hash": "6a2f3ab4a4d4a702dff183f82e1fc8f9e0b7ac4eb07eec3c7d71d10e35a5045e"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/balancedtone": {
@@ -287,7 +287,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/init(rawvalue:)": {
       "etag": "\"26dc-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/init(rawvalue).md",
       "hash": "ad29d453d168209a18dad70b4a7657149ab94cac835cef78115f9631432c6956"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/none": {
@@ -302,12 +302,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.property": {
       "etag": "\"388a-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.property.md",
       "hash": "fc817201511ebab6cf49088e57d9ab21c5b32aacaa805094fe32c48491594ab7"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.property": {
       "etag": "\"2caf-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.property.md",
       "hash": "8874296a0bcca4ca585ffac8d0edd4660d1870fd97e953249b7c32af5256dcfc"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/accessibility/ismonoaudioenabled": {
@@ -372,7 +372,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/samplelifetime/init(rawvalue:)": {
       "etag": "\"17b5-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/samplelifetime/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/samplelifetime/init(rawvalue).md",
       "hash": "0d4f1a45ba1b14a3548141b2d3e84465f8368bce32167f8f4d1cb0272e32b528"
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettings/samplelifetime/untiluserdeletes": {
@@ -387,7 +387,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sracousticsettingssensor/init()": {
       "etag": "\"c1a-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettingssensor/init.md",
+      "file_path": "documentation/SensorKit/sracousticsettingssensor/init().md",
       "hash": "982fae198b1391b3118fd8a099976a8e83486068807d90fef4c3b784d8bd9cd1"
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsample": {
@@ -397,22 +397,22 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsample/chromaticity-swift.property": {
       "etag": "\"34ba-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.property.md",
       "hash": "4ecf424e9d17c749dd8549b994d7af9d8d6aef1a06d2bafcc8ffad442e3c68d5"
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsample/chromaticity-swift.struct": {
       "etag": "\"49b1-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct.md",
       "hash": "60b68096231ef5febc5ef7610372bf1654da6b0a904ebb5669e5f2a12d747712"
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsample/chromaticity-swift.struct/init()": {
       "etag": "\"19b6-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct/init.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct/init().md",
       "hash": "f38b6e07af9adb5c4e406936faef8855806e83d0c98f2e31c40cfcc7735c6f78"
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsample/chromaticity-swift.struct/init(x:y:)": {
       "etag": "\"201d-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct/init-xy.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct/init(x,y).md",
       "hash": "7fc1bde8bc77f55991957ebc2bd5d7d38097b12527b6f444fed9e457d3ed3a46"
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsample/chromaticity-swift.struct/x": {
@@ -482,7 +482,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsample/sensorplacement/init(rawvalue:)": {
       "etag": "\"18a8-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/sensorplacement/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/sensorplacement/init(rawvalue).md",
       "hash": "224a716a558468de5788c2ca4d0b03531fd5b070f2e72ebd2e11872332844068"
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsample/sensorplacement/unknown": {
@@ -497,7 +497,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srambientlightsensor/init()": {
       "etag": "\"be6-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsensor/init.md",
+      "file_path": "documentation/SensorKit/srambientlightsensor/init().md",
       "hash": "75729a25c067960e6311c559a25497814d7df43b3717bb17facd9c69d70e956f"
     },
     "https://developer.apple.com/documentation/sensorkit/srambientpressuresensor": {
@@ -507,7 +507,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srambientpressuresensor/init()": {
       "etag": "\"c0d-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srambientpressuresensor/init.md",
+      "file_path": "documentation/SensorKit/srambientpressuresensor/init().md",
       "hash": "779d0da84465d6e7d9f96b4039a0f309b779794c287743b26037a855ba1a489b"
     },
     "https://developer.apple.com/documentation/sensorkit/sraudiolevel": {
@@ -542,7 +542,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srauthorizationstatus/init(rawvalue:)": {
       "etag": "\"1310-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srauthorizationstatus/init(rawvalue).md",
       "hash": "338461ce7ea33bebc33b48372110a385fa259d31a620cc53f96f92ea4995bffa"
     },
     "https://developer.apple.com/documentation/sensorkit/srauthorizationstatus/notdetermined": {
@@ -552,7 +552,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srauthorizationstatus/requestauthorization(for:)": {
       "etag": "\"18ff-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srauthorizationstatus/requestauthorization-for.md",
+      "file_path": "documentation/SensorKit/srauthorizationstatus/requestauthorization(for).md",
       "hash": "8f324d0f78676562945cda3c89c767e69f4d91f28eed63c0634fabce960c14c9"
     },
     "https://developer.apple.com/documentation/sensorkit/srdatasensor": {
@@ -697,7 +697,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srdeletionreason/init(rawvalue:)": {
       "etag": "\"1288-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srdeletionreason/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srdeletionreason/init(rawvalue).md",
       "hash": "7f8b22e27fff3c945b0e53730aa7b951aad59bd0a4032c598592802cfbdebb6e"
     },
     "https://developer.apple.com/documentation/sensorkit/srdeletionreason/lowdiskspace": {
@@ -882,7 +882,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagereport/categorykey/init(rawvalue:)": {
       "etag": "\"190d-6590247b14b37-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagereport/categorykey/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srdeviceusagereport/categorykey/init(rawvalue).md",
       "hash": "808662e151d2962d217b9c2909dd07913948564c87fb7d423cbcebdd6a854350"
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagereport/categorykey/kids": {
@@ -992,7 +992,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.enum": {
       "etag": "\"a16c-65d55ee9f08a4-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swiftenum.md",
+      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swift.enum.md",
       "hash": "ee4b6e8cd4c03915dbee5d837a1ee3b577c0c4e1873ceabe294a1705b256a848"
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.enum/applaunch": {
@@ -1042,7 +1042,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.enum/init(rawvalue:)": {
       "etag": "\"1ecc-65d55ee9f08a4-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swift.enum/init(rawvalue).md",
       "hash": "d7bb8411c4599b47f5caecb07ec6f5c2743f7079b75321ceb26dffddc16f10c8"
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.enum/longlook": {
@@ -1087,7 +1087,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.property": {
       "etag": "\"319b-65d55ee9f08a4-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swift.property.md",
       "hash": "495d321e2cfcdb6146246febc15f045c55e9b883301c7e9ffd0b10ce0c1b6057"
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagereport/notificationusagebycategory": {
@@ -1137,7 +1137,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srdeviceusagesensor/init()": {
       "etag": "\"bd9-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagesensor/init.md",
+      "file_path": "documentation/SensorKit/srdeviceusagesensor/init().md",
       "hash": "c021ea86c2e12e8b1f187c87f9c3671c6ed72c97df1c37ef94553ab6cc960cce"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramdata": {
@@ -1147,12 +1147,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramdata/flags-swift.property": {
       "etag": "\"2940-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swift.property.md",
       "hash": "38816fce945d32ad0938921d78a3a125124368cda7fc4b16cf8feaa92f86a158"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramdata/flags-swift.struct": {
       "etag": "\"4f3e-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swift.struct.md",
       "hash": "eaf5c03a4492337796105d3f6429831d0b2112c2356bda96715828bb36261b7e"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramdata/flags-swift.struct/crowntouched": {
@@ -1162,7 +1162,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramdata/flags-swift.struct/init(rawvalue:)": {
       "etag": "\"1a22-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swift.struct/init(rawvalue).md",
       "hash": "7117cc1287b38e92664e03f0a8bebdd2fafb2a808c229f8b023abbbb5504b34b"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramdata/flags-swift.struct/signalinvalid": {
@@ -1197,12 +1197,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsample/lead-swift.enum": {
       "etag": "\"5e07-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swiftenum.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swift.enum.md",
       "hash": "4c3baddb1b3d05fc1ff8a90da303ab4c92521759d8cdbe34e086c8acddf997cc"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsample/lead-swift.enum/init(rawvalue:)": {
       "etag": "\"18d3-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swift.enum/init(rawvalue).md",
       "hash": "b23d10596a736942cde2740af02c3f56a493100a1262c425aa16cecac7aa1fa6"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsample/lead-swift.enum/leftarmminusrightarm": {
@@ -1217,7 +1217,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsample/lead-swift.property": {
       "etag": "\"42ba-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swift.property.md",
       "hash": "b3a5bced0ee3bc7b5138977a4aab611e8ccb7dd1fdaf62cb49bed29942751f07"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsample/session": {
@@ -1232,7 +1232,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsensor/init()": {
       "etag": "\"c27-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsensor/init.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsensor/init().md",
       "hash": "c6f498bda1100317d405751295d7f896f4443613ebbd78d4a323184b35719a49"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession": {
@@ -1247,7 +1247,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.enum": {
       "etag": "\"51c2-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swiftenum.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swift.enum.md",
       "hash": "89387785c3d0cf782970957c4523a6ea966b9c7c46e827addd8b90ad4234476b"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.enum/guided": {
@@ -1257,7 +1257,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.enum/init(rawvalue:)": {
       "etag": "\"19dc-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swift.enum/init(rawvalue).md",
       "hash": "84fefd7d85047a13036ed3c2b0130d3b8f4a98f8378bcf07dc3bc2b0d3fedf8d"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.enum/unguided": {
@@ -1267,12 +1267,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.property": {
       "etag": "\"36e8-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swift.property.md",
       "hash": "525ba6cf9ae2727446a24b21ca6500c1a73d0fa54dd55946c54f1d3f8488194e"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/state-swift.enum": {
       "etag": "\"5546-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swiftenum.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swift.enum.md",
       "hash": "df4c9324fd9a1c27fc0690fa20919dc9b29e00872d74e6e39b9800ba5b59f0a6"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/state-swift.enum/active": {
@@ -1292,12 +1292,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/state-swift.enum/init(rawvalue:)": {
       "etag": "\"1934-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swift.enum/init(rawvalue).md",
       "hash": "c39ef71336c5c9431a7bbdabbe3dd3b34f8a73f3d9c78c3c06572f2a37c97bf0"
     },
     "https://developer.apple.com/documentation/sensorkit/srelectrocardiogramsession/state-swift.property": {
       "etag": "\"365f-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swift.property.md",
       "hash": "312e72578ccec38b07fd840c3ac05cb8057d1e212968f13daebc877bd129b9f3"
     },
     "https://developer.apple.com/documentation/sensorkit/srerror": {
@@ -1322,7 +1322,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srerror/code/init(rawvalue:)": {
       "etag": "\"146c-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srerror/code/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srerror/code/init(rawvalue).md",
       "hash": "20cae2fc4d11a3cbf70fdcffe4fcdbff65dfcdfcda53b23c18385aa7aa4e198f"
     },
     "https://developer.apple.com/documentation/sensorkit/srerror/code/invalidentitlement": {
@@ -1382,12 +1382,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srfacemetrics/context-swift.property": {
       "etag": "\"2c33-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srfacemetrics/context-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srfacemetrics/context-swift.property.md",
       "hash": "70f06ad0556b6feee7e4d7b7869cbe0b8b6e9b43f0ff6f23e5054f5f74e4b7b6"
     },
     "https://developer.apple.com/documentation/sensorkit/srfacemetrics/context-swift.struct": {
       "etag": "\"4e29-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srfacemetrics/context-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srfacemetrics/context-swift.struct.md",
       "hash": "d857fc6fef614b70a1e5a916e3689689c49569f5b8ce19e670384ab75d555932"
     },
     "https://developer.apple.com/documentation/sensorkit/srfacemetrics/context-swift.struct/deviceunlock": {
@@ -1397,7 +1397,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srfacemetrics/context-swift.struct/init(rawvalue:)": {
       "etag": "\"193b-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srfacemetrics/context-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srfacemetrics/context-swift.struct/init(rawvalue).md",
       "hash": "fa04d5e3cf16ce0af200c358b7b1e0277bf29297e6d3937768d5b4f47f01b612"
     },
     "https://developer.apple.com/documentation/sensorkit/srfacemetrics/context-swift.struct/messagingappusage": {
@@ -1452,7 +1452,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srfacemetricssensor/init()": {
       "etag": "\"bd9-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srfacemetricssensor/init.md",
+      "file_path": "documentation/SensorKit/srfacemetricssensor/init().md",
       "hash": "99cbddb63a73bf0dacc9d4aaf066f9c9491c453418102ca49bc64320de08dab7"
     },
     "https://developer.apple.com/documentation/sensorkit/srfetchrequest": {
@@ -1522,7 +1522,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonemotionsensor/init()": {
       "etag": "\"c0d-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheadphonemotionsensor/init.md",
+      "file_path": "documentation/SensorKit/srheadphonemotionsensor/init().md",
       "hash": "9cdadd56781d246ab210fd4c8e275d891056714439085f043264d58e3d6e9b37"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings": {
@@ -1532,7 +1532,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.enum": {
       "etag": "\"3db3-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swiftenum.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swift.enum.md",
       "hash": "3a662d4e0613a6462d052dbaa46f93cf09237fa95b0ef56001282eec190a3efa"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.enum/high": {
@@ -1542,7 +1542,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.enum/init(rawvalue:)": {
       "etag": "\"1953-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swift.enum/init(rawvalue).md",
       "hash": "a3e5a9054cc7b10535561dac83322e507dd68efcdb60715ccaba4db9f379aff8"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.enum/low": {
@@ -1557,7 +1557,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.property": {
       "etag": "\"246c-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swift.property.md",
       "hash": "a59b994fd8461fd9a2235daeea5a1f4015b686fd1ad15f272d27797d4128f875"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/conversationawarenessenabled": {
@@ -1567,7 +1567,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/hearingassistance-swift.class": {
       "etag": "\"7f59-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/hearingassistance-swiftclass.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/hearingassistance-swift.class.md",
       "hash": "f4381631a2ec500a04aa767f122b3e1ce2b5649a10a20d84b2d201ca13dd4159"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/hearingassistance-swift.class/adjustmediaenabled": {
@@ -1622,12 +1622,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/hearingassistance-swift.property": {
       "etag": "\"23e1-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/hearingassistance-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/hearingassistance-swift.property.md",
       "hash": "8fba914adc8d3031795107fba24570f8aa913bf21e098cf994f17c6b4e14176f"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/listeningmode-swift.enum": {
       "etag": "\"42f3-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swiftenum.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swift.enum.md",
       "hash": "3f6dc9f27ef4579417fcc82922549efe76a3841122e2354dbb23b0137e3ab475"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/listeningmode-swift.enum/activenoisecancelling": {
@@ -1642,7 +1642,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/listeningmode-swift.enum/init(rawvalue:)": {
       "etag": "\"1844-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swift.enum/init(rawvalue).md",
       "hash": "e9ca327cee1e7e6816519a333134ca8689ee6827d657db147e382422f8c48687"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/listeningmode-swift.enum/normal": {
@@ -1657,7 +1657,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/listeningmode-swift.property": {
       "etag": "\"21dc-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swift.property.md",
       "hash": "dc465acf7f721407c9617f35d036ec4c631db5245815347e054d1167d80b747f"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/personalizedspatialaudioenabled": {
@@ -1687,7 +1687,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/settingenablement/init(rawvalue:)": {
       "etag": "\"180c-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/settingenablement/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/settingenablement/init(rawvalue).md",
       "hash": "b0ad1cecbcf6e4ea033b9f5e0b762c49463ee33a39de8fac61eefa4c7d4317b7"
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettings/settingenablement/unsupported": {
@@ -1707,7 +1707,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheadphonesettingssensor/init()": {
       "etag": "\"c27-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettingssensor/init.md",
+      "file_path": "documentation/SensorKit/srheadphonesettingssensor/init().md",
       "hash": "aca0ad5d3ad9a83e8c7c77de174711a6013772429fd46d0219945b93418a5e0f"
     },
     "https://developer.apple.com/documentation/sensorkit/srheartratesensor": {
@@ -1717,7 +1717,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srheartratesensor/init()": {
       "etag": "\"bbf-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheartratesensor/init.md",
+      "file_path": "documentation/SensorKit/srheartratesensor/init().md",
       "hash": "e089b6eab4e90fb071f336b6dfb471b4e4a4ec1d1b65bd8851269a38a79f6f90"
     },
     "https://developer.apple.com/documentation/sensorkit/srkeyboardmetrics": {
@@ -1822,7 +1822,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srkeyboardmetrics/emojicount(for:)": {
       "etag": "\"3351-65d55ee9ab663-df\"",
-      "file_path": "documentation/SensorKit/srkeyboardmetrics/emojicount-for.md",
+      "file_path": "documentation/SensorKit/srkeyboardmetrics/emojicount(for).md",
       "hash": "53aa6c507e38dfb0272f7a8897be846449dbfe48130a37f06cbaf2beb914f2e6"
     },
     "https://developer.apple.com/documentation/sensorkit/srkeyboardmetrics/height": {
@@ -1952,7 +1952,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srkeyboardmetrics/sentimentcategory/init(rawvalue:)": {
       "etag": "\"1888-65d55ee9ab663-df\"",
-      "file_path": "documentation/SensorKit/srkeyboardmetrics/sentimentcategory/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srkeyboardmetrics/sentimentcategory/init(rawvalue).md",
       "hash": "9c71f30d7d34513e7d6a99ddb7796286796af5c8be7850f1fab59a0779d60731"
     },
     "https://developer.apple.com/documentation/sensorkit/srkeyboardmetrics/sentimentcategory/lowenergy": {
@@ -2192,7 +2192,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srkeyboardmetrics/wordcount(for:)": {
       "etag": "\"3345-65d55ee9d345d-df\"",
-      "file_path": "documentation/SensorKit/srkeyboardmetrics/wordcount-for.md",
+      "file_path": "documentation/SensorKit/srkeyboardmetrics/wordcount(for).md",
       "hash": "202b6b92af9abbc22a236963ccf4dd2dfed9673125291276bccc29a289010fbc"
     },
     "https://developer.apple.com/documentation/sensorkit/srkeyboardmetricssensor": {
@@ -2202,7 +2202,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srkeyboardmetricssensor/init()": {
       "etag": "\"c0d-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srkeyboardmetricssensor/init.md",
+      "file_path": "documentation/SensorKit/srkeyboardmetricssensor/init().md",
       "hash": "eff664b866b8afa4ff583904476963aba5699c7bf9704eeb152f57142616f75a"
     },
     "https://developer.apple.com/documentation/sensorkit/srmediaevent": {
@@ -2227,7 +2227,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srmediaeventssensor/init()": {
       "etag": "\"bd9-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srmediaeventssensor/init.md",
+      "file_path": "documentation/SensorKit/srmediaeventssensor/init().md",
       "hash": "15022080ff831393b73c31d5425517411807ec9c85196008937685129b9f909d"
     },
     "https://developer.apple.com/documentation/sensorkit/srmediaeventtype": {
@@ -2237,7 +2237,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srmediaeventtype/init(rawvalue:)": {
       "etag": "\"129d-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srmediaeventtype/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srmediaeventtype/init(rawvalue).md",
       "hash": "76febdb67f65ad9dc833ff46b5c6687f0f403d56eef78063059fb798038785ac"
     },
     "https://developer.apple.com/documentation/sensorkit/srmediaeventtype/offscreen": {
@@ -2282,7 +2282,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srmessagesusagesensor/init()": {
       "etag": "\"bf3-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srmessagesusagesensor/init.md",
+      "file_path": "documentation/SensorKit/srmessagesusagesensor/init().md",
       "hash": "0958846e1679cc2615225ab832919af5be4ed20488acb75304aafc33dd8e2a6b"
     },
     "https://developer.apple.com/documentation/sensorkit/srodometersensor": {
@@ -2292,7 +2292,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srodometersensor/init()": {
       "etag": "\"bb2-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srodometersensor/init.md",
+      "file_path": "documentation/SensorKit/srodometersensor/init().md",
       "hash": "5af3ecd5dcf7cbb573a1c8a80707cff13e4f6ff6775bcc1892c1fb90c1609905"
     },
     "https://developer.apple.com/documentation/sensorkit/sronwriststatesensor": {
@@ -2302,7 +2302,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/sronwriststatesensor/init()": {
       "etag": "\"be6-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/sronwriststatesensor/init.md",
+      "file_path": "documentation/SensorKit/sronwriststatesensor/init().md",
       "hash": "7755e8a5b549e658188f11a9461ab9cc76edbb73a70f457949b79f4ecc7f9592"
     },
     "https://developer.apple.com/documentation/sensorkit/srpedometerdatasensor": {
@@ -2312,7 +2312,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srpedometerdatasensor/init()": {
       "etag": "\"bf3-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srpedometerdatasensor/init.md",
+      "file_path": "documentation/SensorKit/srpedometerdatasensor/init().md",
       "hash": "848cc3d6077e32f405d0776cbcbca84fa16b298525abb1adb2eea71b032638a6"
     },
     "https://developer.apple.com/documentation/sensorkit/srphoneusagereport": {
@@ -2352,7 +2352,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphoneusagesensor/init()": {
       "etag": "\"bcc-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srphoneusagesensor/init.md",
+      "file_path": "documentation/SensorKit/srphoneusagesensor/init().md",
       "hash": "114d3bdd05e5c784136049099e181be1c4ab1ada24e51e20ddbf7e5f18d2436d"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramaccelerometersample": {
@@ -2402,7 +2402,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/condition/init(rawvalue:)": {
       "etag": "\"1b39-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition/init(rawvalue).md",
       "hash": "701dfa3c00a0f10a66cbd72192c521541072ef566d6e590ed45a0c5af9dd4090"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/condition/signalsaturation": {
@@ -2437,12 +2437,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.property": {
       "etag": "\"5214-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.property.md",
       "hash": "900d8937f1fbc7e2fc1bb692e08f601f9f9f715e15f228e17678ee7e64dac933"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct": {
       "etag": "\"5985-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct.md",
       "hash": "e685a1e71fb3fc461cdb93a3bb23f892be28cd1b3b14f01a8c86dbf30c23c043"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise": {
@@ -2517,12 +2517,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramsample/usage-swift.property": {
       "etag": "\"4c19-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swift.property.md",
       "hash": "dbd29f8bd2b4902d1131b2ca4689fcb972af57a4a750257a4d44aa177cf02e51"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramsample/usage-swift.struct": {
       "etag": "\"771d-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swift.struct.md",
       "hash": "b30502fb0d530702fcf17d14af264c6c3f309eb413e46066ca088483b402b879"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramsample/usage-swift.struct/backgroundsystem": {
@@ -2547,7 +2547,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramsample/usage-swift.struct/init(rawvalue:)": {
       "etag": "\"1ab5-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swift.struct/init(rawvalue).md",
       "hash": "5c80647de4a3221f2f5f43dc2ea3d1c7558ede8c99d1aaedb536b5cd98373be0"
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramsensor": {
@@ -2557,7 +2557,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srphotoplethysmogramsensor/init()": {
       "etag": "\"c34-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramsensor/init.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramsensor/init().md",
       "hash": "ac573a85058bcb0f976bb86d2d5b169591376a72da0298fcf6299bb67d2293dd"
     },
     "https://developer.apple.com/documentation/sensorkit/srreader": {
@@ -2572,7 +2572,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srreader/deletionrecords(matching:)": {
       "etag": "\"3107-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srreader/deletionrecords-matching.md",
+      "file_path": "documentation/SensorKit/srreader/deletionrecords(matching).md",
       "hash": "02bafa4b303f1db4f2003a8b194f99b21c8c3a574ab098f920a0e0f9fc3ab0c5"
     },
     "https://developer.apple.com/documentation/sensorkit/srreader/devices": {
@@ -2582,12 +2582,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srreader/init(sensor:)": {
       "etag": "\"141e-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srreader/init-sensor.md",
+      "file_path": "documentation/SensorKit/srreader/init(sensor).md",
       "hash": "15aa2ef7bcbdc0fd4f7a6a39d4b68258185d4a81baae0aff93ea06bdd894f323"
     },
     "https://developer.apple.com/documentation/sensorkit/srreader/samples(matching:)": {
       "etag": "\"2f2c-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srreader/samples-matching.md",
+      "file_path": "documentation/SensorKit/srreader/samples(matching).md",
       "hash": "1067177e60ba9d1b1d1ed76726673375e99989248142933be56fc1b4c9c81352"
     },
     "https://developer.apple.com/documentation/sensorkit/srreader/sensor": {
@@ -2597,12 +2597,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srreader/startrecording()": {
       "etag": "\"1443-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srreader/startrecording.md",
+      "file_path": "documentation/SensorKit/srreader/startrecording().md",
       "hash": "0e6400eca06a8f4086f2c5fea0a580dbfe637a2f821c8fffef864b96faad59ff"
     },
     "https://developer.apple.com/documentation/sensorkit/srreader/stoprecording()": {
       "etag": "\"12ca-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srreader/stoprecording.md",
+      "file_path": "documentation/SensorKit/srreader/stoprecording().md",
       "hash": "40c04f7eda520766ea56c6f5b9fb2b9b3013fc597ce3b109bbb4acd192628e3d"
     },
     "https://developer.apple.com/documentation/sensorkit/srrotationratesensor": {
@@ -2612,7 +2612,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srrotationratesensor/init()": {
       "etag": "\"be6-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srrotationratesensor/init.md",
+      "file_path": "documentation/SensorKit/srrotationratesensor/init().md",
       "hash": "b72fef31fdd1596cbe8e7f1664b09d7fdba585896d847a26268462d9afce4ec0"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensor": {
@@ -2672,7 +2672,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srsensor/init(rawvalue:)": {
       "etag": "\"133c-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srsensor/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srsensor/init(rawvalue).md",
       "hash": "9d91711f13d64e54e744401208f3f609c003e9b57589a9bf53a61a3e188d7b1d"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensor/keyboardmetrics": {
@@ -2762,22 +2762,22 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreader/fetch(_:)": {
       "etag": "\"425a-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/fetch.md",
+      "file_path": "documentation/SensorKit/srsensorreader/fetch(_).md",
       "hash": "d621916a89055b66f180856074b0e1e4ae5bd7b049e5d026649d8c7d07a8c5d0"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreader/fetchdevices()": {
       "etag": "\"334c-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/fetchdevices.md",
+      "file_path": "documentation/SensorKit/srsensorreader/fetchdevices().md",
       "hash": "37405904d92c71f06c9a9698544ad455de814ef7e078a5e8f5b0f5f347b3c0c2"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreader/init(sensor:)": {
       "etag": "\"2736-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/init-sensor.md",
+      "file_path": "documentation/SensorKit/srsensorreader/init(sensor).md",
       "hash": "42125306343b1f28a4c1f66ea71be06da178f048ea030152c48e482e93964e79"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreader/requestauthorization(sensors:completion:)": {
       "etag": "\"6430-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/requestauthorization-sensorscompletion.md",
+      "file_path": "documentation/SensorKit/srsensorreader/requestauthorization(sensors,completion).md",
       "hash": "ee02bc233e385a0199ea00b313cde50b38cfa0599171e645ebfffe7fc9868e96"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreader/sensor": {
@@ -2787,12 +2787,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreader/startrecording()": {
       "etag": "\"3aee-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/startrecording.md",
+      "file_path": "documentation/SensorKit/srsensorreader/startrecording().md",
       "hash": "e0e5b6344ff0e521ab9030ceed414e42b312bf31616f2baba74f04760b8eb56b"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreader/stoprecording()": {
       "etag": "\"3ad6-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/stoprecording.md",
+      "file_path": "documentation/SensorKit/srsensorreader/stoprecording().md",
       "hash": "009aee925ca307210e6c16a9eb05102d8da13255a12f87920da4623813761c93"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate": {
@@ -2802,52 +2802,52 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:didchange:)": {
       "etag": "\"2fe8-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-didchange.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,didchange).md",
       "hash": "33f06516c13dc5c7ec39bf250a274097807b97edb1b45529c87d53d3afe02e92"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:didcompletefetch:)": {
       "etag": "\"4033-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-didcompletefetch.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,didcompletefetch).md",
       "hash": "f872f93edc60bf38545249ed7c6f8041e0930ee9c5ace9d97a556e8b0be7f5f9"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:didfetch:)": {
       "etag": "\"363c-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-didfetch.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,didfetch).md",
       "hash": "d14ff60683d229e64d54a7d8324eda4c92a697ae3e8bde53c99cfca98341bb6b"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:fetchdevicesdidfailwitherror:)": {
       "etag": "\"38d8-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-fetchdevicesdidfailwitherror.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,fetchdevicesdidfailwitherror).md",
       "hash": "3b39057fb109f3e74ca63c3912e1b30c49989f9f23c3646a33f08c9bf8fc51d4"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:)": {
       "etag": "\"5118-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-fetchingdidfetchresult.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,fetching,didfetchresult).md",
       "hash": "86ef9f1549a5ee047546efb99402397fa491cef5d1d12691481020bde8017c20"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:fetching:failedwitherror:)": {
       "etag": "\"4676-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-fetchingfailedwitherror.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,fetching,failedwitherror).md",
       "hash": "8ae4ee5467d32869b4c8931d4f14a344998bd12c73d34a8cc9fd37fe69b4e66e"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:startrecordingfailedwitherror:)": {
       "etag": "\"4233-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-startrecordingfailedwitherror.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,startrecordingfailedwitherror).md",
       "hash": "46810f4a06a56520c99524864535dad17a6709e19013d1866a6edc4a88bedba9"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:stoprecordingfailedwitherror:)": {
       "etag": "\"4230-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-stoprecordingfailedwitherror.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,stoprecordingfailedwitherror).md",
       "hash": "129bc4ed01c1906e6e973ec9bad4c0005dcb6e1926cccd6fb77899884d2bc9f8"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreaderdidstoprecording(_:)": {
       "etag": "\"3bac-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreaderdidstoprecording.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreaderdidstoprecording(_).md",
       "hash": "fdeb0583ed88d1acfb44a62ace894f7d07c1781cb830a5bc2d44f5a4a423a157"
     },
     "https://developer.apple.com/documentation/sensorkit/srsensorreaderdelegate/sensorreaderwillstartrecording(_:)": {
       "etag": "\"3bbf-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreaderwillstartrecording.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreaderwillstartrecording(_).md",
       "hash": "288504a5958707488157edac3f5b136aaa25b669e84c9945e304637d90f11386"
     },
     "https://developer.apple.com/documentation/sensorkit/srsirispeechmetricssensor": {
@@ -2857,7 +2857,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srsirispeechmetricssensor/init()": {
       "etag": "\"c27-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srsirispeechmetricssensor/init.md",
+      "file_path": "documentation/SensorKit/srsirispeechmetricssensor/init().md",
       "hash": "b9169b440108e46a55442586419b689a4020d47f3c8593c7a1193a35c481d6f6"
     },
     "https://developer.apple.com/documentation/sensorkit/srsleepsession": {
@@ -2887,7 +2887,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srsleepsessionssensor/init()": {
       "etag": "\"bf3-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srsleepsessionssensor/init.md",
+      "file_path": "documentation/SensorKit/srsleepsessionssensor/init().md",
       "hash": "4b16052226c5f18509ac6233b3c99f72778379aa6a87cdc37ac9e121dedbc0d6"
     },
     "https://developer.apple.com/documentation/sensorkit/srsourcedevice": {
@@ -2972,12 +2972,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srspeechmetrics/sessionflags-swift.property": {
       "etag": "\"3284-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swift.property.md",
       "hash": "c04779e580a4b89c5ba69419b3f9459ab521624e7e14b7e9a81707e8435ef586"
     },
     "https://developer.apple.com/documentation/sensorkit/srspeechmetrics/sessionflags-swift.struct": {
       "etag": "\"52bb-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swift.struct.md",
       "hash": "79cb17f35711a39aa712351f5a886a5bad0dc164214167be0a6916c394dfa6ab"
     },
     "https://developer.apple.com/documentation/sensorkit/srspeechmetrics/sessionflags-swift.struct/bypassvoiceprocessing": {
@@ -2987,7 +2987,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srspeechmetrics/sessionflags-swift.struct/init(rawvalue:)": {
       "etag": "\"19d4-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swift.struct/init(rawvalue).md",
       "hash": "16c228c8093014f115a84d41483742156b159a3e03f5d897e5d9a05942963756"
     },
     "https://developer.apple.com/documentation/sensorkit/srspeechmetrics/sessionidentifier": {
@@ -3037,7 +3037,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srtelephonyspeechmetricssensor/init()": {
       "etag": "\"c68-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srtelephonyspeechmetricssensor/init.md",
+      "file_path": "documentation/SensorKit/srtelephonyspeechmetricssensor/init().md",
       "hash": "f2038ee8f21f4eeac1a7f443ecb900811fb9d1335834974c9b4e7b973b9d1435"
     },
     "https://developer.apple.com/documentation/sensorkit/srtextinputsession": {
@@ -3057,7 +3057,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srtextinputsession/sessiontype-swift.enum": {
       "etag": "\"4a47-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swiftenum.md",
+      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swift.enum.md",
       "hash": "78e5c13119f17ded6f99b2fa38052129b0f22f61f5a8fa6ae381e38e2b221a5b"
     },
     "https://developer.apple.com/documentation/sensorkit/srtextinputsession/sessiontype-swift.enum/dictation": {
@@ -3067,7 +3067,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srtextinputsession/sessiontype-swift.enum/init(rawvalue:)": {
       "etag": "\"1873-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swift.enum/init(rawvalue).md",
       "hash": "e4f973ce07a43dfadf9a6be20bbb58b1cbc073fc327df80890e4b34895d58de4"
     },
     "https://developer.apple.com/documentation/sensorkit/srtextinputsession/sessiontype-swift.enum/keyboard": {
@@ -3087,7 +3087,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srtextinputsession/sessiontype-swift.property": {
       "etag": "\"22d6-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swift.property.md",
       "hash": "525a62bb5f9d7a6d7a8bf062c7ab7954cdfd1eb31fa88d196b9b61b67bbcdfb2"
     },
     "https://developer.apple.com/documentation/sensorkit/srvisit": {
@@ -3117,7 +3117,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srvisit/locationcategory-swift.enum": {
       "etag": "\"5908-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srvisit/locationcategory-swiftenum.md",
+      "file_path": "documentation/SensorKit/srvisit/locationcategory-swift.enum.md",
       "hash": "babbfa45b23f147085cb48306cd69c97032074cd65b057dd3e37d90190d674c9"
     },
     "https://developer.apple.com/documentation/sensorkit/srvisit/locationcategory-swift.enum/gym": {
@@ -3132,7 +3132,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srvisit/locationcategory-swift.enum/init(rawvalue:)": {
       "etag": "\"177a-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srvisit/locationcategory-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srvisit/locationcategory-swift.enum/init(rawvalue).md",
       "hash": "48859c7b57ad85885895589e31958840cc2dda52b08402e03f004fcd0ed53eeb"
     },
     "https://developer.apple.com/documentation/sensorkit/srvisit/locationcategory-swift.enum/school": {
@@ -3152,7 +3152,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srvisit/locationcategory-swift.property": {
       "etag": "\"310d-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srvisit/locationcategory-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srvisit/locationcategory-swift.property.md",
       "hash": "dd36f005e5da183ab8859dcb728d617a67252e538676a782521e76b6c30ae083"
     },
     "https://developer.apple.com/documentation/sensorkit/srvisitssensor": {
@@ -3162,7 +3162,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srvisitssensor/init()": {
       "etag": "\"b97-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srvisitssensor/init.md",
+      "file_path": "documentation/SensorKit/srvisitssensor/init().md",
       "hash": "6dfb845695711cdd4cbad8a18671a6f328c82a41e3d1a72eba4b6af7b62c6a6a"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection": {
@@ -3172,12 +3172,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/crownorientation-swift.enum": {
       "etag": "\"5887-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swiftenum.md",
+      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swift.enum.md",
       "hash": "80a0cf3259dcacc4ed1907cd630abb197a64a99110aee2df0604bd9018d246ea"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/crownorientation-swift.enum/init(rawvalue:)": {
       "etag": "\"1893-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swift.enum/init(rawvalue).md",
       "hash": "183b7a6a7037bccec35c1f8591e9910c4763db3ca4f436d021519554181fc44d"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/crownorientation-swift.enum/left": {
@@ -3192,7 +3192,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/crownorientation-swift.property": {
       "etag": "\"3e1f-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swift.property.md",
       "hash": "7b8d048c312a6e837113aeb2f9f2cf2eb99addffb169baa136c00e89fd2c9b14"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/offwristdate": {
@@ -3212,12 +3212,12 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/wristlocation-swift.enum": {
       "etag": "\"57ed-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swiftenum.md",
+      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swift.enum.md",
       "hash": "20071cc6369a370f41f67c9ee109446fabbeb5e4e724dd8636eb41b6f24605df"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/wristlocation-swift.enum/init(rawvalue:)": {
       "etag": "\"1844-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swift.enum/init(rawvalue).md",
       "hash": "d672c126f48bf0b15d5d048722ec7441fba8ef25e27bcfb1a32f73da4e01685a"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/wristlocation-swift.enum/left": {
@@ -3232,7 +3232,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srwristdetection/wristlocation-swift.property": {
       "etag": "\"3dd6-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swift.property.md",
       "hash": "fe9b19c2435e51d60100fb0f39913f706d995b1e8fb9dbc6fda744951cdb25ad"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperature": {
@@ -3242,17 +3242,17 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperature/condition-swift.property": {
       "etag": "\"23f8-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srwristtemperature/condition-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srwristtemperature/condition-swift.property.md",
       "hash": "bd27fa57c22f49fa5d2d920f89fa9187ef9e9401222b991f7d22deb9eda01776"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperature/condition-swift.struct": {
       "etag": "\"4f50-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srwristtemperature/condition-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srwristtemperature/condition-swift.struct.md",
       "hash": "88c74c3590a8824fae17e390362f080044cb62011baedeef6181fdde45696b51"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperature/condition-swift.struct/init(rawvalue:)": {
       "etag": "\"1a14-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srwristtemperature/condition-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srwristtemperature/condition-swift.struct/init(rawvalue).md",
       "hash": "70fd102260a64da659f632dc3e3ceb641347abee6a10e0f5cfb848c31b8312a8"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperature/condition-swift.struct/inmotion": {
@@ -3292,7 +3292,7 @@
     },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperaturesensor/init()": {
       "etag": "\"c1a-65d55eea9d1ec-df\"",
-      "file_path": "documentation/SensorKit/srwristtemperaturesensor/init.md",
+      "file_path": "documentation/SensorKit/srwristtemperaturesensor/init().md",
       "hash": "970305439810bba2618e17e3edbecfcb2f4e9d7e1283d08234116f1ee2596df0"
     },
     "https://developer.apple.com/documentation/sensorkit/srwristtemperaturesession": {
@@ -3332,7 +3332,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sr_arkit_supported.json": {
       "etag": "\"1a92-6590247b87eae-df\"",
-      "file_path": "documentation/SensorKit/sr-arkit-supported.md",
+      "file_path": "documentation/SensorKit/sr_arkit_supported.md",
       "hash": "c93b7255060e3fe5473e56ec881983370148cd04806ec5745f8f54fd1b046827"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srabsolutetime.json": {
@@ -3342,22 +3342,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srabsolutetime/current().json": {
       "etag": "\"35c5-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srabsolutetime/current.md",
+      "file_path": "documentation/SensorKit/srabsolutetime/current().md",
       "hash": "91cfd39863215c216c11ac8cfdbd905c9411a3ba3e4bf5b11ffe9afed28fda28"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srabsolutetime/init(_:).json": {
       "etag": "\"181f-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srabsolutetime/init.md",
+      "file_path": "documentation/SensorKit/srabsolutetime/init(_).md",
       "hash": "cb78a74779087ca598ed1c83c66c555d79543bf806dee361e93664ff24309839"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srabsolutetime/init(rawvalue:).json": {
       "etag": "\"183f-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srabsolutetime/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srabsolutetime/init(rawvalue).md",
       "hash": "ad2341ea23becfe0428737a9c7b9578e8bc1266b0ec359fdcfdd3fa1eece9c60"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srabsolutetime/tocfabsolutetime().json": {
       "etag": "\"345f-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srabsolutetime/tocfabsolutetime.md",
+      "file_path": "documentation/SensorKit/srabsolutetime/tocfabsolutetime().md",
       "hash": "239757d7b5eb37a6e0f160be5781aec9d2506c11889cd8388b820c8ab8147167"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sraccelerometersensor.json": {
@@ -3367,7 +3367,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sraccelerometersensor/init().json": {
       "etag": "\"bf3-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/sraccelerometersensor/init.md",
+      "file_path": "documentation/SensorKit/sraccelerometersensor/init().md",
       "hash": "d91fc456b7b042165ddf5abdc86eeb0a1cc7d210635f21863d8b736b9a32ab53"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings.json": {
@@ -3382,7 +3382,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.class.json": {
       "etag": "\"734d-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swiftclass.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swift.class.md",
       "hash": "4095f17500fee15c35aa7ebde36aa8d0bff2a13472ab06b44eb519605e792ef8"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.class/isenabled.json": {
@@ -3447,7 +3447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.class/name/init(rawvalue:).json": {
       "etag": "\"247c-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swift.class/name/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swift.class/name/init(rawvalue).md",
       "hash": "3b1202acf4b3da9cda8e06fc36a8ab514deff39155650026641c2b31d4effe1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.class/name/night.json": {
@@ -3507,12 +3507,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/backgroundsounds-swift.property.json": {
       "etag": "\"2b7b-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/backgroundsounds-swift.property.md",
       "hash": "196c849c4e708e882ce17b83758ed1da03b07a439788572e17dba2f711c84482"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class.json": {
       "etag": "\"7f60-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swiftclass.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class.md",
       "hash": "a0eec9089b5ae7022cb6636fdba882b7972cb6a71b84527312e3139f5098bf8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/isenabled.json": {
@@ -3522,12 +3522,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum.json": {
       "etag": "\"5ae8-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swiftenum.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum.md",
       "hash": "b69ab01fb51fcc90c0f3f59a99fa9e790548d0e8a1d19cc239edd8479ece1a0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum/init(rawvalue:).json": {
       "etag": "\"273b-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum/init(rawvalue).md",
       "hash": "b0cf47cd9894b073e01a60ec16950a5fa5f887915d1fdc6b4f60cbae65697302"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.enum/media.json": {
@@ -3552,17 +3552,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.property.json": {
       "etag": "\"394e-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceapplication-swift.property.md",
       "hash": "52ee3f7a9318dbd5f0d0f0a6310455d61b68b9d302ef8c402df4922931bb11ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum.json": {
       "etag": "\"59ec-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swiftenum.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum.md",
       "hash": "4d928498337d32854ef91dcf9c1e7456edfd7f503c1d9955ad85adc85efd5df6"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum/init(rawvalue:).json": {
       "etag": "\"2702-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum/init(rawvalue).md",
       "hash": "0070881f78612e226229f3807380889a0f2f7cb0b3835d4b9772ff3be78ad93b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.enum/moderate.json": {
@@ -3587,12 +3587,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.property.json": {
       "etag": "\"38c6-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhanceboosting-swift.property.md",
       "hash": "b9e6db893e9afa5c9d6bf6b8225124961b6adaec116f3e1953a694a3184512b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum.json": {
       "etag": "\"59ec-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swiftenum.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum.md",
       "hash": "6a2f3ab4a4d4a702dff183f82e1fc8f9e0b7ac4eb07eec3c7d71d10e35a5045e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/balancedtone.json": {
@@ -3607,7 +3607,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/init(rawvalue:).json": {
       "etag": "\"26dc-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/init(rawvalue).md",
       "hash": "ad29d453d168209a18dad70b4a7657149ab94cac835cef78115f9631432c6956"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.enum/none.json": {
@@ -3622,12 +3622,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.property.json": {
       "etag": "\"388a-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.class/mediaenhancetuning-swift.property.md",
       "hash": "fc817201511ebab6cf49088e57d9ab21c5b32aacaa805094fe32c48491594ab7"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/headphoneaccommodations-swift.property.json": {
       "etag": "\"2caf-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swiftproperty.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/accessibility/headphoneaccommodations-swift.property.md",
       "hash": "8874296a0bcca4ca585ffac8d0edd4660d1870fd97e953249b7c32af5256dcfc"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/accessibility/ismonoaudioenabled.json": {
@@ -3692,7 +3692,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/samplelifetime/init(rawvalue:).json": {
       "etag": "\"17b5-65d55eea68644-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettings/samplelifetime/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/sracousticsettings/samplelifetime/init(rawvalue).md",
       "hash": "0d4f1a45ba1b14a3548141b2d3e84465f8368bce32167f8f4d1cb0272e32b528"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettings/samplelifetime/untiluserdeletes.json": {
@@ -3707,7 +3707,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sracousticsettingssensor/init().json": {
       "etag": "\"c1a-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/sracousticsettingssensor/init.md",
+      "file_path": "documentation/SensorKit/sracousticsettingssensor/init().md",
       "hash": "982fae198b1391b3118fd8a099976a8e83486068807d90fef4c3b784d8bd9cd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsample.json": {
@@ -3717,22 +3717,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsample/chromaticity-swift.property.json": {
       "etag": "\"34ba-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.property.md",
       "hash": "4ecf424e9d17c749dd8549b994d7af9d8d6aef1a06d2bafcc8ffad442e3c68d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsample/chromaticity-swift.struct.json": {
       "etag": "\"49b1-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct.md",
       "hash": "60b68096231ef5febc5ef7610372bf1654da6b0a904ebb5669e5f2a12d747712"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsample/chromaticity-swift.struct/init().json": {
       "etag": "\"19b6-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct/init.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct/init().md",
       "hash": "f38b6e07af9adb5c4e406936faef8855806e83d0c98f2e31c40cfcc7735c6f78"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsample/chromaticity-swift.struct/init(x:y:).json": {
       "etag": "\"201d-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct/init-xy.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/chromaticity-swift.struct/init(x,y).md",
       "hash": "7fc1bde8bc77f55991957ebc2bd5d7d38097b12527b6f444fed9e457d3ed3a46"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsample/chromaticity-swift.struct/x.json": {
@@ -3802,7 +3802,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsample/sensorplacement/init(rawvalue:).json": {
       "etag": "\"18a8-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsample/sensorplacement/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srambientlightsample/sensorplacement/init(rawvalue).md",
       "hash": "224a716a558468de5788c2ca4d0b03531fd5b070f2e72ebd2e11872332844068"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsample/sensorplacement/unknown.json": {
@@ -3817,7 +3817,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientlightsensor/init().json": {
       "etag": "\"be6-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srambientlightsensor/init.md",
+      "file_path": "documentation/SensorKit/srambientlightsensor/init().md",
       "hash": "75729a25c067960e6311c559a25497814d7df43b3717bb17facd9c69d70e956f"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientpressuresensor.json": {
@@ -3827,7 +3827,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srambientpressuresensor/init().json": {
       "etag": "\"c0d-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srambientpressuresensor/init.md",
+      "file_path": "documentation/SensorKit/srambientpressuresensor/init().md",
       "hash": "779d0da84465d6e7d9f96b4039a0f309b779794c287743b26037a855ba1a489b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sraudiolevel.json": {
@@ -3862,7 +3862,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srauthorizationstatus/init(rawvalue:).json": {
       "etag": "\"1310-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srauthorizationstatus/init(rawvalue).md",
       "hash": "338461ce7ea33bebc33b48372110a385fa259d31a620cc53f96f92ea4995bffa"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srauthorizationstatus/notdetermined.json": {
@@ -3872,7 +3872,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srauthorizationstatus/requestauthorization(for:).json": {
       "etag": "\"18ff-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srauthorizationstatus/requestauthorization-for.md",
+      "file_path": "documentation/SensorKit/srauthorizationstatus/requestauthorization(for).md",
       "hash": "8f324d0f78676562945cda3c89c767e69f4d91f28eed63c0634fabce960c14c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdatasensor.json": {
@@ -4017,7 +4017,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeletionreason/init(rawvalue:).json": {
       "etag": "\"1288-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srdeletionreason/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srdeletionreason/init(rawvalue).md",
       "hash": "7f8b22e27fff3c945b0e53730aa7b951aad59bd0a4032c598592802cfbdebb6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeletionreason/lowdiskspace.json": {
@@ -4202,7 +4202,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagereport/categorykey/init(rawvalue:).json": {
       "etag": "\"190d-6590247b14b37-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagereport/categorykey/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srdeviceusagereport/categorykey/init(rawvalue).md",
       "hash": "808662e151d2962d217b9c2909dd07913948564c87fb7d423cbcebdd6a854350"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagereport/categorykey/kids.json": {
@@ -4312,7 +4312,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.enum.json": {
       "etag": "\"a16c-65d55ee9f08a4-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swiftenum.md",
+      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swift.enum.md",
       "hash": "ee4b6e8cd4c03915dbee5d837a1ee3b577c0c4e1873ceabe294a1705b256a848"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.enum/applaunch.json": {
@@ -4362,7 +4362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.enum/init(rawvalue:).json": {
       "etag": "\"1ecc-65d55ee9f08a4-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swift.enum/init(rawvalue).md",
       "hash": "d7bb8411c4599b47f5caecb07ec6f5c2743f7079b75321ceb26dffddc16f10c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.enum/longlook.json": {
@@ -4407,7 +4407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagereport/notificationusage/event-swift.property.json": {
       "etag": "\"319b-65d55ee9f08a4-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srdeviceusagereport/notificationusage/event-swift.property.md",
       "hash": "495d321e2cfcdb6146246febc15f045c55e9b883301c7e9ffd0b10ce0c1b6057"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagereport/notificationusagebycategory.json": {
@@ -4457,7 +4457,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srdeviceusagesensor/init().json": {
       "etag": "\"bd9-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srdeviceusagesensor/init.md",
+      "file_path": "documentation/SensorKit/srdeviceusagesensor/init().md",
       "hash": "c021ea86c2e12e8b1f187c87f9c3671c6ed72c97df1c37ef94553ab6cc960cce"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramdata.json": {
@@ -4467,12 +4467,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramdata/flags-swift.property.json": {
       "etag": "\"2940-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swift.property.md",
       "hash": "38816fce945d32ad0938921d78a3a125124368cda7fc4b16cf8feaa92f86a158"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramdata/flags-swift.struct.json": {
       "etag": "\"4f3e-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swift.struct.md",
       "hash": "eaf5c03a4492337796105d3f6429831d0b2112c2356bda96715828bb36261b7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramdata/flags-swift.struct/crowntouched.json": {
@@ -4482,7 +4482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramdata/flags-swift.struct/init(rawvalue:).json": {
       "etag": "\"1a22-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramdata/flags-swift.struct/init(rawvalue).md",
       "hash": "7117cc1287b38e92664e03f0a8bebdd2fafb2a808c229f8b023abbbb5504b34b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramdata/flags-swift.struct/signalinvalid.json": {
@@ -4517,12 +4517,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsample/lead-swift.enum.json": {
       "etag": "\"5e07-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swiftenum.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swift.enum.md",
       "hash": "4c3baddb1b3d05fc1ff8a90da303ab4c92521759d8cdbe34e086c8acddf997cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsample/lead-swift.enum/init(rawvalue:).json": {
       "etag": "\"18d3-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swift.enum/init(rawvalue).md",
       "hash": "b23d10596a736942cde2740af02c3f56a493100a1262c425aa16cecac7aa1fa6"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsample/lead-swift.enum/leftarmminusrightarm.json": {
@@ -4537,7 +4537,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsample/lead-swift.property.json": {
       "etag": "\"42ba-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsample/lead-swift.property.md",
       "hash": "b3a5bced0ee3bc7b5138977a4aab611e8ccb7dd1fdaf62cb49bed29942751f07"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsample/session.json": {
@@ -4552,7 +4552,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsensor/init().json": {
       "etag": "\"c27-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsensor/init.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsensor/init().md",
       "hash": "c6f498bda1100317d405751295d7f896f4443613ebbd78d4a323184b35719a49"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession.json": {
@@ -4567,7 +4567,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.enum.json": {
       "etag": "\"51c2-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swiftenum.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swift.enum.md",
       "hash": "89387785c3d0cf782970957c4523a6ea966b9c7c46e827addd8b90ad4234476b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.enum/guided.json": {
@@ -4577,7 +4577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.enum/init(rawvalue:).json": {
       "etag": "\"19dc-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swift.enum/init(rawvalue).md",
       "hash": "84fefd7d85047a13036ed3c2b0130d3b8f4a98f8378bcf07dc3bc2b0d3fedf8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.enum/unguided.json": {
@@ -4587,12 +4587,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/sessionguidance-swift.property.json": {
       "etag": "\"36e8-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/sessionguidance-swift.property.md",
       "hash": "525ba6cf9ae2727446a24b21ca6500c1a73d0fa54dd55946c54f1d3f8488194e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/state-swift.enum.json": {
       "etag": "\"5546-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swiftenum.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swift.enum.md",
       "hash": "df4c9324fd9a1c27fc0690fa20919dc9b29e00872d74e6e39b9800ba5b59f0a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/state-swift.enum/active.json": {
@@ -4612,12 +4612,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/state-swift.enum/init(rawvalue:).json": {
       "etag": "\"1934-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swift.enum/init(rawvalue).md",
       "hash": "c39ef71336c5c9431a7bbdabbe3dd3b34f8a73f3d9c78c3c06572f2a37c97bf0"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srelectrocardiogramsession/state-swift.property.json": {
       "etag": "\"365f-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srelectrocardiogramsession/state-swift.property.md",
       "hash": "312e72578ccec38b07fd840c3ac05cb8057d1e212968f13daebc877bd129b9f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srerror.json": {
@@ -4642,7 +4642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srerror/code/init(rawvalue:).json": {
       "etag": "\"146c-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srerror/code/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srerror/code/init(rawvalue).md",
       "hash": "20cae2fc4d11a3cbf70fdcffe4fcdbff65dfcdfcda53b23c18385aa7aa4e198f"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srerror/code/invalidentitlement.json": {
@@ -4702,12 +4702,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srfacemetrics/context-swift.property.json": {
       "etag": "\"2c33-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srfacemetrics/context-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srfacemetrics/context-swift.property.md",
       "hash": "70f06ad0556b6feee7e4d7b7869cbe0b8b6e9b43f0ff6f23e5054f5f74e4b7b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srfacemetrics/context-swift.struct.json": {
       "etag": "\"4e29-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srfacemetrics/context-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srfacemetrics/context-swift.struct.md",
       "hash": "d857fc6fef614b70a1e5a916e3689689c49569f5b8ce19e670384ab75d555932"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srfacemetrics/context-swift.struct/deviceunlock.json": {
@@ -4717,7 +4717,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srfacemetrics/context-swift.struct/init(rawvalue:).json": {
       "etag": "\"193b-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srfacemetrics/context-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srfacemetrics/context-swift.struct/init(rawvalue).md",
       "hash": "fa04d5e3cf16ce0af200c358b7b1e0277bf29297e6d3937768d5b4f47f01b612"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srfacemetrics/context-swift.struct/messagingappusage.json": {
@@ -4772,7 +4772,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srfacemetricssensor/init().json": {
       "etag": "\"bd9-65d55eea15fbd-df\"",
-      "file_path": "documentation/SensorKit/srfacemetricssensor/init.md",
+      "file_path": "documentation/SensorKit/srfacemetricssensor/init().md",
       "hash": "99cbddb63a73bf0dacc9d4aaf066f9c9491c453418102ca49bc64320de08dab7"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srfetchrequest.json": {
@@ -4842,7 +4842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonemotionsensor/init().json": {
       "etag": "\"c0d-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheadphonemotionsensor/init.md",
+      "file_path": "documentation/SensorKit/srheadphonemotionsensor/init().md",
       "hash": "9cdadd56781d246ab210fd4c8e275d891056714439085f043264d58e3d6e9b37"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings.json": {
@@ -4852,7 +4852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.enum.json": {
       "etag": "\"3db3-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swiftenum.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swift.enum.md",
       "hash": "3a662d4e0613a6462d052dbaa46f93cf09237fa95b0ef56001282eec190a3efa"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.enum/high.json": {
@@ -4862,7 +4862,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.enum/init(rawvalue:).json": {
       "etag": "\"1953-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swift.enum/init(rawvalue).md",
       "hash": "a3e5a9054cc7b10535561dac83322e507dd68efcdb60715ccaba4db9f379aff8"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.enum/low.json": {
@@ -4877,7 +4877,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/adaptiveaudiostrength-swift.property.json": {
       "etag": "\"246c-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/adaptiveaudiostrength-swift.property.md",
       "hash": "a59b994fd8461fd9a2235daeea5a1f4015b686fd1ad15f272d27797d4128f875"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/conversationawarenessenabled.json": {
@@ -4887,7 +4887,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/hearingassistance-swift.class.json": {
       "etag": "\"7f59-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/hearingassistance-swiftclass.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/hearingassistance-swift.class.md",
       "hash": "f4381631a2ec500a04aa767f122b3e1ce2b5649a10a20d84b2d201ca13dd4159"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/hearingassistance-swift.class/adjustmediaenabled.json": {
@@ -4942,12 +4942,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/hearingassistance-swift.property.json": {
       "etag": "\"23e1-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/hearingassistance-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/hearingassistance-swift.property.md",
       "hash": "8fba914adc8d3031795107fba24570f8aa913bf21e098cf994f17c6b4e14176f"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/listeningmode-swift.enum.json": {
       "etag": "\"42f3-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swiftenum.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swift.enum.md",
       "hash": "3f6dc9f27ef4579417fcc82922549efe76a3841122e2354dbb23b0137e3ab475"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/listeningmode-swift.enum/activenoisecancelling.json": {
@@ -4962,7 +4962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/listeningmode-swift.enum/init(rawvalue:).json": {
       "etag": "\"1844-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swift.enum/init(rawvalue).md",
       "hash": "e9ca327cee1e7e6816519a333134ca8689ee6827d657db147e382422f8c48687"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/listeningmode-swift.enum/normal.json": {
@@ -4977,7 +4977,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/listeningmode-swift.property.json": {
       "etag": "\"21dc-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/listeningmode-swift.property.md",
       "hash": "dc465acf7f721407c9617f35d036ec4c631db5245815347e054d1167d80b747f"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/personalizedspatialaudioenabled.json": {
@@ -5007,7 +5007,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/settingenablement/init(rawvalue:).json": {
       "etag": "\"180c-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettings/settingenablement/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srheadphonesettings/settingenablement/init(rawvalue).md",
       "hash": "b0ad1cecbcf6e4ea033b9f5e0b762c49463ee33a39de8fac61eefa4c7d4317b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettings/settingenablement/unsupported.json": {
@@ -5027,7 +5027,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheadphonesettingssensor/init().json": {
       "etag": "\"c27-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srheadphonesettingssensor/init.md",
+      "file_path": "documentation/SensorKit/srheadphonesettingssensor/init().md",
       "hash": "aca0ad5d3ad9a83e8c7c77de174711a6013772429fd46d0219945b93418a5e0f"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheartratesensor.json": {
@@ -5037,7 +5037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srheartratesensor/init().json": {
       "etag": "\"bbf-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srheartratesensor/init.md",
+      "file_path": "documentation/SensorKit/srheartratesensor/init().md",
       "hash": "e089b6eab4e90fb071f336b6dfb471b4e4a4ec1d1b65bd8851269a38a79f6f90"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srkeyboardmetrics.json": {
@@ -5142,7 +5142,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srkeyboardmetrics/emojicount(for:).json": {
       "etag": "\"3351-65d55ee9ab663-df\"",
-      "file_path": "documentation/SensorKit/srkeyboardmetrics/emojicount-for.md",
+      "file_path": "documentation/SensorKit/srkeyboardmetrics/emojicount(for).md",
       "hash": "53aa6c507e38dfb0272f7a8897be846449dbfe48130a37f06cbaf2beb914f2e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srkeyboardmetrics/height.json": {
@@ -5272,7 +5272,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srkeyboardmetrics/sentimentcategory/init(rawvalue:).json": {
       "etag": "\"1888-65d55ee9ab663-df\"",
-      "file_path": "documentation/SensorKit/srkeyboardmetrics/sentimentcategory/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srkeyboardmetrics/sentimentcategory/init(rawvalue).md",
       "hash": "9c71f30d7d34513e7d6a99ddb7796286796af5c8be7850f1fab59a0779d60731"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srkeyboardmetrics/sentimentcategory/lowenergy.json": {
@@ -5512,7 +5512,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srkeyboardmetrics/wordcount(for:).json": {
       "etag": "\"3345-65d55ee9d345d-df\"",
-      "file_path": "documentation/SensorKit/srkeyboardmetrics/wordcount-for.md",
+      "file_path": "documentation/SensorKit/srkeyboardmetrics/wordcount(for).md",
       "hash": "202b6b92af9abbc22a236963ccf4dd2dfed9673125291276bccc29a289010fbc"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srkeyboardmetricssensor.json": {
@@ -5522,7 +5522,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srkeyboardmetricssensor/init().json": {
       "etag": "\"c0d-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srkeyboardmetricssensor/init.md",
+      "file_path": "documentation/SensorKit/srkeyboardmetricssensor/init().md",
       "hash": "eff664b866b8afa4ff583904476963aba5699c7bf9704eeb152f57142616f75a"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srmediaevent.json": {
@@ -5547,7 +5547,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srmediaeventssensor/init().json": {
       "etag": "\"bd9-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srmediaeventssensor/init.md",
+      "file_path": "documentation/SensorKit/srmediaeventssensor/init().md",
       "hash": "15022080ff831393b73c31d5425517411807ec9c85196008937685129b9f909d"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srmediaeventtype.json": {
@@ -5557,7 +5557,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srmediaeventtype/init(rawvalue:).json": {
       "etag": "\"129d-65d55ee984d32-df\"",
-      "file_path": "documentation/SensorKit/srmediaeventtype/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srmediaeventtype/init(rawvalue).md",
       "hash": "76febdb67f65ad9dc833ff46b5c6687f0f403d56eef78063059fb798038785ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srmediaeventtype/offscreen.json": {
@@ -5602,7 +5602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srmessagesusagesensor/init().json": {
       "etag": "\"bf3-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srmessagesusagesensor/init.md",
+      "file_path": "documentation/SensorKit/srmessagesusagesensor/init().md",
       "hash": "0958846e1679cc2615225ab832919af5be4ed20488acb75304aafc33dd8e2a6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srodometersensor.json": {
@@ -5612,7 +5612,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srodometersensor/init().json": {
       "etag": "\"bb2-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srodometersensor/init.md",
+      "file_path": "documentation/SensorKit/srodometersensor/init().md",
       "hash": "5af3ecd5dcf7cbb573a1c8a80707cff13e4f6ff6775bcc1892c1fb90c1609905"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sronwriststatesensor.json": {
@@ -5622,7 +5622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/sronwriststatesensor/init().json": {
       "etag": "\"be6-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/sronwriststatesensor/init.md",
+      "file_path": "documentation/SensorKit/sronwriststatesensor/init().md",
       "hash": "7755e8a5b549e658188f11a9461ab9cc76edbb73a70f457949b79f4ecc7f9592"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srpedometerdatasensor.json": {
@@ -5632,7 +5632,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srpedometerdatasensor/init().json": {
       "etag": "\"bf3-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srpedometerdatasensor/init.md",
+      "file_path": "documentation/SensorKit/srpedometerdatasensor/init().md",
       "hash": "848cc3d6077e32f405d0776cbcbca84fa16b298525abb1adb2eea71b032638a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphoneusagereport.json": {
@@ -5672,7 +5672,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphoneusagesensor/init().json": {
       "etag": "\"bcc-65d55ee8df8d0-df\"",
-      "file_path": "documentation/SensorKit/srphoneusagesensor/init.md",
+      "file_path": "documentation/SensorKit/srphoneusagesensor/init().md",
       "hash": "114d3bdd05e5c784136049099e181be1c4ab1ada24e51e20ddbf7e5f18d2436d"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramaccelerometersample.json": {
@@ -5722,7 +5722,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/condition/init(rawvalue:).json": {
       "etag": "\"1b39-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/condition/init(rawvalue).md",
       "hash": "701dfa3c00a0f10a66cbd72192c521541072ef566d6e590ed45a0c5af9dd4090"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/condition/signalsaturation.json": {
@@ -5757,12 +5757,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.property.json": {
       "etag": "\"5214-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.property.md",
       "hash": "900d8937f1fbc7e2fc1bb692e08f601f9f9f715e15f228e17678ee7e64dac933"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct.json": {
       "etag": "\"5985-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramopticalsample/noiseterms-swift.struct.md",
       "hash": "e685a1e71fb3fc461cdb93a3bb23f892be28cd1b3b14f01a8c86dbf30c23c043"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramopticalsample/noiseterms-swift.struct/backgroundnoise.json": {
@@ -5837,12 +5837,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsample/usage-swift.property.json": {
       "etag": "\"4c19-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swift.property.md",
       "hash": "dbd29f8bd2b4902d1131b2ca4689fcb972af57a4a750257a4d44aa177cf02e51"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsample/usage-swift.struct.json": {
       "etag": "\"771d-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swift.struct.md",
       "hash": "b30502fb0d530702fcf17d14af264c6c3f309eb413e46066ca088483b402b879"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsample/usage-swift.struct/backgroundsystem.json": {
@@ -5867,7 +5867,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsample/usage-swift.struct/init(rawvalue:).json": {
       "etag": "\"1ab5-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramsample/usage-swift.struct/init(rawvalue).md",
       "hash": "5c80647de4a3221f2f5f43dc2ea3d1c7558ede8c99d1aaedb536b5cd98373be0"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsensor.json": {
@@ -5877,7 +5877,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srphotoplethysmogramsensor/init().json": {
       "etag": "\"c34-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srphotoplethysmogramsensor/init.md",
+      "file_path": "documentation/SensorKit/srphotoplethysmogramsensor/init().md",
       "hash": "ac573a85058bcb0f976bb86d2d5b169591376a72da0298fcf6299bb67d2293dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srreader.json": {
@@ -5892,7 +5892,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srreader/deletionrecords(matching:).json": {
       "etag": "\"3107-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srreader/deletionrecords-matching.md",
+      "file_path": "documentation/SensorKit/srreader/deletionrecords(matching).md",
       "hash": "02bafa4b303f1db4f2003a8b194f99b21c8c3a574ab098f920a0e0f9fc3ab0c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srreader/devices.json": {
@@ -5902,12 +5902,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srreader/init(sensor:).json": {
       "etag": "\"141e-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srreader/init-sensor.md",
+      "file_path": "documentation/SensorKit/srreader/init(sensor).md",
       "hash": "15aa2ef7bcbdc0fd4f7a6a39d4b68258185d4a81baae0aff93ea06bdd894f323"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srreader/samples(matching:).json": {
       "etag": "\"2f2c-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srreader/samples-matching.md",
+      "file_path": "documentation/SensorKit/srreader/samples(matching).md",
       "hash": "1067177e60ba9d1b1d1ed76726673375e99989248142933be56fc1b4c9c81352"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srreader/sensor.json": {
@@ -5917,12 +5917,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srreader/startrecording().json": {
       "etag": "\"1443-65d55eea7f85a-df\"",
-      "file_path": "documentation/SensorKit/srreader/startrecording.md",
+      "file_path": "documentation/SensorKit/srreader/startrecording().md",
       "hash": "0e6400eca06a8f4086f2c5fea0a580dbfe637a2f821c8fffef864b96faad59ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srreader/stoprecording().json": {
       "etag": "\"12ca-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srreader/stoprecording.md",
+      "file_path": "documentation/SensorKit/srreader/stoprecording().md",
       "hash": "40c04f7eda520766ea56c6f5b9fb2b9b3013fc597ce3b109bbb4acd192628e3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srrotationratesensor.json": {
@@ -5932,7 +5932,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srrotationratesensor/init().json": {
       "etag": "\"be6-65d55ee8ffc68-df\"",
-      "file_path": "documentation/SensorKit/srrotationratesensor/init.md",
+      "file_path": "documentation/SensorKit/srrotationratesensor/init().md",
       "hash": "b72fef31fdd1596cbe8e7f1664b09d7fdba585896d847a26268462d9afce4ec0"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensor.json": {
@@ -5992,7 +5992,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensor/init(rawvalue:).json": {
       "etag": "\"133c-65d55ee929bbc-df\"",
-      "file_path": "documentation/SensorKit/srsensor/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srsensor/init(rawvalue).md",
       "hash": "9d91711f13d64e54e744401208f3f609c003e9b57589a9bf53a61a3e188d7b1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensor/keyboardmetrics.json": {
@@ -6082,22 +6082,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreader/fetch(_:).json": {
       "etag": "\"425a-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/fetch.md",
+      "file_path": "documentation/SensorKit/srsensorreader/fetch(_).md",
       "hash": "d621916a89055b66f180856074b0e1e4ae5bd7b049e5d026649d8c7d07a8c5d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreader/fetchdevices().json": {
       "etag": "\"334c-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/fetchdevices.md",
+      "file_path": "documentation/SensorKit/srsensorreader/fetchdevices().md",
       "hash": "37405904d92c71f06c9a9698544ad455de814ef7e078a5e8f5b0f5f347b3c0c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreader/init(sensor:).json": {
       "etag": "\"2736-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/init-sensor.md",
+      "file_path": "documentation/SensorKit/srsensorreader/init(sensor).md",
       "hash": "42125306343b1f28a4c1f66ea71be06da178f048ea030152c48e482e93964e79"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreader/requestauthorization(sensors:completion:).json": {
       "etag": "\"6430-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/requestauthorization-sensorscompletion.md",
+      "file_path": "documentation/SensorKit/srsensorreader/requestauthorization(sensors,completion).md",
       "hash": "ee02bc233e385a0199ea00b313cde50b38cfa0599171e645ebfffe7fc9868e96"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreader/sensor.json": {
@@ -6107,12 +6107,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreader/startrecording().json": {
       "etag": "\"3aee-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/startrecording.md",
+      "file_path": "documentation/SensorKit/srsensorreader/startrecording().md",
       "hash": "e0e5b6344ff0e521ab9030ceed414e42b312bf31616f2baba74f04760b8eb56b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreader/stoprecording().json": {
       "etag": "\"3ad6-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreader/stoprecording.md",
+      "file_path": "documentation/SensorKit/srsensorreader/stoprecording().md",
       "hash": "009aee925ca307210e6c16a9eb05102d8da13255a12f87920da4623813761c93"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate.json": {
@@ -6122,52 +6122,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:didchange:).json": {
       "etag": "\"2fe8-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-didchange.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,didchange).md",
       "hash": "33f06516c13dc5c7ec39bf250a274097807b97edb1b45529c87d53d3afe02e92"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:didcompletefetch:).json": {
       "etag": "\"4033-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-didcompletefetch.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,didcompletefetch).md",
       "hash": "f872f93edc60bf38545249ed7c6f8041e0930ee9c5ace9d97a556e8b0be7f5f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:didfetch:).json": {
       "etag": "\"363c-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-didfetch.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,didfetch).md",
       "hash": "d14ff60683d229e64d54a7d8324eda4c92a697ae3e8bde53c99cfca98341bb6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:fetchdevicesdidfailwitherror:).json": {
       "etag": "\"38d8-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-fetchdevicesdidfailwitherror.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,fetchdevicesdidfailwitherror).md",
       "hash": "3b39057fb109f3e74ca63c3912e1b30c49989f9f23c3646a33f08c9bf8fc51d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:).json": {
       "etag": "\"5118-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-fetchingdidfetchresult.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,fetching,didfetchresult).md",
       "hash": "86ef9f1549a5ee047546efb99402397fa491cef5d1d12691481020bde8017c20"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:fetching:failedwitherror:).json": {
       "etag": "\"4676-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-fetchingfailedwitherror.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,fetching,failedwitherror).md",
       "hash": "8ae4ee5467d32869b4c8931d4f14a344998bd12c73d34a8cc9fd37fe69b4e66e"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:startrecordingfailedwitherror:).json": {
       "etag": "\"4233-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-startrecordingfailedwitherror.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,startrecordingfailedwitherror).md",
       "hash": "46810f4a06a56520c99524864535dad17a6709e19013d1866a6edc4a88bedba9"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreader(_:stoprecordingfailedwitherror:).json": {
       "etag": "\"4230-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader-stoprecordingfailedwitherror.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreader(_,stoprecordingfailedwitherror).md",
       "hash": "129bc4ed01c1906e6e973ec9bad4c0005dcb6e1926cccd6fb77899884d2bc9f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreaderdidstoprecording(_:).json": {
       "etag": "\"3bac-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreaderdidstoprecording.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreaderdidstoprecording(_).md",
       "hash": "fdeb0583ed88d1acfb44a62ace894f7d07c1781cb830a5bc2d44f5a4a423a157"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsensorreaderdelegate/sensorreaderwillstartrecording(_:).json": {
       "etag": "\"3bbf-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreaderwillstartrecording.md",
+      "file_path": "documentation/SensorKit/srsensorreaderdelegate/sensorreaderwillstartrecording(_).md",
       "hash": "288504a5958707488157edac3f5b136aaa25b669e84c9945e304637d90f11386"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsirispeechmetricssensor.json": {
@@ -6177,7 +6177,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsirispeechmetricssensor/init().json": {
       "etag": "\"c27-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srsirispeechmetricssensor/init.md",
+      "file_path": "documentation/SensorKit/srsirispeechmetricssensor/init().md",
       "hash": "b9169b440108e46a55442586419b689a4020d47f3c8593c7a1193a35c481d6f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsleepsession.json": {
@@ -6207,7 +6207,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsleepsessionssensor/init().json": {
       "etag": "\"bf3-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srsleepsessionssensor/init.md",
+      "file_path": "documentation/SensorKit/srsleepsessionssensor/init().md",
       "hash": "4b16052226c5f18509ac6233b3c99f72778379aa6a87cdc37ac9e121dedbc0d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srsourcedevice.json": {
@@ -6292,12 +6292,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srspeechmetrics/sessionflags-swift.property.json": {
       "etag": "\"3284-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swift.property.md",
       "hash": "c04779e580a4b89c5ba69419b3f9459ab521624e7e14b7e9a81707e8435ef586"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srspeechmetrics/sessionflags-swift.struct.json": {
       "etag": "\"52bb-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swift.struct.md",
       "hash": "79cb17f35711a39aa712351f5a886a5bad0dc164214167be0a6916c394dfa6ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srspeechmetrics/sessionflags-swift.struct/bypassvoiceprocessing.json": {
@@ -6307,7 +6307,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srspeechmetrics/sessionflags-swift.struct/init(rawvalue:).json": {
       "etag": "\"19d4-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srspeechmetrics/sessionflags-swift.struct/init(rawvalue).md",
       "hash": "16c228c8093014f115a84d41483742156b159a3e03f5d897e5d9a05942963756"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srspeechmetrics/sessionidentifier.json": {
@@ -6357,7 +6357,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srtelephonyspeechmetricssensor/init().json": {
       "etag": "\"c68-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srtelephonyspeechmetricssensor/init.md",
+      "file_path": "documentation/SensorKit/srtelephonyspeechmetricssensor/init().md",
       "hash": "f2038ee8f21f4eeac1a7f443ecb900811fb9d1335834974c9b4e7b973b9d1435"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srtextinputsession.json": {
@@ -6377,7 +6377,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srtextinputsession/sessiontype-swift.enum.json": {
       "etag": "\"4a47-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swiftenum.md",
+      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swift.enum.md",
       "hash": "78e5c13119f17ded6f99b2fa38052129b0f22f61f5a8fa6ae381e38e2b221a5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srtextinputsession/sessiontype-swift.enum/dictation.json": {
@@ -6387,7 +6387,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srtextinputsession/sessiontype-swift.enum/init(rawvalue:).json": {
       "etag": "\"1873-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swift.enum/init(rawvalue).md",
       "hash": "e4f973ce07a43dfadf9a6be20bbb58b1cbc073fc327df80890e4b34895d58de4"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srtextinputsession/sessiontype-swift.enum/keyboard.json": {
@@ -6407,7 +6407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srtextinputsession/sessiontype-swift.property.json": {
       "etag": "\"22d6-65d55ee950381-df\"",
-      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srtextinputsession/sessiontype-swift.property.md",
       "hash": "525a62bb5f9d7a6d7a8bf062c7ab7954cdfd1eb31fa88d196b9b61b67bbcdfb2"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srvisit.json": {
@@ -6437,7 +6437,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srvisit/locationcategory-swift.enum.json": {
       "etag": "\"5908-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srvisit/locationcategory-swiftenum.md",
+      "file_path": "documentation/SensorKit/srvisit/locationcategory-swift.enum.md",
       "hash": "babbfa45b23f147085cb48306cd69c97032074cd65b057dd3e37d90190d674c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srvisit/locationcategory-swift.enum/gym.json": {
@@ -6452,7 +6452,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srvisit/locationcategory-swift.enum/init(rawvalue:).json": {
       "etag": "\"177a-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srvisit/locationcategory-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srvisit/locationcategory-swift.enum/init(rawvalue).md",
       "hash": "48859c7b57ad85885895589e31958840cc2dda52b08402e03f004fcd0ed53eeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srvisit/locationcategory-swift.enum/school.json": {
@@ -6472,7 +6472,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srvisit/locationcategory-swift.property.json": {
       "etag": "\"310d-65d55eea960cc-df\"",
-      "file_path": "documentation/SensorKit/srvisit/locationcategory-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srvisit/locationcategory-swift.property.md",
       "hash": "dd36f005e5da183ab8859dcb728d617a67252e538676a782521e76b6c30ae083"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srvisitssensor.json": {
@@ -6482,7 +6482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srvisitssensor/init().json": {
       "etag": "\"b97-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srvisitssensor/init.md",
+      "file_path": "documentation/SensorKit/srvisitssensor/init().md",
       "hash": "6dfb845695711cdd4cbad8a18671a6f328c82a41e3d1a72eba4b6af7b62c6a6a"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection.json": {
@@ -6492,12 +6492,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/crownorientation-swift.enum.json": {
       "etag": "\"5887-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swiftenum.md",
+      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swift.enum.md",
       "hash": "80a0cf3259dcacc4ed1907cd630abb197a64a99110aee2df0604bd9018d246ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/crownorientation-swift.enum/init(rawvalue:).json": {
       "etag": "\"1893-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swift.enum/init(rawvalue).md",
       "hash": "183b7a6a7037bccec35c1f8591e9910c4763db3ca4f436d021519554181fc44d"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/crownorientation-swift.enum/left.json": {
@@ -6512,7 +6512,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/crownorientation-swift.property.json": {
       "etag": "\"3e1f-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srwristdetection/crownorientation-swift.property.md",
       "hash": "7b8d048c312a6e837113aeb2f9f2cf2eb99addffb169baa136c00e89fd2c9b14"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/offwristdate.json": {
@@ -6532,12 +6532,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/wristlocation-swift.enum.json": {
       "etag": "\"57ed-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swiftenum.md",
+      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swift.enum.md",
       "hash": "20071cc6369a370f41f67c9ee109446fabbeb5e4e724dd8636eb41b6f24605df"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/wristlocation-swift.enum/init(rawvalue:).json": {
       "etag": "\"1844-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swift.enum/init(rawvalue).md",
       "hash": "d672c126f48bf0b15d5d048722ec7441fba8ef25e27bcfb1a32f73da4e01685a"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/wristlocation-swift.enum/left.json": {
@@ -6552,7 +6552,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristdetection/wristlocation-swift.property.json": {
       "etag": "\"3dd6-65d55eea337a4-df\"",
-      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srwristdetection/wristlocation-swift.property.md",
       "hash": "fe9b19c2435e51d60100fb0f39913f706d995b1e8fb9dbc6fda744951cdb25ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperature.json": {
@@ -6562,17 +6562,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperature/condition-swift.property.json": {
       "etag": "\"23f8-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srwristtemperature/condition-swiftproperty.md",
+      "file_path": "documentation/SensorKit/srwristtemperature/condition-swift.property.md",
       "hash": "bd27fa57c22f49fa5d2d920f89fa9187ef9e9401222b991f7d22deb9eda01776"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperature/condition-swift.struct.json": {
       "etag": "\"4f50-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srwristtemperature/condition-swiftstruct.md",
+      "file_path": "documentation/SensorKit/srwristtemperature/condition-swift.struct.md",
       "hash": "88c74c3590a8824fae17e390362f080044cb62011baedeef6181fdde45696b51"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperature/condition-swift.struct/init(rawvalue:).json": {
       "etag": "\"1a14-65d55eea4f9f4-df\"",
-      "file_path": "documentation/SensorKit/srwristtemperature/condition-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/SensorKit/srwristtemperature/condition-swift.struct/init(rawvalue).md",
       "hash": "70fd102260a64da659f632dc3e3ceb641347abee6a10e0f5cfb848c31b8312a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperature/condition-swift.struct/inmotion.json": {
@@ -6612,7 +6612,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperaturesensor/init().json": {
       "etag": "\"c1a-65d55eea9d1ec-df\"",
-      "file_path": "documentation/SensorKit/srwristtemperaturesensor/init.md",
+      "file_path": "documentation/SensorKit/srwristtemperaturesensor/init().md",
       "hash": "970305439810bba2618e17e3edbecfcb2f4e9d7e1283d08234116f1ee2596df0"
     },
     "https://developer.apple.com/tutorials/data/documentation/sensorkit/srwristtemperaturesession.json": {

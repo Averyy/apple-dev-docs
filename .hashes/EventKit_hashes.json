@@ -37,17 +37,17 @@
     },
     "https://developer.apple.com/documentation/eventkit/date_components_do_not_use()": {
       "etag": "\"554b-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/date-components-do-not-use.md",
+      "file_path": "documentation/EventKit/date_components_do_not_use().md",
       "hash": "add82034b8e3d67df10cc7743bf8bf3c5baaa2efd6fa9e9fcb6d595bf6f5183f"
     },
     "https://developer.apple.com/documentation/eventkit/datetime_components_do_not_use()": {
       "etag": "\"556f-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/datetime-components-do-not-use.md",
+      "file_path": "documentation/EventKit/datetime_components_do_not_use().md",
       "hash": "aa94661b54a94eec445d97bfbc8bb3bdceaa0509ff6636f682cbd350637bcf62"
     },
     "https://developer.apple.com/documentation/eventkit/ek_lose_fractional_seconds_do_not_use()": {
       "etag": "\"5605-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ek-lose-fractional-seconds-do-not-use.md",
+      "file_path": "documentation/EventKit/ek_lose_fractional_seconds_do_not_use().md",
       "hash": "2b32432d7d272608036537ab30e4711bc4f3865c7df823655bf90e4033a19736"
     },
     "https://developer.apple.com/documentation/eventkit/ekalarm": {
@@ -67,12 +67,12 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekalarm/init(absolutedate:)": {
       "etag": "\"2b97-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ekalarm/init-absolutedate.md",
+      "file_path": "documentation/EventKit/ekalarm/init(absolutedate).md",
       "hash": "a6ecdd3437998f0ff79e5be33517ebe337a135c61043e531e9737d23e954e597"
     },
     "https://developer.apple.com/documentation/eventkit/ekalarm/init(relativeoffset:)": {
       "etag": "\"2abb-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ekalarm/init-relativeoffset.md",
+      "file_path": "documentation/EventKit/ekalarm/init(relativeoffset).md",
       "hash": "07e819980ac37537bcca6bb58a3ee17437309dc9ca604f00ff977a4e9f058d2e"
     },
     "https://developer.apple.com/documentation/eventkit/ekalarm/proximity": {
@@ -112,7 +112,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekalarmproximity/init(rawvalue:)": {
       "etag": "\"1284-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekalarmproximity/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekalarmproximity/init(rawvalue).md",
       "hash": "52caa19204e958bea743478bf12d4a5c29fd4135312717f5c3e81276e442b756"
     },
     "https://developer.apple.com/documentation/eventkit/ekalarmproximity/leave": {
@@ -147,7 +147,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekalarmtype/init(rawvalue:)": {
       "etag": "\"121e-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekalarmtype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekalarmtype/init(rawvalue).md",
       "hash": "cb007faea70721d0e793fc841b0d6e84ec9578847142671c360725d0dd7677d6"
     },
     "https://developer.apple.com/documentation/eventkit/ekalarmtype/procedure": {
@@ -177,7 +177,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekauthorizationstatus/init(rawvalue:)": {
       "etag": "\"134e-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekauthorizationstatus/init(rawvalue).md",
       "hash": "2881f57b0b60ec6a5c3e5e227137a57188032dbc14ec47935ec212322886df82"
     },
     "https://developer.apple.com/documentation/eventkit/ekauthorizationstatus/notdetermined": {
@@ -227,17 +227,17 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendar/init(eventstore:)": {
       "etag": "\"29ff-65d55da4420fc-df\"",
-      "file_path": "documentation/EventKit/ekcalendar/init-eventstore.md",
+      "file_path": "documentation/EventKit/ekcalendar/init(eventstore).md",
       "hash": "fc638f5c6df2e07789ba22e361afe87c581c653dea0597135b33d44c5bfb4cff"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendar/init(for:eventstore:)": {
       "etag": "\"34b1-65d55da4420fc-df\"",
-      "file_path": "documentation/EventKit/ekcalendar/init-foreventstore.md",
+      "file_path": "documentation/EventKit/ekcalendar/init(for,eventstore).md",
       "hash": "9c7702817a0d0d793a2f2ec04f4de863d9507882dc2ac6b672b3d840ccad012f"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendar/init(forentitytype:eventstore:)": {
       "etag": "\"1ca5-65d55da4420fc-df\"",
-      "file_path": "documentation/EventKit/ekcalendar/init-forentitytypeeventstore.md",
+      "file_path": "documentation/EventKit/ekcalendar/init(forentitytype,eventstore).md",
       "hash": "e5292097a2b6c5e61dae33ba7cd45583871365f719371ce94c6128eb98beb1d8"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendar/isimmutable": {
@@ -287,7 +287,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendareventavailabilitymask/init(rawvalue:)": {
       "etag": "\"147d-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekcalendareventavailabilitymask/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekcalendareventavailabilitymask/init(rawvalue).md",
       "hash": "ece578054357b5b80a3f19f5dedc2cef5538d907802eef0e3f2db6311442c0b3"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendareventavailabilitymask/tentative": {
@@ -307,12 +307,12 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendaritem/addalarm(_:)": {
       "etag": "\"3426-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekcalendaritem/addalarm.md",
+      "file_path": "documentation/EventKit/ekcalendaritem/addalarm(_).md",
       "hash": "69e79534febf836e44a72b803b6322db0d9b5d509661e5412caadc8df82ab34d"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendaritem/addrecurrencerule(_:)": {
       "etag": "\"3952-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekcalendaritem/addrecurrencerule.md",
+      "file_path": "documentation/EventKit/ekcalendaritem/addrecurrencerule(_).md",
       "hash": "7754334d879de9b1dd501e79df52785b5e8657097ee2510ca4ced27e8d25c357"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendaritem/alarms": {
@@ -387,12 +387,12 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendaritem/removealarm(_:)": {
       "etag": "\"3245-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekcalendaritem/removealarm.md",
+      "file_path": "documentation/EventKit/ekcalendaritem/removealarm(_).md",
       "hash": "28dd689b857888ca23e6bcea7a919d1332e43dbf129f6c619792592fff013218"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendaritem/removerecurrencerule(_:)": {
       "etag": "\"352d-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekcalendaritem/removerecurrencerule.md",
+      "file_path": "documentation/EventKit/ekcalendaritem/removerecurrencerule(_).md",
       "hash": "3816375b16f5fb44e93833b60cf16753fe4b2fbaf25718127fbadb644b907541"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendaritem/timezone": {
@@ -437,7 +437,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendartype/init(rawvalue:)": {
       "etag": "\"1225-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekcalendartype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekcalendartype/init(rawvalue).md",
       "hash": "ca161a3a7900f6f7036adef815c3518def0f07739ff63af39df4aba77c4574ad"
     },
     "https://developer.apple.com/documentation/eventkit/ekcalendartype/local": {
@@ -462,7 +462,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekentitymask/init(rawvalue:)": {
       "etag": "\"1315-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekentitymask/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekentitymask/init(rawvalue).md",
       "hash": "295ed2daa90c259ce0727474fd923931d46bc82e3e948066ef98964ccbd6bfd8"
     },
     "https://developer.apple.com/documentation/eventkit/ekentitymask/reminder": {
@@ -482,7 +482,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekentitytype/init(rawvalue:)": {
       "etag": "\"121e-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekentitytype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekentitytype/init(rawvalue).md",
       "hash": "807e42e625ea0cf7b220e32cb34b671f83f7c8c08bbb09e09d8560ad3e98e28c"
     },
     "https://developer.apple.com/documentation/eventkit/ekentitytype/reminder": {
@@ -602,7 +602,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekerror/code/init(rawvalue:)": {
       "etag": "\"1416-65d55da4420fc-df\"",
-      "file_path": "documentation/EventKit/ekerror/code/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekerror/code/init(rawvalue).md",
       "hash": "a14b98f942336ef6b4a67a959dc82e797d739ba290a281f828c270eb67049de6"
     },
     "https://developer.apple.com/documentation/eventkit/ekerror/code/internalfailure": {
@@ -922,7 +922,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekevent/comparestartdate(with:)": {
       "etag": "\"4455-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekevent/comparestartdate-with.md",
+      "file_path": "documentation/EventKit/ekevent/comparestartdate(with).md",
       "hash": "c705702dba229810d80380439b3ff1288d27237c44784a3fa233a42e3723d282"
     },
     "https://developer.apple.com/documentation/eventkit/ekevent/enddate": {
@@ -937,7 +937,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekevent/init(eventstore:)": {
       "etag": "\"2a64-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekevent/init-eventstore.md",
+      "file_path": "documentation/EventKit/ekevent/init(eventstore).md",
       "hash": "75bfed547e25e1e45844babc14603c493af4ab708a175ab8bdbfd60feb9536d3"
     },
     "https://developer.apple.com/documentation/eventkit/ekevent/isallday": {
@@ -962,7 +962,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekevent/refresh()": {
       "etag": "\"291f-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekevent/refresh.md",
+      "file_path": "documentation/EventKit/ekevent/refresh().md",
       "hash": "a9993165f1e2244dde4dedd300bdce5d55f80340270a57e35164eae0a4448354"
     },
     "https://developer.apple.com/documentation/eventkit/ekevent/startdate": {
@@ -997,7 +997,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekeventavailability/init(rawvalue:)": {
       "etag": "\"12a7-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ekeventavailability/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekeventavailability/init(rawvalue).md",
       "hash": "3219e23a4eb8bbf20b10a3e8c65f40ea0670b3bd240bb854e327daae626ac41f"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventavailability/notsupported": {
@@ -1037,7 +1037,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstatus/init(rawvalue:)": {
       "etag": "\"120f-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekeventstatus/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekeventstatus/init(rawvalue).md",
       "hash": "7f4d502cbcd2e8cf4c00ae4859d6fc83ad36b8e8a0259c3bc89907e356cc2b4d"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstatus/none": {
@@ -1057,22 +1057,22 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/authorizationstatus(for:)": {
       "etag": "\"5649-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/authorizationstatus-for.md",
+      "file_path": "documentation/EventKit/ekeventstore/authorizationstatus(for).md",
       "hash": "ce9bb348d81b370625c8675f3b06025fad564f39628a9aec6bc2184d9428fd60"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/calendar(withidentifier:)": {
       "etag": "\"54d1-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/calendar-withidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/calendar(withidentifier).md",
       "hash": "1d828b03c10372b746a4083054dd9a1d1288d0e947529b81b70c046fed45a9fe"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/calendaritem(withidentifier:)": {
       "etag": "\"6399-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/calendaritem-withidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/calendaritem(withidentifier).md",
       "hash": "9534585ad6443daf9bc136569d30802f42ff105527df480242bbb3957afbd9ef"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/calendaritems(withexternalidentifier:)": {
       "etag": "\"67da-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/calendaritems-withexternalidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/calendaritems(withexternalidentifier).md",
       "hash": "25c96f896fffe5e17d18babc37b686b7601c9a8751734c359eb6ff9c00e23604"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/calendars": {
@@ -1082,17 +1082,17 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/calendars(for:)": {
       "etag": "\"50c6-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/calendars-for.md",
+      "file_path": "documentation/EventKit/ekeventstore/calendars(for).md",
       "hash": "e3c30fdbedbb7c62f4e3cac6c7a85315743ac947ddeed82d20ab1ef7d593afc7"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/cancelfetchrequest(_:)": {
       "etag": "\"5fd7-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/cancelfetchrequest.md",
+      "file_path": "documentation/EventKit/ekeventstore/cancelfetchrequest(_).md",
       "hash": "1ca89814b0bc4aad3ec3d66f37301ef2f2d8579cba07e3aec1545d0ccc1c4ecc"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/commit()": {
       "etag": "\"5780-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/commit().md",
       "hash": "fb10a86450c49be96f93201cd6328a37724144ffa0e7fc85ebc3930426e2069d"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/defaultcalendarfornewevents": {
@@ -1102,7 +1102,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/defaultcalendarfornewreminders()": {
       "etag": "\"46b4-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/defaultcalendarfornewreminders.md",
+      "file_path": "documentation/EventKit/ekeventstore/defaultcalendarfornewreminders().md",
       "hash": "4d097d278eed3be277579ae018bb5ea930f8809fcae29109e4c220f75c367fc9"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/delegatesources": {
@@ -1112,17 +1112,17 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/enumerateevents(matching:using:)": {
       "etag": "\"7f73-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/enumerateevents-matchingusing.md",
+      "file_path": "documentation/EventKit/ekeventstore/enumerateevents(matching,using).md",
       "hash": "8a976943a80d5edac41787fcecc0854dd60c0eaada45fe665ad3c3bf13e88140"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/event(withidentifier:)": {
       "etag": "\"62c4-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/event-withidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/event(withidentifier).md",
       "hash": "6e453a87adc41616120a63ac3de439db50166ea249f5dcc78a6c92ee4c9ccc3d"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/events(matching:)": {
       "etag": "\"81e7-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/events-matching.md",
+      "file_path": "documentation/EventKit/ekeventstore/events(matching).md",
       "hash": "0a6f0adf67ff697c881078a6fee41aaab55f3b5f3ef46d65518b388b192b2c35"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/eventstorechanged": {
@@ -1132,7 +1132,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/eventstorechanged/init()": {
       "etag": "\"11e0-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/eventstorechanged/init.md",
+      "file_path": "documentation/EventKit/ekeventstore/eventstorechanged/init().md",
       "hash": "dfc609e5cca8a93d548ea51cd87353f1adef102ecfd108fec5b8dc996c8e016e"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/eventstoreidentifier": {
@@ -1142,112 +1142,112 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/fetchreminders(matching:completion:)": {
       "etag": "\"8375-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/fetchreminders-matchingcompletion.md",
+      "file_path": "documentation/EventKit/ekeventstore/fetchreminders(matching,completion).md",
       "hash": "894c98a2f7957e8f9953ad98da49095429729427a6d8bc94bf29031807211c01"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/init()": {
       "etag": "\"2685-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/init.md",
+      "file_path": "documentation/EventKit/ekeventstore/init().md",
       "hash": "9859a5a810e068da80c90bbf15631665d7bec6a87cbf4449a5885643e92d061a"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/init(sources:)": {
       "etag": "\"2fcf-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/init-sources.md",
+      "file_path": "documentation/EventKit/ekeventstore/init(sources).md",
       "hash": "46290e53e79090f6a1c75e967e4accd39872f66227aaf76fec79e0929c0ddabf"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/predicateforcompletedreminders(withcompletiondatestarting:ending:calendars:)": {
       "etag": "\"79a5-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/predicateforcompletedreminders-withcompletiondatestartingendingcalendars.md",
+      "file_path": "documentation/EventKit/ekeventstore/predicateforcompletedreminders(withcompletiondatestarting,ending,calendars).md",
       "hash": "80bf31c29deed1c0f56e672eaf0167d6424c8f7681ca6495fec5a40410a01a87"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/predicateforevents(withstart:end:calendars:)": {
       "etag": "\"79fb-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/predicateforevents-withstartendcalendars.md",
+      "file_path": "documentation/EventKit/ekeventstore/predicateforevents(withstart,end,calendars).md",
       "hash": "e5447a5b237672ed91bf03f0b36143c828da3860b8a4b966d3d4723bce576c15"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/predicateforincompletereminders(withduedatestarting:ending:calendars:)": {
       "etag": "\"7976-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/predicateforincompletereminders-withduedatestartingendingcalendars.md",
+      "file_path": "documentation/EventKit/ekeventstore/predicateforincompletereminders(withduedatestarting,ending,calendars).md",
       "hash": "c618815587840c754bf5413994cc6b47b9c70f3ae03c3502950d1e6005f17a3b"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/predicateforreminders(in:)": {
       "etag": "\"69eb-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/predicateforreminders-in.md",
+      "file_path": "documentation/EventKit/ekeventstore/predicateforreminders(in).md",
       "hash": "d93b8ba89fe80f54242a47b633c26e5aed63bd0020328a98e4b9b41ee657080b"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/refreshsourcesifnecessary()": {
       "etag": "\"2416-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/refreshsourcesifnecessary.md",
+      "file_path": "documentation/EventKit/ekeventstore/refreshsourcesifnecessary().md",
       "hash": "e670d061ad809e306ba306013a374635c9798995e0741bde7533b5d845da06fa"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/remove(_:commit:)": {
       "etag": "\"7945-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/remove-commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/remove(_,commit).md",
       "hash": "8b81dd8ed1161b2f2196d1a3fdddab313d5a78ae4f7f97c3215c61b70456146c"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/remove(_:span:)": {
       "etag": "\"7059-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/remove-span.md",
+      "file_path": "documentation/EventKit/ekeventstore/remove(_,span).md",
       "hash": "14d4392fd1ce563fca1bc22e0eeef46a6052e7250f1e3910476b81af9562de21"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/remove(_:span:commit:)": {
       "etag": "\"80ae-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/remove-spancommit.md",
+      "file_path": "documentation/EventKit/ekeventstore/remove(_,span,commit).md",
       "hash": "32f7b6ab6ee34e3822434d9ab05cea9cd7c316d176296305752dde1a77ef8627"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/removecalendar(_:commit:)": {
       "etag": "\"633c-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/removecalendar-commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/removecalendar(_,commit).md",
       "hash": "325c539be0a2b6009363a562184a7bd7a05f43e5f36b8d6c1147734fc279ae38"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/requestaccess(to:completion:)": {
       "etag": "\"6e3b-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/requestaccess-tocompletion.md",
+      "file_path": "documentation/EventKit/ekeventstore/requestaccess(to,completion).md",
       "hash": "ac0a627929264719ed859cc7c85fffdc1608cd0ae2b209c7e705f261e9040225"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/requestfullaccesstoevents(completion:)": {
       "etag": "\"6cb6-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/requestfullaccesstoevents-completion.md",
+      "file_path": "documentation/EventKit/ekeventstore/requestfullaccesstoevents(completion).md",
       "hash": "3f9c27379bf0eb4e601750c04615ce38c83ba5a51b2d63b132fb7388eaaa2b0b"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/requestfullaccesstoreminders(completion:)": {
       "etag": "\"668e-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/requestfullaccesstoreminders-completion.md",
+      "file_path": "documentation/EventKit/ekeventstore/requestfullaccesstoreminders(completion).md",
       "hash": "3406187bcca5dd0dc52253aa39136451d8dfd9f64adf7a13e66827b63e283b58"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/requestwriteonlyaccesstoevents(completion:)": {
       "etag": "\"6e5c-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/requestwriteonlyaccesstoevents-completion.md",
+      "file_path": "documentation/EventKit/ekeventstore/requestwriteonlyaccesstoevents(completion).md",
       "hash": "da574b2f3746fecac53efb046861b0e9c4c2112cd25197980f08f7daec429f72"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/reset()": {
       "etag": "\"247f-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/reset.md",
+      "file_path": "documentation/EventKit/ekeventstore/reset().md",
       "hash": "9012d7cbcb0c1fd7871d9c27821de207ddb4d3daa6c813629e3bb2a1b465f3b1"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/save(_:commit:)": {
       "etag": "\"7906-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/save-commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/save(_,commit).md",
       "hash": "72a6e919714dcb3542584fd18498c46e1cd6f6ff48da21c6573d16a873b00399"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/save(_:span:)": {
       "etag": "\"716d-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/save-span.md",
+      "file_path": "documentation/EventKit/ekeventstore/save(_,span).md",
       "hash": "790ee78ff5f77776cbbcf68897c32e894bc4cd32950181aeb36315c400b3040c"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/save(_:span:commit:)": {
       "etag": "\"81bf-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/save-spancommit.md",
+      "file_path": "documentation/EventKit/ekeventstore/save(_,span,commit).md",
       "hash": "b6377fc973ea84c4ccdbe6b25d29bba2acb7addafe35db17b655b73b48b1886c"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/savecalendar(_:commit:)": {
       "etag": "\"631e-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/savecalendar-commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/savecalendar(_,commit).md",
       "hash": "55202ca1506f56c815892b92343cbb853103d03f97aaf1b91aede175f7f04a3a"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/source(withidentifier:)": {
       "etag": "\"3644-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/source-withidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/source(withidentifier).md",
       "hash": "89c6e5b47a675fd4ab3bf2d6771627cfc3746bf2bdc3b9f5a640a2a96b834410"
     },
     "https://developer.apple.com/documentation/eventkit/ekeventstore/sources": {
@@ -1277,17 +1277,17 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekobject/refresh()": {
       "etag": "\"3995-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekobject/refresh.md",
+      "file_path": "documentation/EventKit/ekobject/refresh().md",
       "hash": "952c2342bf109c08a78380fe5519622289ddffbc70de6cb4cda92dba1964337d"
     },
     "https://developer.apple.com/documentation/eventkit/ekobject/reset()": {
       "etag": "\"2bdd-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekobject/reset.md",
+      "file_path": "documentation/EventKit/ekobject/reset().md",
       "hash": "719fc9acfd86fce504bda0d93632a8f2203df3bc1bcdc57ab65a8cf547be27c3"
     },
     "https://developer.apple.com/documentation/eventkit/ekobject/rollback()": {
       "etag": "\"2c06-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekobject/rollback.md",
+      "file_path": "documentation/EventKit/ekobject/rollback().md",
       "hash": "199c2f0f7f4fa7e71b8ec94bf5815ff689dedca718fce0937657fcb7cd27a82d"
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipant": {
@@ -1297,12 +1297,12 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipant/abperson(in:)": {
       "etag": "\"3c1f-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekparticipant/abperson-in.md",
+      "file_path": "documentation/EventKit/ekparticipant/abperson(in).md",
       "hash": "13fa2fbd5c044b77d3250c2ce31736de837100c58768f1832266ae8e1ff038f9"
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipant/abrecord(with:)": {
       "etag": "\"356f-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekparticipant/abrecord-with.md",
+      "file_path": "documentation/EventKit/ekparticipant/abrecord(with).md",
       "hash": "f9033416301f82686d48ec1e97d291e28ef561d119f904aff5ce47893399aff8"
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipant/contactpredicate": {
@@ -1352,7 +1352,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipantrole/init(rawvalue:)": {
       "etag": "\"126c-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekparticipantrole/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekparticipantrole/init(rawvalue).md",
       "hash": "83e2d388e045bb69274fd2e91a67767945eee39c7ab505ef984c465ccfb5c2e9"
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipantrole/nonparticipant": {
@@ -1397,7 +1397,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipantschedulestatus/init(rawvalue:)": {
       "etag": "\"1329-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekparticipantschedulestatus/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekparticipantschedulestatus/init(rawvalue).md",
       "hash": "19a1f8b0de12360c67282249da1346d0b5777e56dcdf0a55012b4176c5b84bf4"
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipantschedulestatus/none": {
@@ -1457,7 +1457,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipantstatus/init(rawvalue:)": {
       "etag": "\"129f-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ekparticipantstatus/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekparticipantstatus/init(rawvalue).md",
       "hash": "300cfc171b3f8ceb8c858e490f8713d6b9100e3e63fe3360f5f059751f4ca470"
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipantstatus/inprocess": {
@@ -1492,7 +1492,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipanttype/init(rawvalue:)": {
       "etag": "\"125e-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekparticipanttype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekparticipanttype/init(rawvalue).md",
       "hash": "28020f63a1964a3fb056bfa32ada37595cac072e980f0984bc5aa5cb8f24466d"
     },
     "https://developer.apple.com/documentation/eventkit/ekparticipanttype/person": {
@@ -1527,22 +1527,22 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencedayofweek/init(_:)": {
       "etag": "\"344d-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init.md",
+      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init(_).md",
       "hash": "a6dc7d248d2830ff1d55cf077c76883e31de50cb53a6e19bab482b07208a007e"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencedayofweek/init(_:weeknumber:)": {
       "etag": "\"38df-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init-weeknumber.md",
+      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init(_,weeknumber).md",
       "hash": "d1d988fbd4fecd9a9aaf2958937b2df5fd2bf1929265c35334b8951c214f1e23"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencedayofweek/init(coder:)": {
       "etag": "\"14a0-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init-coder.md",
+      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init(coder).md",
       "hash": "90b62e48dd8bae650e83a4705c3a151d4e14615c8e478ea9768fbf1f80095908"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencedayofweek/init(dayoftheweek:weeknumber:)": {
       "etag": "\"38b2-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init-dayoftheweekweeknumber.md",
+      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init(dayoftheweek,weeknumber).md",
       "hash": "842a00ef1c4e6daa4bebc2e7ebd94b3a740e688a6f96ee6097f014d80aebed36"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencedayofweek/weeknumber": {
@@ -1562,22 +1562,22 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrenceend/init(coder:)": {
       "etag": "\"1434-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekrecurrenceend/init-coder.md",
+      "file_path": "documentation/EventKit/ekrecurrenceend/init(coder).md",
       "hash": "39aa1d092cc7d248be8e7f54bfb4786c43b354b07baf7d4c9e583ef955fb88da"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrenceend/init(end:)": {
       "etag": "\"2edb-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekrecurrenceend/init-end.md",
+      "file_path": "documentation/EventKit/ekrecurrenceend/init(end).md",
       "hash": "4f40b7efe4ed36a63b02bd44c585f0dddab371887f34d118b257d664b416c494"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrenceend/init(enddate:)": {
       "etag": "\"1438-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekrecurrenceend/init-enddate.md",
+      "file_path": "documentation/EventKit/ekrecurrenceend/init(enddate).md",
       "hash": "cce6445c9e268890a3ae2e3146b8687c5b87774128d92234d5700ba401dccc98"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrenceend/init(occurrencecount:)": {
       "etag": "\"29de-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekrecurrenceend/init-occurrencecount.md",
+      "file_path": "documentation/EventKit/ekrecurrenceend/init(occurrencecount).md",
       "hash": "37dc24d3e2017f63479b387fffcdfcb6c47edd45238f975173526a95f4ff7375"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrenceend/occurrencecount": {
@@ -1597,7 +1597,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencefrequency/init(rawvalue:)": {
       "etag": "\"12b5-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencefrequency/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekrecurrencefrequency/init(rawvalue).md",
       "hash": "4fd14b1815d8696ad34707bcd1badb13161307d4b617b6a36d4e862c8a2fb5cf"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencefrequency/monthly": {
@@ -1652,22 +1652,22 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencerule/init(recurrencewith:interval:daysoftheweek:daysofthemonth:monthsoftheyear:weeksoftheyear:daysoftheyear:setpositions:end:)": {
       "etag": "\"86e2-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencerule/init-recurrencewithintervaldaysoftheweekdaysofthemonthmonthsoftheyearweeksoftheyeardaysoftheyearsetpositionsend.md",
+      "file_path": "documentation/EventKit/ekrecurrencerule/init(recurrencewith,interval,daysoftheweek,daysofthemonth,monthsoftheyear,weeksoftheyear,daysoftheyear,setpositions,end).md",
       "hash": "f01bd571ba0e8eb879788d3da38f8fd38ba441c2047ec6be18abf0840be8ae17"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencerule/init(recurrencewith:interval:end:)": {
       "etag": "\"4425-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencerule/init-recurrencewithintervalend.md",
+      "file_path": "documentation/EventKit/ekrecurrencerule/init(recurrencewith,interval,end).md",
       "hash": "56844f946fe3cb69b3ba85d6d564db3248c4228c5a3ef4391181715062c2fc43"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencerule/init(recurrencewithfrequency:interval:daysoftheweek:daysofthemonth:monthsoftheyear:weeksoftheyear:daysoftheyear:setpositions:end:)": {
       "etag": "\"3ca8-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencerule/init-recurrencewithfrequencyintervaldaysoftheweekdaysofthemonthmonthsoftheyearweeksoftheyeardaysoftheyearsetpositionsend.md",
+      "file_path": "documentation/EventKit/ekrecurrencerule/init(recurrencewithfrequency,interval,daysoftheweek,daysofthemonth,monthsoftheyear,weeksoftheyear,daysoftheyear,setpositions,end).md",
       "hash": "d88534079ec34b3dfb9935057f37020181f77ed5d0fa0df887692f69671314f3"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencerule/init(recurrencewithfrequency:interval:end:)": {
       "etag": "\"2231-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencerule/init-recurrencewithfrequencyintervalend.md",
+      "file_path": "documentation/EventKit/ekrecurrencerule/init(recurrencewithfrequency,interval,end).md",
       "hash": "6fe19cf618dcd8f3563f4c29e7b51dfcfbead30394b6bcba4834b343ce39fc25"
     },
     "https://developer.apple.com/documentation/eventkit/ekrecurrencerule/interval": {
@@ -1712,7 +1712,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekreminder/init(eventstore:)": {
       "etag": "\"2a8a-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekreminder/init-eventstore.md",
+      "file_path": "documentation/EventKit/ekreminder/init(eventstore).md",
       "hash": "a8cb2e9207efac2ebb4a7d3d788801da89447c87fcfb575783ae29d4af386bca"
     },
     "https://developer.apple.com/documentation/eventkit/ekreminder/iscompleted": {
@@ -1742,7 +1742,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekreminderpriority/init(rawvalue:)": {
       "etag": "\"1283-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekreminderpriority/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekreminderpriority/init(rawvalue).md",
       "hash": "dd5e2c138f3547a4944a3872811861538196a5546ea88081f3384213ae80b9b8"
     },
     "https://developer.apple.com/documentation/eventkit/ekreminderpriority/low": {
@@ -1772,7 +1772,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/eksource/calendars(for:)": {
       "etag": "\"389e-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/eksource/calendars-for.md",
+      "file_path": "documentation/EventKit/eksource/calendars(for).md",
       "hash": "18f6a42c85a5644aa9d7059c63c30902af969772ac7c670f78aa5c073c695f5e"
     },
     "https://developer.apple.com/documentation/eventkit/eksource/isdelegate": {
@@ -1817,7 +1817,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/eksourcetype/init(rawvalue:)": {
       "etag": "\"1201-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/eksourcetype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/eksourcetype/init(rawvalue).md",
       "hash": "1c6674219978aaded625d1b2bcc9f79103ed1d35d7c029468f2365f192565609"
     },
     "https://developer.apple.com/documentation/eventkit/eksourcetype/local": {
@@ -1847,7 +1847,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekspan/init(rawvalue:)": {
       "etag": "\"11ec-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekspan/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekspan/init(rawvalue).md",
       "hash": "dacc0b0e4302cf23da3a9af5e03cd6cedf197ee389903022d652f210bf335e3b"
     },
     "https://developer.apple.com/documentation/eventkit/ekspan/thisevent": {
@@ -1867,12 +1867,12 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekstructuredlocation/init(mapitem:)": {
       "etag": "\"28fd-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekstructuredlocation/init-mapitem.md",
+      "file_path": "documentation/EventKit/ekstructuredlocation/init(mapitem).md",
       "hash": "17b67b2108d6049cd61bdfb8054542f0e794e8cfca17791bc227ea83dc465a31"
     },
     "https://developer.apple.com/documentation/eventkit/ekstructuredlocation/init(title:)": {
       "etag": "\"3209-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekstructuredlocation/init-title.md",
+      "file_path": "documentation/EventKit/ekstructuredlocation/init(title).md",
       "hash": "de570a2ef45796b1f01f98cb0e86eb781f98d6224198e9f400657b97d16e331d"
     },
     "https://developer.apple.com/documentation/eventkit/ekstructuredlocation/radius": {
@@ -1897,12 +1897,12 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:)-1a9zt": {
       "etag": "\"2005-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferencedescriptor/init-titleurldescriptorsconferencedetails-1a9zt.md",
+      "file_path": "documentation/EventKit/ekvirtualconferencedescriptor/init(title,urldescriptors,conferencedetails)-1a9zt.md",
       "hash": "249fdddb5312cf751fc9bd540f680761deea0e7c78e1bb2e7b49b34787a7320a"
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:)-4yf7": {
       "etag": "\"392e-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferencedescriptor/init-titleurldescriptorsconferencedetails-4yf7.md",
+      "file_path": "documentation/EventKit/ekvirtualconferencedescriptor/init(title,urldescriptors,conferencedetails)-4yf7.md",
       "hash": "9db89204c79aac52966e2778b1aae25d60d34aeeba0a85a1c1fb22b28ab030e6"
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferencedescriptor/title": {
@@ -1922,12 +1922,12 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler:)": {
       "etag": "\"4704-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceprovider/fetchavailableroomtypes-completionhandler.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler).md",
       "hash": "2fc57f25d2d7ea5fc04b068bb5a8d3bda3e9fe220cff3ecf12422bc13ebba5bd"
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferenceprovider/fetchvirtualconference(identifier:completionhandler:)": {
       "etag": "\"5700-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceprovider/fetchvirtualconference-identifiercompletionhandler.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceprovider/fetchvirtualconference(identifier,completionhandler).md",
       "hash": "d1d7460513daeb533e1591ec76371198f47e65ec70eb1a6207ff15d4bd5d2404"
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferenceroomtypedescriptor": {
@@ -1942,7 +1942,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferenceroomtypedescriptor/init(title:identifier:)": {
       "etag": "\"322f-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceroomtypedescriptor/init-titleidentifier.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceroomtypedescriptor/init(title,identifier).md",
       "hash": "792801473c080198d33b42d7fc639bbbb2bd79e72fd5b17829c747c437ea52eb"
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferenceroomtypedescriptor/title": {
@@ -1962,12 +1962,12 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferenceurldescriptor/init(title:url:)-8l9d9": {
       "etag": "\"2fc8-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceurldescriptor/init-titleurl-8l9d9.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceurldescriptor/init(title,url)-8l9d9.md",
       "hash": "4f352979a03d2e99a45b262a6d5b9fae12ed153bc9de89263e9708a0e79475ef"
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferenceurldescriptor/init(title:url:)-alzy": {
       "etag": "\"1953-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceurldescriptor/init-titleurl-alzy.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceurldescriptor/init(title,url)-alzy.md",
       "hash": "e725a5049d96a7be6680194fa9234167b350ac2e1a76998b3aeaa142e3287527"
     },
     "https://developer.apple.com/documentation/eventkit/ekvirtualconferenceurldescriptor/title": {
@@ -2027,7 +2027,7 @@
     },
     "https://developer.apple.com/documentation/eventkit/ekweekday/init(rawvalue:)": {
       "etag": "\"11c1-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekweekday/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekweekday/init(rawvalue).md",
       "hash": "4062add8e484b0e822f44680bfdcaf135228b89f136034b82363c8e5f87587fd"
     },
     "https://developer.apple.com/documentation/eventkit/ekweekday/monday": {
@@ -2122,17 +2122,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/date_components_do_not_use().json": {
       "etag": "\"554b-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/date-components-do-not-use.md",
+      "file_path": "documentation/EventKit/date_components_do_not_use().md",
       "hash": "add82034b8e3d67df10cc7743bf8bf3c5baaa2efd6fa9e9fcb6d595bf6f5183f"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/datetime_components_do_not_use().json": {
       "etag": "\"556f-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/datetime-components-do-not-use.md",
+      "file_path": "documentation/EventKit/datetime_components_do_not_use().md",
       "hash": "aa94661b54a94eec445d97bfbc8bb3bdceaa0509ff6636f682cbd350637bcf62"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ek_lose_fractional_seconds_do_not_use().json": {
       "etag": "\"5605-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ek-lose-fractional-seconds-do-not-use.md",
+      "file_path": "documentation/EventKit/ek_lose_fractional_seconds_do_not_use().md",
       "hash": "2b32432d7d272608036537ab30e4711bc4f3865c7df823655bf90e4033a19736"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekalarm.json": {
@@ -2152,12 +2152,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekalarm/init(absolutedate:).json": {
       "etag": "\"2b97-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ekalarm/init-absolutedate.md",
+      "file_path": "documentation/EventKit/ekalarm/init(absolutedate).md",
       "hash": "a6ecdd3437998f0ff79e5be33517ebe337a135c61043e531e9737d23e954e597"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekalarm/init(relativeoffset:).json": {
       "etag": "\"2abb-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ekalarm/init-relativeoffset.md",
+      "file_path": "documentation/EventKit/ekalarm/init(relativeoffset).md",
       "hash": "07e819980ac37537bcca6bb58a3ee17437309dc9ca604f00ff977a4e9f058d2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekalarm/proximity.json": {
@@ -2197,7 +2197,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekalarmproximity/init(rawvalue:).json": {
       "etag": "\"1284-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekalarmproximity/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekalarmproximity/init(rawvalue).md",
       "hash": "52caa19204e958bea743478bf12d4a5c29fd4135312717f5c3e81276e442b756"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekalarmproximity/leave.json": {
@@ -2232,7 +2232,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekalarmtype/init(rawvalue:).json": {
       "etag": "\"121e-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekalarmtype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekalarmtype/init(rawvalue).md",
       "hash": "cb007faea70721d0e793fc841b0d6e84ec9578847142671c360725d0dd7677d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekalarmtype/procedure.json": {
@@ -2262,7 +2262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekauthorizationstatus/init(rawvalue:).json": {
       "etag": "\"134e-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekauthorizationstatus/init(rawvalue).md",
       "hash": "2881f57b0b60ec6a5c3e5e227137a57188032dbc14ec47935ec212322886df82"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekauthorizationstatus/notdetermined.json": {
@@ -2312,17 +2312,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendar/init(eventstore:).json": {
       "etag": "\"29ff-65d55da4420fc-df\"",
-      "file_path": "documentation/EventKit/ekcalendar/init-eventstore.md",
+      "file_path": "documentation/EventKit/ekcalendar/init(eventstore).md",
       "hash": "fc638f5c6df2e07789ba22e361afe87c581c653dea0597135b33d44c5bfb4cff"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendar/init(for:eventstore:).json": {
       "etag": "\"34b1-65d55da4420fc-df\"",
-      "file_path": "documentation/EventKit/ekcalendar/init-foreventstore.md",
+      "file_path": "documentation/EventKit/ekcalendar/init(for,eventstore).md",
       "hash": "9c7702817a0d0d793a2f2ec04f4de863d9507882dc2ac6b672b3d840ccad012f"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendar/init(forentitytype:eventstore:).json": {
       "etag": "\"1ca5-65d55da4420fc-df\"",
-      "file_path": "documentation/EventKit/ekcalendar/init-forentitytypeeventstore.md",
+      "file_path": "documentation/EventKit/ekcalendar/init(forentitytype,eventstore).md",
       "hash": "e5292097a2b6c5e61dae33ba7cd45583871365f719371ce94c6128eb98beb1d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendar/isimmutable.json": {
@@ -2372,7 +2372,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendareventavailabilitymask/init(rawvalue:).json": {
       "etag": "\"147d-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekcalendareventavailabilitymask/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekcalendareventavailabilitymask/init(rawvalue).md",
       "hash": "ece578054357b5b80a3f19f5dedc2cef5538d907802eef0e3f2db6311442c0b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendareventavailabilitymask/tentative.json": {
@@ -2392,12 +2392,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendaritem/addalarm(_:).json": {
       "etag": "\"3426-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekcalendaritem/addalarm.md",
+      "file_path": "documentation/EventKit/ekcalendaritem/addalarm(_).md",
       "hash": "69e79534febf836e44a72b803b6322db0d9b5d509661e5412caadc8df82ab34d"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendaritem/addrecurrencerule(_:).json": {
       "etag": "\"3952-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekcalendaritem/addrecurrencerule.md",
+      "file_path": "documentation/EventKit/ekcalendaritem/addrecurrencerule(_).md",
       "hash": "7754334d879de9b1dd501e79df52785b5e8657097ee2510ca4ced27e8d25c357"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendaritem/alarms.json": {
@@ -2472,12 +2472,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendaritem/removealarm(_:).json": {
       "etag": "\"3245-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekcalendaritem/removealarm.md",
+      "file_path": "documentation/EventKit/ekcalendaritem/removealarm(_).md",
       "hash": "28dd689b857888ca23e6bcea7a919d1332e43dbf129f6c619792592fff013218"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendaritem/removerecurrencerule(_:).json": {
       "etag": "\"352d-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekcalendaritem/removerecurrencerule.md",
+      "file_path": "documentation/EventKit/ekcalendaritem/removerecurrencerule(_).md",
       "hash": "3816375b16f5fb44e93833b60cf16753fe4b2fbaf25718127fbadb644b907541"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendaritem/timezone.json": {
@@ -2522,7 +2522,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendartype/init(rawvalue:).json": {
       "etag": "\"1225-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekcalendartype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekcalendartype/init(rawvalue).md",
       "hash": "ca161a3a7900f6f7036adef815c3518def0f07739ff63af39df4aba77c4574ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekcalendartype/local.json": {
@@ -2547,7 +2547,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekentitymask/init(rawvalue:).json": {
       "etag": "\"1315-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekentitymask/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekentitymask/init(rawvalue).md",
       "hash": "295ed2daa90c259ce0727474fd923931d46bc82e3e948066ef98964ccbd6bfd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekentitymask/reminder.json": {
@@ -2567,7 +2567,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekentitytype/init(rawvalue:).json": {
       "etag": "\"121e-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekentitytype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekentitytype/init(rawvalue).md",
       "hash": "807e42e625ea0cf7b220e32cb34b671f83f7c8c08bbb09e09d8560ad3e98e28c"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekentitytype/reminder.json": {
@@ -2687,7 +2687,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekerror/code/init(rawvalue:).json": {
       "etag": "\"1416-65d55da4420fc-df\"",
-      "file_path": "documentation/EventKit/ekerror/code/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekerror/code/init(rawvalue).md",
       "hash": "a14b98f942336ef6b4a67a959dc82e797d739ba290a281f828c270eb67049de6"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekerror/code/internalfailure.json": {
@@ -3007,7 +3007,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekevent/comparestartdate(with:).json": {
       "etag": "\"4455-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekevent/comparestartdate-with.md",
+      "file_path": "documentation/EventKit/ekevent/comparestartdate(with).md",
       "hash": "c705702dba229810d80380439b3ff1288d27237c44784a3fa233a42e3723d282"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekevent/enddate.json": {
@@ -3022,7 +3022,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekevent/init(eventstore:).json": {
       "etag": "\"2a64-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekevent/init-eventstore.md",
+      "file_path": "documentation/EventKit/ekevent/init(eventstore).md",
       "hash": "75bfed547e25e1e45844babc14603c493af4ab708a175ab8bdbfd60feb9536d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekevent/isallday.json": {
@@ -3047,7 +3047,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekevent/refresh().json": {
       "etag": "\"291f-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekevent/refresh.md",
+      "file_path": "documentation/EventKit/ekevent/refresh().md",
       "hash": "a9993165f1e2244dde4dedd300bdce5d55f80340270a57e35164eae0a4448354"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekevent/startdate.json": {
@@ -3082,7 +3082,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventavailability/init(rawvalue:).json": {
       "etag": "\"12a7-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ekeventavailability/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekeventavailability/init(rawvalue).md",
       "hash": "3219e23a4eb8bbf20b10a3e8c65f40ea0670b3bd240bb854e327daae626ac41f"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventavailability/notsupported.json": {
@@ -3122,7 +3122,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstatus/init(rawvalue:).json": {
       "etag": "\"120f-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekeventstatus/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekeventstatus/init(rawvalue).md",
       "hash": "7f4d502cbcd2e8cf4c00ae4859d6fc83ad36b8e8a0259c3bc89907e356cc2b4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstatus/none.json": {
@@ -3142,27 +3142,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/authorizationstatus(for:).json": {
       "etag": "\"5649-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/authorizationstatus-for.md",
+      "file_path": "documentation/EventKit/ekeventstore/authorizationstatus(for).md",
       "hash": "ce9bb348d81b370625c8675f3b06025fad564f39628a9aec6bc2184d9428fd60"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/calendar(withidentifier:).json": {
       "etag": "\"54d1-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/calendar-withidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/calendar(withidentifier).md",
       "hash": "1d828b03c10372b746a4083054dd9a1d1288d0e947529b81b70c046fed45a9fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/calendaritem(withidentifier:).json": {
       "etag": "\"6399-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/calendaritem-withidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/calendaritem(withidentifier).md",
       "hash": "9534585ad6443daf9bc136569d30802f42ff105527df480242bbb3957afbd9ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/calendaritems(withexternalidentifier:).json": {
       "etag": "\"67da-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/calendaritems-withexternalidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/calendaritems(withexternalidentifier).md",
       "hash": "25c96f896fffe5e17d18babc37b686b7601c9a8751734c359eb6ff9c00e23604"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/calendars(for:).json": {
       "etag": "\"50c6-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/calendars-for.md",
+      "file_path": "documentation/EventKit/ekeventstore/calendars(for).md",
       "hash": "e3c30fdbedbb7c62f4e3cac6c7a85315743ac947ddeed82d20ab1ef7d593afc7"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/calendars.json": {
@@ -3172,12 +3172,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/cancelfetchrequest(_:).json": {
       "etag": "\"5fd7-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/cancelfetchrequest.md",
+      "file_path": "documentation/EventKit/ekeventstore/cancelfetchrequest(_).md",
       "hash": "1ca89814b0bc4aad3ec3d66f37301ef2f2d8579cba07e3aec1545d0ccc1c4ecc"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/commit().json": {
       "etag": "\"5780-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/commit().md",
       "hash": "fb10a86450c49be96f93201cd6328a37724144ffa0e7fc85ebc3930426e2069d"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/defaultcalendarfornewevents.json": {
@@ -3187,7 +3187,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/defaultcalendarfornewreminders().json": {
       "etag": "\"46b4-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/defaultcalendarfornewreminders.md",
+      "file_path": "documentation/EventKit/ekeventstore/defaultcalendarfornewreminders().md",
       "hash": "4d097d278eed3be277579ae018bb5ea930f8809fcae29109e4c220f75c367fc9"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/delegatesources.json": {
@@ -3197,17 +3197,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/enumerateevents(matching:using:).json": {
       "etag": "\"7f73-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/enumerateevents-matchingusing.md",
+      "file_path": "documentation/EventKit/ekeventstore/enumerateevents(matching,using).md",
       "hash": "8a976943a80d5edac41787fcecc0854dd60c0eaada45fe665ad3c3bf13e88140"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/event(withidentifier:).json": {
       "etag": "\"62c4-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/event-withidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/event(withidentifier).md",
       "hash": "6e453a87adc41616120a63ac3de439db50166ea249f5dcc78a6c92ee4c9ccc3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/events(matching:).json": {
       "etag": "\"81e7-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/events-matching.md",
+      "file_path": "documentation/EventKit/ekeventstore/events(matching).md",
       "hash": "0a6f0adf67ff697c881078a6fee41aaab55f3b5f3ef46d65518b388b192b2c35"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/eventstorechanged.json": {
@@ -3217,7 +3217,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/eventstorechanged/init().json": {
       "etag": "\"11e0-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/eventstorechanged/init.md",
+      "file_path": "documentation/EventKit/ekeventstore/eventstorechanged/init().md",
       "hash": "dfc609e5cca8a93d548ea51cd87353f1adef102ecfd108fec5b8dc996c8e016e"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/eventstoreidentifier.json": {
@@ -3227,112 +3227,112 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/fetchreminders(matching:completion:).json": {
       "etag": "\"8375-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/fetchreminders-matchingcompletion.md",
+      "file_path": "documentation/EventKit/ekeventstore/fetchreminders(matching,completion).md",
       "hash": "894c98a2f7957e8f9953ad98da49095429729427a6d8bc94bf29031807211c01"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/init().json": {
       "etag": "\"2685-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/init.md",
+      "file_path": "documentation/EventKit/ekeventstore/init().md",
       "hash": "9859a5a810e068da80c90bbf15631665d7bec6a87cbf4449a5885643e92d061a"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/init(sources:).json": {
       "etag": "\"2fcf-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/init-sources.md",
+      "file_path": "documentation/EventKit/ekeventstore/init(sources).md",
       "hash": "46290e53e79090f6a1c75e967e4accd39872f66227aaf76fec79e0929c0ddabf"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/predicateforcompletedreminders(withcompletiondatestarting:ending:calendars:).json": {
       "etag": "\"79a5-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/predicateforcompletedreminders-withcompletiondatestartingendingcalendars.md",
+      "file_path": "documentation/EventKit/ekeventstore/predicateforcompletedreminders(withcompletiondatestarting,ending,calendars).md",
       "hash": "80bf31c29deed1c0f56e672eaf0167d6424c8f7681ca6495fec5a40410a01a87"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/predicateforevents(withstart:end:calendars:).json": {
       "etag": "\"79fb-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/predicateforevents-withstartendcalendars.md",
+      "file_path": "documentation/EventKit/ekeventstore/predicateforevents(withstart,end,calendars).md",
       "hash": "e5447a5b237672ed91bf03f0b36143c828da3860b8a4b966d3d4723bce576c15"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/predicateforincompletereminders(withduedatestarting:ending:calendars:).json": {
       "etag": "\"7976-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/predicateforincompletereminders-withduedatestartingendingcalendars.md",
+      "file_path": "documentation/EventKit/ekeventstore/predicateforincompletereminders(withduedatestarting,ending,calendars).md",
       "hash": "c618815587840c754bf5413994cc6b47b9c70f3ae03c3502950d1e6005f17a3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/predicateforreminders(in:).json": {
       "etag": "\"69eb-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/predicateforreminders-in.md",
+      "file_path": "documentation/EventKit/ekeventstore/predicateforreminders(in).md",
       "hash": "d93b8ba89fe80f54242a47b633c26e5aed63bd0020328a98e4b9b41ee657080b"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/refreshsourcesifnecessary().json": {
       "etag": "\"2416-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/refreshsourcesifnecessary.md",
+      "file_path": "documentation/EventKit/ekeventstore/refreshsourcesifnecessary().md",
       "hash": "e670d061ad809e306ba306013a374635c9798995e0741bde7533b5d845da06fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/remove(_:commit:).json": {
       "etag": "\"7945-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/remove-commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/remove(_,commit).md",
       "hash": "8b81dd8ed1161b2f2196d1a3fdddab313d5a78ae4f7f97c3215c61b70456146c"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/remove(_:span:).json": {
       "etag": "\"7059-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/remove-span.md",
+      "file_path": "documentation/EventKit/ekeventstore/remove(_,span).md",
       "hash": "14d4392fd1ce563fca1bc22e0eeef46a6052e7250f1e3910476b81af9562de21"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/remove(_:span:commit:).json": {
       "etag": "\"80ae-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/remove-spancommit.md",
+      "file_path": "documentation/EventKit/ekeventstore/remove(_,span,commit).md",
       "hash": "32f7b6ab6ee34e3822434d9ab05cea9cd7c316d176296305752dde1a77ef8627"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/removecalendar(_:commit:).json": {
       "etag": "\"633c-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/removecalendar-commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/removecalendar(_,commit).md",
       "hash": "325c539be0a2b6009363a562184a7bd7a05f43e5f36b8d6c1147734fc279ae38"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/requestaccess(to:completion:).json": {
       "etag": "\"6e3b-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/requestaccess-tocompletion.md",
+      "file_path": "documentation/EventKit/ekeventstore/requestaccess(to,completion).md",
       "hash": "ac0a627929264719ed859cc7c85fffdc1608cd0ae2b209c7e705f261e9040225"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/requestfullaccesstoevents(completion:).json": {
       "etag": "\"6cb6-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/requestfullaccesstoevents-completion.md",
+      "file_path": "documentation/EventKit/ekeventstore/requestfullaccesstoevents(completion).md",
       "hash": "3f9c27379bf0eb4e601750c04615ce38c83ba5a51b2d63b132fb7388eaaa2b0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/requestfullaccesstoreminders(completion:).json": {
       "etag": "\"668e-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/requestfullaccesstoreminders-completion.md",
+      "file_path": "documentation/EventKit/ekeventstore/requestfullaccesstoreminders(completion).md",
       "hash": "3406187bcca5dd0dc52253aa39136451d8dfd9f64adf7a13e66827b63e283b58"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/requestwriteonlyaccesstoevents(completion:).json": {
       "etag": "\"6e5c-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/requestwriteonlyaccesstoevents-completion.md",
+      "file_path": "documentation/EventKit/ekeventstore/requestwriteonlyaccesstoevents(completion).md",
       "hash": "da574b2f3746fecac53efb046861b0e9c4c2112cd25197980f08f7daec429f72"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/reset().json": {
       "etag": "\"247f-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/reset.md",
+      "file_path": "documentation/EventKit/ekeventstore/reset().md",
       "hash": "9012d7cbcb0c1fd7871d9c27821de207ddb4d3daa6c813629e3bb2a1b465f3b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/save(_:commit:).json": {
       "etag": "\"7906-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/save-commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/save(_,commit).md",
       "hash": "72a6e919714dcb3542584fd18498c46e1cd6f6ff48da21c6573d16a873b00399"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/save(_:span:).json": {
       "etag": "\"716d-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/save-span.md",
+      "file_path": "documentation/EventKit/ekeventstore/save(_,span).md",
       "hash": "790ee78ff5f77776cbbcf68897c32e894bc4cd32950181aeb36315c400b3040c"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/save(_:span:commit:).json": {
       "etag": "\"81bf-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/save-spancommit.md",
+      "file_path": "documentation/EventKit/ekeventstore/save(_,span,commit).md",
       "hash": "b6377fc973ea84c4ccdbe6b25d29bba2acb7addafe35db17b655b73b48b1886c"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/savecalendar(_:commit:).json": {
       "etag": "\"631e-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/savecalendar-commit.md",
+      "file_path": "documentation/EventKit/ekeventstore/savecalendar(_,commit).md",
       "hash": "55202ca1506f56c815892b92343cbb853103d03f97aaf1b91aede175f7f04a3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/source(withidentifier:).json": {
       "etag": "\"3644-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekeventstore/source-withidentifier.md",
+      "file_path": "documentation/EventKit/ekeventstore/source(withidentifier).md",
       "hash": "89c6e5b47a675fd4ab3bf2d6771627cfc3746bf2bdc3b9f5a640a2a96b834410"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekeventstore/sources.json": {
@@ -3362,17 +3362,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekobject/refresh().json": {
       "etag": "\"3995-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekobject/refresh.md",
+      "file_path": "documentation/EventKit/ekobject/refresh().md",
       "hash": "952c2342bf109c08a78380fe5519622289ddffbc70de6cb4cda92dba1964337d"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekobject/reset().json": {
       "etag": "\"2bdd-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekobject/reset.md",
+      "file_path": "documentation/EventKit/ekobject/reset().md",
       "hash": "719fc9acfd86fce504bda0d93632a8f2203df3bc1bcdc57ab65a8cf547be27c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekobject/rollback().json": {
       "etag": "\"2c06-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekobject/rollback.md",
+      "file_path": "documentation/EventKit/ekobject/rollback().md",
       "hash": "199c2f0f7f4fa7e71b8ec94bf5815ff689dedca718fce0937657fcb7cd27a82d"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipant.json": {
@@ -3382,12 +3382,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipant/abperson(in:).json": {
       "etag": "\"3c1f-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekparticipant/abperson-in.md",
+      "file_path": "documentation/EventKit/ekparticipant/abperson(in).md",
       "hash": "13fa2fbd5c044b77d3250c2ce31736de837100c58768f1832266ae8e1ff038f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipant/abrecord(with:).json": {
       "etag": "\"356f-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/ekparticipant/abrecord-with.md",
+      "file_path": "documentation/EventKit/ekparticipant/abrecord(with).md",
       "hash": "f9033416301f82686d48ec1e97d291e28ef561d119f904aff5ce47893399aff8"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipant/contactpredicate.json": {
@@ -3437,7 +3437,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipantrole/init(rawvalue:).json": {
       "etag": "\"126c-65d55da3b9b8d-df\"",
-      "file_path": "documentation/EventKit/ekparticipantrole/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekparticipantrole/init(rawvalue).md",
       "hash": "83e2d388e045bb69274fd2e91a67767945eee39c7ab505ef984c465ccfb5c2e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipantrole/nonparticipant.json": {
@@ -3482,7 +3482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipantschedulestatus/init(rawvalue:).json": {
       "etag": "\"1329-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekparticipantschedulestatus/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekparticipantschedulestatus/init(rawvalue).md",
       "hash": "19a1f8b0de12360c67282249da1346d0b5777e56dcdf0a55012b4176c5b84bf4"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipantschedulestatus/none.json": {
@@ -3542,7 +3542,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipantstatus/init(rawvalue:).json": {
       "etag": "\"129f-65d55da48b818-df\"",
-      "file_path": "documentation/EventKit/ekparticipantstatus/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekparticipantstatus/init(rawvalue).md",
       "hash": "300cfc171b3f8ceb8c858e490f8713d6b9100e3e63fe3360f5f059751f4ca470"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipantstatus/inprocess.json": {
@@ -3577,7 +3577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipanttype/init(rawvalue:).json": {
       "etag": "\"125e-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekparticipanttype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekparticipanttype/init(rawvalue).md",
       "hash": "28020f63a1964a3fb056bfa32ada37595cac072e980f0984bc5aa5cb8f24466d"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekparticipanttype/person.json": {
@@ -3612,22 +3612,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencedayofweek/init(_:).json": {
       "etag": "\"344d-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init.md",
+      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init(_).md",
       "hash": "a6dc7d248d2830ff1d55cf077c76883e31de50cb53a6e19bab482b07208a007e"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencedayofweek/init(_:weeknumber:).json": {
       "etag": "\"38df-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init-weeknumber.md",
+      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init(_,weeknumber).md",
       "hash": "d1d988fbd4fecd9a9aaf2958937b2df5fd2bf1929265c35334b8951c214f1e23"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencedayofweek/init(coder:).json": {
       "etag": "\"14a0-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init-coder.md",
+      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init(coder).md",
       "hash": "90b62e48dd8bae650e83a4705c3a151d4e14615c8e478ea9768fbf1f80095908"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencedayofweek/init(dayoftheweek:weeknumber:).json": {
       "etag": "\"38b2-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init-dayoftheweekweeknumber.md",
+      "file_path": "documentation/EventKit/ekrecurrencedayofweek/init(dayoftheweek,weeknumber).md",
       "hash": "842a00ef1c4e6daa4bebc2e7ebd94b3a740e688a6f96ee6097f014d80aebed36"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencedayofweek/weeknumber.json": {
@@ -3647,22 +3647,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrenceend/init(coder:).json": {
       "etag": "\"1434-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekrecurrenceend/init-coder.md",
+      "file_path": "documentation/EventKit/ekrecurrenceend/init(coder).md",
       "hash": "39aa1d092cc7d248be8e7f54bfb4786c43b354b07baf7d4c9e583ef955fb88da"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrenceend/init(end:).json": {
       "etag": "\"2edb-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekrecurrenceend/init-end.md",
+      "file_path": "documentation/EventKit/ekrecurrenceend/init(end).md",
       "hash": "4f40b7efe4ed36a63b02bd44c585f0dddab371887f34d118b257d664b416c494"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrenceend/init(enddate:).json": {
       "etag": "\"1438-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekrecurrenceend/init-enddate.md",
+      "file_path": "documentation/EventKit/ekrecurrenceend/init(enddate).md",
       "hash": "cce6445c9e268890a3ae2e3146b8687c5b87774128d92234d5700ba401dccc98"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrenceend/init(occurrencecount:).json": {
       "etag": "\"29de-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekrecurrenceend/init-occurrencecount.md",
+      "file_path": "documentation/EventKit/ekrecurrenceend/init(occurrencecount).md",
       "hash": "37dc24d3e2017f63479b387fffcdfcb6c47edd45238f975173526a95f4ff7375"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrenceend/occurrencecount.json": {
@@ -3682,7 +3682,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencefrequency/init(rawvalue:).json": {
       "etag": "\"12b5-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencefrequency/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekrecurrencefrequency/init(rawvalue).md",
       "hash": "4fd14b1815d8696ad34707bcd1badb13161307d4b617b6a36d4e862c8a2fb5cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencefrequency/monthly.json": {
@@ -3737,22 +3737,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencerule/init(recurrencewith:interval:daysoftheweek:daysofthemonth:monthsoftheyear:weeksoftheyear:daysoftheyear:setpositions:end:).json": {
       "etag": "\"86e2-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencerule/init-recurrencewithintervaldaysoftheweekdaysofthemonthmonthsoftheyearweeksoftheyeardaysoftheyearsetpositionsend.md",
+      "file_path": "documentation/EventKit/ekrecurrencerule/init(recurrencewith,interval,daysoftheweek,daysofthemonth,monthsoftheyear,weeksoftheyear,daysoftheyear,setpositions,end).md",
       "hash": "f01bd571ba0e8eb879788d3da38f8fd38ba441c2047ec6be18abf0840be8ae17"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencerule/init(recurrencewith:interval:end:).json": {
       "etag": "\"4425-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencerule/init-recurrencewithintervalend.md",
+      "file_path": "documentation/EventKit/ekrecurrencerule/init(recurrencewith,interval,end).md",
       "hash": "56844f946fe3cb69b3ba85d6d564db3248c4228c5a3ef4391181715062c2fc43"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencerule/init(recurrencewithfrequency:interval:daysoftheweek:daysofthemonth:monthsoftheyear:weeksoftheyear:daysoftheyear:setpositions:end:).json": {
       "etag": "\"3ca8-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencerule/init-recurrencewithfrequencyintervaldaysoftheweekdaysofthemonthmonthsoftheyearweeksoftheyeardaysoftheyearsetpositionsend.md",
+      "file_path": "documentation/EventKit/ekrecurrencerule/init(recurrencewithfrequency,interval,daysoftheweek,daysofthemonth,monthsoftheyear,weeksoftheyear,daysoftheyear,setpositions,end).md",
       "hash": "d88534079ec34b3dfb9935057f37020181f77ed5d0fa0df887692f69671314f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencerule/init(recurrencewithfrequency:interval:end:).json": {
       "etag": "\"2231-65d55da477fbb-df\"",
-      "file_path": "documentation/EventKit/ekrecurrencerule/init-recurrencewithfrequencyintervalend.md",
+      "file_path": "documentation/EventKit/ekrecurrencerule/init(recurrencewithfrequency,interval,end).md",
       "hash": "6fe19cf618dcd8f3563f4c29e7b51dfcfbead30394b6bcba4834b343ce39fc25"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekrecurrencerule/interval.json": {
@@ -3797,7 +3797,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekreminder/init(eventstore:).json": {
       "etag": "\"2a8a-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekreminder/init-eventstore.md",
+      "file_path": "documentation/EventKit/ekreminder/init(eventstore).md",
       "hash": "a8cb2e9207efac2ebb4a7d3d788801da89447c87fcfb575783ae29d4af386bca"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekreminder/iscompleted.json": {
@@ -3827,7 +3827,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekreminderpriority/init(rawvalue:).json": {
       "etag": "\"1283-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekreminderpriority/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekreminderpriority/init(rawvalue).md",
       "hash": "dd5e2c138f3547a4944a3872811861538196a5546ea88081f3384213ae80b9b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekreminderpriority/low.json": {
@@ -3852,7 +3852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/eksource/calendars(for:).json": {
       "etag": "\"389e-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/eksource/calendars-for.md",
+      "file_path": "documentation/EventKit/eksource/calendars(for).md",
       "hash": "18f6a42c85a5644aa9d7059c63c30902af969772ac7c670f78aa5c073c695f5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/eksource/calendars.json": {
@@ -3902,7 +3902,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/eksourcetype/init(rawvalue:).json": {
       "etag": "\"1201-65d55da410a2b-df\"",
-      "file_path": "documentation/EventKit/eksourcetype/init-rawvalue.md",
+      "file_path": "documentation/EventKit/eksourcetype/init(rawvalue).md",
       "hash": "1c6674219978aaded625d1b2bcc9f79103ed1d35d7c029468f2365f192565609"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/eksourcetype/local.json": {
@@ -3932,7 +3932,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekspan/init(rawvalue:).json": {
       "etag": "\"11ec-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekspan/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekspan/init(rawvalue).md",
       "hash": "dacc0b0e4302cf23da3a9af5e03cd6cedf197ee389903022d652f210bf335e3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekspan/thisevent.json": {
@@ -3952,12 +3952,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekstructuredlocation/init(mapitem:).json": {
       "etag": "\"28fd-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekstructuredlocation/init-mapitem.md",
+      "file_path": "documentation/EventKit/ekstructuredlocation/init(mapitem).md",
       "hash": "17b67b2108d6049cd61bdfb8054542f0e794e8cfca17791bc227ea83dc465a31"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekstructuredlocation/init(title:).json": {
       "etag": "\"3209-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekstructuredlocation/init-title.md",
+      "file_path": "documentation/EventKit/ekstructuredlocation/init(title).md",
       "hash": "de570a2ef45796b1f01f98cb0e86eb781f98d6224198e9f400657b97d16e331d"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekstructuredlocation/radius.json": {
@@ -3982,12 +3982,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:)-1a9zt.json": {
       "etag": "\"2005-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferencedescriptor/init-titleurldescriptorsconferencedetails-1a9zt.md",
+      "file_path": "documentation/EventKit/ekvirtualconferencedescriptor/init(title,urldescriptors,conferencedetails)-1a9zt.md",
       "hash": "249fdddb5312cf751fc9bd540f680761deea0e7c78e1bb2e7b49b34787a7320a"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:)-4yf7.json": {
       "etag": "\"392e-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferencedescriptor/init-titleurldescriptorsconferencedetails-4yf7.md",
+      "file_path": "documentation/EventKit/ekvirtualconferencedescriptor/init(title,urldescriptors,conferencedetails)-4yf7.md",
       "hash": "9db89204c79aac52966e2778b1aae25d60d34aeeba0a85a1c1fb22b28ab030e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferencedescriptor/title.json": {
@@ -4007,12 +4007,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler:).json": {
       "etag": "\"4704-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceprovider/fetchavailableroomtypes-completionhandler.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler).md",
       "hash": "2fc57f25d2d7ea5fc04b068bb5a8d3bda3e9fe220cff3ecf12422bc13ebba5bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferenceprovider/fetchvirtualconference(identifier:completionhandler:).json": {
       "etag": "\"5700-65d55da3d5a50-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceprovider/fetchvirtualconference-identifiercompletionhandler.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceprovider/fetchvirtualconference(identifier,completionhandler).md",
       "hash": "d1d7460513daeb533e1591ec76371198f47e65ec70eb1a6207ff15d4bd5d2404"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferenceroomtypedescriptor.json": {
@@ -4027,7 +4027,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferenceroomtypedescriptor/init(title:identifier:).json": {
       "etag": "\"322f-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceroomtypedescriptor/init-titleidentifier.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceroomtypedescriptor/init(title,identifier).md",
       "hash": "792801473c080198d33b42d7fc639bbbb2bd79e72fd5b17829c747c437ea52eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferenceroomtypedescriptor/title.json": {
@@ -4047,12 +4047,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferenceurldescriptor/init(title:url:)-8l9d9.json": {
       "etag": "\"2fc8-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceurldescriptor/init-titleurl-8l9d9.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceurldescriptor/init(title,url)-8l9d9.md",
       "hash": "4f352979a03d2e99a45b262a6d5b9fae12ed153bc9de89263e9708a0e79475ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferenceurldescriptor/init(title:url:)-alzy.json": {
       "etag": "\"1953-65d55da3f88c7-df\"",
-      "file_path": "documentation/EventKit/ekvirtualconferenceurldescriptor/init-titleurl-alzy.md",
+      "file_path": "documentation/EventKit/ekvirtualconferenceurldescriptor/init(title,url)-alzy.md",
       "hash": "e725a5049d96a7be6680194fa9234167b350ac2e1a76998b3aeaa142e3287527"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekvirtualconferenceurldescriptor/title.json": {
@@ -4112,7 +4112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekweekday/init(rawvalue:).json": {
       "etag": "\"11c1-65d55da427c1f-df\"",
-      "file_path": "documentation/EventKit/ekweekday/init-rawvalue.md",
+      "file_path": "documentation/EventKit/ekweekday/init(rawvalue).md",
       "hash": "4062add8e484b0e822f44680bfdcaf135228b89f136034b82363c8e5f87587fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkit/ekweekday/monday.json": {

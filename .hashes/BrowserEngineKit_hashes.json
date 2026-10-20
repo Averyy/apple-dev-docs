@@ -92,7 +92,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitycontainertype/init(rawvalue:)": {
       "etag": "\"1483-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitycontainertype/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitycontainertype/init(rawvalue).md",
       "hash": "9b87f53e78425b08e4389a3c5ba00f8e0b36c529ad88e57ae6ac8d4896465df4"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitycontainertype/landmark": {
@@ -137,7 +137,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilityorientation/init(rawvalue:)": {
       "etag": "\"144b-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilityorientation/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilityorientation/init(rawvalue).md",
       "hash": "212cb1ef22862570b576542e3e55df05c7ff218ccfa0827333a04f918004c9bb"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilityorientation/unknown": {
@@ -162,7 +162,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitypressedstate/init(rawvalue:)": {
       "etag": "\"147f-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitypressedstate/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitypressedstate/init(rawvalue).md",
       "hash": "077fa70998b10afc521f0a0624fc50fd9f7db6710db442d389ab0e980d212ad9"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitypressedstate/mixed": {
@@ -187,7 +187,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilityremoteelement/init(identifier:hostpid:)": {
       "etag": "\"2c52-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilityremoteelement/init-identifierhostpid.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilityremoteelement/init(identifier,hostpid).md",
       "hash": "5d99dd2c80380dc0095c64bd57f49a4daa116e4af2fa507ee8e5de3d7cd485e5"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilityremotehostelement": {
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilityremotehostelement/init(identifier:remotepid:)": {
       "etag": "\"2b7d-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilityremotehostelement/init-identifierremotepid.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilityremotehostelement/init(identifier,remotepid).md",
       "hash": "dc4b1a863d3f25f414ff45d8bf41e584ea757336d67cbced6f9df96d9c67864d"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarker": {
@@ -212,7 +212,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarker/init(coder:)": {
       "etag": "\"1604-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarker/init-coder.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarker/init(coder).md",
       "hash": "ee361fcb79d36969de59dd7be0c26ba2d4b02b90a2886a775810937e0bf6716a"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarker/range": {
@@ -227,7 +227,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarker/range/init(coder:)": {
       "etag": "\"1baa-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarker/range/init-coder.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarker/range/init(coder).md",
       "hash": "38533aeeb567255b2c40396979425d3045015a2199856c1adac66f4cd8e24c9f"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarker/range/startmarker": {
@@ -242,62 +242,62 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitybounds(for:)": {
       "etag": "\"5c75-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitybounds-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitybounds(for).md",
       "hash": "ecf3865ede20eb22c47c6318968e0bdc6a743b28be6b92fddca6a7f002aaaac9"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitycontent(for:)": {
       "etag": "\"3888-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitycontent-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitycontent(for).md",
       "hash": "e2facf9d0598d3a232783a7bd40dfd36c626c7e3921515328b2dffd7c5d49aca"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitylineendmarker(for:)": {
       "etag": "\"5737-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitylineendmarker-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitylineendmarker(for).md",
       "hash": "8e5c2ec8f85969e80fa8a9826981fb93ae495668d689141ae6a341b8c3fc86bf"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitylinestartmarker(for:)": {
       "etag": "\"574f-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitylinestartmarker-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitylinestartmarker(for).md",
       "hash": "af451f2de5b2d930df6c2ceb03d334d091952f14673c8ad8a239d913b40125c3"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitymarker(for:)": {
       "etag": "\"58a4-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitymarker-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitymarker(for).md",
       "hash": "d52577365c84212863a4df60ec002d2e753d6dc71cd2b8fabd5165d303da5c1b"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitynexttextmarker(_:)": {
       "etag": "\"55d0-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitynexttextmarker.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitynexttextmarker(_).md",
       "hash": "c6e6a68f7ddaac621f6f691565547140425aec48640126b6a72e96920c83b5c9"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilityprevioustextmarker(_:)": {
       "etag": "\"55fd-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilityprevioustextmarker.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilityprevioustextmarker(_).md",
       "hash": "ff8c1fea4fd64a925241585c56b4d8c579cda1b06586ae052e4d7b5dd22631cc"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilityrange(for:)": {
       "etag": "\"54c4-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilityrange-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilityrange(for).md",
       "hash": "47a7ff9625fe11b5977792e95d78c19db7bc3bebc9a02b010150ed40282155b4"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitytextmarker(forposition:)": {
       "etag": "\"57f8-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarker-forposition.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarker(forposition).md",
       "hash": "ab6034bd1b8c36c01bcb39b87fb50ae48298acb457b7f510f272b63041e936d8"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange()": {
       "etag": "\"4da0-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange().md",
       "hash": "291d9174317c0b977bf0d3b39c89927c5ac0874c392db0838223ff6fa4dd7c41"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange(for:)": {
       "etag": "\"54e5-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange(for).md",
       "hash": "a15a8d1d2a5cce0414b0628f05f0d78295a7415c3bd0c357d1063df8f48f1b95"
     },
     "https://developer.apple.com/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrangeforcurrentselection()": {
       "etag": "\"4f9c-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrangeforcurrentselection.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrangeforcurrentselection().md",
       "hash": "05daa17b598ba3fc434442b795f7ccd86d693e7253136a4e9b836b165178485d"
     },
     "https://developer.apple.com/documentation/browserenginekit/beautofilltextsuggestion": {
@@ -317,12 +317,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/becontextmenuconfiguration/fulfill(using:)": {
       "etag": "\"408b-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/becontextmenuconfiguration/fulfill-using.md",
+      "file_path": "documentation/BrowserEngineKit/becontextmenuconfiguration/fulfill(using).md",
       "hash": "d532d865e13d0aedba8710d1f065dfdd8d9cfb9c42fe5964a244f3918c6191b7"
     },
     "https://developer.apple.com/documentation/browserenginekit/becontextmenuconfiguration/init()": {
       "etag": "\"1823-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/becontextmenuconfiguration/init.md",
+      "file_path": "documentation/BrowserEngineKit/becontextmenuconfiguration/init().md",
       "hash": "b0c6e5a82bb848557094f1b356ef50f53188796f07ee4c40c5e2958ec19ee3e1"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedirectionaltextrange": {
@@ -332,12 +332,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bedirectionaltextrange/init()": {
       "etag": "\"14d7-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedirectionaltextrange/init.md",
+      "file_path": "documentation/BrowserEngineKit/bedirectionaltextrange/init().md",
       "hash": "3b64bcf607266c52893e8f4d0b3f3125b480de7b9c320129dceef0d3d606e683"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedirectionaltextrange/init(offset:length:)": {
       "etag": "\"1b85-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedirectionaltextrange/init-offsetlength.md",
+      "file_path": "documentation/BrowserEngineKit/bedirectionaltextrange/init(offset,length).md",
       "hash": "d04f5179699b19ec22bf92655ff2c584d357bde1e8d594c73371059e538ebc61"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedirectionaltextrange/length": {
@@ -357,12 +357,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bedownloadmonitor-9bwls/beginmonitoring()": {
       "etag": "\"2780-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/beginmonitoring.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/beginmonitoring().md",
       "hash": "0e666db224706282c4565d70abeae1c585e3bb7c6a848e92dfd407e46035a851"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedownloadmonitor-9bwls/createaccesstoken()": {
       "etag": "\"1cde-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/createaccesstoken.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/createaccesstoken().md",
       "hash": "16ec9c0521a08a20fbd2d1fc083fb386cea6e2cc8583333f60e37572eb3fad89"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedownloadmonitor-9bwls/destinationurl": {
@@ -372,7 +372,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bedownloadmonitor-9bwls/init(sourceurl:destinationurl:observedprogress:liveactivityaccesstoken:)": {
       "etag": "\"2be0-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/init-sourceurldestinationurlobservedprogressliveactivityaccesstoken.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/init(sourceurl,destinationurl,observedprogress,liveactivityaccesstoken).md",
       "hash": "4f0c325852944d88b64683d95739f4450e1498c883ca83e6de0cec77903b3d90"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedownloadmonitor-9bwls/location": {
@@ -392,7 +392,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bedownloadmonitor-9bwls/resumemonitoring(placeholderurl:)": {
       "etag": "\"1da4-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/resumemonitoring-placeholderurl.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/resumemonitoring(placeholderurl).md",
       "hash": "c2a9064e32d7b868da3800bd3c4e2976f7d8dc17bc053f5153d3c860dada46f7"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedownloadmonitor-9bwls/sourceurl": {
@@ -402,7 +402,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bedownloadmonitor-9bwls/usedownloadsfolder(placeholdertype:finalfilecreatedhandler:)": {
       "etag": "\"2875-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/usedownloadsfolder-placeholdertypefinalfilecreatedhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/usedownloadsfolder(placeholdertype,finalfilecreatedhandler).md",
       "hash": "c800a19b87152b0a0166fd1b9c19bc3fdaddae0bc4221a68863d155d6837d1ca"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedraginteraction": {
@@ -417,7 +417,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bedraginteraction/init(delegate:)": {
       "etag": "\"2111-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedraginteraction/init-delegate.md",
+      "file_path": "documentation/BrowserEngineKit/bedraginteraction/init(delegate).md",
       "hash": "7135bab0c9395cc538d99e284e550bad6a8013583fa5d1e0e8ffbc5081be62d0"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedraginteractiondelegate": {
@@ -427,12 +427,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bedraginteractiondelegate/draginteraction(_:itemsforaddingto:fortouchat:completion:)": {
       "etag": "\"5be9-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedraginteractiondelegate/draginteraction-itemsforaddingtofortouchatcompletion.md",
+      "file_path": "documentation/BrowserEngineKit/bedraginteractiondelegate/draginteraction(_,itemsforaddingto,fortouchat,completion).md",
       "hash": "bacc356d983d64b966583a008e46d70ad05527457a487cd96da68ab41b59d298"
     },
     "https://developer.apple.com/documentation/browserenginekit/bedraginteractiondelegate/draginteraction(_:prepare:completion:)": {
       "etag": "\"45fd-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedraginteractiondelegate/draginteraction-preparecompletion.md",
+      "file_path": "documentation/BrowserEngineKit/bedraginteractiondelegate/draginteraction(_,prepare,completion).md",
       "hash": "8c7a460b8b62082b86d3ea9fe10fb053bb5b3f582517fbc7f746a88dcb60056d"
     },
     "https://developer.apple.com/documentation/browserenginekit/beextendedtextinputtraits": {
@@ -472,12 +472,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beextensionprocess/invalidate()": {
       "etag": "\"2180-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/beextensionprocess/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/beextensionprocess/invalidate().md",
       "hash": "2904b4715dfcc9ddfc5df5cf0582fa5128e43ec86962b562f29c85429fa71a54"
     },
     "https://developer.apple.com/documentation/browserenginekit/beextensionprocess/makelibxpcconnectionerror()": {
       "etag": "\"2fac-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/beextensionprocess/makelibxpcconnectionerror.md",
+      "file_path": "documentation/BrowserEngineKit/beextensionprocess/makelibxpcconnectionerror().md",
       "hash": "cd098c36f3901344b853a3283566785d2251b43ed0c438f23f77fd2aab093b82"
     },
     "https://developer.apple.com/documentation/browserenginekit/begesturetype": {
@@ -507,7 +507,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/begesturetype/init(rawvalue:)": {
       "etag": "\"1426-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/begesturetype/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/begesturetype/init(rawvalue).md",
       "hash": "5decadd68559a3a9e4808d1b21c10f389bb0b80cfe9b57325ca91b88c2d35eca"
     },
     "https://developer.apple.com/documentation/browserenginekit/begesturetype/loupe": {
@@ -567,7 +567,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bekeyentry/keypressstate/init(rawvalue:)": {
       "etag": "\"187d-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/bekeyentry/keypressstate/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/bekeyentry/keypressstate/init(rawvalue).md",
       "hash": "412242b43684542ab3a39dc4e9afe3815eb16bb2ca0473e36cfa6a6bc046a338"
     },
     "https://developer.apple.com/documentation/browserenginekit/bekeyentry/keypressstate/up": {
@@ -592,7 +592,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bekeyentrycontext/init(keyentry:)": {
       "etag": "\"2163-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/bekeyentrycontext/init-keyentry.md",
+      "file_path": "documentation/BrowserEngineKit/bekeyentrycontext/init(keyentry).md",
       "hash": "5f1f5604f9cecf78b91271e231aea6f37bd9f332e937d847dc0013613cb55e46"
     },
     "https://developer.apple.com/documentation/browserenginekit/bekeyentrycontext/isdocumenteditable": {
@@ -627,7 +627,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bekeymodifierflags/init(rawvalue:)": {
       "etag": "\"13c0-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/bekeymodifierflags/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/bekeymodifierflags/init(rawvalue).md",
       "hash": "3ed0b71500679c246dd1935b8a53eadb0bad975107310c304aa0b8a0193ce66c"
     },
     "https://developer.apple.com/documentation/browserenginekit/bekeymodifierflags/none": {
@@ -657,42 +657,42 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/berespondereditactions/addshortcut(_:)": {
       "etag": "\"3786-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/addshortcut.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/addshortcut(_).md",
       "hash": "1068e67bc6ef45fa627e1d6991485edf21f70cb2e0ab39af359f084df26b0410"
     },
     "https://developer.apple.com/documentation/browserenginekit/berespondereditactions/findselected(_:)": {
       "etag": "\"3570-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/findselected.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/findselected(_).md",
       "hash": "06ee3f1b94b183a644edb162f89c8c56f8a5713a4cd70012977e11bfa7e4cc67"
     },
     "https://developer.apple.com/documentation/browserenginekit/berespondereditactions/lookup(_:)": {
       "etag": "\"2d48-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/lookup.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/lookup(_).md",
       "hash": "28ea71a77070650507b212a4012d83f683fafdd3f18cae859049251f79898d0d"
     },
     "https://developer.apple.com/documentation/browserenginekit/berespondereditactions/promptforreplace(_:)": {
       "etag": "\"36ce-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/promptforreplace.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/promptforreplace(_).md",
       "hash": "8aee2db8130a1082f791e6754d15cf78d20c8579c0155fd1a4ef0cfcf47205be"
     },
     "https://developer.apple.com/documentation/browserenginekit/berespondereditactions/replace(_:)": {
       "etag": "\"37b2-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/replace.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/replace(_).md",
       "hash": "ec26cd95a949d828345839cd121071bd39ff7115315e20132bd625fc4b9c9bc9"
     },
     "https://developer.apple.com/documentation/browserenginekit/berespondereditactions/share(_:)": {
       "etag": "\"2ae8-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/share.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/share(_).md",
       "hash": "ab6d0a46f0083469d3a1a98eee22f3de0351345908a7c7a62dbe410be121bb24"
     },
     "https://developer.apple.com/documentation/browserenginekit/berespondereditactions/translate(_:)": {
       "etag": "\"2c28-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/translate.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/translate(_).md",
       "hash": "f056b6f4539ab8289821aca95cca0cff893c03486a75b3bbcc855ef1d3b0f3f1"
     },
     "https://developer.apple.com/documentation/browserenginekit/berespondereditactions/transliteratechinese(_:)": {
       "etag": "\"3894-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/transliteratechinese.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/transliteratechinese(_).md",
       "hash": "5e7da0a90494c1cd38618ffc7807fa234fcbd826382392c2179330e5418c8147"
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollview": {
@@ -712,12 +712,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewdelegate/parentscrollview(for:)": {
       "etag": "\"33a0-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewdelegate/parentscrollview-for.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewdelegate/parentscrollview(for).md",
       "hash": "8cfe43f76ea65b617cba75811a0554b8c6b857288a59d2c8e2c368ad36a566e7"
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewdelegate/scrollview(_:handle:completion:)": {
       "etag": "\"4aba-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewdelegate/scrollview-handlecompletion.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewdelegate/scrollview(_,handle,completion).md",
       "hash": "a9ebf4daac0548dfaf92a5a8052d11fea98eff2965a37a5ba677f54fd628f054"
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewscrollupdate": {
@@ -727,12 +727,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewscrollupdate/location(in:)": {
       "etag": "\"3172-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/location-in.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/location(in).md",
       "hash": "1c40bc8c86f85a62140ef315e5cbdc4711931c5dd92a46ed142b1017dd4e10e5"
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewscrollupdate/phase-swift.enum": {
       "etag": "\"5293-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swiftenum.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swift.enum.md",
       "hash": "63a31721489e34601f1dbfcd2079e13debd6e449ff91ae83203e5cac1cc30301"
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewscrollupdate/phase-swift.enum/began": {
@@ -757,12 +757,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewscrollupdate/phase-swift.enum/init(rawvalue:)": {
       "etag": "\"1a37-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swift.enum/init(rawvalue).md",
       "hash": "9e3f9e81cc1c8b5c784a1e99e380c64c4bf728c0f2c61e065eab4f63b3d185d7"
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewscrollupdate/phase-swift.property": {
       "etag": "\"4503-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swiftproperty.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swift.property.md",
       "hash": "d6a48f1f75ac4949bb4639d9f29c3dfa80c50390e99c129c44115f8048b89f72"
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewscrollupdate/timestamp": {
@@ -772,7 +772,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bescrollviewscrollupdate/translation(in:)": {
       "etag": "\"3348-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/translation-in.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/translation(in).md",
       "hash": "54d249142a865e932463dca0a435117487862c6c4775aa9b769cb12cfac18c58"
     },
     "https://developer.apple.com/documentation/browserenginekit/beselectionflags": {
@@ -782,7 +782,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beselectionflags/init(rawvalue:)": {
       "etag": "\"148e-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/beselectionflags/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beselectionflags/init(rawvalue).md",
       "hash": "63bbf1ada687dd6fe9f9d06c0f06c07076013fabf6b06b378138c26692b4ea5f"
     },
     "https://developer.apple.com/documentation/browserenginekit/beselectionflags/phraseboundarychanged": {
@@ -827,7 +827,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/beselectiontouchphase/init(rawvalue:)": {
       "etag": "\"14e2-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/beselectiontouchphase/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beselectiontouchphase/init(rawvalue).md",
       "hash": "2e3fc7fcc243b4c000d2fa8f12e86cbe6d85ea72aedfec53973e28c5b2b4b631"
     },
     "https://developer.apple.com/documentation/browserenginekit/beselectiontouchphase/moved": {
@@ -862,7 +862,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentcontext/addtextrect(_:forcharacterrange:)": {
       "etag": "\"2a03-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/addtextrect-forcharacterrange.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/addtextrect(_,forcharacterrange).md",
       "hash": "69c24a55573a8a8ad76aecab6c6e85c61914931f71a873f7695487cb3cdbbf31"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentcontext/autocorrectedranges": {
@@ -872,12 +872,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentcontext/init(attributedselectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:)": {
       "etag": "\"4613-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/init-attributedselectedtextcontextbeforecontextaftermarkedtextselectedrangeinmarkedtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/init(attributedselectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext).md",
       "hash": "a9d07be8ff90aa991dbac95124f093271a6aaf2ce640001bee325e5854f65df9"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentcontext/init(selectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:)": {
       "etag": "\"5428-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/init-selectedtextcontextbeforecontextaftermarkedtextselectedrangeinmarkedtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/init(selectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext).md",
       "hash": "39879c0d7c2f95ea3ae9ed4a79e6fe60872d592bf0b8c3ea938edf17c3f1e56d"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentrequest": {
@@ -892,12 +892,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentrequest/options-swift.property": {
       "etag": "\"26fe-65d55e20e41a6-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swiftproperty.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swift.property.md",
       "hash": "31bf7056fdcde467da1270c37eb32ec572dded62a88bb3b3b8b906b3f37807c7"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentrequest/options-swift.struct": {
       "etag": "\"7a55-65d55e20e41a6-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swiftstruct.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swift.struct.md",
       "hash": "a196be2455ba1119ce12654e34044b8f9c4af3898d0253475794b877baa2267c"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentrequest/options-swift.struct/attributedtext": {
@@ -912,7 +912,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentrequest/options-swift.struct/init(rawvalue:)": {
       "etag": "\"1b3e-65d55e20e41a6-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swift.struct/init(rawvalue).md",
       "hash": "27d1937656d81d6710a9d8ca5f1e5cc9698c943335b6c2c1475eaf2bb9a0ae41"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextdocumentrequest/options-swift.struct/markedtextrects": {
@@ -942,22 +942,22 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/add(_:)": {
       "etag": "\"3ed8-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/add.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/add(_).md",
       "hash": "a9826a3ca213bb8f0a0b606f6ea798d4795593c45893fae278dd536a663feba8"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/adjustselection(by:completionhandler:)": {
       "etag": "\"5a8c-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/adjustselection-bycompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/adjustselection(by,completionhandler).md",
       "hash": "2abd4ef97a4eadaa477b679a0f2be49b77f61b850c1cd5cd668757653c01724b"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/adjustselectionboundary(to:touchphase:baseisstart:flags:)": {
       "etag": "\"4fa2-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/adjustselectionboundary-totouchphasebaseisstartflags.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/adjustselectionboundary(to,touchphase,baseisstart,flags).md",
       "hash": "e235e8b3368254e197b20c491c97824a906536b24b1ed5f253fddeacb414839c"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/alternativesforselectedtext()": {
       "etag": "\"2475-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/alternativesforselectedtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/alternativesforselectedtext().md",
       "hash": "6f1a4704516b8d590f1064a37b026c1fbcd7aaba008affb01147b52222aff484"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/asyncinputdelegate": {
@@ -977,32 +977,32 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/autoscroll(to:)": {
       "etag": "\"311a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/autoscroll-to.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/autoscroll(to).md",
       "hash": "64091df3d012fc730d16d42b0247aadc49b2418011e9cc4fb5dd59ff63b1de9d"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/cancelautoscroll()": {
       "etag": "\"235b-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/cancelautoscroll.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/cancelautoscroll().md",
       "hash": "b9bf8767f29a01a49c7d02e3d48367aefd14b1a405ad8cecab7daa16c8d80c59"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/canperformaction(_:withsender:)": {
       "etag": "\"4414-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/canperformaction-withsender.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/canperformaction(_,withsender).md",
       "hash": "dd577a9996168cb1357e746cacf3edde26dfd8854784be106e3b0295df1e759f"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/caretrect(for:)": {
       "etag": "\"295a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/caretrect-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/caretrect(for).md",
       "hash": "a54a5922f4326e47b6e7217a6857b38751c74489fbc99659566f8f065e9521f8"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/delete(in:to:)": {
       "etag": "\"346b-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/delete-into.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/delete(in,to).md",
       "hash": "2be0270607c7b353e6ac4234c038394574048cfc2c3134407acbccba86c77197"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/didinsertfinaldictationresult()": {
       "etag": "\"1add-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/didinsertfinaldictationresult.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/didinsertfinaldictationresult().md",
       "hash": "d605391da514533487b02adbb8627cbbd5c8106bcff19ca573bd2bf48696a7f8"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/extendedtextinputtraits": {
@@ -1012,7 +1012,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/handlekeyentry(_:completionhandler:)": {
       "etag": "\"4928-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/handlekeyentry-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/handlekeyentry(_,completionhandler).md",
       "hash": "45dbcad21b74fd6acac9fb99b35dcc8697c22461e3b4f30255262a2136e46146"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/hasmarkedtext": {
@@ -1022,17 +1022,17 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/insert(_:)-5iryn": {
       "etag": "\"412b-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/insert-5iryn.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/insert(_)-5iryn.md",
       "hash": "8ae2db1b8bf45cbe6843bfaede60a7a4fb3090e1022493d0325d5c57909da21d"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/insert(_:)-6x7hd": {
       "etag": "\"3eeb-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/insert-6x7hd.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/insert(_)-6x7hd.md",
       "hash": "1e2641dc02e61ffc3f7f36450418027cd6331b19908dda49b1be23ace87436a7"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/inserttextplaceholder(size:completionhandler:)": {
       "etag": "\"3348-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/inserttextplaceholder-sizecompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/inserttextplaceholder(size,completionhandler).md",
       "hash": "cb34978176e91d359d2639e3afb6c77712ae5dc13763d3485c6dbfaf0b5b323f"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/iseditable": {
@@ -1042,7 +1042,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/ispointnearmarkedtext(_:)": {
       "etag": "\"36c1-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/ispointnearmarkedtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/ispointnearmarkedtext(_).md",
       "hash": "e1bcdd5067f6e35b04faa4615a787c27234c18cc9ad1f6c6852a795ea470ee3a"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/isreplaceallowed": {
@@ -1057,7 +1057,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/keyboardwilldismiss()": {
       "etag": "\"1cf0-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/keyboardwilldismiss.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/keyboardwilldismiss().md",
       "hash": "548ffc1e686f18add341e9779b33f003628996fd855c15dfe1b25b461cd4d098"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/markedtext": {
@@ -1072,62 +1072,62 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/move(byoffset:)": {
       "etag": "\"1ed2-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/move-byoffset.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/move(byoffset).md",
       "hash": "ffe9010b8c5c85aea270c9ad55aae22440f37850cdc0dfa85fbd686061dbf6e4"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/moveselection(atboundary:in:completionhandler:)": {
       "etag": "\"44cd-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/moveselection-atboundaryincompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/moveselection(atboundary,in,completionhandler).md",
       "hash": "4f4088be5750f0b644b24032237f8bae06375068dcc5d206f0672d7eead91e78"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/offset(from:to:)": {
       "etag": "\"2aa6-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/offset-fromto.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/offset(from,to).md",
       "hash": "9857231f260dc28318b3c7da7a55a48e4d40ec67292658cf8c93ecccc9536c63"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/remove(_:willinserttext:completionhandler:)": {
       "etag": "\"3391-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/remove-willinserttextcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/remove(_,willinserttext,completionhandler).md",
       "hash": "b1ccd5046f7273a0fa4a460d6c0ca770a93023a64a85b2c052d539ea9428e0ab"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/removetextalternatives()": {
       "etag": "\"1d47-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/removetextalternatives.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/removetextalternatives().md",
       "hash": "0007473312c4d970b3f4ca5a503d0d769a521e8cc23383a1d16174d76371bb1c"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/replacedictatedtext(_:withtext:)": {
       "etag": "\"3ef8-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/replacedictatedtext-withtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/replacedictatedtext(_,withtext).md",
       "hash": "70c6636f3ba2a325a3ca2244307256683f9cb7337e6841889d839d2274b3177c"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/replaceselectedtext(_:withtext:)": {
       "etag": "\"4922-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/replaceselectedtext-withtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/replaceselectedtext(_,withtext).md",
       "hash": "af41cf1cad244f1d0a21618eac0edf4a7a9e7c098ea38ecb49c0958a74ba65c8"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/replacetext(_:withtext:options:completionhandler:)": {
       "etag": "\"44d6-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/replacetext-withtextoptionscompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/replacetext(_,withtext,options,completionhandler).md",
       "hash": "f133a615f7d6e7ac7ddcce6e5a20dccdd83879dd3e79d196996ac1a22a9c5358"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/requestdocumentcontext(_:completionhandler:)": {
       "etag": "\"479a-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/requestdocumentcontext-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/requestdocumentcontext(_,completionhandler).md",
       "hash": "b309837ec74f69e9706700ee96b9436d1365008943ddf69800a91ff4e6556185"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/requestpreferredarrowdirectionforeditmenu(completionhandler:)": {
       "etag": "\"2c78-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/requestpreferredarrowdirectionforeditmenu-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/requestpreferredarrowdirectionforeditmenu(completionhandler).md",
       "hash": "8e241323bda23f9f5cebd33ff89393c1c5be9d7040a1872d55f4b7e2e71c7571"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/requesttextcontextforautocorrection(completionhandler:)": {
       "etag": "\"46f2-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/requesttextcontextforautocorrection-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/requesttextcontextforautocorrection(completionhandler).md",
       "hash": "c5cf2cfe9d3e21b6c5e2cef57f765b2f61ffa7c93485a28d09711bf5420640a7"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/requesttextrects(for:withcompletionhandler:)": {
       "etag": "\"472c-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/requesttextrects-forwithcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/requesttextrects(for,withcompletionhandler).md",
       "hash": "1d65a81be921e4a19893c9911d29725115cf96680ce39ce7f81ed2c9b04a68be"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/selectedtext": {
@@ -1157,72 +1157,72 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/selectionrects(for:)": {
       "etag": "\"2ab7-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selectionrects-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selectionrects(for).md",
       "hash": "a46b8b9e1c93fd28a6f559cf3d46a2adf4ca78fe6ab20a8694ce4304de7061f7"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/selectposition(at:completionhandler:)": {
       "etag": "\"5a27-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selectposition-atcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selectposition(at,completionhandler).md",
       "hash": "558a8c95739e71d3ff71db9c9cb9ffd78425dfdfac7191233092396d6d960fb2"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/selectposition(at:for:completionhandler:)": {
       "etag": "\"686b-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selectposition-atforcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selectposition(at,for,completionhandler).md",
       "hash": "87ca0e388275f96b7ebf4a8ab152966037325c0595905e6dd7993977186c8637"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/selecttext(in:at:completionhandler:)": {
       "etag": "\"397d-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selecttext-inatcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selecttext(in,at,completionhandler).md",
       "hash": "388252d688bc566be5eb3be6eade300de16ecf9f78d03a7b5c5df918c5bece14"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/selecttextforeditmenuwithlocation(inview:completionhandler:)": {
       "etag": "\"47f6-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selecttextforeditmenuwithlocation-inviewcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selecttextforeditmenuwithlocation(inview,completionhandler).md",
       "hash": "bdb8a40ce14b29ea683dcf8ded36168b3647a6e795fec81f7dfd752189db7c97"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/selectwordforreplacement()": {
       "etag": "\"211a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selectwordforreplacement.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selectwordforreplacement().md",
       "hash": "39316cf615b437e00db55f90f77e9df0cb6a8f5f8170f814adfc8a8c2d798e58"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/setattributedmarkedtext(_:selectedrange:)": {
       "etag": "\"2541-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/setattributedmarkedtext-selectedrange.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/setattributedmarkedtext(_,selectedrange).md",
       "hash": "6ccf94dd325206f4fc831df39445d9821ac8097b4623d7c983d1ea2d8661014b"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/setbasewritingdirection(_:for:)": {
       "etag": "\"2d48-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/setbasewritingdirection-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/setbasewritingdirection(_,for).md",
       "hash": "114642df28b5c33bc8361f1d4674aae78f304694b4913ba9590847f668dd957c"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/setmarkedtext(_:selectedrange:)": {
       "etag": "\"252a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/setmarkedtext-selectedrange.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/setmarkedtext(_,selectedrange).md",
       "hash": "e9d3d5f3ed2b6c4a73b553ddc78cc459b4a0928670360719da1812a60c3be5d2"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/setselection(from:to:gesture:state:)": {
       "etag": "\"4249-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/setselection-fromtogesturestate.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/setselection(from,to,gesture,state).md",
       "hash": "f243225b93c15d1a0ea0ec626073b12768e19d65b7ee5d0d7d832754261fc510"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/shiftkeystatechanged(fromstate:tostate:)": {
       "etag": "\"2ef0-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/shiftkeystatechanged-fromstatetostate.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/shiftkeystatechanged(fromstate,tostate).md",
       "hash": "8040e185b414a1f2aa167b4fa7ce06503ead2f0553b8726cade5e2a747676cc7"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/systemwilldismisseditmenu(withanimator:)": {
       "etag": "\"22f4-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/systemwilldismisseditmenu-withanimator.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/systemwilldismisseditmenu(withanimator).md",
       "hash": "5ec99f0651767fd92086751678d0f010a8746efdfcb2e50043ef6cbc66f310d1"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/systemwillpresenteditmenu(withanimator:)": {
       "etag": "\"22f4-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/systemwillpresenteditmenu-withanimator.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/systemwillpresenteditmenu(withanimator).md",
       "hash": "597402255d1544256d9de6dfb74b78d4148d939f25b180bee5fcc437b627c549"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/text(in:)": {
       "etag": "\"2948-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/text-in.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/text(in).md",
       "hash": "e98af56038717a32ec050ce66a71fb5f7e3bc9df13488cb66b46013b1de5dd79"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/textfirstrect": {
@@ -1237,7 +1237,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/textinteractiongesture(_:shouldbeginat:)": {
       "etag": "\"37ec-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/textinteractiongesture-shouldbeginat.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/textinteractiongesture(_,shouldbeginat).md",
       "hash": "660db478f3f5db3cafc82c50163fcacd54895f0a893967ac2fe21b8b7d1a7e70"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/textlastrect": {
@@ -1247,17 +1247,17 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/textstyling(at:in:)": {
       "etag": "\"3618-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/textstyling-atin.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/textstyling(at,in).md",
       "hash": "dec877b5871efaee946a071ac090fc91277fbaf38c4f8a11f4017db6b8e3d35d"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/transposecharactersaroundselection()": {
       "etag": "\"226a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/transposecharactersaroundselection.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/transposecharactersaroundselection().md",
       "hash": "04133baa83c566a937aa5c0d407ecd4abed4e4b069f9005566dfc984e4bfc046"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/unmarktext()": {
       "etag": "\"2aab-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/unmarktext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/unmarktext().md",
       "hash": "f458ef54648f9e2e78605ec81a6b0e56b59f801a712fb91ca669c519e41f4efd"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/unobscuredcontentrect": {
@@ -1272,17 +1272,17 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/updatecurrentselection(to:from:in:)": {
       "etag": "\"72c2-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/updatecurrentselection-tofromin.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/updatecurrentselection(to,from,in).md",
       "hash": "c79a1d9034febcdbfbcdef54d56fac831fefc6439447dc56682e9491e590ab65"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/updateselection(extent:boundary:completionhandler:)": {
       "etag": "\"41ea-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/updateselection-extentboundarycompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/updateselection(extent,boundary,completionhandler).md",
       "hash": "662f1fba8ac1cfaae1151570062a7103081517a464e01138bd7081c828c0dfa5"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinput/willinsertfinaldictationresult()": {
       "etag": "\"1ae4-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/willinsertfinaldictationresult.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/willinsertfinaldictationresult().md",
       "hash": "c41db214d49e259fc8bf6c768e9db006b44b5940697ab1b2b798e8b150b77c78"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinputdelegate": {
@@ -1292,32 +1292,32 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinputdelegate/invalidatetextentrycontext(for:)": {
       "etag": "\"25af-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/invalidatetextentrycontext-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/invalidatetextentrycontext(for).md",
       "hash": "c9b268e3e49e8b3b71350b49886a46b40e84e0c46fbc56706825028778aeb560"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinputdelegate/selectiondidchange(for:)": {
       "etag": "\"2c3c-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/selectiondidchange-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/selectiondidchange(for).md",
       "hash": "c4ddaccedb8bf24b3c4b62a71f7888e151d51e80f4f5cea2c33ff9502e633cc8"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinputdelegate/selectionwillchange(for:)": {
       "etag": "\"2ae1-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/selectionwillchange-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/selectionwillchange(for).md",
       "hash": "075e60554f8e8d4093f0b8b808a16bbbfb5669ad28df155945d0d007b4d5611f"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinputdelegate/shoulddefereventhandlingtosystem(for:context:)": {
       "etag": "\"554c-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/shoulddefereventhandlingtosystem-forcontext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/shoulddefereventhandlingtosystem(for,context).md",
       "hash": "a196664f1ccd4f393deb8dbfc6b3fbae5c4c1f4990dd45087d6c02c380fea6d9"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinputdelegate/textinput(_:deferreplacetextactiontosystem:)": {
       "etag": "\"3205-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/textinput-deferreplacetextactiontosystem.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/textinput(_,deferreplacetextactiontosystem).md",
       "hash": "8f0126d96f262c7aa551cbb83279563f0300a8b927a741341b5104425d35b06b"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinputdelegate/textinput(_:setcandidatesuggestions:)": {
       "etag": "\"2cea-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/textinput-setcandidatesuggestions.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/textinput(_,setcandidatesuggestions).md",
       "hash": "9f65ee6e1af826e7cc9c604c12db88cd21df08abec68bc26bdba8f36628dd7f5"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction": {
@@ -1327,7 +1327,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/addshortcut(fortext:from:)": {
       "etag": "\"30a1-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/addshortcut-fortextfrom.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/addshortcut(fortext,from).md",
       "hash": "3e1aaa0b762f4f6254b5577b4f6a5063aa4f6ad9a3a8985383a4fe7a925fd0bc"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/contextmenuinteraction": {
@@ -1347,47 +1347,47 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/dismisseditmenuforselection()": {
       "etag": "\"2db4-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/dismisseditmenuforselection.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/dismisseditmenuforselection().md",
       "hash": "0c91f32eb0fe19dc8f9f9b025b606d9b848ebf36de9fa49d0746aeaa2907dbc1"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/editabilitychanged()": {
       "etag": "\"2185-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/editabilitychanged.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/editabilitychanged().md",
       "hash": "4e1eb0a1e79887e66abdfb4f189338ea3d0ded369f82ae3e02e60017d5e7abd4"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/presenteditmenuforselection()": {
       "etag": "\"2db2-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/presenteditmenuforselection.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/presenteditmenuforselection().md",
       "hash": "326d8ccd03522b0931464dd0569bf47762ec9efce402ae4d1e5f4ab161e7ae9a"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/refreshkeyboardui()": {
       "etag": "\"21c6-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/refreshkeyboardui.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/refreshkeyboardui().md",
       "hash": "017ca0957af3a46097e6bd883464761485ed220b6282e47dd40bf7065c0aac7c"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/selectionboundaryadjusted(to:touchphase:flags:)": {
       "etag": "\"5b9c-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/selectionboundaryadjusted-totouchphaseflags.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/selectionboundaryadjusted(to,touchphase,flags).md",
       "hash": "9a04672c86fa1998ad858e108bd679bd2dfe86bb4515c0c4b4fb420253e6e6ec"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/selectionchangedwithgesture(at:gesture:state:flags:)": {
       "etag": "\"66d8-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/selectionchangedwithgesture-atgesturestateflags.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/selectionchangedwithgesture(at,gesture,state,flags).md",
       "hash": "41afd666f062a15c4405c31a09bda769e9819688446ddae1be32ffd7943eb89f"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/share(text:from:)": {
       "etag": "\"3540-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/share-textfrom.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/share(text,from).md",
       "hash": "38c11487c1a30b9e46259288effee63089910070b65f5eaa63353108ddf2c71c"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/showdictionary(fortextincontext:definingtextinrange:from:)": {
       "etag": "\"3b26-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/showdictionary-fortextincontextdefiningtextinrangefrom.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/showdictionary(fortextincontext,definingtextinrange,from).md",
       "hash": "5272e4c56f3f0eda64b99e14995cc6e2038459f35bf711f6c4b740b9ef7bbacd"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/showreplacements(fortext:)": {
       "etag": "\"318c-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/showreplacements-fortext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/showreplacements(fortext).md",
       "hash": "5004dbc32dd49cb71f8d67998666f1c66a32699d2fd92bbe48c14afd9f7fd1fc"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/textselectiondisplayinteraction": {
@@ -1397,12 +1397,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/translate(text:from:)": {
       "etag": "\"330f-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/translate-textfrom.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/translate(text,from).md",
       "hash": "bea530b3ca37db8c152cac19f01a71c557aaea4160bc89ded794e65b9b37ee7d"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteraction/transliteratechinese(fortext:)": {
       "etag": "\"3359-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/transliteratechinese-fortext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/transliteratechinese(fortext).md",
       "hash": "37b7120cc7ebe77bb63732262d87d8e2179be659568a9da206023285bc0d2f61"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteractiondelegate": {
@@ -1412,12 +1412,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteractiondelegate/systemdidchangeselection(for:)": {
       "etag": "\"2d71-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteractiondelegate/systemdidchangeselection-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteractiondelegate/systemdidchangeselection(for).md",
       "hash": "09a8d708c95492097aef4e9f5bbfccb402cbe6946ae321d4144b14a1fd2f7d37"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextinteractiondelegate/systemwillchangeselection(for:)": {
       "etag": "\"2d7a-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteractiondelegate/systemwillchangeselection-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteractiondelegate/systemwillchangeselection(for).md",
       "hash": "5b6bbbc71a17bccbf08e90bf1bea198c70b49854b1fdf4511d9b1955aba43acb"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextreplacementoptions": {
@@ -1432,7 +1432,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextreplacementoptions/init(rawvalue:)": {
       "etag": "\"150a-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextreplacementoptions/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/betextreplacementoptions/init(rawvalue).md",
       "hash": "da64c05e8931fee1b9cf4029798f4aef8ec8b230bc037b1e5ecccbccf515e1cc"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextselectiondirectionnavigation": {
@@ -1442,22 +1442,22 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextselectiondirectionnavigation/extend(in:)": {
       "etag": "\"2bb7-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/extend-in.md",
+      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/extend(in).md",
       "hash": "aff16d1440a00e5a5acfd2226a676589acc03d81d4e7a93fb2fdbb922be361be"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextselectiondirectionnavigation/extend(in:by:)": {
       "etag": "\"343d-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/extend-inby.md",
+      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/extend(in,by).md",
       "hash": "01da2786af63141cacbf04fdc885324232f332edf4aa70fd5c48a65e3d82b2d0"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextselectiondirectionnavigation/move(in:)": {
       "etag": "\"2b1a-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/move-in.md",
+      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/move(in).md",
       "hash": "6532afd4efdcbb74b161b98ee5568ba941dbba989a631dc3f04b44451501299a"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextselectiondirectionnavigation/move(in:by:)": {
       "etag": "\"3397-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/move-inby.md",
+      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/move(in,by).md",
       "hash": "8d6f8008c524e7a284934e800c9b2b9a580f249cbd130c3202f84a6da5012179"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextsuggestion": {
@@ -1467,7 +1467,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/betextsuggestion/init(inputtext:)": {
       "etag": "\"2114-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextsuggestion/init-inputtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextsuggestion/init(inputtext).md",
       "hash": "1c48e36c30bd52db6444600c67dfeacb65c8e552fe050a0087bf5888af7c20b5"
     },
     "https://developer.apple.com/documentation/browserenginekit/betextsuggestion/inputtext": {
@@ -1482,12 +1482,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebappmanifest/init(jsondata:manifesturl:)-3azfg": {
       "etag": "\"304e-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebappmanifest/init-jsondatamanifesturl-3azfg.md",
+      "file_path": "documentation/BrowserEngineKit/bewebappmanifest/init(jsondata,manifesturl)-3azfg.md",
       "hash": "2e8e6086a94140c11a1f0baec948d63af659afe7682a220bef66f4bf61376e61"
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebappmanifest/init(jsondata:manifesturl:)-4zjpz": {
       "etag": "\"20d6-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebappmanifest/init-jsondatamanifesturl-4zjpz.md",
+      "file_path": "documentation/BrowserEngineKit/bewebappmanifest/init(jsondata,manifesturl)-4zjpz.md",
       "hash": "443f3fcc42953f5f4def406b3da301a141dfd5e064a45e7d5909cd66da99ac43"
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebappmanifest/jsondata": {
@@ -1507,17 +1507,17 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebcontentfilter/allow(_:completionhandler:)": {
       "etag": "\"3da9-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/allow-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/allow(_,completionhandler).md",
       "hash": "ad464a6f762678ea333124315d939d3cfc92e78efeaf70510152a3ef01cf1068"
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebcontentfilter/evaluateurl(_:completionhandler:)": {
       "etag": "\"4650-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/evaluateurl-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/evaluateurl(_,completionhandler).md",
       "hash": "c8565f0aaa67e769cb622d77f52af22794b0b6e81609401e383caf6cd3d7b2fa"
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebcontentfilter/evaluateurl(_:mainframeurl:ismainframe:completionhandler:)": {
       "etag": "\"4e80-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/evaluateurl-mainframeurlismainframecompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/evaluateurl(_,mainframeurl,ismainframe,completionhandler).md",
       "hash": "a5f40776ae3a45af682bc9275a3c3fc52a1b934c182041576ee3f564f14fe437"
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebcontentfilter/permissiondecision": {
@@ -1542,7 +1542,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebcontentfilter/permissiondecision/init(rawvalue:)": {
       "etag": "\"193f-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/permissiondecision/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/permissiondecision/init(rawvalue).md",
       "hash": "f75f8a56bec98188a2d0cf56cd5396a04b98f83f12f9c1e68683923eb703ee3e"
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebcontentfilter/permissiondecision/pending": {
@@ -1552,7 +1552,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebcontentfilter/requestpermission(for:referrerurl:presenting:completionhandler:)": {
       "etag": "\"56d6-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/requestpermission-forreferrerurlpresentingcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/requestpermission(for,referrerurl,presenting,completionhandler).md",
       "hash": "ec197afb878b39d501b86d6dc3b6e7a7e7a114079fba7b8f7eba601b64c390a9"
     },
     "https://developer.apple.com/documentation/browserenginekit/bewebcontentfilter/shouldevaluateurls": {
@@ -1612,12 +1612,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchy/init()": {
       "etag": "\"25f1-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchy/init.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchy/init().md",
       "hash": "0a6deed358f6cc072a2677475e089143caf3857f6ddc3c22ee5f38b04aba902a"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchy/invalidate()": {
       "etag": "\"2855-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchy/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchy/invalidate().md",
       "hash": "28dc9796da976114a0e2f5fb934e217d4e1e789046512ce2107b2fd7dbdf9c5f"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchy/layer": {
@@ -1632,27 +1632,27 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhandle/createxpcrepresentation()": {
       "etag": "\"26d2-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/createxpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/createxpcrepresentation().md",
       "hash": "9bcffcc17930cf59702d35b10e7dc4963eca2b06a251eba3269085749fbb004c"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhandle/encode(_:)": {
       "etag": "\"4082-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/encode.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/encode(_).md",
       "hash": "5899cab78bd5b9e3a4ba48ebb48ddadc5fe853649ddb0915336a64ea17b1fbd4"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhandle/init(coder:)": {
       "etag": "\"165a-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init-coder.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init(coder).md",
       "hash": "1250d52e9f0a41f169322e469cd3b7b77c6442953fa147e0cee824943c6fc357"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhandle/init(port:data:)": {
       "etag": "\"3aae-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init-portdata.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init(port,data).md",
       "hash": "33e18d781b907a465f4d06edd3e48efdb6008e5cd3af2639a4e6270bfa646c6b"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhandle/init(xpcrepresentation:)": {
       "etag": "\"3034-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init-xpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init(xpcrepresentation).md",
       "hash": "8e07cd2c9e6e3833c347af10c8a9b89d453dc5859327996c8c6c529ecb228991"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator": {
@@ -1662,47 +1662,47 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/add(_:)-7day0": {
       "etag": "\"38ff-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/add-7day0.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/add(_)-7day0.md",
       "hash": "93380e4aff4037a5e1cd86c696c73d0a5e2f8c42280ccb40c7a64a8438d55d5f"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/add(_:)-i66q": {
       "etag": "\"382d-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/add-i66q.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/add(_)-i66q.md",
       "hash": "c4908e01358aecb8051dec81b1b8ad99b1558a4671788aeef02351bfcfffea4d"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/commit()": {
       "etag": "\"3d69-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/commit.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/commit().md",
       "hash": "62c5e88eef2f0998ce56ba90eb176548d7d841d0cf2dfad41f14ece86586d1fc"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/createxpcrepresentation()": {
       "etag": "\"2985-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/createxpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/createxpcrepresentation().md",
       "hash": "b1715f12548c98b4b00ce3ab757e47ffb2b15b161c8b7dbd727cb7c130dfe73c"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/encode(_:)": {
       "etag": "\"3ecb-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/encode.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/encode(_).md",
       "hash": "60096b44272509a64223e48581dac972f9c667eef3b645238057890813ae0dc5"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/init()": {
       "etag": "\"277b-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init().md",
       "hash": "43664b2dc030d09894715a99b9c40822c9e60ec5f95d5f035a8455cc7944310d"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/init(coder:)": {
       "etag": "\"1f49-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init-coder.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init(coder).md",
       "hash": "2190253d665dab5288b810a3d81423c85e3031f6773de0aff86547f2fb604a39"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/init(port:data:)": {
       "etag": "\"3df9-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init-portdata.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init(port,data).md",
       "hash": "527687d0c4270b6f58629055dc9db5bc50170002a4f2fee1dac943b9870967e4"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/init(xpcrepresentation:)": {
       "etag": "\"34a5-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init-xpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init(xpcrepresentation).md",
       "hash": "77e93f096a45fa04c673972b7ec2ba8293da4c34033988d9b49cfe16b29f9436"
     },
     "https://developer.apple.com/documentation/browserenginekit/layerhierarchyhostingview": {
@@ -1732,32 +1732,32 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/mediaenvironment/activate()": {
       "etag": "\"168a-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/activate.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/activate().md",
       "hash": "0b72ceb850d0a362439e05c8311374ac157385d2abab9118477d64b82bdcab08"
     },
     "https://developer.apple.com/documentation/browserenginekit/mediaenvironment/createxpcrepresentation()": {
       "etag": "\"13d5-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/createxpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/createxpcrepresentation().md",
       "hash": "a90fe4d52f98cac3cea62881fb46b279860b5c0f98882be6c74207313fc7e7ed"
     },
     "https://developer.apple.com/documentation/browserenginekit/mediaenvironment/init(webpage:)": {
       "etag": "\"172c-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/init-webpage.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/init(webpage).md",
       "hash": "4c68eff1dcf44d785ad496f562f25802f5c0617aa06023445cc83b5469f17691"
     },
     "https://developer.apple.com/documentation/browserenginekit/mediaenvironment/init(xpcrepresentation:)": {
       "etag": "\"189a-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/init-xpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/init(xpcrepresentation).md",
       "hash": "f2d644c1ec9b39b41273b0b384892dd28a0bbdc6a35c8afee097ee89383e0465"
     },
     "https://developer.apple.com/documentation/browserenginekit/mediaenvironment/makecapturesession()": {
       "etag": "\"1be1-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/makecapturesession.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/makecapturesession().md",
       "hash": "239b6987c6693bc0256a5cb40eaecd94e76ff824901743bda823d43dcd7e0960"
     },
     "https://developer.apple.com/documentation/browserenginekit/mediaenvironment/suspend()": {
       "etag": "\"1681-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/suspend.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/suspend().md",
       "hash": "381298915c79f5b9d8338a8d44334c5a445d4152d437bbc01c9cbd82392c22dd"
     },
     "https://developer.apple.com/documentation/browserenginekit/networkingextension": {
@@ -1767,7 +1767,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/networkingextension/handle(xpcconnection:)": {
       "etag": "\"27e3-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingextension/handle-xpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/networkingextension/handle(xpcconnection).md",
       "hash": "2e376151c7acb0f2e94739d7104465b271ebf8349cb865ca31b5c784cc0570ae"
     },
     "https://developer.apple.com/documentation/browserenginekit/networkingextensionconfiguration": {
@@ -1782,27 +1782,27 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/networkingprocess/grantcapability(_:)": {
       "etag": "\"279b-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/grantcapability.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/grantcapability(_).md",
       "hash": "22be8b3e3f39d1e3daed5804bfd398285193d6cde3dc3cd03f2caf04abf037c1"
     },
     "https://developer.apple.com/documentation/browserenginekit/networkingprocess/grantcapability(_:invalidationhandler:)": {
       "etag": "\"2d2b-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/grantcapability-invalidationhandler.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/grantcapability(_,invalidationhandler).md",
       "hash": "7e3ca96c13152b0e818e8b0400c3641cab728283f26206244ba94e335a8f8d2d"
     },
     "https://developer.apple.com/documentation/browserenginekit/networkingprocess/init(bundleidentifier:oninterruption:)": {
       "etag": "\"2199-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/init-bundleidentifieroninterruption.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/init(bundleidentifier,oninterruption).md",
       "hash": "3ab4c218afba8764b17ceecb3f53f6d8a957830d99026f1081f635bafad6e6af"
     },
     "https://developer.apple.com/documentation/browserenginekit/networkingprocess/invalidate()": {
       "etag": "\"1645-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/invalidate().md",
       "hash": "2e1482dc73fb65dffff0a043074eab1791b40ad906f17c7462a92b693b6d779f"
     },
     "https://developer.apple.com/documentation/browserenginekit/networkingprocess/makelibxpcconnection()": {
       "etag": "\"1b29-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/makelibxpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/makelibxpcconnection().md",
       "hash": "0b7f95081c1d53cecbbb536d857bad4d3c61ded83d73b14f8f0b82aa8389e8b1"
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability": {
@@ -1812,7 +1812,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/activate()": {
       "etag": "\"f7d-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/activate.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/activate().md",
       "hash": "22789eb59830711d597e258453fb1332886bb9c87c52d03ed084950f3c2da4fa"
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/background": {
@@ -1832,7 +1832,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/grant/invalidate()": {
       "etag": "\"17df-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/grant/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/grant/invalidate().md",
       "hash": "b3970beea88a4416827635b90f8d25eee4b724b3e85a3d0243733dcf4b359d2b"
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/grant/isvalid": {
@@ -1842,22 +1842,22 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/mediaplaybackandcapture(environment:)": {
       "etag": "\"24a5-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/mediaplaybackandcapture-environment.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/mediaplaybackandcapture(environment).md",
       "hash": "b2962b9cd47e76c3e877572ebd7cfcd8678ef908e0fcc4f77ee3f97a9665581f"
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/request()": {
       "etag": "\"165e-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/request.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/request().md",
       "hash": "dc32f975a4aa4c4f8bc6abcaed5f5d04d2256d3e446571b648503ac3a2b1e698"
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/screencapture(environment:)": {
       "etag": "\"146f-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/screencapture-environment.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/screencapture(environment).md",
       "hash": "c94e6ca0c8c0774f2e56363f395129b9e22f76edb6cdf17031de7194069e55ae"
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/suspend()": {
       "etag": "\"f70-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/suspend.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/suspend().md",
       "hash": "1cfaef5726cdc7ba9cb0225babcacc0d057090ab3d5820fe9ff1a8b79f2b903d"
     },
     "https://developer.apple.com/documentation/browserenginekit/processcapability/suspended": {
@@ -1882,12 +1882,12 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingextension/enablefeature(_:)": {
       "etag": "\"140c-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingextension/enablefeature.md",
+      "file_path": "documentation/BrowserEngineKit/renderingextension/enablefeature(_).md",
       "hash": "c3f508582b1c7e05feee621dfa91a3003b86318dc2bab1a7724d911f36498e9f"
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingextension/handle(xpcconnection:)": {
       "etag": "\"27d1-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingextension/handle-xpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/renderingextension/handle(xpcconnection).md",
       "hash": "7ae11572e6dc2124a5adec430c19eee393aaf0f0bb8ffc00c84f5fdf5a3e496a"
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingextensionconfiguration": {
@@ -1912,32 +1912,32 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingprocess/createvisibilitypropagationinteraction()": {
       "etag": "\"1e47-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/createvisibilitypropagationinteraction.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/createvisibilitypropagationinteraction().md",
       "hash": "e9008caf372e7e9d1bd68a0d097973496269c78cd6f4f2a5ac656f3d28d27a05"
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingprocess/grantcapability(_:)": {
       "etag": "\"2b46-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/grantcapability.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/grantcapability(_).md",
       "hash": "c991e7bf77e97e85d47c5b1f939c35808262bb1f32f7a15323ad02098885a293"
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingprocess/grantcapability(_:invalidationhandler:)": {
       "etag": "\"30c2-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/grantcapability-invalidationhandler.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/grantcapability(_,invalidationhandler).md",
       "hash": "794e445a8ae0f5ecf259eaa9f2deaf83eaee3e68c97a03065042220e7e48f7c0"
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingprocess/init(bundleidentifier:oninterruption:)": {
       "etag": "\"2175-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/init-bundleidentifieroninterruption.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/init(bundleidentifier,oninterruption).md",
       "hash": "467b51f91de357e791dca9ae8d1e1e9b9cc297a66f9da691ee136a2bc8185e92"
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingprocess/invalidate()": {
       "etag": "\"1627-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/invalidate().md",
       "hash": "a5e179891e07b18ecc2a40deb28c470cab15ca8a2388c46dee6723651bf69e03"
     },
     "https://developer.apple.com/documentation/browserenginekit/renderingprocess/makelibxpcconnection()": {
       "etag": "\"1b0e-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/makelibxpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/makelibxpcconnection().md",
       "hash": "7f47ede177c6a122aefe28fc954fa3af77249c51eab6d72fde4a0a4aa1ebc039"
     },
     "https://developer.apple.com/documentation/browserenginekit/restrictedsandboxappliable": {
@@ -1947,7 +1947,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/restrictedsandboxappliable/applyrestrictedsandbox(revision:)": {
       "etag": "\"24aa-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/restrictedsandboxappliable/applyrestrictedsandbox-revision.md",
+      "file_path": "documentation/BrowserEngineKit/restrictedsandboxappliable/applyrestrictedsandbox(revision).md",
       "hash": "646bba96dd5104894cfe8786b419be209cd288a2333e1e5b572ecf03fbe66307"
     },
     "https://developer.apple.com/documentation/browserenginekit/restrictedsandboxrevision": {
@@ -1992,7 +1992,7 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/webcontentextension/handle(xpcconnection:)": {
       "etag": "\"27db-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentextension/handle-xpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentextension/handle(xpcconnection).md",
       "hash": "adee5447592cfd53b295800a959bfc50d96b343e7a638a52aac213c419e50eb5"
     },
     "https://developer.apple.com/documentation/browserenginekit/webcontentextensionconfiguration": {
@@ -2007,32 +2007,32 @@
     },
     "https://developer.apple.com/documentation/browserenginekit/webcontentprocess/createvisibilitypropagationinteraction()": {
       "etag": "\"1e59-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/createvisibilitypropagationinteraction.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/createvisibilitypropagationinteraction().md",
       "hash": "e9a6f02316c66eb1cbc054f0920b207ca571ec96db21eb910c03940309a16db9"
     },
     "https://developer.apple.com/documentation/browserenginekit/webcontentprocess/grantcapability(_:)": {
       "etag": "\"2b6f-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/grantcapability.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/grantcapability(_).md",
       "hash": "babd52eea7dfd60f95afc336e8d2bf8c0de2b86f028f9d41bd8d1fa523698422"
     },
     "https://developer.apple.com/documentation/browserenginekit/webcontentprocess/grantcapability(_:invalidationhandler:)": {
       "etag": "\"30df-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/grantcapability-invalidationhandler.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/grantcapability(_,invalidationhandler).md",
       "hash": "aa6107b96583bfa29fbff5fc1d25a5e646699c6d37d2f4a5667595d23afe6a11"
     },
     "https://developer.apple.com/documentation/browserenginekit/webcontentprocess/init(bundleidentifier:oninterruption:)": {
       "etag": "\"2065-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/init-bundleidentifieroninterruption.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/init(bundleidentifier,oninterruption).md",
       "hash": "d81d02ad3d4910b83e79b366bbd3d289a174b3936e03aa0a3eec5c48342429a4"
     },
     "https://developer.apple.com/documentation/browserenginekit/webcontentprocess/invalidate()": {
       "etag": "\"163d-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/invalidate().md",
       "hash": "32e18f5f205949d67be55eaf384464ccdf4c9ddff1a639bf5b5e9ed8998da5d1"
     },
     "https://developer.apple.com/documentation/browserenginekit/webcontentprocess/makelibxpcconnection()": {
       "etag": "\"1b25-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/makelibxpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/makelibxpcconnection().md",
       "hash": "277756eb888eafc7b31234c849aa9f2c2b7fd9e5648e8c29d6d0becb65365758"
     },
     "https://developer.apple.com/tutorials/data/documentation/BrowserEngineKit.json": {
@@ -2127,7 +2127,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitycontainertype/init(rawvalue:).json": {
       "etag": "\"1483-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitycontainertype/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitycontainertype/init(rawvalue).md",
       "hash": "9b87f53e78425b08e4389a3c5ba00f8e0b36c529ad88e57ae6ac8d4896465df4"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitycontainertype/landmark.json": {
@@ -2172,7 +2172,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilityorientation/init(rawvalue:).json": {
       "etag": "\"144b-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilityorientation/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilityorientation/init(rawvalue).md",
       "hash": "212cb1ef22862570b576542e3e55df05c7ff218ccfa0827333a04f918004c9bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilityorientation/unknown.json": {
@@ -2197,7 +2197,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitypressedstate/init(rawvalue:).json": {
       "etag": "\"147f-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitypressedstate/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitypressedstate/init(rawvalue).md",
       "hash": "077fa70998b10afc521f0a0624fc50fd9f7db6710db442d389ab0e980d212ad9"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitypressedstate/mixed.json": {
@@ -2222,7 +2222,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilityremoteelement/init(identifier:hostpid:).json": {
       "etag": "\"2c52-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilityremoteelement/init-identifierhostpid.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilityremoteelement/init(identifier,hostpid).md",
       "hash": "5d99dd2c80380dc0095c64bd57f49a4daa116e4af2fa507ee8e5de3d7cd485e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilityremotehostelement.json": {
@@ -2237,7 +2237,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilityremotehostelement/init(identifier:remotepid:).json": {
       "etag": "\"2b7d-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilityremotehostelement/init-identifierremotepid.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilityremotehostelement/init(identifier,remotepid).md",
       "hash": "dc4b1a863d3f25f414ff45d8bf41e584ea757336d67cbced6f9df96d9c67864d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarker.json": {
@@ -2247,7 +2247,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarker/init(coder:).json": {
       "etag": "\"1604-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarker/init-coder.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarker/init(coder).md",
       "hash": "ee361fcb79d36969de59dd7be0c26ba2d4b02b90a2886a775810937e0bf6716a"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarker/range.json": {
@@ -2262,7 +2262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarker/range/init(coder:).json": {
       "etag": "\"1baa-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarker/range/init-coder.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarker/range/init(coder).md",
       "hash": "38533aeeb567255b2c40396979425d3045015a2199856c1adac66f4cd8e24c9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarker/range/startmarker.json": {
@@ -2277,62 +2277,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitybounds(for:).json": {
       "etag": "\"5c75-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitybounds-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitybounds(for).md",
       "hash": "ecf3865ede20eb22c47c6318968e0bdc6a743b28be6b92fddca6a7f002aaaac9"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitycontent(for:).json": {
       "etag": "\"3888-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitycontent-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitycontent(for).md",
       "hash": "e2facf9d0598d3a232783a7bd40dfd36c626c7e3921515328b2dffd7c5d49aca"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitylineendmarker(for:).json": {
       "etag": "\"5737-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitylineendmarker-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitylineendmarker(for).md",
       "hash": "8e5c2ec8f85969e80fa8a9826981fb93ae495668d689141ae6a341b8c3fc86bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitylinestartmarker(for:).json": {
       "etag": "\"574f-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitylinestartmarker-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitylinestartmarker(for).md",
       "hash": "af451f2de5b2d930df6c2ceb03d334d091952f14673c8ad8a239d913b40125c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitymarker(for:).json": {
       "etag": "\"58a4-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitymarker-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitymarker(for).md",
       "hash": "d52577365c84212863a4df60ec002d2e753d6dc71cd2b8fabd5165d303da5c1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitynexttextmarker(_:).json": {
       "etag": "\"55d0-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitynexttextmarker.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitynexttextmarker(_).md",
       "hash": "c6e6a68f7ddaac621f6f691565547140425aec48640126b6a72e96920c83b5c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilityprevioustextmarker(_:).json": {
       "etag": "\"55fd-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilityprevioustextmarker.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilityprevioustextmarker(_).md",
       "hash": "ff8c1fea4fd64a925241585c56b4d8c579cda1b06586ae052e4d7b5dd22631cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilityrange(for:).json": {
       "etag": "\"54c4-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilityrange-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilityrange(for).md",
       "hash": "47a7ff9625fe11b5977792e95d78c19db7bc3bebc9a02b010150ed40282155b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitytextmarker(forposition:).json": {
       "etag": "\"57f8-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarker-forposition.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarker(forposition).md",
       "hash": "ab6034bd1b8c36c01bcb39b87fb50ae48298acb457b7f510f272b63041e936d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange().json": {
       "etag": "\"4da0-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange().md",
       "hash": "291d9174317c0b977bf0d3b39c89927c5ac0874c392db0838223ff6fa4dd7c41"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange(for:).json": {
       "etag": "\"54e5-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange-for.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrange(for).md",
       "hash": "a15a8d1d2a5cce0414b0628f05f0d78295a7415c3bd0c357d1063df8f48f1b95"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrangeforcurrentselection().json": {
       "etag": "\"4f9c-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrangeforcurrentselection.md",
+      "file_path": "documentation/BrowserEngineKit/beaccessibilitytextmarkersupport/accessibilitytextmarkerrangeforcurrentselection().md",
       "hash": "05daa17b598ba3fc434442b795f7ccd86d693e7253136a4e9b836b165178485d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beautofilltextsuggestion.json": {
@@ -2352,12 +2352,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/becontextmenuconfiguration/fulfill(using:).json": {
       "etag": "\"408b-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/becontextmenuconfiguration/fulfill-using.md",
+      "file_path": "documentation/BrowserEngineKit/becontextmenuconfiguration/fulfill(using).md",
       "hash": "d532d865e13d0aedba8710d1f065dfdd8d9cfb9c42fe5964a244f3918c6191b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/becontextmenuconfiguration/init().json": {
       "etag": "\"1823-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/becontextmenuconfiguration/init.md",
+      "file_path": "documentation/BrowserEngineKit/becontextmenuconfiguration/init().md",
       "hash": "b0c6e5a82bb848557094f1b356ef50f53188796f07ee4c40c5e2958ec19ee3e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedirectionaltextrange.json": {
@@ -2367,12 +2367,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedirectionaltextrange/init().json": {
       "etag": "\"14d7-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedirectionaltextrange/init.md",
+      "file_path": "documentation/BrowserEngineKit/bedirectionaltextrange/init().md",
       "hash": "3b64bcf607266c52893e8f4d0b3f3125b480de7b9c320129dceef0d3d606e683"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedirectionaltextrange/init(offset:length:).json": {
       "etag": "\"1b85-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedirectionaltextrange/init-offsetlength.md",
+      "file_path": "documentation/BrowserEngineKit/bedirectionaltextrange/init(offset,length).md",
       "hash": "d04f5179699b19ec22bf92655ff2c584d357bde1e8d594c73371059e538ebc61"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedirectionaltextrange/length.json": {
@@ -2392,12 +2392,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedownloadmonitor-9bwls/beginmonitoring().json": {
       "etag": "\"2780-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/beginmonitoring.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/beginmonitoring().md",
       "hash": "0e666db224706282c4565d70abeae1c585e3bb7c6a848e92dfd407e46035a851"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedownloadmonitor-9bwls/createaccesstoken().json": {
       "etag": "\"1cde-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/createaccesstoken.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/createaccesstoken().md",
       "hash": "16ec9c0521a08a20fbd2d1fc083fb386cea6e2cc8583333f60e37572eb3fad89"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedownloadmonitor-9bwls/destinationurl.json": {
@@ -2407,7 +2407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedownloadmonitor-9bwls/init(sourceurl:destinationurl:observedprogress:liveactivityaccesstoken:).json": {
       "etag": "\"2be0-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/init-sourceurldestinationurlobservedprogressliveactivityaccesstoken.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/init(sourceurl,destinationurl,observedprogress,liveactivityaccesstoken).md",
       "hash": "4f0c325852944d88b64683d95739f4450e1498c883ca83e6de0cec77903b3d90"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedownloadmonitor-9bwls/location.json": {
@@ -2427,7 +2427,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedownloadmonitor-9bwls/resumemonitoring(placeholderurl:).json": {
       "etag": "\"1da4-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/resumemonitoring-placeholderurl.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/resumemonitoring(placeholderurl).md",
       "hash": "c2a9064e32d7b868da3800bd3c4e2976f7d8dc17bc053f5153d3c860dada46f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedownloadmonitor-9bwls/sourceurl.json": {
@@ -2437,7 +2437,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedownloadmonitor-9bwls/usedownloadsfolder(placeholdertype:finalfilecreatedhandler:).json": {
       "etag": "\"2875-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/usedownloadsfolder-placeholdertypefinalfilecreatedhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bedownloadmonitor-9bwls/usedownloadsfolder(placeholdertype,finalfilecreatedhandler).md",
       "hash": "c800a19b87152b0a0166fd1b9c19bc3fdaddae0bc4221a68863d155d6837d1ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedraginteraction.json": {
@@ -2452,7 +2452,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedraginteraction/init(delegate:).json": {
       "etag": "\"2111-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedraginteraction/init-delegate.md",
+      "file_path": "documentation/BrowserEngineKit/bedraginteraction/init(delegate).md",
       "hash": "7135bab0c9395cc538d99e284e550bad6a8013583fa5d1e0e8ffbc5081be62d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedraginteractiondelegate.json": {
@@ -2462,12 +2462,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedraginteractiondelegate/draginteraction(_:itemsforaddingto:fortouchat:completion:).json": {
       "etag": "\"5be9-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedraginteractiondelegate/draginteraction-itemsforaddingtofortouchatcompletion.md",
+      "file_path": "documentation/BrowserEngineKit/bedraginteractiondelegate/draginteraction(_,itemsforaddingto,fortouchat,completion).md",
       "hash": "bacc356d983d64b966583a008e46d70ad05527457a487cd96da68ab41b59d298"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bedraginteractiondelegate/draginteraction(_:prepare:completion:).json": {
       "etag": "\"45fd-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bedraginteractiondelegate/draginteraction-preparecompletion.md",
+      "file_path": "documentation/BrowserEngineKit/bedraginteractiondelegate/draginteraction(_,prepare,completion).md",
       "hash": "8c7a460b8b62082b86d3ea9fe10fb053bb5b3f582517fbc7f746a88dcb60056d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beextendedtextinputtraits.json": {
@@ -2507,12 +2507,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beextensionprocess/invalidate().json": {
       "etag": "\"2180-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/beextensionprocess/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/beextensionprocess/invalidate().md",
       "hash": "2904b4715dfcc9ddfc5df5cf0582fa5128e43ec86962b562f29c85429fa71a54"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beextensionprocess/makelibxpcconnectionerror().json": {
       "etag": "\"2fac-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/beextensionprocess/makelibxpcconnectionerror.md",
+      "file_path": "documentation/BrowserEngineKit/beextensionprocess/makelibxpcconnectionerror().md",
       "hash": "cd098c36f3901344b853a3283566785d2251b43ed0c438f23f77fd2aab093b82"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/begesturetype.json": {
@@ -2542,7 +2542,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/begesturetype/init(rawvalue:).json": {
       "etag": "\"1426-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/begesturetype/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/begesturetype/init(rawvalue).md",
       "hash": "5decadd68559a3a9e4808d1b21c10f389bb0b80cfe9b57325ca91b88c2d35eca"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/begesturetype/loupe.json": {
@@ -2602,7 +2602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bekeyentry/keypressstate/init(rawvalue:).json": {
       "etag": "\"187d-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/bekeyentry/keypressstate/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/bekeyentry/keypressstate/init(rawvalue).md",
       "hash": "412242b43684542ab3a39dc4e9afe3815eb16bb2ca0473e36cfa6a6bc046a338"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bekeyentry/keypressstate/up.json": {
@@ -2627,7 +2627,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bekeyentrycontext/init(keyentry:).json": {
       "etag": "\"2163-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/bekeyentrycontext/init-keyentry.md",
+      "file_path": "documentation/BrowserEngineKit/bekeyentrycontext/init(keyentry).md",
       "hash": "5f1f5604f9cecf78b91271e231aea6f37bd9f332e937d847dc0013613cb55e46"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bekeyentrycontext/isdocumenteditable.json": {
@@ -2662,7 +2662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bekeymodifierflags/init(rawvalue:).json": {
       "etag": "\"13c0-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/bekeymodifierflags/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/bekeymodifierflags/init(rawvalue).md",
       "hash": "3ed0b71500679c246dd1935b8a53eadb0bad975107310c304aa0b8a0193ce66c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bekeymodifierflags/none.json": {
@@ -2692,42 +2692,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/berespondereditactions/addshortcut(_:).json": {
       "etag": "\"3786-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/addshortcut.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/addshortcut(_).md",
       "hash": "1068e67bc6ef45fa627e1d6991485edf21f70cb2e0ab39af359f084df26b0410"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/berespondereditactions/findselected(_:).json": {
       "etag": "\"3570-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/findselected.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/findselected(_).md",
       "hash": "06ee3f1b94b183a644edb162f89c8c56f8a5713a4cd70012977e11bfa7e4cc67"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/berespondereditactions/lookup(_:).json": {
       "etag": "\"2d48-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/lookup.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/lookup(_).md",
       "hash": "28ea71a77070650507b212a4012d83f683fafdd3f18cae859049251f79898d0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/berespondereditactions/promptforreplace(_:).json": {
       "etag": "\"36ce-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/promptforreplace.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/promptforreplace(_).md",
       "hash": "8aee2db8130a1082f791e6754d15cf78d20c8579c0155fd1a4ef0cfcf47205be"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/berespondereditactions/replace(_:).json": {
       "etag": "\"37b2-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/replace.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/replace(_).md",
       "hash": "ec26cd95a949d828345839cd121071bd39ff7115315e20132bd625fc4b9c9bc9"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/berespondereditactions/share(_:).json": {
       "etag": "\"2ae8-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/share.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/share(_).md",
       "hash": "ab6d0a46f0083469d3a1a98eee22f3de0351345908a7c7a62dbe410be121bb24"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/berespondereditactions/translate(_:).json": {
       "etag": "\"2c28-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/translate.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/translate(_).md",
       "hash": "f056b6f4539ab8289821aca95cca0cff893c03486a75b3bbcc855ef1d3b0f3f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/berespondereditactions/transliteratechinese(_:).json": {
       "etag": "\"3894-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/berespondereditactions/transliteratechinese.md",
+      "file_path": "documentation/BrowserEngineKit/berespondereditactions/transliteratechinese(_).md",
       "hash": "5e7da0a90494c1cd38618ffc7807fa234fcbd826382392c2179330e5418c8147"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollview.json": {
@@ -2747,12 +2747,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewdelegate/parentscrollview(for:).json": {
       "etag": "\"33a0-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewdelegate/parentscrollview-for.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewdelegate/parentscrollview(for).md",
       "hash": "8cfe43f76ea65b617cba75811a0554b8c6b857288a59d2c8e2c368ad36a566e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewdelegate/scrollview(_:handle:completion:).json": {
       "etag": "\"4aba-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewdelegate/scrollview-handlecompletion.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewdelegate/scrollview(_,handle,completion).md",
       "hash": "a9ebf4daac0548dfaf92a5a8052d11fea98eff2965a37a5ba677f54fd628f054"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewscrollupdate.json": {
@@ -2762,12 +2762,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewscrollupdate/location(in:).json": {
       "etag": "\"3172-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/location-in.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/location(in).md",
       "hash": "1c40bc8c86f85a62140ef315e5cbdc4711931c5dd92a46ed142b1017dd4e10e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewscrollupdate/phase-swift.enum.json": {
       "etag": "\"5293-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swiftenum.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swift.enum.md",
       "hash": "63a31721489e34601f1dbfcd2079e13debd6e449ff91ae83203e5cac1cc30301"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewscrollupdate/phase-swift.enum/began.json": {
@@ -2792,12 +2792,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewscrollupdate/phase-swift.enum/init(rawvalue:).json": {
       "etag": "\"1a37-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swift.enum/init(rawvalue).md",
       "hash": "9e3f9e81cc1c8b5c784a1e99e380c64c4bf728c0f2c61e065eab4f63b3d185d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewscrollupdate/phase-swift.property.json": {
       "etag": "\"4503-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swiftproperty.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/phase-swift.property.md",
       "hash": "d6a48f1f75ac4949bb4639d9f29c3dfa80c50390e99c129c44115f8048b89f72"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewscrollupdate/timestamp.json": {
@@ -2807,7 +2807,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bescrollviewscrollupdate/translation(in:).json": {
       "etag": "\"3348-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/translation-in.md",
+      "file_path": "documentation/BrowserEngineKit/bescrollviewscrollupdate/translation(in).md",
       "hash": "54d249142a865e932463dca0a435117487862c6c4775aa9b769cb12cfac18c58"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beselectionflags.json": {
@@ -2817,7 +2817,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beselectionflags/init(rawvalue:).json": {
       "etag": "\"148e-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/beselectionflags/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beselectionflags/init(rawvalue).md",
       "hash": "63bbf1ada687dd6fe9f9d06c0f06c07076013fabf6b06b378138c26692b4ea5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beselectionflags/phraseboundarychanged.json": {
@@ -2862,7 +2862,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beselectiontouchphase/init(rawvalue:).json": {
       "etag": "\"14e2-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/beselectiontouchphase/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/beselectiontouchphase/init(rawvalue).md",
       "hash": "2e3fc7fcc243b4c000d2fa8f12e86cbe6d85ea72aedfec53973e28c5b2b4b631"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/beselectiontouchphase/moved.json": {
@@ -2897,7 +2897,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentcontext/addtextrect(_:forcharacterrange:).json": {
       "etag": "\"2a03-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/addtextrect-forcharacterrange.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/addtextrect(_,forcharacterrange).md",
       "hash": "69c24a55573a8a8ad76aecab6c6e85c61914931f71a873f7695487cb3cdbbf31"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentcontext/autocorrectedranges.json": {
@@ -2907,12 +2907,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentcontext/init(attributedselectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).json": {
       "etag": "\"4613-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/init-attributedselectedtextcontextbeforecontextaftermarkedtextselectedrangeinmarkedtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/init(attributedselectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext).md",
       "hash": "a9d07be8ff90aa991dbac95124f093271a6aaf2ce640001bee325e5854f65df9"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentcontext/init(selectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).json": {
       "etag": "\"5428-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/init-selectedtextcontextbeforecontextaftermarkedtextselectedrangeinmarkedtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentcontext/init(selectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext).md",
       "hash": "39879c0d7c2f95ea3ae9ed4a79e6fe60872d592bf0b8c3ea938edf17c3f1e56d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentrequest.json": {
@@ -2927,12 +2927,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentrequest/options-swift.property.json": {
       "etag": "\"26fe-65d55e20e41a6-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swiftproperty.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swift.property.md",
       "hash": "31bf7056fdcde467da1270c37eb32ec572dded62a88bb3b3b8b906b3f37807c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentrequest/options-swift.struct.json": {
       "etag": "\"7a55-65d55e20e41a6-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swiftstruct.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swift.struct.md",
       "hash": "a196be2455ba1119ce12654e34044b8f9c4af3898d0253475794b877baa2267c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentrequest/options-swift.struct/attributedtext.json": {
@@ -2947,7 +2947,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentrequest/options-swift.struct/init(rawvalue:).json": {
       "etag": "\"1b3e-65d55e20e41a6-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/betextdocumentrequest/options-swift.struct/init(rawvalue).md",
       "hash": "27d1937656d81d6710a9d8ca5f1e5cc9698c943335b6c2c1475eaf2bb9a0ae41"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextdocumentrequest/options-swift.struct/markedtextrects.json": {
@@ -2977,22 +2977,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/add(_:).json": {
       "etag": "\"3ed8-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/add.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/add(_).md",
       "hash": "a9826a3ca213bb8f0a0b606f6ea798d4795593c45893fae278dd536a663feba8"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/adjustselection(by:completionhandler:).json": {
       "etag": "\"5a8c-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/adjustselection-bycompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/adjustselection(by,completionhandler).md",
       "hash": "2abd4ef97a4eadaa477b679a0f2be49b77f61b850c1cd5cd668757653c01724b"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/adjustselectionboundary(to:touchphase:baseisstart:flags:).json": {
       "etag": "\"4fa2-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/adjustselectionboundary-totouchphasebaseisstartflags.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/adjustselectionboundary(to,touchphase,baseisstart,flags).md",
       "hash": "e235e8b3368254e197b20c491c97824a906536b24b1ed5f253fddeacb414839c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/alternativesforselectedtext().json": {
       "etag": "\"2475-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/alternativesforselectedtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/alternativesforselectedtext().md",
       "hash": "6f1a4704516b8d590f1064a37b026c1fbcd7aaba008affb01147b52222aff484"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/asyncinputdelegate.json": {
@@ -3012,32 +3012,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/autoscroll(to:).json": {
       "etag": "\"311a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/autoscroll-to.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/autoscroll(to).md",
       "hash": "64091df3d012fc730d16d42b0247aadc49b2418011e9cc4fb5dd59ff63b1de9d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/cancelautoscroll().json": {
       "etag": "\"235b-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/cancelautoscroll.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/cancelautoscroll().md",
       "hash": "b9bf8767f29a01a49c7d02e3d48367aefd14b1a405ad8cecab7daa16c8d80c59"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/canperformaction(_:withsender:).json": {
       "etag": "\"4414-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/canperformaction-withsender.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/canperformaction(_,withsender).md",
       "hash": "dd577a9996168cb1357e746cacf3edde26dfd8854784be106e3b0295df1e759f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/caretrect(for:).json": {
       "etag": "\"295a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/caretrect-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/caretrect(for).md",
       "hash": "a54a5922f4326e47b6e7217a6857b38751c74489fbc99659566f8f065e9521f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/delete(in:to:).json": {
       "etag": "\"346b-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/delete-into.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/delete(in,to).md",
       "hash": "2be0270607c7b353e6ac4234c038394574048cfc2c3134407acbccba86c77197"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/didinsertfinaldictationresult().json": {
       "etag": "\"1add-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/didinsertfinaldictationresult.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/didinsertfinaldictationresult().md",
       "hash": "d605391da514533487b02adbb8627cbbd5c8106bcff19ca573bd2bf48696a7f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/extendedtextinputtraits.json": {
@@ -3047,7 +3047,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/handlekeyentry(_:completionhandler:).json": {
       "etag": "\"4928-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/handlekeyentry-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/handlekeyentry(_,completionhandler).md",
       "hash": "45dbcad21b74fd6acac9fb99b35dcc8697c22461e3b4f30255262a2136e46146"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/hasmarkedtext.json": {
@@ -3057,17 +3057,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/insert(_:)-5iryn.json": {
       "etag": "\"412b-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/insert-5iryn.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/insert(_)-5iryn.md",
       "hash": "8ae2db1b8bf45cbe6843bfaede60a7a4fb3090e1022493d0325d5c57909da21d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/insert(_:)-6x7hd.json": {
       "etag": "\"3eeb-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/insert-6x7hd.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/insert(_)-6x7hd.md",
       "hash": "1e2641dc02e61ffc3f7f36450418027cd6331b19908dda49b1be23ace87436a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/inserttextplaceholder(size:completionhandler:).json": {
       "etag": "\"3348-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/inserttextplaceholder-sizecompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/inserttextplaceholder(size,completionhandler).md",
       "hash": "cb34978176e91d359d2639e3afb6c77712ae5dc13763d3485c6dbfaf0b5b323f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/iseditable.json": {
@@ -3077,7 +3077,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/ispointnearmarkedtext(_:).json": {
       "etag": "\"36c1-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/ispointnearmarkedtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/ispointnearmarkedtext(_).md",
       "hash": "e1bcdd5067f6e35b04faa4615a787c27234c18cc9ad1f6c6852a795ea470ee3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/isreplaceallowed.json": {
@@ -3092,7 +3092,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/keyboardwilldismiss().json": {
       "etag": "\"1cf0-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/keyboardwilldismiss.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/keyboardwilldismiss().md",
       "hash": "548ffc1e686f18add341e9779b33f003628996fd855c15dfe1b25b461cd4d098"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/markedtext.json": {
@@ -3107,62 +3107,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/move(byoffset:).json": {
       "etag": "\"1ed2-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/move-byoffset.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/move(byoffset).md",
       "hash": "ffe9010b8c5c85aea270c9ad55aae22440f37850cdc0dfa85fbd686061dbf6e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/moveselection(atboundary:in:completionhandler:).json": {
       "etag": "\"44cd-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/moveselection-atboundaryincompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/moveselection(atboundary,in,completionhandler).md",
       "hash": "4f4088be5750f0b644b24032237f8bae06375068dcc5d206f0672d7eead91e78"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/offset(from:to:).json": {
       "etag": "\"2aa6-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/offset-fromto.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/offset(from,to).md",
       "hash": "9857231f260dc28318b3c7da7a55a48e4d40ec67292658cf8c93ecccc9536c63"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/remove(_:willinserttext:completionhandler:).json": {
       "etag": "\"3391-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/remove-willinserttextcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/remove(_,willinserttext,completionhandler).md",
       "hash": "b1ccd5046f7273a0fa4a460d6c0ca770a93023a64a85b2c052d539ea9428e0ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/removetextalternatives().json": {
       "etag": "\"1d47-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/removetextalternatives.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/removetextalternatives().md",
       "hash": "0007473312c4d970b3f4ca5a503d0d769a521e8cc23383a1d16174d76371bb1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/replacedictatedtext(_:withtext:).json": {
       "etag": "\"3ef8-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/replacedictatedtext-withtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/replacedictatedtext(_,withtext).md",
       "hash": "70c6636f3ba2a325a3ca2244307256683f9cb7337e6841889d839d2274b3177c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/replaceselectedtext(_:withtext:).json": {
       "etag": "\"4922-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/replaceselectedtext-withtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/replaceselectedtext(_,withtext).md",
       "hash": "af41cf1cad244f1d0a21618eac0edf4a7a9e7c098ea38ecb49c0958a74ba65c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/replacetext(_:withtext:options:completionhandler:).json": {
       "etag": "\"44d6-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/replacetext-withtextoptionscompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/replacetext(_,withtext,options,completionhandler).md",
       "hash": "f133a615f7d6e7ac7ddcce6e5a20dccdd83879dd3e79d196996ac1a22a9c5358"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/requestdocumentcontext(_:completionhandler:).json": {
       "etag": "\"479a-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/requestdocumentcontext-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/requestdocumentcontext(_,completionhandler).md",
       "hash": "b309837ec74f69e9706700ee96b9436d1365008943ddf69800a91ff4e6556185"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/requestpreferredarrowdirectionforeditmenu(completionhandler:).json": {
       "etag": "\"2c78-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/requestpreferredarrowdirectionforeditmenu-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/requestpreferredarrowdirectionforeditmenu(completionhandler).md",
       "hash": "8e241323bda23f9f5cebd33ff89393c1c5be9d7040a1872d55f4b7e2e71c7571"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/requesttextcontextforautocorrection(completionhandler:).json": {
       "etag": "\"46f2-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/requesttextcontextforautocorrection-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/requesttextcontextforautocorrection(completionhandler).md",
       "hash": "c5cf2cfe9d3e21b6c5e2cef57f765b2f61ffa7c93485a28d09711bf5420640a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/requesttextrects(for:withcompletionhandler:).json": {
       "etag": "\"472c-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/requesttextrects-forwithcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/requesttextrects(for,withcompletionhandler).md",
       "hash": "1d65a81be921e4a19893c9911d29725115cf96680ce39ce7f81ed2c9b04a68be"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/selectedtext.json": {
@@ -3192,72 +3192,72 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/selectionrects(for:).json": {
       "etag": "\"2ab7-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selectionrects-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selectionrects(for).md",
       "hash": "a46b8b9e1c93fd28a6f559cf3d46a2adf4ca78fe6ab20a8694ce4304de7061f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/selectposition(at:completionhandler:).json": {
       "etag": "\"5a27-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selectposition-atcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selectposition(at,completionhandler).md",
       "hash": "558a8c95739e71d3ff71db9c9cb9ffd78425dfdfac7191233092396d6d960fb2"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/selectposition(at:for:completionhandler:).json": {
       "etag": "\"686b-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selectposition-atforcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selectposition(at,for,completionhandler).md",
       "hash": "87ca0e388275f96b7ebf4a8ab152966037325c0595905e6dd7993977186c8637"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/selecttext(in:at:completionhandler:).json": {
       "etag": "\"397d-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selecttext-inatcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selecttext(in,at,completionhandler).md",
       "hash": "388252d688bc566be5eb3be6eade300de16ecf9f78d03a7b5c5df918c5bece14"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/selecttextforeditmenuwithlocation(inview:completionhandler:).json": {
       "etag": "\"47f6-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selecttextforeditmenuwithlocation-inviewcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selecttextforeditmenuwithlocation(inview,completionhandler).md",
       "hash": "bdb8a40ce14b29ea683dcf8ded36168b3647a6e795fec81f7dfd752189db7c97"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/selectwordforreplacement().json": {
       "etag": "\"211a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/selectwordforreplacement.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/selectwordforreplacement().md",
       "hash": "39316cf615b437e00db55f90f77e9df0cb6a8f5f8170f814adfc8a8c2d798e58"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/setattributedmarkedtext(_:selectedrange:).json": {
       "etag": "\"2541-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/setattributedmarkedtext-selectedrange.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/setattributedmarkedtext(_,selectedrange).md",
       "hash": "6ccf94dd325206f4fc831df39445d9821ac8097b4623d7c983d1ea2d8661014b"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/setbasewritingdirection(_:for:).json": {
       "etag": "\"2d48-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/setbasewritingdirection-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/setbasewritingdirection(_,for).md",
       "hash": "114642df28b5c33bc8361f1d4674aae78f304694b4913ba9590847f668dd957c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/setmarkedtext(_:selectedrange:).json": {
       "etag": "\"252a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/setmarkedtext-selectedrange.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/setmarkedtext(_,selectedrange).md",
       "hash": "e9d3d5f3ed2b6c4a73b553ddc78cc459b4a0928670360719da1812a60c3be5d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/setselection(from:to:gesture:state:).json": {
       "etag": "\"4249-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/setselection-fromtogesturestate.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/setselection(from,to,gesture,state).md",
       "hash": "f243225b93c15d1a0ea0ec626073b12768e19d65b7ee5d0d7d832754261fc510"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/shiftkeystatechanged(fromstate:tostate:).json": {
       "etag": "\"2ef0-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/shiftkeystatechanged-fromstatetostate.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/shiftkeystatechanged(fromstate,tostate).md",
       "hash": "8040e185b414a1f2aa167b4fa7ce06503ead2f0553b8726cade5e2a747676cc7"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/systemwilldismisseditmenu(withanimator:).json": {
       "etag": "\"22f4-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/systemwilldismisseditmenu-withanimator.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/systemwilldismisseditmenu(withanimator).md",
       "hash": "5ec99f0651767fd92086751678d0f010a8746efdfcb2e50043ef6cbc66f310d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/systemwillpresenteditmenu(withanimator:).json": {
       "etag": "\"22f4-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/systemwillpresenteditmenu-withanimator.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/systemwillpresenteditmenu(withanimator).md",
       "hash": "597402255d1544256d9de6dfb74b78d4148d939f25b180bee5fcc437b627c549"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/text(in:).json": {
       "etag": "\"2948-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/text-in.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/text(in).md",
       "hash": "e98af56038717a32ec050ce66a71fb5f7e3bc9df13488cb66b46013b1de5dd79"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/textfirstrect.json": {
@@ -3272,7 +3272,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/textinteractiongesture(_:shouldbeginat:).json": {
       "etag": "\"37ec-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/textinteractiongesture-shouldbeginat.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/textinteractiongesture(_,shouldbeginat).md",
       "hash": "660db478f3f5db3cafc82c50163fcacd54895f0a893967ac2fe21b8b7d1a7e70"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/textlastrect.json": {
@@ -3282,17 +3282,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/textstyling(at:in:).json": {
       "etag": "\"3618-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/textstyling-atin.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/textstyling(at,in).md",
       "hash": "dec877b5871efaee946a071ac090fc91277fbaf38c4f8a11f4017db6b8e3d35d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/transposecharactersaroundselection().json": {
       "etag": "\"226a-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/transposecharactersaroundselection.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/transposecharactersaroundselection().md",
       "hash": "04133baa83c566a937aa5c0d407ecd4abed4e4b069f9005566dfc984e4bfc046"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/unmarktext().json": {
       "etag": "\"2aab-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/unmarktext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/unmarktext().md",
       "hash": "f458ef54648f9e2e78605ec81a6b0e56b59f801a712fb91ca669c519e41f4efd"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/unobscuredcontentrect.json": {
@@ -3307,17 +3307,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/updatecurrentselection(to:from:in:).json": {
       "etag": "\"72c2-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/updatecurrentselection-tofromin.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/updatecurrentselection(to,from,in).md",
       "hash": "c79a1d9034febcdbfbcdef54d56fac831fefc6439447dc56682e9491e590ab65"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/updateselection(extent:boundary:completionhandler:).json": {
       "etag": "\"41ea-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/updateselection-extentboundarycompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/updateselection(extent,boundary,completionhandler).md",
       "hash": "662f1fba8ac1cfaae1151570062a7103081517a464e01138bd7081c828c0dfa5"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinput/willinsertfinaldictationresult().json": {
       "etag": "\"1ae4-65d55e203326d-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinput/willinsertfinaldictationresult.md",
+      "file_path": "documentation/BrowserEngineKit/betextinput/willinsertfinaldictationresult().md",
       "hash": "c41db214d49e259fc8bf6c768e9db006b44b5940697ab1b2b798e8b150b77c78"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinputdelegate.json": {
@@ -3327,32 +3327,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinputdelegate/invalidatetextentrycontext(for:).json": {
       "etag": "\"25af-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/invalidatetextentrycontext-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/invalidatetextentrycontext(for).md",
       "hash": "c9b268e3e49e8b3b71350b49886a46b40e84e0c46fbc56706825028778aeb560"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinputdelegate/selectiondidchange(for:).json": {
       "etag": "\"2c3c-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/selectiondidchange-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/selectiondidchange(for).md",
       "hash": "c4ddaccedb8bf24b3c4b62a71f7888e151d51e80f4f5cea2c33ff9502e633cc8"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinputdelegate/selectionwillchange(for:).json": {
       "etag": "\"2ae1-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/selectionwillchange-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/selectionwillchange(for).md",
       "hash": "075e60554f8e8d4093f0b8b808a16bbbfb5669ad28df155945d0d007b4d5611f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinputdelegate/shoulddefereventhandlingtosystem(for:context:).json": {
       "etag": "\"554c-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/shoulddefereventhandlingtosystem-forcontext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/shoulddefereventhandlingtosystem(for,context).md",
       "hash": "a196664f1ccd4f393deb8dbfc6b3fbae5c4c1f4990dd45087d6c02c380fea6d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinputdelegate/textinput(_:deferreplacetextactiontosystem:).json": {
       "etag": "\"3205-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/textinput-deferreplacetextactiontosystem.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/textinput(_,deferreplacetextactiontosystem).md",
       "hash": "8f0126d96f262c7aa551cbb83279563f0300a8b927a741341b5104425d35b06b"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinputdelegate/textinput(_:setcandidatesuggestions:).json": {
       "etag": "\"2cea-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/textinput-setcandidatesuggestions.md",
+      "file_path": "documentation/BrowserEngineKit/betextinputdelegate/textinput(_,setcandidatesuggestions).md",
       "hash": "9f65ee6e1af826e7cc9c604c12db88cd21df08abec68bc26bdba8f36628dd7f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction.json": {
@@ -3362,7 +3362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/addshortcut(fortext:from:).json": {
       "etag": "\"30a1-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/addshortcut-fortextfrom.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/addshortcut(fortext,from).md",
       "hash": "3e1aaa0b762f4f6254b5577b4f6a5063aa4f6ad9a3a8985383a4fe7a925fd0bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/contextmenuinteraction.json": {
@@ -3382,47 +3382,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/dismisseditmenuforselection().json": {
       "etag": "\"2db4-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/dismisseditmenuforselection.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/dismisseditmenuforselection().md",
       "hash": "0c91f32eb0fe19dc8f9f9b025b606d9b848ebf36de9fa49d0746aeaa2907dbc1"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/editabilitychanged().json": {
       "etag": "\"2185-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/editabilitychanged.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/editabilitychanged().md",
       "hash": "4e1eb0a1e79887e66abdfb4f189338ea3d0ded369f82ae3e02e60017d5e7abd4"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/presenteditmenuforselection().json": {
       "etag": "\"2db2-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/presenteditmenuforselection.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/presenteditmenuforselection().md",
       "hash": "326d8ccd03522b0931464dd0569bf47762ec9efce402ae4d1e5f4ab161e7ae9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/refreshkeyboardui().json": {
       "etag": "\"21c6-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/refreshkeyboardui.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/refreshkeyboardui().md",
       "hash": "017ca0957af3a46097e6bd883464761485ed220b6282e47dd40bf7065c0aac7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/selectionboundaryadjusted(to:touchphase:flags:).json": {
       "etag": "\"5b9c-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/selectionboundaryadjusted-totouchphaseflags.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/selectionboundaryadjusted(to,touchphase,flags).md",
       "hash": "9a04672c86fa1998ad858e108bd679bd2dfe86bb4515c0c4b4fb420253e6e6ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/selectionchangedwithgesture(at:gesture:state:flags:).json": {
       "etag": "\"66d8-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/selectionchangedwithgesture-atgesturestateflags.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/selectionchangedwithgesture(at,gesture,state,flags).md",
       "hash": "41afd666f062a15c4405c31a09bda769e9819688446ddae1be32ffd7943eb89f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/share(text:from:).json": {
       "etag": "\"3540-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/share-textfrom.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/share(text,from).md",
       "hash": "38c11487c1a30b9e46259288effee63089910070b65f5eaa63353108ddf2c71c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/showdictionary(fortextincontext:definingtextinrange:from:).json": {
       "etag": "\"3b26-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/showdictionary-fortextincontextdefiningtextinrangefrom.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/showdictionary(fortextincontext,definingtextinrange,from).md",
       "hash": "5272e4c56f3f0eda64b99e14995cc6e2038459f35bf711f6c4b740b9ef7bbacd"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/showreplacements(fortext:).json": {
       "etag": "\"318c-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/showreplacements-fortext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/showreplacements(fortext).md",
       "hash": "5004dbc32dd49cb71f8d67998666f1c66a32699d2fd92bbe48c14afd9f7fd1fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/textselectiondisplayinteraction.json": {
@@ -3432,12 +3432,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/translate(text:from:).json": {
       "etag": "\"330f-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/translate-textfrom.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/translate(text,from).md",
       "hash": "bea530b3ca37db8c152cac19f01a71c557aaea4160bc89ded794e65b9b37ee7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteraction/transliteratechinese(fortext:).json": {
       "etag": "\"3359-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteraction/transliteratechinese-fortext.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteraction/transliteratechinese(fortext).md",
       "hash": "37b7120cc7ebe77bb63732262d87d8e2179be659568a9da206023285bc0d2f61"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteractiondelegate.json": {
@@ -3447,12 +3447,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteractiondelegate/systemdidchangeselection(for:).json": {
       "etag": "\"2d71-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteractiondelegate/systemdidchangeselection-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteractiondelegate/systemdidchangeselection(for).md",
       "hash": "09a8d708c95492097aef4e9f5bbfccb402cbe6946ae321d4144b14a1fd2f7d37"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextinteractiondelegate/systemwillchangeselection(for:).json": {
       "etag": "\"2d7a-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextinteractiondelegate/systemwillchangeselection-for.md",
+      "file_path": "documentation/BrowserEngineKit/betextinteractiondelegate/systemwillchangeselection(for).md",
       "hash": "5b6bbbc71a17bccbf08e90bf1bea198c70b49854b1fdf4511d9b1955aba43acb"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextreplacementoptions.json": {
@@ -3467,7 +3467,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextreplacementoptions/init(rawvalue:).json": {
       "etag": "\"150a-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextreplacementoptions/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/betextreplacementoptions/init(rawvalue).md",
       "hash": "da64c05e8931fee1b9cf4029798f4aef8ec8b230bc037b1e5ecccbccf515e1cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextselectiondirectionnavigation.json": {
@@ -3477,22 +3477,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextselectiondirectionnavigation/extend(in:).json": {
       "etag": "\"2bb7-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/extend-in.md",
+      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/extend(in).md",
       "hash": "aff16d1440a00e5a5acfd2226a676589acc03d81d4e7a93fb2fdbb922be361be"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextselectiondirectionnavigation/extend(in:by:).json": {
       "etag": "\"343d-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/extend-inby.md",
+      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/extend(in,by).md",
       "hash": "01da2786af63141cacbf04fdc885324232f332edf4aa70fd5c48a65e3d82b2d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextselectiondirectionnavigation/move(in:).json": {
       "etag": "\"2b1a-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/move-in.md",
+      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/move(in).md",
       "hash": "6532afd4efdcbb74b161b98ee5568ba941dbba989a631dc3f04b44451501299a"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextselectiondirectionnavigation/move(in:by:).json": {
       "etag": "\"3397-65d55e201646c-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/move-inby.md",
+      "file_path": "documentation/BrowserEngineKit/betextselectiondirectionnavigation/move(in,by).md",
       "hash": "8d6f8008c524e7a284934e800c9b2b9a580f249cbd130c3202f84a6da5012179"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextsuggestion.json": {
@@ -3502,7 +3502,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextsuggestion/init(inputtext:).json": {
       "etag": "\"2114-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/betextsuggestion/init-inputtext.md",
+      "file_path": "documentation/BrowserEngineKit/betextsuggestion/init(inputtext).md",
       "hash": "1c48e36c30bd52db6444600c67dfeacb65c8e552fe050a0087bf5888af7c20b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/betextsuggestion/inputtext.json": {
@@ -3517,12 +3517,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebappmanifest/init(jsondata:manifesturl:)-3azfg.json": {
       "etag": "\"304e-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebappmanifest/init-jsondatamanifesturl-3azfg.md",
+      "file_path": "documentation/BrowserEngineKit/bewebappmanifest/init(jsondata,manifesturl)-3azfg.md",
       "hash": "2e8e6086a94140c11a1f0baec948d63af659afe7682a220bef66f4bf61376e61"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebappmanifest/init(jsondata:manifesturl:)-4zjpz.json": {
       "etag": "\"20d6-65d55e209b763-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebappmanifest/init-jsondatamanifesturl-4zjpz.md",
+      "file_path": "documentation/BrowserEngineKit/bewebappmanifest/init(jsondata,manifesturl)-4zjpz.md",
       "hash": "443f3fcc42953f5f4def406b3da301a141dfd5e064a45e7d5909cd66da99ac43"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebappmanifest/jsondata.json": {
@@ -3542,17 +3542,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebcontentfilter/allow(_:completionhandler:).json": {
       "etag": "\"3da9-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/allow-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/allow(_,completionhandler).md",
       "hash": "ad464a6f762678ea333124315d939d3cfc92e78efeaf70510152a3ef01cf1068"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebcontentfilter/evaluateurl(_:completionhandler:).json": {
       "etag": "\"4650-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/evaluateurl-completionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/evaluateurl(_,completionhandler).md",
       "hash": "c8565f0aaa67e769cb622d77f52af22794b0b6e81609401e383caf6cd3d7b2fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebcontentfilter/evaluateurl(_:mainframeurl:ismainframe:completionhandler:).json": {
       "etag": "\"4e80-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/evaluateurl-mainframeurlismainframecompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/evaluateurl(_,mainframeurl,ismainframe,completionhandler).md",
       "hash": "a5f40776ae3a45af682bc9275a3c3fc52a1b934c182041576ee3f564f14fe437"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebcontentfilter/permissiondecision.json": {
@@ -3577,7 +3577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebcontentfilter/permissiondecision/init(rawvalue:).json": {
       "etag": "\"193f-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/permissiondecision/init-rawvalue.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/permissiondecision/init(rawvalue).md",
       "hash": "f75f8a56bec98188a2d0cf56cd5396a04b98f83f12f9c1e68683923eb703ee3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebcontentfilter/permissiondecision/pending.json": {
@@ -3587,7 +3587,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebcontentfilter/requestpermission(for:referrerurl:presenting:completionhandler:).json": {
       "etag": "\"56d6-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/requestpermission-forreferrerurlpresentingcompletionhandler.md",
+      "file_path": "documentation/BrowserEngineKit/bewebcontentfilter/requestpermission(for,referrerurl,presenting,completionhandler).md",
       "hash": "ec197afb878b39d501b86d6dc3b6e7a7e7a114079fba7b8f7eba601b64c390a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/bewebcontentfilter/shouldevaluateurls.json": {
@@ -3651,12 +3651,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchy/init().json": {
       "etag": "\"25f1-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchy/init.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchy/init().md",
       "hash": "0a6deed358f6cc072a2677475e089143caf3857f6ddc3c22ee5f38b04aba902a"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchy/invalidate().json": {
       "etag": "\"2855-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchy/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchy/invalidate().md",
       "hash": "28dc9796da976114a0e2f5fb934e217d4e1e789046512ce2107b2fd7dbdf9c5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchy/layer.json": {
@@ -3671,27 +3671,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhandle/createxpcrepresentation().json": {
       "etag": "\"26d2-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/createxpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/createxpcrepresentation().md",
       "hash": "9bcffcc17930cf59702d35b10e7dc4963eca2b06a251eba3269085749fbb004c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhandle/encode(_:).json": {
       "etag": "\"4082-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/encode.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/encode(_).md",
       "hash": "5899cab78bd5b9e3a4ba48ebb48ddadc5fe853649ddb0915336a64ea17b1fbd4"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhandle/init(coder:).json": {
       "etag": "\"165a-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init-coder.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init(coder).md",
       "hash": "1250d52e9f0a41f169322e469cd3b7b77c6442953fa147e0cee824943c6fc357"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhandle/init(port:data:).json": {
       "etag": "\"3aae-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init-portdata.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init(port,data).md",
       "hash": "33e18d781b907a465f4d06edd3e48efdb6008e5cd3af2639a4e6270bfa646c6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhandle/init(xpcrepresentation:).json": {
       "etag": "\"3034-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init-xpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhandle/init(xpcrepresentation).md",
       "hash": "8e07cd2c9e6e3833c347af10c8a9b89d453dc5859327996c8c6c529ecb228991"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator.json": {
@@ -3701,47 +3701,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/add(_:)-7day0.json": {
       "etag": "\"38ff-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/add-7day0.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/add(_)-7day0.md",
       "hash": "93380e4aff4037a5e1cd86c696c73d0a5e2f8c42280ccb40c7a64a8438d55d5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/add(_:)-i66q.json": {
       "etag": "\"382d-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/add-i66q.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/add(_)-i66q.md",
       "hash": "c4908e01358aecb8051dec81b1b8ad99b1558a4671788aeef02351bfcfffea4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/commit().json": {
       "etag": "\"3d69-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/commit.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/commit().md",
       "hash": "62c5e88eef2f0998ce56ba90eb176548d7d841d0cf2dfad41f14ece86586d1fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/createxpcrepresentation().json": {
       "etag": "\"2985-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/createxpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/createxpcrepresentation().md",
       "hash": "b1715f12548c98b4b00ce3ab757e47ffb2b15b161c8b7dbd727cb7c130dfe73c"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/encode(_:).json": {
       "etag": "\"3ecb-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/encode.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/encode(_).md",
       "hash": "60096b44272509a64223e48581dac972f9c667eef3b645238057890813ae0dc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/init().json": {
       "etag": "\"277b-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init().md",
       "hash": "43664b2dc030d09894715a99b9c40822c9e60ec5f95d5f035a8455cc7944310d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/init(coder:).json": {
       "etag": "\"1f49-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init-coder.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init(coder).md",
       "hash": "2190253d665dab5288b810a3d81423c85e3031f6773de0aff86547f2fb604a39"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/init(port:data:).json": {
       "etag": "\"3df9-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init-portdata.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init(port,data).md",
       "hash": "527687d0c4270b6f58629055dc9db5bc50170002a4f2fee1dac943b9870967e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingtransactioncoordinator/init(xpcrepresentation:).json": {
       "etag": "\"34a5-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init-xpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/layerhierarchyhostingtransactioncoordinator/init(xpcrepresentation).md",
       "hash": "77e93f096a45fa04c673972b7ec2ba8293da4c34033988d9b49cfe16b29f9436"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/layerhierarchyhostingview.json": {
@@ -3771,32 +3771,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/mediaenvironment/activate().json": {
       "etag": "\"168a-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/activate.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/activate().md",
       "hash": "0b72ceb850d0a362439e05c8311374ac157385d2abab9118477d64b82bdcab08"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/mediaenvironment/createxpcrepresentation().json": {
       "etag": "\"13d5-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/createxpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/createxpcrepresentation().md",
       "hash": "a90fe4d52f98cac3cea62881fb46b279860b5c0f98882be6c74207313fc7e7ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/mediaenvironment/init(webpage:).json": {
       "etag": "\"172c-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/init-webpage.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/init(webpage).md",
       "hash": "4c68eff1dcf44d785ad496f562f25802f5c0617aa06023445cc83b5469f17691"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/mediaenvironment/init(xpcrepresentation:).json": {
       "etag": "\"189a-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/init-xpcrepresentation.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/init(xpcrepresentation).md",
       "hash": "f2d644c1ec9b39b41273b0b384892dd28a0bbdc6a35c8afee097ee89383e0465"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/mediaenvironment/makecapturesession().json": {
       "etag": "\"1be1-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/makecapturesession.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/makecapturesession().md",
       "hash": "239b6987c6693bc0256a5cb40eaecd94e76ff824901743bda823d43dcd7e0960"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/mediaenvironment/suspend().json": {
       "etag": "\"1681-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/mediaenvironment/suspend.md",
+      "file_path": "documentation/BrowserEngineKit/mediaenvironment/suspend().md",
       "hash": "381298915c79f5b9d8338a8d44334c5a445d4152d437bbc01c9cbd82392c22dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/networkingextension.json": {
@@ -3806,7 +3806,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/networkingextension/handle(xpcconnection:).json": {
       "etag": "\"27e3-65d55e2066dad-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingextension/handle-xpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/networkingextension/handle(xpcconnection).md",
       "hash": "2e376151c7acb0f2e94739d7104465b271ebf8349cb865ca31b5c784cc0570ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/networkingextensionconfiguration.json": {
@@ -3821,27 +3821,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/networkingprocess/grantcapability(_:).json": {
       "etag": "\"279b-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/grantcapability.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/grantcapability(_).md",
       "hash": "22be8b3e3f39d1e3daed5804bfd398285193d6cde3dc3cd03f2caf04abf037c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/networkingprocess/grantcapability(_:invalidationhandler:).json": {
       "etag": "\"2d2b-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/grantcapability-invalidationhandler.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/grantcapability(_,invalidationhandler).md",
       "hash": "7e3ca96c13152b0e818e8b0400c3641cab728283f26206244ba94e335a8f8d2d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/networkingprocess/init(bundleidentifier:oninterruption:).json": {
       "etag": "\"2199-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/init-bundleidentifieroninterruption.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/init(bundleidentifier,oninterruption).md",
       "hash": "3ab4c218afba8764b17ceecb3f53f6d8a957830d99026f1081f635bafad6e6af"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/networkingprocess/invalidate().json": {
       "etag": "\"1645-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/invalidate().md",
       "hash": "2e1482dc73fb65dffff0a043074eab1791b40ad906f17c7462a92b693b6d779f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/networkingprocess/makelibxpcconnection().json": {
       "etag": "\"1b29-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/networkingprocess/makelibxpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/networkingprocess/makelibxpcconnection().md",
       "hash": "0b7f95081c1d53cecbbb536d857bad4d3c61ded83d73b14f8f0b82aa8389e8b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability.json": {
@@ -3851,7 +3851,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/activate().json": {
       "etag": "\"f7d-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/activate.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/activate().md",
       "hash": "22789eb59830711d597e258453fb1332886bb9c87c52d03ed084950f3c2da4fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/background.json": {
@@ -3871,7 +3871,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/grant/invalidate().json": {
       "etag": "\"17df-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/grant/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/grant/invalidate().md",
       "hash": "b3970beea88a4416827635b90f8d25eee4b724b3e85a3d0243733dcf4b359d2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/grant/isvalid.json": {
@@ -3881,22 +3881,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/mediaplaybackandcapture(environment:).json": {
       "etag": "\"24a5-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/mediaplaybackandcapture-environment.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/mediaplaybackandcapture(environment).md",
       "hash": "b2962b9cd47e76c3e877572ebd7cfcd8678ef908e0fcc4f77ee3f97a9665581f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/request().json": {
       "etag": "\"165e-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/request.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/request().md",
       "hash": "dc32f975a4aa4c4f8bc6abcaed5f5d04d2256d3e446571b648503ac3a2b1e698"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/screencapture(environment:).json": {
       "etag": "\"146f-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/screencapture-environment.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/screencapture(environment).md",
       "hash": "c94e6ca0c8c0774f2e56363f395129b9e22f76edb6cdf17031de7194069e55ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/suspend().json": {
       "etag": "\"f70-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/processcapability/suspend.md",
+      "file_path": "documentation/BrowserEngineKit/processcapability/suspend().md",
       "hash": "1cfaef5726cdc7ba9cb0225babcacc0d057090ab3d5820fe9ff1a8b79f2b903d"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/processcapability/suspended.json": {
@@ -3921,12 +3921,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingextension/enablefeature(_:).json": {
       "etag": "\"140c-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingextension/enablefeature.md",
+      "file_path": "documentation/BrowserEngineKit/renderingextension/enablefeature(_).md",
       "hash": "c3f508582b1c7e05feee621dfa91a3003b86318dc2bab1a7724d911f36498e9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingextension/handle(xpcconnection:).json": {
       "etag": "\"27d1-65d55e2081ecc-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingextension/handle-xpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/renderingextension/handle(xpcconnection).md",
       "hash": "7ae11572e6dc2124a5adec430c19eee393aaf0f0bb8ffc00c84f5fdf5a3e496a"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingextensionconfiguration.json": {
@@ -3951,32 +3951,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingprocess/createvisibilitypropagationinteraction().json": {
       "etag": "\"1e47-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/createvisibilitypropagationinteraction.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/createvisibilitypropagationinteraction().md",
       "hash": "e9008caf372e7e9d1bd68a0d097973496269c78cd6f4f2a5ac656f3d28d27a05"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingprocess/grantcapability(_:).json": {
       "etag": "\"2b46-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/grantcapability.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/grantcapability(_).md",
       "hash": "c991e7bf77e97e85d47c5b1f939c35808262bb1f32f7a15323ad02098885a293"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingprocess/grantcapability(_:invalidationhandler:).json": {
       "etag": "\"30c2-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/grantcapability-invalidationhandler.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/grantcapability(_,invalidationhandler).md",
       "hash": "794e445a8ae0f5ecf259eaa9f2deaf83eaee3e68c97a03065042220e7e48f7c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingprocess/init(bundleidentifier:oninterruption:).json": {
       "etag": "\"2175-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/init-bundleidentifieroninterruption.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/init(bundleidentifier,oninterruption).md",
       "hash": "467b51f91de357e791dca9ae8d1e1e9b9cc297a66f9da691ee136a2bc8185e92"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingprocess/invalidate().json": {
       "etag": "\"1627-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/invalidate().md",
       "hash": "a5e179891e07b18ecc2a40deb28c470cab15ca8a2388c46dee6723651bf69e03"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/renderingprocess/makelibxpcconnection().json": {
       "etag": "\"1b0e-65d55e20b94e8-df\"",
-      "file_path": "documentation/BrowserEngineKit/renderingprocess/makelibxpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/renderingprocess/makelibxpcconnection().md",
       "hash": "7f47ede177c6a122aefe28fc954fa3af77249c51eab6d72fde4a0a4aa1ebc039"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxappliable.json": {
@@ -3986,7 +3986,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxappliable/applyrestrictedsandbox(revision:).json": {
       "etag": "\"24aa-65d55e20d3afd-df\"",
-      "file_path": "documentation/BrowserEngineKit/restrictedsandboxappliable/applyrestrictedsandbox-revision.md",
+      "file_path": "documentation/BrowserEngineKit/restrictedsandboxappliable/applyrestrictedsandbox(revision).md",
       "hash": "646bba96dd5104894cfe8786b419be209cd288a2333e1e5b572ecf03fbe66307"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/restrictedsandboxrevision.json": {
@@ -4051,7 +4051,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/webcontentextension/handle(xpcconnection:).json": {
       "etag": "\"27db-65d55e205157d-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentextension/handle-xpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentextension/handle(xpcconnection).md",
       "hash": "adee5447592cfd53b295800a959bfc50d96b343e7a638a52aac213c419e50eb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/webcontentextensionconfiguration.json": {
@@ -4066,32 +4066,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/webcontentprocess/createvisibilitypropagationinteraction().json": {
       "etag": "\"1e59-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/createvisibilitypropagationinteraction.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/createvisibilitypropagationinteraction().md",
       "hash": "e9a6f02316c66eb1cbc054f0920b207ca571ec96db21eb910c03940309a16db9"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/webcontentprocess/grantcapability(_:).json": {
       "etag": "\"2b6f-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/grantcapability.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/grantcapability(_).md",
       "hash": "babd52eea7dfd60f95afc336e8d2bf8c0de2b86f028f9d41bd8d1fa523698422"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/webcontentprocess/grantcapability(_:invalidationhandler:).json": {
       "etag": "\"30df-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/grantcapability-invalidationhandler.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/grantcapability(_,invalidationhandler).md",
       "hash": "aa6107b96583bfa29fbff5fc1d25a5e646699c6d37d2f4a5667595d23afe6a11"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/webcontentprocess/init(bundleidentifier:oninterruption:).json": {
       "etag": "\"2065-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/init-bundleidentifieroninterruption.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/init(bundleidentifier,oninterruption).md",
       "hash": "d81d02ad3d4910b83e79b366bbd3d289a174b3936e03aa0a3eec5c48342429a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/webcontentprocess/invalidate().json": {
       "etag": "\"163d-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/invalidate.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/invalidate().md",
       "hash": "32e18f5f205949d67be55eaf384464ccdf4c9ddff1a639bf5b5e9ed8998da5d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginekit/webcontentprocess/makelibxpcconnection().json": {
       "etag": "\"1b25-65d55e1ffabb3-df\"",
-      "file_path": "documentation/BrowserEngineKit/webcontentprocess/makelibxpcconnection.md",
+      "file_path": "documentation/BrowserEngineKit/webcontentprocess/makelibxpcconnection().md",
       "hash": "277756eb888eafc7b31234c849aa9f2c2b7fd9e5648e8c29d6d0becb65365758"
     }
   },

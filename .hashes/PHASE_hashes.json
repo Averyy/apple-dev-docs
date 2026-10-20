@@ -22,12 +22,12 @@
     },
     "https://developer.apple.com/documentation/phase/phaseambientmixerdefinition/init(channellayout:orientation:)": {
       "etag": "\"3495-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phaseambientmixerdefinition/init-channellayoutorientation.md",
+      "file_path": "documentation/PHASE/phaseambientmixerdefinition/init(channellayout,orientation).md",
       "hash": "115a2c5cd1c307ab65e63c1eec3716533098a5de04b77b19603c4481325c4187"
     },
     "https://developer.apple.com/documentation/phase/phaseambientmixerdefinition/init(channellayout:orientation:identifier:)": {
       "etag": "\"3aff-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phaseambientmixerdefinition/init-channellayoutorientationidentifier.md",
+      "file_path": "documentation/PHASE/phaseambientmixerdefinition/init(channellayout,orientation,identifier).md",
       "hash": "d2992a917e123d35beb1db1ba335864249ea020518a3e8c0a4a0ff2a2be39d82"
     },
     "https://developer.apple.com/documentation/phase/phaseambientmixerdefinition/inputchannellayout": {
@@ -52,7 +52,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseasset/assettype/init(rawvalue:)": {
       "etag": "\"166a-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phaseasset/assettype/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseasset/assettype/init(rawvalue).md",
       "hash": "8f9eb958825d0cc9d1e46891f11d7f1a89f4acde01b7d3832b67192c0e314481"
     },
     "https://developer.apple.com/documentation/phase/phaseasset/assettype/resident": {
@@ -72,7 +72,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseasseterror-swift.struct": {
       "etag": "\"3f1e-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseasseterror-swiftstruct.md",
+      "file_path": "documentation/PHASE/phaseasseterror-swift.struct.md",
       "hash": "2901be7c4d2e785f4b0ef233732fb1b80668219584da40ae0a08beca547fc32e"
     },
     "https://developer.apple.com/documentation/phase/phaseasseterror-swift.struct/alreadyexists": {
@@ -112,7 +112,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseasseterror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"156e-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phaseasseterror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseasseterror-swift.struct/code/init(rawvalue).md",
       "hash": "7e3aab37c8515b1d97f545a5df16b3be7a4b5adfe24fc44482ee5b34b21126c7"
     },
     "https://developer.apple.com/documentation/phase/phaseasseterror-swift.struct/code/invalidengineinstance": {
@@ -162,7 +162,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseassetregistry/asset(foridentifier:)": {
       "etag": "\"320d-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/asset-foridentifier.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/asset(foridentifier).md",
       "hash": "ee6cc0a14b84dc40cb14b27cf83197095480aa52a5982b336137edad1c885f34"
     },
     "https://developer.apple.com/documentation/phase/phaseassetregistry/globalmetaparameters": {
@@ -172,27 +172,27 @@
     },
     "https://developer.apple.com/documentation/phase/phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:)": {
       "etag": "\"4744-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/registerglobalmetaparameter-metaparameterdefinition.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition).md",
       "hash": "dcf2fa431f7a05918f9b38d77c7d5c05909219e814418f8df5d27a4987b550a9"
     },
     "https://developer.apple.com/documentation/phase/phaseassetregistry/registersoundasset(data:identifier:format:normalizationmode:)": {
       "etag": "\"5e90-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/registersoundasset-dataidentifierformatnormalizationmode.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/registersoundasset(data,identifier,format,normalizationmode).md",
       "hash": "dfd4273433cc516c7bf161ab8b048914ecf97cf3e647d24a2dafc9a53a5bfd45"
     },
     "https://developer.apple.com/documentation/phase/phaseassetregistry/registersoundasset(url:identifier:assettype:channellayout:normalizationmode:)": {
       "etag": "\"72ab-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/registersoundasset-urlidentifierassettypechannellayoutnormalizationmode.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/registersoundasset(url,identifier,assettype,channellayout,normalizationmode).md",
       "hash": "fd16fcc916dc016a85fffbee774d31f85ffa36b1ab2532b43fd429a8c2bba32f"
     },
     "https://developer.apple.com/documentation/phase/phaseassetregistry/registersoundeventasset(rootnode:identifier:)": {
       "etag": "\"4083-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/registersoundeventasset-rootnodeidentifier.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/registersoundeventasset(rootnode,identifier).md",
       "hash": "c9b8198db46f198174e793fef8a8257462aa3592678ddd20408bb1c32cf96341"
     },
     "https://developer.apple.com/documentation/phase/phaseassetregistry/unregisterasset(identifier:completion:)": {
       "etag": "\"4e66-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/unregisterasset-identifiercompletion.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/unregisterasset(identifier,completion).md",
       "hash": "01eaf952b5e00dbbf6354244a806b150148e1803e25e7a4bd1c5c514ea2a7d8f"
     },
     "https://developer.apple.com/documentation/phase/phaseautomaticheadtrackingflags": {
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseautomaticheadtrackingflags/init(rawvalue:)": {
       "etag": "\"1397-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseautomaticheadtrackingflags/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseautomaticheadtrackingflags/init(rawvalue).md",
       "hash": "04bcb3d0103fcf9b84a4ec43d5f72f1cf5f46dbb5eeff63096509693a87ba3de"
     },
     "https://developer.apple.com/documentation/phase/phaseautomaticheadtrackingflags/orientation": {
@@ -222,22 +222,22 @@
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/addrange(envelope:subtree:)": {
       "etag": "\"5249-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrange-envelopesubtree.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrange(envelope,subtree).md",
       "hash": "b9d5762af94d81b5cb5cb36d5c757f1a6940b2add5e7f9ce759de3bd0c6cc73c"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/addrangeforinputvaluesabove(value:fullgainatvalue:fadecurvetype:subtree:)": {
       "etag": "\"5e14-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesabove-valuefullgainatvaluefadecurvetypesubtree.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesabove(value,fullgainatvalue,fadecurvetype,subtree).md",
       "hash": "6e3662f36e6ee60dc6bd6e408570379d89c746f878e1d63626c608ac90e523a3"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/addrangeforinputvaluesbelow(value:fullgainatvalue:fadecurvetype:subtree:)": {
       "etag": "\"5e14-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesbelow-valuefullgainatvaluefadecurvetypesubtree.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesbelow(value,fullgainatvalue,fadecurvetype,subtree).md",
       "hash": "eff439ef948c7747af63e750a32d8179685eaa3e4320dcfef6734e3b98fd6593"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/addrangeforinputvaluesbetween(lowvalue:highvalue:fullgainatlowvalue:fullgainathighvalue:lowfadecurvetype:highfadecurvetype:subtree:)": {
       "etag": "\"6f6a-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesbetween-lowvaluehighvaluefullgainatlowvaluefullgainathighvaluelowfadecurvetypehighfadecurvetypesubtree.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesbetween(lowvalue,highvalue,fullgainatlowvalue,fullgainathighvalue,lowfadecurvetype,highfadecurvetype,subtree).md",
       "hash": "bf86b16cfeab04cbb8862761973eef4d0bebd559c3787a381cf8cae14aeacf62"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/blendparameterdefinition": {
@@ -247,32 +247,32 @@
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/init(blendmetaparameterdefinition:)": {
       "etag": "\"3d92-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-blendmetaparameterdefinition.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(blendmetaparameterdefinition).md",
       "hash": "7f359cd37b401e8d0499172d4b4f6b8e428c738e60354a3326f845be6739ea1f"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/init(blendmetaparameterdefinition:identifier:)": {
       "etag": "\"4407-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-blendmetaparameterdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(blendmetaparameterdefinition,identifier).md",
       "hash": "b06305b9fa045f29841ed2e58468eda23f014795db104f704eeb5e228d5228d9"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition:)": {
       "etag": "\"18f1-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-distanceblendwithspatialmixerdefinition.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition).md",
       "hash": "ecd40d8157e0b061db5e3b035702020e454a3bb79bea4d7db95e8b39bce876de"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition:identifier:)": {
       "etag": "\"1e5a-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-distanceblendwithspatialmixerdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition,identifier).md",
       "hash": "92ed9a998c481ff65c55cb0ee1d54aa180de84c7a1e8732333569ff517c0505d"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/init(spatialmixerdefinition:)": {
       "etag": "\"3bca-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-spatialmixerdefinition.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(spatialmixerdefinition).md",
       "hash": "b7ac74f6a10882b740e40eafdeb4cc4b7a6f58d244a6810925380d675a533eba"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/init(spatialmixerdefinition:identifier:)": {
       "etag": "\"4233-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-spatialmixerdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(spatialmixerdefinition,identifier).md",
       "hash": "b8644994fe9646b56f9885a60ac67d2d84671d201d2d98e353a8ad2e2971e27d"
     },
     "https://developer.apple.com/documentation/phase/phaseblendnodedefinition/spatialmixerdefinitionfordistance": {
@@ -292,7 +292,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasecalibrationmode/init(rawvalue:)": {
       "etag": "\"127e-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasecalibrationmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasecalibrationmode/init(rawvalue).md",
       "hash": "b32285b4165f136e056c4f91306609f08f5c8b98c21269ee077f07e02e516aa1"
     },
     "https://developer.apple.com/documentation/phase/phasecalibrationmode/none": {
@@ -312,7 +312,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasecardioiddirectivitymodelparameters/init(subbandparameters:)": {
       "etag": "\"271a-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasecardioiddirectivitymodelparameters/init-subbandparameters.md",
+      "file_path": "documentation/PHASE/phasecardioiddirectivitymodelparameters/init(subbandparameters).md",
       "hash": "d425f6842e023a5d373949d89d92d1a24cb0a2be478150bf34906f30ca49b5ff"
     },
     "https://developer.apple.com/documentation/phase/phasecardioiddirectivitymodelparameters/subbandparameters": {
@@ -332,7 +332,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasecardioiddirectivitymodelsubbandparameters/init()": {
       "etag": "\"1a4e-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasecardioiddirectivitymodelsubbandparameters/init.md",
+      "file_path": "documentation/PHASE/phasecardioiddirectivitymodelsubbandparameters/init().md",
       "hash": "3b6f2d4b945c0438c6f79e23f928bce9c47ffd256eb7e70b49ebc4c76f0f225a"
     },
     "https://developer.apple.com/documentation/phase/phasecardioiddirectivitymodelsubbandparameters/pattern": {
@@ -352,12 +352,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasechannelmixerdefinition/init(channellayout:)": {
       "etag": "\"2a81-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasechannelmixerdefinition/init-channellayout.md",
+      "file_path": "documentation/PHASE/phasechannelmixerdefinition/init(channellayout).md",
       "hash": "ff62830a44e8f77204ac3e17ba9b5b34b42a6a9709523cf09cb7ee8c50df2612"
     },
     "https://developer.apple.com/documentation/phase/phasechannelmixerdefinition/init(channellayout:identifier:)": {
       "etag": "\"30fc-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasechannelmixerdefinition/init-channellayoutidentifier.md",
+      "file_path": "documentation/PHASE/phasechannelmixerdefinition/init(channellayout,identifier).md",
       "hash": "bba0eed3df6f42346551fbe6a7ad4f54fa13ac57a4fdcfbcab58369af61366be"
     },
     "https://developer.apple.com/documentation/phase/phasechannelmixerdefinition/inputchannellayout": {
@@ -372,7 +372,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseconedirectivitymodelparameters/init(subbandparameters:)": {
       "etag": "\"267c-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phaseconedirectivitymodelparameters/init-subbandparameters.md",
+      "file_path": "documentation/PHASE/phaseconedirectivitymodelparameters/init(subbandparameters).md",
       "hash": "97666697602084894147a9344b1d34a461ebe4b474dd7231687d287b05adbebf"
     },
     "https://developer.apple.com/documentation/phase/phaseconedirectivitymodelparameters/subbandparameters": {
@@ -392,7 +392,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseconedirectivitymodelsubbandparameters/init()": {
       "etag": "\"19ef-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phaseconedirectivitymodelsubbandparameters/init.md",
+      "file_path": "documentation/PHASE/phaseconedirectivitymodelsubbandparameters/init().md",
       "hash": "f7a80afc9fbe0dc6ff66b0ebca07a5689646211814201c58ccf3c9916b9393d8"
     },
     "https://developer.apple.com/documentation/phase/phaseconedirectivitymodelsubbandparameters/innerangle": {
@@ -412,7 +412,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseconedirectivitymodelsubbandparameters/setangles(innerangle:outerangle:)": {
       "etag": "\"3985-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phaseconedirectivitymodelsubbandparameters/setangles-innerangleouterangle.md",
+      "file_path": "documentation/PHASE/phaseconedirectivitymodelsubbandparameters/setangles(innerangle,outerangle).md",
       "hash": "0c657549f14cf23bb304f8223f2aea77f36dea49636e745bc576144b20697960"
     },
     "https://developer.apple.com/documentation/phase/phasecontainernodedefinition": {
@@ -422,22 +422,22 @@
     },
     "https://developer.apple.com/documentation/phase/phasecontainernodedefinition/addsubtree(_:)": {
       "etag": "\"2418-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasecontainernodedefinition/addsubtree.md",
+      "file_path": "documentation/PHASE/phasecontainernodedefinition/addsubtree(_).md",
       "hash": "6080e84798341a98147bee2b69f083262ad7f1a55c4f7f329be788f345ff1b22"
     },
     "https://developer.apple.com/documentation/phase/phasecontainernodedefinition/init()": {
       "etag": "\"22f7-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasecontainernodedefinition/init.md",
+      "file_path": "documentation/PHASE/phasecontainernodedefinition/init().md",
       "hash": "c664599b53f14d2a6693aab426f86c122c7dd9fec15a71759bef486e898cff21"
     },
     "https://developer.apple.com/documentation/phase/phasecontainernodedefinition/init(identifier:)": {
       "etag": "\"2945-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasecontainernodedefinition/init-identifier.md",
+      "file_path": "documentation/PHASE/phasecontainernodedefinition/init(identifier).md",
       "hash": "f8dd6a7875853a90480a984d057097a70acce0d52afc6adf53976f986683e8dd"
     },
     "https://developer.apple.com/documentation/phase/phasecontainernodedefinition/new()": {
       "etag": "\"2439-65d55f768f372\"",
-      "file_path": "documentation/PHASE/phasecontainernodedefinition/new.md",
+      "file_path": "documentation/PHASE/phasecontainernodedefinition/new().md",
       "hash": "c8ae40d105c7aa9c3b2196701b8873bad175ad35eddf559f4b518090e7b48f75"
     },
     "https://developer.apple.com/documentation/phase/phaseculloption": {
@@ -452,7 +452,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseculloption/init(rawvalue:)": {
       "etag": "\"1223-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phaseculloption/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseculloption/init(rawvalue).md",
       "hash": "4aa3ba7c424fcaaba173a9715075bd18ec5d303e4f53b724000815b217a17223"
     },
     "https://developer.apple.com/documentation/phase/phaseculloption/sleepwakeatrandomoffset": {
@@ -492,7 +492,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasecurvetype/init(rawvalue:)": {
       "etag": "\"121c-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phasecurvetype/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasecurvetype/init(rawvalue).md",
       "hash": "9101983aebc471b9e0a2769f29933fa88cce60c608b4cd4a6d91a55dda166f8b"
     },
     "https://developer.apple.com/documentation/phase/phasecurvetype/inversecubed": {
@@ -567,7 +567,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasedistancemodelfadeoutparameters/init(culldistance:)": {
       "etag": "\"2194-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasedistancemodelfadeoutparameters/init-culldistance.md",
+      "file_path": "documentation/PHASE/phasedistancemodelfadeoutparameters/init(culldistance).md",
       "hash": "d956b4d9d9f38a78c9faf6a9c7b709867e600264e7966d0d871652676d91925a"
     },
     "https://developer.apple.com/documentation/phase/phasedistancemodelparameters": {
@@ -587,7 +587,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseducker/activate()": {
       "etag": "\"1cc7-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseducker/activate.md",
+      "file_path": "documentation/PHASE/phaseducker/activate().md",
       "hash": "366c5953571a67b9359b6e3e271070f4d7d5f32786093c069d4b797bd3822c1d"
     },
     "https://developer.apple.com/documentation/phase/phaseducker/attackcurve": {
@@ -602,7 +602,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseducker/deactivate()": {
       "etag": "\"1cd1-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseducker/deactivate.md",
+      "file_path": "documentation/PHASE/phaseducker/deactivate().md",
       "hash": "bc575f102c5b99a57da763a28385f4f4f75a0838825d7d578608bc798bc96e58"
     },
     "https://developer.apple.com/documentation/phase/phaseducker/gain": {
@@ -617,7 +617,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseducker/init(engine:sourcegroups:targetgroups:gain:attacktime:releasetime:attackcurve:releasecurve:)": {
       "etag": "\"55df-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseducker/init-enginesourcegroupstargetgroupsgainattacktimereleasetimeattackcurvereleasecurve.md",
+      "file_path": "documentation/PHASE/phaseducker/init(engine,sourcegroups,targetgroups,gain,attacktime,releasetime,attackcurve,releasecurve).md",
       "hash": "a3c4c6c3d1aa294e5c0e2515902a2ff8d13656e2551f18aafd5f07f64a2c73a3"
     },
     "https://developer.apple.com/documentation/phase/phaseducker/isactive": {
@@ -682,12 +682,12 @@
     },
     "https://developer.apple.com/documentation/phase/phaseengine/init(updatemode:)": {
       "etag": "\"40dd-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/init-updatemode.md",
+      "file_path": "documentation/PHASE/phaseengine/init(updatemode).md",
       "hash": "de7a37c20c9ac6fc58400641082a6ba81f23260cd680124bf8125aa48e129183"
     },
     "https://developer.apple.com/documentation/phase/phaseengine/init(updatemode:renderingmode:)": {
       "etag": "\"4328-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/init-updatemoderenderingmode.md",
+      "file_path": "documentation/PHASE/phaseengine/init(updatemode,renderingmode).md",
       "hash": "a1438aaea9dc1eb78d294809ae810b01c4b85782a9143c00bd3b2aea60674122"
     },
     "https://developer.apple.com/documentation/phase/phaseengine/lastrendertime": {
@@ -702,7 +702,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseengine/pause()": {
       "etag": "\"2ffc-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/pause.md",
+      "file_path": "documentation/PHASE/phaseengine/pause().md",
       "hash": "ee035079875571416a9dde75335074c4267d198282f5bf3a1789f4f96f11c3de"
     },
     "https://developer.apple.com/documentation/phase/phaseengine/renderingmode": {
@@ -717,7 +717,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseengine/renderingmode/init(rawvalue:)": {
       "etag": "\"169d-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/renderingmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseengine/renderingmode/init(rawvalue).md",
       "hash": "61db7523e48b4452ecf111edc33876f096774242f49db1c010645033f37c0212"
     },
     "https://developer.apple.com/documentation/phase/phaseengine/renderingmode/local": {
@@ -742,12 +742,12 @@
     },
     "https://developer.apple.com/documentation/phase/phaseengine/start()": {
       "etag": "\"343c-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/start.md",
+      "file_path": "documentation/PHASE/phaseengine/start().md",
       "hash": "9de6ecd5d5256fa427a75faa274553e47dfc8c645d6dcdfa71af2f8189da82ce"
     },
     "https://developer.apple.com/documentation/phase/phaseengine/stop()": {
       "etag": "\"2e98-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/stop.md",
+      "file_path": "documentation/PHASE/phaseengine/stop().md",
       "hash": "e13b67be0538d74b90af1235ee0329a530edf2010b9cb3d4cf452703e0cfbfb6"
     },
     "https://developer.apple.com/documentation/phase/phaseengine/unitspermeter": {
@@ -762,7 +762,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseengine/update()": {
       "etag": "\"4969-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/update.md",
+      "file_path": "documentation/PHASE/phaseengine/update().md",
       "hash": "99f583c7e6b93ea47c21a0eead518df9d5ffcfc54bfc97bbc871f5237e0ea939"
     },
     "https://developer.apple.com/documentation/phase/phaseengine/updatemode": {
@@ -777,7 +777,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseengine/updatemode/init(rawvalue:)": {
       "etag": "\"16d8-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/updatemode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseengine/updatemode/init(rawvalue).md",
       "hash": "8059a068a738df8ebf28ed333165ddad3414a731e820922ff0788acaead168b3"
     },
     "https://developer.apple.com/documentation/phase/phaseengine/updatemode/manual": {
@@ -797,12 +797,12 @@
     },
     "https://developer.apple.com/documentation/phase/phaseenvelope/evaluate(x:)": {
       "etag": "\"31c6-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaseenvelope/evaluate-x.md",
+      "file_path": "documentation/PHASE/phaseenvelope/evaluate(x).md",
       "hash": "6366554a31a1ac3be936b283137d692ad21c21a234310b913ccfeb81094ab6d3"
     },
     "https://developer.apple.com/documentation/phase/phaseenvelope/init(startpoint:segments:)": {
       "etag": "\"32ac-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaseenvelope/init-startpointsegments.md",
+      "file_path": "documentation/PHASE/phaseenvelope/init(startpoint,segments).md",
       "hash": "4176b065136ae7dbb986b6423425a4f917add00e08cab26f1f67bd2524691875"
     },
     "https://developer.apple.com/documentation/phase/phaseenvelope/range": {
@@ -832,7 +832,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseenvelopedistancemodelparameters/init(envelope:)": {
       "etag": "\"2330-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseenvelopedistancemodelparameters/init-envelope.md",
+      "file_path": "documentation/PHASE/phaseenvelopedistancemodelparameters/init(envelope).md",
       "hash": "7f13ab12f210846356d0f1513c4f958c08ce830cab2709b890e6749daeacc58a"
     },
     "https://developer.apple.com/documentation/phase/phaseenvelopesegment": {
@@ -852,12 +852,12 @@
     },
     "https://developer.apple.com/documentation/phase/phaseenvelopesegment/init(endpoint:curvetype:)": {
       "etag": "\"29a2-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseenvelopesegment/init-endpointcurvetype.md",
+      "file_path": "documentation/PHASE/phaseenvelopesegment/init(endpoint,curvetype).md",
       "hash": "10781943ed8373cbd31e6393b72ac210bbabeec7ae2052103921d5f95e430102"
     },
     "https://developer.apple.com/documentation/phase/phaseerror-swift.struct": {
       "etag": "\"2ee1-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseerror-swiftstruct.md",
+      "file_path": "documentation/PHASE/phaseerror-swift.struct.md",
       "hash": "4ddbbefce20c1d0b37f68c2fb75479a185d14581bce2475f92ac1db33e0a3395"
     },
     "https://developer.apple.com/documentation/phase/phaseerror-swift.struct/code": {
@@ -867,7 +867,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"14e9-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phaseerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseerror-swift.struct/code/init(rawvalue).md",
       "hash": "b23b60d978e95e14a9927de300a4e87fd48108e7533150b5e5350e084cc03a6e"
     },
     "https://developer.apple.com/documentation/phase/phaseerror-swift.struct/code/initializefailed": {
@@ -942,7 +942,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasegeneratornodedefinition/setcalibrationmode(calibrationmode:level:)": {
       "etag": "\"40f0-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phasegeneratornodedefinition/setcalibrationmode-calibrationmodelevel.md",
+      "file_path": "documentation/PHASE/phasegeneratornodedefinition/setcalibrationmode(calibrationmode,level).md",
       "hash": "71bc19a912052b2e4a8fa251bd6e3b3c2afbfef51ea8845f679c706f857f1d55"
     },
     "https://developer.apple.com/documentation/phase/phasegeometricspreadingdistancemodelparameters": {
@@ -952,7 +952,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasegeometricspreadingdistancemodelparameters/init()": {
       "etag": "\"19ea-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phasegeometricspreadingdistancemodelparameters/init.md",
+      "file_path": "documentation/PHASE/phasegeometricspreadingdistancemodelparameters/init().md",
       "hash": "0dc2f78612a08221cb2c27c969c68a1e0da409ed4eed845e06902ef3a607cc65"
     },
     "https://developer.apple.com/documentation/phase/phasegeometricspreadingdistancemodelparameters/rollofffactor": {
@@ -972,12 +972,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasegroup/fadegain(gain:duration:curvetype:)": {
       "etag": "\"3775-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/fadegain-gaindurationcurvetype.md",
+      "file_path": "documentation/PHASE/phasegroup/fadegain(gain,duration,curvetype).md",
       "hash": "09a8025a19395d57b4a67408bf7b74b1de500faa79d0fd1eb37d214355e65adf"
     },
     "https://developer.apple.com/documentation/phase/phasegroup/faderate(rate:duration:curvetype:)": {
       "etag": "\"37a0-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/faderate-ratedurationcurvetype.md",
+      "file_path": "documentation/PHASE/phasegroup/faderate(rate,duration,curvetype).md",
       "hash": "a03f33b45eb7e2a4ca3f95bd8dc869cbabfd27ff526c9dbaebccf59dcdc76d60"
     },
     "https://developer.apple.com/documentation/phase/phasegroup/gain": {
@@ -992,7 +992,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasegroup/init(identifier:)": {
       "etag": "\"1df4-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/init-identifier.md",
+      "file_path": "documentation/PHASE/phasegroup/init(identifier).md",
       "hash": "7bc339f19911ee02b0b0baf524164fd2ebb9fecb3d6c86b9a9d8c466f3b6ccb9"
     },
     "https://developer.apple.com/documentation/phase/phasegroup/ismuted": {
@@ -1007,7 +1007,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasegroup/mute()": {
       "etag": "\"2c78-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/mute.md",
+      "file_path": "documentation/PHASE/phasegroup/mute().md",
       "hash": "dc8c1fb92ce489f48541949176a528115c68810e3f9bdb4cba0e33e45deb6298"
     },
     "https://developer.apple.com/documentation/phase/phasegroup/rate": {
@@ -1017,27 +1017,27 @@
     },
     "https://developer.apple.com/documentation/phase/phasegroup/register(engine:)": {
       "etag": "\"2d3b-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/register-engine.md",
+      "file_path": "documentation/PHASE/phasegroup/register(engine).md",
       "hash": "bc033028f7da9cd8bee89a7f52407d16aae379f8041c55097685156b7c64ac13"
     },
     "https://developer.apple.com/documentation/phase/phasegroup/solo()": {
       "etag": "\"2d7f-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/solo.md",
+      "file_path": "documentation/PHASE/phasegroup/solo().md",
       "hash": "743230492d2dd7295d658bdc70bb49fe765d6b3f381b13f1b3912c96d0e7ecc8"
     },
     "https://developer.apple.com/documentation/phase/phasegroup/unmute()": {
       "etag": "\"2c95-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/unmute.md",
+      "file_path": "documentation/PHASE/phasegroup/unmute().md",
       "hash": "38afe72b62648f0820144bf508c0f7d0087c724261a66745ebfd2043416a91a5"
     },
     "https://developer.apple.com/documentation/phase/phasegroup/unregisterfromengine()": {
       "etag": "\"246d-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/unregisterfromengine.md",
+      "file_path": "documentation/PHASE/phasegroup/unregisterfromengine().md",
       "hash": "00e92e7a2291e4a8942cd8195a163c1949faa28c19de976be03c34f10a534ce3"
     },
     "https://developer.apple.com/documentation/phase/phasegroup/unsolo()": {
       "etag": "\"2c9b-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/unsolo.md",
+      "file_path": "documentation/PHASE/phasegroup/unsolo().md",
       "hash": "35d247f18dd8e7622f8b914cc2e5f141806c4e69fff08e868f5075f8784fbfe5"
     },
     "https://developer.apple.com/documentation/phase/phasegrouppreset": {
@@ -1047,27 +1047,27 @@
     },
     "https://developer.apple.com/documentation/phase/phasegrouppreset/activate()": {
       "etag": "\"29fc-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/activate.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/activate().md",
       "hash": "cca6c7f4855ce942510e6c2868ee3655b2cd08d453d769774938ed0aed390679"
     },
     "https://developer.apple.com/documentation/phase/phasegrouppreset/activate(timetotargetoverride:)": {
       "etag": "\"2ba7-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/activate-timetotargetoverride.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/activate(timetotargetoverride).md",
       "hash": "f3b9da1ff8469f55465d90d5926deaf8921c55a9633b98d46e0d01c303236a5e"
     },
     "https://developer.apple.com/documentation/phase/phasegrouppreset/deactivate()": {
       "etag": "\"2a40-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/deactivate.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/deactivate().md",
       "hash": "3008663e7d1bcd20305081de87c0d21e78a15e98cb7350aff9562a963bb726f4"
     },
     "https://developer.apple.com/documentation/phase/phasegrouppreset/deactivate(timetoresetoverride:)": {
       "etag": "\"2bb3-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/deactivate-timetoresetoverride.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/deactivate(timetoresetoverride).md",
       "hash": "822fca2a72a356d36038993c61bb186676fd0830f613cc8ae8558f2140f9da8d"
     },
     "https://developer.apple.com/documentation/phase/phasegrouppreset/init(engine:settings:timetotarget:timetoreset:)": {
       "etag": "\"4c01-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/init-enginesettingstimetotargettimetoreset.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/init(engine,settings,timetotarget,timetoreset).md",
       "hash": "140140e034eec63dac96f7408d20a4380a7e21a011887a3bbaeb6b4577888021"
     },
     "https://developer.apple.com/documentation/phase/phasegrouppreset/settings": {
@@ -1102,7 +1102,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasegrouppresetsetting/init(gain:rate:gaincurvetype:ratecurvetype:)": {
       "etag": "\"3c8e-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasegrouppresetsetting/init-gainrategaincurvetyperatecurvetype.md",
+      "file_path": "documentation/PHASE/phasegrouppresetsetting/init(gain,rate,gaincurvetype,ratecurvetype).md",
       "hash": "efdf4f71613b2cf0d2e8e83a3dc24d3d07cc990a70ad8a53a0639e9ea25f149d"
     },
     "https://developer.apple.com/documentation/phase/phasegrouppresetsetting/rate": {
@@ -1132,7 +1132,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaselistener/init(engine:)": {
       "etag": "\"20c0-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaselistener/init-engine.md",
+      "file_path": "documentation/PHASE/phaselistener/init(engine).md",
       "hash": "a6ca30dc0b5b75957890d2722fa3cce37f61306353b23a4a960614950a5d1a63"
     },
     "https://developer.apple.com/documentation/phase/phasemappedmetaparameterdefinition": {
@@ -1147,12 +1147,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition:envelope:)": {
       "etag": "\"3b0a-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasemappedmetaparameterdefinition/init-inputmetaparameterdefinitionenvelope.md",
+      "file_path": "documentation/PHASE/phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition,envelope).md",
       "hash": "0619260105600737ae5b0af16196109d0ed23b97c943cb3fe8fe217bbd89b5e4"
     },
     "https://developer.apple.com/documentation/phase/phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition:envelope:identifier:)": {
       "etag": "\"41a1-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasemappedmetaparameterdefinition/init-inputmetaparameterdefinitionenvelopeidentifier.md",
+      "file_path": "documentation/PHASE/phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition,envelope,identifier).md",
       "hash": "bc949a3a61360cd6887b80e9858068e453ab32ebb30c3610d9e32d29e72ccd5d"
     },
     "https://developer.apple.com/documentation/phase/phasemappedmetaparameterdefinition/inputmetaparameterdefinition": {
@@ -1167,7 +1167,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasematerial/init(engine:preset:)": {
       "etag": "\"2a8e-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phasematerial/init-enginepreset.md",
+      "file_path": "documentation/PHASE/phasematerial/init(engine,preset).md",
       "hash": "f4284d9aa40c3ad732eb9e1367d13f4b586d042383987f6c6f4f6bdddf8a8ef6"
     },
     "https://developer.apple.com/documentation/phase/phasematerialpreset": {
@@ -1202,7 +1202,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasematerialpreset/init(rawvalue:)": {
       "etag": "\"129e-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phasematerialpreset/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasematerialpreset/init(rawvalue).md",
       "hash": "d6092998dd4d5f1ca87fc4e2a619fb24384de5c01de0f91b8f9ff104c8cdbfb9"
     },
     "https://developer.apple.com/documentation/phase/phasematerialpreset/wood": {
@@ -1217,7 +1217,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasemedium/init(engine:preset:)": {
       "etag": "\"2c84-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasemedium/init-enginepreset.md",
+      "file_path": "documentation/PHASE/phasemedium/init(engine,preset).md",
       "hash": "541c99cd998b6322deca2d053c2afe539b6ca2442f9a657c925819f56249fdb0"
     },
     "https://developer.apple.com/documentation/phase/phasemedium/preset": {
@@ -1232,7 +1232,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasemedium/preset/init(rawvalue:)": {
       "etag": "\"1683-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasemedium/preset/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasemedium/preset/init(rawvalue).md",
       "hash": "fbb93654522b6228e1c66f16fc25b10474802100b2c92fd7f8193b8035d64ca0"
     },
     "https://developer.apple.com/documentation/phase/phasemetaparameter": {
@@ -1302,12 +1302,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasemixerparameters/addambientmixerparameters(identifier:listener:)": {
       "etag": "\"3a76-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasemixerparameters/addambientmixerparameters-identifierlistener.md",
+      "file_path": "documentation/PHASE/phasemixerparameters/addambientmixerparameters(identifier,listener).md",
       "hash": "edc1e2f610e4d5deeaee216c686a8b2e4994d377930a96ed8676b3e6d9fb8166"
     },
     "https://developer.apple.com/documentation/phase/phasemixerparameters/addspatialmixerparameters(identifier:source:listener:)": {
       "etag": "\"42b4-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasemixerparameters/addspatialmixerparameters-identifiersourcelistener.md",
+      "file_path": "documentation/PHASE/phasemixerparameters/addspatialmixerparameters(identifier,source,listener).md",
       "hash": "217be9bf6ef45125113cd85c482e4c8a18cd88376dd8c3c9768e3680d6b4e19a"
     },
     "https://developer.apple.com/documentation/phase/phasenormalizationmode": {
@@ -1322,7 +1322,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasenormalizationmode/init(rawvalue:)": {
       "etag": "\"12e6-65d55f76ec4bf-df\"",
-      "file_path": "documentation/PHASE/phasenormalizationmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasenormalizationmode/init(rawvalue).md",
       "hash": "d85f6ee83f0573df289c0f22a59b3a9ecc727400d56159e1d729d75a42e58fb6"
     },
     "https://developer.apple.com/documentation/phase/phasenormalizationmode/none": {
@@ -1337,7 +1337,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasenumbermetaparameter/fade(value:duration:)": {
       "etag": "\"297c-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameter/fade-valueduration.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameter/fade(value,duration).md",
       "hash": "1f3438d5b2c573fe8bb778c987bf9271c5a69dce624c09b9afc0e13eba2698fe"
     },
     "https://developer.apple.com/documentation/phase/phasenumbermetaparameter/maximum": {
@@ -1357,22 +1357,22 @@
     },
     "https://developer.apple.com/documentation/phase/phasenumbermetaparameterdefinition/init(value:)": {
       "etag": "\"3922-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init-value.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init(value).md",
       "hash": "3862985b98cbff9e80bb8c450a4ffbd4b493e0dae3e9ecd9f20eb7ffd1682df7"
     },
     "https://developer.apple.com/documentation/phase/phasenumbermetaparameterdefinition/init(value:identifier:)": {
       "etag": "\"3f33-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init-valueidentifier.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init(value,identifier).md",
       "hash": "2b3c28275142db9253f80a7f629fc425c8f4795f8f33872ab10489283cca84a0"
     },
     "https://developer.apple.com/documentation/phase/phasenumbermetaparameterdefinition/init(value:minimum:maximum:)": {
       "etag": "\"4032-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init-valueminimummaximum.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init(value,minimum,maximum).md",
       "hash": "9dd69d19fe92d772f86691f8c64e5520eae366e50c93170d1f5541075c334c56"
     },
     "https://developer.apple.com/documentation/phase/phasenumbermetaparameterdefinition/init(value:minimum:maximum:identifier:)": {
       "etag": "\"46c9-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init-valueminimummaximumidentifier.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init(value,minimum,maximum,identifier).md",
       "hash": "4ba58ea453575098da4ce8a8e399a680e5de19c30685660cf228dcb953614edc"
     },
     "https://developer.apple.com/documentation/phase/phasenumbermetaparameterdefinition/maximum": {
@@ -1397,7 +1397,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasenumericpair/init(firstvalue:secondvalue:)": {
       "etag": "\"217a-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasenumericpair/init-firstvaluesecondvalue.md",
+      "file_path": "documentation/PHASE/phasenumericpair/init(firstvalue,secondvalue).md",
       "hash": "95a2983bbfc32fe587f526578acb371deea8d2ba873a8d5bf9ee0e06a6c194dd"
     },
     "https://developer.apple.com/documentation/phase/phasenumericpair/second": {
@@ -1412,7 +1412,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseobject/addchild(_:)": {
       "etag": "\"38de-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseobject/addchild.md",
+      "file_path": "documentation/PHASE/phaseobject/addchild(_).md",
       "hash": "1f1476b06a92d7a6d489700a71cd37969136648e8937645ad91571560fcd7242"
     },
     "https://developer.apple.com/documentation/phase/phaseobject/children": {
@@ -1427,7 +1427,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseobject/init(engine:)": {
       "etag": "\"202b-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseobject/init-engine.md",
+      "file_path": "documentation/PHASE/phaseobject/init(engine).md",
       "hash": "81feee848f2cd1f983f0d4fd4b98d7d28eb4ea15f1e7c8eea0dadaadf398fec4"
     },
     "https://developer.apple.com/documentation/phase/phaseobject/parent": {
@@ -1437,12 +1437,12 @@
     },
     "https://developer.apple.com/documentation/phase/phaseobject/removechild(_:)": {
       "etag": "\"310c-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseobject/removechild.md",
+      "file_path": "documentation/PHASE/phaseobject/removechild(_).md",
       "hash": "5c1c2a2bb111bf32e743600816206c18c89c4a3ccbee2ae73b9199a2f7bba5ca"
     },
     "https://developer.apple.com/documentation/phase/phaseobject/removechildren()": {
       "etag": "\"2d25-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseobject/removechildren.md",
+      "file_path": "documentation/PHASE/phaseobject/removechildren().md",
       "hash": "f82a8ded34e19668e0f60a4ba2aedd7d5cd2b1fdcf7404ad288123db47c0bd61"
     },
     "https://developer.apple.com/documentation/phase/phaseobject/right": {
@@ -1472,7 +1472,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseoccluder/init(engine:shapes:)": {
       "etag": "\"29c5-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaseoccluder/init-engineshapes.md",
+      "file_path": "documentation/PHASE/phaseoccluder/init(engine,shapes).md",
       "hash": "ed91e49b3a7bef9ea55996435b62bb636b451878ba4f75b184d94a55ad0452a5"
     },
     "https://developer.apple.com/documentation/phase/phaseoccluder/shapes": {
@@ -1487,7 +1487,7 @@
     },
     "https://developer.apple.com/documentation/phase/phaseplaybackmode/init(rawvalue:)": {
       "etag": "\"1238-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phaseplaybackmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseplaybackmode/init(rawvalue).md",
       "hash": "b3be89681ac8704c3c413be87efeafe09465fe2b3dd14d04a6a790b94ef89618"
     },
     "https://developer.apple.com/documentation/phase/phaseplaybackmode/looping": {
@@ -1522,12 +1522,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasepullstreamnodedefinition/init(mixerdefinition:format:)": {
       "etag": "\"2f2a-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasepullstreamnodedefinition/init-mixerdefinitionformat.md",
+      "file_path": "documentation/PHASE/phasepullstreamnodedefinition/init(mixerdefinition,format).md",
       "hash": "db6138ec382336219206651b8313030827c95211266efe2b238372474a59954b"
     },
     "https://developer.apple.com/documentation/phase/phasepullstreamnodedefinition/init(mixerdefinition:format:identifier:)": {
       "etag": "\"3725-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasepullstreamnodedefinition/init-mixerdefinitionformatidentifier.md",
+      "file_path": "documentation/PHASE/phasepullstreamnodedefinition/init(mixerdefinition,format,identifier).md",
       "hash": "11d95be9df44ccc7f0ac98c9aebffa001147d6e748bb21b96621e52efa628dd6"
     },
     "https://developer.apple.com/documentation/phase/phasepullstreamnodedefinition/normalize": {
@@ -1552,7 +1552,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasepushstreambufferoptions/init(rawvalue:)": {
       "etag": "\"14ad-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasepushstreambufferoptions/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasepushstreambufferoptions/init(rawvalue).md",
       "hash": "c82428ca1f981f73ef328797d562fae9309a17b7cdb41e83df7f4be65f017762"
     },
     "https://developer.apple.com/documentation/phase/phasepushstreambufferoptions/interrupts": {
@@ -1582,7 +1582,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamcompletioncallbackcondition/init(rawvalue:)": {
       "etag": "\"1444-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamcompletioncallbackcondition/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasepushstreamcompletioncallbackcondition/init(rawvalue).md",
       "hash": "e4df2a71c301f62affdb21f7ae25d38d5fa77614679f256a36ef3645ea4eba98"
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnode": {
@@ -1612,22 +1612,22 @@
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnode/schedulebuffer(buffer:)": {
       "etag": "\"4c3f-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer-buffer.md",
+      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer(buffer).md",
       "hash": "419d2717c62a953ff11e20b02d087dcbc326260deb091b8e3e017047b8a2e637"
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnode/schedulebuffer(buffer:completioncallbacktype:completionhandler:)": {
       "etag": "\"628f-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer-buffercompletioncallbacktypecompletionhandler.md",
+      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer(buffer,completioncallbacktype,completionhandler).md",
       "hash": "17bc1fc372eb26754e5302fe40a0477033d6cbb59cfd472d622f1566f16e0e8b"
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnode/schedulebuffer(buffer:time:options:)": {
       "etag": "\"5795-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer-buffertimeoptions.md",
+      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer(buffer,time,options).md",
       "hash": "c98eeae41b7478fceb83518840b83f8d35ebcef019fa70566cc665ff7d5297eb"
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnode/schedulebuffer(buffer:time:options:completioncallbacktype:completionhandler:)": {
       "etag": "\"763e-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer-buffertimeoptionscompletioncallbacktypecompletionhandler.md",
+      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer(buffer,time,options,completioncallbacktype,completionhandler).md",
       "hash": "eb125b92c32e6fac5d33c9c4de0fb4105c7f1e4fb43b7c579d487a7aa696fa6b"
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnodedefinition": {
@@ -1642,12 +1642,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnodedefinition/init(mixerdefinition:format:)": {
       "etag": "\"34c3-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnodedefinition/init-mixerdefinitionformat.md",
+      "file_path": "documentation/PHASE/phasepushstreamnodedefinition/init(mixerdefinition,format).md",
       "hash": "bca7142971d190c2ae9c28081c4e24b98857b1150563289defd509187239d7fc"
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnodedefinition/init(mixerdefinition:format:identifier:)": {
       "etag": "\"3b2c-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnodedefinition/init-mixerdefinitionformatidentifier.md",
+      "file_path": "documentation/PHASE/phasepushstreamnodedefinition/init(mixerdefinition,format,identifier).md",
       "hash": "d2e83b35e522a695319a53353bb4a9b3826d9f86fabd97119dff0828e0ee799a"
     },
     "https://developer.apple.com/documentation/phase/phasepushstreamnodedefinition/normalize": {
@@ -1662,17 +1662,17 @@
     },
     "https://developer.apple.com/documentation/phase/phaserandomnodedefinition/addsubtree(_:weight:)": {
       "etag": "\"2c43-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaserandomnodedefinition/addsubtree-weight.md",
+      "file_path": "documentation/PHASE/phaserandomnodedefinition/addsubtree(_,weight).md",
       "hash": "e7fb4c6d85fdd6bc4e241670a923431489186881cbcb4d97f92f540445c4cfc6"
     },
     "https://developer.apple.com/documentation/phase/phaserandomnodedefinition/init()": {
       "etag": "\"1e27-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaserandomnodedefinition/init.md",
+      "file_path": "documentation/PHASE/phaserandomnodedefinition/init().md",
       "hash": "f7680eb6fec8a3ff6ea0ddb6211ddb4c746412123d171649d2b1df0cfefcf16f"
     },
     "https://developer.apple.com/documentation/phase/phaserandomnodedefinition/init(identifier:)": {
       "etag": "\"2501-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaserandomnodedefinition/init-identifier.md",
+      "file_path": "documentation/PHASE/phaserandomnodedefinition/init(identifier).md",
       "hash": "3ef7fbddac9e2b6b6b7cfd3989ae4a45402380a5f83d6bd91acd246a77ea6498"
     },
     "https://developer.apple.com/documentation/phase/phaserandomnodedefinition/uniqueselectionqueuelength": {
@@ -1692,7 +1692,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasereverbpreset/init(rawvalue:)": {
       "etag": "\"124c-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasereverbpreset/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasereverbpreset/init(rawvalue).md",
       "hash": "42e910b5fc75ae1e2a473a78e61c375ca98643d7797300bc282f9e76611f49b9"
     },
     "https://developer.apple.com/documentation/phase/phasereverbpreset/largechamber": {
@@ -1772,12 +1772,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasesamplernodedefinition/init(soundassetidentifier:mixerdefinition:)": {
       "etag": "\"3aa0-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasesamplernodedefinition/init-soundassetidentifiermixerdefinition.md",
+      "file_path": "documentation/PHASE/phasesamplernodedefinition/init(soundassetidentifier,mixerdefinition).md",
       "hash": "33bf907dbd012cc673e878a59bd0d14bf2f7734193452b280d4ace641730edb5"
     },
     "https://developer.apple.com/documentation/phase/phasesamplernodedefinition/init(soundassetidentifier:mixerdefinition:identifier:)": {
       "etag": "\"3f1a-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasesamplernodedefinition/init-soundassetidentifiermixerdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phasesamplernodedefinition/init(soundassetidentifier,mixerdefinition,identifier).md",
       "hash": "42eacd543d69c4071983b5f8bc0101ffe9fe4923dc6eea6379af1250563b38b6"
     },
     "https://developer.apple.com/documentation/phase/phasesamplernodedefinition/playbackmode": {
@@ -1807,12 +1807,12 @@
     },
     "https://developer.apple.com/documentation/phase/phaseshape/init(engine:mesh:)": {
       "etag": "\"3077-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseshape/init-enginemesh.md",
+      "file_path": "documentation/PHASE/phaseshape/init(engine,mesh).md",
       "hash": "24a3285f1101c321d449c2471993a45245fe5f7331b4f6ef67f71687fcf9d1c4"
     },
     "https://developer.apple.com/documentation/phase/phaseshape/init(engine:mesh:materials:)": {
       "etag": "\"4146-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseshape/init-enginemeshmaterials.md",
+      "file_path": "documentation/PHASE/phaseshape/init(engine,mesh,materials).md",
       "hash": "0c00223e8b25f8b96405757175bac6c0ec0230e5d1f9c4455862fe9bbcc3a359"
     },
     "https://developer.apple.com/documentation/phase/phasesoundasset": {
@@ -1842,12 +1842,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/init(engine:assetidentifier:)": {
       "etag": "\"34ce-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/init-engineassetidentifier.md",
+      "file_path": "documentation/PHASE/phasesoundevent/init(engine,assetidentifier).md",
       "hash": "06201b5530554469649818498b9912d4422497033d86c00404f2f2d8331e1e39"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/init(engine:assetidentifier:mixerparameters:)": {
       "etag": "\"3ed4-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/init-engineassetidentifiermixerparameters.md",
+      "file_path": "documentation/PHASE/phasesoundevent/init(engine,assetidentifier,mixerparameters).md",
       "hash": "c691873c20277b599af937b5689f1e033f99c5d643f82acab985555771ca4d99"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/isindefinite": {
@@ -1867,12 +1867,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/pause()": {
       "etag": "\"1d90-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/pause.md",
+      "file_path": "documentation/PHASE/phasesoundevent/pause().md",
       "hash": "83b25d12e1ce087dc283245e29308be4b7c9e3332eef4e748524cf0c9f6179c8"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/prepare(completion:)": {
       "etag": "\"49e9-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/prepare-completion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/prepare(completion).md",
       "hash": "4980ed4be551795d681cb4025837009f4bb69c0daaecdb134e7375178e98f766"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/preparehandlerreason": {
@@ -1887,7 +1887,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/preparehandlerreason/init(rawvalue:)": {
       "etag": "\"17d2-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/preparehandlerreason/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/preparehandlerreason/init(rawvalue).md",
       "hash": "8b2a94dd215c598e046010f90762d44c100aac8f986e84042765bbdfbe9f59a3"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/preparehandlerreason/prepared": {
@@ -1902,12 +1902,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/preparestate-swift.enum": {
       "etag": "\"4ea7-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swiftenum.md",
+      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swift.enum.md",
       "hash": "05afc64a27335957f21348ccabfdc31237919c4df0c01270e14549088bc32493"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/preparestate-swift.enum/init(rawvalue:)": {
       "etag": "\"17bc-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swift.enum/init(rawvalue).md",
       "hash": "5240ba3c7c33d07a6ac6aae5354abe874aa4abf4cdb55af68ec178cac12f43ad"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/preparestate-swift.enum/prepared": {
@@ -1927,7 +1927,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/preparestate-swift.property": {
       "etag": "\"2f9d-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swiftproperty.md",
+      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swift.property.md",
       "hash": "81af1cb2ebb6e3e5ed046b732d75fc817ff88f0c68f7e72c13ed74d831da206c"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/pullstreamnodes": {
@@ -1942,12 +1942,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/renderingstate-swift.enum": {
       "etag": "\"5d9e-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swiftenum.md",
+      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swift.enum.md",
       "hash": "ebbe9d2bef0f89c7f6ca6ff12849331a0dbe754c64e4c528afa2f4d1c823184e"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/renderingstate-swift.enum/init(rawvalue:)": {
       "etag": "\"17a8-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swift.enum/init(rawvalue).md",
       "hash": "da4ddd7bc7abd75fdfbcd53b00f0882b6978f29435061e093507ad6be16703f4"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/renderingstate-swift.enum/paused": {
@@ -1967,27 +1967,27 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/renderingstate-swift.property": {
       "etag": "\"33ef-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swiftproperty.md",
+      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swift.property.md",
       "hash": "0db48655a0c53d9d1eaf3cd7f08825ce1cabe580775311ecef8b5f912e81d6e2"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/resume()": {
       "etag": "\"1d9b-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/resume.md",
+      "file_path": "documentation/PHASE/phasesoundevent/resume().md",
       "hash": "47d85a21615d9769fa01aec5e4a1ba0c551b641ecc3cd3e9a31696621aaf163a"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/resume(at:)": {
       "etag": "\"21f9-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/resume-at.md",
+      "file_path": "documentation/PHASE/phasesoundevent/resume(at).md",
       "hash": "36bf2fd32b20d114d46dd3223e364e62e0e3ac434fc1bc9569db8c25a67b8a6c"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/seek(to:completion:)": {
       "etag": "\"40c9-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/seek-tocompletion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/seek(to,completion).md",
       "hash": "c2f1455e5a1bf1652f05a58f9b64ca156f36d842566522d4ea08fb07ad096e0e"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/seek(to:resumeat:completion:)": {
       "etag": "\"44eb-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/seek-toresumeatcompletion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/seek(to,resumeat,completion).md",
       "hash": "2b4f4fd1d579961e19ec727758fe892df07bb3bf255e7bcda9e87650ff24c206"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/seekhandlerreason": {
@@ -2007,7 +2007,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/seekhandlerreason/init(rawvalue:)": {
       "etag": "\"17af-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/seekhandlerreason/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/seekhandlerreason/init(rawvalue).md",
       "hash": "1489284b0f075f0b9cc79e0b150d923f9dde55a7e5d9912e10ea0be33fd6afe6"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/seekhandlerreason/seeksuccessful": {
@@ -2017,12 +2017,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/start(at:completion:)": {
       "etag": "\"3e00-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/start-atcompletion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/start(at,completion).md",
       "hash": "d7913f3f41553bc1a16a172bb11efe985f8edbd14e2ef3ed397669e356f5da52"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/start(completion:)": {
       "etag": "\"3b61-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/start-completion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/start(completion).md",
       "hash": "c9c477bcef92725e95cba9e45706719a3f66bcae789e754eda3498697f9f2856"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/starthandlerreason": {
@@ -2042,7 +2042,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/starthandlerreason/init(rawvalue:)": {
       "etag": "\"17ad-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/starthandlerreason/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/starthandlerreason/init(rawvalue).md",
       "hash": "24b90379da2e7bc52e16a93cf364e0bb55cdcb4d3d74d05e3eeb2fb14f7e46cc"
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/starthandlerreason/terminated": {
@@ -2052,12 +2052,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundevent/stopandinvalidate()": {
       "etag": "\"1e4a-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/stopandinvalidate.md",
+      "file_path": "documentation/PHASE/phasesoundevent/stopandinvalidate().md",
       "hash": "21785f5db6573d2063c2ec17c8db645f453538ad85de2bc9eda61b6fdc5c6a6f"
     },
     "https://developer.apple.com/documentation/phase/phasesoundeventerror-swift.struct": {
       "etag": "\"408e-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundeventerror-swiftstruct.md",
+      "file_path": "documentation/PHASE/phasesoundeventerror-swift.struct.md",
       "hash": "d7431e88f31759ee276682d813baef115f88b2b52de7155193380f70901b2a44"
     },
     "https://developer.apple.com/documentation/phase/phasesoundeventerror-swift.struct/apimisuse": {
@@ -2087,7 +2087,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasesoundeventerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"15e7-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasesoundeventerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundeventerror-swift.struct/code/init(rawvalue).md",
       "hash": "81e2d860a0ad5393e691496b68deb1d5b8cbb1ebb8af833c40da1c90eb7aec86"
     },
     "https://developer.apple.com/documentation/phase/phasesoundeventerror-swift.struct/code/invalidinstance": {
@@ -2167,12 +2167,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasesource/init(engine:)": {
       "etag": "\"278b-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasesource/init-engine.md",
+      "file_path": "documentation/PHASE/phasesource/init(engine).md",
       "hash": "54f22ed2c901bfafd3b4eb07e5e86ba4e69ec2a336577f76d649e4ad3ed1f0cb"
     },
     "https://developer.apple.com/documentation/phase/phasesource/init(engine:shapes:)": {
       "etag": "\"2f4f-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasesource/init-engineshapes.md",
+      "file_path": "documentation/PHASE/phasesource/init(engine,shapes).md",
       "hash": "888629ed251ffe3d187d2b913e64f95b9aed19e837f2bc72bd9c482b09c8982b"
     },
     "https://developer.apple.com/documentation/phase/phasesource/shapes": {
@@ -2197,7 +2197,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasespatialcategory/init(rawvalue:)": {
       "etag": "\"16d5-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phasespatialcategory/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasespatialcategory/init(rawvalue).md",
       "hash": "7798e04d81d937d94d4fe0c7c61a5f63e7927f58cb9b727ca7fdffc9f8f14ebd"
     },
     "https://developer.apple.com/documentation/phase/phasespatialcategory/latereverb": {
@@ -2227,7 +2227,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasespatializationmode/init(rawvalue:)": {
       "etag": "\"12ba-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasespatializationmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasespatializationmode/init(rawvalue).md",
       "hash": "25be7c1dc6c6aab6516c959f4f0772c51bac6a9a672b511e8d86653bd1a1b618"
     },
     "https://developer.apple.com/documentation/phase/phasespatialmixerdefinition": {
@@ -2242,12 +2242,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasespatialmixerdefinition/init(spatialpipeline:)": {
       "etag": "\"2bd6-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasespatialmixerdefinition/init-spatialpipeline.md",
+      "file_path": "documentation/PHASE/phasespatialmixerdefinition/init(spatialpipeline).md",
       "hash": "4bb070d5ce2ddc35f0921c2cae2a328ee5897565c11f0c9cbf6185481a415666"
     },
     "https://developer.apple.com/documentation/phase/phasespatialmixerdefinition/init(spatialpipeline:identifier:)": {
       "etag": "\"3255-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasespatialmixerdefinition/init-spatialpipelineidentifier.md",
+      "file_path": "documentation/PHASE/phasespatialmixerdefinition/init(spatialpipeline,identifier).md",
       "hash": "2af987cee1941748cb49234e0bb1e00505557fef007b21cc178d7f9a924fb1e9"
     },
     "https://developer.apple.com/documentation/phase/phasespatialmixerdefinition/listenerdirectivitymodelparameters": {
@@ -2277,12 +2277,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasespatialpipeline/flags-swift.property": {
       "etag": "\"2ec9-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swiftproperty.md",
+      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swift.property.md",
       "hash": "45673512157232c186c3be1ee1059a2daa8dde352c99dec82a10100c4375661f"
     },
     "https://developer.apple.com/documentation/phase/phasespatialpipeline/flags-swift.struct": {
       "etag": "\"57cc-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swiftstruct.md",
+      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swift.struct.md",
       "hash": "8301ef18d57212d3880ddc468a0b46e1ee7fc6218a83ef345fe3bfdb86a809eb"
     },
     "https://developer.apple.com/documentation/phase/phasespatialpipeline/flags-swift.struct/directpathtransmission": {
@@ -2297,7 +2297,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasespatialpipeline/flags-swift.struct/init(rawvalue:)": {
       "etag": "\"1960-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swift.struct/init(rawvalue).md",
       "hash": "8d24dc14e664d98d917b8c34999d723faf308117ed07110e86732ee33bd78fd2"
     },
     "https://developer.apple.com/documentation/phase/phasespatialpipeline/flags-swift.struct/latereverb": {
@@ -2307,7 +2307,7 @@
     },
     "https://developer.apple.com/documentation/phase/phasespatialpipeline/init(flags:)": {
       "etag": "\"2e4b-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasespatialpipeline/init-flags.md",
+      "file_path": "documentation/PHASE/phasespatialpipeline/init(flags).md",
       "hash": "bd8075d3bc8ccea2e71bc76d26bed252178aac84d40287f2920f562a395c673c"
     },
     "https://developer.apple.com/documentation/phase/phasespatialpipelineentry": {
@@ -2362,12 +2362,12 @@
     },
     "https://developer.apple.com/documentation/phase/phasestringmetaparameterdefinition/init(value:)": {
       "etag": "\"27f7-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasestringmetaparameterdefinition/init-value.md",
+      "file_path": "documentation/PHASE/phasestringmetaparameterdefinition/init(value).md",
       "hash": "21cfc8f4678ee15a590431a833a54dc46c15ca5c7a9079f312d14fe3ed855f98"
     },
     "https://developer.apple.com/documentation/phase/phasestringmetaparameterdefinition/init(value:identifier:)": {
       "etag": "\"2c91-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasestringmetaparameterdefinition/init-valueidentifier.md",
+      "file_path": "documentation/PHASE/phasestringmetaparameterdefinition/init(value,identifier).md",
       "hash": "c96715badf7ee061ec82aa18a5438bb9035670650e67431069573a6d46093f08"
     },
     "https://developer.apple.com/documentation/phase/phaseswitchnodedefinition": {
@@ -2377,17 +2377,17 @@
     },
     "https://developer.apple.com/documentation/phase/phaseswitchnodedefinition/addsubtree(_:switchvalue:)": {
       "etag": "\"3280-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseswitchnodedefinition/addsubtree-switchvalue.md",
+      "file_path": "documentation/PHASE/phaseswitchnodedefinition/addsubtree(_,switchvalue).md",
       "hash": "086f8e83c11e305661717202653d9c4a9431f427a5ca2521b449c535b15cf4be"
     },
     "https://developer.apple.com/documentation/phase/phaseswitchnodedefinition/init(switchmetaparameterdefinition:)": {
       "etag": "\"2f19-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseswitchnodedefinition/init-switchmetaparameterdefinition.md",
+      "file_path": "documentation/PHASE/phaseswitchnodedefinition/init(switchmetaparameterdefinition).md",
       "hash": "29ff1e913649907d898e928a34fa85ce51a4c5c46faef8cb7f1e3318a1c80f85"
     },
     "https://developer.apple.com/documentation/phase/phaseswitchnodedefinition/init(switchmetaparameterdefinition:identifier:)": {
       "etag": "\"3590-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseswitchnodedefinition/init-switchmetaparameterdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phaseswitchnodedefinition/init(switchmetaparameterdefinition,identifier).md",
       "hash": "a85e76bdbcea2e1441af60fa92dc60a47d5cc6721e1ac9990672ce2b7c346f3f"
     },
     "https://developer.apple.com/documentation/phase/phaseswitchnodedefinition/switchmetaparameterdefinition": {
@@ -2437,12 +2437,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseambientmixerdefinition/init(channellayout:orientation:).json": {
       "etag": "\"3495-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phaseambientmixerdefinition/init-channellayoutorientation.md",
+      "file_path": "documentation/PHASE/phaseambientmixerdefinition/init(channellayout,orientation).md",
       "hash": "115a2c5cd1c307ab65e63c1eec3716533098a5de04b77b19603c4481325c4187"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseambientmixerdefinition/init(channellayout:orientation:identifier:).json": {
       "etag": "\"3aff-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phaseambientmixerdefinition/init-channellayoutorientationidentifier.md",
+      "file_path": "documentation/PHASE/phaseambientmixerdefinition/init(channellayout,orientation,identifier).md",
       "hash": "d2992a917e123d35beb1db1ba335864249ea020518a3e8c0a4a0ff2a2be39d82"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseambientmixerdefinition/inputchannellayout.json": {
@@ -2467,7 +2467,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseasset/assettype/init(rawvalue:).json": {
       "etag": "\"166a-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phaseasset/assettype/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseasset/assettype/init(rawvalue).md",
       "hash": "8f9eb958825d0cc9d1e46891f11d7f1a89f4acde01b7d3832b67192c0e314481"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseasset/assettype/resident.json": {
@@ -2487,7 +2487,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseasseterror-swift.struct.json": {
       "etag": "\"3f1e-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseasseterror-swiftstruct.md",
+      "file_path": "documentation/PHASE/phaseasseterror-swift.struct.md",
       "hash": "2901be7c4d2e785f4b0ef233732fb1b80668219584da40ae0a08beca547fc32e"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseasseterror-swift.struct/alreadyexists.json": {
@@ -2527,7 +2527,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseasseterror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"156e-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phaseasseterror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseasseterror-swift.struct/code/init(rawvalue).md",
       "hash": "7e3aab37c8515b1d97f545a5df16b3be7a4b5adfe24fc44482ee5b34b21126c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseasseterror-swift.struct/code/invalidengineinstance.json": {
@@ -2577,7 +2577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseassetregistry/asset(foridentifier:).json": {
       "etag": "\"320d-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/asset-foridentifier.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/asset(foridentifier).md",
       "hash": "ee6cc0a14b84dc40cb14b27cf83197095480aa52a5982b336137edad1c885f34"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseassetregistry/globalmetaparameters.json": {
@@ -2587,27 +2587,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).json": {
       "etag": "\"4744-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/registerglobalmetaparameter-metaparameterdefinition.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition).md",
       "hash": "dcf2fa431f7a05918f9b38d77c7d5c05909219e814418f8df5d27a4987b550a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseassetregistry/registersoundasset(data:identifier:format:normalizationmode:).json": {
       "etag": "\"5e90-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/registersoundasset-dataidentifierformatnormalizationmode.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/registersoundasset(data,identifier,format,normalizationmode).md",
       "hash": "dfd4273433cc516c7bf161ab8b048914ecf97cf3e647d24a2dafc9a53a5bfd45"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseassetregistry/registersoundasset(url:identifier:assettype:channellayout:normalizationmode:).json": {
       "etag": "\"72ab-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/registersoundasset-urlidentifierassettypechannellayoutnormalizationmode.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/registersoundasset(url,identifier,assettype,channellayout,normalizationmode).md",
       "hash": "fd16fcc916dc016a85fffbee774d31f85ffa36b1ab2532b43fd429a8c2bba32f"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseassetregistry/registersoundeventasset(rootnode:identifier:).json": {
       "etag": "\"4083-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/registersoundeventasset-rootnodeidentifier.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/registersoundeventasset(rootnode,identifier).md",
       "hash": "c9b8198db46f198174e793fef8a8257462aa3592678ddd20408bb1c32cf96341"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseassetregistry/unregisterasset(identifier:completion:).json": {
       "etag": "\"4e66-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseassetregistry/unregisterasset-identifiercompletion.md",
+      "file_path": "documentation/PHASE/phaseassetregistry/unregisterasset(identifier,completion).md",
       "hash": "01eaf952b5e00dbbf6354244a806b150148e1803e25e7a4bd1c5c514ea2a7d8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseautomaticheadtrackingflags.json": {
@@ -2617,7 +2617,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseautomaticheadtrackingflags/init(rawvalue:).json": {
       "etag": "\"1397-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseautomaticheadtrackingflags/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseautomaticheadtrackingflags/init(rawvalue).md",
       "hash": "04bcb3d0103fcf9b84a4ec43d5f72f1cf5f46dbb5eeff63096509693a87ba3de"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseautomaticheadtrackingflags/orientation.json": {
@@ -2637,22 +2637,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/addrange(envelope:subtree:).json": {
       "etag": "\"5249-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrange-envelopesubtree.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrange(envelope,subtree).md",
       "hash": "b9d5762af94d81b5cb5cb36d5c757f1a6940b2add5e7f9ce759de3bd0c6cc73c"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/addrangeforinputvaluesabove(value:fullgainatvalue:fadecurvetype:subtree:).json": {
       "etag": "\"5e14-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesabove-valuefullgainatvaluefadecurvetypesubtree.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesabove(value,fullgainatvalue,fadecurvetype,subtree).md",
       "hash": "6e3662f36e6ee60dc6bd6e408570379d89c746f878e1d63626c608ac90e523a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/addrangeforinputvaluesbelow(value:fullgainatvalue:fadecurvetype:subtree:).json": {
       "etag": "\"5e14-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesbelow-valuefullgainatvaluefadecurvetypesubtree.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesbelow(value,fullgainatvalue,fadecurvetype,subtree).md",
       "hash": "eff439ef948c7747af63e750a32d8179685eaa3e4320dcfef6734e3b98fd6593"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/addrangeforinputvaluesbetween(lowvalue:highvalue:fullgainatlowvalue:fullgainathighvalue:lowfadecurvetype:highfadecurvetype:subtree:).json": {
       "etag": "\"6f6a-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesbetween-lowvaluehighvaluefullgainatlowvaluefullgainathighvaluelowfadecurvetypehighfadecurvetypesubtree.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/addrangeforinputvaluesbetween(lowvalue,highvalue,fullgainatlowvalue,fullgainathighvalue,lowfadecurvetype,highfadecurvetype,subtree).md",
       "hash": "bf86b16cfeab04cbb8862761973eef4d0bebd559c3787a381cf8cae14aeacf62"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/blendparameterdefinition.json": {
@@ -2662,32 +2662,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/init(blendmetaparameterdefinition:).json": {
       "etag": "\"3d92-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-blendmetaparameterdefinition.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(blendmetaparameterdefinition).md",
       "hash": "7f359cd37b401e8d0499172d4b4f6b8e428c738e60354a3326f845be6739ea1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/init(blendmetaparameterdefinition:identifier:).json": {
       "etag": "\"4407-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-blendmetaparameterdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(blendmetaparameterdefinition,identifier).md",
       "hash": "b06305b9fa045f29841ed2e58468eda23f014795db104f704eeb5e228d5228d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition:).json": {
       "etag": "\"18f1-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-distanceblendwithspatialmixerdefinition.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition).md",
       "hash": "ecd40d8157e0b061db5e3b035702020e454a3bb79bea4d7db95e8b39bce876de"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition:identifier:).json": {
       "etag": "\"1e5a-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-distanceblendwithspatialmixerdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition,identifier).md",
       "hash": "92ed9a998c481ff65c55cb0ee1d54aa180de84c7a1e8732333569ff517c0505d"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/init(spatialmixerdefinition:).json": {
       "etag": "\"3bca-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-spatialmixerdefinition.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(spatialmixerdefinition).md",
       "hash": "b7ac74f6a10882b740e40eafdeb4cc4b7a6f58d244a6810925380d675a533eba"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/init(spatialmixerdefinition:identifier:).json": {
       "etag": "\"4233-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseblendnodedefinition/init-spatialmixerdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phaseblendnodedefinition/init(spatialmixerdefinition,identifier).md",
       "hash": "b8644994fe9646b56f9885a60ac67d2d84671d201d2d98e353a8ad2e2971e27d"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseblendnodedefinition/spatialmixerdefinitionfordistance.json": {
@@ -2707,7 +2707,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecalibrationmode/init(rawvalue:).json": {
       "etag": "\"127e-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasecalibrationmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasecalibrationmode/init(rawvalue).md",
       "hash": "b32285b4165f136e056c4f91306609f08f5c8b98c21269ee077f07e02e516aa1"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecalibrationmode/none.json": {
@@ -2727,7 +2727,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecardioiddirectivitymodelparameters/init(subbandparameters:).json": {
       "etag": "\"271a-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasecardioiddirectivitymodelparameters/init-subbandparameters.md",
+      "file_path": "documentation/PHASE/phasecardioiddirectivitymodelparameters/init(subbandparameters).md",
       "hash": "d425f6842e023a5d373949d89d92d1a24cb0a2be478150bf34906f30ca49b5ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecardioiddirectivitymodelparameters/subbandparameters.json": {
@@ -2747,7 +2747,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecardioiddirectivitymodelsubbandparameters/init().json": {
       "etag": "\"1a4e-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasecardioiddirectivitymodelsubbandparameters/init.md",
+      "file_path": "documentation/PHASE/phasecardioiddirectivitymodelsubbandparameters/init().md",
       "hash": "3b6f2d4b945c0438c6f79e23f928bce9c47ffd256eb7e70b49ebc4c76f0f225a"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecardioiddirectivitymodelsubbandparameters/pattern.json": {
@@ -2767,12 +2767,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasechannelmixerdefinition/init(channellayout:).json": {
       "etag": "\"2a81-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasechannelmixerdefinition/init-channellayout.md",
+      "file_path": "documentation/PHASE/phasechannelmixerdefinition/init(channellayout).md",
       "hash": "ff62830a44e8f77204ac3e17ba9b5b34b42a6a9709523cf09cb7ee8c50df2612"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasechannelmixerdefinition/init(channellayout:identifier:).json": {
       "etag": "\"30fc-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasechannelmixerdefinition/init-channellayoutidentifier.md",
+      "file_path": "documentation/PHASE/phasechannelmixerdefinition/init(channellayout,identifier).md",
       "hash": "bba0eed3df6f42346551fbe6a7ad4f54fa13ac57a4fdcfbcab58369af61366be"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasechannelmixerdefinition/inputchannellayout.json": {
@@ -2787,7 +2787,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseconedirectivitymodelparameters/init(subbandparameters:).json": {
       "etag": "\"267c-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phaseconedirectivitymodelparameters/init-subbandparameters.md",
+      "file_path": "documentation/PHASE/phaseconedirectivitymodelparameters/init(subbandparameters).md",
       "hash": "97666697602084894147a9344b1d34a461ebe4b474dd7231687d287b05adbebf"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseconedirectivitymodelparameters/subbandparameters.json": {
@@ -2807,7 +2807,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseconedirectivitymodelsubbandparameters/init().json": {
       "etag": "\"19ef-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phaseconedirectivitymodelsubbandparameters/init.md",
+      "file_path": "documentation/PHASE/phaseconedirectivitymodelsubbandparameters/init().md",
       "hash": "f7a80afc9fbe0dc6ff66b0ebca07a5689646211814201c58ccf3c9916b9393d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseconedirectivitymodelsubbandparameters/innerangle.json": {
@@ -2827,7 +2827,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseconedirectivitymodelsubbandparameters/setangles(innerangle:outerangle:).json": {
       "etag": "\"3985-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phaseconedirectivitymodelsubbandparameters/setangles-innerangleouterangle.md",
+      "file_path": "documentation/PHASE/phaseconedirectivitymodelsubbandparameters/setangles(innerangle,outerangle).md",
       "hash": "0c657549f14cf23bb304f8223f2aea77f36dea49636e745bc576144b20697960"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecontainernodedefinition.json": {
@@ -2837,22 +2837,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecontainernodedefinition/addsubtree(_:).json": {
       "etag": "\"2418-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasecontainernodedefinition/addsubtree.md",
+      "file_path": "documentation/PHASE/phasecontainernodedefinition/addsubtree(_).md",
       "hash": "6080e84798341a98147bee2b69f083262ad7f1a55c4f7f329be788f345ff1b22"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecontainernodedefinition/init().json": {
       "etag": "\"22f7-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasecontainernodedefinition/init.md",
+      "file_path": "documentation/PHASE/phasecontainernodedefinition/init().md",
       "hash": "c664599b53f14d2a6693aab426f86c122c7dd9fec15a71759bef486e898cff21"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecontainernodedefinition/init(identifier:).json": {
       "etag": "\"2945-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasecontainernodedefinition/init-identifier.md",
+      "file_path": "documentation/PHASE/phasecontainernodedefinition/init(identifier).md",
       "hash": "f8dd6a7875853a90480a984d057097a70acce0d52afc6adf53976f986683e8dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecontainernodedefinition/new().json": {
       "etag": "\"2439-65d55f768f372\"",
-      "file_path": "documentation/PHASE/phasecontainernodedefinition/new.md",
+      "file_path": "documentation/PHASE/phasecontainernodedefinition/new().md",
       "hash": "c8ae40d105c7aa9c3b2196701b8873bad175ad35eddf559f4b518090e7b48f75"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseculloption.json": {
@@ -2867,7 +2867,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseculloption/init(rawvalue:).json": {
       "etag": "\"1223-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phaseculloption/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseculloption/init(rawvalue).md",
       "hash": "4aa3ba7c424fcaaba173a9715075bd18ec5d303e4f53b724000815b217a17223"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseculloption/sleepwakeatrandomoffset.json": {
@@ -2907,7 +2907,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecurvetype/init(rawvalue:).json": {
       "etag": "\"121c-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phasecurvetype/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasecurvetype/init(rawvalue).md",
       "hash": "9101983aebc471b9e0a2769f29933fa88cce60c608b4cd4a6d91a55dda166f8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasecurvetype/inversecubed.json": {
@@ -2982,7 +2982,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasedistancemodelfadeoutparameters/init(culldistance:).json": {
       "etag": "\"2194-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasedistancemodelfadeoutparameters/init-culldistance.md",
+      "file_path": "documentation/PHASE/phasedistancemodelfadeoutparameters/init(culldistance).md",
       "hash": "d956b4d9d9f38a78c9faf6a9c7b709867e600264e7966d0d871652676d91925a"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasedistancemodelparameters.json": {
@@ -3002,7 +3002,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseducker/activate().json": {
       "etag": "\"1cc7-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseducker/activate.md",
+      "file_path": "documentation/PHASE/phaseducker/activate().md",
       "hash": "366c5953571a67b9359b6e3e271070f4d7d5f32786093c069d4b797bd3822c1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseducker/attackcurve.json": {
@@ -3017,7 +3017,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseducker/deactivate().json": {
       "etag": "\"1cd1-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseducker/deactivate.md",
+      "file_path": "documentation/PHASE/phaseducker/deactivate().md",
       "hash": "bc575f102c5b99a57da763a28385f4f4f75a0838825d7d578608bc798bc96e58"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseducker/gain.json": {
@@ -3032,7 +3032,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseducker/init(engine:sourcegroups:targetgroups:gain:attacktime:releasetime:attackcurve:releasecurve:).json": {
       "etag": "\"55df-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseducker/init-enginesourcegroupstargetgroupsgainattacktimereleasetimeattackcurvereleasecurve.md",
+      "file_path": "documentation/PHASE/phaseducker/init(engine,sourcegroups,targetgroups,gain,attacktime,releasetime,attackcurve,releasecurve).md",
       "hash": "a3c4c6c3d1aa294e5c0e2515902a2ff8d13656e2551f18aafd5f07f64a2c73a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseducker/isactive.json": {
@@ -3097,12 +3097,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/init(updatemode:).json": {
       "etag": "\"40dd-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/init-updatemode.md",
+      "file_path": "documentation/PHASE/phaseengine/init(updatemode).md",
       "hash": "de7a37c20c9ac6fc58400641082a6ba81f23260cd680124bf8125aa48e129183"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/init(updatemode:renderingmode:).json": {
       "etag": "\"4328-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/init-updatemoderenderingmode.md",
+      "file_path": "documentation/PHASE/phaseengine/init(updatemode,renderingmode).md",
       "hash": "a1438aaea9dc1eb78d294809ae810b01c4b85782a9143c00bd3b2aea60674122"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/lastrendertime.json": {
@@ -3117,7 +3117,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/pause().json": {
       "etag": "\"2ffc-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/pause.md",
+      "file_path": "documentation/PHASE/phaseengine/pause().md",
       "hash": "ee035079875571416a9dde75335074c4267d198282f5bf3a1789f4f96f11c3de"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/renderingmode.json": {
@@ -3132,7 +3132,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/renderingmode/init(rawvalue:).json": {
       "etag": "\"169d-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/renderingmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseengine/renderingmode/init(rawvalue).md",
       "hash": "61db7523e48b4452ecf111edc33876f096774242f49db1c010645033f37c0212"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/renderingmode/local.json": {
@@ -3157,12 +3157,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/start().json": {
       "etag": "\"343c-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/start.md",
+      "file_path": "documentation/PHASE/phaseengine/start().md",
       "hash": "9de6ecd5d5256fa427a75faa274553e47dfc8c645d6dcdfa71af2f8189da82ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/stop().json": {
       "etag": "\"2e98-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/stop.md",
+      "file_path": "documentation/PHASE/phaseengine/stop().md",
       "hash": "e13b67be0538d74b90af1235ee0329a530edf2010b9cb3d4cf452703e0cfbfb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/unitspermeter.json": {
@@ -3177,7 +3177,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/update().json": {
       "etag": "\"4969-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/update.md",
+      "file_path": "documentation/PHASE/phaseengine/update().md",
       "hash": "99f583c7e6b93ea47c21a0eead518df9d5ffcfc54bfc97bbc871f5237e0ea939"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/updatemode.json": {
@@ -3192,7 +3192,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/updatemode/init(rawvalue:).json": {
       "etag": "\"16d8-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phaseengine/updatemode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseengine/updatemode/init(rawvalue).md",
       "hash": "8059a068a738df8ebf28ed333165ddad3414a731e820922ff0788acaead168b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseengine/updatemode/manual.json": {
@@ -3212,12 +3212,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseenvelope/evaluate(x:).json": {
       "etag": "\"31c6-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaseenvelope/evaluate-x.md",
+      "file_path": "documentation/PHASE/phaseenvelope/evaluate(x).md",
       "hash": "6366554a31a1ac3be936b283137d692ad21c21a234310b913ccfeb81094ab6d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseenvelope/init(startpoint:segments:).json": {
       "etag": "\"32ac-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaseenvelope/init-startpointsegments.md",
+      "file_path": "documentation/PHASE/phaseenvelope/init(startpoint,segments).md",
       "hash": "4176b065136ae7dbb986b6423425a4f917add00e08cab26f1f67bd2524691875"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseenvelope/range.json": {
@@ -3247,7 +3247,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseenvelopedistancemodelparameters/init(envelope:).json": {
       "etag": "\"2330-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseenvelopedistancemodelparameters/init-envelope.md",
+      "file_path": "documentation/PHASE/phaseenvelopedistancemodelparameters/init(envelope).md",
       "hash": "7f13ab12f210846356d0f1513c4f958c08ce830cab2709b890e6749daeacc58a"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseenvelopesegment.json": {
@@ -3267,12 +3267,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseenvelopesegment/init(endpoint:curvetype:).json": {
       "etag": "\"29a2-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseenvelopesegment/init-endpointcurvetype.md",
+      "file_path": "documentation/PHASE/phaseenvelopesegment/init(endpoint,curvetype).md",
       "hash": "10781943ed8373cbd31e6393b72ac210bbabeec7ae2052103921d5f95e430102"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseerror-swift.struct.json": {
       "etag": "\"2ee1-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phaseerror-swiftstruct.md",
+      "file_path": "documentation/PHASE/phaseerror-swift.struct.md",
       "hash": "4ddbbefce20c1d0b37f68c2fb75479a185d14581bce2475f92ac1db33e0a3395"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseerror-swift.struct/code.json": {
@@ -3282,7 +3282,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"14e9-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phaseerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseerror-swift.struct/code/init(rawvalue).md",
       "hash": "b23b60d978e95e14a9927de300a4e87fd48108e7533150b5e5350e084cc03a6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseerror-swift.struct/code/initializefailed.json": {
@@ -3357,7 +3357,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegeneratornodedefinition/setcalibrationmode(calibrationmode:level:).json": {
       "etag": "\"40f0-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phasegeneratornodedefinition/setcalibrationmode-calibrationmodelevel.md",
+      "file_path": "documentation/PHASE/phasegeneratornodedefinition/setcalibrationmode(calibrationmode,level).md",
       "hash": "71bc19a912052b2e4a8fa251bd6e3b3c2afbfef51ea8845f679c706f857f1d55"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegeometricspreadingdistancemodelparameters.json": {
@@ -3367,7 +3367,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegeometricspreadingdistancemodelparameters/init().json": {
       "etag": "\"19ea-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phasegeometricspreadingdistancemodelparameters/init.md",
+      "file_path": "documentation/PHASE/phasegeometricspreadingdistancemodelparameters/init().md",
       "hash": "0dc2f78612a08221cb2c27c969c68a1e0da409ed4eed845e06902ef3a607cc65"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegeometricspreadingdistancemodelparameters/rollofffactor.json": {
@@ -3387,12 +3387,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/fadegain(gain:duration:curvetype:).json": {
       "etag": "\"3775-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/fadegain-gaindurationcurvetype.md",
+      "file_path": "documentation/PHASE/phasegroup/fadegain(gain,duration,curvetype).md",
       "hash": "09a8025a19395d57b4a67408bf7b74b1de500faa79d0fd1eb37d214355e65adf"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/faderate(rate:duration:curvetype:).json": {
       "etag": "\"37a0-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/faderate-ratedurationcurvetype.md",
+      "file_path": "documentation/PHASE/phasegroup/faderate(rate,duration,curvetype).md",
       "hash": "a03f33b45eb7e2a4ca3f95bd8dc869cbabfd27ff526c9dbaebccf59dcdc76d60"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/gain.json": {
@@ -3407,7 +3407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/init(identifier:).json": {
       "etag": "\"1df4-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/init-identifier.md",
+      "file_path": "documentation/PHASE/phasegroup/init(identifier).md",
       "hash": "7bc339f19911ee02b0b0baf524164fd2ebb9fecb3d6c86b9a9d8c466f3b6ccb9"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/ismuted.json": {
@@ -3422,7 +3422,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/mute().json": {
       "etag": "\"2c78-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/mute.md",
+      "file_path": "documentation/PHASE/phasegroup/mute().md",
       "hash": "dc8c1fb92ce489f48541949176a528115c68810e3f9bdb4cba0e33e45deb6298"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/rate.json": {
@@ -3432,27 +3432,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/register(engine:).json": {
       "etag": "\"2d3b-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/register-engine.md",
+      "file_path": "documentation/PHASE/phasegroup/register(engine).md",
       "hash": "bc033028f7da9cd8bee89a7f52407d16aae379f8041c55097685156b7c64ac13"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/solo().json": {
       "etag": "\"2d7f-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/solo.md",
+      "file_path": "documentation/PHASE/phasegroup/solo().md",
       "hash": "743230492d2dd7295d658bdc70bb49fe765d6b3f381b13f1b3912c96d0e7ecc8"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/unmute().json": {
       "etag": "\"2c95-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/unmute.md",
+      "file_path": "documentation/PHASE/phasegroup/unmute().md",
       "hash": "38afe72b62648f0820144bf508c0f7d0087c724261a66745ebfd2043416a91a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/unregisterfromengine().json": {
       "etag": "\"246d-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/unregisterfromengine.md",
+      "file_path": "documentation/PHASE/phasegroup/unregisterfromengine().md",
       "hash": "00e92e7a2291e4a8942cd8195a163c1949faa28c19de976be03c34f10a534ce3"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegroup/unsolo().json": {
       "etag": "\"2c9b-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasegroup/unsolo.md",
+      "file_path": "documentation/PHASE/phasegroup/unsolo().md",
       "hash": "35d247f18dd8e7622f8b914cc2e5f141806c4e69fff08e868f5075f8784fbfe5"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppreset.json": {
@@ -3462,27 +3462,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppreset/activate().json": {
       "etag": "\"29fc-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/activate.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/activate().md",
       "hash": "cca6c7f4855ce942510e6c2868ee3655b2cd08d453d769774938ed0aed390679"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppreset/activate(timetotargetoverride:).json": {
       "etag": "\"2ba7-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/activate-timetotargetoverride.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/activate(timetotargetoverride).md",
       "hash": "f3b9da1ff8469f55465d90d5926deaf8921c55a9633b98d46e0d01c303236a5e"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppreset/deactivate().json": {
       "etag": "\"2a40-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/deactivate.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/deactivate().md",
       "hash": "3008663e7d1bcd20305081de87c0d21e78a15e98cb7350aff9562a963bb726f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppreset/deactivate(timetoresetoverride:).json": {
       "etag": "\"2bb3-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/deactivate-timetoresetoverride.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/deactivate(timetoresetoverride).md",
       "hash": "822fca2a72a356d36038993c61bb186676fd0830f613cc8ae8558f2140f9da8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppreset/init(engine:settings:timetotarget:timetoreset:).json": {
       "etag": "\"4c01-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasegrouppreset/init-enginesettingstimetotargettimetoreset.md",
+      "file_path": "documentation/PHASE/phasegrouppreset/init(engine,settings,timetotarget,timetoreset).md",
       "hash": "140140e034eec63dac96f7408d20a4380a7e21a011887a3bbaeb6b4577888021"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppreset/settings.json": {
@@ -3517,7 +3517,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppresetsetting/init(gain:rate:gaincurvetype:ratecurvetype:).json": {
       "etag": "\"3c8e-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasegrouppresetsetting/init-gainrategaincurvetyperatecurvetype.md",
+      "file_path": "documentation/PHASE/phasegrouppresetsetting/init(gain,rate,gaincurvetype,ratecurvetype).md",
       "hash": "efdf4f71613b2cf0d2e8e83a3dc24d3d07cc990a70ad8a53a0639e9ea25f149d"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasegrouppresetsetting/rate.json": {
@@ -3547,7 +3547,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaselistener/init(engine:).json": {
       "etag": "\"20c0-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaselistener/init-engine.md",
+      "file_path": "documentation/PHASE/phaselistener/init(engine).md",
       "hash": "a6ca30dc0b5b75957890d2722fa3cce37f61306353b23a4a960614950a5d1a63"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemappedmetaparameterdefinition.json": {
@@ -3562,12 +3562,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition:envelope:).json": {
       "etag": "\"3b0a-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasemappedmetaparameterdefinition/init-inputmetaparameterdefinitionenvelope.md",
+      "file_path": "documentation/PHASE/phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition,envelope).md",
       "hash": "0619260105600737ae5b0af16196109d0ed23b97c943cb3fe8fe217bbd89b5e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition:envelope:identifier:).json": {
       "etag": "\"41a1-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasemappedmetaparameterdefinition/init-inputmetaparameterdefinitionenvelopeidentifier.md",
+      "file_path": "documentation/PHASE/phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition,envelope,identifier).md",
       "hash": "bc949a3a61360cd6887b80e9858068e453ab32ebb30c3610d9e32d29e72ccd5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemappedmetaparameterdefinition/inputmetaparameterdefinition.json": {
@@ -3582,7 +3582,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasematerial/init(engine:preset:).json": {
       "etag": "\"2a8e-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phasematerial/init-enginepreset.md",
+      "file_path": "documentation/PHASE/phasematerial/init(engine,preset).md",
       "hash": "f4284d9aa40c3ad732eb9e1367d13f4b586d042383987f6c6f4f6bdddf8a8ef6"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasematerialpreset.json": {
@@ -3617,7 +3617,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasematerialpreset/init(rawvalue:).json": {
       "etag": "\"129e-65d55f765ebdf-df\"",
-      "file_path": "documentation/PHASE/phasematerialpreset/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasematerialpreset/init(rawvalue).md",
       "hash": "d6092998dd4d5f1ca87fc4e2a619fb24384de5c01de0f91b8f9ff104c8cdbfb9"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasematerialpreset/wood.json": {
@@ -3632,7 +3632,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemedium/init(engine:preset:).json": {
       "etag": "\"2c84-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasemedium/init-enginepreset.md",
+      "file_path": "documentation/PHASE/phasemedium/init(engine,preset).md",
       "hash": "541c99cd998b6322deca2d053c2afe539b6ca2442f9a657c925819f56249fdb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemedium/preset.json": {
@@ -3647,7 +3647,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemedium/preset/init(rawvalue:).json": {
       "etag": "\"1683-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasemedium/preset/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasemedium/preset/init(rawvalue).md",
       "hash": "fbb93654522b6228e1c66f16fc25b10474802100b2c92fd7f8193b8035d64ca0"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemetaparameter.json": {
@@ -3717,12 +3717,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemixerparameters/addambientmixerparameters(identifier:listener:).json": {
       "etag": "\"3a76-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasemixerparameters/addambientmixerparameters-identifierlistener.md",
+      "file_path": "documentation/PHASE/phasemixerparameters/addambientmixerparameters(identifier,listener).md",
       "hash": "edc1e2f610e4d5deeaee216c686a8b2e4994d377930a96ed8676b3e6d9fb8166"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasemixerparameters/addspatialmixerparameters(identifier:source:listener:).json": {
       "etag": "\"42b4-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasemixerparameters/addspatialmixerparameters-identifiersourcelistener.md",
+      "file_path": "documentation/PHASE/phasemixerparameters/addspatialmixerparameters(identifier,source,listener).md",
       "hash": "217be9bf6ef45125113cd85c482e4c8a18cd88376dd8c3c9768e3680d6b4e19a"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenormalizationmode.json": {
@@ -3737,7 +3737,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenormalizationmode/init(rawvalue:).json": {
       "etag": "\"12e6-65d55f76ec4bf-df\"",
-      "file_path": "documentation/PHASE/phasenormalizationmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasenormalizationmode/init(rawvalue).md",
       "hash": "d85f6ee83f0573df289c0f22a59b3a9ecc727400d56159e1d729d75a42e58fb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenormalizationmode/none.json": {
@@ -3752,7 +3752,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumbermetaparameter/fade(value:duration:).json": {
       "etag": "\"297c-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameter/fade-valueduration.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameter/fade(value,duration).md",
       "hash": "1f3438d5b2c573fe8bb778c987bf9271c5a69dce624c09b9afc0e13eba2698fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumbermetaparameter/maximum.json": {
@@ -3772,22 +3772,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumbermetaparameterdefinition/init(value:).json": {
       "etag": "\"3922-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init-value.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init(value).md",
       "hash": "3862985b98cbff9e80bb8c450a4ffbd4b493e0dae3e9ecd9f20eb7ffd1682df7"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumbermetaparameterdefinition/init(value:identifier:).json": {
       "etag": "\"3f33-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init-valueidentifier.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init(value,identifier).md",
       "hash": "2b3c28275142db9253f80a7f629fc425c8f4795f8f33872ab10489283cca84a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumbermetaparameterdefinition/init(value:minimum:maximum:).json": {
       "etag": "\"4032-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init-valueminimummaximum.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init(value,minimum,maximum).md",
       "hash": "9dd69d19fe92d772f86691f8c64e5520eae366e50c93170d1f5541075c334c56"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumbermetaparameterdefinition/init(value:minimum:maximum:identifier:).json": {
       "etag": "\"46c9-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init-valueminimummaximumidentifier.md",
+      "file_path": "documentation/PHASE/phasenumbermetaparameterdefinition/init(value,minimum,maximum,identifier).md",
       "hash": "4ba58ea453575098da4ce8a8e399a680e5de19c30685660cf228dcb953614edc"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumbermetaparameterdefinition/maximum.json": {
@@ -3812,7 +3812,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumericpair/init(firstvalue:secondvalue:).json": {
       "etag": "\"217a-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasenumericpair/init-firstvaluesecondvalue.md",
+      "file_path": "documentation/PHASE/phasenumericpair/init(firstvalue,secondvalue).md",
       "hash": "95a2983bbfc32fe587f526578acb371deea8d2ba873a8d5bf9ee0e06a6c194dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasenumericpair/second.json": {
@@ -3827,7 +3827,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseobject/addchild(_:).json": {
       "etag": "\"38de-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseobject/addchild.md",
+      "file_path": "documentation/PHASE/phaseobject/addchild(_).md",
       "hash": "1f1476b06a92d7a6d489700a71cd37969136648e8937645ad91571560fcd7242"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseobject/children.json": {
@@ -3842,7 +3842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseobject/init(engine:).json": {
       "etag": "\"202b-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseobject/init-engine.md",
+      "file_path": "documentation/PHASE/phaseobject/init(engine).md",
       "hash": "81feee848f2cd1f983f0d4fd4b98d7d28eb4ea15f1e7c8eea0dadaadf398fec4"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseobject/parent.json": {
@@ -3852,12 +3852,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseobject/removechild(_:).json": {
       "etag": "\"310c-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseobject/removechild.md",
+      "file_path": "documentation/PHASE/phaseobject/removechild(_).md",
       "hash": "5c1c2a2bb111bf32e743600816206c18c89c4a3ccbee2ae73b9199a2f7bba5ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseobject/removechildren().json": {
       "etag": "\"2d25-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseobject/removechildren.md",
+      "file_path": "documentation/PHASE/phaseobject/removechildren().md",
       "hash": "f82a8ded34e19668e0f60a4ba2aedd7d5cd2b1fdcf7404ad288123db47c0bd61"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseobject/right.json": {
@@ -3887,7 +3887,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseoccluder/init(engine:shapes:).json": {
       "etag": "\"29c5-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaseoccluder/init-engineshapes.md",
+      "file_path": "documentation/PHASE/phaseoccluder/init(engine,shapes).md",
       "hash": "ed91e49b3a7bef9ea55996435b62bb636b451878ba4f75b184d94a55ad0452a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseoccluder/shapes.json": {
@@ -3902,7 +3902,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseplaybackmode/init(rawvalue:).json": {
       "etag": "\"1238-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phaseplaybackmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phaseplaybackmode/init(rawvalue).md",
       "hash": "b3be89681ac8704c3c413be87efeafe09465fe2b3dd14d04a6a790b94ef89618"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseplaybackmode/looping.json": {
@@ -3937,12 +3937,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepullstreamnodedefinition/init(mixerdefinition:format:).json": {
       "etag": "\"2f2a-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasepullstreamnodedefinition/init-mixerdefinitionformat.md",
+      "file_path": "documentation/PHASE/phasepullstreamnodedefinition/init(mixerdefinition,format).md",
       "hash": "db6138ec382336219206651b8313030827c95211266efe2b238372474a59954b"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepullstreamnodedefinition/init(mixerdefinition:format:identifier:).json": {
       "etag": "\"3725-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasepullstreamnodedefinition/init-mixerdefinitionformatidentifier.md",
+      "file_path": "documentation/PHASE/phasepullstreamnodedefinition/init(mixerdefinition,format,identifier).md",
       "hash": "11d95be9df44ccc7f0ac98c9aebffa001147d6e748bb21b96621e52efa628dd6"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepullstreamnodedefinition/normalize.json": {
@@ -3967,7 +3967,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreambufferoptions/init(rawvalue:).json": {
       "etag": "\"14ad-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasepushstreambufferoptions/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasepushstreambufferoptions/init(rawvalue).md",
       "hash": "c82428ca1f981f73ef328797d562fae9309a17b7cdb41e83df7f4be65f017762"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreambufferoptions/interrupts.json": {
@@ -3997,7 +3997,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamcompletioncallbackcondition/init(rawvalue:).json": {
       "etag": "\"1444-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamcompletioncallbackcondition/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasepushstreamcompletioncallbackcondition/init(rawvalue).md",
       "hash": "e4df2a71c301f62affdb21f7ae25d38d5fa77614679f256a36ef3645ea4eba98"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnode.json": {
@@ -4027,22 +4027,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnode/schedulebuffer(buffer:).json": {
       "etag": "\"4c3f-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer-buffer.md",
+      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer(buffer).md",
       "hash": "419d2717c62a953ff11e20b02d087dcbc326260deb091b8e3e017047b8a2e637"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnode/schedulebuffer(buffer:completioncallbacktype:completionhandler:).json": {
       "etag": "\"628f-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer-buffercompletioncallbacktypecompletionhandler.md",
+      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer(buffer,completioncallbacktype,completionhandler).md",
       "hash": "17bc1fc372eb26754e5302fe40a0477033d6cbb59cfd472d622f1566f16e0e8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnode/schedulebuffer(buffer:time:options:).json": {
       "etag": "\"5795-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer-buffertimeoptions.md",
+      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer(buffer,time,options).md",
       "hash": "c98eeae41b7478fceb83518840b83f8d35ebcef019fa70566cc665ff7d5297eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnode/schedulebuffer(buffer:time:options:completioncallbacktype:completionhandler:).json": {
       "etag": "\"763e-65d55f7628440-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer-buffertimeoptionscompletioncallbacktypecompletionhandler.md",
+      "file_path": "documentation/PHASE/phasepushstreamnode/schedulebuffer(buffer,time,options,completioncallbacktype,completionhandler).md",
       "hash": "eb125b92c32e6fac5d33c9c4de0fb4105c7f1e4fb43b7c579d487a7aa696fa6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnodedefinition.json": {
@@ -4057,12 +4057,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnodedefinition/init(mixerdefinition:format:).json": {
       "etag": "\"34c3-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnodedefinition/init-mixerdefinitionformat.md",
+      "file_path": "documentation/PHASE/phasepushstreamnodedefinition/init(mixerdefinition,format).md",
       "hash": "bca7142971d190c2ae9c28081c4e24b98857b1150563289defd509187239d7fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnodedefinition/init(mixerdefinition:format:identifier:).json": {
       "etag": "\"3b2c-65d55f764039e-df\"",
-      "file_path": "documentation/PHASE/phasepushstreamnodedefinition/init-mixerdefinitionformatidentifier.md",
+      "file_path": "documentation/PHASE/phasepushstreamnodedefinition/init(mixerdefinition,format,identifier).md",
       "hash": "d2e83b35e522a695319a53353bb4a9b3826d9f86fabd97119dff0828e0ee799a"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasepushstreamnodedefinition/normalize.json": {
@@ -4077,17 +4077,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaserandomnodedefinition/addsubtree(_:weight:).json": {
       "etag": "\"2c43-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaserandomnodedefinition/addsubtree-weight.md",
+      "file_path": "documentation/PHASE/phaserandomnodedefinition/addsubtree(_,weight).md",
       "hash": "e7fb4c6d85fdd6bc4e241670a923431489186881cbcb4d97f92f540445c4cfc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaserandomnodedefinition/init().json": {
       "etag": "\"1e27-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaserandomnodedefinition/init.md",
+      "file_path": "documentation/PHASE/phaserandomnodedefinition/init().md",
       "hash": "f7680eb6fec8a3ff6ea0ddb6211ddb4c746412123d171649d2b1df0cfefcf16f"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaserandomnodedefinition/init(identifier:).json": {
       "etag": "\"2501-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phaserandomnodedefinition/init-identifier.md",
+      "file_path": "documentation/PHASE/phaserandomnodedefinition/init(identifier).md",
       "hash": "3ef7fbddac9e2b6b6b7cfd3989ae4a45402380a5f83d6bd91acd246a77ea6498"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaserandomnodedefinition/uniqueselectionqueuelength.json": {
@@ -4107,7 +4107,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasereverbpreset/init(rawvalue:).json": {
       "etag": "\"124c-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasereverbpreset/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasereverbpreset/init(rawvalue).md",
       "hash": "42e910b5fc75ae1e2a473a78e61c375ca98643d7797300bc282f9e76611f49b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasereverbpreset/largechamber.json": {
@@ -4187,12 +4187,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesamplernodedefinition/init(soundassetidentifier:mixerdefinition:).json": {
       "etag": "\"3aa0-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasesamplernodedefinition/init-soundassetidentifiermixerdefinition.md",
+      "file_path": "documentation/PHASE/phasesamplernodedefinition/init(soundassetidentifier,mixerdefinition).md",
       "hash": "33bf907dbd012cc673e878a59bd0d14bf2f7734193452b280d4ace641730edb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesamplernodedefinition/init(soundassetidentifier:mixerdefinition:identifier:).json": {
       "etag": "\"3f1a-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasesamplernodedefinition/init-soundassetidentifiermixerdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phasesamplernodedefinition/init(soundassetidentifier,mixerdefinition,identifier).md",
       "hash": "42eacd543d69c4071983b5f8bc0101ffe9fe4923dc6eea6379af1250563b38b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesamplernodedefinition/playbackmode.json": {
@@ -4222,12 +4222,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseshape/init(engine:mesh:).json": {
       "etag": "\"3077-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseshape/init-enginemesh.md",
+      "file_path": "documentation/PHASE/phaseshape/init(engine,mesh).md",
       "hash": "24a3285f1101c321d449c2471993a45245fe5f7331b4f6ef67f71687fcf9d1c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseshape/init(engine:mesh:materials:).json": {
       "etag": "\"4146-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phaseshape/init-enginemeshmaterials.md",
+      "file_path": "documentation/PHASE/phaseshape/init(engine,mesh,materials).md",
       "hash": "0c00223e8b25f8b96405757175bac6c0ec0230e5d1f9c4455862fe9bbcc3a359"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundasset.json": {
@@ -4257,12 +4257,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/init(engine:assetidentifier:).json": {
       "etag": "\"34ce-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/init-engineassetidentifier.md",
+      "file_path": "documentation/PHASE/phasesoundevent/init(engine,assetidentifier).md",
       "hash": "06201b5530554469649818498b9912d4422497033d86c00404f2f2d8331e1e39"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/init(engine:assetidentifier:mixerparameters:).json": {
       "etag": "\"3ed4-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/init-engineassetidentifiermixerparameters.md",
+      "file_path": "documentation/PHASE/phasesoundevent/init(engine,assetidentifier,mixerparameters).md",
       "hash": "c691873c20277b599af937b5689f1e033f99c5d643f82acab985555771ca4d99"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/isindefinite.json": {
@@ -4282,12 +4282,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/pause().json": {
       "etag": "\"1d90-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/pause.md",
+      "file_path": "documentation/PHASE/phasesoundevent/pause().md",
       "hash": "83b25d12e1ce087dc283245e29308be4b7c9e3332eef4e748524cf0c9f6179c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/prepare(completion:).json": {
       "etag": "\"49e9-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/prepare-completion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/prepare(completion).md",
       "hash": "4980ed4be551795d681cb4025837009f4bb69c0daaecdb134e7375178e98f766"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/preparehandlerreason.json": {
@@ -4302,7 +4302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/preparehandlerreason/init(rawvalue:).json": {
       "etag": "\"17d2-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/preparehandlerreason/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/preparehandlerreason/init(rawvalue).md",
       "hash": "8b2a94dd215c598e046010f90762d44c100aac8f986e84042765bbdfbe9f59a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/preparehandlerreason/prepared.json": {
@@ -4317,12 +4317,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/preparestate-swift.enum.json": {
       "etag": "\"4ea7-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swiftenum.md",
+      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swift.enum.md",
       "hash": "05afc64a27335957f21348ccabfdc31237919c4df0c01270e14549088bc32493"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/preparestate-swift.enum/init(rawvalue:).json": {
       "etag": "\"17bc-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swift.enum/init(rawvalue).md",
       "hash": "5240ba3c7c33d07a6ac6aae5354abe874aa4abf4cdb55af68ec178cac12f43ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/preparestate-swift.enum/prepared.json": {
@@ -4342,7 +4342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/preparestate-swift.property.json": {
       "etag": "\"2f9d-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swiftproperty.md",
+      "file_path": "documentation/PHASE/phasesoundevent/preparestate-swift.property.md",
       "hash": "81af1cb2ebb6e3e5ed046b732d75fc817ff88f0c68f7e72c13ed74d831da206c"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/pullstreamnodes.json": {
@@ -4357,12 +4357,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/renderingstate-swift.enum.json": {
       "etag": "\"5d9e-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swiftenum.md",
+      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swift.enum.md",
       "hash": "ebbe9d2bef0f89c7f6ca6ff12849331a0dbe754c64e4c528afa2f4d1c823184e"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/renderingstate-swift.enum/init(rawvalue:).json": {
       "etag": "\"17a8-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swift.enum/init(rawvalue).md",
       "hash": "da4ddd7bc7abd75fdfbcd53b00f0882b6978f29435061e093507ad6be16703f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/renderingstate-swift.enum/paused.json": {
@@ -4382,27 +4382,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/renderingstate-swift.property.json": {
       "etag": "\"33ef-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swiftproperty.md",
+      "file_path": "documentation/PHASE/phasesoundevent/renderingstate-swift.property.md",
       "hash": "0db48655a0c53d9d1eaf3cd7f08825ce1cabe580775311ecef8b5f912e81d6e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/resume().json": {
       "etag": "\"1d9b-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/resume.md",
+      "file_path": "documentation/PHASE/phasesoundevent/resume().md",
       "hash": "47d85a21615d9769fa01aec5e4a1ba0c551b641ecc3cd3e9a31696621aaf163a"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/resume(at:).json": {
       "etag": "\"21f9-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/resume-at.md",
+      "file_path": "documentation/PHASE/phasesoundevent/resume(at).md",
       "hash": "36bf2fd32b20d114d46dd3223e364e62e0e3ac434fc1bc9569db8c25a67b8a6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/seek(to:completion:).json": {
       "etag": "\"40c9-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/seek-tocompletion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/seek(to,completion).md",
       "hash": "c2f1455e5a1bf1652f05a58f9b64ca156f36d842566522d4ea08fb07ad096e0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/seek(to:resumeat:completion:).json": {
       "etag": "\"44eb-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/seek-toresumeatcompletion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/seek(to,resumeat,completion).md",
       "hash": "2b4f4fd1d579961e19ec727758fe892df07bb3bf255e7bcda9e87650ff24c206"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/seekhandlerreason.json": {
@@ -4422,7 +4422,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/seekhandlerreason/init(rawvalue:).json": {
       "etag": "\"17af-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/seekhandlerreason/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/seekhandlerreason/init(rawvalue).md",
       "hash": "1489284b0f075f0b9cc79e0b150d923f9dde55a7e5d9912e10ea0be33fd6afe6"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/seekhandlerreason/seeksuccessful.json": {
@@ -4432,12 +4432,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/start(at:completion:).json": {
       "etag": "\"3e00-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/start-atcompletion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/start(at,completion).md",
       "hash": "d7913f3f41553bc1a16a172bb11efe985f8edbd14e2ef3ed397669e356f5da52"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/start(completion:).json": {
       "etag": "\"3b61-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/start-completion.md",
+      "file_path": "documentation/PHASE/phasesoundevent/start(completion).md",
       "hash": "c9c477bcef92725e95cba9e45706719a3f66bcae789e754eda3498697f9f2856"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/starthandlerreason.json": {
@@ -4457,7 +4457,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/starthandlerreason/init(rawvalue:).json": {
       "etag": "\"17ad-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/starthandlerreason/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundevent/starthandlerreason/init(rawvalue).md",
       "hash": "24b90379da2e7bc52e16a93cf364e0bb55cdcb4d3d74d05e3eeb2fb14f7e46cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/starthandlerreason/terminated.json": {
@@ -4467,12 +4467,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundevent/stopandinvalidate().json": {
       "etag": "\"1e4a-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasesoundevent/stopandinvalidate.md",
+      "file_path": "documentation/PHASE/phasesoundevent/stopandinvalidate().md",
       "hash": "21785f5db6573d2063c2ec17c8db645f453538ad85de2bc9eda61b6fdc5c6a6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundeventerror-swift.struct.json": {
       "etag": "\"408e-65d55f75f60ff-df\"",
-      "file_path": "documentation/PHASE/phasesoundeventerror-swiftstruct.md",
+      "file_path": "documentation/PHASE/phasesoundeventerror-swift.struct.md",
       "hash": "d7431e88f31759ee276682d813baef115f88b2b52de7155193380f70901b2a44"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundeventerror-swift.struct/apimisuse.json": {
@@ -4502,7 +4502,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundeventerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"15e7-65d55f768f372-df\"",
-      "file_path": "documentation/PHASE/phasesoundeventerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasesoundeventerror-swift.struct/code/init(rawvalue).md",
       "hash": "81e2d860a0ad5393e691496b68deb1d5b8cbb1ebb8af833c40da1c90eb7aec86"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesoundeventerror-swift.struct/code/invalidinstance.json": {
@@ -4582,12 +4582,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesource/init(engine:).json": {
       "etag": "\"278b-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasesource/init-engine.md",
+      "file_path": "documentation/PHASE/phasesource/init(engine).md",
       "hash": "54f22ed2c901bfafd3b4eb07e5e86ba4e69ec2a336577f76d649e4ad3ed1f0cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesource/init(engine:shapes:).json": {
       "etag": "\"2f4f-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasesource/init-engineshapes.md",
+      "file_path": "documentation/PHASE/phasesource/init(engine,shapes).md",
       "hash": "888629ed251ffe3d187d2b913e64f95b9aed19e837f2bc72bd9c482b09c8982b"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasesource/shapes.json": {
@@ -4612,7 +4612,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialcategory/init(rawvalue:).json": {
       "etag": "\"16d5-65d55f76a5421-df\"",
-      "file_path": "documentation/PHASE/phasespatialcategory/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasespatialcategory/init(rawvalue).md",
       "hash": "7798e04d81d937d94d4fe0c7c61a5f63e7927f58cb9b727ca7fdffc9f8f14ebd"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialcategory/latereverb.json": {
@@ -4642,7 +4642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatializationmode/init(rawvalue:).json": {
       "etag": "\"12ba-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasespatializationmode/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasespatializationmode/init(rawvalue).md",
       "hash": "25be7c1dc6c6aab6516c959f4f0772c51bac6a9a672b511e8d86653bd1a1b618"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialmixerdefinition.json": {
@@ -4657,12 +4657,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialmixerdefinition/init(spatialpipeline:).json": {
       "etag": "\"2bd6-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasespatialmixerdefinition/init-spatialpipeline.md",
+      "file_path": "documentation/PHASE/phasespatialmixerdefinition/init(spatialpipeline).md",
       "hash": "4bb070d5ce2ddc35f0921c2cae2a328ee5897565c11f0c9cbf6185481a415666"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialmixerdefinition/init(spatialpipeline:identifier:).json": {
       "etag": "\"3255-65d55f7610393-df\"",
-      "file_path": "documentation/PHASE/phasespatialmixerdefinition/init-spatialpipelineidentifier.md",
+      "file_path": "documentation/PHASE/phasespatialmixerdefinition/init(spatialpipeline,identifier).md",
       "hash": "2af987cee1941748cb49234e0bb1e00505557fef007b21cc178d7f9a924fb1e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialmixerdefinition/listenerdirectivitymodelparameters.json": {
@@ -4692,12 +4692,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialpipeline/flags-swift.property.json": {
       "etag": "\"2ec9-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swiftproperty.md",
+      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swift.property.md",
       "hash": "45673512157232c186c3be1ee1059a2daa8dde352c99dec82a10100c4375661f"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialpipeline/flags-swift.struct.json": {
       "etag": "\"57cc-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swiftstruct.md",
+      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swift.struct.md",
       "hash": "8301ef18d57212d3880ddc468a0b46e1ee7fc6218a83ef345fe3bfdb86a809eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialpipeline/flags-swift.struct/directpathtransmission.json": {
@@ -4712,7 +4712,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialpipeline/flags-swift.struct/init(rawvalue:).json": {
       "etag": "\"1960-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/PHASE/phasespatialpipeline/flags-swift.struct/init(rawvalue).md",
       "hash": "8d24dc14e664d98d917b8c34999d723faf308117ed07110e86732ee33bd78fd2"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialpipeline/flags-swift.struct/latereverb.json": {
@@ -4722,7 +4722,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialpipeline/init(flags:).json": {
       "etag": "\"2e4b-65d55f76dae8b-df\"",
-      "file_path": "documentation/PHASE/phasespatialpipeline/init-flags.md",
+      "file_path": "documentation/PHASE/phasespatialpipeline/init(flags).md",
       "hash": "bd8075d3bc8ccea2e71bc76d26bed252178aac84d40287f2920f562a395c673c"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasespatialpipelineentry.json": {
@@ -4777,12 +4777,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasestringmetaparameterdefinition/init(value:).json": {
       "etag": "\"27f7-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasestringmetaparameterdefinition/init-value.md",
+      "file_path": "documentation/PHASE/phasestringmetaparameterdefinition/init(value).md",
       "hash": "21cfc8f4678ee15a590431a833a54dc46c15ca5c7a9079f312d14fe3ed855f98"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phasestringmetaparameterdefinition/init(value:identifier:).json": {
       "etag": "\"2c91-65d55f75d3a43-df\"",
-      "file_path": "documentation/PHASE/phasestringmetaparameterdefinition/init-valueidentifier.md",
+      "file_path": "documentation/PHASE/phasestringmetaparameterdefinition/init(value,identifier).md",
       "hash": "c96715badf7ee061ec82aa18a5438bb9035670650e67431069573a6d46093f08"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseswitchnodedefinition.json": {
@@ -4792,17 +4792,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseswitchnodedefinition/addsubtree(_:switchvalue:).json": {
       "etag": "\"3280-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseswitchnodedefinition/addsubtree-switchvalue.md",
+      "file_path": "documentation/PHASE/phaseswitchnodedefinition/addsubtree(_,switchvalue).md",
       "hash": "086f8e83c11e305661717202653d9c4a9431f427a5ca2521b449c535b15cf4be"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseswitchnodedefinition/init(switchmetaparameterdefinition:).json": {
       "etag": "\"2f19-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseswitchnodedefinition/init-switchmetaparameterdefinition.md",
+      "file_path": "documentation/PHASE/phaseswitchnodedefinition/init(switchmetaparameterdefinition).md",
       "hash": "29ff1e913649907d898e928a34fa85ce51a4c5c46faef8cb7f1e3318a1c80f85"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseswitchnodedefinition/init(switchmetaparameterdefinition:identifier:).json": {
       "etag": "\"3590-65d55f767a007-df\"",
-      "file_path": "documentation/PHASE/phaseswitchnodedefinition/init-switchmetaparameterdefinitionidentifier.md",
+      "file_path": "documentation/PHASE/phaseswitchnodedefinition/init(switchmetaparameterdefinition,identifier).md",
       "hash": "a85e76bdbcea2e1441af60fa92dc60a47d5cc6721e1ac9990672ce2b7c346f3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/phase/phaseswitchnodedefinition/switchmetaparameterdefinition.json": {

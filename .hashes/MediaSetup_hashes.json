@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/mediasetup/msauthenticationpresentationcontext/presentationanchor()": {
       "etag": "\"251b-65d55d51f2ae1-df\"",
-      "file_path": "documentation/MediaSetup/msauthenticationpresentationcontext/presentationanchor.md",
+      "file_path": "documentation/MediaSetup/msauthenticationpresentationcontext/presentationanchor().md",
       "hash": "8f5ce2979d36f8ac1afe4ab0abefbe8184b67d90ffeaea20648b8e0b9258bf8b"
     },
     "https://developer.apple.com/documentation/mediasetup/mspresentationanchor": {
@@ -57,7 +57,7 @@
     },
     "https://developer.apple.com/documentation/mediasetup/msserviceaccount/init(servicename:accountname:)": {
       "etag": "\"2eeb-65d55d51f2ae1-df\"",
-      "file_path": "documentation/MediaSetup/msserviceaccount/init-servicenameaccountname.md",
+      "file_path": "documentation/MediaSetup/msserviceaccount/init(servicename,accountname).md",
       "hash": "20fd3dd7cf11a844a2171958a34ee326ef1790888efdb0936f81f30de2fd22b1"
     },
     "https://developer.apple.com/documentation/mediasetup/msserviceaccount/servicename": {
@@ -77,7 +77,7 @@
     },
     "https://developer.apple.com/documentation/mediasetup/mssetupsession/init(serviceaccount:)": {
       "etag": "\"2826-65d55d51f2ae1-df\"",
-      "file_path": "documentation/MediaSetup/mssetupsession/init-serviceaccount.md",
+      "file_path": "documentation/MediaSetup/mssetupsession/init(serviceaccount).md",
       "hash": "ffc0665621c76836d999d6f33dcf163310e34232710cda1123cc5b1c27a80013"
     },
     "https://developer.apple.com/documentation/mediasetup/mssetupsession/presentationcontext": {
@@ -87,7 +87,7 @@
     },
     "https://developer.apple.com/documentation/mediasetup/mssetupsession/start()": {
       "etag": "\"2726-65d55d51f2ae1-df\"",
-      "file_path": "documentation/MediaSetup/mssetupsession/start.md",
+      "file_path": "documentation/MediaSetup/mssetupsession/start().md",
       "hash": "ede100e22d7465966c39602f618a9dc27e1b7b9d7423c350c6ca2a3f21261faa"
     },
     "https://developer.apple.com/tutorials/data/documentation/MediaSetup.json": {
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msauthenticationpresentationcontext/presentationanchor().json": {
       "etag": "\"251b-65d55d51f2ae1-df\"",
-      "file_path": "documentation/MediaSetup/msauthenticationpresentationcontext/presentationanchor.md",
+      "file_path": "documentation/MediaSetup/msauthenticationpresentationcontext/presentationanchor().md",
       "hash": "8f5ce2979d36f8ac1afe4ab0abefbe8184b67d90ffeaea20648b8e0b9258bf8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mspresentationanchor.json": {
@@ -147,7 +147,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/init(servicename:accountname:).json": {
       "etag": "\"2eeb-65d55d51f2ae1-df\"",
-      "file_path": "documentation/MediaSetup/msserviceaccount/init-servicenameaccountname.md",
+      "file_path": "documentation/MediaSetup/msserviceaccount/init(servicename,accountname).md",
       "hash": "20fd3dd7cf11a844a2171958a34ee326ef1790888efdb0936f81f30de2fd22b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/servicename.json": {
@@ -167,7 +167,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mssetupsession/init(serviceaccount:).json": {
       "etag": "\"2826-65d55d51f2ae1-df\"",
-      "file_path": "documentation/MediaSetup/mssetupsession/init-serviceaccount.md",
+      "file_path": "documentation/MediaSetup/mssetupsession/init(serviceaccount).md",
       "hash": "ffc0665621c76836d999d6f33dcf163310e34232710cda1123cc5b1c27a80013"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mssetupsession/presentationcontext.json": {
@@ -177,7 +177,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mssetupsession/start().json": {
       "etag": "\"2726-65d55d51f2ae1-df\"",
-      "file_path": "documentation/MediaSetup/mssetupsession/start.md",
+      "file_path": "documentation/MediaSetup/mssetupsession/start().md",
       "hash": "ede100e22d7465966c39602f618a9dc27e1b7b9d7423c350c6ca2a3f21261faa"
     }
   },

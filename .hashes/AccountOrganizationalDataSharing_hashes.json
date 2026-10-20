@@ -32,7 +32,7 @@
     },
     "https://developer.apple.com/documentation/accountorganizationaldatasharing/jwkset/jwkset.keys": {
       "etag": "\"1869-65d55a8a7e01d-df\"",
-      "file_path": "documentation/AccountOrganizationalDataSharing/jwkset/jwksetkeys.md",
+      "file_path": "documentation/AccountOrganizationalDataSharing/jwkset/jwkset.keys.md",
       "hash": "8e9bf5768e6c94a32f34fa79360823ce2a4988d549a5dc201da1a80e2bf8d7c3"
     },
     "https://developer.apple.com/documentation/accountorganizationaldatasharing/request-an-authorization": {
@@ -82,7 +82,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/jwkset/jwkset.keys.json": {
       "etag": "\"1869-65d55a8a7e01d-df\"",
-      "file_path": "documentation/AccountOrganizationalDataSharing/jwkset/jwksetkeys.md",
+      "file_path": "documentation/AccountOrganizationalDataSharing/jwkset/jwkset.keys.md",
       "hash": "8e9bf5768e6c94a32f34fa79360823ce2a4988d549a5dc201da1a80e2bf8d7c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/request-an-authorization.json": {

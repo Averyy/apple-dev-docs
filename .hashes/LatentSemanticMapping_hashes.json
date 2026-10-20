@@ -177,82 +177,82 @@
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapaddcategory(_:)": {
       "etag": "\"42d6-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapaddcategory.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapaddcategory(_).md",
       "hash": "4f75d2fb75e2e2d8479aaa2d60f4f4c599fcc5687923010cec8f4e664652e159"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapaddtext(_:_:_:)": {
       "etag": "\"4ce1-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapaddtext.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapaddtext(_,_,_).md",
       "hash": "15589a2e5367287ac76381d972ac40d629e9d20b066a4c7473c7123356f3a286"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapaddtextwithweight(_:_:_:_:)": {
       "etag": "\"51f9-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapaddtextwithweight.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapaddtextwithweight(_,_,_,_).md",
       "hash": "f3abe07547532c6dc105d232c54b15d74ef799998e338d2366579c704b5b84e6"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapapplyclusters(_:_:)": {
       "etag": "\"349d-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapapplyclusters.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapapplyclusters(_,_).md",
       "hash": "4819eea5be95f3d687faa7dbaee3b7e321971c7854d8fac8f50fb17624fe0bad"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapcompile(_:)": {
       "etag": "\"2ee2-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapcompile.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapcompile(_).md",
       "hash": "1c082426e64570f72a65fc439cd89c82b33b94e1dd07411398d32aca6e2a7d6e"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapcreate(_:_:)": {
       "etag": "\"3098-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapcreate.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapcreate(_,_).md",
       "hash": "750f7bdd211318280e63d7ec73c67ec25869f9485ebbffd400168a5359bf1a71"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapcreateclusters(_:_:_:_:_:)": {
       "etag": "\"4cab-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapcreateclusters.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapcreateclusters(_,_,_,_,_).md",
       "hash": "cbb80f14d2df55a77602be4a91e7e669da289852397d04c50e88833a293112de"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapcreatefromurl(_:_:_:)": {
       "etag": "\"4329-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapcreatefromurl.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapcreatefromurl(_,_,_).md",
       "hash": "2d004fa3dbdbc80d48dac8baeccb903710869479f1729f1a05ad95d348b19108"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapgetcategorycount(_:)": {
       "etag": "\"4571-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapgetcategorycount.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapgetcategorycount(_).md",
       "hash": "387095eb702b915c596b8ed3185a567d5382f6e73b09c6314c73b3fcd63aa398"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapgetproperties(_:)": {
       "etag": "\"2edf-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapgetproperties.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapgetproperties(_).md",
       "hash": "b8ba430fc06e31f7a4817e831d709906e80403f8546b06e049ee646d5c0d89c2"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapgettypeid()": {
       "etag": "\"17d4-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapgettypeid.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapgettypeid().md",
       "hash": "14914258d5f506e26b22fa105ca60002794bd1d8212a24a0ea046f4818220a27"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapsetproperties(_:_:)": {
       "etag": "\"2d11-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapsetproperties.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapsetproperties(_,_).md",
       "hash": "f2a0991106c4b382a689215d37a93ce21f8aa6ea17158bb02ccc139da067ad65"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapsetstopwords(_:_:)": {
       "etag": "\"4a60-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapsetstopwords.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapsetstopwords(_,_).md",
       "hash": "cf49e6eb4d62592cc822e53efcc25fbcbf001cf279ae17ac65df8781ee1a9508"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapstarttraining(_:)": {
       "etag": "\"4338-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapstarttraining.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapstarttraining(_).md",
       "hash": "3156b4ca48348d1c7b34dd1c4d87f6276930c3e155a0f5e43aaa6e7947bc9e85"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapwritetostream(_:_:_:_:)": {
       "etag": "\"42f7-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapwritetostream.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapwritetostream(_,_,_,_).md",
       "hash": "616793d61b006f9901f95af83e7ecbf2bca81c87838ec74fcfbffce5801f1e95"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmmapwritetourl(_:_:_:)": {
       "etag": "\"3b22-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapwritetourl.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapwritetourl(_,_,_).md",
       "hash": "92a19b9d001afea948b5b2e047b09b8b4f214f733f8319fd1f03279c5d41c10e"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresult": {
@@ -262,47 +262,47 @@
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultcopytoken(_:_:)": {
       "etag": "\"3fe8-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcopytoken.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcopytoken(_,_).md",
       "hash": "01e907a64990cbecc15b6310c95bf900b029cfddc13259514ce3cdb31448c77b"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultcopytokencluster(_:_:)": {
       "etag": "\"4047-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcopytokencluster.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcopytokencluster(_,_).md",
       "hash": "a9796018ce4c635a78634b3d821fc944a0786ea313195272ff7dea0238a4d678"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultcopyword(_:_:)": {
       "etag": "\"4006-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcopyword.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcopyword(_,_).md",
       "hash": "b8ba7ed8d44f1e47ea07dddd52284f7a55b32f65394e5302de948977eaeb06c8"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultcopywordcluster(_:_:)": {
       "etag": "\"403d-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcopywordcluster.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcopywordcluster(_,_).md",
       "hash": "c6f460b7d015165204a3859e7ea1e38cacf30bf325445a8e789feeb8682123ae"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultcreate(_:_:_:_:_:)": {
       "etag": "\"43b1-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcreate.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcreate(_,_,_,_,_).md",
       "hash": "1bdcd8ba1c3aa513862761ad0a2f97ac7a8d7705df96712bdbc50598beec8e8e"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultgetcategory(_:_:)": {
       "etag": "\"3413-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultgetcategory.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultgetcategory(_,_).md",
       "hash": "ffa67ea2501ad4ac2938de736e33131da26a73c87c7f67c6fef6991c7041d70f"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultgetcount(_:)": {
       "etag": "\"2c82-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultgetcount.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultgetcount(_).md",
       "hash": "45fa947a96d3ee2e0c64cf9fa81d0189f549cbbec52616b96bc300627862123e"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultgetscore(_:_:)": {
       "etag": "\"3346-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultgetscore.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultgetscore(_,_).md",
       "hash": "7a4dbcac3e1efdb41dd1391c88d25ffb6b51bbdf97cca3b0b63124e0cc78d229"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmresultgettypeid()": {
       "etag": "\"1819-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultgettypeid.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultgettypeid().md",
       "hash": "0eb21f4cc3ec8714d86170e4a64cff1bdf3ff56473f2dc56ce95da89b1301ec0"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmtext": {
@@ -312,27 +312,27 @@
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmtextaddtoken(_:_:)": {
       "etag": "\"33da-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextaddtoken.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextaddtoken(_,_).md",
       "hash": "a9dd0c93af7e6ff3a5cfe1de1fcb467019ca82927c5b46d6d2ba0cef39049401"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmtextaddword(_:_:)": {
       "etag": "\"33e2-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextaddword.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextaddword(_,_).md",
       "hash": "a3dc178248fda103413031fe1665be14dbe51ec47439836e42e18922c679b2e7"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmtextaddwords(_:_:_:_:)": {
       "etag": "\"3faf-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextaddwords.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextaddwords(_,_,_,_).md",
       "hash": "898206c780395689118a3c1709c2624d501586dcc5d1c25fe75bc6d1c9af5e3e"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmtextcreate(_:_:)": {
       "etag": "\"2b51-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextcreate.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextcreate(_,_).md",
       "hash": "621197a8f60d57255296fd0a2ac79c109d8efb7181b2a61850892bb9814418a7"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/lsmtextgettypeid()": {
       "etag": "\"17eb-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextgettypeid.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextgettypeid().md",
       "hash": "cbd6013d33ecc5e49e029d8b7310e46bf9f5be4a19378b937fd0d2eb825362c9"
     },
     "https://developer.apple.com/documentation/latentsemanticmapping/map-flags": {
@@ -537,82 +537,82 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapaddcategory(_:).json": {
       "etag": "\"42d6-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapaddcategory.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapaddcategory(_).md",
       "hash": "4f75d2fb75e2e2d8479aaa2d60f4f4c599fcc5687923010cec8f4e664652e159"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapaddtext(_:_:_:).json": {
       "etag": "\"4ce1-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapaddtext.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapaddtext(_,_,_).md",
       "hash": "15589a2e5367287ac76381d972ac40d629e9d20b066a4c7473c7123356f3a286"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapaddtextwithweight(_:_:_:_:).json": {
       "etag": "\"51f9-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapaddtextwithweight.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapaddtextwithweight(_,_,_,_).md",
       "hash": "f3abe07547532c6dc105d232c54b15d74ef799998e338d2366579c704b5b84e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapapplyclusters(_:_:).json": {
       "etag": "\"349d-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapapplyclusters.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapapplyclusters(_,_).md",
       "hash": "4819eea5be95f3d687faa7dbaee3b7e321971c7854d8fac8f50fb17624fe0bad"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapcompile(_:).json": {
       "etag": "\"2ee2-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapcompile.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapcompile(_).md",
       "hash": "1c082426e64570f72a65fc439cd89c82b33b94e1dd07411398d32aca6e2a7d6e"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapcreate(_:_:).json": {
       "etag": "\"3098-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapcreate.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapcreate(_,_).md",
       "hash": "750f7bdd211318280e63d7ec73c67ec25869f9485ebbffd400168a5359bf1a71"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapcreateclusters(_:_:_:_:_:).json": {
       "etag": "\"4cab-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapcreateclusters.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapcreateclusters(_,_,_,_,_).md",
       "hash": "cbb80f14d2df55a77602be4a91e7e669da289852397d04c50e88833a293112de"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapcreatefromurl(_:_:_:).json": {
       "etag": "\"4329-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapcreatefromurl.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapcreatefromurl(_,_,_).md",
       "hash": "2d004fa3dbdbc80d48dac8baeccb903710869479f1729f1a05ad95d348b19108"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapgetcategorycount(_:).json": {
       "etag": "\"4571-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapgetcategorycount.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapgetcategorycount(_).md",
       "hash": "387095eb702b915c596b8ed3185a567d5382f6e73b09c6314c73b3fcd63aa398"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapgetproperties(_:).json": {
       "etag": "\"2edf-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapgetproperties.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapgetproperties(_).md",
       "hash": "b8ba430fc06e31f7a4817e831d709906e80403f8546b06e049ee646d5c0d89c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapgettypeid().json": {
       "etag": "\"17d4-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapgettypeid.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapgettypeid().md",
       "hash": "14914258d5f506e26b22fa105ca60002794bd1d8212a24a0ea046f4818220a27"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapsetproperties(_:_:).json": {
       "etag": "\"2d11-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapsetproperties.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapsetproperties(_,_).md",
       "hash": "f2a0991106c4b382a689215d37a93ce21f8aa6ea17158bb02ccc139da067ad65"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapsetstopwords(_:_:).json": {
       "etag": "\"4a60-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapsetstopwords.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapsetstopwords(_,_).md",
       "hash": "cf49e6eb4d62592cc822e53efcc25fbcbf001cf279ae17ac65df8781ee1a9508"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapstarttraining(_:).json": {
       "etag": "\"4338-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapstarttraining.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapstarttraining(_).md",
       "hash": "3156b4ca48348d1c7b34dd1c4d87f6276930c3e155a0f5e43aaa6e7947bc9e85"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapwritetostream(_:_:_:_:).json": {
       "etag": "\"42f7-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapwritetostream.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapwritetostream(_,_,_,_).md",
       "hash": "616793d61b006f9901f95af83e7ecbf2bca81c87838ec74fcfbffce5801f1e95"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapwritetourl(_:_:_:).json": {
       "etag": "\"3b22-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmmapwritetourl.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmmapwritetourl(_,_,_).md",
       "hash": "92a19b9d001afea948b5b2e047b09b8b4f214f733f8319fd1f03279c5d41c10e"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresult.json": {
@@ -622,47 +622,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcopytoken(_:_:).json": {
       "etag": "\"3fe8-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcopytoken.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcopytoken(_,_).md",
       "hash": "01e907a64990cbecc15b6310c95bf900b029cfddc13259514ce3cdb31448c77b"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcopytokencluster(_:_:).json": {
       "etag": "\"4047-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcopytokencluster.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcopytokencluster(_,_).md",
       "hash": "a9796018ce4c635a78634b3d821fc944a0786ea313195272ff7dea0238a4d678"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcopyword(_:_:).json": {
       "etag": "\"4006-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcopyword.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcopyword(_,_).md",
       "hash": "b8ba7ed8d44f1e47ea07dddd52284f7a55b32f65394e5302de948977eaeb06c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcopywordcluster(_:_:).json": {
       "etag": "\"403d-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcopywordcluster.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcopywordcluster(_,_).md",
       "hash": "c6f460b7d015165204a3859e7ea1e38cacf30bf325445a8e789feeb8682123ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcreate(_:_:_:_:_:).json": {
       "etag": "\"43b1-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultcreate.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultcreate(_,_,_,_,_).md",
       "hash": "1bdcd8ba1c3aa513862761ad0a2f97ac7a8d7705df96712bdbc50598beec8e8e"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultgetcategory(_:_:).json": {
       "etag": "\"3413-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultgetcategory.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultgetcategory(_,_).md",
       "hash": "ffa67ea2501ad4ac2938de736e33131da26a73c87c7f67c6fef6991c7041d70f"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultgetcount(_:).json": {
       "etag": "\"2c82-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultgetcount.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultgetcount(_).md",
       "hash": "45fa947a96d3ee2e0c64cf9fa81d0189f549cbbec52616b96bc300627862123e"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultgetscore(_:_:).json": {
       "etag": "\"3346-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultgetscore.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultgetscore(_,_).md",
       "hash": "7a4dbcac3e1efdb41dd1391c88d25ffb6b51bbdf97cca3b0b63124e0cc78d229"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultgettypeid().json": {
       "etag": "\"1819-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmresultgettypeid.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmresultgettypeid().md",
       "hash": "0eb21f4cc3ec8714d86170e4a64cff1bdf3ff56473f2dc56ce95da89b1301ec0"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtext.json": {
@@ -672,27 +672,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextaddtoken(_:_:).json": {
       "etag": "\"33da-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextaddtoken.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextaddtoken(_,_).md",
       "hash": "a9dd0c93af7e6ff3a5cfe1de1fcb467019ca82927c5b46d6d2ba0cef39049401"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextaddword(_:_:).json": {
       "etag": "\"33e2-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextaddword.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextaddword(_,_).md",
       "hash": "a3dc178248fda103413031fe1665be14dbe51ec47439836e42e18922c679b2e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextaddwords(_:_:_:_:).json": {
       "etag": "\"3faf-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextaddwords.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextaddwords(_,_,_,_).md",
       "hash": "898206c780395689118a3c1709c2624d501586dcc5d1c25fe75bc6d1c9af5e3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextcreate(_:_:).json": {
       "etag": "\"2b51-65d55cbff049b-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextcreate.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextcreate(_,_).md",
       "hash": "621197a8f60d57255296fd0a2ac79c109d8efb7181b2a61850892bb9814418a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextgettypeid().json": {
       "etag": "\"17eb-65d55cbfde278-df\"",
-      "file_path": "documentation/LatentSemanticMapping/lsmtextgettypeid.md",
+      "file_path": "documentation/LatentSemanticMapping/lsmtextgettypeid().md",
       "hash": "cbd6013d33ecc5e49e029d8b7310e46bf9f5be4a19378b937fd0d2eb825362c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/map-flags.json": {

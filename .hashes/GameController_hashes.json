@@ -47,12 +47,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gamecontrollereventhandlingoptions/init()": {
       "etag": "\"d86-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gamecontrollereventhandlingoptions/init.md",
+      "file_path": "documentation/GameController/gamecontrollereventhandlingoptions/init().md",
       "hash": "eab241cb36dae1149f6afcbf28d343d2cc764e2357db7d5bfa57e302e51713f8"
     },
     "https://developer.apple.com/documentation/gamecontroller/gamecontrollereventhandlingoptions/receiveseventsinview(_:)": {
       "etag": "\"1af8-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gamecontrollereventhandlingoptions/receiveseventsinview.md",
+      "file_path": "documentation/GameController/gamecontrollereventhandlingoptions/receiveseventsinview(_).md",
       "hash": "b62bce7b12ce289cceb1009d9b257144336e7a20d30a8e72d80aa52a94bbfc16"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcacceleration": {
@@ -62,12 +62,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcacceleration/init()": {
       "etag": "\"fd3-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcacceleration/init.md",
+      "file_path": "documentation/GameController/gcacceleration/init().md",
       "hash": "7863449d0a0d75648a3227600ed2cdc721fc2438a0fe93bd3cbefa04802859f0"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcacceleration/init(x:y:z:)": {
       "etag": "\"1a66-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcacceleration/init-xyz.md",
+      "file_path": "documentation/GameController/gcacceleration/init(x,y,z).md",
       "hash": "6b40684c9e33fefaa9fac9eb219cf442b3867a083001481774487e4b5fccc994"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcacceleration/x": {
@@ -142,7 +142,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcaxiselementname-swift.struct": {
       "etag": "\"3d45-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcaxiselementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcaxiselementname-swift.struct.md",
       "hash": "b28bd85fc23aa6cc257df890a9e1d641ba30dc3ada045cd55531927e41a025ad"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcaxiselementname-swift.struct/steeringwheel": {
@@ -212,7 +212,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcbuttonelementname-swift.struct": {
       "etag": "\"b10c-65d55d1acc7d9-df\"",
-      "file_path": "documentation/GameController/gcbuttonelementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct.md",
       "hash": "a37934480ce417101d6d88a7fe8af4fa72e597ea58a9e82c789b273ef81c15d5"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcbuttonelementname-swift.struct/a": {
@@ -222,7 +222,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcbuttonelementname-swift.struct/arcadebutton(row:column:)": {
       "etag": "\"1b87-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/arcadebutton-rowcolumn.md",
+      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/arcadebutton(row,column).md",
       "hash": "d1116b6707ee6b85b743427148de1054c385991464030f318b94c570999c5503"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcbuttonelementname-swift.struct/b": {
@@ -232,12 +232,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcbuttonelementname-swift.struct/backleftbutton(position:)": {
       "etag": "\"1e8a-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/backleftbutton-position.md",
+      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/backleftbutton(position).md",
       "hash": "28e87666de9776af2d1cf69b17f4493c8e6509dea38595923a985d20d2fb5d0a"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcbuttonelementname-swift.struct/backrightbutton(position:)": {
       "etag": "\"1e92-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/backrightbutton-position.md",
+      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/backrightbutton(position).md",
       "hash": "815947e0b81f1e3ec77fde96fb0ab097c75ce24b71627a69a582db2e5da73942"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcbuttonelementname-swift.struct/grip": {
@@ -392,12 +392,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccolor/init(coder:)": {
       "etag": "\"1470-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gccolor/init-coder.md",
+      "file_path": "documentation/GameController/gccolor/init(coder).md",
       "hash": "6bcedb39c6593c68f5cd699a64024821fed8c98c13dc38ec6f714d859b9bc158"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccolor/init(red:green:blue:)": {
       "etag": "\"27ff-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gccolor/init-redgreenblue.md",
+      "file_path": "documentation/GameController/gccolor/init(red,green,blue).md",
       "hash": "9ab3aa093bc40a3545f3e8b22122f8b21285f83ba6b57c2e5717ebd8aafc2db2"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccolor/red": {
@@ -417,7 +417,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/capture()": {
       "etag": "\"35d0-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/capture.md",
+      "file_path": "documentation/GameController/gccontroller/capture().md",
       "hash": "ed8082eeb1efee9301fed0183d26c629ad72000ccd66e78ae027228721e83fda"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/controllerpausedhandler": {
@@ -427,7 +427,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/controllers()": {
       "etag": "\"5752-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gccontroller/controllers.md",
+      "file_path": "documentation/GameController/gccontroller/controllers().md",
       "hash": "994e174a1234a786de5b1d957dc7bc66879fc2969d9b99af6f68eb2bde8f3319"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/current": {
@@ -447,7 +447,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/didbecomecurrentmessage/init(controller:)": {
       "etag": "\"1672-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/didbecomecurrentmessage/init-controller.md",
+      "file_path": "documentation/GameController/gccontroller/didbecomecurrentmessage/init(controller).md",
       "hash": "79e74fc491efd7ed9d99c547e3f3ee5c2ee9882e836ded382542dc57a0ec0f94"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/didconnectmessage": {
@@ -462,7 +462,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/didconnectmessage/init(controller:)": {
       "etag": "\"161b-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/didconnectmessage/init-controller.md",
+      "file_path": "documentation/GameController/gccontroller/didconnectmessage/init(controller).md",
       "hash": "eabc3ada4b7586c26c6c97029144c359bda7008d8d3160a6c3ecb133a80cdd33"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/diddisconnectmessage": {
@@ -477,7 +477,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/diddisconnectmessage/init(controller:)": {
       "etag": "\"1647-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gccontroller/diddisconnectmessage/init-controller.md",
+      "file_path": "documentation/GameController/gccontroller/diddisconnectmessage/init(controller).md",
       "hash": "8edd6206978a2e6dc65c0f604d81813863adb500a5b0c23010d2d461c13de560"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/didstopbeingcurrentmessage": {
@@ -492,7 +492,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/didstopbeingcurrentmessage/init(controller:)": {
       "etag": "\"169d-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/didstopbeingcurrentmessage/init-controller.md",
+      "file_path": "documentation/GameController/gccontroller/didstopbeingcurrentmessage/init(controller).md",
       "hash": "bb65a603d48236eebe6af893bfb078489c8f1e538c781c54b77bf8710fdba467"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/extendedgamepad": {
@@ -557,27 +557,27 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/startwirelesscontrollerdiscovery(completionhandler:)": {
       "etag": "\"468a-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/startwirelesscontrollerdiscovery-completionhandler.md",
+      "file_path": "documentation/GameController/gccontroller/startwirelesscontrollerdiscovery(completionhandler).md",
       "hash": "e965858b5611667e1b913c1d6701241a18cab721822e4dd7a302e2e15a096a04"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/stopwirelesscontrollerdiscovery()": {
       "etag": "\"3a36-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/stopwirelesscontrollerdiscovery.md",
+      "file_path": "documentation/GameController/gccontroller/stopwirelesscontrollerdiscovery().md",
       "hash": "3cc6e66c24d9041a7e5e2dd961a5e8358729fdc21bdac2f6f795eec268225cc2"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/supportshiddevice(_:)": {
       "etag": "\"3abb-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/supportshiddevice.md",
+      "file_path": "documentation/GameController/gccontroller/supportshiddevice(_).md",
       "hash": "4422bf4679e8126e9705c6e3a4e1656fb4fdfc6b658d9f9523b40ee606d92bf1"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/withextendedgamepad()": {
       "etag": "\"370b-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/withextendedgamepad.md",
+      "file_path": "documentation/GameController/gccontroller/withextendedgamepad().md",
       "hash": "309f2d930b7c71b53b792ff86b23ec8d1385fde1b8fda9bde9f4735b3a3a281d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontroller/withmicrogamepad()": {
       "etag": "\"36e4-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/withmicrogamepad.md",
+      "file_path": "documentation/GameController/gccontroller/withmicrogamepad().md",
       "hash": "6affc3ac93f80734aaf274cc71943f8cdd8172afbed809c6c9d0a07384f6448f"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrolleraxisinput": {
@@ -587,7 +587,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrolleraxisinput/setvalue(_:)": {
       "etag": "\"2774-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gccontrolleraxisinput/setvalue.md",
+      "file_path": "documentation/GameController/gccontrolleraxisinput/setvalue(_).md",
       "hash": "fbb7651ff4260bf70640fe0f1a446dd5f5784155e5be8345cec7c0b9e8b0316f"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrolleraxisinput/value": {
@@ -627,7 +627,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerbuttoninput/setvalue(_:)": {
       "etag": "\"2ac5-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gccontrollerbuttoninput/setvalue.md",
+      "file_path": "documentation/GameController/gccontrollerbuttoninput/setvalue(_).md",
       "hash": "a48e01f14e0ea178315008977589b5df503d7c1969a945a2ff7d70278ae69097"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerbuttoninput/touchedchangedhandler": {
@@ -677,7 +677,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/setvalueforxaxis(_:yaxis:)": {
       "etag": "\"314b-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gccontrollerdirectionpad/setvalueforxaxis-yaxis.md",
+      "file_path": "documentation/GameController/gccontrollerdirectionpad/setvalueforxaxis(_,yaxis).md",
       "hash": "6d5a6a297c50c82e2289b4a47e99e59194db55b02fbefc6422b8fb66ae2a9be6"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerdirectionpad/up": {
@@ -767,7 +767,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerelement/systemgesturestate/init(rawvalue:)": {
       "etag": "\"1a15-65d55d1acc7d9-df\"",
-      "file_path": "documentation/GameController/gccontrollerelement/systemgesturestate/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerelement/systemgesturestate/init(rawvalue).md",
       "hash": "6460ed919784ad41e6de55031214dc5f524afef2ae1c846261ebb24a1f2b22a6"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerelement/unmappedlocalizedname": {
@@ -787,7 +787,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingcustomizationstatus/init(rawvalue:)": {
       "etag": "\"165c-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingcustomizationstatus/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingcustomizationstatus/init(rawvalue).md",
       "hash": "d00900c53bd9a0ddbc4a12407427c9a820b19bdf2f311dba121a4c0f9bbf0ff9"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingcustomizationstatus/systemdefault": {
@@ -817,7 +817,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettinginappaction/init(rawvalue:)": {
       "etag": "\"15d8-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettinginappaction/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettinginappaction/init(rawvalue).md",
       "hash": "de0fd1bdade1a283d1aba42987199c6cc472b88057cc1571d407e0449e2793dc"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettinginappaction/systemdefault": {
@@ -847,7 +847,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingscustomizationactivity/init(rawvalue:)": {
       "etag": "\"16f4-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingscustomizationactivity/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingscustomizationactivity/init(rawvalue).md",
       "hash": "0710b0cb3094750e2f2f23b1948638ac3739a22ba9d8095500320b03325f15fc"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu": {
@@ -872,17 +872,17 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu/init()": {
       "etag": "\"1168-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/init.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/init().md",
       "hash": "b9e202baf92d2956fee1c5d2ffd2f976159819ad9d741b1bea9c036beff6815f"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu/init(_:)": {
       "etag": "\"1310-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/init.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/init(_).md",
       "hash": "41a6a3a3894b04b6dbe47d28878de889465ae23ebfe2f72ccd774eb16fd395e0"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu/opencontrollerhomebuttonsettings(for:)": {
       "etag": "\"1dd6-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/opencontrollerhomebuttonsettings-for.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/opencontrollerhomebuttonsettings(for).md",
       "hash": "8eee581bd35bf1080bfb14778758d501d0d2e9853ddda5282e212fef4cbdbdaf"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu/settingcustomizationstatus": {
@@ -917,7 +917,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingsystemaction/init(rawvalue:)": {
       "etag": "\"160f-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsystemaction/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsystemaction/init(rawvalue).md",
       "hash": "2bb4ad780ae0f06c10a5bdc8b460c1dcee1bc31b72e4f6bcec0409f55c2eb132"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerhomebuttonsettingsystemaction/opencurrentapplication": {
@@ -947,12 +947,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerliveinput/capture()": {
       "etag": "\"2a96-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gccontrollerliveinput/capture.md",
+      "file_path": "documentation/GameController/gccontrollerliveinput/capture().md",
       "hash": "ff280bd200126b04d4552f48a67b58650b5850cde450630bfd2e5c1f70b90550"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerliveinput/nextinputstate()": {
       "etag": "\"3258-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gccontrollerliveinput/nextinputstate.md",
+      "file_path": "documentation/GameController/gccontrollerliveinput/nextinputstate().md",
       "hash": "de28096811656dbbeb11653d89d5ed008384127267968e133d6885e85946c1c5"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerliveinput/unmapped": {
@@ -992,7 +992,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollerplayerindex/init(rawvalue:)": {
       "etag": "\"1451-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gccontrollerplayerindex/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerplayerindex/init(rawvalue).md",
       "hash": "4e672eeeb40a61fa5adfd39aa3208b09a7354273273bff9b4ba36a9fb9b7d5d9"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad": {
@@ -1012,7 +1012,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad/setvalueforxaxis(_:yaxis:touchdown:buttonvalue:)": {
       "etag": "\"43f0-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gccontrollertouchpad/setvalueforxaxis-yaxistouchdownbuttonvalue.md",
+      "file_path": "documentation/GameController/gccontrollertouchpad/setvalueforxaxis(_,yaxis,touchdown,buttonvalue).md",
       "hash": "eafe6dbf1161b820835af513f38758e2f998330855eddcd74911fcc769062985"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad/touchdown": {
@@ -1027,7 +1027,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.enum": {
       "etag": "\"4e88-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swiftenum.md",
+      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swift.enum.md",
       "hash": "f7f9e18cdbd68b6d6067dc883c321a5a5d2ed02fdcec16633d1ff926e823328c"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.enum/down": {
@@ -1037,7 +1037,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.enum/init(rawvalue:)": {
       "etag": "\"19fd-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swift.enum/init(rawvalue).md",
       "hash": "e6c4f75bdfd1b0ef651c47b78fd7bfa070a9c89502982a8ce890477475044278"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.enum/moving": {
@@ -1052,7 +1052,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.property": {
       "etag": "\"2c60-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swiftproperty.md",
+      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swift.property.md",
       "hash": "39e25f2e3d36991704d29ecb35a5cf33c8d9ff81b1d28f2eb8c2ddcac7daf385"
     },
     "https://developer.apple.com/documentation/gamecontroller/gccontrollertouchpad/touchsurface": {
@@ -1147,7 +1147,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicebattery/state/init(rawvalue:)": {
       "etag": "\"18e4-65d55d19d606d-df\"",
-      "file_path": "documentation/GameController/gcdevicebattery/state/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcdevicebattery/state/init(rawvalue).md",
       "hash": "53a4ad67111ea62407c6e5cb2b19e4aa7c4e9f370d5e74e7b7709c80076cac9c"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicebattery/state/unknown": {
@@ -1182,7 +1182,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicehaptics/createengine(withlocality:)": {
       "etag": "\"39ac-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcdevicehaptics/createengine-withlocality.md",
+      "file_path": "documentation/GameController/gcdevicehaptics/createengine(withlocality).md",
       "hash": "7b1e2325a55f2c6e74456ce7fd3f17576349ab951d86df747f4351b3d0762708"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicehaptics/supportedlocalities": {
@@ -1207,7 +1207,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinput/capture()": {
       "etag": "\"40a1-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinput/capture.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinput/capture().md",
       "hash": "6031494e37662dbe501e80b0ff9f78989be6c213b1f37e7cfcf27b46fbf43081"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinput/device": {
@@ -1222,7 +1222,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinput/inputstate(forspatialaccessoryanchortimestamp:)": {
       "etag": "\"3194-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinput/inputstate-forspatialaccessoryanchortimestamp.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinput/inputstate(forspatialaccessoryanchortimestamp).md",
       "hash": "8a7fc133cc59f24fbd322103b8baf34524d53ca3437759817a119d5fa4729704"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinput/inputstateavailablehandler": {
@@ -1237,7 +1237,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinput/nextinputstate()": {
       "etag": "\"4997-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinput/nextinputstate.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinput/nextinputstate().md",
       "hash": "07e0c3c4b5940c4adfc3be24da3687843887a36d533b1bdb77dd66de64730bf4"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinput/queue": {
@@ -1257,7 +1257,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputelementchange/init(rawvalue:)": {
       "etag": "\"153f-65d55d1b0b306-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputelementchange/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputelementchange/init(rawvalue).md",
       "hash": "acea85407ef2014661f45cb706adae30ad5b917d2fd3280f023dbf15c3ba2944"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputelementchange/nochange": {
@@ -1312,7 +1312,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputstate/subscript(_:)": {
       "etag": "\"4def-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputstate/subscript.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputstate/subscript(_).md",
       "hash": "de104892a606e9483fddff40538b423dad7afca0135c3d4de80b9d66b39aa46f"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputstate/switches-6dcny": {
@@ -1327,17 +1327,17 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputstatediff/change(for:)": {
       "etag": "\"3e60-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/change-for.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/change(for).md",
       "hash": "4197c9a3f6f0a466c510c0fd0b828f413ce21f1f8bffe594a8e6afb3e31013c5"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputstatediff/changedelements()-2zzwm": {
       "etag": "\"32f1-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/changedelements-2zzwm.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/changedelements()-2zzwm.md",
       "hash": "d914a01cc10e292e3c4503db3cfc0d4cb92dd80ef17c0a84537e401cbd4b6a43"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinputstatediff/changedelements()-9cdq4": {
       "etag": "\"2b4b-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/changedelements-9cdq4.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/changedelements()-9cdq4.md",
       "hash": "84514740568022901a12838c119eb02eceeee191fdc2c227ef6b2d773857f26a"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicetouchpad": {
@@ -1352,7 +1352,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicetype/init(identifier:)": {
       "etag": "\"2171-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcdevicetype/init-identifier.md",
+      "file_path": "documentation/GameController/gcdevicetype/init(identifier).md",
       "hash": "8db87641aa7d2ca9e0c799994909bad81dc76f7b6cc21840cbcc9143e692dd6b"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdevicetype/localizeddescription": {
@@ -1412,7 +1412,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdirectionpadelementname-swift.struct": {
       "etag": "\"4921-65d55d19d606d-df\"",
-      "file_path": "documentation/GameController/gcdirectionpadelementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcdirectionpadelementname-swift.struct.md",
       "hash": "c839ad4c84128bd79c11c2927af569e3e62a4e3cd282bf786f055f657fba0e07"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdirectionpadelementname-swift.struct/directionpad": {
@@ -1452,7 +1452,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.enum": {
       "etag": "\"5b32-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swiftenum.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swift.enum.md",
       "hash": "76b282cc5b8292a14035b234ea3be95132be23ab9ecdbd4262a313083b7cdd58"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.enum/feedback": {
@@ -1462,7 +1462,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.enum/init(rawvalue:)": {
       "etag": "\"1a8f-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swift.enum/init(rawvalue).md",
       "hash": "926a813d253e8b36268317e3d9b0cb038eccfb6339c527297d8959cd4f060359"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.enum/off": {
@@ -1487,7 +1487,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.property": {
       "etag": "\"2d1c-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swiftproperty.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swift.property.md",
       "hash": "bbf875db10c0ec39f16622f6a62da1dbc45b7736c262195291b89dc945884e41"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalamplitudes": {
@@ -1497,12 +1497,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalamplitudes/init()": {
       "etag": "\"1f27-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalamplitudes/init.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalamplitudes/init().md",
       "hash": "80ad731e3ee5372d2970ea35a67cf01850974309f46f00bb715625faa8e4db3e"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalamplitudes/init(values:)": {
       "etag": "\"2e49-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalamplitudes/init-values.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalamplitudes/init(values).md",
       "hash": "80c5361e77cd6a59edc4e3a3803104a139cb3da63513c1896811cf403c4f4c4b"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalamplitudes/values": {
@@ -1517,12 +1517,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalresistivestrengths/init()": {
       "etag": "\"1fe1-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalresistivestrengths/init.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalresistivestrengths/init().md",
       "hash": "681f6e898a3e5b0a9ab7f7383b5d9ff2e52360c4d8c77c66beb1c25d8588de56"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalresistivestrengths/init(values:)": {
       "etag": "\"2f00-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalresistivestrengths/init-values.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalresistivestrengths/init(values).md",
       "hash": "7be31273db152c0c795d5c39282ef5715487f8704b06484f9543e5eb8afbed05"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalresistivestrengths/values": {
@@ -1532,42 +1532,42 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodefeedback(resistivestrengths:)": {
       "etag": "\"6397-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodefeedback-resistivestrengths.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodefeedback(resistivestrengths).md",
       "hash": "206914acfd51b648bf5498a808cbfed0a7be4f66c70b2e29debe2e163ad0e551"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition(_:resistivestrength:)": {
       "etag": "\"6a72-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition-resistivestrength.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition(_,resistivestrength).md",
       "hash": "2e5b38caffc254be9d60977db434ed7b51c2741dc102f37f2d84ea5a6deb6693"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodeoff()": {
       "etag": "\"279d-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeoff.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeoff().md",
       "hash": "f3e3b669b9354eee0e516ede5ccf068c8094b54e35d605e5e25148d750b09d01"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodeslopefeedback(startposition:endposition:startstrength:endstrength:)": {
       "etag": "\"7812-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeslopefeedback-startpositionendpositionstartstrengthendstrength.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeslopefeedback(startposition,endposition,startstrength,endstrength).md",
       "hash": "cbfc3fb5d5b2acb7351a94d98e87e447f8f2cd8c2124600775771f551512fd33"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodevibration(amplitudes:frequency:)": {
       "etag": "\"6b23-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodevibration-amplitudesfrequency.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodevibration(amplitudes,frequency).md",
       "hash": "ba47a1313162cd991f76a11530dcc5c5eff34a617bf3a0fc2971ff2790ddeb6d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodevibrationwithstartposition(_:amplitude:frequency:)": {
       "etag": "\"7073-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodevibrationwithstartposition-amplitudefrequency.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodevibrationwithstartposition(_,amplitude,frequency).md",
       "hash": "cde382fcc337ee48d3293df51296162e045adac7dfd4cba4d4d13dda838ed7c7"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodeweaponwithstartposition(_:endposition:resistivestrength:)": {
       "etag": "\"72ed-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeweaponwithstartposition-endpositionresistivestrength.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeweaponwithstartposition(_,endposition,resistivestrength).md",
       "hash": "3c7adb6e667402bd7acf49952f496034dc5caab4b375fb75bfab8766c6888999"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.enum": {
       "etag": "\"7daf-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swiftenum.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swift.enum.md",
       "hash": "d5ec2e551f816d73eaa0012eb1f854df2ea190459b43b2e035e0afdcf603409d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.enum/feedbackloadapplied": {
@@ -1582,7 +1582,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.enum/init(rawvalue:)": {
       "etag": "\"1ab6-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swift.enum/init(rawvalue).md",
       "hash": "0be0bbc10e9120cb4c8c4845311591fb1facebe2b5b29d44adf67315cbd4296f"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.enum/slopefeedbackapplyingload": {
@@ -1632,7 +1632,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.property": {
       "etag": "\"273c-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swiftproperty.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swift.property.md",
       "hash": "3bb8afa1b094c268adcc452e165eb0752df4660d845f84a2d8038c5455fd175b"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcdualsensegamepad": {
@@ -1692,12 +1692,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gceulerangles/init()": {
       "etag": "\"1006-65d55d1b0b306-df\"",
-      "file_path": "documentation/GameController/gceulerangles/init.md",
+      "file_path": "documentation/GameController/gceulerangles/init().md",
       "hash": "2c3a94e0f7b983d3dbc1a6968f73add93568024661665baf96b5c447879e1c64"
     },
     "https://developer.apple.com/documentation/gamecontroller/gceulerangles/init(pitch:yaw:roll:)": {
       "etag": "\"1b71-65d55d1b0b306-df\"",
-      "file_path": "documentation/GameController/gceulerangles/init-pitchyawroll.md",
+      "file_path": "documentation/GameController/gceulerangles/init(pitch,yaw,roll).md",
       "hash": "05e1dc8224b1b1a264486d366f04fe2cfe52a6a719cca1c61d41ee7ee12ef014"
     },
     "https://developer.apple.com/documentation/gamecontroller/gceulerangles/pitch": {
@@ -1727,7 +1727,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gceventinteraction/init()": {
       "etag": "\"17db-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gceventinteraction/init.md",
+      "file_path": "documentation/GameController/gceventinteraction/init().md",
       "hash": "ac32b066446df85b848f2aa51e3c2d780d138b036dcd22ed7381d2041cb9d4bf"
     },
     "https://developer.apple.com/documentation/gamecontroller/gceventinteraction/receiveseventsinview": {
@@ -1837,12 +1837,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/savesnapshot()": {
       "etag": "\"34a3-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepad/savesnapshot.md",
+      "file_path": "documentation/GameController/gcextendedgamepad/savesnapshot().md",
       "hash": "23b1d6b33f487574d0605a18c62ea479c486346cfe1909de1633cc151034e106"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/setstatefrom(_:)": {
       "etag": "\"284b-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepad/setstatefrom.md",
+      "file_path": "documentation/GameController/gcextendedgamepad/setstatefrom(_).md",
       "hash": "f09468665824c9f5cf63d3eef5a5f929e4552082e1fc7378c2e412fd294ed857"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad/valuechangedhandler": {
@@ -1857,12 +1857,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshot/init(controller:snapshotdata:)": {
       "etag": "\"4c2b-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshot/init-controllersnapshotdata.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshot/init(controller,snapshotdata).md",
       "hash": "469045ba268f29e3448fb9668f0735b3f8173da1fbb9a3e33fbd10bbf6fb1c00"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshot/init(snapshotdata:)": {
       "etag": "\"42f1-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshot/init-snapshotdata.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshot/init(snapshotdata).md",
       "hash": "63b619c6ff3e51ef5750fc1a5170bb11a435613ff9cb5ae9265b17effaaaf7f9"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshot/snapshotdata": {
@@ -1907,7 +1907,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdata/init()": {
       "etag": "\"1925-65d55d1ae93a7-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdata/init.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdata/init().md",
       "hash": "c676428d5343d9f35e2071a2138fd6bfb7b0cd4c9b33272b93f891590da0c4a1"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdata/leftshoulder": {
@@ -1977,7 +1977,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdatafromnsdata(_:_:)": {
       "etag": "\"8a40-65d55d1acc7d9-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatafromnsdata.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatafromnsdata(_,_).md",
       "hash": "4e7a37007a636106cf90ef9d5caf66a9b2d89aef754198256c30ab80ebf026eb"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100": {
@@ -2017,12 +2017,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100/init()": {
       "etag": "\"19d9-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100/init.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100/init().md",
       "hash": "b35ed21dae00b4977e52c14de4f9c15a89daa4c78c5bc1f7a9a323694a12e9b9"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:leftthumbstickx:leftthumbsticky:rightthumbstickx:rightthumbsticky:lefttrigger:righttrigger:)": {
       "etag": "\"47c9-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100/init-versionsizedpadxdpadybuttonabuttonbbuttonxbuttonyleftshoulderrightshoulderleftthumbstickxleftthumbstickyrightthumbstickxrightthumbstickylefttriggerrighttrigger.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100/init(version,size,dpadx,dpady,buttona,buttonb,buttonx,buttony,leftshoulder,rightshoulder,leftthumbstickx,leftthumbsticky,rightthumbstickx,rightthumbsticky,lefttrigger,righttrigger).md",
       "hash": "0842954b4b336d4c5fa4e67ce5f59c03f96ddad9c54899940cb5ef8fc3f61de6"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100/leftshoulder": {
@@ -2077,7 +2077,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100fromnsdata(_:_:)": {
       "etag": "\"60a6-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100fromnsdata.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100fromnsdata(_,_).md",
       "hash": "d04e4bf9bb3bf8826baf1a5cb49c665eea5077deff06118697c503fbb2780b0d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdataversion": {
@@ -2087,7 +2087,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdataversion/init(rawvalue:)": {
       "etag": "\"182b-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdataversion/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdataversion/init(rawvalue).md",
       "hash": "d6ec5e81f17813d0e058b62bcab35e25fb589c654157046df875cde8374896c8"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdataversion/version1": {
@@ -2122,7 +2122,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamecontrollerscenedelegate/scene(_:didactivategamecontrollerwith:)": {
       "etag": "\"2b07-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcgamecontrollerscenedelegate/scene-didactivategamecontrollerwith.md",
+      "file_path": "documentation/GameController/gcgamecontrollerscenedelegate/scene(_,didactivategamecontrollerwith).md",
       "hash": "151e72fe713e4f43b5970d4b4a75604371af5804e9b451b3eafd47ef62c880f4"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepad": {
@@ -2172,7 +2172,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepad/savesnapshot()": {
       "etag": "\"2496-65d55d1ae93a7-df\"",
-      "file_path": "documentation/GameController/gcgamepad/savesnapshot.md",
+      "file_path": "documentation/GameController/gcgamepad/savesnapshot().md",
       "hash": "ff2979e34f98d07b7a582a378d94edcfc803621a0783d4e81ecd69b0bd18281d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepad/valuechangedhandler": {
@@ -2187,12 +2187,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadsnapshot/init(controller:snapshotdata:)": {
       "etag": "\"42c7-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshot/init-controllersnapshotdata.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshot/init(controller,snapshotdata).md",
       "hash": "78558fed4cc21604517cc5ac6f026c5299d86e671d4724f26d4cf21bed6270bb"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadsnapshot/init(snapshotdata:)": {
       "etag": "\"3f3d-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshot/init-snapshotdata.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshot/init(snapshotdata).md",
       "hash": "6d71cc9b54ce766aa9d5200810cf140e4b02a6efe0f91279baeef2e0bca970dd"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadsnapshot/snapshotdata": {
@@ -2237,12 +2237,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadsnapshotdatav100/init()": {
       "etag": "\"1782-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100/init.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100/init().md",
       "hash": "033a434ab98a22efa9f01491822c76e7998b5f1b1c02a3d7a28025ee6ee6ab1d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadsnapshotdatav100/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:)": {
       "etag": "\"34d3-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100/init-versionsizedpadxdpadybuttonabuttonbbuttonxbuttonyleftshoulderrightshoulder.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100/init(version,size,dpadx,dpady,buttona,buttonb,buttonx,buttony,leftshoulder,rightshoulder).md",
       "hash": "0fcb5670ecdd9ee9baf95148a5092d9fcbd5d530e4658be860c68aad0a4a5883"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadsnapshotdatav100/leftshoulder": {
@@ -2267,7 +2267,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadsnapshotdatav100fromnsdata(_:_:)": {
       "etag": "\"5b5c-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100fromnsdata.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100fromnsdata(_,_).md",
       "hash": "dd8cd1056f34e9028c9a7fc731747eac56d62017c39421480e917293b4fa0d7c"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcgamepadvaluechangedhandler": {
@@ -2317,7 +2317,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gchapticslocality/init(rawvalue:)": {
       "etag": "\"1569-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gchapticslocality/init-rawvalue.md",
+      "file_path": "documentation/GameController/gchapticslocality/init(rawvalue).md",
       "hash": "b9c471e06e5068290af2be5b3956863c8fec2968b43be2eb3302f3c34fc7e295"
     },
     "https://developer.apple.com/documentation/gamecontroller/gchapticslocality/lefthandle": {
@@ -2592,7 +2592,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gckeyboard/didconnectmessage/init(keyboard:)": {
       "etag": "\"15a3-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gckeyboard/didconnectmessage/init-keyboard.md",
+      "file_path": "documentation/GameController/gckeyboard/didconnectmessage/init(keyboard).md",
       "hash": "619ed5fb67ad7f8b49186d5469f2b6104683df8768e5ebb0524e9f81f5b52e16"
     },
     "https://developer.apple.com/documentation/gamecontroller/gckeyboard/didconnectmessage/keyboard": {
@@ -2607,7 +2607,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gckeyboard/diddisconnectmessage/init(keyboard:)": {
       "etag": "\"15cf-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gckeyboard/diddisconnectmessage/init-keyboard.md",
+      "file_path": "documentation/GameController/gckeyboard/diddisconnectmessage/init(keyboard).md",
       "hash": "78c6c93ed9f2fc9f94fcc057c45600ca5b31318b7f3478fa5e95dd18eef2ba35"
     },
     "https://developer.apple.com/documentation/gamecontroller/gckeyboard/diddisconnectmessage/keyboard": {
@@ -2627,7 +2627,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gckeyboardinput/button(forkeycode:)": {
       "etag": "\"42ef-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gckeyboardinput/button-forkeycode.md",
+      "file_path": "documentation/GameController/gckeyboardinput/button(forkeycode).md",
       "hash": "c047e5005bb62854102dd2556a4bda897138ba935c40763a09f4898e54a1deca"
     },
     "https://developer.apple.com/documentation/gamecontroller/gckeyboardinput/isanykeypressed": {
@@ -2852,7 +2852,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gckeycode/init(rawvalue:)": {
       "etag": "\"1580-65d55d1a53c9a-df\"",
-      "file_path": "documentation/GameController/gckeycode/init-rawvalue.md",
+      "file_path": "documentation/GameController/gckeycode/init(rawvalue).md",
       "hash": "126d23126a4f13aca80c0c04f9ef8833a1d6cac2080f3423223ca05e93c06fbb"
     },
     "https://developer.apple.com/documentation/gamecontroller/gckeycode/insert": {
@@ -4062,12 +4062,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/savesnapshot()": {
       "etag": "\"33c5-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepad/savesnapshot.md",
+      "file_path": "documentation/GameController/gcmicrogamepad/savesnapshot().md",
       "hash": "1da9759b7c319d903484e3021212a52cf8a3cc0a7847cf1fe10b066168229a2a"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/setstatefrom(_:)": {
       "etag": "\"2635-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepad/setstatefrom.md",
+      "file_path": "documentation/GameController/gcmicrogamepad/setstatefrom(_).md",
       "hash": "95cdec27665133e73bbea30fcb4c65e320fbed1b5ebfe4b301352826e3505492"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad/valuechangedhandler": {
@@ -4082,12 +4082,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshot/init(controller:snapshotdata:)": {
       "etag": "\"49bf-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshot/init-controllersnapshotdata.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshot/init(controller,snapshotdata).md",
       "hash": "9f0062fc1e20040411c83fcaf92b45d7deee5f2f3d96cf4245a632055d4720ea"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshot/init(snapshotdata:)": {
       "etag": "\"4135-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshot/init-snapshotdata.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshot/init(snapshotdata).md",
       "hash": "02471eea34724e965e58e463b33f24553be0ba92bdf620c219009456f3974a40"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshot/snapshotdata": {
@@ -4122,12 +4122,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdata/init()": {
       "etag": "\"18b5-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdata/init.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdata/init().md",
       "hash": "7ac272e4c4d3385169924e7ccc795d655fc5689c82469b3e14630e93cf0d0226"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdata/init(version:size:dpadx:dpady:buttona:buttonx:)": {
       "etag": "\"2ba1-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdata/init-versionsizedpadxdpadybuttonabuttonx.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdata/init(version,size,dpadx,dpady,buttona,buttonx).md",
       "hash": "6def69b07170111c2e6211465afeba49c46bcbbbe82244467b17bc549ca6aa00"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdata/size": {
@@ -4142,7 +4142,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdatafromnsdata(_:_:)": {
       "etag": "\"89d3-65d55d1ae93a7-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatafromnsdata.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatafromnsdata(_,_).md",
       "hash": "787bde0d153383c7be6a9c936af4aee235cee14db0416d524e4bb7858e1954f5"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100": {
@@ -4172,12 +4172,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100/init()": {
       "etag": "\"1966-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100/init.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100/init().md",
       "hash": "f42a5d337f7469ac8c4b942b4d86be62dc9da4e6f76e5d5433c82ee9747bbde4"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100/init(version:size:dpadx:dpady:buttona:buttonx:)": {
       "etag": "\"2c52-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100/init-versionsizedpadxdpadybuttonabuttonx.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100/init(version,size,dpadx,dpady,buttona,buttonx).md",
       "hash": "52c36b2744b907d928d57c8901d5f80340c77b2e6ff17a1ce21eee5bf9380f8d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100/size": {
@@ -4192,7 +4192,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100fromnsdata(_:_:)": {
       "etag": "\"5a06-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100fromnsdata.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100fromnsdata(_,_).md",
       "hash": "a0597855de9a284c8552fc9360292844650f3aa5bd3ad4712598fd17d005ef36"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdataversion": {
@@ -4202,7 +4202,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdataversion/init(rawvalue:)": {
       "etag": "\"17dd-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdataversion/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdataversion/init(rawvalue).md",
       "hash": "d5758fe0823b211360823fb887794886563c7ad87fe20db2e209c3aa3678fc90"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmicrogamepadsnapshotdataversion/version1": {
@@ -4277,32 +4277,32 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmotion/setacceleration(_:)": {
       "etag": "\"3f4b-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setacceleration.md",
+      "file_path": "documentation/GameController/gcmotion/setacceleration(_).md",
       "hash": "4d20d82af077c359d16a1c1113c4cc19ba2d9d44b2038e4a5a9346f10b10e423"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmotion/setattitude(_:)": {
       "etag": "\"3f0b-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcmotion/setattitude.md",
+      "file_path": "documentation/GameController/gcmotion/setattitude(_).md",
       "hash": "5c944577fa93c5c49152e11afed91e6bca0eddedf26149400e14921dc1889d83"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmotion/setgravity(_:)": {
       "etag": "\"3f09-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setgravity.md",
+      "file_path": "documentation/GameController/gcmotion/setgravity(_).md",
       "hash": "20463ee36429af1f05f052bede707ba722f1be14123e87655d665fb0c6ed41da"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmotion/setrotationrate(_:)": {
       "etag": "\"3f86-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setrotationrate.md",
+      "file_path": "documentation/GameController/gcmotion/setrotationrate(_).md",
       "hash": "cb3e40dbb6bf73098ac83062b0972c4fb4cd52be0a8ccb26683ff0bcbb3f4c71"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmotion/setstatefrom(_:)": {
       "etag": "\"3ad3-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setstatefrom.md",
+      "file_path": "documentation/GameController/gcmotion/setstatefrom(_).md",
       "hash": "f069589762be195723bd00cc618ac8ca119aa713ae364b23f33bcb514b98b6e0"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmotion/setuseracceleration(_:)": {
       "etag": "\"3f54-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setuseracceleration.md",
+      "file_path": "documentation/GameController/gcmotion/setuseracceleration(_).md",
       "hash": "cb345280f66c3ee7458bb055628da6189f95563fe94a1779b3209f8cecb8fc55"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmotion/useracceleration": {
@@ -4337,7 +4337,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/didbecomecurrentmessage/init(mouse:)": {
       "etag": "\"153c-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/didbecomecurrentmessage/init-mouse.md",
+      "file_path": "documentation/GameController/gcmouse/didbecomecurrentmessage/init(mouse).md",
       "hash": "4f9afecefc56f06aae7baa3b2a84f780f8e52f3634c9bc205e3cf609dfb87127"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/didbecomecurrentmessage/mouse": {
@@ -4352,7 +4352,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/didconnectmessage/init(mouse:)": {
       "etag": "\"14ea-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/didconnectmessage/init-mouse.md",
+      "file_path": "documentation/GameController/gcmouse/didconnectmessage/init(mouse).md",
       "hash": "476787e55ef01df20a56694b5143d61076504e463eacccc46b1b3ba5031bbd63"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/didconnectmessage/mouse": {
@@ -4367,7 +4367,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/diddisconnectmessage/init(mouse:)": {
       "etag": "\"154a-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/diddisconnectmessage/init-mouse.md",
+      "file_path": "documentation/GameController/gcmouse/diddisconnectmessage/init(mouse).md",
       "hash": "e8f5c6e62344d500bf59e6b0f77389934d228b7a5a53a30c59b8c1b964555a63"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/diddisconnectmessage/mouse": {
@@ -4382,7 +4382,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/didstopbeingcurrentmessage/init(mouse:)": {
       "etag": "\"159b-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/didstopbeingcurrentmessage/init-mouse.md",
+      "file_path": "documentation/GameController/gcmouse/didstopbeingcurrentmessage/init(mouse).md",
       "hash": "91dc51395cb111dbc1a1945f35033cb9fe1d5c61aa0936f079b243947c987d0d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/didstopbeingcurrentmessage/mouse": {
@@ -4392,7 +4392,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/mice()": {
       "etag": "\"2b3b-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/mice.md",
+      "file_path": "documentation/GameController/gcmouse/mice().md",
       "hash": "548e2cddacfc6fd6a013e5277d609362956398b17d65e3778b514d064a6d8e12"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcmouse/mouseinput": {
@@ -4462,52 +4462,52 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct": {
       "etag": "\"55c6-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swiftstruct.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct.md",
       "hash": "f6d1cf28d91ab243b16e79aa94412f224418e1ee8cb1805df0d80599fbc1be11"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-1twjd": {
       "etag": "\"2cad-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-1twjd.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-1twjd.md",
       "hash": "c459136b656eff82f752b11d66c7486e721585201fabce6e12c52126c62da998"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-3l6nj": {
       "etag": "\"2c50-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-3l6nj.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-3l6nj.md",
       "hash": "8c25eac141a7196ac1a1c459f20878a5a4e260769ee6a5e5255ae71b30437e50"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-3tv91": {
       "etag": "\"142d-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-3tv91.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-3tv91.md",
       "hash": "cab55a7e85a8ee27196980207081783a040a0e9c5a02ecfe1715b7c6307c7168"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-3womp": {
       "etag": "\"1f35-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-3womp.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-3womp.md",
       "hash": "4f54e7052d002dc1a43fa7f759f08ebc8272d572c1bd30513c6336c87c1daf9a"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-4oje0": {
       "etag": "\"2c60-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-4oje0.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-4oje0.md",
       "hash": "b12beffec5d0b7f1412c0adeef8fed9996a865a2392743503cfa9d598e9fa342"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-85c13": {
       "etag": "\"2c39-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-85c13.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-85c13.md",
       "hash": "bb1de6b46ef3d154b61711ac8bfde1085c6cd5c046543630d34384ea1eb73ee0"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-8m218": {
       "etag": "\"2c50-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-8m218.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-8m218.md",
       "hash": "1b45f47a28f5d05756c70764a8c67805e5390546c027f765cb88623b81788160"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-c5v9": {
       "etag": "\"2106-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-c5v9.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-c5v9.md",
       "hash": "0912f2ffa310054b53cbc43448efe005e0e62a35c0c5fa5920256b243946eeb0"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementname-swift.struct": {
       "etag": "\"3d8f-65d55d1acc7d9-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementname-swift.struct.md",
       "hash": "b51d1b7913a1498220f742f024c42685f6b2f62e8310f5b73acbd7119a5395da"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputelementname-swift.struct/shifter": {
@@ -4587,7 +4587,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputprofile/capture()": {
       "etag": "\"2567-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/capture.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/capture().md",
       "hash": "5732a20feecdedef1a3f63297ad2f15b74b1661b9d8051f36c347896c577ff24"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputprofile/device": {
@@ -4617,22 +4617,22 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputprofile/mappedelementalias(forphysicalinputname:)": {
       "etag": "\"4cd5-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/mappedelementalias-forphysicalinputname.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/mappedelementalias(forphysicalinputname).md",
       "hash": "6f28c8ec1141b1c009ce739bea15afd1624874d98649ce1c30359ce74ff0d9cf"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:)": {
       "etag": "\"52ad-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/mappedphysicalinputnames-forelementalias.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/mappedphysicalinputnames(forelementalias).md",
       "hash": "ab2fdc30ebdd592ab23085a2380553c2d8aff0d0ef07c5f379bd1de64549bfaa"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputprofile/setstatefromphysicalinput(_:)": {
       "etag": "\"2e69-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/setstatefromphysicalinput.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/setstatefromphysicalinput(_).md",
       "hash": "235412ebfe19110b0d20e8c04548cd222a0dd5a8fa746eb7dbd3605f7add8aae"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputprofile/subscript(_:)": {
       "etag": "\"5015-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/subscript.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/subscript(_).md",
       "hash": "a63070608b14b003420ee745af57e2cf30d606d0e317c34afab4e930c0b30651"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputprofile/touchpads": {
@@ -4682,7 +4682,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputsourcedirection/init(rawvalue:)": {
       "etag": "\"163e-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputsourcedirection/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcphysicalinputsourcedirection/init(rawvalue).md",
       "hash": "e2397ceb27486d90435aee85e6b5fbafbf8dbe67b4e7dd0068d8f4b1b1b1cc11"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcphysicalinputsourcedirection/left": {
@@ -4707,12 +4707,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcpoint2/init()": {
       "etag": "\"1d97-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gcpoint2/init.md",
+      "file_path": "documentation/GameController/gcpoint2/init().md",
       "hash": "226e640dcee4dc318f8c383d0c41c0608847ad22d9c53045e7313c98cbd54449"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcpoint2/init(x:y:)": {
       "etag": "\"2391-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gcpoint2/init-xy.md",
+      "file_path": "documentation/GameController/gcpoint2/init(x,y).md",
       "hash": "2ebbe4c3de717ade71c203ad9c4b3eef655e9e5696dbc5a0423ddb31211974a8"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcpoint2/x": {
@@ -4727,12 +4727,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcpoint2equal(_:_:)": {
       "etag": "\"3309-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gcpoint2equal.md",
+      "file_path": "documentation/GameController/gcpoint2equal(_,_).md",
       "hash": "130b5b0401751bd1ec17f9ab2d050fa5e97e523aee6e839758faec9b0d0b91e9"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcpoint2make(_:_:)": {
       "etag": "\"30cb-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcpoint2make.md",
+      "file_path": "documentation/GameController/gcpoint2make(_,_).md",
       "hash": "5a75a6def153951122570c2e38b69a3fe391ed1e7bc65d8b2485ed554f5b607a"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcpoint2zero": {
@@ -4852,12 +4852,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcquaternion/init()": {
       "etag": "\"fc5-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gcquaternion/init.md",
+      "file_path": "documentation/GameController/gcquaternion/init().md",
       "hash": "18ee06204852820e0ed15465d61590200e1d275b2b2c595796d697979dd098cb"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcquaternion/init(x:y:z:w:)": {
       "etag": "\"1ce4-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gcquaternion/init-xyzw.md",
+      "file_path": "documentation/GameController/gcquaternion/init(x,y,z,w).md",
       "hash": "c6adbed9fed743f6a7321b962f0a4f427ef0d961713b54230b7db7733266397c"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcquaternion/w": {
@@ -4887,12 +4887,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/acquiredevice()": {
       "etag": "\"2ec4-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/acquiredevice.md",
+      "file_path": "documentation/GameController/gcracingwheel/acquiredevice().md",
       "hash": "9a99f7c7d6961ce84fa70cba883cb8801b9e4120ba559e5d2017817dedf06ac6"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/capture()": {
       "etag": "\"21d6-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/capture.md",
+      "file_path": "documentation/GameController/gcracingwheel/capture().md",
       "hash": "feb109964bf6103a99bfde8ffc44e9f6084bb94d4fd0ce82fdd5106ac200c4b5"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/connectedracingwheels": {
@@ -4907,7 +4907,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/didconnectmessage/init(racingwheel:)": {
       "etag": "\"1574-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/didconnectmessage/init-racingwheel.md",
+      "file_path": "documentation/GameController/gcracingwheel/didconnectmessage/init(racingwheel).md",
       "hash": "fd6999d34b6409bd875563fa1c02bbbb66bb24b37988c6038627e5c95d881ccb"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/didconnectmessage/racingwheel": {
@@ -4922,7 +4922,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/diddisconnectmessage/init(racingwheel:)": {
       "etag": "\"15a0-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/diddisconnectmessage/init-racingwheel.md",
+      "file_path": "documentation/GameController/gcracingwheel/diddisconnectmessage/init(racingwheel).md",
       "hash": "3bc93052d18428d264c72e19724240d49b6a28452dc3110c2619f9cc84e557d4"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/diddisconnectmessage/racingwheel": {
@@ -4942,7 +4942,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/relinquishdevice()": {
       "etag": "\"23ac-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/relinquishdevice.md",
+      "file_path": "documentation/GameController/gcracingwheel/relinquishdevice().md",
       "hash": "ab83673214f3e7b2b2e6248eadbb8c299b7ca829b728d13e5a672a6a0922e474"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheel/wheelinput": {
@@ -4957,12 +4957,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheelinput/capture()": {
       "etag": "\"21c1-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gcracingwheelinput/capture.md",
+      "file_path": "documentation/GameController/gcracingwheelinput/capture().md",
       "hash": "8a34daa90b030da77d0238caca82c1476f8efc7d28221b82b7110bf28dafc4c0"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheelinput/nextinputstate()": {
       "etag": "\"2b8e-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gcracingwheelinput/nextinputstate.md",
+      "file_path": "documentation/GameController/gcracingwheelinput/nextinputstate().md",
       "hash": "3cf0222919b7eb4f1b52931b616d2ef2b1f262f8364230202de5023214888d91"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcracingwheelinputstate": {
@@ -5037,12 +5037,12 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcrotationrate/init()": {
       "etag": "\"ff2-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcrotationrate/init.md",
+      "file_path": "documentation/GameController/gcrotationrate/init().md",
       "hash": "00989ff19af45a877439d1eeb9fa21ee5f1aa1c8622a08c1c74855263edc41f1"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcrotationrate/init(x:y:z:)": {
       "etag": "\"1a5e-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcrotationrate/init-xyz.md",
+      "file_path": "documentation/GameController/gcrotationrate/init(x,y,z).md",
       "hash": "2104bbc58a9860a60b88dcd169b57c2ab47505f5f4ce764ee951db64b522e848"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcrotationrate/x": {
@@ -5067,7 +5067,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcspatialaccessory/conforms(to:)": {
       "etag": "\"2619-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcspatialaccessory/conforms-to.md",
+      "file_path": "documentation/GameController/gcspatialaccessory/conforms(to).md",
       "hash": "fec45625b869ca0ffd2a168cdd0f14bda706bc0c0fbde5eae6d9bff64a6dd3aa"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcspatialaccessory/didconnectmessage": {
@@ -5077,7 +5077,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcspatialaccessory/didconnectmessage/init(spatialaccessory:)": {
       "etag": "\"1566-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcspatialaccessory/didconnectmessage/init-spatialaccessory.md",
+      "file_path": "documentation/GameController/gcspatialaccessory/didconnectmessage/init(spatialaccessory).md",
       "hash": "6aba41f44724203433b85c6733844da078f04f9c958df87c48ec71aa4109538d"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcspatialaccessory/didconnectmessage/spatialaccessory": {
@@ -5092,7 +5092,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcspatialaccessory/diddisconnectmessage/init(spatialaccessory:)": {
       "etag": "\"15c6-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcspatialaccessory/diddisconnectmessage/init-spatialaccessory.md",
+      "file_path": "documentation/GameController/gcspatialaccessory/diddisconnectmessage/init(spatialaccessory).md",
       "hash": "e09070df231df218e54d7be1dd102f785ea107d92dc7b12cb8916b7bbd5d21e3"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcspatialaccessory/diddisconnectmessage/spatialaccessory": {
@@ -5137,7 +5137,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcstylus/didconnectmessage/init(stylus:)": {
       "etag": "\"1423-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gcstylus/didconnectmessage/init-stylus.md",
+      "file_path": "documentation/GameController/gcstylus/didconnectmessage/init(stylus).md",
       "hash": "461bc58c04a3a87d3fb67641fdd0e7b010b7fdbbe747b75ef39c3d0db30fa9cf"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcstylus/didconnectmessage/stylus": {
@@ -5152,7 +5152,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcstylus/diddisconnectmessage/init(stylus:)": {
       "etag": "\"1483-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcstylus/diddisconnectmessage/init-stylus.md",
+      "file_path": "documentation/GameController/gcstylus/diddisconnectmessage/init(stylus).md",
       "hash": "b5fe79591869775014968757a38466f33172f5d7de40b27c7786275855329345"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcstylus/diddisconnectmessage/stylus": {
@@ -5187,7 +5187,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcswitchelementname-swift.struct": {
       "etag": "\"393b-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcswitchelementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcswitchelementname-swift.struct.md",
       "hash": "346ae993dc8a752151e6f8aa2f4cb51d079841f4b45fb6cf833109bcdc32f7b2"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcswitchpositioninput": {
@@ -5277,7 +5277,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcuieventtypes/init(rawvalue:)": {
       "etag": "\"130c-65d55d1b0b306-df\"",
-      "file_path": "documentation/GameController/gcuieventtypes/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcuieventtypes/init(rawvalue).md",
       "hash": "98b09e1b78bb5126fbbbfd5531d345b2ad300cc1419a9af70c43d1cf04a8369e"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcuieventtypes/stylus": {
@@ -5307,7 +5307,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcvirtualcontroller/connect(replyhandler:)": {
       "etag": "\"3837-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/connect-replyhandler.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/connect(replyhandler).md",
       "hash": "6ff0fd1f69e1e7b9d6f961c744c1ef371abf5758c52e13bccaf8c892692f09d3"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcvirtualcontroller/controller": {
@@ -5317,7 +5317,7 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcvirtualcontroller/disconnect()": {
       "etag": "\"226a-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/disconnect.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/disconnect().md",
       "hash": "a24879044900b85f24fe1bfc1692a2420b8d69cdb8414de56e374c47c99ebfdc"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcvirtualcontroller/elementconfiguration": {
@@ -5342,22 +5342,22 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/gcvirtualcontroller/init(configuration:)": {
       "etag": "\"2b0a-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/init-configuration.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/init(configuration).md",
       "hash": "01aefb40e56b24e7949bccab441a61fe248cc4c615c181d5ae177ac8648c01bd"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcvirtualcontroller/setposition(_:fordirectionpadelement:)": {
       "etag": "\"3f1c-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/setposition-fordirectionpadelement.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/setposition(_,fordirectionpadelement).md",
       "hash": "3548ecb27ea0105914587b1d7ab5dc40ef4b2afc17f4ab56c5c436bb32a80e28"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcvirtualcontroller/setvalue(_:forbuttonelement:)": {
       "etag": "\"3d59-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/setvalue-forbuttonelement.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/setvalue(_,forbuttonelement).md",
       "hash": "558021ca4904cc09da9849893a8e75249f04a868ff6456b84098ed200cabf0b4"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcvirtualcontroller/updateconfiguration(forelement:configuration:)": {
       "etag": "\"4517-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/updateconfiguration-forelementconfiguration.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/updateconfiguration(forelement,configuration).md",
       "hash": "3ecba517910f08f5b1d5b0ede22fa57de54ab421c30e6f800fda124e31a261f7"
     },
     "https://developer.apple.com/documentation/gamecontroller/gcxboxgamepad": {
@@ -5422,32 +5422,32 @@
     },
     "https://developer.apple.com/documentation/gamecontroller/nsdatafromgcextendedgamepadsnapshotdata(_:)": {
       "etag": "\"83e6-65d55d1ae93a7-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcextendedgamepadsnapshotdata.md",
+      "file_path": "documentation/GameController/nsdatafromgcextendedgamepadsnapshotdata(_).md",
       "hash": "6856eed7b5b73e51be29ccac832cb8317c4ff6d4604bf0c057ac525d5222cab3"
     },
     "https://developer.apple.com/documentation/gamecontroller/nsdatafromgcextendedgamepadsnapshotdatav100(_:)": {
       "etag": "\"4640-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcextendedgamepadsnapshotdatav100.md",
+      "file_path": "documentation/GameController/nsdatafromgcextendedgamepadsnapshotdatav100(_).md",
       "hash": "39e41f62a881b3f69781f2a54ffdb9cc7bfe69a5d8b8ddab90d7b7a4ed641062"
     },
     "https://developer.apple.com/documentation/gamecontroller/nsdatafromgcgamepadsnapshotdatav100(_:)": {
       "etag": "\"425e-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcgamepadsnapshotdatav100.md",
+      "file_path": "documentation/GameController/nsdatafromgcgamepadsnapshotdatav100(_).md",
       "hash": "247a71efda758517928f3c39ff0f03a39aac6e80edcdb78b45498b6e06c59af7"
     },
     "https://developer.apple.com/documentation/gamecontroller/nsdatafromgcmicrogamepadsnapshotdata(_:)": {
       "etag": "\"8379-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcmicrogamepadsnapshotdata.md",
+      "file_path": "documentation/GameController/nsdatafromgcmicrogamepadsnapshotdata(_).md",
       "hash": "31e65d7b13df05496c9bc8bfe5fb8df6b18d9931ec65f1bea75566603ced33e0"
     },
     "https://developer.apple.com/documentation/gamecontroller/nsdatafromgcmicrogamepadsnapshotdatav100(_:)": {
       "etag": "\"4532-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcmicrogamepadsnapshotdatav100.md",
+      "file_path": "documentation/GameController/nsdatafromgcmicrogamepadsnapshotdatav100(_).md",
       "hash": "4dc52da22a4064704bcb609f7d385ceae749b1730f6a10ebd1ce771f97a3ff6b"
     },
     "https://developer.apple.com/documentation/gamecontroller/nsstringfromgcpoint2(_:)": {
       "etag": "\"2e34-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/nsstringfromgcpoint2.md",
+      "file_path": "documentation/GameController/nsstringfromgcpoint2(_).md",
       "hash": "bbc4bfeb55ed056253d982722d1538308b964141dbcf251677d70cb6fc56c488"
     },
     "https://developer.apple.com/documentation/gamecontroller/product-category-constants": {
@@ -5526,12 +5526,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gamecontrollereventhandlingoptions/init().json": {
       "etag": "\"d86-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gamecontrollereventhandlingoptions/init.md",
+      "file_path": "documentation/GameController/gamecontrollereventhandlingoptions/init().md",
       "hash": "eab241cb36dae1149f6afcbf28d343d2cc764e2357db7d5bfa57e302e51713f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gamecontrollereventhandlingoptions/receiveseventsinview(_:).json": {
       "etag": "\"1af8-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gamecontrollereventhandlingoptions/receiveseventsinview.md",
+      "file_path": "documentation/GameController/gamecontrollereventhandlingoptions/receiveseventsinview(_).md",
       "hash": "b62bce7b12ce289cceb1009d9b257144336e7a20d30a8e72d80aa52a94bbfc16"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcacceleration.json": {
@@ -5541,12 +5541,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcacceleration/init().json": {
       "etag": "\"fd3-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcacceleration/init.md",
+      "file_path": "documentation/GameController/gcacceleration/init().md",
       "hash": "7863449d0a0d75648a3227600ed2cdc721fc2438a0fe93bd3cbefa04802859f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcacceleration/init(x:y:z:).json": {
       "etag": "\"1a66-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcacceleration/init-xyz.md",
+      "file_path": "documentation/GameController/gcacceleration/init(x,y,z).md",
       "hash": "6b40684c9e33fefaa9fac9eb219cf442b3867a083001481774487e4b5fccc994"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcacceleration/x.json": {
@@ -5621,7 +5621,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcaxiselementname-swift.struct.json": {
       "etag": "\"3d45-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcaxiselementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcaxiselementname-swift.struct.md",
       "hash": "b28bd85fc23aa6cc257df890a9e1d641ba30dc3ada045cd55531927e41a025ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcaxiselementname-swift.struct/steeringwheel.json": {
@@ -5691,7 +5691,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcbuttonelementname-swift.struct.json": {
       "etag": "\"b10c-65d55d1acc7d9-df\"",
-      "file_path": "documentation/GameController/gcbuttonelementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct.md",
       "hash": "a37934480ce417101d6d88a7fe8af4fa72e597ea58a9e82c789b273ef81c15d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcbuttonelementname-swift.struct/a.json": {
@@ -5701,7 +5701,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcbuttonelementname-swift.struct/arcadebutton(row:column:).json": {
       "etag": "\"1b87-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/arcadebutton-rowcolumn.md",
+      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/arcadebutton(row,column).md",
       "hash": "d1116b6707ee6b85b743427148de1054c385991464030f318b94c570999c5503"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcbuttonelementname-swift.struct/b.json": {
@@ -5711,12 +5711,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcbuttonelementname-swift.struct/backleftbutton(position:).json": {
       "etag": "\"1e8a-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/backleftbutton-position.md",
+      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/backleftbutton(position).md",
       "hash": "28e87666de9776af2d1cf69b17f4493c8e6509dea38595923a985d20d2fb5d0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcbuttonelementname-swift.struct/backrightbutton(position:).json": {
       "etag": "\"1e92-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/backrightbutton-position.md",
+      "file_path": "documentation/GameController/gcbuttonelementname-swift.struct/backrightbutton(position).md",
       "hash": "815947e0b81f1e3ec77fde96fb0ab097c75ce24b71627a69a582db2e5da73942"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcbuttonelementname-swift.struct/grip.json": {
@@ -5871,12 +5871,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccolor/init(coder:).json": {
       "etag": "\"1470-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gccolor/init-coder.md",
+      "file_path": "documentation/GameController/gccolor/init(coder).md",
       "hash": "6bcedb39c6593c68f5cd699a64024821fed8c98c13dc38ec6f714d859b9bc158"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccolor/init(red:green:blue:).json": {
       "etag": "\"27ff-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gccolor/init-redgreenblue.md",
+      "file_path": "documentation/GameController/gccolor/init(red,green,blue).md",
       "hash": "9ab3aa093bc40a3545f3e8b22122f8b21285f83ba6b57c2e5717ebd8aafc2db2"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccolor/red.json": {
@@ -5896,7 +5896,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/capture().json": {
       "etag": "\"35d0-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/capture.md",
+      "file_path": "documentation/GameController/gccontroller/capture().md",
       "hash": "ed8082eeb1efee9301fed0183d26c629ad72000ccd66e78ae027228721e83fda"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/controllerpausedhandler.json": {
@@ -5906,7 +5906,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/controllers().json": {
       "etag": "\"5752-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gccontroller/controllers.md",
+      "file_path": "documentation/GameController/gccontroller/controllers().md",
       "hash": "994e174a1234a786de5b1d957dc7bc66879fc2969d9b99af6f68eb2bde8f3319"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/current.json": {
@@ -5926,7 +5926,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/didbecomecurrentmessage/init(controller:).json": {
       "etag": "\"1672-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/didbecomecurrentmessage/init-controller.md",
+      "file_path": "documentation/GameController/gccontroller/didbecomecurrentmessage/init(controller).md",
       "hash": "79e74fc491efd7ed9d99c547e3f3ee5c2ee9882e836ded382542dc57a0ec0f94"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/didconnectmessage.json": {
@@ -5941,7 +5941,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/didconnectmessage/init(controller:).json": {
       "etag": "\"161b-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/didconnectmessage/init-controller.md",
+      "file_path": "documentation/GameController/gccontroller/didconnectmessage/init(controller).md",
       "hash": "eabc3ada4b7586c26c6c97029144c359bda7008d8d3160a6c3ecb133a80cdd33"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/diddisconnectmessage.json": {
@@ -5956,7 +5956,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/diddisconnectmessage/init(controller:).json": {
       "etag": "\"1647-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gccontroller/diddisconnectmessage/init-controller.md",
+      "file_path": "documentation/GameController/gccontroller/diddisconnectmessage/init(controller).md",
       "hash": "8edd6206978a2e6dc65c0f604d81813863adb500a5b0c23010d2d461c13de560"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/didstopbeingcurrentmessage.json": {
@@ -5971,7 +5971,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/didstopbeingcurrentmessage/init(controller:).json": {
       "etag": "\"169d-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/didstopbeingcurrentmessage/init-controller.md",
+      "file_path": "documentation/GameController/gccontroller/didstopbeingcurrentmessage/init(controller).md",
       "hash": "bb65a603d48236eebe6af893bfb078489c8f1e538c781c54b77bf8710fdba467"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/extendedgamepad.json": {
@@ -6036,27 +6036,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/startwirelesscontrollerdiscovery(completionhandler:).json": {
       "etag": "\"468a-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/startwirelesscontrollerdiscovery-completionhandler.md",
+      "file_path": "documentation/GameController/gccontroller/startwirelesscontrollerdiscovery(completionhandler).md",
       "hash": "e965858b5611667e1b913c1d6701241a18cab721822e4dd7a302e2e15a096a04"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/stopwirelesscontrollerdiscovery().json": {
       "etag": "\"3a36-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/stopwirelesscontrollerdiscovery.md",
+      "file_path": "documentation/GameController/gccontroller/stopwirelesscontrollerdiscovery().md",
       "hash": "3cc6e66c24d9041a7e5e2dd961a5e8358729fdc21bdac2f6f795eec268225cc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/supportshiddevice(_:).json": {
       "etag": "\"3abb-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/supportshiddevice.md",
+      "file_path": "documentation/GameController/gccontroller/supportshiddevice(_).md",
       "hash": "4422bf4679e8126e9705c6e3a4e1656fb4fdfc6b658d9f9523b40ee606d92bf1"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/withextendedgamepad().json": {
       "etag": "\"370b-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/withextendedgamepad.md",
+      "file_path": "documentation/GameController/gccontroller/withextendedgamepad().md",
       "hash": "309f2d930b7c71b53b792ff86b23ec8d1385fde1b8fda9bde9f4735b3a3a281d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontroller/withmicrogamepad().json": {
       "etag": "\"36e4-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gccontroller/withmicrogamepad.md",
+      "file_path": "documentation/GameController/gccontroller/withmicrogamepad().md",
       "hash": "6affc3ac93f80734aaf274cc71943f8cdd8172afbed809c6c9d0a07384f6448f"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrolleraxisinput.json": {
@@ -6066,7 +6066,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrolleraxisinput/setvalue(_:).json": {
       "etag": "\"2774-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gccontrolleraxisinput/setvalue.md",
+      "file_path": "documentation/GameController/gccontrolleraxisinput/setvalue(_).md",
       "hash": "fbb7651ff4260bf70640fe0f1a446dd5f5784155e5be8345cec7c0b9e8b0316f"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrolleraxisinput/value.json": {
@@ -6106,7 +6106,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerbuttoninput/setvalue(_:).json": {
       "etag": "\"2ac5-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gccontrollerbuttoninput/setvalue.md",
+      "file_path": "documentation/GameController/gccontrollerbuttoninput/setvalue(_).md",
       "hash": "a48e01f14e0ea178315008977589b5df503d7c1969a945a2ff7d70278ae69097"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerbuttoninput/touchedchangedhandler.json": {
@@ -6156,7 +6156,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerdirectionpad/setvalueforxaxis(_:yaxis:).json": {
       "etag": "\"314b-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gccontrollerdirectionpad/setvalueforxaxis-yaxis.md",
+      "file_path": "documentation/GameController/gccontrollerdirectionpad/setvalueforxaxis(_,yaxis).md",
       "hash": "6d5a6a297c50c82e2289b4a47e99e59194db55b02fbefc6422b8fb66ae2a9be6"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerdirectionpad/up.json": {
@@ -6246,7 +6246,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerelement/systemgesturestate/init(rawvalue:).json": {
       "etag": "\"1a15-65d55d1acc7d9-df\"",
-      "file_path": "documentation/GameController/gccontrollerelement/systemgesturestate/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerelement/systemgesturestate/init(rawvalue).md",
       "hash": "6460ed919784ad41e6de55031214dc5f524afef2ae1c846261ebb24a1f2b22a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerelement/unmappedlocalizedname.json": {
@@ -6266,7 +6266,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingcustomizationstatus/init(rawvalue:).json": {
       "etag": "\"165c-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingcustomizationstatus/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingcustomizationstatus/init(rawvalue).md",
       "hash": "d00900c53bd9a0ddbc4a12407427c9a820b19bdf2f311dba121a4c0f9bbf0ff9"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingcustomizationstatus/systemdefault.json": {
@@ -6296,7 +6296,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettinginappaction/init(rawvalue:).json": {
       "etag": "\"15d8-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettinginappaction/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettinginappaction/init(rawvalue).md",
       "hash": "de0fd1bdade1a283d1aba42987199c6cc472b88057cc1571d407e0449e2793dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettinginappaction/systemdefault.json": {
@@ -6326,7 +6326,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingscustomizationactivity/init(rawvalue:).json": {
       "etag": "\"16f4-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingscustomizationactivity/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingscustomizationactivity/init(rawvalue).md",
       "hash": "0710b0cb3094750e2f2f23b1948638ac3739a22ba9d8095500320b03325f15fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu.json": {
@@ -6351,17 +6351,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu/init().json": {
       "etag": "\"1168-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/init.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/init().md",
       "hash": "b9e202baf92d2956fee1c5d2ffd2f976159819ad9d741b1bea9c036beff6815f"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu/init(_:).json": {
       "etag": "\"1310-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/init.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/init(_).md",
       "hash": "41a6a3a3894b04b6dbe47d28878de889465ae23ebfe2f72ccd774eb16fd395e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu/opencontrollerhomebuttonsettings(for:).json": {
       "etag": "\"1dd6-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/opencontrollerhomebuttonsettings-for.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsmanager-258mu/opencontrollerhomebuttonsettings(for).md",
       "hash": "8eee581bd35bf1080bfb14778758d501d0d2e9853ddda5282e212fef4cbdbdaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingsmanager-258mu/settingcustomizationstatus.json": {
@@ -6396,7 +6396,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingsystemaction/init(rawvalue:).json": {
       "etag": "\"160f-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsystemaction/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerhomebuttonsettingsystemaction/init(rawvalue).md",
       "hash": "2bb4ad780ae0f06c10a5bdc8b460c1dcee1bc31b72e4f6bcec0409f55c2eb132"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerhomebuttonsettingsystemaction/opencurrentapplication.json": {
@@ -6426,12 +6426,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerliveinput/capture().json": {
       "etag": "\"2a96-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gccontrollerliveinput/capture.md",
+      "file_path": "documentation/GameController/gccontrollerliveinput/capture().md",
       "hash": "ff280bd200126b04d4552f48a67b58650b5850cde450630bfd2e5c1f70b90550"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerliveinput/nextinputstate().json": {
       "etag": "\"3258-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gccontrollerliveinput/nextinputstate.md",
+      "file_path": "documentation/GameController/gccontrollerliveinput/nextinputstate().md",
       "hash": "de28096811656dbbeb11653d89d5ed008384127267968e133d6885e85946c1c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerliveinput/unmapped.json": {
@@ -6471,7 +6471,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollerplayerindex/init(rawvalue:).json": {
       "etag": "\"1451-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gccontrollerplayerindex/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollerplayerindex/init(rawvalue).md",
       "hash": "4e672eeeb40a61fa5adfd39aa3208b09a7354273273bff9b4ba36a9fb9b7d5d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad.json": {
@@ -6491,7 +6491,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad/setvalueforxaxis(_:yaxis:touchdown:buttonvalue:).json": {
       "etag": "\"43f0-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gccontrollertouchpad/setvalueforxaxis-yaxistouchdownbuttonvalue.md",
+      "file_path": "documentation/GameController/gccontrollertouchpad/setvalueforxaxis(_,yaxis,touchdown,buttonvalue).md",
       "hash": "eafe6dbf1161b820835af513f38758e2f998330855eddcd74911fcc769062985"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad/touchdown.json": {
@@ -6506,7 +6506,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.enum.json": {
       "etag": "\"4e88-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swiftenum.md",
+      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swift.enum.md",
       "hash": "f7f9e18cdbd68b6d6067dc883c321a5a5d2ed02fdcec16633d1ff926e823328c"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.enum/down.json": {
@@ -6516,7 +6516,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.enum/init(rawvalue:).json": {
       "etag": "\"19fd-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swift.enum/init(rawvalue).md",
       "hash": "e6c4f75bdfd1b0ef651c47b78fd7bfa070a9c89502982a8ce890477475044278"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.enum/moving.json": {
@@ -6531,7 +6531,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad/touchstate-swift.property.json": {
       "etag": "\"2c60-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swiftproperty.md",
+      "file_path": "documentation/GameController/gccontrollertouchpad/touchstate-swift.property.md",
       "hash": "39e25f2e3d36991704d29ecb35a5cf33c8d9ff81b1d28f2eb8c2ddcac7daf385"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gccontrollertouchpad/touchsurface.json": {
@@ -6626,7 +6626,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicebattery/state/init(rawvalue:).json": {
       "etag": "\"18e4-65d55d19d606d-df\"",
-      "file_path": "documentation/GameController/gcdevicebattery/state/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcdevicebattery/state/init(rawvalue).md",
       "hash": "53a4ad67111ea62407c6e5cb2b19e4aa7c4e9f370d5e74e7b7709c80076cac9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicebattery/state/unknown.json": {
@@ -6661,7 +6661,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicehaptics/createengine(withlocality:).json": {
       "etag": "\"39ac-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcdevicehaptics/createengine-withlocality.md",
+      "file_path": "documentation/GameController/gcdevicehaptics/createengine(withlocality).md",
       "hash": "7b1e2325a55f2c6e74456ce7fd3f17576349ab951d86df747f4351b3d0762708"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicehaptics/supportedlocalities.json": {
@@ -6686,7 +6686,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinput/capture().json": {
       "etag": "\"40a1-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinput/capture.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinput/capture().md",
       "hash": "6031494e37662dbe501e80b0ff9f78989be6c213b1f37e7cfcf27b46fbf43081"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinput/device.json": {
@@ -6701,7 +6701,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinput/inputstate(forspatialaccessoryanchortimestamp:).json": {
       "etag": "\"3194-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinput/inputstate-forspatialaccessoryanchortimestamp.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinput/inputstate(forspatialaccessoryanchortimestamp).md",
       "hash": "8a7fc133cc59f24fbd322103b8baf34524d53ca3437759817a119d5fa4729704"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinput/inputstateavailablehandler.json": {
@@ -6716,7 +6716,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinput/nextinputstate().json": {
       "etag": "\"4997-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinput/nextinputstate.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinput/nextinputstate().md",
       "hash": "07e0c3c4b5940c4adfc3be24da3687843887a36d533b1bdb77dd66de64730bf4"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinput/queue.json": {
@@ -6736,7 +6736,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinputelementchange/init(rawvalue:).json": {
       "etag": "\"153f-65d55d1b0b306-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputelementchange/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputelementchange/init(rawvalue).md",
       "hash": "acea85407ef2014661f45cb706adae30ad5b917d2fd3280f023dbf15c3ba2944"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinputelementchange/nochange.json": {
@@ -6791,7 +6791,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinputstate/subscript(_:).json": {
       "etag": "\"4def-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputstate/subscript.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputstate/subscript(_).md",
       "hash": "de104892a606e9483fddff40538b423dad7afca0135c3d4de80b9d66b39aa46f"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinputstate/switches-6dcny.json": {
@@ -6806,17 +6806,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinputstatediff/change(for:).json": {
       "etag": "\"3e60-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/change-for.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/change(for).md",
       "hash": "4197c9a3f6f0a466c510c0fd0b828f413ce21f1f8bffe594a8e6afb3e31013c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinputstatediff/changedelements()-2zzwm.json": {
       "etag": "\"32f1-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/changedelements-2zzwm.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/changedelements()-2zzwm.md",
       "hash": "d914a01cc10e292e3c4503db3cfc0d4cb92dd80ef17c0a84537e401cbd4b6a43"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicephysicalinputstatediff/changedelements()-9cdq4.json": {
       "etag": "\"2b4b-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/changedelements-9cdq4.md",
+      "file_path": "documentation/GameController/gcdevicephysicalinputstatediff/changedelements()-9cdq4.md",
       "hash": "84514740568022901a12838c119eb02eceeee191fdc2c227ef6b2d773857f26a"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicetouchpad.json": {
@@ -6831,7 +6831,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicetype/init(identifier:).json": {
       "etag": "\"2171-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcdevicetype/init-identifier.md",
+      "file_path": "documentation/GameController/gcdevicetype/init(identifier).md",
       "hash": "8db87641aa7d2ca9e0c799994909bad81dc76f7b6cc21840cbcc9143e692dd6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdevicetype/localizeddescription.json": {
@@ -6891,7 +6891,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdirectionpadelementname-swift.struct.json": {
       "etag": "\"4921-65d55d19d606d-df\"",
-      "file_path": "documentation/GameController/gcdirectionpadelementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcdirectionpadelementname-swift.struct.md",
       "hash": "c839ad4c84128bd79c11c2927af569e3e62a4e3cd282bf786f055f657fba0e07"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdirectionpadelementname-swift.struct/directionpad.json": {
@@ -6931,7 +6931,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.enum.json": {
       "etag": "\"5b32-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swiftenum.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swift.enum.md",
       "hash": "76b282cc5b8292a14035b234ea3be95132be23ab9ecdbd4262a313083b7cdd58"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.enum/feedback.json": {
@@ -6941,7 +6941,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.enum/init(rawvalue:).json": {
       "etag": "\"1a8f-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swift.enum/init(rawvalue).md",
       "hash": "926a813d253e8b36268317e3d9b0cb038eccfb6339c527297d8959cd4f060359"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.enum/off.json": {
@@ -6966,7 +6966,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/mode-swift.property.json": {
       "etag": "\"2d1c-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swiftproperty.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/mode-swift.property.md",
       "hash": "bbf875db10c0ec39f16622f6a62da1dbc45b7736c262195291b89dc945884e41"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalamplitudes.json": {
@@ -6976,12 +6976,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalamplitudes/init().json": {
       "etag": "\"1f27-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalamplitudes/init.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalamplitudes/init().md",
       "hash": "80ad731e3ee5372d2970ea35a67cf01850974309f46f00bb715625faa8e4db3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalamplitudes/init(values:).json": {
       "etag": "\"2e49-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalamplitudes/init-values.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalamplitudes/init(values).md",
       "hash": "80c5361e77cd6a59edc4e3a3803104a139cb3da63513c1896811cf403c4f4c4b"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalamplitudes/values.json": {
@@ -6996,12 +6996,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalresistivestrengths/init().json": {
       "etag": "\"1fe1-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalresistivestrengths/init.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalresistivestrengths/init().md",
       "hash": "681f6e898a3e5b0a9ab7f7383b5d9ff2e52360c4d8c77c66beb1c25d8588de56"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalresistivestrengths/init(values:).json": {
       "etag": "\"2f00-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalresistivestrengths/init-values.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/positionalresistivestrengths/init(values).md",
       "hash": "7be31273db152c0c795d5c39282ef5715487f8704b06484f9543e5eb8afbed05"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/positionalresistivestrengths/values.json": {
@@ -7011,42 +7011,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodefeedback(resistivestrengths:).json": {
       "etag": "\"6397-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodefeedback-resistivestrengths.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodefeedback(resistivestrengths).md",
       "hash": "206914acfd51b648bf5498a808cbfed0a7be4f66c70b2e29debe2e163ad0e551"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition(_:resistivestrength:).json": {
       "etag": "\"6a72-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition-resistivestrength.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodefeedbackwithstartposition(_,resistivestrength).md",
       "hash": "2e5b38caffc254be9d60977db434ed7b51c2741dc102f37f2d84ea5a6deb6693"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodeoff().json": {
       "etag": "\"279d-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeoff.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeoff().md",
       "hash": "f3e3b669b9354eee0e516ede5ccf068c8094b54e35d605e5e25148d750b09d01"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodeslopefeedback(startposition:endposition:startstrength:endstrength:).json": {
       "etag": "\"7812-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeslopefeedback-startpositionendpositionstartstrengthendstrength.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeslopefeedback(startposition,endposition,startstrength,endstrength).md",
       "hash": "cbfc3fb5d5b2acb7351a94d98e87e447f8f2cd8c2124600775771f551512fd33"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodevibration(amplitudes:frequency:).json": {
       "etag": "\"6b23-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodevibration-amplitudesfrequency.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodevibration(amplitudes,frequency).md",
       "hash": "ba47a1313162cd991f76a11530dcc5c5eff34a617bf3a0fc2971ff2790ddeb6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodevibrationwithstartposition(_:amplitude:frequency:).json": {
       "etag": "\"7073-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodevibrationwithstartposition-amplitudefrequency.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodevibrationwithstartposition(_,amplitude,frequency).md",
       "hash": "cde382fcc337ee48d3293df51296162e045adac7dfd4cba4d4d13dda838ed7c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/setmodeweaponwithstartposition(_:endposition:resistivestrength:).json": {
       "etag": "\"72ed-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeweaponwithstartposition-endpositionresistivestrength.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/setmodeweaponwithstartposition(_,endposition,resistivestrength).md",
       "hash": "3c7adb6e667402bd7acf49952f496034dc5caab4b375fb75bfab8766c6888999"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.enum.json": {
       "etag": "\"7daf-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swiftenum.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swift.enum.md",
       "hash": "d5ec2e551f816d73eaa0012eb1f854df2ea190459b43b2e035e0afdcf603409d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.enum/feedbackloadapplied.json": {
@@ -7061,7 +7061,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.enum/init(rawvalue:).json": {
       "etag": "\"1ab6-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swift.enum/init(rawvalue).md",
       "hash": "0be0bbc10e9120cb4c8c4845311591fb1facebe2b5b29d44adf67315cbd4296f"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.enum/slopefeedbackapplyingload.json": {
@@ -7111,7 +7111,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsenseadaptivetrigger/status-swift.property.json": {
       "etag": "\"273c-65d55d191fc95-df\"",
-      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swiftproperty.md",
+      "file_path": "documentation/GameController/gcdualsenseadaptivetrigger/status-swift.property.md",
       "hash": "3bb8afa1b094c268adcc452e165eb0752df4660d845f84a2d8038c5455fd175b"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcdualsensegamepad.json": {
@@ -7171,12 +7171,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gceulerangles/init().json": {
       "etag": "\"1006-65d55d1b0b306-df\"",
-      "file_path": "documentation/GameController/gceulerangles/init.md",
+      "file_path": "documentation/GameController/gceulerangles/init().md",
       "hash": "2c3a94e0f7b983d3dbc1a6968f73add93568024661665baf96b5c447879e1c64"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gceulerangles/init(pitch:yaw:roll:).json": {
       "etag": "\"1b71-65d55d1b0b306-df\"",
-      "file_path": "documentation/GameController/gceulerangles/init-pitchyawroll.md",
+      "file_path": "documentation/GameController/gceulerangles/init(pitch,yaw,roll).md",
       "hash": "05e1dc8224b1b1a264486d366f04fe2cfe52a6a719cca1c61d41ee7ee12ef014"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gceulerangles/pitch.json": {
@@ -7206,7 +7206,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gceventinteraction/init().json": {
       "etag": "\"17db-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gceventinteraction/init.md",
+      "file_path": "documentation/GameController/gceventinteraction/init().md",
       "hash": "ac32b066446df85b848f2aa51e3c2d780d138b036dcd22ed7381d2041cb9d4bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gceventinteraction/receiveseventsinview.json": {
@@ -7316,12 +7316,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepad/savesnapshot().json": {
       "etag": "\"34a3-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepad/savesnapshot.md",
+      "file_path": "documentation/GameController/gcextendedgamepad/savesnapshot().md",
       "hash": "23b1d6b33f487574d0605a18c62ea479c486346cfe1909de1633cc151034e106"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepad/setstatefrom(_:).json": {
       "etag": "\"284b-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepad/setstatefrom.md",
+      "file_path": "documentation/GameController/gcextendedgamepad/setstatefrom(_).md",
       "hash": "f09468665824c9f5cf63d3eef5a5f929e4552082e1fc7378c2e412fd294ed857"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepad/valuechangedhandler.json": {
@@ -7336,12 +7336,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshot/init(controller:snapshotdata:).json": {
       "etag": "\"4c2b-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshot/init-controllersnapshotdata.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshot/init(controller,snapshotdata).md",
       "hash": "469045ba268f29e3448fb9668f0735b3f8173da1fbb9a3e33fbd10bbf6fb1c00"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshot/init(snapshotdata:).json": {
       "etag": "\"42f1-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshot/init-snapshotdata.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshot/init(snapshotdata).md",
       "hash": "63b619c6ff3e51ef5750fc1a5170bb11a435613ff9cb5ae9265b17effaaaf7f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshot/snapshotdata.json": {
@@ -7386,7 +7386,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdata/init().json": {
       "etag": "\"1925-65d55d1ae93a7-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdata/init.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdata/init().md",
       "hash": "c676428d5343d9f35e2071a2138fd6bfb7b0cd4c9b33272b93f891590da0c4a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdata/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:leftthumbstickx:leftthumbsticky:rightthumbstickx:rightthumbsticky:lefttrigger:righttrigger:supportsclickablethumbsticks:leftthumbstickbutton:rightthumbstickbutton:).json": {
@@ -7460,7 +7460,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdatafromnsdata(_:_:).json": {
       "etag": "\"8a40-65d55d1acc7d9-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatafromnsdata.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatafromnsdata(_,_).md",
       "hash": "4e7a37007a636106cf90ef9d5caf66a9b2d89aef754198256c30ab80ebf026eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100.json": {
@@ -7500,12 +7500,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100/init().json": {
       "etag": "\"19d9-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100/init.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100/init().md",
       "hash": "b35ed21dae00b4977e52c14de4f9c15a89daa4c78c5bc1f7a9a323694a12e9b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:leftthumbstickx:leftthumbsticky:rightthumbstickx:rightthumbsticky:lefttrigger:righttrigger:).json": {
       "etag": "\"47c9-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100/init-versionsizedpadxdpadybuttonabuttonbbuttonxbuttonyleftshoulderrightshoulderleftthumbstickxleftthumbstickyrightthumbstickxrightthumbstickylefttriggerrighttrigger.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100/init(version,size,dpadx,dpady,buttona,buttonb,buttonx,buttony,leftshoulder,rightshoulder,leftthumbstickx,leftthumbsticky,rightthumbstickx,rightthumbsticky,lefttrigger,righttrigger).md",
       "hash": "0842954b4b336d4c5fa4e67ce5f59c03f96ddad9c54899940cb5ef8fc3f61de6"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100/leftshoulder.json": {
@@ -7560,7 +7560,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdatav100fromnsdata(_:_:).json": {
       "etag": "\"60a6-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100fromnsdata.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdatav100fromnsdata(_,_).md",
       "hash": "d04e4bf9bb3bf8826baf1a5cb49c665eea5077deff06118697c503fbb2780b0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdataversion.json": {
@@ -7570,7 +7570,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdataversion/init(rawvalue:).json": {
       "etag": "\"182b-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdataversion/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcextendedgamepadsnapshotdataversion/init(rawvalue).md",
       "hash": "d6ec5e81f17813d0e058b62bcab35e25fb589c654157046df875cde8374896c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcextendedgamepadsnapshotdataversion/version1.json": {
@@ -7605,7 +7605,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamecontrollerscenedelegate/scene(_:didactivategamecontrollerwith:).json": {
       "etag": "\"2b07-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcgamecontrollerscenedelegate/scene-didactivategamecontrollerwith.md",
+      "file_path": "documentation/GameController/gcgamecontrollerscenedelegate/scene(_,didactivategamecontrollerwith).md",
       "hash": "151e72fe713e4f43b5970d4b4a75604371af5804e9b451b3eafd47ef62c880f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepad.json": {
@@ -7655,7 +7655,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepad/savesnapshot().json": {
       "etag": "\"2496-65d55d1ae93a7-df\"",
-      "file_path": "documentation/GameController/gcgamepad/savesnapshot.md",
+      "file_path": "documentation/GameController/gcgamepad/savesnapshot().md",
       "hash": "ff2979e34f98d07b7a582a378d94edcfc803621a0783d4e81ecd69b0bd18281d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepad/valuechangedhandler.json": {
@@ -7670,12 +7670,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadsnapshot/init(controller:snapshotdata:).json": {
       "etag": "\"42c7-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshot/init-controllersnapshotdata.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshot/init(controller,snapshotdata).md",
       "hash": "78558fed4cc21604517cc5ac6f026c5299d86e671d4724f26d4cf21bed6270bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadsnapshot/init(snapshotdata:).json": {
       "etag": "\"3f3d-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshot/init-snapshotdata.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshot/init(snapshotdata).md",
       "hash": "6d71cc9b54ce766aa9d5200810cf140e4b02a6efe0f91279baeef2e0bca970dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadsnapshot/snapshotdata.json": {
@@ -7720,12 +7720,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadsnapshotdatav100/init().json": {
       "etag": "\"1782-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100/init.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100/init().md",
       "hash": "033a434ab98a22efa9f01491822c76e7998b5f1b1c02a3d7a28025ee6ee6ab1d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadsnapshotdatav100/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:).json": {
       "etag": "\"34d3-65d55d1ab1847-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100/init-versionsizedpadxdpadybuttonabuttonbbuttonxbuttonyleftshoulderrightshoulder.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100/init(version,size,dpadx,dpady,buttona,buttonb,buttonx,buttony,leftshoulder,rightshoulder).md",
       "hash": "0fcb5670ecdd9ee9baf95148a5092d9fcbd5d530e4658be860c68aad0a4a5883"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadsnapshotdatav100/leftshoulder.json": {
@@ -7750,7 +7750,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadsnapshotdatav100fromnsdata(_:_:).json": {
       "etag": "\"5b5c-65d55d1902517-df\"",
-      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100fromnsdata.md",
+      "file_path": "documentation/GameController/gcgamepadsnapshotdatav100fromnsdata(_,_).md",
       "hash": "dd8cd1056f34e9028c9a7fc731747eac56d62017c39421480e917293b4fa0d7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcgamepadvaluechangedhandler.json": {
@@ -7800,7 +7800,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gchapticslocality/init(rawvalue:).json": {
       "etag": "\"1569-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gchapticslocality/init-rawvalue.md",
+      "file_path": "documentation/GameController/gchapticslocality/init(rawvalue).md",
       "hash": "b9c471e06e5068290af2be5b3956863c8fec2968b43be2eb3302f3c34fc7e295"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gchapticslocality/lefthandle.json": {
@@ -8075,7 +8075,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gckeyboard/didconnectmessage/init(keyboard:).json": {
       "etag": "\"15a3-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gckeyboard/didconnectmessage/init-keyboard.md",
+      "file_path": "documentation/GameController/gckeyboard/didconnectmessage/init(keyboard).md",
       "hash": "619ed5fb67ad7f8b49186d5469f2b6104683df8768e5ebb0524e9f81f5b52e16"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gckeyboard/didconnectmessage/keyboard.json": {
@@ -8090,7 +8090,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gckeyboard/diddisconnectmessage/init(keyboard:).json": {
       "etag": "\"15cf-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gckeyboard/diddisconnectmessage/init-keyboard.md",
+      "file_path": "documentation/GameController/gckeyboard/diddisconnectmessage/init(keyboard).md",
       "hash": "78c6c93ed9f2fc9f94fcc057c45600ca5b31318b7f3478fa5e95dd18eef2ba35"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gckeyboard/diddisconnectmessage/keyboard.json": {
@@ -8110,7 +8110,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gckeyboardinput/button(forkeycode:).json": {
       "etag": "\"42ef-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gckeyboardinput/button-forkeycode.md",
+      "file_path": "documentation/GameController/gckeyboardinput/button(forkeycode).md",
       "hash": "c047e5005bb62854102dd2556a4bda897138ba935c40763a09f4898e54a1deca"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gckeyboardinput/isanykeypressed.json": {
@@ -8335,7 +8335,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gckeycode/init(rawvalue:).json": {
       "etag": "\"1580-65d55d1a53c9a-df\"",
-      "file_path": "documentation/GameController/gckeycode/init-rawvalue.md",
+      "file_path": "documentation/GameController/gckeycode/init(rawvalue).md",
       "hash": "126d23126a4f13aca80c0c04f9ef8833a1d6cac2080f3423223ca05e93c06fbb"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gckeycode/insert.json": {
@@ -9545,12 +9545,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepad/savesnapshot().json": {
       "etag": "\"33c5-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepad/savesnapshot.md",
+      "file_path": "documentation/GameController/gcmicrogamepad/savesnapshot().md",
       "hash": "1da9759b7c319d903484e3021212a52cf8a3cc0a7847cf1fe10b066168229a2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepad/setstatefrom(_:).json": {
       "etag": "\"2635-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepad/setstatefrom.md",
+      "file_path": "documentation/GameController/gcmicrogamepad/setstatefrom(_).md",
       "hash": "95cdec27665133e73bbea30fcb4c65e320fbed1b5ebfe4b301352826e3505492"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepad/valuechangedhandler.json": {
@@ -9565,12 +9565,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshot/init(controller:snapshotdata:).json": {
       "etag": "\"49bf-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshot/init-controllersnapshotdata.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshot/init(controller,snapshotdata).md",
       "hash": "9f0062fc1e20040411c83fcaf92b45d7deee5f2f3d96cf4245a632055d4720ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshot/init(snapshotdata:).json": {
       "etag": "\"4135-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshot/init-snapshotdata.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshot/init(snapshotdata).md",
       "hash": "02471eea34724e965e58e463b33f24553be0ba92bdf620c219009456f3974a40"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshot/snapshotdata.json": {
@@ -9605,12 +9605,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdata/init().json": {
       "etag": "\"18b5-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdata/init.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdata/init().md",
       "hash": "7ac272e4c4d3385169924e7ccc795d655fc5689c82469b3e14630e93cf0d0226"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdata/init(version:size:dpadx:dpady:buttona:buttonx:).json": {
       "etag": "\"2ba1-65d55d18772b7-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdata/init-versionsizedpadxdpadybuttonabuttonx.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdata/init(version,size,dpadx,dpady,buttona,buttonx).md",
       "hash": "6def69b07170111c2e6211465afeba49c46bcbbbe82244467b17bc549ca6aa00"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdata/size.json": {
@@ -9625,7 +9625,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdatafromnsdata(_:_:).json": {
       "etag": "\"89d3-65d55d1ae93a7-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatafromnsdata.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatafromnsdata(_,_).md",
       "hash": "787bde0d153383c7be6a9c936af4aee235cee14db0416d524e4bb7858e1954f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100.json": {
@@ -9655,12 +9655,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100/init().json": {
       "etag": "\"1966-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100/init.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100/init().md",
       "hash": "f42a5d337f7469ac8c4b942b4d86be62dc9da4e6f76e5d5433c82ee9747bbde4"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100/init(version:size:dpadx:dpady:buttona:buttonx:).json": {
       "etag": "\"2c52-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100/init-versionsizedpadxdpadybuttonabuttonx.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100/init(version,size,dpadx,dpady,buttona,buttonx).md",
       "hash": "52c36b2744b907d928d57c8901d5f80340c77b2e6ff17a1ce21eee5bf9380f8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100/size.json": {
@@ -9675,7 +9675,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdatav100fromnsdata(_:_:).json": {
       "etag": "\"5a06-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100fromnsdata.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdatav100fromnsdata(_,_).md",
       "hash": "a0597855de9a284c8552fc9360292844650f3aa5bd3ad4712598fd17d005ef36"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdataversion.json": {
@@ -9685,7 +9685,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdataversion/init(rawvalue:).json": {
       "etag": "\"17dd-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdataversion/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcmicrogamepadsnapshotdataversion/init(rawvalue).md",
       "hash": "d5758fe0823b211360823fb887794886563c7ad87fe20db2e209c3aa3678fc90"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmicrogamepadsnapshotdataversion/version1.json": {
@@ -9760,32 +9760,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmotion/setacceleration(_:).json": {
       "etag": "\"3f4b-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setacceleration.md",
+      "file_path": "documentation/GameController/gcmotion/setacceleration(_).md",
       "hash": "4d20d82af077c359d16a1c1113c4cc19ba2d9d44b2038e4a5a9346f10b10e423"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmotion/setattitude(_:).json": {
       "etag": "\"3f0b-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcmotion/setattitude.md",
+      "file_path": "documentation/GameController/gcmotion/setattitude(_).md",
       "hash": "5c944577fa93c5c49152e11afed91e6bca0eddedf26149400e14921dc1889d83"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmotion/setgravity(_:).json": {
       "etag": "\"3f09-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setgravity.md",
+      "file_path": "documentation/GameController/gcmotion/setgravity(_).md",
       "hash": "20463ee36429af1f05f052bede707ba722f1be14123e87655d665fb0c6ed41da"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmotion/setrotationrate(_:).json": {
       "etag": "\"3f86-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setrotationrate.md",
+      "file_path": "documentation/GameController/gcmotion/setrotationrate(_).md",
       "hash": "cb3e40dbb6bf73098ac83062b0972c4fb4cd52be0a8ccb26683ff0bcbb3f4c71"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmotion/setstatefrom(_:).json": {
       "etag": "\"3ad3-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setstatefrom.md",
+      "file_path": "documentation/GameController/gcmotion/setstatefrom(_).md",
       "hash": "f069589762be195723bd00cc618ac8ca119aa713ae364b23f33bcb514b98b6e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmotion/setuseracceleration(_:).json": {
       "etag": "\"3f54-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/gcmotion/setuseracceleration.md",
+      "file_path": "documentation/GameController/gcmotion/setuseracceleration(_).md",
       "hash": "cb345280f66c3ee7458bb055628da6189f95563fe94a1779b3209f8cecb8fc55"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmotion/useracceleration.json": {
@@ -9820,7 +9820,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/didbecomecurrentmessage/init(mouse:).json": {
       "etag": "\"153c-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/didbecomecurrentmessage/init-mouse.md",
+      "file_path": "documentation/GameController/gcmouse/didbecomecurrentmessage/init(mouse).md",
       "hash": "4f9afecefc56f06aae7baa3b2a84f780f8e52f3634c9bc205e3cf609dfb87127"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/didbecomecurrentmessage/mouse.json": {
@@ -9835,7 +9835,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/didconnectmessage/init(mouse:).json": {
       "etag": "\"14ea-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/didconnectmessage/init-mouse.md",
+      "file_path": "documentation/GameController/gcmouse/didconnectmessage/init(mouse).md",
       "hash": "476787e55ef01df20a56694b5143d61076504e463eacccc46b1b3ba5031bbd63"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/didconnectmessage/mouse.json": {
@@ -9850,7 +9850,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/diddisconnectmessage/init(mouse:).json": {
       "etag": "\"154a-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/diddisconnectmessage/init-mouse.md",
+      "file_path": "documentation/GameController/gcmouse/diddisconnectmessage/init(mouse).md",
       "hash": "e8f5c6e62344d500bf59e6b0f77389934d228b7a5a53a30c59b8c1b964555a63"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/diddisconnectmessage/mouse.json": {
@@ -9865,7 +9865,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/didstopbeingcurrentmessage/init(mouse:).json": {
       "etag": "\"159b-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/didstopbeingcurrentmessage/init-mouse.md",
+      "file_path": "documentation/GameController/gcmouse/didstopbeingcurrentmessage/init(mouse).md",
       "hash": "91dc51395cb111dbc1a1945f35033cb9fe1d5c61aa0936f079b243947c987d0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/didstopbeingcurrentmessage/mouse.json": {
@@ -9875,7 +9875,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/mice().json": {
       "etag": "\"2b3b-65d55d18e7627-df\"",
-      "file_path": "documentation/GameController/gcmouse/mice.md",
+      "file_path": "documentation/GameController/gcmouse/mice().md",
       "hash": "548e2cddacfc6fd6a013e5277d609362956398b17d65e3778b514d064a6d8e12"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcmouse/mouseinput.json": {
@@ -9945,52 +9945,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct.json": {
       "etag": "\"55c6-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swiftstruct.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct.md",
       "hash": "f6d1cf28d91ab243b16e79aa94412f224418e1ee8cb1805df0d80599fbc1be11"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-1twjd.json": {
       "etag": "\"2cad-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-1twjd.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-1twjd.md",
       "hash": "c459136b656eff82f752b11d66c7486e721585201fabce6e12c52126c62da998"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-3l6nj.json": {
       "etag": "\"2c50-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-3l6nj.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-3l6nj.md",
       "hash": "8c25eac141a7196ac1a1c459f20878a5a4e260769ee6a5e5255ae71b30437e50"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-3tv91.json": {
       "etag": "\"142d-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-3tv91.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-3tv91.md",
       "hash": "cab55a7e85a8ee27196980207081783a040a0e9c5a02ecfe1715b7c6307c7168"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-3womp.json": {
       "etag": "\"1f35-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-3womp.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-3womp.md",
       "hash": "4f54e7052d002dc1a43fa7f759f08ebc8272d572c1bd30513c6336c87c1daf9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-4oje0.json": {
       "etag": "\"2c60-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-4oje0.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-4oje0.md",
       "hash": "b12beffec5d0b7f1412c0adeef8fed9996a865a2392743503cfa9d598e9fa342"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-85c13.json": {
       "etag": "\"2c39-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-85c13.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-85c13.md",
       "hash": "bb1de6b46ef3d154b61711ac8bfde1085c6cd5c046543630d34384ea1eb73ee0"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-8m218.json": {
       "etag": "\"2c50-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-8m218.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-8m218.md",
       "hash": "1b45f47a28f5d05756c70764a8c67805e5390546c027f765cb88623b81788160"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementcollection-swift.struct/subscript(_:)-c5v9.json": {
       "etag": "\"2106-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript-c5v9.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementcollection-swift.struct/subscript(_)-c5v9.md",
       "hash": "0912f2ffa310054b53cbc43448efe005e0e62a35c0c5fa5920256b243946eeb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementname-swift.struct.json": {
       "etag": "\"3d8f-65d55d1acc7d9-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputelementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcphysicalinputelementname-swift.struct.md",
       "hash": "b51d1b7913a1498220f742f024c42685f6b2f62e8310f5b73acbd7119a5395da"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputelementname-swift.struct/shifter.json": {
@@ -10070,7 +10070,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputprofile/capture().json": {
       "etag": "\"2567-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/capture.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/capture().md",
       "hash": "5732a20feecdedef1a3f63297ad2f15b74b1661b9d8051f36c347896c577ff24"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputprofile/device.json": {
@@ -10100,22 +10100,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputprofile/mappedelementalias(forphysicalinputname:).json": {
       "etag": "\"4cd5-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/mappedelementalias-forphysicalinputname.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/mappedelementalias(forphysicalinputname).md",
       "hash": "6f28c8ec1141b1c009ce739bea15afd1624874d98649ce1c30359ce74ff0d9cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).json": {
       "etag": "\"52ad-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/mappedphysicalinputnames-forelementalias.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/mappedphysicalinputnames(forelementalias).md",
       "hash": "ab2fdc30ebdd592ab23085a2380553c2d8aff0d0ef07c5f379bd1de64549bfaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputprofile/setstatefromphysicalinput(_:).json": {
       "etag": "\"2e69-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/setstatefromphysicalinput.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/setstatefromphysicalinput(_).md",
       "hash": "235412ebfe19110b0d20e8c04548cd222a0dd5a8fa746eb7dbd3605f7add8aae"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputprofile/subscript(_:).json": {
       "etag": "\"5015-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputprofile/subscript.md",
+      "file_path": "documentation/GameController/gcphysicalinputprofile/subscript(_).md",
       "hash": "a63070608b14b003420ee745af57e2cf30d606d0e317c34afab4e930c0b30651"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputprofile/touchpads.json": {
@@ -10165,7 +10165,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputsourcedirection/init(rawvalue:).json": {
       "etag": "\"163e-65d55d183edb1-df\"",
-      "file_path": "documentation/GameController/gcphysicalinputsourcedirection/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcphysicalinputsourcedirection/init(rawvalue).md",
       "hash": "e2397ceb27486d90435aee85e6b5fbafbf8dbe67b4e7dd0068d8f4b1b1b1cc11"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcphysicalinputsourcedirection/left.json": {
@@ -10190,12 +10190,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcpoint2/init().json": {
       "etag": "\"1d97-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gcpoint2/init.md",
+      "file_path": "documentation/GameController/gcpoint2/init().md",
       "hash": "226e640dcee4dc318f8c383d0c41c0608847ad22d9c53045e7313c98cbd54449"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcpoint2/init(x:y:).json": {
       "etag": "\"2391-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gcpoint2/init-xy.md",
+      "file_path": "documentation/GameController/gcpoint2/init(x,y).md",
       "hash": "2ebbe4c3de717ade71c203ad9c4b3eef655e9e5696dbc5a0423ddb31211974a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcpoint2/x.json": {
@@ -10210,12 +10210,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcpoint2equal(_:_:).json": {
       "etag": "\"3309-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gcpoint2equal.md",
+      "file_path": "documentation/GameController/gcpoint2equal(_,_).md",
       "hash": "130b5b0401751bd1ec17f9ab2d050fa5e97e523aee6e839758faec9b0d0b91e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcpoint2make(_:_:).json": {
       "etag": "\"30cb-65d55d1b27d13-df\"",
-      "file_path": "documentation/GameController/gcpoint2make.md",
+      "file_path": "documentation/GameController/gcpoint2make(_,_).md",
       "hash": "5a75a6def153951122570c2e38b69a3fe391ed1e7bc65d8b2485ed554f5b607a"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcpoint2zero.json": {
@@ -10335,12 +10335,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcquaternion/init().json": {
       "etag": "\"fc5-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gcquaternion/init.md",
+      "file_path": "documentation/GameController/gcquaternion/init().md",
       "hash": "18ee06204852820e0ed15465d61590200e1d275b2b2c595796d697979dd098cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcquaternion/init(x:y:z:w:).json": {
       "etag": "\"1ce4-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/gcquaternion/init-xyzw.md",
+      "file_path": "documentation/GameController/gcquaternion/init(x,y,z,w).md",
       "hash": "c6adbed9fed743f6a7321b962f0a4f427ef0d961713b54230b7db7733266397c"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcquaternion/w.json": {
@@ -10370,12 +10370,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/acquiredevice().json": {
       "etag": "\"2ec4-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/acquiredevice.md",
+      "file_path": "documentation/GameController/gcracingwheel/acquiredevice().md",
       "hash": "9a99f7c7d6961ce84fa70cba883cb8801b9e4120ba559e5d2017817dedf06ac6"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/capture().json": {
       "etag": "\"21d6-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/capture.md",
+      "file_path": "documentation/GameController/gcracingwheel/capture().md",
       "hash": "feb109964bf6103a99bfde8ffc44e9f6084bb94d4fd0ce82fdd5106ac200c4b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/connectedracingwheels.json": {
@@ -10390,7 +10390,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/didconnectmessage/init(racingwheel:).json": {
       "etag": "\"1574-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/didconnectmessage/init-racingwheel.md",
+      "file_path": "documentation/GameController/gcracingwheel/didconnectmessage/init(racingwheel).md",
       "hash": "fd6999d34b6409bd875563fa1c02bbbb66bb24b37988c6038627e5c95d881ccb"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/didconnectmessage/racingwheel.json": {
@@ -10405,7 +10405,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/diddisconnectmessage/init(racingwheel:).json": {
       "etag": "\"15a0-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/diddisconnectmessage/init-racingwheel.md",
+      "file_path": "documentation/GameController/gcracingwheel/diddisconnectmessage/init(racingwheel).md",
       "hash": "3bc93052d18428d264c72e19724240d49b6a28452dc3110c2619f9cc84e557d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/diddisconnectmessage/racingwheel.json": {
@@ -10425,7 +10425,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/relinquishdevice().json": {
       "etag": "\"23ac-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcracingwheel/relinquishdevice.md",
+      "file_path": "documentation/GameController/gcracingwheel/relinquishdevice().md",
       "hash": "ab83673214f3e7b2b2e6248eadbb8c299b7ca829b728d13e5a672a6a0922e474"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheel/wheelinput.json": {
@@ -10440,12 +10440,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheelinput/capture().json": {
       "etag": "\"21c1-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gcracingwheelinput/capture.md",
+      "file_path": "documentation/GameController/gcracingwheelinput/capture().md",
       "hash": "8a34daa90b030da77d0238caca82c1476f8efc7d28221b82b7110bf28dafc4c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheelinput/nextinputstate().json": {
       "etag": "\"2b8e-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gcracingwheelinput/nextinputstate.md",
+      "file_path": "documentation/GameController/gcracingwheelinput/nextinputstate().md",
       "hash": "3cf0222919b7eb4f1b52931b616d2ef2b1f262f8364230202de5023214888d91"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcracingwheelinputstate.json": {
@@ -10520,12 +10520,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcrotationrate/init().json": {
       "etag": "\"ff2-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcrotationrate/init.md",
+      "file_path": "documentation/GameController/gcrotationrate/init().md",
       "hash": "00989ff19af45a877439d1eeb9fa21ee5f1aa1c8622a08c1c74855263edc41f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcrotationrate/init(x:y:z:).json": {
       "etag": "\"1a5e-65d55d18c73ad-df\"",
-      "file_path": "documentation/GameController/gcrotationrate/init-xyz.md",
+      "file_path": "documentation/GameController/gcrotationrate/init(x,y,z).md",
       "hash": "2104bbc58a9860a60b88dcd169b57c2ab47505f5f4ce764ee951db64b522e848"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcrotationrate/x.json": {
@@ -10550,7 +10550,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcspatialaccessory/conforms(to:).json": {
       "etag": "\"2619-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcspatialaccessory/conforms-to.md",
+      "file_path": "documentation/GameController/gcspatialaccessory/conforms(to).md",
       "hash": "fec45625b869ca0ffd2a168cdd0f14bda706bc0c0fbde5eae6d9bff64a6dd3aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcspatialaccessory/didconnectmessage.json": {
@@ -10560,7 +10560,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcspatialaccessory/didconnectmessage/init(spatialaccessory:).json": {
       "etag": "\"1566-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcspatialaccessory/didconnectmessage/init-spatialaccessory.md",
+      "file_path": "documentation/GameController/gcspatialaccessory/didconnectmessage/init(spatialaccessory).md",
       "hash": "6aba41f44724203433b85c6733844da078f04f9c958df87c48ec71aa4109538d"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcspatialaccessory/didconnectmessage/spatialaccessory.json": {
@@ -10575,7 +10575,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcspatialaccessory/diddisconnectmessage/init(spatialaccessory:).json": {
       "etag": "\"15c6-65d55d1956c05-df\"",
-      "file_path": "documentation/GameController/gcspatialaccessory/diddisconnectmessage/init-spatialaccessory.md",
+      "file_path": "documentation/GameController/gcspatialaccessory/diddisconnectmessage/init(spatialaccessory).md",
       "hash": "e09070df231df218e54d7be1dd102f785ea107d92dc7b12cb8916b7bbd5d21e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcspatialaccessory/diddisconnectmessage/spatialaccessory.json": {
@@ -10620,7 +10620,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcstylus/didconnectmessage/init(stylus:).json": {
       "etag": "\"1423-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/gcstylus/didconnectmessage/init-stylus.md",
+      "file_path": "documentation/GameController/gcstylus/didconnectmessage/init(stylus).md",
       "hash": "461bc58c04a3a87d3fb67641fdd0e7b010b7fdbbe747b75ef39c3d0db30fa9cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcstylus/didconnectmessage/stylus.json": {
@@ -10635,7 +10635,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcstylus/diddisconnectmessage/init(stylus:).json": {
       "etag": "\"1483-65d55d1998266-df\"",
-      "file_path": "documentation/GameController/gcstylus/diddisconnectmessage/init-stylus.md",
+      "file_path": "documentation/GameController/gcstylus/diddisconnectmessage/init(stylus).md",
       "hash": "b5fe79591869775014968757a38466f33172f5d7de40b27c7786275855329345"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcstylus/diddisconnectmessage/stylus.json": {
@@ -10670,7 +10670,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcswitchelementname-swift.struct.json": {
       "etag": "\"393b-65d55d19ef382-df\"",
-      "file_path": "documentation/GameController/gcswitchelementname-swiftstruct.md",
+      "file_path": "documentation/GameController/gcswitchelementname-swift.struct.md",
       "hash": "346ae993dc8a752151e6f8aa2f4cb51d079841f4b45fb6cf833109bcdc32f7b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcswitchpositioninput.json": {
@@ -10760,7 +10760,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcuieventtypes/init(rawvalue:).json": {
       "etag": "\"130c-65d55d1b0b306-df\"",
-      "file_path": "documentation/GameController/gcuieventtypes/init-rawvalue.md",
+      "file_path": "documentation/GameController/gcuieventtypes/init(rawvalue).md",
       "hash": "98b09e1b78bb5126fbbbfd5531d345b2ad300cc1419a9af70c43d1cf04a8369e"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcuieventtypes/stylus.json": {
@@ -10790,7 +10790,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcvirtualcontroller/connect(replyhandler:).json": {
       "etag": "\"3837-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/connect-replyhandler.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/connect(replyhandler).md",
       "hash": "6ff0fd1f69e1e7b9d6f961c744c1ef371abf5758c52e13bccaf8c892692f09d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcvirtualcontroller/controller.json": {
@@ -10800,7 +10800,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcvirtualcontroller/disconnect().json": {
       "etag": "\"226a-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/disconnect.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/disconnect().md",
       "hash": "a24879044900b85f24fe1bfc1692a2420b8d69cdb8414de56e374c47c99ebfdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcvirtualcontroller/elementconfiguration.json": {
@@ -10825,22 +10825,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcvirtualcontroller/init(configuration:).json": {
       "etag": "\"2b0a-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/init-configuration.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/init(configuration).md",
       "hash": "01aefb40e56b24e7949bccab441a61fe248cc4c615c181d5ae177ac8648c01bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcvirtualcontroller/setposition(_:fordirectionpadelement:).json": {
       "etag": "\"3f1c-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/setposition-fordirectionpadelement.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/setposition(_,fordirectionpadelement).md",
       "hash": "3548ecb27ea0105914587b1d7ab5dc40ef4b2afc17f4ab56c5c436bb32a80e28"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcvirtualcontroller/setvalue(_:forbuttonelement:).json": {
       "etag": "\"3d59-65d55d1a17fbe-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/setvalue-forbuttonelement.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/setvalue(_,forbuttonelement).md",
       "hash": "558021ca4904cc09da9849893a8e75249f04a868ff6456b84098ed200cabf0b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcvirtualcontroller/updateconfiguration(forelement:configuration:).json": {
       "etag": "\"4517-65d55d1a3771a-df\"",
-      "file_path": "documentation/GameController/gcvirtualcontroller/updateconfiguration-forelementconfiguration.md",
+      "file_path": "documentation/GameController/gcvirtualcontroller/updateconfiguration(forelement,configuration).md",
       "hash": "3ecba517910f08f5b1d5b0ede22fa57de54ab421c30e6f800fda124e31a261f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/gcxboxgamepad.json": {
@@ -10905,32 +10905,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/nsdatafromgcextendedgamepadsnapshotdata(_:).json": {
       "etag": "\"83e6-65d55d1ae93a7-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcextendedgamepadsnapshotdata.md",
+      "file_path": "documentation/GameController/nsdatafromgcextendedgamepadsnapshotdata(_).md",
       "hash": "6856eed7b5b73e51be29ccac832cb8317c4ff6d4604bf0c057ac525d5222cab3"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/nsdatafromgcextendedgamepadsnapshotdatav100(_:).json": {
       "etag": "\"4640-65d55d1939fd7-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcextendedgamepadsnapshotdatav100.md",
+      "file_path": "documentation/GameController/nsdatafromgcextendedgamepadsnapshotdatav100(_).md",
       "hash": "39e41f62a881b3f69781f2a54ffdb9cc7bfe69a5d8b8ddab90d7b7a4ed641062"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/nsdatafromgcgamepadsnapshotdatav100(_:).json": {
       "etag": "\"425e-65d55d18582a1-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcgamepadsnapshotdatav100.md",
+      "file_path": "documentation/GameController/nsdatafromgcgamepadsnapshotdatav100(_).md",
       "hash": "247a71efda758517928f3c39ff0f03a39aac6e80edcdb78b45498b6e06c59af7"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/nsdatafromgcmicrogamepadsnapshotdata(_:).json": {
       "etag": "\"8379-65d55d19ae45a-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcmicrogamepadsnapshotdata.md",
+      "file_path": "documentation/GameController/nsdatafromgcmicrogamepadsnapshotdata(_).md",
       "hash": "31e65d7b13df05496c9bc8bfe5fb8df6b18d9931ec65f1bea75566603ced33e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/nsdatafromgcmicrogamepadsnapshotdatav100(_:).json": {
       "etag": "\"4532-65d55d196b83d-df\"",
-      "file_path": "documentation/GameController/nsdatafromgcmicrogamepadsnapshotdatav100.md",
+      "file_path": "documentation/GameController/nsdatafromgcmicrogamepadsnapshotdatav100(_).md",
       "hash": "4dc52da22a4064704bcb609f7d385ceae749b1730f6a10ebd1ce771f97a3ff6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/nsstringfromgcpoint2(_:).json": {
       "etag": "\"2e34-65d55d1a8ed06-df\"",
-      "file_path": "documentation/GameController/nsstringfromgcpoint2.md",
+      "file_path": "documentation/GameController/nsstringfromgcpoint2(_).md",
       "hash": "bbc4bfeb55ed056253d982722d1538308b964141dbcf251677d70cb6fc56c488"
     },
     "https://developer.apple.com/tutorials/data/documentation/gamecontroller/product-category-constants.json": {

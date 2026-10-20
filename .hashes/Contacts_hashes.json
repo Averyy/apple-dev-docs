@@ -32,7 +32,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cnauthorizationstatus/init(rawvalue:)": {
       "etag": "\"1383-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cnauthorizationstatus/init(rawvalue).md",
       "hash": "209049e23c3f68c3001863baa4b5474d6a608fa1aa70ec4b1808fe11588906e6"
     },
     "https://developer.apple.com/documentation/contacts/cnauthorizationstatus/limited": {
@@ -142,12 +142,12 @@
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryevent/accept(_:)": {
       "etag": "\"23d8-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryevent/accept.md",
+      "file_path": "documentation/Contacts/cnchangehistoryevent/accept(_).md",
       "hash": "f41d0eae8d1219522e6b19f10d79629b54f0e190ba94771ae011a1659044bd12"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryevent/init(coder:)": {
       "etag": "\"14ce-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryevent/init-coder.md",
+      "file_path": "documentation/Contacts/cnchangehistoryevent/init(coder).md",
       "hash": "4944d27c82382075609cdbd5babfb5b4a118225ba91cce1fcbba5780577f66ad"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor": {
@@ -157,57 +157,57 @@
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-1pf2a": {
       "etag": "\"32b2-65d55ce919007-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-1pf2a.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-1pf2a.md",
       "hash": "9f72ff8208472cec98c476a83cc7acf6223103916c12d5dfe890b0b7f95f4cf9"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-23p9h": {
       "etag": "\"3249-65d55ce919007-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-23p9h.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-23p9h.md",
       "hash": "97207f0fe2965598e372279bcb74b2d6c1f47b8f27e9b293d2b2281500cc541b"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-2yhz3": {
       "etag": "\"285d-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-2yhz3.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-2yhz3.md",
       "hash": "38e6bdb23ef52586ef94cfc52b99b79f52ad839fbe05e0ea75cefb2f2139d105"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-82duo": {
       "etag": "\"3255-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-82duo.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-82duo.md",
       "hash": "67ab6b30f0934e43c763276163da1cfdf037c138e3f8e291ae216af20a0f0322"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-9w73y": {
       "etag": "\"325f-65d55ce919007-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-9w73y.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-9w73y.md",
       "hash": "29002e47a472b9a62107a265931e8a0b2051f1cd48227a252eac7269060df684"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-ci4z": {
       "etag": "\"32bc-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-ci4z.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-ci4z.md",
       "hash": "862278244e1a0a682a2ee6b476f71cfc11efb46cb8e3a5acd830d3cf90444927"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-ve62": {
       "etag": "\"31f6-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-ve62.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-ve62.md",
       "hash": "152a505d1fb61d854c858fcc411ad0ea8053302e108f5d92ce2eb91a604e9da5"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visitaddmember(_:)": {
       "etag": "\"2e7f-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitaddmember.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitaddmember(_).md",
       "hash": "fdb8f41b49565230f6a0482b9c41daf28a45275be34ca9aec24112f4f4cf7d46"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visitaddsubgroup(_:)": {
       "etag": "\"2ed4-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitaddsubgroup.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitaddsubgroup(_).md",
       "hash": "7473f51d3d6f4d2124e3e7bf3b99e3d38515bc601f025200bdf6a9fd240b41a1"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visitremovemember(_:)": {
       "etag": "\"2f18-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitremovemember.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitremovemember(_).md",
       "hash": "55d6d32058f2be71b52b5ae48de6812e5ceba20addcc722d7785d3401a71f417"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryeventvisitor/visitremovesubgroup(_:)": {
       "etag": "\"2f6d-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitremovesubgroup.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitremovesubgroup(_).md",
       "hash": "e22a6c4f966ffca03f71a983b96672828e980fc48927d5ca551995df81d93931"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest": {
@@ -232,7 +232,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/init(coder:)": {
       "etag": "\"1541-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryfetchrequest/init-coder.md",
+      "file_path": "documentation/Contacts/cnchangehistoryfetchrequest/init(coder).md",
       "hash": "0afb9739cd7b4f18723c2f88e886b5755a5b5bdbc39312433fa9f8c944c603f9"
     },
     "https://developer.apple.com/documentation/contacts/cnchangehistoryfetchrequest/mutableobjects": {
@@ -307,7 +307,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontact/arekeysavailable(_:)": {
       "etag": "\"3b6c-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/arekeysavailable.md",
+      "file_path": "documentation/Contacts/cncontact/arekeysavailable(_).md",
       "hash": "c8c7a3a3e21f0af9360ed13cd60cc1e49dcb1df26f16e89ceba17b815301909d"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/birthday": {
@@ -317,7 +317,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontact/comparator(fornamesortorder:)": {
       "etag": "\"3986-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontact/comparator-fornamesortorder.md",
+      "file_path": "documentation/Contacts/cncontact/comparator(fornamesortorder).md",
       "hash": "a8ec98db47aed549bdd7d3f1f276238eb930f1d98da741cb7286025d4647dbf7"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/contactrelations": {
@@ -352,7 +352,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontact/descriptorforallcomparatorkeys()": {
       "etag": "\"3ad8-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/descriptorforallcomparatorkeys.md",
+      "file_path": "documentation/Contacts/cncontact/descriptorforallcomparatorkeys().md",
       "hash": "4c4afbc91f601f9b9600d8d358c54e669685f84496648816a495b5e385703920"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/emailaddresses": {
@@ -387,7 +387,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontact/init(coder:)": {
       "etag": "\"142c-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontact/init-coder.md",
+      "file_path": "documentation/Contacts/cncontact/init(coder).md",
       "hash": "51939cdfd8904061f933ef400762279f045b05547dd33c58e2cbf1a9dacd97d0"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/instantmessageaddresses": {
@@ -397,12 +397,12 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontact/iskeyavailable(_:)": {
       "etag": "\"3df3-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/iskeyavailable.md",
+      "file_path": "documentation/Contacts/cncontact/iskeyavailable(_).md",
       "hash": "e457668b8d5930e1c0e37da42cadd36b4c85762b4a01675da7a4ac9717d0cbc7"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/isunifiedwithcontact(withidentifier:)": {
       "etag": "\"42dd-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/isunifiedwithcontact-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontact/isunifiedwithcontact(withidentifier).md",
       "hash": "05bb3cabfeaedd255f86c615052ad42c76505786324b7eb4df173a668462708d"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/jobtitle": {
@@ -412,7 +412,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontact/localizedstring(forkey:)": {
       "etag": "\"281a-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/localizedstring-forkey.md",
+      "file_path": "documentation/Contacts/cncontact/localizedstring(forkey).md",
       "hash": "c1a309be658bf0d5d57e46b4561a428bb3b0041d3885770d5e0789e91622aa54"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/middlename": {
@@ -482,32 +482,32 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontact/predicateforcontacts(matching:)": {
       "etag": "\"5431-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontacts-matching.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontacts(matching).md",
       "hash": "825771718d081c00b6c1aa951ea2710ca713cc9e0c2125b0f31a743d10ea0ecd"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/predicateforcontacts(matchingemailaddress:)": {
       "etag": "\"54c9-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontacts-matchingemailaddress.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontacts(matchingemailaddress).md",
       "hash": "c757ec007c998fa20c257d849ee97d7ec6d69a76ae5d57f94448a9d22e1dd700"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/predicateforcontacts(matchingname:)": {
       "etag": "\"54f8-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontacts-matchingname.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontacts(matchingname).md",
       "hash": "f1b1eb8c8c22483ad266daffdd86e7882f42fb78fc056dc6bbbcf29c5793494f"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/predicateforcontacts(withidentifiers:)": {
       "etag": "\"53be-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontacts-withidentifiers.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontacts(withidentifiers).md",
       "hash": "bfaa1ff042a65f908f53dfa26bda051616c449051ccd1229c4254f489d9bbc48"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/predicateforcontactsincontainer(withidentifier:)": {
       "etag": "\"5507-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontactsincontainer-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontactsincontainer(withidentifier).md",
       "hash": "41caf7bfd293a74eb3fa66b72ad8ed55cda1d8972c7ac7405e89ed199d1bd259"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/predicateforcontactsingroup(withidentifier:)": {
       "etag": "\"54d8-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontactsingroup-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontactsingroup(withidentifier).md",
       "hash": "bf99dd941a49d05ffbbb56a5ab29d957ecbaa37525fa10c0bbe1a22f4c81abed"
     },
     "https://developer.apple.com/documentation/contacts/cncontact/previousfamilyname": {
@@ -567,7 +567,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactdisplaynameorder/init(rawvalue:)": {
       "etag": "\"13a7-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactdisplaynameorder/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontactdisplaynameorder/init(rawvalue).md",
       "hash": "eb1ec8108b56fbb0d9859e56c52f8c4d0830f0609db38627a3f1835272e58b27"
     },
     "https://developer.apple.com/documentation/contacts/cncontactdisplaynameorder/userdefault": {
@@ -592,12 +592,12 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactfetchrequest/init(coder:)": {
       "etag": "\"14cc-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cncontactfetchrequest/init-coder.md",
+      "file_path": "documentation/Contacts/cncontactfetchrequest/init(coder).md",
       "hash": "e33ae0686d10c4936b9a542c70484b71f254b1952dcc6b30088eb2d5f4879c47"
     },
     "https://developer.apple.com/documentation/contacts/cncontactfetchrequest/init(keystofetch:)": {
       "etag": "\"29a7-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cncontactfetchrequest/init-keystofetch.md",
+      "file_path": "documentation/Contacts/cncontactfetchrequest/init(keystofetch).md",
       "hash": "86714b2598fa5a59e58805dc67092e64bbb64a4b314abe7ce3f4fab1f7a315df"
     },
     "https://developer.apple.com/documentation/contacts/cncontactfetchrequest/keystofetch": {
@@ -632,22 +632,22 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/attributedstring(from:defaultattributes:)": {
       "etag": "\"558e-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/attributedstring-fromdefaultattributes.md",
+      "file_path": "documentation/Contacts/cncontactformatter/attributedstring(from,defaultattributes).md",
       "hash": "f25aca97f6b5d2565ea0400c7cc7fd7f378d2da46e5df5b78a047ea3f67aaa5d"
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/attributedstring(from:style:defaultattributes:)": {
       "etag": "\"5f20-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/attributedstring-fromstyledefaultattributes.md",
+      "file_path": "documentation/Contacts/cncontactformatter/attributedstring(from,style,defaultattributes).md",
       "hash": "43f3aa8717ae8a147cac05ea7270db329cb537b2e5d541c7e3f09c57310589e5"
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/delimiter(for:)": {
       "etag": "\"3898-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/delimiter-for.md",
+      "file_path": "documentation/Contacts/cncontactformatter/delimiter(for).md",
       "hash": "9a7c8f6a5a64f56342cf455ecb5d113c421976793a849deef1550547e4a8dae1"
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/descriptorforrequiredkeys(for:)": {
       "etag": "\"3b6c-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/descriptorforrequiredkeys-for.md",
+      "file_path": "documentation/Contacts/cncontactformatter/descriptorforrequiredkeys(for).md",
       "hash": "9e3afea319879343c1bcabc148949bb7e398e5df747b9118ad4933ee9e937879"
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/descriptorforrequiredkeysfordelimiter": {
@@ -662,17 +662,17 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/nameorder(for:)": {
       "etag": "\"347a-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/nameorder-for.md",
+      "file_path": "documentation/Contacts/cncontactformatter/nameorder(for).md",
       "hash": "9f96eff566baf444b62b59d0f04f7332f3e4d02bd1a47fb459b5e5931601f8cc"
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/string(from:)": {
       "etag": "\"3233-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/string-from.md",
+      "file_path": "documentation/Contacts/cncontactformatter/string(from).md",
       "hash": "7b699f71af39f1558ce000b6b0cc0c20e7f0043253ea1d0e44d24d61f5168b23"
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/string(from:style:)": {
       "etag": "\"3bec-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/string-fromstyle.md",
+      "file_path": "documentation/Contacts/cncontactformatter/string(from,style).md",
       "hash": "b65d6c1b4821e91f7b6b694c1dd48dddf3b57d6249d7557d465c974b0dd5c3d4"
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatter/style": {
@@ -692,7 +692,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatterstyle/init(rawvalue:)": {
       "etag": "\"1377-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactformatterstyle/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontactformatterstyle/init(rawvalue).md",
       "hash": "d367bdb6efde792549af3c133e4c2bf657a8f1f6f9b105324c99836b8ec3476d"
     },
     "https://developer.apple.com/documentation/contacts/cncontactformatterstyle/phoneticfullname": {
@@ -817,7 +817,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactproperty/init(coder:)": {
       "etag": "\"1471-65d55ce973331-df\"",
-      "file_path": "documentation/Contacts/cncontactproperty/init-coder.md",
+      "file_path": "documentation/Contacts/cncontactproperty/init(coder).md",
       "hash": "3133bef11ff7e53c75d44882cdae4f4db263271d93d2d8cb4b7462a99e790a9c"
     },
     "https://developer.apple.com/documentation/contacts/cncontactproperty/key": {
@@ -852,12 +852,12 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactrelation/init(coder:)": {
       "etag": "\"1493-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontactrelation/init-coder.md",
+      "file_path": "documentation/Contacts/cncontactrelation/init(coder).md",
       "hash": "052ac43b1ca46d9c4fa5c40909e125c6a0173886a36c5c8d272f1352d9c17357"
     },
     "https://developer.apple.com/documentation/contacts/cncontactrelation/init(name:)": {
       "etag": "\"2596-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontactrelation/init-name.md",
+      "file_path": "documentation/Contacts/cncontactrelation/init(name).md",
       "hash": "cf69f686cf029ab8b7533f6103cc9dd8332c83a19926df5a1da0598ead8209d9"
     },
     "https://developer.apple.com/documentation/contacts/cncontactrelation/name": {
@@ -892,7 +892,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactsortorder/init(rawvalue:)": {
       "etag": "\"1319-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cncontactsortorder/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontactsortorder/init(rawvalue).md",
       "hash": "487961f16d751aa9906e76ef51d7f1d25ff50a3305ee1cdfe859def9f3be5a87"
     },
     "https://developer.apple.com/documentation/contacts/cncontactsortorder/none": {
@@ -912,12 +912,12 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/authorizationstatus(for:)": {
       "etag": "\"3aee-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/authorizationstatus-for.md",
+      "file_path": "documentation/Contacts/cncontactstore/authorizationstatus(for).md",
       "hash": "c8ba9b3fcac3d9b8393d8aa1731b72bef3f2b56738218b542bb80aec8372a269"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/containers(matching:)": {
       "etag": "\"4938-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/containers-matching.md",
+      "file_path": "documentation/Contacts/cncontactstore/containers(matching).md",
       "hash": "52f1983dc2d6d572640c61328a8440dbaa3c462f17c0af0ae109c08218776520"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/currenthistorytoken": {
@@ -927,42 +927,42 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/defaultcontaineridentifier()": {
       "etag": "\"3042-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/defaultcontaineridentifier.md",
+      "file_path": "documentation/Contacts/cncontactstore/defaultcontaineridentifier().md",
       "hash": "c522019194e5a079ced2064336c4a813488a46ffad1c74472839c68c20cc6a94"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/enumeratecontacts(with:usingblock:)": {
       "etag": "\"6e3d-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/enumeratecontacts-withusingblock.md",
+      "file_path": "documentation/Contacts/cncontactstore/enumeratecontacts(with,usingblock).md",
       "hash": "f1919f55bf773a084d81fb91139139d139977951da0ea68bec7f107a1e539ea1"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/execute(_:)": {
       "etag": "\"39d6-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/execute.md",
+      "file_path": "documentation/Contacts/cncontactstore/execute(_).md",
       "hash": "5e6061c548bb3fa5137eee84e5ebf60620f81d25096435510d09d7b0070ec5cf"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/groups(matching:)": {
       "etag": "\"47d7-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/groups-matching.md",
+      "file_path": "documentation/Contacts/cncontactstore/groups(matching).md",
       "hash": "8d2c9673587ccdc7a392d256a4a3aa50f3583ffaef028382b98caeb593bd8269"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/requestaccess(for:completionhandler:)": {
       "etag": "\"5abc-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/requestaccess-forcompletionhandler.md",
+      "file_path": "documentation/Contacts/cncontactstore/requestaccess(for,completionhandler).md",
       "hash": "9baca520f77c3d3ac4f2ac4e619921148377c858ac5db98fa41db43d0aa85209"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/unifiedcontact(withidentifier:keystofetch:)": {
       "etag": "\"73b7-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/unifiedcontact-withidentifierkeystofetch.md",
+      "file_path": "documentation/Contacts/cncontactstore/unifiedcontact(withidentifier,keystofetch).md",
       "hash": "b89e83a232362773c8f3570821bc77ce14d06079fccaaf61a2000aba68af52d2"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/unifiedcontacts(matching:keystofetch:)": {
       "etag": "\"6da9-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/unifiedcontacts-matchingkeystofetch.md",
+      "file_path": "documentation/Contacts/cncontactstore/unifiedcontacts(matching,keystofetch).md",
       "hash": "199da841dc9d98e62aa123fe678cd4dcd8d5673e3b9ba82cce7756e069da61b9"
     },
     "https://developer.apple.com/documentation/contacts/cncontactstore/unifiedmecontactwithkeys(tofetch:)": {
       "etag": "\"59d9-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/unifiedmecontactwithkeys-tofetch.md",
+      "file_path": "documentation/Contacts/cncontactstore/unifiedmecontactwithkeys(tofetch).md",
       "hash": "afa12b7924c5e9f89152c0dee122b64f67f51c06b3569f95bd91beef6c7f3c2a"
     },
     "https://developer.apple.com/documentation/contacts/cncontactsuserdefaults": {
@@ -977,7 +977,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactsuserdefaults/shared()": {
       "etag": "\"1bd2-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cncontactsuserdefaults/shared.md",
+      "file_path": "documentation/Contacts/cncontactsuserdefaults/shared().md",
       "hash": "cae6aa3ed6376fc06869d40b80e30d281924ccdf2a97a31aef20eb5786b0a64c"
     },
     "https://developer.apple.com/documentation/contacts/cncontactsuserdefaults/sortorder": {
@@ -997,7 +997,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontacttype/init(rawvalue:)": {
       "etag": "\"12ac-65d55ce82c702-df\"",
-      "file_path": "documentation/Contacts/cncontacttype/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontacttype/init(rawvalue).md",
       "hash": "974188f17590959df256e9e87f9fdce5e85b070542c56d223c86efd3858290a0"
     },
     "https://developer.apple.com/documentation/contacts/cncontacttype/organization": {
@@ -1027,17 +1027,17 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontactvcardserialization/contacts(with:)": {
       "etag": "\"370d-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactvcardserialization/contacts-with.md",
+      "file_path": "documentation/Contacts/cncontactvcardserialization/contacts(with).md",
       "hash": "1ac2f1f9ed07a95e06ba05a0a0ba82b0375ee67ed974caa9aa61f8dfe7d6a39b"
     },
     "https://developer.apple.com/documentation/contacts/cncontactvcardserialization/data(with:)": {
       "etag": "\"39da-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactvcardserialization/data-with.md",
+      "file_path": "documentation/Contacts/cncontactvcardserialization/data(with).md",
       "hash": "e325d6d6d970852b62b204f44e6f73478dc8d7f45bc027a4121db775b86b01b8"
     },
     "https://developer.apple.com/documentation/contacts/cncontactvcardserialization/descriptorforrequiredkeys()": {
       "etag": "\"27db-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactvcardserialization/descriptorforrequiredkeys.md",
+      "file_path": "documentation/Contacts/cncontactvcardserialization/descriptorforrequiredkeys().md",
       "hash": "1d4ccdda6019f32d7cf5026068b5e4f314291bd95e8b53ab2bed38bf1a878582"
     },
     "https://developer.apple.com/documentation/contacts/cncontainer": {
@@ -1052,7 +1052,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontainer/init(coder:)": {
       "etag": "\"140a-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cncontainer/init-coder.md",
+      "file_path": "documentation/Contacts/cncontainer/init(coder).md",
       "hash": "0b623ceb81ec6a5953bb30f3c791de22749c1f11aae6807863d216f2d3c62da7"
     },
     "https://developer.apple.com/documentation/contacts/cncontainer/name": {
@@ -1062,17 +1062,17 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontainer/predicateforcontainerofcontact(withidentifier:)": {
       "etag": "\"41b4-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cncontainer/predicateforcontainerofcontact-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontainer/predicateforcontainerofcontact(withidentifier).md",
       "hash": "6df8a99211a2316591ad85871e0451a6ac27404b56965dc6c5f760c551be6238"
     },
     "https://developer.apple.com/documentation/contacts/cncontainer/predicateforcontainerofgroup(withidentifier:)": {
       "etag": "\"4036-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cncontainer/predicateforcontainerofgroup-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontainer/predicateforcontainerofgroup(withidentifier).md",
       "hash": "cf544dc3c21624432976959706cff52e1d13311a50fe955a921e9f12621632c5"
     },
     "https://developer.apple.com/documentation/contacts/cncontainer/predicateforcontainers(withidentifiers:)": {
       "etag": "\"3d15-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cncontainer/predicateforcontainers-withidentifiers.md",
+      "file_path": "documentation/Contacts/cncontainer/predicateforcontainers(withidentifiers).md",
       "hash": "6d560f0dc32e9fd16d7d8558f445c80079af858e98404397515456e75dee84cf"
     },
     "https://developer.apple.com/documentation/contacts/cncontainer/type": {
@@ -1107,7 +1107,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cncontainertype/init(rawvalue:)": {
       "etag": "\"1316-65d55ce82c702-df\"",
-      "file_path": "documentation/Contacts/cncontainertype/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontainertype/init(rawvalue).md",
       "hash": "7c0650905fcd752237bc0179fc9c1eb94f1467db9b8bdccbf909b64ec335e399"
     },
     "https://developer.apple.com/documentation/contacts/cncontainertype/local": {
@@ -1137,7 +1137,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cnentitytype/init(rawvalue:)": {
       "etag": "\"12a8-65d55ce9378de-df\"",
-      "file_path": "documentation/Contacts/cnentitytype/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cnentitytype/init(rawvalue).md",
       "hash": "0cf69dda6a4639b863bc560712aa9063f07e848a0bf819b914512ff7ee74f689"
     },
     "https://developer.apple.com/documentation/contacts/cnerror": {
@@ -1262,7 +1262,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cnerror/code/init(rawvalue:)": {
       "etag": "\"1522-65d55ce919007-df\"",
-      "file_path": "documentation/Contacts/cnerror/code/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cnerror/code/init(rawvalue).md",
       "hash": "19fc764b37f9a5b819425310e676a55f40fd30f6a186b779226c67b84d286345"
     },
     "https://developer.apple.com/documentation/contacts/cnerror/code/insertedrecordalreadyexists": {
@@ -1512,7 +1512,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cngroup/init(coder:)": {
       "etag": "\"13b9-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cngroup/init-coder.md",
+      "file_path": "documentation/Contacts/cngroup/init(coder).md",
       "hash": "eaaa7f46e1fb25327c36f9fb05927c120010f91ed60d36526256d6bc87c33155"
     },
     "https://developer.apple.com/documentation/contacts/cngroup/name": {
@@ -1522,17 +1522,17 @@
     },
     "https://developer.apple.com/documentation/contacts/cngroup/predicateforgroups(withidentifiers:)": {
       "etag": "\"3bee-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cngroup/predicateforgroups-withidentifiers.md",
+      "file_path": "documentation/Contacts/cngroup/predicateforgroups(withidentifiers).md",
       "hash": "3de8b9afcc82445045c08a374e39b91fa6df1e7db4eefe2dd3dd682e3a198b76"
     },
     "https://developer.apple.com/documentation/contacts/cngroup/predicateforgroupsincontainer(withidentifier:)": {
       "etag": "\"3f60-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cngroup/predicateforgroupsincontainer-withidentifier.md",
+      "file_path": "documentation/Contacts/cngroup/predicateforgroupsincontainer(withidentifier).md",
       "hash": "c3fa8db7b2f9c8c50a52ea73480a54dd020374fc914f6a80ad37eb69ae3a4061"
     },
     "https://developer.apple.com/documentation/contacts/cngroup/predicateforsubgroupsingroup(withidentifier:)": {
       "etag": "\"3d9c-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cngroup/predicateforsubgroupsingroup-withidentifier.md",
+      "file_path": "documentation/Contacts/cngroup/predicateforsubgroupsingroup(withidentifier).md",
       "hash": "6426f91a171c78acc3eef98466508eb63c0c2e183eb23f1f85a33bd2948ec35e"
     },
     "https://developer.apple.com/documentation/contacts/cngroupidentifierkey": {
@@ -1552,22 +1552,22 @@
     },
     "https://developer.apple.com/documentation/contacts/cninstantmessageaddress/init(coder:)": {
       "etag": "\"14fd-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cninstantmessageaddress/init-coder.md",
+      "file_path": "documentation/Contacts/cninstantmessageaddress/init(coder).md",
       "hash": "3d4c3b7a6b64e58a5e5ee39d59621d6965fc5f7f0bbd808aa39ef8f0b8a94e0b"
     },
     "https://developer.apple.com/documentation/contacts/cninstantmessageaddress/init(username:service:)": {
       "etag": "\"2e93-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cninstantmessageaddress/init-usernameservice.md",
+      "file_path": "documentation/Contacts/cninstantmessageaddress/init(username,service).md",
       "hash": "28cdaaadf85c44fa980c9c0d6a5dc2d9fe00a1ebd560a5577e2f1689d6b5049b"
     },
     "https://developer.apple.com/documentation/contacts/cninstantmessageaddress/localizedstring(forkey:)": {
       "etag": "\"355b-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cninstantmessageaddress/localizedstring-forkey.md",
+      "file_path": "documentation/Contacts/cninstantmessageaddress/localizedstring(forkey).md",
       "hash": "442317bb1437e1924373362fac170be703147b48c534709201547a85d5789391"
     },
     "https://developer.apple.com/documentation/contacts/cninstantmessageaddress/localizedstring(forservice:)": {
       "etag": "\"5b77-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cninstantmessageaddress/localizedstring-forservice.md",
+      "file_path": "documentation/Contacts/cninstantmessageaddress/localizedstring(forservice).md",
       "hash": "a55bce875b28ee67a865ed186d5b8f82390523c0673934ccb720f0522a33434c"
     },
     "https://developer.apple.com/documentation/contacts/cninstantmessageaddress/service": {
@@ -2742,12 +2742,12 @@
     },
     "https://developer.apple.com/documentation/contacts/cnlabeledvalue/init(coder:)": {
       "etag": "\"146b-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/init-coder.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/init(coder).md",
       "hash": "0bd5f9dc6c641b14230fd4957eb63972e3e6ba9e74020cfcadbcce67f4aa4859"
     },
     "https://developer.apple.com/documentation/contacts/cnlabeledvalue/init(label:value:)": {
       "etag": "\"3012-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/init-labelvalue.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/init(label,value).md",
       "hash": "c50a36487985f784511a9e0337760c34f44b89a2374e4550f13f974ca4fa5c79"
     },
     "https://developer.apple.com/documentation/contacts/cnlabeledvalue/label": {
@@ -2757,22 +2757,22 @@
     },
     "https://developer.apple.com/documentation/contacts/cnlabeledvalue/localizedstring(forlabel:)": {
       "etag": "\"27f8-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/localizedstring-forlabel.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/localizedstring(forlabel).md",
       "hash": "45b34fc7da0c951e2e0dfc62adb8bbe74102d01f3dd301b7794a1ff82954b3d1"
     },
     "https://developer.apple.com/documentation/contacts/cnlabeledvalue/settinglabel(_:)": {
       "etag": "\"31ed-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/settinglabel.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/settinglabel(_).md",
       "hash": "6ad4d5be66d7a0906ae725a09c7d236573f3012074218280e9a3ce6e62eb0579"
     },
     "https://developer.apple.com/documentation/contacts/cnlabeledvalue/settinglabel(_:value:)": {
       "etag": "\"3b19-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/settinglabel-value.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/settinglabel(_,value).md",
       "hash": "11331d5a34352a53f671265088daf0297e9362f1fefd794fcc395f699ef91fab"
     },
     "https://developer.apple.com/documentation/contacts/cnlabeledvalue/settingvalue(_:)": {
       "etag": "\"31ea-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/settingvalue.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/settingvalue(_).md",
       "hash": "d9fadaed215e17a4f85509392886f20012e62e3bc8a06e3c163a1bb196d4cb88"
     },
     "https://developer.apple.com/documentation/contacts/cnlabeledvalue/value": {
@@ -3057,22 +3057,22 @@
     },
     "https://developer.apple.com/documentation/contacts/cnphonenumber/init()": {
       "etag": "\"1ecc-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnphonenumber/init.md",
+      "file_path": "documentation/Contacts/cnphonenumber/init().md",
       "hash": "832e3ca8ea7db37ed9e74d33d7ffa6dea1294ad59009ee0103556640ef1662c2"
     },
     "https://developer.apple.com/documentation/contacts/cnphonenumber/init(coder:)": {
       "etag": "\"1431-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnphonenumber/init-coder.md",
+      "file_path": "documentation/Contacts/cnphonenumber/init(coder).md",
       "hash": "a86d54a3745896be3296575b492982231374f62029a78fb1c8fd83f3a109dbc2"
     },
     "https://developer.apple.com/documentation/contacts/cnphonenumber/init(stringvalue:)": {
       "etag": "\"282f-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnphonenumber/init-stringvalue.md",
+      "file_path": "documentation/Contacts/cnphonenumber/init(stringvalue).md",
       "hash": "01fd6a8c5bd943d03eedf4aab50638257c524ced9a236c637d8bf19b384ffee2"
     },
     "https://developer.apple.com/documentation/contacts/cnphonenumber/new()": {
       "etag": "\"207a-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnphonenumber/new.md",
+      "file_path": "documentation/Contacts/cnphonenumber/new().md",
       "hash": "f13bf5bdb1555c2a5c7c1ca83ab6eb62a568297ff0e764bdf2e3591672914c58"
     },
     "https://developer.apple.com/documentation/contacts/cnphonenumber/stringvalue": {
@@ -3097,7 +3097,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdress/init(coder:)": {
       "etag": "\"1459-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdress/init-coder.md",
+      "file_path": "documentation/Contacts/cnpostaladdress/init(coder).md",
       "hash": "dd965aa8c7031daec657cfac9d6a6f7dc646a35173db1b181ed65cb52d672628"
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdress/isocountrycode": {
@@ -3107,7 +3107,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdress/localizedstring(forkey:)": {
       "etag": "\"447c-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdress/localizedstring-forkey.md",
+      "file_path": "documentation/Contacts/cnpostaladdress/localizedstring(forkey).md",
       "hash": "0a3c37415b879c93de2fa6bc8b07d51f1d965bf4f1781bcdbf869ca70d8d5c15"
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdress/postalcode": {
@@ -3152,22 +3152,22 @@
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdressformatter/attributedstring(from:style:withdefaultattributes:)": {
       "etag": "\"644a-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatter/attributedstring-fromstylewithdefaultattributes.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatter/attributedstring(from,style,withdefaultattributes).md",
       "hash": "ddbcfbcc1c4d9fb5aa4444388b984f23019646e98eaeab885cb52e694c6d03fc"
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdressformatter/attributedstring(from:withdefaultattributes:)": {
       "etag": "\"5b76-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatter/attributedstring-fromwithdefaultattributes.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatter/attributedstring(from,withdefaultattributes).md",
       "hash": "9ac83aa61e5b8195a08e4ea6c06b0d2d90076c19af6b53841dda85b4a96ae492"
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdressformatter/string(from:)": {
       "etag": "\"3324-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatter/string-from.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatter/string(from).md",
       "hash": "ba2e95b92f3272de99014b397f90a7b4aa9138103ec0869542d5713f159076e9"
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdressformatter/string(from:style:)": {
       "etag": "\"3ebc-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatter/string-fromstyle.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatter/string(from,style).md",
       "hash": "803967d416fe207090c21d5bfbded969ec9047ee7aa5595074cc807ab48e590d"
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdressformatter/style": {
@@ -3182,7 +3182,7 @@
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdressformatterstyle/init(rawvalue:)": {
       "etag": "\"13e8-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatterstyle/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatterstyle/init(rawvalue).md",
       "hash": "d6e4b2a91080002b992364106e410cd17c1107a58263e2352daba0f087cd4f50"
     },
     "https://developer.apple.com/documentation/contacts/cnpostaladdressformatterstyle/mailingaddress": {
@@ -3237,42 +3237,42 @@
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/add(_:tocontainerwithidentifier:)-4ikaa": {
       "etag": "\"45f5-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/add-tocontainerwithidentifier-4ikaa.md",
+      "file_path": "documentation/Contacts/cnsaverequest/add(_,tocontainerwithidentifier)-4ikaa.md",
       "hash": "1242ee945afbc7e0b696b8c8d73e080491253fdbff7e4c67d3df18e35f4cfe71"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/add(_:tocontainerwithidentifier:)-7eut4": {
       "etag": "\"3b37-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/add-tocontainerwithidentifier-7eut4.md",
+      "file_path": "documentation/Contacts/cnsaverequest/add(_,tocontainerwithidentifier)-7eut4.md",
       "hash": "215c87c94c4380833f0d6fcd837f29ba09d50189ac4f441f00633c345b6b8182"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/addmember(_:to:)": {
       "etag": "\"4331-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/addmember-to.md",
+      "file_path": "documentation/Contacts/cnsaverequest/addmember(_,to).md",
       "hash": "1cd8c3d61a83d0569d83a00243a79942d3c205b03ac42f2ca36b0383688a1313"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/addsubgroup(_:to:)": {
       "etag": "\"2e0d-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/addsubgroup-to.md",
+      "file_path": "documentation/Contacts/cnsaverequest/addsubgroup(_,to).md",
       "hash": "7d6efe577df589cab101c506e003a507baf9063904e1b75573f2eb5570e8df03"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/delete(_:)-29lsm": {
       "etag": "\"3c22-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/delete-29lsm.md",
+      "file_path": "documentation/Contacts/cnsaverequest/delete(_)-29lsm.md",
       "hash": "64ecda2bf05253fdea2b7cb4e2a36355fb19ce8110edb9487b0419d3d4ceb992"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/delete(_:)-8m1tc": {
       "etag": "\"2eb7-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/delete-8m1tc.md",
+      "file_path": "documentation/Contacts/cnsaverequest/delete(_)-8m1tc.md",
       "hash": "f99b76ef625e065e813926a0059fa200c9e7891502b56553843dfcb6ecbfb8ed"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/removemember(_:from:)": {
       "etag": "\"43cf-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/removemember-from.md",
+      "file_path": "documentation/Contacts/cnsaverequest/removemember(_,from).md",
       "hash": "c3ce2a97da156416dea7af474ab3b1f9017a6937385e630acf9e253dfdee2baf"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/removesubgroup(_:from:)": {
       "etag": "\"2e3a-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/removesubgroup-from.md",
+      "file_path": "documentation/Contacts/cnsaverequest/removesubgroup(_,from).md",
       "hash": "82b5dfe7501374906956bad4183a79c9955f84905a1eb16a9ddedb073cac17c9"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/shouldrefetchcontacts": {
@@ -3287,12 +3287,12 @@
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/update(_:)-3gaig": {
       "etag": "\"3112-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/update-3gaig.md",
+      "file_path": "documentation/Contacts/cnsaverequest/update(_)-3gaig.md",
       "hash": "89a5f1e06334d0086975deceaa247b4eeb46e968abb620f636964c38cf543a34"
     },
     "https://developer.apple.com/documentation/contacts/cnsaverequest/update(_:)-8h6f6": {
       "etag": "\"3be6-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/update-8h6f6.md",
+      "file_path": "documentation/Contacts/cnsaverequest/update(_)-8h6f6.md",
       "hash": "16aee2699a31cd3598fa697f124988a223522f27c7e5f1a33dbb3a5f0c0a173f"
     },
     "https://developer.apple.com/documentation/contacts/cnsocialprofile": {
@@ -3302,22 +3302,22 @@
     },
     "https://developer.apple.com/documentation/contacts/cnsocialprofile/init(coder:)": {
       "etag": "\"1461-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cnsocialprofile/init-coder.md",
+      "file_path": "documentation/Contacts/cnsocialprofile/init(coder).md",
       "hash": "6ed8afe773c5a9eeef9d1c6834f3545ea8be81e0364fffa5cb7b1b29b8d46814"
     },
     "https://developer.apple.com/documentation/contacts/cnsocialprofile/init(urlstring:username:useridentifier:service:)": {
       "etag": "\"331d-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cnsocialprofile/init-urlstringusernameuseridentifierservice.md",
+      "file_path": "documentation/Contacts/cnsocialprofile/init(urlstring,username,useridentifier,service).md",
       "hash": "e9edb7e014da46535d01c5f96d1f198a7bfe88d644a906e9f1457531727883f2"
     },
     "https://developer.apple.com/documentation/contacts/cnsocialprofile/localizedstring(forkey:)": {
       "etag": "\"3cb7-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cnsocialprofile/localizedstring-forkey.md",
+      "file_path": "documentation/Contacts/cnsocialprofile/localizedstring(forkey).md",
       "hash": "d00fa0cd6cdde0f22ecec832f692b913cba942beef41572c619fcb1e66fc8d43"
     },
     "https://developer.apple.com/documentation/contacts/cnsocialprofile/localizedstring(forservice:)": {
       "etag": "\"5651-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cnsocialprofile/localizedstring-forservice.md",
+      "file_path": "documentation/Contacts/cnsocialprofile/localizedstring(forservice).md",
       "hash": "b746dace0e90df7c1439244204e8cdb4d4267f6db9afb2cec57b0cd31b152a24"
     },
     "https://developer.apple.com/documentation/contacts/cnsocialprofile/service": {
@@ -3452,7 +3452,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnauthorizationstatus/init(rawvalue:).json": {
       "etag": "\"1383-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cnauthorizationstatus/init(rawvalue).md",
       "hash": "209049e23c3f68c3001863baa4b5474d6a608fa1aa70ec4b1808fe11588906e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnauthorizationstatus/limited.json": {
@@ -3562,12 +3562,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryevent/accept(_:).json": {
       "etag": "\"23d8-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryevent/accept.md",
+      "file_path": "documentation/Contacts/cnchangehistoryevent/accept(_).md",
       "hash": "f41d0eae8d1219522e6b19f10d79629b54f0e190ba94771ae011a1659044bd12"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryevent/init(coder:).json": {
       "etag": "\"14ce-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryevent/init-coder.md",
+      "file_path": "documentation/Contacts/cnchangehistoryevent/init(coder).md",
       "hash": "4944d27c82382075609cdbd5babfb5b4a118225ba91cce1fcbba5780577f66ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor.json": {
@@ -3577,57 +3577,57 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-1pf2a.json": {
       "etag": "\"32b2-65d55ce919007-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-1pf2a.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-1pf2a.md",
       "hash": "9f72ff8208472cec98c476a83cc7acf6223103916c12d5dfe890b0b7f95f4cf9"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-23p9h.json": {
       "etag": "\"3249-65d55ce919007-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-23p9h.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-23p9h.md",
       "hash": "97207f0fe2965598e372279bcb74b2d6c1f47b8f27e9b293d2b2281500cc541b"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-2yhz3.json": {
       "etag": "\"285d-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-2yhz3.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-2yhz3.md",
       "hash": "38e6bdb23ef52586ef94cfc52b99b79f52ad839fbe05e0ea75cefb2f2139d105"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-82duo.json": {
       "etag": "\"3255-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-82duo.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-82duo.md",
       "hash": "67ab6b30f0934e43c763276163da1cfdf037c138e3f8e291ae216af20a0f0322"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-9w73y.json": {
       "etag": "\"325f-65d55ce919007-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-9w73y.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-9w73y.md",
       "hash": "29002e47a472b9a62107a265931e8a0b2051f1cd48227a252eac7269060df684"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-ci4z.json": {
       "etag": "\"32bc-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-ci4z.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-ci4z.md",
       "hash": "862278244e1a0a682a2ee6b476f71cfc11efb46cb8e3a5acd830d3cf90444927"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visit(_:)-ve62.json": {
       "etag": "\"31f6-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit-ve62.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visit(_)-ve62.md",
       "hash": "152a505d1fb61d854c858fcc411ad0ea8053302e108f5d92ce2eb91a604e9da5"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visitaddmember(_:).json": {
       "etag": "\"2e7f-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitaddmember.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitaddmember(_).md",
       "hash": "fdb8f41b49565230f6a0482b9c41daf28a45275be34ca9aec24112f4f4cf7d46"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visitaddsubgroup(_:).json": {
       "etag": "\"2ed4-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitaddsubgroup.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitaddsubgroup(_).md",
       "hash": "7473f51d3d6f4d2124e3e7bf3b99e3d38515bc601f025200bdf6a9fd240b41a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visitremovemember(_:).json": {
       "etag": "\"2f18-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitremovemember.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitremovemember(_).md",
       "hash": "55d6d32058f2be71b52b5ae48de6812e5ceba20addcc722d7785d3401a71f417"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryeventvisitor/visitremovesubgroup(_:).json": {
       "etag": "\"2f6d-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitremovesubgroup.md",
+      "file_path": "documentation/Contacts/cnchangehistoryeventvisitor/visitremovesubgroup(_).md",
       "hash": "e22a6c4f966ffca03f71a983b96672828e980fc48927d5ca551995df81d93931"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryfetchrequest.json": {
@@ -3652,7 +3652,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryfetchrequest/init(coder:).json": {
       "etag": "\"1541-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnchangehistoryfetchrequest/init-coder.md",
+      "file_path": "documentation/Contacts/cnchangehistoryfetchrequest/init(coder).md",
       "hash": "0afb9739cd7b4f18723c2f88e886b5755a5b5bdbc39312433fa9f8c944c603f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnchangehistoryfetchrequest/mutableobjects.json": {
@@ -3727,7 +3727,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/arekeysavailable(_:).json": {
       "etag": "\"3b6c-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/arekeysavailable.md",
+      "file_path": "documentation/Contacts/cncontact/arekeysavailable(_).md",
       "hash": "c8c7a3a3e21f0af9360ed13cd60cc1e49dcb1df26f16e89ceba17b815301909d"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/birthday.json": {
@@ -3737,7 +3737,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/comparator(fornamesortorder:).json": {
       "etag": "\"3986-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontact/comparator-fornamesortorder.md",
+      "file_path": "documentation/Contacts/cncontact/comparator(fornamesortorder).md",
       "hash": "a8ec98db47aed549bdd7d3f1f276238eb930f1d98da741cb7286025d4647dbf7"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/contactrelations.json": {
@@ -3772,7 +3772,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/descriptorforallcomparatorkeys().json": {
       "etag": "\"3ad8-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/descriptorforallcomparatorkeys.md",
+      "file_path": "documentation/Contacts/cncontact/descriptorforallcomparatorkeys().md",
       "hash": "4c4afbc91f601f9b9600d8d358c54e669685f84496648816a495b5e385703920"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/emailaddresses.json": {
@@ -3807,7 +3807,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/init(coder:).json": {
       "etag": "\"142c-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontact/init-coder.md",
+      "file_path": "documentation/Contacts/cncontact/init(coder).md",
       "hash": "51939cdfd8904061f933ef400762279f045b05547dd33c58e2cbf1a9dacd97d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/instantmessageaddresses.json": {
@@ -3817,12 +3817,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/iskeyavailable(_:).json": {
       "etag": "\"3df3-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/iskeyavailable.md",
+      "file_path": "documentation/Contacts/cncontact/iskeyavailable(_).md",
       "hash": "e457668b8d5930e1c0e37da42cadd36b4c85762b4a01675da7a4ac9717d0cbc7"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/isunifiedwithcontact(withidentifier:).json": {
       "etag": "\"42dd-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/isunifiedwithcontact-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontact/isunifiedwithcontact(withidentifier).md",
       "hash": "05bb3cabfeaedd255f86c615052ad42c76505786324b7eb4df173a668462708d"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/jobtitle.json": {
@@ -3832,7 +3832,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/localizedstring(forkey:).json": {
       "etag": "\"281a-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/localizedstring-forkey.md",
+      "file_path": "documentation/Contacts/cncontact/localizedstring(forkey).md",
       "hash": "c1a309be658bf0d5d57e46b4561a428bb3b0041d3885770d5e0789e91622aa54"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/middlename.json": {
@@ -3902,32 +3902,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/predicateforcontacts(matching:).json": {
       "etag": "\"5431-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontacts-matching.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontacts(matching).md",
       "hash": "825771718d081c00b6c1aa951ea2710ca713cc9e0c2125b0f31a743d10ea0ecd"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/predicateforcontacts(matchingemailaddress:).json": {
       "etag": "\"54c9-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontacts-matchingemailaddress.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontacts(matchingemailaddress).md",
       "hash": "c757ec007c998fa20c257d849ee97d7ec6d69a76ae5d57f94448a9d22e1dd700"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/predicateforcontacts(matchingname:).json": {
       "etag": "\"54f8-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontacts-matchingname.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontacts(matchingname).md",
       "hash": "f1b1eb8c8c22483ad266daffdd86e7882f42fb78fc056dc6bbbcf29c5793494f"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/predicateforcontacts(withidentifiers:).json": {
       "etag": "\"53be-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontacts-withidentifiers.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontacts(withidentifiers).md",
       "hash": "bfaa1ff042a65f908f53dfa26bda051616c449051ccd1229c4254f489d9bbc48"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/predicateforcontactsincontainer(withidentifier:).json": {
       "etag": "\"5507-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontactsincontainer-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontactsincontainer(withidentifier).md",
       "hash": "41caf7bfd293a74eb3fa66b72ad8ed55cda1d8972c7ac7405e89ed199d1bd259"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/predicateforcontactsingroup(withidentifier:).json": {
       "etag": "\"54d8-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cncontact/predicateforcontactsingroup-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontact/predicateforcontactsingroup(withidentifier).md",
       "hash": "bf99dd941a49d05ffbbb56a5ab29d957ecbaa37525fa10c0bbe1a22f4c81abed"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontact/previousfamilyname.json": {
@@ -3987,7 +3987,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactdisplaynameorder/init(rawvalue:).json": {
       "etag": "\"13a7-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactdisplaynameorder/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontactdisplaynameorder/init(rawvalue).md",
       "hash": "eb1ec8108b56fbb0d9859e56c52f8c4d0830f0609db38627a3f1835272e58b27"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactdisplaynameorder/userdefault.json": {
@@ -4012,12 +4012,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactfetchrequest/init(coder:).json": {
       "etag": "\"14cc-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cncontactfetchrequest/init-coder.md",
+      "file_path": "documentation/Contacts/cncontactfetchrequest/init(coder).md",
       "hash": "e33ae0686d10c4936b9a542c70484b71f254b1952dcc6b30088eb2d5f4879c47"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactfetchrequest/init(keystofetch:).json": {
       "etag": "\"29a7-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cncontactfetchrequest/init-keystofetch.md",
+      "file_path": "documentation/Contacts/cncontactfetchrequest/init(keystofetch).md",
       "hash": "86714b2598fa5a59e58805dc67092e64bbb64a4b314abe7ce3f4fab1f7a315df"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactfetchrequest/keystofetch.json": {
@@ -4052,22 +4052,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/attributedstring(from:defaultattributes:).json": {
       "etag": "\"558e-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/attributedstring-fromdefaultattributes.md",
+      "file_path": "documentation/Contacts/cncontactformatter/attributedstring(from,defaultattributes).md",
       "hash": "f25aca97f6b5d2565ea0400c7cc7fd7f378d2da46e5df5b78a047ea3f67aaa5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/attributedstring(from:style:defaultattributes:).json": {
       "etag": "\"5f20-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/attributedstring-fromstyledefaultattributes.md",
+      "file_path": "documentation/Contacts/cncontactformatter/attributedstring(from,style,defaultattributes).md",
       "hash": "43f3aa8717ae8a147cac05ea7270db329cb537b2e5d541c7e3f09c57310589e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/delimiter(for:).json": {
       "etag": "\"3898-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/delimiter-for.md",
+      "file_path": "documentation/Contacts/cncontactformatter/delimiter(for).md",
       "hash": "9a7c8f6a5a64f56342cf455ecb5d113c421976793a849deef1550547e4a8dae1"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/descriptorforrequiredkeys(for:).json": {
       "etag": "\"3b6c-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/descriptorforrequiredkeys-for.md",
+      "file_path": "documentation/Contacts/cncontactformatter/descriptorforrequiredkeys(for).md",
       "hash": "9e3afea319879343c1bcabc148949bb7e398e5df747b9118ad4933ee9e937879"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/descriptorforrequiredkeysfordelimiter.json": {
@@ -4082,17 +4082,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/nameorder(for:).json": {
       "etag": "\"347a-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/nameorder-for.md",
+      "file_path": "documentation/Contacts/cncontactformatter/nameorder(for).md",
       "hash": "9f96eff566baf444b62b59d0f04f7332f3e4d02bd1a47fb459b5e5931601f8cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/string(from:).json": {
       "etag": "\"3233-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/string-from.md",
+      "file_path": "documentation/Contacts/cncontactformatter/string(from).md",
       "hash": "7b699f71af39f1558ce000b6b0cc0c20e7f0043253ea1d0e44d24d61f5168b23"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/string(from:style:).json": {
       "etag": "\"3bec-65d55ce8d4114-df\"",
-      "file_path": "documentation/Contacts/cncontactformatter/string-fromstyle.md",
+      "file_path": "documentation/Contacts/cncontactformatter/string(from,style).md",
       "hash": "b65d6c1b4821e91f7b6b694c1dd48dddf3b57d6249d7557d465c974b0dd5c3d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatter/style.json": {
@@ -4112,7 +4112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatterstyle/init(rawvalue:).json": {
       "etag": "\"1377-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactformatterstyle/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontactformatterstyle/init(rawvalue).md",
       "hash": "d367bdb6efde792549af3c133e4c2bf657a8f1f6f9b105324c99836b8ec3476d"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactformatterstyle/phoneticfullname.json": {
@@ -4237,7 +4237,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactproperty/init(coder:).json": {
       "etag": "\"1471-65d55ce973331-df\"",
-      "file_path": "documentation/Contacts/cncontactproperty/init-coder.md",
+      "file_path": "documentation/Contacts/cncontactproperty/init(coder).md",
       "hash": "3133bef11ff7e53c75d44882cdae4f4db263271d93d2d8cb4b7462a99e790a9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactproperty/key.json": {
@@ -4272,12 +4272,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactrelation/init(coder:).json": {
       "etag": "\"1493-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontactrelation/init-coder.md",
+      "file_path": "documentation/Contacts/cncontactrelation/init(coder).md",
       "hash": "052ac43b1ca46d9c4fa5c40909e125c6a0173886a36c5c8d272f1352d9c17357"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactrelation/init(name:).json": {
       "etag": "\"2596-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cncontactrelation/init-name.md",
+      "file_path": "documentation/Contacts/cncontactrelation/init(name).md",
       "hash": "cf69f686cf029ab8b7533f6103cc9dd8332c83a19926df5a1da0598ead8209d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactrelation/name.json": {
@@ -4312,7 +4312,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactsortorder/init(rawvalue:).json": {
       "etag": "\"1319-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cncontactsortorder/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontactsortorder/init(rawvalue).md",
       "hash": "487961f16d751aa9906e76ef51d7f1d25ff50a3305ee1cdfe859def9f3be5a87"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactsortorder/none.json": {
@@ -4332,12 +4332,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/authorizationstatus(for:).json": {
       "etag": "\"3aee-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/authorizationstatus-for.md",
+      "file_path": "documentation/Contacts/cncontactstore/authorizationstatus(for).md",
       "hash": "c8ba9b3fcac3d9b8393d8aa1731b72bef3f2b56738218b542bb80aec8372a269"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/containers(matching:).json": {
       "etag": "\"4938-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/containers-matching.md",
+      "file_path": "documentation/Contacts/cncontactstore/containers(matching).md",
       "hash": "52f1983dc2d6d572640c61328a8440dbaa3c462f17c0af0ae109c08218776520"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/currenthistorytoken.json": {
@@ -4347,42 +4347,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/defaultcontaineridentifier().json": {
       "etag": "\"3042-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/defaultcontaineridentifier.md",
+      "file_path": "documentation/Contacts/cncontactstore/defaultcontaineridentifier().md",
       "hash": "c522019194e5a079ced2064336c4a813488a46ffad1c74472839c68c20cc6a94"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/enumeratecontacts(with:usingblock:).json": {
       "etag": "\"6e3d-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/enumeratecontacts-withusingblock.md",
+      "file_path": "documentation/Contacts/cncontactstore/enumeratecontacts(with,usingblock).md",
       "hash": "f1919f55bf773a084d81fb91139139d139977951da0ea68bec7f107a1e539ea1"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/execute(_:).json": {
       "etag": "\"39d6-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/execute.md",
+      "file_path": "documentation/Contacts/cncontactstore/execute(_).md",
       "hash": "5e6061c548bb3fa5137eee84e5ebf60620f81d25096435510d09d7b0070ec5cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/groups(matching:).json": {
       "etag": "\"47d7-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/groups-matching.md",
+      "file_path": "documentation/Contacts/cncontactstore/groups(matching).md",
       "hash": "8d2c9673587ccdc7a392d256a4a3aa50f3583ffaef028382b98caeb593bd8269"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/requestaccess(for:completionhandler:).json": {
       "etag": "\"5abc-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/requestaccess-forcompletionhandler.md",
+      "file_path": "documentation/Contacts/cncontactstore/requestaccess(for,completionhandler).md",
       "hash": "9baca520f77c3d3ac4f2ac4e619921148377c858ac5db98fa41db43d0aa85209"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/unifiedcontact(withidentifier:keystofetch:).json": {
       "etag": "\"73b7-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/unifiedcontact-withidentifierkeystofetch.md",
+      "file_path": "documentation/Contacts/cncontactstore/unifiedcontact(withidentifier,keystofetch).md",
       "hash": "b89e83a232362773c8f3570821bc77ce14d06079fccaaf61a2000aba68af52d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/unifiedcontacts(matching:keystofetch:).json": {
       "etag": "\"6da9-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/unifiedcontacts-matchingkeystofetch.md",
+      "file_path": "documentation/Contacts/cncontactstore/unifiedcontacts(matching,keystofetch).md",
       "hash": "199da841dc9d98e62aa123fe678cd4dcd8d5673e3b9ba82cce7756e069da61b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactstore/unifiedmecontactwithkeys(tofetch:).json": {
       "etag": "\"59d9-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cncontactstore/unifiedmecontactwithkeys-tofetch.md",
+      "file_path": "documentation/Contacts/cncontactstore/unifiedmecontactwithkeys(tofetch).md",
       "hash": "afa12b7924c5e9f89152c0dee122b64f67f51c06b3569f95bd91beef6c7f3c2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactsuserdefaults.json": {
@@ -4397,7 +4397,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactsuserdefaults/shared().json": {
       "etag": "\"1bd2-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cncontactsuserdefaults/shared.md",
+      "file_path": "documentation/Contacts/cncontactsuserdefaults/shared().md",
       "hash": "cae6aa3ed6376fc06869d40b80e30d281924ccdf2a97a31aef20eb5786b0a64c"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactsuserdefaults/sortorder.json": {
@@ -4417,7 +4417,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontacttype/init(rawvalue:).json": {
       "etag": "\"12ac-65d55ce82c702-df\"",
-      "file_path": "documentation/Contacts/cncontacttype/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontacttype/init(rawvalue).md",
       "hash": "974188f17590959df256e9e87f9fdce5e85b070542c56d223c86efd3858290a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontacttype/organization.json": {
@@ -4447,17 +4447,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactvcardserialization/contacts(with:).json": {
       "etag": "\"370d-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactvcardserialization/contacts-with.md",
+      "file_path": "documentation/Contacts/cncontactvcardserialization/contacts(with).md",
       "hash": "1ac2f1f9ed07a95e06ba05a0a0ba82b0375ee67ed974caa9aa61f8dfe7d6a39b"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactvcardserialization/data(with:).json": {
       "etag": "\"39da-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactvcardserialization/data-with.md",
+      "file_path": "documentation/Contacts/cncontactvcardserialization/data(with).md",
       "hash": "e325d6d6d970852b62b204f44e6f73478dc8d7f45bc027a4121db775b86b01b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontactvcardserialization/descriptorforrequiredkeys().json": {
       "etag": "\"27db-65d55ce951b0a-df\"",
-      "file_path": "documentation/Contacts/cncontactvcardserialization/descriptorforrequiredkeys.md",
+      "file_path": "documentation/Contacts/cncontactvcardserialization/descriptorforrequiredkeys().md",
       "hash": "1d4ccdda6019f32d7cf5026068b5e4f314291bd95e8b53ab2bed38bf1a878582"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainer.json": {
@@ -4472,7 +4472,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainer/init(coder:).json": {
       "etag": "\"140a-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cncontainer/init-coder.md",
+      "file_path": "documentation/Contacts/cncontainer/init(coder).md",
       "hash": "0b623ceb81ec6a5953bb30f3c791de22749c1f11aae6807863d216f2d3c62da7"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainer/name.json": {
@@ -4482,17 +4482,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainer/predicateforcontainerofcontact(withidentifier:).json": {
       "etag": "\"41b4-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cncontainer/predicateforcontainerofcontact-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontainer/predicateforcontainerofcontact(withidentifier).md",
       "hash": "6df8a99211a2316591ad85871e0451a6ac27404b56965dc6c5f760c551be6238"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainer/predicateforcontainerofgroup(withidentifier:).json": {
       "etag": "\"4036-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cncontainer/predicateforcontainerofgroup-withidentifier.md",
+      "file_path": "documentation/Contacts/cncontainer/predicateforcontainerofgroup(withidentifier).md",
       "hash": "cf544dc3c21624432976959706cff52e1d13311a50fe955a921e9f12621632c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainer/predicateforcontainers(withidentifiers:).json": {
       "etag": "\"3d15-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cncontainer/predicateforcontainers-withidentifiers.md",
+      "file_path": "documentation/Contacts/cncontainer/predicateforcontainers(withidentifiers).md",
       "hash": "6d560f0dc32e9fd16d7d8558f445c80079af858e98404397515456e75dee84cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainer/type.json": {
@@ -4527,7 +4527,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainertype/init(rawvalue:).json": {
       "etag": "\"1316-65d55ce82c702-df\"",
-      "file_path": "documentation/Contacts/cncontainertype/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cncontainertype/init(rawvalue).md",
       "hash": "7c0650905fcd752237bc0179fc9c1eb94f1467db9b8bdccbf909b64ec335e399"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cncontainertype/local.json": {
@@ -4557,7 +4557,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnentitytype/init(rawvalue:).json": {
       "etag": "\"12a8-65d55ce9378de-df\"",
-      "file_path": "documentation/Contacts/cnentitytype/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cnentitytype/init(rawvalue).md",
       "hash": "0cf69dda6a4639b863bc560712aa9063f07e848a0bf819b914512ff7ee74f689"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnerror.json": {
@@ -4682,7 +4682,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnerror/code/init(rawvalue:).json": {
       "etag": "\"1522-65d55ce919007-df\"",
-      "file_path": "documentation/Contacts/cnerror/code/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cnerror/code/init(rawvalue).md",
       "hash": "19fc764b37f9a5b819425310e676a55f40fd30f6a186b779226c67b84d286345"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnerror/code/insertedrecordalreadyexists.json": {
@@ -4932,7 +4932,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cngroup/init(coder:).json": {
       "etag": "\"13b9-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cngroup/init-coder.md",
+      "file_path": "documentation/Contacts/cngroup/init(coder).md",
       "hash": "eaaa7f46e1fb25327c36f9fb05927c120010f91ed60d36526256d6bc87c33155"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cngroup/name.json": {
@@ -4942,17 +4942,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cngroup/predicateforgroups(withidentifiers:).json": {
       "etag": "\"3bee-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cngroup/predicateforgroups-withidentifiers.md",
+      "file_path": "documentation/Contacts/cngroup/predicateforgroups(withidentifiers).md",
       "hash": "3de8b9afcc82445045c08a374e39b91fa6df1e7db4eefe2dd3dd682e3a198b76"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cngroup/predicateforgroupsincontainer(withidentifier:).json": {
       "etag": "\"3f60-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cngroup/predicateforgroupsincontainer-withidentifier.md",
+      "file_path": "documentation/Contacts/cngroup/predicateforgroupsincontainer(withidentifier).md",
       "hash": "c3fa8db7b2f9c8c50a52ea73480a54dd020374fc914f6a80ad37eb69ae3a4061"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cngroup/predicateforsubgroupsingroup(withidentifier:).json": {
       "etag": "\"3d9c-65d55cea37b63-df\"",
-      "file_path": "documentation/Contacts/cngroup/predicateforsubgroupsingroup-withidentifier.md",
+      "file_path": "documentation/Contacts/cngroup/predicateforsubgroupsingroup(withidentifier).md",
       "hash": "6426f91a171c78acc3eef98466508eb63c0c2e183eb23f1f85a33bd2948ec35e"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cngroupidentifierkey.json": {
@@ -4972,22 +4972,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cninstantmessageaddress/init(coder:).json": {
       "etag": "\"14fd-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cninstantmessageaddress/init-coder.md",
+      "file_path": "documentation/Contacts/cninstantmessageaddress/init(coder).md",
       "hash": "3d4c3b7a6b64e58a5e5ee39d59621d6965fc5f7f0bbd808aa39ef8f0b8a94e0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cninstantmessageaddress/init(username:service:).json": {
       "etag": "\"2e93-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cninstantmessageaddress/init-usernameservice.md",
+      "file_path": "documentation/Contacts/cninstantmessageaddress/init(username,service).md",
       "hash": "28cdaaadf85c44fa980c9c0d6a5dc2d9fe00a1ebd560a5577e2f1689d6b5049b"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cninstantmessageaddress/localizedstring(forkey:).json": {
       "etag": "\"355b-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cninstantmessageaddress/localizedstring-forkey.md",
+      "file_path": "documentation/Contacts/cninstantmessageaddress/localizedstring(forkey).md",
       "hash": "442317bb1437e1924373362fac170be703147b48c534709201547a85d5789391"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cninstantmessageaddress/localizedstring(forservice:).json": {
       "etag": "\"5b77-65d55ce9e66b8-df\"",
-      "file_path": "documentation/Contacts/cninstantmessageaddress/localizedstring-forservice.md",
+      "file_path": "documentation/Contacts/cninstantmessageaddress/localizedstring(forservice).md",
       "hash": "a55bce875b28ee67a865ed186d5b8f82390523c0673934ccb720f0522a33434c"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cninstantmessageaddress/service.json": {
@@ -6162,12 +6162,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnlabeledvalue/init(coder:).json": {
       "etag": "\"146b-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/init-coder.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/init(coder).md",
       "hash": "0bd5f9dc6c641b14230fd4957eb63972e3e6ba9e74020cfcadbcce67f4aa4859"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnlabeledvalue/init(label:value:).json": {
       "etag": "\"3012-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/init-labelvalue.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/init(label,value).md",
       "hash": "c50a36487985f784511a9e0337760c34f44b89a2374e4550f13f974ca4fa5c79"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnlabeledvalue/label.json": {
@@ -6177,22 +6177,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnlabeledvalue/localizedstring(forlabel:).json": {
       "etag": "\"27f8-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/localizedstring-forlabel.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/localizedstring(forlabel).md",
       "hash": "45b34fc7da0c951e2e0dfc62adb8bbe74102d01f3dd301b7794a1ff82954b3d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnlabeledvalue/settinglabel(_:).json": {
       "etag": "\"31ed-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/settinglabel.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/settinglabel(_).md",
       "hash": "6ad4d5be66d7a0906ae725a09c7d236573f3012074218280e9a3ce6e62eb0579"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnlabeledvalue/settinglabel(_:value:).json": {
       "etag": "\"3b19-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/settinglabel-value.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/settinglabel(_,value).md",
       "hash": "11331d5a34352a53f671265088daf0297e9362f1fefd794fcc395f699ef91fab"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnlabeledvalue/settingvalue(_:).json": {
       "etag": "\"31ea-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnlabeledvalue/settingvalue.md",
+      "file_path": "documentation/Contacts/cnlabeledvalue/settingvalue(_).md",
       "hash": "d9fadaed215e17a4f85509392886f20012e62e3bc8a06e3c163a1bb196d4cb88"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnlabeledvalue/value.json": {
@@ -6477,22 +6477,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnphonenumber/init().json": {
       "etag": "\"1ecc-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnphonenumber/init.md",
+      "file_path": "documentation/Contacts/cnphonenumber/init().md",
       "hash": "832e3ca8ea7db37ed9e74d33d7ffa6dea1294ad59009ee0103556640ef1662c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnphonenumber/init(coder:).json": {
       "etag": "\"1431-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnphonenumber/init-coder.md",
+      "file_path": "documentation/Contacts/cnphonenumber/init(coder).md",
       "hash": "a86d54a3745896be3296575b492982231374f62029a78fb1c8fd83f3a109dbc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnphonenumber/init(stringvalue:).json": {
       "etag": "\"282f-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnphonenumber/init-stringvalue.md",
+      "file_path": "documentation/Contacts/cnphonenumber/init(stringvalue).md",
       "hash": "01fd6a8c5bd943d03eedf4aab50638257c524ced9a236c637d8bf19b384ffee2"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnphonenumber/new().json": {
       "etag": "\"207a-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnphonenumber/new.md",
+      "file_path": "documentation/Contacts/cnphonenumber/new().md",
       "hash": "f13bf5bdb1555c2a5c7c1ca83ab6eb62a568297ff0e764bdf2e3591672914c58"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnphonenumber/stringvalue.json": {
@@ -6517,7 +6517,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdress/init(coder:).json": {
       "etag": "\"1459-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdress/init-coder.md",
+      "file_path": "documentation/Contacts/cnpostaladdress/init(coder).md",
       "hash": "dd965aa8c7031daec657cfac9d6a6f7dc646a35173db1b181ed65cb52d672628"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdress/isocountrycode.json": {
@@ -6527,7 +6527,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdress/localizedstring(forkey:).json": {
       "etag": "\"447c-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdress/localizedstring-forkey.md",
+      "file_path": "documentation/Contacts/cnpostaladdress/localizedstring(forkey).md",
       "hash": "0a3c37415b879c93de2fa6bc8b07d51f1d965bf4f1781bcdbf869ca70d8d5c15"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdress/postalcode.json": {
@@ -6572,22 +6572,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdressformatter/attributedstring(from:style:withdefaultattributes:).json": {
       "etag": "\"644a-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatter/attributedstring-fromstylewithdefaultattributes.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatter/attributedstring(from,style,withdefaultattributes).md",
       "hash": "ddbcfbcc1c4d9fb5aa4444388b984f23019646e98eaeab885cb52e694c6d03fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdressformatter/attributedstring(from:withdefaultattributes:).json": {
       "etag": "\"5b76-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatter/attributedstring-fromwithdefaultattributes.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatter/attributedstring(from,withdefaultattributes).md",
       "hash": "9ac83aa61e5b8195a08e4ea6c06b0d2d90076c19af6b53841dda85b4a96ae492"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdressformatter/string(from:).json": {
       "etag": "\"3324-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatter/string-from.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatter/string(from).md",
       "hash": "ba2e95b92f3272de99014b397f90a7b4aa9138103ec0869542d5713f159076e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdressformatter/string(from:style:).json": {
       "etag": "\"3ebc-65d55ce990f8b-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatter/string-fromstyle.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatter/string(from,style).md",
       "hash": "803967d416fe207090c21d5bfbded969ec9047ee7aa5595074cc807ab48e590d"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdressformatter/style.json": {
@@ -6602,7 +6602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdressformatterstyle/init(rawvalue:).json": {
       "etag": "\"13e8-65d55ce9c7fdb-df\"",
-      "file_path": "documentation/Contacts/cnpostaladdressformatterstyle/init-rawvalue.md",
+      "file_path": "documentation/Contacts/cnpostaladdressformatterstyle/init(rawvalue).md",
       "hash": "d6e4b2a91080002b992364106e410cd17c1107a58263e2352daba0f087cd4f50"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnpostaladdressformatterstyle/mailingaddress.json": {
@@ -6657,42 +6657,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/add(_:tocontainerwithidentifier:)-4ikaa.json": {
       "etag": "\"45f5-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/add-tocontainerwithidentifier-4ikaa.md",
+      "file_path": "documentation/Contacts/cnsaverequest/add(_,tocontainerwithidentifier)-4ikaa.md",
       "hash": "1242ee945afbc7e0b696b8c8d73e080491253fdbff7e4c67d3df18e35f4cfe71"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/add(_:tocontainerwithidentifier:)-7eut4.json": {
       "etag": "\"3b37-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/add-tocontainerwithidentifier-7eut4.md",
+      "file_path": "documentation/Contacts/cnsaverequest/add(_,tocontainerwithidentifier)-7eut4.md",
       "hash": "215c87c94c4380833f0d6fcd837f29ba09d50189ac4f441f00633c345b6b8182"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/addmember(_:to:).json": {
       "etag": "\"4331-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/addmember-to.md",
+      "file_path": "documentation/Contacts/cnsaverequest/addmember(_,to).md",
       "hash": "1cd8c3d61a83d0569d83a00243a79942d3c205b03ac42f2ca36b0383688a1313"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/addsubgroup(_:to:).json": {
       "etag": "\"2e0d-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/addsubgroup-to.md",
+      "file_path": "documentation/Contacts/cnsaverequest/addsubgroup(_,to).md",
       "hash": "7d6efe577df589cab101c506e003a507baf9063904e1b75573f2eb5570e8df03"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/delete(_:)-29lsm.json": {
       "etag": "\"3c22-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/delete-29lsm.md",
+      "file_path": "documentation/Contacts/cnsaverequest/delete(_)-29lsm.md",
       "hash": "64ecda2bf05253fdea2b7cb4e2a36355fb19ce8110edb9487b0419d3d4ceb992"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/delete(_:)-8m1tc.json": {
       "etag": "\"2eb7-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/delete-8m1tc.md",
+      "file_path": "documentation/Contacts/cnsaverequest/delete(_)-8m1tc.md",
       "hash": "f99b76ef625e065e813926a0059fa200c9e7891502b56553843dfcb6ecbfb8ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/removemember(_:from:).json": {
       "etag": "\"43cf-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/removemember-from.md",
+      "file_path": "documentation/Contacts/cnsaverequest/removemember(_,from).md",
       "hash": "c3ce2a97da156416dea7af474ab3b1f9017a6937385e630acf9e253dfdee2baf"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/removesubgroup(_:from:).json": {
       "etag": "\"2e3a-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/removesubgroup-from.md",
+      "file_path": "documentation/Contacts/cnsaverequest/removesubgroup(_,from).md",
       "hash": "82b5dfe7501374906956bad4183a79c9955f84905a1eb16a9ddedb073cac17c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/shouldrefetchcontacts.json": {
@@ -6707,12 +6707,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/update(_:)-3gaig.json": {
       "etag": "\"3112-65d55ce8b4653-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/update-3gaig.md",
+      "file_path": "documentation/Contacts/cnsaverequest/update(_)-3gaig.md",
       "hash": "89a5f1e06334d0086975deceaa247b4eeb46e968abb620f636964c38cf543a34"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsaverequest/update(_:)-8h6f6.json": {
       "etag": "\"3be6-65d55ce898f2b-df\"",
-      "file_path": "documentation/Contacts/cnsaverequest/update-8h6f6.md",
+      "file_path": "documentation/Contacts/cnsaverequest/update(_)-8h6f6.md",
       "hash": "16aee2699a31cd3598fa697f124988a223522f27c7e5f1a33dbb3a5f0c0a173f"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsocialprofile.json": {
@@ -6722,22 +6722,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsocialprofile/init(coder:).json": {
       "etag": "\"1461-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cnsocialprofile/init-coder.md",
+      "file_path": "documentation/Contacts/cnsocialprofile/init(coder).md",
       "hash": "6ed8afe773c5a9eeef9d1c6834f3545ea8be81e0364fffa5cb7b1b29b8d46814"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsocialprofile/init(urlstring:username:useridentifier:service:).json": {
       "etag": "\"331d-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cnsocialprofile/init-urlstringusernameuseridentifierservice.md",
+      "file_path": "documentation/Contacts/cnsocialprofile/init(urlstring,username,useridentifier,service).md",
       "hash": "e9edb7e014da46535d01c5f96d1f198a7bfe88d644a906e9f1457531727883f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsocialprofile/localizedstring(forkey:).json": {
       "etag": "\"3cb7-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cnsocialprofile/localizedstring-forkey.md",
+      "file_path": "documentation/Contacts/cnsocialprofile/localizedstring(forkey).md",
       "hash": "d00fa0cd6cdde0f22ecec832f692b913cba942beef41572c619fcb1e66fc8d43"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsocialprofile/localizedstring(forservice:).json": {
       "etag": "\"5651-65d55cea0b039-df\"",
-      "file_path": "documentation/Contacts/cnsocialprofile/localizedstring-forservice.md",
+      "file_path": "documentation/Contacts/cnsocialprofile/localizedstring(forservice).md",
       "hash": "b746dace0e90df7c1439244204e8cdb4d4267f6db9afb2cec57b0cd31b152a24"
     },
     "https://developer.apple.com/tutorials/data/documentation/contacts/cnsocialprofile/service.json": {

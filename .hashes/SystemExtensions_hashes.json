@@ -77,7 +77,7 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionerror/code/init(rawvalue:)": {
       "etag": "\"1744-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/init-rawvalue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/init(rawvalue).md",
       "hash": "9d1ca6ffb82153c77ae7c0fabba2e7a7aedf15e80a6cd9f4a439fb1207ada37d"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionerror/code/missingentitlement": {
@@ -217,7 +217,7 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionmanager/submitrequest(_:)": {
       "etag": "\"2571-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionmanager/submitrequest.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionmanager/submitrequest(_).md",
       "hash": "f66e5ebb51c76250e740c9eaf2749a49b84fe3c06f82ef06bc333b7b93d0218e"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionproperties": {
@@ -267,12 +267,12 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/activationrequest(forextensionwithidentifier:queue:)": {
       "etag": "\"3e63-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/activationrequest-forextensionwithidentifierqueue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/activationrequest(forextensionwithidentifier,queue).md",
       "hash": "e0a03bae2950c9539ee40442accd8c7b4989672edb47ec1dabdda643c1e35796"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/deactivationrequest(forextensionwithidentifier:queue:)": {
       "etag": "\"3b00-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/deactivationrequest-forextensionwithidentifierqueue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/deactivationrequest(forextensionwithidentifier,queue).md",
       "hash": "f7046a530d8c02bb4fda6be30c933a803245b7249954370a96db3b78a23c3cde"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/delegate": {
@@ -287,7 +287,7 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/propertiesrequest(forextensionwithidentifier:queue:)": {
       "etag": "\"2894-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/propertiesrequest-forextensionwithidentifierqueue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/propertiesrequest(forextensionwithidentifier,queue).md",
       "hash": "3911e26bef3abf625b2bdc0f0a3f7aabaa4e94006bea00e8be7743de19899275"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/replacementaction": {
@@ -302,7 +302,7 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/replacementaction/init(rawvalue:)": {
       "etag": "\"1a3d-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/replacementaction/init-rawvalue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/replacementaction/init(rawvalue).md",
       "hash": "10b299eb52966afdc6f0e04a380dbc93a9c97b26602458c365dfb6b8c6dac0aa"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/replacementaction/replace": {
@@ -322,7 +322,7 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/result/init(rawvalue:)": {
       "etag": "\"19a0-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/result/init-rawvalue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/result/init(rawvalue).md",
       "hash": "a4fb8b60faf25f17cab8857c441e74c0050779a1731ed662cb2fb9392b3c3049"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequest/result/willcompleteafterreboot": {
@@ -337,27 +337,27 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:actionforreplacingextension:withextension:)": {
       "etag": "\"6f22-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-actionforreplacingextensionwithextension.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request(_,actionforreplacingextension,withextension).md",
       "hash": "618eb8aa619932ede2947a171597beeb4a35f56376836b1c31e6c6a7e67e1ece"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:didfailwitherror:)": {
       "etag": "\"3e2b-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-didfailwitherror.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request(_,didfailwitherror).md",
       "hash": "3fc5ca83cb83fdbe637c8e9bbf0c51bb9fece462c4d6e6dea708d974ed42693b"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:didfinishwithresult:)": {
       "etag": "\"4507-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-didfinishwithresult.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request(_,didfinishwithresult).md",
       "hash": "118aec5c7914bac0b9cb47decc994ac7983f4fcad90b839200307e259014df56"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:foundproperties:)": {
       "etag": "\"2ce9-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-foundproperties.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request(_,foundproperties).md",
       "hash": "c4bf458240a4da4355501185aec226a7a2af5aa293f04933c51cdd2925ffec50"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionrequestdelegate/requestneedsuserapproval(_:)": {
       "etag": "\"3e7f-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/requestneedsuserapproval.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/requestneedsuserapproval(_).md",
       "hash": "2e5e6899a1fac99e05ff0c779c4baae822406d43bf2a91b2cf0d4545b2452a37"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspace": {
@@ -367,12 +367,12 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspace/addobserver(_:)": {
       "etag": "\"279a-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/addobserver.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/addobserver(_).md",
       "hash": "c24958d44bb3fc9a2ea997865919e3dc00623916cf91f8ec395333819c0acdb6"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspace/removeobserver(_:)": {
       "etag": "\"22cc-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/removeobserver.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/removeobserver(_).md",
       "hash": "19fffb6069d867d252adc2435c6b09978061832419cfc7f512278808ecb2ccfa"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspace/shared": {
@@ -382,7 +382,7 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspace/systemextensions(forapplicationwithbundleid:)": {
       "etag": "\"3337-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/systemextensions-forapplicationwithbundleid.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/systemextensions(forapplicationwithbundleid).md",
       "hash": "e0b81ca8391211202fad329ba1415e75e633160c5403f9843e27ada9b01b957b"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspaceobserver": {
@@ -392,17 +392,17 @@
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled(_:)": {
       "etag": "\"251c-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled(_).md",
       "hash": "48b3b82a9832d1b089e48f81c1092753b44e42d698515ed938f8bbe0c0a19377"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled(_:)": {
       "etag": "\"24c8-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled(_).md",
       "hash": "e6ae5c49d31ebdd4ee29d02b99a720f0cee324c62c68ef4b41b7ca593fee0613"
     },
     "https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive(_:)": {
       "etag": "\"251b-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive(_).md",
       "hash": "ba3fe6bfb830848bd5820d0fc6d18e2107400519fc04b91713d4482fb66e67dd"
     },
     "https://developer.apple.com/documentation/systemextensions/systemextensions-constants": {
@@ -487,7 +487,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/init(rawvalue:).json": {
       "etag": "\"1744-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/init-rawvalue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/init(rawvalue).md",
       "hash": "9d1ca6ffb82153c77ae7c0fabba2e7a7aedf15e80a6cd9f4a439fb1207ada37d"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/missingentitlement.json": {
@@ -627,7 +627,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionmanager/submitrequest(_:).json": {
       "etag": "\"2571-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionmanager/submitrequest.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionmanager/submitrequest(_).md",
       "hash": "f66e5ebb51c76250e740c9eaf2749a49b84fe3c06f82ef06bc333b7b93d0218e"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties.json": {
@@ -677,12 +677,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/activationrequest(forextensionwithidentifier:queue:).json": {
       "etag": "\"3e63-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/activationrequest-forextensionwithidentifierqueue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/activationrequest(forextensionwithidentifier,queue).md",
       "hash": "e0a03bae2950c9539ee40442accd8c7b4989672edb47ec1dabdda643c1e35796"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/deactivationrequest(forextensionwithidentifier:queue:).json": {
       "etag": "\"3b00-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/deactivationrequest-forextensionwithidentifierqueue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/deactivationrequest(forextensionwithidentifier,queue).md",
       "hash": "f7046a530d8c02bb4fda6be30c933a803245b7249954370a96db3b78a23c3cde"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/delegate.json": {
@@ -697,7 +697,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/propertiesrequest(forextensionwithidentifier:queue:).json": {
       "etag": "\"2894-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/propertiesrequest-forextensionwithidentifierqueue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/propertiesrequest(forextensionwithidentifier,queue).md",
       "hash": "3911e26bef3abf625b2bdc0f0a3f7aabaa4e94006bea00e8be7743de19899275"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/replacementaction.json": {
@@ -712,7 +712,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/replacementaction/init(rawvalue:).json": {
       "etag": "\"1a3d-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/replacementaction/init-rawvalue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/replacementaction/init(rawvalue).md",
       "hash": "10b299eb52966afdc6f0e04a380dbc93a9c97b26602458c365dfb6b8c6dac0aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/replacementaction/replace.json": {
@@ -732,7 +732,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/result/init(rawvalue:).json": {
       "etag": "\"19a0-65d56055cbc13-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/result/init-rawvalue.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequest/result/init(rawvalue).md",
       "hash": "a4fb8b60faf25f17cab8857c441e74c0050779a1731ed662cb2fb9392b3c3049"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/result/willcompleteafterreboot.json": {
@@ -747,27 +747,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:actionforreplacingextension:withextension:).json": {
       "etag": "\"6f22-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-actionforreplacingextensionwithextension.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request(_,actionforreplacingextension,withextension).md",
       "hash": "618eb8aa619932ede2947a171597beeb4a35f56376836b1c31e6c6a7e67e1ece"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:didfailwitherror:).json": {
       "etag": "\"3e2b-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-didfailwitherror.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request(_,didfailwitherror).md",
       "hash": "3fc5ca83cb83fdbe637c8e9bbf0c51bb9fece462c4d6e6dea708d974ed42693b"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:didfinishwithresult:).json": {
       "etag": "\"4507-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-didfinishwithresult.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request(_,didfinishwithresult).md",
       "hash": "118aec5c7914bac0b9cb47decc994ac7983f4fcad90b839200307e259014df56"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:foundproperties:).json": {
       "etag": "\"2ce9-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-foundproperties.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request(_,foundproperties).md",
       "hash": "c4bf458240a4da4355501185aec226a7a2af5aa293f04933c51cdd2925ffec50"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/requestneedsuserapproval(_:).json": {
       "etag": "\"3e7f-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/requestneedsuserapproval.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/requestneedsuserapproval(_).md",
       "hash": "2e5e6899a1fac99e05ff0c779c4baae822406d43bf2a91b2cf0d4545b2452a37"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace.json": {
@@ -777,12 +777,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace/addobserver(_:).json": {
       "etag": "\"279a-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/addobserver.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/addobserver(_).md",
       "hash": "c24958d44bb3fc9a2ea997865919e3dc00623916cf91f8ec395333819c0acdb6"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace/removeobserver(_:).json": {
       "etag": "\"22cc-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/removeobserver.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/removeobserver(_).md",
       "hash": "19fffb6069d867d252adc2435c6b09978061832419cfc7f512278808ecb2ccfa"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace/shared.json": {
@@ -792,7 +792,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace/systemextensions(forapplicationwithbundleid:).json": {
       "etag": "\"3337-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/systemextensions-forapplicationwithbundleid.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/systemextensions(forapplicationwithbundleid).md",
       "hash": "e0b81ca8391211202fad329ba1415e75e633160c5403f9843e27ada9b01b957b"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspaceobserver.json": {
@@ -802,17 +802,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled(_:).json": {
       "etag": "\"251c-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled(_).md",
       "hash": "48b3b82a9832d1b089e48f81c1092753b44e42d698515ed938f8bbe0c0a19377"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled(_:).json": {
       "etag": "\"24c8-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled(_).md",
       "hash": "e6ae5c49d31ebdd4ee29d02b99a720f0cee324c62c68ef4b41b7ca593fee0613"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive(_:).json": {
       "etag": "\"251b-65d56055e711c-df\"",
-      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive.md",
+      "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive(_).md",
       "hash": "ba3fe6bfb830848bd5820d0fc6d18e2107400519fc04b91713d4482fb66e67dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/systemextensions-constants.json": {

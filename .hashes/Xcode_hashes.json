@@ -227,7 +227,7 @@
     },
     "https://developer.apple.com/documentation/xcode/autosizing_views_for_localization_in_ios": {
       "etag": "W/\"c70913aecee8f23eee547a268a946373\"",
-      "file_path": "documentation/Xcode/autosizing-views-for-localization-in-ios.md",
+      "file_path": "documentation/Xcode/autosizing_views_for_localization_in_ios.md",
       "hash": "48a454c8c92ac4934d71ff75a4cd9deeeda23d9f0660c6bea3071c52d267bcb5"
     },
     "https://developer.apple.com/documentation/xcode/build-settings-reference": {
@@ -507,7 +507,7 @@
     },
     "https://developer.apple.com/documentation/xcode/configuring_your_app_to_use_alternate_app_icons": {
       "etag": "W/\"83739bccf1485f19edeb280c5a2779a0\"",
-      "file_path": "documentation/Xcode/configuring-your-app-to-use-alternate-app-icons.md",
+      "file_path": "documentation/Xcode/configuring_your_app_to_use_alternate_app_icons.md",
       "hash": "db4a6ee4756c72c9aac82be058d2a65affe262573a17b66c2373c42f4d7c5473"
     },
     "https://developer.apple.com/documentation/xcode/conforming-to-mach-ipc-security-restrictions": {
@@ -837,27 +837,27 @@
     },
     "https://developer.apple.com/documentation/xcode/exc_arithmetic": {
       "etag": "\"29d5-6590231ce451a-df\"",
-      "file_path": "documentation/Xcode/exc-arithmetic.md",
+      "file_path": "documentation/Xcode/exc_arithmetic.md",
       "hash": "cd375761a4c6cb52f2bde4812fbd8bb4b0f5269308b6eeef2d494ac3d2d5a0ea"
     },
     "https://developer.apple.com/documentation/xcode/exc_bad_access": {
       "etag": "\"28c0-6590231d8b898-df\"",
-      "file_path": "documentation/Xcode/exc-bad-access.md",
+      "file_path": "documentation/Xcode/exc_bad_access.md",
       "hash": "39764f733bfcfbea0e5cd45785c7f1e5527d740dd90bd8b5c7cc9b5a4fe9ad2e"
     },
     "https://developer.apple.com/documentation/xcode/exc_crash": {
       "etag": "\"2a6a-6590231cc13fe-df\"",
-      "file_path": "documentation/Xcode/exc-crash.md",
+      "file_path": "documentation/Xcode/exc_crash.md",
       "hash": "ea0efb4865ffb3f6f93f6dc9a3ef9d50416b50be09f2426afcd3e1ecab12a02c"
     },
     "https://developer.apple.com/documentation/xcode/exc_guard": {
       "etag": "\"3700-6590231c99d3b-df\"",
-      "file_path": "documentation/Xcode/exc-guard.md",
+      "file_path": "documentation/Xcode/exc_guard.md",
       "hash": "ced34c7dd3f71bdab6c9ed114610017444ad97d0c3bbed02a6ca5711ca84cd3a"
     },
     "https://developer.apple.com/documentation/xcode/exc_resource": {
       "etag": "\"431f-6590231c99d3b-df\"",
-      "file_path": "documentation/Xcode/exc-resource.md",
+      "file_path": "documentation/Xcode/exc_resource.md",
       "hash": "672fef72a752c8a007de22754da5370ec75fe9a47dc92debe3f4a6f6e512c70c"
     },
     "https://developer.apple.com/documentation/xcode/exporting-localizations": {
@@ -1117,7 +1117,7 @@
     },
     "https://developer.apple.com/documentation/xcode/localization-friendly_layouts_in_macos": {
       "etag": "W/\"f8a39853122309307c455384551155c2\"",
-      "file_path": "documentation/Xcode/localization-friendly-layouts-in-macos.md",
+      "file_path": "documentation/Xcode/localization-friendly_layouts_in_macos.md",
       "hash": "342424c2ba69fc0754d40ffe2750fcff602562242654079f7f37f8739b5a9318"
     },
     "https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog": {
@@ -1577,7 +1577,7 @@
     },
     "https://developer.apple.com/documentation/xcode/sigtrap_sigill": {
       "etag": "\"3dac-65d55ad8150ea-df\"",
-      "file_path": "documentation/Xcode/sigtrap-sigill.md",
+      "file_path": "documentation/Xcode/sigtrap_sigill.md",
       "hash": "db2a886a5d12db9358834cfa240962bab6752085d3c288b985f22ac5fec78d62"
     },
     "https://developer.apple.com/documentation/xcode/simulating-location-in-tests": {
@@ -1592,7 +1592,7 @@
     },
     "https://developer.apple.com/documentation/xcode/slothcreator_building_docc_documentation_in_xcode": {
       "etag": "W/\"3d5d69e3f89ff00133ad62edd0fde63f\"",
-      "file_path": "documentation/Xcode/slothcreator-building-docc-documentation-in-xcode.md",
+      "file_path": "documentation/Xcode/slothcreator_building_docc_documentation_in_xcode.md",
       "hash": "40cbbaca806704fef6977bcad84ab29fb32d79e61ed6c6d982b311e8a4afc3dc"
     },
     "https://developer.apple.com/documentation/xcode/source-code-management-setup": {
@@ -2082,7 +2082,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/autosizing_views_for_localization_in_ios.json": {
       "etag": "W/\"c70913aecee8f23eee547a268a946373\"",
-      "file_path": "documentation/Xcode/autosizing-views-for-localization-in-ios.md",
+      "file_path": "documentation/Xcode/autosizing_views_for_localization_in_ios.md",
       "hash": "48a454c8c92ac4934d71ff75a4cd9deeeda23d9f0660c6bea3071c52d267bcb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/build-settings-reference.json": {
@@ -2362,7 +2362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/configuring_your_app_to_use_alternate_app_icons.json": {
       "etag": "W/\"83739bccf1485f19edeb280c5a2779a0\"",
-      "file_path": "documentation/Xcode/configuring-your-app-to-use-alternate-app-icons.md",
+      "file_path": "documentation/Xcode/configuring_your_app_to_use_alternate_app_icons.md",
       "hash": "db4a6ee4756c72c9aac82be058d2a65affe262573a17b66c2373c42f4d7c5473"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/conforming-to-mach-ipc-security-restrictions.json": {
@@ -2692,27 +2692,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/exc_arithmetic.json": {
       "etag": "\"29d5-6590231ce451a-df\"",
-      "file_path": "documentation/Xcode/exc-arithmetic.md",
+      "file_path": "documentation/Xcode/exc_arithmetic.md",
       "hash": "cd375761a4c6cb52f2bde4812fbd8bb4b0f5269308b6eeef2d494ac3d2d5a0ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/exc_bad_access.json": {
       "etag": "\"28c0-6590231d8b898-df\"",
-      "file_path": "documentation/Xcode/exc-bad-access.md",
+      "file_path": "documentation/Xcode/exc_bad_access.md",
       "hash": "39764f733bfcfbea0e5cd45785c7f1e5527d740dd90bd8b5c7cc9b5a4fe9ad2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/exc_crash.json": {
       "etag": "\"2a6a-6590231cc13fe-df\"",
-      "file_path": "documentation/Xcode/exc-crash.md",
+      "file_path": "documentation/Xcode/exc_crash.md",
       "hash": "ea0efb4865ffb3f6f93f6dc9a3ef9d50416b50be09f2426afcd3e1ecab12a02c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/exc_guard.json": {
       "etag": "\"3700-6590231c99d3b-df\"",
-      "file_path": "documentation/Xcode/exc-guard.md",
+      "file_path": "documentation/Xcode/exc_guard.md",
       "hash": "ced34c7dd3f71bdab6c9ed114610017444ad97d0c3bbed02a6ca5711ca84cd3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/exc_resource.json": {
       "etag": "\"431f-6590231c99d3b-df\"",
-      "file_path": "documentation/Xcode/exc-resource.md",
+      "file_path": "documentation/Xcode/exc_resource.md",
       "hash": "672fef72a752c8a007de22754da5370ec75fe9a47dc92debe3f4a6f6e512c70c"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/exporting-localizations.json": {
@@ -2967,7 +2967,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/localization-friendly_layouts_in_macos.json": {
       "etag": "W/\"f8a39853122309307c455384551155c2\"",
-      "file_path": "documentation/Xcode/localization-friendly-layouts-in-macos.md",
+      "file_path": "documentation/Xcode/localization-friendly_layouts_in_macos.md",
       "hash": "342424c2ba69fc0754d40ffe2750fcff602562242654079f7f37f8739b5a9318"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/localization.json": {
@@ -3432,7 +3432,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/sigtrap_sigill.json": {
       "etag": "\"3dac-65d55ad8150ea-df\"",
-      "file_path": "documentation/Xcode/sigtrap-sigill.md",
+      "file_path": "documentation/Xcode/sigtrap_sigill.md",
       "hash": "db2a886a5d12db9358834cfa240962bab6752085d3c288b985f22ac5fec78d62"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/simulating-location-in-tests.json": {
@@ -3447,7 +3447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/slothcreator_building_docc_documentation_in_xcode.json": {
       "etag": "W/\"3d5d69e3f89ff00133ad62edd0fde63f\"",
-      "file_path": "documentation/Xcode/slothcreator-building-docc-documentation-in-xcode.md",
+      "file_path": "documentation/Xcode/slothcreator_building_docc_documentation_in_xcode.md",
       "hash": "40cbbaca806704fef6977bcad84ab29fb32d79e61ed6c6d982b311e8a4afc3dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcode/source-code-management-setup.json": {

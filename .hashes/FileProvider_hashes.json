@@ -37,22 +37,22 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderchangeobserver/diddeleteitems(withidentifiers:)": {
       "etag": "\"41f8-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/diddeleteitems-withidentifiers.md",
+      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/diddeleteitems(withidentifiers).md",
       "hash": "c3f6b83425fc5ce8fb351e4c9f3cea3ab98e26c2bc362577de915a5e9d787d5d"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderchangeobserver/didupdate(_:)": {
       "etag": "\"40b9-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/didupdate.md",
+      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/didupdate(_).md",
       "hash": "cfd24a9f391bfc93e61e58d7cf8bba5f9b82c58476e5ad269fb64e28396f62ad"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderchangeobserver/finishenumeratingchanges(upto:morecoming:)": {
       "etag": "\"4b1f-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/finishenumeratingchanges-uptomorecoming.md",
+      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/finishenumeratingchanges(upto,morecoming).md",
       "hash": "a7e538051fca9261652775063aca74d5524a07ed11a366d9b3eff3b8e6f153b8"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderchangeobserver/finishenumeratingwitherror(_:)": {
       "etag": "\"4134-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/finishenumeratingwitherror.md",
+      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/finishenumeratingwitherror(_).md",
       "hash": "43850177199364819f25f459d6ae99dd9461a619683cb1ec9e2998b17b82a20f"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderchangeobserver/suggestedbatchsize": {
@@ -87,7 +87,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidercontentpolicy/init(rawvalue:)": {
       "etag": "\"13fa-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidercontentpolicy/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidercontentpolicy/init(rawvalue).md",
       "hash": "d17740bcd7b87b8be74d8f79ecd75f0930b6ef6630371b15a02723d52eaaa38b"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidercreateitemoptions": {
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidercreateitemoptions/init(rawvalue:)": {
       "etag": "\"1520-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidercreateitemoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidercreateitemoptions/init(rawvalue).md",
       "hash": "10e1fba0a85015fb99f40a46164807d93934fe0c30b49764fefcebef2c86744c"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidercreateitemoptions/mayalreadyexist": {
@@ -117,7 +117,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidercustomaction/performaction(identifier:onitemswithidentifiers:completionhandler:)": {
       "etag": "\"53c3-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidercustomaction/performaction-identifieronitemswithidentifierscompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidercustomaction/performaction(identifier,onitemswithidentifiers,completionhandler).md",
       "hash": "df95265e1767af934cc5724cec35580afaee76e9e1746d41b083f502492c319f"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdeleteitemoptions": {
@@ -127,7 +127,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdeleteitemoptions/init(rawvalue:)": {
       "etag": "\"1520-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdeleteitemoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdeleteitemoptions/init(rawvalue).md",
       "hash": "0c6ae978561d9e7dc5a54c39afda78a5c93c5bcdd857e05de6078b4516df161e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdeleteitemoptions/recursive": {
@@ -157,17 +157,17 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/init(displayname:userinfo:volumeurl:)": {
       "etag": "\"440e-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/init-displaynameuserinfovolumeurl.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/init(displayname,userinfo,volumeurl).md",
       "hash": "8a2a4ee878dcf1ab6957587913a85dd8d9dc1aaaafa194632db6e8df01f819aa"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/init(identifier:displayname:)": {
       "etag": "\"3f7f-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/init-identifierdisplayname.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/init(identifier,displayname).md",
       "hash": "770ab7b28b2043d85994ddaebbe8644683e2fbbe28faa4f59e6d7babce60c7a9"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/init(identifier:displayname:pathrelativetodocumentstorage:)": {
       "etag": "\"4a60-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/init-identifierdisplaynamepathrelativetodocumentstorage.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/init(identifier,displayname,pathrelativetodocumentstorage).md",
       "hash": "02c68258486f3fc4e0116fa2bf4b53d39ce9230de338e6cd0d23ff31fc6410f1"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/isdisconnected": {
@@ -212,12 +212,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.property": {
       "etag": "\"3684-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swiftproperty.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swift.property.md",
       "hash": "69a671bc88b3c346f8bd4a0aa9adee94ff7d61cd58a7ac9f238d0f2dd9f44bde"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.struct": {
       "etag": "\"4979-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swiftstruct.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swift.struct.md",
       "hash": "185c1cf011a6be7774446ae74f4533272a96ac1934641f15528ea4117fde4a85"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.struct/alwaysenabled": {
@@ -227,7 +227,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.struct/init(rawvalue:)": {
       "etag": "\"1b4f-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swift.struct/init(rawvalue).md",
       "hash": "267b0b994db4f4955a3091460949cce41b102095ccde4f66e8617b740d016ca2"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.struct/interactive": {
@@ -257,12 +257,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomainidentifier/init(_:)": {
       "etag": "\"186f-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomainidentifier/init.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomainidentifier/init(_).md",
       "hash": "667cb2aba276c6009d03bfdb684728b09028dde9016353efaace5145484ecff4"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomainidentifier/init(rawvalue:)": {
       "etag": "\"188f-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomainidentifier/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomainidentifier/init(rawvalue).md",
       "hash": "fc44dfde61c99c9f598b20652a0175a8123b3d03c82f148962f60571109abf51"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomainstate": {
@@ -287,12 +287,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomainversion/init(coder:)": {
       "etag": "\"15b5-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomainversion/init-coder.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomainversion/init(coder).md",
       "hash": "41109db50a00c06f7b50d19dc3620e800b9ad5011592ed3acd0d5d4510d3840f"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderdomainversion/next()": {
       "etag": "\"1c65-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomainversion/next.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomainversion/next().md",
       "hash": "701da29f60af49c1767e154e555eb65159c07c8babd2d168bcaabb535fd7ddc8"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerating": {
@@ -302,7 +302,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerating/enumerator(for:request:)": {
       "etag": "\"875e-65d55e28b6950-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerating/enumerator-forrequest.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerating/enumerator(for,request).md",
       "hash": "244c0e20e4ef7026ffe778d7e7df68bb6545f490fabd81231ca21eddbcd3da1b"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerationobserver": {
@@ -312,17 +312,17 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerationobserver/didenumerate(_:)": {
       "etag": "\"39fe-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/didenumerate.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/didenumerate(_).md",
       "hash": "85e3abbd11f8195c03fa091ec95d6d70a1e7682cb4cad69aa9631d8fdd802588"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerationobserver/finishenumerating(upto:)": {
       "etag": "\"3a95-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/finishenumerating-upto.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/finishenumerating(upto).md",
       "hash": "08ce9c920d7c49e1e4bfe5be342701f24541848e4f010ca22b75f79701438e17"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerationobserver/finishenumeratingwitherror(_:)": {
       "etag": "\"3a4e-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/finishenumeratingwitherror.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/finishenumeratingwitherror(_).md",
       "hash": "f82fc18be61950d2e893ee83bdaa5ed6908e3fb1b708cc7343ef69466f4353ac"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerationobserver/suggestedpagesize": {
@@ -337,22 +337,22 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerator/currentsyncanchor(completionhandler:)": {
       "etag": "\"4830-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerator/currentsyncanchor-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerator/currentsyncanchor(completionhandler).md",
       "hash": "d14a275ce075fb93eb6e8b7c44976eb0b608c1e834963cfb2e9a41378dc6d74e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerator/enumeratechanges(for:from:)": {
       "etag": "\"5782-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerator/enumeratechanges-forfrom.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerator/enumeratechanges(for,from).md",
       "hash": "685e7c7239630a1343de555c30e67b3d2628e43967de2573efb531aa15a6c3de"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerator/enumerateitems(for:startingat:)": {
       "etag": "\"5328-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerator/enumerateitems-forstartingat.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerator/enumerateitems(for,startingat).md",
       "hash": "55277589b771f7b838d5b25c07b041b2de1041ba39ca7b99d6e585edf9856138"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderenumerator/invalidate()": {
       "etag": "\"31d4-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerator/invalidate.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerator/invalidate().md",
       "hash": "e1a30380dbe325a9dd6f25606a3002a6698de037b7876066bc6f009c4a26fa81"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidererror": {
@@ -412,7 +412,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidererror/code/init(rawvalue:)": {
       "etag": "\"16aa-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidererror/code/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidererror/code/init(rawvalue).md",
       "hash": "1a192b059ac806261f774904b1afe32b8399d946665ee44ed0da64d5df73ed61"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidererror/code/insufficientquota": {
@@ -642,12 +642,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/createdirectory(withname:inparentitemidentifier:completionhandler:)": {
       "etag": "\"f4c4-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/createdirectory-withnameinparentitemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/createdirectory(withname,inparentitemidentifier,completionhandler).md",
       "hash": "cfeca80b589c601e062c0e43de0aed8dee40fe653c008a1668f6d03da15a3234"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/deleteitem(withidentifier:completionhandler:)": {
       "etag": "\"aa0c-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/deleteitem-withidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/deleteitem(withidentifier,completionhandler).md",
       "hash": "78e072b91431df35248f6b110ac71e5de717c2e21df8b77f9f1d4878cb7f615c"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/documentstorageurl": {
@@ -662,42 +662,42 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/enumerator(for:)": {
       "etag": "\"5675-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/enumerator-for.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/enumerator(for).md",
       "hash": "09581722860b08cace56543602eb34405452eb0ffc6bfb8b165f40a4aca9152b"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/fetchthumbnails(for:requestedsize:perthumbnailcompletionhandler:completionhandler:)": {
       "etag": "\"876d-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/fetchthumbnails-forrequestedsizeperthumbnailcompletionhandlercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/fetchthumbnails(for,requestedsize,perthumbnailcompletionhandler,completionhandler).md",
       "hash": "ba28c70e661d16d0f291159620e0afadbd5eed98bf1f8bd5a568fea8cfb8350c"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/importdocument(at:toparentitemidentifier:completionhandler:)": {
       "etag": "\"12618-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/importdocument-attoparentitemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/importdocument(at,toparentitemidentifier,completionhandler).md",
       "hash": "c074ce7f675049610f0c00c4832ac9d9d72f84ed2af86fcf41d8b49ff44ddd4f"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/item(for:)": {
       "etag": "\"5ebe-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/item-for.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/item(for).md",
       "hash": "3ad669a3510f677b81de487a9b203d2549ae3d6fa629f2073417b15349217600"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/itemchanged(at:)": {
       "etag": "\"4ccd-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/itemchanged-at.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/itemchanged(at).md",
       "hash": "0ade90c8ab1e5685b17993a38c4f91acd1e706bc7b1c3bf7d2a3c309309b3dbe"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/persistentidentifierforitem(at:)": {
       "etag": "\"5520-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/persistentidentifierforitem-at.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/persistentidentifierforitem(at).md",
       "hash": "c54d857aae08ca845bbd3afff634817826fa3cfdcc33e75236e51860a2262fa7"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/placeholderurl(for:)": {
       "etag": "\"436a-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/placeholderurl-for.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/placeholderurl(for).md",
       "hash": "14b9c0efe867c055601c601c975932bd153820e6699f6449ba2a924a26fd2ca2"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/provideplaceholder(at:completionhandler:)": {
       "etag": "\"835e-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/provideplaceholder-atcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/provideplaceholder(at,completionhandler).md",
       "hash": "dc25a5745ea3cb3cb065c35f4ea7966b8ae13c8df349b535031c8670d2160b9e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/provideridentifier": {
@@ -707,62 +707,62 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/renameitem(withidentifier:toname:completionhandler:)": {
       "etag": "\"c22c-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/renameitem-withidentifiertonamecompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/renameitem(withidentifier,toname,completionhandler).md",
       "hash": "269da2adc559255480b78c076542091686133aab94611e327836401f842932f4"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/reparentitem(withidentifier:toparentitemwithidentifier:newname:completionhandler:)": {
       "etag": "\"cb18-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/reparentitem-withidentifiertoparentitemwithidentifiernewnamecompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/reparentitem(withidentifier,toparentitemwithidentifier,newname,completionhandler).md",
       "hash": "d61bee037dbe14c9e4d2d0def9ef195f1c8aa0faa6d729fc6dea6ce5acb2f740"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/setfavoriterank(_:foritemidentifier:completionhandler:)": {
       "etag": "\"bfdc-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/setfavoriterank-foritemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/setfavoriterank(_,foritemidentifier,completionhandler).md",
       "hash": "45e6344ae5354157df801e1ea7851ccbbe44513af6ddf5cfc3bd23e34d7bf5e4"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/setlastuseddate(_:foritemidentifier:completionhandler:)": {
       "etag": "\"beda-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/setlastuseddate-foritemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/setlastuseddate(_,foritemidentifier,completionhandler).md",
       "hash": "b563ac710f4d7bd31865b2be624b37a4cc7110e0dbdd92a752fc710573088b28"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/settagdata(_:foritemidentifier:completionhandler:)": {
       "etag": "\"c045-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/settagdata-foritemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/settagdata(_,foritemidentifier,completionhandler).md",
       "hash": "777955bb21d99bbc9695f30c0ee121e1d0901721f4025be968953288b7d43ccc"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/startprovidingitem(at:completionhandler:)": {
       "etag": "\"5b03-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/startprovidingitem-atcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/startprovidingitem(at,completionhandler).md",
       "hash": "09e556f0e7bfa2408478a19e7c02040596461d658fa8854ce240e9803458694d"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/stopprovidingitem(at:)": {
       "etag": "\"3e99-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/stopprovidingitem-at.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/stopprovidingitem(at).md",
       "hash": "39aac0c1871262002f6334a0bd7c2bca90aa6e19127ee4160b184dd9e1f1ee09"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/supportedservicesources(for:)": {
       "etag": "\"33bb-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/supportedservicesources-for.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/supportedservicesources(for).md",
       "hash": "8f0115f85c2414e58de77c4fede83935a73ec0902823d3dfb373fe83e206321c"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/trashitem(withidentifier:completionhandler:)": {
       "etag": "\"c6df-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/trashitem-withidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/trashitem(withidentifier,completionhandler).md",
       "hash": "20793374f9339d5328ed2cc8bfd770a6c9b4661fbe5a12b003b2a0d9162a54e6"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/untrashitem(withidentifier:toparentitemidentifier:completionhandler:)": {
       "etag": "\"c803-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/untrashitem-withidentifiertoparentitemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/untrashitem(withidentifier,toparentitemidentifier,completionhandler).md",
       "hash": "df86b7476b3d82bc9695db4f3cbb1961595b8acc3bdf7f74a6bd05db5e8d3329"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/urlforitem(withpersistentidentifier:)": {
       "etag": "\"53ca-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/urlforitem-withpersistentidentifier.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/urlforitem(withpersistentidentifier).md",
       "hash": "35fb1add449c3eeee9684263308249727d187f4a2f8cd3020edadc7263d204f9"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/writeplaceholder(at:withmetadata:)": {
       "etag": "\"6303-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/writeplaceholder-atwithmetadata.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/writeplaceholder(at,withmetadata).md",
       "hash": "ad56c61bc1c7c3c5269e333abd085578d0a00c336e501d310879c27c901fc560"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextensionactionidentifier": {
@@ -772,12 +772,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextensionactionidentifier/init(_:)": {
       "etag": "\"1947-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextensionactionidentifier/init.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextensionactionidentifier/init(_).md",
       "hash": "bf04010c2a79c8d5626d4696b475d313f9e15293f854b6aaa8000eced27cdc45"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderextensionactionidentifier/init(rawvalue:)": {
       "etag": "\"1966-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextensionactionidentifier/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextensionactionidentifier/init(rawvalue).md",
       "hash": "56dde1e56715d8cccec3cec35127cea835454554aae45c9228e3e5a65238d42e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderexternalvolumehandling": {
@@ -787,7 +787,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderexternalvolumehandling/shouldconnectexternaldomain(completionhandler:)": {
       "etag": "\"2bb7-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderexternalvolumehandling/shouldconnectexternaldomain-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderexternalvolumehandling/shouldconnectexternaldomain(completionhandler).md",
       "hash": "2f6484927c414fe1eadc61964424fc42906da899e763d8d5f09252e47086bde2"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderfavoriterankunranked": {
@@ -802,7 +802,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderfetchcontentsoptions/init(rawvalue:)": {
       "etag": "\"1579-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderfetchcontentsoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderfetchcontentsoptions/init(rawvalue).md",
       "hash": "2214eb1a49b29b47f698a7fa380784ab2cdd752c913a30835ae30cb1af954459"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderfetchcontentsoptions/strictversioning": {
@@ -822,7 +822,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderfilesystemflags/init(rawvalue:)": {
       "etag": "\"154b-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderfilesystemflags/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderfilesystemflags/init(rawvalue).md",
       "hash": "70c5e18f2bcb03b49b09cb5acd0dcdeec762e1e0f8f27dec06ab584831239bce"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderfilesystemflags/pathextensionhidden": {
@@ -852,12 +852,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderincrementalcontentfetching/fetchcontents(for:version:usingexistingcontentsat:existingversion:request:completionhandler:)": {
       "etag": "\"805b-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderincrementalcontentfetching/fetchcontents-forversionusingexistingcontentsatexistingversionrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderincrementalcontentfetching/fetchcontents(for,version,usingexistingcontentsat,existingversion,request,completionhandler).md",
       "hash": "ce906892f2f72bb586b626589fc7930fea237d7c2ae9537c8c677d1c82b7e907"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritem-swift.typealias": {
       "etag": "\"305a-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritem-swifttypealias.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritem-swift.typealias.md",
       "hash": "a265b03d34d8e62174924f0e18aec0f036b57f73c3b320f4f91e2d7571d06179"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemcapabilities": {
@@ -922,7 +922,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemcapabilities/init(rawvalue:)": {
       "etag": "\"155b-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemcapabilities/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemcapabilities/init(rawvalue).md",
       "hash": "b5818d644eafdd00c37b9c73c942e0e3b15469952828d0872ad9105a5aadf340"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemdecorating": {
@@ -942,12 +942,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemdecorationidentifier/init(_:)": {
       "etag": "\"19af-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemdecorationidentifier/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemdecorationidentifier/init(_).md",
       "hash": "5e2d69d1df4b4a7dee27678f36638e942281838e9b3a5513e962a6210bad4c54"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemdecorationidentifier/init(rawvalue:)": {
       "etag": "\"19ce-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemdecorationidentifier/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemdecorationidentifier/init(rawvalue).md",
       "hash": "dcbac310d7ad5835a68f7b5bae5e4ea425a129de7afbd70796dc839f74e4bfe8"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemfields": {
@@ -992,7 +992,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemfields/init(rawvalue:)": {
       "etag": "\"14c2-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemfields/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemfields/init(rawvalue).md",
       "hash": "20c89a41a48c70103ed32117e19f96b38ff780adb60ac6853d2a345ffc990a98"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemfields/lastuseddate": {
@@ -1022,12 +1022,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemidentifier/init(_:)": {
       "etag": "\"1862-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemidentifier/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemidentifier/init(_).md",
       "hash": "52cb4ca808565056e0b5b100eb3a8da380d89b5123d7c7d95cd2bc21d6c07aad"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemidentifier/init(rawvalue:)": {
       "etag": "\"1882-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemidentifier/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemidentifier/init(rawvalue).md",
       "hash": "d96f839d512811c41d99e0866687da7497d4953272b8fe953e89177e4f98936a"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemidentifier/rootcontainer": {
@@ -1237,7 +1237,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemversion/init(contentversion:metadataversion:)": {
       "etag": "\"29a1-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemversion/init-contentversionmetadataversion.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemversion/init(contentversion,metadataversion).md",
       "hash": "67d42e26ea060863d9238e06e3b6e0bd0f3871e9a948aeedcfd8c3629a04d0b8"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideritemversion/metadataversion": {
@@ -1262,7 +1262,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderknownfolderlocations/init()": {
       "etag": "\"17a1-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/init.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/init().md",
       "hash": "783d3c06feada61be5bdc9c6d3542520d15bb491ca074d65c06919b9e7e17290"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderknownfolderlocations/location": {
@@ -1272,12 +1272,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderknownfolderlocations/location/init(existingitemidentifier:)": {
       "etag": "\"2aee-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/location/init-existingitemidentifier.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/location/init(existingitemidentifier).md",
       "hash": "72c4b305ebd5f4206a257354711e954c6a1f74d931a6cb0ff4f224c9790331ba"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderknownfolderlocations/location/init(parentitemidentifier:filename:)": {
       "etag": "\"30cc-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/location/init-parentitemidentifierfilename.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/location/init(parentitemidentifier,filename).md",
       "hash": "673a6479a0110ce34cbc985685d4fe5ae298f21a9abed0f8e9f46f0479bcd7eb"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderknownfolderlocations/shouldcreatebinarycompatibilitysymlink": {
@@ -1302,7 +1302,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderknownfolders/init(rawvalue:)": {
       "etag": "\"1391-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfolders/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfolders/init(rawvalue).md",
       "hash": "fc52c7c2371fb142bd77cc0ffc712c618a4f9a24f870321e025fef4f85b467a9"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderknownfoldersupporting": {
@@ -1312,7 +1312,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderknownfoldersupporting/getknownfolderlocations(_:completionhandler:)": {
       "etag": "\"3f7c-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfoldersupporting/getknownfolderlocations-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfoldersupporting/getknownfolderlocations(_,completionhandler).md",
       "hash": "21966d926793e0ca98183f4bcad19fc432712c409e2f920c344606164be932c8"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager": {
@@ -1322,17 +1322,17 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/add(_:completionhandler:)": {
       "etag": "\"9564-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/add-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/add(_,completionhandler).md",
       "hash": "ef144ea32f147f264fb386910f504b68638c87e4a66e652f13ffd656c309bdd5"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/checkdomainscanbestoredonvolume(at:)": {
       "etag": "\"2b93-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/checkdomainscanbestoredonvolume-at.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/checkdomainscanbestoredonvolume(at).md",
       "hash": "15547940632a118e0779685f452c3b68025385b43babaebdc59d9227fce3f038"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/claimknownfolders(_:localizedreason:completionhandler:)": {
       "etag": "\"5521-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/claimknownfolders-localizedreasoncompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/claimknownfolders(_,localizedreason,completionhandler).md",
       "hash": "caad49a9ab2b28ae654e1cc1eced66e2d65921233e9be3631bd728f50696b705"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/default": {
@@ -1342,7 +1342,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/disconnect(reason:options:completionhandler:)": {
       "etag": "\"a3d2-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/disconnect-reasonoptionscompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/disconnect(reason,options,completionhandler).md",
       "hash": "2848500a2ec45b5b358fbdb50ed8dec453a38ca829a5cf236458934b4d42df97"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/disconnectionoptions": {
@@ -1352,7 +1352,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/disconnectionoptions/init(rawvalue:)": {
       "etag": "\"1a6f-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/disconnectionoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/disconnectionoptions/init(rawvalue).md",
       "hash": "be37f28e8203a18e8150259a1fbdbbdac7bca0b46d6839b94121626fae7baa49"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/disconnectionoptions/temporary": {
@@ -1372,7 +1372,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/domainremovalmode/init(rawvalue:)": {
       "etag": "\"1a2d-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/domainremovalmode/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/domainremovalmode/init(rawvalue).md",
       "hash": "e5c88831f4cf9aaa31fe80e09d6d34c87aa0d9f008b7241893deeff188d0bd17"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/domainremovalmode/preservedirtyuserdata": {
@@ -1402,72 +1402,72 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/eligibilityresult/ineligible(_:)": {
       "etag": "\"1f98-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/eligibilityresult/ineligible.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/eligibilityresult/ineligible(_).md",
       "hash": "b60db7d8f5f93d35c655c0ce4f8b0ee4f9655d043314e34e58dd05d006d95308"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/enumeratorformaterializeditems()": {
       "etag": "\"591d-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/enumeratorformaterializeditems.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/enumeratorformaterializeditems().md",
       "hash": "cf19470ad1644b18d2340ca54cf1807bc6618ae9b79fd8b0a3f01acc61d3b121"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/enumeratorforpendingitems()": {
       "etag": "\"5ca7-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/enumeratorforpendingitems.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/enumeratorforpendingitems().md",
       "hash": "e7b6b05342773fb39aa0b99123aaad0187400d47350e296569f73a58ec12270b"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/evictitem(identifier:completionhandler:)": {
       "etag": "\"9ecf-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/evictitem-identifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/evictitem(identifier,completionhandler).md",
       "hash": "394f4ff6bd9e28301a1588307cfc7a97601513138ce5183892647f1976020420"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/getdomainswithcompletionhandler(_:)": {
       "etag": "\"9441-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/getdomainswithcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/getdomainswithcompletionhandler(_).md",
       "hash": "940275f0252026092176d292ea462fb06c97031cd089002f3b241257edd09576"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/getidentifierforuservisiblefile(at:completionhandler:)": {
       "etag": "\"671f-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/getidentifierforuservisiblefile-atcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/getidentifierforuservisiblefile(at,completionhandler).md",
       "hash": "cd880955e69aaf848ffb19af774c6a5caecb72e427081320110373820487e3ee"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/getservice(named:for:completionhandler:)": {
       "etag": "\"4d41-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/getservice-namedforcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/getservice(named,for,completionhandler).md",
       "hash": "777ce2eed999e78cb1628387d193336088be4ccbcbe0dbd56025eea7d66ff17a"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/getuservisibleurl(for:completionhandler:)": {
       "etag": "\"5ca2-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/getuservisibleurl-forcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/getuservisibleurl(for,completionhandler).md",
       "hash": "edfa2f0a3c7f695fb7b69c5c294223070c9e2caec5df55feb5dee0be17ff31fc"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/globalprogress(for:)": {
       "etag": "\"7506-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/globalprogress-for.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/globalprogress(for).md",
       "hash": "8eda41ab96b46693e7b20c52de754b3ceedd27e2210b30749b03fce4f3ddaf65"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/import(_:fromdirectoryat:completionhandler:)": {
       "etag": "\"dc11-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/import-fromdirectoryatcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/import(_,fromdirectoryat,completionhandler).md",
       "hash": "94de11bee21300b734b35c526b4d3f9a48eb9fd4d05e76944d6400978711caeb"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/init(for:)": {
       "etag": "\"7f41-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/init-for.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/init(for).md",
       "hash": "0ed8bec6d8fc1c9e42516f332061a67625e6866a00a911ac3379dac458eb5466"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/init(fordomain:)": {
       "etag": "\"18a8-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/init-fordomain.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/init(fordomain).md",
       "hash": "484b2b6722dec61a225b4a40817048051af19a57e7a45b7f1a2878b628648f94"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/listavailabletestingoperations()": {
       "etag": "\"4232-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/listavailabletestingoperations.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/listavailabletestingoperations().md",
       "hash": "0e77ce2856c7d38f6be6da4cedfc0e8f6532b1cb96539c1cb8c04532212aff8a"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/placeholderurl(for:)": {
       "etag": "\"639e-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/placeholderurl-for.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/placeholderurl(for).md",
       "hash": "cda5007247d838bb86f532c878b0587cf6934e3af7e31800fffe33023e521667"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/provideridentifier": {
@@ -1477,97 +1477,97 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/reconnect(completionhandler:)": {
       "etag": "\"9045-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/reconnect-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/reconnect(completionhandler).md",
       "hash": "408a88a50602a200c37672d15a5c82494d21ef9903a34bd2a9e1fe3fc0b36b52"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/register(_:foritemwithidentifier:completionhandler:)": {
       "etag": "\"6f17-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/register-foritemwithidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/register(_,foritemwithidentifier,completionhandler).md",
       "hash": "7fff4a27aa88d78eb48aca77aab57890bace099474e19519767198b0f4206522"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/reimportitems(below:completionhandler:)": {
       "etag": "\"9f10-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/reimportitems-belowcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/reimportitems(below,completionhandler).md",
       "hash": "8e61aa2b1e173bb3e48dda8a2109ac736c4b1081a541ab19df18c515e3ee99a3"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/releaseknownfolders(_:localizedreason:completionhandler:)": {
       "etag": "\"53e5-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/releaseknownfolders-localizedreasoncompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/releaseknownfolders(_,localizedreason,completionhandler).md",
       "hash": "f4f202ff841447fadc4df93d5dd5c731b5489167379f29257bf52d108405fcdb"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/remove(_:completionhandler:)": {
       "etag": "\"9b24-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/remove-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/remove(_,completionhandler).md",
       "hash": "049b9c5cbdb50384779f23592d83731cdec095c4bbc47c0b261d3b16ce96c26e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/remove(_:mode:completionhandler:)": {
       "etag": "\"ade8-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/remove-modecompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/remove(_,mode,completionhandler).md",
       "hash": "d1f3e4e61abd976ffb04ca5657843a649a5090c2e1d08d5466fd504be5c028bb"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/removealldomains(completionhandler:)": {
       "etag": "\"9137-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/removealldomains-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/removealldomains(completionhandler).md",
       "hash": "8aa0cd428583e2b2ec98e47ae5139bd56270030a3db32d063e44f0aaeb47760e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/requestdiagnosticcollection(for:errorreason:completionhandler:)": {
       "etag": "\"4e71-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdiagnosticcollection-forerrorreasoncompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdiagnosticcollection(for,errorreason,completionhandler).md",
       "hash": "92dac8c55a0a7fa65c049e576b030830b91e1305268308cae55b8c80de11f34b"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/requestdownloadforitem(withidentifier:requestedrange:)": {
       "etag": "\"4a25-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdownloadforitem-withidentifierrequestedrange.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdownloadforitem(withidentifier,requestedrange).md",
       "hash": "b028c0fef5b1df857bb4ebdaaab5e631ad8e08fa7fe1fec71d5a715109e0b150"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/requestdownloadforitem(withidentifier:requestedrange:completionhandler:)": {
       "etag": "\"514b-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdownloadforitem-withidentifierrequestedrangecompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdownloadforitem(withidentifier,requestedrange,completionhandler).md",
       "hash": "522d9885895e1fb357cbe7f7f794eb347a38c42c79c123b1e0fb1fcaa1da540e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/requestmodification(of:foritemwithidentifier:options:completionhandler:)": {
       "etag": "\"8164-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestmodification-offoritemwithidentifieroptionscompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestmodification(of,foritemwithidentifier,options,completionhandler).md",
       "hash": "70322d44d3a5a8eaa5ebc70ba1860085967b613530ebc5b746fbe268e4523785"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/run(_:)": {
       "etag": "\"4b8b-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/run.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/run(_).md",
       "hash": "f98d20c6247289f8a15a6cdcb6cad8f36f9f3542f597d27afc1e57189e9cef02"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/signalenumerator(for:completionhandler:)": {
       "etag": "\"6d66-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/signalenumerator-forcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/signalenumerator(for,completionhandler).md",
       "hash": "86ccbfdb991085835ee3d69ede9694ea6ecd34fe3bfa3b773eac9f95bca42bda"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/signalerrorresolved(_:completionhandler:)": {
       "etag": "\"4c41-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/signalerrorresolved-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/signalerrorresolved(_,completionhandler).md",
       "hash": "c56d64f685c9bbfeff3987e184b4752b19f3f7cd067b942250f3eb398a1fb54d"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/statedirectoryurl()": {
       "etag": "\"38cb-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/statedirectoryurl.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/statedirectoryurl().md",
       "hash": "838306e50bee544b7658c09eaa853fdd850d9c1d1f18ef520fafa8ef405d3e13"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/temporarydirectoryurl()": {
       "etag": "\"b361-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/temporarydirectoryurl.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/temporarydirectoryurl().md",
       "hash": "1a8d4fcfe0e2becbba86f8126062417de4b48527604b30a20332a9307e8746b1"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/waitforchanges(below:completionhandler:)": {
       "etag": "\"7f29-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/waitforchanges-belowcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/waitforchanges(below,completionhandler).md",
       "hash": "161e9bc6a21f5aa13fc5f1d3dac1c6d0ed98d6eae30a3902e20b841d2853ee04"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/waitforstabilization(completionhandler:)": {
       "etag": "\"9567-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/waitforstabilization-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/waitforstabilization(completionhandler).md",
       "hash": "f7c2312d9fea4504008662d31ec7918709ed8d245adbe91cae7e3a389fc4bd61"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/writeplaceholder(at:withmetadata:)": {
       "etag": "\"7944-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/writeplaceholder-atwithmetadata.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/writeplaceholder(at,withmetadata).md",
       "hash": "f3417063ce54988a29feb77c2073d973157c6235f5117645b80d01ccfd25e950"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermaterializationflags": {
@@ -1577,7 +1577,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermaterializationflags/init(rawvalue:)": {
       "etag": "\"1578-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermaterializationflags/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermaterializationflags/init(rawvalue).md",
       "hash": "dc34d7af408b1970796f4a0b84906b5dfdec03ab2720e3d724456020a14dc443"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermaterializationflags/knownsparseranges": {
@@ -1597,7 +1597,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermodifyitemoptions/init(rawvalue:)": {
       "etag": "\"1521-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermodifyitemoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermodifyitemoptions/init(rawvalue).md",
       "hash": "a78e16bcd8a218fd064e7eef1ea6a8ac697782241c08a49a45fd6db3003679d3"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidermodifyitemoptions/isimmediateuploadrequestbypresentingapplication": {
@@ -1622,7 +1622,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidernamespacepolicy/init(rawvalue:)": {
       "etag": "\"1421-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidernamespacepolicy/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidernamespacepolicy/init(rawvalue).md",
       "hash": "aae5129fdd594cf89ff47d4f7f21a092e78787883de4512768b7b7aca4b42f80"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidernamespacepolicy/materializeeagerly": {
@@ -1642,12 +1642,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderpage/init(_:)": {
       "etag": "\"17cc-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderpage/init.md",
+      "file_path": "documentation/FileProvider/nsfileproviderpage/init(_).md",
       "hash": "6dd9513ac7967b569b6475156986aabc5d140daafcda547953f499c531588663"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderpage/init(rawvalue:)": {
       "etag": "\"17ec-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderpage/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderpage/init(rawvalue).md",
       "hash": "274d6e94f18679dda1d1db4437c939aa67247637af94d22207d71e1b6c1dddfd"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderpage/initialpagesortedbydate": {
@@ -1667,7 +1667,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderpartialcontentfetching/fetchpartialcontents(for:version:request:minimalrange:aligningto:options:completionhandler:)": {
       "etag": "\"10267-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderpartialcontentfetching/fetchpartialcontents-forversionrequestminimalrangealigningtooptionscompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderpartialcontentfetching/fetchpartialcontents(for,version,request,minimalrange,aligningto,options,completionhandler).md",
       "hash": "766588d72e6e183711c0df9181aa2ad91a105eb56d94da5dab74b3c43430c5fe"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderpendingsetenumerator": {
@@ -1697,52 +1697,52 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:)": {
       "etag": "\"f2da-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/createitem-basedonfieldscontentsoptionsrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/createitem(basedon,fields,contents,options,request,completionhandler).md",
       "hash": "06ac107a6d67448830846e07e5ade60df9d22c40f354ecf5f09e6b0d517e02ac"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/deleteitem(identifier:baseversion:options:request:completionhandler:)": {
       "etag": "\"a727-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/deleteitem-identifierbaseversionoptionsrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/deleteitem(identifier,baseversion,options,request,completionhandler).md",
       "hash": "97f54734b59c8ec8907badfc0e6c2d3e02124b47bd24cd42fe61977d660e713f"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/fetchcontents(for:version:request:completionhandler:)": {
       "etag": "\"b773-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/fetchcontents-forversionrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/fetchcontents(for,version,request,completionhandler).md",
       "hash": "e0d255170b9076a3bf246d618cd14c0cb23fb2ee8c4972fb9013b36f893dd158"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/importdidfinish(completionhandler:)": {
       "etag": "\"55a5-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/importdidfinish-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/importdidfinish(completionhandler).md",
       "hash": "72694ec1046e8968f0f863aae45680fc2b0bb799f3d9987f00530b76005b91af"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/init(domain:)": {
       "etag": "\"2b00-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/init-domain.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/init(domain).md",
       "hash": "260a120370456590918cfc0069eda865409bd139c4794fea723aaeadd0e2175a"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/invalidate()": {
       "etag": "\"252b-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/invalidate.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/invalidate().md",
       "hash": "9a594c8088230e4b50eebd21c73e6c32125c6e0d7b9e1bbaa838cdd927f117bc"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/item(for:request:completionhandler:)": {
       "etag": "\"8a41-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/item-forrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/item(for,request,completionhandler).md",
       "hash": "689c6632e3faa09d8a5aea3ec902e0a998bd544e6f65ad59f63c9ccd39f3106e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/materializeditemsdidchange(completionhandler:)": {
       "etag": "\"347d-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/materializeditemsdidchange-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/materializeditemsdidchange(completionhandler).md",
       "hash": "7e6f7d8ebb962540b1d475d1bfb4de38a2ba18563b433bdb457452c0a81a08f5"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/modifyitem(_:baseversion:changedfields:contents:options:request:completionhandler:)": {
       "etag": "\"b58e-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/modifyitem-baseversionchangedfieldscontentsoptionsrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/modifyitem(_,baseversion,changedfields,contents,options,request,completionhandler).md",
       "hash": "583ff7f342c8d6d8377f58bc1f49b0abaf49eb649d31941086c263741aa7d88b"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/pendingitemsdidchange(completionhandler:)": {
       "etag": "\"48b3-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/pendingitemsdidchange-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/pendingitemsdidchange(completionhandler).md",
       "hash": "a362449a76f2a563bd92d2c8bce67e58fb3248c0e1069512e773cad9ebdcbd86"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderrequest": {
@@ -1777,17 +1777,17 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearchenumerationobserver/didenumerate(_:)": {
       "etag": "\"35a4-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/didenumerate.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/didenumerate(_).md",
       "hash": "46fc476252d033348737a63469e2291c8eb41edb21df6e331497c883ccec4d79"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearchenumerationobserver/finishenumerating(upto:)": {
       "etag": "\"4081-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/finishenumerating-upto.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/finishenumerating(upto).md",
       "hash": "9ab9ad7ba78bc1bc5e71a2df4d2019ff9fcc820eb4d62dfccb52a9c2a4c4f8d3"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearchenumerationobserver/finishenumeratingwitherror(_:)": {
       "etag": "\"366d-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/finishenumeratingwitherror.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/finishenumeratingwitherror(_).md",
       "hash": "4923ef7b968bf1134dba09c0f65818c06a17f1e08329b1a68d8a0bc7245e3074"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearchenumerationobserver/maximumnumberofresultsperpage": {
@@ -1802,12 +1802,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearchenumerator/enumeratesearchresults(for:startingat:)": {
       "etag": "\"4183-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerator/enumeratesearchresults-forstartingat.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerator/enumeratesearchresults(for,startingat).md",
       "hash": "f1d82f4bea601d53df90931abecc343125d7622b1546f3b5567d0ff63d24cd6f"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearchenumerator/invalidate()": {
       "etag": "\"1c25-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerator/invalidate.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerator/invalidate().md",
       "hash": "863bdceed7dc9589eba5a5afb8e30a279849f0002910c8480fdce6359e742e0c"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearching": {
@@ -1817,7 +1817,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearching/searchenumerator(for:)": {
       "etag": "\"347a-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearching/searchenumerator-for.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearching/searchenumerator(for).md",
       "hash": "2776f5070a599f4fe019a28c270607d8066d499dea68119241674d2e7992b905"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersearchresult": {
@@ -1872,7 +1872,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderservicesource/makelistenerendpoint()": {
       "etag": "\"31a2-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderservicesource/makelistenerendpoint.md",
+      "file_path": "documentation/FileProvider/nsfileproviderservicesource/makelistenerendpoint().md",
       "hash": "88477181b79cf77cce3ebde34b391a15f3566ab40e8d60d5b25002da3a8f433d"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderservicesource/servicename": {
@@ -1887,7 +1887,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderservicing/supportedservicesources(for:completionhandler:)": {
       "etag": "\"607c-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderservicing/supportedservicesources-forcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderservicing/supportedservicesources(for,completionhandler).md",
       "hash": "76938b37c4d68b3bc1b2d8d82f598152af863c8a1e9cbea7ce6f8f29c5008be5"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderstringsearchrequest": {
@@ -1912,12 +1912,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersyncanchor/init(_:)": {
       "etag": "\"182f-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersyncanchor/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersyncanchor/init(_).md",
       "hash": "d6df6fc6b3c8802c2ff21d5d2207dbd2a2d6396cd27fa6751ad65b0489bf443c"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidersyncanchor/init(rawvalue:)": {
       "etag": "\"186d-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersyncanchor/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersyncanchor/init(rawvalue).md",
       "hash": "ebd88a139b4ccd5af5ca0f62dd020ad944fc61e0f12c1900dabf4126a87118c9"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertestingchildrenenumeration": {
@@ -2112,7 +2112,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertestingoperationside/init(rawvalue:)": {
       "etag": "\"14d2-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidertestingoperationside/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidertestingoperationside/init(rawvalue).md",
       "hash": "837c0e3c1a94bd6b0b6781b09fa63d828442f1b3c4f659d2784f1774ba581002"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertestingoperationtype": {
@@ -2152,7 +2152,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertestingoperationtype/init(rawvalue:)": {
       "etag": "\"14be-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidertestingoperationtype/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidertestingoperationtype/init(rawvalue).md",
       "hash": "44430924f498aa48d12a14b91429d7ba53093f84110291bce09cb2a27f25d831"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertestingoperationtype/lookup": {
@@ -2172,7 +2172,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileproviderthumbnailing/fetchthumbnails(for:requestedsize:perthumbnailcompletionhandler:completionhandler:)": {
       "etag": "\"8e04-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderthumbnailing/fetchthumbnails-forrequestedsizeperthumbnailcompletionhandlercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderthumbnailing/fetchthumbnails(for,requestedsize,perthumbnailcompletionhandler,completionhandler).md",
       "hash": "4942df4218c22965427036b0944167315ab3313a4e30a2abbc48c7d3f13da187"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertypeandcreator": {
@@ -2187,12 +2187,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertypeandcreator/init()": {
       "etag": "\"1603-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidertypeandcreator/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovidertypeandcreator/init().md",
       "hash": "cd58d70759cba263e2b54f8688c2c6699d2e07b6f176d9036df7790d0a51d4af"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertypeandcreator/init(type:creator:)": {
       "etag": "\"1c34-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidertypeandcreator/init-typecreator.md",
+      "file_path": "documentation/FileProvider/nsfileprovidertypeandcreator/init(type,creator).md",
       "hash": "998a41631481bde911b97f416ce16dbbe107ba02ec05a5f9ae19a6f28de14ce4"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidertypeandcreator/type": {
@@ -2212,12 +2212,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideruserinfokey/init(_:)": {
       "etag": "\"1384-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideruserinfokey/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovideruserinfokey/init(_).md",
       "hash": "65c0d19d5d433b90fc42ef2543afd1a113bc309bade99f7b88f1baa257125bbd"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideruserinfokey/init(rawvalue:)": {
       "etag": "\"140e-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideruserinfokey/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideruserinfokey/init(rawvalue).md",
       "hash": "82cdd3d415d3edfd466e030bbf004e6fb24c0edf377adf3b960b88856a69db2d"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideruserinteractionsuppressing": {
@@ -2227,12 +2227,12 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideruserinteractionsuppressing/isinteractionsuppressed(foridentifier:)": {
       "etag": "\"3223-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideruserinteractionsuppressing/isinteractionsuppressed-foridentifier.md",
+      "file_path": "documentation/FileProvider/nsfileprovideruserinteractionsuppressing/isinteractionsuppressed(foridentifier).md",
       "hash": "ca89dbf17ad2c59ded4ff497cb8844627ac1c4792a573a7bb8d118006ffe2b9f"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovideruserinteractionsuppressing/setinteractionsuppressed(_:foridentifier:)": {
       "etag": "\"355f-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideruserinteractionsuppressing/setinteractionsuppressed-foridentifier.md",
+      "file_path": "documentation/FileProvider/nsfileprovideruserinteractionsuppressing/setinteractionsuppressed(_,foridentifier).md",
       "hash": "427228edd1de1a392070b5c5e0fe4999ee7d8b4f5356fdc5dae23e68600fd69e"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidervolumeunsupportedreason": {
@@ -2242,7 +2242,7 @@
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidervolumeunsupportedreason/init(rawvalue:)": {
       "etag": "\"1496-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidervolumeunsupportedreason/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidervolumeunsupportedreason/init(rawvalue).md",
       "hash": "9304553d093eac43d9c5e5d11578093967621a3ca676ef132d042c2dafaf86a7"
     },
     "https://developer.apple.com/documentation/fileprovider/nsfileprovidervolumeunsupportedreason/network": {
@@ -2357,22 +2357,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderchangeobserver/diddeleteitems(withidentifiers:).json": {
       "etag": "\"41f8-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/diddeleteitems-withidentifiers.md",
+      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/diddeleteitems(withidentifiers).md",
       "hash": "c3f6b83425fc5ce8fb351e4c9f3cea3ab98e26c2bc362577de915a5e9d787d5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderchangeobserver/didupdate(_:).json": {
       "etag": "\"40b9-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/didupdate.md",
+      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/didupdate(_).md",
       "hash": "cfd24a9f391bfc93e61e58d7cf8bba5f9b82c58476e5ad269fb64e28396f62ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderchangeobserver/finishenumeratingchanges(upto:morecoming:).json": {
       "etag": "\"4b1f-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/finishenumeratingchanges-uptomorecoming.md",
+      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/finishenumeratingchanges(upto,morecoming).md",
       "hash": "a7e538051fca9261652775063aca74d5524a07ed11a366d9b3eff3b8e6f153b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderchangeobserver/finishenumeratingwitherror(_:).json": {
       "etag": "\"4134-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/finishenumeratingwitherror.md",
+      "file_path": "documentation/FileProvider/nsfileproviderchangeobserver/finishenumeratingwitherror(_).md",
       "hash": "43850177199364819f25f459d6ae99dd9461a619683cb1ec9e2998b17b82a20f"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderchangeobserver/suggestedbatchsize.json": {
@@ -2407,7 +2407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidercontentpolicy/init(rawvalue:).json": {
       "etag": "\"13fa-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidercontentpolicy/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidercontentpolicy/init(rawvalue).md",
       "hash": "d17740bcd7b87b8be74d8f79ecd75f0930b6ef6630371b15a02723d52eaaa38b"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidercreateitemoptions.json": {
@@ -2422,7 +2422,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidercreateitemoptions/init(rawvalue:).json": {
       "etag": "\"1520-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidercreateitemoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidercreateitemoptions/init(rawvalue).md",
       "hash": "10e1fba0a85015fb99f40a46164807d93934fe0c30b49764fefcebef2c86744c"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidercreateitemoptions/mayalreadyexist.json": {
@@ -2437,7 +2437,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidercustomaction/performaction(identifier:onitemswithidentifiers:completionhandler:).json": {
       "etag": "\"53c3-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidercustomaction/performaction-identifieronitemswithidentifierscompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidercustomaction/performaction(identifier,onitemswithidentifiers,completionhandler).md",
       "hash": "df95265e1767af934cc5724cec35580afaee76e9e1746d41b083f502492c319f"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdeleteitemoptions.json": {
@@ -2447,7 +2447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdeleteitemoptions/init(rawvalue:).json": {
       "etag": "\"1520-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdeleteitemoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdeleteitemoptions/init(rawvalue).md",
       "hash": "0c6ae978561d9e7dc5a54c39afda78a5c93c5bcdd857e05de6078b4516df161e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdeleteitemoptions/recursive.json": {
@@ -2477,17 +2477,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/init(displayname:userinfo:volumeurl:).json": {
       "etag": "\"440e-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/init-displaynameuserinfovolumeurl.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/init(displayname,userinfo,volumeurl).md",
       "hash": "8a2a4ee878dcf1ab6957587913a85dd8d9dc1aaaafa194632db6e8df01f819aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/init(identifier:displayname:).json": {
       "etag": "\"3f7f-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/init-identifierdisplayname.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/init(identifier,displayname).md",
       "hash": "770ab7b28b2043d85994ddaebbe8644683e2fbbe28faa4f59e6d7babce60c7a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/init(identifier:displayname:pathrelativetodocumentstorage:).json": {
       "etag": "\"4a60-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/init-identifierdisplaynamepathrelativetodocumentstorage.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/init(identifier,displayname,pathrelativetodocumentstorage).md",
       "hash": "02c68258486f3fc4e0116fa2bf4b53d39ce9230de338e6cd0d23ff31fc6410f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/isdisconnected.json": {
@@ -2532,12 +2532,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.property.json": {
       "etag": "\"3684-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swiftproperty.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swift.property.md",
       "hash": "69a671bc88b3c346f8bd4a0aa9adee94ff7d61cd58a7ac9f238d0f2dd9f44bde"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.struct.json": {
       "etag": "\"4979-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swiftstruct.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swift.struct.md",
       "hash": "185c1cf011a6be7774446ae74f4533272a96ac1934641f15528ea4117fde4a85"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.struct/alwaysenabled.json": {
@@ -2547,7 +2547,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.struct/init(rawvalue:).json": {
       "etag": "\"1b4f-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swift.struct/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomain/testingmodes-swift.struct/init(rawvalue).md",
       "hash": "267b0b994db4f4955a3091460949cce41b102095ccde4f66e8617b740d016ca2"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomain/testingmodes-swift.struct/interactive.json": {
@@ -2577,12 +2577,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomainidentifier/init(_:).json": {
       "etag": "\"186f-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomainidentifier/init.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomainidentifier/init(_).md",
       "hash": "667cb2aba276c6009d03bfdb684728b09028dde9016353efaace5145484ecff4"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomainidentifier/init(rawvalue:).json": {
       "etag": "\"188f-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomainidentifier/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomainidentifier/init(rawvalue).md",
       "hash": "fc44dfde61c99c9f598b20652a0175a8123b3d03c82f148962f60571109abf51"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomainstate.json": {
@@ -2607,12 +2607,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomainversion/init(coder:).json": {
       "etag": "\"15b5-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomainversion/init-coder.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomainversion/init(coder).md",
       "hash": "41109db50a00c06f7b50d19dc3620e800b9ad5011592ed3acd0d5d4510d3840f"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderdomainversion/next().json": {
       "etag": "\"1c65-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderdomainversion/next.md",
+      "file_path": "documentation/FileProvider/nsfileproviderdomainversion/next().md",
       "hash": "701da29f60af49c1767e154e555eb65159c07c8babd2d168bcaabb535fd7ddc8"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerating.json": {
@@ -2622,7 +2622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerating/enumerator(for:request:).json": {
       "etag": "\"875e-65d55e28b6950-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerating/enumerator-forrequest.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerating/enumerator(for,request).md",
       "hash": "244c0e20e4ef7026ffe778d7e7df68bb6545f490fabd81231ca21eddbcd3da1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerationobserver.json": {
@@ -2632,17 +2632,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerationobserver/didenumerate(_:).json": {
       "etag": "\"39fe-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/didenumerate.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/didenumerate(_).md",
       "hash": "85e3abbd11f8195c03fa091ec95d6d70a1e7682cb4cad69aa9631d8fdd802588"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerationobserver/finishenumerating(upto:).json": {
       "etag": "\"3a95-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/finishenumerating-upto.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/finishenumerating(upto).md",
       "hash": "08ce9c920d7c49e1e4bfe5be342701f24541848e4f010ca22b75f79701438e17"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerationobserver/finishenumeratingwitherror(_:).json": {
       "etag": "\"3a4e-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/finishenumeratingwitherror.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerationobserver/finishenumeratingwitherror(_).md",
       "hash": "f82fc18be61950d2e893ee83bdaa5ed6908e3fb1b708cc7343ef69466f4353ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerationobserver/suggestedpagesize.json": {
@@ -2657,22 +2657,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerator/currentsyncanchor(completionhandler:).json": {
       "etag": "\"4830-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerator/currentsyncanchor-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerator/currentsyncanchor(completionhandler).md",
       "hash": "d14a275ce075fb93eb6e8b7c44976eb0b608c1e834963cfb2e9a41378dc6d74e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerator/enumeratechanges(for:from:).json": {
       "etag": "\"5782-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerator/enumeratechanges-forfrom.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerator/enumeratechanges(for,from).md",
       "hash": "685e7c7239630a1343de555c30e67b3d2628e43967de2573efb531aa15a6c3de"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerator/enumerateitems(for:startingat:).json": {
       "etag": "\"5328-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerator/enumerateitems-forstartingat.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerator/enumerateitems(for,startingat).md",
       "hash": "55277589b771f7b838d5b25c07b041b2de1041ba39ca7b99d6e585edf9856138"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderenumerator/invalidate().json": {
       "etag": "\"31d4-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderenumerator/invalidate.md",
+      "file_path": "documentation/FileProvider/nsfileproviderenumerator/invalidate().md",
       "hash": "e1a30380dbe325a9dd6f25606a3002a6698de037b7876066bc6f009c4a26fa81"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidererror.json": {
@@ -2732,7 +2732,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidererror/code/init(rawvalue:).json": {
       "etag": "\"16aa-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidererror/code/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidererror/code/init(rawvalue).md",
       "hash": "1a192b059ac806261f774904b1afe32b8399d946665ee44ed0da64d5df73ed61"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidererror/code/insufficientquota.json": {
@@ -2962,12 +2962,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/createdirectory(withname:inparentitemidentifier:completionhandler:).json": {
       "etag": "\"f4c4-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/createdirectory-withnameinparentitemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/createdirectory(withname,inparentitemidentifier,completionhandler).md",
       "hash": "cfeca80b589c601e062c0e43de0aed8dee40fe653c008a1668f6d03da15a3234"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/deleteitem(withidentifier:completionhandler:).json": {
       "etag": "\"aa0c-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/deleteitem-withidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/deleteitem(withidentifier,completionhandler).md",
       "hash": "78e072b91431df35248f6b110ac71e5de717c2e21df8b77f9f1d4878cb7f615c"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/documentstorageurl.json": {
@@ -2982,42 +2982,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/enumerator(for:).json": {
       "etag": "\"5675-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/enumerator-for.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/enumerator(for).md",
       "hash": "09581722860b08cace56543602eb34405452eb0ffc6bfb8b165f40a4aca9152b"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/fetchthumbnails(for:requestedsize:perthumbnailcompletionhandler:completionhandler:).json": {
       "etag": "\"876d-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/fetchthumbnails-forrequestedsizeperthumbnailcompletionhandlercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/fetchthumbnails(for,requestedsize,perthumbnailcompletionhandler,completionhandler).md",
       "hash": "ba28c70e661d16d0f291159620e0afadbd5eed98bf1f8bd5a568fea8cfb8350c"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/importdocument(at:toparentitemidentifier:completionhandler:).json": {
       "etag": "\"12618-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/importdocument-attoparentitemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/importdocument(at,toparentitemidentifier,completionhandler).md",
       "hash": "c074ce7f675049610f0c00c4832ac9d9d72f84ed2af86fcf41d8b49ff44ddd4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/item(for:).json": {
       "etag": "\"5ebe-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/item-for.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/item(for).md",
       "hash": "3ad669a3510f677b81de487a9b203d2549ae3d6fa629f2073417b15349217600"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/itemchanged(at:).json": {
       "etag": "\"4ccd-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/itemchanged-at.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/itemchanged(at).md",
       "hash": "0ade90c8ab1e5685b17993a38c4f91acd1e706bc7b1c3bf7d2a3c309309b3dbe"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/persistentidentifierforitem(at:).json": {
       "etag": "\"5520-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/persistentidentifierforitem-at.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/persistentidentifierforitem(at).md",
       "hash": "c54d857aae08ca845bbd3afff634817826fa3cfdcc33e75236e51860a2262fa7"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/placeholderurl(for:).json": {
       "etag": "\"436a-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/placeholderurl-for.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/placeholderurl(for).md",
       "hash": "14b9c0efe867c055601c601c975932bd153820e6699f6449ba2a924a26fd2ca2"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/provideplaceholder(at:completionhandler:).json": {
       "etag": "\"835e-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/provideplaceholder-atcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/provideplaceholder(at,completionhandler).md",
       "hash": "dc25a5745ea3cb3cb065c35f4ea7966b8ae13c8df349b535031c8670d2160b9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/provideridentifier.json": {
@@ -3027,62 +3027,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/renameitem(withidentifier:toname:completionhandler:).json": {
       "etag": "\"c22c-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/renameitem-withidentifiertonamecompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/renameitem(withidentifier,toname,completionhandler).md",
       "hash": "269da2adc559255480b78c076542091686133aab94611e327836401f842932f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/reparentitem(withidentifier:toparentitemwithidentifier:newname:completionhandler:).json": {
       "etag": "\"cb18-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/reparentitem-withidentifiertoparentitemwithidentifiernewnamecompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/reparentitem(withidentifier,toparentitemwithidentifier,newname,completionhandler).md",
       "hash": "d61bee037dbe14c9e4d2d0def9ef195f1c8aa0faa6d729fc6dea6ce5acb2f740"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/setfavoriterank(_:foritemidentifier:completionhandler:).json": {
       "etag": "\"bfdc-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/setfavoriterank-foritemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/setfavoriterank(_,foritemidentifier,completionhandler).md",
       "hash": "45e6344ae5354157df801e1ea7851ccbbe44513af6ddf5cfc3bd23e34d7bf5e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/setlastuseddate(_:foritemidentifier:completionhandler:).json": {
       "etag": "\"beda-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/setlastuseddate-foritemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/setlastuseddate(_,foritemidentifier,completionhandler).md",
       "hash": "b563ac710f4d7bd31865b2be624b37a4cc7110e0dbdd92a752fc710573088b28"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/settagdata(_:foritemidentifier:completionhandler:).json": {
       "etag": "\"c045-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/settagdata-foritemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/settagdata(_,foritemidentifier,completionhandler).md",
       "hash": "777955bb21d99bbc9695f30c0ee121e1d0901721f4025be968953288b7d43ccc"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/startprovidingitem(at:completionhandler:).json": {
       "etag": "\"5b03-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/startprovidingitem-atcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/startprovidingitem(at,completionhandler).md",
       "hash": "09e556f0e7bfa2408478a19e7c02040596461d658fa8854ce240e9803458694d"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/stopprovidingitem(at:).json": {
       "etag": "\"3e99-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/stopprovidingitem-at.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/stopprovidingitem(at).md",
       "hash": "39aac0c1871262002f6334a0bd7c2bca90aa6e19127ee4160b184dd9e1f1ee09"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/supportedservicesources(for:).json": {
       "etag": "\"33bb-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/supportedservicesources-for.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/supportedservicesources(for).md",
       "hash": "8f0115f85c2414e58de77c4fede83935a73ec0902823d3dfb373fe83e206321c"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/trashitem(withidentifier:completionhandler:).json": {
       "etag": "\"c6df-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/trashitem-withidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/trashitem(withidentifier,completionhandler).md",
       "hash": "20793374f9339d5328ed2cc8bfd770a6c9b4661fbe5a12b003b2a0d9162a54e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/untrashitem(withidentifier:toparentitemidentifier:completionhandler:).json": {
       "etag": "\"c803-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/untrashitem-withidentifiertoparentitemidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/untrashitem(withidentifier,toparentitemidentifier,completionhandler).md",
       "hash": "df86b7476b3d82bc9695db4f3cbb1961595b8acc3bdf7f74a6bd05db5e8d3329"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/urlforitem(withpersistentidentifier:).json": {
       "etag": "\"53ca-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/urlforitem-withpersistentidentifier.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/urlforitem(withpersistentidentifier).md",
       "hash": "35fb1add449c3eeee9684263308249727d187f4a2f8cd3020edadc7263d204f9"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextension/writeplaceholder(at:withmetadata:).json": {
       "etag": "\"6303-65d55e289e2dc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextension/writeplaceholder-atwithmetadata.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextension/writeplaceholder(at,withmetadata).md",
       "hash": "ad56c61bc1c7c3c5269e333abd085578d0a00c336e501d310879c27c901fc560"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextensionactionidentifier.json": {
@@ -3092,12 +3092,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextensionactionidentifier/init(_:).json": {
       "etag": "\"1947-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextensionactionidentifier/init.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextensionactionidentifier/init(_).md",
       "hash": "bf04010c2a79c8d5626d4696b475d313f9e15293f854b6aaa8000eced27cdc45"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderextensionactionidentifier/init(rawvalue:).json": {
       "etag": "\"1966-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderextensionactionidentifier/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderextensionactionidentifier/init(rawvalue).md",
       "hash": "56dde1e56715d8cccec3cec35127cea835454554aae45c9228e3e5a65238d42e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderexternalvolumehandling.json": {
@@ -3107,7 +3107,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderexternalvolumehandling/shouldconnectexternaldomain(completionhandler:).json": {
       "etag": "\"2bb7-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderexternalvolumehandling/shouldconnectexternaldomain-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderexternalvolumehandling/shouldconnectexternaldomain(completionhandler).md",
       "hash": "2f6484927c414fe1eadc61964424fc42906da899e763d8d5f09252e47086bde2"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderfavoriterankunranked.json": {
@@ -3122,7 +3122,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderfetchcontentsoptions/init(rawvalue:).json": {
       "etag": "\"1579-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderfetchcontentsoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderfetchcontentsoptions/init(rawvalue).md",
       "hash": "2214eb1a49b29b47f698a7fa380784ab2cdd752c913a30835ae30cb1af954459"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderfetchcontentsoptions/strictversioning.json": {
@@ -3142,7 +3142,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderfilesystemflags/init(rawvalue:).json": {
       "etag": "\"154b-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderfilesystemflags/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderfilesystemflags/init(rawvalue).md",
       "hash": "70c5e18f2bcb03b49b09cb5acd0dcdeec762e1e0f8f27dec06ab584831239bce"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderfilesystemflags/pathextensionhidden.json": {
@@ -3172,12 +3172,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderincrementalcontentfetching/fetchcontents(for:version:usingexistingcontentsat:existingversion:request:completionhandler:).json": {
       "etag": "\"805b-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderincrementalcontentfetching/fetchcontents-forversionusingexistingcontentsatexistingversionrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderincrementalcontentfetching/fetchcontents(for,version,usingexistingcontentsat,existingversion,request,completionhandler).md",
       "hash": "ce906892f2f72bb586b626589fc7930fea237d7c2ae9537c8c677d1c82b7e907"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritem-swift.typealias.json": {
       "etag": "\"305a-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritem-swifttypealias.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritem-swift.typealias.md",
       "hash": "a265b03d34d8e62174924f0e18aec0f036b57f73c3b320f4f91e2d7571d06179"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemcapabilities.json": {
@@ -3242,7 +3242,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemcapabilities/init(rawvalue:).json": {
       "etag": "\"155b-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemcapabilities/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemcapabilities/init(rawvalue).md",
       "hash": "b5818d644eafdd00c37b9c73c942e0e3b15469952828d0872ad9105a5aadf340"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemdecorating.json": {
@@ -3262,12 +3262,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemdecorationidentifier/init(_:).json": {
       "etag": "\"19af-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemdecorationidentifier/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemdecorationidentifier/init(_).md",
       "hash": "5e2d69d1df4b4a7dee27678f36638e942281838e9b3a5513e962a6210bad4c54"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemdecorationidentifier/init(rawvalue:).json": {
       "etag": "\"19ce-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemdecorationidentifier/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemdecorationidentifier/init(rawvalue).md",
       "hash": "dcbac310d7ad5835a68f7b5bae5e4ea425a129de7afbd70796dc839f74e4bfe8"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemfields.json": {
@@ -3312,7 +3312,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemfields/init(rawvalue:).json": {
       "etag": "\"14c2-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemfields/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemfields/init(rawvalue).md",
       "hash": "20c89a41a48c70103ed32117e19f96b38ff780adb60ac6853d2a345ffc990a98"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemfields/lastuseddate.json": {
@@ -3342,12 +3342,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemidentifier/init(_:).json": {
       "etag": "\"1862-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemidentifier/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemidentifier/init(_).md",
       "hash": "52cb4ca808565056e0b5b100eb3a8da380d89b5123d7c7d95cd2bc21d6c07aad"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemidentifier/init(rawvalue:).json": {
       "etag": "\"1882-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemidentifier/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemidentifier/init(rawvalue).md",
       "hash": "d96f839d512811c41d99e0866687da7497d4953272b8fe953e89177e4f98936a"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemidentifier/rootcontainer.json": {
@@ -3557,7 +3557,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemversion/init(contentversion:metadataversion:).json": {
       "etag": "\"29a1-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideritemversion/init-contentversionmetadataversion.md",
+      "file_path": "documentation/FileProvider/nsfileprovideritemversion/init(contentversion,metadataversion).md",
       "hash": "67d42e26ea060863d9238e06e3b6e0bd0f3871e9a948aeedcfd8c3629a04d0b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideritemversion/metadataversion.json": {
@@ -3582,7 +3582,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderknownfolderlocations/init().json": {
       "etag": "\"17a1-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/init.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/init().md",
       "hash": "783d3c06feada61be5bdc9c6d3542520d15bb491ca074d65c06919b9e7e17290"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderknownfolderlocations/location.json": {
@@ -3592,12 +3592,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderknownfolderlocations/location/init(existingitemidentifier:).json": {
       "etag": "\"2aee-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/location/init-existingitemidentifier.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/location/init(existingitemidentifier).md",
       "hash": "72c4b305ebd5f4206a257354711e954c6a1f74d931a6cb0ff4f224c9790331ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderknownfolderlocations/location/init(parentitemidentifier:filename:).json": {
       "etag": "\"30cc-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/location/init-parentitemidentifierfilename.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfolderlocations/location/init(parentitemidentifier,filename).md",
       "hash": "673a6479a0110ce34cbc985685d4fe5ae298f21a9abed0f8e9f46f0479bcd7eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderknownfolderlocations/shouldcreatebinarycompatibilitysymlink.json": {
@@ -3622,7 +3622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderknownfolders/init(rawvalue:).json": {
       "etag": "\"1391-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfolders/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfolders/init(rawvalue).md",
       "hash": "fc52c7c2371fb142bd77cc0ffc712c618a4f9a24f870321e025fef4f85b467a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderknownfoldersupporting.json": {
@@ -3632,7 +3632,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderknownfoldersupporting/getknownfolderlocations(_:completionhandler:).json": {
       "etag": "\"3f7c-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderknownfoldersupporting/getknownfolderlocations-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderknownfoldersupporting/getknownfolderlocations(_,completionhandler).md",
       "hash": "21966d926793e0ca98183f4bcad19fc432712c409e2f920c344606164be932c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager.json": {
@@ -3642,17 +3642,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/add(_:completionhandler:).json": {
       "etag": "\"9564-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/add-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/add(_,completionhandler).md",
       "hash": "ef144ea32f147f264fb386910f504b68638c87e4a66e652f13ffd656c309bdd5"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/checkdomainscanbestoredonvolume(at:).json": {
       "etag": "\"2b93-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/checkdomainscanbestoredonvolume-at.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/checkdomainscanbestoredonvolume(at).md",
       "hash": "15547940632a118e0779685f452c3b68025385b43babaebdc59d9227fce3f038"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/claimknownfolders(_:localizedreason:completionhandler:).json": {
       "etag": "\"5521-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/claimknownfolders-localizedreasoncompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/claimknownfolders(_,localizedreason,completionhandler).md",
       "hash": "caad49a9ab2b28ae654e1cc1eced66e2d65921233e9be3631bd728f50696b705"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/default.json": {
@@ -3662,7 +3662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/disconnect(reason:options:completionhandler:).json": {
       "etag": "\"a3d2-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/disconnect-reasonoptionscompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/disconnect(reason,options,completionhandler).md",
       "hash": "2848500a2ec45b5b358fbdb50ed8dec453a38ca829a5cf236458934b4d42df97"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/disconnectionoptions.json": {
@@ -3672,7 +3672,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/disconnectionoptions/init(rawvalue:).json": {
       "etag": "\"1a6f-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/disconnectionoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/disconnectionoptions/init(rawvalue).md",
       "hash": "be37f28e8203a18e8150259a1fbdbbdac7bca0b46d6839b94121626fae7baa49"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/disconnectionoptions/temporary.json": {
@@ -3692,7 +3692,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/domainremovalmode/init(rawvalue:).json": {
       "etag": "\"1a2d-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/domainremovalmode/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/domainremovalmode/init(rawvalue).md",
       "hash": "e5c88831f4cf9aaa31fe80e09d6d34c87aa0d9f008b7241893deeff188d0bd17"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/domainremovalmode/preservedirtyuserdata.json": {
@@ -3722,72 +3722,72 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/eligibilityresult/ineligible(_:).json": {
       "etag": "\"1f98-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/eligibilityresult/ineligible.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/eligibilityresult/ineligible(_).md",
       "hash": "b60db7d8f5f93d35c655c0ce4f8b0ee4f9655d043314e34e58dd05d006d95308"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/enumeratorformaterializeditems().json": {
       "etag": "\"591d-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/enumeratorformaterializeditems.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/enumeratorformaterializeditems().md",
       "hash": "cf19470ad1644b18d2340ca54cf1807bc6618ae9b79fd8b0a3f01acc61d3b121"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/enumeratorforpendingitems().json": {
       "etag": "\"5ca7-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/enumeratorforpendingitems.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/enumeratorforpendingitems().md",
       "hash": "e7b6b05342773fb39aa0b99123aaad0187400d47350e296569f73a58ec12270b"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/evictitem(identifier:completionhandler:).json": {
       "etag": "\"9ecf-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/evictitem-identifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/evictitem(identifier,completionhandler).md",
       "hash": "394f4ff6bd9e28301a1588307cfc7a97601513138ce5183892647f1976020420"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/getdomainswithcompletionhandler(_:).json": {
       "etag": "\"9441-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/getdomainswithcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/getdomainswithcompletionhandler(_).md",
       "hash": "940275f0252026092176d292ea462fb06c97031cd089002f3b241257edd09576"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/getidentifierforuservisiblefile(at:completionhandler:).json": {
       "etag": "\"671f-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/getidentifierforuservisiblefile-atcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/getidentifierforuservisiblefile(at,completionhandler).md",
       "hash": "cd880955e69aaf848ffb19af774c6a5caecb72e427081320110373820487e3ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/getservice(named:for:completionhandler:).json": {
       "etag": "\"4d41-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/getservice-namedforcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/getservice(named,for,completionhandler).md",
       "hash": "777ce2eed999e78cb1628387d193336088be4ccbcbe0dbd56025eea7d66ff17a"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/getuservisibleurl(for:completionhandler:).json": {
       "etag": "\"5ca2-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/getuservisibleurl-forcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/getuservisibleurl(for,completionhandler).md",
       "hash": "edfa2f0a3c7f695fb7b69c5c294223070c9e2caec5df55feb5dee0be17ff31fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/globalprogress(for:).json": {
       "etag": "\"7506-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/globalprogress-for.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/globalprogress(for).md",
       "hash": "8eda41ab96b46693e7b20c52de754b3ceedd27e2210b30749b03fce4f3ddaf65"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/import(_:fromdirectoryat:completionhandler:).json": {
       "etag": "\"dc11-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/import-fromdirectoryatcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/import(_,fromdirectoryat,completionhandler).md",
       "hash": "94de11bee21300b734b35c526b4d3f9a48eb9fd4d05e76944d6400978711caeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/init(for:).json": {
       "etag": "\"7f41-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/init-for.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/init(for).md",
       "hash": "0ed8bec6d8fc1c9e42516f332061a67625e6866a00a911ac3379dac458eb5466"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/init(fordomain:).json": {
       "etag": "\"18a8-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/init-fordomain.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/init(fordomain).md",
       "hash": "484b2b6722dec61a225b4a40817048051af19a57e7a45b7f1a2878b628648f94"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/listavailabletestingoperations().json": {
       "etag": "\"4232-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/listavailabletestingoperations.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/listavailabletestingoperations().md",
       "hash": "0e77ce2856c7d38f6be6da4cedfc0e8f6532b1cb96539c1cb8c04532212aff8a"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/placeholderurl(for:).json": {
       "etag": "\"639e-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/placeholderurl-for.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/placeholderurl(for).md",
       "hash": "cda5007247d838bb86f532c878b0587cf6934e3af7e31800fffe33023e521667"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/provideridentifier.json": {
@@ -3797,97 +3797,97 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/reconnect(completionhandler:).json": {
       "etag": "\"9045-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/reconnect-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/reconnect(completionhandler).md",
       "hash": "408a88a50602a200c37672d15a5c82494d21ef9903a34bd2a9e1fe3fc0b36b52"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/register(_:foritemwithidentifier:completionhandler:).json": {
       "etag": "\"6f17-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/register-foritemwithidentifiercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/register(_,foritemwithidentifier,completionhandler).md",
       "hash": "7fff4a27aa88d78eb48aca77aab57890bace099474e19519767198b0f4206522"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/reimportitems(below:completionhandler:).json": {
       "etag": "\"9f10-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/reimportitems-belowcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/reimportitems(below,completionhandler).md",
       "hash": "8e61aa2b1e173bb3e48dda8a2109ac736c4b1081a541ab19df18c515e3ee99a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/releaseknownfolders(_:localizedreason:completionhandler:).json": {
       "etag": "\"53e5-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/releaseknownfolders-localizedreasoncompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/releaseknownfolders(_,localizedreason,completionhandler).md",
       "hash": "f4f202ff841447fadc4df93d5dd5c731b5489167379f29257bf52d108405fcdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/remove(_:completionhandler:).json": {
       "etag": "\"9b24-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/remove-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/remove(_,completionhandler).md",
       "hash": "049b9c5cbdb50384779f23592d83731cdec095c4bbc47c0b261d3b16ce96c26e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/remove(_:mode:completionhandler:).json": {
       "etag": "\"ade8-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/remove-modecompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/remove(_,mode,completionhandler).md",
       "hash": "d1f3e4e61abd976ffb04ca5657843a649a5090c2e1d08d5466fd504be5c028bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/removealldomains(completionhandler:).json": {
       "etag": "\"9137-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/removealldomains-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/removealldomains(completionhandler).md",
       "hash": "8aa0cd428583e2b2ec98e47ae5139bd56270030a3db32d063e44f0aaeb47760e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/requestdiagnosticcollection(for:errorreason:completionhandler:).json": {
       "etag": "\"4e71-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdiagnosticcollection-forerrorreasoncompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdiagnosticcollection(for,errorreason,completionhandler).md",
       "hash": "92dac8c55a0a7fa65c049e576b030830b91e1305268308cae55b8c80de11f34b"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/requestdownloadforitem(withidentifier:requestedrange:).json": {
       "etag": "\"4a25-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdownloadforitem-withidentifierrequestedrange.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdownloadforitem(withidentifier,requestedrange).md",
       "hash": "b028c0fef5b1df857bb4ebdaaab5e631ad8e08fa7fe1fec71d5a715109e0b150"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/requestdownloadforitem(withidentifier:requestedrange:completionhandler:).json": {
       "etag": "\"514b-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdownloadforitem-withidentifierrequestedrangecompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestdownloadforitem(withidentifier,requestedrange,completionhandler).md",
       "hash": "522d9885895e1fb357cbe7f7f794eb347a38c42c79c123b1e0fb1fcaa1da540e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/requestmodification(of:foritemwithidentifier:options:completionhandler:).json": {
       "etag": "\"8164-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestmodification-offoritemwithidentifieroptionscompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/requestmodification(of,foritemwithidentifier,options,completionhandler).md",
       "hash": "70322d44d3a5a8eaa5ebc70ba1860085967b613530ebc5b746fbe268e4523785"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/run(_:).json": {
       "etag": "\"4b8b-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/run.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/run(_).md",
       "hash": "f98d20c6247289f8a15a6cdcb6cad8f36f9f3542f597d27afc1e57189e9cef02"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/signalenumerator(for:completionhandler:).json": {
       "etag": "\"6d66-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/signalenumerator-forcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/signalenumerator(for,completionhandler).md",
       "hash": "86ccbfdb991085835ee3d69ede9694ea6ecd34fe3bfa3b773eac9f95bca42bda"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/signalerrorresolved(_:completionhandler:).json": {
       "etag": "\"4c41-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/signalerrorresolved-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/signalerrorresolved(_,completionhandler).md",
       "hash": "c56d64f685c9bbfeff3987e184b4752b19f3f7cd067b942250f3eb398a1fb54d"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/statedirectoryurl().json": {
       "etag": "\"38cb-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/statedirectoryurl.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/statedirectoryurl().md",
       "hash": "838306e50bee544b7658c09eaa853fdd850d9c1d1f18ef520fafa8ef405d3e13"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/temporarydirectoryurl().json": {
       "etag": "\"b361-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/temporarydirectoryurl.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/temporarydirectoryurl().md",
       "hash": "1a8d4fcfe0e2becbba86f8126062417de4b48527604b30a20332a9307e8746b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/waitforchanges(below:completionhandler:).json": {
       "etag": "\"7f29-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/waitforchanges-belowcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/waitforchanges(below,completionhandler).md",
       "hash": "161e9bc6a21f5aa13fc5f1d3dac1c6d0ed98d6eae30a3902e20b841d2853ee04"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/waitforstabilization(completionhandler:).json": {
       "etag": "\"9567-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/waitforstabilization-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/waitforstabilization(completionhandler).md",
       "hash": "f7c2312d9fea4504008662d31ec7918709ed8d245adbe91cae7e3a389fc4bd61"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermanager/writeplaceholder(at:withmetadata:).json": {
       "etag": "\"7944-65d55e2877748-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermanager/writeplaceholder-atwithmetadata.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermanager/writeplaceholder(at,withmetadata).md",
       "hash": "f3417063ce54988a29feb77c2073d973157c6235f5117645b80d01ccfd25e950"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermaterializationflags.json": {
@@ -3897,7 +3897,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermaterializationflags/init(rawvalue:).json": {
       "etag": "\"1578-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermaterializationflags/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermaterializationflags/init(rawvalue).md",
       "hash": "dc34d7af408b1970796f4a0b84906b5dfdec03ab2720e3d724456020a14dc443"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermaterializationflags/knownsparseranges.json": {
@@ -3917,7 +3917,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermodifyitemoptions/init(rawvalue:).json": {
       "etag": "\"1521-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidermodifyitemoptions/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidermodifyitemoptions/init(rawvalue).md",
       "hash": "a78e16bcd8a218fd064e7eef1ea6a8ac697782241c08a49a45fd6db3003679d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidermodifyitemoptions/isimmediateuploadrequestbypresentingapplication.json": {
@@ -3942,7 +3942,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidernamespacepolicy/init(rawvalue:).json": {
       "etag": "\"1421-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidernamespacepolicy/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidernamespacepolicy/init(rawvalue).md",
       "hash": "aae5129fdd594cf89ff47d4f7f21a092e78787883de4512768b7b7aca4b42f80"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidernamespacepolicy/materializeeagerly.json": {
@@ -3962,12 +3962,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderpage/init(_:).json": {
       "etag": "\"17cc-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderpage/init.md",
+      "file_path": "documentation/FileProvider/nsfileproviderpage/init(_).md",
       "hash": "6dd9513ac7967b569b6475156986aabc5d140daafcda547953f499c531588663"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderpage/init(rawvalue:).json": {
       "etag": "\"17ec-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderpage/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileproviderpage/init(rawvalue).md",
       "hash": "274d6e94f18679dda1d1db4437c939aa67247637af94d22207d71e1b6c1dddfd"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderpage/initialpagesortedbydate.json": {
@@ -3987,7 +3987,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderpartialcontentfetching/fetchpartialcontents(for:version:request:minimalrange:aligningto:options:completionhandler:).json": {
       "etag": "\"10267-65d55e27191ca-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderpartialcontentfetching/fetchpartialcontents-forversionrequestminimalrangealigningtooptionscompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderpartialcontentfetching/fetchpartialcontents(for,version,request,minimalrange,aligningto,options,completionhandler).md",
       "hash": "766588d72e6e183711c0df9181aa2ad91a105eb56d94da5dab74b3c43430c5fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderpendingsetenumerator.json": {
@@ -4017,52 +4017,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).json": {
       "etag": "\"f2da-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/createitem-basedonfieldscontentsoptionsrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/createitem(basedon,fields,contents,options,request,completionhandler).md",
       "hash": "06ac107a6d67448830846e07e5ade60df9d22c40f354ecf5f09e6b0d517e02ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/deleteitem(identifier:baseversion:options:request:completionhandler:).json": {
       "etag": "\"a727-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/deleteitem-identifierbaseversionoptionsrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/deleteitem(identifier,baseversion,options,request,completionhandler).md",
       "hash": "97f54734b59c8ec8907badfc0e6c2d3e02124b47bd24cd42fe61977d660e713f"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/fetchcontents(for:version:request:completionhandler:).json": {
       "etag": "\"b773-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/fetchcontents-forversionrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/fetchcontents(for,version,request,completionhandler).md",
       "hash": "e0d255170b9076a3bf246d618cd14c0cb23fb2ee8c4972fb9013b36f893dd158"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/importdidfinish(completionhandler:).json": {
       "etag": "\"55a5-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/importdidfinish-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/importdidfinish(completionhandler).md",
       "hash": "72694ec1046e8968f0f863aae45680fc2b0bb799f3d9987f00530b76005b91af"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/init(domain:).json": {
       "etag": "\"2b00-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/init-domain.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/init(domain).md",
       "hash": "260a120370456590918cfc0069eda865409bd139c4794fea723aaeadd0e2175a"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/invalidate().json": {
       "etag": "\"252b-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/invalidate.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/invalidate().md",
       "hash": "9a594c8088230e4b50eebd21c73e6c32125c6e0d7b9e1bbaa838cdd927f117bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/item(for:request:completionhandler:).json": {
       "etag": "\"8a41-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/item-forrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/item(for,request,completionhandler).md",
       "hash": "689c6632e3faa09d8a5aea3ec902e0a998bd544e6f65ad59f63c9ccd39f3106e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/materializeditemsdidchange(completionhandler:).json": {
       "etag": "\"347d-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/materializeditemsdidchange-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/materializeditemsdidchange(completionhandler).md",
       "hash": "7e6f7d8ebb962540b1d475d1bfb4de38a2ba18563b433bdb457452c0a81a08f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/modifyitem(_:baseversion:changedfields:contents:options:request:completionhandler:).json": {
       "etag": "\"b58e-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/modifyitem-baseversionchangedfieldscontentsoptionsrequestcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/modifyitem(_,baseversion,changedfields,contents,options,request,completionhandler).md",
       "hash": "583ff7f342c8d6d8377f58bc1f49b0abaf49eb649d31941086c263741aa7d88b"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderreplicatedextension/pendingitemsdidchange(completionhandler:).json": {
       "etag": "\"48b3-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/pendingitemsdidchange-completionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderreplicatedextension/pendingitemsdidchange(completionhandler).md",
       "hash": "a362449a76f2a563bd92d2c8bce67e58fb3248c0e1069512e773cad9ebdcbd86"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderrequest.json": {
@@ -4097,17 +4097,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearchenumerationobserver/didenumerate(_:).json": {
       "etag": "\"35a4-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/didenumerate.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/didenumerate(_).md",
       "hash": "46fc476252d033348737a63469e2291c8eb41edb21df6e331497c883ccec4d79"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearchenumerationobserver/finishenumerating(upto:).json": {
       "etag": "\"4081-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/finishenumerating-upto.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/finishenumerating(upto).md",
       "hash": "9ab9ad7ba78bc1bc5e71a2df4d2019ff9fcc820eb4d62dfccb52a9c2a4c4f8d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearchenumerationobserver/finishenumeratingwitherror(_:).json": {
       "etag": "\"366d-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/finishenumeratingwitherror.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerationobserver/finishenumeratingwitherror(_).md",
       "hash": "4923ef7b968bf1134dba09c0f65818c06a17f1e08329b1a68d8a0bc7245e3074"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearchenumerationobserver/maximumnumberofresultsperpage.json": {
@@ -4122,12 +4122,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearchenumerator/enumeratesearchresults(for:startingat:).json": {
       "etag": "\"4183-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerator/enumeratesearchresults-forstartingat.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerator/enumeratesearchresults(for,startingat).md",
       "hash": "f1d82f4bea601d53df90931abecc343125d7622b1546f3b5567d0ff63d24cd6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearchenumerator/invalidate().json": {
       "etag": "\"1c25-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerator/invalidate.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearchenumerator/invalidate().md",
       "hash": "863bdceed7dc9589eba5a5afb8e30a279849f0002910c8480fdce6359e742e0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearching.json": {
@@ -4137,7 +4137,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearching/searchenumerator(for:).json": {
       "etag": "\"347a-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersearching/searchenumerator-for.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersearching/searchenumerator(for).md",
       "hash": "2776f5070a599f4fe019a28c270607d8066d499dea68119241674d2e7992b905"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersearchresult.json": {
@@ -4192,7 +4192,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderservicesource/makelistenerendpoint().json": {
       "etag": "\"31a2-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderservicesource/makelistenerendpoint.md",
+      "file_path": "documentation/FileProvider/nsfileproviderservicesource/makelistenerendpoint().md",
       "hash": "88477181b79cf77cce3ebde34b391a15f3566ab40e8d60d5b25002da3a8f433d"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderservicesource/servicename.json": {
@@ -4207,7 +4207,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderservicing/supportedservicesources(for:completionhandler:).json": {
       "etag": "\"607c-65d55e279c9a4-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderservicing/supportedservicesources-forcompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderservicing/supportedservicesources(for,completionhandler).md",
       "hash": "76938b37c4d68b3bc1b2d8d82f598152af863c8a1e9cbea7ce6f8f29c5008be5"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderstringsearchrequest.json": {
@@ -4232,12 +4232,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersyncanchor/init(_:).json": {
       "etag": "\"182f-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersyncanchor/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersyncanchor/init(_).md",
       "hash": "d6df6fc6b3c8802c2ff21d5d2207dbd2a2d6396cd27fa6751ad65b0489bf443c"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidersyncanchor/init(rawvalue:).json": {
       "etag": "\"186d-65d55e283ef90-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidersyncanchor/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidersyncanchor/init(rawvalue).md",
       "hash": "ebd88a139b4ccd5af5ca0f62dd020ad944fc61e0f12c1900dabf4126a87118c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertestingchildrenenumeration.json": {
@@ -4432,7 +4432,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertestingoperationside/init(rawvalue:).json": {
       "etag": "\"14d2-65d55e27bb774-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidertestingoperationside/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidertestingoperationside/init(rawvalue).md",
       "hash": "837c0e3c1a94bd6b0b6781b09fa63d828442f1b3c4f659d2784f1774ba581002"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertestingoperationtype.json": {
@@ -4472,7 +4472,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertestingoperationtype/init(rawvalue:).json": {
       "etag": "\"14be-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidertestingoperationtype/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidertestingoperationtype/init(rawvalue).md",
       "hash": "44430924f498aa48d12a14b91429d7ba53093f84110291bce09cb2a27f25d831"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertestingoperationtype/lookup.json": {
@@ -4492,7 +4492,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileproviderthumbnailing/fetchthumbnails(for:requestedsize:perthumbnailcompletionhandler:completionhandler:).json": {
       "etag": "\"8e04-65d55e273a4e8-df\"",
-      "file_path": "documentation/FileProvider/nsfileproviderthumbnailing/fetchthumbnails-forrequestedsizeperthumbnailcompletionhandlercompletionhandler.md",
+      "file_path": "documentation/FileProvider/nsfileproviderthumbnailing/fetchthumbnails(for,requestedsize,perthumbnailcompletionhandler,completionhandler).md",
       "hash": "4942df4218c22965427036b0944167315ab3313a4e30a2abbc48c7d3f13da187"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertypeandcreator.json": {
@@ -4507,12 +4507,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertypeandcreator/init().json": {
       "etag": "\"1603-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidertypeandcreator/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovidertypeandcreator/init().md",
       "hash": "cd58d70759cba263e2b54f8688c2c6699d2e07b6f176d9036df7790d0a51d4af"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertypeandcreator/init(type:creator:).json": {
       "etag": "\"1c34-65d55e27dbcfc-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidertypeandcreator/init-typecreator.md",
+      "file_path": "documentation/FileProvider/nsfileprovidertypeandcreator/init(type,creator).md",
       "hash": "998a41631481bde911b97f416ce16dbbe107ba02ec05a5f9ae19a6f28de14ce4"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidertypeandcreator/type.json": {
@@ -4532,12 +4532,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideruserinfokey/init(_:).json": {
       "etag": "\"1384-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideruserinfokey/init.md",
+      "file_path": "documentation/FileProvider/nsfileprovideruserinfokey/init(_).md",
       "hash": "65c0d19d5d433b90fc42ef2543afd1a113bc309bade99f7b88f1baa257125bbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideruserinfokey/init(rawvalue:).json": {
       "etag": "\"140e-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideruserinfokey/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovideruserinfokey/init(rawvalue).md",
       "hash": "82cdd3d415d3edfd466e030bbf004e6fb24c0edf377adf3b960b88856a69db2d"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideruserinteractionsuppressing.json": {
@@ -4547,12 +4547,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideruserinteractionsuppressing/isinteractionsuppressed(foridentifier:).json": {
       "etag": "\"3223-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideruserinteractionsuppressing/isinteractionsuppressed-foridentifier.md",
+      "file_path": "documentation/FileProvider/nsfileprovideruserinteractionsuppressing/isinteractionsuppressed(foridentifier).md",
       "hash": "ca89dbf17ad2c59ded4ff497cb8844627ac1c4792a573a7bb8d118006ffe2b9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovideruserinteractionsuppressing/setinteractionsuppressed(_:foridentifier:).json": {
       "etag": "\"355f-65d55e2805204-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovideruserinteractionsuppressing/setinteractionsuppressed-foridentifier.md",
+      "file_path": "documentation/FileProvider/nsfileprovideruserinteractionsuppressing/setinteractionsuppressed(_,foridentifier).md",
       "hash": "427228edd1de1a392070b5c5e0fe4999ee7d8b4f5356fdc5dae23e68600fd69e"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidervolumeunsupportedreason.json": {
@@ -4562,7 +4562,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidervolumeunsupportedreason/init(rawvalue:).json": {
       "etag": "\"1496-65d55e28244bd-df\"",
-      "file_path": "documentation/FileProvider/nsfileprovidervolumeunsupportedreason/init-rawvalue.md",
+      "file_path": "documentation/FileProvider/nsfileprovidervolumeunsupportedreason/init(rawvalue).md",
       "hash": "9304553d093eac43d9c5e5d11578093967621a3ca676ef132d042c2dafaf86a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileprovider/nsfileprovidervolumeunsupportedreason/network.json": {

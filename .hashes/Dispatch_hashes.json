@@ -7,42 +7,42 @@
     },
     "https://developer.apple.com/documentation/dispatch/+(_:_:)-2dcrq": {
       "etag": "\"1eb6-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/plus.md",
+      "file_path": "documentation/Dispatch/plus(_,_)-2dcrq.md",
       "hash": "7279a54c518e53ff35fccefe3428080878a78601dc6ba1b481745b37c038d86a"
     },
     "https://developer.apple.com/documentation/dispatch/+(_:_:)-6fmcc": {
       "etag": "\"1df7-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/plus.md",
+      "file_path": "documentation/Dispatch/plus(_,_)-6fmcc.md",
       "hash": "df6bbbe8c54ac2066dda219deb1f06bffeef765372211a96ab119059a165a3e4"
     },
     "https://developer.apple.com/documentation/dispatch/+(_:_:)-8pe6k": {
       "etag": "\"1e84-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/plus.md",
+      "file_path": "documentation/Dispatch/plus(_,_)-8pe6k.md",
       "hash": "812bbdc63cd8aee9e2bddcbd0cc54a9a2c54c28f25399256a088e3a2067420e5"
     },
     "https://developer.apple.com/documentation/dispatch/+(_:_:)-8ylhk": {
       "etag": "\"1f43-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/plus.md",
+      "file_path": "documentation/Dispatch/plus(_,_)-8ylhk.md",
       "hash": "4bfb28805b13802bee587e834b3f882bc7f816f92b617e37f27169d6c59e1d5c"
     },
     "https://developer.apple.com/documentation/dispatch/-(_:_:)-50bxr": {
       "etag": "\"1f43-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/minus.md",
+      "file_path": "documentation/Dispatch/minus(_,_)-50bxr.md",
       "hash": "96e482c470382888f71aa29c8d36dceeb4601d3d595d444b730e414fcf2e9e0e"
     },
     "https://developer.apple.com/documentation/dispatch/-(_:_:)-5l4yh": {
       "etag": "\"1df7-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/minus.md",
+      "file_path": "documentation/Dispatch/minus(_,_)-5l4yh.md",
       "hash": "74104e1013d930c4fda86a30b3fd10f0bbcf02bf5c58fc23746988ad0dea2242"
     },
     "https://developer.apple.com/documentation/dispatch/-(_:_:)-6jk71": {
       "etag": "\"1e84-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/minus.md",
+      "file_path": "documentation/Dispatch/minus(_,_)-6jk71.md",
       "hash": "5aa06ef33c7457afe13e2104f2f090eb6a9fac1fbb4ef2518985c3fc192c2668"
     },
     "https://developer.apple.com/documentation/dispatch/-(_:_:)-8usj3": {
       "etag": "\"1eb6-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/minus.md",
+      "file_path": "documentation/Dispatch/minus(_,_)-8usj3.md",
       "hash": "d2ca4d614127d2e17d95243f49729e5b14463fefc25d09e4900b0d60f55f4d28"
     },
     "https://developer.apple.com/documentation/dispatch/2963138-wall-time-constants": {
@@ -117,152 +117,152 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_allow_send_signals(_:)": {
       "etag": "\"1c10-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatch-allow-send-signals.md",
+      "file_path": "documentation/Dispatch/dispatch_allow_send_signals(_).md",
       "hash": "51d41335ec1a5eedd383ad43597ef364314db9fb3f86b004d476d1a43fe42e06"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_api_version": {
       "etag": "\"2815-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-api-version.md",
+      "file_path": "documentation/Dispatch/dispatch_api_version.md",
       "hash": "6e35737e595d7e306889ba707d9d1dcce7860fe0e99e0bf0aba83d4550c6dd75"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_apply_auto_available": {
       "etag": "\"2866-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatch-apply-auto-available.md",
+      "file_path": "documentation/Dispatch/dispatch_apply_auto_available.md",
       "hash": "ea469c0d575b896ed48c261a74dd5456d2777387f93607e0f99d33be9cd7cc86"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_data_t": {
       "etag": "\"2fd2-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatch-data-t.md",
+      "file_path": "documentation/Dispatch/dispatch_data_t.md",
       "hash": "3f5e4aa8feb87b662a3cbcb6248eb9666cf40e8b9446a00cddfa77f8fd4d1328"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_debugv(_:_:_:)": {
       "etag": "\"310d-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatch-debugv.md",
+      "file_path": "documentation/Dispatch/dispatch_debugv(_,_,_).md",
       "hash": "67881cd2fa785dd7e2f3348d212a859370cf9e4b96841c7380db80a5de602309"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_get_current_queue()": {
       "etag": "\"28bb-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatch-get-current-queue.md",
+      "file_path": "documentation/Dispatch/dispatch_get_current_queue().md",
       "hash": "f8befdaf45b979d410739b3e8ae93222b2408a966002b2c4d583731703424d29"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_group_t": {
       "etag": "\"3863-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatch-group-t.md",
+      "file_path": "documentation/Dispatch/dispatch_group_t.md",
       "hash": "db46d9544924d16c9d946eafdf5371cb8685e20406ba1c2bc4aacfbe8a6d5f78"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_io_random": {
       "etag": "\"1dd4-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-random.md",
+      "file_path": "documentation/Dispatch/dispatch_io_random.md",
       "hash": "724e415cd60286372313929c194e82cb83f8ef2396985a44ff22ce5eaf7a99ff"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_io_stop": {
       "etag": "\"1600-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-stop.md",
+      "file_path": "documentation/Dispatch/dispatch_io_stop.md",
       "hash": "a3ea57f7ed01e40b8a2299ecb7ffc978abf3bd211ac42e4e6fed55a4c52ce3c7"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_io_stream": {
       "etag": "\"1ce1-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-stream.md",
+      "file_path": "documentation/Dispatch/dispatch_io_stream.md",
       "hash": "1e17d817646cf3682d42ff67d4b29df84924b8dbdddc9727cdf9a48390adc302"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_io_strict_interval": {
       "etag": "\"1ce6-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-strict-interval.md",
+      "file_path": "documentation/Dispatch/dispatch_io_strict_interval.md",
       "hash": "8b1f12769c52be08c20a6e459c573061bd5f94a12857e41cebb24298b0acb789"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_io_t": {
       "etag": "\"367c-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-t.md",
+      "file_path": "documentation/Dispatch/dispatch_io_t.md",
       "hash": "411a6cd83d509db8dec2d9ff57708f586a1252c8f6537331fa49a884a910bf82"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_object_t": {
       "etag": "\"36d9-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatch-object-t.md",
+      "file_path": "documentation/Dispatch/dispatch_object_t.md",
       "hash": "9c597bf2e94228d71d929aebfd1e9da02e9a57cd9f294c858e1759989bd78187"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_once_inline_fastpath": {
       "etag": "\"2866-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatch-once-inline-fastpath.md",
+      "file_path": "documentation/Dispatch/dispatch_once_inline_fastpath.md",
       "hash": "87e6d3294fdaa9dc7c514bbcff6397be575eac99676bb2fa3ea134655afaf8c6"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_queue_attr_t": {
       "etag": "\"34b9-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-attr-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_attr_t.md",
       "hash": "724429f5d9e1b8e4700db2bc3092d1cc055256ec7bf3016b8599d910969bb536"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_queue_concurrent_t": {
       "etag": "\"4a91-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-concurrent-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_concurrent_t.md",
       "hash": "2db910436d81f529d5abad7b8d2178c6a01ceab398f1ccfd9cce01011f0eec9c"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_queue_global_t": {
       "etag": "\"4a56-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-global-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_global_t.md",
       "hash": "ff7b0ec5dfa0c9e78daebb6e5af27464e157957d3fd70420617999892ad91d78"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_queue_main_t": {
       "etag": "\"4a41-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-main-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_main_t.md",
       "hash": "94596ea80e2cbf95533416acd429dc9785b28c03625eafd93a8431b154ef686d"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_queue_serial_executor_t": {
       "etag": "\"32d0-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-serial-executor-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_serial_executor_t.md",
       "hash": "e7c72a157070f856c8747f9791e6c1a970e8fde68f23435650059815f52e2920"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_queue_serial_t": {
       "etag": "\"4a36-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-serial-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_serial_t.md",
       "hash": "b8a976369b33f8f6db1e82de387fe8f817d660283feed21797573c57d564ef83"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_queue_t": {
       "etag": "\"4885-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_t.md",
       "hash": "c5d84396926132a5a0b82ed3f20c630fae71188b1f04d8a88c3a08d0f9768486"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_semaphore_t": {
       "etag": "\"3587-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-semaphore-t.md",
+      "file_path": "documentation/Dispatch/dispatch_semaphore_t.md",
       "hash": "a65fe3c0d94bb41a082dbca236ad5a9052bdc39c0ab83fcf692f59f0f780712f"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_source_mach_recv_flags_t": {
       "etag": "\"2a37-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatch-source-mach-recv-flags-t.md",
+      "file_path": "documentation/Dispatch/dispatch_source_mach_recv_flags_t.md",
       "hash": "85ed5a5a1802e4adfb954ad8691cd65b902e66d20fd41637c206c8b0fbfcda8e"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_source_t": {
       "etag": "\"1cd4-65d55df0a444f-df\"",
-      "file_path": "documentation/Dispatch/dispatch-source-t.md",
+      "file_path": "documentation/Dispatch/dispatch_source_t.md",
       "hash": "bda094a32603dbf32ae368e480ef33b9817ac642099587e0be767e27b9ec188b"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_swift3_overlay": {
       "etag": "\"2830-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatch-swift3-overlay.md",
+      "file_path": "documentation/Dispatch/dispatch_swift3_overlay.md",
       "hash": "34e5dc6adbcab87c2f78da7c85025ad579bf9a30a881e7d338de3437c2e718d3"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_time_forever": {
       "etag": "\"1b88-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatch-time-forever.md",
+      "file_path": "documentation/Dispatch/dispatch_time_forever.md",
       "hash": "ebd43d4c43b6625a2a57a3064efe3e9d0c40ea426beb3fbecd416876b69d5f76"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_time_now": {
       "etag": "\"1b68-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-time-now.md",
+      "file_path": "documentation/Dispatch/dispatch_time_now.md",
       "hash": "e6abee0b2b99f0752e452945721d7fbf534724f3cebfd592829f98e0dd633d40"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_time_t": {
       "etag": "\"481f-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatch-time-t.md",
+      "file_path": "documentation/Dispatch/dispatch_time_t.md",
       "hash": "c08d5056df0c051f17efcd21b86ef7c5dbe9c4eb41aaf95c102ddef31b3a1873"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_walltime_now": {
       "etag": "\"2da8-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-walltime-now.md",
+      "file_path": "documentation/Dispatch/dispatch_walltime_now.md",
       "hash": "f23043243412ee27a53f793b87b7d021624e5a3d78f675304c27040b8ad2e0a3"
     },
     "https://developer.apple.com/documentation/dispatch/dispatch_workloop_t": {
       "etag": "\"1e9e-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatch-workloop-t.md",
+      "file_path": "documentation/Dispatch/dispatch_workloop_t.md",
       "hash": "bdcd93f4e0126ae5be549f5c08ca09c357f2e916398cacf8541c73eb4f3c0692"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchconcurrentqueue": {
@@ -282,7 +282,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchconcurrentqueue/init(label:qos:attributes:autoreleasefrequency:target:)": {
       "etag": "\"2cd4-65d55df0a444f-df\"",
-      "file_path": "documentation/Dispatch/dispatchconcurrentqueue/init-labelqosattributesautoreleasefrequencytarget.md",
+      "file_path": "documentation/Dispatch/dispatchconcurrentqueue/init(label,qos,attributes,autoreleasefrequency,target).md",
       "hash": "5a56ab1b88f7b2f259b5bdcfd931aadb88702bc8d01e817d8636466f525ae0ab"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata": {
@@ -292,47 +292,47 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/append(_:)-1m94x": {
       "etag": "\"187c-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/append-1m94x.md",
+      "file_path": "documentation/Dispatch/dispatchdata/append(_)-1m94x.md",
       "hash": "241409161afba65202efe2e5eb54a27984e0e05c59a94faff08659d9e704c587"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/append(_:)-3bvdr": {
       "etag": "\"15de-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/append-3bvdr.md",
+      "file_path": "documentation/Dispatch/dispatchdata/append(_)-3bvdr.md",
       "hash": "1333e8541a562ac5182ad2eedce9903e46bb21cf509af62e782bf9a9ae9da70f"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/append(_:)-9sgkq": {
       "etag": "\"19a4-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/append-9sgkq.md",
+      "file_path": "documentation/Dispatch/dispatchdata/append(_)-9sgkq.md",
       "hash": "926043ae173ef613aefdc32bd8ccf1f5b07fd1d263dfd5731527fba7330d3504"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/append(_:count:)": {
       "etag": "\"4dbf-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/append-count.md",
+      "file_path": "documentation/Dispatch/dispatchdata/append(_,count).md",
       "hash": "6579a67f466c5fdd73a000a8dc62035ced428ab6f3b05772156d9d829d696f45"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/copybytes(to:count:)-3j0qx": {
       "etag": "\"21a3-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tocount-3j0qx.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,count)-3j0qx.md",
       "hash": "d293ed8d51358545c0e3bee0f2d494d243a5ab1b163e636c1ebc857667511ee3"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/copybytes(to:count:)-4ffyj": {
       "etag": "\"4e77-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tocount-4ffyj.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,count)-4ffyj.md",
       "hash": "1e0ad0b2c8026cae1ea18ad9c95eae5994e7a386541ae54911e810b53bcdb9e1"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/copybytes(to:from:)-60yai": {
       "etag": "\"2487-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tofrom-60yai.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,from)-60yai.md",
       "hash": "f42be626d4e735cc97e2fa1066163556c5f57ec7ecf639d8c7a91b7f52230d59"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/copybytes(to:from:)-6ztcb": {
       "etag": "\"5163-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tofrom-6ztcb.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,from)-6ztcb.md",
       "hash": "ab799a020b23d8b2e35b918daf795cc8286606727814aba8f4e53a9eed2fbf83"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/copybytes(to:from:)-7zz4y": {
       "etag": "\"2870-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tofrom-7zz4y.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,from)-7zz4y.md",
       "hash": "4626a9dc485f646a2fa55a7a080af3fbed8e1804e42ab7c6883e15d8c92f534d"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/deallocator": {
@@ -342,7 +342,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/deallocator/custom(_:_:)": {
       "etag": "\"1f15-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/deallocator/custom.md",
+      "file_path": "documentation/Dispatch/dispatchdata/deallocator/custom(_,_).md",
       "hash": "59887a7c4fde812c6fea9f1c5e956652f1352b3d4b9d343bc580b6df3b7aee17"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/deallocator/free": {
@@ -362,37 +362,37 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/enumeratebytes(_:)": {
       "etag": "\"253f-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/enumeratebytes.md",
+      "file_path": "documentation/Dispatch/dispatchdata/enumeratebytes(_).md",
       "hash": "77450908a7ee5526da6b0f5a48a4081d47ac540864a2acfb7fe3be35dcc8ed64"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/enumeratebytes(block:)": {
       "etag": "\"21ed-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/enumeratebytes-block.md",
+      "file_path": "documentation/Dispatch/dispatchdata/enumeratebytes(block).md",
       "hash": "487606fef8f0a022d8b906d4f82f8566108c762eac66ad43c1e420b272f4bb81"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/init(bytes:)-9lrd": {
       "etag": "\"22e1-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/init-bytes-9lrd.md",
+      "file_path": "documentation/Dispatch/dispatchdata/init(bytes)-9lrd.md",
       "hash": "146fee530270899d9c2367ef6807f65f2602e8fa319e3c8f97b8ec22cdc58890"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/init(bytes:)-mkbp": {
       "etag": "\"291a-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/init-bytes-mkbp.md",
+      "file_path": "documentation/Dispatch/dispatchdata/init(bytes)-mkbp.md",
       "hash": "69f1a23c4f45c17cd0b0f8d1455d1047534fa429b017c08bd651ab373e2a9644"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/init(bytesnocopy:deallocator:)-7h08w": {
       "etag": "\"2f8e-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/init-bytesnocopydeallocator-7h08w.md",
+      "file_path": "documentation/Dispatch/dispatchdata/init(bytesnocopy,deallocator)-7h08w.md",
       "hash": "1852b43a2ba56a9eb553ba8ca64c6d8bb3d351e8976b96744f1c3153476632c9"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/init(bytesnocopy:deallocator:)-vfoe": {
       "etag": "\"27fb-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/init-bytesnocopydeallocator-vfoe.md",
+      "file_path": "documentation/Dispatch/dispatchdata/init(bytesnocopy,deallocator)-vfoe.md",
       "hash": "53d3f25db27f65a96098c25829e64c651b7fdc30c92f2546b86753a8845c0d0d"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/makeiterator()": {
       "etag": "\"1522-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/makeiterator.md",
+      "file_path": "documentation/Dispatch/dispatchdata/makeiterator().md",
       "hash": "50be2527d65e6c5efe2763d46f71e9316b340da72c0439a7fda507167f9226b4"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/region": {
@@ -402,22 +402,22 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/region(location:)": {
       "etag": "\"1af8-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/region-location.md",
+      "file_path": "documentation/Dispatch/dispatchdata/region(location).md",
       "hash": "819b55ce61ad17781d3389c1b4fd6ffdc374d7e72d24837e486b3da692302ac4"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/subdata(in:)": {
       "etag": "\"1649-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/subdata-in.md",
+      "file_path": "documentation/Dispatch/dispatchdata/subdata(in).md",
       "hash": "fe119e6b072607bde627066a16197ca8c663ad2ddb8061deb0f313d94e35ceda"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/subscript(_:)": {
       "etag": "\"19f7-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/subscript.md",
+      "file_path": "documentation/Dispatch/dispatchdata/subscript(_).md",
       "hash": "1d6c345ba21f299f340c95ad89ab9a3c5844435a0a2ae8b7a8af9182569ae7c8"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdata/withunsafebytes(body:)": {
       "etag": "\"2544-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/withunsafebytes-body.md",
+      "file_path": "documentation/Dispatch/dispatchdata/withunsafebytes(body).md",
       "hash": "06a3a611e94f9de107c54d95f4e417c4a692c90e392e047bc46e86e14f1fce34"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdataiterator": {
@@ -427,7 +427,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchdataiterator/next()": {
       "etag": "\"12e0-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchdataiterator/next.md",
+      "file_path": "documentation/Dispatch/dispatchdataiterator/next().md",
       "hash": "1de6cb1eb23872fd3aa18e236d733f849212def9f900fdaa1864db75747972cc"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup": {
@@ -437,42 +437,42 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup/enter()": {
       "etag": "\"2878-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/enter.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/enter().md",
       "hash": "4b8deef107af4c05f4de12fe4e351d87b45d0529d8237445f08c3d2d5a8e0c57"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup/init()": {
       "etag": "\"2762-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/init.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/init().md",
       "hash": "f79e22f18159d32d5f4a23dd67d1856fc1e465639a89edb1b94df06f529d42e2"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup/leave()": {
       "etag": "\"293d-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/leave.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/leave().md",
       "hash": "c55e4deebc4b58593e11935b48170f82e4406485ef6b985ceb654a3957a248ac"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup/notify(qos:flags:queue:execute:)": {
       "etag": "\"2e0d-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/notify-qosflagsqueueexecute.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/notify(qos,flags,queue,execute).md",
       "hash": "84b879ee86024a49ef9397444f6e033a77c65ec08caf263cc4f2e32e93ad434e"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup/notify(queue:work:)": {
       "etag": "\"22fd-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/notify-queuework.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/notify(queue,work).md",
       "hash": "b2ccb2142e401ca6a08770c89604fba2416758da27d68667b07ee9e0245c9e56"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup/wait()": {
       "etag": "\"166f-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/wait.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/wait().md",
       "hash": "9bd9f732f32ea82ca1bed63e347113b4f0666a57b907b48eccf9217621141599"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup/wait(timeout:)": {
       "etag": "\"204a-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/wait-timeout.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/wait(timeout).md",
       "hash": "b6e572ac6032c0fa2d9fdc301d84ceddcd2c4c45c118703752e9f5390b44f5f8"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchgroup/wait(walltimeout:)": {
       "etag": "\"269d-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/wait-walltimeout.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/wait(walltimeout).md",
       "hash": "da38f1bc64645f4ffcff86aa7ef60d53a7c7cebcda69300ed70dcc91136a20eb"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio": {
@@ -482,12 +482,12 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/barrier(execute:)": {
       "etag": "\"2b74-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/barrier-execute.md",
+      "file_path": "documentation/Dispatch/dispatchio/barrier(execute).md",
       "hash": "127b752e5f8369a194825d694c4631d58643a0bb00c326899b5229a6dfec2406"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/close(flags:)": {
       "etag": "\"1eed-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/close-flags.md",
+      "file_path": "documentation/Dispatch/dispatchio/close(flags).md",
       "hash": "64776b490b17fe552d6a7c8f235313d34516ea51b13d2de43c09016f660a15a0"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/closeflags": {
@@ -507,22 +507,22 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/init(type:filedescriptor:queue:cleanuphandler:)": {
       "etag": "\"3e36-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/init-typefiledescriptorqueuecleanuphandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/init(type,filedescriptor,queue,cleanuphandler).md",
       "hash": "48c293bfa86fb5248131a5e70eef62a5a8ffc55ef68706f9965a33db5515ac56"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/init(type:io:queue:cleanuphandler:)": {
       "etag": "\"3b63-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/init-typeioqueuecleanuphandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/init(type,io,queue,cleanuphandler).md",
       "hash": "b4a9e606621be76646bd37e902ec2d4c3878cc0c5cfceb608f941b42437814c2"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/init(type:path:oflag:mode:queue:cleanuphandler:)-25rlb": {
       "etag": "\"30cf-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/init-typepathoflagmodequeuecleanuphandler-25rlb.md",
+      "file_path": "documentation/Dispatch/dispatchio/init(type,path,oflag,mode,queue,cleanuphandler)-25rlb.md",
       "hash": "4d6aa40f3c67885d1a9997bf8751fd273d513bc988cf0c8ba3847754062efa20"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/init(type:path:oflag:mode:queue:cleanuphandler:)-50rb0": {
       "etag": "\"4b11-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/init-typepathoflagmodequeuecleanuphandler-50rb0.md",
+      "file_path": "documentation/Dispatch/dispatchio/init(type,path,oflag,mode,queue,cleanuphandler)-50rb0.md",
       "hash": "91839ca7ded701aed78279e62845937b90561b12198218dd0f76e54e981ef015"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/intervalflags": {
@@ -532,7 +532,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/intervalflags/init(nilliteral:)": {
       "etag": "\"1050-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/intervalflags/init-nilliteral.md",
+      "file_path": "documentation/Dispatch/dispatchio/intervalflags/init(nilliteral).md",
       "hash": "8218b38231ff7a3b7b3744961c744d4a09914b855d1697ccf93237653c8a2f75"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/intervalflags/strictinterval": {
@@ -542,27 +542,27 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/read(fromfiledescriptor:maxlength:runninghandleron:handler:)": {
       "etag": "\"41b1-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/read-fromfiledescriptormaxlengthrunninghandleronhandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/read(fromfiledescriptor,maxlength,runninghandleron,handler).md",
       "hash": "e1dcaf6fe570b98806c8e1e61c76bea80a4d763403a9c0b9521caf6e6941959d"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/read(offset:length:queue:iohandler:)": {
       "etag": "\"44c8-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/read-offsetlengthqueueiohandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/read(offset,length,queue,iohandler).md",
       "hash": "5b0c464e130dedd8b4ea5e10f67b46c09ace46b83ab3ec196e65def6c159bf4f"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/setinterval(interval:flags:)": {
       "etag": "\"3587-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/setinterval-intervalflags.md",
+      "file_path": "documentation/Dispatch/dispatchio/setinterval(interval,flags).md",
       "hash": "b007e6a22c222e88a214e0938449d01970aaccbf821b132ce3dad20e46bf3096"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/setlimit(highwater:)": {
       "etag": "\"3a6c-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/setlimit-highwater.md",
+      "file_path": "documentation/Dispatch/dispatchio/setlimit(highwater).md",
       "hash": "95d86a93ea96df7576abd4ae78066b1e37c1ca0603eb8083fb71fcc4f89be423"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/setlimit(lowwater:)": {
       "etag": "\"41fb-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/setlimit-lowwater.md",
+      "file_path": "documentation/Dispatch/dispatchio/setlimit(lowwater).md",
       "hash": "667303676a10467a0a6395ecec284293b8becdf11d38a169f9551a2f7463a862"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/streamtype": {
@@ -582,17 +582,17 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/write(offset:data:queue:iohandler:)": {
       "etag": "\"41ee-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/write-offsetdataqueueiohandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/write(offset,data,queue,iohandler).md",
       "hash": "b78bccc2ed9aa9a54f1572f4553f72773aca88bca34b4bd182685553f7b8f8e4"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchio/write(tofiledescriptor:data:runninghandleron:handler:)": {
       "etag": "\"3e49-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/write-tofiledescriptordatarunninghandleronhandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/write(tofiledescriptor,data,runninghandleron,handler).md",
       "hash": "03265b7342ab457f355a840bd2f676d7b2cf5f4866a53bb9d9cf282108484069"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchmain()": {
       "etag": "\"2a95-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatchmain.md",
+      "file_path": "documentation/Dispatch/dispatchmain().md",
       "hash": "c2d12af1a020071a414034630176f35e7760d0edaf2824535b30a385c10c35ba"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchobject": {
@@ -602,27 +602,27 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchobject/activate()": {
       "etag": "\"2665-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/dispatchobject/activate.md",
+      "file_path": "documentation/Dispatch/dispatchobject/activate().md",
       "hash": "fa6fd98995e5204d1a362937e713ff44bb60ddf6d3b78edf494cbb04a84becf6"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchobject/resume()": {
       "etag": "\"2f53-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/dispatchobject/resume.md",
+      "file_path": "documentation/Dispatch/dispatchobject/resume().md",
       "hash": "cdfdb2e0708167b1fc4d553631db1e8c1706ca93ae64fac2fff4b5cd512491ed"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchobject/settarget(queue:)": {
       "etag": "\"4674-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchobject/settarget-queue.md",
+      "file_path": "documentation/Dispatch/dispatchobject/settarget(queue).md",
       "hash": "f4ff649cdc16e8987b508c745a2dd2f37d28c1ff57d1f07934d45362440770f8"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchobject/suspend()": {
       "etag": "\"2e7d-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchobject/suspend.md",
+      "file_path": "documentation/Dispatch/dispatchobject/suspend().md",
       "hash": "bcda4e242262f50d198469edce88d2c6388af8d8be033470571f39c9ece16957"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchprecondition(condition:)": {
       "etag": "\"1e11-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatchprecondition-condition.md",
+      "file_path": "documentation/Dispatch/dispatchprecondition(condition).md",
       "hash": "4317f1bd7a130e584b84c1ea8259b5ef522b0188f5c4ab31bba2663206fd287f"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchpredicate": {
@@ -632,17 +632,17 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchpredicate/notonqueue(_:)": {
       "etag": "\"1a24-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchpredicate/notonqueue.md",
+      "file_path": "documentation/Dispatch/dispatchpredicate/notonqueue(_).md",
       "hash": "3098d5dfbfa1415c9edb9236a597bec1e8a9c2552b7e78e84203a89af172b98c"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchpredicate/onqueue(_:)": {
       "etag": "\"1a10-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchpredicate/onqueue.md",
+      "file_path": "documentation/Dispatch/dispatchpredicate/onqueue(_).md",
       "hash": "27e76f3380cb1facfae747593a96cd1b811a630541537738627f4591e5c18b02"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchpredicate/onqueueasbarrier(_:)": {
       "etag": "\"1ec5-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchpredicate/onqueueasbarrier.md",
+      "file_path": "documentation/Dispatch/dispatchpredicate/onqueueasbarrier(_).md",
       "hash": "a6229735b6adce26c3b81e1081d39e590ecb38c8d10d75fce4d59fd246a4bb52"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqos": {
@@ -662,12 +662,12 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqos/init(qosclass:relativepriority:)": {
       "etag": "\"1bec-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatchqos/init-qosclassrelativepriority.md",
+      "file_path": "documentation/Dispatch/dispatchqos/init(qosclass,relativepriority).md",
       "hash": "233e02874fb521fe097af0d65f6eb15dda73525a78f8f6f84425955754babb54"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqos/qosclass-swift.enum": {
       "etag": "\"38ec-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swiftenum.md",
+      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swift.enum.md",
       "hash": "9fecf7ac2c0502f709b259ef669b616f7f58e9cd3877ce4dc42c980b74d8dde2"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqos/qosclass-swift.enum/background": {
@@ -682,7 +682,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqos/qosclass-swift.enum/init(rawvalue:)": {
       "etag": "\"15ec-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swift.enum/init(rawvalue).md",
       "hash": "c799107abf32f362cbcf36ecbf632a6a9a8711f9b96f49941b70babeea54adda"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqos/qosclass-swift.enum/rawvalue": {
@@ -712,7 +712,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqos/qosclass-swift.property": {
       "etag": "\"1697-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swiftproperty.md",
+      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swift.property.md",
       "hash": "ead1b1c924882d25e56ceba1c82b9bc7abbd14a5fa923ed330809ccf764b65be"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqos/relativepriority": {
@@ -747,72 +747,72 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/async(execute:)": {
       "etag": "\"2b2d-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/async-execute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/async(execute).md",
       "hash": "18e6bee8deaf91039419232c40eca1fb334bf9342e3db989e99cf60d910b5476"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/async(group:execute:)": {
       "etag": "\"230c-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/async-groupexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/async(group,execute).md",
       "hash": "63094bdb6316f12cdd1b8ee84ea961a0ff7c478629ef164ec68ef36eaa370434"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/async(group:qos:flags:execute:)": {
       "etag": "\"2d8c-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/async-groupqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/async(group,qos,flags,execute).md",
       "hash": "dd895f827dbe5ec92abfcb7633cbbeb15f8e38b73c8601c938d0242b2b82d699"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncafter(deadline:execute:)": {
       "etag": "\"3430-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter-deadlineexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter(deadline,execute).md",
       "hash": "a12be71ca9f1460ebddab2f76baa0c1c06dcc717c3ed59555b70fcec59e84ee5"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncafter(deadline:qos:flags:execute:)": {
       "etag": "\"3fd0-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter-deadlineqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter(deadline,qos,flags,execute).md",
       "hash": "2e45aa2c6e8a4305d804f4d0cddf2d77cf8f7acab8fbedd669fb7dbd55e4f68c"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncafter(walldeadline:execute:)": {
       "etag": "\"349d-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter-walldeadlineexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter(walldeadline,execute).md",
       "hash": "347059b0b3cdcafc076f4d27e6cec2ac0c92ad7733a95ccb028a493ed0bdddeb"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncafter(walldeadline:qos:flags:execute:)": {
       "etag": "\"403a-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter-walldeadlineqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter(walldeadline,qos,flags,execute).md",
       "hash": "6e467d63979625e66bd02997bd78c3052db4f116425ebe4e8f5d21c9c51124cc"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncafterunsafe(deadline:qos:flags:execute:)": {
       "etag": "\"236b-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafterunsafe-deadlineqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafterunsafe(deadline,qos,flags,execute).md",
       "hash": "3f1a6640a60b0208f33c13cf3fcb599d77f4a4c69694bbd90b4688318e42c4c5"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncafterunsafe(walldeadline:qos:flags:execute:)": {
       "etag": "\"23d9-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafterunsafe-walldeadlineqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafterunsafe(walldeadline,qos,flags,execute).md",
       "hash": "bf3a58c24f67bcf77dcd2c60d14e312c0664ac0b6676783f0b706c0e6b837a41"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncandwait(execute:)-1udeu": {
       "etag": "\"46c1-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait-execute-1udeu.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait(execute)-1udeu.md",
       "hash": "16dece71ffa4ce087085134c89e5869dbb8eb643dd262821ca3a416b4293bd85"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncandwait(execute:)-52p9n": {
       "etag": "\"1313-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait-execute-52p9n.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait(execute)-52p9n.md",
       "hash": "484c38e10f7dfe88b21d50081d1becf0c9e8ba556719e51f54c262d6c7c9ea52"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncandwait(execute:)-pfxy": {
       "etag": "\"139e-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait-execute-pfxy.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait(execute)-pfxy.md",
       "hash": "3c95cfdd71b3fa8657eb96d7e9806b768783de1c530f02c376d478eeaf7b4dc6"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncandwait(flags:execute:)": {
       "etag": "\"189e-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait-flagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait(flags,execute).md",
       "hash": "3e0663a7958567fb2cc532997e3edbb8f0da04aaeaf8eb26d7ffd39e6a79b939"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/asyncunsafe(group:qos:flags:execute:)": {
       "etag": "\"232b-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncunsafe-groupqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncunsafe(group,qos,flags,execute).md",
       "hash": "4209278e4ba95b3f3aaae6bd7fd42ad0d9a9227e546a3acec06c54d14e72e618"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/attributes": {
@@ -852,27 +852,27 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/concurrentperform(iterations:execute:)": {
       "etag": "\"2057-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/concurrentperform-iterationsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/concurrentperform(iterations,execute).md",
       "hash": "86d8b7b4cf8b5c32b8da9a644814c9be3994e95ebef922e94b0971d140307758"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/getspecific(key:)-swift.method": {
       "etag": "\"24b0-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/getspecific-key-swiftmethod.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/getspecific(key)-swift.method.md",
       "hash": "e6efcf3ffb471de3a2c81a34b16a5ef3c1d57773aec31d6f5728f1956e0cd1c4"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/getspecific(key:)-swift.type.method": {
       "etag": "\"2536-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/getspecific-key-swifttypemethod.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/getspecific(key)-swift.type.method.md",
       "hash": "568cd47cee24632816157e5cd3cd29fa05bc97a5e79ec3b3723cee29dd3aac47"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/global(priority:)": {
       "etag": "\"185a-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/global-priority.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/global(priority).md",
       "hash": "6a98999db54010d75c297918d70f3e13343c2e26ef6e2b213bf7a3958b9f7e5b"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/global(qos:)": {
       "etag": "\"59f9-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/global-qos.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/global(qos).md",
       "hash": "070640bfe186ae065d9c9483ce619f2b8bfccfb786fd3822fd390e8685b45dd5"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/globalqueuepriority": {
@@ -902,7 +902,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/init(label:qos:attributes:autoreleasefrequency:target:)": {
       "etag": "\"5cb1-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/init-labelqosattributesautoreleasefrequencytarget.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/init(label,qos,attributes,autoreleasefrequency,target).md",
       "hash": "0638f45cee2b55b250a466c3787f28b9c29d6047a96e0c13499931d5c2e384af"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/label": {
@@ -942,7 +942,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/scheduleroptions/init(qos:flags:group:)": {
       "etag": "\"206b-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/scheduleroptions/init-qosflagsgroup.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/scheduleroptions/init(qos,flags,group).md",
       "hash": "9fba080f340e96ca891da9d390b94d34e40f2067c368042a6ae90eef79a12098"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/scheduleroptions/qos": {
@@ -957,7 +957,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/schedulertimetype/advanced(by:)": {
       "etag": "\"2069-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/advanced-by.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/advanced(by).md",
       "hash": "715e25c6d05d0b7f51c498015cf5bc4be8a1047a6e14d244db1fde578c67b20e"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/schedulertimetype/dispatchtime": {
@@ -967,37 +967,37 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/schedulertimetype/distance(to:)": {
       "etag": "\"206e-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/distance-to.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/distance(to).md",
       "hash": "b6a771b3833335a4ef5dbf7c1cafa5ac5b19a304ed13c64900a86833413278a8"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/schedulertimetype/init(_:)": {
       "etag": "\"15be-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/init.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/init(_).md",
       "hash": "3258c43c0cf603b45903daa8da0f669113130a19bbf709e7d3c3e8d186468aea"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/setspecific(key:value:)": {
       "etag": "\"25bd-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/setspecific-keyvalue.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/setspecific(key,value).md",
       "hash": "511debdd2c5c7a8538ff216940fcb902cdd49a24f765158e3737c195d5750bec"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/sync(execute:)-20xby": {
       "etag": "\"2c7d-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/sync-execute-20xby.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/sync(execute)-20xby.md",
       "hash": "01c0f16fc943778a3eb35a4bf9f2aadc204af413274cf8f704be447ca975e7b9"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/sync(execute:)-2fzvo": {
       "etag": "\"2a5e-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/sync-execute-2fzvo.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/sync(execute)-2fzvo.md",
       "hash": "91f42c9c3d33192a06c7389c9af26c67e455324d1b08fa15d4e5ed4ac66a81f1"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/sync(execute:)-3segw": {
       "etag": "\"42a5-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/sync-execute-3segw.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/sync(execute)-3segw.md",
       "hash": "f90fcaf5734dafb53936337d0fd332583dffd12428c8521dc67d4b014eac16aa"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchqueue/sync(flags:execute:)": {
       "etag": "\"3224-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/sync-flagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/sync(flags,execute).md",
       "hash": "862179360748dcb86be66d39753b558121777eb3cf61cd5eb8c54aadff0917d0"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsemaphore": {
@@ -1007,27 +1007,27 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsemaphore/init(value:)": {
       "etag": "\"2dc3-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/init-value.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/init(value).md",
       "hash": "8f7f804a566e3e0d908760390368ff1e96e4901660732398295a51616bb1adf9"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsemaphore/signal()": {
       "etag": "\"161e-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/signal.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/signal().md",
       "hash": "165a33e5e73d83220908df53dffaac3f7e6464a1625e294993204443c3471278"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsemaphore/wait()": {
       "etag": "\"1706-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/wait.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/wait().md",
       "hash": "045d8e8a47313a5c3254025dbfabb6943da1bd2f6d3387e1ff630aa111c87f2b"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsemaphore/wait(timeout:)": {
       "etag": "\"1ff0-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/wait-timeout.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/wait(timeout).md",
       "hash": "7d7195ab87c6b68837da45ec8bd994780fe0e8e87b3c66a7bbf22087f94b0b96"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsemaphore/wait(walltimeout:)": {
       "etag": "\"1fd3-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/wait-walltimeout.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/wait(walltimeout).md",
       "hash": "7c9397f73a8fcfc27c29ebd02fb8abfb7fca73fc56a5bf7be690f7f871f99dba"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchserialqueue": {
@@ -1047,7 +1047,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchserialqueue/init(label:qos:attributes:autoreleasefrequency:target:)": {
       "etag": "\"2c77-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchserialqueue/init-labelqosattributesautoreleasefrequencytarget.md",
+      "file_path": "documentation/Dispatch/dispatchserialqueue/init(label,qos,attributes,autoreleasefrequency,target).md",
       "hash": "250abed5ac54531afe7921c89e9b915b2f545096d123d2808e397a6ecc6f86f0"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource": {
@@ -1117,62 +1117,62 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makefilesystemobjectsource(filedescriptor:eventmask:queue:)": {
       "etag": "\"4696-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makefilesystemobjectsource-filedescriptoreventmaskqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makefilesystemobjectsource(filedescriptor,eventmask,queue).md",
       "hash": "8defba16e14eee67626f7e915da7b76e66d2b0c30ed1d867c658b65534d03080"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makemachreceivesource(port:queue:)": {
       "etag": "\"38bb-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makemachreceivesource-portqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makemachreceivesource(port,queue).md",
       "hash": "f0050aa3eac84483e1b636cbdf39542da3f1e719df94be32249d9e8985767d11"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makemachsendsource(port:eventmask:queue:)": {
       "etag": "\"3d83-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makemachsendsource-porteventmaskqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makemachsendsource(port,eventmask,queue).md",
       "hash": "305094e5d360e7c50bc4252d95f9cf9254f52941b83396ccab0df8367cade0b8"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makememorypressuresource(eventmask:queue:)": {
       "etag": "\"31cb-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makememorypressuresource-eventmaskqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makememorypressuresource(eventmask,queue).md",
       "hash": "6e609090adfaa43c838130422b3f3375b3828022caa5de827076645b92426355"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makeprocesssource(identifier:eventmask:queue:)": {
       "etag": "\"34fe-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makeprocesssource-identifiereventmaskqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makeprocesssource(identifier,eventmask,queue).md",
       "hash": "92d9895d802ee0a28ad9ec4531498da03cb5362ff1bb28f8760d2f285adbcfa8"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makereadsource(filedescriptor:queue:)": {
       "etag": "\"422e-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makereadsource-filedescriptorqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makereadsource(filedescriptor,queue).md",
       "hash": "ae6eae7e2fa9e8afb217f2ea3fdead86dd49c04b8e9c453888658197154ad966"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makesignalsource(signal:queue:)": {
       "etag": "\"2c47-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makesignalsource-signalqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makesignalsource(signal,queue).md",
       "hash": "0ff233fc0c79f87973bfab42ca7afbf6c1df84538ec8ae952f2254523249e904"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/maketimersource(flags:queue:)": {
       "etag": "\"3178-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/maketimersource-flagsqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/maketimersource(flags,queue).md",
       "hash": "f060c4afc1e97c29f3c5adc65008f3198c703ab914f982467c53b2ca141bd5a6"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makeuserdataaddsource(queue:)": {
       "etag": "\"3695-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makeuserdataaddsource-queue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makeuserdataaddsource(queue).md",
       "hash": "0690df43c79da5b432b700d4fd0b7738b67946575f054cd9b2ce52c003f0b36f"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makeuserdataorsource(queue:)": {
       "etag": "\"3688-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makeuserdataorsource-queue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makeuserdataorsource(queue).md",
       "hash": "21d5294264081cea592e4867da1a09fc52f04dec01b52045b6fd2324a98a36f3"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makeuserdatareplacesource(queue:)": {
       "etag": "\"36ad-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makeuserdatareplacesource-queue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makeuserdatareplacesource(queue).md",
       "hash": "a41bd88f71ab340ce8c9ed05f0cb224b0b54a9c25c6ab1e751376213d13f460e"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/makewritesource(filedescriptor:queue:)": {
       "etag": "\"418f-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makewritesource-filedescriptorqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makewritesource(filedescriptor,queue).md",
       "hash": "2294fc3e782566ec1958b36e81a95948ef9fbe0b66c348c9a6b9255414b3db3b"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsource/memorypressureevent": {
@@ -1332,12 +1332,12 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/activate()": {
       "etag": "\"1680-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/activate.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/activate().md",
       "hash": "12a7f5fa71295bb05316dea67ca6f80b73f10bef7144c5ac5d212556a84ce476"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/cancel()": {
       "etag": "\"2124-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/cancel.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/cancel().md",
       "hash": "834fc404ef8475dbb70593a74b443f1e4338d93f2d61a1eebd1bbb613258388c"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/data": {
@@ -1367,42 +1367,42 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/resume()": {
       "etag": "\"15f0-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/resume.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/resume().md",
       "hash": "9dd0a26e1ff96b453d4cca6ef0df4682f179e8c634bfcf4a46aefd2e616ab7ed"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/setcancelhandler(handler:)": {
       "etag": "\"2803-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setcancelhandler-handler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setcancelhandler(handler).md",
       "hash": "0d95acca058e5d664911b7f51ea0874c6b45bf0c89b38649e4008a9108dd4e53"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/setcancelhandler(qos:flags:handler:)": {
       "etag": "\"335d-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setcancelhandler-qosflagshandler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setcancelhandler(qos,flags,handler).md",
       "hash": "0e5834e8a4399a71fb244bcf6d7d86a7b0b1ab2b856f41bdda53c473e3e7facd"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/seteventhandler(handler:)": {
       "etag": "\"2abd-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/seteventhandler-handler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/seteventhandler(handler).md",
       "hash": "3fd75ff6378cd2850557fa04961f67a2355b208d7a71df07020c3cabdfeb151a"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/seteventhandler(qos:flags:handler:)": {
       "etag": "\"2f5d-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/seteventhandler-qosflagshandler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/seteventhandler(qos,flags,handler).md",
       "hash": "7f4d6fc4e609c678de935b61d69f47da809952b431a2dea5ae6941d5c03e9bfb"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/setregistrationhandler(handler:)": {
       "etag": "\"2d76-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setregistrationhandler-handler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setregistrationhandler(handler).md",
       "hash": "afe00861ef371b08e0bc328412ebbb64e5bf9171cf623eedcfb72e5ec2673339"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/setregistrationhandler(qos:flags:handler:)": {
       "etag": "\"2f80-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setregistrationhandler-qosflagshandler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setregistrationhandler(qos,flags,handler).md",
       "hash": "c18d6375e62b170260706adc052f948bdaea1e7f8ce7162d3fa5f059e6f988ab"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceprotocol/suspend()": {
       "etag": "\"15f6-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/suspend.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/suspend().md",
       "hash": "ef2b0171d3cdd48c1cb28a71345a6db4fd294f93f79d3c43f72d588b51cc8191"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceread": {
@@ -1422,52 +1422,52 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/schedule(deadline:repeating:leeway:)-24w9r": {
       "etag": "\"3ba6-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule-deadlinerepeatingleeway-24w9r.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule(deadline,repeating,leeway)-24w9r.md",
       "hash": "cf037065c6341ed848dc3784574e85db235c400255e413995502545317307164"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/schedule(deadline:repeating:leeway:)-hvhp": {
       "etag": "\"3d5b-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule-deadlinerepeatingleeway-hvhp.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule(deadline,repeating,leeway)-hvhp.md",
       "hash": "f6efb1253429f695949bd57ec1243e089f7243f15e0f0192fa0234b5d031b90b"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/schedule(walldeadline:repeating:leeway:)-21bay": {
       "etag": "\"3bf2-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule-walldeadlinerepeatingleeway-21bay.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule(walldeadline,repeating,leeway)-21bay.md",
       "hash": "e9e3990338869f75369bf7a55f416023de75659a0f07a98a7a7b373e948d0d0e"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/schedule(walldeadline:repeating:leeway:)-7c4d7": {
       "etag": "\"3da8-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule-walldeadlinerepeatingleeway-7c4d7.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule(walldeadline,repeating,leeway)-7c4d7.md",
       "hash": "a1c20514dbd5279365cb46a819fcb962c8d51f2fa5648a715e4a9911cbf2c7e5"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/scheduleoneshot(deadline:leeway:)": {
       "etag": "\"45eb-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/scheduleoneshot-deadlineleeway.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/scheduleoneshot(deadline,leeway).md",
       "hash": "d5083c01d0c8e0df9966dccf937d9454419505dd23b16b180fe7c9fc8d375ea2"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/scheduleoneshot(walldeadline:leeway:)": {
       "etag": "\"4653-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/scheduleoneshot-walldeadlineleeway.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/scheduleoneshot(walldeadline,leeway).md",
       "hash": "d454f364ae40a4523cfb683bf6aa32d3904bdbd0e08f690436811d170972ab7b"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/schedulerepeating(deadline:interval:leeway:)-3k199": {
       "etag": "\"4b4e-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating-deadlineintervalleeway-3k199.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating(deadline,interval,leeway)-3k199.md",
       "hash": "97d978371cf8f0d97a840979b32ec2d20746ef3c9a2d3f3bbc980d7438410da7"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/schedulerepeating(deadline:interval:leeway:)-4wtot": {
       "etag": "\"4c34-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating-deadlineintervalleeway-4wtot.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating(deadline,interval,leeway)-4wtot.md",
       "hash": "3ebae8f8982fa26a548ba517bbfcb6f07341f8e9e18e66217a6d866baf6818f0"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/schedulerepeating(walldeadline:interval:leeway:)-6fiox": {
       "etag": "\"4d02-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating-walldeadlineintervalleeway-6fiox.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating(walldeadline,interval,leeway)-6fiox.md",
       "hash": "fb243c374ae6f0b0130ae47610fdacd53166b1199b864adf8b803ed9cf06964b"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcetimer/schedulerepeating(walldeadline:interval:leeway:)-942p7": {
       "etag": "\"4b24-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating-walldeadlineintervalleeway-942p7.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating(walldeadline,interval,leeway)-942p7.md",
       "hash": "bdf842f4db04e382c2934d53c72c2c0aa8091d9698796b3317eab48beef01281"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceuserdataadd": {
@@ -1477,7 +1477,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceuserdataadd/add(data:)": {
       "etag": "\"14bb-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceuserdataadd/add-data.md",
+      "file_path": "documentation/Dispatch/dispatchsourceuserdataadd/add(data).md",
       "hash": "fcd025c360cc2605a5cb95c6c9c5e9ddf960296715f1265ce38b0f8b280b3327"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceuserdataor": {
@@ -1487,7 +1487,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceuserdataor/or(data:)": {
       "etag": "\"146d-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceuserdataor/or-data.md",
+      "file_path": "documentation/Dispatch/dispatchsourceuserdataor/or(data).md",
       "hash": "d6cb3f87d76e4201b4bb3887bcb806b09307961b6307cee4753c4493495d6805"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceuserdatareplace": {
@@ -1497,7 +1497,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourceuserdatareplace/replace(data:)": {
       "etag": "\"154d-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceuserdatareplace/replace-data.md",
+      "file_path": "documentation/Dispatch/dispatchsourceuserdatareplace/replace(data).md",
       "hash": "969e401ddd195e072c34992ff3f774a31dbecb0543f098ceba5a584e0db96fa8"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchsourcewrite": {
@@ -1512,7 +1512,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchspecifickey/init()": {
       "etag": "\"c61-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchspecifickey/init.md",
+      "file_path": "documentation/Dispatch/dispatchspecifickey/init().md",
       "hash": "fef94a7ef28f9825438812d0bd7e62e58c5069337fb323edfd33486b2031f139"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtime": {
@@ -1522,12 +1522,12 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtime/advanced(by:)": {
       "etag": "\"181d-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchtime/advanced-by.md",
+      "file_path": "documentation/Dispatch/dispatchtime/advanced(by).md",
       "hash": "e17b0eef554e36f6cebf624637d19e834ff41c9f098466c74f3c2bc6f7624ec1"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtime/distance(to:)": {
       "etag": "\"1822-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchtime/distance-to.md",
+      "file_path": "documentation/Dispatch/dispatchtime/distance(to).md",
       "hash": "c3de44b1732afde098d4a64d32d02679a5a0621b671a969a4ff0c8905c74ebda"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtime/distantfuture": {
@@ -1537,12 +1537,12 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtime/init(uptimenanoseconds:)": {
       "etag": "\"1698-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchtime/init-uptimenanoseconds.md",
+      "file_path": "documentation/Dispatch/dispatchtime/init(uptimenanoseconds).md",
       "hash": "c649d1f95206f577837ff4952d7da20bd11f8f804cfa63371d872fd38463d30b"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtime/now()": {
       "etag": "\"12c3-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchtime/now.md",
+      "file_path": "documentation/Dispatch/dispatchtime/now().md",
       "hash": "82335b100b59b1e8be68fc3a7100e8033c569da295d60cfe53f21b6a7c4096ab"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtime/rawvalue": {
@@ -1562,17 +1562,17 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtimeinterval/microseconds(_:)": {
       "etag": "\"1cb5-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchtimeinterval/microseconds.md",
+      "file_path": "documentation/Dispatch/dispatchtimeinterval/microseconds(_).md",
       "hash": "c5be7ce1a7f40061612d5f68a13c869bcbe0d98ed05baade5d9a53eddd275346"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtimeinterval/milliseconds(_:)": {
       "etag": "\"1cb5-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchtimeinterval/milliseconds.md",
+      "file_path": "documentation/Dispatch/dispatchtimeinterval/milliseconds(_).md",
       "hash": "86dc48f1ddd06554c8122922a9cacb12d0f35fed5ae40921964459f49929919a"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtimeinterval/nanoseconds(_:)": {
       "etag": "\"1caf-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchtimeinterval/nanoseconds.md",
+      "file_path": "documentation/Dispatch/dispatchtimeinterval/nanoseconds(_).md",
       "hash": "5646c6041e858f38651cf5dad7c1c7328488ac2986366c8fe06ccefbb6158f92"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtimeinterval/never": {
@@ -1582,7 +1582,7 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtimeinterval/seconds(_:)": {
       "etag": "\"1c96-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchtimeinterval/seconds.md",
+      "file_path": "documentation/Dispatch/dispatchtimeinterval/seconds(_).md",
       "hash": "83e5e4552ce9f053195d1071df407263e9a1aa62a9052be1de744711bc407fe4"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchtimeoutresult": {
@@ -1612,12 +1612,12 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchwalltime/init(timespec:)": {
       "etag": "\"1282-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchwalltime/init-timespec.md",
+      "file_path": "documentation/Dispatch/dispatchwalltime/init(timespec).md",
       "hash": "6af1ebfa48e5efe5f4faffc9c29c5b445a8b176832a63296e98815405101f5e7"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchwalltime/now()": {
       "etag": "\"1334-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchwalltime/now.md",
+      "file_path": "documentation/Dispatch/dispatchwalltime/now().md",
       "hash": "45a10d9c3321fe43b807d5c5bdb45e24a58251ac52daf88461b7cb2621f749c4"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchwalltime/rawvalue": {
@@ -1632,17 +1632,17 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/cancel()": {
       "etag": "\"15f1-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/cancel.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/cancel().md",
       "hash": "72433214a08ab881d49193ed7b1fdad1d2b8621998470e9672d18672e4e06313"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/init(flags:block:)": {
       "etag": "\"17e5-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/init-flagsblock.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/init(flags,block).md",
       "hash": "30dd4c6b54e448135e861ea27145925dcd8bc654d216259202e4d991383e1b8e"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/init(qos:flags:block:)": {
       "etag": "\"2876-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/init-qosflagsblock.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/init(qos,flags,block).md",
       "hash": "5be20bff2cde459ac82bf4ee1a1e97bb56277519851c48bff46c9dd876e8a773"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/iscancelled": {
@@ -1652,32 +1652,32 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/notify(qos:flags:queue:execute:)": {
       "etag": "\"2d01-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/notify-qosflagsqueueexecute.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/notify(qos,flags,queue,execute).md",
       "hash": "e522f029e97b15d1555d6ca69cde66cd65a474e7bf35ad956185da5913d38d69"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/notify(queue:execute:)": {
       "etag": "\"1f0c-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/notify-queueexecute.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/notify(queue,execute).md",
       "hash": "cc3e4eee17901806ce272828bbec040d0d1599f3c8c770707020bf4941065631"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/perform()": {
       "etag": "\"f5d-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/perform.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/perform().md",
       "hash": "25c9daddbfbb2993c1a923aca211572dea65fea511f2d532a9bee42810743b49"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/wait()": {
       "etag": "\"1d22-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/wait.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/wait().md",
       "hash": "a49e9db06276bc6e78ccd690b8ef5180ab11336f49e6564249ec79eb7fd12d57"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/wait(timeout:)": {
       "etag": "\"2ea2-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/wait-timeout.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/wait(timeout).md",
       "hash": "b8f715bda3f5fa5bbc97d41db3b0a2ae609bdcff952b759bf38358ffe2445701"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitem/wait(walltimeout:)": {
       "etag": "\"2ecc-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/wait-walltimeout.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/wait(walltimeout).md",
       "hash": "676fc6989a51d6e95b7cabb0be2fca38fa4e481bb87d0455a70da47c8ff4341f"
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkitemflags": {
@@ -1727,42 +1727,42 @@
     },
     "https://developer.apple.com/documentation/dispatch/dispatchworkloop/init(label:attributes:autoreleasefrequency:osworkgroup:)": {
       "etag": "\"28b0-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkloop/init-labelattributesautoreleasefrequencyosworkgroup.md",
+      "file_path": "documentation/Dispatch/dispatchworkloop/init(label,attributes,autoreleasefrequency,osworkgroup).md",
       "hash": "646f0848b261d3e9eca415b50c0df96b267ac27848d6a6dde911a41541708c4c"
     },
     "https://developer.apple.com/documentation/dispatch/msec_per_sec": {
       "etag": "\"27da-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/msec-per-sec.md",
+      "file_path": "documentation/Dispatch/msec_per_sec.md",
       "hash": "53806e3b932d6f268dcc185a706eaabde1bec86c886ab56cc313cfd7391f521e"
     },
     "https://developer.apple.com/documentation/dispatch/nsec_per_msec": {
       "etag": "\"21da-65d55df0a444f-df\"",
-      "file_path": "documentation/Dispatch/nsec-per-msec.md",
+      "file_path": "documentation/Dispatch/nsec_per_msec.md",
       "hash": "045b192233c2235bb962369cbc52e99d03c1c981e4343b7e36518e4f02230d35"
     },
     "https://developer.apple.com/documentation/dispatch/nsec_per_sec": {
       "etag": "\"22a0-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/nsec-per-sec.md",
+      "file_path": "documentation/Dispatch/nsec_per_sec.md",
       "hash": "d4d3287854a0b92b8bc06902db59edf0d85987e913871b833bbcc71512fa92f6"
     },
     "https://developer.apple.com/documentation/dispatch/nsec_per_usec": {
       "etag": "\"22ae-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/nsec-per-usec.md",
+      "file_path": "documentation/Dispatch/nsec_per_usec.md",
       "hash": "99e210eafbe36b343489b3258ce5a051df6f417a804e0cbbd256e1a0c7460e56"
     },
     "https://developer.apple.com/documentation/dispatch/os_dispatch_queue_global-swift.class": {
       "etag": "\"5f7d-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/os-dispatch-queue-global-swiftclass.md",
+      "file_path": "documentation/Dispatch/os_dispatch_queue_global-swift.class.md",
       "hash": "a6bfad1a931c5cc8390846ffd3619e79681f029e380f3114579d383568f63c72"
     },
     "https://developer.apple.com/documentation/dispatch/os_dispatch_queue_main-swift.class": {
       "etag": "\"61e8-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/os-dispatch-queue-main-swiftclass.md",
+      "file_path": "documentation/Dispatch/os_dispatch_queue_main-swift.class.md",
       "hash": "c775d68fe93033c7eb29387f7aa986b94bc844ed3b8e8853ba6e57eb73985ef3"
     },
     "https://developer.apple.com/documentation/dispatch/usec_per_sec": {
       "etag": "\"22a1-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/usec-per-sec.md",
+      "file_path": "documentation/Dispatch/usec_per_sec.md",
       "hash": "2c62421f7a36598c950f34a76461f3f0951161702e2cf2d27b412f46946e62be"
     },
     "https://developer.apple.com/documentation/dispatch/workloop": {
@@ -1777,42 +1777,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/+(_:_:)-2dcrq.json": {
       "etag": "\"1eb6-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/plus.md",
+      "file_path": "documentation/Dispatch/plus(_,_)-2dcrq.md",
       "hash": "7279a54c518e53ff35fccefe3428080878a78601dc6ba1b481745b37c038d86a"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/+(_:_:)-6fmcc.json": {
       "etag": "\"1df7-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/plus.md",
+      "file_path": "documentation/Dispatch/plus(_,_)-6fmcc.md",
       "hash": "df6bbbe8c54ac2066dda219deb1f06bffeef765372211a96ab119059a165a3e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/+(_:_:)-8pe6k.json": {
       "etag": "\"1e84-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/plus.md",
+      "file_path": "documentation/Dispatch/plus(_,_)-8pe6k.md",
       "hash": "812bbdc63cd8aee9e2bddcbd0cc54a9a2c54c28f25399256a088e3a2067420e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/+(_:_:)-8ylhk.json": {
       "etag": "\"1f43-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/plus.md",
+      "file_path": "documentation/Dispatch/plus(_,_)-8ylhk.md",
       "hash": "4bfb28805b13802bee587e834b3f882bc7f816f92b617e37f27169d6c59e1d5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/-(_:_:)-50bxr.json": {
       "etag": "\"1f43-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/minus.md",
+      "file_path": "documentation/Dispatch/minus(_,_)-50bxr.md",
       "hash": "96e482c470382888f71aa29c8d36dceeb4601d3d595d444b730e414fcf2e9e0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/-(_:_:)-5l4yh.json": {
       "etag": "\"1df7-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/minus.md",
+      "file_path": "documentation/Dispatch/minus(_,_)-5l4yh.md",
       "hash": "74104e1013d930c4fda86a30b3fd10f0bbcf02bf5c58fc23746988ad0dea2242"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/-(_:_:)-6jk71.json": {
       "etag": "\"1e84-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/minus.md",
+      "file_path": "documentation/Dispatch/minus(_,_)-6jk71.md",
       "hash": "5aa06ef33c7457afe13e2104f2f090eb6a9fac1fbb4ef2518985c3fc192c2668"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/-(_:_:)-8usj3.json": {
       "etag": "\"1eb6-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/minus.md",
+      "file_path": "documentation/Dispatch/minus(_,_)-8usj3.md",
       "hash": "d2ca4d614127d2e17d95243f49729e5b14463fefc25d09e4900b0d60f55f4d28"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/2963138-wall-time-constants.json": {
@@ -1887,152 +1887,152 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_allow_send_signals(_:).json": {
       "etag": "\"1c10-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatch-allow-send-signals.md",
+      "file_path": "documentation/Dispatch/dispatch_allow_send_signals(_).md",
       "hash": "51d41335ec1a5eedd383ad43597ef364314db9fb3f86b004d476d1a43fe42e06"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_api_version.json": {
       "etag": "\"2815-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-api-version.md",
+      "file_path": "documentation/Dispatch/dispatch_api_version.md",
       "hash": "6e35737e595d7e306889ba707d9d1dcce7860fe0e99e0bf0aba83d4550c6dd75"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_apply_auto_available.json": {
       "etag": "\"2866-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatch-apply-auto-available.md",
+      "file_path": "documentation/Dispatch/dispatch_apply_auto_available.md",
       "hash": "ea469c0d575b896ed48c261a74dd5456d2777387f93607e0f99d33be9cd7cc86"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_data_t.json": {
       "etag": "\"2fd2-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatch-data-t.md",
+      "file_path": "documentation/Dispatch/dispatch_data_t.md",
       "hash": "3f5e4aa8feb87b662a3cbcb6248eb9666cf40e8b9446a00cddfa77f8fd4d1328"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_debugv(_:_:_:).json": {
       "etag": "\"310d-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatch-debugv.md",
+      "file_path": "documentation/Dispatch/dispatch_debugv(_,_,_).md",
       "hash": "67881cd2fa785dd7e2f3348d212a859370cf9e4b96841c7380db80a5de602309"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_get_current_queue().json": {
       "etag": "\"28bb-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatch-get-current-queue.md",
+      "file_path": "documentation/Dispatch/dispatch_get_current_queue().md",
       "hash": "f8befdaf45b979d410739b3e8ae93222b2408a966002b2c4d583731703424d29"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_group_t.json": {
       "etag": "\"3863-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatch-group-t.md",
+      "file_path": "documentation/Dispatch/dispatch_group_t.md",
       "hash": "db46d9544924d16c9d946eafdf5371cb8685e20406ba1c2bc4aacfbe8a6d5f78"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_io_random.json": {
       "etag": "\"1dd4-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-random.md",
+      "file_path": "documentation/Dispatch/dispatch_io_random.md",
       "hash": "724e415cd60286372313929c194e82cb83f8ef2396985a44ff22ce5eaf7a99ff"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_io_stop.json": {
       "etag": "\"1600-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-stop.md",
+      "file_path": "documentation/Dispatch/dispatch_io_stop.md",
       "hash": "a3ea57f7ed01e40b8a2299ecb7ffc978abf3bd211ac42e4e6fed55a4c52ce3c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_io_stream.json": {
       "etag": "\"1ce1-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-stream.md",
+      "file_path": "documentation/Dispatch/dispatch_io_stream.md",
       "hash": "1e17d817646cf3682d42ff67d4b29df84924b8dbdddc9727cdf9a48390adc302"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_io_strict_interval.json": {
       "etag": "\"1ce6-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-strict-interval.md",
+      "file_path": "documentation/Dispatch/dispatch_io_strict_interval.md",
       "hash": "8b1f12769c52be08c20a6e459c573061bd5f94a12857e41cebb24298b0acb789"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_io_t.json": {
       "etag": "\"367c-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatch-io-t.md",
+      "file_path": "documentation/Dispatch/dispatch_io_t.md",
       "hash": "411a6cd83d509db8dec2d9ff57708f586a1252c8f6537331fa49a884a910bf82"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_object_t.json": {
       "etag": "\"36d9-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatch-object-t.md",
+      "file_path": "documentation/Dispatch/dispatch_object_t.md",
       "hash": "9c597bf2e94228d71d929aebfd1e9da02e9a57cd9f294c858e1759989bd78187"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_once_inline_fastpath.json": {
       "etag": "\"2866-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatch-once-inline-fastpath.md",
+      "file_path": "documentation/Dispatch/dispatch_once_inline_fastpath.md",
       "hash": "87e6d3294fdaa9dc7c514bbcff6397be575eac99676bb2fa3ea134655afaf8c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_queue_attr_t.json": {
       "etag": "\"34b9-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-attr-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_attr_t.md",
       "hash": "724429f5d9e1b8e4700db2bc3092d1cc055256ec7bf3016b8599d910969bb536"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_queue_concurrent_t.json": {
       "etag": "\"4a91-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-concurrent-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_concurrent_t.md",
       "hash": "2db910436d81f529d5abad7b8d2178c6a01ceab398f1ccfd9cce01011f0eec9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_queue_global_t.json": {
       "etag": "\"4a56-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-global-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_global_t.md",
       "hash": "ff7b0ec5dfa0c9e78daebb6e5af27464e157957d3fd70420617999892ad91d78"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_queue_main_t.json": {
       "etag": "\"4a41-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-main-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_main_t.md",
       "hash": "94596ea80e2cbf95533416acd429dc9785b28c03625eafd93a8431b154ef686d"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_queue_serial_executor_t.json": {
       "etag": "\"32d0-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-serial-executor-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_serial_executor_t.md",
       "hash": "e7c72a157070f856c8747f9791e6c1a970e8fde68f23435650059815f52e2920"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_queue_serial_t.json": {
       "etag": "\"4a36-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-serial-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_serial_t.md",
       "hash": "b8a976369b33f8f6db1e82de387fe8f817d660283feed21797573c57d564ef83"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_queue_t.json": {
       "etag": "\"4885-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatch-queue-t.md",
+      "file_path": "documentation/Dispatch/dispatch_queue_t.md",
       "hash": "c5d84396926132a5a0b82ed3f20c630fae71188b1f04d8a88c3a08d0f9768486"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_semaphore_t.json": {
       "etag": "\"3587-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-semaphore-t.md",
+      "file_path": "documentation/Dispatch/dispatch_semaphore_t.md",
       "hash": "a65fe3c0d94bb41a082dbca236ad5a9052bdc39c0ab83fcf692f59f0f780712f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_source_mach_recv_flags_t.json": {
       "etag": "\"2a37-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatch-source-mach-recv-flags-t.md",
+      "file_path": "documentation/Dispatch/dispatch_source_mach_recv_flags_t.md",
       "hash": "85ed5a5a1802e4adfb954ad8691cd65b902e66d20fd41637c206c8b0fbfcda8e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_source_t.json": {
       "etag": "\"1cd4-65d55df0a444f-df\"",
-      "file_path": "documentation/Dispatch/dispatch-source-t.md",
+      "file_path": "documentation/Dispatch/dispatch_source_t.md",
       "hash": "bda094a32603dbf32ae368e480ef33b9817ac642099587e0be767e27b9ec188b"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_swift3_overlay.json": {
       "etag": "\"2830-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatch-swift3-overlay.md",
+      "file_path": "documentation/Dispatch/dispatch_swift3_overlay.md",
       "hash": "34e5dc6adbcab87c2f78da7c85025ad579bf9a30a881e7d338de3437c2e718d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_time_forever.json": {
       "etag": "\"1b88-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatch-time-forever.md",
+      "file_path": "documentation/Dispatch/dispatch_time_forever.md",
       "hash": "ebd43d4c43b6625a2a57a3064efe3e9d0c40ea426beb3fbecd416876b69d5f76"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_time_now.json": {
       "etag": "\"1b68-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-time-now.md",
+      "file_path": "documentation/Dispatch/dispatch_time_now.md",
       "hash": "e6abee0b2b99f0752e452945721d7fbf534724f3cebfd592829f98e0dd633d40"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_time_t.json": {
       "etag": "\"481f-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatch-time-t.md",
+      "file_path": "documentation/Dispatch/dispatch_time_t.md",
       "hash": "c08d5056df0c051f17efcd21b86ef7c5dbe9c4eb41aaf95c102ddef31b3a1873"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_walltime_now.json": {
       "etag": "\"2da8-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatch-walltime-now.md",
+      "file_path": "documentation/Dispatch/dispatch_walltime_now.md",
       "hash": "f23043243412ee27a53f793b87b7d021624e5a3d78f675304c27040b8ad2e0a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatch_workloop_t.json": {
       "etag": "\"1e9e-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatch-workloop-t.md",
+      "file_path": "documentation/Dispatch/dispatch_workloop_t.md",
       "hash": "bdcd93f4e0126ae5be549f5c08ca09c357f2e916398cacf8541c73eb4f3c0692"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchconcurrentqueue.json": {
@@ -2052,7 +2052,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchconcurrentqueue/init(label:qos:attributes:autoreleasefrequency:target:).json": {
       "etag": "\"2cd4-65d55df0a444f-df\"",
-      "file_path": "documentation/Dispatch/dispatchconcurrentqueue/init-labelqosattributesautoreleasefrequencytarget.md",
+      "file_path": "documentation/Dispatch/dispatchconcurrentqueue/init(label,qos,attributes,autoreleasefrequency,target).md",
       "hash": "5a56ab1b88f7b2f259b5bdcfd931aadb88702bc8d01e817d8636466f525ae0ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata.json": {
@@ -2062,47 +2062,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/append(_:)-1m94x.json": {
       "etag": "\"187c-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/append-1m94x.md",
+      "file_path": "documentation/Dispatch/dispatchdata/append(_)-1m94x.md",
       "hash": "241409161afba65202efe2e5eb54a27984e0e05c59a94faff08659d9e704c587"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/append(_:)-3bvdr.json": {
       "etag": "\"15de-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/append-3bvdr.md",
+      "file_path": "documentation/Dispatch/dispatchdata/append(_)-3bvdr.md",
       "hash": "1333e8541a562ac5182ad2eedce9903e46bb21cf509af62e782bf9a9ae9da70f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/append(_:)-9sgkq.json": {
       "etag": "\"19a4-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/append-9sgkq.md",
+      "file_path": "documentation/Dispatch/dispatchdata/append(_)-9sgkq.md",
       "hash": "926043ae173ef613aefdc32bd8ccf1f5b07fd1d263dfd5731527fba7330d3504"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/append(_:count:).json": {
       "etag": "\"4dbf-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/append-count.md",
+      "file_path": "documentation/Dispatch/dispatchdata/append(_,count).md",
       "hash": "6579a67f466c5fdd73a000a8dc62035ced428ab6f3b05772156d9d829d696f45"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/copybytes(to:count:)-3j0qx.json": {
       "etag": "\"21a3-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tocount-3j0qx.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,count)-3j0qx.md",
       "hash": "d293ed8d51358545c0e3bee0f2d494d243a5ab1b163e636c1ebc857667511ee3"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/copybytes(to:count:)-4ffyj.json": {
       "etag": "\"4e77-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tocount-4ffyj.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,count)-4ffyj.md",
       "hash": "1e0ad0b2c8026cae1ea18ad9c95eae5994e7a386541ae54911e810b53bcdb9e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/copybytes(to:from:)-60yai.json": {
       "etag": "\"2487-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tofrom-60yai.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,from)-60yai.md",
       "hash": "f42be626d4e735cc97e2fa1066163556c5f57ec7ecf639d8c7a91b7f52230d59"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/copybytes(to:from:)-6ztcb.json": {
       "etag": "\"5163-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tofrom-6ztcb.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,from)-6ztcb.md",
       "hash": "ab799a020b23d8b2e35b918daf795cc8286606727814aba8f4e53a9eed2fbf83"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/copybytes(to:from:)-7zz4y.json": {
       "etag": "\"2870-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/copybytes-tofrom-7zz4y.md",
+      "file_path": "documentation/Dispatch/dispatchdata/copybytes(to,from)-7zz4y.md",
       "hash": "4626a9dc485f646a2fa55a7a080af3fbed8e1804e42ab7c6883e15d8c92f534d"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/deallocator.json": {
@@ -2112,7 +2112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/deallocator/custom(_:_:).json": {
       "etag": "\"1f15-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/deallocator/custom.md",
+      "file_path": "documentation/Dispatch/dispatchdata/deallocator/custom(_,_).md",
       "hash": "59887a7c4fde812c6fea9f1c5e956652f1352b3d4b9d343bc580b6df3b7aee17"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/deallocator/free.json": {
@@ -2132,42 +2132,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/enumeratebytes(_:).json": {
       "etag": "\"253f-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/enumeratebytes.md",
+      "file_path": "documentation/Dispatch/dispatchdata/enumeratebytes(_).md",
       "hash": "77450908a7ee5526da6b0f5a48a4081d47ac540864a2acfb7fe3be35dcc8ed64"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/enumeratebytes(block:).json": {
       "etag": "\"21ed-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/enumeratebytes-block.md",
+      "file_path": "documentation/Dispatch/dispatchdata/enumeratebytes(block).md",
       "hash": "487606fef8f0a022d8b906d4f82f8566108c762eac66ad43c1e420b272f4bb81"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/init(bytes:)-9lrd.json": {
       "etag": "\"22e1-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/init-bytes-9lrd.md",
+      "file_path": "documentation/Dispatch/dispatchdata/init(bytes)-9lrd.md",
       "hash": "146fee530270899d9c2367ef6807f65f2602e8fa319e3c8f97b8ec22cdc58890"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/init(bytes:)-mkbp.json": {
       "etag": "\"291a-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/init-bytes-mkbp.md",
+      "file_path": "documentation/Dispatch/dispatchdata/init(bytes)-mkbp.md",
       "hash": "69f1a23c4f45c17cd0b0f8d1455d1047534fa429b017c08bd651ab373e2a9644"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/init(bytesnocopy:deallocator:)-7h08w.json": {
       "etag": "\"2f8e-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/init-bytesnocopydeallocator-7h08w.md",
+      "file_path": "documentation/Dispatch/dispatchdata/init(bytesnocopy,deallocator)-7h08w.md",
       "hash": "1852b43a2ba56a9eb553ba8ca64c6d8bb3d351e8976b96744f1c3153476632c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/init(bytesnocopy:deallocator:)-vfoe.json": {
       "etag": "\"27fb-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/init-bytesnocopydeallocator-vfoe.md",
+      "file_path": "documentation/Dispatch/dispatchdata/init(bytesnocopy,deallocator)-vfoe.md",
       "hash": "53d3f25db27f65a96098c25829e64c651b7fdc30c92f2546b86753a8845c0d0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/makeiterator().json": {
       "etag": "\"1522-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/makeiterator.md",
+      "file_path": "documentation/Dispatch/dispatchdata/makeiterator().md",
       "hash": "50be2527d65e6c5efe2763d46f71e9316b340da72c0439a7fda507167f9226b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/region(location:).json": {
       "etag": "\"1af8-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/region-location.md",
+      "file_path": "documentation/Dispatch/dispatchdata/region(location).md",
       "hash": "819b55ce61ad17781d3389c1b4fd6ffdc374d7e72d24837e486b3da692302ac4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/region.json": {
@@ -2177,17 +2177,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/subdata(in:).json": {
       "etag": "\"1649-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/subdata-in.md",
+      "file_path": "documentation/Dispatch/dispatchdata/subdata(in).md",
       "hash": "fe119e6b072607bde627066a16197ca8c663ad2ddb8061deb0f313d94e35ceda"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/subscript(_:).json": {
       "etag": "\"19f7-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/subscript.md",
+      "file_path": "documentation/Dispatch/dispatchdata/subscript(_).md",
       "hash": "1d6c345ba21f299f340c95ad89ab9a3c5844435a0a2ae8b7a8af9182569ae7c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdata/withunsafebytes(body:).json": {
       "etag": "\"2544-65d55df00dc98-df\"",
-      "file_path": "documentation/Dispatch/dispatchdata/withunsafebytes-body.md",
+      "file_path": "documentation/Dispatch/dispatchdata/withunsafebytes(body).md",
       "hash": "06a3a611e94f9de107c54d95f4e417c4a692c90e392e047bc46e86e14f1fce34"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdataiterator.json": {
@@ -2197,7 +2197,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchdataiterator/next().json": {
       "etag": "\"12e0-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchdataiterator/next.md",
+      "file_path": "documentation/Dispatch/dispatchdataiterator/next().md",
       "hash": "1de6cb1eb23872fd3aa18e236d733f849212def9f900fdaa1864db75747972cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup.json": {
@@ -2207,42 +2207,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup/enter().json": {
       "etag": "\"2878-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/enter.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/enter().md",
       "hash": "4b8deef107af4c05f4de12fe4e351d87b45d0529d8237445f08c3d2d5a8e0c57"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup/init().json": {
       "etag": "\"2762-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/init.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/init().md",
       "hash": "f79e22f18159d32d5f4a23dd67d1856fc1e465639a89edb1b94df06f529d42e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup/leave().json": {
       "etag": "\"293d-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/leave.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/leave().md",
       "hash": "c55e4deebc4b58593e11935b48170f82e4406485ef6b985ceb654a3957a248ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup/notify(qos:flags:queue:execute:).json": {
       "etag": "\"2e0d-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/notify-qosflagsqueueexecute.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/notify(qos,flags,queue,execute).md",
       "hash": "84b879ee86024a49ef9397444f6e033a77c65ec08caf263cc4f2e32e93ad434e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup/notify(queue:work:).json": {
       "etag": "\"22fd-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/notify-queuework.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/notify(queue,work).md",
       "hash": "b2ccb2142e401ca6a08770c89604fba2416758da27d68667b07ee9e0245c9e56"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup/wait().json": {
       "etag": "\"166f-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/wait.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/wait().md",
       "hash": "9bd9f732f32ea82ca1bed63e347113b4f0666a57b907b48eccf9217621141599"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup/wait(timeout:).json": {
       "etag": "\"204a-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/wait-timeout.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/wait(timeout).md",
       "hash": "b6e572ac6032c0fa2d9fdc301d84ceddcd2c4c45c118703752e9f5390b44f5f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchgroup/wait(walltimeout:).json": {
       "etag": "\"269d-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchgroup/wait-walltimeout.md",
+      "file_path": "documentation/Dispatch/dispatchgroup/wait(walltimeout).md",
       "hash": "da38f1bc64645f4ffcff86aa7ef60d53a7c7cebcda69300ed70dcc91136a20eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio.json": {
@@ -2252,12 +2252,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/barrier(execute:).json": {
       "etag": "\"2b74-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/barrier-execute.md",
+      "file_path": "documentation/Dispatch/dispatchio/barrier(execute).md",
       "hash": "127b752e5f8369a194825d694c4631d58643a0bb00c326899b5229a6dfec2406"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/close(flags:).json": {
       "etag": "\"1eed-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/close-flags.md",
+      "file_path": "documentation/Dispatch/dispatchio/close(flags).md",
       "hash": "64776b490b17fe552d6a7c8f235313d34516ea51b13d2de43c09016f660a15a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/closeflags.json": {
@@ -2277,22 +2277,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/init(type:filedescriptor:queue:cleanuphandler:).json": {
       "etag": "\"3e36-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/init-typefiledescriptorqueuecleanuphandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/init(type,filedescriptor,queue,cleanuphandler).md",
       "hash": "48c293bfa86fb5248131a5e70eef62a5a8ffc55ef68706f9965a33db5515ac56"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/init(type:io:queue:cleanuphandler:).json": {
       "etag": "\"3b63-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/init-typeioqueuecleanuphandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/init(type,io,queue,cleanuphandler).md",
       "hash": "b4a9e606621be76646bd37e902ec2d4c3878cc0c5cfceb608f941b42437814c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/init(type:path:oflag:mode:queue:cleanuphandler:)-25rlb.json": {
       "etag": "\"30cf-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/init-typepathoflagmodequeuecleanuphandler-25rlb.md",
+      "file_path": "documentation/Dispatch/dispatchio/init(type,path,oflag,mode,queue,cleanuphandler)-25rlb.md",
       "hash": "4d6aa40f3c67885d1a9997bf8751fd273d513bc988cf0c8ba3847754062efa20"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/init(type:path:oflag:mode:queue:cleanuphandler:)-50rb0.json": {
       "etag": "\"4b11-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/init-typepathoflagmodequeuecleanuphandler-50rb0.md",
+      "file_path": "documentation/Dispatch/dispatchio/init(type,path,oflag,mode,queue,cleanuphandler)-50rb0.md",
       "hash": "91839ca7ded701aed78279e62845937b90561b12198218dd0f76e54e981ef015"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/intervalflags.json": {
@@ -2302,7 +2302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/intervalflags/init(nilliteral:).json": {
       "etag": "\"1050-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/intervalflags/init-nilliteral.md",
+      "file_path": "documentation/Dispatch/dispatchio/intervalflags/init(nilliteral).md",
       "hash": "8218b38231ff7a3b7b3744961c744d4a09914b855d1697ccf93237653c8a2f75"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/intervalflags/strictinterval.json": {
@@ -2312,27 +2312,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/read(fromfiledescriptor:maxlength:runninghandleron:handler:).json": {
       "etag": "\"41b1-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/read-fromfiledescriptormaxlengthrunninghandleronhandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/read(fromfiledescriptor,maxlength,runninghandleron,handler).md",
       "hash": "e1dcaf6fe570b98806c8e1e61c76bea80a4d763403a9c0b9521caf6e6941959d"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/read(offset:length:queue:iohandler:).json": {
       "etag": "\"44c8-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/read-offsetlengthqueueiohandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/read(offset,length,queue,iohandler).md",
       "hash": "5b0c464e130dedd8b4ea5e10f67b46c09ace46b83ab3ec196e65def6c159bf4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/setinterval(interval:flags:).json": {
       "etag": "\"3587-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/setinterval-intervalflags.md",
+      "file_path": "documentation/Dispatch/dispatchio/setinterval(interval,flags).md",
       "hash": "b007e6a22c222e88a214e0938449d01970aaccbf821b132ce3dad20e46bf3096"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/setlimit(highwater:).json": {
       "etag": "\"3a6c-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/setlimit-highwater.md",
+      "file_path": "documentation/Dispatch/dispatchio/setlimit(highwater).md",
       "hash": "95d86a93ea96df7576abd4ae78066b1e37c1ca0603eb8083fb71fcc4f89be423"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/setlimit(lowwater:).json": {
       "etag": "\"41fb-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/setlimit-lowwater.md",
+      "file_path": "documentation/Dispatch/dispatchio/setlimit(lowwater).md",
       "hash": "667303676a10467a0a6395ecec284293b8becdf11d38a169f9551a2f7463a862"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/streamtype.json": {
@@ -2352,17 +2352,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/write(offset:data:queue:iohandler:).json": {
       "etag": "\"41ee-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/write-offsetdataqueueiohandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/write(offset,data,queue,iohandler).md",
       "hash": "b78bccc2ed9aa9a54f1572f4553f72773aca88bca34b4bd182685553f7b8f8e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchio/write(tofiledescriptor:data:runninghandleron:handler:).json": {
       "etag": "\"3e49-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchio/write-tofiledescriptordatarunninghandleronhandler.md",
+      "file_path": "documentation/Dispatch/dispatchio/write(tofiledescriptor,data,runninghandleron,handler).md",
       "hash": "03265b7342ab457f355a840bd2f676d7b2cf5f4866a53bb9d9cf282108484069"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchmain().json": {
       "etag": "\"2a95-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatchmain.md",
+      "file_path": "documentation/Dispatch/dispatchmain().md",
       "hash": "c2d12af1a020071a414034630176f35e7760d0edaf2824535b30a385c10c35ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchobject.json": {
@@ -2372,27 +2372,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchobject/activate().json": {
       "etag": "\"2665-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/dispatchobject/activate.md",
+      "file_path": "documentation/Dispatch/dispatchobject/activate().md",
       "hash": "fa6fd98995e5204d1a362937e713ff44bb60ddf6d3b78edf494cbb04a84becf6"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchobject/resume().json": {
       "etag": "\"2f53-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/dispatchobject/resume.md",
+      "file_path": "documentation/Dispatch/dispatchobject/resume().md",
       "hash": "cdfdb2e0708167b1fc4d553631db1e8c1706ca93ae64fac2fff4b5cd512491ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchobject/settarget(queue:).json": {
       "etag": "\"4674-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchobject/settarget-queue.md",
+      "file_path": "documentation/Dispatch/dispatchobject/settarget(queue).md",
       "hash": "f4ff649cdc16e8987b508c745a2dd2f37d28c1ff57d1f07934d45362440770f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchobject/suspend().json": {
       "etag": "\"2e7d-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchobject/suspend.md",
+      "file_path": "documentation/Dispatch/dispatchobject/suspend().md",
       "hash": "bcda4e242262f50d198469edce88d2c6388af8d8be033470571f39c9ece16957"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchprecondition(condition:).json": {
       "etag": "\"1e11-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatchprecondition-condition.md",
+      "file_path": "documentation/Dispatch/dispatchprecondition(condition).md",
       "hash": "4317f1bd7a130e584b84c1ea8259b5ef522b0188f5c4ab31bba2663206fd287f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchpredicate.json": {
@@ -2402,17 +2402,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchpredicate/notonqueue(_:).json": {
       "etag": "\"1a24-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchpredicate/notonqueue.md",
+      "file_path": "documentation/Dispatch/dispatchpredicate/notonqueue(_).md",
       "hash": "3098d5dfbfa1415c9edb9236a597bec1e8a9c2552b7e78e84203a89af172b98c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchpredicate/onqueue(_:).json": {
       "etag": "\"1a10-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchpredicate/onqueue.md",
+      "file_path": "documentation/Dispatch/dispatchpredicate/onqueue(_).md",
       "hash": "27e76f3380cb1facfae747593a96cd1b811a630541537738627f4591e5c18b02"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchpredicate/onqueueasbarrier(_:).json": {
       "etag": "\"1ec5-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchpredicate/onqueueasbarrier.md",
+      "file_path": "documentation/Dispatch/dispatchpredicate/onqueueasbarrier(_).md",
       "hash": "a6229735b6adce26c3b81e1081d39e590ecb38c8d10d75fce4d59fd246a4bb52"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqos.json": {
@@ -2432,12 +2432,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqos/init(qosclass:relativepriority:).json": {
       "etag": "\"1bec-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatchqos/init-qosclassrelativepriority.md",
+      "file_path": "documentation/Dispatch/dispatchqos/init(qosclass,relativepriority).md",
       "hash": "233e02874fb521fe097af0d65f6eb15dda73525a78f8f6f84425955754babb54"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqos/qosclass-swift.enum.json": {
       "etag": "\"38ec-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swiftenum.md",
+      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swift.enum.md",
       "hash": "9fecf7ac2c0502f709b259ef669b616f7f58e9cd3877ce4dc42c980b74d8dde2"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqos/qosclass-swift.enum/background.json": {
@@ -2452,7 +2452,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqos/qosclass-swift.enum/init(rawvalue:).json": {
       "etag": "\"15ec-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swift.enum/init(rawvalue).md",
       "hash": "c799107abf32f362cbcf36ecbf632a6a9a8711f9b96f49941b70babeea54adda"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqos/qosclass-swift.enum/rawvalue.json": {
@@ -2482,7 +2482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqos/qosclass-swift.property.json": {
       "etag": "\"1697-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swiftproperty.md",
+      "file_path": "documentation/Dispatch/dispatchqos/qosclass-swift.property.md",
       "hash": "ead1b1c924882d25e56ceba1c82b9bc7abbd14a5fa923ed330809ccf764b65be"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqos/relativepriority.json": {
@@ -2517,72 +2517,72 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/async(execute:).json": {
       "etag": "\"2b2d-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/async-execute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/async(execute).md",
       "hash": "18e6bee8deaf91039419232c40eca1fb334bf9342e3db989e99cf60d910b5476"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/async(group:execute:).json": {
       "etag": "\"230c-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/async-groupexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/async(group,execute).md",
       "hash": "63094bdb6316f12cdd1b8ee84ea961a0ff7c478629ef164ec68ef36eaa370434"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/async(group:qos:flags:execute:).json": {
       "etag": "\"2d8c-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/async-groupqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/async(group,qos,flags,execute).md",
       "hash": "dd895f827dbe5ec92abfcb7633cbbeb15f8e38b73c8601c938d0242b2b82d699"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncafter(deadline:execute:).json": {
       "etag": "\"3430-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter-deadlineexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter(deadline,execute).md",
       "hash": "a12be71ca9f1460ebddab2f76baa0c1c06dcc717c3ed59555b70fcec59e84ee5"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncafter(deadline:qos:flags:execute:).json": {
       "etag": "\"3fd0-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter-deadlineqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter(deadline,qos,flags,execute).md",
       "hash": "2e45aa2c6e8a4305d804f4d0cddf2d77cf8f7acab8fbedd669fb7dbd55e4f68c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncafter(walldeadline:execute:).json": {
       "etag": "\"349d-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter-walldeadlineexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter(walldeadline,execute).md",
       "hash": "347059b0b3cdcafc076f4d27e6cec2ac0c92ad7733a95ccb028a493ed0bdddeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncafter(walldeadline:qos:flags:execute:).json": {
       "etag": "\"403a-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter-walldeadlineqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafter(walldeadline,qos,flags,execute).md",
       "hash": "6e467d63979625e66bd02997bd78c3052db4f116425ebe4e8f5d21c9c51124cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncafterunsafe(deadline:qos:flags:execute:).json": {
       "etag": "\"236b-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafterunsafe-deadlineqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafterunsafe(deadline,qos,flags,execute).md",
       "hash": "3f1a6640a60b0208f33c13cf3fcb599d77f4a4c69694bbd90b4688318e42c4c5"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncafterunsafe(walldeadline:qos:flags:execute:).json": {
       "etag": "\"23d9-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncafterunsafe-walldeadlineqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncafterunsafe(walldeadline,qos,flags,execute).md",
       "hash": "bf3a58c24f67bcf77dcd2c60d14e312c0664ac0b6676783f0b706c0e6b837a41"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncandwait(execute:)-1udeu.json": {
       "etag": "\"46c1-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait-execute-1udeu.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait(execute)-1udeu.md",
       "hash": "16dece71ffa4ce087085134c89e5869dbb8eb643dd262821ca3a416b4293bd85"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncandwait(execute:)-52p9n.json": {
       "etag": "\"1313-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait-execute-52p9n.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait(execute)-52p9n.md",
       "hash": "484c38e10f7dfe88b21d50081d1becf0c9e8ba556719e51f54c262d6c7c9ea52"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncandwait(execute:)-pfxy.json": {
       "etag": "\"139e-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait-execute-pfxy.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait(execute)-pfxy.md",
       "hash": "3c95cfdd71b3fa8657eb96d7e9806b768783de1c530f02c376d478eeaf7b4dc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncandwait(flags:execute:).json": {
       "etag": "\"189e-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait-flagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncandwait(flags,execute).md",
       "hash": "3e0663a7958567fb2cc532997e3edbb8f0da04aaeaf8eb26d7ffd39e6a79b939"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/asyncunsafe(group:qos:flags:execute:).json": {
       "etag": "\"232b-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/asyncunsafe-groupqosflagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/asyncunsafe(group,qos,flags,execute).md",
       "hash": "4209278e4ba95b3f3aaae6bd7fd42ad0d9a9227e546a3acec06c54d14e72e618"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/attributes.json": {
@@ -2622,27 +2622,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/concurrentperform(iterations:execute:).json": {
       "etag": "\"2057-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/concurrentperform-iterationsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/concurrentperform(iterations,execute).md",
       "hash": "86d8b7b4cf8b5c32b8da9a644814c9be3994e95ebef922e94b0971d140307758"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/getspecific(key:)-swift.method.json": {
       "etag": "\"24b0-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/getspecific-key-swiftmethod.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/getspecific(key)-swift.method.md",
       "hash": "e6efcf3ffb471de3a2c81a34b16a5ef3c1d57773aec31d6f5728f1956e0cd1c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/getspecific(key:)-swift.type.method.json": {
       "etag": "\"2536-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/getspecific-key-swifttypemethod.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/getspecific(key)-swift.type.method.md",
       "hash": "568cd47cee24632816157e5cd3cd29fa05bc97a5e79ec3b3723cee29dd3aac47"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/global(priority:).json": {
       "etag": "\"185a-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/global-priority.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/global(priority).md",
       "hash": "6a98999db54010d75c297918d70f3e13343c2e26ef6e2b213bf7a3958b9f7e5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/global(qos:).json": {
       "etag": "\"59f9-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/global-qos.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/global(qos).md",
       "hash": "070640bfe186ae065d9c9483ce619f2b8bfccfb786fd3822fd390e8685b45dd5"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/globalqueuepriority.json": {
@@ -2672,7 +2672,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/init(label:qos:attributes:autoreleasefrequency:target:).json": {
       "etag": "\"5cb1-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/init-labelqosattributesautoreleasefrequencytarget.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/init(label,qos,attributes,autoreleasefrequency,target).md",
       "hash": "0638f45cee2b55b250a466c3787f28b9c29d6047a96e0c13499931d5c2e384af"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/label.json": {
@@ -2712,7 +2712,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/scheduleroptions/init(qos:flags:group:).json": {
       "etag": "\"206b-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/scheduleroptions/init-qosflagsgroup.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/scheduleroptions/init(qos,flags,group).md",
       "hash": "9fba080f340e96ca891da9d390b94d34e40f2067c368042a6ae90eef79a12098"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/scheduleroptions/qos.json": {
@@ -2727,7 +2727,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/schedulertimetype/advanced(by:).json": {
       "etag": "\"2069-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/advanced-by.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/advanced(by).md",
       "hash": "715e25c6d05d0b7f51c498015cf5bc4be8a1047a6e14d244db1fde578c67b20e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/schedulertimetype/dispatchtime.json": {
@@ -2737,37 +2737,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/schedulertimetype/distance(to:).json": {
       "etag": "\"206e-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/distance-to.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/distance(to).md",
       "hash": "b6a771b3833335a4ef5dbf7c1cafa5ac5b19a304ed13c64900a86833413278a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/schedulertimetype/init(_:).json": {
       "etag": "\"15be-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/init.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/schedulertimetype/init(_).md",
       "hash": "3258c43c0cf603b45903daa8da0f669113130a19bbf709e7d3c3e8d186468aea"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/setspecific(key:value:).json": {
       "etag": "\"25bd-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/setspecific-keyvalue.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/setspecific(key,value).md",
       "hash": "511debdd2c5c7a8538ff216940fcb902cdd49a24f765158e3737c195d5750bec"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/sync(execute:)-20xby.json": {
       "etag": "\"2c7d-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/sync-execute-20xby.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/sync(execute)-20xby.md",
       "hash": "01c0f16fc943778a3eb35a4bf9f2aadc204af413274cf8f704be447ca975e7b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/sync(execute:)-2fzvo.json": {
       "etag": "\"2a5e-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/sync-execute-2fzvo.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/sync(execute)-2fzvo.md",
       "hash": "91f42c9c3d33192a06c7389c9af26c67e455324d1b08fa15d4e5ed4ac66a81f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/sync(execute:)-3segw.json": {
       "etag": "\"42a5-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/sync-execute-3segw.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/sync(execute)-3segw.md",
       "hash": "f90fcaf5734dafb53936337d0fd332583dffd12428c8521dc67d4b014eac16aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchqueue/sync(flags:execute:).json": {
       "etag": "\"3224-65d55defa3db1-df\"",
-      "file_path": "documentation/Dispatch/dispatchqueue/sync-flagsexecute.md",
+      "file_path": "documentation/Dispatch/dispatchqueue/sync(flags,execute).md",
       "hash": "862179360748dcb86be66d39753b558121777eb3cf61cd5eb8c54aadff0917d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsemaphore.json": {
@@ -2777,27 +2777,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsemaphore/init(value:).json": {
       "etag": "\"2dc3-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/init-value.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/init(value).md",
       "hash": "8f7f804a566e3e0d908760390368ff1e96e4901660732398295a51616bb1adf9"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsemaphore/signal().json": {
       "etag": "\"161e-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/signal.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/signal().md",
       "hash": "165a33e5e73d83220908df53dffaac3f7e6464a1625e294993204443c3471278"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsemaphore/wait().json": {
       "etag": "\"1706-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/wait.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/wait().md",
       "hash": "045d8e8a47313a5c3254025dbfabb6943da1bd2f6d3387e1ff630aa111c87f2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsemaphore/wait(timeout:).json": {
       "etag": "\"1ff0-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/wait-timeout.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/wait(timeout).md",
       "hash": "7d7195ab87c6b68837da45ec8bd994780fe0e8e87b3c66a7bbf22087f94b0b96"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsemaphore/wait(walltimeout:).json": {
       "etag": "\"1fd3-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsemaphore/wait-walltimeout.md",
+      "file_path": "documentation/Dispatch/dispatchsemaphore/wait(walltimeout).md",
       "hash": "7c9397f73a8fcfc27c29ebd02fb8abfb7fca73fc56a5bf7be690f7f871f99dba"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchserialqueue.json": {
@@ -2817,7 +2817,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchserialqueue/init(label:qos:attributes:autoreleasefrequency:target:).json": {
       "etag": "\"2c77-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchserialqueue/init-labelqosattributesautoreleasefrequencytarget.md",
+      "file_path": "documentation/Dispatch/dispatchserialqueue/init(label,qos,attributes,autoreleasefrequency,target).md",
       "hash": "250abed5ac54531afe7921c89e9b915b2f545096d123d2808e397a6ecc6f86f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource.json": {
@@ -2887,62 +2887,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makefilesystemobjectsource(filedescriptor:eventmask:queue:).json": {
       "etag": "\"4696-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makefilesystemobjectsource-filedescriptoreventmaskqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makefilesystemobjectsource(filedescriptor,eventmask,queue).md",
       "hash": "8defba16e14eee67626f7e915da7b76e66d2b0c30ed1d867c658b65534d03080"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makemachreceivesource(port:queue:).json": {
       "etag": "\"38bb-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makemachreceivesource-portqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makemachreceivesource(port,queue).md",
       "hash": "f0050aa3eac84483e1b636cbdf39542da3f1e719df94be32249d9e8985767d11"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makemachsendsource(port:eventmask:queue:).json": {
       "etag": "\"3d83-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makemachsendsource-porteventmaskqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makemachsendsource(port,eventmask,queue).md",
       "hash": "305094e5d360e7c50bc4252d95f9cf9254f52941b83396ccab0df8367cade0b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makememorypressuresource(eventmask:queue:).json": {
       "etag": "\"31cb-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makememorypressuresource-eventmaskqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makememorypressuresource(eventmask,queue).md",
       "hash": "6e609090adfaa43c838130422b3f3375b3828022caa5de827076645b92426355"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makeprocesssource(identifier:eventmask:queue:).json": {
       "etag": "\"34fe-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makeprocesssource-identifiereventmaskqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makeprocesssource(identifier,eventmask,queue).md",
       "hash": "92d9895d802ee0a28ad9ec4531498da03cb5362ff1bb28f8760d2f285adbcfa8"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makereadsource(filedescriptor:queue:).json": {
       "etag": "\"422e-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makereadsource-filedescriptorqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makereadsource(filedescriptor,queue).md",
       "hash": "ae6eae7e2fa9e8afb217f2ea3fdead86dd49c04b8e9c453888658197154ad966"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makesignalsource(signal:queue:).json": {
       "etag": "\"2c47-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makesignalsource-signalqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makesignalsource(signal,queue).md",
       "hash": "0ff233fc0c79f87973bfab42ca7afbf6c1df84538ec8ae952f2254523249e904"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/maketimersource(flags:queue:).json": {
       "etag": "\"3178-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/maketimersource-flagsqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/maketimersource(flags,queue).md",
       "hash": "f060c4afc1e97c29f3c5adc65008f3198c703ab914f982467c53b2ca141bd5a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makeuserdataaddsource(queue:).json": {
       "etag": "\"3695-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makeuserdataaddsource-queue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makeuserdataaddsource(queue).md",
       "hash": "0690df43c79da5b432b700d4fd0b7738b67946575f054cd9b2ce52c003f0b36f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makeuserdataorsource(queue:).json": {
       "etag": "\"3688-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makeuserdataorsource-queue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makeuserdataorsource(queue).md",
       "hash": "21d5294264081cea592e4867da1a09fc52f04dec01b52045b6fd2324a98a36f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makeuserdatareplacesource(queue:).json": {
       "etag": "\"36ad-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makeuserdatareplacesource-queue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makeuserdatareplacesource(queue).md",
       "hash": "a41bd88f71ab340ce8c9ed05f0cb224b0b54a9c25c6ab1e751376213d13f460e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/makewritesource(filedescriptor:queue:).json": {
       "etag": "\"418f-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsource/makewritesource-filedescriptorqueue.md",
+      "file_path": "documentation/Dispatch/dispatchsource/makewritesource(filedescriptor,queue).md",
       "hash": "2294fc3e782566ec1958b36e81a95948ef9fbe0b66c348c9a6b9255414b3db3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsource/memorypressureevent.json": {
@@ -3102,12 +3102,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/activate().json": {
       "etag": "\"1680-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/activate.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/activate().md",
       "hash": "12a7f5fa71295bb05316dea67ca6f80b73f10bef7144c5ac5d212556a84ce476"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/cancel().json": {
       "etag": "\"2124-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/cancel.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/cancel().md",
       "hash": "834fc404ef8475dbb70593a74b443f1e4338d93f2d61a1eebd1bbb613258388c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/data.json": {
@@ -3137,42 +3137,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/resume().json": {
       "etag": "\"15f0-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/resume.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/resume().md",
       "hash": "9dd0a26e1ff96b453d4cca6ef0df4682f179e8c634bfcf4a46aefd2e616ab7ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/setcancelhandler(handler:).json": {
       "etag": "\"2803-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setcancelhandler-handler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setcancelhandler(handler).md",
       "hash": "0d95acca058e5d664911b7f51ea0874c6b45bf0c89b38649e4008a9108dd4e53"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/setcancelhandler(qos:flags:handler:).json": {
       "etag": "\"335d-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setcancelhandler-qosflagshandler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setcancelhandler(qos,flags,handler).md",
       "hash": "0e5834e8a4399a71fb244bcf6d7d86a7b0b1ab2b856f41bdda53c473e3e7facd"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/seteventhandler(handler:).json": {
       "etag": "\"2abd-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/seteventhandler-handler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/seteventhandler(handler).md",
       "hash": "3fd75ff6378cd2850557fa04961f67a2355b208d7a71df07020c3cabdfeb151a"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/seteventhandler(qos:flags:handler:).json": {
       "etag": "\"2f5d-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/seteventhandler-qosflagshandler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/seteventhandler(qos,flags,handler).md",
       "hash": "7f4d6fc4e609c678de935b61d69f47da809952b431a2dea5ae6941d5c03e9bfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/setregistrationhandler(handler:).json": {
       "etag": "\"2d76-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setregistrationhandler-handler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setregistrationhandler(handler).md",
       "hash": "afe00861ef371b08e0bc328412ebbb64e5bf9171cf623eedcfb72e5ec2673339"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/setregistrationhandler(qos:flags:handler:).json": {
       "etag": "\"2f80-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setregistrationhandler-qosflagshandler.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/setregistrationhandler(qos,flags,handler).md",
       "hash": "c18d6375e62b170260706adc052f948bdaea1e7f8ce7162d3fa5f059e6f988ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceprotocol/suspend().json": {
       "etag": "\"15f6-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceprotocol/suspend.md",
+      "file_path": "documentation/Dispatch/dispatchsourceprotocol/suspend().md",
       "hash": "ef2b0171d3cdd48c1cb28a71345a6db4fd294f93f79d3c43f72d588b51cc8191"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceread.json": {
@@ -3192,52 +3192,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/schedule(deadline:repeating:leeway:)-24w9r.json": {
       "etag": "\"3ba6-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule-deadlinerepeatingleeway-24w9r.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule(deadline,repeating,leeway)-24w9r.md",
       "hash": "cf037065c6341ed848dc3784574e85db235c400255e413995502545317307164"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/schedule(deadline:repeating:leeway:)-hvhp.json": {
       "etag": "\"3d5b-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule-deadlinerepeatingleeway-hvhp.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule(deadline,repeating,leeway)-hvhp.md",
       "hash": "f6efb1253429f695949bd57ec1243e089f7243f15e0f0192fa0234b5d031b90b"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/schedule(walldeadline:repeating:leeway:)-21bay.json": {
       "etag": "\"3bf2-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule-walldeadlinerepeatingleeway-21bay.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule(walldeadline,repeating,leeway)-21bay.md",
       "hash": "e9e3990338869f75369bf7a55f416023de75659a0f07a98a7a7b373e948d0d0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/schedule(walldeadline:repeating:leeway:)-7c4d7.json": {
       "etag": "\"3da8-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule-walldeadlinerepeatingleeway-7c4d7.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedule(walldeadline,repeating,leeway)-7c4d7.md",
       "hash": "a1c20514dbd5279365cb46a819fcb962c8d51f2fa5648a715e4a9911cbf2c7e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/scheduleoneshot(deadline:leeway:).json": {
       "etag": "\"45eb-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/scheduleoneshot-deadlineleeway.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/scheduleoneshot(deadline,leeway).md",
       "hash": "d5083c01d0c8e0df9966dccf937d9454419505dd23b16b180fe7c9fc8d375ea2"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/scheduleoneshot(walldeadline:leeway:).json": {
       "etag": "\"4653-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/scheduleoneshot-walldeadlineleeway.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/scheduleoneshot(walldeadline,leeway).md",
       "hash": "d454f364ae40a4523cfb683bf6aa32d3904bdbd0e08f690436811d170972ab7b"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/schedulerepeating(deadline:interval:leeway:)-3k199.json": {
       "etag": "\"4b4e-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating-deadlineintervalleeway-3k199.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating(deadline,interval,leeway)-3k199.md",
       "hash": "97d978371cf8f0d97a840979b32ec2d20746ef3c9a2d3f3bbc980d7438410da7"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/schedulerepeating(deadline:interval:leeway:)-4wtot.json": {
       "etag": "\"4c34-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating-deadlineintervalleeway-4wtot.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating(deadline,interval,leeway)-4wtot.md",
       "hash": "3ebae8f8982fa26a548ba517bbfcb6f07341f8e9e18e66217a6d866baf6818f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/schedulerepeating(walldeadline:interval:leeway:)-6fiox.json": {
       "etag": "\"4d02-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating-walldeadlineintervalleeway-6fiox.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating(walldeadline,interval,leeway)-6fiox.md",
       "hash": "fb243c374ae6f0b0130ae47610fdacd53166b1199b864adf8b803ed9cf06964b"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcetimer/schedulerepeating(walldeadline:interval:leeway:)-942p7.json": {
       "etag": "\"4b24-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating-walldeadlineintervalleeway-942p7.md",
+      "file_path": "documentation/Dispatch/dispatchsourcetimer/schedulerepeating(walldeadline,interval,leeway)-942p7.md",
       "hash": "bdf842f4db04e382c2934d53c72c2c0aa8091d9698796b3317eab48beef01281"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceuserdataadd.json": {
@@ -3247,7 +3247,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceuserdataadd/add(data:).json": {
       "etag": "\"14bb-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceuserdataadd/add-data.md",
+      "file_path": "documentation/Dispatch/dispatchsourceuserdataadd/add(data).md",
       "hash": "fcd025c360cc2605a5cb95c6c9c5e9ddf960296715f1265ce38b0f8b280b3327"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceuserdataor.json": {
@@ -3257,7 +3257,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceuserdataor/or(data:).json": {
       "etag": "\"146d-65d55df051fbc-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceuserdataor/or-data.md",
+      "file_path": "documentation/Dispatch/dispatchsourceuserdataor/or(data).md",
       "hash": "d6cb3f87d76e4201b4bb3887bcb806b09307961b6307cee4753c4493495d6805"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceuserdatareplace.json": {
@@ -3267,7 +3267,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourceuserdatareplace/replace(data:).json": {
       "etag": "\"154d-65d55def87f93-df\"",
-      "file_path": "documentation/Dispatch/dispatchsourceuserdatareplace/replace-data.md",
+      "file_path": "documentation/Dispatch/dispatchsourceuserdatareplace/replace(data).md",
       "hash": "969e401ddd195e072c34992ff3f774a31dbecb0543f098ceba5a584e0db96fa8"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchsourcewrite.json": {
@@ -3282,7 +3282,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchspecifickey/init().json": {
       "etag": "\"c61-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchspecifickey/init.md",
+      "file_path": "documentation/Dispatch/dispatchspecifickey/init().md",
       "hash": "fef94a7ef28f9825438812d0bd7e62e58c5069337fb323edfd33486b2031f139"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtime.json": {
@@ -3292,12 +3292,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtime/advanced(by:).json": {
       "etag": "\"181d-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchtime/advanced-by.md",
+      "file_path": "documentation/Dispatch/dispatchtime/advanced(by).md",
       "hash": "e17b0eef554e36f6cebf624637d19e834ff41c9f098466c74f3c2bc6f7624ec1"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtime/distance(to:).json": {
       "etag": "\"1822-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchtime/distance-to.md",
+      "file_path": "documentation/Dispatch/dispatchtime/distance(to).md",
       "hash": "c3de44b1732afde098d4a64d32d02679a5a0621b671a969a4ff0c8905c74ebda"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtime/distantfuture.json": {
@@ -3307,12 +3307,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtime/init(uptimenanoseconds:).json": {
       "etag": "\"1698-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchtime/init-uptimenanoseconds.md",
+      "file_path": "documentation/Dispatch/dispatchtime/init(uptimenanoseconds).md",
       "hash": "c649d1f95206f577837ff4952d7da20bd11f8f804cfa63371d872fd38463d30b"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtime/now().json": {
       "etag": "\"12c3-65d55df07ff68-df\"",
-      "file_path": "documentation/Dispatch/dispatchtime/now.md",
+      "file_path": "documentation/Dispatch/dispatchtime/now().md",
       "hash": "82335b100b59b1e8be68fc3a7100e8033c569da295d60cfe53f21b6a7c4096ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtime/rawvalue.json": {
@@ -3332,17 +3332,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtimeinterval/microseconds(_:).json": {
       "etag": "\"1cb5-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchtimeinterval/microseconds.md",
+      "file_path": "documentation/Dispatch/dispatchtimeinterval/microseconds(_).md",
       "hash": "c5be7ce1a7f40061612d5f68a13c869bcbe0d98ed05baade5d9a53eddd275346"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtimeinterval/milliseconds(_:).json": {
       "etag": "\"1cb5-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchtimeinterval/milliseconds.md",
+      "file_path": "documentation/Dispatch/dispatchtimeinterval/milliseconds(_).md",
       "hash": "86dc48f1ddd06554c8122922a9cacb12d0f35fed5ae40921964459f49929919a"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtimeinterval/nanoseconds(_:).json": {
       "etag": "\"1caf-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchtimeinterval/nanoseconds.md",
+      "file_path": "documentation/Dispatch/dispatchtimeinterval/nanoseconds(_).md",
       "hash": "5646c6041e858f38651cf5dad7c1c7328488ac2986366c8fe06ccefbb6158f92"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtimeinterval/never.json": {
@@ -3352,7 +3352,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtimeinterval/seconds(_:).json": {
       "etag": "\"1c96-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/dispatchtimeinterval/seconds.md",
+      "file_path": "documentation/Dispatch/dispatchtimeinterval/seconds(_).md",
       "hash": "83e5e4552ce9f053195d1071df407263e9a1aa62a9052be1de744711bc407fe4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchtimeoutresult.json": {
@@ -3382,12 +3382,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchwalltime/init(timespec:).json": {
       "etag": "\"1282-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchwalltime/init-timespec.md",
+      "file_path": "documentation/Dispatch/dispatchwalltime/init(timespec).md",
       "hash": "6af1ebfa48e5efe5f4faffc9c29c5b445a8b176832a63296e98815405101f5e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchwalltime/now().json": {
       "etag": "\"1334-65d55df0682e9-df\"",
-      "file_path": "documentation/Dispatch/dispatchwalltime/now.md",
+      "file_path": "documentation/Dispatch/dispatchwalltime/now().md",
       "hash": "45a10d9c3321fe43b807d5c5bdb45e24a58251ac52daf88461b7cb2621f749c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchwalltime/rawvalue.json": {
@@ -3402,17 +3402,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/cancel().json": {
       "etag": "\"15f1-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/cancel.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/cancel().md",
       "hash": "72433214a08ab881d49193ed7b1fdad1d2b8621998470e9672d18672e4e06313"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/init(flags:block:).json": {
       "etag": "\"17e5-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/init-flagsblock.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/init(flags,block).md",
       "hash": "30dd4c6b54e448135e861ea27145925dcd8bc654d216259202e4d991383e1b8e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/init(qos:flags:block:).json": {
       "etag": "\"2876-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/init-qosflagsblock.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/init(qos,flags,block).md",
       "hash": "5be20bff2cde459ac82bf4ee1a1e97bb56277519851c48bff46c9dd876e8a773"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/iscancelled.json": {
@@ -3422,32 +3422,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/notify(qos:flags:queue:execute:).json": {
       "etag": "\"2d01-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/notify-qosflagsqueueexecute.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/notify(qos,flags,queue,execute).md",
       "hash": "e522f029e97b15d1555d6ca69cde66cd65a474e7bf35ad956185da5913d38d69"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/notify(queue:execute:).json": {
       "etag": "\"1f0c-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/notify-queueexecute.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/notify(queue,execute).md",
       "hash": "cc3e4eee17901806ce272828bbec040d0d1599f3c8c770707020bf4941065631"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/perform().json": {
       "etag": "\"f5d-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/perform.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/perform().md",
       "hash": "25c9daddbfbb2993c1a923aca211572dea65fea511f2d532a9bee42810743b49"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/wait().json": {
       "etag": "\"1d22-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/wait.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/wait().md",
       "hash": "a49e9db06276bc6e78ccd690b8ef5180ab11336f49e6564249ec79eb7fd12d57"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/wait(timeout:).json": {
       "etag": "\"2ea2-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/wait-timeout.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/wait(timeout).md",
       "hash": "b8f715bda3f5fa5bbc97d41db3b0a2ae609bdcff952b759bf38358ffe2445701"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitem/wait(walltimeout:).json": {
       "etag": "\"2ecc-65d55defd5a74-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkitem/wait-walltimeout.md",
+      "file_path": "documentation/Dispatch/dispatchworkitem/wait(walltimeout).md",
       "hash": "676fc6989a51d6e95b7cabb0be2fca38fa4e481bb87d0455a70da47c8ff4341f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkitemflags.json": {
@@ -3497,42 +3497,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/dispatchworkloop/init(label:attributes:autoreleasefrequency:osworkgroup:).json": {
       "etag": "\"28b0-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/dispatchworkloop/init-labelattributesautoreleasefrequencyosworkgroup.md",
+      "file_path": "documentation/Dispatch/dispatchworkloop/init(label,attributes,autoreleasefrequency,osworkgroup).md",
       "hash": "646f0848b261d3e9eca415b50c0df96b267ac27848d6a6dde911a41541708c4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/msec_per_sec.json": {
       "etag": "\"27da-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/msec-per-sec.md",
+      "file_path": "documentation/Dispatch/msec_per_sec.md",
       "hash": "53806e3b932d6f268dcc185a706eaabde1bec86c886ab56cc313cfd7391f521e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/nsec_per_msec.json": {
       "etag": "\"21da-65d55df0a444f-df\"",
-      "file_path": "documentation/Dispatch/nsec-per-msec.md",
+      "file_path": "documentation/Dispatch/nsec_per_msec.md",
       "hash": "045b192233c2235bb962369cbc52e99d03c1c981e4343b7e36518e4f02230d35"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/nsec_per_sec.json": {
       "etag": "\"22a0-65d55df028006-df\"",
-      "file_path": "documentation/Dispatch/nsec-per-sec.md",
+      "file_path": "documentation/Dispatch/nsec_per_sec.md",
       "hash": "d4d3287854a0b92b8bc06902db59edf0d85987e913871b833bbcc71512fa92f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/nsec_per_usec.json": {
       "etag": "\"22ae-65d55def6f8c6-df\"",
-      "file_path": "documentation/Dispatch/nsec-per-usec.md",
+      "file_path": "documentation/Dispatch/nsec_per_usec.md",
       "hash": "99e210eafbe36b343489b3258ce5a051df6f417a804e0cbbd256e1a0c7460e56"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/os_dispatch_queue_global-swift.class.json": {
       "etag": "\"5f7d-65d55deff28be-df\"",
-      "file_path": "documentation/Dispatch/os-dispatch-queue-global-swiftclass.md",
+      "file_path": "documentation/Dispatch/os_dispatch_queue_global-swift.class.md",
       "hash": "a6bfad1a931c5cc8390846ffd3619e79681f029e380f3114579d383568f63c72"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/os_dispatch_queue_main-swift.class.json": {
       "etag": "\"61e8-65d55defbc433-df\"",
-      "file_path": "documentation/Dispatch/os-dispatch-queue-main-swiftclass.md",
+      "file_path": "documentation/Dispatch/os_dispatch_queue_main-swift.class.md",
       "hash": "c775d68fe93033c7eb29387f7aa986b94bc844ed3b8e8853ba6e57eb73985ef3"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/usec_per_sec.json": {
       "etag": "\"22a1-65d55df09a251-df\"",
-      "file_path": "documentation/Dispatch/usec-per-sec.md",
+      "file_path": "documentation/Dispatch/usec_per_sec.md",
       "hash": "2c62421f7a36598c950f34a76461f3f0951161702e2cf2d27b412f46946e62be"
     },
     "https://developer.apple.com/tutorials/data/documentation/dispatch/workloop.json": {

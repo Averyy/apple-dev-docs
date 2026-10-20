@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/aivuvalidator/validate(url:)": {
       "etag": "\"1e17-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/aivuvalidator/validate-url.md",
+      "file_path": "documentation/ImmersiveMediaSupport/aivuvalidator/validate(url).md",
       "hash": "0887c34145209a94b14d92acd1a80e4399756f0f5060a24f8f6309657196c87a"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/authoring-apple-immersive-video": {
@@ -42,7 +42,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadecommand/encode(to:)": {
       "etag": "\"1616-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/encode(to).md",
       "hash": "032bc36dd2310f13c02a62d700901b504d9e5d48c1777cca669560123203dfb0"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadecommand/fadedirection": {
@@ -67,12 +67,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadecommand/init(from:)": {
       "etag": "\"155a-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/init(from).md",
       "hash": "7889f71d37f7a830113ded3883f53e70ae9dfc06d39cd684b52f4ca3bfbf4190"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadecommand/init(id:time:duration:direction:color:offset:)": {
       "etag": "\"30a7-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/init-idtimedurationdirectioncoloroffset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/init(id,time,duration,direction,color,offset).md",
       "hash": "ca7c95c772aa12b3baac627cf9430550fec82f621b0a3cecdf24f8865af52653"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadecommand/offset": {
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadeenvironmentcommand/encode(to:)": {
       "etag": "\"17f5-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/encode(to).md",
       "hash": "cf58926c3e87bbe2c296bb218519c62d5560e93ea90da4208e0f43624852f6f7"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadeenvironmentcommand/fadedirection": {
@@ -127,12 +127,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadeenvironmentcommand/init(from:)": {
       "etag": "\"17ef-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/init(from).md",
       "hash": "25302105739ab8925ef190b80d40249a3f5144102245ea527e83ffca5d819b9a"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadeenvironmentcommand/init(id:time:duration:direction:opacity:offset:)": {
       "etag": "\"30a5-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/init-idtimedurationdirectionopacityoffset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/init(id,time,duration,direction,opacity,offset).md",
       "hash": "11011465a1e1e3fb41aef9522acc37d09232a0ae4a08103e7aaa9ee73679f81b"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/fadeenvironmentcommand/offset": {
@@ -182,7 +182,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecamera/init(id:calibration:type:presentationframerate:pose:)": {
       "etag": "\"2eb5-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecamera/init-idcalibrationtypepresentationframeratepose.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecamera/init(id,calibration,type,presentationframerate,pose).md",
       "hash": "b693ca05cf53040e88e66e4c591d968877fd430fc6394cea34179ab4bb48db0d"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecamera/pose": {
@@ -212,7 +212,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/immersivecameralensdefinition(_:)": {
       "etag": "\"1ceb-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/immersivecameralensdefinition.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/immersivecameralensdefinition(_).md",
       "hash": "0107f3749654f126ba6578f800e66b532d84f1922f8a13a82ed6b001f8966841"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh": {
@@ -222,7 +222,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh(_:)": {
       "etag": "\"1cb9-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/usdzmesh.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/usdzmesh(_).md",
       "hash": "70d49edced2617c72cfe4f31321e7bf65555df11499b3e14e5d907875384c5f5"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/cameraorigin": {
@@ -232,7 +232,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/cameraorigin/init(left:right:)": {
       "etag": "\"1e80-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/cameraorigin/init-leftright.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/cameraorigin/init(left,right).md",
       "hash": "14c143ec6b532104f0f559f337f75842be39000c790b264a297a119e7a68ff67"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/cameraorigin/zero": {
@@ -252,7 +252,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/cameratexturemapping/init(left:right:)": {
       "etag": "\"1d41-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/cameratexturemapping/init-leftright.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/cameratexturemapping/init(left,right).md",
       "hash": "441a3dedc579c5df39798031619adca9f76e0f28959d113ae77b6bcf0ed94a6d"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/environmentfilename": {
@@ -262,7 +262,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/init(name:type:mask:positionable:origin:texturemapping:environmentfilename:)": {
       "etag": "\"4479-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/init-nametypemaskpositionableorigintexturemappingenvironmentfilename.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/init(name,type,mask,positionable,origin,texturemapping,environmentfilename).md",
       "hash": "44720d81f3bef240e65f3928126c9a9ff1f61599cf797dac7d833ea21f8fa129"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/mask": {
@@ -322,12 +322,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameralensdefinition/generatestmap(device:cameraeye:stmaptype:into:)": {
       "etag": "\"3392-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameralensdefinition/generatestmap-devicecameraeyestmaptypeinto.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameralensdefinition/generatestmap(device,cameraeye,stmaptype,into).md",
       "hash": "9bc11f7e4d31a9da3f991d80acc4bc59f2830400d8db5a0e0df93e1cd685cf19"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameralensdefinition/init(from:)": {
       "etag": "\"18ed-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameralensdefinition/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameralensdefinition/init(from).md",
       "hash": "12a0d80fe4f59b03cc7217d932cc02ceb49af1e4647fc7a97f3dad59f59cef85"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameralensdefinition/stmaptype": {
@@ -352,12 +352,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameramask/dynamic(_:)": {
       "etag": "\"170c-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameramask/dynamic.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameramask/dynamic(_).md",
       "hash": "754a3d6be232ca5117a75f3a306b8450b699950dd6e9f1405fb68f57d6fed5a6"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameramask/image(_:)": {
       "etag": "\"169f-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameramask/image.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameramask/image(_).md",
       "hash": "281bd45adf2c895d64b30dc16af34c8c017ca48aa6055588570454946fac4a26"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecamerameshcalibration": {
@@ -367,7 +367,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecamerameshcalibration/init(name:usdzdata:)": {
       "etag": "\"1c05-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecamerameshcalibration/init-nameusdzdata.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecamerameshcalibration/init(name,usdzdata).md",
       "hash": "9f3ade03a47c8d41cdcca3d5b4e0395d992692031f036ef3d3db3c82310e12de"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecamerameshcalibration/name": {
@@ -417,7 +417,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/controlpointinterpolation-swift.enum": {
       "etag": "\"29fc-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/controlpointinterpolation-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/controlpointinterpolation-swift.enum.md",
       "hash": "cea9eace9d6d4af4d50e466274ee29355d4d39815ce0eeab0a17edd4d70e8dc4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/controlpointinterpolation-swift.enum/cubichermite": {
@@ -432,12 +432,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/controlpointinterpolation-swift.property": {
       "etag": "\"2cd1-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/controlpointinterpolation-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/controlpointinterpolation-swift.property.md",
       "hash": "732a42e0b019a9d955a03466415d2f47b440bdfa595bc755e6792f500b8ace2a"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/edgetreatment-swift.enum": {
       "etag": "\"28cb-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/edgetreatment-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/edgetreatment-swift.enum.md",
       "hash": "d2bb10c62d467e90ead2e5abf98cc2b97ad7db204fc260270ef32e67255b7512"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/edgetreatment-swift.enum/easeinout": {
@@ -452,7 +452,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/edgetreatment-swift.property": {
       "etag": "\"2bf3-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/edgetreatment-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/edgetreatment-swift.property.md",
       "hash": "4246e2aeabaf3760f99c6e960d01c92f0ed92657ed5beda6e7406b2f0e096df2"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/edgewidthindegrees": {
@@ -462,7 +462,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/init(name:stereorelation:edgetreatment:controlpointinterpolation:leftcontrolpoints:rightcontrolpoints:edgewidthindegrees:)": {
       "etag": "\"40a8-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/init-namestereorelationedgetreatmentcontrolpointinterpolationleftcontrolpointsrightcontrolpointsedgewidthindegrees.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/init(name,stereorelation,edgetreatment,controlpointinterpolation,leftcontrolpoints,rightcontrolpoints,edgewidthindegrees).md",
       "hash": "1162fa4af46e287e9ea1f824c919a16b79fed375eb64ebd9417d2145dd36a05f"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/leftcontrolpoints": {
@@ -482,7 +482,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/stereorelation-swift.enum": {
       "etag": "\"2bdf-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/stereorelation-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/stereorelation-swift.enum.md",
       "hash": "9c80f5df08f64fb5884fc016f5b4b14d2b939c1ec05edf6f48dae1847f0a2885"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/stereorelation-swift.enum/identical": {
@@ -502,7 +502,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivedynamicmask/stereorelation-swift.property": {
       "etag": "\"19cd-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/stereorelation-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/stereorelation-swift.property.md",
       "hash": "e9c10c912a73c3bc32339b5e2dabe2be60b23819c7f45f699f731a46eed52918"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersiveimagemask": {
@@ -512,12 +512,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersiveimagemask/init(name:maskdata:)": {
       "etag": "\"1955-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersiveimagemask/init-namemaskdata.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersiveimagemask/init(name,maskdata).md",
       "hash": "6546f8a9373d9ecd09f7470f3d094c774a80d185ed11015e3a0a890d0183aaf4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersiveimagemask/init(name:maskurl:)": {
       "etag": "\"198d-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersiveimagemask/init-namemaskurl.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersiveimagemask/init(name,maskurl).md",
       "hash": "f496053d2c548aa6661380220372be53cb53bc20220551564590f6450f93c888"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersiveimagemask/maskdata": {
@@ -552,7 +552,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/init()": {
       "etag": "\"136f-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/init.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/init().md",
       "hash": "16f0673870170189ef9524d94c378a2734d6dad422607e85e82fce4117ea831d"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/presentationdescriptor": {
@@ -562,7 +562,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/start(connection:)": {
       "etag": "\"1af9-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/start-connection.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/start(connection).md",
       "hash": "93a618d0046e8d1166fa91600d69d03d4664538fd9928916097f34a04545cad1"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/states": {
@@ -597,7 +597,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/stop()": {
       "etag": "\"1200-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/stop.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/stop().md",
       "hash": "ca33eb404b163cd3a7f62f166913ce43d559cc14fd09712a95b0ea1e6a70073a"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/venuedescriptor": {
@@ -617,17 +617,17 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/connectreceiver(name:endpoint:)": {
       "etag": "\"24fb-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/connectreceiver-nameendpoint.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/connectreceiver(name,endpoint).md",
       "hash": "35fb56671079bac480ba703a56d19c5b0715d4f1c48fdd71bd8ee43f5a50182e"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/disconnectreceiver(name:)": {
       "etag": "\"22c2-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/disconnectreceiver-name.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/disconnectreceiver(name).md",
       "hash": "23e7e9f670409e32ae08cd118316a74124046d5207150a4fe485491f4449645a"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/init(networkparameters:)": {
       "etag": "\"1a2a-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/init-networkparameters.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/init(networkparameters).md",
       "hash": "a253c0ca8c367888eff0edfb35aa811fe3afeb5a92f8f9a2c94ca4f8b3558ec1"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/isreadytosenddata": {
@@ -652,42 +652,42 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(audiobuffer:)": {
       "etag": "\"1cae-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-audiobuffer.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(audiobuffer).md",
       "hash": "7acbf13e04c6991780c152f6657c5fcd787077733f56dae1e570763c66489b8c"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(taggedbuffers:presentationtimestamp:frameduration:)": {
       "etag": "\"2481-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-taggedbufferspresentationtimestampframeduration.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(taggedbuffers,presentationtimestamp,frameduration).md",
       "hash": "dfba7cb1b57a689ae91eec3bf1cd79c5f129c096d94377d8b2770be0d7646bb5"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(venuedescriptor:)": {
       "etag": "\"1b91-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-venuedescriptor.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(venuedescriptor).md",
       "hash": "48953eb0f25e3279e02190ae5f561b3f3feb6226e5c774994789f456e81bf98c"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(videobuffer:)": {
       "etag": "\"1e07-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-videobuffer.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(videobuffer).md",
       "hash": "42a3919205a534c7b1e7c620f5cc21e9f8f28e1b3556a175041456ecbca85e4e"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(videoframe:presentationtimestamp:frameduration:metadata:)": {
       "etag": "\"2c55-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-videoframepresentationtimestampframedurationmetadata.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(videoframe,presentationtimestamp,frameduration,metadata).md",
       "hash": "ffd99ffd93dac00fb985b1ad9d03069245dae8d1540e270598541082a4ccfebe"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/sendvenuedescriptor(at:)": {
       "etag": "\"1ad8-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/sendvenuedescriptor-at.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/sendvenuedescriptor(at).md",
       "hash": "9e498eb50fd4596b1abfeb096651a792c00833c10410f22f30373dfef8410d87"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/start()": {
       "etag": "\"135a-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/start.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/start().md",
       "hash": "cc9de18296523032355233b629b42add2d97932d8f50d971c42b05170e8f4af0"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivemediaremotepreviewsender/stop()": {
       "etag": "\"12a3-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/stop.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/stop().md",
       "hash": "08a5d343d83a6d771c3f174f800d3a55408fea1f7352ba77ca5f2ea8277d370e"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivepreviewrenderer": {
@@ -717,17 +717,17 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivepreviewrenderer/init(device:venuedescriptor:depthpixelformat:colorpixelformat:)": {
       "etag": "\"32c7-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/init-devicevenuedescriptordepthpixelformatcolorpixelformat.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/init(device,venuedescriptor,depthpixelformat,colorpixelformat).md",
       "hash": "b9782359d2162df8cebefacd647a8247b784c9148451bf8d92991c6faf56fd7c"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivepreviewrenderer/process(_:for:rotation:fieldofview:presentationdescriptor:rendertexture:)": {
       "etag": "\"4675-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/process-forrotationfieldofviewpresentationdescriptorrendertexture.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/process(_,for,rotation,fieldofview,presentationdescriptor,rendertexture).md",
       "hash": "cb4a3513ead50dab581eb441ed9e31255a9cf568ca7d629f7b8259276176a263"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivepreviewrenderer/process(_:presentationdescriptor:drawable:)": {
       "etag": "\"36c9-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/process-presentationdescriptordrawable.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/process(_,presentationdescriptor,drawable).md",
       "hash": "c5c9c6010eea81cb59e5ebb56c495b429796127be9e84b21e7715c817edd269e"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivepreviewrenderer/venuedescriptor": {
@@ -742,12 +742,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideoframe/init(lefteye:righteye:presentationtime:)": {
       "etag": "\"21fa-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideoframe/init-lefteyerighteyepresentationtime.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideoframe/init(lefteye,righteye,presentationtime).md",
       "hash": "0e82c172c46c1197b9574a8ae4fa3e8bcbe7c7a426db76b2b92a343f33332f27"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideoframe/init(pixelbuffer:presentationtime:layout:)": {
       "etag": "\"289e-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideoframe/init-pixelbufferpresentationtimelayout.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideoframe/init(pixelbuffer,presentationtime,layout).md",
       "hash": "83c3e8ab8fe8c764442c24c311a4b5da238adaeef09b0a6061b47e8b5422f176"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideoframe/layout": {
@@ -797,12 +797,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideomask/==(_:_:)": {
       "etag": "\"1a94-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/equal.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/eqeq(_,_).md",
       "hash": "1cf245db85cfca9b4fceccef8bedb5fae54fc0c2554031920bcb112466b8e50a"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideomask/init(layout:isinequirectangularprojection:texture:)": {
       "etag": "\"2748-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/init-layoutisinequirectangularprojectiontexture.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/init(layout,isinequirectangularprojection,texture).md",
       "hash": "0a337e7a009f074911c8adb1be8507703446828c7825840df48142ab9bb73162"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideomask/isinequirectangularprojection": {
@@ -812,7 +812,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideomask/layout-swift.enum": {
       "etag": "\"299a-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/layout-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/layout-swift.enum.md",
       "hash": "a314b70e2642ec193669c3152d40567fb662ba532a2f2237c8a0d453d9b09785"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideomask/layout-swift.enum/mono": {
@@ -837,7 +837,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideomask/layout-swift.property": {
       "etag": "\"1dd6-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/layout-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/layout-swift.property.md",
       "hash": "499981a0f81c553366d4a87f39897d00126e0236b3e7687a799fc77447c6d684"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivevideomask/texture": {
@@ -867,7 +867,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/parametricimmersiveassetinfo/error/errortype-swift.enum": {
       "etag": "\"2ea3-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/error/errortype-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/error/errortype-swift.enum.md",
       "hash": "3aee2f5eb5bbec8ea7ae141c276edcaaa6ad5375eb9c201d2ce0ac48768754b5"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/parametricimmersiveassetinfo/error/errortype-swift.enum/isalreadyconverted": {
@@ -887,12 +887,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/parametricimmersiveassetinfo/error/errortype-swift.property": {
       "etag": "\"2419-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/error/errortype-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/error/errortype-swift.property.md",
       "hash": "993f91b3f89d68ffaf45e707fba646df9b7c2294671253ca0bb528dc7095c592"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/parametricimmersiveassetinfo/init(asset:computeformatdescription:)": {
       "etag": "\"22ce-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/init-assetcomputeformatdescription.md",
+      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/init(asset,computeformatdescription).md",
       "hash": "8ea0281e82a1c114392837aafae361cbbd92f38b8395542db684c8f8ddad0a5b"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/parametricimmersiveassetinfo/isassetconvertible": {
@@ -902,7 +902,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/parametricimmersiveassetinfo/isparametricimmersive(asset:)": {
       "etag": "\"1e7c-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/isparametricimmersive-asset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/isparametricimmersive(asset).md",
       "hash": "02568094a70be6440d4e0d4b61c92ce94043d2a9ec273284ab79e1baeb39c7c4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/parametricimmersiveassetinfo/requiredformatdescription": {
@@ -922,12 +922,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationcommand/fade(_:)": {
       "etag": "\"1692-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/fade.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/fade(_).md",
       "hash": "6ef0a10709c7b7af37a9219082d40abd9858479b533d6f158e949721ef3e145a"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationcommand/fadeenvironment(_:)": {
       "etag": "\"17b2-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/fadeenvironment.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/fadeenvironment(_).md",
       "hash": "4b04d7bba8f482413c5b9602905ce97c14d271016fbad46d17f0e53e10a86353"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationcommand/id": {
@@ -942,17 +942,17 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationcommand/setcamera(_:)": {
       "etag": "\"170c-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/setcamera.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/setcamera(_).md",
       "hash": "f909ab0ae1395ce2fa18769b52300ee1a3e6f62bcf3d8af577fc05062df0f9c1"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationcommand/shotflip(_:)": {
       "etag": "\"18ac-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/shotflip.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/shotflip(_).md",
       "hash": "eee8f295392c617103304fabade21ef0fb7f683fb73e793dd25b40112cbf1394"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationcommand/shotflop(_:)": {
       "etag": "\"1740-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/shotflop.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/shotflop(_).md",
       "hash": "5e19fc7788b9fb2dcad5069ecb6be3decd80e886a0c9505ea5f8271f6ddb90d1"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationcommand/time": {
@@ -977,12 +977,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptor/init(commands:)": {
       "etag": "\"1d18-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptor/init-commands.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptor/init(commands).md",
       "hash": "cd94a991984acc8f975b875f8192aec45a28978576116a447403591b984d3ce8"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptor/init(duration:commands:)": {
       "etag": "\"2256-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptor/init-durationcommands.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptor/init(duration,commands).md",
       "hash": "daf11a31f6093b6f7e973ad2f28114e95c19a28673086cb9dccfaf24ac4d8259"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptorreader": {
@@ -1017,7 +1017,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptorreader/init(presentationdescriptor:issideloaded:)": {
       "etag": "\"1fb7-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/init-presentationdescriptorissideloaded.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/init(presentationdescriptor,issideloaded).md",
       "hash": "c3e1477577aa7a044885fd20b66f75483bb67b05d339bc6a3bd694f380d6adb3"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptorreader/isshotflipped": {
@@ -1037,17 +1037,17 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptorreader/metadataitem(frametimerange:)": {
       "etag": "\"263b-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/metadataitem-frametimerange.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/metadataitem(frametimerange).md",
       "hash": "6ee73e704c4ce2c3770094d55a5369d5bef948030d1ac678543f0c6deb8ee94c"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptorreader/metadatatrack(timerange:)": {
       "etag": "\"2990-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/metadatatrack-timerange.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/metadatatrack(timerange).md",
       "hash": "a3b2f2ceb65a0b8190bb5ecadd1aa07d0e310c7280b5e9fe436cf07fd5358446"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptorreader/outputpresentationcommands(for:)": {
       "etag": "\"211b-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/outputpresentationcommands-for.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/outputpresentationcommands(for).md",
       "hash": "2b52d788912868c6c09fad40f39daecad69e82f5c6df4c2b86ff135f0df179e8"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptorreader/presentationcommands": {
@@ -1062,7 +1062,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/presentationdescriptorreader/processpresentationcommands(for:)": {
       "etag": "\"1a38-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/processpresentationcommands-for.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/processpresentationcommands(for).md",
       "hash": "b7b3036f027dec3126367f02b64480d8a0f48d201a87f6fea7b711d89bf746d4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/processing-apple-immersive-video-with-foveation": {
@@ -1087,7 +1087,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/encode(to:)": {
       "etag": "\"1655-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/encode(to).md",
       "hash": "0582834562d129487e4d0819864ca6477650a5717cb2ae8a4053292510633fe1"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/id": {
@@ -1097,17 +1097,17 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/init(from:)": {
       "etag": "\"1599-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init(from).md",
       "hash": "2ad58d43ee3a263ba374bea08ea1e4e2bf15d2cc7393ced71d7dab0a8a05c4c4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/init(id:time:cameraid:)": {
       "etag": "\"20ae-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init-idtimecameraid.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init(id,time,cameraid).md",
       "hash": "ae97b467ef7b343bae1eeb4beb4ece5007d89db98fb9d5e0066e44c080d5ff23"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/init(id:time:cameraid:overrides:)": {
       "etag": "\"29aa-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init-idtimecameraidoverrides.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init(id,time,cameraid,overrides).md",
       "hash": "2507016e57f8662991deeabe58eee6aa27ff3a8bff1017cf48b0c36f1be6a32c"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/offset": {
@@ -1117,17 +1117,17 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/overrides-swift.property": {
       "etag": "\"18e4-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swift.property.md",
       "hash": "0cf40ad2ac398ae7663cda26a5a7664d80d66867da8a6b162d0695ff7f55b0f4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/overrides-swift.struct": {
       "etag": "\"336a-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swiftstruct.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swift.struct.md",
       "hash": "bd28cb6d3a6543bb1f39848308d925ba38fe8d8b89fce3744eede18be680705e"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/overrides-swift.struct/init(rotation:lensdefinitiondata:maskdata:)": {
       "etag": "\"2870-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swift.struct/init-rotationlensdefinitiondatamaskdata.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swift.struct/init(rotation,lensdefinitiondata,maskdata).md",
       "hash": "3927c4b4f91c41b207e6304cc005c2e2be5453832f24a5e07bafac995804b8b7"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/setcameracommand/overrides-swift.struct/lensdefinitiondata": {
@@ -1162,7 +1162,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflipcommand/encode(to:)": {
       "etag": "\"166d-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/encode(to).md",
       "hash": "b29c051daf14de4ba5b57ccac62542e450ba46123b4142857f9026f4c7d558c4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflipcommand/id": {
@@ -1172,12 +1172,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflipcommand/init(from:)": {
       "etag": "\"15b1-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/init(from).md",
       "hash": "3091b74fdbb4dd34535ed0b9f0f3effe9bc1e772ae5f4ca991edea16f861b321"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflipcommand/init(id:time:duration:offset:)": {
       "etag": "\"21e6-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/init-idtimedurationoffset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/init(id,time,duration,offset).md",
       "hash": "6b6350b4d71ceeb0376c033e82590f34e32d64d9559fc672fba7d1fd915fb87c"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflipcommand/offset": {
@@ -1202,7 +1202,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflopcommand/encode(to:)": {
       "etag": "\"1687-65d55dce06a9e-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/encode(to).md",
       "hash": "46f45d4243192d54ac6088f4c5a10fb81bda56dd4ab8cb9163af61aedda8329a"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflopcommand/id": {
@@ -1212,12 +1212,12 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflopcommand/init(from:)": {
       "etag": "\"15cb-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/init(from).md",
       "hash": "3f2500659fefaf6288911f0eaee5494fa54718e38f45c52ec3790d24c169faa4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflopcommand/init(id:time:duration:offset:)": {
       "etag": "\"2200-65d55dce06a9e-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/init-idtimedurationoffset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/init(id,time,duration,offset).md",
       "hash": "02da4559b7642ae04d6d0f3bc0a9f0aa2bc1ec980e5ea6b7a72ffbc9709fd013"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/shotflopcommand/offset": {
@@ -1237,7 +1237,7 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/venuedescriptor/addcamera(_:)": {
       "etag": "\"272d-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/addcamera.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/addcamera(_).md",
       "hash": "fc8192a03ba4fb1dbb86cee04b7e577a257bdd719de1c0d649af36dd7e7df219"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/venuedescriptor/aimedata": {
@@ -1252,32 +1252,32 @@
     },
     "https://developer.apple.com/documentation/immersivemediasupport/venuedescriptor/cameraviewmodel(for:)": {
       "etag": "\"2999-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/cameraviewmodel-for.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/cameraviewmodel(for).md",
       "hash": "26d9a0047a70d22a0d6f2f767f901c4965a8d4f6e9beb60985781aca7d896d65"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/venuedescriptor/init(aimedata:device:)": {
       "etag": "\"1e31-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init-aimedatadevice.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init(aimedata,device).md",
       "hash": "46aec7247fe5a41c4dbf2255bc82c0616720a9af23f9c7125ddfe94a6a786484"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/venuedescriptor/init(aimeurl:device:)": {
       "etag": "\"2458-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init-aimeurldevice.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init(aimeurl,device).md",
       "hash": "234a708015adaf5a4d4e5e93a5a5fb9135bf3a00d0c9f67cf741329e870ddfb4"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/venuedescriptor/init(device:)": {
       "etag": "\"1c55-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init-device.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init(device).md",
       "hash": "f8e6b6c4c0340962f4fd22c4d0753900692f18022e72373a190f3e9b6ba67427"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/venuedescriptor/removecamera(id:)": {
       "etag": "\"23a2-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/removecamera-id.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/removecamera(id).md",
       "hash": "850066796c0355f17e5cdc87ea2cda4625492173abe4ea507285ebed2932dcb7"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/venuedescriptor/save(to:)": {
       "etag": "\"1c26-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/save-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/save(to).md",
       "hash": "73e84fb6001fe08f9e96d5acdf8af8f3bb7e58ac68ba48d7f79876576a49e8a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/ImmersiveMediaSupport.json": {
@@ -1292,7 +1292,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/aivuvalidator/validate(url:).json": {
       "etag": "\"1e17-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/aivuvalidator/validate-url.md",
+      "file_path": "documentation/ImmersiveMediaSupport/aivuvalidator/validate(url).md",
       "hash": "0887c34145209a94b14d92acd1a80e4399756f0f5060a24f8f6309657196c87a"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/authoring-apple-immersive-video.json": {
@@ -1322,7 +1322,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadecommand/encode(to:).json": {
       "etag": "\"1616-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/encode(to).md",
       "hash": "032bc36dd2310f13c02a62d700901b504d9e5d48c1777cca669560123203dfb0"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadecommand/fadedirection.json": {
@@ -1347,12 +1347,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadecommand/init(from:).json": {
       "etag": "\"155a-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/init(from).md",
       "hash": "7889f71d37f7a830113ded3883f53e70ae9dfc06d39cd684b52f4ca3bfbf4190"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadecommand/init(id:time:duration:direction:color:offset:).json": {
       "etag": "\"30a7-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/init-idtimedurationdirectioncoloroffset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadecommand/init(id,time,duration,direction,color,offset).md",
       "hash": "ca7c95c772aa12b3baac627cf9430550fec82f621b0a3cecdf24f8865af52653"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadecommand/offset.json": {
@@ -1382,7 +1382,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadeenvironmentcommand/encode(to:).json": {
       "etag": "\"17f5-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/encode(to).md",
       "hash": "cf58926c3e87bbe2c296bb218519c62d5560e93ea90da4208e0f43624852f6f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadeenvironmentcommand/fadedirection.json": {
@@ -1407,12 +1407,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadeenvironmentcommand/init(from:).json": {
       "etag": "\"17ef-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/init(from).md",
       "hash": "25302105739ab8925ef190b80d40249a3f5144102245ea527e83ffca5d819b9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadeenvironmentcommand/init(id:time:duration:direction:opacity:offset:).json": {
       "etag": "\"30a5-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/init-idtimedurationdirectionopacityoffset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/fadeenvironmentcommand/init(id,time,duration,direction,opacity,offset).md",
       "hash": "11011465a1e1e3fb41aef9522acc37d09232a0ae4a08103e7aaa9ee73679f81b"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/fadeenvironmentcommand/offset.json": {
@@ -1462,7 +1462,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecamera/init(id:calibration:type:presentationframerate:pose:).json": {
       "etag": "\"2eb5-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecamera/init-idcalibrationtypepresentationframeratepose.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecamera/init(id,calibration,type,presentationframerate,pose).md",
       "hash": "b693ca05cf53040e88e66e4c591d968877fd430fc6394cea34179ab4bb48db0d"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecamera/pose.json": {
@@ -1492,12 +1492,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/immersivecameralensdefinition(_:).json": {
       "etag": "\"1ceb-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/immersivecameralensdefinition.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/immersivecameralensdefinition(_).md",
       "hash": "0107f3749654f126ba6578f800e66b532d84f1922f8a13a82ed6b001f8966841"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh(_:).json": {
       "etag": "\"1cb9-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/usdzmesh.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/usdzmesh(_).md",
       "hash": "70d49edced2617c72cfe4f31321e7bf65555df11499b3e14e5d907875384c5f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh.json": {
@@ -1512,7 +1512,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/cameraorigin/init(left:right:).json": {
       "etag": "\"1e80-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/cameraorigin/init-leftright.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/cameraorigin/init(left,right).md",
       "hash": "14c143ec6b532104f0f559f337f75842be39000c790b264a297a119e7a68ff67"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/cameraorigin/zero.json": {
@@ -1532,7 +1532,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/cameratexturemapping/init(left:right:).json": {
       "etag": "\"1d41-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/cameratexturemapping/init-leftright.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/cameratexturemapping/init(left,right).md",
       "hash": "441a3dedc579c5df39798031619adca9f76e0f28959d113ae77b6bcf0ed94a6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/environmentfilename.json": {
@@ -1542,7 +1542,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/init(name:type:mask:positionable:origin:texturemapping:environmentfilename:).json": {
       "etag": "\"4479-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/init-nametypemaskpositionableorigintexturemappingenvironmentfilename.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/init(name,type,mask,positionable,origin,texturemapping,environmentfilename).md",
       "hash": "44720d81f3bef240e65f3928126c9a9ff1f61599cf797dac7d833ea21f8fa129"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/mask.json": {
@@ -1602,12 +1602,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameralensdefinition/generatestmap(device:cameraeye:stmaptype:into:).json": {
       "etag": "\"3392-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameralensdefinition/generatestmap-devicecameraeyestmaptypeinto.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameralensdefinition/generatestmap(device,cameraeye,stmaptype,into).md",
       "hash": "9bc11f7e4d31a9da3f991d80acc4bc59f2830400d8db5a0e0df93e1cd685cf19"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameralensdefinition/init(from:).json": {
       "etag": "\"18ed-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameralensdefinition/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameralensdefinition/init(from).md",
       "hash": "12a0d80fe4f59b03cc7217d932cc02ceb49af1e4647fc7a97f3dad59f59cef85"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameralensdefinition/stmaptype.json": {
@@ -1632,12 +1632,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameramask/dynamic(_:).json": {
       "etag": "\"170c-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameramask/dynamic.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameramask/dynamic(_).md",
       "hash": "754a3d6be232ca5117a75f3a306b8450b699950dd6e9f1405fb68f57d6fed5a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameramask/image(_:).json": {
       "etag": "\"169f-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecameramask/image.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecameramask/image(_).md",
       "hash": "281bd45adf2c895d64b30dc16af34c8c017ca48aa6055588570454946fac4a26"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecamerameshcalibration.json": {
@@ -1647,7 +1647,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecamerameshcalibration/init(name:usdzdata:).json": {
       "etag": "\"1c05-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivecamerameshcalibration/init-nameusdzdata.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivecamerameshcalibration/init(name,usdzdata).md",
       "hash": "9f3ade03a47c8d41cdcca3d5b4e0395d992692031f036ef3d3db3c82310e12de"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecamerameshcalibration/name.json": {
@@ -1697,7 +1697,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/controlpointinterpolation-swift.enum.json": {
       "etag": "\"29fc-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/controlpointinterpolation-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/controlpointinterpolation-swift.enum.md",
       "hash": "cea9eace9d6d4af4d50e466274ee29355d4d39815ce0eeab0a17edd4d70e8dc4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/controlpointinterpolation-swift.enum/cubichermite.json": {
@@ -1712,12 +1712,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/controlpointinterpolation-swift.property.json": {
       "etag": "\"2cd1-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/controlpointinterpolation-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/controlpointinterpolation-swift.property.md",
       "hash": "732a42e0b019a9d955a03466415d2f47b440bdfa595bc755e6792f500b8ace2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/edgetreatment-swift.enum.json": {
       "etag": "\"28cb-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/edgetreatment-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/edgetreatment-swift.enum.md",
       "hash": "d2bb10c62d467e90ead2e5abf98cc2b97ad7db204fc260270ef32e67255b7512"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/edgetreatment-swift.enum/easeinout.json": {
@@ -1732,7 +1732,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/edgetreatment-swift.property.json": {
       "etag": "\"2bf3-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/edgetreatment-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/edgetreatment-swift.property.md",
       "hash": "4246e2aeabaf3760f99c6e960d01c92f0ed92657ed5beda6e7406b2f0e096df2"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/edgewidthindegrees.json": {
@@ -1742,7 +1742,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/init(name:stereorelation:edgetreatment:controlpointinterpolation:leftcontrolpoints:rightcontrolpoints:edgewidthindegrees:).json": {
       "etag": "\"40a8-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/init-namestereorelationedgetreatmentcontrolpointinterpolationleftcontrolpointsrightcontrolpointsedgewidthindegrees.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/init(name,stereorelation,edgetreatment,controlpointinterpolation,leftcontrolpoints,rightcontrolpoints,edgewidthindegrees).md",
       "hash": "1162fa4af46e287e9ea1f824c919a16b79fed375eb64ebd9417d2145dd36a05f"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/leftcontrolpoints.json": {
@@ -1762,7 +1762,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/stereorelation-swift.enum.json": {
       "etag": "\"2bdf-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/stereorelation-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/stereorelation-swift.enum.md",
       "hash": "9c80f5df08f64fb5884fc016f5b4b14d2b939c1ec05edf6f48dae1847f0a2885"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/stereorelation-swift.enum/identical.json": {
@@ -1782,7 +1782,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivedynamicmask/stereorelation-swift.property.json": {
       "etag": "\"19cd-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/stereorelation-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivedynamicmask/stereorelation-swift.property.md",
       "hash": "e9c10c912a73c3bc32339b5e2dabe2be60b23819c7f45f699f731a46eed52918"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersiveimagemask.json": {
@@ -1792,12 +1792,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersiveimagemask/init(name:maskdata:).json": {
       "etag": "\"1955-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersiveimagemask/init-namemaskdata.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersiveimagemask/init(name,maskdata).md",
       "hash": "6546f8a9373d9ecd09f7470f3d094c774a80d185ed11015e3a0a890d0183aaf4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersiveimagemask/init(name:maskurl:).json": {
       "etag": "\"198d-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersiveimagemask/init-namemaskurl.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersiveimagemask/init(name,maskurl).md",
       "hash": "f496053d2c548aa6661380220372be53cb53bc20220551564590f6450f93c888"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersiveimagemask/maskdata.json": {
@@ -1832,7 +1832,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/init().json": {
       "etag": "\"136f-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/init.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/init().md",
       "hash": "16f0673870170189ef9524d94c378a2734d6dad422607e85e82fce4117ea831d"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/presentationdescriptor.json": {
@@ -1842,7 +1842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/start(connection:).json": {
       "etag": "\"1af9-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/start-connection.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/start(connection).md",
       "hash": "93a618d0046e8d1166fa91600d69d03d4664538fd9928916097f34a04545cad1"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/states.json": {
@@ -1877,7 +1877,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/stop().json": {
       "etag": "\"1200-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/stop.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewreceiver/stop().md",
       "hash": "ca33eb404b163cd3a7f62f166913ce43d559cc14fd09712a95b0ea1e6a70073a"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewreceiver/venuedescriptor.json": {
@@ -1897,17 +1897,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/connectreceiver(name:endpoint:).json": {
       "etag": "\"24fb-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/connectreceiver-nameendpoint.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/connectreceiver(name,endpoint).md",
       "hash": "35fb56671079bac480ba703a56d19c5b0715d4f1c48fdd71bd8ee43f5a50182e"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/disconnectreceiver(name:).json": {
       "etag": "\"22c2-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/disconnectreceiver-name.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/disconnectreceiver(name).md",
       "hash": "23e7e9f670409e32ae08cd118316a74124046d5207150a4fe485491f4449645a"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/init(networkparameters:).json": {
       "etag": "\"1a2a-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/init-networkparameters.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/init(networkparameters).md",
       "hash": "a253c0ca8c367888eff0edfb35aa811fe3afeb5a92f8f9a2c94ca4f8b3558ec1"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/isreadytosenddata.json": {
@@ -1932,42 +1932,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(audiobuffer:).json": {
       "etag": "\"1cae-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-audiobuffer.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(audiobuffer).md",
       "hash": "7acbf13e04c6991780c152f6657c5fcd787077733f56dae1e570763c66489b8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(taggedbuffers:presentationtimestamp:frameduration:).json": {
       "etag": "\"2481-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-taggedbufferspresentationtimestampframeduration.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(taggedbuffers,presentationtimestamp,frameduration).md",
       "hash": "dfba7cb1b57a689ae91eec3bf1cd79c5f129c096d94377d8b2770be0d7646bb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(venuedescriptor:).json": {
       "etag": "\"1b91-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-venuedescriptor.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(venuedescriptor).md",
       "hash": "48953eb0f25e3279e02190ae5f561b3f3feb6226e5c774994789f456e81bf98c"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(videobuffer:).json": {
       "etag": "\"1e07-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-videobuffer.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(videobuffer).md",
       "hash": "42a3919205a534c7b1e7c620f5cc21e9f8f28e1b3556a175041456ecbca85e4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/send(videoframe:presentationtimestamp:frameduration:metadata:).json": {
       "etag": "\"2c55-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send-videoframepresentationtimestampframedurationmetadata.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/send(videoframe,presentationtimestamp,frameduration,metadata).md",
       "hash": "ffd99ffd93dac00fb985b1ad9d03069245dae8d1540e270598541082a4ccfebe"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/sendvenuedescriptor(at:).json": {
       "etag": "\"1ad8-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/sendvenuedescriptor-at.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/sendvenuedescriptor(at).md",
       "hash": "9e498eb50fd4596b1abfeb096651a792c00833c10410f22f30373dfef8410d87"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/start().json": {
       "etag": "\"135a-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/start.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/start().md",
       "hash": "cc9de18296523032355233b629b42add2d97932d8f50d971c42b05170e8f4af0"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivemediaremotepreviewsender/stop().json": {
       "etag": "\"12a3-65d55dcddf65c-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/stop.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivemediaremotepreviewsender/stop().md",
       "hash": "08a5d343d83a6d771c3f174f800d3a55408fea1f7352ba77ca5f2ea8277d370e"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivepreviewrenderer.json": {
@@ -1997,17 +1997,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivepreviewrenderer/init(device:venuedescriptor:depthpixelformat:colorpixelformat:).json": {
       "etag": "\"32c7-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/init-devicevenuedescriptordepthpixelformatcolorpixelformat.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/init(device,venuedescriptor,depthpixelformat,colorpixelformat).md",
       "hash": "b9782359d2162df8cebefacd647a8247b784c9148451bf8d92991c6faf56fd7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivepreviewrenderer/process(_:for:rotation:fieldofview:presentationdescriptor:rendertexture:).json": {
       "etag": "\"4675-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/process-forrotationfieldofviewpresentationdescriptorrendertexture.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/process(_,for,rotation,fieldofview,presentationdescriptor,rendertexture).md",
       "hash": "cb4a3513ead50dab581eb441ed9e31255a9cf568ca7d629f7b8259276176a263"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivepreviewrenderer/process(_:presentationdescriptor:drawable:).json": {
       "etag": "\"36c9-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/process-presentationdescriptordrawable.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivepreviewrenderer/process(_,presentationdescriptor,drawable).md",
       "hash": "c5c9c6010eea81cb59e5ebb56c495b429796127be9e84b21e7715c817edd269e"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivepreviewrenderer/venuedescriptor.json": {
@@ -2022,12 +2022,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideoframe/init(lefteye:righteye:presentationtime:).json": {
       "etag": "\"21fa-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideoframe/init-lefteyerighteyepresentationtime.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideoframe/init(lefteye,righteye,presentationtime).md",
       "hash": "0e82c172c46c1197b9574a8ae4fa3e8bcbe7c7a426db76b2b92a343f33332f27"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideoframe/init(pixelbuffer:presentationtime:layout:).json": {
       "etag": "\"289e-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideoframe/init-pixelbufferpresentationtimelayout.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideoframe/init(pixelbuffer,presentationtime,layout).md",
       "hash": "83c3e8ab8fe8c764442c24c311a4b5da238adaeef09b0a6061b47e8b5422f176"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideoframe/layout.json": {
@@ -2077,12 +2077,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideomask/==(_:_:).json": {
       "etag": "\"1a94-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/equal.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/eqeq(_,_).md",
       "hash": "1cf245db85cfca9b4fceccef8bedb5fae54fc0c2554031920bcb112466b8e50a"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideomask/init(layout:isinequirectangularprojection:texture:).json": {
       "etag": "\"2748-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/init-layoutisinequirectangularprojectiontexture.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/init(layout,isinequirectangularprojection,texture).md",
       "hash": "0a337e7a009f074911c8adb1be8507703446828c7825840df48142ab9bb73162"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideomask/isinequirectangularprojection.json": {
@@ -2092,7 +2092,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideomask/layout-swift.enum.json": {
       "etag": "\"299a-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/layout-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/layout-swift.enum.md",
       "hash": "a314b70e2642ec193669c3152d40567fb662ba532a2f2237c8a0d453d9b09785"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideomask/layout-swift.enum/mono.json": {
@@ -2117,7 +2117,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideomask/layout-swift.property.json": {
       "etag": "\"1dd6-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/layout-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/immersivevideomask/layout-swift.property.md",
       "hash": "499981a0f81c553366d4a87f39897d00126e0236b3e7687a799fc77447c6d684"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivevideomask/texture.json": {
@@ -2147,7 +2147,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/parametricimmersiveassetinfo/error/errortype-swift.enum.json": {
       "etag": "\"2ea3-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/error/errortype-swiftenum.md",
+      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/error/errortype-swift.enum.md",
       "hash": "3aee2f5eb5bbec8ea7ae141c276edcaaa6ad5375eb9c201d2ce0ac48768754b5"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/parametricimmersiveassetinfo/error/errortype-swift.enum/isalreadyconverted.json": {
@@ -2167,12 +2167,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/parametricimmersiveassetinfo/error/errortype-swift.property.json": {
       "etag": "\"2419-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/error/errortype-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/error/errortype-swift.property.md",
       "hash": "993f91b3f89d68ffaf45e707fba646df9b7c2294671253ca0bb528dc7095c592"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/parametricimmersiveassetinfo/init(asset:computeformatdescription:).json": {
       "etag": "\"22ce-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/init-assetcomputeformatdescription.md",
+      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/init(asset,computeformatdescription).md",
       "hash": "8ea0281e82a1c114392837aafae361cbbd92f38b8395542db684c8f8ddad0a5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/parametricimmersiveassetinfo/isassetconvertible.json": {
@@ -2182,7 +2182,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/parametricimmersiveassetinfo/isparametricimmersive(asset:).json": {
       "etag": "\"1e7c-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/isparametricimmersive-asset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/parametricimmersiveassetinfo/isparametricimmersive(asset).md",
       "hash": "02568094a70be6440d4e0d4b61c92ce94043d2a9ec273284ab79e1baeb39c7c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/parametricimmersiveassetinfo/requiredformatdescription.json": {
@@ -2202,12 +2202,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationcommand/fade(_:).json": {
       "etag": "\"1692-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/fade.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/fade(_).md",
       "hash": "6ef0a10709c7b7af37a9219082d40abd9858479b533d6f158e949721ef3e145a"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationcommand/fadeenvironment(_:).json": {
       "etag": "\"17b2-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/fadeenvironment.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/fadeenvironment(_).md",
       "hash": "4b04d7bba8f482413c5b9602905ce97c14d271016fbad46d17f0e53e10a86353"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationcommand/id.json": {
@@ -2222,17 +2222,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationcommand/setcamera(_:).json": {
       "etag": "\"170c-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/setcamera.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/setcamera(_).md",
       "hash": "f909ab0ae1395ce2fa18769b52300ee1a3e6f62bcf3d8af577fc05062df0f9c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationcommand/shotflip(_:).json": {
       "etag": "\"18ac-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/shotflip.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/shotflip(_).md",
       "hash": "eee8f295392c617103304fabade21ef0fb7f683fb73e793dd25b40112cbf1394"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationcommand/shotflop(_:).json": {
       "etag": "\"1740-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/shotflop.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationcommand/shotflop(_).md",
       "hash": "5e19fc7788b9fb2dcad5069ecb6be3decd80e886a0c9505ea5f8271f6ddb90d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationcommand/time.json": {
@@ -2257,12 +2257,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptor/init(commands:).json": {
       "etag": "\"1d18-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptor/init-commands.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptor/init(commands).md",
       "hash": "cd94a991984acc8f975b875f8192aec45a28978576116a447403591b984d3ce8"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptor/init(duration:commands:).json": {
       "etag": "\"2256-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptor/init-durationcommands.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptor/init(duration,commands).md",
       "hash": "daf11a31f6093b6f7e973ad2f28114e95c19a28673086cb9dccfaf24ac4d8259"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptorreader.json": {
@@ -2297,7 +2297,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptorreader/init(presentationdescriptor:issideloaded:).json": {
       "etag": "\"1fb7-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/init-presentationdescriptorissideloaded.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/init(presentationdescriptor,issideloaded).md",
       "hash": "c3e1477577aa7a044885fd20b66f75483bb67b05d339bc6a3bd694f380d6adb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptorreader/isshotflipped.json": {
@@ -2317,17 +2317,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptorreader/metadataitem(frametimerange:).json": {
       "etag": "\"263b-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/metadataitem-frametimerange.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/metadataitem(frametimerange).md",
       "hash": "6ee73e704c4ce2c3770094d55a5369d5bef948030d1ac678543f0c6deb8ee94c"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptorreader/metadatatrack(timerange:).json": {
       "etag": "\"2990-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/metadatatrack-timerange.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/metadatatrack(timerange).md",
       "hash": "a3b2f2ceb65a0b8190bb5ecadd1aa07d0e310c7280b5e9fe436cf07fd5358446"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptorreader/outputpresentationcommands(for:).json": {
       "etag": "\"211b-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/outputpresentationcommands-for.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/outputpresentationcommands(for).md",
       "hash": "2b52d788912868c6c09fad40f39daecad69e82f5c6df4c2b86ff135f0df179e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptorreader/presentationcommands.json": {
@@ -2342,7 +2342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/presentationdescriptorreader/processpresentationcommands(for:).json": {
       "etag": "\"1a38-65d55dcdcd112-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/processpresentationcommands-for.md",
+      "file_path": "documentation/ImmersiveMediaSupport/presentationdescriptorreader/processpresentationcommands(for).md",
       "hash": "b7b3036f027dec3126367f02b64480d8a0f48d201a87f6fea7b711d89bf746d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/processing-apple-immersive-video-with-foveation.json": {
@@ -2367,7 +2367,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/encode(to:).json": {
       "etag": "\"1655-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/encode(to).md",
       "hash": "0582834562d129487e4d0819864ca6477650a5717cb2ae8a4053292510633fe1"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/id.json": {
@@ -2377,17 +2377,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/init(from:).json": {
       "etag": "\"1599-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init(from).md",
       "hash": "2ad58d43ee3a263ba374bea08ea1e4e2bf15d2cc7393ced71d7dab0a8a05c4c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/init(id:time:cameraid:).json": {
       "etag": "\"20ae-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init-idtimecameraid.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init(id,time,cameraid).md",
       "hash": "ae97b467ef7b343bae1eeb4beb4ece5007d89db98fb9d5e0066e44c080d5ff23"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/init(id:time:cameraid:overrides:).json": {
       "etag": "\"29aa-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init-idtimecameraidoverrides.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/init(id,time,cameraid,overrides).md",
       "hash": "2507016e57f8662991deeabe58eee6aa27ff3a8bff1017cf48b0c36f1be6a32c"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/offset.json": {
@@ -2397,17 +2397,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/overrides-swift.property.json": {
       "etag": "\"18e4-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swiftproperty.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swift.property.md",
       "hash": "0cf40ad2ac398ae7663cda26a5a7664d80d66867da8a6b162d0695ff7f55b0f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/overrides-swift.struct.json": {
       "etag": "\"336a-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swiftstruct.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swift.struct.md",
       "hash": "bd28cb6d3a6543bb1f39848308d925ba38fe8d8b89fce3744eede18be680705e"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/overrides-swift.struct/init(rotation:lensdefinitiondata:maskdata:).json": {
       "etag": "\"2870-65d55dcd91669-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swift.struct/init-rotationlensdefinitiondatamaskdata.md",
+      "file_path": "documentation/ImmersiveMediaSupport/setcameracommand/overrides-swift.struct/init(rotation,lensdefinitiondata,maskdata).md",
       "hash": "3927c4b4f91c41b207e6304cc005c2e2be5453832f24a5e07bafac995804b8b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/setcameracommand/overrides-swift.struct/lensdefinitiondata.json": {
@@ -2442,7 +2442,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflipcommand/encode(to:).json": {
       "etag": "\"166d-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/encode(to).md",
       "hash": "b29c051daf14de4ba5b57ccac62542e450ba46123b4142857f9026f4c7d558c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflipcommand/id.json": {
@@ -2452,12 +2452,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflipcommand/init(from:).json": {
       "etag": "\"15b1-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/init(from).md",
       "hash": "3091b74fdbb4dd34535ed0b9f0f3effe9bc1e772ae5f4ca991edea16f861b321"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflipcommand/init(id:time:duration:offset:).json": {
       "etag": "\"21e6-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/init-idtimedurationoffset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflipcommand/init(id,time,duration,offset).md",
       "hash": "6b6350b4d71ceeb0376c033e82590f34e32d64d9559fc672fba7d1fd915fb87c"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflipcommand/offset.json": {
@@ -2482,7 +2482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflopcommand/encode(to:).json": {
       "etag": "\"1687-65d55dce06a9e-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/encode-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/encode(to).md",
       "hash": "46f45d4243192d54ac6088f4c5a10fb81bda56dd4ab8cb9163af61aedda8329a"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflopcommand/id.json": {
@@ -2492,12 +2492,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflopcommand/init(from:).json": {
       "etag": "\"15cb-65d55dcdfb46a-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/init-from.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/init(from).md",
       "hash": "3f2500659fefaf6288911f0eaee5494fa54718e38f45c52ec3790d24c169faa4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflopcommand/init(id:time:duration:offset:).json": {
       "etag": "\"2200-65d55dce06a9e-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/init-idtimedurationoffset.md",
+      "file_path": "documentation/ImmersiveMediaSupport/shotflopcommand/init(id,time,duration,offset).md",
       "hash": "02da4559b7642ae04d6d0f3bc0a9f0aa2bc1ec980e5ea6b7a72ffbc9709fd013"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/shotflopcommand/offset.json": {
@@ -2517,7 +2517,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/venuedescriptor/addcamera(_:).json": {
       "etag": "\"272d-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/addcamera.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/addcamera(_).md",
       "hash": "fc8192a03ba4fb1dbb86cee04b7e577a257bdd719de1c0d649af36dd7e7df219"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/venuedescriptor/aimedata.json": {
@@ -2532,32 +2532,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/venuedescriptor/cameraviewmodel(for:).json": {
       "etag": "\"2999-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/cameraviewmodel-for.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/cameraviewmodel(for).md",
       "hash": "26d9a0047a70d22a0d6f2f767f901c4965a8d4f6e9beb60985781aca7d896d65"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/venuedescriptor/init(aimedata:device:).json": {
       "etag": "\"1e31-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init-aimedatadevice.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init(aimedata,device).md",
       "hash": "46aec7247fe5a41c4dbf2255bc82c0616720a9af23f9c7125ddfe94a6a786484"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/venuedescriptor/init(aimeurl:device:).json": {
       "etag": "\"2458-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init-aimeurldevice.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init(aimeurl,device).md",
       "hash": "234a708015adaf5a4d4e5e93a5a5fb9135bf3a00d0c9f67cf741329e870ddfb4"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/venuedescriptor/init(device:).json": {
       "etag": "\"1c55-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init-device.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/init(device).md",
       "hash": "f8e6b6c4c0340962f4fd22c4d0753900692f18022e72373a190f3e9b6ba67427"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/venuedescriptor/removecamera(id:).json": {
       "etag": "\"23a2-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/removecamera-id.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/removecamera(id).md",
       "hash": "850066796c0355f17e5cdc87ea2cda4625492173abe4ea507285ebed2932dcb7"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/venuedescriptor/save(to:).json": {
       "etag": "\"1c26-65d55dcdadabe-df\"",
-      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/save-to.md",
+      "file_path": "documentation/ImmersiveMediaSupport/venuedescriptor/save(to).md",
       "hash": "73e84fb6001fe08f9e96d5acdf8af8f3bb7e58ac68ba48d7f79876576a49e8a7"
     }
   },

@@ -117,17 +117,17 @@
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/read_10": {
       "etag": "\"2fa0-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/read-10.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/read_10.md",
       "hash": "8d82a6bc25dccbdd9da6da0ee87cde9821c945a76f5639ec23bd174185f843c8"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/read_capacity": {
       "etag": "\"282c-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/read-capacity.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/read_capacity.md",
       "hash": "8b9dbc675bba656cd062a7e44aafe8dfcf24d4b3d1daf50d0ba1e0239913a5a8"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/request_sense": {
       "etag": "\"29b4-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/request-sense.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/request_sense.md",
       "hash": "a6fe74c806839a720fbc350d8690723e25f5e30a78fadf5c4293c43c374179ce"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/scsi-commands": {
@@ -317,57 +317,57 @@
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_enable_disable_autosave": {
       "etag": "\"3430-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-enable-disable-autosave.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_enable_disable_autosave.md",
       "hash": "3d0bc074a63cc47cc40cdd14dd1a6e1af9b61b552f0b4001f3a710f5736e1565"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_enable_disable_operations": {
       "etag": "\"341e-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-enable-disable-operations.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_enable_disable_operations.md",
       "hash": "c1c6bc44205965e2fe8211f07fa2cc65fad6bb3aa46201a43e18bac65cd348ca"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_execute_offline_immediate": {
       "etag": "\"343d-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-execute-offline-immediate.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_execute_offline_immediate.md",
       "hash": "731fc572593439c585a195bb7c5c66875561541d5b81c17a29fee769643ba9af"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_get_identify_data": {
       "etag": "\"33b4-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-get-identify-data.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_get_identify_data.md",
       "hash": "5f5b10166c9f6e38f7cb192004c38da99d9bf342df16a4031399db0a684498e2"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_read_data": {
       "etag": "\"34fe-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-data.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_read_data.md",
       "hash": "d71aa4f3bd5d3bc698b3a6e8a3f20ad605d89fa0d2de23ed7dcb7d72e46b0b72"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_read_data_thresholds": {
       "etag": "\"3556-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-data-thresholds.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_read_data_thresholds.md",
       "hash": "54ddc338f8c900977fa8164e81ab0978686306c6000640f781bead0af9c29865"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_read_log_at_address": {
       "etag": "\"3845-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-log-at-address.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_read_log_at_address.md",
       "hash": "8e0cc2c9e2a73d2a5a09d04b51df19573486a7b1d20fde6ffc47975f7ea4e007"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_return_status": {
       "etag": "\"3217-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-return-status.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_return_status.md",
       "hash": "ebe8af1dbd0c35f3bb7d1425bf560b3585596a77d7168d98bb2b4b665b2b4983"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/smart_write_log_at_address": {
       "etag": "\"3853-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-write-log-at-address.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_write_log_at_address.md",
       "hash": "c3fe9788a3d75ec232774df320bc81d37fe11f1301738acd0cb031e4541cf1f8"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/test_unit_ready": {
       "etag": "\"26b7-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/test-unit-ready.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/test_unit_ready.md",
       "hash": "790a6d20e55e3a72001377b19a066f939ca4ce497b3e145d86959f9d5cd236e3"
     },
     "https://developer.apple.com/documentation/scsiperipheralsdriverkit/write_10": {
       "etag": "\"2fad-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/write-10.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/write_10.md",
       "hash": "3b2f25ed9607c7c81db9b56b29886bd3a40e575b1da81dbd1e981f1bd445ec95"
     },
     "https://developer.apple.com/tutorials/data/documentation/SCSIPeripheralsDriverKit.json": {
@@ -487,17 +487,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/read_10.json": {
       "etag": "\"2fa0-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/read-10.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/read_10.md",
       "hash": "8d82a6bc25dccbdd9da6da0ee87cde9821c945a76f5639ec23bd174185f843c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/read_capacity.json": {
       "etag": "\"282c-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/read-capacity.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/read_capacity.md",
       "hash": "8b9dbc675bba656cd062a7e44aafe8dfcf24d4b3d1daf50d0ba1e0239913a5a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/request_sense.json": {
       "etag": "\"29b4-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/request-sense.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/request_sense.md",
       "hash": "a6fe74c806839a720fbc350d8690723e25f5e30a78fadf5c4293c43c374179ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/scsi-commands.json": {
@@ -687,57 +687,57 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_enable_disable_autosave.json": {
       "etag": "\"3430-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-enable-disable-autosave.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_enable_disable_autosave.md",
       "hash": "3d0bc074a63cc47cc40cdd14dd1a6e1af9b61b552f0b4001f3a710f5736e1565"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_enable_disable_operations.json": {
       "etag": "\"341e-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-enable-disable-operations.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_enable_disable_operations.md",
       "hash": "c1c6bc44205965e2fe8211f07fa2cc65fad6bb3aa46201a43e18bac65cd348ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_execute_offline_immediate.json": {
       "etag": "\"343d-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-execute-offline-immediate.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_execute_offline_immediate.md",
       "hash": "731fc572593439c585a195bb7c5c66875561541d5b81c17a29fee769643ba9af"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_get_identify_data.json": {
       "etag": "\"33b4-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-get-identify-data.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_get_identify_data.md",
       "hash": "5f5b10166c9f6e38f7cb192004c38da99d9bf342df16a4031399db0a684498e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_data.json": {
       "etag": "\"34fe-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-data.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_read_data.md",
       "hash": "d71aa4f3bd5d3bc698b3a6e8a3f20ad605d89fa0d2de23ed7dcb7d72e46b0b72"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_data_thresholds.json": {
       "etag": "\"3556-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-data-thresholds.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_read_data_thresholds.md",
       "hash": "54ddc338f8c900977fa8164e81ab0978686306c6000640f781bead0af9c29865"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_read_log_at_address.json": {
       "etag": "\"3845-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-read-log-at-address.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_read_log_at_address.md",
       "hash": "8e0cc2c9e2a73d2a5a09d04b51df19573486a7b1d20fde6ffc47975f7ea4e007"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_return_status.json": {
       "etag": "\"3217-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-return-status.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_return_status.md",
       "hash": "ebe8af1dbd0c35f3bb7d1425bf560b3585596a77d7168d98bb2b4b665b2b4983"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/smart_write_log_at_address.json": {
       "etag": "\"3853-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/smart-write-log-at-address.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/smart_write_log_at_address.md",
       "hash": "c3fe9788a3d75ec232774df320bc81d37fe11f1301738acd0cb031e4541cf1f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/test_unit_ready.json": {
       "etag": "\"26b7-65d55e5bf34f0-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/test-unit-ready.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/test_unit_ready.md",
       "hash": "790a6d20e55e3a72001377b19a066f939ca4ce497b3e145d86959f9d5cd236e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/scsiperipheralsdriverkit/write_10.json": {
       "etag": "\"2fad-65d55e5be3f4b-df\"",
-      "file_path": "documentation/SCSIPeripheralsDriverKit/write-10.md",
+      "file_path": "documentation/SCSIPeripheralsDriverKit/write_10.md",
       "hash": "3b2f25ed9607c7c81db9b56b29886bd3a40e575b1da81dbd1e981f1bd445ec95"
     }
   },

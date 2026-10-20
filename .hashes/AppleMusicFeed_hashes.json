@@ -17,12 +17,12 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/artworks-data.dictionary": {
       "etag": "\"334c-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/artworks-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/artworks-data.dictionary.md",
       "hash": "1ef250cab6fb6e0b0594d559c8c36b7cc96af69965d47eb9994fc206273714e4"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/artworks-data.dictionary/artwork-data.dictionary": {
       "etag": "\"13ab-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "bf3e61ca9dd51dfad8bd7679c9296e84e52173db335c98b220a0f8648c343326"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/genre": {
@@ -32,17 +32,17 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/name-data.dictionary": {
       "etag": "\"2ee8-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/name-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/name-data.dictionary.md",
       "hash": "1e91a461b780b2579cfdf8a47c5e8c9543a83c7aba2c1fe16af006b63ecf8e0c"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/namepronunciation-data.dictionary": {
       "etag": "\"2f5c-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/namepronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/namepronunciation-data.dictionary.md",
       "hash": "aeb04eed23b9718d91dbd0f2814bf6498dfc26b3db4b70718d8676a1d251f5f2"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/prices-data.dictionary": {
       "etag": "\"3597-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/prices-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/prices-data.dictionary.md",
       "hash": "59850efbc971adb3e637bba52f350ac994dd1f7caa6caa77ccdb685602fdfffc"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/prices-data.dictionary/price": {
@@ -67,27 +67,27 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/releasedate-data.dictionary": {
       "etag": "\"2fc2-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/releasedate-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/releasedate-data.dictionary.md",
       "hash": "517ba30af75a75fd6830c5f6c779a2752182fa525d06d72c5436baf57a1990d2"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/relevancescore-data.dictionary": {
       "etag": "\"16c7-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/relevancescore-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/relevancescore-data.dictionary.md",
       "hash": "c4aef864b879e6c5f406b99b148a5a0ddf8ea07a50f3a2e642740f0f4e353574"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/relevancescore-data.dictionary/storefrontoverrides-data.dictionary": {
       "etag": "\"160c-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/relevancescore-data.dictionary/storefrontoverrides-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.md",
       "hash": "2119f6086433ca7a206b84b3f37249f36b37e34e1eb1cacc01a5c8c098cebfab"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/titleversion-data.dictionary": {
       "etag": "\"2f3f-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/titleversion-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/titleversion-data.dictionary.md",
       "hash": "3293112da45761cae01f26015e5721dfb4264936f94461ad788f9aa673c79cba"
     },
     "https://developer.apple.com/documentation/applemusicfeed/album/titleversionpronunciation-data.dictionary": {
       "etag": "\"2fb8-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/titleversionpronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/titleversionpronunciation-data.dictionary.md",
       "hash": "ee9cd99bc3b1665655d134a5d5617eeb2b35eca18f8d2e0b306523770ea6aa47"
     },
     "https://developer.apple.com/documentation/applemusicfeed/artist": {
@@ -97,22 +97,22 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/artist/name-data.dictionary": {
       "etag": "\"16aa-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/artist/name-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/artist/name-data.dictionary.md",
       "hash": "1bce5c5c79aba71672a2df2d9162370685d3c1ba8bfbb7f6246ee4bf58444139"
     },
     "https://developer.apple.com/documentation/applemusicfeed/artist/namepronunciation-data.dictionary": {
       "etag": "\"171d-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/artist/namepronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/artist/namepronunciation-data.dictionary.md",
       "hash": "389cb3056ad2bd3faebeb7f0009b1ea6d413743c31337a69c62ed8e6b3fbb8bb"
     },
     "https://developer.apple.com/documentation/applemusicfeed/artist/relevancescore-data.dictionary": {
       "etag": "\"1d46-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/artist/relevancescore-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/artist/relevancescore-data.dictionary.md",
       "hash": "36f6114e3f5a477396395b01fb08bb3e1f7d1868e964af6d93cecc2a94ce1b8f"
     },
     "https://developer.apple.com/documentation/applemusicfeed/artist/relevancescore-data.dictionary/storefrontoverrides-data.dictionary": {
       "etag": "\"162a-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/artist/relevancescore-data.dictionary/storefrontoverrides-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/artist/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.md",
       "hash": "413529ac8aea809ffc6a9ca085232a6063d3796904be10d950467811f0215199"
     },
     "https://developer.apple.com/documentation/applemusicfeed/generating-developer-tokens": {
@@ -132,12 +132,12 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/popularitytopchartalbums/genre-data.dictionary": {
       "etag": "\"18b7-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/genre-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/genre-data.dictionary.md",
       "hash": "fd9fa30e1c784c142817b7a14281eee70c5ddc193e0f9047f236f91785990763"
     },
     "https://developer.apple.com/documentation/applemusicfeed/popularitytopchartalbums/rankings-data.dictionary": {
       "etag": "\"14ac-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/rankings-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/rankings-data.dictionary.md",
       "hash": "7878d2f2b7209c1d99063d3487afe977f23adf7251007d28ba49fa4d2fb51ca0"
     },
     "https://developer.apple.com/documentation/applemusicfeed/popularitytopchartsongs": {
@@ -147,12 +147,12 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/popularitytopchartsongs/genre-data.dictionary": {
       "etag": "\"1898-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/genre-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/genre-data.dictionary.md",
       "hash": "33c7768b39fe9a218a8bb35284cf5e100226770fc3ae0281fa816b90724fad6b"
     },
     "https://developer.apple.com/documentation/applemusicfeed/popularitytopchartsongs/rankings-data.dictionary": {
       "etag": "\"1489-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/rankings-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/rankings-data.dictionary.md",
       "hash": "37efeeefe642eabdab971d91c8ed91592ce7c2bc78dfd59a50a1a5a3e4fb2ee4"
     },
     "https://developer.apple.com/documentation/applemusicfeed/requesting-a-feed-export": {
@@ -167,7 +167,7 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/album-data.dictionary": {
       "etag": "\"f49-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/album-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/album-data.dictionary.md",
       "hash": "8e32f9d35a181831be8feaa2c0bb60a628132bd8c36f5abaa745940a14f41ea9"
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/artistrole": {
@@ -182,17 +182,17 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/name-data.dictionary": {
       "etag": "\"2c10-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/name-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/name-data.dictionary.md",
       "hash": "6f0eb7f53fd25253cf986187b27a874a980fda746263df7a3e7d7c97b379743d"
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/namepronunciation-data.dictionary": {
       "etag": "\"2c85-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/namepronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/namepronunciation-data.dictionary.md",
       "hash": "54422698cba026019bdd1d533baadac6e0ac1b7bcbcb1b9d4680325fce80b812"
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/prices-data.dictionary": {
       "etag": "\"32b7-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/prices-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/prices-data.dictionary.md",
       "hash": "ca00445c356f51a40df89897576043bbd94c6fd2331dd92769070bfbaeeb2bdb"
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/prices-data.dictionary/price": {
@@ -212,27 +212,27 @@
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/releasedate-data.dictionary": {
       "etag": "\"2ceb-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/releasedate-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/releasedate-data.dictionary.md",
       "hash": "c2c6cb9326187d7bf2123c540174acb208ac8aa618deb9f9c270ccec16373f89"
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/relevancescore-data.dictionary": {
       "etag": "\"3292-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/relevancescore-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/relevancescore-data.dictionary.md",
       "hash": "0f8e069d86ecbf55e34c3be56a8333f2c7c7519e4627c9245c304d4f3ae5d5de"
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/relevancescore-data.dictionary/storefrontoverrides-data.dictionary": {
       "etag": "\"15ed-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/relevancescore-data.dictionary/storefrontoverrides-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.md",
       "hash": "864d8c7c2618e3606fab812c676aaf1098c191febbcf14a69ae82ce9760ce241"
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/titleversion-data.dictionary": {
       "etag": "\"2c69-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/titleversion-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/titleversion-data.dictionary.md",
       "hash": "16aa3c2063f93d34633e23007088d6e47e8eb070f986a9ff252ed0ed68b98c8b"
     },
     "https://developer.apple.com/documentation/applemusicfeed/song/titleversionpronunciation-data.dictionary": {
       "etag": "\"2ce1-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/titleversionpronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/titleversionpronunciation-data.dictionary.md",
       "hash": "b245d155e9f22e2b094a932531bf9327ad23f2b36a64afbfb8f2fa23c828d0c0"
     },
     "https://developer.apple.com/tutorials/data/documentation/AppleMusicFeed.json": {
@@ -252,12 +252,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/artworks-data.dictionary.json": {
       "etag": "\"334c-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/artworks-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/artworks-data.dictionary.md",
       "hash": "1ef250cab6fb6e0b0594d559c8c36b7cc96af69965d47eb9994fc206273714e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/artworks-data.dictionary/artwork-data.dictionary.json": {
       "etag": "\"13ab-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "bf3e61ca9dd51dfad8bd7679c9296e84e52173db335c98b220a0f8648c343326"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/genre.json": {
@@ -267,17 +267,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/name-data.dictionary.json": {
       "etag": "\"2ee8-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/name-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/name-data.dictionary.md",
       "hash": "1e91a461b780b2579cfdf8a47c5e8c9543a83c7aba2c1fe16af006b63ecf8e0c"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/namepronunciation-data.dictionary.json": {
       "etag": "\"2f5c-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/namepronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/namepronunciation-data.dictionary.md",
       "hash": "aeb04eed23b9718d91dbd0f2814bf6498dfc26b3db4b70718d8676a1d251f5f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/prices-data.dictionary.json": {
       "etag": "\"3597-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/prices-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/prices-data.dictionary.md",
       "hash": "59850efbc971adb3e637bba52f350ac994dd1f7caa6caa77ccdb685602fdfffc"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/prices-data.dictionary/price.json": {
@@ -302,27 +302,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/releasedate-data.dictionary.json": {
       "etag": "\"2fc2-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/releasedate-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/releasedate-data.dictionary.md",
       "hash": "517ba30af75a75fd6830c5f6c779a2752182fa525d06d72c5436baf57a1990d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/relevancescore-data.dictionary.json": {
       "etag": "\"16c7-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/relevancescore-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/relevancescore-data.dictionary.md",
       "hash": "c4aef864b879e6c5f406b99b148a5a0ddf8ea07a50f3a2e642740f0f4e353574"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.json": {
       "etag": "\"160c-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/relevancescore-data.dictionary/storefrontoverrides-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.md",
       "hash": "2119f6086433ca7a206b84b3f37249f36b37e34e1eb1cacc01a5c8c098cebfab"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/titleversion-data.dictionary.json": {
       "etag": "\"2f3f-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/titleversion-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/titleversion-data.dictionary.md",
       "hash": "3293112da45761cae01f26015e5721dfb4264936f94461ad788f9aa673c79cba"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/titleversionpronunciation-data.dictionary.json": {
       "etag": "\"2fb8-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/album/titleversionpronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/album/titleversionpronunciation-data.dictionary.md",
       "hash": "ee9cd99bc3b1665655d134a5d5617eeb2b35eca18f8d2e0b306523770ea6aa47"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/artist.json": {
@@ -332,22 +332,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/artist/name-data.dictionary.json": {
       "etag": "\"16aa-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/artist/name-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/artist/name-data.dictionary.md",
       "hash": "1bce5c5c79aba71672a2df2d9162370685d3c1ba8bfbb7f6246ee4bf58444139"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/artist/namepronunciation-data.dictionary.json": {
       "etag": "\"171d-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/artist/namepronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/artist/namepronunciation-data.dictionary.md",
       "hash": "389cb3056ad2bd3faebeb7f0009b1ea6d413743c31337a69c62ed8e6b3fbb8bb"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/artist/relevancescore-data.dictionary.json": {
       "etag": "\"1d46-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/artist/relevancescore-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/artist/relevancescore-data.dictionary.md",
       "hash": "36f6114e3f5a477396395b01fb08bb3e1f7d1868e964af6d93cecc2a94ce1b8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/artist/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.json": {
       "etag": "\"162a-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/artist/relevancescore-data.dictionary/storefrontoverrides-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/artist/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.md",
       "hash": "413529ac8aea809ffc6a9ca085232a6063d3796904be10d950467811f0215199"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/generating-developer-tokens.json": {
@@ -367,12 +367,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartalbums/genre-data.dictionary.json": {
       "etag": "\"18b7-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/genre-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/genre-data.dictionary.md",
       "hash": "fd9fa30e1c784c142817b7a14281eee70c5ddc193e0f9047f236f91785990763"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartalbums/rankings-data.dictionary.json": {
       "etag": "\"14ac-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/rankings-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/rankings-data.dictionary.md",
       "hash": "7878d2f2b7209c1d99063d3487afe977f23adf7251007d28ba49fa4d2fb51ca0"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartsongs.json": {
@@ -382,12 +382,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartsongs/genre-data.dictionary.json": {
       "etag": "\"1898-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/genre-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/genre-data.dictionary.md",
       "hash": "33c7768b39fe9a218a8bb35284cf5e100226770fc3ae0281fa816b90724fad6b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartsongs/rankings-data.dictionary.json": {
       "etag": "\"1489-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/rankings-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/rankings-data.dictionary.md",
       "hash": "37efeeefe642eabdab971d91c8ed91592ce7c2bc78dfd59a50a1a5a3e4fb2ee4"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/requesting-a-feed-export.json": {
@@ -402,7 +402,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/album-data.dictionary.json": {
       "etag": "\"f49-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/album-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/album-data.dictionary.md",
       "hash": "8e32f9d35a181831be8feaa2c0bb60a628132bd8c36f5abaa745940a14f41ea9"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/artistrole.json": {
@@ -417,17 +417,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/name-data.dictionary.json": {
       "etag": "\"2c10-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/name-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/name-data.dictionary.md",
       "hash": "6f0eb7f53fd25253cf986187b27a874a980fda746263df7a3e7d7c97b379743d"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/namepronunciation-data.dictionary.json": {
       "etag": "\"2c85-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/namepronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/namepronunciation-data.dictionary.md",
       "hash": "54422698cba026019bdd1d533baadac6e0ac1b7bcbcb1b9d4680325fce80b812"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/prices-data.dictionary.json": {
       "etag": "\"32b7-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/prices-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/prices-data.dictionary.md",
       "hash": "ca00445c356f51a40df89897576043bbd94c6fd2331dd92769070bfbaeeb2bdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/prices-data.dictionary/price.json": {
@@ -447,27 +447,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/releasedate-data.dictionary.json": {
       "etag": "\"2ceb-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/releasedate-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/releasedate-data.dictionary.md",
       "hash": "c2c6cb9326187d7bf2123c540174acb208ac8aa618deb9f9c270ccec16373f89"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/relevancescore-data.dictionary.json": {
       "etag": "\"3292-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/relevancescore-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/relevancescore-data.dictionary.md",
       "hash": "0f8e069d86ecbf55e34c3be56a8333f2c7c7519e4627c9245c304d4f3ae5d5de"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.json": {
       "etag": "\"15ed-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/relevancescore-data.dictionary/storefrontoverrides-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/relevancescore-data.dictionary/storefrontoverrides-data.dictionary.md",
       "hash": "864d8c7c2618e3606fab812c676aaf1098c191febbcf14a69ae82ce9760ce241"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/titleversion-data.dictionary.json": {
       "etag": "\"2c69-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/titleversion-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/titleversion-data.dictionary.md",
       "hash": "16aa3c2063f93d34633e23007088d6e47e8eb070f986a9ff252ed0ed68b98c8b"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/titleversionpronunciation-data.dictionary.json": {
       "etag": "\"2ce1-65de746d29d9d-df\"",
-      "file_path": "documentation/AppleMusicFeed/song/titleversionpronunciation-datadictionary.md",
+      "file_path": "documentation/AppleMusicFeed/song/titleversionpronunciation-data.dictionary.md",
       "hash": "b245d155e9f22e2b094a932531bf9327ad23f2b36a64afbfb8f2fa23c828d0c0"
     }
   },

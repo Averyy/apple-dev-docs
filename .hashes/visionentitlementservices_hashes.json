@@ -17,7 +17,7 @@
     },
     "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/status-swift.enum": {
       "etag": "\"1e97-65e2ec913aa35-df\"",
-      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swiftenum.md",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.enum.md",
       "hash": "f1f99993b595066100bfe43bfaa9907203f37208d769c64336adb7c835738eaf"
     },
     "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/status-swift.enum/high": {
@@ -37,7 +37,7 @@
     },
     "https://developer.apple.com/documentation/visionentitlementservices/appcomputecategory/status-swift.property": {
       "etag": "\"1be9-65e2ec913aa35-df\"",
-      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swiftproperty.md",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.property.md",
       "hash": "7494f319c21c9ab0c46ca4fe8c3a9ad04dae160f6561eb8838c3149938c843fa"
     },
     "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails": {
@@ -127,7 +127,7 @@
     },
     "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/isapproved(for:)": {
       "etag": "\"1d47-65e2ec913aa35-df\"",
-      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/isapproved-for.md",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/isapproved(for).md",
       "hash": "33e72d6423923c57165aef9baaa7bff8d5ffd6f7364418c48231d61a3a7748d5"
     },
     "https://developer.apple.com/documentation/visionentitlementservices/enterpriselicensedetails/licensestatus": {
@@ -187,7 +187,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/status-swift.enum.json": {
       "etag": "\"1e97-65e2ec913aa35-df\"",
-      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swiftenum.md",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.enum.md",
       "hash": "f1f99993b595066100bfe43bfaa9907203f37208d769c64336adb7c835738eaf"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/status-swift.enum/high.json": {
@@ -207,7 +207,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/appcomputecategory/status-swift.property.json": {
       "etag": "\"1be9-65e2ec913aa35-df\"",
-      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swiftproperty.md",
+      "file_path": "documentation/visionentitlementservices/appcomputecategory/status-swift.property.md",
       "hash": "7494f319c21c9ab0c46ca4fe8c3a9ad04dae160f6561eb8838c3149938c843fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails.json": {
@@ -297,7 +297,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/isapproved(for:).json": {
       "etag": "\"1d47-65e2ec913aa35-df\"",
-      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/isapproved-for.md",
+      "file_path": "documentation/visionentitlementservices/enterpriselicensedetails/isapproved(for).md",
       "hash": "33e72d6423923c57165aef9baaa7bff8d5ffd6f7364418c48231d61a3a7748d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionentitlementservices/enterpriselicensedetails/licensestatus.json": {

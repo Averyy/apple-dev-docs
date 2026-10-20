@@ -242,82 +242,82 @@
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_parity_any": {
       "etag": "\"177a-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-any.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_any.md",
       "hash": "10e6ffd135728c950583f2742a60864d5cd9998dfa224170efc67d6fb7787698"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_parity_default": {
       "etag": "\"1796-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-default.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_default.md",
       "hash": "df795ca15083da7652eacfeb4921a24f28d4c6b5cabb949f32555f97f0ac8d78"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_parity_even": {
       "etag": "\"177c-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-even.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_even.md",
       "hash": "8b6ef996ae7cdc3d0080c46c0cab455e55618321ff4fbb74603881afef1d3bc8"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_parity_mark": {
       "etag": "\"18a0-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-mark.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_mark.md",
       "hash": "851c07a306affabef53bfd4d5b3385724f4be03b2429c9c9016fabc8d28bf760"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_parity_none": {
       "etag": "\"1777-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-none.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_none.md",
       "hash": "323caed2fdc8bfe822c2a7d15814bc5875358e12b5b026efc76ab74dad50f13c"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_parity_odd": {
       "etag": "\"1775-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-odd.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_odd.md",
       "hash": "f2715efcf7180c2045b0331129a3b8ae0b895f5d024546d2dbf0f23e6f4c644c"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_parity_space": {
       "etag": "\"18a7-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-space.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_space.md",
       "hash": "06fd262176869d4eb0348c013fc9f393b371e312bc022251da6c67628c3fdb62"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_cts": {
       "etag": "\"168b-65d55dac22245-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-cts.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_cts.md",
       "hash": "d8c4e7c34967c0ad3b01e6ae282aa8ef57add764270e02b933c157469eee5974"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_dcd": {
       "etag": "\"1691-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-dcd.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_dcd.md",
       "hash": "d208cad4d5d25a1b3a4a2f4a14ec9241d342e5ef7648416f6a7d25a36326ae9a"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_dsr": {
       "etag": "\"168c-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-dsr.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_dsr.md",
       "hash": "2bf0204dc9d7e28b9d41ab777da4292e8d862edb9509c588dbc300c2c91f56ed"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_dtr": {
       "etag": "\"1691-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-dtr.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_dtr.md",
       "hash": "4e9363a5a58f557b9f5fbad768a7dd2731f139ad5f1587fbf3031a8913f13b07"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_le": {
       "etag": "\"987-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-le.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_le.md",
       "hash": "1de4e2cd0da710aacebe7b46641e8c872808e3399e845536275a7e8bf13e2cd0"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_rng": {
       "etag": "\"993-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-rng.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_rng.md",
       "hash": "ec68fddf2a6518ca13cc7b9668c6ee9780502e8e2e54eacc42794178ebae07cf"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_rts": {
       "etag": "\"168d-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-rts.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_rts.md",
       "hash": "c0ceb932334376f2b72791bfb9b9f066997e2e3b3540dbe80b0aa8ee67c6db53"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_rxo": {
       "etag": "\"168a-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-rxo.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_rxo.md",
       "hash": "0793bc6138105c2e4f855a94501a9d67a7d5e0d89a7d7d58fb103ae80b35a310"
     },
     "https://developer.apple.com/documentation/serialdriverkit/pd_rs232_s_txo": {
       "etag": "\"168b-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-txo.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_txo.md",
       "hash": "c599620d7759287a4ff3b227b9c44d68f91465abdf3a0827f0dca3888b1bea39"
     },
     "https://developer.apple.com/documentation/serialdriverkit/serialdriverkit-data-types": {
@@ -572,82 +572,82 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_any.json": {
       "etag": "\"177a-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-any.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_any.md",
       "hash": "10e6ffd135728c950583f2742a60864d5cd9998dfa224170efc67d6fb7787698"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_default.json": {
       "etag": "\"1796-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-default.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_default.md",
       "hash": "df795ca15083da7652eacfeb4921a24f28d4c6b5cabb949f32555f97f0ac8d78"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_even.json": {
       "etag": "\"177c-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-even.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_even.md",
       "hash": "8b6ef996ae7cdc3d0080c46c0cab455e55618321ff4fbb74603881afef1d3bc8"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_mark.json": {
       "etag": "\"18a0-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-mark.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_mark.md",
       "hash": "851c07a306affabef53bfd4d5b3385724f4be03b2429c9c9016fabc8d28bf760"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_none.json": {
       "etag": "\"1777-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-none.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_none.md",
       "hash": "323caed2fdc8bfe822c2a7d15814bc5875358e12b5b026efc76ab74dad50f13c"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_odd.json": {
       "etag": "\"1775-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-odd.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_odd.md",
       "hash": "f2715efcf7180c2045b0331129a3b8ae0b895f5d024546d2dbf0f23e6f4c644c"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_parity_space.json": {
       "etag": "\"18a7-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-parity-space.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_parity_space.md",
       "hash": "06fd262176869d4eb0348c013fc9f393b371e312bc022251da6c67628c3fdb62"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_cts.json": {
       "etag": "\"168b-65d55dac22245-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-cts.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_cts.md",
       "hash": "d8c4e7c34967c0ad3b01e6ae282aa8ef57add764270e02b933c157469eee5974"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_dcd.json": {
       "etag": "\"1691-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-dcd.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_dcd.md",
       "hash": "d208cad4d5d25a1b3a4a2f4a14ec9241d342e5ef7648416f6a7d25a36326ae9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_dsr.json": {
       "etag": "\"168c-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-dsr.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_dsr.md",
       "hash": "2bf0204dc9d7e28b9d41ab777da4292e8d862edb9509c588dbc300c2c91f56ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_dtr.json": {
       "etag": "\"1691-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-dtr.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_dtr.md",
       "hash": "4e9363a5a58f557b9f5fbad768a7dd2731f139ad5f1587fbf3031a8913f13b07"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_le.json": {
       "etag": "\"987-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-le.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_le.md",
       "hash": "1de4e2cd0da710aacebe7b46641e8c872808e3399e845536275a7e8bf13e2cd0"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_rng.json": {
       "etag": "\"993-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-rng.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_rng.md",
       "hash": "ec68fddf2a6518ca13cc7b9668c6ee9780502e8e2e54eacc42794178ebae07cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_rts.json": {
       "etag": "\"168d-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-rts.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_rts.md",
       "hash": "c0ceb932334376f2b72791bfb9b9f066997e2e3b3540dbe80b0aa8ee67c6db53"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_rxo.json": {
       "etag": "\"168a-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-rxo.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_rxo.md",
       "hash": "0793bc6138105c2e4f855a94501a9d67a7d5e0d89a7d7d58fb103ae80b35a310"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/pd_rs232_s_txo.json": {
       "etag": "\"168b-65d55dac16068-df\"",
-      "file_path": "documentation/SerialDriverKit/pd-rs232-s-txo.md",
+      "file_path": "documentation/SerialDriverKit/pd_rs232_s_txo.md",
       "hash": "c599620d7759287a4ff3b227b9c44d68f91465abdf3a0827f0dca3888b1bea39"
     },
     "https://developer.apple.com/tutorials/data/documentation/serialdriverkit/serialdriverkit-data-types.json": {

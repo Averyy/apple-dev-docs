@@ -12,37 +12,37 @@
     },
     "https://developer.apple.com/documentation/permissionkit/askcenter/ask(_:in:)-39vi7": {
       "etag": "\"3366-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/ask-in-39vi7.md",
+      "file_path": "documentation/PermissionKit/askcenter/ask(_,in)-39vi7.md",
       "hash": "92dd21492b319476bc6dfdeb699b31af46c7a587ac28a98c679360049f9d06fb"
     },
     "https://developer.apple.com/documentation/permissionkit/askcenter/ask(_:in:)-3znb6": {
       "etag": "\"3095-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/ask-in-3znb6.md",
+      "file_path": "documentation/PermissionKit/askcenter/ask(_,in)-3znb6.md",
       "hash": "8aea1d42fc53effe025733cedf94902df0e6da0b5ecb7db45c059bbc3a44ea9c"
     },
     "https://developer.apple.com/documentation/permissionkit/askcenter/ask(_:in:)-6xupo": {
       "etag": "\"3186-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/ask-in-6xupo.md",
+      "file_path": "documentation/PermissionKit/askcenter/ask(_,in)-6xupo.md",
       "hash": "f4c719f8117969d91834dffabb37713e1ecf16bf62dff5ea8c3bbdf3da7d4a70"
     },
     "https://developer.apple.com/documentation/permissionkit/askcenter/ask(_:in:)-8ks48": {
       "etag": "\"31d7-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/ask-in-8ks48.md",
+      "file_path": "documentation/PermissionKit/askcenter/ask(_,in)-8ks48.md",
       "hash": "da4343148481e01012e1f3f966972855f02cd81c4795afa94f1dc8103dbf6cd3"
     },
     "https://developer.apple.com/documentation/permissionkit/askcenter/asksignificantchangepermission(for:permissionflow:in:)-85gmn": {
       "etag": "\"32ec-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/asksignificantchangepermission-forpermissionflowin-85gmn.md",
+      "file_path": "documentation/PermissionKit/askcenter/asksignificantchangepermission(for,permissionflow,in)-85gmn.md",
       "hash": "beeade77af790234a85e6709e78443908fcc0c9e0af6ef1e7b881b7cd0b7a0a0"
     },
     "https://developer.apple.com/documentation/permissionkit/askcenter/asksignificantchangepermission(for:permissionflow:in:)-nm9w": {
       "etag": "\"333a-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/asksignificantchangepermission-forpermissionflowin-nm9w.md",
+      "file_path": "documentation/PermissionKit/askcenter/asksignificantchangepermission(for,permissionflow,in)-nm9w.md",
       "hash": "7c6def0b19f629f3f2af476aeb1f58daaad78d447c30618740ef473e26b5c447"
     },
     "https://developer.apple.com/documentation/permissionkit/askcenter/responses(for:)": {
       "etag": "\"2c83-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/responses-for.md",
+      "file_path": "documentation/PermissionKit/askcenter/responses(for).md",
       "hash": "c7f0ee59433b8bba3a47093ee86c9e0cb7bd2a72be23ee865be3af4b9e87eda6"
     },
     "https://developer.apple.com/documentation/permissionkit/askcenter/shared": {
@@ -57,12 +57,12 @@
     },
     "https://developer.apple.com/documentation/permissionkit/askerror/!=(_:_:)": {
       "etag": "W/\"9d6c9dd630bd1dd1afe1d5fe7d75fc77\"",
-      "file_path": "documentation/PermissionKit/askerror/unknown.md",
+      "file_path": "documentation/PermissionKit/askerror/noteq(_,_).md",
       "hash": "122984afb64bd7dde44b520f2934c9b6a6d8142ca736c66b882506f6f212cd61"
     },
     "https://developer.apple.com/documentation/permissionkit/askerror/==(_:_:)": {
       "etag": "W/\"81ec0dbfd431f7d2ca27e20459361cf8\"",
-      "file_path": "documentation/PermissionKit/askerror/unknown.md",
+      "file_path": "documentation/PermissionKit/askerror/eqeq(_,_).md",
       "hash": "aa3ca0ff78df10fa537480ca08fd2b642b7e9377d5fb9adb86b714def00b28be"
     },
     "https://developer.apple.com/documentation/permissionkit/askerror/communicationlimitsnotenabled": {
@@ -92,7 +92,7 @@
     },
     "https://developer.apple.com/documentation/permissionkit/askerror/systemerror(underlyingerror:)": {
       "etag": "\"1dd0-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askerror/systemerror-underlyingerror.md",
+      "file_path": "documentation/PermissionKit/askerror/systemerror(underlyingerror).md",
       "hash": "51f4ddb96b2c9084fb24e77c6652269a951bd16d14ee596287720573e21d039b"
     },
     "https://developer.apple.com/documentation/permissionkit/askerror/unknown": {
@@ -107,7 +107,7 @@
     },
     "https://developer.apple.com/documentation/permissionkit/askpermissionaction/callasfunction(_:)": {
       "etag": "\"1fb6-65d55e6941118-df\"",
-      "file_path": "documentation/PermissionKit/askpermissionaction/callasfunction.md",
+      "file_path": "documentation/PermissionKit/askpermissionaction/callasfunction(_).md",
       "hash": "8ed96f86954066687140a371cd98a9f402d044b5d65012498861c798a6c1fed0"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationhandle": {
@@ -117,12 +117,12 @@
     },
     "https://developer.apple.com/documentation/permissionkit/communicationhandle/init(value:kind:)": {
       "etag": "\"1aa6-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/communicationhandle/init-valuekind.md",
+      "file_path": "documentation/PermissionKit/communicationhandle/init(value,kind).md",
       "hash": "3df037c08253e3f537cf943636b466b0e98275382ae4ba1af98610bdd6ebf419"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationhandle/kind-swift.enum": {
       "etag": "\"2346-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/communicationhandle/kind-swiftenum.md",
+      "file_path": "documentation/PermissionKit/communicationhandle/kind-swift.enum.md",
       "hash": "48ff1cea6c0a680fe848136797ac1124c7948224c6a55fedb4ec198c5510c46e"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationhandle/kind-swift.enum/custom": {
@@ -142,7 +142,7 @@
     },
     "https://developer.apple.com/documentation/permissionkit/communicationhandle/kind-swift.property": {
       "etag": "\"1899-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/communicationhandle/kind-swiftproperty.md",
+      "file_path": "documentation/PermissionKit/communicationhandle/kind-swift.property.md",
       "hash": "3b454d55d58f1d9c6287223f0feae0c5f3871c44b1296b6b6662207f0f0acefa"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationhandle/value": {
@@ -157,12 +157,12 @@
     },
     "https://developer.apple.com/documentation/permissionkit/communicationlimits/ask(_:in:)-5ou06": {
       "etag": "\"2dfc-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimits/ask-in-5ou06.md",
+      "file_path": "documentation/PermissionKit/communicationlimits/ask(_,in)-5ou06.md",
       "hash": "128109b4215bdc1cc9d64e83bc4eaeae8c6b0db42a5574a8a71b44605fed041a"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationlimits/ask(_:in:)-5tzyy": {
       "etag": "\"2c91-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimits/ask-in-5tzyy.md",
+      "file_path": "documentation/PermissionKit/communicationlimits/ask(_,in)-5tzyy.md",
       "hash": "3794342e3b0f05efadc22a7ba289667fbb3c4be3b7c8946514d956f560e91b5c"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationlimits/current": {
@@ -172,12 +172,12 @@
     },
     "https://developer.apple.com/documentation/permissionkit/communicationlimits/isknownhandle(_:)": {
       "etag": "\"1fce-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimits/isknownhandle.md",
+      "file_path": "documentation/PermissionKit/communicationlimits/isknownhandle(_).md",
       "hash": "c212a3af08804ad68721900abede3aa33f50cd862b405f687a3333d882ec1073"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationlimits/knownhandles(in:)": {
       "etag": "\"2653-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimits/knownhandles-in.md",
+      "file_path": "documentation/PermissionKit/communicationlimits/knownhandles(in).md",
       "hash": "8aa00d4d2c80bc4eb91199a87b8a72a0ad3dd8dd013807e2e334c664b28d92f0"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationlimits/updates": {
@@ -197,7 +197,7 @@
     },
     "https://developer.apple.com/documentation/permissionkit/communicationlimitsbutton/init(question:label:)": {
       "etag": "\"29a1-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimitsbutton/init-questionlabel.md",
+      "file_path": "documentation/PermissionKit/communicationlimitsbutton/init(question,label).md",
       "hash": "781e1e78e7d24463a7c699bd971cdf063acd1a8ed57005dfdfcf0516c8a9cd39"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationlimitsbutton/question": {
@@ -277,22 +277,22 @@
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/init(personinformation:)": {
       "etag": "\"1e02-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/init-personinformation.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/init(personinformation).md",
       "hash": "57b48c09206553fb5e2cfbd881ce986213074643e54f109469eb71eeba880c9e"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/init(personinformation:actions:)": {
       "etag": "\"277f-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/init-personinformationactions.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/init(personinformation,actions).md",
       "hash": "dc6c2de090e297ef1da8b350ce9adde8969bfdb63a29851bb1e9b55780998bd5"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/personinformation-swift.property": {
       "etag": "\"1de8-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swiftproperty.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.property.md",
       "hash": "f132a8b9c06c20dcc6b51f93ab8da55dab5acfb9e9ee13163e1c417392e8cd95"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/personinformation-swift.struct": {
       "etag": "\"3144-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swiftstruct.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct.md",
       "hash": "8b9dbb61ba41365b7f0e687cbd733bcf01028fa5b6b6b57e13e6e4586fa193fe"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/personinformation-swift.struct/avatarimage": {
@@ -302,7 +302,7 @@
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/personinformation-swift.struct/encode(to:)": {
       "etag": "\"1882-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/encode-to.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/encode(to).md",
       "hash": "85b3907b6ef89f8b455d90c567f78e16963cf905ae8940968d752a98e0e41319"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/personinformation-swift.struct/handle": {
@@ -312,12 +312,12 @@
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/personinformation-swift.struct/init(from:)": {
       "etag": "\"1e2c-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/init-from.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/init(from).md",
       "hash": "a7c999c025dbce027cb42ce3049658a0bfe5b47400ea417ba210784772f931ab"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/personinformation-swift.struct/init(handle:namecomponents:avatarimage:)": {
       "etag": "\"2a60-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/init-handlenamecomponentsavatarimage.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/init(handle,namecomponents,avatarimage).md",
       "hash": "ad46c53c713c804a7616bbf7fc9a74f7407bba4441febf893d1e46c124efc30c"
     },
     "https://developer.apple.com/documentation/permissionkit/communicationtopic/personinformation-swift.struct/namecomponents": {
@@ -342,17 +342,17 @@
     },
     "https://developer.apple.com/documentation/permissionkit/permissionbutton/init(question:label:)-25jfa": {
       "etag": "\"271f-65d55e6941118-df\"",
-      "file_path": "documentation/PermissionKit/permissionbutton/init-questionlabel-25jfa.md",
+      "file_path": "documentation/PermissionKit/permissionbutton/init(question,label)-25jfa.md",
       "hash": "e557adb471e26cd104153badb6d2f8a2e25b94ba7f5be3c308f9d6112b28d222"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionbutton/init(question:label:)-8291n": {
       "etag": "\"2794-65d55e6941118-df\"",
-      "file_path": "documentation/PermissionKit/permissionbutton/init-questionlabel-8291n.md",
+      "file_path": "documentation/PermissionKit/permissionbutton/init(question,label)-8291n.md",
       "hash": "bc399b25c91e89576c1676e0ae96eecc41b683fe20550ebe8c0cb689598283a3"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionbutton/init(question:permissionflow:onpermissionresult:label:)": {
       "etag": "\"3be7-65d55e6941118-df\"",
-      "file_path": "documentation/PermissionKit/permissionbutton/init-questionpermissionflowonpermissionresultlabel.md",
+      "file_path": "documentation/PermissionKit/permissionbutton/init(question,permissionflow,onpermissionresult,label).md",
       "hash": "acff5bfc12ca87456479e2e45eedfa7d7b5d796b55558179fc97e0b714ec6c93"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionbutton/question": {
@@ -367,12 +367,12 @@
     },
     "https://developer.apple.com/documentation/permissionkit/permissionchoice/==(_:_:)": {
       "etag": "\"1c5b-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionchoice/equal.md",
+      "file_path": "documentation/PermissionKit/permissionchoice/eqeq(_,_).md",
       "hash": "8299ac1ac5d56b7dfdb5602b09173b6182838ec612e3250c4d0609867beef8e7"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionchoice/answer-swift.enum": {
       "etag": "\"28f5-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionchoice/answer-swiftenum.md",
+      "file_path": "documentation/PermissionKit/permissionchoice/answer-swift.enum.md",
       "hash": "d2b2f2332e024b6ef740c9c57acc3aeac0abd7a4f3a510d89ee6553e742fd0b3"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionchoice/answer-swift.enum/approval": {
@@ -387,7 +387,7 @@
     },
     "https://developer.apple.com/documentation/permissionkit/permissionchoice/answer-swift.property": {
       "etag": "\"1d3c-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionchoice/answer-swiftproperty.md",
+      "file_path": "documentation/PermissionKit/permissionchoice/answer-swift.property.md",
       "hash": "3bbdc2f45b5b48e9ccf769c291870d1f15cfd5237a635aa5f0e7dcb896cf9948"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionchoice/approve": {
@@ -402,7 +402,7 @@
     },
     "https://developer.apple.com/documentation/permissionkit/permissionchoice/hash(into:)": {
       "etag": "\"19ce-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionchoice/hash-into.md",
+      "file_path": "documentation/PermissionKit/permissionchoice/hash(into).md",
       "hash": "347b54c09cbce2bf31f1894bde6e4c6aaa5118fc09b268e479bff62daffe42cb"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionchoice/id": {
@@ -462,22 +462,22 @@
     },
     "https://developer.apple.com/documentation/permissionkit/permissionquestion/init(communicationtopic:)": {
       "etag": "\"23e7-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/permissionquestion/init-communicationtopic.md",
+      "file_path": "documentation/PermissionKit/permissionquestion/init(communicationtopic).md",
       "hash": "e476217342ddd94a38578140cfe086132b9d1e222626bf9020025275167188f4"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionquestion/init(handle:)": {
       "etag": "\"2791-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/permissionquestion/init-handle.md",
+      "file_path": "documentation/PermissionKit/permissionquestion/init(handle).md",
       "hash": "93eb5a52fa71ee7600a0adcb90025c2507487c7241f830bb2d705d4d3ab394e8"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionquestion/init(handles:)": {
       "etag": "\"27a9-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/permissionquestion/init-handles.md",
+      "file_path": "documentation/PermissionKit/permissionquestion/init(handles).md",
       "hash": "4ff8c1b2150abb3bfac33809b91249cf683963fce4b53880d034aa7254916ab9"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionquestion/init(significantappupdatetopic:)": {
       "etag": "\"2439-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/permissionquestion/init-significantappupdatetopic.md",
+      "file_path": "documentation/PermissionKit/permissionquestion/init(significantappupdatetopic).md",
       "hash": "22c68458c5c83ac67fa50c1a3db24f8d995f292ed3d237b80797e6aef2647193"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionquestion/topic": {
@@ -507,12 +507,12 @@
     },
     "https://developer.apple.com/documentation/permissionkit/permissionresult/approveinperson(approved:)": {
       "etag": "\"153f-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionresult/approveinperson-approved.md",
+      "file_path": "documentation/PermissionKit/permissionresult/approveinperson(approved).md",
       "hash": "22798ee736a17a68104b1fa800ee4ee460d23e57b958fc6cc1a30afe5a273d39"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionresult/asktoapprove(didsend:)": {
       "etag": "\"136a-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionresult/asktoapprove-didsend.md",
+      "file_path": "documentation/PermissionKit/permissionresult/asktoapprove(didsend).md",
       "hash": "2738e680301f62a1f3d815377e0c983697646f997e904971de189d4e0071238a"
     },
     "https://developer.apple.com/documentation/permissionkit/permissionresult/cancel": {
@@ -547,7 +547,7 @@
     },
     "https://developer.apple.com/documentation/permissionkit/significantappupdatetopic/init(description:)": {
       "etag": "\"153d-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/significantappupdatetopic/init-description.md",
+      "file_path": "documentation/PermissionKit/significantappupdatetopic/init(description).md",
       "hash": "f66fc273361918ba0dc17a234681ad365c7a7863261b91e963abd495cfdd6cc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/PermissionKit.json": {
@@ -562,37 +562,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askcenter/ask(_:in:)-39vi7.json": {
       "etag": "\"3366-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/ask-in-39vi7.md",
+      "file_path": "documentation/PermissionKit/askcenter/ask(_,in)-39vi7.md",
       "hash": "92dd21492b319476bc6dfdeb699b31af46c7a587ac28a98c679360049f9d06fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askcenter/ask(_:in:)-3znb6.json": {
       "etag": "\"3095-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/ask-in-3znb6.md",
+      "file_path": "documentation/PermissionKit/askcenter/ask(_,in)-3znb6.md",
       "hash": "8aea1d42fc53effe025733cedf94902df0e6da0b5ecb7db45c059bbc3a44ea9c"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askcenter/ask(_:in:)-6xupo.json": {
       "etag": "\"3186-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/ask-in-6xupo.md",
+      "file_path": "documentation/PermissionKit/askcenter/ask(_,in)-6xupo.md",
       "hash": "f4c719f8117969d91834dffabb37713e1ecf16bf62dff5ea8c3bbdf3da7d4a70"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askcenter/ask(_:in:)-8ks48.json": {
       "etag": "\"31d7-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/ask-in-8ks48.md",
+      "file_path": "documentation/PermissionKit/askcenter/ask(_,in)-8ks48.md",
       "hash": "da4343148481e01012e1f3f966972855f02cd81c4795afa94f1dc8103dbf6cd3"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askcenter/asksignificantchangepermission(for:permissionflow:in:)-85gmn.json": {
       "etag": "\"32ec-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/asksignificantchangepermission-forpermissionflowin-85gmn.md",
+      "file_path": "documentation/PermissionKit/askcenter/asksignificantchangepermission(for,permissionflow,in)-85gmn.md",
       "hash": "beeade77af790234a85e6709e78443908fcc0c9e0af6ef1e7b881b7cd0b7a0a0"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askcenter/asksignificantchangepermission(for:permissionflow:in:)-nm9w.json": {
       "etag": "\"333a-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/asksignificantchangepermission-forpermissionflowin-nm9w.md",
+      "file_path": "documentation/PermissionKit/askcenter/asksignificantchangepermission(for,permissionflow,in)-nm9w.md",
       "hash": "7c6def0b19f629f3f2af476aeb1f58daaad78d447c30618740ef473e26b5c447"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askcenter/responses(for:).json": {
       "etag": "\"2c83-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askcenter/responses-for.md",
+      "file_path": "documentation/PermissionKit/askcenter/responses(for).md",
       "hash": "c7f0ee59433b8bba3a47093ee86c9e0cb7bd2a72be23ee865be3af4b9e87eda6"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askcenter/shared.json": {
@@ -607,12 +607,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askerror/!=(_:_:).json": {
       "etag": "W/\"9d6c9dd630bd1dd1afe1d5fe7d75fc77\"",
-      "file_path": "documentation/PermissionKit/askerror/unknown.md",
+      "file_path": "documentation/PermissionKit/askerror/noteq(_,_).md",
       "hash": "122984afb64bd7dde44b520f2934c9b6a6d8142ca736c66b882506f6f212cd61"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askerror/==(_:_:).json": {
       "etag": "W/\"81ec0dbfd431f7d2ca27e20459361cf8\"",
-      "file_path": "documentation/PermissionKit/askerror/unknown.md",
+      "file_path": "documentation/PermissionKit/askerror/eqeq(_,_).md",
       "hash": "aa3ca0ff78df10fa537480ca08fd2b642b7e9377d5fb9adb86b714def00b28be"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askerror/communicationlimitsnotenabled.json": {
@@ -642,7 +642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askerror/systemerror(underlyingerror:).json": {
       "etag": "\"1dd0-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/askerror/systemerror-underlyingerror.md",
+      "file_path": "documentation/PermissionKit/askerror/systemerror(underlyingerror).md",
       "hash": "51f4ddb96b2c9084fb24e77c6652269a951bd16d14ee596287720573e21d039b"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askerror/unknown.json": {
@@ -657,7 +657,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/askpermissionaction/callasfunction(_:).json": {
       "etag": "\"1fb6-65d55e6941118-df\"",
-      "file_path": "documentation/PermissionKit/askpermissionaction/callasfunction.md",
+      "file_path": "documentation/PermissionKit/askpermissionaction/callasfunction(_).md",
       "hash": "8ed96f86954066687140a371cd98a9f402d044b5d65012498861c798a6c1fed0"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationhandle.json": {
@@ -667,12 +667,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationhandle/init(value:kind:).json": {
       "etag": "\"1aa6-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/communicationhandle/init-valuekind.md",
+      "file_path": "documentation/PermissionKit/communicationhandle/init(value,kind).md",
       "hash": "3df037c08253e3f537cf943636b466b0e98275382ae4ba1af98610bdd6ebf419"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationhandle/kind-swift.enum.json": {
       "etag": "\"2346-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/communicationhandle/kind-swiftenum.md",
+      "file_path": "documentation/PermissionKit/communicationhandle/kind-swift.enum.md",
       "hash": "48ff1cea6c0a680fe848136797ac1124c7948224c6a55fedb4ec198c5510c46e"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationhandle/kind-swift.enum/custom.json": {
@@ -692,7 +692,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationhandle/kind-swift.property.json": {
       "etag": "\"1899-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/communicationhandle/kind-swiftproperty.md",
+      "file_path": "documentation/PermissionKit/communicationhandle/kind-swift.property.md",
       "hash": "3b454d55d58f1d9c6287223f0feae0c5f3871c44b1296b6b6662207f0f0acefa"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationhandle/value.json": {
@@ -707,12 +707,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationlimits/ask(_:in:)-5ou06.json": {
       "etag": "\"2dfc-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimits/ask-in-5ou06.md",
+      "file_path": "documentation/PermissionKit/communicationlimits/ask(_,in)-5ou06.md",
       "hash": "128109b4215bdc1cc9d64e83bc4eaeae8c6b0db42a5574a8a71b44605fed041a"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationlimits/ask(_:in:)-5tzyy.json": {
       "etag": "\"2c91-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimits/ask-in-5tzyy.md",
+      "file_path": "documentation/PermissionKit/communicationlimits/ask(_,in)-5tzyy.md",
       "hash": "3794342e3b0f05efadc22a7ba289667fbb3c4be3b7c8946514d956f560e91b5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationlimits/current.json": {
@@ -722,12 +722,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationlimits/isknownhandle(_:).json": {
       "etag": "\"1fce-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimits/isknownhandle.md",
+      "file_path": "documentation/PermissionKit/communicationlimits/isknownhandle(_).md",
       "hash": "c212a3af08804ad68721900abede3aa33f50cd862b405f687a3333d882ec1073"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationlimits/knownhandles(in:).json": {
       "etag": "\"2653-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimits/knownhandles-in.md",
+      "file_path": "documentation/PermissionKit/communicationlimits/knownhandles(in).md",
       "hash": "8aa00d4d2c80bc4eb91199a87b8a72a0ad3dd8dd013807e2e334c664b28d92f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationlimits/updates.json": {
@@ -747,7 +747,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationlimitsbutton/init(question:label:).json": {
       "etag": "\"29a1-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationlimitsbutton/init-questionlabel.md",
+      "file_path": "documentation/PermissionKit/communicationlimitsbutton/init(question,label).md",
       "hash": "781e1e78e7d24463a7c699bd971cdf063acd1a8ed57005dfdfcf0516c8a9cd39"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationlimitsbutton/question.json": {
@@ -827,22 +827,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/init(personinformation:).json": {
       "etag": "\"1e02-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/init-personinformation.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/init(personinformation).md",
       "hash": "57b48c09206553fb5e2cfbd881ce986213074643e54f109469eb71eeba880c9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/init(personinformation:actions:).json": {
       "etag": "\"277f-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/init-personinformationactions.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/init(personinformation,actions).md",
       "hash": "dc6c2de090e297ef1da8b350ce9adde8969bfdb63a29851bb1e9b55780998bd5"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/personinformation-swift.property.json": {
       "etag": "\"1de8-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swiftproperty.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.property.md",
       "hash": "f132a8b9c06c20dcc6b51f93ab8da55dab5acfb9e9ee13163e1c417392e8cd95"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/personinformation-swift.struct.json": {
       "etag": "\"3144-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swiftstruct.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct.md",
       "hash": "8b9dbb61ba41365b7f0e687cbd733bcf01028fa5b6b6b57e13e6e4586fa193fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/personinformation-swift.struct/avatarimage.json": {
@@ -852,7 +852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/personinformation-swift.struct/encode(to:).json": {
       "etag": "\"1882-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/encode-to.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/encode(to).md",
       "hash": "85b3907b6ef89f8b455d90c567f78e16963cf905ae8940968d752a98e0e41319"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/personinformation-swift.struct/handle.json": {
@@ -862,12 +862,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/personinformation-swift.struct/init(from:).json": {
       "etag": "\"1e2c-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/init-from.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/init(from).md",
       "hash": "a7c999c025dbce027cb42ce3049658a0bfe5b47400ea417ba210784772f931ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/personinformation-swift.struct/init(handle:namecomponents:avatarimage:).json": {
       "etag": "\"2a60-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/init-handlenamecomponentsavatarimage.md",
+      "file_path": "documentation/PermissionKit/communicationtopic/personinformation-swift.struct/init(handle,namecomponents,avatarimage).md",
       "hash": "ad46c53c713c804a7616bbf7fc9a74f7407bba4441febf893d1e46c124efc30c"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/communicationtopic/personinformation-swift.struct/namecomponents.json": {
@@ -892,17 +892,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionbutton/init(question:label:)-25jfa.json": {
       "etag": "\"271f-65d55e6941118-df\"",
-      "file_path": "documentation/PermissionKit/permissionbutton/init-questionlabel-25jfa.md",
+      "file_path": "documentation/PermissionKit/permissionbutton/init(question,label)-25jfa.md",
       "hash": "e557adb471e26cd104153badb6d2f8a2e25b94ba7f5be3c308f9d6112b28d222"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionbutton/init(question:label:)-8291n.json": {
       "etag": "\"2794-65d55e6941118-df\"",
-      "file_path": "documentation/PermissionKit/permissionbutton/init-questionlabel-8291n.md",
+      "file_path": "documentation/PermissionKit/permissionbutton/init(question,label)-8291n.md",
       "hash": "bc399b25c91e89576c1676e0ae96eecc41b683fe20550ebe8c0cb689598283a3"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionbutton/init(question:permissionflow:onpermissionresult:label:).json": {
       "etag": "\"3be7-65d55e6941118-df\"",
-      "file_path": "documentation/PermissionKit/permissionbutton/init-questionpermissionflowonpermissionresultlabel.md",
+      "file_path": "documentation/PermissionKit/permissionbutton/init(question,permissionflow,onpermissionresult,label).md",
       "hash": "acff5bfc12ca87456479e2e45eedfa7d7b5d796b55558179fc97e0b714ec6c93"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionbutton/question.json": {
@@ -917,12 +917,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionchoice/==(_:_:).json": {
       "etag": "\"1c5b-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionchoice/equal.md",
+      "file_path": "documentation/PermissionKit/permissionchoice/eqeq(_,_).md",
       "hash": "8299ac1ac5d56b7dfdb5602b09173b6182838ec612e3250c4d0609867beef8e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionchoice/answer-swift.enum.json": {
       "etag": "\"28f5-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionchoice/answer-swiftenum.md",
+      "file_path": "documentation/PermissionKit/permissionchoice/answer-swift.enum.md",
       "hash": "d2b2f2332e024b6ef740c9c57acc3aeac0abd7a4f3a510d89ee6553e742fd0b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionchoice/answer-swift.enum/approval.json": {
@@ -937,7 +937,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionchoice/answer-swift.property.json": {
       "etag": "\"1d3c-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionchoice/answer-swiftproperty.md",
+      "file_path": "documentation/PermissionKit/permissionchoice/answer-swift.property.md",
       "hash": "3bbdc2f45b5b48e9ccf769c291870d1f15cfd5237a635aa5f0e7dcb896cf9948"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionchoice/approve.json": {
@@ -952,7 +952,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionchoice/hash(into:).json": {
       "etag": "\"19ce-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionchoice/hash-into.md",
+      "file_path": "documentation/PermissionKit/permissionchoice/hash(into).md",
       "hash": "347b54c09cbce2bf31f1894bde6e4c6aaa5118fc09b268e479bff62daffe42cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionchoice/id.json": {
@@ -1012,22 +1012,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionquestion/init(communicationtopic:).json": {
       "etag": "\"23e7-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/permissionquestion/init-communicationtopic.md",
+      "file_path": "documentation/PermissionKit/permissionquestion/init(communicationtopic).md",
       "hash": "e476217342ddd94a38578140cfe086132b9d1e222626bf9020025275167188f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionquestion/init(handle:).json": {
       "etag": "\"2791-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/permissionquestion/init-handle.md",
+      "file_path": "documentation/PermissionKit/permissionquestion/init(handle).md",
       "hash": "93eb5a52fa71ee7600a0adcb90025c2507487c7241f830bb2d705d4d3ab394e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionquestion/init(handles:).json": {
       "etag": "\"27a9-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/permissionquestion/init-handles.md",
+      "file_path": "documentation/PermissionKit/permissionquestion/init(handles).md",
       "hash": "4ff8c1b2150abb3bfac33809b91249cf683963fce4b53880d034aa7254916ab9"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionquestion/init(significantappupdatetopic:).json": {
       "etag": "\"2439-65d55e6934fae-df\"",
-      "file_path": "documentation/PermissionKit/permissionquestion/init-significantappupdatetopic.md",
+      "file_path": "documentation/PermissionKit/permissionquestion/init(significantappupdatetopic).md",
       "hash": "22c68458c5c83ac67fa50c1a3db24f8d995f292ed3d237b80797e6aef2647193"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionquestion/topic.json": {
@@ -1057,12 +1057,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionresult/approveinperson(approved:).json": {
       "etag": "\"153f-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionresult/approveinperson-approved.md",
+      "file_path": "documentation/PermissionKit/permissionresult/approveinperson(approved).md",
       "hash": "22798ee736a17a68104b1fa800ee4ee460d23e57b958fc6cc1a30afe5a273d39"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionresult/asktoapprove(didsend:).json": {
       "etag": "\"136a-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/permissionresult/asktoapprove-didsend.md",
+      "file_path": "documentation/PermissionKit/permissionresult/asktoapprove(didsend).md",
       "hash": "2738e680301f62a1f3d815377e0c983697646f997e904971de189d4e0071238a"
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/permissionresult/cancel.json": {
@@ -1097,7 +1097,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/permissionkit/significantappupdatetopic/init(description:).json": {
       "etag": "\"153d-65d55e6918448-df\"",
-      "file_path": "documentation/PermissionKit/significantappupdatetopic/init-description.md",
+      "file_path": "documentation/PermissionKit/significantappupdatetopic/init(description).md",
       "hash": "f66fc273361918ba0dc17a234681ad365c7a7863261b91e963abd495cfdd6cc6"
     }
   },

@@ -37,22 +37,22 @@
     },
     "https://developer.apple.com/documentation/messages/msconversation/insert(_:completionhandler:)-3g248": {
       "etag": "\"7303-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/insert-completionhandler-3g248.md",
+      "file_path": "documentation/Messages/msconversation/insert(_,completionhandler)-3g248.md",
       "hash": "ad3aba03545062466770ab1d23e9cc8863ac4befa09d01c58cd222c9bcc41cf3"
     },
     "https://developer.apple.com/documentation/messages/msconversation/insert(_:completionhandler:)-7fpdd": {
       "etag": "\"63b4-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/insert-completionhandler-7fpdd.md",
+      "file_path": "documentation/Messages/msconversation/insert(_,completionhandler)-7fpdd.md",
       "hash": "481b8832ca5e3429d4c53b9fc96f544cd70b8eebefde3127759a87cc21e9b678"
     },
     "https://developer.apple.com/documentation/messages/msconversation/insertattachment(_:withalternatefilename:completionhandler:)": {
       "etag": "\"7698-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/insertattachment-withalternatefilenamecompletionhandler.md",
+      "file_path": "documentation/Messages/msconversation/insertattachment(_,withalternatefilename,completionhandler).md",
       "hash": "c251c1c19086135718cd8318dab63681f34e5ed96a091f5826ec17a3ea11d290"
     },
     "https://developer.apple.com/documentation/messages/msconversation/inserttext(_:completionhandler:)": {
       "etag": "\"65a5-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/inserttext-completionhandler.md",
+      "file_path": "documentation/Messages/msconversation/inserttext(_,completionhandler).md",
       "hash": "2b1145f907dbf7c5e277f05376bb8f3e9e24e470d228935909725b30af3228c4"
     },
     "https://developer.apple.com/documentation/messages/msconversation/localparticipantidentifier": {
@@ -72,22 +72,22 @@
     },
     "https://developer.apple.com/documentation/messages/msconversation/send(_:completionhandler:)-4kje0": {
       "etag": "\"7301-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/send-completionhandler-4kje0.md",
+      "file_path": "documentation/Messages/msconversation/send(_,completionhandler)-4kje0.md",
       "hash": "3931727a9a774ff5ef5a4a55055c7b5d34491d4f4119b71e09bbbcda7a69c766"
     },
     "https://developer.apple.com/documentation/messages/msconversation/send(_:completionhandler:)-9krz": {
       "etag": "\"7640-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/send-completionhandler-9krz.md",
+      "file_path": "documentation/Messages/msconversation/send(_,completionhandler)-9krz.md",
       "hash": "ab5f25f899ed6837e5176ff9d4815cd473d33296632eb17acbd3d5a9bcd7f5da"
     },
     "https://developer.apple.com/documentation/messages/msconversation/sendattachment(_:withalternatefilename:completionhandler:)": {
       "etag": "\"7bc9-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/sendattachment-withalternatefilenamecompletionhandler.md",
+      "file_path": "documentation/Messages/msconversation/sendattachment(_,withalternatefilename,completionhandler).md",
       "hash": "85e81d0a21c696dd9019f2d517d4b51b286fc4b310b233cbc965cb9573d6146a"
     },
     "https://developer.apple.com/documentation/messages/msconversation/sendtext(_:completionhandler:)": {
       "etag": "\"7049-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/sendtext-completionhandler.md",
+      "file_path": "documentation/Messages/msconversation/sendtext(_,completionhandler).md",
       "hash": "a3bd05ba9a07ae10a687bc7bb99cd7baa41814aa47646dde82263cf97602de85"
     },
     "https://developer.apple.com/documentation/messages/mscriticalmessage": {
@@ -97,7 +97,7 @@
     },
     "https://developer.apple.com/documentation/messages/mscriticalmessage/init(messagetext:)": {
       "etag": "\"10cb-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/mscriticalmessage/init-messagetext.md",
+      "file_path": "documentation/Messages/mscriticalmessage/init(messagetext).md",
       "hash": "1c0b3b645773aece10ec7ba426a86fefe8b07107dc7b9a878ed291e674a22c09"
     },
     "https://developer.apple.com/documentation/messages/mscriticalmessage/messagetext": {
@@ -162,12 +162,12 @@
     },
     "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/checkauthorizationstatus(for:)": {
       "etag": "\"223b-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mscriticalsmsmessenger/checkauthorizationstatus-for.md",
+      "file_path": "documentation/Messages/mscriticalsmsmessenger/checkauthorizationstatus(for).md",
       "hash": "2b2a643d73784a3030e079e8aa040a298566d2db9a939d5388e563f36a25a1dd"
     },
     "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/init()": {
       "etag": "\"ed2-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mscriticalsmsmessenger/init.md",
+      "file_path": "documentation/Messages/mscriticalsmsmessenger/init().md",
       "hash": "e8925a414dfb85b1fe2f2893984a8f2c27acb7518f57d31a06924b4a5b13ca7e"
     },
     "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/maximumcriticalmessagingrecipients": {
@@ -177,12 +177,12 @@
     },
     "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/requestauthorization(for:)": {
       "etag": "\"2f11-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mscriticalsmsmessenger/requestauthorization-for.md",
+      "file_path": "documentation/Messages/mscriticalsmsmessenger/requestauthorization(for).md",
       "hash": "ada4303f82008b1b1f8c2d3297e20c0a1b7b5a7f06d0ec7f82cfeb3087a4616c"
     },
     "https://developer.apple.com/documentation/messages/mscriticalsmsmessenger/send(_:to:)": {
       "etag": "\"26cf-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mscriticalsmsmessenger/send-to.md",
+      "file_path": "documentation/Messages/mscriticalsmsmessenger/send(_,to).md",
       "hash": "67c8044325abf2590d9edc39a4fb92ef62fe490b19f92cfa22117dadcf26895e"
     },
     "https://developer.apple.com/documentation/messages/msmessage": {
@@ -202,17 +202,17 @@
     },
     "https://developer.apple.com/documentation/messages/msmessage/init()": {
       "etag": "\"1f01-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessage/init.md",
+      "file_path": "documentation/Messages/msmessage/init().md",
       "hash": "75a03dbadba45bd387cb31a1ac48ca041916b4c00ab6c9a68ec5c32de8667aa0"
     },
     "https://developer.apple.com/documentation/messages/msmessage/init(coder:)": {
       "etag": "\"1346-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessage/init-coder.md",
+      "file_path": "documentation/Messages/msmessage/init(coder).md",
       "hash": "bb78746b8381d5fabb78e64837b69a18c58e80d0240cdd6651d9fef987e4376f"
     },
     "https://developer.apple.com/documentation/messages/msmessage/init(session:)": {
       "etag": "\"27fd-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessage/init-session.md",
+      "file_path": "documentation/Messages/msmessage/init(session).md",
       "hash": "489408bb361ae24b5b03466a321d8ffda3ef53bb2eebc458688a4943eed391d0"
     },
     "https://developer.apple.com/documentation/messages/msmessage/ispending": {
@@ -282,7 +282,7 @@
     },
     "https://developer.apple.com/documentation/messages/msmessageerrorcode/init(rawvalue:)": {
       "etag": "\"12ad-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msmessageerrorcode/init-rawvalue.md",
+      "file_path": "documentation/Messages/msmessageerrorcode/init(rawvalue).md",
       "hash": "70f44acb4be6d08919ffa01cb5a8583741fac686e569c0d3b5450bf0d1173b87"
     },
     "https://developer.apple.com/documentation/messages/msmessageerrorcode/sendwhilenotvisible": {
@@ -337,7 +337,7 @@
     },
     "https://developer.apple.com/documentation/messages/msmessagelivelayout/init(alternatelayout:)": {
       "etag": "\"221e-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msmessagelivelayout/init-alternatelayout.md",
+      "file_path": "documentation/Messages/msmessagelivelayout/init(alternatelayout).md",
       "hash": "eef838c5e3b7158b63132e45a17d663e52e809fa4c453ae60f82082b951ca5b3"
     },
     "https://developer.apple.com/documentation/messages/msmessagesapppresentationcontext": {
@@ -347,7 +347,7 @@
     },
     "https://developer.apple.com/documentation/messages/msmessagesapppresentationcontext/init(rawvalue:)": {
       "etag": "\"13cf-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msmessagesapppresentationcontext/init-rawvalue.md",
+      "file_path": "documentation/Messages/msmessagesapppresentationcontext/init(rawvalue).md",
       "hash": "712ebca925b87dce4fb9269f037253170edb66db723a26c6917cc67f4f9fe56b"
     },
     "https://developer.apple.com/documentation/messages/msmessagesapppresentationcontext/media": {
@@ -377,7 +377,7 @@
     },
     "https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/init(rawvalue:)": {
       "etag": "\"13ab-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msmessagesapppresentationstyle/init-rawvalue.md",
+      "file_path": "documentation/Messages/msmessagesapppresentationstyle/init(rawvalue).md",
       "hash": "1fa3630dce92003ab55175d80aaed3a35f8dd30ed267fd383480ef467b871378"
     },
     "https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/transcript": {
@@ -392,12 +392,12 @@
     },
     "https://developer.apple.com/documentation/messages/msmessagesapptranscriptpresentation/contentsizethatfits(_:)": {
       "etag": "\"3839-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesapptranscriptpresentation/contentsizethatfits.md",
+      "file_path": "documentation/Messages/msmessagesapptranscriptpresentation/contentsizethatfits(_).md",
       "hash": "6f51ff4a9954ccf30c38670aa33bf787f606e47c15725702e3b045bbf8e2b841"
     },
     "https://developer.apple.com/documentation/messages/msmessagesapptranscriptpresentation/invalidatemessagetintcolor()": {
       "etag": "\"1d04-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesapptranscriptpresentation/invalidatemessagetintcolor.md",
+      "file_path": "documentation/Messages/msmessagesapptranscriptpresentation/invalidatemessagetintcolor().md",
       "hash": "79ec367daf6436a1e18e22616689d7186be9e4c06c0006a483a36740bd94ae11"
     },
     "https://developer.apple.com/documentation/messages/msmessagesapptranscriptpresentation/messagecornerradius": {
@@ -422,42 +422,42 @@
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didbecomeactive(with:)": {
       "etag": "\"480e-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didbecomeactive-with.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didbecomeactive(with).md",
       "hash": "c766c60991088794cd821ccba2bcb994eff5670dd92cd7e3ee527062b2116d08"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didcancelsending(_:conversation:)": {
       "etag": "\"71ab-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didcancelsending-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didcancelsending(_,conversation).md",
       "hash": "0ca62ab5d366a0c12c897bca797f75be2179d2f40a862bd6a16d9d322820924d"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didreceive(_:conversation:)": {
       "etag": "\"70a3-65d55dfc31ec1-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didreceive-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didreceive(_,conversation).md",
       "hash": "82d5e1b95b45cf622b9f9ee085b7c5ab12cddd9e5cf0934a11c4f4fb2fb2255c"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didresignactive(with:)": {
       "etag": "\"434d-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didresignactive-with.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didresignactive(with).md",
       "hash": "90ad8ec7e5506e2fb0bd0fbf27eaf607ed81b91abf67db67497f18c0b73e2389"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didselect(_:conversation:)": {
       "etag": "\"6de8-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didselect-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didselect(_,conversation).md",
       "hash": "2b7858cead625186bca6205a36fc93aa66d38db4bc4e2111d2983b3878ec5e79"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didstartsending(_:conversation:)": {
       "etag": "\"7235-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didstartsending-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didstartsending(_,conversation).md",
       "hash": "0f2f99332bec3c359218fc4a56b12348e6d4094adf3679bd4717f415d01961ab"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/didtransition(to:)": {
       "etag": "\"4f4d-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didtransition-to.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didtransition(to).md",
       "hash": "cca221e41bae561c9e4c7cc7300837a04f2762a3e97f843f071eb3deb78e23e5"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/dismiss()": {
       "etag": "\"3bef-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/dismiss.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/dismiss().md",
       "hash": "d963ab298b495d1be40c58dd607c00aef82fb740d7a1e42b6235cc6107d59ac9"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/presentationcontext": {
@@ -472,27 +472,27 @@
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/requestpresentationstyle(_:)": {
       "etag": "\"4f4a-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/requestpresentationstyle.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/requestpresentationstyle(_).md",
       "hash": "bc0cbb04ae5f9a01723050c24a3e655e46d9d87f5a2e97c499c9a498583e2e1e"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willbecomeactive(with:)": {
       "etag": "\"4838-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/willbecomeactive-with.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/willbecomeactive(with).md",
       "hash": "1b8e76f92fa373dc563ad41fa60fa1c19670c98074aad3c6a54f73f8659a52dd"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willresignactive(with:)": {
       "etag": "\"4409-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/willresignactive-with.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/willresignactive(with).md",
       "hash": "ad62c82639f475699b2b5aa5b14558e5dc27d2753476fe8089ada97527851053"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willselect(_:conversation:)": {
       "etag": "\"6c5e-65d55dfc31ec1-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/willselect-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/willselect(_,conversation).md",
       "hash": "3c881e383caa29c89e6dece7dda1daf460a267e2ee4e1783363c8dc788cf7140"
     },
     "https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willtransition(to:)": {
       "etag": "\"5b01-65d55dfc31ec1-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/willtransition-to.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/willtransition(to).md",
       "hash": "e13c5b7796826c8024100cc2d773cca480d3c0473e0fadc104aac439df5dea02"
     },
     "https://developer.apple.com/documentation/messages/msmessageserrordomain": {
@@ -552,7 +552,7 @@
     },
     "https://developer.apple.com/documentation/messages/msrecipient/init(phonenumber:)": {
       "etag": "\"1950-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msrecipient/init-phonenumber.md",
+      "file_path": "documentation/Messages/msrecipient/init(phonenumber).md",
       "hash": "d55f1bf6bc4909eb734377d20fde039de18db552effe72b9e3704fbf8d356a74"
     },
     "https://developer.apple.com/documentation/messages/msrecipient/phonenumber": {
@@ -567,7 +567,7 @@
     },
     "https://developer.apple.com/documentation/messages/mssession/init(coder:)": {
       "etag": "\"1362-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/mssession/init-coder.md",
+      "file_path": "documentation/Messages/mssession/init(coder).md",
       "hash": "4613464372bd2fdda36801b8b01041f08259f121e8608241142b4c1dd9c23b3f"
     },
     "https://developer.apple.com/documentation/messages/mssticker": {
@@ -582,7 +582,7 @@
     },
     "https://developer.apple.com/documentation/messages/mssticker/init(contentsoffileurl:localizeddescription:)": {
       "etag": "\"3419-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mssticker/init-contentsoffileurllocalizeddescription.md",
+      "file_path": "documentation/Messages/mssticker/init(contentsoffileurl,localizeddescription).md",
       "hash": "6c2c133c4c10d8ed4e5ba789cff28f1cfdacf81096e2c339a69eb63066271121"
     },
     "https://developer.apple.com/documentation/messages/mssticker/localizeddescription": {
@@ -612,22 +612,22 @@
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserview/init(frame:)": {
       "etag": "\"3306-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserview/init-frame.md",
+      "file_path": "documentation/Messages/msstickerbrowserview/init(frame).md",
       "hash": "757a2e5ff6fb6df77c99114da30d99e4f12d900fe4c35ec09b7c7d5fcbae14f3"
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserview/init(frame:stickersize:)": {
       "etag": "\"3ce7-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserview/init-framestickersize.md",
+      "file_path": "documentation/Messages/msstickerbrowserview/init(frame,stickersize).md",
       "hash": "9e27b534d34d60de7497cba71715ad0326327a492f6b85679815b34b6f606997"
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserview/reloaddata()": {
       "etag": "\"2411-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserview/reloaddata.md",
+      "file_path": "documentation/Messages/msstickerbrowserview/reloaddata().md",
       "hash": "a956190da4422842a110e59d040e519e27ed6e54c15b1e2540109e128169910a"
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserview/setcontentoffset(_:animated:)": {
       "etag": "\"4026-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserview/setcontentoffset-animated.md",
+      "file_path": "documentation/Messages/msstickerbrowserview/setcontentoffset(_,animated).md",
       "hash": "fabc7987ca33047626f8d65a8eb515d0ded0cad56e5d5726ca049dd6a4d3b1c7"
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserview/stickersize": {
@@ -642,7 +642,7 @@
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller/init(stickersize:)": {
       "etag": "\"3136-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserviewcontroller/init-stickersize.md",
+      "file_path": "documentation/Messages/msstickerbrowserviewcontroller/init(stickersize).md",
       "hash": "b7e83a4c085ee1b3ea88e962459fefde97345cc5e1b377505e0a613ab1e3f73c"
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserviewcontroller/stickerbrowserview": {
@@ -662,12 +662,12 @@
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserviewdatasource/numberofstickers(in:)": {
       "etag": "\"32ac-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserviewdatasource/numberofstickers-in.md",
+      "file_path": "documentation/Messages/msstickerbrowserviewdatasource/numberofstickers(in).md",
       "hash": "51da92e5c8df3c1d5a083b8bb6d891bae795ab8f31a874e63155dcfc83b2526e"
     },
     "https://developer.apple.com/documentation/messages/msstickerbrowserviewdatasource/stickerbrowserview(_:stickerat:)": {
       "etag": "\"3bfb-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserviewdatasource/stickerbrowserview-stickerat.md",
+      "file_path": "documentation/Messages/msstickerbrowserviewdatasource/stickerbrowserview(_,stickerat).md",
       "hash": "e89a5cb489030b606cda281c0a013dd08949bfab5f46de886f158b92e11f62a9"
     },
     "https://developer.apple.com/documentation/messages/msstickerserrordomain": {
@@ -682,7 +682,7 @@
     },
     "https://developer.apple.com/documentation/messages/msstickersize/init(rawvalue:)": {
       "etag": "\"1245-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickersize/init-rawvalue.md",
+      "file_path": "documentation/Messages/msstickersize/init(rawvalue).md",
       "hash": "2c999c1ff51416569dcf9acb1de783c054d628c9585a284debccfdc1a9c72c59"
     },
     "https://developer.apple.com/documentation/messages/msstickersize/large": {
@@ -712,17 +712,17 @@
     },
     "https://developer.apple.com/documentation/messages/msstickerview/init(frame:sticker:)": {
       "etag": "\"3ba9-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerview/init-framesticker.md",
+      "file_path": "documentation/Messages/msstickerview/init(frame,sticker).md",
       "hash": "e54dd9f28fc68c5260ff3ccfb36c98be9ea68cd84bb72d1f220131f2ae051f87"
     },
     "https://developer.apple.com/documentation/messages/msstickerview/isanimating()": {
       "etag": "\"32bf-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerview/isanimating.md",
+      "file_path": "documentation/Messages/msstickerview/isanimating().md",
       "hash": "2f1ece2f6776e0bc47592ef9d23b26efe19f566cf9940a76457cb9f1aa4eb697"
     },
     "https://developer.apple.com/documentation/messages/msstickerview/startanimating()": {
       "etag": "\"275f-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerview/startanimating.md",
+      "file_path": "documentation/Messages/msstickerview/startanimating().md",
       "hash": "ed2ee4470b706ab812aa38dae1d81e10e70ac8dec772f20b44660cf0c8905907"
     },
     "https://developer.apple.com/documentation/messages/msstickerview/sticker": {
@@ -732,7 +732,7 @@
     },
     "https://developer.apple.com/documentation/messages/msstickerview/stopanimating()": {
       "etag": "\"2735-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerview/stopanimating.md",
+      "file_path": "documentation/Messages/msstickerview/stopanimating().md",
       "hash": "c364ddbd4cee9714c829f30fcdf8c88952d9a1e7d774e64a237e99b0486da310"
     },
     "https://developer.apple.com/documentation/messages/msupirequest": {
@@ -742,7 +742,7 @@
     },
     "https://developer.apple.com/documentation/messages/msupirequest/init(validationtoken:recipients:)": {
       "etag": "\"2363-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msupirequest/init-validationtokenrecipients.md",
+      "file_path": "documentation/Messages/msupirequest/init(validationtoken,recipients).md",
       "hash": "cd536b5e18a9e5617b169c53e273fb7d692f8d7a32aa3b6b99a10a869fdd325d"
     },
     "https://developer.apple.com/documentation/messages/msupirequest/recipients": {
@@ -752,7 +752,7 @@
     },
     "https://developer.apple.com/documentation/messages/msupirequest/send(completionhandler:)": {
       "etag": "\"263e-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msupirequest/send-completionhandler.md",
+      "file_path": "documentation/Messages/msupirequest/send(completionhandler).md",
       "hash": "79eb1c37df823756da7b0d14d041f3d11037b4168325486fc0e18c761deb5b20"
     },
     "https://developer.apple.com/documentation/messages/msupirequest/validationtoken": {
@@ -806,22 +806,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/insert(_:completionhandler:)-3g248.json": {
       "etag": "\"7303-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/insert-completionhandler-3g248.md",
+      "file_path": "documentation/Messages/msconversation/insert(_,completionhandler)-3g248.md",
       "hash": "ad3aba03545062466770ab1d23e9cc8863ac4befa09d01c58cd222c9bcc41cf3"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/insert(_:completionhandler:)-7fpdd.json": {
       "etag": "\"63b4-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/insert-completionhandler-7fpdd.md",
+      "file_path": "documentation/Messages/msconversation/insert(_,completionhandler)-7fpdd.md",
       "hash": "481b8832ca5e3429d4c53b9fc96f544cd70b8eebefde3127759a87cc21e9b678"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/insertattachment(_:withalternatefilename:completionhandler:).json": {
       "etag": "\"7698-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/insertattachment-withalternatefilenamecompletionhandler.md",
+      "file_path": "documentation/Messages/msconversation/insertattachment(_,withalternatefilename,completionhandler).md",
       "hash": "c251c1c19086135718cd8318dab63681f34e5ed96a091f5826ec17a3ea11d290"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/inserttext(_:completionhandler:).json": {
       "etag": "\"65a5-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/inserttext-completionhandler.md",
+      "file_path": "documentation/Messages/msconversation/inserttext(_,completionhandler).md",
       "hash": "2b1145f907dbf7c5e277f05376bb8f3e9e24e470d228935909725b30af3228c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/localparticipantidentifier.json": {
@@ -841,22 +841,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/send(_:completionhandler:)-4kje0.json": {
       "etag": "\"7301-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/send-completionhandler-4kje0.md",
+      "file_path": "documentation/Messages/msconversation/send(_,completionhandler)-4kje0.md",
       "hash": "3931727a9a774ff5ef5a4a55055c7b5d34491d4f4119b71e09bbbcda7a69c766"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/send(_:completionhandler:)-9krz.json": {
       "etag": "\"7640-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/send-completionhandler-9krz.md",
+      "file_path": "documentation/Messages/msconversation/send(_,completionhandler)-9krz.md",
       "hash": "ab5f25f899ed6837e5176ff9d4815cd473d33296632eb17acbd3d5a9bcd7f5da"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/sendattachment(_:withalternatefilename:completionhandler:).json": {
       "etag": "\"7bc9-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/sendattachment-withalternatefilenamecompletionhandler.md",
+      "file_path": "documentation/Messages/msconversation/sendattachment(_,withalternatefilename,completionhandler).md",
       "hash": "85e81d0a21c696dd9019f2d517d4b51b286fc4b310b233cbc965cb9573d6146a"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msconversation/sendtext(_:completionhandler:).json": {
       "etag": "\"7049-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msconversation/sendtext-completionhandler.md",
+      "file_path": "documentation/Messages/msconversation/sendtext(_,completionhandler).md",
       "hash": "a3bd05ba9a07ae10a687bc7bb99cd7baa41814aa47646dde82263cf97602de85"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessage.json": {
@@ -866,7 +866,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessage/init(messagetext:).json": {
       "etag": "\"10cb-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/mscriticalmessage/init-messagetext.md",
+      "file_path": "documentation/Messages/mscriticalmessage/init(messagetext).md",
       "hash": "1c0b3b645773aece10ec7ba426a86fefe8b07107dc7b9a878ed291e674a22c09"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalmessage/messagetext.json": {
@@ -931,12 +931,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/checkauthorizationstatus(for:).json": {
       "etag": "\"223b-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mscriticalsmsmessenger/checkauthorizationstatus-for.md",
+      "file_path": "documentation/Messages/mscriticalsmsmessenger/checkauthorizationstatus(for).md",
       "hash": "2b2a643d73784a3030e079e8aa040a298566d2db9a939d5388e563f36a25a1dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/init().json": {
       "etag": "\"ed2-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mscriticalsmsmessenger/init.md",
+      "file_path": "documentation/Messages/mscriticalsmsmessenger/init().md",
       "hash": "e8925a414dfb85b1fe2f2893984a8f2c27acb7518f57d31a06924b4a5b13ca7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/maximumcriticalmessagingrecipients.json": {
@@ -946,12 +946,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/requestauthorization(for:).json": {
       "etag": "\"2f11-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mscriticalsmsmessenger/requestauthorization-for.md",
+      "file_path": "documentation/Messages/mscriticalsmsmessenger/requestauthorization(for).md",
       "hash": "ada4303f82008b1b1f8c2d3297e20c0a1b7b5a7f06d0ec7f82cfeb3087a4616c"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mscriticalsmsmessenger/send(_:to:).json": {
       "etag": "\"26cf-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mscriticalsmsmessenger/send-to.md",
+      "file_path": "documentation/Messages/mscriticalsmsmessenger/send(_,to).md",
       "hash": "67c8044325abf2590d9edc39a4fb92ef62fe490b19f92cfa22117dadcf26895e"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessage.json": {
@@ -971,17 +971,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/init().json": {
       "etag": "\"1f01-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessage/init.md",
+      "file_path": "documentation/Messages/msmessage/init().md",
       "hash": "75a03dbadba45bd387cb31a1ac48ca041916b4c00ab6c9a68ec5c32de8667aa0"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/init(coder:).json": {
       "etag": "\"1346-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessage/init-coder.md",
+      "file_path": "documentation/Messages/msmessage/init(coder).md",
       "hash": "bb78746b8381d5fabb78e64837b69a18c58e80d0240cdd6651d9fef987e4376f"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/init(session:).json": {
       "etag": "\"27fd-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessage/init-session.md",
+      "file_path": "documentation/Messages/msmessage/init(session).md",
       "hash": "489408bb361ae24b5b03466a321d8ffda3ef53bb2eebc458688a4943eed391d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessage/ispending.json": {
@@ -1051,7 +1051,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/init(rawvalue:).json": {
       "etag": "\"12ad-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msmessageerrorcode/init-rawvalue.md",
+      "file_path": "documentation/Messages/msmessageerrorcode/init(rawvalue).md",
       "hash": "70f44acb4be6d08919ffa01cb5a8583741fac686e569c0d3b5450bf0d1173b87"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessageerrorcode/sendwhilenotvisible.json": {
@@ -1106,7 +1106,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagelivelayout/init(alternatelayout:).json": {
       "etag": "\"221e-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msmessagelivelayout/init-alternatelayout.md",
+      "file_path": "documentation/Messages/msmessagelivelayout/init(alternatelayout).md",
       "hash": "eef838c5e3b7158b63132e45a17d663e52e809fa4c453ae60f82082b951ca5b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationcontext.json": {
@@ -1116,7 +1116,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationcontext/init(rawvalue:).json": {
       "etag": "\"13cf-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msmessagesapppresentationcontext/init-rawvalue.md",
+      "file_path": "documentation/Messages/msmessagesapppresentationcontext/init(rawvalue).md",
       "hash": "712ebca925b87dce4fb9269f037253170edb66db723a26c6917cc67f4f9fe56b"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationcontext/media.json": {
@@ -1146,7 +1146,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationstyle/init(rawvalue:).json": {
       "etag": "\"13ab-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msmessagesapppresentationstyle/init-rawvalue.md",
+      "file_path": "documentation/Messages/msmessagesapppresentationstyle/init(rawvalue).md",
       "hash": "1fa3630dce92003ab55175d80aaed3a35f8dd30ed267fd383480ef467b871378"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapppresentationstyle/transcript.json": {
@@ -1161,12 +1161,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapptranscriptpresentation/contentsizethatfits(_:).json": {
       "etag": "\"3839-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesapptranscriptpresentation/contentsizethatfits.md",
+      "file_path": "documentation/Messages/msmessagesapptranscriptpresentation/contentsizethatfits(_).md",
       "hash": "6f51ff4a9954ccf30c38670aa33bf787f606e47c15725702e3b045bbf8e2b841"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapptranscriptpresentation/invalidatemessagetintcolor().json": {
       "etag": "\"1d04-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesapptranscriptpresentation/invalidatemessagetintcolor.md",
+      "file_path": "documentation/Messages/msmessagesapptranscriptpresentation/invalidatemessagetintcolor().md",
       "hash": "79ec367daf6436a1e18e22616689d7186be9e4c06c0006a483a36740bd94ae11"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesapptranscriptpresentation/messagecornerradius.json": {
@@ -1191,42 +1191,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didbecomeactive(with:).json": {
       "etag": "\"480e-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didbecomeactive-with.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didbecomeactive(with).md",
       "hash": "c766c60991088794cd821ccba2bcb994eff5670dd92cd7e3ee527062b2116d08"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didcancelsending(_:conversation:).json": {
       "etag": "\"71ab-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didcancelsending-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didcancelsending(_,conversation).md",
       "hash": "0ca62ab5d366a0c12c897bca797f75be2179d2f40a862bd6a16d9d322820924d"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didreceive(_:conversation:).json": {
       "etag": "\"70a3-65d55dfc31ec1-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didreceive-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didreceive(_,conversation).md",
       "hash": "82d5e1b95b45cf622b9f9ee085b7c5ab12cddd9e5cf0934a11c4f4fb2fb2255c"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didresignactive(with:).json": {
       "etag": "\"434d-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didresignactive-with.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didresignactive(with).md",
       "hash": "90ad8ec7e5506e2fb0bd0fbf27eaf607ed81b91abf67db67497f18c0b73e2389"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didselect(_:conversation:).json": {
       "etag": "\"6de8-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didselect-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didselect(_,conversation).md",
       "hash": "2b7858cead625186bca6205a36fc93aa66d38db4bc4e2111d2983b3878ec5e79"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didstartsending(_:conversation:).json": {
       "etag": "\"7235-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didstartsending-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didstartsending(_,conversation).md",
       "hash": "0f2f99332bec3c359218fc4a56b12348e6d4094adf3679bd4717f415d01961ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/didtransition(to:).json": {
       "etag": "\"4f4d-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/didtransition-to.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/didtransition(to).md",
       "hash": "cca221e41bae561c9e4c7cc7300837a04f2762a3e97f843f071eb3deb78e23e5"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/dismiss().json": {
       "etag": "\"3bef-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/dismiss.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/dismiss().md",
       "hash": "d963ab298b495d1be40c58dd607c00aef82fb740d7a1e42b6235cc6107d59ac9"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/presentationcontext.json": {
@@ -1241,27 +1241,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/requestpresentationstyle(_:).json": {
       "etag": "\"4f4a-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/requestpresentationstyle.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/requestpresentationstyle(_).md",
       "hash": "bc0cbb04ae5f9a01723050c24a3e655e46d9d87f5a2e97c499c9a498583e2e1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/willbecomeactive(with:).json": {
       "etag": "\"4838-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/willbecomeactive-with.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/willbecomeactive(with).md",
       "hash": "1b8e76f92fa373dc563ad41fa60fa1c19670c98074aad3c6a54f73f8659a52dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/willresignactive(with:).json": {
       "etag": "\"4409-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/willresignactive-with.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/willresignactive(with).md",
       "hash": "ad62c82639f475699b2b5aa5b14558e5dc27d2753476fe8089ada97527851053"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/willselect(_:conversation:).json": {
       "etag": "\"6c5e-65d55dfc31ec1-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/willselect-conversation.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/willselect(_,conversation).md",
       "hash": "3c881e383caa29c89e6dece7dda1daf460a267e2ee4e1783363c8dc788cf7140"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessagesappviewcontroller/willtransition(to:).json": {
       "etag": "\"5b01-65d55dfc31ec1-df\"",
-      "file_path": "documentation/Messages/msmessagesappviewcontroller/willtransition-to.md",
+      "file_path": "documentation/Messages/msmessagesappviewcontroller/willtransition(to).md",
       "hash": "e13c5b7796826c8024100cc2d773cca480d3c0473e0fadc104aac439df5dea02"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msmessageserrordomain.json": {
@@ -1321,7 +1321,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msrecipient/init(phonenumber:).json": {
       "etag": "\"1950-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msrecipient/init-phonenumber.md",
+      "file_path": "documentation/Messages/msrecipient/init(phonenumber).md",
       "hash": "d55f1bf6bc4909eb734377d20fde039de18db552effe72b9e3704fbf8d356a74"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msrecipient/phonenumber.json": {
@@ -1336,7 +1336,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mssession/init(coder:).json": {
       "etag": "\"1362-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/mssession/init-coder.md",
+      "file_path": "documentation/Messages/mssession/init(coder).md",
       "hash": "4613464372bd2fdda36801b8b01041f08259f121e8608241142b4c1dd9c23b3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mssticker.json": {
@@ -1351,7 +1351,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mssticker/init(contentsoffileurl:localizeddescription:).json": {
       "etag": "\"3419-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/mssticker/init-contentsoffileurllocalizeddescription.md",
+      "file_path": "documentation/Messages/mssticker/init(contentsoffileurl,localizeddescription).md",
       "hash": "6c2c133c4c10d8ed4e5ba789cff28f1cfdacf81096e2c339a69eb63066271121"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/mssticker/localizeddescription.json": {
@@ -1381,22 +1381,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/init(frame:).json": {
       "etag": "\"3306-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserview/init-frame.md",
+      "file_path": "documentation/Messages/msstickerbrowserview/init(frame).md",
       "hash": "757a2e5ff6fb6df77c99114da30d99e4f12d900fe4c35ec09b7c7d5fcbae14f3"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/init(frame:stickersize:).json": {
       "etag": "\"3ce7-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserview/init-framestickersize.md",
+      "file_path": "documentation/Messages/msstickerbrowserview/init(frame,stickersize).md",
       "hash": "9e27b534d34d60de7497cba71715ad0326327a492f6b85679815b34b6f606997"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/reloaddata().json": {
       "etag": "\"2411-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserview/reloaddata.md",
+      "file_path": "documentation/Messages/msstickerbrowserview/reloaddata().md",
       "hash": "a956190da4422842a110e59d040e519e27ed6e54c15b1e2540109e128169910a"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/setcontentoffset(_:animated:).json": {
       "etag": "\"4026-65d55dfbbb76e-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserview/setcontentoffset-animated.md",
+      "file_path": "documentation/Messages/msstickerbrowserview/setcontentoffset(_,animated).md",
       "hash": "fabc7987ca33047626f8d65a8eb515d0ded0cad56e5d5726ca049dd6a4d3b1c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserview/stickersize.json": {
@@ -1411,7 +1411,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller/init(stickersize:).json": {
       "etag": "\"3136-65d55dfbd7741-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserviewcontroller/init-stickersize.md",
+      "file_path": "documentation/Messages/msstickerbrowserviewcontroller/init(stickersize).md",
       "hash": "b7e83a4c085ee1b3ea88e962459fefde97345cc5e1b377505e0a613ab1e3f73c"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewcontroller/stickerbrowserview.json": {
@@ -1431,12 +1431,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewdatasource/numberofstickers(in:).json": {
       "etag": "\"32ac-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserviewdatasource/numberofstickers-in.md",
+      "file_path": "documentation/Messages/msstickerbrowserviewdatasource/numberofstickers(in).md",
       "hash": "51da92e5c8df3c1d5a083b8bb6d891bae795ab8f31a874e63155dcfc83b2526e"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerbrowserviewdatasource/stickerbrowserview(_:stickerat:).json": {
       "etag": "\"3bfb-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerbrowserviewdatasource/stickerbrowserview-stickerat.md",
+      "file_path": "documentation/Messages/msstickerbrowserviewdatasource/stickerbrowserview(_,stickerat).md",
       "hash": "e89a5cb489030b606cda281c0a013dd08949bfab5f46de886f158b92e11f62a9"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerserrordomain.json": {
@@ -1451,7 +1451,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickersize/init(rawvalue:).json": {
       "etag": "\"1245-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickersize/init-rawvalue.md",
+      "file_path": "documentation/Messages/msstickersize/init(rawvalue).md",
       "hash": "2c999c1ff51416569dcf9acb1de783c054d628c9585a284debccfdc1a9c72c59"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickersize/large.json": {
@@ -1481,17 +1481,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/init(frame:sticker:).json": {
       "etag": "\"3ba9-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerview/init-framesticker.md",
+      "file_path": "documentation/Messages/msstickerview/init(frame,sticker).md",
       "hash": "e54dd9f28fc68c5260ff3ccfb36c98be9ea68cd84bb72d1f220131f2ae051f87"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/isanimating().json": {
       "etag": "\"32bf-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerview/isanimating.md",
+      "file_path": "documentation/Messages/msstickerview/isanimating().md",
       "hash": "2f1ece2f6776e0bc47592ef9d23b26efe19f566cf9940a76457cb9f1aa4eb697"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/startanimating().json": {
       "etag": "\"275f-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerview/startanimating.md",
+      "file_path": "documentation/Messages/msstickerview/startanimating().md",
       "hash": "ed2ee4470b706ab812aa38dae1d81e10e70ac8dec772f20b44660cf0c8905907"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/sticker.json": {
@@ -1501,7 +1501,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msstickerview/stopanimating().json": {
       "etag": "\"2735-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msstickerview/stopanimating.md",
+      "file_path": "documentation/Messages/msstickerview/stopanimating().md",
       "hash": "c364ddbd4cee9714c829f30fcdf8c88952d9a1e7d774e64a237e99b0486da310"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msupirequest.json": {
@@ -1511,7 +1511,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msupirequest/init(validationtoken:recipients:).json": {
       "etag": "\"2363-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msupirequest/init-validationtokenrecipients.md",
+      "file_path": "documentation/Messages/msupirequest/init(validationtoken,recipients).md",
       "hash": "cd536b5e18a9e5617b169c53e273fb7d692f8d7a32aa3b6b99a10a869fdd325d"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msupirequest/recipients.json": {
@@ -1521,7 +1521,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msupirequest/send(completionhandler:).json": {
       "etag": "\"263e-65d55dfbf9462-df\"",
-      "file_path": "documentation/Messages/msupirequest/send-completionhandler.md",
+      "file_path": "documentation/Messages/msupirequest/send(completionhandler).md",
       "hash": "79eb1c37df823756da7b0d14d041f3d11037b4168325486fc0e18c761deb5b20"
     },
     "https://developer.apple.com/tutorials/data/documentation/messages/msupirequest/validationtoken.json": {

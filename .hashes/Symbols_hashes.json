@@ -247,17 +247,17 @@
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.property": {
       "etag": "\"1876-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/downup-swiftproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/downup-swift.property.md",
       "hash": "a730f6c9647ce1a895ca8ed4e24fefce27c8d619eb7c40e31ac7f208045eea5a"
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/downup-swift.type.property": {
       "etag": "\"1321-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/downup-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/downup-swift.type.property.md",
       "hash": "b7d65cec59ef723b39ca997eb3e4bb3e131f707ae6562e6abe22c7c7d43d1b87"
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/magic(fallback:)": {
       "etag": "\"188c-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/magic-fallback.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/magic(fallback).md",
       "hash": "64b8c7f5f76f7bdad3223bf578d3a11ce626add35fadbc4042124d7095f1e9ba"
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/magicreplace": {
@@ -272,22 +272,22 @@
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.property": {
       "etag": "\"186c-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/offup-swiftproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/offup-swift.property.md",
       "hash": "e29529b895e6f420a2acf65bc3b7ef44582a49ef730d71439d904e38a648eb46"
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/offup-swift.type.property": {
       "etag": "\"1314-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/offup-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/offup-swift.type.property.md",
       "hash": "3ef25a297ae51f0ea68949ed3a212a138c8b403e2453893f6810341be8ae1f15"
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.property": {
       "etag": "\"1868-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/upup-swiftproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/upup-swift.property.md",
       "hash": "ae1f265f1684360ccdac41823099bd19311da05e437c1d466873c67ce5183440"
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/upup-swift.type.property": {
       "etag": "\"1305-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/upup-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/upup-swift.type.property.md",
       "hash": "2616c18b61119f858dbbc603dd03782525c51542ea251c93010f33b23c9feeac"
     },
     "https://developer.apple.com/documentation/symbols/replacesymboleffect/wholesymbol": {
@@ -447,32 +447,32 @@
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/nonrepeating-swift.property": {
       "etag": "\"225a-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swiftproperty.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swift.property.md",
       "hash": "d55e1e543d2c5529ee5f8a5ac25efbef9fea67b348336abea7d84a6405e02fd9"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/nonrepeating-swift.type.property": {
       "etag": "\"22e0-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swift.type.property.md",
       "hash": "51d0e5ded00b7355ca15143f1d40c781c0b74c90e7ba6b8ca2d1cf495247c4c7"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-314sv": {
       "etag": "\"29ee-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeat-314sv.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-314sv.md",
       "hash": "f439b0f4b60c5648293342fd5eb8ae094410acceb61a771a74e889ef89b50a80"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-316cr": {
       "etag": "\"1996-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeat-316cr.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-316cr.md",
       "hash": "1b6eed85eef0bc535db50a43d2c3d559bab93bd3bfc77be57632bf0f7a8316fc"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-33816": {
       "etag": "\"2a65-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeat-33816.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-33816.md",
       "hash": "e0c27965fbaba9270e88efc20694f6ce6d35216e5f928ebfe4cb6dc610f31cf5"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-3klm2": {
       "etag": "\"19f7-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeat-3klm2.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-3klm2.md",
       "hash": "0b3002c20111f40af7ba56fc8b8c70956d2190ec259e915532d9adeb034d3330"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeatbehavior": {
@@ -492,27 +492,27 @@
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeatbehavior/periodic(_:delay:)": {
       "etag": "\"23ec-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeatbehavior/periodic-delay.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeatbehavior/periodic(_,delay).md",
       "hash": "28785bcee63de5a51c913f62f51b81e522725ae151881a6bafc3575d16b29805"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeating-swift.property": {
       "etag": "\"2475-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeating-swiftproperty.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeating-swift.property.md",
       "hash": "35cfed6c533e7c294f2120aeada0cc237493b3a69a7e676182903ba4302924b3"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/repeating-swift.type.property": {
       "etag": "\"24fb-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeating-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeating-swift.type.property.md",
       "hash": "6a8302287ffd69c43d47b4aa489e2ffb54631f82b2b273f2a1927b22f3497656"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/speed(_:)-swift.method": {
       "etag": "\"1a9a-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/speed-swiftmethod.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/speed(_)-swift.method.md",
       "hash": "2ffa4392e214cccec0f9162483ae3ec4254b5c874a44827a644939effb7177e2"
     },
     "https://developer.apple.com/documentation/symbols/symboleffectoptions/speed(_:)-swift.type.method": {
       "etag": "\"1b18-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/speed-swifttypemethod.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/speed(_)-swift.type.method.md",
       "hash": "4ca25e8f3c7832dc9022c2409b9eca7b5ddd88972337765469b78220517428f4"
     },
     "https://developer.apple.com/documentation/symbols/transitionsymboleffect": {
@@ -592,12 +592,12 @@
     },
     "https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-1f09q": {
       "etag": "\"1446-65d55af5c44ba-df\"",
-      "file_path": "documentation/Symbols/wigglesymboleffect/custom-angle-1f09q.md",
+      "file_path": "documentation/Symbols/wigglesymboleffect/custom(angle)-1f09q.md",
       "hash": "007a28df829e2282e3c303da08e0b22678054ef79006c72fc0dc4ab89ecfa7fa"
     },
     "https://developer.apple.com/documentation/symbols/wigglesymboleffect/custom(angle:)-cqpf": {
       "etag": "\"160f-65d55af5c44ba-df\"",
-      "file_path": "documentation/Symbols/wigglesymboleffect/custom-angle-cqpf.md",
+      "file_path": "documentation/Symbols/wigglesymboleffect/custom(angle)-cqpf.md",
       "hash": "7d07afa013db4735cdd7a4f1964222816e6a738499cc70df6577411f526f3c39"
     },
     "https://developer.apple.com/documentation/symbols/wigglesymboleffect/down": {
@@ -877,17 +877,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/downup-swift.property.json": {
       "etag": "\"1876-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/downup-swiftproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/downup-swift.property.md",
       "hash": "a730f6c9647ce1a895ca8ed4e24fefce27c8d619eb7c40e31ac7f208045eea5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/downup-swift.type.property.json": {
       "etag": "\"1321-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/downup-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/downup-swift.type.property.md",
       "hash": "b7d65cec59ef723b39ca997eb3e4bb3e131f707ae6562e6abe22c7c7d43d1b87"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/magic(fallback:).json": {
       "etag": "\"188c-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/magic-fallback.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/magic(fallback).md",
       "hash": "64b8c7f5f76f7bdad3223bf578d3a11ce626add35fadbc4042124d7095f1e9ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/magicreplace.json": {
@@ -902,22 +902,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/offup-swift.property.json": {
       "etag": "\"186c-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/offup-swiftproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/offup-swift.property.md",
       "hash": "e29529b895e6f420a2acf65bc3b7ef44582a49ef730d71439d904e38a648eb46"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/offup-swift.type.property.json": {
       "etag": "\"1314-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/offup-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/offup-swift.type.property.md",
       "hash": "3ef25a297ae51f0ea68949ed3a212a138c8b403e2453893f6810341be8ae1f15"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/upup-swift.property.json": {
       "etag": "\"1868-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/upup-swiftproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/upup-swift.property.md",
       "hash": "ae1f265f1684360ccdac41823099bd19311da05e437c1d466873c67ce5183440"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/upup-swift.type.property.json": {
       "etag": "\"1305-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/replacesymboleffect/upup-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/replacesymboleffect/upup-swift.type.property.md",
       "hash": "2616c18b61119f858dbbc603dd03782525c51542ea251c93010f33b23c9feeac"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/wholesymbol.json": {
@@ -1077,32 +1077,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/nonrepeating-swift.property.json": {
       "etag": "\"225a-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swiftproperty.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swift.property.md",
       "hash": "d55e1e543d2c5529ee5f8a5ac25efbef9fea67b348336abea7d84a6405e02fd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/nonrepeating-swift.type.property.json": {
       "etag": "\"22e0-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swift.type.property.md",
       "hash": "51d0e5ded00b7355ca15143f1d40c781c0b74c90e7ba6b8ca2d1cf495247c4c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-314sv.json": {
       "etag": "\"29ee-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeat-314sv.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-314sv.md",
       "hash": "f439b0f4b60c5648293342fd5eb8ae094410acceb61a771a74e889ef89b50a80"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-316cr.json": {
       "etag": "\"1996-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeat-316cr.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-316cr.md",
       "hash": "1b6eed85eef0bc535db50a43d2c3d559bab93bd3bfc77be57632bf0f7a8316fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-33816.json": {
       "etag": "\"2a65-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeat-33816.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-33816.md",
       "hash": "e0c27965fbaba9270e88efc20694f6ce6d35216e5f928ebfe4cb6dc610f31cf5"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-3klm2.json": {
       "etag": "\"19f7-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeat-3klm2.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeat(_)-3klm2.md",
       "hash": "0b3002c20111f40af7ba56fc8b8c70956d2190ec259e915532d9adeb034d3330"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeatbehavior.json": {
@@ -1117,7 +1117,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeatbehavior/periodic(_:delay:).json": {
       "etag": "\"23ec-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeatbehavior/periodic-delay.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeatbehavior/periodic(_,delay).md",
       "hash": "28785bcee63de5a51c913f62f51b81e522725ae151881a6bafc3575d16b29805"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeatbehavior/periodic.json": {
@@ -1127,22 +1127,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeating-swift.property.json": {
       "etag": "\"2475-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeating-swiftproperty.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeating-swift.property.md",
       "hash": "35cfed6c533e7c294f2120aeada0cc237493b3a69a7e676182903ba4302924b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeating-swift.type.property.json": {
       "etag": "\"24fb-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/repeating-swifttypeproperty.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/repeating-swift.type.property.md",
       "hash": "6a8302287ffd69c43d47b4aa489e2ffb54631f82b2b273f2a1927b22f3497656"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/speed(_:)-swift.method.json": {
       "etag": "\"1a9a-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/speed-swiftmethod.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/speed(_)-swift.method.md",
       "hash": "2ffa4392e214cccec0f9162483ae3ec4254b5c874a44827a644939effb7177e2"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/speed(_:)-swift.type.method.json": {
       "etag": "\"1b18-65d55af5dd9d0-df\"",
-      "file_path": "documentation/Symbols/symboleffectoptions/speed-swifttypemethod.md",
+      "file_path": "documentation/Symbols/symboleffectoptions/speed(_)-swift.type.method.md",
       "hash": "4ca25e8f3c7832dc9022c2409b9eca7b5ddd88972337765469b78220517428f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/transitionsymboleffect.json": {
@@ -1222,12 +1222,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/custom(angle:)-1f09q.json": {
       "etag": "\"1446-65d55af5c44ba-df\"",
-      "file_path": "documentation/Symbols/wigglesymboleffect/custom-angle-1f09q.md",
+      "file_path": "documentation/Symbols/wigglesymboleffect/custom(angle)-1f09q.md",
       "hash": "007a28df829e2282e3c303da08e0b22678054ef79006c72fc0dc4ab89ecfa7fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/custom(angle:)-cqpf.json": {
       "etag": "\"160f-65d55af5c44ba-df\"",
-      "file_path": "documentation/Symbols/wigglesymboleffect/custom-angle-cqpf.md",
+      "file_path": "documentation/Symbols/wigglesymboleffect/custom(angle)-cqpf.md",
       "hash": "7d07afa013db4735cdd7a4f1964222816e6a738499cc70df6577411f526f3c39"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/down.json": {

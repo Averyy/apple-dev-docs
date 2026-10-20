@@ -17,12 +17,12 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/commissiondevice(in:onboardingpayload:commissioningid:)": {
       "etag": "\"2752-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/commissiondevice-inonboardingpayloadcommissioningid.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/commissiondevice(in,onboardingpayload,commissioningid).md",
       "hash": "58f9d64bdb2aac83620200c8d23e8648e41ce0d3580cd0afd77f4234680a8696"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/configuredevice(named:in:)": {
       "etag": "\"2ee9-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/configuredevice-namedin.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/configuredevice(named,in).md",
       "hash": "f177299f4c1a1303a1dc95657d25a124cffd8a4e9a7463f1054b9566a896b448"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential": {
@@ -42,7 +42,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential/init(certificationdeclaration:deviceattestationcertificate:productattestationintermediatecertificate:)": {
       "etag": "\"215a-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential/init-certificationdeclarationdeviceattestationcertificateproductattestationintermediatecertificate.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential/init(certificationdeclaration,deviceattestationcertificate,productattestationintermediatecertificate).md",
       "hash": "4653fb64eb5e9268d8ce2da7a35e3ce56d0aa491641aee6f5ea980ea17e625af"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential/productattestationintermediatecertificate": {
@@ -52,22 +52,22 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/init()": {
       "etag": "\"e62-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/init.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/init().md",
       "hash": "e16eb60299e0374dfa09b8ce37a3820ee683f89afcd5310f7083868dd2733cbd"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/rooms(in:)": {
       "etag": "\"338f-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/rooms-in.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/rooms(in).md",
       "hash": "48cd64a65bc926cc16278af14ef469635085567a9e0a84ac7d506444dccad7b7"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/selectthreadnetwork(from:)": {
       "etag": "\"3b8a-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectthreadnetwork-from.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectthreadnetwork(from).md",
       "hash": "f84c1a0006498feaf21e4e9f9eaf4c3c9f6ba7a6e3a85e62fbb600a42931ae99"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/selectwifinetwork(from:)": {
       "etag": "\"30b8-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectwifinetwork-from.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectwifinetwork(from).md",
       "hash": "4eb08cc685db0375b09b513d32e330b6b120dd6ce61cf8e3be881c82b38c1e56"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadnetworkassociation": {
@@ -82,7 +82,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/network(extendedpanid:)": {
       "etag": "\"3001-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/network-extendedpanid.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/network(extendedpanid).md",
       "hash": "6beb20dbb1b22256689ff388c067e2bf1a488500b84726ecc7cdebfd6f2926f2"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult": {
@@ -107,7 +107,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/init(networkname:panid:extendedpanid:channel:extendedaddress:rssi:version:linkqualityindicator:)": {
       "etag": "\"3889-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/init-networknamepanidextendedpanidchannelextendedaddressrssiversionlinkqualityindicator.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/init(networkname,panid,extendedpanid,channel,extendedaddress,rssi,version,linkqualityindicator).md",
       "hash": "e7a2ad9f541084a260ea10f36363151f896c0c35bd78de385e5ca9dc4559991d"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/linkqualityindicator": {
@@ -137,7 +137,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/validatedevicecredential(_:)": {
       "etag": "\"28db-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/validatedevicecredential.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/validatedevicecredential(_).md",
       "hash": "587292dffea0079df5bbf41c878f89d307a94dd41b713625b95b8ee6bb7b2fc2"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifinetworkassociation": {
@@ -152,7 +152,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/network(ssid:credentials:)": {
       "etag": "\"2932-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/network-ssidcredentials.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/network(ssid,credentials).md",
       "hash": "8a43c06eb7c988d7e9580e3ca757347c01cb30cde219f78f2464458d89da8c47"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult": {
@@ -167,7 +167,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/init(ssid:rssi:security:band:)": {
       "etag": "\"2ac9-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/init-ssidrssisecurityband.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/init(ssid,rssi,security,band).md",
       "hash": "ffd0f0ccbd223353e850ea8f11722ce57b3de6baf9d57cf298a289e9ce567c2e"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/rssi": {
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/all(_:)": {
       "etag": "\"361f-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/all.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/all(_).md",
       "hash": "65ff369219ae70ab1637e7d436152f3f963011ebd5dfbc6da0cf1b4e49701d67"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/alldevices": {
@@ -212,37 +212,37 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/any(_:)": {
       "etag": "\"3625-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/any.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/any(_).md",
       "hash": "a9d1c1913d1fb406477be4d2435d855acff5ed7098faa7ce2044158119733660"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/commissioningid(_:)": {
       "etag": "\"3e33-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/commissioningid.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/commissioningid(_).md",
       "hash": "85f641e2d44089df819978c68a1d1c5d3142769be85acc88933fbd96e97937f6"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/fabricnode(rootpublickey:nodeid:)": {
       "etag": "\"3b8f-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/fabricnode-rootpublickeynodeid.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/fabricnode(rootpublickey,nodeid).md",
       "hash": "fc80041993ae31ade68c40cc2c5a4b5f59479e6f4e0f486f5be4f97787335599"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/not(_:)": {
       "etag": "\"3619-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/not.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/not(_).md",
       "hash": "8df484acdecff08912255a0bceeb79233a55b39f559d5c53d7da279604541dfa"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/productid(_:)": {
       "etag": "\"3588-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/productid.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/productid(_).md",
       "hash": "3070eac279952092546c02140c522acb22e1a2481a095b10e954400197ecce40"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/serialnumber(_:)": {
       "etag": "\"35d1-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/serialnumber.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/serialnumber(_).md",
       "hash": "08e5f9431dfccf63136ebd7a9c768a2d670ad079be1783ea8a11e2df8491fa26"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/devicecriteria/vendorid(_:)": {
       "etag": "\"3577-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/vendorid.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/vendorid(_).md",
       "hash": "7e61d95dffb6c38e7b10ee228d39745abf46aa5eb965072e8770f70172418616"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/home": {
@@ -257,22 +257,22 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/home/init(displayname:)": {
       "etag": "\"1941-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/home/init-displayname.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/home/init(displayname).md",
       "hash": "b41b6c4d16132e0c72d0ad97817fddb93775518c029b6348e14a2bd16fd5341a"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/init(from:)": {
       "etag": "\"223a-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/init-from.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/init(from).md",
       "hash": "e2a06ab11b61f0436031f6f1624edac57affe3da509b7c283f1c04ff0c73b5d3"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/init(topology:setuppayload:showing:)": {
       "etag": "\"304e-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/init-topologysetuppayloadshowing.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/init(topology,setuppayload,showing).md",
       "hash": "261559337c542d019bf62c471861f385c5235758e13e9fd5078f5dfd2801b61d"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/init(topology:setuppayload:showing:shouldscannetworks:)": {
       "etag": "\"355d-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/init-topologysetuppayloadshowingshouldscannetworks.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/init(topology,setuppayload,showing,shouldscannetworks).md",
       "hash": "df37f8726120523fbef85be5bf3476fde4a94993094461e035ac46d2fd8080bd"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/issupported": {
@@ -282,7 +282,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/perform()": {
       "etag": "\"1361-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/perform.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/perform().md",
       "hash": "c09a303566e57c79dfe3a025cae6ab3dc0922b21b48c1b591d45817dd6a6ed06"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/room": {
@@ -297,7 +297,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/room/init(displayname:)": {
       "etag": "\"1941-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/room/init-displayname.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/room/init(displayname).md",
       "hash": "1c5e49ef9c72c02ffa91a232266051c0744c11770442365a0aea34c54b67271a"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/setuppayload": {
@@ -317,12 +317,12 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/topology-swift.property": {
       "etag": "\"1f53-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swiftproperty.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.property.md",
       "hash": "6bb242963c11877166be50b6f57be66601068ed959168c25cb03a814c0903507"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/topology-swift.struct": {
       "etag": "\"3e35-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swiftstruct.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct.md",
       "hash": "a9b81b9aa944f3328132e035da83315bdb84e67d0e7636db71a1220a44f0407b"
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/topology-swift.struct/ecosystemname": {
@@ -337,7 +337,7 @@
     },
     "https://developer.apple.com/documentation/mattersupport/matteradddevicerequest/topology-swift.struct/init(ecosystemname:homes:)": {
       "etag": "\"2268-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct/init-ecosystemnamehomes.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct/init(ecosystemname,homes).md",
       "hash": "6b8ab22c048a0fdfce367999c6bce896ac4c35847d4464177747406c639bfeab"
     },
     "https://developer.apple.com/tutorials/data/documentation/MatterSupport.json": {
@@ -357,12 +357,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/commissiondevice(in:onboardingpayload:commissioningid:).json": {
       "etag": "\"2752-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/commissiondevice-inonboardingpayloadcommissioningid.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/commissiondevice(in,onboardingpayload,commissioningid).md",
       "hash": "58f9d64bdb2aac83620200c8d23e8648e41ce0d3580cd0afd77f4234680a8696"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/configuredevice(named:in:).json": {
       "etag": "\"2ee9-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/configuredevice-namedin.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/configuredevice(named,in).md",
       "hash": "f177299f4c1a1303a1dc95657d25a124cffd8a4e9a7463f1054b9566a896b448"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential.json": {
@@ -382,7 +382,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential/init(certificationdeclaration:deviceattestationcertificate:productattestationintermediatecertificate:).json": {
       "etag": "\"215a-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential/init-certificationdeclarationdeviceattestationcertificateproductattestationintermediatecertificate.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/devicecredential/init(certificationdeclaration,deviceattestationcertificate,productattestationintermediatecertificate).md",
       "hash": "4653fb64eb5e9268d8ce2da7a35e3ce56d0aa491641aee6f5ea980ea17e625af"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/devicecredential/productattestationintermediatecertificate.json": {
@@ -392,22 +392,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/init().json": {
       "etag": "\"e62-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/init.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/init().md",
       "hash": "e16eb60299e0374dfa09b8ce37a3820ee683f89afcd5310f7083868dd2733cbd"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/rooms(in:).json": {
       "etag": "\"338f-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/rooms-in.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/rooms(in).md",
       "hash": "48cd64a65bc926cc16278af14ef469635085567a9e0a84ac7d506444dccad7b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/selectthreadnetwork(from:).json": {
       "etag": "\"3b8a-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectthreadnetwork-from.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectthreadnetwork(from).md",
       "hash": "f84c1a0006498feaf21e4e9f9eaf4c3c9f6ba7a6e3a85e62fbb600a42931ae99"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/selectwifinetwork(from:).json": {
       "etag": "\"30b8-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectwifinetwork-from.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/selectwifinetwork(from).md",
       "hash": "4eb08cc685db0375b09b513d32e330b6b120dd6ce61cf8e3be881c82b38c1e56"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadnetworkassociation.json": {
@@ -422,7 +422,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/network(extendedpanid:).json": {
       "etag": "\"3001-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/network-extendedpanid.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadnetworkassociation/network(extendedpanid).md",
       "hash": "6beb20dbb1b22256689ff388c067e2bf1a488500b84726ecc7cdebfd6f2926f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult.json": {
@@ -447,7 +447,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/init(networkname:panid:extendedpanid:channel:extendedaddress:rssi:version:linkqualityindicator:).json": {
       "etag": "\"3889-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/init-networknamepanidextendedpanidchannelextendedaddressrssiversionlinkqualityindicator.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/threadscanresult/init(networkname,panid,extendedpanid,channel,extendedaddress,rssi,version,linkqualityindicator).md",
       "hash": "e7a2ad9f541084a260ea10f36363151f896c0c35bd78de385e5ca9dc4559991d"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/threadscanresult/linkqualityindicator.json": {
@@ -477,7 +477,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/validatedevicecredential(_:).json": {
       "etag": "\"28db-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/validatedevicecredential.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/validatedevicecredential(_).md",
       "hash": "587292dffea0079df5bbf41c878f89d307a94dd41b713625b95b8ee6bb7b2fc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifinetworkassociation.json": {
@@ -492,7 +492,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/network(ssid:credentials:).json": {
       "etag": "\"2932-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/network-ssidcredentials.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifinetworkassociation/network(ssid,credentials).md",
       "hash": "8a43c06eb7c988d7e9580e3ca757347c01cb30cde219f78f2464458d89da8c47"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult.json": {
@@ -507,7 +507,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/init(ssid:rssi:security:band:).json": {
       "etag": "\"2ac9-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/init-ssidrssisecurityband.md",
+      "file_path": "documentation/MatterSupport/matteradddeviceextensionrequesthandler/wifiscanresult/init(ssid,rssi,security,band).md",
       "hash": "ffd0f0ccbd223353e850ea8f11722ce57b3de6baf9d57cf298a289e9ce567c2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddeviceextensionrequesthandler/wifiscanresult/rssi.json": {
@@ -542,7 +542,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/all(_:).json": {
       "etag": "\"361f-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/all.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/all(_).md",
       "hash": "65ff369219ae70ab1637e7d436152f3f963011ebd5dfbc6da0cf1b4e49701d67"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/alldevices.json": {
@@ -552,37 +552,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/any(_:).json": {
       "etag": "\"3625-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/any.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/any(_).md",
       "hash": "a9d1c1913d1fb406477be4d2435d855acff5ed7098faa7ce2044158119733660"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/commissioningid(_:).json": {
       "etag": "\"3e33-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/commissioningid.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/commissioningid(_).md",
       "hash": "85f641e2d44089df819978c68a1d1c5d3142769be85acc88933fbd96e97937f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/fabricnode(rootpublickey:nodeid:).json": {
       "etag": "\"3b8f-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/fabricnode-rootpublickeynodeid.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/fabricnode(rootpublickey,nodeid).md",
       "hash": "fc80041993ae31ade68c40cc2c5a4b5f59479e6f4e0f486f5be4f97787335599"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/not(_:).json": {
       "etag": "\"3619-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/not.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/not(_).md",
       "hash": "8df484acdecff08912255a0bceeb79233a55b39f559d5c53d7da279604541dfa"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/productid(_:).json": {
       "etag": "\"3588-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/productid.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/productid(_).md",
       "hash": "3070eac279952092546c02140c522acb22e1a2481a095b10e954400197ecce40"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/serialnumber(_:).json": {
       "etag": "\"35d1-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/serialnumber.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/serialnumber(_).md",
       "hash": "08e5f9431dfccf63136ebd7a9c768a2d670ad079be1783ea8a11e2df8491fa26"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/devicecriteria/vendorid(_:).json": {
       "etag": "\"3577-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/vendorid.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/devicecriteria/vendorid(_).md",
       "hash": "7e61d95dffb6c38e7b10ee228d39745abf46aa5eb965072e8770f70172418616"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/home.json": {
@@ -597,22 +597,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/home/init(displayname:).json": {
       "etag": "\"1941-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/home/init-displayname.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/home/init(displayname).md",
       "hash": "b41b6c4d16132e0c72d0ad97817fddb93775518c029b6348e14a2bd16fd5341a"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/init(from:).json": {
       "etag": "\"223a-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/init-from.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/init(from).md",
       "hash": "e2a06ab11b61f0436031f6f1624edac57affe3da509b7c283f1c04ff0c73b5d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/init(topology:setuppayload:showing:).json": {
       "etag": "\"304e-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/init-topologysetuppayloadshowing.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/init(topology,setuppayload,showing).md",
       "hash": "261559337c542d019bf62c471861f385c5235758e13e9fd5078f5dfd2801b61d"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/init(topology:setuppayload:showing:shouldscannetworks:).json": {
       "etag": "\"355d-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/init-topologysetuppayloadshowingshouldscannetworks.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/init(topology,setuppayload,showing,shouldscannetworks).md",
       "hash": "df37f8726120523fbef85be5bf3476fde4a94993094461e035ac46d2fd8080bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/issupported.json": {
@@ -622,7 +622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/perform().json": {
       "etag": "\"1361-65d55e4b57633-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/perform.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/perform().md",
       "hash": "c09a303566e57c79dfe3a025cae6ab3dc0922b21b48c1b591d45817dd6a6ed06"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/room.json": {
@@ -637,7 +637,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/room/init(displayname:).json": {
       "etag": "\"1941-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/room/init-displayname.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/room/init(displayname).md",
       "hash": "1c5e49ef9c72c02ffa91a232266051c0744c11770442365a0aea34c54b67271a"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/setuppayload.json": {
@@ -657,12 +657,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.property.json": {
       "etag": "\"1f53-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swiftproperty.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.property.md",
       "hash": "6bb242963c11877166be50b6f57be66601068ed959168c25cb03a814c0903507"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.struct.json": {
       "etag": "\"3e35-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swiftstruct.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct.md",
       "hash": "a9b81b9aa944f3328132e035da83315bdb84e67d0e7636db71a1220a44f0407b"
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.struct/ecosystemname.json": {
@@ -677,7 +677,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mattersupport/matteradddevicerequest/topology-swift.struct/init(ecosystemname:homes:).json": {
       "etag": "\"2268-65d55e4b482ff-df\"",
-      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct/init-ecosystemnamehomes.md",
+      "file_path": "documentation/MatterSupport/matteradddevicerequest/topology-swift.struct/init(ecosystemname,homes).md",
       "hash": "6b8ab22c048a0fdfce367999c6bce896ac4c35847d4464177747406c639bfeab"
     }
   },

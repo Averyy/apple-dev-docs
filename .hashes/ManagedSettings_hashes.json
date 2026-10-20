@@ -12,12 +12,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/accountsettings/lockaccounts-swift.property": {
       "etag": "\"198c-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swift.property.md",
       "hash": "247cb84b11235ef2ae45b616d6e2f356d8c9ce3f87fa01658bb52062c316d84b"
     },
     "https://developer.apple.com/documentation/managedsettings/accountsettings/lockaccounts-swift.type.property": {
       "etag": "\"1c23-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swift.type.property.md",
       "hash": "bb65bf025c4aed78a134cb5189c853aaa38e2fe617b5a317cd6d4ba6bb9a6563"
     },
     "https://developer.apple.com/documentation/managedsettings/activitycategory": {
@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/managedsettings/activitycategory/init(token:)": {
       "etag": "\"133d-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/activitycategory/init-token.md",
+      "file_path": "documentation/ManagedSettings/activitycategory/init(token).md",
       "hash": "9088f016e5ca701a9547bde65adb554835c30cea854bc1dba6a3e1e40252cc31"
     },
     "https://developer.apple.com/documentation/managedsettings/activitycategory/localizeddisplayname": {
@@ -57,12 +57,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/application/init(bundleidentifier:)": {
       "etag": "\"16bb-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/application/init-bundleidentifier.md",
+      "file_path": "documentation/ManagedSettings/application/init(bundleidentifier).md",
       "hash": "f21455b23964854c519fb9c5d72b85fef3ae9d8f8b70c64536c40d542058e614"
     },
     "https://developer.apple.com/documentation/managedsettings/application/init(token:)": {
       "etag": "\"172f-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/application/init-token.md",
+      "file_path": "documentation/ManagedSettings/application/init(token).md",
       "hash": "0f02a490a5e6e3fe18c02cce475c2963fd55673493506c2dc6e8d50bf0b0e965"
     },
     "https://developer.apple.com/documentation/managedsettings/application/localizeddisplayname": {
@@ -82,32 +82,32 @@
     },
     "https://developer.apple.com/documentation/managedsettings/applicationsettings/blockedapplications-swift.property": {
       "etag": "\"1ec6-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swift.property.md",
       "hash": "beadd536f138600f525919bcb29ecc6a176cdee77658395f0666acabe03fbd0a"
     },
     "https://developer.apple.com/documentation/managedsettings/applicationsettings/blockedapplications-swift.type.property": {
       "etag": "\"22ef-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swift.type.property.md",
       "hash": "a60ce961ad8d84cad299e37f204efa0575bb0b69be513b1958c4f633c84ac3fb"
     },
     "https://developer.apple.com/documentation/managedsettings/applicationsettings/denyappinstallation-swift.property": {
       "etag": "\"21c7-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swift.property.md",
       "hash": "58ccbd009f5f7f2be099110195699caa5901102cd34d42ab220aa4c975c81210"
     },
     "https://developer.apple.com/documentation/managedsettings/applicationsettings/denyappinstallation-swift.type.property": {
       "etag": "\"2696-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swift.type.property.md",
       "hash": "60c831c4761430d8766161418dbf1f39a7260e8c604188ce405f16c860c65f96"
     },
     "https://developer.apple.com/documentation/managedsettings/applicationsettings/denyappremoval-swift.property": {
       "etag": "\"21ac-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swift.property.md",
       "hash": "9407510e6e3d06354aef9d397626a6a046d2fc5f9dd0369b93727f69dc54052f"
     },
     "https://developer.apple.com/documentation/managedsettings/applicationsettings/denyappremoval-swift.type.property": {
       "etag": "\"266e-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swift.type.property.md",
       "hash": "e6f1824a0fc45ef906dd58cc1af00da7c11333fcbdc2ffc9a84644ea757f1ae4"
     },
     "https://developer.apple.com/documentation/managedsettings/applicationtoken": {
@@ -122,32 +122,32 @@
     },
     "https://developer.apple.com/documentation/managedsettings/appstoresettings/denyinapppurchases-swift.property": {
       "etag": "\"1991-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swift.property.md",
       "hash": "715feaeed88fb98033ebddef09d98b2eefbe16524bb0f7b01c3dce98348319b1"
     },
     "https://developer.apple.com/documentation/managedsettings/appstoresettings/denyinapppurchases-swift.type.property": {
       "etag": "\"1e60-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swift.type.property.md",
       "hash": "fabb134cfa383436c6b5dc3118b9626874e0aa28e0e9f748f42bf7a993756c3d"
     },
     "https://developer.apple.com/documentation/managedsettings/appstoresettings/maximumrating-swift.property": {
       "etag": "\"1bb9-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swift.property.md",
       "hash": "5c27e0cc1dfea82ba0d9af6b0096c127009d6ec6fb7ec5dd1e70b65cc5b18423"
     },
     "https://developer.apple.com/documentation/managedsettings/appstoresettings/maximumrating-swift.type.property": {
       "etag": "\"1e1d-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swift.type.property.md",
       "hash": "ba829e2d9a913cd49b668bc31e660902c2bce55327ea5bf691a351b84882e683"
     },
     "https://developer.apple.com/documentation/managedsettings/appstoresettings/requirepasswordforpurchases-swift.property": {
       "etag": "\"1acd-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swift.property.md",
       "hash": "5fbba893c3ec343be2b92bc47ff92f0cd1c60ea32dd283d4a473e4a983cbf8e8"
     },
     "https://developer.apple.com/documentation/managedsettings/appstoresettings/requirepasswordforpurchases-swift.type.property": {
       "etag": "\"1ef4-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swift.type.property.md",
       "hash": "1cbd94b81f93102186c7af7b0543a5fa8a03300b2f1bcd2cfcb9518e3f1917d4"
     },
     "https://developer.apple.com/documentation/managedsettings/boundedsettingmetadata": {
@@ -172,32 +172,32 @@
     },
     "https://developer.apple.com/documentation/managedsettings/cellularsettings/lockappcellulardata-swift.property": {
       "etag": "\"1a68-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swift.property.md",
       "hash": "4bd403b08a5e7134f10f55a02a77d6209ea7cabd893c024516e02de26fbeac75"
     },
     "https://developer.apple.com/documentation/managedsettings/cellularsettings/lockappcellulardata-swift.type.property": {
       "etag": "\"1d78-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swift.type.property.md",
       "hash": "0ee6d51ac45aebc4d0d485f3831c311050fa8d41b72a13bd9d24234fe797e596"
     },
     "https://developer.apple.com/documentation/managedsettings/cellularsettings/lockcellularplan-swift.property": {
       "etag": "\"1876-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swift.property.md",
       "hash": "6075ceb1007743e38ba63da7ac3a909af2dc8704bc4efceb96999827715308a2"
     },
     "https://developer.apple.com/documentation/managedsettings/cellularsettings/lockcellularplan-swift.type.property": {
       "etag": "\"1d43-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swift.type.property.md",
       "hash": "c75c3df9217e09179a49e27969c04c23b6d569e15ceafa4cc38a945d04e7281f"
     },
     "https://developer.apple.com/documentation/managedsettings/cellularsettings/lockesim-swift.property": {
       "etag": "\"191a-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swift.property.md",
       "hash": "1479cd900f0d5c9e13db826f9a9bef06ed7f7da8dfa0f851e2ab75b61d5c5261"
     },
     "https://developer.apple.com/documentation/managedsettings/cellularsettings/lockesim-swift.type.property": {
       "etag": "\"1cc8-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swift.type.property.md",
       "hash": "a0bc774769799231e9b4976d5841ece1374b8e8485aea8b1a738398367ff1f86"
     },
     "https://developer.apple.com/documentation/managedsettings/connectionwithframeworks": {
@@ -212,12 +212,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/dateandtimesettings/requireautomaticdateandtime-swift.property": {
       "etag": "\"1a93-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swift.property.md",
       "hash": "e68e25ca9812c92f3bc9c879020f56a567c6ab24630f2fc672a57aca2874d7cc"
     },
     "https://developer.apple.com/documentation/managedsettings/dateandtimesettings/requireautomaticdateandtime-swift.type.property": {
       "etag": "\"1faa-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swift.type.property.md",
       "hash": "89f4a63ee62a453728b2ef7b751f35e6f08bac08967062c2d1249b071f0ef04b"
     },
     "https://developer.apple.com/documentation/managedsettings/gamecentersettings": {
@@ -227,22 +227,22 @@
     },
     "https://developer.apple.com/documentation/managedsettings/gamecentersettings/denyaddingfriends-swift.property": {
       "etag": "\"19d0-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swift.property.md",
       "hash": "e2c2df5260f7406bc5cda2359c48c8a5bbe2797cf43cd9601bd0deeb8fde8a17"
     },
     "https://developer.apple.com/documentation/managedsettings/gamecentersettings/denyaddingfriends-swift.type.property": {
       "etag": "\"1eea-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swift.type.property.md",
       "hash": "4b1ebc1b1f1125febebccbea25a9e862195c08a2400dd417e8d37d105aa1b648"
     },
     "https://developer.apple.com/documentation/managedsettings/gamecentersettings/denymultiplayergaming-swift.property": {
       "etag": "\"1a21-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swift.property.md",
       "hash": "d79f0b9775125f95f77128ef402e6da567bc1541a2079cbc727bb8c7d3e5107a"
     },
     "https://developer.apple.com/documentation/managedsettings/gamecentersettings/denymultiplayergaming-swift.type.property": {
       "etag": "\"1f71-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swift.type.property.md",
       "hash": "e66b999d340610e74969a884c1e0039618bf50081de1acc8acbd0c200072254c"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsgroup": {
@@ -257,17 +257,17 @@
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/$effectivedenyexplicitcontent": {
       "etag": "\"1b0b-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivedenyexplicitcontent.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/dollareffectivedenyexplicitcontent.md",
       "hash": "dac425e01159b946d35ac7f3113c1013f0af220d64e238d51520134e616dd7e4"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/$effectivemaximummovierating": {
       "etag": "\"1a6a-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivemaximummovierating.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/dollareffectivemaximummovierating.md",
       "hash": "c803561ef8c64bbc7f6b634b19a7dff3e35c9db1d847516d4a962143f15ca011"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/$effectivemaximumtvshowrating": {
       "etag": "\"2093-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivemaximumtvshowrating.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/dollareffectivemaximumtvshowrating.md",
       "hash": "785a482b8ba18ff7e5d7baa966684d5c7d9f2ebac4548f384d0b965d82b31f9b"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/account": {
@@ -292,7 +292,7 @@
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/clearallsettings()": {
       "etag": "\"ed0-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/clearallsettings.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/clearallsettings().md",
       "hash": "a79cd1ee0f5b85f2915d78240863b7ae3e073641cc85f6406e16a90a53aec028"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/dateandtime": {
@@ -302,12 +302,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/deletestore()": {
       "etag": "\"e7a-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestore.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestore().md",
       "hash": "479d88a84a66ac5d20a1353be383a961bc5f9c2efb08e8814573b51ecca3b623"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/deletestores(_:)": {
       "etag": "\"1a47-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestores.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestores(_).md",
       "hash": "57c4e3eba88867a2a1a625f3af0ddcf64e9c90927491984fccad73d50efbc5a5"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/effectivedenyexplicitcontent": {
@@ -332,12 +332,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/init()": {
       "etag": "\"f60-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/init.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/init().md",
       "hash": "de8c836325ad99ac2c3e296dd540dca32418c463d0b0203d6e1a08d397e13e90"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/init(named:)": {
       "etag": "\"190e-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/init-named.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/init(named).md",
       "hash": "d4f308c1f6373eecc7821ab0867d8660d5978c8db3bed83d0be0ce8b56b4fdff"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/isactive": {
@@ -362,12 +362,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/name/init(_:)": {
       "etag": "\"1559-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init(_).md",
       "hash": "09180998507d5cd276abb82c163590d04cff3b86d15d913f8c8f0bc3d5063b04"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/name/init(rawvalue:)": {
       "etag": "\"15e3-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init-rawvalue.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init(rawvalue).md",
       "hash": "6350a29d221f71a9c5e2ac425ccb6c0a984b42550ca6f7dcb01ac52ac1f90d76"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/name/rawvalue": {
@@ -382,17 +382,17 @@
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/refresh(_:)-4v4xe": {
       "etag": "\"1680-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-4v4xe.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh(_)-4v4xe.md",
       "hash": "43ab3c265e448dca8478ef2e2b74effb630b0fe158e823d0f03bb26803ca11f0"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/refresh(_:)-65mti": {
       "etag": "\"160f-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-65mti.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh(_)-65mti.md",
       "hash": "e38fb71d4c5c62b605816821fc2cb89fdc59d6a8f545174cd6867723bebf2952"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/refresh(_:)-s5s3": {
       "etag": "\"160a-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-s5s3.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh(_)-s5s3.md",
       "hash": "b71bca040a30bcaa557a82ebc3f22b39392e4aa0db4fdafba9bf884b19d308e4"
     },
     "https://developer.apple.com/documentation/managedsettings/managedsettingsstore/safari": {
@@ -432,52 +432,52 @@
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/denybookstoreerotica-swift.property": {
       "etag": "\"1b0c-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swift.property.md",
       "hash": "bb2b6fa8aa386ec7b6b2c8ae073199eaca796798eaf65b23f3f103ce81340f51"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/denybookstoreerotica-swift.type.property": {
       "etag": "\"1f0a-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swift.type.property.md",
       "hash": "bde5d3b61273a0799a7b7ec1883b681eb69c2aef9cbaffd6a57ed76d2dba4e3b"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/denyexplicitcontent-swift.property": {
       "etag": "\"1a83-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swift.property.md",
       "hash": "1fd4cf5804318940f660f5cbb193bcf35ed122b0a7a459d9a5be81a4dd07f5ee"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/denyexplicitcontent-swift.type.property": {
       "etag": "\"1e67-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swift.type.property.md",
       "hash": "bc92a91f60ae9b1c3dcf5766691be158c57fda8dccd09d5dd7cf988dce0d8c45"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/denymusicservice-swift.property": {
       "etag": "\"1a1f-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swift.property.md",
       "hash": "800b6d7a31b04a87551c4d4dc28b1f65c7c7e503a88dcf6baf5effbf030368c7"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/denymusicservice-swift.type.property": {
       "etag": "\"1e53-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swift.type.property.md",
       "hash": "47977aa0b3d099b7e65cd72f53ee543e65238094d5df61126a76f72c1cce840e"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/maximummovierating-swift.property": {
       "etag": "\"2663-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swift.property.md",
       "hash": "8aa9aeaf2597de82ab8bbcae0c25e687963b4be7ac324445ddf2703ecf21f173"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/maximummovierating-swift.type.property": {
       "etag": "\"24cf-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swift.type.property.md",
       "hash": "1128426e8b6abf7c4131b48379c22b52d9764e8720f6f0ef787494fe2c01abe4"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/maximumtvshowrating-swift.property": {
       "etag": "\"24b6-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swift.property.md",
       "hash": "bbd051a34eeee2be7355bd7ff19eac775b4e60489ff0ab1b14b0c2035f7aa875"
     },
     "https://developer.apple.com/documentation/managedsettings/mediasettings/maximumtvshowrating-swift.type.property": {
       "etag": "\"24d6-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swift.type.property.md",
       "hash": "5b5203e253bafe5bb662ec8a7ac9d3484de34dd1b266e14e07ebe8283dd21276"
     },
     "https://developer.apple.com/documentation/managedsettings/passcodesettings": {
@@ -487,12 +487,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/passcodesettings/lockpasscode-swift.property": {
       "etag": "\"1936-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swift.property.md",
       "hash": "acff832046c9f1fd49de3329411c227302527b64ecc96caeeabb0ebb2378abac"
     },
     "https://developer.apple.com/documentation/managedsettings/passcodesettings/lockpasscode-swift.type.property": {
       "etag": "\"1e47-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swift.type.property.md",
       "hash": "6faa4e7caa1711e5a8754d3d16ced4b8c2469e315bd1264a09cd4caf30a9770b"
     },
     "https://developer.apple.com/documentation/managedsettings/readingmedia": {
@@ -507,17 +507,17 @@
     },
     "https://developer.apple.com/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum": {
       "etag": "\"3e0b-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swiftenum.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum.md",
       "hash": "9e333ead350e94cd6bad352f38e5c7894342fbb33b36c25f08b6c9366afa5f3c"
     },
     "https://developer.apple.com/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/!=(_:_:)": {
       "etag": "W/\"02e47a4bc0aeaf90b9bc54677136a9ee\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/unknown.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/noteq(_,_).md",
       "hash": "f67a89009ad0fe8b86eab8d4a2bcfb7923cdedad9a0eade42370c12942393b85"
     },
     "https://developer.apple.com/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/_(_:_:)": {
       "etag": "\"1f60-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/unknown.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/op(_,_).md",
       "hash": "5cc5d5b77c7c8e75a25528a5bb2c1ee06d5060a3b30a647b8be113b0edc08ef7"
     },
     "https://developer.apple.com/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/always": {
@@ -542,22 +542,22 @@
     },
     "https://developer.apple.com/documentation/managedsettings/safarisettings/cookiepolicy-swift.property": {
       "etag": "\"1ce2-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.property.md",
       "hash": "bc27bf1a31d708895ae4732cc5b60c0c531545d0cb6bcef07fd4151d3a391b89"
     },
     "https://developer.apple.com/documentation/managedsettings/safarisettings/cookiepolicy-swift.type.property": {
       "etag": "\"2514-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.type.property.md",
       "hash": "104076d0ba9a309f7b44cd3d5eff751078182b702d89bc96823527d7da21d8b4"
     },
     "https://developer.apple.com/documentation/managedsettings/safarisettings/denyautofill-swift.property": {
       "etag": "\"1a7f-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swift.property.md",
       "hash": "8236845584f40f725192c7e7f150ad728ec824ff6c5945ec26c54e9562d998f0"
     },
     "https://developer.apple.com/documentation/managedsettings/safarisettings/denyautofill-swift.type.property": {
       "etag": "\"1e15-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swift.type.property.md",
       "hash": "bed13b5f3143bf49224481f7688103916c3ffffa44105ff530b8d3b101b32ff7"
     },
     "https://developer.apple.com/documentation/managedsettings/settingmetadata": {
@@ -607,22 +607,22 @@
     },
     "https://developer.apple.com/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-4jgek": {
       "etag": "\"33f1-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-4jgek.md",
+      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle(action,for,completionhandler)-4jgek.md",
       "hash": "4c8bd75d07d9cba2e419f2ea684a1550bba132c2a50f9087ab8553e57b208a9a"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-4tqna": {
       "etag": "\"33f0-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-4tqna.md",
+      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle(action,for,completionhandler)-4tqna.md",
       "hash": "d9923bf66e60a296f42d1931ac9f9af69c1df0581150bab89457090c0e7be569"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-9hcqc": {
       "etag": "\"3480-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-9hcqc.md",
+      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle(action,for,completionhandler)-9hcqc.md",
       "hash": "524c79062d34c30bf4baeafcca1a778b2100c274375fc43b6cdb875cd34ef473"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldactiondelegate/init()": {
       "etag": "\"d95-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/shieldactiondelegate/init.md",
+      "file_path": "documentation/ManagedSettings/shieldactiondelegate/init().md",
       "hash": "636883201967f366558dbde524097f458692e17536810f988e4a029adce6730b"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldactionresponse": {
@@ -662,12 +662,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/activitycategorypolicy/==(_:_:)": {
       "etag": "\"2176-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/equal.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/eqeq(_,_).md",
       "hash": "e01cec5d9a3e6b9a78213285e71225d73b08cb1adcc9458ff0b626ccb7b6534d"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/activitycategorypolicy/all(except:)": {
       "etag": "\"25e3-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/all-except.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/all(except).md",
       "hash": "a4e3a64f9502777b0e1415a80818f7adc563d4710058cac9a14f7ab60b8728ca"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/activitycategorypolicy/none": {
@@ -677,47 +677,47 @@
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/activitycategorypolicy/specific(_:except:)": {
       "etag": "\"2d0a-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/specific-except.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/specific(_,except).md",
       "hash": "5feb438ba996e6712c0c7abab27ee626528d9bdbd6c0d52b1ee7d2a34a863d04"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/applicationcategories-swift.property": {
       "etag": "\"30e7-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swift.property.md",
       "hash": "66e423f5d403d6dd69d62429a04f882f40448873b06c5cefa89df129dbf8ff3d"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/applicationcategories-swift.type.property": {
       "etag": "\"3495-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swift.type.property.md",
       "hash": "b5100b35f206869c5d37ae0e411d00196b0f3c76a051fd852f011720d900abea"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/applications-swift.property": {
       "etag": "\"283d-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/applications-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/applications-swift.property.md",
       "hash": "b0ceb0b80807eb827423c158d6a8dd44e974ee4129e4811a4bfeda446fee2bbb"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/applications-swift.type.property": {
       "etag": "\"29b1-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/applications-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/applications-swift.type.property.md",
       "hash": "e556130b40e6671c8ffaa2cf24d879798aeaf23b6a371e7bddfc5dd06c2d1ea9"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/webdomaincategories-swift.property": {
       "etag": "\"3022-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swift.property.md",
       "hash": "ef646e41af8c91fda0390b4c9ed17ffb66279636222f48711890853dffa01406"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/webdomaincategories-swift.type.property": {
       "etag": "\"35ac-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swift.type.property.md",
       "hash": "06592b895834ae360d4f83eeea4b4dc9ac90a3572ec51cef0de6e2c8d4264aa5"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/webdomains-swift.property": {
       "etag": "\"2837-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swift.property.md",
       "hash": "0fd82bbd5ec87c2de956e6f0579acfa1c920d4977325b84b9a078256614a4eb2"
     },
     "https://developer.apple.com/documentation/managedsettings/shieldsettings/webdomains-swift.type.property": {
       "etag": "\"2af3-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swift.type.property.md",
       "hash": "318702601917c22405860812df6a1b32d786ce81826b9a941926c1d53c2769ab"
     },
     "https://developer.apple.com/documentation/managedsettings/sirisettings": {
@@ -727,12 +727,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/sirisettings/denysiri-swift.property": {
       "etag": "\"1864-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swift.property.md",
       "hash": "2e1049025ad6c65139a4ae806b3d374c9884b0285352e41817398cf6fb12b788"
     },
     "https://developer.apple.com/documentation/managedsettings/sirisettings/denysiri-swift.type.property": {
       "etag": "\"1d6a-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swift.type.property.md",
       "hash": "b7bc1380f64b9ec9cb242f926d4c63649b49b75d1c8758cad326794e3a9077ee"
     },
     "https://developer.apple.com/documentation/managedsettings/token": {
@@ -747,12 +747,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/webcontentsettings/blockedbyfilter-swift.property": {
       "etag": "\"1ee4-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swift.property.md",
       "hash": "03c94e1741bdc8a60021d37e3fb8e697e43a51acc9b02da23ac09f33e25ba82e"
     },
     "https://developer.apple.com/documentation/managedsettings/webcontentsettings/blockedbyfilter-swift.type.property": {
       "etag": "\"2455-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swift.type.property.md",
       "hash": "f4f1600364311a59d096e86f6b8a3f16628cc817278b032b19dcdb72b9b1a64f"
     },
     "https://developer.apple.com/documentation/managedsettings/webcontentsettings/filterpolicy": {
@@ -762,17 +762,17 @@
     },
     "https://developer.apple.com/documentation/managedsettings/webcontentsettings/filterpolicy/==(_:_:)": {
       "etag": "\"20d9-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/equal.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/eqeq(_,_).md",
       "hash": "a7a6a11e90dd389df954e76d899792f1684bc613b68496df66cc61cc79f4c812"
     },
     "https://developer.apple.com/documentation/managedsettings/webcontentsettings/filterpolicy/all(except:)": {
       "etag": "\"2731-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/all-except.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/all(except).md",
       "hash": "c9c2e8cdc3ce89fa596d397fc3c9770c8bd4b6f8f961aaafeac6b192d3f643f5"
     },
     "https://developer.apple.com/documentation/managedsettings/webcontentsettings/filterpolicy/auto(_:except:)": {
       "etag": "\"2b91-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/auto-except.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/auto(_,except).md",
       "hash": "90bcf97930302f5f0adfb72596168d6aa0199b6c7fb8aaa2081f6bbffbd77968"
     },
     "https://developer.apple.com/documentation/managedsettings/webcontentsettings/filterpolicy/none": {
@@ -782,7 +782,7 @@
     },
     "https://developer.apple.com/documentation/managedsettings/webcontentsettings/filterpolicy/specific(_:)": {
       "etag": "\"2697-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/specific.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/specific(_).md",
       "hash": "d0d4dc127307ab98d4386f32a545a6a14a4fa484fd82f5d5640a46dc90ee2c78"
     },
     "https://developer.apple.com/documentation/managedsettings/webdomain": {
@@ -797,12 +797,12 @@
     },
     "https://developer.apple.com/documentation/managedsettings/webdomain/init(domain:)": {
       "etag": "\"17e7-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/webdomain/init-domain.md",
+      "file_path": "documentation/ManagedSettings/webdomain/init(domain).md",
       "hash": "0f63b6eb1dd335691cd5d79ecc949e6f6c8d0f8e6a17faf4fb4675343050ca6c"
     },
     "https://developer.apple.com/documentation/managedsettings/webdomain/init(token:)": {
       "etag": "\"169e-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/webdomain/init-token.md",
+      "file_path": "documentation/ManagedSettings/webdomain/init(token).md",
       "hash": "733b1d80ac29861258e70821e9695108efcbae9058108b9f9b654b9f437ad946"
     },
     "https://developer.apple.com/documentation/managedsettings/webdomain/token": {
@@ -827,12 +827,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/accountsettings/lockaccounts-swift.property.json": {
       "etag": "\"198c-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swift.property.md",
       "hash": "247cb84b11235ef2ae45b616d6e2f356d8c9ce3f87fa01658bb52062c316d84b"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/accountsettings/lockaccounts-swift.type.property.json": {
       "etag": "\"1c23-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swift.type.property.md",
       "hash": "bb65bf025c4aed78a134cb5189c853aaa38e2fe617b5a317cd6d4ba6bb9a6563"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/activitycategory.json": {
@@ -842,7 +842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/activitycategory/init(token:).json": {
       "etag": "\"133d-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/activitycategory/init-token.md",
+      "file_path": "documentation/ManagedSettings/activitycategory/init(token).md",
       "hash": "9088f016e5ca701a9547bde65adb554835c30cea854bc1dba6a3e1e40252cc31"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/activitycategory/localizeddisplayname.json": {
@@ -872,12 +872,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application/init(bundleidentifier:).json": {
       "etag": "\"16bb-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/application/init-bundleidentifier.md",
+      "file_path": "documentation/ManagedSettings/application/init(bundleidentifier).md",
       "hash": "f21455b23964854c519fb9c5d72b85fef3ae9d8f8b70c64536c40d542058e614"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application/init(token:).json": {
       "etag": "\"172f-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/application/init-token.md",
+      "file_path": "documentation/ManagedSettings/application/init(token).md",
       "hash": "0f02a490a5e6e3fe18c02cce475c2963fd55673493506c2dc6e8d50bf0b0e965"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application/localizeddisplayname.json": {
@@ -897,32 +897,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/blockedapplications-swift.property.json": {
       "etag": "\"1ec6-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swift.property.md",
       "hash": "beadd536f138600f525919bcb29ecc6a176cdee77658395f0666acabe03fbd0a"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/blockedapplications-swift.type.property.json": {
       "etag": "\"22ef-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swift.type.property.md",
       "hash": "a60ce961ad8d84cad299e37f204efa0575bb0b69be513b1958c4f633c84ac3fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/denyappinstallation-swift.property.json": {
       "etag": "\"21c7-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swift.property.md",
       "hash": "58ccbd009f5f7f2be099110195699caa5901102cd34d42ab220aa4c975c81210"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/denyappinstallation-swift.type.property.json": {
       "etag": "\"2696-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swift.type.property.md",
       "hash": "60c831c4761430d8766161418dbf1f39a7260e8c604188ce405f16c860c65f96"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/denyappremoval-swift.property.json": {
       "etag": "\"21ac-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swift.property.md",
       "hash": "9407510e6e3d06354aef9d397626a6a046d2fc5f9dd0369b93727f69dc54052f"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/denyappremoval-swift.type.property.json": {
       "etag": "\"266e-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swift.type.property.md",
       "hash": "e6f1824a0fc45ef906dd58cc1af00da7c11333fcbdc2ffc9a84644ea757f1ae4"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationtoken.json": {
@@ -937,32 +937,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/denyinapppurchases-swift.property.json": {
       "etag": "\"1991-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swift.property.md",
       "hash": "715feaeed88fb98033ebddef09d98b2eefbe16524bb0f7b01c3dce98348319b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/denyinapppurchases-swift.type.property.json": {
       "etag": "\"1e60-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swift.type.property.md",
       "hash": "fabb134cfa383436c6b5dc3118b9626874e0aa28e0e9f748f42bf7a993756c3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/maximumrating-swift.property.json": {
       "etag": "\"1bb9-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swift.property.md",
       "hash": "5c27e0cc1dfea82ba0d9af6b0096c127009d6ec6fb7ec5dd1e70b65cc5b18423"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/maximumrating-swift.type.property.json": {
       "etag": "\"1e1d-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swift.type.property.md",
       "hash": "ba829e2d9a913cd49b668bc31e660902c2bce55327ea5bf691a351b84882e683"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/requirepasswordforpurchases-swift.property.json": {
       "etag": "\"1acd-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swift.property.md",
       "hash": "5fbba893c3ec343be2b92bc47ff92f0cd1c60ea32dd283d4a473e4a983cbf8e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/requirepasswordforpurchases-swift.type.property.json": {
       "etag": "\"1ef4-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swift.type.property.md",
       "hash": "1cbd94b81f93102186c7af7b0543a5fa8a03300b2f1bcd2cfcb9518e3f1917d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/boundedsettingmetadata.json": {
@@ -987,32 +987,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockappcellulardata-swift.property.json": {
       "etag": "\"1a68-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swift.property.md",
       "hash": "4bd403b08a5e7134f10f55a02a77d6209ea7cabd893c024516e02de26fbeac75"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockappcellulardata-swift.type.property.json": {
       "etag": "\"1d78-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swift.type.property.md",
       "hash": "0ee6d51ac45aebc4d0d485f3831c311050fa8d41b72a13bd9d24234fe797e596"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockcellularplan-swift.property.json": {
       "etag": "\"1876-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swift.property.md",
       "hash": "6075ceb1007743e38ba63da7ac3a909af2dc8704bc4efceb96999827715308a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockcellularplan-swift.type.property.json": {
       "etag": "\"1d43-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swift.type.property.md",
       "hash": "c75c3df9217e09179a49e27969c04c23b6d569e15ceafa4cc38a945d04e7281f"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockesim-swift.property.json": {
       "etag": "\"191a-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swift.property.md",
       "hash": "1479cd900f0d5c9e13db826f9a9bef06ed7f7da8dfa0f851e2ab75b61d5c5261"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockesim-swift.type.property.json": {
       "etag": "\"1cc8-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swift.type.property.md",
       "hash": "a0bc774769799231e9b4976d5841ece1374b8e8485aea8b1a738398367ff1f86"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/connectionwithframeworks.json": {
@@ -1027,12 +1027,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/dateandtimesettings/requireautomaticdateandtime-swift.property.json": {
       "etag": "\"1a93-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swift.property.md",
       "hash": "e68e25ca9812c92f3bc9c879020f56a567c6ab24630f2fc672a57aca2874d7cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/dateandtimesettings/requireautomaticdateandtime-swift.type.property.json": {
       "etag": "\"1faa-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swift.type.property.md",
       "hash": "89f4a63ee62a453728b2ef7b751f35e6f08bac08967062c2d1249b071f0ef04b"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings.json": {
@@ -1042,22 +1042,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings/denyaddingfriends-swift.property.json": {
       "etag": "\"19d0-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swift.property.md",
       "hash": "e2c2df5260f7406bc5cda2359c48c8a5bbe2797cf43cd9601bd0deeb8fde8a17"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings/denyaddingfriends-swift.type.property.json": {
       "etag": "\"1eea-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swift.type.property.md",
       "hash": "4b1ebc1b1f1125febebccbea25a9e862195c08a2400dd417e8d37d105aa1b648"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings/denymultiplayergaming-swift.property.json": {
       "etag": "\"1a21-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swift.property.md",
       "hash": "d79f0b9775125f95f77128ef402e6da567bc1541a2079cbc727bb8c7d3e5107a"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings/denymultiplayergaming-swift.type.property.json": {
       "etag": "\"1f71-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swift.type.property.md",
       "hash": "e66b999d340610e74969a884c1e0039618bf50081de1acc8acbd0c200072254c"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsgroup.json": {
@@ -1072,17 +1072,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/$effectivedenyexplicitcontent.json": {
       "etag": "\"1b0b-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivedenyexplicitcontent.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/dollareffectivedenyexplicitcontent.md",
       "hash": "dac425e01159b946d35ac7f3113c1013f0af220d64e238d51520134e616dd7e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/$effectivemaximummovierating.json": {
       "etag": "\"1a6a-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivemaximummovierating.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/dollareffectivemaximummovierating.md",
       "hash": "c803561ef8c64bbc7f6b634b19a7dff3e35c9db1d847516d4a962143f15ca011"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/$effectivemaximumtvshowrating.json": {
       "etag": "\"2093-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivemaximumtvshowrating.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/dollareffectivemaximumtvshowrating.md",
       "hash": "785a482b8ba18ff7e5d7baa966684d5c7d9f2ebac4548f384d0b965d82b31f9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/account.json": {
@@ -1107,7 +1107,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/clearallsettings().json": {
       "etag": "\"ed0-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/clearallsettings.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/clearallsettings().md",
       "hash": "a79cd1ee0f5b85f2915d78240863b7ae3e073641cc85f6406e16a90a53aec028"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/dateandtime.json": {
@@ -1117,12 +1117,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/deletestore().json": {
       "etag": "\"e7a-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestore.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestore().md",
       "hash": "479d88a84a66ac5d20a1353be383a961bc5f9c2efb08e8814573b51ecca3b623"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/deletestores(_:).json": {
       "etag": "\"1a47-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestores.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestores(_).md",
       "hash": "57c4e3eba88867a2a1a625f3af0ddcf64e9c90927491984fccad73d50efbc5a5"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/effectivedenyexplicitcontent.json": {
@@ -1147,12 +1147,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/init().json": {
       "etag": "\"f60-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/init.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/init().md",
       "hash": "de8c836325ad99ac2c3e296dd540dca32418c463d0b0203d6e1a08d397e13e90"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/init(named:).json": {
       "etag": "\"190e-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/init-named.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/init(named).md",
       "hash": "d4f308c1f6373eecc7821ab0867d8660d5978c8db3bed83d0be0ce8b56b4fdff"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/isactive.json": {
@@ -1177,12 +1177,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/name/init(_:).json": {
       "etag": "\"1559-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init(_).md",
       "hash": "09180998507d5cd276abb82c163590d04cff3b86d15d913f8c8f0bc3d5063b04"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/name/init(rawvalue:).json": {
       "etag": "\"15e3-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init-rawvalue.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init(rawvalue).md",
       "hash": "6350a29d221f71a9c5e2ac425ccb6c0a984b42550ca6f7dcb01ac52ac1f90d76"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/name/rawvalue.json": {
@@ -1197,17 +1197,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/refresh(_:)-4v4xe.json": {
       "etag": "\"1680-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-4v4xe.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh(_)-4v4xe.md",
       "hash": "43ab3c265e448dca8478ef2e2b74effb630b0fe158e823d0f03bb26803ca11f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/refresh(_:)-65mti.json": {
       "etag": "\"160f-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-65mti.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh(_)-65mti.md",
       "hash": "e38fb71d4c5c62b605816821fc2cb89fdc59d6a8f545174cd6867723bebf2952"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/refresh(_:)-s5s3.json": {
       "etag": "\"160a-65d5609c1dc41-df\"",
-      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-s5s3.md",
+      "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh(_)-s5s3.md",
       "hash": "b71bca040a30bcaa557a82ebc3f22b39392e4aa0db4fdafba9bf884b19d308e4"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/safari.json": {
@@ -1247,52 +1247,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denybookstoreerotica-swift.property.json": {
       "etag": "\"1b0c-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swift.property.md",
       "hash": "bb2b6fa8aa386ec7b6b2c8ae073199eaca796798eaf65b23f3f103ce81340f51"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denybookstoreerotica-swift.type.property.json": {
       "etag": "\"1f0a-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swift.type.property.md",
       "hash": "bde5d3b61273a0799a7b7ec1883b681eb69c2aef9cbaffd6a57ed76d2dba4e3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denyexplicitcontent-swift.property.json": {
       "etag": "\"1a83-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swift.property.md",
       "hash": "1fd4cf5804318940f660f5cbb193bcf35ed122b0a7a459d9a5be81a4dd07f5ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denyexplicitcontent-swift.type.property.json": {
       "etag": "\"1e67-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swift.type.property.md",
       "hash": "bc92a91f60ae9b1c3dcf5766691be158c57fda8dccd09d5dd7cf988dce0d8c45"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denymusicservice-swift.property.json": {
       "etag": "\"1a1f-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swift.property.md",
       "hash": "800b6d7a31b04a87551c4d4dc28b1f65c7c7e503a88dcf6baf5effbf030368c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denymusicservice-swift.type.property.json": {
       "etag": "\"1e53-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swift.type.property.md",
       "hash": "47977aa0b3d099b7e65cd72f53ee543e65238094d5df61126a76f72c1cce840e"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/maximummovierating-swift.property.json": {
       "etag": "\"2663-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swift.property.md",
       "hash": "8aa9aeaf2597de82ab8bbcae0c25e687963b4be7ac324445ddf2703ecf21f173"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/maximummovierating-swift.type.property.json": {
       "etag": "\"24cf-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swift.type.property.md",
       "hash": "1128426e8b6abf7c4131b48379c22b52d9764e8720f6f0ef787494fe2c01abe4"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/maximumtvshowrating-swift.property.json": {
       "etag": "\"24b6-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swift.property.md",
       "hash": "bbd051a34eeee2be7355bd7ff19eac775b4e60489ff0ab1b14b0c2035f7aa875"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/maximumtvshowrating-swift.type.property.json": {
       "etag": "\"24d6-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swift.type.property.md",
       "hash": "5b5203e253bafe5bb662ec8a7ac9d3484de34dd1b266e14e07ebe8283dd21276"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/passcodesettings.json": {
@@ -1302,12 +1302,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/passcodesettings/lockpasscode-swift.property.json": {
       "etag": "\"1936-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swift.property.md",
       "hash": "acff832046c9f1fd49de3329411c227302527b64ecc96caeeabb0ebb2378abac"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/passcodesettings/lockpasscode-swift.type.property.json": {
       "etag": "\"1e47-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swift.type.property.md",
       "hash": "6faa4e7caa1711e5a8754d3d16ced4b8c2469e315bd1264a09cd4caf30a9770b"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/readingmedia.json": {
@@ -1322,12 +1322,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum.json": {
       "etag": "\"3e0b-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swiftenum.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum.md",
       "hash": "9e333ead350e94cd6bad352f38e5c7894342fbb33b36c25f08b6c9366afa5f3c"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/!=(_:_:).json": {
       "etag": "W/\"02e47a4bc0aeaf90b9bc54677136a9ee\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/unknown.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/noteq(_,_).md",
       "hash": "f67a89009ad0fe8b86eab8d4a2bcfb7923cdedad9a0eade42370c12942393b85"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/...(_:)-1u7oy.json": {
@@ -1352,7 +1352,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/_(_:_:).json": {
       "etag": "\"1f60-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/unknown.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/op(_,_).md",
       "hash": "5cc5d5b77c7c8e75a25528a5bb2c1ee06d5060a3b30a647b8be113b0edc08ef7"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/always.json": {
@@ -1377,22 +1377,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.property.json": {
       "etag": "\"1ce2-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.property.md",
       "hash": "bc27bf1a31d708895ae4732cc5b60c0c531545d0cb6bcef07fd4151d3a391b89"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.type.property.json": {
       "etag": "\"2514-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.type.property.md",
       "hash": "104076d0ba9a309f7b44cd3d5eff751078182b702d89bc96823527d7da21d8b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/denyautofill-swift.property.json": {
       "etag": "\"1a7f-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swift.property.md",
       "hash": "8236845584f40f725192c7e7f150ad728ec824ff6c5945ec26c54e9562d998f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/denyautofill-swift.type.property.json": {
       "etag": "\"1e15-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swift.type.property.md",
       "hash": "bed13b5f3143bf49224481f7688103916c3ffffa44105ff530b8d3b101b32ff7"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/settingmetadata.json": {
@@ -1442,22 +1442,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-4jgek.json": {
       "etag": "\"33f1-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-4jgek.md",
+      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle(action,for,completionhandler)-4jgek.md",
       "hash": "4c8bd75d07d9cba2e419f2ea684a1550bba132c2a50f9087ab8553e57b208a9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-4tqna.json": {
       "etag": "\"33f0-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-4tqna.md",
+      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle(action,for,completionhandler)-4tqna.md",
       "hash": "d9923bf66e60a296f42d1931ac9f9af69c1df0581150bab89457090c0e7be569"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-9hcqc.json": {
       "etag": "\"3480-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-9hcqc.md",
+      "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle(action,for,completionhandler)-9hcqc.md",
       "hash": "524c79062d34c30bf4baeafcca1a778b2100c274375fc43b6cdb875cd34ef473"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate/init().json": {
       "etag": "\"d95-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/shieldactiondelegate/init.md",
+      "file_path": "documentation/ManagedSettings/shieldactiondelegate/init().md",
       "hash": "636883201967f366558dbde524097f458692e17536810f988e4a029adce6730b"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactionresponse.json": {
@@ -1497,12 +1497,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy/==(_:_:).json": {
       "etag": "\"2176-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/equal.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/eqeq(_,_).md",
       "hash": "e01cec5d9a3e6b9a78213285e71225d73b08cb1adcc9458ff0b626ccb7b6534d"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy/all(except:).json": {
       "etag": "\"25e3-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/all-except.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/all(except).md",
       "hash": "a4e3a64f9502777b0e1415a80818f7adc563d4710058cac9a14f7ab60b8728ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy/none.json": {
@@ -1512,47 +1512,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy/specific(_:except:).json": {
       "etag": "\"2d0a-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/specific-except.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/specific(_,except).md",
       "hash": "5feb438ba996e6712c0c7abab27ee626528d9bdbd6c0d52b1ee7d2a34a863d04"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/applicationcategories-swift.property.json": {
       "etag": "\"30e7-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swift.property.md",
       "hash": "66e423f5d403d6dd69d62429a04f882f40448873b06c5cefa89df129dbf8ff3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/applicationcategories-swift.type.property.json": {
       "etag": "\"3495-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swift.type.property.md",
       "hash": "b5100b35f206869c5d37ae0e411d00196b0f3c76a051fd852f011720d900abea"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/applications-swift.property.json": {
       "etag": "\"283d-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/applications-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/applications-swift.property.md",
       "hash": "b0ceb0b80807eb827423c158d6a8dd44e974ee4129e4811a4bfeda446fee2bbb"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/applications-swift.type.property.json": {
       "etag": "\"29b1-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/applications-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/applications-swift.type.property.md",
       "hash": "e556130b40e6671c8ffaa2cf24d879798aeaf23b6a371e7bddfc5dd06c2d1ea9"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/webdomaincategories-swift.property.json": {
       "etag": "\"3022-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swift.property.md",
       "hash": "ef646e41af8c91fda0390b4c9ed17ffb66279636222f48711890853dffa01406"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/webdomaincategories-swift.type.property.json": {
       "etag": "\"35ac-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swift.type.property.md",
       "hash": "06592b895834ae360d4f83eeea4b4dc9ac90a3572ec51cef0de6e2c8d4264aa5"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/webdomains-swift.property.json": {
       "etag": "\"2837-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swift.property.md",
       "hash": "0fd82bbd5ec87c2de956e6f0579acfa1c920d4977325b84b9a078256614a4eb2"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/webdomains-swift.type.property.json": {
       "etag": "\"2af3-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swift.type.property.md",
       "hash": "318702601917c22405860812df6a1b32d786ce81826b9a941926c1d53c2769ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/sirisettings.json": {
@@ -1562,12 +1562,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/sirisettings/denysiri-swift.property.json": {
       "etag": "\"1864-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swift.property.md",
       "hash": "2e1049025ad6c65139a4ae806b3d374c9884b0285352e41817398cf6fb12b788"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/sirisettings/denysiri-swift.type.property.json": {
       "etag": "\"1d6a-65d5609c0b2ae-df\"",
-      "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swift.type.property.md",
       "hash": "b7bc1380f64b9ec9cb242f926d4c63649b49b75d1c8758cad326794e3a9077ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/token.json": {
@@ -1582,12 +1582,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/blockedbyfilter-swift.property.json": {
       "etag": "\"1ee4-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swiftproperty.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swift.property.md",
       "hash": "03c94e1741bdc8a60021d37e3fb8e697e43a51acc9b02da23ac09f33e25ba82e"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/blockedbyfilter-swift.type.property.json": {
       "etag": "\"2455-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swifttypeproperty.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swift.type.property.md",
       "hash": "f4f1600364311a59d096e86f6b8a3f16628cc817278b032b19dcdb72b9b1a64f"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy.json": {
@@ -1597,17 +1597,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/==(_:_:).json": {
       "etag": "\"20d9-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/equal.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/eqeq(_,_).md",
       "hash": "a7a6a11e90dd389df954e76d899792f1684bc613b68496df66cc61cc79f4c812"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/all(except:).json": {
       "etag": "\"2731-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/all-except.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/all(except).md",
       "hash": "c9c2e8cdc3ce89fa596d397fc3c9770c8bd4b6f8f961aaafeac6b192d3f643f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/auto(_:except:).json": {
       "etag": "\"2b91-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/auto-except.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/auto(_,except).md",
       "hash": "90bcf97930302f5f0adfb72596168d6aa0199b6c7fb8aaa2081f6bbffbd77968"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/none.json": {
@@ -1617,7 +1617,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/specific(_:).json": {
       "etag": "\"2697-65d5609bef723-df\"",
-      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/specific.md",
+      "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/specific(_).md",
       "hash": "d0d4dc127307ab98d4386f32a545a6a14a4fa484fd82f5d5640a46dc90ee2c78"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain.json": {
@@ -1632,12 +1632,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain/init(domain:).json": {
       "etag": "\"17e7-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/webdomain/init-domain.md",
+      "file_path": "documentation/ManagedSettings/webdomain/init(domain).md",
       "hash": "0f63b6eb1dd335691cd5d79ecc949e6f6c8d0f8e6a17faf4fb4675343050ca6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain/init(token:).json": {
       "etag": "\"169e-65d5609bd2ecb-df\"",
-      "file_path": "documentation/ManagedSettings/webdomain/init-token.md",
+      "file_path": "documentation/ManagedSettings/webdomain/init(token).md",
       "hash": "733b1d80ac29861258e70821e9695108efcbae9058108b9f9b654b9f437ad946"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain/token.json": {

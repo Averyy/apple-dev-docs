@@ -62,12 +62,12 @@
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluation/reportconsumption(_:insightidsused:)": {
       "etag": "\"2465-65d55cd7238b5-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption-insightidsused.md",
+      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption(_,insightidsused).md",
       "hash": "65e3169acbea200483dd2e89145ca67a20d56412d0971df032b196c1381e09df"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluation/reportconsumption(_:insightsused:)": {
       "etag": "\"25a5-65d55cd7238b5-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption-insightsused.md",
+      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption(_,insightsused).md",
       "hash": "65358b62fedbf288e3b7c4ca514edc4bfd4a0dee4f30b89f07c061c3452f57cc"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluation/requestid": {
@@ -132,7 +132,7 @@
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus(for:)": {
       "etag": "\"335f-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus-for.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus(for).md",
       "hash": "3b9d69a48b8ddab01fc3a68d4036d50cbb5d7a317d2e5664488a83cadb68cbdb"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus/authorized": {
@@ -167,7 +167,7 @@
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/contextinvalid(_:)": {
       "etag": "\"2561-65d55cd7238b5-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/contextinvalid.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/contextinvalid(_).md",
       "hash": "3930fe85e412b35135d689398e21c32b8bd7a3545da11338514e84bfd20af589"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/denied": {
@@ -202,7 +202,7 @@
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/init()": {
       "etag": "\"d5e-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/init.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/init().md",
       "hash": "f61fb0382c99aa93d6641836bad75d4c873c7bfe9e643cb0a55568049a3249f4"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightcontext": {
@@ -212,7 +212,7 @@
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightcontext/init(operationcategory:requestedevaluations:)": {
       "etag": "\"1dea-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/init-operationcategoryrequestedevaluations.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/init(operationcategory,requestedevaluations).md",
       "hash": "ff83811c161fcdd38efd86aaa3b87dcf37e423314c495655ba613f86de88bca9"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightcontext/operationcategory": {
@@ -237,7 +237,7 @@
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest/init(insighttype:schema:model:)": {
       "etag": "\"21a9-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/init-insighttypeschemamodel.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/init(insighttype,schema,model).md",
       "hash": "34deda094ac863677175e4a6f6ba035d0bcb10bde4733e4d9bcfe5699cc379b9"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest/insighttypeidentifier": {
@@ -282,7 +282,7 @@
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/modelversion/specific(versionnumber:)": {
       "etag": "\"1b51-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/modelversion/specific-versionnumber.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/modelversion/specific(versionnumber).md",
       "hash": "805a0cadee1140b6efe74c6c0675fa412276f171d38f098829adf02845ebdd50"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/operationcategory": {
@@ -317,12 +317,12 @@
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/requestauthorization(for:)": {
       "etag": "\"33c7-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/requestauthorization-for.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/requestauthorization(for).md",
       "hash": "a71e2a6c303d173fd7f9497d02a3b6b3d224e3a2a80811a67f99ec09264061ad"
     },
     "https://developer.apple.com/documentation/trustinsights/insightevaluator/requestevaluation(context:)": {
       "etag": "\"3b44-65d55cd7238b5-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/requestevaluation-context.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/requestevaluation(context).md",
       "hash": "354840ee32aa3eed1fbbf04fe305efdea17e48abc75a7050fb54201d176dedda"
     },
     "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight": {
@@ -412,7 +412,7 @@
     },
     "https://developer.apple.com/documentation/trustinsights/trustinsight/request(schema:modelversion:)": {
       "etag": "\"2f3d-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/trustinsight/request-schemamodelversion.md",
+      "file_path": "documentation/TrustInsights/trustinsight/request(schema,modelversion).md",
       "hash": "76467348fbe2a436dbb389c1e50c65aee6db9b6e4fd80f0d9b7d19ef4e9dfea7"
     },
     "https://developer.apple.com/documentation/trustinsights/trustinsight/schemaversion": {
@@ -492,12 +492,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/reportconsumption(_:insightidsused:).json": {
       "etag": "\"2465-65d55cd7238b5-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption-insightidsused.md",
+      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption(_,insightidsused).md",
       "hash": "65e3169acbea200483dd2e89145ca67a20d56412d0971df032b196c1381e09df"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/reportconsumption(_:insightsused:).json": {
       "etag": "\"25a5-65d55cd7238b5-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption-insightsused.md",
+      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption(_,insightsused).md",
       "hash": "65358b62fedbf288e3b7c4ca514edc4bfd4a0dee4f30b89f07c061c3452f57cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/requestid.json": {
@@ -557,7 +557,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus(for:).json": {
       "etag": "\"335f-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus-for.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus(for).md",
       "hash": "3b9d69a48b8ddab01fc3a68d4036d50cbb5d7a317d2e5664488a83cadb68cbdb"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus.json": {
@@ -597,7 +597,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/contextinvalid(_:).json": {
       "etag": "\"2561-65d55cd7238b5-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/contextinvalid.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/contextinvalid(_).md",
       "hash": "3930fe85e412b35135d689398e21c32b8bd7a3545da11338514e84bfd20af589"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/denied.json": {
@@ -632,7 +632,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/init().json": {
       "etag": "\"d5e-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/init.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/init().md",
       "hash": "f61fb0382c99aa93d6641836bad75d4c873c7bfe9e643cb0a55568049a3249f4"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightcontext.json": {
@@ -642,7 +642,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightcontext/init(operationcategory:requestedevaluations:).json": {
       "etag": "\"1dea-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/init-operationcategoryrequestedevaluations.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/init(operationcategory,requestedevaluations).md",
       "hash": "ff83811c161fcdd38efd86aaa3b87dcf37e423314c495655ba613f86de88bca9"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightcontext/operationcategory.json": {
@@ -667,7 +667,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequest/init(insighttype:schema:model:).json": {
       "etag": "\"21a9-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/init-insighttypeschemamodel.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/init(insighttype,schema,model).md",
       "hash": "34deda094ac863677175e4a6f6ba035d0bcb10bde4733e4d9bcfe5699cc379b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequest/insighttypeidentifier.json": {
@@ -712,7 +712,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/modelversion/specific(versionnumber:).json": {
       "etag": "\"1b51-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/modelversion/specific-versionnumber.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/modelversion/specific(versionnumber).md",
       "hash": "805a0cadee1140b6efe74c6c0675fa412276f171d38f098829adf02845ebdd50"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/operationcategory.json": {
@@ -747,12 +747,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/requestauthorization(for:).json": {
       "etag": "\"33c7-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/requestauthorization-for.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/requestauthorization(for).md",
       "hash": "a71e2a6c303d173fd7f9497d02a3b6b3d224e3a2a80811a67f99ec09264061ad"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/requestevaluation(context:).json": {
       "etag": "\"3b44-65d55cd7238b5-df\"",
-      "file_path": "documentation/TrustInsights/insightevaluator/requestevaluation-context.md",
+      "file_path": "documentation/TrustInsights/insightevaluator/requestevaluation(context).md",
       "hash": "354840ee32aa3eed1fbbf04fe305efdea17e48abc75a7050fb54201d176dedda"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight.json": {
@@ -842,7 +842,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/request(schema:modelversion:).json": {
       "etag": "\"2f3d-65d55cd70f216-df\"",
-      "file_path": "documentation/TrustInsights/trustinsight/request-schemamodelversion.md",
+      "file_path": "documentation/TrustInsights/trustinsight/request(schema,modelversion).md",
       "hash": "76467348fbe2a436dbb389c1e50c65aee6db9b6e4fd80f0d9b7d19ef4e9dfea7"
     },
     "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/schemaversion.json": {

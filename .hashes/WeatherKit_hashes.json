@@ -147,7 +147,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/dailyweatherstatistics/subscript(_:)": {
       "etag": "\"1659-65d560cfa4abd-df\"",
-      "file_path": "documentation/WeatherKit/dailyweatherstatistics/subscript.md",
+      "file_path": "documentation/WeatherKit/dailyweatherstatistics/subscript(_).md",
       "hash": "7cbc77f14b9eb196affcfa96fd8de599df98ef44606c27963979159e84e839fc"
     },
     "https://developer.apple.com/documentation/weatherkit/dailyweatherstatisticsquery": {
@@ -192,7 +192,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/dailyweathersummary/subscript(_:)": {
       "etag": "\"15e9-65d560d020cc4-df\"",
-      "file_path": "documentation/WeatherKit/dailyweathersummary/subscript.md",
+      "file_path": "documentation/WeatherKit/dailyweathersummary/subscript(_).md",
       "hash": "de1ffea15eee2371044b074b84f61ce19dab6fbc0d2d78f1d5c05c8923b2d8d6"
     },
     "https://developer.apple.com/documentation/weatherkit/dailyweathersummaryquery": {
@@ -542,17 +542,17 @@
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/==(_:_:)": {
       "etag": "\"1f86-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/equal.md",
+      "file_path": "documentation/WeatherKit/forecast/eqeq(_,_).md",
       "hash": "6d054f8a9ad74b45e04acfba62a9c122f1a402e47a4540bc2bb20b8cff5f4d07"
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/encode(to:)-5zuqd": {
       "etag": "\"19d7-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/encode-to-5zuqd.md",
+      "file_path": "documentation/WeatherKit/forecast/encode(to)-5zuqd.md",
       "hash": "59041b1e1c5a5c63f60e5486a78edd95d9228c8495dc35d5e7d1725cbb14efb3"
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/encode(to:)-fbco": {
       "etag": "\"19d8-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/encode-to-fbco.md",
+      "file_path": "documentation/WeatherKit/forecast/encode(to)-fbco.md",
       "hash": "c3ad05e7ec704e1008ca113973c53b8ae23a9609048d8c8f5b593387be61abae"
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/endindex": {
@@ -572,12 +572,12 @@
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/init(from:)-390k1": {
       "etag": "\"18ed-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/init-from-390k1.md",
+      "file_path": "documentation/WeatherKit/forecast/init(from)-390k1.md",
       "hash": "ce3925dd352e084ec2c2b314b699c1ef29782308156bb33a375d12f268e2a5bf"
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/init(from:)-4wobg": {
       "etag": "\"18eb-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/init-from-4wobg.md",
+      "file_path": "documentation/WeatherKit/forecast/init(from)-4wobg.md",
       "hash": "03d532ece342be3b976b47dd07087d82c393d340037433be403c518e83ca8fc7"
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/metadata": {
@@ -592,7 +592,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/subscript(_:)": {
       "etag": "\"1574-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/subscript.md",
+      "file_path": "documentation/WeatherKit/forecast/subscript(_).md",
       "hash": "5d95db53e6727b4fc6c7f0bfd7e157b9fb905d18c6993831b2829c4c37399588"
     },
     "https://developer.apple.com/documentation/weatherkit/forecast/summary": {
@@ -607,22 +607,22 @@
     },
     "https://developer.apple.com/documentation/weatherkit/historicalcomparison/hightemperature(_:)": {
       "etag": "\"19c6-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparison/hightemperature.md",
+      "file_path": "documentation/WeatherKit/historicalcomparison/hightemperature(_).md",
       "hash": "7ca7bb387b3fda030a5326021a7e4956ea400ff9e206ade8d7096872c7862b91"
     },
     "https://developer.apple.com/documentation/weatherkit/historicalcomparison/lowtemperature(_:)": {
       "etag": "\"19bb-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparison/lowtemperature.md",
+      "file_path": "documentation/WeatherKit/historicalcomparison/lowtemperature(_).md",
       "hash": "c37faa6930585bd32efed3a155741e3bb20aa4b710c09ba7ac7ac15f0bfa9097"
     },
     "https://developer.apple.com/documentation/weatherkit/historicalcomparison/precipitationamount(_:)": {
       "etag": "\"19b4-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparison/precipitationamount.md",
+      "file_path": "documentation/WeatherKit/historicalcomparison/precipitationamount(_).md",
       "hash": "3106be05de363287e21e591cd3c7e21690a1100df067eb04cd0c9b3e0b9a6708"
     },
     "https://developer.apple.com/documentation/weatherkit/historicalcomparison/snowfallamount(_:)": {
       "etag": "\"1973-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparison/snowfallamount.md",
+      "file_path": "documentation/WeatherKit/historicalcomparison/snowfallamount(_).md",
       "hash": "319af41cbea07223ec0d87b3c94230b83678ccbf0854c0651682e90851e2b4bd"
     },
     "https://developer.apple.com/documentation/weatherkit/historicalcomparisons": {
@@ -652,7 +652,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/historicalcomparisons/subscript(_:)": {
       "etag": "\"16b9-65d560cf8e867-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparisons/subscript.md",
+      "file_path": "documentation/WeatherKit/historicalcomparisons/subscript(_).md",
       "hash": "9ed5d7ea3c8cc47ddabdaa58a9dc87137bc51e342219f153585d08bc32b41365"
     },
     "https://developer.apple.com/documentation/weatherkit/hourlyweatherstatistics": {
@@ -687,7 +687,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/hourlyweatherstatistics/subscript(_:)": {
       "etag": "\"167a-65d560cf8e867-df\"",
-      "file_path": "documentation/WeatherKit/hourlyweatherstatistics/subscript.md",
+      "file_path": "documentation/WeatherKit/hourlyweatherstatistics/subscript(_).md",
       "hash": "4e7f90997255a9c1214d23cb3b66f9d8c215fe558b51c575fa655ef94c717f35"
     },
     "https://developer.apple.com/documentation/weatherkit/hourlyweatherstatisticsquery": {
@@ -872,7 +872,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/monthlyweatherstatistics/subscript(_:)": {
       "etag": "\"169b-65d560cfa4abd-df\"",
-      "file_path": "documentation/WeatherKit/monthlyweatherstatistics/subscript.md",
+      "file_path": "documentation/WeatherKit/monthlyweatherstatistics/subscript(_).md",
       "hash": "7b86eefc6566d767d59f19cf1c1c644a97afeea947789af2edbde53f628690d2"
     },
     "https://developer.apple.com/documentation/weatherkit/monthlyweatherstatisticsquery": {
@@ -1262,7 +1262,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/trendbaseline/kind-swift.enum": {
       "etag": "\"2166-65d560cf76347-df\"",
-      "file_path": "documentation/WeatherKit/trendbaseline/kind-swiftenum.md",
+      "file_path": "documentation/WeatherKit/trendbaseline/kind-swift.enum.md",
       "hash": "e4fc5e2b541d51a957947d806fcc7bb08c0434a4222e5a1fcc1474c792857129"
     },
     "https://developer.apple.com/documentation/weatherkit/trendbaseline/kind-swift.enum/mean": {
@@ -1272,7 +1272,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/trendbaseline/kind-swift.property": {
       "etag": "\"1562-65d560cf76347-df\"",
-      "file_path": "documentation/WeatherKit/trendbaseline/kind-swiftproperty.md",
+      "file_path": "documentation/WeatherKit/trendbaseline/kind-swift.property.md",
       "hash": "46c89f4074ed3b123e699ff82b4e02b32e6911c164193ce9b8010861200baaf6"
     },
     "https://developer.apple.com/documentation/weatherkit/trendbaseline/startdate": {
@@ -1467,7 +1467,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weatheravailability/availabilitykind/!=(_:_:)": {
       "etag": "W/\"7b1fab600e1705d49db2dcf85f85e443\"",
-      "file_path": "documentation/WeatherKit/weatheravailability/availabilitykind/unknown.md",
+      "file_path": "documentation/WeatherKit/weatheravailability/availabilitykind/noteq(_,_).md",
       "hash": "103d50a72b71f93372e0679c41ac5b692c70e7288fe40bc01227b6c40100cf70"
     },
     "https://developer.apple.com/documentation/weatherkit/weatheravailability/availabilitykind/available": {
@@ -1572,7 +1572,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weatherchanges/subscript(_:)": {
       "etag": "\"1511-65d560cf76347-df\"",
-      "file_path": "documentation/WeatherKit/weatherchanges/subscript.md",
+      "file_path": "documentation/WeatherKit/weatherchanges/subscript(_).md",
       "hash": "55eeed0e22871be73946af99ff5620dd936f7b724c81ffb2ed1ef3cb8c05332e"
     },
     "https://developer.apple.com/documentation/weatherkit/weathercondition": {
@@ -1767,12 +1767,12 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weathererror/!=(_:_:)": {
       "etag": "W/\"fbb116df8a67188bf7577a25b8085edc\"",
-      "file_path": "documentation/WeatherKit/weathererror/unknown.md",
+      "file_path": "documentation/WeatherKit/weathererror/noteq(_,_).md",
       "hash": "4c29a0854a76edbf1e6048fd02f9f40a6cff4c9b5b276d8c22094e67b56037db"
     },
     "https://developer.apple.com/documentation/weatherkit/weathererror/==(_:_:)": {
       "etag": "W/\"b7ecbcd65f821be5fd184646880ad6a3\"",
-      "file_path": "documentation/WeatherKit/weathererror/unknown.md",
+      "file_path": "documentation/WeatherKit/weathererror/eqeq(_,_).md",
       "hash": "75c7c8c8d18535dca1903083a41d2505f652914dd3ecdf572a51d23b245a202c"
     },
     "https://developer.apple.com/documentation/weatherkit/weathererror/errordescription": {
@@ -1857,7 +1857,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weatherquery/daily(startdate:enddate:)": {
       "etag": "\"3ecb-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/weatherquery/daily-startdateenddate.md",
+      "file_path": "documentation/WeatherKit/weatherquery/daily(startdate,enddate).md",
       "hash": "84bc97f6d83ed9174b77d57960fbc69220ffeabf09f2d514a43da2a4ef6faca2"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherquery/historicalcomparisons": {
@@ -1872,7 +1872,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weatherquery/hourly(startdate:enddate:)": {
       "etag": "\"3ed6-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/weatherquery/hourly-startdateenddate.md",
+      "file_path": "documentation/WeatherKit/weatherquery/hourly(startdate,enddate).md",
       "hash": "c0e00f9db4a689de37e8984f037343e0e43ce63b6027370ed0aa94c44f85a6b1"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherquery/minute": {
@@ -1892,62 +1892,62 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/dailystatistics(for:fordaysin:including:)": {
       "etag": "\"3e3a-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics-forfordaysinincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics(for,fordaysin,including).md",
       "hash": "8cf218b436e521f3c0b1ce23395c1deb7988f002f606281360daf6e9bdcf95c6"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/dailystatistics(for:including:)": {
       "etag": "\"37af-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics(for,including).md",
       "hash": "c5440abbe9b0cb4a9a321b16dec8618fbb411b3e9a98458214964ac4e6bc6aba"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/dailystatistics(for:startday:endday:including:)": {
       "etag": "\"4230-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics-forstartdayenddayincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics(for,startday,endday,including).md",
       "hash": "c931f5600e47e2ce1af1744201ddd1bfb365b72ddfe57419a7186cabe2a66ef1"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/dailysummary(for:fordaysin:including:)": {
       "etag": "\"3be9-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailysummary-forfordaysinincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailysummary(for,fordaysin,including).md",
       "hash": "8f8fcde533bdd544aaa678ea4234644534510bd77ff4a06cf27e69cac094a7f2"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/dailysummary(for:including:)": {
       "etag": "\"3557-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailysummary-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailysummary(for,including).md",
       "hash": "18709c7e98efba0b35c2c7e1c43ea3efab1f3e472e35b883a9c3f548353d2ed9"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/hourlystatistics(for:forhoursin:including:)": {
       "etag": "\"3e20-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics-forforhoursinincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics(for,forhoursin,including).md",
       "hash": "655d6f527b41697429f58904acd6a522a63822f99d26735b0463c5447e683728"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/hourlystatistics(for:including:)": {
       "etag": "\"37b2-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics(for,including).md",
       "hash": "41dc7690180e6816f011e4d6cf01223cc255b041f5a6cd76c76429a6481e93ab"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/hourlystatistics(for:starthour:endhour:including:)": {
       "etag": "\"4201-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics-forstarthourendhourincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics(for,starthour,endhour,including).md",
       "hash": "cbf6707f36a271a606a00e3b9cf06ccd11f77f7ba39d9079300cfc9d1366f643"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/init()": {
       "etag": "\"1056-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/init.md",
+      "file_path": "documentation/WeatherKit/weatherservice/init().md",
       "hash": "0bce63ab9ec80dfd8d021d0437ff0a76af07760ad2e5def6c8f4ccde0906b011"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/monthlystatistics(for:formonthsin:including:)": {
       "etag": "\"3dd6-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics-forformonthsinincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics(for,formonthsin,including).md",
       "hash": "4eb17107c57450e3e7b503d1b5c2ba1ce40dfec14aa347c6ffeee5420e4e0e73"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/monthlystatistics(for:including:)": {
       "etag": "\"3726-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics(for,including).md",
       "hash": "60996537173378987fbabaad06b32710460e367c5115328d55d04bb5bc03d523"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/monthlystatistics(for:startmonth:endmonth:including:)": {
       "etag": "\"431a-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics-forstartmonthendmonthincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics(for,startmonth,endmonth,including).md",
       "hash": "35f601b08e3317f148708ae61e10b2539e9f7f9a37eb258d82ebe8102c4c3a13"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/shared": {
@@ -1957,42 +1957,42 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/weather(for:)": {
       "etag": "\"4e28-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-for.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for).md",
       "hash": "43ac0274e41b22f47763ad57c0a8f3d04f2bac1380eeac0fa2ccfd112aa72bb5"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/weather(for:including:)-3cg1d": {
       "etag": "\"259a-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding-3cg1d.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including)-3cg1d.md",
       "hash": "5d9cc684914df7b058e2b9d3ee7f97a7d569846ab1bdb6f6a2cbdc6c7535a45a"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/weather(for:including:)-5jqwy": {
       "etag": "\"2689-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding-5jqwy.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including)-5jqwy.md",
       "hash": "b7d2549726658e7c6c8a327ba6ceeefc0c2fa81541b14c85b6086bbdd7484913"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/weather(for:including:_:)": {
       "etag": "\"5b1a-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_).md",
       "hash": "2099ddae02a7f47e43f3d79c0df4e91f9393f149a179ec07dc712f189df6341f"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/weather(for:including:_:_:)": {
       "etag": "\"5f97-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_,_).md",
       "hash": "d2cd2456c101a22351114939dc602ba07411faf3b9ec979b5d18670aa8c72c7e"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/weather(for:including:_:_:_:)": {
       "etag": "\"6412-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_,_,_).md",
       "hash": "6b7a8376d05511586d0ac48e6bbbb2822cddaad319ff2a7f4391f1fb02a93fd8"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/weather(for:including:_:_:_:_:)": {
       "etag": "\"688f-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_,_,_,_).md",
       "hash": "739312edc2fc42d6983d468bc90737a7ae434ff8e2469d6f97486088359ad7b7"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherservice/weather(for:including:_:_:_:_:_:)": {
       "etag": "\"6cfd-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_,_,_,_,_).md",
       "hash": "8628efeb4ab4f26d0de53ac58d18941fa2ededf92d70b73bff24c42b02f34441"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherseverity": {
@@ -2002,7 +2002,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/weatherseverity/!=(_:_:)": {
       "etag": "W/\"2de9d57826241ca3ebaec002739c2a60\"",
-      "file_path": "documentation/WeatherKit/weatherseverity/unknown.md",
+      "file_path": "documentation/WeatherKit/weatherseverity/noteq(_,_).md",
       "hash": "7826b3695dc4077ca41068abb7d238b9809011428af881063382ec25955b9765"
     },
     "https://developer.apple.com/documentation/weatherkit/weatherseverity/accessibilitydescription": {
@@ -2047,7 +2047,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/wind/compassdirection-swift.enum": {
       "etag": "\"6cb8-65d560cf8e867-df\"",
-      "file_path": "documentation/WeatherKit/wind/compassdirection-swiftenum.md",
+      "file_path": "documentation/WeatherKit/wind/compassdirection-swift.enum.md",
       "hash": "1166c7da12aaae6827d58886042cd2a46993c21ea1ad50b87340128a10eb5762"
     },
     "https://developer.apple.com/documentation/weatherkit/wind/compassdirection-swift.enum/abbreviation": {
@@ -2147,7 +2147,7 @@
     },
     "https://developer.apple.com/documentation/weatherkit/wind/compassdirection-swift.property": {
       "etag": "\"1fa9-65d560cf8e867-df\"",
-      "file_path": "documentation/WeatherKit/wind/compassdirection-swiftproperty.md",
+      "file_path": "documentation/WeatherKit/wind/compassdirection-swift.property.md",
       "hash": "305acfeb17b17386dad2ee67a0cef76d71db20ef1c5c0ca37cef73a76db1c118"
     },
     "https://developer.apple.com/documentation/weatherkit/wind/direction": {
@@ -2312,7 +2312,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/dailyweatherstatistics/subscript(_:).json": {
       "etag": "\"1659-65d560cfa4abd-df\"",
-      "file_path": "documentation/WeatherKit/dailyweatherstatistics/subscript.md",
+      "file_path": "documentation/WeatherKit/dailyweatherstatistics/subscript(_).md",
       "hash": "7cbc77f14b9eb196affcfa96fd8de599df98ef44606c27963979159e84e839fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/dailyweatherstatisticsquery.json": {
@@ -2357,7 +2357,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/dailyweathersummary/subscript(_:).json": {
       "etag": "\"15e9-65d560d020cc4-df\"",
-      "file_path": "documentation/WeatherKit/dailyweathersummary/subscript.md",
+      "file_path": "documentation/WeatherKit/dailyweathersummary/subscript(_).md",
       "hash": "de1ffea15eee2371044b074b84f61ce19dab6fbc0d2d78f1d5c05c8923b2d8d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/dailyweathersummaryquery.json": {
@@ -2707,17 +2707,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/==(_:_:).json": {
       "etag": "\"1f86-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/equal.md",
+      "file_path": "documentation/WeatherKit/forecast/eqeq(_,_).md",
       "hash": "6d054f8a9ad74b45e04acfba62a9c122f1a402e47a4540bc2bb20b8cff5f4d07"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/encode(to:)-5zuqd.json": {
       "etag": "\"19d7-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/encode-to-5zuqd.md",
+      "file_path": "documentation/WeatherKit/forecast/encode(to)-5zuqd.md",
       "hash": "59041b1e1c5a5c63f60e5486a78edd95d9228c8495dc35d5e7d1725cbb14efb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/encode(to:)-fbco.json": {
       "etag": "\"19d8-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/encode-to-fbco.md",
+      "file_path": "documentation/WeatherKit/forecast/encode(to)-fbco.md",
       "hash": "c3ad05e7ec704e1008ca113973c53b8ae23a9609048d8c8f5b593387be61abae"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/endindex.json": {
@@ -2737,12 +2737,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/init(from:)-390k1.json": {
       "etag": "\"18ed-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/init-from-390k1.md",
+      "file_path": "documentation/WeatherKit/forecast/init(from)-390k1.md",
       "hash": "ce3925dd352e084ec2c2b314b699c1ef29782308156bb33a375d12f268e2a5bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/init(from:)-4wobg.json": {
       "etag": "\"18eb-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/init-from-4wobg.md",
+      "file_path": "documentation/WeatherKit/forecast/init(from)-4wobg.md",
       "hash": "03d532ece342be3b976b47dd07087d82c393d340037433be403c518e83ca8fc7"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/metadata.json": {
@@ -2757,7 +2757,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/subscript(_:).json": {
       "etag": "\"1574-65d560cf5e87c-df\"",
-      "file_path": "documentation/WeatherKit/forecast/subscript.md",
+      "file_path": "documentation/WeatherKit/forecast/subscript(_).md",
       "hash": "5d95db53e6727b4fc6c7f0bfd7e157b9fb905d18c6993831b2829c4c37399588"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/forecast/summary.json": {
@@ -2772,22 +2772,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/historicalcomparison/hightemperature(_:).json": {
       "etag": "\"19c6-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparison/hightemperature.md",
+      "file_path": "documentation/WeatherKit/historicalcomparison/hightemperature(_).md",
       "hash": "7ca7bb387b3fda030a5326021a7e4956ea400ff9e206ade8d7096872c7862b91"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/historicalcomparison/lowtemperature(_:).json": {
       "etag": "\"19bb-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparison/lowtemperature.md",
+      "file_path": "documentation/WeatherKit/historicalcomparison/lowtemperature(_).md",
       "hash": "c37faa6930585bd32efed3a155741e3bb20aa4b710c09ba7ac7ac15f0bfa9097"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/historicalcomparison/precipitationamount(_:).json": {
       "etag": "\"19b4-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparison/precipitationamount.md",
+      "file_path": "documentation/WeatherKit/historicalcomparison/precipitationamount(_).md",
       "hash": "3106be05de363287e21e591cd3c7e21690a1100df067eb04cd0c9b3e0b9a6708"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/historicalcomparison/snowfallamount(_:).json": {
       "etag": "\"1973-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparison/snowfallamount.md",
+      "file_path": "documentation/WeatherKit/historicalcomparison/snowfallamount(_).md",
       "hash": "319af41cbea07223ec0d87b3c94230b83678ccbf0854c0651682e90851e2b4bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/historicalcomparisons.json": {
@@ -2817,7 +2817,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/historicalcomparisons/subscript(_:).json": {
       "etag": "\"16b9-65d560cf8e867-df\"",
-      "file_path": "documentation/WeatherKit/historicalcomparisons/subscript.md",
+      "file_path": "documentation/WeatherKit/historicalcomparisons/subscript(_).md",
       "hash": "9ed5d7ea3c8cc47ddabdaa58a9dc87137bc51e342219f153585d08bc32b41365"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/hourlyweatherstatistics.json": {
@@ -2852,7 +2852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/hourlyweatherstatistics/subscript(_:).json": {
       "etag": "\"167a-65d560cf8e867-df\"",
-      "file_path": "documentation/WeatherKit/hourlyweatherstatistics/subscript.md",
+      "file_path": "documentation/WeatherKit/hourlyweatherstatistics/subscript(_).md",
       "hash": "4e7f90997255a9c1214d23cb3b66f9d8c215fe558b51c575fa655ef94c717f35"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/hourlyweatherstatisticsquery.json": {
@@ -3037,7 +3037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/monthlyweatherstatistics/subscript(_:).json": {
       "etag": "\"169b-65d560cfa4abd-df\"",
-      "file_path": "documentation/WeatherKit/monthlyweatherstatistics/subscript.md",
+      "file_path": "documentation/WeatherKit/monthlyweatherstatistics/subscript(_).md",
       "hash": "7b86eefc6566d767d59f19cf1c1c644a97afeea947789af2edbde53f628690d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/monthlyweatherstatisticsquery.json": {
@@ -3427,7 +3427,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/trendbaseline/kind-swift.enum.json": {
       "etag": "\"2166-65d560cf76347-df\"",
-      "file_path": "documentation/WeatherKit/trendbaseline/kind-swiftenum.md",
+      "file_path": "documentation/WeatherKit/trendbaseline/kind-swift.enum.md",
       "hash": "e4fc5e2b541d51a957947d806fcc7bb08c0434a4222e5a1fcc1474c792857129"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/trendbaseline/kind-swift.enum/mean.json": {
@@ -3437,7 +3437,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/trendbaseline/kind-swift.property.json": {
       "etag": "\"1562-65d560cf76347-df\"",
-      "file_path": "documentation/WeatherKit/trendbaseline/kind-swiftproperty.md",
+      "file_path": "documentation/WeatherKit/trendbaseline/kind-swift.property.md",
       "hash": "46c89f4074ed3b123e699ff82b4e02b32e6911c164193ce9b8010861200baaf6"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/trendbaseline/startdate.json": {
@@ -3652,7 +3652,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatheravailability/availabilitykind/!=(_:_:).json": {
       "etag": "W/\"7b1fab600e1705d49db2dcf85f85e443\"",
-      "file_path": "documentation/WeatherKit/weatheravailability/availabilitykind/unknown.md",
+      "file_path": "documentation/WeatherKit/weatheravailability/availabilitykind/noteq(_,_).md",
       "hash": "103d50a72b71f93372e0679c41ac5b692c70e7288fe40bc01227b6c40100cf70"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatheravailability/availabilitykind/available.json": {
@@ -3757,7 +3757,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherchanges/subscript(_:).json": {
       "etag": "\"1511-65d560cf76347-df\"",
-      "file_path": "documentation/WeatherKit/weatherchanges/subscript.md",
+      "file_path": "documentation/WeatherKit/weatherchanges/subscript(_).md",
       "hash": "55eeed0e22871be73946af99ff5620dd936f7b724c81ffb2ed1ef3cb8c05332e"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathercondition.json": {
@@ -3952,12 +3952,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathererror/!=(_:_:).json": {
       "etag": "W/\"fbb116df8a67188bf7577a25b8085edc\"",
-      "file_path": "documentation/WeatherKit/weathererror/unknown.md",
+      "file_path": "documentation/WeatherKit/weathererror/noteq(_,_).md",
       "hash": "4c29a0854a76edbf1e6048fd02f9f40a6cff4c9b5b276d8c22094e67b56037db"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathererror/==(_:_:).json": {
       "etag": "W/\"b7ecbcd65f821be5fd184646880ad6a3\"",
-      "file_path": "documentation/WeatherKit/weathererror/unknown.md",
+      "file_path": "documentation/WeatherKit/weathererror/eqeq(_,_).md",
       "hash": "75c7c8c8d18535dca1903083a41d2505f652914dd3ecdf572a51d23b245a202c"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weathererror/errordescription.json": {
@@ -4037,7 +4037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherquery/daily(startdate:enddate:).json": {
       "etag": "\"3ecb-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/weatherquery/daily-startdateenddate.md",
+      "file_path": "documentation/WeatherKit/weatherquery/daily(startdate,enddate).md",
       "hash": "84bc97f6d83ed9174b77d57960fbc69220ffeabf09f2d514a43da2a4ef6faca2"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherquery/daily.json": {
@@ -4052,7 +4052,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherquery/hourly(startdate:enddate:).json": {
       "etag": "\"3ed6-65d560d07a55d-df\"",
-      "file_path": "documentation/WeatherKit/weatherquery/hourly-startdateenddate.md",
+      "file_path": "documentation/WeatherKit/weatherquery/hourly(startdate,enddate).md",
       "hash": "c0e00f9db4a689de37e8984f037343e0e43ce63b6027370ed0aa94c44f85a6b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherquery/hourly.json": {
@@ -4077,62 +4077,62 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/dailystatistics(for:fordaysin:including:).json": {
       "etag": "\"3e3a-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics-forfordaysinincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics(for,fordaysin,including).md",
       "hash": "8cf218b436e521f3c0b1ce23395c1deb7988f002f606281360daf6e9bdcf95c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/dailystatistics(for:including:).json": {
       "etag": "\"37af-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics(for,including).md",
       "hash": "c5440abbe9b0cb4a9a321b16dec8618fbb411b3e9a98458214964ac4e6bc6aba"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/dailystatistics(for:startday:endday:including:).json": {
       "etag": "\"4230-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics-forstartdayenddayincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailystatistics(for,startday,endday,including).md",
       "hash": "c931f5600e47e2ce1af1744201ddd1bfb365b72ddfe57419a7186cabe2a66ef1"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/dailysummary(for:fordaysin:including:).json": {
       "etag": "\"3be9-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailysummary-forfordaysinincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailysummary(for,fordaysin,including).md",
       "hash": "8f8fcde533bdd544aaa678ea4234644534510bd77ff4a06cf27e69cac094a7f2"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/dailysummary(for:including:).json": {
       "etag": "\"3557-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/dailysummary-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/dailysummary(for,including).md",
       "hash": "18709c7e98efba0b35c2c7e1c43ea3efab1f3e472e35b883a9c3f548353d2ed9"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/hourlystatistics(for:forhoursin:including:).json": {
       "etag": "\"3e20-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics-forforhoursinincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics(for,forhoursin,including).md",
       "hash": "655d6f527b41697429f58904acd6a522a63822f99d26735b0463c5447e683728"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/hourlystatistics(for:including:).json": {
       "etag": "\"37b2-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics(for,including).md",
       "hash": "41dc7690180e6816f011e4d6cf01223cc255b041f5a6cd76c76429a6481e93ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/hourlystatistics(for:starthour:endhour:including:).json": {
       "etag": "\"4201-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics-forstarthourendhourincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/hourlystatistics(for,starthour,endhour,including).md",
       "hash": "cbf6707f36a271a606a00e3b9cf06ccd11f77f7ba39d9079300cfc9d1366f643"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/init().json": {
       "etag": "\"1056-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/init.md",
+      "file_path": "documentation/WeatherKit/weatherservice/init().md",
       "hash": "0bce63ab9ec80dfd8d021d0437ff0a76af07760ad2e5def6c8f4ccde0906b011"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/monthlystatistics(for:formonthsin:including:).json": {
       "etag": "\"3dd6-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics-forformonthsinincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics(for,formonthsin,including).md",
       "hash": "4eb17107c57450e3e7b503d1b5c2ba1ce40dfec14aa347c6ffeee5420e4e0e73"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/monthlystatistics(for:including:).json": {
       "etag": "\"3726-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics(for,including).md",
       "hash": "60996537173378987fbabaad06b32710460e367c5115328d55d04bb5bc03d523"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/monthlystatistics(for:startmonth:endmonth:including:).json": {
       "etag": "\"431a-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics-forstartmonthendmonthincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/monthlystatistics(for,startmonth,endmonth,including).md",
       "hash": "35f601b08e3317f148708ae61e10b2539e9f7f9a37eb258d82ebe8102c4c3a13"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/shared.json": {
@@ -4142,42 +4142,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/weather(for:).json": {
       "etag": "\"4e28-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-for.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for).md",
       "hash": "43ac0274e41b22f47763ad57c0a8f3d04f2bac1380eeac0fa2ccfd112aa72bb5"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/weather(for:including:)-3cg1d.json": {
       "etag": "\"259a-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding-3cg1d.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including)-3cg1d.md",
       "hash": "5d9cc684914df7b058e2b9d3ee7f97a7d569846ab1bdb6f6a2cbdc6c7535a45a"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/weather(for:including:)-5jqwy.json": {
       "etag": "\"2689-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding-5jqwy.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including)-5jqwy.md",
       "hash": "b7d2549726658e7c6c8a327ba6ceeefc0c2fa81541b14c85b6086bbdd7484913"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/weather(for:including:_:).json": {
       "etag": "\"5b1a-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_).md",
       "hash": "2099ddae02a7f47e43f3d79c0df4e91f9393f149a179ec07dc712f189df6341f"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/weather(for:including:_:_:).json": {
       "etag": "\"5f97-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_,_).md",
       "hash": "d2cd2456c101a22351114939dc602ba07411faf3b9ec979b5d18670aa8c72c7e"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/weather(for:including:_:_:_:).json": {
       "etag": "\"6412-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_,_,_).md",
       "hash": "6b7a8376d05511586d0ac48e6bbbb2822cddaad319ff2a7f4391f1fb02a93fd8"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/weather(for:including:_:_:_:_:).json": {
       "etag": "\"688f-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_,_,_,_).md",
       "hash": "739312edc2fc42d6983d468bc90737a7ae434ff8e2469d6f97486088359ad7b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherservice/weather(for:including:_:_:_:_:_:).json": {
       "etag": "\"6cfd-65d560d0aba94-df\"",
-      "file_path": "documentation/WeatherKit/weatherservice/weather-forincluding.md",
+      "file_path": "documentation/WeatherKit/weatherservice/weather(for,including,_,_,_,_,_).md",
       "hash": "8628efeb4ab4f26d0de53ac58d18941fa2ededf92d70b73bff24c42b02f34441"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherseverity.json": {
@@ -4187,7 +4187,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherseverity/!=(_:_:).json": {
       "etag": "W/\"2de9d57826241ca3ebaec002739c2a60\"",
-      "file_path": "documentation/WeatherKit/weatherseverity/unknown.md",
+      "file_path": "documentation/WeatherKit/weatherseverity/noteq(_,_).md",
       "hash": "7826b3695dc4077ca41068abb7d238b9809011428af881063382ec25955b9765"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/weatherseverity/accessibilitydescription.json": {
@@ -4232,7 +4232,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/wind/compassdirection-swift.enum.json": {
       "etag": "\"6cb8-65d560cf8e867-df\"",
-      "file_path": "documentation/WeatherKit/wind/compassdirection-swiftenum.md",
+      "file_path": "documentation/WeatherKit/wind/compassdirection-swift.enum.md",
       "hash": "1166c7da12aaae6827d58886042cd2a46993c21ea1ad50b87340128a10eb5762"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/wind/compassdirection-swift.enum/abbreviation.json": {
@@ -4332,7 +4332,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/wind/compassdirection-swift.property.json": {
       "etag": "\"1fa9-65d560cf8e867-df\"",
-      "file_path": "documentation/WeatherKit/wind/compassdirection-swiftproperty.md",
+      "file_path": "documentation/WeatherKit/wind/compassdirection-swift.property.md",
       "hash": "305acfeb17b17386dad2ee67a0cef76d71db20ef1c5c0ca37cef73a76db1c118"
     },
     "https://developer.apple.com/tutorials/data/documentation/weatherkit/wind/direction.json": {

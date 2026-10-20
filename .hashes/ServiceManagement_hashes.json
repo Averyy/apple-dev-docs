@@ -122,17 +122,17 @@
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/agent(plistname:)": {
       "etag": "\"3797-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/agent-plistname.md",
+      "file_path": "documentation/ServiceManagement/smappservice/agent(plistname).md",
       "hash": "8f31ab9fca9d4108b684b71866254988e2c63f3639afeec8a79a2bb64827ff1e"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/daemon(plistname:)": {
       "etag": "\"39cd-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/daemon-plistname.md",
+      "file_path": "documentation/ServiceManagement/smappservice/daemon(plistname).md",
       "hash": "9f424d5396b72396178a2ed6c7ebf4ac6d166e03b2854826f5037872fd75a1ea"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/loginitem(identifier:)": {
       "etag": "\"38b7-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/loginitem-identifier.md",
+      "file_path": "documentation/ServiceManagement/smappservice/loginitem(identifier).md",
       "hash": "4766bae7880cdd6b3a450cba9b3cf71f625ca4119bb4dfaa3b1aa1c296ef4f02"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/mainapp": {
@@ -142,17 +142,17 @@
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/opensystemsettingsloginitems()": {
       "etag": "\"1e07-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/opensystemsettingsloginitems.md",
+      "file_path": "documentation/ServiceManagement/smappservice/opensystemsettingsloginitems().md",
       "hash": "89d75333491717511afed69dad8f3134f542d58cb08a9aae6bff3f8c80d39471"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/register()": {
       "etag": "\"4176-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/register.md",
+      "file_path": "documentation/ServiceManagement/smappservice/register().md",
       "hash": "cd99ec7e4533e37f3bb1e68e034f25fdd62aec7f6f5c4f54d0a112c72fc20a8e"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum": {
       "etag": "\"46dc-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/status-swiftenum.md",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum.md",
       "hash": "853b896bd60e3fbd96329da52208b3fc731806e2f479d9d084590310d2755295"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum/enabled": {
@@ -162,7 +162,7 @@
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum/init(rawvalue:)": {
       "etag": "\"193e-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/init(rawvalue).md",
       "hash": "c05920ff75977d568e27f9e79156d409f8e1ce3e5eb04b1e832089486ab26520"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum/notfound": {
@@ -182,22 +182,22 @@
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.property": {
       "etag": "\"241e-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/status-swiftproperty.md",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.property.md",
       "hash": "b9e40a37d3defe5890efa7765cb96df9a1ec479617e88f510402f2234ca8d01d"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/statusforlegacyplist(at:)": {
       "etag": "\"311d-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/statusforlegacyplist-at.md",
+      "file_path": "documentation/ServiceManagement/smappservice/statusforlegacyplist(at).md",
       "hash": "3b9b86d4608fc4ef2a237186eefbf47fe0e8f42421b1d15ab7de5bb3be03c83a"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/unregister()": {
       "etag": "\"3b92-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/unregister.md",
+      "file_path": "documentation/ServiceManagement/smappservice/unregister().md",
       "hash": "395ad1ece6b2d70644f87c850d8d444cddfa6ead3db8b01332c2833b2357535a"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/unregister(completionhandler:)": {
       "etag": "\"3f5a-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/unregister-completionhandler.md",
+      "file_path": "documentation/ServiceManagement/smappservice/unregister(completionhandler).md",
       "hash": "aaf2f700ebc73d34356e5e9231253b21f6d39170b8c657e4beadb5b5fc764b5c"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappserviceerrordomain": {
@@ -207,32 +207,32 @@
     },
     "https://developer.apple.com/documentation/servicemanagement/smcopyalljobdictionaries(_:)": {
       "etag": "\"46e1-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smcopyalljobdictionaries.md",
+      "file_path": "documentation/ServiceManagement/smcopyalljobdictionaries(_).md",
       "hash": "26ed985b96237be578b5f71600c45eeaf97c1d95f44ad4134a444324d5f8d31c"
     },
     "https://developer.apple.com/documentation/servicemanagement/smjobbless(_:_:_:_:)": {
       "etag": "\"7895-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smjobbless.md",
+      "file_path": "documentation/ServiceManagement/smjobbless(_,_,_,_).md",
       "hash": "451bdbd603e7fffea65ec0fac939a5e066ebdeff93cc86c9e6157f6e491e5ef9"
     },
     "https://developer.apple.com/documentation/servicemanagement/smjobcopydictionary(_:_:)": {
       "etag": "\"4b0b-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smjobcopydictionary.md",
+      "file_path": "documentation/ServiceManagement/smjobcopydictionary(_,_).md",
       "hash": "10ba009d5d088d760e0f9f6887d39fd7c01651a018740668bd58263b937e445d"
     },
     "https://developer.apple.com/documentation/servicemanagement/smjobremove(_:_:_:_:_:)": {
       "etag": "\"7b93-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smjobremove.md",
+      "file_path": "documentation/ServiceManagement/smjobremove(_,_,_,_,_).md",
       "hash": "f7c26080b1764ccce73f389fa45d5c4e50d4ec6d0d00657211fbf5daabd913fc"
     },
     "https://developer.apple.com/documentation/servicemanagement/smjobsubmit(_:_:_:_:)": {
       "etag": "\"78bb-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smjobsubmit.md",
+      "file_path": "documentation/ServiceManagement/smjobsubmit(_,_,_,_).md",
       "hash": "34a141b455e95b61690db7b5658bee7743442456c7e5625abd5580a032e456ea"
     },
     "https://developer.apple.com/documentation/servicemanagement/smloginitemsetenabled(_:_:)": {
       "etag": "\"3cf7-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smloginitemsetenabled.md",
+      "file_path": "documentation/ServiceManagement/smloginitemsetenabled(_,_).md",
       "hash": "10f4e1ecf91d20f2a9c0b09950f34a2316b298d1a7eb22aadd7721bdd6b218a2"
     },
     "https://developer.apple.com/documentation/servicemanagement/updating-helper-executables-from-earlier-versions-of-macos": {
@@ -367,17 +367,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/agent(plistname:).json": {
       "etag": "\"3797-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/agent-plistname.md",
+      "file_path": "documentation/ServiceManagement/smappservice/agent(plistname).md",
       "hash": "8f31ab9fca9d4108b684b71866254988e2c63f3639afeec8a79a2bb64827ff1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/daemon(plistname:).json": {
       "etag": "\"39cd-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/daemon-plistname.md",
+      "file_path": "documentation/ServiceManagement/smappservice/daemon(plistname).md",
       "hash": "9f424d5396b72396178a2ed6c7ebf4ac6d166e03b2854826f5037872fd75a1ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/loginitem(identifier:).json": {
       "etag": "\"38b7-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/loginitem-identifier.md",
+      "file_path": "documentation/ServiceManagement/smappservice/loginitem(identifier).md",
       "hash": "4766bae7880cdd6b3a450cba9b3cf71f625ca4119bb4dfaa3b1aa1c296ef4f02"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/mainapp.json": {
@@ -387,17 +387,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/opensystemsettingsloginitems().json": {
       "etag": "\"1e07-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/opensystemsettingsloginitems.md",
+      "file_path": "documentation/ServiceManagement/smappservice/opensystemsettingsloginitems().md",
       "hash": "89d75333491717511afed69dad8f3134f542d58cb08a9aae6bff3f8c80d39471"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/register().json": {
       "etag": "\"4176-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/register.md",
+      "file_path": "documentation/ServiceManagement/smappservice/register().md",
       "hash": "cd99ec7e4533e37f3bb1e68e034f25fdd62aec7f6f5c4f54d0a112c72fc20a8e"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum.json": {
       "etag": "\"46dc-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/status-swiftenum.md",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum.md",
       "hash": "853b896bd60e3fbd96329da52208b3fc731806e2f479d9d084590310d2755295"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum/enabled.json": {
@@ -407,7 +407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum/init(rawvalue:).json": {
       "etag": "\"193e-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/init-rawvalue.md",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/init(rawvalue).md",
       "hash": "c05920ff75977d568e27f9e79156d409f8e1ce3e5eb04b1e832089486ab26520"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum/notfound.json": {
@@ -427,22 +427,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.property.json": {
       "etag": "\"241e-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/status-swiftproperty.md",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.property.md",
       "hash": "b9e40a37d3defe5890efa7765cb96df9a1ec479617e88f510402f2234ca8d01d"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/statusforlegacyplist(at:).json": {
       "etag": "\"311d-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/statusforlegacyplist-at.md",
+      "file_path": "documentation/ServiceManagement/smappservice/statusforlegacyplist(at).md",
       "hash": "3b9b86d4608fc4ef2a237186eefbf47fe0e8f42421b1d15ab7de5bb3be03c83a"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/unregister().json": {
       "etag": "\"3b92-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/unregister.md",
+      "file_path": "documentation/ServiceManagement/smappservice/unregister().md",
       "hash": "395ad1ece6b2d70644f87c850d8d444cddfa6ead3db8b01332c2833b2357535a"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/unregister(completionhandler:).json": {
       "etag": "\"3f5a-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smappservice/unregister-completionhandler.md",
+      "file_path": "documentation/ServiceManagement/smappservice/unregister(completionhandler).md",
       "hash": "aaf2f700ebc73d34356e5e9231253b21f6d39170b8c657e4beadb5b5fc764b5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappserviceerrordomain.json": {
@@ -452,32 +452,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smcopyalljobdictionaries(_:).json": {
       "etag": "\"46e1-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smcopyalljobdictionaries.md",
+      "file_path": "documentation/ServiceManagement/smcopyalljobdictionaries(_).md",
       "hash": "26ed985b96237be578b5f71600c45eeaf97c1d95f44ad4134a444324d5f8d31c"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smjobbless(_:_:_:_:).json": {
       "etag": "\"7895-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smjobbless.md",
+      "file_path": "documentation/ServiceManagement/smjobbless(_,_,_,_).md",
       "hash": "451bdbd603e7fffea65ec0fac939a5e066ebdeff93cc86c9e6157f6e491e5ef9"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smjobcopydictionary(_:_:).json": {
       "etag": "\"4b0b-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smjobcopydictionary.md",
+      "file_path": "documentation/ServiceManagement/smjobcopydictionary(_,_).md",
       "hash": "10ba009d5d088d760e0f9f6887d39fd7c01651a018740668bd58263b937e445d"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smjobremove(_:_:_:_:_:).json": {
       "etag": "\"7b93-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smjobremove.md",
+      "file_path": "documentation/ServiceManagement/smjobremove(_,_,_,_,_).md",
       "hash": "f7c26080b1764ccce73f389fa45d5c4e50d4ec6d0d00657211fbf5daabd913fc"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smjobsubmit(_:_:_:_:).json": {
       "etag": "\"78bb-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smjobsubmit.md",
+      "file_path": "documentation/ServiceManagement/smjobsubmit(_,_,_,_).md",
       "hash": "34a141b455e95b61690db7b5658bee7743442456c7e5625abd5580a032e456ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smloginitemsetenabled(_:_:).json": {
       "etag": "\"3cf7-65d55d3cecfe7-df\"",
-      "file_path": "documentation/ServiceManagement/smloginitemsetenabled.md",
+      "file_path": "documentation/ServiceManagement/smloginitemsetenabled(_,_).md",
       "hash": "10f4e1ecf91d20f2a9c0b09950f34a2316b298d1a7eb22aadd7721bdd6b218a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/updating-helper-executables-from-earlier-versions-of-macos.json": {

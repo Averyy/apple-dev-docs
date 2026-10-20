@@ -77,17 +77,17 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imagecreator/images(for:style:limit:)": {
       "etag": "\"40e4-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imagecreator/images-forstylelimit.md",
+      "file_path": "documentation/ImagePlayground/imagecreator/images(for,style,limit).md",
       "hash": "5b7339a1c37e03a3a5310898eed5a8ac88da459141d4e95e4ab6e9bb267e5957"
     },
     "https://developer.apple.com/documentation/imageplayground/imagecreator/images(for:style:options:limit:)": {
       "etag": "\"440e-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imagecreator/images-forstyleoptionslimit.md",
+      "file_path": "documentation/ImagePlayground/imagecreator/images(for,style,options,limit).md",
       "hash": "ad13f13c0aaca393e17d4a7ee0fd67695e221ba62260d6bda3acf94ac52861e7"
     },
     "https://developer.apple.com/documentation/imageplayground/imagecreator/init()": {
       "etag": "\"13d9-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imagecreator/init.md",
+      "file_path": "documentation/ImagePlayground/imagecreator/init().md",
       "hash": "c8d8dee79a30fed6b2e6ae6f159b64d668fa6a15172a301f382eb1c7049052d6"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundconcept": {
@@ -97,27 +97,27 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundconcept/drawing(_:)": {
       "etag": "\"2d73-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/drawing.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/drawing(_).md",
       "hash": "1cc03a9023a082eaed75919397045db6cff64cd4ad7238009a8d6f35d4970949"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundconcept/extracted(from:title:)": {
       "etag": "\"32b6-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/extracted-fromtitle.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/extracted(from,title).md",
       "hash": "f531b6295b1394949f4c7cc6e12cb2f3f128a28b00c04f3286a123270e1483d4"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundconcept/image(_:)-29ora": {
       "etag": "\"2e47-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/image-29ora.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/image(_)-29ora.md",
       "hash": "8a51b71e9ed028e716acb5add72898a7040029e2212ac7602ce193c49fbf2e39"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundconcept/image(_:)-2s44c": {
       "etag": "\"2cdd-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/image-2s44c.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/image(_)-2s44c.md",
       "hash": "f13375df5ec3a3c3bb466f2689219286bac6e4d93e3e2c7b8577262cb8d6d40a"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundconcept/text(_:)": {
       "etag": "\"2e38-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/text.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/text(_).md",
       "hash": "708f1e37eeb1bb80065e91bb1b701ea733a8b87e938c537b0679a3dbdd5228ef"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions": {
@@ -127,7 +127,7 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/creationstrategy-swift.enum": {
       "etag": "\"3588-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swiftenum.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swift.enum.md",
       "hash": "747a76818ccac97655e58cb65a2b954acaabc48afc7d4ad02650ac88561c8d3b"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/creationstrategy-swift.enum/automatic": {
@@ -147,12 +147,12 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/creationstrategy-swift.property": {
       "etag": "\"1f8f-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swift.property.md",
       "hash": "1def0776f64c6b22012aeed8b8d63a4c65a7e037ffdb810dcb50ef2864db8389"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/creationvariety-swift.enum": {
       "etag": "\"30f7-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationvariety-swiftenum.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationvariety-swift.enum.md",
       "hash": "3bdb674a250f0b86c7930a82c6c3d358404c534ff80237f3b90cfed841b726bf"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/creationvariety-swift.enum/automatic": {
@@ -172,17 +172,17 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/creationvariety-swift.property": {
       "etag": "\"26ed-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationvariety-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationvariety-swift.property.md",
       "hash": "26a5ccd24d78c85d295af8c22d798498ca03bffc0e3a4e5876afacfba187990a"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/init()": {
       "etag": "\"fe5-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/init.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/init().md",
       "hash": "870a422ef507737de5baeb3aaa5cea55a5d4b48cffe5851d734b5eed24842de2"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/personalization-swift.enum": {
       "etag": "\"3f67-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/personalization-swiftenum.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/personalization-swift.enum.md",
       "hash": "b8b642ed28208e5de87c056fcc56f1a64565c5976342751743f36702c3cc22aa"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/personalization-swift.enum/automatic": {
@@ -202,22 +202,22 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/personalization-swift.property": {
       "etag": "\"203c-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/personalization-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/personalization-swift.property.md",
       "hash": "1c10e0d0b828e818e0d9329caea6498e11dec0233a58812e2f6bfb927e562206"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/sizespecification-swift.property": {
       "etag": "\"1972-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swift.property.md",
       "hash": "ffd055c9494375422082f226abcbb10ba583291b587aca7470e7ef610ba09bf0"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/sizespecification-swift.struct": {
       "etag": "\"2c16-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swiftstruct.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swift.struct.md",
       "hash": "e63e72fe2719caac2583b3fb16d05202d492730566185cea689a5780dada3553"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundoptions/sizespecification-swift.struct/closest(to:)": {
       "etag": "\"23fc-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swift.struct/closest-to.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swift.struct/closest(to).md",
       "hash": "3d78937005cb20ac71bbcc9292ea66133c4354252ae5a69a5c3fce8bfc022cd1"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundpersonalizationpolicy": {
@@ -302,32 +302,32 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.property": {
       "etag": "\"224f-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.property.md",
       "hash": "24c53223416a9ea9a964e348330503f66ae5fba2e20ffd4c82c0e5e0342c983c"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.protocol": {
       "etag": "\"3349-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swiftprotocol.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol.md",
       "hash": "f8d31f71c26ff457b6ad05d5e919b0593559236ed3b72e0f774766b16eb9cef8"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_:didcreate:)": {
       "etag": "\"2790-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller-didcreate.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_,didcreate).md",
       "hash": "0540ddd37b53a060ee7157b9361bea9a2c3a961c59f3836d8432ed482a580edb"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_:didcreateimageat:)": {
       "etag": "\"272d-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller-didcreateimageat.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_,didcreateimageat).md",
       "hash": "e71695de5bc80dff53ee4ad06fc01aea3a912049def6d717e91cdee000d4535e"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel(_:)": {
       "etag": "\"20b0-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel(_).md",
       "hash": "3cf8355d215cc35f6707ab0b9f63c3413109d395237d8cf8d0522e30ba643c54"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/init()": {
       "etag": "\"15ba-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/init.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/init().md",
       "hash": "23b9530f3f656a11ce5e44173463fa89be19e41172b990205c4292c9832736e7"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/isavailable": {
@@ -372,22 +372,22 @@
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/viewdiddisappear()": {
       "etag": "\"1d11-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdiddisappear.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdiddisappear().md",
       "hash": "e9a91505ae716a916cb5b1272c9d591aba7527a0b74a233805f7e4766e6448ab"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/viewdiddisappear(_:)": {
       "etag": "\"1b56-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdiddisappear.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdiddisappear(_).md",
       "hash": "c4701524cae83dfb30a6a885ba63ec29db4af1b65667aa9226fd32ae00f20f22"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/viewdidload()": {
       "etag": "\"1d68-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdidload.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdidload().md",
       "hash": "ff4ceafc4793e5bf3898b8dd9ee840825125ff59500c0baec73814f259fbb221"
     },
     "https://developer.apple.com/documentation/imageplayground/imageplaygroundviewcontroller/viewwillappear()": {
       "etag": "\"1cf7-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewwillappear.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewwillappear().md",
       "hash": "c106d1eb50bbc832e233a1617c869f3eb0a686f93d6f97dfd57c46d38856facf"
     },
     "https://developer.apple.com/tutorials/data/documentation/ImagePlayground.json": {
@@ -471,17 +471,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imagecreator/images(for:style:limit:).json": {
       "etag": "\"40e4-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imagecreator/images-forstylelimit.md",
+      "file_path": "documentation/ImagePlayground/imagecreator/images(for,style,limit).md",
       "hash": "5b7339a1c37e03a3a5310898eed5a8ac88da459141d4e95e4ab6e9bb267e5957"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imagecreator/images(for:style:options:limit:).json": {
       "etag": "\"440e-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imagecreator/images-forstyleoptionslimit.md",
+      "file_path": "documentation/ImagePlayground/imagecreator/images(for,style,options,limit).md",
       "hash": "ad13f13c0aaca393e17d4a7ee0fd67695e221ba62260d6bda3acf94ac52861e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imagecreator/init().json": {
       "etag": "\"13d9-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imagecreator/init.md",
+      "file_path": "documentation/ImagePlayground/imagecreator/init().md",
       "hash": "c8d8dee79a30fed6b2e6ae6f159b64d668fa6a15172a301f382eb1c7049052d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundconcept.json": {
@@ -491,27 +491,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundconcept/drawing(_:).json": {
       "etag": "\"2d73-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/drawing.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/drawing(_).md",
       "hash": "1cc03a9023a082eaed75919397045db6cff64cd4ad7238009a8d6f35d4970949"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundconcept/extracted(from:title:).json": {
       "etag": "\"32b6-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/extracted-fromtitle.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/extracted(from,title).md",
       "hash": "f531b6295b1394949f4c7cc6e12cb2f3f128a28b00c04f3286a123270e1483d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundconcept/image(_:)-29ora.json": {
       "etag": "\"2e47-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/image-29ora.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/image(_)-29ora.md",
       "hash": "8a51b71e9ed028e716acb5add72898a7040029e2212ac7602ce193c49fbf2e39"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundconcept/image(_:)-2s44c.json": {
       "etag": "\"2cdd-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/image-2s44c.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/image(_)-2s44c.md",
       "hash": "f13375df5ec3a3c3bb466f2689219286bac6e4d93e3e2c7b8577262cb8d6d40a"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundconcept/text(_:).json": {
       "etag": "\"2e38-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/text.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundconcept/text(_).md",
       "hash": "708f1e37eeb1bb80065e91bb1b701ea733a8b87e938c537b0679a3dbdd5228ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions.json": {
@@ -521,7 +521,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/creationstrategy-swift.enum.json": {
       "etag": "\"3588-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swiftenum.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swift.enum.md",
       "hash": "747a76818ccac97655e58cb65a2b954acaabc48afc7d4ad02650ac88561c8d3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/creationstrategy-swift.enum/automatic.json": {
@@ -541,12 +541,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/creationstrategy-swift.property.json": {
       "etag": "\"1f8f-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationstrategy-swift.property.md",
       "hash": "1def0776f64c6b22012aeed8b8d63a4c65a7e037ffdb810dcb50ef2864db8389"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/creationvariety-swift.enum.json": {
       "etag": "\"30f7-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationvariety-swiftenum.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationvariety-swift.enum.md",
       "hash": "3bdb674a250f0b86c7930a82c6c3d358404c534ff80237f3b90cfed841b726bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/creationvariety-swift.enum/automatic.json": {
@@ -566,17 +566,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/creationvariety-swift.property.json": {
       "etag": "\"26ed-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationvariety-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/creationvariety-swift.property.md",
       "hash": "26a5ccd24d78c85d295af8c22d798498ca03bffc0e3a4e5876afacfba187990a"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/init().json": {
       "etag": "\"fe5-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/init.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/init().md",
       "hash": "870a422ef507737de5baeb3aaa5cea55a5d4b48cffe5851d734b5eed24842de2"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/personalization-swift.enum.json": {
       "etag": "\"3f67-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/personalization-swiftenum.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/personalization-swift.enum.md",
       "hash": "b8b642ed28208e5de87c056fcc56f1a64565c5976342751743f36702c3cc22aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/personalization-swift.enum/automatic.json": {
@@ -596,22 +596,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/personalization-swift.property.json": {
       "etag": "\"203c-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/personalization-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/personalization-swift.property.md",
       "hash": "1c10e0d0b828e818e0d9329caea6498e11dec0233a58812e2f6bfb927e562206"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/sizespecification-swift.property.json": {
       "etag": "\"1972-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swift.property.md",
       "hash": "ffd055c9494375422082f226abcbb10ba583291b587aca7470e7ef610ba09bf0"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/sizespecification-swift.struct.json": {
       "etag": "\"2c16-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swiftstruct.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swift.struct.md",
       "hash": "e63e72fe2719caac2583b3fb16d05202d492730566185cea689a5780dada3553"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundoptions/sizespecification-swift.struct/closest(to:).json": {
       "etag": "\"23fc-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swift.struct/closest-to.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundoptions/sizespecification-swift.struct/closest(to).md",
       "hash": "3d78937005cb20ac71bbcc9292ea66133c4354252ae5a69a5c3fce8bfc022cd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundpersonalizationpolicy.json": {
@@ -696,32 +696,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.property.json": {
       "etag": "\"224f-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swiftproperty.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.property.md",
       "hash": "24c53223416a9ea9a964e348330503f66ae5fba2e20ffd4c82c0e5e0342c983c"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.protocol.json": {
       "etag": "\"3349-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swiftprotocol.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol.md",
       "hash": "f8d31f71c26ff457b6ad05d5e919b0593559236ed3b72e0f774766b16eb9cef8"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_:didcreate:).json": {
       "etag": "\"2790-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller-didcreate.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_,didcreate).md",
       "hash": "0540ddd37b53a060ee7157b9361bea9a2c3a961c59f3836d8432ed482a580edb"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_:didcreateimageat:).json": {
       "etag": "\"272d-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller-didcreateimageat.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_,didcreateimageat).md",
       "hash": "e71695de5bc80dff53ee4ad06fc01aea3a912049def6d717e91cdee000d4535e"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel(_:).json": {
       "etag": "\"20b0-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel(_).md",
       "hash": "3cf8355d215cc35f6707ab0b9f63c3413109d395237d8cf8d0522e30ba643c54"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/init().json": {
       "etag": "\"15ba-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/init.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/init().md",
       "hash": "23b9530f3f656a11ce5e44173463fa89be19e41172b990205c4292c9832736e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/isavailable.json": {
@@ -766,22 +766,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/viewdiddisappear().json": {
       "etag": "\"1d11-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdiddisappear.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdiddisappear().md",
       "hash": "e9a91505ae716a916cb5b1272c9d591aba7527a0b74a233805f7e4766e6448ab"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/viewdiddisappear(_:).json": {
       "etag": "\"1b56-65d560b12671d-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdiddisappear.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdiddisappear(_).md",
       "hash": "c4701524cae83dfb30a6a885ba63ec29db4af1b65667aa9226fd32ae00f20f22"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/viewdidload().json": {
       "etag": "\"1d68-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdidload.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewdidload().md",
       "hash": "ff4ceafc4793e5bf3898b8dd9ee840825125ff59500c0baec73814f259fbb221"
     },
     "https://developer.apple.com/tutorials/data/documentation/imageplayground/imageplaygroundviewcontroller/viewwillappear().json": {
       "etag": "\"1cf7-65d560b133ec6-df\"",
-      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewwillappear.md",
+      "file_path": "documentation/ImagePlayground/imageplaygroundviewcontroller/viewwillappear().md",
       "hash": "c106d1eb50bbc832e233a1617c869f3eb0a686f93d6f97dfd57c46d38856facf"
     }
   },

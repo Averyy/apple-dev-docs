@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpicker/close()": {
       "etag": "\"16f3-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpicker/close.md",
+      "file_path": "documentation/ContactsUI/cncontactpicker/close().md",
       "hash": "d7f212328b67653e409b4220ea7cdbccdc76a0075070f06c6e61cd70b5abfafd"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpicker/delegate": {
@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpicker/showrelative(to:of:preferrededge:)": {
       "etag": "\"349a-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpicker/showrelative-toofpreferrededge.md",
+      "file_path": "documentation/ContactsUI/cncontactpicker/showrelative(to,of,preferrededge).md",
       "hash": "ef59aa47de6c2dbd47ebdd662ecc946571c72e9225e74cb9f8cc2bb2964d6189"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerdelegate": {
@@ -37,37 +37,37 @@
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-1xfpt": {
       "etag": "\"52cf-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-1xfpt.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker(_,didselect)-1xfpt.md",
       "hash": "3c31b415d590983823a2f6afba25440ed45a84784e5808da5de47957d9214207"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-5neeo": {
       "etag": "\"467f-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-5neeo.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker(_,didselect)-5neeo.md",
       "hash": "fcd428494af775c9f90dca8141906c79c312af936e52c5e7f53b310032a876c6"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-7vcyc": {
       "etag": "\"51e1-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-7vcyc.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker(_,didselect)-7vcyc.md",
       "hash": "75c0ed51c56cd90276d086c8ad602ebc94c0023819043533f033b19b893a283b"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselectcontactproperties:)": {
       "etag": "\"474b-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselectcontactproperties.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker(_,didselectcontactproperties).md",
       "hash": "a67408879032fe05b8043659431e3af85ff57d6afe4825ba1801cda90959a469"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerdelegate/contactpickerdidcancel(_:)": {
       "etag": "\"33a7-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidcancel.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidcancel(_).md",
       "hash": "101d6b6c74e9f36d66d1c4840776df301204537bc1bbbb6827d69c5bd76a1f5a"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerdelegate/contactpickerdidclose(_:)": {
       "etag": "\"304e-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidclose.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidclose(_).md",
       "hash": "cea64237bf36f502cd4ef5e875df232c24391ab39077687b3a264e11b1923c92"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerdelegate/contactpickerwillclose(_:)": {
       "etag": "\"305e-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerwillclose.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerwillclose(_).md",
       "hash": "92af391c43c1f15a6f460f1c81613718c3a1186db27dbd7843dc9360588c15c1"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactpickerviewcontroller": {
@@ -137,7 +137,7 @@
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontroller/descriptorforrequiredkeys()": {
       "etag": "\"2b3b-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/descriptorforrequiredkeys.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/descriptorforrequiredkeys().md",
       "hash": "23b13318813950d9d922c5d5ebdb8513b594dc13a53b2291974ca4de41d8a62e"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontroller/displayedpropertykeys": {
@@ -147,27 +147,27 @@
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontroller/highlightproperty(withkey:identifier:)": {
       "etag": "\"281e-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/highlightproperty-withkeyidentifier.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/highlightproperty(withkey,identifier).md",
       "hash": "465607c52553ef1eb6f2dca6cca1685884d6b76f77911fe373a9572a5c9907b7"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontroller/init(for:)": {
       "etag": "\"37cc-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-for.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init(for).md",
       "hash": "ea1447cb497e761a6c661c8ffd12038e8f5382774caff58dd37591ac60a45626"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontroller/init(forcontact:)": {
       "etag": "\"2c9e-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-forcontact.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init(forcontact).md",
       "hash": "fc538e2a50e309ad10a676d843e157066f2f5138ca9716af1fc4295d60899892"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontroller/init(fornewcontact:)": {
       "etag": "\"3811-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-fornewcontact.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init(fornewcontact).md",
       "hash": "8fefe5394a6b41f9135e28ba50d1c9f477c2451ac80afb59bf8329219b64b9c1"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontroller/init(forunknowncontact:)": {
       "etag": "\"383d-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-forunknowncontact.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init(forunknowncontact).md",
       "hash": "3b737638bbd4889d88bbb601e9959b8eb901c7486ec9a7502a4b8d67f46abfd4"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontroller/message": {
@@ -197,12 +197,12 @@
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontrollerdelegate/contactviewcontroller(_:didcompletewith:)": {
       "etag": "\"3b67-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller-didcompletewith.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller(_,didcompletewith).md",
       "hash": "a9b6a5e7185deeaa434a06a78df662e588b59ad8b949904d6c570096d1d75322"
     },
     "https://developer.apple.com/documentation/contactsui/cncontactviewcontrollerdelegate/contactviewcontroller(_:shouldperformdefaultactionfor:)": {
       "etag": "\"49dc-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller-shouldperformdefaultactionfor.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller(_,shouldperformdefaultactionfor).md",
       "hash": "cfd884f7d9ccf923cfd173f540b4bd89ede37c32e902778bfaddbd11bf913129"
     },
     "https://developer.apple.com/documentation/contactsui/contactaccessbutton": {
@@ -232,7 +232,7 @@
     },
     "https://developer.apple.com/documentation/contactsui/contactaccessbutton/init(querystring:ignoredemails:ignoredphonenumbers:approvalcallback:)": {
       "etag": "\"311d-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/contactaccessbutton/init-querystringignoredemailsignoredphonenumbersapprovalcallback.md",
+      "file_path": "documentation/ContactsUI/contactaccessbutton/init(querystring,ignoredemails,ignoredphonenumbers,approvalcallback).md",
       "hash": "5f60a362603cc56e9c94f15c4cdbdc77ba136604f3187ffe95a89d09e4391d3e"
     },
     "https://developer.apple.com/documentation/contactsui/contactaccessbutton/style": {
@@ -247,7 +247,7 @@
     },
     "https://developer.apple.com/documentation/contactsui/contactaccessbutton/style/init(imagetrailingedgepadding:imagewidth:imagecolor:)": {
       "etag": "\"283f-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/contactaccessbutton/style/init-imagetrailingedgepaddingimagewidthimagecolor.md",
+      "file_path": "documentation/ContactsUI/contactaccessbutton/style/init(imagetrailingedgepadding,imagewidth,imagecolor).md",
       "hash": "9ee90cfd980eff7c3baa811ae2dd4358960354fe77dbababaa3a7fa599246301"
     },
     "https://developer.apple.com/tutorials/data/documentation/ContactsUI.json": {
@@ -262,7 +262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpicker/close().json": {
       "etag": "\"16f3-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpicker/close.md",
+      "file_path": "documentation/ContactsUI/cncontactpicker/close().md",
       "hash": "d7f212328b67653e409b4220ea7cdbccdc76a0075070f06c6e61cd70b5abfafd"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpicker/delegate.json": {
@@ -277,7 +277,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpicker/showrelative(to:of:preferrededge:).json": {
       "etag": "\"349a-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpicker/showrelative-toofpreferrededge.md",
+      "file_path": "documentation/ContactsUI/cncontactpicker/showrelative(to,of,preferrededge).md",
       "hash": "ef59aa47de6c2dbd47ebdd662ecc946571c72e9225e74cb9f8cc2bb2964d6189"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate.json": {
@@ -287,37 +287,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-1xfpt.json": {
       "etag": "\"52cf-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-1xfpt.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker(_,didselect)-1xfpt.md",
       "hash": "3c31b415d590983823a2f6afba25440ed45a84784e5808da5de47957d9214207"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-5neeo.json": {
       "etag": "\"467f-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-5neeo.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker(_,didselect)-5neeo.md",
       "hash": "fcd428494af775c9f90dca8141906c79c312af936e52c5e7f53b310032a876c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-7vcyc.json": {
       "etag": "\"51e1-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-7vcyc.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker(_,didselect)-7vcyc.md",
       "hash": "75c0ed51c56cd90276d086c8ad602ebc94c0023819043533f033b19b893a283b"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselectcontactproperties:).json": {
       "etag": "\"474b-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselectcontactproperties.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker(_,didselectcontactproperties).md",
       "hash": "a67408879032fe05b8043659431e3af85ff57d6afe4825ba1801cda90959a469"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpickerdidcancel(_:).json": {
       "etag": "\"33a7-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidcancel.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidcancel(_).md",
       "hash": "101d6b6c74e9f36d66d1c4840776df301204537bc1bbbb6827d69c5bd76a1f5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpickerdidclose(_:).json": {
       "etag": "\"304e-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidclose.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidclose(_).md",
       "hash": "cea64237bf36f502cd4ef5e875df232c24391ab39077687b3a264e11b1923c92"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpickerwillclose(_:).json": {
       "etag": "\"305e-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerwillclose.md",
+      "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerwillclose(_).md",
       "hash": "92af391c43c1f15a6f460f1c81613718c3a1186db27dbd7843dc9360588c15c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerviewcontroller.json": {
@@ -387,7 +387,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/descriptorforrequiredkeys().json": {
       "etag": "\"2b3b-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/descriptorforrequiredkeys.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/descriptorforrequiredkeys().md",
       "hash": "23b13318813950d9d922c5d5ebdb8513b594dc13a53b2291974ca4de41d8a62e"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/displayedpropertykeys.json": {
@@ -397,27 +397,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/highlightproperty(withkey:identifier:).json": {
       "etag": "\"281e-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/highlightproperty-withkeyidentifier.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/highlightproperty(withkey,identifier).md",
       "hash": "465607c52553ef1eb6f2dca6cca1685884d6b76f77911fe373a9572a5c9907b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/init(for:).json": {
       "etag": "\"37cc-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-for.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init(for).md",
       "hash": "ea1447cb497e761a6c661c8ffd12038e8f5382774caff58dd37591ac60a45626"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/init(forcontact:).json": {
       "etag": "\"2c9e-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-forcontact.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init(forcontact).md",
       "hash": "fc538e2a50e309ad10a676d843e157066f2f5138ca9716af1fc4295d60899892"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/init(fornewcontact:).json": {
       "etag": "\"3811-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-fornewcontact.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init(fornewcontact).md",
       "hash": "8fefe5394a6b41f9135e28ba50d1c9f477c2451ac80afb59bf8329219b64b9c1"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/init(forunknowncontact:).json": {
       "etag": "\"383d-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-forunknowncontact.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontroller/init(forunknowncontact).md",
       "hash": "3b737638bbd4889d88bbb601e9959b8eb901c7486ec9a7502a4b8d67f46abfd4"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/message.json": {
@@ -447,12 +447,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontrollerdelegate/contactviewcontroller(_:didcompletewith:).json": {
       "etag": "\"3b67-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller-didcompletewith.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller(_,didcompletewith).md",
       "hash": "a9b6a5e7185deeaa434a06a78df662e588b59ad8b949904d6c570096d1d75322"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontrollerdelegate/contactviewcontroller(_:shouldperformdefaultactionfor:).json": {
       "etag": "\"49dc-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller-shouldperformdefaultactionfor.md",
+      "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller(_,shouldperformdefaultactionfor).md",
       "hash": "cfd884f7d9ccf923cfd173f540b4bd89ede37c32e902778bfaddbd11bf913129"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton.json": {
@@ -482,7 +482,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/init(querystring:ignoredemails:ignoredphonenumbers:approvalcallback:).json": {
       "etag": "\"311d-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/contactaccessbutton/init-querystringignoredemailsignoredphonenumbersapprovalcallback.md",
+      "file_path": "documentation/ContactsUI/contactaccessbutton/init(querystring,ignoredemails,ignoredphonenumbers,approvalcallback).md",
       "hash": "5f60a362603cc56e9c94f15c4cdbdc77ba136604f3187ffe95a89d09e4391d3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/style.json": {
@@ -497,7 +497,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/style/init(imagetrailingedgepadding:imagewidth:imagecolor:).json": {
       "etag": "\"283f-65d55e00edb79-df\"",
-      "file_path": "documentation/ContactsUI/contactaccessbutton/style/init-imagetrailingedgepaddingimagewidthimagecolor.md",
+      "file_path": "documentation/ContactsUI/contactaccessbutton/style/init(imagetrailingedgepadding,imagewidth,imagecolor).md",
       "hash": "9ee90cfd980eff7c3baa811ae2dd4358960354fe77dbababaa3a7fa599246301"
     }
   },

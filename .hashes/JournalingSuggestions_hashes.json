@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/content(fortype:)": {
       "etag": "\"25d8-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/content-fortype.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/content(fortype).md",
       "hash": "24d277d234b3a276053cc2ab6ba23ac22a736895085dfb0da78949805b3d443b"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/date": {
@@ -107,12 +107,12 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/itemcontent/content(fortype:)": {
       "etag": "\"2774-65d55bfb31e75-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/content-fortype.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/content(fortype).md",
       "hash": "695dc6e0e98b287e141cee4cd11767153fb42bd5a6af5a76afc2ef080ee1a686"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/itemcontent/hascontent(oftype:)": {
       "etag": "\"2826-65d55bfb31e75-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/hascontent-oftype.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/hascontent(oftype).md",
       "hash": "7ba61bf994e4ea903908a76c7974ff12d1893759643862ea8b29fb0e0a11fc00"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/itemcontent/representations": {
@@ -207,12 +207,12 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.property": {
       "etag": "\"21f6-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swiftproperty.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swift.property.md",
       "hash": "6247b7ab595effb49b574138649958e1c9fa7241c45caca864f609fde72ad05e"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct": {
       "etag": "\"378c-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swiftstruct.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct.md",
       "hash": "c66b23c56f1cca70d71b9443b090b2524f39a48a0e7271dceb28e0dcafa9a54e"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct/running": {
@@ -372,12 +372,12 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.property": {
       "etag": "\"1d2a-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swiftproperty.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.property.md",
       "hash": "6aced81f65d7b56e0f7a086e57646611230733918e868cff26cf513fd4780b8d"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct": {
       "etag": "\"3596-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swiftstruct.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.struct.md",
       "hash": "9f11a8a283c0bb393055f087e5e21823ee442b88e7c0b51270722d8cb719b490"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/activeenergyburned": {
@@ -467,7 +467,7 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionpresentationtoken/init(suggestionidentifier:)": {
       "etag": "\"1571-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionpresentationtoken/init-suggestionidentifier.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionpresentationtoken/init(suggestionidentifier).md",
       "hash": "03b3405db73ed67552464d0ca045c6621d7cffb1d1931c9f4759447ba1280787"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionsconfiguration": {
@@ -477,12 +477,12 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionsconfiguration/init()": {
       "etag": "\"ea2-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/init.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/init().md",
       "hash": "e54fd0b008601c3e44576fd4af8c58d30b03893aa37b5253ec26702082edfe14"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum": {
       "etag": "\"360c-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swiftenum.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum.md",
       "hash": "8e0d9f210c07b096919bf585256a2732866ae77796ffd0310e3758ac2ea2ee33"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom": {
@@ -502,7 +502,7 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.property": {
       "etag": "\"1db1-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swiftproperty.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.property.md",
       "hash": "b6367a609db4ab32ba09cc8a14450d1a6f38f1b2b60a406e2f83fe7202a38faa"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionspicker": {
@@ -512,17 +512,17 @@
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionspicker/init(_:oncompletion:)-4e82p": {
       "etag": "\"33fa-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-oncompletion-4e82p.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init(_,oncompletion)-4e82p.md",
       "hash": "a86460ea21c5c574c54fbca42d0dca79ef13c9e1cf906c2b063654c9b0768c77"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionspicker/init(_:oncompletion:)-7uxov": {
       "etag": "\"3c5c-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-oncompletion-7uxov.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init(_,oncompletion)-7uxov.md",
       "hash": "ae3480fe4f254c2ef23d51bab7b6152ca8455f5f7104d9b2d4eb18710debeaa7"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionspicker/init(label:oncompletion:)": {
       "etag": "\"30c7-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-labeloncompletion.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init(label,oncompletion).md",
       "hash": "ade44515a0aa5c5acd857d99496b80d86c0eed3fcf7e0db5752ada4dac7c6e2e"
     },
     "https://developer.apple.com/documentation/journalingsuggestions/presenting-the-suggestions-picker-and-processing-a-selection": {
@@ -562,7 +562,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/content(fortype:).json": {
       "etag": "\"25d8-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/content-fortype.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/content(fortype).md",
       "hash": "24d277d234b3a276053cc2ab6ba23ac22a736895085dfb0da78949805b3d443b"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/date.json": {
@@ -642,12 +642,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/itemcontent/content(fortype:).json": {
       "etag": "\"2774-65d55bfb31e75-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/content-fortype.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/content(fortype).md",
       "hash": "695dc6e0e98b287e141cee4cd11767153fb42bd5a6af5a76afc2ef080ee1a686"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/itemcontent/hascontent(oftype:).json": {
       "etag": "\"2826-65d55bfb31e75-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/hascontent-oftype.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/itemcontent/hascontent(oftype).md",
       "hash": "7ba61bf994e4ea903908a76c7974ff12d1893759643862ea8b29fb0e0a11fc00"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/itemcontent/representations.json": {
@@ -742,12 +742,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.property.json": {
       "etag": "\"21f6-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swiftproperty.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swift.property.md",
       "hash": "6247b7ab595effb49b574138649958e1c9fa7241c45caca864f609fde72ad05e"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct.json": {
       "etag": "\"378c-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swiftstruct.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct.md",
       "hash": "c66b23c56f1cca70d71b9443b090b2524f39a48a0e7271dceb28e0dcafa9a54e"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/motionactivity/movementtype-swift.struct/running.json": {
@@ -907,12 +907,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.property.json": {
       "etag": "\"1d2a-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swiftproperty.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.property.md",
       "hash": "6aced81f65d7b56e0f7a086e57646611230733918e868cff26cf513fd4780b8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct.json": {
       "etag": "\"3596-65d55bfb42a64-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swiftstruct.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestion/workout/details-swift.struct.md",
       "hash": "9f11a8a283c0bb393055f087e5e21823ee442b88e7c0b51270722d8cb719b490"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/activeenergyburned.json": {
@@ -1002,7 +1002,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionpresentationtoken/init(suggestionidentifier:).json": {
       "etag": "\"1571-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionpresentationtoken/init-suggestionidentifier.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionpresentationtoken/init(suggestionidentifier).md",
       "hash": "03b3405db73ed67552464d0ca045c6621d7cffb1d1931c9f4759447ba1280787"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration.json": {
@@ -1012,12 +1012,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/init().json": {
       "etag": "\"ea2-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/init.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/init().md",
       "hash": "e54fd0b008601c3e44576fd4af8c58d30b03893aa37b5253ec26702082edfe14"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum.json": {
       "etag": "\"360c-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swiftenum.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum.md",
       "hash": "8e0d9f210c07b096919bf585256a2732866ae77796ffd0310e3758ac2ea2ee33"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.enum/custom.json": {
@@ -1037,7 +1037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.property.json": {
       "etag": "\"1db1-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swiftproperty.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionsconfiguration/notificationschedule-swift.property.md",
       "hash": "b6367a609db4ab32ba09cc8a14450d1a6f38f1b2b60a406e2f83fe7202a38faa"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionspicker.json": {
@@ -1047,17 +1047,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionspicker/init(_:oncompletion:)-4e82p.json": {
       "etag": "\"33fa-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-oncompletion-4e82p.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init(_,oncompletion)-4e82p.md",
       "hash": "a86460ea21c5c574c54fbca42d0dca79ef13c9e1cf906c2b063654c9b0768c77"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionspicker/init(_:oncompletion:)-7uxov.json": {
       "etag": "\"3c5c-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-oncompletion-7uxov.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init(_,oncompletion)-7uxov.md",
       "hash": "ae3480fe4f254c2ef23d51bab7b6152ca8455f5f7104d9b2d4eb18710debeaa7"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/journalingsuggestionspicker/init(label:oncompletion:).json": {
       "etag": "\"30c7-65d55bfb4fbb4-df\"",
-      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init-labeloncompletion.md",
+      "file_path": "documentation/JournalingSuggestions/journalingsuggestionspicker/init(label,oncompletion).md",
       "hash": "ade44515a0aa5c5acd857d99496b80d86c0eed3fcf7e0db5752ada4dac7c6e2e"
     },
     "https://developer.apple.com/tutorials/data/documentation/journalingsuggestions/presenting-the-suggestions-picker-and-processing-a-selection.json": {

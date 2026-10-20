@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/suggestedactions/suggestedactionsmessage/init(id:date:subject:body:sender:recipients:)": {
       "etag": "\"34fc-65d55ee5b77b7-df\"",
-      "file_path": "documentation/SuggestedActions/suggestedactionsmessage/init-iddatesubjectbodysenderrecipients.md",
+      "file_path": "documentation/SuggestedActions/suggestedactionsmessage/init(id,date,subject,body,sender,recipients).md",
       "hash": "8de065bc9f52e7d0043e7edef6c4d2b8aa5a27249d31bd16971ebd35213b7353"
     },
     "https://developer.apple.com/documentation/suggestedactions/suggestedactionsmessage/participant": {
@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/suggestedactions/suggestedactionsmessage/participant/init(name:handle:isuser:)": {
       "etag": "\"2176-65d55ee5b77b7-df\"",
-      "file_path": "documentation/SuggestedActions/suggestedactionsmessage/participant/init-namehandleisuser.md",
+      "file_path": "documentation/SuggestedActions/suggestedactionsmessage/participant/init(name,handle,isuser).md",
       "hash": "5a644b04e16e7ec8c6e05b522df704cd26ca0512ca69b792a2edd2ed5987269f"
     },
     "https://developer.apple.com/documentation/suggestedactions/suggestedactionsmessage/previousmessageslimit": {
@@ -37,12 +37,12 @@
     },
     "https://developer.apple.com/documentation/suggestedactions/suggestedactionsview/generate(message:previousmessages:)": {
       "etag": "\"3204-65d55ee5b77b7-df\"",
-      "file_path": "documentation/SuggestedActions/suggestedactionsview/generate-messagepreviousmessages.md",
+      "file_path": "documentation/SuggestedActions/suggestedactionsview/generate(message,previousmessages).md",
       "hash": "9e5d20ce6161e153ac94ef73b81836240deae51c3c67507e05ff5c6cf139025d"
     },
     "https://developer.apple.com/documentation/suggestedactions/suggestedactionsview/init(message:previousmessages:)": {
       "etag": "\"32bc-65d55ee5b77b7-df\"",
-      "file_path": "documentation/SuggestedActions/suggestedactionsview/init-messagepreviousmessages.md",
+      "file_path": "documentation/SuggestedActions/suggestedactionsview/init(message,previousmessages).md",
       "hash": "b5b014b9bcdaff037f5053505fe7a6bdc28b16e681e662a161cc453a36851a09"
     },
     "https://developer.apple.com/tutorials/data/documentation/SuggestedActions.json": {
@@ -57,7 +57,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage/init(id:date:subject:body:sender:recipients:).json": {
       "etag": "\"34fc-65d55ee5b77b7-df\"",
-      "file_path": "documentation/SuggestedActions/suggestedactionsmessage/init-iddatesubjectbodysenderrecipients.md",
+      "file_path": "documentation/SuggestedActions/suggestedactionsmessage/init(id,date,subject,body,sender,recipients).md",
       "hash": "8de065bc9f52e7d0043e7edef6c4d2b8aa5a27249d31bd16971ebd35213b7353"
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage/participant.json": {
@@ -67,7 +67,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage/participant/init(name:handle:isuser:).json": {
       "etag": "\"2176-65d55ee5b77b7-df\"",
-      "file_path": "documentation/SuggestedActions/suggestedactionsmessage/participant/init-namehandleisuser.md",
+      "file_path": "documentation/SuggestedActions/suggestedactionsmessage/participant/init(name,handle,isuser).md",
       "hash": "5a644b04e16e7ec8c6e05b522df704cd26ca0512ca69b792a2edd2ed5987269f"
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage/previousmessageslimit.json": {
@@ -82,12 +82,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsview/generate(message:previousmessages:).json": {
       "etag": "\"3204-65d55ee5b77b7-df\"",
-      "file_path": "documentation/SuggestedActions/suggestedactionsview/generate-messagepreviousmessages.md",
+      "file_path": "documentation/SuggestedActions/suggestedactionsview/generate(message,previousmessages).md",
       "hash": "9e5d20ce6161e153ac94ef73b81836240deae51c3c67507e05ff5c6cf139025d"
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsview/init(message:previousmessages:).json": {
       "etag": "\"32bc-65d55ee5b77b7-df\"",
-      "file_path": "documentation/SuggestedActions/suggestedactionsview/init-messagepreviousmessages.md",
+      "file_path": "documentation/SuggestedActions/suggestedactionsview/init(message,previousmessages).md",
       "hash": "b5b014b9bcdaff037f5053505fe7a6bdc28b16e681e662a161cc453a36851a09"
     }
   },

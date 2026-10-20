@@ -22,27 +22,27 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/artworks-data.dictionary": {
       "etag": "\"2d72-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/artworks-data.dictionary.md",
       "hash": "1c002a5da5da247e88c30df455b8ee2e41e6e270d8578046cd20d877c7953d42"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/artworks-data.dictionary/artwork-data.dictionary": {
       "etag": "\"14d5-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "431ef68da26feea3e8a5de64d8996093691ffd44f7a484ea1aa3ba899a0f4348"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/castandcrew-data.dictionary": {
       "etag": "\"2f20-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/castandcrew-data.dictionary.md",
       "hash": "b928611b1a308846889fb76fec86590bdec42648d81552d973501e3d46ea5faf"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/castandcrew-data.dictionary/name-data.dictionary": {
       "etag": "\"132e-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "e30c757a7bfc628cd421fa85c05d5c9ff6bcd7f0a47837352b56eb98f574bb29"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/description-data.dictionary": {
       "etag": "\"28d0-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/description-data.dictionary.md",
       "hash": "0de80a28f055325964dc72c78a96ea70d89899610c22dc55a5009470266711aa"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/externalcontentid": {
@@ -57,17 +57,17 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/name-data.dictionary": {
       "etag": "\"27ed-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/name-data.dictionary.md",
       "hash": "09ed16aa01c69b0bf13168ae1eeba1033bb8ff58cde2f94d81ce12d046695b21"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/originalreleasedate-data.dictionary": {
       "etag": "\"286f-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/originalreleasedate-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/originalreleasedate-data.dictionary.md",
       "hash": "f25be48de129e3435da85d7a2ce2a99feb1086e59a8d719ef7e5e459cb770918"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/prices-data.dictionary": {
       "etag": "\"2bf7-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/prices-data.dictionary.md",
       "hash": "6e2ac2c5e1d253b56ff2079a75d4b3b6710553d4c93cfaa98532b0e015acab5d"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/prices-data.dictionary/price": {
@@ -77,12 +77,12 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/rating-data.dictionary": {
       "etag": "\"2c25-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/rating-data.dictionary.md",
       "hash": "c36f8cdf656334dc819ac372bb3d3398cfed9978c402fd65db238fa872ae5f4c"
     },
     "https://developer.apple.com/documentation/appletvfeed/movie/url-data.dictionary": {
       "etag": "\"27e5-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/url-data.dictionary.md",
       "hash": "ab5ed80093af37647d9bb873c1a2a83f0a0e7a56342e16b89fd2e56ba5bd07e6"
     },
     "https://developer.apple.com/documentation/appletvfeed/requesting-a-feed-export": {
@@ -97,22 +97,22 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/artworks-data.dictionary": {
       "etag": "\"3feb-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/artworks-data.dictionary.md",
       "hash": "0807d266c4e83098fa6042cf31e8351aac1bab7c749495f6ac56b9c608dbba71"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/artworks-data.dictionary/artwork-data.dictionary": {
       "etag": "\"15b6-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "0aa5ef1a1d2a8895cb504006eec5f2ca1d33dcff3816e6113fecf7898134aaa3"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/castandcrew-data.dictionary": {
       "etag": "\"4199-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/castandcrew-data.dictionary.md",
       "hash": "d283cdf3d272a331c65f82bcf67300d1d6fcf8c75fb899710010502a4b8e51e3"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/castandcrew-data.dictionary/name-data.dictionary": {
       "etag": "\"140f-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "56a37af7c91f2291a4be6f6b69b82d00aca673c2780c76e6bc95315c0f467ef9"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/competitor": {
@@ -122,12 +122,12 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/competitor/name-data.dictionary": {
       "etag": "\"1346-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/competitor/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/competitor/name-data.dictionary.md",
       "hash": "cabb8c80f5998297e811ff589965084d870433954dd2f3b92732f753ca0790fd"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/description-data.dictionary": {
       "etag": "\"3b02-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/description-data.dictionary.md",
       "hash": "2cf10278d09f7746a2c4655b9a7f466c85012563a04284facc84d74248902e4f"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/externalcontentid": {
@@ -137,22 +137,22 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/leagueabbreviation-data.dictionary": {
       "etag": "\"3a9e-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/leagueabbreviation-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/leagueabbreviation-data.dictionary.md",
       "hash": "1dbc259cb41c5b9a1f3829b835c385eb91146c36e83cdbd160cf506080935e23"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/leaguename-data.dictionary": {
       "etag": "\"3a56-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/leaguename-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/leaguename-data.dictionary.md",
       "hash": "8fb452991de6578c519689e53c3115b993e51b3d81ea5331000be80d2927aae3"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/name-data.dictionary": {
       "etag": "\"3a1d-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/name-data.dictionary.md",
       "hash": "4c1222550a2de3a40f955747445d8bf1f40f0a3092f150f0c96a5d1a30581cb8"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/prices-data.dictionary": {
       "etag": "\"3e70-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/prices-data.dictionary.md",
       "hash": "f0fa099ae040976fbe0954d418a00795d0b93c4288b8a216e11ce6c8372d33ed"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/prices-data.dictionary/price": {
@@ -162,32 +162,32 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/rating-data.dictionary": {
       "etag": "\"3e4e-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/rating-data.dictionary.md",
       "hash": "446e1a58ef975b00691e38e01be3177b6cb8390387b8c54beac8a50dd449fa9a"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/shortname-data.dictionary": {
       "etag": "\"3a53-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/shortname-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/shortname-data.dictionary.md",
       "hash": "85cb05b3ada941a46a61e77f2ee414b568ebdf8aee02852e66aec18647155554"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/sportname-data.dictionary": {
       "etag": "\"3a44-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/sportname-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/sportname-data.dictionary.md",
       "hash": "4c380540bab94db86cc49649ab01a37f893c18d83779c629911d739328ccc93d"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/url-data.dictionary": {
       "etag": "\"3a0e-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/url-data.dictionary.md",
       "hash": "ab14f4e2c32d521e8ece3922ec2cb0d92afab2c06449fe6d71420b85871a15cc"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/venueaddress-data.dictionary": {
       "etag": "\"3a59-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/venueaddress-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/venueaddress-data.dictionary.md",
       "hash": "57fea5cea932a650ae13759ac1964b0485a9faa930a2406de54e0252714d88de"
     },
     "https://developer.apple.com/documentation/appletvfeed/sportingevent/venuename-data.dictionary": {
       "etag": "\"3a3d-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/venuename-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/venuename-data.dictionary.md",
       "hash": "085826b1378028356cf8eca56879f937a152c3ded8dced5cf590888e9b697d49"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode": {
@@ -197,27 +197,27 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/artworks-data.dictionary": {
       "etag": "\"2bdc-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/artworks-data.dictionary.md",
       "hash": "6685a874894930c2a90fc8ac06c214adb65532054bfdc4373adbe9d532afbf74"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/artworks-data.dictionary/artwork-data.dictionary": {
       "etag": "\"1546-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "d43939eca65e0ca526f270c84064d65f39a879c341859939002f9e7bef22ece4"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/castandcrew-data.dictionary": {
       "etag": "\"2d8a-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/castandcrew-data.dictionary.md",
       "hash": "aeb948b02f2462cc4a3b6630771fa483be61705420c703ed09d019d481d3d85a"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/castandcrew-data.dictionary/name-data.dictionary": {
       "etag": "\"139f-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "940feb62fee8c6670dd5f8c50367b7d12e61cd579d4db4f210e202dbd2e4e7b9"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/description-data.dictionary": {
       "etag": "\"2717-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/description-data.dictionary.md",
       "hash": "98dc1127ce18ea46d59a8448d31fb00282a2bd0fd6e0e7a5d2a3aba3129f916e"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/externalcontentid": {
@@ -232,12 +232,12 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/name-data.dictionary": {
       "etag": "\"2634-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/name-data.dictionary.md",
       "hash": "192bced7b720aa911644f7badc34d8abfb449ba5304b039912e0bdd44956b3fa"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/prices-data.dictionary": {
       "etag": "\"2a61-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/prices-data.dictionary.md",
       "hash": "0d2ce8f585f655483a0beff0f63acaf3f49585fd62d943b953f0a0eb4587e9cc"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/prices-data.dictionary/price": {
@@ -247,12 +247,12 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/rating-data.dictionary": {
       "etag": "\"2a67-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/rating-data.dictionary.md",
       "hash": "d1f9f72dd10ec0bd61d96c2a4b2a6b49d8bb8471bd811aef00e3c637d858e202"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvepisode/url-data.dictionary": {
       "etag": "\"2627-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/url-data.dictionary.md",
       "hash": "8e652b2272b7cc5bc94163185d97373cf1d3de618d0ec101500b6c40fb7c8349"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason": {
@@ -262,27 +262,27 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/artworks-data.dictionary": {
       "etag": "\"2b83-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/artworks-data.dictionary.md",
       "hash": "76f7a6086c42c1ca53ac19bd33a0b1c17263b33ae5ec43b818fa43170d47c5a2"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/artworks-data.dictionary/artwork-data.dictionary": {
       "etag": "\"152a-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "74ed78af31adc1af84b3815d06dfe03d492be7d0fced0e7eab2e4ebddcd62b9e"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/castandcrew-data.dictionary": {
       "etag": "\"2d31-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/castandcrew-data.dictionary.md",
       "hash": "aa5a0ec176824db4d9141b79dab64f2474a4cb0952cda597cec024aa9d8541d2"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/castandcrew-data.dictionary/name-data.dictionary": {
       "etag": "\"1383-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "62e4826d61288b4968d82a90fd5b5390cdcdde9ef62bc2a81ffa8664295dc644"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/description-data.dictionary": {
       "etag": "\"26c7-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/description-data.dictionary.md",
       "hash": "640bd30159641d5b972aee13a3e5e7bef9d4d650b8657757ea5031a841e6edcd"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/externalcontentid": {
@@ -297,12 +297,12 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/name-data.dictionary": {
       "etag": "\"25e4-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/name-data.dictionary.md",
       "hash": "25844d7cb4839c07f96f75097a8a14024b91e5a25f5f521b84c800da7115d67f"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/prices-data.dictionary": {
       "etag": "\"2a08-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/prices-data.dictionary.md",
       "hash": "bf779c44738e064ebfde9eff9424ee538fe8d5fb448f6aa13f29f1542d9b2de9"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/prices-data.dictionary/price": {
@@ -312,12 +312,12 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/rating-data.dictionary": {
       "etag": "\"2a18-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/rating-data.dictionary.md",
       "hash": "f2ac0ce110ef28b19e172cb5a7c974e1d8436387d30fb19a3822753dbdc9706d"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvseason/url-data.dictionary": {
       "etag": "\"25d8-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/url-data.dictionary.md",
       "hash": "fa2969b27a715a80b4e60348d5d3690d18f5f3915ada0a35d2eb81c9e579b36b"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow": {
@@ -327,27 +327,27 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/artworks-data.dictionary": {
       "etag": "\"2ad1-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/artworks-data.dictionary.md",
       "hash": "ecffa402718b55886bb37fd1b14a085a2c7ae38008cda0f50573823a740fd755"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/artworks-data.dictionary/artwork-data.dictionary": {
       "etag": "\"14f2-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "16b6850ddcfd90737e06d8912425f045b5cc22f869c990bf137d858eb226a5a7"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/castandcrew-data.dictionary": {
       "etag": "\"2c7f-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/castandcrew-data.dictionary.md",
       "hash": "2c30b7d3cb0ec57590a484efe0d90fb082c361c4b289fae52aeaf74df326759f"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/castandcrew-data.dictionary/name-data.dictionary": {
       "etag": "\"134b-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "1f9e815fdd640ae5454c8c457a8a682cfd99c10ea6a432a3199d4c1797a14244"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/description-data.dictionary": {
       "etag": "\"2627-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/description-data.dictionary.md",
       "hash": "0bf7f976c2dab3b6544975599692f7bfd66db632b8afde49d3d92436e07c35eb"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/externalcontentid": {
@@ -362,12 +362,12 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/name-data.dictionary": {
       "etag": "\"2544-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/name-data.dictionary.md",
       "hash": "766f04f9a9bcad3834319ed40b5b98ac43dc449af98888c3ee563cc1a341296e"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/prices-data.dictionary": {
       "etag": "\"2956-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/prices-data.dictionary.md",
       "hash": "818a4ec81c44ebd7555edd58a3a88838a265fb7f3d20e76f62c44649b5047031"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/prices-data.dictionary/price": {
@@ -377,12 +377,12 @@
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/rating-data.dictionary": {
       "etag": "\"297a-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/rating-data.dictionary.md",
       "hash": "9ef8a301c994c002e04006467154ab7397e6431789447c967c74dbb114681dfe"
     },
     "https://developer.apple.com/documentation/appletvfeed/tvshow/url-data.dictionary": {
       "etag": "\"253a-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/url-data.dictionary.md",
       "hash": "1e57c42aa918cf007b43da21b2ad429ad3f9657a30e57f5f3f27674c8c623da2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed.json": {
@@ -407,27 +407,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/artworks-data.dictionary.json": {
       "etag": "\"2d72-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/artworks-data.dictionary.md",
       "hash": "1c002a5da5da247e88c30df455b8ee2e41e6e270d8578046cd20d877c7953d42"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/artworks-data.dictionary/artwork-data.dictionary.json": {
       "etag": "\"14d5-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "431ef68da26feea3e8a5de64d8996093691ffd44f7a484ea1aa3ba899a0f4348"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/castandcrew-data.dictionary.json": {
       "etag": "\"2f20-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/castandcrew-data.dictionary.md",
       "hash": "b928611b1a308846889fb76fec86590bdec42648d81552d973501e3d46ea5faf"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/castandcrew-data.dictionary/name-data.dictionary.json": {
       "etag": "\"132e-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "e30c757a7bfc628cd421fa85c05d5c9ff6bcd7f0a47837352b56eb98f574bb29"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/description-data.dictionary.json": {
       "etag": "\"28d0-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/description-data.dictionary.md",
       "hash": "0de80a28f055325964dc72c78a96ea70d89899610c22dc55a5009470266711aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/externalcontentid.json": {
@@ -442,17 +442,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/name-data.dictionary.json": {
       "etag": "\"27ed-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/name-data.dictionary.md",
       "hash": "09ed16aa01c69b0bf13168ae1eeba1033bb8ff58cde2f94d81ce12d046695b21"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/originalreleasedate-data.dictionary.json": {
       "etag": "\"286f-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/originalreleasedate-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/originalreleasedate-data.dictionary.md",
       "hash": "f25be48de129e3435da85d7a2ce2a99feb1086e59a8d719ef7e5e459cb770918"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/prices-data.dictionary.json": {
       "etag": "\"2bf7-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/prices-data.dictionary.md",
       "hash": "6e2ac2c5e1d253b56ff2079a75d4b3b6710553d4c93cfaa98532b0e015acab5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/prices-data.dictionary/price.json": {
@@ -462,12 +462,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/rating-data.dictionary.json": {
       "etag": "\"2c25-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/rating-data.dictionary.md",
       "hash": "c36f8cdf656334dc819ac372bb3d3398cfed9978c402fd65db238fa872ae5f4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/movie/url-data.dictionary.json": {
       "etag": "\"27e5-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/movie/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/movie/url-data.dictionary.md",
       "hash": "ab5ed80093af37647d9bb873c1a2a83f0a0e7a56342e16b89fd2e56ba5bd07e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/requesting-a-feed-export.json": {
@@ -482,22 +482,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/artworks-data.dictionary.json": {
       "etag": "\"3feb-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/artworks-data.dictionary.md",
       "hash": "0807d266c4e83098fa6042cf31e8351aac1bab7c749495f6ac56b9c608dbba71"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/artworks-data.dictionary/artwork-data.dictionary.json": {
       "etag": "\"15b6-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "0aa5ef1a1d2a8895cb504006eec5f2ca1d33dcff3816e6113fecf7898134aaa3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/castandcrew-data.dictionary.json": {
       "etag": "\"4199-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/castandcrew-data.dictionary.md",
       "hash": "d283cdf3d272a331c65f82bcf67300d1d6fcf8c75fb899710010502a4b8e51e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/castandcrew-data.dictionary/name-data.dictionary.json": {
       "etag": "\"140f-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "56a37af7c91f2291a4be6f6b69b82d00aca673c2780c76e6bc95315c0f467ef9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/competitor.json": {
@@ -507,12 +507,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/competitor/name-data.dictionary.json": {
       "etag": "\"1346-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/competitor/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/competitor/name-data.dictionary.md",
       "hash": "cabb8c80f5998297e811ff589965084d870433954dd2f3b92732f753ca0790fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/description-data.dictionary.json": {
       "etag": "\"3b02-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/description-data.dictionary.md",
       "hash": "2cf10278d09f7746a2c4655b9a7f466c85012563a04284facc84d74248902e4f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/externalcontentid.json": {
@@ -522,22 +522,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/leagueabbreviation-data.dictionary.json": {
       "etag": "\"3a9e-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/leagueabbreviation-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/leagueabbreviation-data.dictionary.md",
       "hash": "1dbc259cb41c5b9a1f3829b835c385eb91146c36e83cdbd160cf506080935e23"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/leaguename-data.dictionary.json": {
       "etag": "\"3a56-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/leaguename-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/leaguename-data.dictionary.md",
       "hash": "8fb452991de6578c519689e53c3115b993e51b3d81ea5331000be80d2927aae3"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/name-data.dictionary.json": {
       "etag": "\"3a1d-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/name-data.dictionary.md",
       "hash": "4c1222550a2de3a40f955747445d8bf1f40f0a3092f150f0c96a5d1a30581cb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/prices-data.dictionary.json": {
       "etag": "\"3e70-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/prices-data.dictionary.md",
       "hash": "f0fa099ae040976fbe0954d418a00795d0b93c4288b8a216e11ce6c8372d33ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/prices-data.dictionary/price.json": {
@@ -547,32 +547,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/rating-data.dictionary.json": {
       "etag": "\"3e4e-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/rating-data.dictionary.md",
       "hash": "446e1a58ef975b00691e38e01be3177b6cb8390387b8c54beac8a50dd449fa9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/shortname-data.dictionary.json": {
       "etag": "\"3a53-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/shortname-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/shortname-data.dictionary.md",
       "hash": "85cb05b3ada941a46a61e77f2ee414b568ebdf8aee02852e66aec18647155554"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/sportname-data.dictionary.json": {
       "etag": "\"3a44-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/sportname-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/sportname-data.dictionary.md",
       "hash": "4c380540bab94db86cc49649ab01a37f893c18d83779c629911d739328ccc93d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/url-data.dictionary.json": {
       "etag": "\"3a0e-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/url-data.dictionary.md",
       "hash": "ab14f4e2c32d521e8ece3922ec2cb0d92afab2c06449fe6d71420b85871a15cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/venueaddress-data.dictionary.json": {
       "etag": "\"3a59-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/venueaddress-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/venueaddress-data.dictionary.md",
       "hash": "57fea5cea932a650ae13759ac1964b0485a9faa930a2406de54e0252714d88de"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/sportingevent/venuename-data.dictionary.json": {
       "etag": "\"3a3d-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/sportingevent/venuename-datadictionary.md",
+      "file_path": "documentation/appletvfeed/sportingevent/venuename-data.dictionary.md",
       "hash": "085826b1378028356cf8eca56879f937a152c3ded8dced5cf590888e9b697d49"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode.json": {
@@ -582,27 +582,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/artworks-data.dictionary.json": {
       "etag": "\"2bdc-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/artworks-data.dictionary.md",
       "hash": "6685a874894930c2a90fc8ac06c214adb65532054bfdc4373adbe9d532afbf74"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/artworks-data.dictionary/artwork-data.dictionary.json": {
       "etag": "\"1546-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "d43939eca65e0ca526f270c84064d65f39a879c341859939002f9e7bef22ece4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/castandcrew-data.dictionary.json": {
       "etag": "\"2d8a-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/castandcrew-data.dictionary.md",
       "hash": "aeb948b02f2462cc4a3b6630771fa483be61705420c703ed09d019d481d3d85a"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/castandcrew-data.dictionary/name-data.dictionary.json": {
       "etag": "\"139f-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "940feb62fee8c6670dd5f8c50367b7d12e61cd579d4db4f210e202dbd2e4e7b9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/description-data.dictionary.json": {
       "etag": "\"2717-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/description-data.dictionary.md",
       "hash": "98dc1127ce18ea46d59a8448d31fb00282a2bd0fd6e0e7a5d2a3aba3129f916e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/externalcontentid.json": {
@@ -617,12 +617,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/name-data.dictionary.json": {
       "etag": "\"2634-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/name-data.dictionary.md",
       "hash": "192bced7b720aa911644f7badc34d8abfb449ba5304b039912e0bdd44956b3fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/prices-data.dictionary.json": {
       "etag": "\"2a61-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/prices-data.dictionary.md",
       "hash": "0d2ce8f585f655483a0beff0f63acaf3f49585fd62d943b953f0a0eb4587e9cc"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/prices-data.dictionary/price.json": {
@@ -632,12 +632,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/rating-data.dictionary.json": {
       "etag": "\"2a67-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/rating-data.dictionary.md",
       "hash": "d1f9f72dd10ec0bd61d96c2a4b2a6b49d8bb8471bd811aef00e3c637d858e202"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvepisode/url-data.dictionary.json": {
       "etag": "\"2627-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvepisode/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvepisode/url-data.dictionary.md",
       "hash": "8e652b2272b7cc5bc94163185d97373cf1d3de618d0ec101500b6c40fb7c8349"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason.json": {
@@ -647,27 +647,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/artworks-data.dictionary.json": {
       "etag": "\"2b83-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/artworks-data.dictionary.md",
       "hash": "76f7a6086c42c1ca53ac19bd33a0b1c17263b33ae5ec43b818fa43170d47c5a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/artworks-data.dictionary/artwork-data.dictionary.json": {
       "etag": "\"152a-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "74ed78af31adc1af84b3815d06dfe03d492be7d0fced0e7eab2e4ebddcd62b9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/castandcrew-data.dictionary.json": {
       "etag": "\"2d31-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/castandcrew-data.dictionary.md",
       "hash": "aa5a0ec176824db4d9141b79dab64f2474a4cb0952cda597cec024aa9d8541d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/castandcrew-data.dictionary/name-data.dictionary.json": {
       "etag": "\"1383-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "62e4826d61288b4968d82a90fd5b5390cdcdde9ef62bc2a81ffa8664295dc644"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/description-data.dictionary.json": {
       "etag": "\"26c7-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/description-data.dictionary.md",
       "hash": "640bd30159641d5b972aee13a3e5e7bef9d4d650b8657757ea5031a841e6edcd"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/externalcontentid.json": {
@@ -682,12 +682,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/name-data.dictionary.json": {
       "etag": "\"25e4-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/name-data.dictionary.md",
       "hash": "25844d7cb4839c07f96f75097a8a14024b91e5a25f5f521b84c800da7115d67f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/prices-data.dictionary.json": {
       "etag": "\"2a08-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/prices-data.dictionary.md",
       "hash": "bf779c44738e064ebfde9eff9424ee538fe8d5fb448f6aa13f29f1542d9b2de9"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/prices-data.dictionary/price.json": {
@@ -697,12 +697,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/rating-data.dictionary.json": {
       "etag": "\"2a18-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/rating-data.dictionary.md",
       "hash": "f2ac0ce110ef28b19e172cb5a7c974e1d8436387d30fb19a3822753dbdc9706d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvseason/url-data.dictionary.json": {
       "etag": "\"25d8-65d55ab64892a-df\"",
-      "file_path": "documentation/appletvfeed/tvseason/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvseason/url-data.dictionary.md",
       "hash": "fa2969b27a715a80b4e60348d5d3690d18f5f3915ada0a35d2eb81c9e579b36b"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow.json": {
@@ -712,27 +712,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/artworks-data.dictionary.json": {
       "etag": "\"2ad1-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/artworks-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/artworks-data.dictionary.md",
       "hash": "ecffa402718b55886bb37fd1b14a085a2c7ae38008cda0f50573823a740fd755"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/artworks-data.dictionary/artwork-data.dictionary.json": {
       "etag": "\"14f2-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/artworks-data.dictionary/artwork-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/artworks-data.dictionary/artwork-data.dictionary.md",
       "hash": "16b6850ddcfd90737e06d8912425f045b5cc22f869c990bf137d858eb226a5a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/castandcrew-data.dictionary.json": {
       "etag": "\"2c7f-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/castandcrew-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/castandcrew-data.dictionary.md",
       "hash": "2c30b7d3cb0ec57590a484efe0d90fb082c361c4b289fae52aeaf74df326759f"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/castandcrew-data.dictionary/name-data.dictionary.json": {
       "etag": "\"134b-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/castandcrew-data.dictionary/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/castandcrew-data.dictionary/name-data.dictionary.md",
       "hash": "1f9e815fdd640ae5454c8c457a8a682cfd99c10ea6a432a3199d4c1797a14244"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/description-data.dictionary.json": {
       "etag": "\"2627-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/description-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/description-data.dictionary.md",
       "hash": "0bf7f976c2dab3b6544975599692f7bfd66db632b8afde49d3d92436e07c35eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/externalcontentid.json": {
@@ -747,12 +747,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/name-data.dictionary.json": {
       "etag": "\"2544-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/name-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/name-data.dictionary.md",
       "hash": "766f04f9a9bcad3834319ed40b5b98ac43dc449af98888c3ee563cc1a341296e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/prices-data.dictionary.json": {
       "etag": "\"2956-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/prices-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/prices-data.dictionary.md",
       "hash": "818a4ec81c44ebd7555edd58a3a88838a265fb7f3d20e76f62c44649b5047031"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/prices-data.dictionary/price.json": {
@@ -762,12 +762,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/rating-data.dictionary.json": {
       "etag": "\"297a-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/rating-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/rating-data.dictionary.md",
       "hash": "9ef8a301c994c002e04006467154ab7397e6431789447c967c74dbb114681dfe"
     },
     "https://developer.apple.com/tutorials/data/documentation/appletvfeed/tvshow/url-data.dictionary.json": {
       "etag": "\"253a-65d55ab6305b6-df\"",
-      "file_path": "documentation/appletvfeed/tvshow/url-datadictionary.md",
+      "file_path": "documentation/appletvfeed/tvshow/url-data.dictionary.md",
       "hash": "1e57c42aa918cf007b43da21b2ad429ad3f9657a30e57f5f3f27674c8c623da2"
     }
   },

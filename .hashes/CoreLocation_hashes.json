@@ -12,7 +12,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/cl_target_supports_conditions": {
       "etag": "\"17f0-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cl-target-supports-conditions.md",
+      "file_path": "documentation/CoreLocation/cl_target_supports_conditions.md",
       "hash": "e409a2bef0079af46032bbba36396debcefa790cbe13acc5b4421b5913a279bc"
     },
     "https://developer.apple.com/documentation/corelocation/claccuracyauthorization": {
@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/claccuracyauthorization/init(rawvalue:)": {
       "etag": "\"1477-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/claccuracyauthorization/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/claccuracyauthorization/init(rawvalue).md",
       "hash": "a1bf075643734a25e9074a1c46b98912203484d58d26c1a70dec73f2b7353ea2"
     },
     "https://developer.apple.com/documentation/corelocation/claccuracyauthorization/reducedaccuracy": {
@@ -57,7 +57,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clactivitytype/init(rawvalue:)": {
       "etag": "\"1476-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/clactivitytype/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clactivitytype/init(rawvalue).md",
       "hash": "9b015fcbc104d27f65925d3b4d60bf41b5fe553b9acf9f5b8496a2a7b6b81feb"
     },
     "https://developer.apple.com/documentation/corelocation/clactivitytype/maritime": {
@@ -102,7 +102,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clauthorizationstatus/init(rawvalue:)": {
       "etag": "\"14ab-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/clauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clauthorizationstatus/init(rawvalue).md",
       "hash": "b4b88062859afa264bc2adf41575df7caba2dd4f49131a39d9587a9fe7721f2b"
     },
     "https://developer.apple.com/documentation/corelocation/clauthorizationstatus/notdetermined": {
@@ -157,7 +157,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.class": {
       "etag": "\"1685-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/diagnostics-swiftclass.md",
+      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.class.md",
       "hash": "f0b25e298488a7bc4f18c62015ac4d88cc9b3cc7dd449132f18ec2958d561132"
     },
     "https://developer.apple.com/documentation/corelocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.class/iterator": {
@@ -167,17 +167,17 @@
     },
     "https://developer.apple.com/documentation/corelocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.property": {
       "etag": "\"16d4-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/diagnostics-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.property.md",
       "hash": "bd56d73eee279085631a73455fe39e8302c8eb3fe333beae82ef72bca79b0c85"
     },
     "https://developer.apple.com/documentation/corelocation/clbackgroundactivitysession-3mzv3/init()": {
       "etag": "\"e7e-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/init.md",
+      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/init().md",
       "hash": "2eb3cade2b6a4c075973d75995c02830877c5edde208c123a00308d2df066f26"
     },
     "https://developer.apple.com/documentation/corelocation/clbackgroundactivitysession-3mzv3/invalidate()": {
       "etag": "\"1172-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/invalidate.md",
+      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/invalidate().md",
       "hash": "8d8fe5ffaea88fac1ba24b2c07e2bee5c9bbf09f68b3086a4a69f7238d3a9082"
     },
     "https://developer.apple.com/documentation/corelocation/clbeacon": {
@@ -192,7 +192,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clbeacon/init(coder:)": {
       "etag": "\"1431-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clbeacon/init-coder.md",
+      "file_path": "documentation/CoreLocation/clbeacon/init(coder).md",
       "hash": "ed896bec2950fbbd73d5752ae38b5de87d8092260f5752dee1d3688992f9b140"
     },
     "https://developer.apple.com/documentation/corelocation/clbeacon/major": {
@@ -267,52 +267,52 @@
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(beaconidentityconstraint:identifier:)": {
       "etag": "\"551d-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-beaconidentityconstraintidentifier.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(beaconidentityconstraint,identifier).md",
       "hash": "a6b2ec8777aec8bb6f3808aba44a8b172b319e7201d6c1d18a4b9287cb5db1b2"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(proximityuuid:identifier:)": {
       "etag": "\"5c01-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-proximityuuididentifier.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(proximityuuid,identifier).md",
       "hash": "46c2ceded4a02542ed9e1661a04744db288a37de0da3960d066d07a7756e74d6"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(proximityuuid:major:identifier:)": {
       "etag": "\"618b-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-proximityuuidmajoridentifier.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(proximityuuid,major,identifier).md",
       "hash": "6cc71a5f0d42faaabc9077b2eb1da09202a8a243fc278621d3dd6e72800ccdb2"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(proximityuuid:major:minor:identifier:)": {
       "etag": "\"66f8-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-proximityuuidmajorminoridentifier.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(proximityuuid,major,minor,identifier).md",
       "hash": "912dae0b1e40bdfb7a4f419f92a3fb7a5caa827cf1f5e211b059933ff3c2c9ed"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(uuid:identifier:)-6114g": {
       "etag": "\"1911-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuididentifier-6114g.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,identifier)-6114g.md",
       "hash": "e6235c24f501fe6a85f8b9025e49877fc83189d1dcc6b354304ed2f4641280e7"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(uuid:identifier:)-6hg8v": {
       "etag": "\"52c6-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuididentifier-6hg8v.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,identifier)-6hg8v.md",
       "hash": "f8e62c29a8fdd78705b2bec79fc87f9c1b61bc4cadd3b74e1bf53e2040ab92f6"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(uuid:major:identifier:)-71t0b": {
       "etag": "\"2053-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuidmajoridentifier-71t0b.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,major,identifier)-71t0b.md",
       "hash": "156947b2a26c6df940b0419ed8254b07519f635391c5aa373eec4fcce020da32"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(uuid:major:identifier:)-8ur0j": {
       "etag": "\"58b0-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuidmajoridentifier-8ur0j.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,major,identifier)-8ur0j.md",
       "hash": "2243e7c204562ab5597d74d5ea0854f431fce8032aeb40d3393c416f648ff965"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(uuid:major:minor:identifier:)-24h7w": {
       "etag": "\"5e96-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuidmajorminoridentifier-24h7w.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,major,minor,identifier)-24h7w.md",
       "hash": "9bee4058931048410d1d6c4ab215bc4885159e9235bf5b06e5f9c7e8a7052ab5"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/init(uuid:major:minor:identifier:)-9ejej": {
       "etag": "\"2796-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuidmajorminoridentifier-9ejej.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,major,minor,identifier)-9ejej.md",
       "hash": "f4175eaa6c9d339878282480baad7333e2e6e64e2b9861ae54638a8a73f49fa3"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/major": {
@@ -332,7 +332,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/peripheraldata(withmeasuredpower:)": {
       "etag": "\"3ce9-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/peripheraldata-withmeasuredpower.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/peripheraldata(withmeasuredpower).md",
       "hash": "20124bef9632ca988d53676a566db6f682b0fdb42257cf257ed45878334e81ef"
     },
     "https://developer.apple.com/documentation/corelocation/clbeaconregion/proximityuuid": {
@@ -362,12 +362,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/clcircularregion/contains(_:)": {
       "etag": "\"3393-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clcircularregion/contains.md",
+      "file_path": "documentation/CoreLocation/clcircularregion/contains(_).md",
       "hash": "959f788a3ee1e2e6202f0bc07cd7ed86126051395fa6aaee46031a99b53e4dad"
     },
     "https://developer.apple.com/documentation/corelocation/clcircularregion/init(center:radius:identifier:)": {
       "etag": "\"42bd-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clcircularregion/init-centerradiusidentifier.md",
+      "file_path": "documentation/CoreLocation/clcircularregion/init(center,radius,identifier).md",
       "hash": "38f87b9f9db06600c622235eaedbccb677e587473cf2731206035ab1d8b19ec8"
     },
     "https://developer.apple.com/documentation/corelocation/clcircularregion/radius": {
@@ -377,7 +377,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clcondition-swift.protocol": {
       "etag": "\"2b6e-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clcondition-swiftprotocol.md",
+      "file_path": "documentation/CoreLocation/clcondition-swift.protocol.md",
       "hash": "dc5f4c934b130d1376dfa1ddd1adbb7953d2ddd543e29921c2bc6cb29774f294"
     },
     "https://developer.apple.com/documentation/corelocation/cldeviceorientation": {
@@ -397,7 +397,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/cldeviceorientation/init(rawvalue:)": {
       "etag": "\"1476-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/cldeviceorientation/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/cldeviceorientation/init(rawvalue).md",
       "hash": "0ba1cbf95443fcd3bca4bc1bc8e294a685e33b0d8d851049c82275b219a835e8"
     },
     "https://developer.apple.com/documentation/corelocation/cldeviceorientation/landscapeleft": {
@@ -427,7 +427,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clerror-swift.struct": {
       "etag": "\"88a5-65dd36cd5e84b-df\"",
-      "file_path": "documentation/CoreLocation/clerror-swiftstruct.md",
+      "file_path": "documentation/CoreLocation/clerror-swift.struct.md",
       "hash": "15463447e62484811d813fb11cfaef71d0a20a895abc0e904145d0c2df0c1537"
     },
     "https://developer.apple.com/documentation/corelocation/clerror-swift.struct/alternateregion": {
@@ -497,7 +497,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"1670-65d55dce5f4e1-df\"",
-      "file_path": "documentation/CoreLocation/clerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clerror-swift.struct/code/init(rawvalue).md",
       "hash": "5e4631d73721e2c0eb9af7619d990431bfeb307f75690c3d97c244a9ab9f5f1f"
     },
     "https://developer.apple.com/documentation/corelocation/clerror-swift.struct/code/locationunknown": {
@@ -657,7 +657,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clfloor/init(coder:)": {
       "etag": "\"1492-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clfloor/init-coder.md",
+      "file_path": "documentation/CoreLocation/clfloor/init(coder).md",
       "hash": "abd0a26136c38992411a15779f3c703041b47616b26bb5456d56f0398ac80a5a"
     },
     "https://developer.apple.com/documentation/corelocation/clfloor/level": {
@@ -677,42 +677,42 @@
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/cancelgeocode()": {
       "etag": "\"24d1-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/cancelgeocode.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/cancelgeocode().md",
       "hash": "b8048715ea02fb1885d984040684194a3f6470289e7e398822e16312eb930029"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/geocodeaddressdictionary(_:completionhandler:)": {
       "etag": "\"8132-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressdictionary-completionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressdictionary(_,completionhandler).md",
       "hash": "5dc42bfa0c2ac1e4544f0595de0505d8ae07cba668746834e23c77a3e3edc131"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/geocodeaddressstring(_:completionhandler:)": {
       "etag": "\"82d6-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring-completionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring(_,completionhandler).md",
       "hash": "421becaf645994abea3802aab7133642868edfbda750044b4dc5e85afbeaf7ef"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/geocodeaddressstring(_:in:completionhandler:)": {
       "etag": "\"8fdd-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring-incompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring(_,in,completionhandler).md",
       "hash": "f7ba1f15a1bf10ae30e6d006ea117c4f6486731daec626723ba9a108f098fd57"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/geocodeaddressstring(_:in:preferredlocale:completionhandler:)": {
       "etag": "\"98b4-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring-inpreferredlocalecompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring(_,in,preferredlocale,completionhandler).md",
       "hash": "dcdb784738f069e10b09175de701ea60a4df4b9145885f9006a5c13e3bcb4fab"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/geocodeaddressstring(_:inregioncenteredat:inregionradius:preferredlocale:completionhandler:)": {
       "etag": "\"5b36-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring-inregioncenteredatinregionradiuspreferredlocalecompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring(_,inregioncenteredat,inregionradius,preferredlocale,completionhandler).md",
       "hash": "12fe30c269231fb1453149872700cdac8461002887d006464e66e5bfbf4af899"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/geocodepostaladdress(_:completionhandler:)": {
       "etag": "\"8067-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodepostaladdress-completionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodepostaladdress(_,completionhandler).md",
       "hash": "b153e9a290dbe5bff29d46d66260458d5320b594ea9f2a7f2168dd299481090c"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/geocodepostaladdress(_:preferredlocale:completionhandler:)": {
       "etag": "\"8903-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodepostaladdress-preferredlocalecompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodepostaladdress(_,preferredlocale,completionhandler).md",
       "hash": "0f2356a1a904b24103982ab4cb307f2a59cd3d6c284fb15c83882b4ed0f135d1"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/isgeocoding": {
@@ -722,12 +722,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/reversegeocodelocation(_:completionhandler:)": {
       "etag": "\"61ab-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/reversegeocodelocation-completionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/reversegeocodelocation(_,completionhandler).md",
       "hash": "0ec215357bfd3782e6dcf9f68852c70e0982a8173d84f295f4aaa503a332d16b"
     },
     "https://developer.apple.com/documentation/corelocation/clgeocoder/reversegeocodelocation(_:preferredlocale:completionhandler:)": {
       "etag": "\"6867-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/reversegeocodelocation-preferredlocalecompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/reversegeocodelocation(_,preferredlocale,completionhandler).md",
       "hash": "8751b1c5977e49e71e9eb27d6545ffeb5261c3a424582f6760135daedd3349b7"
     },
     "https://developer.apple.com/documentation/corelocation/clheading": {
@@ -742,7 +742,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clheading/init(coder:)": {
       "etag": "\"1462-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clheading/init-coder.md",
+      "file_path": "documentation/CoreLocation/clheading/init(coder).md",
       "hash": "213680babf0f78c7e1104f25931a5289f3265a8ec053ce9c664ee87338e167c6"
     },
     "https://developer.apple.com/documentation/corelocation/clheading/magneticheading": {
@@ -807,7 +807,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/distance(from:)": {
       "etag": "\"320a-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/distance-from.md",
+      "file_path": "documentation/CoreLocation/cllocation/distance(from).md",
       "hash": "c227a075f1f5ead7c2a5563833712e1305d459f50947cd11209bd084d17e74e0"
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/ellipsoidalaltitude": {
@@ -822,7 +822,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/getdistancefrom(_:)": {
       "etag": "\"32d5-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/getdistancefrom.md",
+      "file_path": "documentation/CoreLocation/cllocation/getdistancefrom(_).md",
       "hash": "7eed752c3c2dffd059ac5413c02f5234a40313469525e5fbba8a5ad6a14ddc12"
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/horizontalaccuracy": {
@@ -832,32 +832,32 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/init(coder:)": {
       "etag": "\"14d1-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coder.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coder).md",
       "hash": "af54a16c7d27fc228575da39b1db8b615bd9062353daba286e02d87d043dbd80"
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:course:courseaccuracy:speed:speedaccuracy:timestamp:)": {
       "etag": "\"aa3f-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coordinatealtitudehorizontalaccuracyverticalaccuracycoursecourseaccuracyspeedspeedaccuracytimestamp.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coordinate,altitude,horizontalaccuracy,verticalaccuracy,course,courseaccuracy,speed,speedaccuracy,timestamp).md",
       "hash": "da1fde2e2e36c2b5f5772bbea8f11dae92b6c362af4041be9556c0273a634e6c"
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:course:courseaccuracy:speed:speedaccuracy:timestamp:sourceinfo:)": {
       "etag": "\"a3cf-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coordinatealtitudehorizontalaccuracyverticalaccuracycoursecourseaccuracyspeedspeedaccuracytimestampsourceinfo.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coordinate,altitude,horizontalaccuracy,verticalaccuracy,course,courseaccuracy,speed,speedaccuracy,timestamp,sourceinfo).md",
       "hash": "ae6095d9fd196738c01b7177095d228520c599796394950fb97effa5b3fa1e2b"
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:course:speed:timestamp:)": {
       "etag": "\"9efd-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coordinatealtitudehorizontalaccuracyverticalaccuracycoursespeedtimestamp.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coordinate,altitude,horizontalaccuracy,verticalaccuracy,course,speed,timestamp).md",
       "hash": "988d70f404079e549eb573e32301b7e89ff18f106f4ad5152017930fc690c195"
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:timestamp:)": {
       "etag": "\"8d2c-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coordinatealtitudehorizontalaccuracyverticalaccuracytimestamp.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coordinate,altitude,horizontalaccuracy,verticalaccuracy,timestamp).md",
       "hash": "313a4275f7cd22d2b9d5386b3450a0f88c15a3cc0be477d3de8ff52731aa99bc"
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/init(latitude:longitude:)": {
       "etag": "\"8b7a-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-latitudelongitude.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(latitude,longitude).md",
       "hash": "29e2bb45bcbb9104dcea81330fcf85ace9603b507edc6f1949444b83eb6caf78"
     },
     "https://developer.apple.com/documentation/corelocation/cllocation/sourceinformation": {
@@ -897,12 +897,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d/init()": {
       "etag": "\"1bb2-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/cllocationcoordinate2d/init.md",
+      "file_path": "documentation/CoreLocation/cllocationcoordinate2d/init().md",
       "hash": "91cc96b8e66d1132e3480ead0e33968a94c5f15053bd4619be209ab9ac554516"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d/init(latitude:longitude:)": {
       "etag": "\"257f-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/cllocationcoordinate2d/init-latitudelongitude.md",
+      "file_path": "documentation/CoreLocation/cllocationcoordinate2d/init(latitude,longitude).md",
       "hash": "325ee25c7db7f99551a121d6d156c242644ac141a584910700e50c1ef29c3200"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d/latitude": {
@@ -917,12 +917,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationcoordinate2disvalid(_:)": {
       "etag": "\"3613-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/cllocationcoordinate2disvalid.md",
+      "file_path": "documentation/CoreLocation/cllocationcoordinate2disvalid(_).md",
       "hash": "fb4b0d380fa8edded92323174b9460edac2e0d33085eebe41c163275ee0e1041"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationcoordinate2dmake(_:_:)": {
       "etag": "\"3407-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/cllocationcoordinate2dmake.md",
+      "file_path": "documentation/CoreLocation/cllocationcoordinate2dmake(_,_).md",
       "hash": "be5dde216b4a2d15aaa86ba72b7850a33256414e97ddc9190ae55613b001258c"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationdegrees": {
@@ -967,7 +967,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/allowdeferredlocationupdates(untiltraveled:timeout:)": {
       "etag": "\"ce5c-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/allowdeferredlocationupdates-untiltraveledtimeout.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/allowdeferredlocationupdates(untiltraveled,timeout).md",
       "hash": "2bd217e9f076a0279279e431dd8394dd457bb263df338a25d9b749197bd9c0ae"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/allowsbackgroundlocationupdates": {
@@ -977,17 +977,17 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/authorizationstatus()": {
       "etag": "\"82d7-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/authorizationstatus.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/authorizationstatus().md",
       "hash": "c8de90ecdd6f915b6c569e5409d4c13fbf2360057cf4a9c2d7aaa291cdceb745"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/authorizationstatus-swift.property": {
       "etag": "\"59c7-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/authorizationstatus-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/authorizationstatus-swift.property.md",
       "hash": "a98fabbdc029148138c6a6fd219cd97408b327519e465d5c4c9aa0973e0cf451"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/deferredlocationupdatesavailable()": {
       "etag": "\"77bc-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/deferredlocationupdatesavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/deferredlocationupdatesavailable().md",
       "hash": "39c605b52a032a6b69f8058bc50af3f0123a8decbbd1128acdecb46833092110"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/delegate": {
@@ -1002,12 +1002,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/disallowdeferredlocationupdates()": {
       "etag": "\"67f2-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/disallowdeferredlocationupdates.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/disallowdeferredlocationupdates().md",
       "hash": "8487523346896996d99ea0e7cdf7d91eb6023582518e2c76a7f20ad3ef761e0b"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/dismissheadingcalibrationdisplay()": {
       "etag": "\"4826-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/dismissheadingcalibrationdisplay.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/dismissheadingcalibrationdisplay().md",
       "hash": "4f35c210fdd56298c65ed1fb276bdfc85ef682aca4360e8b553331e60950c703"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/distancefilter": {
@@ -1022,12 +1022,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/headingavailable()": {
       "etag": "\"53db-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/headingavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/headingavailable().md",
       "hash": "73dafaef8436082ebc65f78f91739f95dcf72bddcfb4797f0e11334717fbed6d"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/headingavailable-swift.property": {
       "etag": "\"2a73-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/headingavailable-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/headingavailable-swift.property.md",
       "hash": "374acdc0f1ab86400455bd8c901e3f4a02fa2d91fc1f4fc8fd40432ba5faa3a1"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/headingbody": {
@@ -1052,12 +1052,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/ismonitoringavailable(for:)": {
       "etag": "\"5e14-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/ismonitoringavailable-for.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/ismonitoringavailable(for).md",
       "hash": "ce844ee4176cf71c2e06b84f5cdb21416e26fbb393f41cc1d63963fd2e04159e"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/israngingavailable()": {
       "etag": "\"4fc1-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/israngingavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/israngingavailable().md",
       "hash": "15ca759d2b91d531aa0dd5d1591c0dac7c0bed9f42e04da73e536873ee9a684f"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/location": {
@@ -1067,12 +1067,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/locationservicesenabled()": {
       "etag": "\"7759-65dd36ccc563b-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/locationservicesenabled.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/locationservicesenabled().md",
       "hash": "c055ffc8152e92c5abcf16a22747e0b8d89683da86cf4e096661b4c07ef5a9aa"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/locationservicesenabled-swift.property": {
       "etag": "\"408c-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/locationservicesenabled-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/locationservicesenabled-swift.property.md",
       "hash": "baf04dc9a61bc1ea4e2e7b8133062c78e9334f6f3996692bcf252049f7ebb59d"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/maximumregionmonitoringdistance": {
@@ -1107,47 +1107,47 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/regionmonitoringavailable()": {
       "etag": "\"7de9-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/regionmonitoringavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/regionmonitoringavailable().md",
       "hash": "c21f21dbb49b837eb1b34494edbc53dc309ed6a0f92014dd357325ea376b0e99"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/regionmonitoringenabled()": {
       "etag": "\"81d6-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/regionmonitoringenabled.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/regionmonitoringenabled().md",
       "hash": "884618132d188417c37cab74e0beafa2612e4502e8e792edf99550e17a14aa54"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/requestalwaysauthorization()": {
       "etag": "\"90ff-65dd36ccc563b-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requestalwaysauthorization.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requestalwaysauthorization().md",
       "hash": "c915602d94c448c58371269cdfcd310e8fe8180b5d80083dd3778395970da774"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/requesthistoricallocations(purposekey:samplecount:completionhandler:)": {
       "etag": "\"474e-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requesthistoricallocations-purposekeysamplecountcompletionhandler.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requesthistoricallocations(purposekey,samplecount,completionhandler).md",
       "hash": "f4d61da83539ed20f70aa8dd72508e6133c466b0ce972e5521315d8934a9c492"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/requestlocation()": {
       "etag": "\"6fb4-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requestlocation.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requestlocation().md",
       "hash": "f18b48029ccb1c03b5b1031fe76a8be81444429c1b93ebd9710a3214396b2f0e"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/requeststate(for:)": {
       "etag": "\"8975-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requeststate-for.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requeststate(for).md",
       "hash": "5020910e8a762dd1c7c9d625be03e2a39cfac4f0bbb64592bcb73449b8866e07"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey:)": {
       "etag": "\"6262-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requesttemporaryfullaccuracyauthorization-withpurposekey.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey).md",
       "hash": "6c1a413bddeb64b0b29f20d458814a1472a531df5290e4c4792e46008867682d"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey:completion:)": {
       "etag": "\"81be-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requesttemporaryfullaccuracyauthorization-withpurposekeycompletion.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey,completion).md",
       "hash": "e5c70088cd8bea759cbcde0dd6da6c4c6e2e5efc6fc288636567cf16bb849fe5"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/requestwheninuseauthorization()": {
       "etag": "\"7110-65dd36ccc563b-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requestwheninuseauthorization.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requestwheninuseauthorization().md",
       "hash": "87e1410b9489ecdac8d32d6a9f7c94c4f81fe184134806cc52eb0a8691eb7b21"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/showsbackgroundlocationindicator": {
@@ -1157,92 +1157,92 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/significantlocationchangemonitoringavailable()": {
       "etag": "\"5271-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/significantlocationchangemonitoringavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/significantlocationchangemonitoringavailable().md",
       "hash": "238377e6a72ab92fab6e7a06096e9f2ce4bf19b9fbc11b0fa9ab6103f2145d10"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startmonitoring(for:)": {
       "etag": "\"9985-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoring-for.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoring(for).md",
       "hash": "e8a42819887ca5613242e3933e3492720388975a4569a5987ce9e10541e8fd21"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startmonitoring(for:desiredaccuracy:)": {
       "etag": "\"afe4-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoring-fordesiredaccuracy.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoring(for,desiredaccuracy).md",
       "hash": "1d3c6fae36de8bf313078eeafc79d00630cf7c8c5724d463ed02be5e3a8b7702"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startmonitoringlocationpushes(completion:)": {
       "etag": "\"4fc0-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringlocationpushes-completion.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringlocationpushes(completion).md",
       "hash": "2a60a2e2d40f09f161856ff76015317513c3123b6508f3d501c5daa0c6c63ca2"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startmonitoringsignificantlocationchanges()": {
       "etag": "\"6422-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringsignificantlocationchanges.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringsignificantlocationchanges().md",
       "hash": "cd21a154bf300edacee7176d99d0748903ce95d34a95bbf68396475b39bdeaa6"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startmonitoringvisits()": {
       "etag": "\"390e-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringvisits.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringvisits().md",
       "hash": "15dfd5a35e1c3ea48ee03d67ea1f3b7b700191ef5b293c980c114813dae8311c"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startrangingbeacons(in:)": {
       "etag": "\"8de6-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startrangingbeacons-in.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startrangingbeacons(in).md",
       "hash": "eb64ea32d83b1c0cde8475a4f488243de22d2c3ce94b59f79eca6b9bbba4e983"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startrangingbeacons(satisfying:)": {
       "etag": "\"3533-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startrangingbeacons-satisfying.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startrangingbeacons(satisfying).md",
       "hash": "e0d32d42b2c7e671bbe93cff3cf2ed24ff7d067e1cf02d39bc5c6d8fa748c2da"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startupdatingheading()": {
       "etag": "\"663b-65dd36ccd78e2-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startupdatingheading.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startupdatingheading().md",
       "hash": "50ffd53545f0f16986e7cec1024db0461cd349bedeb0000e7a05fdd0a7bb7a3f"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/startupdatinglocation()": {
       "etag": "\"61c4-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startupdatinglocation.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startupdatinglocation().md",
       "hash": "c0bdcab85d365e132007be23d9410afbb80f5f5a18276d68d4fc7ef8507ef8a4"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/stopmonitoring(for:)": {
       "etag": "\"737d-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoring-for.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoring(for).md",
       "hash": "a46fda5d50bb0e735de7e1017b339689759d06501b2eeed2605ebe8879e56d62"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/stopmonitoringlocationpushes()": {
       "etag": "\"2506-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringlocationpushes.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringlocationpushes().md",
       "hash": "2777a6b5e78afba51be62cc7a25d54cf22beec8be5cbc7fbdf9cd5772c41a389"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/stopmonitoringsignificantlocationchanges()": {
       "etag": "\"25ab-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringsignificantlocationchanges.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringsignificantlocationchanges().md",
       "hash": "23148bc7548a5e2f0b2b02148390108749277ea1454838032f346bb7a7df7bc5"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/stopmonitoringvisits()": {
       "etag": "\"21d6-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringvisits.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringvisits().md",
       "hash": "118546cc091b374a34aa65589663c8535ec74711a9785e0052b772f43a658ce7"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/stoprangingbeacons(in:)": {
       "etag": "\"770b-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stoprangingbeacons-in.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stoprangingbeacons(in).md",
       "hash": "ed9f1cac0c11d368e0caa3453d780637250ef19234af1ee5b6d1b9cfb31036f0"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/stoprangingbeacons(satisfying:)": {
       "etag": "\"3529-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stoprangingbeacons-satisfying.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stoprangingbeacons(satisfying).md",
       "hash": "dafe4c04d78e6514d174fe9ab2496c3a23137fcda179b97533a0ccfc4bff5dcd"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/stopupdatingheading()": {
       "etag": "\"4872-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopupdatingheading.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopupdatingheading().md",
       "hash": "a49222eb67fe46ba21ecd8b5c05b49db18b5bf2fb282f41125624c0323b7d190"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanager/stopupdatinglocation()": {
       "etag": "\"45b7-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopupdatinglocation.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopupdatinglocation().md",
       "hash": "f6b243b846e1f50dbd642646c2c453dcc6f20472c43744d24c10e2d2f4a86f71"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate": {
@@ -1252,107 +1252,107 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didchangeauthorization:)": {
       "etag": "\"3d99-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didchangeauthorization.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didchangeauthorization).md",
       "hash": "6411f322cbef9931d75de69c39827a254f5b7aca06d83f4326476ea30e6805b0"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:diddeterminestate:for:)": {
       "etag": "\"6402-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-diddeterminestatefor.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,diddeterminestate,for).md",
       "hash": "ada9d258751e36833863585b7ca59b3f3c1cef792cb5dca196b2da0111a109b4"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didenterregion:)": {
       "etag": "\"5aad-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didenterregion.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didenterregion).md",
       "hash": "1a5ed04546d5a95b6b2cf3a0b54441091c1741ee6a047924c9c311e7cddb9647"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didexitregion:)": {
       "etag": "\"5a9f-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didexitregion.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didexitregion).md",
       "hash": "f1eb8e703449394d389f07ebb1e46c4af280f84657ffd7e08e4d8547d9d2b74c"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didfailrangingfor:error:)": {
       "etag": "\"5aa6-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didfailrangingforerror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didfailrangingfor,error).md",
       "hash": "6334302d32f61dad8663808ec23a37f7545023b05d72441841ad567a4126e452"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didfailwitherror:)": {
       "etag": "\"4a4c-65dd36ccfd1ab-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didfailwitherror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didfailwitherror).md",
       "hash": "8532380982f3db95af5100fa39f6593fa746eb5c600f33932887fdde6579aa8f"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didfinishdeferredupdateswitherror:)": {
       "etag": "\"41a0-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didfinishdeferredupdateswitherror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didfinishdeferredupdateswitherror).md",
       "hash": "35b101ee0df9b52255622ccd8cf5c33a77a9464e61007496893eb6a7d52370c9"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didrange:satisfying:)": {
       "etag": "\"5a0f-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didrangesatisfying.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didrange,satisfying).md",
       "hash": "7d509301bdddf0671d3c81048e9672669dce80630623875dab8d28dcf7d8321f"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didrangebeacons:in:)": {
       "etag": "\"6238-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didrangebeaconsin.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didrangebeacons,in).md",
       "hash": "5c54033141dbb4a782b06b6d9305224f6ed6b7d5e6ff105fc5cb7cf8a6884848"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didstartmonitoringfor:)": {
       "etag": "\"5503-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didstartmonitoringfor.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didstartmonitoringfor).md",
       "hash": "7767c105fe65629cd0f6d7c2f365ad565d75b09b3c7aa9993472bf653a686e09"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didupdateheading:)": {
       "etag": "\"4743-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didupdateheading.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didupdateheading).md",
       "hash": "ce3ab67c6f670985dedcb272c2ff6e4b2a02718caefe7b1b83cd373be5f47b99"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didupdatelocations:)": {
       "etag": "\"4b23-65dd36ccfd1ab-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didupdatelocations.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didupdatelocations).md",
       "hash": "0f74561adcedbd1b98c71deb1b1179c40f07fe2b00665beb2af5a1d6d8e3b675"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didupdateto:from:)": {
       "etag": "\"4edf-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didupdatetofrom.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didupdateto,from).md",
       "hash": "9481d5b3b5204d6be84d91841f584792c111a3841ec28ab763c04835edea8c8e"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didvisit:)": {
       "etag": "\"2f5a-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didvisit.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didvisit).md",
       "hash": "e36ec398c3c2e1d539c20579198cdcf354ff1e423f6703c1124382825b72f8a4"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:monitoringdidfailfor:witherror:)": {
       "etag": "\"41d9-65dd36ccedf94-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-monitoringdidfailforwitherror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,monitoringdidfailfor,witherror).md",
       "hash": "d8026e61824cfd83712aefcd633f32096fbcb702fe1efd85327d83f4e80e4a3a"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:rangingbeaconsdidfailfor:witherror:)": {
       "etag": "\"57f6-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-rangingbeaconsdidfailforwitherror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,rangingbeaconsdidfailfor,witherror).md",
       "hash": "5e3aaed0812e8c9b409812f0b001c277d36f602496aff994fda53ccba16d2bfb"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:)": {
       "etag": "\"63df-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidchangeauthorization.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_).md",
       "hash": "b174f9801a02effc6f100a67efc2d8edc980bef662a059c056d055040f3b16c8"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanagerdidpauselocationupdates(_:)": {
       "etag": "\"329b-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidpauselocationupdates.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidpauselocationupdates(_).md",
       "hash": "c8bf115c400265f04393c5315194de61fb8b5322bf4c201f7f33cf9bbe990b3a"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanagerdidresumelocationupdates(_:)": {
       "etag": "\"31c1-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidresumelocationupdates.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidresumelocationupdates(_).md",
       "hash": "e58ae457d8acd93c02bf6deb5d8ebbf057fc028251333098f64784dedb0ea9a6"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/locationmanagershoulddisplayheadingcalibration(_:)": {
       "etag": "\"5341-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagershoulddisplayheadingcalibration.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagershoulddisplayheadingcalibration(_).md",
       "hash": "07eb9a7bf6342cfb8ccf8889f9fd594f9f9db43aa46e574590fc23cf329b3d69"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationpushserviceerror-swift.struct": {
       "etag": "\"4b05-65dd36ccb5456-df\"",
-      "file_path": "documentation/CoreLocation/cllocationpushserviceerror-swiftstruct.md",
+      "file_path": "documentation/CoreLocation/cllocationpushserviceerror-swift.struct.md",
       "hash": "7cdcdfc9e03c82367219883d8c421310ca512e55063276f8b22bc1f26d384c1b"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationpushserviceerror-swift.struct/code": {
@@ -1362,7 +1362,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationpushserviceerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"17ce-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/cllocationpushserviceerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/cllocationpushserviceerror-swift.struct/code/init(rawvalue).md",
       "hash": "8c53c864f15e4ee0770d075e6a35990f19706d7200d52840f84020483b7ea5b6"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationpushserviceerror-swift.struct/code/missingentitlement": {
@@ -1432,12 +1432,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationpushserviceextension/didreceivelocationpushpayload(_:completion:)": {
       "etag": "\"516b-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationpushserviceextension/didreceivelocationpushpayload-completion.md",
+      "file_path": "documentation/CoreLocation/cllocationpushserviceextension/didreceivelocationpushpayload(_,completion).md",
       "hash": "a9366888ef7753529d50784ba4db4d7eec57d34e06bf736871a5b17b3cab540c"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationpushserviceextension/serviceextensionwillterminate()": {
       "etag": "\"2686-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationpushserviceextension/serviceextensionwillterminate.md",
+      "file_path": "documentation/CoreLocation/cllocationpushserviceextension/serviceextensionwillterminate().md",
       "hash": "30132b285436b7521da51c8f58235a01aa23bccf57026394f6c5bd896dd071af"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationsourceinformation": {
@@ -1447,12 +1447,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationsourceinformation/init(coder:)": {
       "etag": "\"1606-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationsourceinformation/init-coder.md",
+      "file_path": "documentation/CoreLocation/cllocationsourceinformation/init(coder).md",
       "hash": "c911a2de53b69ac69aa567e225082941898c5665783e3d2c226fc86839296b00"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationsourceinformation/init(softwaresimulationstate:andexternalaccessorystate:)": {
       "etag": "\"2c6f-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationsourceinformation/init-softwaresimulationstateandexternalaccessorystate.md",
+      "file_path": "documentation/CoreLocation/cllocationsourceinformation/init(softwaresimulationstate,andexternalaccessorystate).md",
       "hash": "c5ffc354825c17e13a0ee6813e697c641e18eca925bf360c732c1a1b43241532"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationsourceinformation/isproducedbyaccessory": {
@@ -1552,7 +1552,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/cllocationupdate/liveupdates(_:)": {
       "etag": "\"2458-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationupdate/liveupdates.md",
+      "file_path": "documentation/CoreLocation/cllocationupdate/liveupdates(_).md",
       "hash": "469c19acaf26744fdde23f8b2a684d076e3d48ece008d00e071a5bcab9a705fa"
     },
     "https://developer.apple.com/documentation/corelocation/cllocationupdate/location": {
@@ -1592,12 +1592,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/add(_:identifier:)": {
       "etag": "\"2f35-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/add-identifier.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/add(_,identifier).md",
       "hash": "f80b49c6c16b1fba900579f417458ec4a0ba44a0d5adda2a001e27cd58f161ec"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/add(_:identifier:assuming:)": {
       "etag": "\"2d5e-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/add-identifierassuming.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/add(_,identifier,assuming).md",
       "hash": "25dac01ddbf25dc7625d6841a07b0054ad7f169288392c7cd5186b756952e15b"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition": {
@@ -1607,17 +1607,17 @@
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition/init(uuid:)": {
       "etag": "\"2454-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init-uuid.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init(uuid).md",
       "hash": "c365fd229a0cc1a13e1f627b2b878d1fba630a7d90bd67959dee1ced68642f49"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition/init(uuid:major:)": {
       "etag": "\"2db5-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init-uuidmajor.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init(uuid,major).md",
       "hash": "691f0080dc65a10468fa8de5d256cc6f80ccab38f98b88ebcd98edaf555407a4"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition/init(uuid:major:minor:)": {
       "etag": "\"34e0-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init-uuidmajorminor.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init(uuid,major,minor).md",
       "hash": "5f072c0be514cc106787547e9a1876cde57c9cddc56c65c052036cb1bc8e1531"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition/major": {
@@ -1647,7 +1647,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/circulargeographiccondition/init(center:radius:)": {
       "etag": "\"2241-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/circulargeographiccondition/init-centerradius.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/circulargeographiccondition/init(center,radius).md",
       "hash": "06e34fd0f7bd2510988d3282d053a9e72f6483638b160707f637d07b0d5ebc4e"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/circulargeographiccondition/radius": {
@@ -1727,22 +1727,22 @@
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/event/state-swift.property": {
       "etag": "\"1ed2-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/event/state-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/event/state-swift.property.md",
       "hash": "3a47e65805cb503e287582cf5d201ae8dd6e2395aa44ff1e59f2e15ccc52bf8c"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/event/state-swift.typealias": {
       "etag": "\"11b3-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/event/state-swifttypealias.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/event/state-swift.typealias.md",
       "hash": "cf392632d95db7174aeb2c64d63fa6157143f45bd37479a3e1b6388a18e467c4"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/events-swift.property": {
       "etag": "\"14a8-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/events-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/events-swift.property.md",
       "hash": "560965703d460c810d9602362ba9b60814b0c4431b71776ae468aece1f930125"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/events-swift.struct": {
       "etag": "\"2190-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/events-swiftstruct.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/events-swift.struct.md",
       "hash": "5d259f9d3a310a5a50e1a732e751d861873bb233dd0b21ce166ae67348e6e376"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/events-swift.struct/iterator": {
@@ -1757,7 +1757,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/init(_:)": {
       "etag": "\"122c-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/init.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/init(_).md",
       "hash": "af8adcf906e97cba86015d354272cbe0afbc9785878a8be12516f839cfe63e07"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/record": {
@@ -1767,7 +1767,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/record(for:)": {
       "etag": "\"288d-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/record-for.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/record(for).md",
       "hash": "c3c14ee19fb15acd976787104d166106136bf5ff5be9910f0725009f3d22f3f6"
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/record/condition": {
@@ -1782,7 +1782,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/remove(_:)": {
       "etag": "\"2141-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/remove.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/remove(_).md",
       "hash": "4d78f9a7e37f03dda4db5a4bac0a121fa2c15ba55e933e72fcfc5b701f5966a6"
     },
     "https://developer.apple.com/documentation/corelocation/clplacemark": {
@@ -1817,17 +1817,17 @@
     },
     "https://developer.apple.com/documentation/corelocation/clplacemark/init(coder:)": {
       "etag": "\"1812-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/clplacemark/init-coder.md",
+      "file_path": "documentation/CoreLocation/clplacemark/init(coder).md",
       "hash": "134fe852dc0c176ed71c9fb72d7a41469aedf2dd7f1850870605f666ea214371"
     },
     "https://developer.apple.com/documentation/corelocation/clplacemark/init(location:name:postaladdress:)": {
       "etag": "\"31cc-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/clplacemark/init-locationnamepostaladdress.md",
+      "file_path": "documentation/CoreLocation/clplacemark/init(location,name,postaladdress).md",
       "hash": "8c272c778e447e7fb0b6d613e7497756b317c45f6aaa90df778c95daf257dde6"
     },
     "https://developer.apple.com/documentation/corelocation/clplacemark/init(placemark:)": {
       "etag": "\"261b-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/clplacemark/init-placemark.md",
+      "file_path": "documentation/CoreLocation/clplacemark/init(placemark).md",
       "hash": "19c741cb308ab8c14e88105422fe5e176e0bb11eb807a7b89f31aa141a3881d5"
     },
     "https://developer.apple.com/documentation/corelocation/clplacemark/inlandwater": {
@@ -1932,7 +1932,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clproximity/init(rawvalue:)": {
       "etag": "\"12e3-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/clproximity/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clproximity/init(rawvalue).md",
       "hash": "276e91f9ff955cdf0ae169d177c37578e6bfdd9fbfa2c91a428f16587be22a80"
     },
     "https://developer.apple.com/documentation/corelocation/clproximity/near": {
@@ -1957,7 +1957,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clregion/contains(_:)": {
       "etag": "\"5273-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clregion/contains.md",
+      "file_path": "documentation/CoreLocation/clregion/contains(_).md",
       "hash": "fcb7ab4046bf7545608c826596b865971fafff0cf5f6622f30988ef7c5010395"
     },
     "https://developer.apple.com/documentation/corelocation/clregion/identifier": {
@@ -1967,12 +1967,12 @@
     },
     "https://developer.apple.com/documentation/corelocation/clregion/init(circularregionwithcenter:radius:identifier:)": {
       "etag": "\"5c18-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clregion/init-circularregionwithcenterradiusidentifier.md",
+      "file_path": "documentation/CoreLocation/clregion/init(circularregionwithcenter,radius,identifier).md",
       "hash": "4b1f56411586267365bd4e7b1bfb79826c5aacea6e2c78109c314600ddc3f9e8"
     },
     "https://developer.apple.com/documentation/corelocation/clregion/init(coder:)": {
       "etag": "\"1468-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clregion/init-coder.md",
+      "file_path": "documentation/CoreLocation/clregion/init(coder).md",
       "hash": "94131ea70ae82f23ea05aa9b6c2b70360beae80a95867f3f6ad6403754f302e3"
     },
     "https://developer.apple.com/documentation/corelocation/clregion/notifyonentry": {
@@ -1997,7 +1997,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clregionstate/init(rawvalue:)": {
       "etag": "\"1329-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/clregionstate/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clregionstate/init(rawvalue).md",
       "hash": "3ea4a879bb540aa4b6a26644fc77cd123f3da30a3eaccf6530aca86c1ced6f1e"
     },
     "https://developer.apple.com/documentation/corelocation/clregionstate/inside": {
@@ -2087,7 +2087,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clservicesession-pt7n/diagnostics-swift.class": {
       "etag": "\"1af1-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/diagnostics-swiftclass.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/diagnostics-swift.class.md",
       "hash": "c29b504fdaef947fd46113e225d82e297b22328e611f6ee0504af21fc2d82dd1"
     },
     "https://developer.apple.com/documentation/corelocation/clservicesession-pt7n/diagnostics-swift.class/iterator": {
@@ -2097,22 +2097,22 @@
     },
     "https://developer.apple.com/documentation/corelocation/clservicesession-pt7n/diagnostics-swift.property": {
       "etag": "\"17ba-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/diagnostics-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/diagnostics-swift.property.md",
       "hash": "37f93abd8a1473277ff7fdb8410dcbeae6dbccfa7b096fc5d7948e1abcddc382"
     },
     "https://developer.apple.com/documentation/corelocation/clservicesession-pt7n/init(authorization:)": {
       "etag": "\"2122-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/init-authorization.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/init(authorization).md",
       "hash": "14bb67ad266bac1b0481627f499bce50b217d95a011017b8db71dd5a1d762ebd"
     },
     "https://developer.apple.com/documentation/corelocation/clservicesession-pt7n/init(authorization:fullaccuracypurposekey:)": {
       "etag": "\"255a-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/init-authorizationfullaccuracypurposekey.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/init(authorization,fullaccuracypurposekey).md",
       "hash": "8ef9ce954d014a0d10abf9995c417f4d6ddc85562299e5fac8827e1320aca075"
     },
     "https://developer.apple.com/documentation/corelocation/clservicesession-pt7n/invalidate()": {
       "etag": "\"1037-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/invalidate.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/invalidate().md",
       "hash": "1046c641d62a96f36b2791ee701a057867798e3aefbb4162ac36346939603847"
     },
     "https://developer.apple.com/documentation/corelocation/cltimeintervalmax": {
@@ -2147,7 +2147,7 @@
     },
     "https://developer.apple.com/documentation/corelocation/clvisit/init(coder:)": {
       "etag": "\"1409-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clvisit/init-coder.md",
+      "file_path": "documentation/CoreLocation/clvisit/init(coder).md",
       "hash": "93f0b5c225a5c7611afa8243093a49a33f04e32be0e0c715410817493a5ea472"
     },
     "https://developer.apple.com/documentation/corelocation/configuring-your-app-to-use-location-services": {
@@ -2317,7 +2317,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cl_target_supports_conditions.json": {
       "etag": "\"17f0-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cl-target-supports-conditions.md",
+      "file_path": "documentation/CoreLocation/cl_target_supports_conditions.md",
       "hash": "e409a2bef0079af46032bbba36396debcefa790cbe13acc5b4421b5913a279bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/claccuracyauthorization.json": {
@@ -2332,7 +2332,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/claccuracyauthorization/init(rawvalue:).json": {
       "etag": "\"1477-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/claccuracyauthorization/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/claccuracyauthorization/init(rawvalue).md",
       "hash": "a1bf075643734a25e9074a1c46b98912203484d58d26c1a70dec73f2b7353ea2"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/claccuracyauthorization/reducedaccuracy.json": {
@@ -2362,7 +2362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clactivitytype/init(rawvalue:).json": {
       "etag": "\"1476-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/clactivitytype/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clactivitytype/init(rawvalue).md",
       "hash": "9b015fcbc104d27f65925d3b4d60bf41b5fe553b9acf9f5b8496a2a7b6b81feb"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clactivitytype/maritime.json": {
@@ -2407,7 +2407,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clauthorizationstatus/init(rawvalue:).json": {
       "etag": "\"14ab-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/clauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clauthorizationstatus/init(rawvalue).md",
       "hash": "b4b88062859afa264bc2adf41575df7caba2dd4f49131a39d9587a9fe7721f2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clauthorizationstatus/notdetermined.json": {
@@ -2462,7 +2462,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.class.json": {
       "etag": "\"1685-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/diagnostics-swiftclass.md",
+      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.class.md",
       "hash": "f0b25e298488a7bc4f18c62015ac4d88cc9b3cc7dd449132f18ec2958d561132"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.class/iterator.json": {
@@ -2472,17 +2472,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.property.json": {
       "etag": "\"16d4-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/diagnostics-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/diagnostics-swift.property.md",
       "hash": "bd56d73eee279085631a73455fe39e8302c8eb3fe333beae82ef72bca79b0c85"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbackgroundactivitysession-3mzv3/init().json": {
       "etag": "\"e7e-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/init.md",
+      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/init().md",
       "hash": "2eb3cade2b6a4c075973d75995c02830877c5edde208c123a00308d2df066f26"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbackgroundactivitysession-3mzv3/invalidate().json": {
       "etag": "\"1172-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/invalidate.md",
+      "file_path": "documentation/CoreLocation/clbackgroundactivitysession-3mzv3/invalidate().md",
       "hash": "8d8fe5ffaea88fac1ba24b2c07e2bee5c9bbf09f68b3086a4a69f7238d3a9082"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeacon.json": {
@@ -2497,7 +2497,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeacon/init(coder:).json": {
       "etag": "\"1431-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clbeacon/init-coder.md",
+      "file_path": "documentation/CoreLocation/clbeacon/init(coder).md",
       "hash": "ed896bec2950fbbd73d5752ae38b5de87d8092260f5752dee1d3688992f9b140"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeacon/major.json": {
@@ -2572,52 +2572,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(beaconidentityconstraint:identifier:).json": {
       "etag": "\"551d-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-beaconidentityconstraintidentifier.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(beaconidentityconstraint,identifier).md",
       "hash": "a6b2ec8777aec8bb6f3808aba44a8b172b319e7201d6c1d18a4b9287cb5db1b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(proximityuuid:identifier:).json": {
       "etag": "\"5c01-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-proximityuuididentifier.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(proximityuuid,identifier).md",
       "hash": "46c2ceded4a02542ed9e1661a04744db288a37de0da3960d066d07a7756e74d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(proximityuuid:major:identifier:).json": {
       "etag": "\"618b-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-proximityuuidmajoridentifier.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(proximityuuid,major,identifier).md",
       "hash": "6cc71a5f0d42faaabc9077b2eb1da09202a8a243fc278621d3dd6e72800ccdb2"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(proximityuuid:major:minor:identifier:).json": {
       "etag": "\"66f8-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-proximityuuidmajorminoridentifier.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(proximityuuid,major,minor,identifier).md",
       "hash": "912dae0b1e40bdfb7a4f419f92a3fb7a5caa827cf1f5e211b059933ff3c2c9ed"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(uuid:identifier:)-6114g.json": {
       "etag": "\"1911-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuididentifier-6114g.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,identifier)-6114g.md",
       "hash": "e6235c24f501fe6a85f8b9025e49877fc83189d1dcc6b354304ed2f4641280e7"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(uuid:identifier:)-6hg8v.json": {
       "etag": "\"52c6-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuididentifier-6hg8v.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,identifier)-6hg8v.md",
       "hash": "f8e62c29a8fdd78705b2bec79fc87f9c1b61bc4cadd3b74e1bf53e2040ab92f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(uuid:major:identifier:)-71t0b.json": {
       "etag": "\"2053-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuidmajoridentifier-71t0b.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,major,identifier)-71t0b.md",
       "hash": "156947b2a26c6df940b0419ed8254b07519f635391c5aa373eec4fcce020da32"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(uuid:major:identifier:)-8ur0j.json": {
       "etag": "\"58b0-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuidmajoridentifier-8ur0j.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,major,identifier)-8ur0j.md",
       "hash": "2243e7c204562ab5597d74d5ea0854f431fce8032aeb40d3393c416f648ff965"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(uuid:major:minor:identifier:)-24h7w.json": {
       "etag": "\"5e96-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuidmajorminoridentifier-24h7w.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,major,minor,identifier)-24h7w.md",
       "hash": "9bee4058931048410d1d6c4ab215bc4885159e9235bf5b06e5f9c7e8a7052ab5"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/init(uuid:major:minor:identifier:)-9ejej.json": {
       "etag": "\"2796-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/init-uuidmajorminoridentifier-9ejej.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/init(uuid,major,minor,identifier)-9ejej.md",
       "hash": "f4175eaa6c9d339878282480baad7333e2e6e64e2b9861ae54638a8a73f49fa3"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/major.json": {
@@ -2637,7 +2637,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/peripheraldata(withmeasuredpower:).json": {
       "etag": "\"3ce9-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/clbeaconregion/peripheraldata-withmeasuredpower.md",
+      "file_path": "documentation/CoreLocation/clbeaconregion/peripheraldata(withmeasuredpower).md",
       "hash": "20124bef9632ca988d53676a566db6f682b0fdb42257cf257ed45878334e81ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clbeaconregion/proximityuuid.json": {
@@ -2667,12 +2667,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clcircularregion/contains(_:).json": {
       "etag": "\"3393-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clcircularregion/contains.md",
+      "file_path": "documentation/CoreLocation/clcircularregion/contains(_).md",
       "hash": "959f788a3ee1e2e6202f0bc07cd7ed86126051395fa6aaee46031a99b53e4dad"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clcircularregion/init(center:radius:identifier:).json": {
       "etag": "\"42bd-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clcircularregion/init-centerradiusidentifier.md",
+      "file_path": "documentation/CoreLocation/clcircularregion/init(center,radius,identifier).md",
       "hash": "38f87b9f9db06600c622235eaedbccb677e587473cf2731206035ab1d8b19ec8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clcircularregion/radius.json": {
@@ -2682,7 +2682,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clcondition-swift.protocol.json": {
       "etag": "\"2b6e-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clcondition-swiftprotocol.md",
+      "file_path": "documentation/CoreLocation/clcondition-swift.protocol.md",
       "hash": "dc5f4c934b130d1376dfa1ddd1adbb7953d2ddd543e29921c2bc6cb29774f294"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cldeviceorientation.json": {
@@ -2702,7 +2702,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cldeviceorientation/init(rawvalue:).json": {
       "etag": "\"1476-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/cldeviceorientation/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/cldeviceorientation/init(rawvalue).md",
       "hash": "0ba1cbf95443fcd3bca4bc1bc8e294a685e33b0d8d851049c82275b219a835e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cldeviceorientation/landscapeleft.json": {
@@ -2732,7 +2732,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clerror-swift.struct.json": {
       "etag": "\"88a5-65dd36cd5e84b-df\"",
-      "file_path": "documentation/CoreLocation/clerror-swiftstruct.md",
+      "file_path": "documentation/CoreLocation/clerror-swift.struct.md",
       "hash": "15463447e62484811d813fb11cfaef71d0a20a895abc0e904145d0c2df0c1537"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clerror-swift.struct/alternateregion.json": {
@@ -2802,7 +2802,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"1670-65d55dce5f4e1-df\"",
-      "file_path": "documentation/CoreLocation/clerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clerror-swift.struct/code/init(rawvalue).md",
       "hash": "5e4631d73721e2c0eb9af7619d990431bfeb307f75690c3d97c244a9ab9f5f1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clerror-swift.struct/code/locationunknown.json": {
@@ -2962,7 +2962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clfloor/init(coder:).json": {
       "etag": "\"1492-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clfloor/init-coder.md",
+      "file_path": "documentation/CoreLocation/clfloor/init(coder).md",
       "hash": "abd0a26136c38992411a15779f3c703041b47616b26bb5456d56f0398ac80a5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clfloor/level.json": {
@@ -2982,42 +2982,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/cancelgeocode().json": {
       "etag": "\"24d1-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/cancelgeocode.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/cancelgeocode().md",
       "hash": "b8048715ea02fb1885d984040684194a3f6470289e7e398822e16312eb930029"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/geocodeaddressdictionary(_:completionhandler:).json": {
       "etag": "\"8132-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressdictionary-completionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressdictionary(_,completionhandler).md",
       "hash": "5dc42bfa0c2ac1e4544f0595de0505d8ae07cba668746834e23c77a3e3edc131"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/geocodeaddressstring(_:completionhandler:).json": {
       "etag": "\"82d6-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring-completionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring(_,completionhandler).md",
       "hash": "421becaf645994abea3802aab7133642868edfbda750044b4dc5e85afbeaf7ef"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/geocodeaddressstring(_:in:completionhandler:).json": {
       "etag": "\"8fdd-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring-incompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring(_,in,completionhandler).md",
       "hash": "f7ba1f15a1bf10ae30e6d006ea117c4f6486731daec626723ba9a108f098fd57"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/geocodeaddressstring(_:in:preferredlocale:completionhandler:).json": {
       "etag": "\"98b4-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring-inpreferredlocalecompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring(_,in,preferredlocale,completionhandler).md",
       "hash": "dcdb784738f069e10b09175de701ea60a4df4b9145885f9006a5c13e3bcb4fab"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/geocodeaddressstring(_:inregioncenteredat:inregionradius:preferredlocale:completionhandler:).json": {
       "etag": "\"5b36-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring-inregioncenteredatinregionradiuspreferredlocalecompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodeaddressstring(_,inregioncenteredat,inregionradius,preferredlocale,completionhandler).md",
       "hash": "12fe30c269231fb1453149872700cdac8461002887d006464e66e5bfbf4af899"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/geocodepostaladdress(_:completionhandler:).json": {
       "etag": "\"8067-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodepostaladdress-completionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodepostaladdress(_,completionhandler).md",
       "hash": "b153e9a290dbe5bff29d46d66260458d5320b594ea9f2a7f2168dd299481090c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/geocodepostaladdress(_:preferredlocale:completionhandler:).json": {
       "etag": "\"8903-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/geocodepostaladdress-preferredlocalecompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/geocodepostaladdress(_,preferredlocale,completionhandler).md",
       "hash": "0f2356a1a904b24103982ab4cb307f2a59cd3d6c284fb15c83882b4ed0f135d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/isgeocoding.json": {
@@ -3027,12 +3027,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/reversegeocodelocation(_:completionhandler:).json": {
       "etag": "\"61ab-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/reversegeocodelocation-completionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/reversegeocodelocation(_,completionhandler).md",
       "hash": "0ec215357bfd3782e6dcf9f68852c70e0982a8173d84f295f4aaa503a332d16b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clgeocoder/reversegeocodelocation(_:preferredlocale:completionhandler:).json": {
       "etag": "\"6867-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clgeocoder/reversegeocodelocation-preferredlocalecompletionhandler.md",
+      "file_path": "documentation/CoreLocation/clgeocoder/reversegeocodelocation(_,preferredlocale,completionhandler).md",
       "hash": "8751b1c5977e49e71e9eb27d6545ffeb5261c3a424582f6760135daedd3349b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clheading.json": {
@@ -3047,7 +3047,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clheading/init(coder:).json": {
       "etag": "\"1462-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clheading/init-coder.md",
+      "file_path": "documentation/CoreLocation/clheading/init(coder).md",
       "hash": "213680babf0f78c7e1104f25931a5289f3265a8ec053ce9c664ee87338e167c6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clheading/magneticheading.json": {
@@ -3112,7 +3112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/distance(from:).json": {
       "etag": "\"320a-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/distance-from.md",
+      "file_path": "documentation/CoreLocation/cllocation/distance(from).md",
       "hash": "c227a075f1f5ead7c2a5563833712e1305d459f50947cd11209bd084d17e74e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/ellipsoidalaltitude.json": {
@@ -3127,7 +3127,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/getdistancefrom(_:).json": {
       "etag": "\"32d5-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/getdistancefrom.md",
+      "file_path": "documentation/CoreLocation/cllocation/getdistancefrom(_).md",
       "hash": "7eed752c3c2dffd059ac5413c02f5234a40313469525e5fbba8a5ad6a14ddc12"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/horizontalaccuracy.json": {
@@ -3137,32 +3137,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/init(coder:).json": {
       "etag": "\"14d1-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coder.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coder).md",
       "hash": "af54a16c7d27fc228575da39b1db8b615bd9062353daba286e02d87d043dbd80"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:course:courseaccuracy:speed:speedaccuracy:timestamp:).json": {
       "etag": "\"aa3f-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coordinatealtitudehorizontalaccuracyverticalaccuracycoursecourseaccuracyspeedspeedaccuracytimestamp.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coordinate,altitude,horizontalaccuracy,verticalaccuracy,course,courseaccuracy,speed,speedaccuracy,timestamp).md",
       "hash": "da1fde2e2e36c2b5f5772bbea8f11dae92b6c362af4041be9556c0273a634e6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:course:courseaccuracy:speed:speedaccuracy:timestamp:sourceinfo:).json": {
       "etag": "\"a3cf-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coordinatealtitudehorizontalaccuracyverticalaccuracycoursecourseaccuracyspeedspeedaccuracytimestampsourceinfo.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coordinate,altitude,horizontalaccuracy,verticalaccuracy,course,courseaccuracy,speed,speedaccuracy,timestamp,sourceinfo).md",
       "hash": "ae6095d9fd196738c01b7177095d228520c599796394950fb97effa5b3fa1e2b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:course:speed:timestamp:).json": {
       "etag": "\"9efd-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coordinatealtitudehorizontalaccuracyverticalaccuracycoursespeedtimestamp.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coordinate,altitude,horizontalaccuracy,verticalaccuracy,course,speed,timestamp).md",
       "hash": "988d70f404079e549eb573e32301b7e89ff18f106f4ad5152017930fc690c195"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/init(coordinate:altitude:horizontalaccuracy:verticalaccuracy:timestamp:).json": {
       "etag": "\"8d2c-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-coordinatealtitudehorizontalaccuracyverticalaccuracytimestamp.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(coordinate,altitude,horizontalaccuracy,verticalaccuracy,timestamp).md",
       "hash": "313a4275f7cd22d2b9d5386b3450a0f88c15a3cc0be477d3de8ff52731aa99bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/init(latitude:longitude:).json": {
       "etag": "\"8b7a-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocation/init-latitudelongitude.md",
+      "file_path": "documentation/CoreLocation/cllocation/init(latitude,longitude).md",
       "hash": "29e2bb45bcbb9104dcea81330fcf85ace9603b507edc6f1949444b83eb6caf78"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocation/sourceinformation.json": {
@@ -3202,12 +3202,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationcoordinate2d/init().json": {
       "etag": "\"1bb2-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/cllocationcoordinate2d/init.md",
+      "file_path": "documentation/CoreLocation/cllocationcoordinate2d/init().md",
       "hash": "91cc96b8e66d1132e3480ead0e33968a94c5f15053bd4619be209ab9ac554516"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationcoordinate2d/init(latitude:longitude:).json": {
       "etag": "\"257f-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/cllocationcoordinate2d/init-latitudelongitude.md",
+      "file_path": "documentation/CoreLocation/cllocationcoordinate2d/init(latitude,longitude).md",
       "hash": "325ee25c7db7f99551a121d6d156c242644ac141a584910700e50c1ef29c3200"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationcoordinate2d/latitude.json": {
@@ -3222,12 +3222,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationcoordinate2disvalid(_:).json": {
       "etag": "\"3613-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/cllocationcoordinate2disvalid.md",
+      "file_path": "documentation/CoreLocation/cllocationcoordinate2disvalid(_).md",
       "hash": "fb4b0d380fa8edded92323174b9460edac2e0d33085eebe41c163275ee0e1041"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationcoordinate2dmake(_:_:).json": {
       "etag": "\"3407-65d55dced213e-df\"",
-      "file_path": "documentation/CoreLocation/cllocationcoordinate2dmake.md",
+      "file_path": "documentation/CoreLocation/cllocationcoordinate2dmake(_,_).md",
       "hash": "be5dde216b4a2d15aaa86ba72b7850a33256414e97ddc9190ae55613b001258c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationdegrees.json": {
@@ -3272,7 +3272,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/allowdeferredlocationupdates(untiltraveled:timeout:).json": {
       "etag": "\"ce5c-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/allowdeferredlocationupdates-untiltraveledtimeout.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/allowdeferredlocationupdates(untiltraveled,timeout).md",
       "hash": "2bd217e9f076a0279279e431dd8394dd457bb263df338a25d9b749197bd9c0ae"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/allowsbackgroundlocationupdates.json": {
@@ -3282,17 +3282,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/authorizationstatus().json": {
       "etag": "\"82d7-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/authorizationstatus.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/authorizationstatus().md",
       "hash": "c8de90ecdd6f915b6c569e5409d4c13fbf2360057cf4a9c2d7aaa291cdceb745"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/authorizationstatus-swift.property.json": {
       "etag": "\"59c7-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/authorizationstatus-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/authorizationstatus-swift.property.md",
       "hash": "a98fabbdc029148138c6a6fd219cd97408b327519e465d5c4c9aa0973e0cf451"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/deferredlocationupdatesavailable().json": {
       "etag": "\"77bc-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/deferredlocationupdatesavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/deferredlocationupdatesavailable().md",
       "hash": "39c605b52a032a6b69f8058bc50af3f0123a8decbbd1128acdecb46833092110"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/delegate.json": {
@@ -3307,12 +3307,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/disallowdeferredlocationupdates().json": {
       "etag": "\"67f2-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/disallowdeferredlocationupdates.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/disallowdeferredlocationupdates().md",
       "hash": "8487523346896996d99ea0e7cdf7d91eb6023582518e2c76a7f20ad3ef761e0b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/dismissheadingcalibrationdisplay().json": {
       "etag": "\"4826-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/dismissheadingcalibrationdisplay.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/dismissheadingcalibrationdisplay().md",
       "hash": "4f35c210fdd56298c65ed1fb276bdfc85ef682aca4360e8b553331e60950c703"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/distancefilter.json": {
@@ -3327,12 +3327,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/headingavailable().json": {
       "etag": "\"53db-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/headingavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/headingavailable().md",
       "hash": "73dafaef8436082ebc65f78f91739f95dcf72bddcfb4797f0e11334717fbed6d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/headingavailable-swift.property.json": {
       "etag": "\"2a73-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/headingavailable-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/headingavailable-swift.property.md",
       "hash": "374acdc0f1ab86400455bd8c901e3f4a02fa2d91fc1f4fc8fd40432ba5faa3a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/headingbody.json": {
@@ -3357,12 +3357,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/ismonitoringavailable(for:).json": {
       "etag": "\"5e14-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/ismonitoringavailable-for.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/ismonitoringavailable(for).md",
       "hash": "ce844ee4176cf71c2e06b84f5cdb21416e26fbb393f41cc1d63963fd2e04159e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/israngingavailable().json": {
       "etag": "\"4fc1-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/israngingavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/israngingavailable().md",
       "hash": "15ca759d2b91d531aa0dd5d1591c0dac7c0bed9f42e04da73e536873ee9a684f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/location.json": {
@@ -3372,12 +3372,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/locationservicesenabled().json": {
       "etag": "\"7759-65dd36ccc563b-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/locationservicesenabled.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/locationservicesenabled().md",
       "hash": "c055ffc8152e92c5abcf16a22747e0b8d89683da86cf4e096661b4c07ef5a9aa"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/locationservicesenabled-swift.property.json": {
       "etag": "\"408c-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/locationservicesenabled-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/locationservicesenabled-swift.property.md",
       "hash": "baf04dc9a61bc1ea4e2e7b8133062c78e9334f6f3996692bcf252049f7ebb59d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/maximumregionmonitoringdistance.json": {
@@ -3412,47 +3412,47 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/regionmonitoringavailable().json": {
       "etag": "\"7de9-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/regionmonitoringavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/regionmonitoringavailable().md",
       "hash": "c21f21dbb49b837eb1b34494edbc53dc309ed6a0f92014dd357325ea376b0e99"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/regionmonitoringenabled().json": {
       "etag": "\"81d6-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/regionmonitoringenabled.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/regionmonitoringenabled().md",
       "hash": "884618132d188417c37cab74e0beafa2612e4502e8e792edf99550e17a14aa54"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/requestalwaysauthorization().json": {
       "etag": "\"90ff-65dd36ccc563b-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requestalwaysauthorization.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requestalwaysauthorization().md",
       "hash": "c915602d94c448c58371269cdfcd310e8fe8180b5d80083dd3778395970da774"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/requesthistoricallocations(purposekey:samplecount:completionhandler:).json": {
       "etag": "\"474e-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requesthistoricallocations-purposekeysamplecountcompletionhandler.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requesthistoricallocations(purposekey,samplecount,completionhandler).md",
       "hash": "f4d61da83539ed20f70aa8dd72508e6133c466b0ce972e5521315d8934a9c492"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/requestlocation().json": {
       "etag": "\"6fb4-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requestlocation.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requestlocation().md",
       "hash": "f18b48029ccb1c03b5b1031fe76a8be81444429c1b93ebd9710a3214396b2f0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/requeststate(for:).json": {
       "etag": "\"8975-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requeststate-for.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requeststate(for).md",
       "hash": "5020910e8a762dd1c7c9d625be03e2a39cfac4f0bbb64592bcb73449b8866e07"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey:).json": {
       "etag": "\"6262-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requesttemporaryfullaccuracyauthorization-withpurposekey.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey).md",
       "hash": "6c1a413bddeb64b0b29f20d458814a1472a531df5290e4c4792e46008867682d"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey:completion:).json": {
       "etag": "\"81be-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requesttemporaryfullaccuracyauthorization-withpurposekeycompletion.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey,completion).md",
       "hash": "e5c70088cd8bea759cbcde0dd6da6c4c6e2e5efc6fc288636567cf16bb849fe5"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/requestwheninuseauthorization().json": {
       "etag": "\"7110-65dd36ccc563b-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/requestwheninuseauthorization.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/requestwheninuseauthorization().md",
       "hash": "87e1410b9489ecdac8d32d6a9f7c94c4f81fe184134806cc52eb0a8691eb7b21"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/showsbackgroundlocationindicator.json": {
@@ -3462,92 +3462,92 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/significantlocationchangemonitoringavailable().json": {
       "etag": "\"5271-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/significantlocationchangemonitoringavailable.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/significantlocationchangemonitoringavailable().md",
       "hash": "238377e6a72ab92fab6e7a06096e9f2ce4bf19b9fbc11b0fa9ab6103f2145d10"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startmonitoring(for:).json": {
       "etag": "\"9985-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoring-for.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoring(for).md",
       "hash": "e8a42819887ca5613242e3933e3492720388975a4569a5987ce9e10541e8fd21"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startmonitoring(for:desiredaccuracy:).json": {
       "etag": "\"afe4-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoring-fordesiredaccuracy.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoring(for,desiredaccuracy).md",
       "hash": "1d3c6fae36de8bf313078eeafc79d00630cf7c8c5724d463ed02be5e3a8b7702"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startmonitoringlocationpushes(completion:).json": {
       "etag": "\"4fc0-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringlocationpushes-completion.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringlocationpushes(completion).md",
       "hash": "2a60a2e2d40f09f161856ff76015317513c3123b6508f3d501c5daa0c6c63ca2"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startmonitoringsignificantlocationchanges().json": {
       "etag": "\"6422-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringsignificantlocationchanges.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringsignificantlocationchanges().md",
       "hash": "cd21a154bf300edacee7176d99d0748903ce95d34a95bbf68396475b39bdeaa6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startmonitoringvisits().json": {
       "etag": "\"390e-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringvisits.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startmonitoringvisits().md",
       "hash": "15dfd5a35e1c3ea48ee03d67ea1f3b7b700191ef5b293c980c114813dae8311c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startrangingbeacons(in:).json": {
       "etag": "\"8de6-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startrangingbeacons-in.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startrangingbeacons(in).md",
       "hash": "eb64ea32d83b1c0cde8475a4f488243de22d2c3ce94b59f79eca6b9bbba4e983"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startrangingbeacons(satisfying:).json": {
       "etag": "\"3533-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startrangingbeacons-satisfying.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startrangingbeacons(satisfying).md",
       "hash": "e0d32d42b2c7e671bbe93cff3cf2ed24ff7d067e1cf02d39bc5c6d8fa748c2da"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startupdatingheading().json": {
       "etag": "\"663b-65dd36ccd78e2-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startupdatingheading.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startupdatingheading().md",
       "hash": "50ffd53545f0f16986e7cec1024db0461cd349bedeb0000e7a05fdd0a7bb7a3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/startupdatinglocation().json": {
       "etag": "\"61c4-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/startupdatinglocation.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/startupdatinglocation().md",
       "hash": "c0bdcab85d365e132007be23d9410afbb80f5f5a18276d68d4fc7ef8507ef8a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/stopmonitoring(for:).json": {
       "etag": "\"737d-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoring-for.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoring(for).md",
       "hash": "a46fda5d50bb0e735de7e1017b339689759d06501b2eeed2605ebe8879e56d62"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/stopmonitoringlocationpushes().json": {
       "etag": "\"2506-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringlocationpushes.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringlocationpushes().md",
       "hash": "2777a6b5e78afba51be62cc7a25d54cf22beec8be5cbc7fbdf9cd5772c41a389"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/stopmonitoringsignificantlocationchanges().json": {
       "etag": "\"25ab-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringsignificantlocationchanges.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringsignificantlocationchanges().md",
       "hash": "23148bc7548a5e2f0b2b02148390108749277ea1454838032f346bb7a7df7bc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/stopmonitoringvisits().json": {
       "etag": "\"21d6-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringvisits.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopmonitoringvisits().md",
       "hash": "118546cc091b374a34aa65589663c8535ec74711a9785e0052b772f43a658ce7"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/stoprangingbeacons(in:).json": {
       "etag": "\"770b-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stoprangingbeacons-in.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stoprangingbeacons(in).md",
       "hash": "ed9f1cac0c11d368e0caa3453d780637250ef19234af1ee5b6d1b9cfb31036f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/stoprangingbeacons(satisfying:).json": {
       "etag": "\"3529-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stoprangingbeacons-satisfying.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stoprangingbeacons(satisfying).md",
       "hash": "dafe4c04d78e6514d174fe9ab2496c3a23137fcda179b97533a0ccfc4bff5dcd"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/stopupdatingheading().json": {
       "etag": "\"4872-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopupdatingheading.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopupdatingheading().md",
       "hash": "a49222eb67fe46ba21ecd8b5c05b49db18b5bf2fb282f41125624c0323b7d190"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanager/stopupdatinglocation().json": {
       "etag": "\"45b7-65d55dcd62320-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanager/stopupdatinglocation.md",
+      "file_path": "documentation/CoreLocation/cllocationmanager/stopupdatinglocation().md",
       "hash": "f6b243b846e1f50dbd642646c2c453dcc6f20472c43744d24c10e2d2f4a86f71"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate.json": {
@@ -3557,107 +3557,107 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didchangeauthorization:).json": {
       "etag": "\"3d99-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didchangeauthorization.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didchangeauthorization).md",
       "hash": "6411f322cbef9931d75de69c39827a254f5b7aca06d83f4326476ea30e6805b0"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:diddeterminestate:for:).json": {
       "etag": "\"6402-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-diddeterminestatefor.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,diddeterminestate,for).md",
       "hash": "ada9d258751e36833863585b7ca59b3f3c1cef792cb5dca196b2da0111a109b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didenterregion:).json": {
       "etag": "\"5aad-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didenterregion.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didenterregion).md",
       "hash": "1a5ed04546d5a95b6b2cf3a0b54441091c1741ee6a047924c9c311e7cddb9647"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didexitregion:).json": {
       "etag": "\"5a9f-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didexitregion.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didexitregion).md",
       "hash": "f1eb8e703449394d389f07ebb1e46c4af280f84657ffd7e08e4d8547d9d2b74c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didfailrangingfor:error:).json": {
       "etag": "\"5aa6-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didfailrangingforerror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didfailrangingfor,error).md",
       "hash": "6334302d32f61dad8663808ec23a37f7545023b05d72441841ad567a4126e452"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didfailwitherror:).json": {
       "etag": "\"4a4c-65dd36ccfd1ab-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didfailwitherror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didfailwitherror).md",
       "hash": "8532380982f3db95af5100fa39f6593fa746eb5c600f33932887fdde6579aa8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didfinishdeferredupdateswitherror:).json": {
       "etag": "\"41a0-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didfinishdeferredupdateswitherror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didfinishdeferredupdateswitherror).md",
       "hash": "35b101ee0df9b52255622ccd8cf5c33a77a9464e61007496893eb6a7d52370c9"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didrange:satisfying:).json": {
       "etag": "\"5a0f-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didrangesatisfying.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didrange,satisfying).md",
       "hash": "7d509301bdddf0671d3c81048e9672669dce80630623875dab8d28dcf7d8321f"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didrangebeacons:in:).json": {
       "etag": "\"6238-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didrangebeaconsin.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didrangebeacons,in).md",
       "hash": "5c54033141dbb4a782b06b6d9305224f6ed6b7d5e6ff105fc5cb7cf8a6884848"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didstartmonitoringfor:).json": {
       "etag": "\"5503-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didstartmonitoringfor.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didstartmonitoringfor).md",
       "hash": "7767c105fe65629cd0f6d7c2f365ad565d75b09b3c7aa9993472bf653a686e09"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didupdateheading:).json": {
       "etag": "\"4743-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didupdateheading.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didupdateheading).md",
       "hash": "ce3ab67c6f670985dedcb272c2ff6e4b2a02718caefe7b1b83cd373be5f47b99"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didupdatelocations:).json": {
       "etag": "\"4b23-65dd36ccfd1ab-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didupdatelocations.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didupdatelocations).md",
       "hash": "0f74561adcedbd1b98c71deb1b1179c40f07fe2b00665beb2af5a1d6d8e3b675"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didupdateto:from:).json": {
       "etag": "\"4edf-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didupdatetofrom.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didupdateto,from).md",
       "hash": "9481d5b3b5204d6be84d91841f584792c111a3841ec28ab763c04835edea8c8e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:didvisit:).json": {
       "etag": "\"2f5a-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-didvisit.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,didvisit).md",
       "hash": "e36ec398c3c2e1d539c20579198cdcf354ff1e423f6703c1124382825b72f8a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:monitoringdidfailfor:witherror:).json": {
       "etag": "\"41d9-65dd36ccedf94-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-monitoringdidfailforwitherror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,monitoringdidfailfor,witherror).md",
       "hash": "d8026e61824cfd83712aefcd633f32096fbcb702fe1efd85327d83f4e80e4a3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanager(_:rangingbeaconsdidfailfor:witherror:).json": {
       "etag": "\"57f6-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager-rangingbeaconsdidfailforwitherror.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanager(_,rangingbeaconsdidfailfor,witherror).md",
       "hash": "5e3aaed0812e8c9b409812f0b001c277d36f602496aff994fda53ccba16d2bfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:).json": {
       "etag": "\"63df-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidchangeauthorization.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_).md",
       "hash": "b174f9801a02effc6f100a67efc2d8edc980bef662a059c056d055040f3b16c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanagerdidpauselocationupdates(_:).json": {
       "etag": "\"329b-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidpauselocationupdates.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidpauselocationupdates(_).md",
       "hash": "c8bf115c400265f04393c5315194de61fb8b5322bf4c201f7f33cf9bbe990b3a"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanagerdidresumelocationupdates(_:).json": {
       "etag": "\"31c1-65d55dcdc16a1-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidresumelocationupdates.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagerdidresumelocationupdates(_).md",
       "hash": "e58ae457d8acd93c02bf6deb5d8ebbf057fc028251333098f64784dedb0ea9a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationmanagerdelegate/locationmanagershoulddisplayheadingcalibration(_:).json": {
       "etag": "\"5341-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagershoulddisplayheadingcalibration.md",
+      "file_path": "documentation/CoreLocation/cllocationmanagerdelegate/locationmanagershoulddisplayheadingcalibration(_).md",
       "hash": "07eb9a7bf6342cfb8ccf8889f9fd594f9f9db43aa46e574590fc23cf329b3d69"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationpushserviceerror-swift.struct.json": {
       "etag": "\"4b05-65dd36ccb5456-df\"",
-      "file_path": "documentation/CoreLocation/cllocationpushserviceerror-swiftstruct.md",
+      "file_path": "documentation/CoreLocation/cllocationpushserviceerror-swift.struct.md",
       "hash": "7cdcdfc9e03c82367219883d8c421310ca512e55063276f8b22bc1f26d384c1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationpushserviceerror-swift.struct/code.json": {
@@ -3667,7 +3667,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationpushserviceerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"17ce-65d55dce1a436-df\"",
-      "file_path": "documentation/CoreLocation/cllocationpushserviceerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/cllocationpushserviceerror-swift.struct/code/init(rawvalue).md",
       "hash": "8c53c864f15e4ee0770d075e6a35990f19706d7200d52840f84020483b7ea5b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationpushserviceerror-swift.struct/code/missingentitlement.json": {
@@ -3737,12 +3737,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationpushserviceextension/didreceivelocationpushpayload(_:completion:).json": {
       "etag": "\"516b-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationpushserviceextension/didreceivelocationpushpayload-completion.md",
+      "file_path": "documentation/CoreLocation/cllocationpushserviceextension/didreceivelocationpushpayload(_,completion).md",
       "hash": "a9366888ef7753529d50784ba4db4d7eec57d34e06bf736871a5b17b3cab540c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationpushserviceextension/serviceextensionwillterminate().json": {
       "etag": "\"2686-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationpushserviceextension/serviceextensionwillterminate.md",
+      "file_path": "documentation/CoreLocation/cllocationpushserviceextension/serviceextensionwillterminate().md",
       "hash": "30132b285436b7521da51c8f58235a01aa23bccf57026394f6c5bd896dd071af"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationsourceinformation.json": {
@@ -3752,12 +3752,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationsourceinformation/init(coder:).json": {
       "etag": "\"1606-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationsourceinformation/init-coder.md",
+      "file_path": "documentation/CoreLocation/cllocationsourceinformation/init(coder).md",
       "hash": "c911a2de53b69ac69aa567e225082941898c5665783e3d2c226fc86839296b00"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationsourceinformation/init(softwaresimulationstate:andexternalaccessorystate:).json": {
       "etag": "\"2c6f-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/cllocationsourceinformation/init-softwaresimulationstateandexternalaccessorystate.md",
+      "file_path": "documentation/CoreLocation/cllocationsourceinformation/init(softwaresimulationstate,andexternalaccessorystate).md",
       "hash": "c5ffc354825c17e13a0ee6813e697c641e18eca925bf360c732c1a1b43241532"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationsourceinformation/isproducedbyaccessory.json": {
@@ -3857,7 +3857,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationupdate/liveupdates(_:).json": {
       "etag": "\"2458-65d55dcddccdd-df\"",
-      "file_path": "documentation/CoreLocation/cllocationupdate/liveupdates.md",
+      "file_path": "documentation/CoreLocation/cllocationupdate/liveupdates(_).md",
       "hash": "469c19acaf26744fdde23f8b2a684d076e3d48ece008d00e071a5bcab9a705fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cllocationupdate/location.json": {
@@ -3897,12 +3897,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/add(_:identifier:).json": {
       "etag": "\"2f35-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/add-identifier.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/add(_,identifier).md",
       "hash": "f80b49c6c16b1fba900579f417458ec4a0ba44a0d5adda2a001e27cd58f161ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/add(_:identifier:assuming:).json": {
       "etag": "\"2d5e-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/add-identifierassuming.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/add(_,identifier,assuming).md",
       "hash": "25dac01ddbf25dc7625d6841a07b0054ad7f169288392c7cd5186b756952e15b"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition.json": {
@@ -3912,17 +3912,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition/init(uuid:).json": {
       "etag": "\"2454-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init-uuid.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init(uuid).md",
       "hash": "c365fd229a0cc1a13e1f627b2b878d1fba630a7d90bd67959dee1ced68642f49"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition/init(uuid:major:).json": {
       "etag": "\"2db5-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init-uuidmajor.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init(uuid,major).md",
       "hash": "691f0080dc65a10468fa8de5d256cc6f80ccab38f98b88ebcd98edaf555407a4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition/init(uuid:major:minor:).json": {
       "etag": "\"34e0-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init-uuidmajorminor.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/beaconidentitycondition/init(uuid,major,minor).md",
       "hash": "5f072c0be514cc106787547e9a1876cde57c9cddc56c65c052036cb1bc8e1531"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/beaconidentitycondition/major.json": {
@@ -3952,7 +3952,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/circulargeographiccondition/init(center:radius:).json": {
       "etag": "\"2241-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/circulargeographiccondition/init-centerradius.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/circulargeographiccondition/init(center,radius).md",
       "hash": "06e34fd0f7bd2510988d3282d053a9e72f6483638b160707f637d07b0d5ebc4e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/circulargeographiccondition/radius.json": {
@@ -4032,22 +4032,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/event/state-swift.property.json": {
       "etag": "\"1ed2-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/event/state-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/event/state-swift.property.md",
       "hash": "3a47e65805cb503e287582cf5d201ae8dd6e2395aa44ff1e59f2e15ccc52bf8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/event/state-swift.typealias.json": {
       "etag": "\"11b3-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/event/state-swifttypealias.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/event/state-swift.typealias.md",
       "hash": "cf392632d95db7174aeb2c64d63fa6157143f45bd37479a3e1b6388a18e467c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/events-swift.property.json": {
       "etag": "\"14a8-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/events-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/events-swift.property.md",
       "hash": "560965703d460c810d9602362ba9b60814b0c4431b71776ae468aece1f930125"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/events-swift.struct.json": {
       "etag": "\"2190-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/events-swiftstruct.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/events-swift.struct.md",
       "hash": "5d259f9d3a310a5a50e1a732e751d861873bb233dd0b21ce166ae67348e6e376"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/events-swift.struct/iterator.json": {
@@ -4062,12 +4062,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/init(_:).json": {
       "etag": "\"122c-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/init.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/init(_).md",
       "hash": "af8adcf906e97cba86015d354272cbe0afbc9785878a8be12516f839cfe63e07"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/record(for:).json": {
       "etag": "\"288d-65d55dcea8172-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/record-for.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/record(for).md",
       "hash": "c3c14ee19fb15acd976787104d166106136bf5ff5be9910f0725009f3d22f3f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/record.json": {
@@ -4087,7 +4087,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clmonitor-2r51v/remove(_:).json": {
       "etag": "\"2141-65d55dcebf4b4-df\"",
-      "file_path": "documentation/CoreLocation/clmonitor-2r51v/remove.md",
+      "file_path": "documentation/CoreLocation/clmonitor-2r51v/remove(_).md",
       "hash": "4d78f9a7e37f03dda4db5a4bac0a121fa2c15ba55e933e72fcfc5b701f5966a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clplacemark.json": {
@@ -4122,17 +4122,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clplacemark/init(coder:).json": {
       "etag": "\"1812-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/clplacemark/init-coder.md",
+      "file_path": "documentation/CoreLocation/clplacemark/init(coder).md",
       "hash": "134fe852dc0c176ed71c9fb72d7a41469aedf2dd7f1850870605f666ea214371"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clplacemark/init(location:name:postaladdress:).json": {
       "etag": "\"31cc-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/clplacemark/init-locationnamepostaladdress.md",
+      "file_path": "documentation/CoreLocation/clplacemark/init(location,name,postaladdress).md",
       "hash": "8c272c778e447e7fb0b6d613e7497756b317c45f6aaa90df778c95daf257dde6"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clplacemark/init(placemark:).json": {
       "etag": "\"261b-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/clplacemark/init-placemark.md",
+      "file_path": "documentation/CoreLocation/clplacemark/init(placemark).md",
       "hash": "19c741cb308ab8c14e88105422fe5e176e0bb11eb807a7b89f31aa141a3881d5"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clplacemark/inlandwater.json": {
@@ -4237,7 +4237,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clproximity/init(rawvalue:).json": {
       "etag": "\"12e3-65d55dcd9bdc7-df\"",
-      "file_path": "documentation/CoreLocation/clproximity/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clproximity/init(rawvalue).md",
       "hash": "276e91f9ff955cdf0ae169d177c37578e6bfdd9fbfa2c91a428f16587be22a80"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clproximity/near.json": {
@@ -4262,7 +4262,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clregion/contains(_:).json": {
       "etag": "\"5273-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clregion/contains.md",
+      "file_path": "documentation/CoreLocation/clregion/contains(_).md",
       "hash": "fcb7ab4046bf7545608c826596b865971fafff0cf5f6622f30988ef7c5010395"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clregion/identifier.json": {
@@ -4272,12 +4272,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clregion/init(circularregionwithcenter:radius:identifier:).json": {
       "etag": "\"5c18-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clregion/init-circularregionwithcenterradiusidentifier.md",
+      "file_path": "documentation/CoreLocation/clregion/init(circularregionwithcenter,radius,identifier).md",
       "hash": "4b1f56411586267365bd4e7b1bfb79826c5aacea6e2c78109c314600ddc3f9e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clregion/init(coder:).json": {
       "etag": "\"1468-65d55dcdfa91d-df\"",
-      "file_path": "documentation/CoreLocation/clregion/init-coder.md",
+      "file_path": "documentation/CoreLocation/clregion/init(coder).md",
       "hash": "94131ea70ae82f23ea05aa9b6c2b70360beae80a95867f3f6ad6403754f302e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clregion/notifyonentry.json": {
@@ -4302,7 +4302,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clregionstate/init(rawvalue:).json": {
       "etag": "\"1329-65d55dce34f58-df\"",
-      "file_path": "documentation/CoreLocation/clregionstate/init-rawvalue.md",
+      "file_path": "documentation/CoreLocation/clregionstate/init(rawvalue).md",
       "hash": "3ea4a879bb540aa4b6a26644fc77cd123f3da30a3eaccf6530aca86c1ced6f1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clregionstate/inside.json": {
@@ -4392,7 +4392,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clservicesession-pt7n/diagnostics-swift.class.json": {
       "etag": "\"1af1-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/diagnostics-swiftclass.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/diagnostics-swift.class.md",
       "hash": "c29b504fdaef947fd46113e225d82e297b22328e611f6ee0504af21fc2d82dd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clservicesession-pt7n/diagnostics-swift.class/iterator.json": {
@@ -4402,22 +4402,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clservicesession-pt7n/diagnostics-swift.property.json": {
       "etag": "\"17ba-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/diagnostics-swiftproperty.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/diagnostics-swift.property.md",
       "hash": "37f93abd8a1473277ff7fdb8410dcbeae6dbccfa7b096fc5d7948e1abcddc382"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clservicesession-pt7n/init(authorization:).json": {
       "etag": "\"2122-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/init-authorization.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/init(authorization).md",
       "hash": "14bb67ad266bac1b0481627f499bce50b217d95a011017b8db71dd5a1d762ebd"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clservicesession-pt7n/init(authorization:fullaccuracypurposekey:).json": {
       "etag": "\"255a-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/init-authorizationfullaccuracypurposekey.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/init(authorization,fullaccuracypurposekey).md",
       "hash": "8ef9ce954d014a0d10abf9995c417f4d6ddc85562299e5fac8827e1320aca075"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clservicesession-pt7n/invalidate().json": {
       "etag": "\"1037-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clservicesession-pt7n/invalidate.md",
+      "file_path": "documentation/CoreLocation/clservicesession-pt7n/invalidate().md",
       "hash": "1046c641d62a96f36b2791ee701a057867798e3aefbb4162ac36346939603847"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/cltimeintervalmax.json": {
@@ -4452,7 +4452,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/clvisit/init(coder:).json": {
       "etag": "\"1409-65d55dcd3b6e4-df\"",
-      "file_path": "documentation/CoreLocation/clvisit/init-coder.md",
+      "file_path": "documentation/CoreLocation/clvisit/init(coder).md",
       "hash": "93f0b5c225a5c7611afa8243093a49a33f04e32be0e0c715410817493a5ea472"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocation/configuring-your-app-to-use-location-services.json": {

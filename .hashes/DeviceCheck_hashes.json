@@ -27,17 +27,17 @@
     },
     "https://developer.apple.com/documentation/devicecheck/dcappattestservice/attestkey(_:clientdatahash:completionhandler:)": {
       "etag": "\"7e06-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcappattestservice/attestkey-clientdatahashcompletionhandler.md",
+      "file_path": "documentation/DeviceCheck/dcappattestservice/attestkey(_,clientdatahash,completionhandler).md",
       "hash": "63989d814d58dcc8371f34605d459c0b8dc347e1b3ec01ac630aa5393aaa9594"
     },
     "https://developer.apple.com/documentation/devicecheck/dcappattestservice/generateassertion(_:clientdatahash:completionhandler:)": {
       "etag": "\"6ac4-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcappattestservice/generateassertion-clientdatahashcompletionhandler.md",
+      "file_path": "documentation/DeviceCheck/dcappattestservice/generateassertion(_,clientdatahash,completionhandler).md",
       "hash": "b976c0e862845b40372bef89dc1a75036238eefece9cc453d02e2ebcbdb83195"
     },
     "https://developer.apple.com/documentation/devicecheck/dcappattestservice/generatekey(completionhandler:)": {
       "etag": "\"6174-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcappattestservice/generatekey-completionhandler.md",
+      "file_path": "documentation/DeviceCheck/dcappattestservice/generatekey(completionhandler).md",
       "hash": "e9764f32c08e145f6e4ed3411879225539437802aa17682c0679331958a79e7d"
     },
     "https://developer.apple.com/documentation/devicecheck/dcappattestservice/issupported": {
@@ -62,7 +62,7 @@
     },
     "https://developer.apple.com/documentation/devicecheck/dcdevice/generatetoken(completionhandler:)": {
       "etag": "\"3b67-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcdevice/generatetoken-completionhandler.md",
+      "file_path": "documentation/DeviceCheck/dcdevice/generatetoken(completionhandler).md",
       "hash": "8f6ea163157429b88248b0f6a41ca6108bcef039de1c1b72efd485d4d88855f1"
     },
     "https://developer.apple.com/documentation/devicecheck/dcdevice/issupported": {
@@ -72,7 +72,7 @@
     },
     "https://developer.apple.com/documentation/devicecheck/dcerror-swift.struct": {
       "etag": "\"3bff-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcerror-swiftstruct.md",
+      "file_path": "documentation/DeviceCheck/dcerror-swift.struct.md",
       "hash": "9b694b896e65b111685652ec5fbfdb33d521f838d74c75b167f96186e8c8678c"
     },
     "https://developer.apple.com/documentation/devicecheck/dcerror-swift.struct/code": {
@@ -87,7 +87,7 @@
     },
     "https://developer.apple.com/documentation/devicecheck/dcerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"1671-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/DeviceCheck/dcerror-swift.struct/code/init(rawvalue).md",
       "hash": "dae1095c0f3182c8a8d635fe97764b743f9587e417127422bee9774cbaff2e5c"
     },
     "https://developer.apple.com/documentation/devicecheck/dcerror-swift.struct/code/invalidinput": {
@@ -187,17 +187,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcappattestservice/attestkey(_:clientdatahash:completionhandler:).json": {
       "etag": "\"7e06-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcappattestservice/attestkey-clientdatahashcompletionhandler.md",
+      "file_path": "documentation/DeviceCheck/dcappattestservice/attestkey(_,clientdatahash,completionhandler).md",
       "hash": "63989d814d58dcc8371f34605d459c0b8dc347e1b3ec01ac630aa5393aaa9594"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcappattestservice/generateassertion(_:clientdatahash:completionhandler:).json": {
       "etag": "\"6ac4-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcappattestservice/generateassertion-clientdatahashcompletionhandler.md",
+      "file_path": "documentation/DeviceCheck/dcappattestservice/generateassertion(_,clientdatahash,completionhandler).md",
       "hash": "b976c0e862845b40372bef89dc1a75036238eefece9cc453d02e2ebcbdb83195"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcappattestservice/generatekey(completionhandler:).json": {
       "etag": "\"6174-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcappattestservice/generatekey-completionhandler.md",
+      "file_path": "documentation/DeviceCheck/dcappattestservice/generatekey(completionhandler).md",
       "hash": "e9764f32c08e145f6e4ed3411879225539437802aa17682c0679331958a79e7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcappattestservice/issupported.json": {
@@ -222,7 +222,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcdevice/generatetoken(completionhandler:).json": {
       "etag": "\"3b67-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcdevice/generatetoken-completionhandler.md",
+      "file_path": "documentation/DeviceCheck/dcdevice/generatetoken(completionhandler).md",
       "hash": "8f6ea163157429b88248b0f6a41ca6108bcef039de1c1b72efd485d4d88855f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcdevice/issupported.json": {
@@ -232,7 +232,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcerror-swift.struct.json": {
       "etag": "\"3bff-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcerror-swiftstruct.md",
+      "file_path": "documentation/DeviceCheck/dcerror-swift.struct.md",
       "hash": "9b694b896e65b111685652ec5fbfdb33d521f838d74c75b167f96186e8c8678c"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcerror-swift.struct/code.json": {
@@ -247,7 +247,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"1671-65d55ef1487a5-df\"",
-      "file_path": "documentation/DeviceCheck/dcerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/DeviceCheck/dcerror-swift.struct/code/init(rawvalue).md",
       "hash": "dae1095c0f3182c8a8d635fe97764b743f9587e417127422bee9774cbaff2e5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/devicecheck/dcerror-swift.struct/code/invalidinput.json": {

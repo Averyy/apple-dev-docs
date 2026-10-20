@@ -22,7 +22,7 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevent/button(id:pressed:)": {
       "etag": "\"1b0f-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevent/button-idpressed.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevent/button(id,pressed).md",
       "hash": "32fc9550503891c4bbab8e02d054702ae57448e3d8f5c1faa1f679b9fd54e0ac"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevent/cameraflip": {
@@ -37,17 +37,17 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevent/camerazoom(factor:)": {
       "etag": "\"160c-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevent/camerazoom-factor.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevent/camerazoom(factor).md",
       "hash": "5d8512e932092fe5b9040ef7e674d3be43a0fc07cf9b571987da3f1b5fdfeb7f"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevents-swift.property": {
       "etag": "\"1c8a-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.property.md",
       "hash": "ad0684e74ab2547a20be4bacb4188100cd147eadf301a380ddaa4626114aa4a1"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevents-swift.struct": {
       "etag": "\"1cef-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct.md",
       "hash": "964df44b253f099c6d5620106ec94de6ad8cd1b0aa8a229b15fb12ccb3d2c7c4"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevents-swift.struct/element": {
@@ -62,17 +62,17 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevents-swift.struct/iterator/next()": {
       "etag": "\"1b1c-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct/iterator/next().md",
       "hash": "473f35e628924c1eb5d08a7ab628769ff7e5d7d86a214c0fc6bee9fe9255d9b1"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevents-swift.struct/makeasynciterator()": {
       "etag": "\"19c3-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct/makeasynciterator().md",
       "hash": "bba5992f38264960445e45b1b8656cc6ea636e2ecbf545f98e47f00690737b70"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/animate(motion:)": {
       "etag": "\"2e7b-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/animate-motion.md",
+      "file_path": "documentation/DockKit/dockaccessory/animate(motion).md",
       "hash": "f9b6a2a2bb140bf2b10be5e7b335b76f1a3eff9b4cccc2872b383c9bfc748ebd"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/animation": {
@@ -147,12 +147,12 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/batterystates-swift.property": {
       "etag": "\"1c8d-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/batterystates-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.property.md",
       "hash": "da2a606dce2d71dff1eff1a4baa8bf618f325235a8bd763ac48ee6a075770924"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/batterystates-swift.struct": {
       "etag": "\"1cdb-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/batterystates-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct.md",
       "hash": "e1b9eaff9ea291bef823e6e49925cb75b53acd26e63c4b11abab84138a3db344"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/batterystates-swift.struct/element": {
@@ -167,12 +167,12 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/batterystates-swift.struct/iterator/next()": {
       "etag": "\"1b0a-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct/iterator/next().md",
       "hash": "9380ae3f5dae6bb62844979447c6c51d596bcd65fbf84abb50b135f5180245d4"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/batterystates-swift.struct/makeasynciterator()": {
       "etag": "\"19cb-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct/makeasynciterator().md",
       "hash": "515346870eaf745f57aa382e131ba2cdc37bfd8fc45e9d55601bb62d0f48eb87"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/camerainformation": {
@@ -197,7 +197,7 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/camerainformation/init(capturedevice:cameraposition:orientation:cameraintrinsics:referencedimensions:)": {
       "etag": "\"3dd6-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/camerainformation/init-capturedevicecamerapositionorientationcameraintrinsicsreferencedimensions.md",
+      "file_path": "documentation/DockKit/dockaccessory/camerainformation/init(capturedevice,cameraposition,orientation,cameraintrinsics,referencedimensions).md",
       "hash": "de490d69f2713053aa4af6d6576b5b44d83a2581d9a4f0d05faed841dd5dca9f"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/camerainformation/orientation": {
@@ -217,12 +217,12 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/cameraorientation/!=(_:_:)": {
       "etag": "W/\"15ed79913033fbaecae578f43743928c\"",
-      "file_path": "documentation/DockKit/dockaccessory/cameraorientation/unknown.md",
+      "file_path": "documentation/DockKit/dockaccessory/cameraorientation/noteq(_,_).md",
       "hash": "c7c84faeb8124bea2deb19c3943a787b60f39ea3affc558f00b88e668583aa5c"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/cameraorientation/==(_:_:)": {
       "etag": "W/\"2a669d4a49675ba47a5b83fd2f8894f5\"",
-      "file_path": "documentation/DockKit/dockaccessory/cameraorientation/unknown.md",
+      "file_path": "documentation/DockKit/dockaccessory/cameraorientation/eqeq(_,_).md",
       "hash": "d59df0272699b44e01bcfc6a3d33b4b883bc776459c50897a65d746bd70ee790"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/cameraorientation/corrected": {
@@ -292,7 +292,7 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/framingmode-swift.enum": {
       "etag": "\"34b8-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/framingmode-swiftenum.md",
+      "file_path": "documentation/DockKit/dockaccessory/framingmode-swift.enum.md",
       "hash": "f991be2bd6985ea990b5e9fb67be6b07338d838ecfec90da28a632d1b6613a6c"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/framingmode-swift.enum/automatic": {
@@ -317,7 +317,7 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/framingmode-swift.property": {
       "etag": "\"18c5-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/framingmode-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/framingmode-swift.property.md",
       "hash": "005b19512e539c724f5387dcf7fff3a455364ceeeed5f2ae40d9727e283588df"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/hardwaremodel": {
@@ -327,17 +327,17 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/hash(into:)": {
       "etag": "\"1698-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/hash-into.md",
+      "file_path": "documentation/DockKit/dockaccessory/hash(into).md",
       "hash": "d966f295cca3fe69f7198b31cc455124c868a612bf86fbf37d69817d3f913044"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/identifier-swift.property": {
       "etag": "\"2462-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/identifier-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/identifier-swift.property.md",
       "hash": "a048056eb9db59bd9f624199ac89605f85b449a455d6362b07a0de0e98b382b3"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/identifier-swift.struct": {
       "etag": "\"3c83-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/identifier-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/identifier-swift.struct.md",
       "hash": "7daca984ca68fa2a52570f46fcf29e1fe78e62b8b0f7519324892eadd176dfd5"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/identifier-swift.struct/category": {
@@ -362,17 +362,17 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/limits-swift.property": {
       "etag": "\"23f1-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/limits-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/limits-swift.property.md",
       "hash": "ce291ef491493b3d296d4e4fa8ab84cea60c64f666740d8d62fe26a7f0052c4c"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/limits-swift.struct": {
       "etag": "\"3853-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/limits-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct.md",
       "hash": "7b7b19d7e33f1ea266ee847e7a36758e8f963152387c00d8239bc9260dc8adc2"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/limits-swift.struct/init(yaw:pitch:roll:)": {
       "etag": "\"26ba-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct/init-yawpitchroll.md",
+      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct/init(yaw,pitch,roll).md",
       "hash": "58493814f98a6c0494d011bf3fee0faee03b884352531711e23d94de498e92c2"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/limits-swift.struct/limit": {
@@ -382,7 +382,7 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/limits-swift.struct/limit/init(positionrange:maximumspeed:)": {
       "etag": "\"1d6f-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct/limit/init-positionrangemaximumspeed.md",
+      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct/limit/init(positionrange,maximumspeed).md",
       "hash": "1202de8116fcc6637edf866fc654c158bdeeec0fc6799553dd3dffb6d9b3dd81"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/limits-swift.struct/limit/maximumspeed": {
@@ -437,12 +437,12 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/motionstates-swift.property": {
       "etag": "\"27cc-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/motionstates-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.property.md",
       "hash": "67452002a2aa5f8e7d36874849d275ca23a545b7863acf8c220700052fec2055"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/motionstates-swift.struct": {
       "etag": "\"296c-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/motionstates-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct.md",
       "hash": "dc11095e5b2fceebeb5486f5cd6f184ca8fdffa4acf83e2afd35fa290c27aeb3"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/motionstates-swift.struct/element": {
@@ -457,12 +457,12 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/motionstates-swift.struct/iterator/next()": {
       "etag": "\"1b34-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct/iterator/next().md",
       "hash": "b46d8c4cee1132204f05e5408e2efe339afb6b131923c023b96bb07222598577"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/motionstates-swift.struct/makeasynciterator()": {
       "etag": "\"1da7-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct/makeasynciterator().md",
       "hash": "04e22539063bb5ceaa81bbe2204a0fe09e38de53e2478778fd6a7775acb282a6"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/observation": {
@@ -482,7 +482,7 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/observation/init(identifier:type:rect:faceyawangle:)": {
       "etag": "\"2fdd-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/observation/init-identifiertyperectfaceyawangle.md",
+      "file_path": "documentation/DockKit/dockaccessory/observation/init(identifier,type,rect,faceyawangle).md",
       "hash": "64953e927a2bd250e00506dffc548d9a900cf4f4df0f24669ad183c0d0ce1628"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/observation/observationtype": {
@@ -522,52 +522,52 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/selectsubject(at:)": {
       "etag": "\"2fd5-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/selectsubject-at.md",
+      "file_path": "documentation/DockKit/dockaccessory/selectsubject(at).md",
       "hash": "17c557ac7dee7459b19c0323fe73952c900ceecd9b4aca5be338bb33d9bb6b3d"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/selectsubjects(_:)": {
       "etag": "\"1b5d-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/selectsubjects.md",
+      "file_path": "documentation/DockKit/dockaccessory/selectsubjects(_).md",
       "hash": "d4d54b6eb75c1410eae16a6cc32b500a9c5c06f7cdb1bfe861c6b1f1be7b50d1"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/setangularvelocity(_:)": {
       "etag": "\"2d04-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setangularvelocity.md",
+      "file_path": "documentation/DockKit/dockaccessory/setangularvelocity(_).md",
       "hash": "168db79a34bc04d817783cbadee202648cdbea545c85c2c0e354ab3b6b23328f"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/setframingmode(_:)": {
       "etag": "\"27db-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setframingmode.md",
+      "file_path": "documentation/DockKit/dockaccessory/setframingmode(_).md",
       "hash": "f0273aab60ef84b6bb8220874f0d5b1fbee1fa41a85451cabeb5b04709c4d213"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/setlimits(_:)": {
       "etag": "\"29b9-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setlimits.md",
+      "file_path": "documentation/DockKit/dockaccessory/setlimits(_).md",
       "hash": "61ec54686abe3dfc86856a183140dc92c79b696fb65a95c04d86a8093a22ef7f"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/setorientation(_:duration:relative:)-2epe2": {
       "etag": "\"4037-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setorientation-durationrelative-2epe2.md",
+      "file_path": "documentation/DockKit/dockaccessory/setorientation(_,duration,relative)-2epe2.md",
       "hash": "ed9b8c3e824777ccec80ee8c3fd28574af2c4338b2d6c49bd14b9e4b83d9470c"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/setorientation(_:duration:relative:)-6b0fl": {
       "etag": "\"4072-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setorientation-durationrelative-6b0fl.md",
+      "file_path": "documentation/DockKit/dockaccessory/setorientation(_,duration,relative)-6b0fl.md",
       "hash": "b871215a64f203611b678e092441f0f19ef09e1b43d2ecafbce03cc2a247ca1e"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/setorientation(_:duration:relative:)-6h2ah": {
       "etag": "\"2fd0-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setorientation-durationrelative-6h2ah.md",
+      "file_path": "documentation/DockKit/dockaccessory/setorientation(_,duration,relative)-6h2ah.md",
       "hash": "216efde2b13fff0487947aa3c643906e252316e97b9665811206681971870f74"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/setorientation(_:duration:relative:)-84z7i": {
       "etag": "\"2f91-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setorientation-durationrelative-84z7i.md",
+      "file_path": "documentation/DockKit/dockaccessory/setorientation(_,duration,relative)-84z7i.md",
       "hash": "bb441ecdcb0503c94cb5b4ca68c36e8e4f9bb8748f41d702294fc69c1c8ae4ba"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/setregionofinterest(_:)": {
       "etag": "\"2942-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setregionofinterest.md",
+      "file_path": "documentation/DockKit/dockaccessory/setregionofinterest(_).md",
       "hash": "93360edf7eb01ab8d4d3817cfe66b1a4358c62167a68ee42ef75fee69a04ea8d"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/state": {
@@ -627,32 +627,32 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/statechanges/iterator/next()": {
       "etag": "\"1a65-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/statechanges/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/statechanges/iterator/next().md",
       "hash": "0c5d422e7f11f9c2544aae24b3a53e59c8966b6d879af28d0acbb53e71752841"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/statechanges/makeasynciterator()": {
       "etag": "\"1c9c-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/statechanges/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/statechanges/makeasynciterator().md",
       "hash": "9596418e7558ed5e6ddc1b880700d41f763d4b38b42816d939ff8e795b26401c"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/track(_:camerainformation:)-44mwn": {
       "etag": "\"3190-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/track-camerainformation-44mwn.md",
+      "file_path": "documentation/DockKit/dockaccessory/track(_,camerainformation)-44mwn.md",
       "hash": "21beb240a94f370860bafca33cce4a04b5b90985988af7e2838d49bbb2c296d0"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/track(_:camerainformation:)-4yl9b": {
       "etag": "\"3527-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/track-camerainformation-4yl9b.md",
+      "file_path": "documentation/DockKit/dockaccessory/track(_,camerainformation)-4yl9b.md",
       "hash": "4a1f6811df2cdea06577c6e474ee8efe68b04b54035ff6e9641052faad3ce35c"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/track(_:camerainformation:image:)-3uuza": {
       "etag": "\"2cc2-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/track-camerainformationimage-3uuza.md",
+      "file_path": "documentation/DockKit/dockaccessory/track(_,camerainformation,image)-3uuza.md",
       "hash": "f4e7c8491524d85d74cdf8962b60fdc41f3db791d2f85cd2069dd1a59434d2c3"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/track(_:camerainformation:image:)-82m61": {
       "etag": "\"2b18-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/track-camerainformationimage-82m61.md",
+      "file_path": "documentation/DockKit/dockaccessory/track(_,camerainformation,image)-82m61.md",
       "hash": "5e68b23ff963bb0b053da302f96fb5a989c08a9838c61c805b257d8ef6c623bf"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackedobject": {
@@ -712,12 +712,12 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackedsubjecttype/object(_:)": {
       "etag": "\"16c9-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackedsubjecttype/object.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackedsubjecttype/object(_).md",
       "hash": "e70dc06d448c9dbd9c60e6ab0f633f95890cdcf5ecdb4b5360b23f562ff3e945"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackedsubjecttype/person(_:)": {
       "etag": "\"16c7-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackedsubjecttype/person.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackedsubjecttype/person(_).md",
       "hash": "7f6ddbef78a69bbf759eb3bd7613d397b606ad32fdee08959e725cacbe13d0e9"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackingstate": {
@@ -742,12 +742,12 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackingstates-swift.property": {
       "etag": "\"1cce-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.property.md",
       "hash": "36bd1a0140b6f649a93d81e4276178535fc146e8871172159869a44f56b812ce"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackingstates-swift.struct": {
       "etag": "\"1ce9-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct.md",
       "hash": "7c718626cdf54fd17a90700f2de43b5d49e98494ea867e4c0a3c156911437440"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackingstates-swift.struct/element": {
@@ -762,12 +762,12 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackingstates-swift.struct/iterator/next()": {
       "etag": "\"1b23-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct/iterator/next().md",
       "hash": "6a10f5afcca478353a3f69e0c7d94c00e2ebc4db3770b24466c5f57ebca12e12"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessory/trackingstates-swift.struct/makeasynciterator()": {
       "etag": "\"19db-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct/makeasynciterator().md",
       "hash": "05e36721751ff47e7b619b14ee00568254726100ce8a55352a187eaf1fd2b611"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessorymanager": {
@@ -787,7 +787,7 @@
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessorymanager/setsystemtrackingenabled(_:)": {
       "etag": "\"1fb1-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessorymanager/setsystemtrackingenabled.md",
+      "file_path": "documentation/DockKit/dockaccessorymanager/setsystemtrackingenabled(_).md",
       "hash": "e824a9795a2beb4dd98013923c81effb0899380c2d2ab50dc790e69713833750"
     },
     "https://developer.apple.com/documentation/dockkit/dockaccessorymanager/shared": {
@@ -872,7 +872,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/accessoryevent/button(id:pressed:).json": {
       "etag": "\"1b0f-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevent/button-idpressed.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevent/button(id,pressed).md",
       "hash": "32fc9550503891c4bbab8e02d054702ae57448e3d8f5c1faa1f679b9fd54e0ac"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/accessoryevent/cameraflip.json": {
@@ -887,17 +887,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/accessoryevent/camerazoom(factor:).json": {
       "etag": "\"160c-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevent/camerazoom-factor.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevent/camerazoom(factor).md",
       "hash": "5d8512e932092fe5b9040ef7e674d3be43a0fc07cf9b571987da3f1b5fdfeb7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/accessoryevents-swift.property.json": {
       "etag": "\"1c8a-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.property.md",
       "hash": "ad0684e74ab2547a20be4bacb4188100cd147eadf301a380ddaa4626114aa4a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/accessoryevents-swift.struct.json": {
       "etag": "\"1cef-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct.md",
       "hash": "964df44b253f099c6d5620106ec94de6ad8cd1b0aa8a229b15fb12ccb3d2c7c4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/accessoryevents-swift.struct/element.json": {
@@ -912,17 +912,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/accessoryevents-swift.struct/iterator/next().json": {
       "etag": "\"1b1c-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct/iterator/next().md",
       "hash": "473f35e628924c1eb5d08a7ab628769ff7e5d7d86a214c0fc6bee9fe9255d9b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/accessoryevents-swift.struct/makeasynciterator().json": {
       "etag": "\"19c3-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/accessoryevents-swift.struct/makeasynciterator().md",
       "hash": "bba5992f38264960445e45b1b8656cc6ea636e2ecbf545f98e47f00690737b70"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/animate(motion:).json": {
       "etag": "\"2e7b-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/animate-motion.md",
+      "file_path": "documentation/DockKit/dockaccessory/animate(motion).md",
       "hash": "f9b6a2a2bb140bf2b10be5e7b335b76f1a3eff9b4cccc2872b383c9bfc748ebd"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/animation.json": {
@@ -997,12 +997,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/batterystates-swift.property.json": {
       "etag": "\"1c8d-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/batterystates-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.property.md",
       "hash": "da2a606dce2d71dff1eff1a4baa8bf618f325235a8bd763ac48ee6a075770924"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/batterystates-swift.struct.json": {
       "etag": "\"1cdb-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/batterystates-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct.md",
       "hash": "e1b9eaff9ea291bef823e6e49925cb75b53acd26e63c4b11abab84138a3db344"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/batterystates-swift.struct/element.json": {
@@ -1017,12 +1017,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/batterystates-swift.struct/iterator/next().json": {
       "etag": "\"1b0a-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct/iterator/next().md",
       "hash": "9380ae3f5dae6bb62844979447c6c51d596bcd65fbf84abb50b135f5180245d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/batterystates-swift.struct/makeasynciterator().json": {
       "etag": "\"19cb-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/batterystates-swift.struct/makeasynciterator().md",
       "hash": "515346870eaf745f57aa382e131ba2cdc37bfd8fc45e9d55601bb62d0f48eb87"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/camerainformation.json": {
@@ -1047,7 +1047,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/camerainformation/init(capturedevice:cameraposition:orientation:cameraintrinsics:referencedimensions:).json": {
       "etag": "\"3dd6-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/camerainformation/init-capturedevicecamerapositionorientationcameraintrinsicsreferencedimensions.md",
+      "file_path": "documentation/DockKit/dockaccessory/camerainformation/init(capturedevice,cameraposition,orientation,cameraintrinsics,referencedimensions).md",
       "hash": "de490d69f2713053aa4af6d6576b5b44d83a2581d9a4f0d05faed841dd5dca9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/camerainformation/orientation.json": {
@@ -1067,12 +1067,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/cameraorientation/!=(_:_:).json": {
       "etag": "W/\"15ed79913033fbaecae578f43743928c\"",
-      "file_path": "documentation/DockKit/dockaccessory/cameraorientation/unknown.md",
+      "file_path": "documentation/DockKit/dockaccessory/cameraorientation/noteq(_,_).md",
       "hash": "c7c84faeb8124bea2deb19c3943a787b60f39ea3affc558f00b88e668583aa5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/cameraorientation/==(_:_:).json": {
       "etag": "W/\"2a669d4a49675ba47a5b83fd2f8894f5\"",
-      "file_path": "documentation/DockKit/dockaccessory/cameraorientation/unknown.md",
+      "file_path": "documentation/DockKit/dockaccessory/cameraorientation/eqeq(_,_).md",
       "hash": "d59df0272699b44e01bcfc6a3d33b4b883bc776459c50897a65d746bd70ee790"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/cameraorientation/corrected.json": {
@@ -1142,7 +1142,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/framingmode-swift.enum.json": {
       "etag": "\"34b8-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/framingmode-swiftenum.md",
+      "file_path": "documentation/DockKit/dockaccessory/framingmode-swift.enum.md",
       "hash": "f991be2bd6985ea990b5e9fb67be6b07338d838ecfec90da28a632d1b6613a6c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/framingmode-swift.enum/automatic.json": {
@@ -1167,7 +1167,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/framingmode-swift.property.json": {
       "etag": "\"18c5-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/framingmode-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/framingmode-swift.property.md",
       "hash": "005b19512e539c724f5387dcf7fff3a455364ceeeed5f2ae40d9727e283588df"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/hardwaremodel.json": {
@@ -1177,17 +1177,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/hash(into:).json": {
       "etag": "\"1698-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/hash-into.md",
+      "file_path": "documentation/DockKit/dockaccessory/hash(into).md",
       "hash": "d966f295cca3fe69f7198b31cc455124c868a612bf86fbf37d69817d3f913044"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/identifier-swift.property.json": {
       "etag": "\"2462-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/identifier-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/identifier-swift.property.md",
       "hash": "a048056eb9db59bd9f624199ac89605f85b449a455d6362b07a0de0e98b382b3"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/identifier-swift.struct.json": {
       "etag": "\"3c83-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/identifier-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/identifier-swift.struct.md",
       "hash": "7daca984ca68fa2a52570f46fcf29e1fe78e62b8b0f7519324892eadd176dfd5"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/identifier-swift.struct/category.json": {
@@ -1212,17 +1212,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/limits-swift.property.json": {
       "etag": "\"23f1-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/limits-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/limits-swift.property.md",
       "hash": "ce291ef491493b3d296d4e4fa8ab84cea60c64f666740d8d62fe26a7f0052c4c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/limits-swift.struct.json": {
       "etag": "\"3853-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/limits-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct.md",
       "hash": "7b7b19d7e33f1ea266ee847e7a36758e8f963152387c00d8239bc9260dc8adc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/limits-swift.struct/init(yaw:pitch:roll:).json": {
       "etag": "\"26ba-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct/init-yawpitchroll.md",
+      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct/init(yaw,pitch,roll).md",
       "hash": "58493814f98a6c0494d011bf3fee0faee03b884352531711e23d94de498e92c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/limits-swift.struct/limit.json": {
@@ -1232,7 +1232,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/limits-swift.struct/limit/init(positionrange:maximumspeed:).json": {
       "etag": "\"1d6f-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct/limit/init-positionrangemaximumspeed.md",
+      "file_path": "documentation/DockKit/dockaccessory/limits-swift.struct/limit/init(positionrange,maximumspeed).md",
       "hash": "1202de8116fcc6637edf866fc654c158bdeeec0fc6799553dd3dffb6d9b3dd81"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/limits-swift.struct/limit/maximumspeed.json": {
@@ -1287,12 +1287,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/motionstates-swift.property.json": {
       "etag": "\"27cc-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/motionstates-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.property.md",
       "hash": "67452002a2aa5f8e7d36874849d275ca23a545b7863acf8c220700052fec2055"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/motionstates-swift.struct.json": {
       "etag": "\"296c-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/motionstates-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct.md",
       "hash": "dc11095e5b2fceebeb5486f5cd6f184ca8fdffa4acf83e2afd35fa290c27aeb3"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/motionstates-swift.struct/element.json": {
@@ -1307,12 +1307,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/motionstates-swift.struct/iterator/next().json": {
       "etag": "\"1b34-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct/iterator/next().md",
       "hash": "b46d8c4cee1132204f05e5408e2efe339afb6b131923c023b96bb07222598577"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/motionstates-swift.struct/makeasynciterator().json": {
       "etag": "\"1da7-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/motionstates-swift.struct/makeasynciterator().md",
       "hash": "04e22539063bb5ceaa81bbe2204a0fe09e38de53e2478778fd6a7775acb282a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/observation.json": {
@@ -1332,7 +1332,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/observation/init(identifier:type:rect:faceyawangle:).json": {
       "etag": "\"2fdd-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/observation/init-identifiertyperectfaceyawangle.md",
+      "file_path": "documentation/DockKit/dockaccessory/observation/init(identifier,type,rect,faceyawangle).md",
       "hash": "64953e927a2bd250e00506dffc548d9a900cf4f4df0f24669ad183c0d0ce1628"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/observation/observationtype.json": {
@@ -1372,52 +1372,52 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/selectsubject(at:).json": {
       "etag": "\"2fd5-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/selectsubject-at.md",
+      "file_path": "documentation/DockKit/dockaccessory/selectsubject(at).md",
       "hash": "17c557ac7dee7459b19c0323fe73952c900ceecd9b4aca5be338bb33d9bb6b3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/selectsubjects(_:).json": {
       "etag": "\"1b5d-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/selectsubjects.md",
+      "file_path": "documentation/DockKit/dockaccessory/selectsubjects(_).md",
       "hash": "d4d54b6eb75c1410eae16a6cc32b500a9c5c06f7cdb1bfe861c6b1f1be7b50d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/setangularvelocity(_:).json": {
       "etag": "\"2d04-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setangularvelocity.md",
+      "file_path": "documentation/DockKit/dockaccessory/setangularvelocity(_).md",
       "hash": "168db79a34bc04d817783cbadee202648cdbea545c85c2c0e354ab3b6b23328f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/setframingmode(_:).json": {
       "etag": "\"27db-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setframingmode.md",
+      "file_path": "documentation/DockKit/dockaccessory/setframingmode(_).md",
       "hash": "f0273aab60ef84b6bb8220874f0d5b1fbee1fa41a85451cabeb5b04709c4d213"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/setlimits(_:).json": {
       "etag": "\"29b9-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setlimits.md",
+      "file_path": "documentation/DockKit/dockaccessory/setlimits(_).md",
       "hash": "61ec54686abe3dfc86856a183140dc92c79b696fb65a95c04d86a8093a22ef7f"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/setorientation(_:duration:relative:)-2epe2.json": {
       "etag": "\"4037-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setorientation-durationrelative-2epe2.md",
+      "file_path": "documentation/DockKit/dockaccessory/setorientation(_,duration,relative)-2epe2.md",
       "hash": "ed9b8c3e824777ccec80ee8c3fd28574af2c4338b2d6c49bd14b9e4b83d9470c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/setorientation(_:duration:relative:)-6b0fl.json": {
       "etag": "\"4072-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setorientation-durationrelative-6b0fl.md",
+      "file_path": "documentation/DockKit/dockaccessory/setorientation(_,duration,relative)-6b0fl.md",
       "hash": "b871215a64f203611b678e092441f0f19ef09e1b43d2ecafbce03cc2a247ca1e"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/setorientation(_:duration:relative:)-6h2ah.json": {
       "etag": "\"2fd0-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setorientation-durationrelative-6h2ah.md",
+      "file_path": "documentation/DockKit/dockaccessory/setorientation(_,duration,relative)-6h2ah.md",
       "hash": "216efde2b13fff0487947aa3c643906e252316e97b9665811206681971870f74"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/setorientation(_:duration:relative:)-84z7i.json": {
       "etag": "\"2f91-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setorientation-durationrelative-84z7i.md",
+      "file_path": "documentation/DockKit/dockaccessory/setorientation(_,duration,relative)-84z7i.md",
       "hash": "bb441ecdcb0503c94cb5b4ca68c36e8e4f9bb8748f41d702294fc69c1c8ae4ba"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/setregionofinterest(_:).json": {
       "etag": "\"2942-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/setregionofinterest.md",
+      "file_path": "documentation/DockKit/dockaccessory/setregionofinterest(_).md",
       "hash": "93360edf7eb01ab8d4d3817cfe66b1a4358c62167a68ee42ef75fee69a04ea8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/state.json": {
@@ -1477,32 +1477,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/statechanges/iterator/next().json": {
       "etag": "\"1a65-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/statechanges/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/statechanges/iterator/next().md",
       "hash": "0c5d422e7f11f9c2544aae24b3a53e59c8966b6d879af28d0acbb53e71752841"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/statechanges/makeasynciterator().json": {
       "etag": "\"1c9c-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/statechanges/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/statechanges/makeasynciterator().md",
       "hash": "9596418e7558ed5e6ddc1b880700d41f763d4b38b42816d939ff8e795b26401c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/track(_:camerainformation:)-44mwn.json": {
       "etag": "\"3190-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/track-camerainformation-44mwn.md",
+      "file_path": "documentation/DockKit/dockaccessory/track(_,camerainformation)-44mwn.md",
       "hash": "21beb240a94f370860bafca33cce4a04b5b90985988af7e2838d49bbb2c296d0"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/track(_:camerainformation:)-4yl9b.json": {
       "etag": "\"3527-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/track-camerainformation-4yl9b.md",
+      "file_path": "documentation/DockKit/dockaccessory/track(_,camerainformation)-4yl9b.md",
       "hash": "4a1f6811df2cdea06577c6e474ee8efe68b04b54035ff6e9641052faad3ce35c"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/track(_:camerainformation:image:)-3uuza.json": {
       "etag": "\"2cc2-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/track-camerainformationimage-3uuza.md",
+      "file_path": "documentation/DockKit/dockaccessory/track(_,camerainformation,image)-3uuza.md",
       "hash": "f4e7c8491524d85d74cdf8962b60fdc41f3db791d2f85cd2069dd1a59434d2c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/track(_:camerainformation:image:)-82m61.json": {
       "etag": "\"2b18-65d560cf57744-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/track-camerainformationimage-82m61.md",
+      "file_path": "documentation/DockKit/dockaccessory/track(_,camerainformation,image)-82m61.md",
       "hash": "5e68b23ff963bb0b053da302f96fb5a989c08a9838c61c805b257d8ef6c623bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackedobject.json": {
@@ -1562,12 +1562,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackedsubjecttype/object(_:).json": {
       "etag": "\"16c9-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackedsubjecttype/object.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackedsubjecttype/object(_).md",
       "hash": "e70dc06d448c9dbd9c60e6ab0f633f95890cdcf5ecdb4b5360b23f562ff3e945"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackedsubjecttype/person(_:).json": {
       "etag": "\"16c7-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackedsubjecttype/person.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackedsubjecttype/person(_).md",
       "hash": "7f6ddbef78a69bbf759eb3bd7613d397b606ad32fdee08959e725cacbe13d0e9"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackingstate.json": {
@@ -1592,12 +1592,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackingstates-swift.property.json": {
       "etag": "\"1cce-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swiftproperty.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.property.md",
       "hash": "36bd1a0140b6f649a93d81e4276178535fc146e8871172159869a44f56b812ce"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackingstates-swift.struct.json": {
       "etag": "\"1ce9-65d560cf366cc-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swiftstruct.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct.md",
       "hash": "7c718626cdf54fd17a90700f2de43b5d49e98494ea867e4c0a3c156911437440"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackingstates-swift.struct/element.json": {
@@ -1612,12 +1612,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackingstates-swift.struct/iterator/next().json": {
       "etag": "\"1b23-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct/iterator/next.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct/iterator/next().md",
       "hash": "6a10f5afcca478353a3f69e0c7d94c00e2ebc4db3770b24466c5f57ebca12e12"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessory/trackingstates-swift.struct/makeasynciterator().json": {
       "etag": "\"19db-65d560cf4820c-df\"",
-      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct/makeasynciterator.md",
+      "file_path": "documentation/DockKit/dockaccessory/trackingstates-swift.struct/makeasynciterator().md",
       "hash": "05e36721751ff47e7b619b14ee00568254726100ce8a55352a187eaf1fd2b611"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessorymanager.json": {
@@ -1637,7 +1637,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessorymanager/setsystemtrackingenabled(_:).json": {
       "etag": "\"1fb1-65d560cf1ec99-df\"",
-      "file_path": "documentation/DockKit/dockaccessorymanager/setsystemtrackingenabled.md",
+      "file_path": "documentation/DockKit/dockaccessorymanager/setsystemtrackingenabled(_).md",
       "hash": "e824a9795a2beb4dd98013923c81effb0899380c2d2ab50dc790e69713833750"
     },
     "https://developer.apple.com/tutorials/data/documentation/dockkit/dockaccessorymanager/shared.json": {

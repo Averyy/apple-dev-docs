@@ -27,7 +27,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.appleidbuttontheme": {
       "etag": "\"2239-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitappleidbuttontheme.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.appleidbuttontheme.md",
       "hash": "a806dae72450db2c598b1608652caf50056b2761cf36310579a21703042150b8"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.appleidbuttontheme/black": {
@@ -42,42 +42,42 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.appleidbuttontheme/white_with_outline": {
       "etag": "\"10a9-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.appleidbuttontheme/white-with-outline.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.appleidbuttontheme/white_with_outline.md",
       "hash": "e0bd79f2ed463ff3456014cf900c4bfa14ae61b2efd0c88c7f23d4dc74d12988"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror": {
       "etag": "\"59f0-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitckerror.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror.md",
       "hash": "2f2ff9df2bd290e7c2e5730b4343a8cb5a4ed9768f7bdfe6378283b7a745f856"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/access_denied": {
       "etag": "\"2bfc-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/access-denied.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/access_denied.md",
       "hash": "1519ac80062762a31f3f9584ab47f222f13a2f75579c89f7aef6297102134dae"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/atomic_error": {
       "etag": "\"2bcb-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/atomic-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/atomic_error.md",
       "hash": "3740272fdce1a56cf3c40cde2136a908db07efb802f0ced1f338a1cf0ca7a743"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/auth_persist_error": {
       "etag": "\"2b9b-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/auth-persist-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/auth_persist_error.md",
       "hash": "2abebfe7f2c8a1e25e88a19b12c3192e1ea01b1e9890fa46348cfcbc2efbded9"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/authentication_failed": {
       "etag": "\"2bea-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/authentication-failed.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/authentication_failed.md",
       "hash": "8d6aa526c811034b898102bf036dd1ce6ceaf1a83ed73d079db78915d39bb771"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/authentication_required": {
       "etag": "\"2c10-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/authentication-required.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/authentication_required.md",
       "hash": "f71e17435669d835f6b16c11b47610cf7cee55d2d4045d4164a936067392675d"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/bad_request": {
       "etag": "\"2bc0-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/bad-request.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/bad_request.md",
       "hash": "6106fef222193267acdf4599e365890de4a3ef9258e323285eaf620e5937fad1"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/ckerrorcode": {
@@ -87,7 +87,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/configuration_error": {
       "etag": "\"2c11-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/configuration-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/configuration_error.md",
       "hash": "8a17d6765d5210821f6600491369eb293f723bbf8aeb4335e1e3a02bb5ef3bea"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/conflict": {
@@ -102,12 +102,12 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/internal_error": {
       "etag": "\"2bcd-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/internal-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/internal_error.md",
       "hash": "e62e61089c98ffc5688a9316bbd963507fc7fceb0d44f6f7ff8cee522ddc8e80"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/invalid_arguments": {
       "etag": "\"2bf6-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/invalid-arguments.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/invalid_arguments.md",
       "hash": "9991b526ef61fd60878844b941227f7c98184144b8a69dcb2f7f899193e35a74"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/isckerror": {
@@ -127,17 +127,17 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/network_error": {
       "etag": "\"2be6-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/network-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/network_error.md",
       "hash": "b3908c0ff4c69deec1204aec8a0edbb84db1abd8946e94b0293c8101f60a537f"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/not_found": {
       "etag": "\"2bb9-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/not-found.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/not_found.md",
       "hash": "d8e96c9eff6b8df3faaf612565456aa2cce77c535188ca72e6d81a31b6c4ae5a"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/quota_exceeded": {
       "etag": "\"2c3f-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/quota-exceeded.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/quota_exceeded.md",
       "hash": "125e259cef1291e2593e4697e3c4e1807368e58a2249ae6098244d4630e64f86"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/reason": {
@@ -167,17 +167,17 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/service_unavailable": {
       "etag": "\"2bf0-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/service-unavailable.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/service_unavailable.md",
       "hash": "4a3258c17c0b61afc2bc54600cf626da33a6e6b43053143f155957db7e8efbe6"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/share_ui_timeout": {
       "etag": "\"2be4-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/share-ui-timeout.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/share_ui_timeout.md",
       "hash": "dbea2a27253a1432fd065b149bf2476a310bc39e0e9e1fd5cfb1feb573281a5a"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/sign_in_failed": {
       "etag": "\"2bb4-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/sign-in-failed.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/sign_in_failed.md",
       "hash": "be52bc37c61868418235741ae3be01b27a7a86ca2903e780522456275db51e21"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/subscriptionid": {
@@ -192,22 +192,22 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/try_again_later": {
       "etag": "\"2beb-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/try-again-later.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/try_again_later.md",
       "hash": "541aa0e871ee32fe5d4195230beb8affe9f61c449ebffcd2f29a451b1dfcba73"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/unexpected_server_response": {
       "etag": "\"2c58-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unexpected-server-response.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unexpected_server_response.md",
       "hash": "2c0a9724a05fbc8790b3bf2e949e4a8e3cd40f634a2db9379dcc8201df0a4190"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/unique_field_error": {
       "etag": "\"2c44-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unique-field-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unique_field_error.md",
       "hash": "9186074dbe1190883177088c2f70d4d674627efe95ec031a763c3e949080c4d6"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/unknown_error": {
       "etag": "\"2c89-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unknown-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unknown_error.md",
       "hash": "050175a36b36162ddebb1ff02c52252bb61305c3382a693d866c1dc8676d00b1"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/uuid": {
@@ -217,12 +217,12 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/validating_reference_error": {
       "etag": "\"2c58-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/validating-reference-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/validating_reference_error.md",
       "hash": "2337584c3fe49b9e8d08cc08c0cc1b5480b7bce8cd90254963cd24c1896a1976"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/zone_not_found": {
       "etag": "\"2bde-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/zone-not-found.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/zone_not_found.md",
       "hash": "a23a7202270abd13fd6dcd8a868dfb6cec21f03691195729f73b32ce1b7f38c8"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.ckerror/zoneid": {
@@ -232,7 +232,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.cloudkitconfig": {
       "etag": "\"38eb-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitcloudkitconfig.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.cloudkitconfig.md",
       "hash": "7567b151cade302940dfb10d3865e4a5a4f301618550aca4539b07116e4a464c"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.cloudkitconfig/containers": {
@@ -247,7 +247,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.container": {
       "etag": "\"86ad-65d55ab056722-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitcontainer.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.container.md",
       "hash": "2ec5cb700878759f6ce84f935383841295a6d9f887317605caafb46f39b1d6db"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.container/acceptshares": {
@@ -372,7 +372,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.containerconfig": {
       "etag": "\"5e02-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitcontainerconfig.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.containerconfig.md",
       "hash": "96fbde3824548fc8f6a7d321dca0a4314b88ab00497be57c6f7f0a38cc24c7d6"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.containerconfig/apitokenauth": {
@@ -402,7 +402,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.database": {
       "etag": "\"8db8-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitdatabase.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.database.md",
       "hash": "58ae9cdd0ebf62bd8f899b103204fa0ff15237ed5299774c874a25311c9f2a73"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.database/containeridentifier": {
@@ -502,7 +502,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.databasechangesresponse": {
       "etag": "\"4dcd-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitdatabasechangesresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.databasechangesresponse.md",
       "hash": "1580884c009479d2761cfe16460f16b428fd72a71bbe41a0c0f01f5b2e1c1b98"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.databasechangesresponse/isdatabasechangesresponse": {
@@ -532,7 +532,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.databasescope": {
       "etag": "\"21a9-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitdatabasescope.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.databasescope.md",
       "hash": "347f39eb40b3608f4f6efdb3061262e6e2031aab3a72bb72e1f8a7469430a05e"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.databasescope/private": {
@@ -552,7 +552,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.namecomponents": {
       "etag": "\"2c70-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitnamecomponents.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.namecomponents.md",
       "hash": "507ed6d00f43691b2264c438f253c7412eaa867b5593145fe4861f4592eed43b"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.namecomponents/familyname": {
@@ -567,7 +567,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification": {
       "etag": "\"7397-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitnotification.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification.md",
       "hash": "4150333ca1679bf0a46800601f8917e34a42ca4916b866fd4d78a973be9a88da"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification/alertactionlocalizationkey": {
@@ -622,12 +622,12 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification/notification_type_query": {
       "etag": "\"13fd-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/notification-type-query.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/notification_type_query.md",
       "hash": "e71d014ab0e40adf5bc6da68440622cf820e5bf6ab1434ef2b7caf76bdccaebf"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification/notification_type_record_zone": {
       "etag": "\"1405-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/notification-type-record-zone.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/notification_type_record_zone.md",
       "hash": "5bf7b90672bfae1dcba5b82afd127156c3ca10dde3e1a482321926794d481521"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification/notificationid": {
@@ -642,17 +642,17 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification/query_notification_reason_record_created": {
       "etag": "\"173d-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/query-notification-reason-record-created.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/query_notification_reason_record_created.md",
       "hash": "ca4d4c90ffcf301bf370b3f42e8e24a828c3403bdeabefe2fa3647d7ae94e503"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification/query_notification_reason_record_deleted": {
       "etag": "\"173d-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/query-notification-reason-record-deleted.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/query_notification_reason_record_deleted.md",
       "hash": "86b6bdff481dd73988a262ed1ba0cde9af29a6b374f6acfd10c0e87fd74fbcff"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification/query_notification_reason_record_updated": {
       "etag": "\"173d-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/query-notification-reason-record-updated.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/query_notification_reason_record_updated.md",
       "hash": "344d041ea3bd05364f7ef7a19a99a73282e245e3ae00b13464299f22f6161657"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notification/soundname": {
@@ -672,7 +672,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notificationinfo": {
       "etag": "\"4f49-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitnotificationinfo.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notificationinfo.md",
       "hash": "728e57e8cae28820884ce68a83c66ccbc45647e4367c8026f024cf3eae40c18e"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.notificationinfo/additionalfields": {
@@ -727,7 +727,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.query": {
       "etag": "\"37c0-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitquery.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.query.md",
       "hash": "7f0724d60de215f7c961a86dc001721f5549c053d9b5e1229df144a826e74bc2"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.query/filterby": {
@@ -747,22 +747,22 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator": {
       "etag": "\"5e79-65d55ab056722-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitqueryfiltercomparator.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator.md",
       "hash": "97acc33e4ecea35aa250f009af615ce365c1052fe472460e8b743cb392febe48"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/begins_with": {
       "etag": "\"2f3c-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/begins-with.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/begins_with.md",
       "hash": "714fdb42d79443ed66722265453344407cef0839cd0d8e2b6c2dbabd293dc406"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/contains_all_tokens": {
       "etag": "\"2f52-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/contains-all-tokens.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/contains_all_tokens.md",
       "hash": "a92af872c7b25953bc663415a4c56fb5cca2dda4b69e60e17013593dfdd607d3"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/contains_any_tokens": {
       "etag": "\"2f51-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/contains-any-tokens.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/contains_any_tokens.md",
       "hash": "bdd35a518d6cd2345ee6166743c9ce790bd5986144e61d80f694b46f7781149f"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/equals": {
@@ -772,12 +772,12 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/greater_than": {
       "etag": "\"2f3e-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/greater-than.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/greater_than.md",
       "hash": "4311fca5c3b499ec983b2a6ccde644c06a699083c1b80858f61b87550080bfe4"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/greater_than_or_equals": {
       "etag": "\"2f72-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/greater-than-or-equals.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/greater_than_or_equals.md",
       "hash": "fbffd0b7c8321e449e24360de71f25763e2d0f5970cf0121306c7961c54ac00e"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/in": {
@@ -787,32 +787,32 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/less_than": {
       "etag": "\"2f2f-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/less-than.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/less_than.md",
       "hash": "3c1ed42fa19c6c9767e89e7af81b2ba69324c487e6947e761e1eb3fc5f332211"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/less_than_or_equals": {
       "etag": "\"2f63-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/less-than-or-equals.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/less_than_or_equals.md",
       "hash": "72e9a7af5ae54ac8b71edefa530c9b768edee0311129d698df31652f83c2f45f"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/list_contains": {
       "etag": "\"2f37-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list-contains.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list_contains.md",
       "hash": "081ac1a05165dfbcb67298222f4fd7fbe56f99a0b1468990d4f5a0dbd7b3865a"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/list_contains_all": {
       "etag": "\"2f4b-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list-contains-all.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list_contains_all.md",
       "hash": "71d5dd1b33403974b4957ad0cc45af71036a60993f67e6ce2234e1a849e4a04c"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/list_contains_any": {
       "etag": "\"2f54-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list-contains-any.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list_contains_any.md",
       "hash": "9eedc1b9fa9d52d268b3d2f9bb6932b7ca09329cfeb72168450412480d88136c"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/list_member_begins_with": {
       "etag": "\"2f72-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list-member-begins-with.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list_member_begins_with.md",
       "hash": "4b2361db43287351dc191cd85caf7dd38f20f3705cf49c2ccefb4a767d950b63"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/near": {
@@ -822,42 +822,42 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_begins_with": {
       "etag": "\"2f55-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-begins-with.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_begins_with.md",
       "hash": "858200e7c80d07f4f15e2f44f228723311464af3d085c4617feaa06e4a5bdcec"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_equals": {
       "etag": "\"2f36-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-equals.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_equals.md",
       "hash": "cbff79e698364b7b665e88b3b56c5f18aaf3a9e704db902c63721236ad59b5e6"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_in": {
       "etag": "\"2f04-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-in.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_in.md",
       "hash": "3663c79ed7a645b3c5fff151f3931be34f7a918b6afd4cb2e3d825718994c4db"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_list_contains": {
       "etag": "\"2f6f-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-list-contains.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_list_contains.md",
       "hash": "eacf4c40793e5d41a3b677e065eb7750f3f0a7211b93bbf53eaed4fe45dc322f"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_list_contains_all": {
       "etag": "\"2f93-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-list-contains-all.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_list_contains_all.md",
       "hash": "d27465b132642d4bde403070db96c4aafc89c353c0c39ba764f55180bc53b84c"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_list_contains_any": {
       "etag": "\"2fa1-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-list-contains-any.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_list_contains_any.md",
       "hash": "5250fcadb9af006aa1f913d558a9945d1e95e0d0546338d2ecbf48d61a423e4d"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_list_member_begins_with": {
       "etag": "\"2fe7-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-list-member-begins-with.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_list_member_begins_with.md",
       "hash": "1a847d2b287e1d3dea1466d6774838288d7e14275317d2fd9b8ec9e0edbd9bf1"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.querynotification": {
       "etag": "\"5c85-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitquerynotification.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.querynotification.md",
       "hash": "a995a9415c680f9cafff03d17056b2a590077ac5a2e398dd0553ffd54465de9a"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.querynotification/ispublicdatabase": {
@@ -897,7 +897,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryresponse": {
       "etag": "\"671b-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitqueryresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryresponse.md",
       "hash": "630ade3b662ed4a4f29a3a837d52214750664ab8b0838918725450f1b9c07f99"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.queryresponse/continuationmarker": {
@@ -947,7 +947,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.record": {
       "etag": "\"5681-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecord.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.record.md",
       "hash": "7d6f953206c150276efddfea1786b063b5f26f5f0a0b24e788e7d588f0eb6449"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.record/created": {
@@ -1007,7 +1007,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordfield": {
       "etag": "\"345a-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordfield.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordfield.md",
       "hash": "59d5a1e5c424e88996053cad6cb2c183ae16d0d4443f387b5d6df8e50df2a33d"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordfield/type": {
@@ -1022,7 +1022,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordinfo": {
       "etag": "\"2d5e-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordinfo.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordinfo.md",
       "hash": "cc414bf0f55bd250d0f223b500712f4211080b6452445136282afe4ec98d36eb"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordinfo/rootrecord": {
@@ -1037,7 +1037,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordinfosresponse": {
       "etag": "\"4908-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordinfosresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordinfosresponse.md",
       "hash": "ebd84d87668f2acfd25238de06711020fab44ab07db0f97a30389578a341e4c7"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordinfosresponse/isrecordinfosresponse": {
@@ -1057,7 +1057,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordsbatchbuilder": {
       "etag": "\"671c-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordsbatchbuilder.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordsbatchbuilder.md",
       "hash": "3206c77a6682b5ad70601f6cb50cd491aef1c93673f03633941f87a5a8cfdabc"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordsbatchbuilder/commit": {
@@ -1107,7 +1107,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordsresponse": {
       "etag": "\"5add-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordsresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordsresponse.md",
       "hash": "7e172ca9b9aa82934adcf6a762ae96a079fa817262066728ff5f3919ead575a7"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordsresponse/isrecordsresponse": {
@@ -1132,7 +1132,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzone": {
       "etag": "\"2bba-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzone.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzone.md",
       "hash": "eb8984f144043976ede541743c4119191b83a6780bd6526cba7187221345308c"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzone/zoneid": {
@@ -1142,7 +1142,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonechanges": {
       "etag": "\"4817-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonechanges.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonechanges.md",
       "hash": "513deb41d6cce318b4a830f4bf06a156a545f35df7875f31cef1a8f64f62a498"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonechanges/desiredkeys": {
@@ -1187,7 +1187,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonechangesoptions": {
       "etag": "\"37ba-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonechangesoptions.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonechangesoptions.md",
       "hash": "8a23d8563bb9f9cd35077c78b59041b082b49c2886b54ca27da552b152f01431"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonechangesoptions/desiredkeys": {
@@ -1212,7 +1212,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonechangesresponse": {
       "etag": "\"4701-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonechangesresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonechangesresponse.md",
       "hash": "c2f6debe648dd3ea15010670fe37e4d3c57f4980e630e6a656df23998ecfdcca"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonechangesresponse/isrecordzonechangesresponse": {
@@ -1227,7 +1227,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonenotification": {
       "etag": "\"5171-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonenotification.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonenotification.md",
       "hash": "4660bdf4102a449ad0061e12e6e67a12898cae37bb24ad69d89b50585a5ed16d"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonenotification/isrecordzonenotification": {
@@ -1247,7 +1247,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonesresponse": {
       "etag": "\"5053-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonesresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonesresponse.md",
       "hash": "219f844239c5b4844af275d5bf7c64b4137a8ce2feacb10fcba05e08ffae4dbf"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.recordzonesresponse/isrecordzonesresponse": {
@@ -1267,12 +1267,12 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.referenceaction": {
       "etag": "\"1f50-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitreferenceaction.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.referenceaction.md",
       "hash": "ea3174e43f952ecb31be93ca6961f873186f0fc5737e9cc9447264b461c75f12"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.referenceaction/delete_self": {
       "etag": "\"14f3-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.referenceaction/delete-self.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.referenceaction/delete_self.md",
       "hash": "f728423a555c32508593c95dfa8f4a52d1c317c0b122db4f76789dbf341a4885"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.referenceaction/none": {
@@ -1282,7 +1282,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.response": {
       "etag": "\"5327-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.response.md",
       "hash": "cd711aaaf81184d8ceb09400f58a9c9b994965f74b0de09ee2a726969e3657be"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.response/errors": {
@@ -1302,7 +1302,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.share": {
       "etag": "\"3221-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshare.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.share.md",
       "hash": "cdbd0a0348ba28bd9270db8703155d7664b1241fe1ca9f43bb6710f1802a063a"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.share/participants": {
@@ -1322,7 +1322,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipant": {
       "etag": "\"3768-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshareparticipant.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipant.md",
       "hash": "f888ce7284635fd409d45d7abc90ccca9139d1cd5db88f2ace53920e92b1a398"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipant/acceptancestatus": {
@@ -1342,7 +1342,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipantacceptancestatus": {
       "etag": "\"233d-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshareparticipantacceptancestatus.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantacceptancestatus.md",
       "hash": "5ae0b5ace3f448542cf758c3d68d1ceddb906e0edcd6753000e4c71ca9abf81d"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipantacceptancestatus/accepted": {
@@ -1362,7 +1362,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipantpermission": {
       "etag": "\"25b4-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshareparticipantpermission.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission.md",
       "hash": "560395dbb63a4a9cabcf5d5c033a207e1dbdd626d795cf5a45de3a1690ecc923"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipantpermission/none": {
@@ -1372,12 +1372,12 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipantpermission/read_only": {
       "etag": "\"1320-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission/read-only.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission/read_only.md",
       "hash": "77a1134d964836d100ce15bd7e1d66b9ce8ffbb5a78cd804be5616167d87a58a"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipantpermission/read_write": {
       "etag": "\"1325-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission/read-write.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission/read_write.md",
       "hash": "d549d65e23dbec22e6a4f9256409d5b7ff2affde0c1de526fe840846d36ed46a"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipantpermission/unknown": {
@@ -1387,7 +1387,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipanttype": {
       "etag": "\"261b-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshareparticipanttype.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype.md",
       "hash": "357222f2c8b0685553285e450c963f412bb1684b0f3f2f9df72f063f7c1f52f0"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipanttype/owner": {
@@ -1397,12 +1397,12 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipanttype/private_user": {
       "etag": "\"13a5-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype/private-user.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype/private_user.md",
       "hash": "9a8c913e889f21c95847c452d349e283c5ae61b284d8fa9caa4f5e75f7c582e0"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipanttype/public_user": {
       "etag": "\"13a7-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype/public-user.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype/public_user.md",
       "hash": "b1b733d80aae30ff702993df960628338a5fdfc51c0ab5b5df83e9310aef4eeb"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.shareparticipanttype/unknown": {
@@ -1412,7 +1412,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.sharerecordtype": {
       "etag": "\"4858-65d55ab056722-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsharerecordtype.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype.md",
       "hash": "c66e573e4a94d6b9c513a8c4ee887d658af6acf5162f76d1736c5f514a0bc60c"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.sharerecordtype/name": {
@@ -1422,22 +1422,22 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.sharerecordtype/thumbnail_image_data_field_name": {
       "etag": "\"13a5-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/thumbnail-image-data-field-name.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/thumbnail_image_data_field_name.md",
       "hash": "6eb127e2e6f5a8c14d04bef36bdb3572ca473f4b4c3faa01e3a608a6a281100e"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.sharerecordtype/title_field_name": {
       "etag": "\"135a-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/title-field-name.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/title_field_name.md",
       "hash": "f47257ee6dac749d7f9ed3cc2a8c37bc3fee4a5aafa7d6bd6c1646fef125555b"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.sharerecordtype/type_field_name": {
       "etag": "\"1355-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/type-field-name.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/type_field_name.md",
       "hash": "fe54792d7e8a0476f00a1f7b17138f7bfe0c1933b439e33747d28f4f29f3e39d"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.sharinguiresult": {
       "etag": "\"2a61-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsharinguiresult.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharinguiresult.md",
       "hash": "38f3c6072fdf174d3ca4ad2322d450080c2bbce08174a696178136388d8e6c32"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.sharinguiresult/share": {
@@ -1447,7 +1447,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.subscription": {
       "etag": "\"4cdb-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsubscription.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.subscription.md",
       "hash": "88862a2b755d0b1b28e2a58b5dc7d070867c741fd9f1170a51674201e5e801c3"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.subscription/fireson": {
@@ -1492,7 +1492,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.subscriptionsresponse": {
       "etag": "\"5671-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsubscriptionsresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.subscriptionsresponse.md",
       "hash": "442cbd536f50259fb2fbe90cbe2c9528416f5596ddc9b1d936952129b6ad33d8"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.subscriptionsresponse/issubscriptionsresponse": {
@@ -1512,7 +1512,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.subscriptiontype": {
       "etag": "\"2201-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsubscriptiontype.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.subscriptiontype.md",
       "hash": "0c922ff4a0b3ada8e7f48902b4872c2b28d21c8b6c9785d0b7e0aea09df153bc"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.subscriptiontype/database": {
@@ -1527,12 +1527,12 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.subscriptiontype/record_zone": {
       "etag": "\"1051-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.subscriptiontype/record-zone.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.subscriptiontype/record_zone.md",
       "hash": "a7d172345229e0134276e669c49cff0dcfe9946b119a38fb1b9c33fb332a79a2"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.useridentitiesresponse": {
       "etag": "\"49ca-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkituseridentitiesresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.useridentitiesresponse.md",
       "hash": "bf193419734e0ae3d4a99db2a5cc60744e9d36199f7bfb56bff8e24357c8dd16"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.useridentitiesresponse/isuseridentitiesresponse": {
@@ -1552,7 +1552,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.useridentity": {
       "etag": "\"3630-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkituseridentity.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.useridentity.md",
       "hash": "63ad626bbb11b7b75ce4f6098024fc5f6562174470cca6c2933125d7b7bb68af"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.useridentity/lookupinfo": {
@@ -1572,7 +1572,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.userlookupinfo": {
       "etag": "\"2f7e-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkituserlookupinfo.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.userlookupinfo.md",
       "hash": "7693b9a70933663c8c6b113ac36ef6935df2cea4406ae0f8907e2e9c9482fc83"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.userlookupinfo/emailaddress": {
@@ -1592,7 +1592,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.zoneid": {
       "etag": "\"32cb-65d55ab056722-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitzoneid.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.zoneid.md",
       "hash": "a6420cd4e7a3e071aca470095dd5d392cb67571b4327413e19d530037dd589b4"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit.zoneid/zonename": {
@@ -1602,7 +1602,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit/build_version": {
       "etag": "\"1040-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit/build-version.md",
+      "file_path": "documentation/CloudKitJS/cloudkit/build_version.md",
       "hash": "5dab5ac9f81311655a998f30c5ec214a88cb29a5e798959e61c6340c39dc9b35"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit/ckerror": {
@@ -1612,7 +1612,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit/cloudkit_loaded": {
       "etag": "\"10c6-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit/cloudkit-loaded.md",
+      "file_path": "documentation/CloudKitJS/cloudkit/cloudkit_loaded.md",
       "hash": "c3b9652a20127db5e6a690b51e69fab8d3a1771e28f400ca1f814cbe7a58fb5d"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit/configure": {
@@ -1627,7 +1627,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit/development_environment": {
       "etag": "\"f35-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit/development-environment.md",
+      "file_path": "documentation/CloudKitJS/cloudkit/development_environment.md",
       "hash": "1a103b1831d4b8ab4ed55feb2ae9cbc629fb00fdd1fc82cf1c56ba6dd078daee"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit/getallcontainers": {
@@ -1647,7 +1647,7 @@
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit/production_environment": {
       "etag": "\"f47-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit/production-environment.md",
+      "file_path": "documentation/CloudKitJS/cloudkit/production_environment.md",
       "hash": "de1dcae524aa5a60f59191bf5ff53ea2d443e608e42031396d60c147e9bd16c7"
     },
     "https://developer.apple.com/documentation/cloudkitjs/cloudkit/promise": {
@@ -1737,7 +1737,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.appleidbuttontheme.json": {
       "etag": "\"2239-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitappleidbuttontheme.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.appleidbuttontheme.md",
       "hash": "a806dae72450db2c598b1608652caf50056b2761cf36310579a21703042150b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.appleidbuttontheme/black.json": {
@@ -1752,42 +1752,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.appleidbuttontheme/white_with_outline.json": {
       "etag": "\"10a9-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.appleidbuttontheme/white-with-outline.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.appleidbuttontheme/white_with_outline.md",
       "hash": "e0bd79f2ed463ff3456014cf900c4bfa14ae61b2efd0c88c7f23d4dc74d12988"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror.json": {
       "etag": "\"59f0-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitckerror.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror.md",
       "hash": "2f2ff9df2bd290e7c2e5730b4343a8cb5a4ed9768f7bdfe6378283b7a745f856"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/access_denied.json": {
       "etag": "\"2bfc-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/access-denied.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/access_denied.md",
       "hash": "1519ac80062762a31f3f9584ab47f222f13a2f75579c89f7aef6297102134dae"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/atomic_error.json": {
       "etag": "\"2bcb-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/atomic-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/atomic_error.md",
       "hash": "3740272fdce1a56cf3c40cde2136a908db07efb802f0ced1f338a1cf0ca7a743"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/auth_persist_error.json": {
       "etag": "\"2b9b-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/auth-persist-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/auth_persist_error.md",
       "hash": "2abebfe7f2c8a1e25e88a19b12c3192e1ea01b1e9890fa46348cfcbc2efbded9"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/authentication_failed.json": {
       "etag": "\"2bea-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/authentication-failed.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/authentication_failed.md",
       "hash": "8d6aa526c811034b898102bf036dd1ce6ceaf1a83ed73d079db78915d39bb771"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/authentication_required.json": {
       "etag": "\"2c10-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/authentication-required.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/authentication_required.md",
       "hash": "f71e17435669d835f6b16c11b47610cf7cee55d2d4045d4164a936067392675d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/bad_request.json": {
       "etag": "\"2bc0-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/bad-request.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/bad_request.md",
       "hash": "6106fef222193267acdf4599e365890de4a3ef9258e323285eaf620e5937fad1"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/ckerrorcode.json": {
@@ -1797,7 +1797,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/configuration_error.json": {
       "etag": "\"2c11-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/configuration-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/configuration_error.md",
       "hash": "8a17d6765d5210821f6600491369eb293f723bbf8aeb4335e1e3a02bb5ef3bea"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/conflict.json": {
@@ -1812,12 +1812,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/internal_error.json": {
       "etag": "\"2bcd-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/internal-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/internal_error.md",
       "hash": "e62e61089c98ffc5688a9316bbd963507fc7fceb0d44f6f7ff8cee522ddc8e80"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/invalid_arguments.json": {
       "etag": "\"2bf6-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/invalid-arguments.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/invalid_arguments.md",
       "hash": "9991b526ef61fd60878844b941227f7c98184144b8a69dcb2f7f899193e35a74"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/isckerror.json": {
@@ -1837,17 +1837,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/network_error.json": {
       "etag": "\"2be6-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/network-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/network_error.md",
       "hash": "b3908c0ff4c69deec1204aec8a0edbb84db1abd8946e94b0293c8101f60a537f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/not_found.json": {
       "etag": "\"2bb9-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/not-found.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/not_found.md",
       "hash": "d8e96c9eff6b8df3faaf612565456aa2cce77c535188ca72e6d81a31b6c4ae5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/quota_exceeded.json": {
       "etag": "\"2c3f-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/quota-exceeded.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/quota_exceeded.md",
       "hash": "125e259cef1291e2593e4697e3c4e1807368e58a2249ae6098244d4630e64f86"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/reason.json": {
@@ -1877,17 +1877,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/service_unavailable.json": {
       "etag": "\"2bf0-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/service-unavailable.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/service_unavailable.md",
       "hash": "4a3258c17c0b61afc2bc54600cf626da33a6e6b43053143f155957db7e8efbe6"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/share_ui_timeout.json": {
       "etag": "\"2be4-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/share-ui-timeout.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/share_ui_timeout.md",
       "hash": "dbea2a27253a1432fd065b149bf2476a310bc39e0e9e1fd5cfb1feb573281a5a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/sign_in_failed.json": {
       "etag": "\"2bb4-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/sign-in-failed.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/sign_in_failed.md",
       "hash": "be52bc37c61868418235741ae3be01b27a7a86ca2903e780522456275db51e21"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/subscriptionid.json": {
@@ -1902,22 +1902,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/try_again_later.json": {
       "etag": "\"2beb-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/try-again-later.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/try_again_later.md",
       "hash": "541aa0e871ee32fe5d4195230beb8affe9f61c449ebffcd2f29a451b1dfcba73"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/unexpected_server_response.json": {
       "etag": "\"2c58-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unexpected-server-response.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unexpected_server_response.md",
       "hash": "2c0a9724a05fbc8790b3bf2e949e4a8e3cd40f634a2db9379dcc8201df0a4190"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/unique_field_error.json": {
       "etag": "\"2c44-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unique-field-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unique_field_error.md",
       "hash": "9186074dbe1190883177088c2f70d4d674627efe95ec031a763c3e949080c4d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/unknown_error.json": {
       "etag": "\"2c89-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unknown-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/unknown_error.md",
       "hash": "050175a36b36162ddebb1ff02c52252bb61305c3382a693d866c1dc8676d00b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/uuid.json": {
@@ -1927,12 +1927,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/validating_reference_error.json": {
       "etag": "\"2c58-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/validating-reference-error.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/validating_reference_error.md",
       "hash": "2337584c3fe49b9e8d08cc08c0cc1b5480b7bce8cd90254963cd24c1896a1976"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/zone_not_found.json": {
       "etag": "\"2bde-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/zone-not-found.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.ckerror/zone_not_found.md",
       "hash": "a23a7202270abd13fd6dcd8a868dfb6cec21f03691195729f73b32ce1b7f38c8"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.ckerror/zoneid.json": {
@@ -1942,7 +1942,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.cloudkitconfig.json": {
       "etag": "\"38eb-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitcloudkitconfig.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.cloudkitconfig.md",
       "hash": "7567b151cade302940dfb10d3865e4a5a4f301618550aca4539b07116e4a464c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.cloudkitconfig/containers.json": {
@@ -1957,7 +1957,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.container.json": {
       "etag": "\"86ad-65d55ab056722-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitcontainer.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.container.md",
       "hash": "2ec5cb700878759f6ce84f935383841295a6d9f887317605caafb46f39b1d6db"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.container/acceptshares.json": {
@@ -2082,7 +2082,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.containerconfig.json": {
       "etag": "\"5e02-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitcontainerconfig.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.containerconfig.md",
       "hash": "96fbde3824548fc8f6a7d321dca0a4314b88ab00497be57c6f7f0a38cc24c7d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.containerconfig/apitokenauth.json": {
@@ -2112,7 +2112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.database.json": {
       "etag": "\"8db8-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitdatabase.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.database.md",
       "hash": "58ae9cdd0ebf62bd8f899b103204fa0ff15237ed5299774c874a25311c9f2a73"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.database/containeridentifier.json": {
@@ -2212,7 +2212,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.databasechangesresponse.json": {
       "etag": "\"4dcd-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitdatabasechangesresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.databasechangesresponse.md",
       "hash": "1580884c009479d2761cfe16460f16b428fd72a71bbe41a0c0f01f5b2e1c1b98"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.databasechangesresponse/isdatabasechangesresponse.json": {
@@ -2242,7 +2242,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.databasescope.json": {
       "etag": "\"21a9-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitdatabasescope.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.databasescope.md",
       "hash": "347f39eb40b3608f4f6efdb3061262e6e2031aab3a72bb72e1f8a7469430a05e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.databasescope/private.json": {
@@ -2267,7 +2267,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.namecomponents.json": {
       "etag": "\"2c70-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitnamecomponents.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.namecomponents.md",
       "hash": "507ed6d00f43691b2264c438f253c7412eaa867b5593145fe4861f4592eed43b"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.namecomponents/familyname.json": {
@@ -2282,7 +2282,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification.json": {
       "etag": "\"7397-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitnotification.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification.md",
       "hash": "4150333ca1679bf0a46800601f8917e34a42ca4916b866fd4d78a973be9a88da"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification/alertactionlocalizationkey.json": {
@@ -2337,12 +2337,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification/notification_type_query.json": {
       "etag": "\"13fd-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/notification-type-query.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/notification_type_query.md",
       "hash": "e71d014ab0e40adf5bc6da68440622cf820e5bf6ab1434ef2b7caf76bdccaebf"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification/notification_type_record_zone.json": {
       "etag": "\"1405-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/notification-type-record-zone.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/notification_type_record_zone.md",
       "hash": "5bf7b90672bfae1dcba5b82afd127156c3ca10dde3e1a482321926794d481521"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification/notificationid.json": {
@@ -2357,17 +2357,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification/query_notification_reason_record_created.json": {
       "etag": "\"173d-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/query-notification-reason-record-created.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/query_notification_reason_record_created.md",
       "hash": "ca4d4c90ffcf301bf370b3f42e8e24a828c3403bdeabefe2fa3647d7ae94e503"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification/query_notification_reason_record_deleted.json": {
       "etag": "\"173d-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/query-notification-reason-record-deleted.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/query_notification_reason_record_deleted.md",
       "hash": "86b6bdff481dd73988a262ed1ba0cde9af29a6b374f6acfd10c0e87fd74fbcff"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification/query_notification_reason_record_updated.json": {
       "etag": "\"173d-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.notification/query-notification-reason-record-updated.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notification/query_notification_reason_record_updated.md",
       "hash": "344d041ea3bd05364f7ef7a19a99a73282e245e3ae00b13464299f22f6161657"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notification/soundname.json": {
@@ -2387,7 +2387,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notificationinfo.json": {
       "etag": "\"4f49-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitnotificationinfo.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.notificationinfo.md",
       "hash": "728e57e8cae28820884ce68a83c66ccbc45647e4367c8026f024cf3eae40c18e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.notificationinfo/additionalfields.json": {
@@ -2442,7 +2442,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.query.json": {
       "etag": "\"37c0-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitquery.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.query.md",
       "hash": "7f0724d60de215f7c961a86dc001721f5549c053d9b5e1229df144a826e74bc2"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.query/filterby.json": {
@@ -2462,22 +2462,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator.json": {
       "etag": "\"5e79-65d55ab056722-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitqueryfiltercomparator.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator.md",
       "hash": "97acc33e4ecea35aa250f009af615ce365c1052fe472460e8b743cb392febe48"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/begins_with.json": {
       "etag": "\"2f3c-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/begins-with.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/begins_with.md",
       "hash": "714fdb42d79443ed66722265453344407cef0839cd0d8e2b6c2dbabd293dc406"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/contains_all_tokens.json": {
       "etag": "\"2f52-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/contains-all-tokens.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/contains_all_tokens.md",
       "hash": "a92af872c7b25953bc663415a4c56fb5cca2dda4b69e60e17013593dfdd607d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/contains_any_tokens.json": {
       "etag": "\"2f51-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/contains-any-tokens.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/contains_any_tokens.md",
       "hash": "bdd35a518d6cd2345ee6166743c9ce790bd5986144e61d80f694b46f7781149f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/equals.json": {
@@ -2487,12 +2487,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/greater_than.json": {
       "etag": "\"2f3e-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/greater-than.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/greater_than.md",
       "hash": "4311fca5c3b499ec983b2a6ccde644c06a699083c1b80858f61b87550080bfe4"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/greater_than_or_equals.json": {
       "etag": "\"2f72-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/greater-than-or-equals.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/greater_than_or_equals.md",
       "hash": "fbffd0b7c8321e449e24360de71f25763e2d0f5970cf0121306c7961c54ac00e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/in.json": {
@@ -2502,32 +2502,32 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/less_than.json": {
       "etag": "\"2f2f-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/less-than.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/less_than.md",
       "hash": "3c1ed42fa19c6c9767e89e7af81b2ba69324c487e6947e761e1eb3fc5f332211"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/less_than_or_equals.json": {
       "etag": "\"2f63-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/less-than-or-equals.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/less_than_or_equals.md",
       "hash": "72e9a7af5ae54ac8b71edefa530c9b768edee0311129d698df31652f83c2f45f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/list_contains.json": {
       "etag": "\"2f37-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list-contains.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list_contains.md",
       "hash": "081ac1a05165dfbcb67298222f4fd7fbe56f99a0b1468990d4f5a0dbd7b3865a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/list_contains_all.json": {
       "etag": "\"2f4b-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list-contains-all.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list_contains_all.md",
       "hash": "71d5dd1b33403974b4957ad0cc45af71036a60993f67e6ce2234e1a849e4a04c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/list_contains_any.json": {
       "etag": "\"2f54-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list-contains-any.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list_contains_any.md",
       "hash": "9eedc1b9fa9d52d268b3d2f9bb6932b7ca09329cfeb72168450412480d88136c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/list_member_begins_with.json": {
       "etag": "\"2f72-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list-member-begins-with.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/list_member_begins_with.md",
       "hash": "4b2361db43287351dc191cd85caf7dd38f20f3705cf49c2ccefb4a767d950b63"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/near.json": {
@@ -2537,42 +2537,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_begins_with.json": {
       "etag": "\"2f55-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-begins-with.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_begins_with.md",
       "hash": "858200e7c80d07f4f15e2f44f228723311464af3d085c4617feaa06e4a5bdcec"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_equals.json": {
       "etag": "\"2f36-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-equals.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_equals.md",
       "hash": "cbff79e698364b7b665e88b3b56c5f18aaf3a9e704db902c63721236ad59b5e6"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_in.json": {
       "etag": "\"2f04-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-in.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_in.md",
       "hash": "3663c79ed7a645b3c5fff151f3931be34f7a918b6afd4cb2e3d825718994c4db"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_list_contains.json": {
       "etag": "\"2f6f-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-list-contains.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_list_contains.md",
       "hash": "eacf4c40793e5d41a3b677e065eb7750f3f0a7211b93bbf53eaed4fe45dc322f"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_list_contains_all.json": {
       "etag": "\"2f93-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-list-contains-all.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_list_contains_all.md",
       "hash": "d27465b132642d4bde403070db96c4aafc89c353c0c39ba764f55180bc53b84c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_list_contains_any.json": {
       "etag": "\"2fa1-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-list-contains-any.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_list_contains_any.md",
       "hash": "5250fcadb9af006aa1f913d558a9945d1e95e0d0546338d2ecbf48d61a423e4d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryfiltercomparator/not_list_member_begins_with.json": {
       "etag": "\"2fe7-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not-list-member-begins-with.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryfiltercomparator/not_list_member_begins_with.md",
       "hash": "1a847d2b287e1d3dea1466d6774838288d7e14275317d2fd9b8ec9e0edbd9bf1"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.querynotification.json": {
       "etag": "\"5c85-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitquerynotification.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.querynotification.md",
       "hash": "a995a9415c680f9cafff03d17056b2a590077ac5a2e398dd0553ffd54465de9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.querynotification/ispublicdatabase.json": {
@@ -2612,7 +2612,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryresponse.json": {
       "etag": "\"671b-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitqueryresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.queryresponse.md",
       "hash": "630ade3b662ed4a4f29a3a837d52214750664ab8b0838918725450f1b9c07f99"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.queryresponse/continuationmarker.json": {
@@ -2662,7 +2662,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.record.json": {
       "etag": "\"5681-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecord.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.record.md",
       "hash": "7d6f953206c150276efddfea1786b063b5f26f5f0a0b24e788e7d588f0eb6449"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.record/created.json": {
@@ -2722,7 +2722,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordfield.json": {
       "etag": "\"345a-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordfield.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordfield.md",
       "hash": "59d5a1e5c424e88996053cad6cb2c183ae16d0d4443f387b5d6df8e50df2a33d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordfield/type.json": {
@@ -2737,7 +2737,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordinfo.json": {
       "etag": "\"2d5e-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordinfo.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordinfo.md",
       "hash": "cc414bf0f55bd250d0f223b500712f4211080b6452445136282afe4ec98d36eb"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordinfo/rootrecord.json": {
@@ -2752,7 +2752,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordinfosresponse.json": {
       "etag": "\"4908-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordinfosresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordinfosresponse.md",
       "hash": "ebd84d87668f2acfd25238de06711020fab44ab07db0f97a30389578a341e4c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordinfosresponse/isrecordinfosresponse.json": {
@@ -2772,7 +2772,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordsbatchbuilder.json": {
       "etag": "\"671c-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordsbatchbuilder.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordsbatchbuilder.md",
       "hash": "3206c77a6682b5ad70601f6cb50cd491aef1c93673f03633941f87a5a8cfdabc"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordsbatchbuilder/commit.json": {
@@ -2822,7 +2822,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordsresponse.json": {
       "etag": "\"5add-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordsresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordsresponse.md",
       "hash": "7e172ca9b9aa82934adcf6a762ae96a079fa817262066728ff5f3919ead575a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordsresponse/isrecordsresponse.json": {
@@ -2847,7 +2847,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzone.json": {
       "etag": "\"2bba-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzone.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzone.md",
       "hash": "eb8984f144043976ede541743c4119191b83a6780bd6526cba7187221345308c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzone/zoneid.json": {
@@ -2857,7 +2857,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonechanges.json": {
       "etag": "\"4817-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonechanges.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonechanges.md",
       "hash": "513deb41d6cce318b4a830f4bf06a156a545f35df7875f31cef1a8f64f62a498"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonechanges/desiredkeys.json": {
@@ -2902,7 +2902,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonechangesoptions.json": {
       "etag": "\"37ba-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonechangesoptions.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonechangesoptions.md",
       "hash": "8a23d8563bb9f9cd35077c78b59041b082b49c2886b54ca27da552b152f01431"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonechangesoptions/desiredkeys.json": {
@@ -2927,7 +2927,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonechangesresponse.json": {
       "etag": "\"4701-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonechangesresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonechangesresponse.md",
       "hash": "c2f6debe648dd3ea15010670fe37e4d3c57f4980e630e6a656df23998ecfdcca"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonechangesresponse/isrecordzonechangesresponse.json": {
@@ -2942,7 +2942,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonenotification.json": {
       "etag": "\"5171-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonenotification.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonenotification.md",
       "hash": "4660bdf4102a449ad0061e12e6e67a12898cae37bb24ad69d89b50585a5ed16d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonenotification/isrecordzonenotification.json": {
@@ -2962,7 +2962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonesresponse.json": {
       "etag": "\"5053-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitrecordzonesresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.recordzonesresponse.md",
       "hash": "219f844239c5b4844af275d5bf7c64b4137a8ce2feacb10fcba05e08ffae4dbf"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.recordzonesresponse/isrecordzonesresponse.json": {
@@ -2982,12 +2982,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.referenceaction.json": {
       "etag": "\"1f50-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitreferenceaction.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.referenceaction.md",
       "hash": "ea3174e43f952ecb31be93ca6961f873186f0fc5737e9cc9447264b461c75f12"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.referenceaction/delete_self.json": {
       "etag": "\"14f3-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.referenceaction/delete-self.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.referenceaction/delete_self.md",
       "hash": "f728423a555c32508593c95dfa8f4a52d1c317c0b122db4f76789dbf341a4885"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.referenceaction/none.json": {
@@ -2997,7 +2997,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.response.json": {
       "etag": "\"5327-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.response.md",
       "hash": "cd711aaaf81184d8ceb09400f58a9c9b994965f74b0de09ee2a726969e3657be"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.response/errors.json": {
@@ -3017,7 +3017,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.share.json": {
       "etag": "\"3221-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshare.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.share.md",
       "hash": "cdbd0a0348ba28bd9270db8703155d7664b1241fe1ca9f43bb6710f1802a063a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.share/participants.json": {
@@ -3037,7 +3037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipant.json": {
       "etag": "\"3768-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshareparticipant.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipant.md",
       "hash": "f888ce7284635fd409d45d7abc90ccca9139d1cd5db88f2ace53920e92b1a398"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipant/acceptancestatus.json": {
@@ -3057,7 +3057,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipantacceptancestatus.json": {
       "etag": "\"233d-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshareparticipantacceptancestatus.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantacceptancestatus.md",
       "hash": "5ae0b5ace3f448542cf758c3d68d1ceddb906e0edcd6753000e4c71ca9abf81d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipantacceptancestatus/accepted.json": {
@@ -3077,7 +3077,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipantpermission.json": {
       "etag": "\"25b4-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshareparticipantpermission.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission.md",
       "hash": "560395dbb63a4a9cabcf5d5c033a207e1dbdd626d795cf5a45de3a1690ecc923"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipantpermission/none.json": {
@@ -3087,12 +3087,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipantpermission/read_only.json": {
       "etag": "\"1320-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission/read-only.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission/read_only.md",
       "hash": "77a1134d964836d100ce15bd7e1d66b9ce8ffbb5a78cd804be5616167d87a58a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipantpermission/read_write.json": {
       "etag": "\"1325-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission/read-write.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipantpermission/read_write.md",
       "hash": "d549d65e23dbec22e6a4f9256409d5b7ff2affde0c1de526fe840846d36ed46a"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipantpermission/unknown.json": {
@@ -3102,7 +3102,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipanttype.json": {
       "etag": "\"261b-65d55ab0a70e4-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitshareparticipanttype.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype.md",
       "hash": "357222f2c8b0685553285e450c963f412bb1684b0f3f2f9df72f063f7c1f52f0"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipanttype/owner.json": {
@@ -3112,12 +3112,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipanttype/private_user.json": {
       "etag": "\"13a5-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype/private-user.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype/private_user.md",
       "hash": "9a8c913e889f21c95847c452d349e283c5ae61b284d8fa9caa4f5e75f7c582e0"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipanttype/public_user.json": {
       "etag": "\"13a7-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype/public-user.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.shareparticipanttype/public_user.md",
       "hash": "b1b733d80aae30ff702993df960628338a5fdfc51c0ab5b5df83e9310aef4eeb"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.shareparticipanttype/unknown.json": {
@@ -3127,7 +3127,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.sharerecordtype.json": {
       "etag": "\"4858-65d55ab056722-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsharerecordtype.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype.md",
       "hash": "c66e573e4a94d6b9c513a8c4ee887d658af6acf5162f76d1736c5f514a0bc60c"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.sharerecordtype/name.json": {
@@ -3137,22 +3137,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.sharerecordtype/thumbnail_image_data_field_name.json": {
       "etag": "\"13a5-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/thumbnail-image-data-field-name.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/thumbnail_image_data_field_name.md",
       "hash": "6eb127e2e6f5a8c14d04bef36bdb3572ca473f4b4c3faa01e3a608a6a281100e"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.sharerecordtype/title_field_name.json": {
       "etag": "\"135a-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/title-field-name.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/title_field_name.md",
       "hash": "f47257ee6dac749d7f9ed3cc2a8c37bc3fee4a5aafa7d6bd6c1646fef125555b"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.sharerecordtype/type_field_name.json": {
       "etag": "\"1355-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/type-field-name.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharerecordtype/type_field_name.md",
       "hash": "fe54792d7e8a0476f00a1f7b17138f7bfe0c1933b439e33747d28f4f29f3e39d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.sharinguiresult.json": {
       "etag": "\"2a61-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsharinguiresult.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.sharinguiresult.md",
       "hash": "38f3c6072fdf174d3ca4ad2322d450080c2bbce08174a696178136388d8e6c32"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.sharinguiresult/share.json": {
@@ -3162,7 +3162,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.subscription.json": {
       "etag": "\"4cdb-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsubscription.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.subscription.md",
       "hash": "88862a2b755d0b1b28e2a58b5dc7d070867c741fd9f1170a51674201e5e801c3"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.subscription/fireson.json": {
@@ -3207,7 +3207,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.subscriptionsresponse.json": {
       "etag": "\"5671-65d55ab0e3eb3-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsubscriptionsresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.subscriptionsresponse.md",
       "hash": "442cbd536f50259fb2fbe90cbe2c9528416f5596ddc9b1d936952129b6ad33d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.subscriptionsresponse/issubscriptionsresponse.json": {
@@ -3227,7 +3227,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.subscriptiontype.json": {
       "etag": "\"2201-65d55ab0c1344-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitsubscriptiontype.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.subscriptiontype.md",
       "hash": "0c922ff4a0b3ada8e7f48902b4872c2b28d21c8b6c9785d0b7e0aea09df153bc"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.subscriptiontype/database.json": {
@@ -3242,12 +3242,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.subscriptiontype/record_zone.json": {
       "etag": "\"1051-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit.subscriptiontype/record-zone.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.subscriptiontype/record_zone.md",
       "hash": "a7d172345229e0134276e669c49cff0dcfe9946b119a38fb1b9c33fb332a79a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.useridentitiesresponse.json": {
       "etag": "\"49ca-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkituseridentitiesresponse.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.useridentitiesresponse.md",
       "hash": "bf193419734e0ae3d4a99db2a5cc60744e9d36199f7bfb56bff8e24357c8dd16"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.useridentitiesresponse/isuseridentitiesresponse.json": {
@@ -3267,7 +3267,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.useridentity.json": {
       "etag": "\"3630-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkituseridentity.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.useridentity.md",
       "hash": "63ad626bbb11b7b75ce4f6098024fc5f6562174470cca6c2933125d7b7bb68af"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.useridentity/lookupinfo.json": {
@@ -3287,7 +3287,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.userlookupinfo.json": {
       "etag": "\"2f7e-65d55ab101c20-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkituserlookupinfo.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.userlookupinfo.md",
       "hash": "7693b9a70933663c8c6b113ac36ef6935df2cea4406ae0f8907e2e9c9482fc83"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.userlookupinfo/emailaddress.json": {
@@ -3307,7 +3307,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.zoneid.json": {
       "etag": "\"32cb-65d55ab056722-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkitzoneid.md",
+      "file_path": "documentation/CloudKitJS/cloudkit.zoneid.md",
       "hash": "a6420cd4e7a3e071aca470095dd5d392cb67571b4327413e19d530037dd589b4"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit.zoneid/zonename.json": {
@@ -3317,7 +3317,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit/build_version.json": {
       "etag": "\"1040-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit/build-version.md",
+      "file_path": "documentation/CloudKitJS/cloudkit/build_version.md",
       "hash": "5dab5ac9f81311655a998f30c5ec214a88cb29a5e798959e61c6340c39dc9b35"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit/ckerror.json": {
@@ -3327,7 +3327,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit/cloudkit_loaded.json": {
       "etag": "\"10c6-65d55ab0711fc-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit/cloudkit-loaded.md",
+      "file_path": "documentation/CloudKitJS/cloudkit/cloudkit_loaded.md",
       "hash": "c3b9652a20127db5e6a690b51e69fab8d3a1771e28f400ca1f814cbe7a58fb5d"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit/configure.json": {
@@ -3342,7 +3342,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit/development_environment.json": {
       "etag": "\"f35-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit/development-environment.md",
+      "file_path": "documentation/CloudKitJS/cloudkit/development_environment.md",
       "hash": "1a103b1831d4b8ab4ed55feb2ae9cbc629fb00fdd1fc82cf1c56ba6dd078daee"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit/getallcontainers.json": {
@@ -3362,7 +3362,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit/production_environment.json": {
       "etag": "\"f47-65d55ab08d63d-df\"",
-      "file_path": "documentation/CloudKitJS/cloudkit/production-environment.md",
+      "file_path": "documentation/CloudKitJS/cloudkit/production_environment.md",
       "hash": "de1dcae524aa5a60f59191bf5ff53ea2d443e608e42031396d60c147e9bd16c7"
     },
     "https://developer.apple.com/tutorials/data/documentation/cloudkitjs/cloudkit/promise.json": {

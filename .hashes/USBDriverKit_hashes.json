@@ -12,12 +12,12 @@
     },
     "https://developer.apple.com/documentation/usbdriverkit/apple_s_vendor_id-enum": {
       "etag": "\"feb-659025f0c7298-df\"",
-      "file_path": "documentation/USBDriverKit/apple-s-vendor-id-enum.md",
+      "file_path": "documentation/USBDriverKit/apple_s_vendor_id-enum.md",
       "hash": "3f06e90eb1b263dbb54fc2975a5453b323eb8ae430dd597e1b80f74404bbde92"
     },
     "https://developer.apple.com/documentation/usbdriverkit/bundling_constants-enum": {
       "etag": "\"1575-659025f24d28e-df\"",
-      "file_path": "documentation/USBDriverKit/bundling-constants-enum.md",
+      "file_path": "documentation/USBDriverKit/bundling_constants-enum.md",
       "hash": "7bd516fd5e9d7b1c602a35aae0387d7602fde9657de21798edbf42f89967ea69"
     },
     "https://developer.apple.com/documentation/usbdriverkit/descriptor-utilities": {
@@ -27,12 +27,12 @@
     },
     "https://developer.apple.com/documentation/usbdriverkit/endpoint_attributes-enum": {
       "etag": "\"72b1-659025f356432-df\"",
-      "file_path": "documentation/USBDriverKit/endpoint-attributes-enum.md",
+      "file_path": "documentation/USBDriverKit/endpoint_attributes-enum.md",
       "hash": "305b4c025907caa50ab067e0e1bf89c50bdd7b61c295241c36b56ec7173bb28d"
     },
     "https://developer.apple.com/documentation/usbdriverkit/get_status_options-enum": {
       "etag": "\"2e85-659025f0c7298-df\"",
-      "file_path": "documentation/USBDriverKit/get-status-options-enum.md",
+      "file_path": "documentation/USBDriverKit/get_status_options-enum.md",
       "hash": "75721a0b2b8b884aad37c9645a96eaca16fc5c66256da8a062fe527f4ff20aa2"
     },
     "https://developer.apple.com/documentation/usbdriverkit/hosttousb16": {
@@ -52,37 +52,37 @@
     },
     "https://developer.apple.com/documentation/usbdriverkit/hub_parameters-enum": {
       "etag": "\"1658-659025f31e774-df\"",
-      "file_path": "documentation/USBDriverKit/hub-parameters-enum.md",
+      "file_path": "documentation/USBDriverKit/hub_parameters-enum.md",
       "hash": "f31c814daf7165fefb5003dc64bd258b89562df886e4bf81022369eed087a0f5"
     },
     "https://developer.apple.com/documentation/usbdriverkit/iokit_usb_codemask": {
       "etag": "\"26a0-65d55d67fc218-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usb-codemask.md",
+      "file_path": "documentation/USBDriverKit/iokit_usb_codemask.md",
       "hash": "e7420c37680df954b55d7b6a17f856d9e1f3c803cd17c3c5c19a0a582be036d4"
     },
     "https://developer.apple.com/documentation/usbdriverkit/iokit_usbhost_err": {
       "etag": "\"26fa-65d55d6794a14-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usbhost-err.md",
+      "file_path": "documentation/USBDriverKit/iokit_usbhost_err.md",
       "hash": "2b5b7c4f20593b924ea76056e30f965058e2e2bfd7f83bf0e7c2cf6ad8049631"
     },
     "https://developer.apple.com/documentation/usbdriverkit/iokit_usbhost_group": {
       "etag": "\"26a6-65d55d67fc218-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usbhost-group.md",
+      "file_path": "documentation/USBDriverKit/iokit_usbhost_group.md",
       "hash": "c974b6bf8a5e556e91ff021aa0bc55f76b89cfafe2e0d77f34efe6c74b565bda"
     },
     "https://developer.apple.com/documentation/usbdriverkit/iokit_usbhost_msg": {
       "etag": "\"26fa-65d55d67c80bf-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usbhost-msg.md",
+      "file_path": "documentation/USBDriverKit/iokit_usbhost_msg.md",
       "hash": "379e16b2915186fbb782d23d78f6d3a92c8ca7d29ad9ed1a40ce30c410d55f64"
     },
     "https://developer.apple.com/documentation/usbdriverkit/iokit_usblegacy_err_msg": {
       "etag": "\"271e-65d55d68ab250-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usblegacy-err-msg.md",
+      "file_path": "documentation/USBDriverKit/iokit_usblegacy_err_msg.md",
       "hash": "fdf7e843a0bc41142d309a057f96d5b6c95360f4dddcf1a2225e008236a54a21"
     },
     "https://developer.apple.com/documentation/usbdriverkit/iokit_usblegacy_group": {
       "etag": "\"26b2-65d55d68390d9-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usblegacy-group.md",
+      "file_path": "documentation/USBDriverKit/iokit_usblegacy_group.md",
       "hash": "655209f96bb925f998a3252bab8073fc287997ee5b30645e06c62f9835795c64"
     },
     "https://developer.apple.com/documentation/usbdriverkit/iousb20hubdescriptor": {
@@ -1087,7 +1087,7 @@
     },
     "https://developer.apple.com/documentation/usbdriverkit/iousbhost_property_deprecated": {
       "etag": "\"9fc-65d55d67c80bf-df\"",
-      "file_path": "documentation/USBDriverKit/iousbhost-property-deprecated.md",
+      "file_path": "documentation/USBDriverKit/iousbhost_property_deprecated.md",
       "hash": "c851a7b2c878cbd152b8b357f7ea72917981c9a619e99a2ac66790bf7b63fa9f"
     },
     "https://developer.apple.com/documentation/usbdriverkit/iousbhostdevice": {
@@ -3477,12 +3477,12 @@
     },
     "https://developer.apple.com/documentation/usbdriverkit/link_power_management_capabiliti-enum": {
       "etag": "\"2fe1-659025f23373e-df\"",
-      "file_path": "documentation/USBDriverKit/link-power-management-capabiliti-enum.md",
+      "file_path": "documentation/USBDriverKit/link_power_management_capabiliti-enum.md",
       "hash": "7cd2db0b487ee80f4243198f09efe4e9fb9d1e427b839aa4ad0137b23003337a"
     },
     "https://developer.apple.com/documentation/usbdriverkit/power_configuration_settings-enum": {
       "etag": "\"138f-659025f2f07a4-df\"",
-      "file_path": "documentation/USBDriverKit/power-configuration-settings-enum.md",
+      "file_path": "documentation/USBDriverKit/power_configuration_settings-enum.md",
       "hash": "f74c1fe7ce06f05ea222773f11a14a9bc6f7e950f98060f362f3b620a1117d10"
     },
     "https://developer.apple.com/documentation/usbdriverkit/registry-property-names": {
@@ -3492,42 +3492,42 @@
     },
     "https://developer.apple.com/documentation/usbdriverkit/standard_device_requests-enum": {
       "etag": "\"3b75-659025f14fd0e-df\"",
-      "file_path": "documentation/USBDriverKit/standard-device-requests-enum.md",
+      "file_path": "documentation/USBDriverKit/standard_device_requests-enum.md",
       "hash": "ef664a3f8d9d72b6b78a1016039dabfe9fb1657b7159b34ee76033f73189e8d1"
     },
     "https://developer.apple.com/documentation/usbdriverkit/standard_feature_selectors-enum": {
       "etag": "\"2d57-659025f2b4975-df\"",
-      "file_path": "documentation/USBDriverKit/standard-feature-selectors-enum.md",
+      "file_path": "documentation/USBDriverKit/standard_feature_selectors-enum.md",
       "hash": "19de8710dd19a35b030df386c8b003386552d1ba063cb181bad043d3577876a2"
     },
     "https://developer.apple.com/documentation/usbdriverkit/superspeed_device_capabilities-enum": {
       "etag": "\"44ff-659025f1e2e7f-df\"",
-      "file_path": "documentation/USBDriverKit/superspeed-device-capabilities-enum.md",
+      "file_path": "documentation/USBDriverKit/superspeed_device_capabilities-enum.md",
       "hash": "98d80835b88104700e6676ce703c190ebf67ebd8b059ac3084da9a3b8f7397dc"
     },
     "https://developer.apple.com/documentation/usbdriverkit/superspeed_hub_characteristics-enum": {
       "etag": "\"298f-659025f23373e-df\"",
-      "file_path": "documentation/USBDriverKit/superspeed-hub-characteristics-enum.md",
+      "file_path": "documentation/USBDriverKit/superspeed_hub_characteristics-enum.md",
       "hash": "e86aef432691bf86fcb039f27979fb89afc79fd3271db7979509f288896d9e57"
     },
     "https://developer.apple.com/documentation/usbdriverkit/superspeed_usb_endpoint_descript-enum": {
       "etag": "\"3cd1-659025f2017dc-df\"",
-      "file_path": "documentation/USBDriverKit/superspeed-usb-endpoint-descript-enum.md",
+      "file_path": "documentation/USBDriverKit/superspeed_usb_endpoint_descript-enum.md",
       "hash": "0bee06f5089918b309957e70857292a66a2c0e79e624b5f1baa200b465246496"
     },
     "https://developer.apple.com/documentation/usbdriverkit/superspeedplus_device_capabiliti-enum": {
       "etag": "\"89e9-659025f21539a-df\"",
-      "file_path": "documentation/USBDriverKit/superspeedplus-device-capabiliti-enum.md",
+      "file_path": "documentation/USBDriverKit/superspeedplus_device_capabiliti-enum.md",
       "hash": "f60725a5cd1cb531ae1b9866a9191472c0040c42090c862e452c5299ccdd1110"
     },
     "https://developer.apple.com/documentation/usbdriverkit/suspend_feature_options-enum": {
       "etag": "\"2203-659025f2f07a4-df\"",
-      "file_path": "documentation/USBDriverKit/suspend-feature-options-enum.md",
+      "file_path": "documentation/USBDriverKit/suspend_feature_options-enum.md",
       "hash": "c37926d127e4c03d38c41399a7e407f8a14a19fc3119ef474f429a55feec6c08"
     },
     "https://developer.apple.com/documentation/usbdriverkit/timing_parameters-enum": {
       "etag": "\"120a-659025f305d20-df\"",
-      "file_path": "documentation/USBDriverKit/timing-parameters-enum.md",
+      "file_path": "documentation/USBDriverKit/timing_parameters-enum.md",
       "hash": "3a1061a8184fab2d15bc937d2ef553962623bbf30a48300a3fa2b6730f7607a6"
     },
     "https://developer.apple.com/documentation/usbdriverkit/tiousb20buscurrent": {
@@ -4742,12 +4742,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/apple_s_vendor_id-enum.json": {
       "etag": "\"feb-659025f0c7298-df\"",
-      "file_path": "documentation/USBDriverKit/apple-s-vendor-id-enum.md",
+      "file_path": "documentation/USBDriverKit/apple_s_vendor_id-enum.md",
       "hash": "3f06e90eb1b263dbb54fc2975a5453b323eb8ae430dd597e1b80f74404bbde92"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/bundling_constants-enum.json": {
       "etag": "\"1575-659025f24d28e-df\"",
-      "file_path": "documentation/USBDriverKit/bundling-constants-enum.md",
+      "file_path": "documentation/USBDriverKit/bundling_constants-enum.md",
       "hash": "7bd516fd5e9d7b1c602a35aae0387d7602fde9657de21798edbf42f89967ea69"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/descriptor-utilities.json": {
@@ -4757,12 +4757,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/endpoint_attributes-enum.json": {
       "etag": "\"72b1-659025f356432-df\"",
-      "file_path": "documentation/USBDriverKit/endpoint-attributes-enum.md",
+      "file_path": "documentation/USBDriverKit/endpoint_attributes-enum.md",
       "hash": "305b4c025907caa50ab067e0e1bf89c50bdd7b61c295241c36b56ec7173bb28d"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/get_status_options-enum.json": {
       "etag": "\"2e85-659025f0c7298-df\"",
-      "file_path": "documentation/USBDriverKit/get-status-options-enum.md",
+      "file_path": "documentation/USBDriverKit/get_status_options-enum.md",
       "hash": "75721a0b2b8b884aad37c9645a96eaca16fc5c66256da8a062fe527f4ff20aa2"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/hosttousb16.json": {
@@ -4782,37 +4782,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/hub_parameters-enum.json": {
       "etag": "\"1658-659025f31e774-df\"",
-      "file_path": "documentation/USBDriverKit/hub-parameters-enum.md",
+      "file_path": "documentation/USBDriverKit/hub_parameters-enum.md",
       "hash": "f31c814daf7165fefb5003dc64bd258b89562df886e4bf81022369eed087a0f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iokit_usb_codemask.json": {
       "etag": "\"26a0-65d55d67fc218-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usb-codemask.md",
+      "file_path": "documentation/USBDriverKit/iokit_usb_codemask.md",
       "hash": "e7420c37680df954b55d7b6a17f856d9e1f3c803cd17c3c5c19a0a582be036d4"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iokit_usbhost_err.json": {
       "etag": "\"26fa-65d55d6794a14-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usbhost-err.md",
+      "file_path": "documentation/USBDriverKit/iokit_usbhost_err.md",
       "hash": "2b5b7c4f20593b924ea76056e30f965058e2e2bfd7f83bf0e7c2cf6ad8049631"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iokit_usbhost_group.json": {
       "etag": "\"26a6-65d55d67fc218-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usbhost-group.md",
+      "file_path": "documentation/USBDriverKit/iokit_usbhost_group.md",
       "hash": "c974b6bf8a5e556e91ff021aa0bc55f76b89cfafe2e0d77f34efe6c74b565bda"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iokit_usbhost_msg.json": {
       "etag": "\"26fa-65d55d67c80bf-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usbhost-msg.md",
+      "file_path": "documentation/USBDriverKit/iokit_usbhost_msg.md",
       "hash": "379e16b2915186fbb782d23d78f6d3a92c8ca7d29ad9ed1a40ce30c410d55f64"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iokit_usblegacy_err_msg.json": {
       "etag": "\"271e-65d55d68ab250-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usblegacy-err-msg.md",
+      "file_path": "documentation/USBDriverKit/iokit_usblegacy_err_msg.md",
       "hash": "fdf7e843a0bc41142d309a057f96d5b6c95360f4dddcf1a2225e008236a54a21"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iokit_usblegacy_group.json": {
       "etag": "\"26b2-65d55d68390d9-df\"",
-      "file_path": "documentation/USBDriverKit/iokit-usblegacy-group.md",
+      "file_path": "documentation/USBDriverKit/iokit_usblegacy_group.md",
       "hash": "655209f96bb925f998a3252bab8073fc287997ee5b30645e06c62f9835795c64"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iousb20hubdescriptor.json": {
@@ -5817,7 +5817,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iousbhost_property_deprecated.json": {
       "etag": "\"9fc-65d55d67c80bf-df\"",
-      "file_path": "documentation/USBDriverKit/iousbhost-property-deprecated.md",
+      "file_path": "documentation/USBDriverKit/iousbhost_property_deprecated.md",
       "hash": "c851a7b2c878cbd152b8b357f7ea72917981c9a619e99a2ac66790bf7b63fa9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/iousbhostdevice.json": {
@@ -8207,12 +8207,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/link_power_management_capabiliti-enum.json": {
       "etag": "\"2fe1-659025f23373e-df\"",
-      "file_path": "documentation/USBDriverKit/link-power-management-capabiliti-enum.md",
+      "file_path": "documentation/USBDriverKit/link_power_management_capabiliti-enum.md",
       "hash": "7cd2db0b487ee80f4243198f09efe4e9fb9d1e427b839aa4ad0137b23003337a"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/power_configuration_settings-enum.json": {
       "etag": "\"138f-659025f2f07a4-df\"",
-      "file_path": "documentation/USBDriverKit/power-configuration-settings-enum.md",
+      "file_path": "documentation/USBDriverKit/power_configuration_settings-enum.md",
       "hash": "f74c1fe7ce06f05ea222773f11a14a9bc6f7e950f98060f362f3b620a1117d10"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/registry-property-names.json": {
@@ -8222,42 +8222,42 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/standard_device_requests-enum.json": {
       "etag": "\"3b75-659025f14fd0e-df\"",
-      "file_path": "documentation/USBDriverKit/standard-device-requests-enum.md",
+      "file_path": "documentation/USBDriverKit/standard_device_requests-enum.md",
       "hash": "ef664a3f8d9d72b6b78a1016039dabfe9fb1657b7159b34ee76033f73189e8d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/standard_feature_selectors-enum.json": {
       "etag": "\"2d57-659025f2b4975-df\"",
-      "file_path": "documentation/USBDriverKit/standard-feature-selectors-enum.md",
+      "file_path": "documentation/USBDriverKit/standard_feature_selectors-enum.md",
       "hash": "19de8710dd19a35b030df386c8b003386552d1ba063cb181bad043d3577876a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/superspeed_device_capabilities-enum.json": {
       "etag": "\"44ff-659025f1e2e7f-df\"",
-      "file_path": "documentation/USBDriverKit/superspeed-device-capabilities-enum.md",
+      "file_path": "documentation/USBDriverKit/superspeed_device_capabilities-enum.md",
       "hash": "98d80835b88104700e6676ce703c190ebf67ebd8b059ac3084da9a3b8f7397dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/superspeed_hub_characteristics-enum.json": {
       "etag": "\"298f-659025f23373e-df\"",
-      "file_path": "documentation/USBDriverKit/superspeed-hub-characteristics-enum.md",
+      "file_path": "documentation/USBDriverKit/superspeed_hub_characteristics-enum.md",
       "hash": "e86aef432691bf86fcb039f27979fb89afc79fd3271db7979509f288896d9e57"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/superspeed_usb_endpoint_descript-enum.json": {
       "etag": "\"3cd1-659025f2017dc-df\"",
-      "file_path": "documentation/USBDriverKit/superspeed-usb-endpoint-descript-enum.md",
+      "file_path": "documentation/USBDriverKit/superspeed_usb_endpoint_descript-enum.md",
       "hash": "0bee06f5089918b309957e70857292a66a2c0e79e624b5f1baa200b465246496"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/superspeedplus_device_capabiliti-enum.json": {
       "etag": "\"89e9-659025f21539a-df\"",
-      "file_path": "documentation/USBDriverKit/superspeedplus-device-capabiliti-enum.md",
+      "file_path": "documentation/USBDriverKit/superspeedplus_device_capabiliti-enum.md",
       "hash": "f60725a5cd1cb531ae1b9866a9191472c0040c42090c862e452c5299ccdd1110"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/suspend_feature_options-enum.json": {
       "etag": "\"2203-659025f2f07a4-df\"",
-      "file_path": "documentation/USBDriverKit/suspend-feature-options-enum.md",
+      "file_path": "documentation/USBDriverKit/suspend_feature_options-enum.md",
       "hash": "c37926d127e4c03d38c41399a7e407f8a14a19fc3119ef474f429a55feec6c08"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/timing_parameters-enum.json": {
       "etag": "\"120a-659025f305d20-df\"",
-      "file_path": "documentation/USBDriverKit/timing-parameters-enum.md",
+      "file_path": "documentation/USBDriverKit/timing_parameters-enum.md",
       "hash": "3a1061a8184fab2d15bc937d2ef553962623bbf30a48300a3fa2b6730f7607a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/usbdriverkit/tiousb20buscurrent.json": {

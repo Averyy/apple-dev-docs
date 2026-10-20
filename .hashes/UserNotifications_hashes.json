@@ -152,7 +152,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unalertstyle/init(rawvalue:)": {
       "etag": "\"15f7-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unalertstyle/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unalertstyle/init(rawvalue).md",
       "hash": "02618acfded9a6c718f8c9aad06c73e4e9b7e4d17f3b360b79ce2f7186c90a57"
     },
     "https://developer.apple.com/documentation/usernotifications/unalertstyle/none": {
@@ -192,7 +192,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unauthorizationoptions/init(rawvalue:)": {
       "etag": "\"18d2-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unauthorizationoptions/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unauthorizationoptions/init(rawvalue).md",
       "hash": "cd189b4c81d600ec1bfaf3ec790e67ed0652da192049c55890b22327dc7ace9a"
     },
     "https://developer.apple.com/documentation/usernotifications/unauthorizationoptions/providesappnotificationsettings": {
@@ -237,7 +237,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unauthorizationstatus/init(rawvalue:)": {
       "etag": "\"1713-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unauthorizationstatus/init(rawvalue).md",
       "hash": "49faada873a2c5581668a7b59e2ba9df94d0e23516676367f299adb60a437ae2"
     },
     "https://developer.apple.com/documentation/usernotifications/unauthorizationstatus/notdetermined": {
@@ -262,17 +262,17 @@
     },
     "https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger/init(datematching:repeats:)": {
       "etag": "\"4016-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init-datematchingrepeats.md",
+      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init(datematching,repeats).md",
       "hash": "d34ff924ffe30ce2184f5406b8940d70a84f324f00ed514fc47a7e72d9aee906"
     },
     "https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger/init(datematchingcomponents:repeats:)": {
       "etag": "\"1fc5-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init-datematchingcomponentsrepeats.md",
+      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init(datematchingcomponents,repeats).md",
       "hash": "a9ac8c7164aace9a1f781b45a244c59858fb7a4e9c33bb3389ca5c183a63b28c"
     },
     "https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger/nexttriggerdate()": {
       "etag": "\"2c05-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/nexttriggerdate.md",
+      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/nexttriggerdate().md",
       "hash": "50e56b016826e3745636c5048c592e30d237bd42119187b919f92300703354fe"
     },
     "https://developer.apple.com/documentation/usernotifications/unerror": {
@@ -367,7 +367,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unerror/code/init(rawvalue:)": {
       "etag": "\"18b5-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unerror/code/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unerror/code/init(rawvalue).md",
       "hash": "b4c662dfe5c365272139911af521f3da9f43347666cd88e45487c1d83629c57c"
     },
     "https://developer.apple.com/documentation/usernotifications/unerror/code/notificationinvalidnocontent": {
@@ -427,7 +427,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger/init(region:repeats:)": {
       "etag": "\"3e18-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unlocationnotificationtrigger/init-regionrepeats.md",
+      "file_path": "documentation/UserNotifications/unlocationnotificationtrigger/init(region,repeats).md",
       "hash": "fd37687ccd84520c4afce3299a2e72b2d452f0086aaf303a7e21611929ee72a7"
     },
     "https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger/region": {
@@ -537,7 +537,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotification/init(coder:)": {
       "etag": "\"17f2-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotification/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotification/init(coder).md",
       "hash": "a03abbefca98b27fc1ed10092ebe965770ec53fc8fd3ff1b78ec6491ab2db305"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotification/request": {
@@ -562,17 +562,17 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationaction/init(coder:)": {
       "etag": "\"183b-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationaction/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationaction/init(coder).md",
       "hash": "5d009e927c483fdf740cf7e9d1ff118881bc68c9cad76abd4f6f8b0aa93bc142"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationaction/init(identifier:title:options:)": {
       "etag": "\"4657-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationaction/init-identifiertitleoptions.md",
+      "file_path": "documentation/UserNotifications/unnotificationaction/init(identifier,title,options).md",
       "hash": "06432ce988018a162ab594bca541acff825101e7e7f1addb5d41698a4d3c4a74"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationaction/init(identifier:title:options:icon:)": {
       "etag": "\"500a-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationaction/init-identifiertitleoptionsicon.md",
+      "file_path": "documentation/UserNotifications/unnotificationaction/init(identifier,title,options,icon).md",
       "hash": "8a80bd35b9547a6cbe19a95439073dde7ade8edbcd628c8ea9a7433271ca5962"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationaction/options": {
@@ -592,17 +592,17 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationactionicon/init(coder:)": {
       "etag": "\"1885-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationactionicon/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationactionicon/init(coder).md",
       "hash": "914733cb035b699f53657098b34331e47fa8cb25b88e16d6882c98f6103243dd"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationactionicon/init(systemimagename:)": {
       "etag": "\"31d6-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationactionicon/init-systemimagename.md",
+      "file_path": "documentation/UserNotifications/unnotificationactionicon/init(systemimagename).md",
       "hash": "76bd33eddadedd963c8a956ea563336f85a19db8ad901df1cae0adbe067c4261"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationactionicon/init(templateimagename:)": {
       "etag": "\"32c1-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationactionicon/init-templateimagename.md",
+      "file_path": "documentation/UserNotifications/unnotificationactionicon/init(templateimagename).md",
       "hash": "f310f0b2083fc66067d9e5266a572b5d8a96edcdbf82322e405af563466346d7"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationactionoptions": {
@@ -627,7 +627,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationactionoptions/init(rawvalue:)": {
       "etag": "\"18c3-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationactionoptions/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationactionoptions/init(rawvalue).md",
       "hash": "07a5f6f0ab84e4c9ce345c01f1bf6a0b9691d5c04f96f5614a73217e58b2ad5b"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationattachment": {
@@ -642,17 +642,17 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationattachment/init(coder:)": {
       "etag": "\"1863-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationattachment/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationattachment/init(coder).md",
       "hash": "e4578072487ef2a864e47ff13f32343e35897ee4b712395f2f9cf6e6298aabba"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:)-7oony": {
       "etag": "\"2315-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationattachment/init-identifierurloptions-7oony.md",
+      "file_path": "documentation/UserNotifications/unnotificationattachment/init(identifier,url,options)-7oony.md",
       "hash": "a6cdaa6ec0af72ee4758b8d2ee09eae0f14e15998b4e752862932c777b983b3b"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:)-83grx": {
       "etag": "\"646d-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationattachment/init-identifierurloptions-83grx.md",
+      "file_path": "documentation/UserNotifications/unnotificationattachment/init(identifier,url,options)-83grx.md",
       "hash": "d93a71a95e73b54c740a6f8584077d20293e4bc3e326f70a5829f19b2d2abfc4"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationattachment/type": {
@@ -692,7 +692,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationattributedmessagecontext/init(sendmessageintent:attributedcontent:)": {
       "etag": "\"2e90-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationattributedmessagecontext/init-sendmessageintentattributedcontent.md",
+      "file_path": "documentation/UserNotifications/unnotificationattributedmessagecontext/init(sendmessageintent,attributedcontent).md",
       "hash": "568af1dc60e308aff0dce9f4d31d75d7d9c6d678693ac1ed56aa646a7c3ca862"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcategory": {
@@ -722,22 +722,22 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcategory/init(coder:)": {
       "etag": "\"186a-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategory/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategory/init(coder).md",
       "hash": "3ca348de1600636f883a8585ad0483d55e003a3a320950d1f19e2ba871497237"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:hiddenpreviewsbodyplaceholder:categorysummaryformat:options:)": {
       "etag": "\"8401-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiershiddenpreviewsbodyplaceholdercategorysummaryformatoptions.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategory/init(identifier,actions,intentidentifiers,hiddenpreviewsbodyplaceholder,categorysummaryformat,options).md",
       "hash": "8c456b447f4a4f3d6b489eb61f8bc1478f92ac1e5184737cbc77ca5d61335cc5"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:hiddenpreviewsbodyplaceholder:options:)": {
       "etag": "\"80bc-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiershiddenpreviewsbodyplaceholderoptions.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategory/init(identifier,actions,intentidentifiers,hiddenpreviewsbodyplaceholder,options).md",
       "hash": "ca8878a9ad76a7e761c9858f84ddcdcc2d25565753e6b1035c24603add67a8b6"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:options:)": {
       "etag": "\"62d7-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiersoptions.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategory/init(identifier,actions,intentidentifiers,options).md",
       "hash": "aec258a07a5b96057d89c7935024ee5fa65da1fed15de6fee74b767b1f3a26e8"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcategory/intentidentifiers": {
@@ -782,7 +782,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcategoryoptions/init(rawvalue:)": {
       "etag": "\"193a-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/init(rawvalue).md",
       "hash": "3f9d9258d0b65c5d064b2c23b6e4a3bf7f27199f50c0fd6ea1231cf9d1b3a7be"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcontent": {
@@ -817,7 +817,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcontent/init(coder:)": {
       "etag": "\"1854-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcontent/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationcontent/init(coder).md",
       "hash": "774eed1fee7691bc7f48e31bf9762121396979fbc1ef0b06bf356c6c25c46967"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcontent/interruptionlevel": {
@@ -872,7 +872,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcontent/updating(from:)": {
       "etag": "\"5593-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcontent/updating-from.md",
+      "file_path": "documentation/UserNotifications/unnotificationcontent/updating(from).md",
       "hash": "a01f8d5b163eedf1cb935c148f61b5e3dbe8b2caebe017b55c7660970a3786cf"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationcontent/userinfo": {
@@ -912,7 +912,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationinterruptionlevel/init(rawvalue:)": {
       "etag": "\"17e0-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/init(rawvalue).md",
       "hash": "f3d66218abf8ac18662a655553c2e63485c60e5b9823142fd7c109e25acd1b8f"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationinterruptionlevel/passive": {
@@ -947,7 +947,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationpresentationoptions/init(rawvalue:)": {
       "etag": "\"19b7-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/init(rawvalue).md",
       "hash": "9f1108793babcb81f574196aa4e6eea1b14aa74bb0e5ba847b2e179c61c3d310"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationpresentationoptions/list": {
@@ -977,12 +977,12 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationrequest/init(coder:)": {
       "etag": "\"18ae-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationrequest/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationrequest/init(coder).md",
       "hash": "a9dd01c0c6ddc94a258e32992c374c58c9c667fae1c292f81938eaf52929d05f"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationrequest/init(identifier:content:trigger:)": {
       "etag": "\"54f6-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationrequest/init-identifiercontenttrigger.md",
+      "file_path": "documentation/UserNotifications/unnotificationrequest/init(identifier,content,trigger).md",
       "hash": "86610ec450f16e78776bc27fba2485c1db07369853397538ec990051ec888a40"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationrequest/trigger": {
@@ -1002,7 +1002,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationresponse/init(coder:)": {
       "etag": "\"1845-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationresponse/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationresponse/init(coder).md",
       "hash": "5561aebdc1e428598cce0d5fd2fc6824a8a62186f1ed457cc2b38724409847cb"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationresponse/notification": {
@@ -1022,12 +1022,12 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension/didreceive(_:withcontenthandler:)": {
       "etag": "\"53d5-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationserviceextension/didreceive-withcontenthandler.md",
+      "file_path": "documentation/UserNotifications/unnotificationserviceextension/didreceive(_,withcontenthandler).md",
       "hash": "454aa0259261d95061f4845403ec6b92d1088d2918b9e94cf0947510e4db7442"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension/serviceextensiontimewillexpire()": {
       "etag": "\"30f0-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationserviceextension/serviceextensiontimewillexpire.md",
+      "file_path": "documentation/UserNotifications/unnotificationserviceextension/serviceextensiontimewillexpire().md",
       "hash": "7592384f18bacdb3121a3e91e742ff5f2ef4d9bafcd1036faaabaf04bde3b983"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsetting": {
@@ -1047,7 +1047,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsetting/init(rawvalue:)": {
       "etag": "\"170e-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsetting/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationsetting/init(rawvalue).md",
       "hash": "c95cde3832ec6b4986a559f9cd5776374b0af15f43abc09a855a1175b8914a56"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsetting/notsupported": {
@@ -1102,7 +1102,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsettings/init(coder:)": {
       "etag": "\"189d-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsettings/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationsettings/init(coder).md",
       "hash": "a36ac1d4d6d2300d989ce791f5589892092186a4778aba5dd9e98dcdcd81708c"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsettings/lockscreensetting": {
@@ -1147,12 +1147,12 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsound/criticalsoundnamed(_:)": {
       "etag": "\"455b-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed(_).md",
       "hash": "2637f6df800e97a6bc36a39ea2d762251be704ac8cc35a71fdc2635df16c01a6"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsound/criticalsoundnamed(_:withaudiovolume:)": {
       "etag": "\"4bf1-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed-withaudiovolume.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed(_,withaudiovolume).md",
       "hash": "9d958106be49af0c3ffc7cfa4d5cd2e5c789353a0cb524fc2da3837b972a7253"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsound/default": {
@@ -1167,7 +1167,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsound/defaultcriticalsound(withaudiovolume:)": {
       "etag": "\"3fa0-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/defaultcriticalsound-withaudiovolume.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/defaultcriticalsound(withaudiovolume).md",
       "hash": "6acf4285ea1ff3a0055da4d2a297313c1a67144b6a13070c4594e50e063b032d"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsound/defaultringtone": {
@@ -1177,17 +1177,17 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsound/init(coder:)": {
       "etag": "\"1809-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/init(coder).md",
       "hash": "72b4338a12653dc1219bd29570ad1abcdbf477b0977de2fc90f5e99bd88b46b7"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsound/init(named:)": {
       "etag": "\"37aa-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/init-named.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/init(named).md",
       "hash": "a15e205f3f1b3949be139dedc27d158eb105a0f06e338bdd32b18b17a500521b"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsound/ringtonesoundnamed(_:)": {
       "etag": "\"25de-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/ringtonesoundnamed.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/ringtonesoundnamed(_).md",
       "hash": "3674ca22bb8e0a79bbf396ba06b22fe285af21ee11ec1b82933a172c90beb7d3"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsoundname": {
@@ -1197,12 +1197,12 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsoundname/init(_:)": {
       "etag": "\"1bef-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsoundname/init.md",
+      "file_path": "documentation/UserNotifications/unnotificationsoundname/init(_).md",
       "hash": "14c76328bd70bb58c301a8d2e2b33481ffb2fc7186b0d38820c04a5be769b970"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationsoundname/init(rawvalue:)": {
       "etag": "\"1c0f-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsoundname/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationsoundname/init(rawvalue).md",
       "hash": "9f371b83c96037062a8123a8e1ff0824a47d797be06510c987ba17d9709a633f"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationtrigger": {
@@ -1212,7 +1212,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationtrigger/init(coder:)": {
       "etag": "\"188a-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationtrigger/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationtrigger/init(coder).md",
       "hash": "17a6ab4b45d794c133ef3a1d778ca099c4a5fb9aed3194213e556f366c5fe686"
     },
     "https://developer.apple.com/documentation/usernotifications/unnotificationtrigger/repeats": {
@@ -1237,7 +1237,7 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unshowpreviewssetting/init(rawvalue:)": {
       "etag": "\"16af-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unshowpreviewssetting/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unshowpreviewssetting/init(rawvalue).md",
       "hash": "3b48a7eb36d7533e493ef906ae9e4ae845fa0e17f7afd7d019afc27f5872db92"
     },
     "https://developer.apple.com/documentation/usernotifications/unshowpreviewssetting/never": {
@@ -1257,12 +1257,12 @@
     },
     "https://developer.apple.com/documentation/usernotifications/untextinputnotificationaction/init(identifier:title:options:icon:textinputbuttontitle:textinputplaceholder:)": {
       "etag": "\"6084-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/untextinputnotificationaction/init-identifiertitleoptionsicontextinputbuttontitletextinputplaceholder.md",
+      "file_path": "documentation/UserNotifications/untextinputnotificationaction/init(identifier,title,options,icon,textinputbuttontitle,textinputplaceholder).md",
       "hash": "cbb4d83274f8919e259959a129068a597adb451ba6eebe57fb073c5771dd3b2a"
     },
     "https://developer.apple.com/documentation/usernotifications/untextinputnotificationaction/init(identifier:title:options:textinputbuttontitle:textinputplaceholder:)": {
       "etag": "\"56f9-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/untextinputnotificationaction/init-identifiertitleoptionstextinputbuttontitletextinputplaceholder.md",
+      "file_path": "documentation/UserNotifications/untextinputnotificationaction/init(identifier,title,options,textinputbuttontitle,textinputplaceholder).md",
       "hash": "c293076e3130275d75b28c658adae8004c688a2a85ba5b3c9dbe9abf6b72d260"
     },
     "https://developer.apple.com/documentation/usernotifications/untextinputnotificationaction/textinputbuttontitle": {
@@ -1292,12 +1292,12 @@
     },
     "https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger/init(timeinterval:repeats:)": {
       "etag": "\"43c0-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/init-timeintervalrepeats.md",
+      "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/init(timeinterval,repeats).md",
       "hash": "b1dc044178a33659df594f089c47a6286fefc98d42a971658649675bce733a53"
     },
     "https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger/nexttriggerdate()": {
       "etag": "\"2c64-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/nexttriggerdate.md",
+      "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/nexttriggerdate().md",
       "hash": "8bcad3bb02c19a07e12db1901e731d9f3ed8d180999600567a5d7cf1dab5956e"
     },
     "https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger/timeinterval": {
@@ -1312,12 +1312,12 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/add(_:withcompletionhandler:)": {
       "etag": "\"65ac-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/add-withcompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/add(_,withcompletionhandler).md",
       "hash": "edbe482c73dba4baa7edb3a232051fe9f4e17cd43f48750fbaf686cc13a4cbe4"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/current()": {
       "etag": "\"3610-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/current.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/current().md",
       "hash": "51496165ce47f17de8250f5c6450e2061e2b8e1f760b04cb40d3a5d4dc9051b8"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/delegate": {
@@ -1327,57 +1327,57 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/getdeliverednotifications(completionhandler:)": {
       "etag": "\"4d20-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/getdeliverednotifications-completionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/getdeliverednotifications(completionhandler).md",
       "hash": "f214839ee575ab3251f23ad2b3790d15c4d3b7e0048dffa32813b0020b47f146"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/getnotificationcategories(completionhandler:)": {
       "etag": "\"4b42-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationcategories-completionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationcategories(completionhandler).md",
       "hash": "43b9c948b223d874f501e1ae36ba10396d5a47cfec48cc25307036316c7b5041"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/getnotificationsettings(completionhandler:)": {
       "etag": "\"529b-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationsettings-completionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationsettings(completionhandler).md",
       "hash": "2cf737727a516d8897b66d8639a61318120a6453f8f3c2aff2f1f7a9e3153081"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/getpendingnotificationrequests(completionhandler:)": {
       "etag": "\"5670-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/getpendingnotificationrequests-completionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/getpendingnotificationrequests(completionhandler).md",
       "hash": "092c66afd59cb349d211191d0a27ccf5a36c05368ffba5a6ff0e26e1470f3e5c"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/removealldeliverednotifications()": {
       "etag": "\"323d-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/removealldeliverednotifications.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/removealldeliverednotifications().md",
       "hash": "6fa3663026962fa21383fb0cbbe43490a7b4e5f5eb4bbc45066593c18002e021"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/removeallpendingnotificationrequests()": {
       "etag": "\"3b0a-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/removeallpendingnotificationrequests.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/removeallpendingnotificationrequests().md",
       "hash": "a851f3808271d7846c318d9aab2144a846a318c056060581d4b8bcedf0ca8252"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/removedeliverednotifications(withidentifiers:)": {
       "etag": "\"4a10-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/removedeliverednotifications-withidentifiers.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/removedeliverednotifications(withidentifiers).md",
       "hash": "76ab518011de345292f3ae6cf06b7f9bbfa9ae5ecf171b1161c45aed8511ff47"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/removependingnotificationrequests(withidentifiers:)": {
       "etag": "\"5390-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/removependingnotificationrequests-withidentifiers.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/removependingnotificationrequests(withidentifiers).md",
       "hash": "457ddfd67cbbff9ba35b0c63f70c2385675a47e24b60546f36082d81e5a20e8f"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/requestauthorization(options:completionhandler:)": {
       "etag": "\"6be8-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/requestauthorization-optionscompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/requestauthorization(options,completionhandler).md",
       "hash": "003825a33e2e31221f38cd1f6845f79e0c88fb44fa5a1bac83cf6d17981cbedd"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/setbadgecount(_:withcompletionhandler:)": {
       "etag": "\"4b80-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/setbadgecount-withcompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/setbadgecount(_,withcompletionhandler).md",
       "hash": "8e9ca790267f1d0a8826be9a68dd0973e93216be15dea0579ad158a431913e02"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/setnotificationcategories(_:)": {
       "etag": "\"3e4d-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/setnotificationcategories.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/setnotificationcategories(_).md",
       "hash": "e2c93f7594afad90c66340cc0561f85a8b2b8b2295c5a62d54bdafb8766b3c62"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/supportscontentextensions": {
@@ -1392,17 +1392,17 @@
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:didreceive:withcompletionhandler:)": {
       "etag": "\"6a47-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-didreceivewithcompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter(_,didreceive,withcompletionhandler).md",
       "hash": "74b0ae9680e8afec06fe6009e267a1840dfcab11792a93d7d4e251ee3c8c95b2"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:opensettingsfor:)": {
       "etag": "\"32dd-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-opensettingsfor.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter(_,opensettingsfor).md",
       "hash": "ca6cf51132504c0abae5bc252b56c442ef2fc0c62195f9a9f8cf5fc3f8d27f7d"
     },
     "https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:willpresent:withcompletionhandler:)": {
       "etag": "\"6d4d-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-willpresentwithcompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter(_,willpresent,withcompletionhandler).md",
       "hash": "0460a431fee81e95e4edac1fbd6ff1f70ff41646577d231e1e0abbbfd1cc45bd"
     },
     "https://developer.apple.com/documentation/usernotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns": {
@@ -1562,7 +1562,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unalertstyle/init(rawvalue:).json": {
       "etag": "\"15f7-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unalertstyle/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unalertstyle/init(rawvalue).md",
       "hash": "02618acfded9a6c718f8c9aad06c73e4e9b7e4d17f3b360b79ce2f7186c90a57"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unalertstyle/none.json": {
@@ -1602,7 +1602,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/init(rawvalue:).json": {
       "etag": "\"18d2-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unauthorizationoptions/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unauthorizationoptions/init(rawvalue).md",
       "hash": "cd189b4c81d600ec1bfaf3ec790e67ed0652da192049c55890b22327dc7ace9a"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/providesappnotificationsettings.json": {
@@ -1647,7 +1647,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus/init(rawvalue:).json": {
       "etag": "\"1713-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unauthorizationstatus/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unauthorizationstatus/init(rawvalue).md",
       "hash": "49faada873a2c5581668a7b59e2ba9df94d0e23516676367f299adb60a437ae2"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus/notdetermined.json": {
@@ -1672,17 +1672,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger/init(datematching:repeats:).json": {
       "etag": "\"4016-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init-datematchingrepeats.md",
+      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init(datematching,repeats).md",
       "hash": "d34ff924ffe30ce2184f5406b8940d70a84f324f00ed514fc47a7e72d9aee906"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger/init(datematchingcomponents:repeats:).json": {
       "etag": "\"1fc5-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init-datematchingcomponentsrepeats.md",
+      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init(datematchingcomponents,repeats).md",
       "hash": "a9ac8c7164aace9a1f781b45a244c59858fb7a4e9c33bb3389ca5c183a63b28c"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger/nexttriggerdate().json": {
       "etag": "\"2c05-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/nexttriggerdate.md",
+      "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/nexttriggerdate().md",
       "hash": "50e56b016826e3745636c5048c592e30d237bd42119187b919f92300703354fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror.json": {
@@ -1777,7 +1777,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/init(rawvalue:).json": {
       "etag": "\"18b5-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unerror/code/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unerror/code/init(rawvalue).md",
       "hash": "b4c662dfe5c365272139911af521f3da9f43347666cd88e45487c1d83629c57c"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/notificationinvalidnocontent.json": {
@@ -1837,7 +1837,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unlocationnotificationtrigger/init(region:repeats:).json": {
       "etag": "\"3e18-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unlocationnotificationtrigger/init-regionrepeats.md",
+      "file_path": "documentation/UserNotifications/unlocationnotificationtrigger/init(region,repeats).md",
       "hash": "fd37687ccd84520c4afce3299a2e72b2d452f0086aaf303a7e21611929ee72a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unlocationnotificationtrigger/region.json": {
@@ -1947,7 +1947,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotification/init(coder:).json": {
       "etag": "\"17f2-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotification/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotification/init(coder).md",
       "hash": "a03abbefca98b27fc1ed10092ebe965770ec53fc8fd3ff1b78ec6491ab2db305"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotification/request.json": {
@@ -1972,17 +1972,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/init(coder:).json": {
       "etag": "\"183b-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationaction/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationaction/init(coder).md",
       "hash": "5d009e927c483fdf740cf7e9d1ff118881bc68c9cad76abd4f6f8b0aa93bc142"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/init(identifier:title:options:).json": {
       "etag": "\"4657-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationaction/init-identifiertitleoptions.md",
+      "file_path": "documentation/UserNotifications/unnotificationaction/init(identifier,title,options).md",
       "hash": "06432ce988018a162ab594bca541acff825101e7e7f1addb5d41698a4d3c4a74"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/init(identifier:title:options:icon:).json": {
       "etag": "\"500a-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationaction/init-identifiertitleoptionsicon.md",
+      "file_path": "documentation/UserNotifications/unnotificationaction/init(identifier,title,options,icon).md",
       "hash": "8a80bd35b9547a6cbe19a95439073dde7ade8edbcd628c8ea9a7433271ca5962"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/options.json": {
@@ -2002,17 +2002,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionicon/init(coder:).json": {
       "etag": "\"1885-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationactionicon/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationactionicon/init(coder).md",
       "hash": "914733cb035b699f53657098b34331e47fa8cb25b88e16d6882c98f6103243dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionicon/init(systemimagename:).json": {
       "etag": "\"31d6-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationactionicon/init-systemimagename.md",
+      "file_path": "documentation/UserNotifications/unnotificationactionicon/init(systemimagename).md",
       "hash": "76bd33eddadedd963c8a956ea563336f85a19db8ad901df1cae0adbe067c4261"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionicon/init(templateimagename:).json": {
       "etag": "\"32c1-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationactionicon/init-templateimagename.md",
+      "file_path": "documentation/UserNotifications/unnotificationactionicon/init(templateimagename).md",
       "hash": "f310f0b2083fc66067d9e5266a572b5d8a96edcdbf82322e405af563466346d7"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionoptions.json": {
@@ -2037,7 +2037,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionoptions/init(rawvalue:).json": {
       "etag": "\"18c3-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationactionoptions/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationactionoptions/init(rawvalue).md",
       "hash": "07a5f6f0ab84e4c9ce345c01f1bf6a0b9691d5c04f96f5614a73217e58b2ad5b"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment.json": {
@@ -2052,17 +2052,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/init(coder:).json": {
       "etag": "\"1863-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationattachment/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationattachment/init(coder).md",
       "hash": "e4578072487ef2a864e47ff13f32343e35897ee4b712395f2f9cf6e6298aabba"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:)-7oony.json": {
       "etag": "\"2315-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationattachment/init-identifierurloptions-7oony.md",
+      "file_path": "documentation/UserNotifications/unnotificationattachment/init(identifier,url,options)-7oony.md",
       "hash": "a6cdaa6ec0af72ee4758b8d2ee09eae0f14e15998b4e752862932c777b983b3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:)-83grx.json": {
       "etag": "\"646d-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationattachment/init-identifierurloptions-83grx.md",
+      "file_path": "documentation/UserNotifications/unnotificationattachment/init(identifier,url,options)-83grx.md",
       "hash": "d93a71a95e73b54c740a6f8584077d20293e4bc3e326f70a5829f19b2d2abfc4"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/type.json": {
@@ -2102,7 +2102,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattributedmessagecontext/init(sendmessageintent:attributedcontent:).json": {
       "etag": "\"2e90-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationattributedmessagecontext/init-sendmessageintentattributedcontent.md",
+      "file_path": "documentation/UserNotifications/unnotificationattributedmessagecontext/init(sendmessageintent,attributedcontent).md",
       "hash": "568af1dc60e308aff0dce9f4d31d75d7d9c6d678693ac1ed56aa646a7c3ca862"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory.json": {
@@ -2132,22 +2132,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/init(coder:).json": {
       "etag": "\"186a-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategory/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategory/init(coder).md",
       "hash": "3ca348de1600636f883a8585ad0483d55e003a3a320950d1f19e2ba871497237"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:hiddenpreviewsbodyplaceholder:categorysummaryformat:options:).json": {
       "etag": "\"8401-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiershiddenpreviewsbodyplaceholdercategorysummaryformatoptions.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategory/init(identifier,actions,intentidentifiers,hiddenpreviewsbodyplaceholder,categorysummaryformat,options).md",
       "hash": "8c456b447f4a4f3d6b489eb61f8bc1478f92ac1e5184737cbc77ca5d61335cc5"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:hiddenpreviewsbodyplaceholder:options:).json": {
       "etag": "\"80bc-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiershiddenpreviewsbodyplaceholderoptions.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategory/init(identifier,actions,intentidentifiers,hiddenpreviewsbodyplaceholder,options).md",
       "hash": "ca8878a9ad76a7e761c9858f84ddcdcc2d25565753e6b1035c24603add67a8b6"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:options:).json": {
       "etag": "\"62d7-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiersoptions.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategory/init(identifier,actions,intentidentifiers,options).md",
       "hash": "aec258a07a5b96057d89c7935024ee5fa65da1fed15de6fee74b767b1f3a26e8"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/intentidentifiers.json": {
@@ -2192,7 +2192,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategoryoptions/init(rawvalue:).json": {
       "etag": "\"193a-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/init(rawvalue).md",
       "hash": "3f9d9258d0b65c5d064b2c23b6e4a3bf7f27199f50c0fd6ea1231cf9d1b3a7be"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent.json": {
@@ -2227,7 +2227,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/init(coder:).json": {
       "etag": "\"1854-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcontent/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationcontent/init(coder).md",
       "hash": "774eed1fee7691bc7f48e31bf9762121396979fbc1ef0b06bf356c6c25c46967"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/interruptionlevel.json": {
@@ -2282,7 +2282,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/updating(from:).json": {
       "etag": "\"5593-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationcontent/updating-from.md",
+      "file_path": "documentation/UserNotifications/unnotificationcontent/updating(from).md",
       "hash": "a01f8d5b163eedf1cb935c148f61b5e3dbe8b2caebe017b55c7660970a3786cf"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/userinfo.json": {
@@ -2322,7 +2322,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationinterruptionlevel/init(rawvalue:).json": {
       "etag": "\"17e0-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/init(rawvalue).md",
       "hash": "f3d66218abf8ac18662a655553c2e63485c60e5b9823142fd7c109e25acd1b8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationinterruptionlevel/passive.json": {
@@ -2357,7 +2357,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions/init(rawvalue:).json": {
       "etag": "\"19b7-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/init(rawvalue).md",
       "hash": "9f1108793babcb81f574196aa4e6eea1b14aa74bb0e5ba847b2e179c61c3d310"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions/list.json": {
@@ -2387,12 +2387,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest/init(coder:).json": {
       "etag": "\"18ae-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationrequest/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationrequest/init(coder).md",
       "hash": "a9dd01c0c6ddc94a258e32992c374c58c9c667fae1c292f81938eaf52929d05f"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest/init(identifier:content:trigger:).json": {
       "etag": "\"54f6-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationrequest/init-identifiercontenttrigger.md",
+      "file_path": "documentation/UserNotifications/unnotificationrequest/init(identifier,content,trigger).md",
       "hash": "86610ec450f16e78776bc27fba2485c1db07369853397538ec990051ec888a40"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest/trigger.json": {
@@ -2412,7 +2412,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationresponse/init(coder:).json": {
       "etag": "\"1845-65d55f7841d2c-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationresponse/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationresponse/init(coder).md",
       "hash": "5561aebdc1e428598cce0d5fd2fc6824a8a62186f1ed457cc2b38724409847cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationresponse/notification.json": {
@@ -2432,12 +2432,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationserviceextension/didreceive(_:withcontenthandler:).json": {
       "etag": "\"53d5-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationserviceextension/didreceive-withcontenthandler.md",
+      "file_path": "documentation/UserNotifications/unnotificationserviceextension/didreceive(_,withcontenthandler).md",
       "hash": "454aa0259261d95061f4845403ec6b92d1088d2918b9e94cf0947510e4db7442"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationserviceextension/serviceextensiontimewillexpire().json": {
       "etag": "\"30f0-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationserviceextension/serviceextensiontimewillexpire.md",
+      "file_path": "documentation/UserNotifications/unnotificationserviceextension/serviceextensiontimewillexpire().md",
       "hash": "7592384f18bacdb3121a3e91e742ff5f2ef4d9bafcd1036faaabaf04bde3b983"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsetting.json": {
@@ -2457,7 +2457,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsetting/init(rawvalue:).json": {
       "etag": "\"170e-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsetting/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationsetting/init(rawvalue).md",
       "hash": "c95cde3832ec6b4986a559f9cd5776374b0af15f43abc09a855a1175b8914a56"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsetting/notsupported.json": {
@@ -2512,7 +2512,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/init(coder:).json": {
       "etag": "\"189d-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsettings/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationsettings/init(coder).md",
       "hash": "a36ac1d4d6d2300d989ce791f5589892092186a4778aba5dd9e98dcdcd81708c"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/lockscreensetting.json": {
@@ -2557,12 +2557,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/criticalsoundnamed(_:).json": {
       "etag": "\"455b-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed(_).md",
       "hash": "2637f6df800e97a6bc36a39ea2d762251be704ac8cc35a71fdc2635df16c01a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/criticalsoundnamed(_:withaudiovolume:).json": {
       "etag": "\"4bf1-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed-withaudiovolume.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed(_,withaudiovolume).md",
       "hash": "9d958106be49af0c3ffc7cfa4d5cd2e5c789353a0cb524fc2da3837b972a7253"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/default.json": {
@@ -2577,7 +2577,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/defaultcriticalsound(withaudiovolume:).json": {
       "etag": "\"3fa0-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/defaultcriticalsound-withaudiovolume.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/defaultcriticalsound(withaudiovolume).md",
       "hash": "6acf4285ea1ff3a0055da4d2a297313c1a67144b6a13070c4594e50e063b032d"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/defaultringtone.json": {
@@ -2587,17 +2587,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/init(coder:).json": {
       "etag": "\"1809-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/init(coder).md",
       "hash": "72b4338a12653dc1219bd29570ad1abcdbf477b0977de2fc90f5e99bd88b46b7"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/init(named:).json": {
       "etag": "\"37aa-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/init-named.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/init(named).md",
       "hash": "a15e205f3f1b3949be139dedc27d158eb105a0f06e338bdd32b18b17a500521b"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/ringtonesoundnamed(_:).json": {
       "etag": "\"25de-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsound/ringtonesoundnamed.md",
+      "file_path": "documentation/UserNotifications/unnotificationsound/ringtonesoundnamed(_).md",
       "hash": "3674ca22bb8e0a79bbf396ba06b22fe285af21ee11ec1b82933a172c90beb7d3"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsoundname.json": {
@@ -2607,12 +2607,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsoundname/init(_:).json": {
       "etag": "\"1bef-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsoundname/init.md",
+      "file_path": "documentation/UserNotifications/unnotificationsoundname/init(_).md",
       "hash": "14c76328bd70bb58c301a8d2e2b33481ffb2fc7186b0d38820c04a5be769b970"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsoundname/init(rawvalue:).json": {
       "etag": "\"1c0f-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationsoundname/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unnotificationsoundname/init(rawvalue).md",
       "hash": "9f371b83c96037062a8123a8e1ff0824a47d797be06510c987ba17d9709a633f"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationtrigger.json": {
@@ -2622,7 +2622,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationtrigger/init(coder:).json": {
       "etag": "\"188a-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unnotificationtrigger/init-coder.md",
+      "file_path": "documentation/UserNotifications/unnotificationtrigger/init(coder).md",
       "hash": "17a6ab4b45d794c133ef3a1d778ca099c4a5fb9aed3194213e556f366c5fe686"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationtrigger/repeats.json": {
@@ -2647,7 +2647,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unshowpreviewssetting/init(rawvalue:).json": {
       "etag": "\"16af-65d55f7825628-df\"",
-      "file_path": "documentation/UserNotifications/unshowpreviewssetting/init-rawvalue.md",
+      "file_path": "documentation/UserNotifications/unshowpreviewssetting/init(rawvalue).md",
       "hash": "3b48a7eb36d7533e493ef906ae9e4ae845fa0e17f7afd7d019afc27f5872db92"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unshowpreviewssetting/never.json": {
@@ -2667,12 +2667,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationaction/init(identifier:title:options:icon:textinputbuttontitle:textinputplaceholder:).json": {
       "etag": "\"6084-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/untextinputnotificationaction/init-identifiertitleoptionsicontextinputbuttontitletextinputplaceholder.md",
+      "file_path": "documentation/UserNotifications/untextinputnotificationaction/init(identifier,title,options,icon,textinputbuttontitle,textinputplaceholder).md",
       "hash": "cbb4d83274f8919e259959a129068a597adb451ba6eebe57fb073c5771dd3b2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationaction/init(identifier:title:options:textinputbuttontitle:textinputplaceholder:).json": {
       "etag": "\"56f9-65d55f77d76e6-df\"",
-      "file_path": "documentation/UserNotifications/untextinputnotificationaction/init-identifiertitleoptionstextinputbuttontitletextinputplaceholder.md",
+      "file_path": "documentation/UserNotifications/untextinputnotificationaction/init(identifier,title,options,textinputbuttontitle,textinputplaceholder).md",
       "hash": "c293076e3130275d75b28c658adae8004c688a2a85ba5b3c9dbe9abf6b72d260"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationaction/textinputbuttontitle.json": {
@@ -2702,12 +2702,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untimeintervalnotificationtrigger/init(timeinterval:repeats:).json": {
       "etag": "\"43c0-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/init-timeintervalrepeats.md",
+      "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/init(timeinterval,repeats).md",
       "hash": "b1dc044178a33659df594f089c47a6286fefc98d42a971658649675bce733a53"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untimeintervalnotificationtrigger/nexttriggerdate().json": {
       "etag": "\"2c64-65d55f77ee2dd-df\"",
-      "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/nexttriggerdate.md",
+      "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/nexttriggerdate().md",
       "hash": "8bcad3bb02c19a07e12db1901e731d9f3ed8d180999600567a5d7cf1dab5956e"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untimeintervalnotificationtrigger/timeinterval.json": {
@@ -2722,12 +2722,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/add(_:withcompletionhandler:).json": {
       "etag": "\"65ac-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/add-withcompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/add(_,withcompletionhandler).md",
       "hash": "edbe482c73dba4baa7edb3a232051fe9f4e17cd43f48750fbaf686cc13a4cbe4"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/current().json": {
       "etag": "\"3610-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/current.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/current().md",
       "hash": "51496165ce47f17de8250f5c6450e2061e2b8e1f760b04cb40d3a5d4dc9051b8"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/delegate.json": {
@@ -2737,57 +2737,57 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/getdeliverednotifications(completionhandler:).json": {
       "etag": "\"4d20-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/getdeliverednotifications-completionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/getdeliverednotifications(completionhandler).md",
       "hash": "f214839ee575ab3251f23ad2b3790d15c4d3b7e0048dffa32813b0020b47f146"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/getnotificationcategories(completionhandler:).json": {
       "etag": "\"4b42-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationcategories-completionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationcategories(completionhandler).md",
       "hash": "43b9c948b223d874f501e1ae36ba10396d5a47cfec48cc25307036316c7b5041"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/getnotificationsettings(completionhandler:).json": {
       "etag": "\"529b-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationsettings-completionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationsettings(completionhandler).md",
       "hash": "2cf737727a516d8897b66d8639a61318120a6453f8f3c2aff2f1f7a9e3153081"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/getpendingnotificationrequests(completionhandler:).json": {
       "etag": "\"5670-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/getpendingnotificationrequests-completionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/getpendingnotificationrequests(completionhandler).md",
       "hash": "092c66afd59cb349d211191d0a27ccf5a36c05368ffba5a6ff0e26e1470f3e5c"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/removealldeliverednotifications().json": {
       "etag": "\"323d-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/removealldeliverednotifications.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/removealldeliverednotifications().md",
       "hash": "6fa3663026962fa21383fb0cbbe43490a7b4e5f5eb4bbc45066593c18002e021"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/removeallpendingnotificationrequests().json": {
       "etag": "\"3b0a-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/removeallpendingnotificationrequests.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/removeallpendingnotificationrequests().md",
       "hash": "a851f3808271d7846c318d9aab2144a846a318c056060581d4b8bcedf0ca8252"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/removedeliverednotifications(withidentifiers:).json": {
       "etag": "\"4a10-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/removedeliverednotifications-withidentifiers.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/removedeliverednotifications(withidentifiers).md",
       "hash": "76ab518011de345292f3ae6cf06b7f9bbfa9ae5ecf171b1161c45aed8511ff47"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/removependingnotificationrequests(withidentifiers:).json": {
       "etag": "\"5390-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/removependingnotificationrequests-withidentifiers.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/removependingnotificationrequests(withidentifiers).md",
       "hash": "457ddfd67cbbff9ba35b0c63f70c2385675a47e24b60546f36082d81e5a20e8f"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/requestauthorization(options:completionhandler:).json": {
       "etag": "\"6be8-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/requestauthorization-optionscompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/requestauthorization(options,completionhandler).md",
       "hash": "003825a33e2e31221f38cd1f6845f79e0c88fb44fa5a1bac83cf6d17981cbedd"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/setbadgecount(_:withcompletionhandler:).json": {
       "etag": "\"4b80-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/setbadgecount-withcompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/setbadgecount(_,withcompletionhandler).md",
       "hash": "8e9ca790267f1d0a8826be9a68dd0973e93216be15dea0579ad158a431913e02"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/setnotificationcategories(_:).json": {
       "etag": "\"3e4d-65d55f785d1bb-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenter/setnotificationcategories.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenter/setnotificationcategories(_).md",
       "hash": "e2c93f7594afad90c66340cc0561f85a8b2b8b2295c5a62d54bdafb8766b3c62"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/supportscontentextensions.json": {
@@ -2802,17 +2802,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:didreceive:withcompletionhandler:).json": {
       "etag": "\"6a47-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-didreceivewithcompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter(_,didreceive,withcompletionhandler).md",
       "hash": "74b0ae9680e8afec06fe6009e267a1840dfcab11792a93d7d4e251ee3c8c95b2"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:opensettingsfor:).json": {
       "etag": "\"32dd-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-opensettingsfor.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter(_,opensettingsfor).md",
       "hash": "ca6cf51132504c0abae5bc252b56c442ef2fc0c62195f9a9f8cf5fc3f8d27f7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:willpresent:withcompletionhandler:).json": {
       "etag": "\"6d4d-65d55f7809914-df\"",
-      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-willpresentwithcompletionhandler.md",
+      "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter(_,willpresent,withcompletionhandler).md",
       "hash": "0460a431fee81e95e4edac1fbd6ff1f70ff41646577d231e1e0abbbfd1cc45bd"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns.json": {

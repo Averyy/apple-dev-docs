@@ -22,22 +22,22 @@
     },
     "https://developer.apple.com/documentation/callkit/cxaction/fail()": {
       "etag": "\"30d9-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxaction/fail.md",
+      "file_path": "documentation/CallKit/cxaction/fail().md",
       "hash": "478fea6ab15b44d61f268daaa446dedfe517ce435029cf8f1f6ed51b8f212d36"
     },
     "https://developer.apple.com/documentation/callkit/cxaction/fulfill()": {
       "etag": "\"316e-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxaction/fulfill.md",
+      "file_path": "documentation/CallKit/cxaction/fulfill().md",
       "hash": "a1123b4ca59ca8f5935b73dbb7c9378e6b51c8c3c94877fcade89f7addea2ecb"
     },
     "https://developer.apple.com/documentation/callkit/cxaction/init()": {
       "etag": "\"1fd5-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxaction/init.md",
+      "file_path": "documentation/CallKit/cxaction/init().md",
       "hash": "43d063d3c192082b9c86e94783f8a47623f20ebb026964cafa4b081fabcdecb8"
     },
     "https://developer.apple.com/documentation/callkit/cxaction/init(coder:)": {
       "etag": "\"2405-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxaction/init(coder).md",
       "hash": "66a931adce64e7837388c5376a4fe0e56c71cb2f8cc62e3a1d5d1b87bfe5f1fb"
     },
     "https://developer.apple.com/documentation/callkit/cxaction/iscomplete": {
@@ -62,7 +62,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxanswercallaction/fulfill(withdateconnected:)": {
       "etag": "\"2705-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxanswercallaction/fulfill-withdateconnected.md",
+      "file_path": "documentation/CallKit/cxanswercallaction/fulfill(withdateconnected).md",
       "hash": "131d94cf7082b066c4fa0d07d3ed3c08319772e04700643f2e922f5f6834a1ee"
     },
     "https://developer.apple.com/documentation/callkit/cxcall": {
@@ -107,17 +107,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcallaction/init(call:)": {
       "etag": "\"2b3f-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallaction/init-call.md",
+      "file_path": "documentation/CallKit/cxcallaction/init(call).md",
       "hash": "5a7b8bf3416f85311e50814865a32013faff78eaea8f6ccc7e78cfd1a73016ea"
     },
     "https://developer.apple.com/documentation/callkit/cxcallaction/init(calluuid:)": {
       "etag": "\"1372-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallaction/init-calluuid.md",
+      "file_path": "documentation/CallKit/cxcallaction/init(calluuid).md",
       "hash": "ee6935aa4efc67653a136bc3fdc84434bb40e15e88e13e7aa472ad84e02e30a1"
     },
     "https://developer.apple.com/documentation/callkit/cxcallaction/init(coder:)": {
       "etag": "\"25b4-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxcallaction/init(coder).md",
       "hash": "97d29ee8f65468d4c7b8bdb2b686d74f565d146ca4c63ab1acf64a34f0ad03af"
     },
     "https://developer.apple.com/documentation/callkit/cxcallcontroller": {
@@ -132,27 +132,27 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcallcontroller/init()": {
       "etag": "\"20e3-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/init.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/init().md",
       "hash": "909cc85d973a99c2d4fd1e9233c029f1c2e8d8cb421a6969c0d36d5e6fdd2e87"
     },
     "https://developer.apple.com/documentation/callkit/cxcallcontroller/init(queue:)": {
       "etag": "\"28fe-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/init-queue.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/init(queue).md",
       "hash": "29f597a4b7a5815e24310493726a1e161807f3816d6ad35cbd63032d81aafb25"
     },
     "https://developer.apple.com/documentation/callkit/cxcallcontroller/request(_:completion:)": {
       "etag": "\"4b8b-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/request-completion.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/request(_,completion).md",
       "hash": "1beb194e622e614295cc5abe65db0268803db61571c5aba00429662562f7c9ca"
     },
     "https://developer.apple.com/documentation/callkit/cxcallcontroller/requesttransaction(with:completion:)-4o1m4": {
       "etag": "\"4ce6-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/requesttransaction-withcompletion-4o1m4.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/requesttransaction(with,completion)-4o1m4.md",
       "hash": "a8c513c66c86328d05852285e2cd761d3631acb42a948e56a8b421b31ff7bd68"
     },
     "https://developer.apple.com/documentation/callkit/cxcallcontroller/requesttransaction(with:completion:)-ffme": {
       "etag": "\"4d4a-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/requesttransaction-withcompletion-ffme.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/requesttransaction(with,completion)-ffme.md",
       "hash": "65894350fa9ab906bc4312d787994a2f22ec397d37571ae0035ccf6c81d967ee"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext": {
@@ -162,17 +162,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext/addblockingentry(withnextsequentialphonenumber:)": {
       "etag": "\"411b-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/addblockingentry-withnextsequentialphonenumber.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/addblockingentry(withnextsequentialphonenumber).md",
       "hash": "13646c21f00b920550375fe0eaade86613878d2c33466147346725d0ad389b71"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext/addidentificationentry(withnextsequentialphonenumber:label:)": {
       "etag": "\"4710-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/addidentificationentry-withnextsequentialphonenumberlabel.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/addidentificationentry(withnextsequentialphonenumber,label).md",
       "hash": "ca024cbcce27b43cee2200318161b699d0f3d05d3d8a07e035a648c721739b95"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext/completerequest(completionhandler:)": {
       "etag": "\"4b44-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/completerequest-completionhandler.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/completerequest(completionhandler).md",
       "hash": "e78c61251ff1e3ea67596cd313b466bf5bba34d0b22d074d3da25f618570431c"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext/delegate": {
@@ -187,22 +187,22 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext/removeallblockingentries()": {
       "etag": "\"3bf4-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeallblockingentries.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeallblockingentries().md",
       "hash": "d33e115120ce1428673a191fadbbaed2fc445f1ca50678e4060dc110cf08078e"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext/removeallidentificationentries()": {
       "etag": "\"3c36-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeallidentificationentries.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeallidentificationentries().md",
       "hash": "779bfdf758a5caafd92f846ed0ee1e40eb76c926c13431532ad2392b3d49b638"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext/removeblockingentry(withphonenumber:)": {
       "etag": "\"4732-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeblockingentry-withphonenumber.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeblockingentry(withphonenumber).md",
       "hash": "55cf90dace472ba5ba61ce64ca96bd527cb76f7ec67daf6d33b62682296840ec"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontext/removeidentificationentry(withphonenumber:)": {
       "etag": "\"4781-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeidentificationentry-withphonenumber.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeidentificationentry(withphonenumber).md",
       "hash": "48bb1a1a6e138c672cecc9770b79561df64796700ca950b76ff890a3ee196984"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontextdelegate": {
@@ -212,7 +212,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryextensioncontextdelegate/requestfailed(for:witherror:)": {
       "etag": "\"2e9c-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontextdelegate/requestfailed-forwitherror.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontextdelegate/requestfailed(for,witherror).md",
       "hash": "d3754c7879582e1bef914e4bfc0d27226eb6ef032857bb9eb0e4ceed6d815b9f"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectorymanager": {
@@ -237,7 +237,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectorymanager/enabledstatus/init(rawvalue:)": {
       "etag": "\"22a4-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectorymanager/enabledstatus/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxcalldirectorymanager/enabledstatus/init(rawvalue).md",
       "hash": "e0227023407abae6e864f23f659948c13b60d5c8c6836e5f7830e7c8d4fee169"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectorymanager/enabledstatus/unknown": {
@@ -247,17 +247,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectorymanager/getenabledstatusforextension(withidentifier:completionhandler:)": {
       "etag": "\"55c0-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectorymanager/getenabledstatusforextension-withidentifiercompletionhandler.md",
+      "file_path": "documentation/CallKit/cxcalldirectorymanager/getenabledstatusforextension(withidentifier,completionhandler).md",
       "hash": "63ffb32cfac4a0afbbd054365276573c3696c620ddfc8dc9e2b7933774b7ee9b"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectorymanager/opensettings(completionhandler:)": {
       "etag": "\"3238-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectorymanager/opensettings-completionhandler.md",
+      "file_path": "documentation/CallKit/cxcalldirectorymanager/opensettings(completionhandler).md",
       "hash": "6dfc783b5fe8ce146fdb20ecb54f670c610a4cee034960bb981b662b67b1edb7"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectorymanager/reloadextension(withidentifier:completionhandler:)": {
       "etag": "\"4ba2-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectorymanager/reloadextension-withidentifiercompletionhandler.md",
+      "file_path": "documentation/CallKit/cxcalldirectorymanager/reloadextension(withidentifier,completionhandler).md",
       "hash": "ed384d2a0bbe7a9eee8474b9aa2f98a3d79702cfda5336d4b09c27f69db88d3e"
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectorymanager/sharedinstance": {
@@ -282,7 +282,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcalldirectoryprovider/beginrequest(with:)": {
       "etag": "\"2a6d-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryprovider/beginrequest-with.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryprovider/beginrequest(with).md",
       "hash": "027af52d000d104c0fef98e55e13968a3995cd3e37af05f4bece89216e3ba346"
     },
     "https://developer.apple.com/documentation/callkit/cxcallendedreason": {
@@ -307,7 +307,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcallendedreason/init(rawvalue:)": {
       "etag": "\"12e6-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxcallendedreason/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxcallendedreason/init(rawvalue).md",
       "hash": "d4a8ca66c5f947f856635ad5219eb6477d81205dfef44b6d4a27f8dfa9170675"
     },
     "https://developer.apple.com/documentation/callkit/cxcallendedreason/remoteended": {
@@ -332,7 +332,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcallobserver/setdelegate(_:queue:)": {
       "etag": "\"2f12-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallobserver/setdelegate-queue.md",
+      "file_path": "documentation/CallKit/cxcallobserver/setdelegate(_,queue).md",
       "hash": "6168fe8ce81d0da11b4ebcc7b0efd1eae2b216c683f65578ea28b1f46c111499"
     },
     "https://developer.apple.com/documentation/callkit/cxcallobserverdelegate": {
@@ -342,7 +342,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxcallobserverdelegate/callobserver(_:callchanged:)": {
       "etag": "\"2be1-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallobserverdelegate/callobserver-callchanged.md",
+      "file_path": "documentation/CallKit/cxcallobserverdelegate/callobserver(_,callchanged).md",
       "hash": "0bef2f317afa2c12036f78cf36a5cd17a1026b756f0f5258bc27f0e7f9ce46de"
     },
     "https://developer.apple.com/documentation/callkit/cxcallupdate": {
@@ -392,7 +392,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxendcallaction/fulfill(withdateended:)": {
       "etag": "\"2647-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxendcallaction/fulfill-withdateended.md",
+      "file_path": "documentation/CallKit/cxendcallaction/fulfill(withdateended).md",
       "hash": "7f0bf59d75f964e00e067928bcb219e6a2133e99f3f4d78d535fb6fa41b8b37c"
     },
     "https://developer.apple.com/documentation/callkit/cxerror": {
@@ -407,7 +407,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerror/code/init(rawvalue:)": {
       "etag": "\"14a6-65d56086cd6c8-df\"",
-      "file_path": "documentation/CallKit/cxerror/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerror/code/init(rawvalue).md",
       "hash": "7e2170589693e54e67a007e72001430c6358e8f901325e9298438406ead96e7a"
     },
     "https://developer.apple.com/documentation/callkit/cxerror/code/invalidargument": {
@@ -457,7 +457,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodecalldirectorymanagererror-swift.struct": {
       "etag": "\"6301-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodecalldirectorymanagererror-swiftstruct.md",
+      "file_path": "documentation/CallKit/cxerrorcodecalldirectorymanagererror-swift.struct.md",
       "hash": "ba6c8b8a00cc265502dab109da3a134c7422ae4bd89205af8d2f2c9831d3321a"
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodecalldirectorymanagererror-swift.struct/code": {
@@ -487,7 +487,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodecalldirectorymanagererror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"1838-65d56086cd6c8-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodecalldirectorymanagererror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerrorcodecalldirectorymanagererror-swift.struct/code/init(rawvalue).md",
       "hash": "f3ae3eaf072f987149bd6ee91a3f99beec25bc1681c7a59892591730ca93f83a"
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodecalldirectorymanagererror-swift.struct/code/loadinginterrupted": {
@@ -567,7 +567,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodeincomingcallerror-swift.struct": {
       "etag": "\"5e12-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodeincomingcallerror-swiftstruct.md",
+      "file_path": "documentation/CallKit/cxerrorcodeincomingcallerror-swift.struct.md",
       "hash": "a52d0ed7fde2c6e38b3e9fe0918cd55c26ffc4774741b46e560d0f6f62c28091"
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodeincomingcallerror-swift.struct/callisprotected": {
@@ -617,7 +617,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodeincomingcallerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"177c-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodeincomingcallerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerrorcodeincomingcallerror-swift.struct/code/init(rawvalue).md",
       "hash": "941567d4dfbd2222913b7a5e3a44a000c0799e4297efb7cbca51c84851f9df79"
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodeincomingcallerror-swift.struct/code/unentitled": {
@@ -667,7 +667,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodenotificationserviceextensionerror-swift.struct": {
       "etag": "\"5aad-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodenotificationserviceextensionerror-swiftstruct.md",
+      "file_path": "documentation/CallKit/cxerrorcodenotificationserviceextensionerror-swift.struct.md",
       "hash": "061e0d8e8277bd3f50de353c10b4b25f19908c6f7b69fea4efd12750e944abde"
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodenotificationserviceextensionerror-swift.struct/code": {
@@ -677,7 +677,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodenotificationserviceextensionerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"191c-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodenotificationserviceextensionerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerrorcodenotificationserviceextensionerror-swift.struct/code/init(rawvalue).md",
       "hash": "bfcc91eb8f46fb9698d5af196a510f1d4e50738d0ead331a6851bc64b8a92268"
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcodenotificationserviceextensionerror-swift.struct/code/invalidclientprocess": {
@@ -717,7 +717,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcoderequesttransactionerror-swift.struct": {
       "etag": "\"525d-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxerrorcoderequesttransactionerror-swiftstruct.md",
+      "file_path": "documentation/CallKit/cxerrorcoderequesttransactionerror-swift.struct.md",
       "hash": "5405e5a19af4f9f06d8ea370023593fc6f4a47f4413cc9d6fddf817931395b23"
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcoderequesttransactionerror-swift.struct/callisprotected": {
@@ -752,7 +752,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcoderequesttransactionerror-swift.struct/code/init(rawvalue:)": {
       "etag": "\"17b8-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxerrorcoderequesttransactionerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerrorcoderequesttransactionerror-swift.struct/code/init(rawvalue).md",
       "hash": "323ac76587884df9f4a533f5ba80fcdd4a6442575252bdd47820cf1a13820a8c"
     },
     "https://developer.apple.com/documentation/callkit/cxerrorcoderequesttransactionerror-swift.struct/code/invalidaction": {
@@ -872,7 +872,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxhandle/handletype/init(rawvalue:)": {
       "etag": "\"16fd-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxhandle/handletype/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxhandle/handletype/init(rawvalue).md",
       "hash": "e9b6a722005076387c6bb2107ca2a5f2759dde001ac942d233c0fc1549bb57d8"
     },
     "https://developer.apple.com/documentation/callkit/cxhandle/handletype/phonenumber": {
@@ -882,12 +882,12 @@
     },
     "https://developer.apple.com/documentation/callkit/cxhandle/init(coder:)": {
       "etag": "\"13c9-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxhandle/init-coder.md",
+      "file_path": "documentation/CallKit/cxhandle/init(coder).md",
       "hash": "c336bfaaf1e6899ad78af0528d63a6de812323871b235bde2c30d0ebce8e0977"
     },
     "https://developer.apple.com/documentation/callkit/cxhandle/init(type:value:)": {
       "etag": "\"2b35-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxhandle/init-typevalue.md",
+      "file_path": "documentation/CallKit/cxhandle/init(type,value).md",
       "hash": "4bc84523b7fbd0960d30279066fc4d8a1c2dbb958e340e3611f3f8b82c9042f7"
     },
     "https://developer.apple.com/documentation/callkit/cxhandle/type": {
@@ -917,7 +917,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxplaydtmfcallaction/actiontype/init(rawvalue:)": {
       "etag": "\"187d-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxplaydtmfcallaction/actiontype/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxplaydtmfcallaction/actiontype/init(rawvalue).md",
       "hash": "2b9ad25c9956b3bfc0e2086d9f7b9ee438a8ca1cb8f41eacd134d51690607e1c"
     },
     "https://developer.apple.com/documentation/callkit/cxplaydtmfcallaction/actiontype/singletone": {
@@ -937,17 +937,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxplaydtmfcallaction/init(call:digits:type:)": {
       "etag": "\"4111-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init-calldigitstype.md",
+      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init(call,digits,type).md",
       "hash": "4a57a8c9468a19705762e169f313368502507443aebbb035ea84d9bad4ac2c72"
     },
     "https://developer.apple.com/documentation/callkit/cxplaydtmfcallaction/init(calluuid:digits:type:)": {
       "etag": "\"21c3-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init-calluuiddigitstype.md",
+      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init(calluuid,digits,type).md",
       "hash": "a465a037ae6c362c27c656b18004872450dc9331a3c7d91771e3ec06fc035abe"
     },
     "https://developer.apple.com/documentation/callkit/cxplaydtmfcallaction/init(coder:)": {
       "etag": "\"296a-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init(coder).md",
       "hash": "8983c943ecced746fec4ba5003b231d4ef32f51795789c0ea197b1f1169a50b1"
     },
     "https://developer.apple.com/documentation/callkit/cxplaydtmfcallaction/type": {
@@ -967,17 +967,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/init(configuration:)": {
       "etag": "\"241c-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/init-configuration.md",
+      "file_path": "documentation/CallKit/cxprovider/init(configuration).md",
       "hash": "59f16a69fb2e510b5643cdc2b62cb3523ed2f97dea0c48647b17963cf277a447"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/invalidate()": {
       "etag": "\"1925-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/invalidate.md",
+      "file_path": "documentation/CallKit/cxprovider/invalidate().md",
       "hash": "eb70b02b032e03ae5ecfd54c112128f13c32d87a5eb0c2a9268201e0b621f0db"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/pendingcallactions(of:withcall:)": {
       "etag": "\"37e2-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/pendingcallactions-ofwithcall.md",
+      "file_path": "documentation/CallKit/cxprovider/pendingcallactions(of,withcall).md",
       "hash": "feca7d4dd6ca232a04884b3d007aca6051ff8aba8feb992dcb68508aa91347a6"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/pendingtransactions": {
@@ -987,37 +987,37 @@
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/reportcall(with:endedat:reason:)": {
       "etag": "\"5e72-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportcall-withendedatreason.md",
+      "file_path": "documentation/CallKit/cxprovider/reportcall(with,endedat,reason).md",
       "hash": "9bc0442d8a8112e030ccb3be48fec7d4be5870052af9eca57f330feb2d58c7a2"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/reportcall(with:updated:)": {
       "etag": "\"551a-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportcall-withupdated.md",
+      "file_path": "documentation/CallKit/cxprovider/reportcall(with,updated).md",
       "hash": "aa736c59207a861481dc97d9963da59f6bd13e25aa81d1b1a5c76ae72ef3edc6"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/reportnewincomingcall(with:update:completion:)": {
       "etag": "\"79fb-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportnewincomingcall-withupdatecompletion.md",
+      "file_path": "documentation/CallKit/cxprovider/reportnewincomingcall(with,update,completion).md",
       "hash": "562a1c82fda087308d258877d80ad29b638ad1bd41f4f69e9853f5cfcb81ce00"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/reportnewincomingvoippushpayload(_:completion:)": {
       "etag": "\"8461-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportnewincomingvoippushpayload-completion.md",
+      "file_path": "documentation/CallKit/cxprovider/reportnewincomingvoippushpayload(_,completion).md",
       "hash": "5aa4fd46fac0b013b734eb9b47182a3ab847d53fd73f2b6fc8edd1201bebf5cb"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/reportoutgoingcall(with:connectedat:)": {
       "etag": "\"5747-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportoutgoingcall-withconnectedat.md",
+      "file_path": "documentation/CallKit/cxprovider/reportoutgoingcall(with,connectedat).md",
       "hash": "df968bdd0b6fcd6427744334bf77945657628fdad9f496c86432bf11b6b8e7c2"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/reportoutgoingcall(with:startedconnectingat:)": {
       "etag": "\"555a-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportoutgoingcall-withstartedconnectingat.md",
+      "file_path": "documentation/CallKit/cxprovider/reportoutgoingcall(with,startedconnectingat).md",
       "hash": "b2b61f2ac5ec32f6f02f9a0dbdc6b280544bca1cc1e06c85a1373089b785fc84"
     },
     "https://developer.apple.com/documentation/callkit/cxprovider/setdelegate(_:queue:)": {
       "etag": "\"2e16-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/setdelegate-queue.md",
+      "file_path": "documentation/CallKit/cxprovider/setdelegate(_,queue).md",
       "hash": "6be4e65ede7f18d9f50369f83ea1aef82f860524317fe6241e1574d11ffbb9f7"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderconfiguration": {
@@ -1037,12 +1037,12 @@
     },
     "https://developer.apple.com/documentation/callkit/cxproviderconfiguration/init()": {
       "etag": "\"1f19-65d56086cd6c8-df\"",
-      "file_path": "documentation/CallKit/cxproviderconfiguration/init.md",
+      "file_path": "documentation/CallKit/cxproviderconfiguration/init().md",
       "hash": "702ae699e6bc8d584cbba28d849a7eb54ecb9fc289b452e6e566a971267b9947"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderconfiguration/init(localizedname:)": {
       "etag": "\"298a-65d56086cd6c8-df\"",
-      "file_path": "documentation/CallKit/cxproviderconfiguration/init-localizedname.md",
+      "file_path": "documentation/CallKit/cxproviderconfiguration/init(localizedname).md",
       "hash": "c4d49bfa261472cb5ae340fabb692da8c7c2c06d53cedf31d1fa2f2e059e04f6"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderconfiguration/localizedname": {
@@ -1087,72 +1087,72 @@
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:didactivate:)": {
       "etag": "\"3319-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-didactivate.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,didactivate).md",
       "hash": "c2889b00f03d5c5bc0367b743bab3a8b16b16ff1686dad33c8be166102b25186"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:diddeactivate:)": {
       "etag": "\"3331-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-diddeactivate.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,diddeactivate).md",
       "hash": "92c7b3de7baededcb3c3f5ca6167c8a501da7372557edb3aff111158fbbe94f5"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:execute:)": {
       "etag": "\"47ac-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-execute.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,execute).md",
       "hash": "168a6acaa831e3254244ebf303ab7146134a0f97d925c58c8379302b752a1794"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:perform:)-2lem5": {
       "etag": "\"6496-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-2lem5.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-2lem5.md",
       "hash": "bc11a521d20aca26125e173b6ccdf684679954b8195bfde3e10c11c0cf869641"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:perform:)-43atg": {
       "etag": "\"620c-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-43atg.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-43atg.md",
       "hash": "c3a6b2e7486614ba7e347518650e0d17a12ec96729f2402b89ba58133ef4bb8d"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:perform:)-4htxt": {
       "etag": "\"62de-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-4htxt.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-4htxt.md",
       "hash": "540abb86dccf0ac5242be2d6ee5dcd4b273236b678d0a2bc55c911014f501f85"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:perform:)-4u3yu": {
       "etag": "\"62aa-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-4u3yu.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-4u3yu.md",
       "hash": "567affb828687a9a667d0a0c1a1c32380318a7b1e5ca3a49ff72e3fb528d4303"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:perform:)-947b1": {
       "etag": "\"62a8-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-947b1.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-947b1.md",
       "hash": "92e31d43c5b54d659c50d0c60c954467c310cd8c013559d43fb89239df6c13dd"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:perform:)-9a0m": {
       "etag": "\"620e-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-9a0m.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-9a0m.md",
       "hash": "690d48563e5d1e709e1b82313964b2d0c792cc6665a7158b41f2e134d70d70bf"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:perform:)-9masw": {
       "etag": "\"62ad-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-9masw.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-9masw.md",
       "hash": "278e3b2635c5feb04459831afabe92f61965ab7595226140b22fd8f79ca9ab07"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:perform:)-h4in": {
       "etag": "\"626f-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-h4in.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-h4in.md",
       "hash": "6589d29fd55a3465e32c376bfdd2ea0b267bb22ecc747e908de2a598025f173e"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/provider(_:timedoutperforming:)": {
       "etag": "\"638e-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-timedoutperforming.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,timedoutperforming).md",
       "hash": "c8a80044c9d2fdcfba1083bfe8d540c8f1128f607e96a3e416ad38e65c3bf4a7"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/providerdidbegin(_:)": {
       "etag": "\"285a-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/providerdidbegin.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/providerdidbegin(_).md",
       "hash": "1a5056e89b5c529d0e3c77c1cf30ce324e73a97f8af799f5470766db930fca3b"
     },
     "https://developer.apple.com/documentation/callkit/cxproviderdelegate/providerdidreset(_:)": {
       "etag": "\"282c-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/providerdidreset.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/providerdidreset(_).md",
       "hash": "0442ee3c7195700e482905db9e89daf1b19269ad32df90ae80236ec2ef4801dc"
     },
     "https://developer.apple.com/documentation/callkit/cxsetgroupcallaction": {
@@ -1167,17 +1167,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxsetgroupcallaction/init(call:calluuidtogroupwith:)": {
       "etag": "\"3609-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxsetgroupcallaction/init-callcalluuidtogroupwith.md",
+      "file_path": "documentation/CallKit/cxsetgroupcallaction/init(call,calluuidtogroupwith).md",
       "hash": "4ce69404c59fc2725a574a1f3e345ca69332417c470a45aba7a7024c06af9d26"
     },
     "https://developer.apple.com/documentation/callkit/cxsetgroupcallaction/init(calluuid:calluuidtogroupwith:)": {
       "etag": "\"171f-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxsetgroupcallaction/init-calluuidcalluuidtogroupwith.md",
+      "file_path": "documentation/CallKit/cxsetgroupcallaction/init(calluuid,calluuidtogroupwith).md",
       "hash": "1e790c549ce2eccab16500c4a32ae6cbd1fdb81084b37671c724b350e39acf87"
     },
     "https://developer.apple.com/documentation/callkit/cxsetgroupcallaction/init(coder:)": {
       "etag": "\"2849-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxsetgroupcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxsetgroupcallaction/init(coder).md",
       "hash": "82c2eb3351547dc16841976c17c7ff71a83ee92ddd87ccb44b4f4f7c44bd3606"
     },
     "https://developer.apple.com/documentation/callkit/cxsetheldcallaction": {
@@ -1187,17 +1187,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxsetheldcallaction/init(call:onhold:)": {
       "etag": "\"3599-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxsetheldcallaction/init-callonhold.md",
+      "file_path": "documentation/CallKit/cxsetheldcallaction/init(call,onhold).md",
       "hash": "27a808149652565b5a284ed3b9016b426ce9387ab139fc72843d6fe5c213fca6"
     },
     "https://developer.apple.com/documentation/callkit/cxsetheldcallaction/init(calluuid:onhold:)": {
       "etag": "\"18ba-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxsetheldcallaction/init-calluuidonhold.md",
+      "file_path": "documentation/CallKit/cxsetheldcallaction/init(calluuid,onhold).md",
       "hash": "c2ff63181c05a3e059b6bad6ca79be16c8daa19507b32173b012439cb9fea40c"
     },
     "https://developer.apple.com/documentation/callkit/cxsetheldcallaction/init(coder:)": {
       "etag": "\"2793-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxsetheldcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxsetheldcallaction/init(coder).md",
       "hash": "577d3e47d9325034019d960767ba3681611916aaa1bbe9ba59fad359d79926d6"
     },
     "https://developer.apple.com/documentation/callkit/cxsetheldcallaction/isonhold": {
@@ -1212,17 +1212,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxsetmutedcallaction/init(call:muted:)": {
       "etag": "\"3627-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxsetmutedcallaction/init-callmuted.md",
+      "file_path": "documentation/CallKit/cxsetmutedcallaction/init(call,muted).md",
       "hash": "f3fd99eea5b6bb7a927e6effe7fde8be0a06a8c20a2fb37b3d3329d252798bfb"
     },
     "https://developer.apple.com/documentation/callkit/cxsetmutedcallaction/init(calluuid:muted:)": {
       "etag": "\"1972-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxsetmutedcallaction/init-calluuidmuted.md",
+      "file_path": "documentation/CallKit/cxsetmutedcallaction/init(calluuid,muted).md",
       "hash": "7a12e8ab7955cfd7e77e525863176b72ee0caf0a29fb24a5ecd81fbb2ef4595d"
     },
     "https://developer.apple.com/documentation/callkit/cxsetmutedcallaction/init(coder:)": {
       "etag": "\"27b2-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxsetmutedcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxsetmutedcallaction/init(coder).md",
       "hash": "2999a2bf766b4dcf753e6067afbbeaa59f90b1329eed1b4a3c4c57b25275f57d"
     },
     "https://developer.apple.com/documentation/callkit/cxsetmutedcallaction/ismuted": {
@@ -1237,22 +1237,22 @@
     },
     "https://developer.apple.com/documentation/callkit/cxsettranslatingcallaction/fulfill(using:)": {
       "etag": "\"2114-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxsettranslatingcallaction/fulfill-using.md",
+      "file_path": "documentation/CallKit/cxsettranslatingcallaction/fulfill(using).md",
       "hash": "5c33a808159de3d5e4e68c9a5d847d2a6560e6c02ef25cc99ee08a8f0c745426"
     },
     "https://developer.apple.com/documentation/callkit/cxsettranslatingcallaction/init(call:istranslating:locallanguage:remotelanguage:)": {
       "etag": "\"2fc8-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init-callistranslatinglocallanguageremotelanguage.md",
+      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init(call,istranslating,locallanguage,remotelanguage).md",
       "hash": "d55f4ad7437e37eef69e27eadea0add8e89e56da3d7dcfd56c0fa0c48dcc2d19"
     },
     "https://developer.apple.com/documentation/callkit/cxsettranslatingcallaction/init(calluuid:istranslating:locallanguage:remotelanguage:)": {
       "etag": "\"20b0-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init-calluuidistranslatinglocallanguageremotelanguage.md",
+      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init(calluuid,istranslating,locallanguage,remotelanguage).md",
       "hash": "8fd7dd25301f6f2198b7b9ddf20863a7e886444b429ea933352908b7822db549"
     },
     "https://developer.apple.com/documentation/callkit/cxsettranslatingcallaction/init(coder:)": {
       "etag": "\"2022-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init(coder).md",
       "hash": "3dcc8d2ee0ba1513fcaa80ce1e8b81da43439985a84bb3a4627c6424922906fe"
     },
     "https://developer.apple.com/documentation/callkit/cxsettranslatingcallaction/istranslating": {
@@ -1282,7 +1282,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxstartcallaction/fulfill(withdatestarted:)": {
       "etag": "\"26b9-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxstartcallaction/fulfill-withdatestarted.md",
+      "file_path": "documentation/CallKit/cxstartcallaction/fulfill(withdatestarted).md",
       "hash": "dee8aa22018001426685d7bc2a80cec882db6f18c6df9702f8b47979151e64e3"
     },
     "https://developer.apple.com/documentation/callkit/cxstartcallaction/handle": {
@@ -1292,17 +1292,17 @@
     },
     "https://developer.apple.com/documentation/callkit/cxstartcallaction/init(call:handle:)": {
       "etag": "\"3552-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxstartcallaction/init-callhandle.md",
+      "file_path": "documentation/CallKit/cxstartcallaction/init(call,handle).md",
       "hash": "3a44b0d0edd3fcba24f53bd7b6ddad801d436a0a3bcddfeaaa2dfd4d0995dda5"
     },
     "https://developer.apple.com/documentation/callkit/cxstartcallaction/init(calluuid:handle:)": {
       "etag": "\"1a27-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxstartcallaction/init-calluuidhandle.md",
+      "file_path": "documentation/CallKit/cxstartcallaction/init(calluuid,handle).md",
       "hash": "4501e0261a483074b6c959546ea2c9376f514b87a8653df64c0b7a72a254cf3d"
     },
     "https://developer.apple.com/documentation/callkit/cxstartcallaction/init(coder:)": {
       "etag": "\"2744-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxstartcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxstartcallaction/init(coder).md",
       "hash": "4fb2f72c28ea6c1202d4c6ff49709e73bcb482fa29695a6a05a21d5fb940e2da"
     },
     "https://developer.apple.com/documentation/callkit/cxstartcallaction/isvideo": {
@@ -1322,22 +1322,22 @@
     },
     "https://developer.apple.com/documentation/callkit/cxtransaction/addaction(_:)": {
       "etag": "\"2119-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxtransaction/addaction.md",
+      "file_path": "documentation/CallKit/cxtransaction/addaction(_).md",
       "hash": "e4827317c5bce96f6aac8b58eb751c4f0180a810b9ea7d067530319fa376af24"
     },
     "https://developer.apple.com/documentation/callkit/cxtransaction/init(action:)": {
       "etag": "\"2f9c-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxtransaction/init-action.md",
+      "file_path": "documentation/CallKit/cxtransaction/init(action).md",
       "hash": "ded60868a87401c439cf2972a665b8acfaef9de520eef0b2637612b761a03c2a"
     },
     "https://developer.apple.com/documentation/callkit/cxtransaction/init(actions:)": {
       "etag": "\"2f00-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxtransaction/init-actions.md",
+      "file_path": "documentation/CallKit/cxtransaction/init(actions).md",
       "hash": "741d62128880f9ec4831973ce48aa0c0d88368d51c0e76d18b963a5e51199661"
     },
     "https://developer.apple.com/documentation/callkit/cxtransaction/init(coder:)": {
       "etag": "\"1434-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxtransaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxtransaction/init(coder).md",
       "hash": "9b2958cbbffd16490fb76f4d0a46987f06cfd81ba6b2fba05f24cd7791568cfd"
     },
     "https://developer.apple.com/documentation/callkit/cxtransaction/iscomplete": {
@@ -1367,7 +1367,7 @@
     },
     "https://developer.apple.com/documentation/callkit/cxtranslationengine/init(rawvalue:)": {
       "etag": "\"12a3-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxtranslationengine/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxtranslationengine/init(rawvalue).md",
       "hash": "6a8b60916140d04c8eab7d66183ce12b4ee45f96b0ea4ad4a9d87c6f67b38c79"
     },
     "https://developer.apple.com/documentation/callkit/identifying-and-blocking-calls": {
@@ -1417,22 +1417,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxaction/fail().json": {
       "etag": "\"30d9-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxaction/fail.md",
+      "file_path": "documentation/CallKit/cxaction/fail().md",
       "hash": "478fea6ab15b44d61f268daaa446dedfe517ce435029cf8f1f6ed51b8f212d36"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxaction/fulfill().json": {
       "etag": "\"316e-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxaction/fulfill.md",
+      "file_path": "documentation/CallKit/cxaction/fulfill().md",
       "hash": "a1123b4ca59ca8f5935b73dbb7c9378e6b51c8c3c94877fcade89f7addea2ecb"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxaction/init().json": {
       "etag": "\"1fd5-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxaction/init.md",
+      "file_path": "documentation/CallKit/cxaction/init().md",
       "hash": "43d063d3c192082b9c86e94783f8a47623f20ebb026964cafa4b081fabcdecb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxaction/init(coder:).json": {
       "etag": "\"2405-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxaction/init(coder).md",
       "hash": "66a931adce64e7837388c5376a4fe0e56c71cb2f8cc62e3a1d5d1b87bfe5f1fb"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxaction/iscomplete.json": {
@@ -1457,7 +1457,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxanswercallaction/fulfill(withdateconnected:).json": {
       "etag": "\"2705-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxanswercallaction/fulfill-withdateconnected.md",
+      "file_path": "documentation/CallKit/cxanswercallaction/fulfill(withdateconnected).md",
       "hash": "131d94cf7082b066c4fa0d07d3ed3c08319772e04700643f2e922f5f6834a1ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcall.json": {
@@ -1502,17 +1502,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallaction/init(call:).json": {
       "etag": "\"2b3f-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallaction/init-call.md",
+      "file_path": "documentation/CallKit/cxcallaction/init(call).md",
       "hash": "5a7b8bf3416f85311e50814865a32013faff78eaea8f6ccc7e78cfd1a73016ea"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallaction/init(calluuid:).json": {
       "etag": "\"1372-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallaction/init-calluuid.md",
+      "file_path": "documentation/CallKit/cxcallaction/init(calluuid).md",
       "hash": "ee6935aa4efc67653a136bc3fdc84434bb40e15e88e13e7aa472ad84e02e30a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallaction/init(coder:).json": {
       "etag": "\"25b4-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxcallaction/init(coder).md",
       "hash": "97d29ee8f65468d4c7b8bdb2b686d74f565d146ca4c63ab1acf64a34f0ad03af"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallcontroller.json": {
@@ -1527,27 +1527,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallcontroller/init().json": {
       "etag": "\"20e3-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/init.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/init().md",
       "hash": "909cc85d973a99c2d4fd1e9233c029f1c2e8d8cb421a6969c0d36d5e6fdd2e87"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallcontroller/init(queue:).json": {
       "etag": "\"28fe-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/init-queue.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/init(queue).md",
       "hash": "29f597a4b7a5815e24310493726a1e161807f3816d6ad35cbd63032d81aafb25"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallcontroller/request(_:completion:).json": {
       "etag": "\"4b8b-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/request-completion.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/request(_,completion).md",
       "hash": "1beb194e622e614295cc5abe65db0268803db61571c5aba00429662562f7c9ca"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallcontroller/requesttransaction(with:completion:)-4o1m4.json": {
       "etag": "\"4ce6-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/requesttransaction-withcompletion-4o1m4.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/requesttransaction(with,completion)-4o1m4.md",
       "hash": "a8c513c66c86328d05852285e2cd761d3631acb42a948e56a8b421b31ff7bd68"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallcontroller/requesttransaction(with:completion:)-ffme.json": {
       "etag": "\"4d4a-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallcontroller/requesttransaction-withcompletion-ffme.md",
+      "file_path": "documentation/CallKit/cxcallcontroller/requesttransaction(with,completion)-ffme.md",
       "hash": "65894350fa9ab906bc4312d787994a2f22ec397d37571ae0035ccf6c81d967ee"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext.json": {
@@ -1557,17 +1557,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext/addblockingentry(withnextsequentialphonenumber:).json": {
       "etag": "\"411b-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/addblockingentry-withnextsequentialphonenumber.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/addblockingentry(withnextsequentialphonenumber).md",
       "hash": "13646c21f00b920550375fe0eaade86613878d2c33466147346725d0ad389b71"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext/addidentificationentry(withnextsequentialphonenumber:label:).json": {
       "etag": "\"4710-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/addidentificationentry-withnextsequentialphonenumberlabel.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/addidentificationentry(withnextsequentialphonenumber,label).md",
       "hash": "ca024cbcce27b43cee2200318161b699d0f3d05d3d8a07e035a648c721739b95"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext/completerequest(completionhandler:).json": {
       "etag": "\"4b44-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/completerequest-completionhandler.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/completerequest(completionhandler).md",
       "hash": "e78c61251ff1e3ea67596cd313b466bf5bba34d0b22d074d3da25f618570431c"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext/delegate.json": {
@@ -1582,22 +1582,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext/removeallblockingentries().json": {
       "etag": "\"3bf4-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeallblockingentries.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeallblockingentries().md",
       "hash": "d33e115120ce1428673a191fadbbaed2fc445f1ca50678e4060dc110cf08078e"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext/removeallidentificationentries().json": {
       "etag": "\"3c36-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeallidentificationentries.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeallidentificationentries().md",
       "hash": "779bfdf758a5caafd92f846ed0ee1e40eb76c926c13431532ad2392b3d49b638"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext/removeblockingentry(withphonenumber:).json": {
       "etag": "\"4732-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeblockingentry-withphonenumber.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeblockingentry(withphonenumber).md",
       "hash": "55cf90dace472ba5ba61ce64ca96bd527cb76f7ec67daf6d33b62682296840ec"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontext/removeidentificationentry(withphonenumber:).json": {
       "etag": "\"4781-65d56086ef766-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeidentificationentry-withphonenumber.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontext/removeidentificationentry(withphonenumber).md",
       "hash": "48bb1a1a6e138c672cecc9770b79561df64796700ca950b76ff890a3ee196984"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontextdelegate.json": {
@@ -1607,7 +1607,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryextensioncontextdelegate/requestfailed(for:witherror:).json": {
       "etag": "\"2e9c-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontextdelegate/requestfailed-forwitherror.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryextensioncontextdelegate/requestfailed(for,witherror).md",
       "hash": "d3754c7879582e1bef914e4bfc0d27226eb6ef032857bb9eb0e4ceed6d815b9f"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectorymanager.json": {
@@ -1632,7 +1632,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectorymanager/enabledstatus/init(rawvalue:).json": {
       "etag": "\"22a4-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectorymanager/enabledstatus/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxcalldirectorymanager/enabledstatus/init(rawvalue).md",
       "hash": "e0227023407abae6e864f23f659948c13b60d5c8c6836e5f7830e7c8d4fee169"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectorymanager/enabledstatus/unknown.json": {
@@ -1642,17 +1642,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectorymanager/getenabledstatusforextension(withidentifier:completionhandler:).json": {
       "etag": "\"55c0-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectorymanager/getenabledstatusforextension-withidentifiercompletionhandler.md",
+      "file_path": "documentation/CallKit/cxcalldirectorymanager/getenabledstatusforextension(withidentifier,completionhandler).md",
       "hash": "63ffb32cfac4a0afbbd054365276573c3696c620ddfc8dc9e2b7933774b7ee9b"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectorymanager/opensettings(completionhandler:).json": {
       "etag": "\"3238-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectorymanager/opensettings-completionhandler.md",
+      "file_path": "documentation/CallKit/cxcalldirectorymanager/opensettings(completionhandler).md",
       "hash": "6dfc783b5fe8ce146fdb20ecb54f670c610a4cee034960bb981b662b67b1edb7"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectorymanager/reloadextension(withidentifier:completionhandler:).json": {
       "etag": "\"4ba2-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectorymanager/reloadextension-withidentifiercompletionhandler.md",
+      "file_path": "documentation/CallKit/cxcalldirectorymanager/reloadextension(withidentifier,completionhandler).md",
       "hash": "ed384d2a0bbe7a9eee8474b9aa2f98a3d79702cfda5336d4b09c27f69db88d3e"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectorymanager/sharedinstance.json": {
@@ -1677,7 +1677,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcalldirectoryprovider/beginrequest(with:).json": {
       "etag": "\"2a6d-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcalldirectoryprovider/beginrequest-with.md",
+      "file_path": "documentation/CallKit/cxcalldirectoryprovider/beginrequest(with).md",
       "hash": "027af52d000d104c0fef98e55e13968a3995cd3e37af05f4bece89216e3ba346"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallendedreason.json": {
@@ -1702,7 +1702,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallendedreason/init(rawvalue:).json": {
       "etag": "\"12e6-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxcallendedreason/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxcallendedreason/init(rawvalue).md",
       "hash": "d4a8ca66c5f947f856635ad5219eb6477d81205dfef44b6d4a27f8dfa9170675"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallendedreason/remoteended.json": {
@@ -1727,7 +1727,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallobserver/setdelegate(_:queue:).json": {
       "etag": "\"2f12-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallobserver/setdelegate-queue.md",
+      "file_path": "documentation/CallKit/cxcallobserver/setdelegate(_,queue).md",
       "hash": "6168fe8ce81d0da11b4ebcc7b0efd1eae2b216c683f65578ea28b1f46c111499"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallobserverdelegate.json": {
@@ -1737,7 +1737,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallobserverdelegate/callobserver(_:callchanged:).json": {
       "etag": "\"2be1-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxcallobserverdelegate/callobserver-callchanged.md",
+      "file_path": "documentation/CallKit/cxcallobserverdelegate/callobserver(_,callchanged).md",
       "hash": "0bef2f317afa2c12036f78cf36a5cd17a1026b756f0f5258bc27f0e7f9ce46de"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxcallupdate.json": {
@@ -1787,7 +1787,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxendcallaction/fulfill(withdateended:).json": {
       "etag": "\"2647-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxendcallaction/fulfill-withdateended.md",
+      "file_path": "documentation/CallKit/cxendcallaction/fulfill(withdateended).md",
       "hash": "7f0bf59d75f964e00e067928bcb219e6a2133e99f3f4d78d535fb6fa41b8b37c"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerror.json": {
@@ -1802,7 +1802,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerror/code/init(rawvalue:).json": {
       "etag": "\"14a6-65d56086cd6c8-df\"",
-      "file_path": "documentation/CallKit/cxerror/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerror/code/init(rawvalue).md",
       "hash": "7e2170589693e54e67a007e72001430c6358e8f901325e9298438406ead96e7a"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerror/code/invalidargument.json": {
@@ -1852,7 +1852,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodecalldirectorymanagererror-swift.struct.json": {
       "etag": "\"6301-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodecalldirectorymanagererror-swiftstruct.md",
+      "file_path": "documentation/CallKit/cxerrorcodecalldirectorymanagererror-swift.struct.md",
       "hash": "ba6c8b8a00cc265502dab109da3a134c7422ae4bd89205af8d2f2c9831d3321a"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodecalldirectorymanagererror-swift.struct/code.json": {
@@ -1882,7 +1882,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodecalldirectorymanagererror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"1838-65d56086cd6c8-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodecalldirectorymanagererror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerrorcodecalldirectorymanagererror-swift.struct/code/init(rawvalue).md",
       "hash": "f3ae3eaf072f987149bd6ee91a3f99beec25bc1681c7a59892591730ca93f83a"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodecalldirectorymanagererror-swift.struct/code/loadinginterrupted.json": {
@@ -1962,7 +1962,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodeincomingcallerror-swift.struct.json": {
       "etag": "\"5e12-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodeincomingcallerror-swiftstruct.md",
+      "file_path": "documentation/CallKit/cxerrorcodeincomingcallerror-swift.struct.md",
       "hash": "a52d0ed7fde2c6e38b3e9fe0918cd55c26ffc4774741b46e560d0f6f62c28091"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodeincomingcallerror-swift.struct/callisprotected.json": {
@@ -2012,7 +2012,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodeincomingcallerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"177c-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodeincomingcallerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerrorcodeincomingcallerror-swift.struct/code/init(rawvalue).md",
       "hash": "941567d4dfbd2222913b7a5e3a44a000c0799e4297efb7cbca51c84851f9df79"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodeincomingcallerror-swift.struct/code/unentitled.json": {
@@ -2062,7 +2062,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodenotificationserviceextensionerror-swift.struct.json": {
       "etag": "\"5aad-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodenotificationserviceextensionerror-swiftstruct.md",
+      "file_path": "documentation/CallKit/cxerrorcodenotificationserviceextensionerror-swift.struct.md",
       "hash": "061e0d8e8277bd3f50de353c10b4b25f19908c6f7b69fea4efd12750e944abde"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodenotificationserviceextensionerror-swift.struct/code.json": {
@@ -2072,7 +2072,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodenotificationserviceextensionerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"191c-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxerrorcodenotificationserviceextensionerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerrorcodenotificationserviceextensionerror-swift.struct/code/init(rawvalue).md",
       "hash": "bfcc91eb8f46fb9698d5af196a510f1d4e50738d0ead331a6851bc64b8a92268"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcodenotificationserviceextensionerror-swift.struct/code/invalidclientprocess.json": {
@@ -2112,7 +2112,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcoderequesttransactionerror-swift.struct.json": {
       "etag": "\"525d-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxerrorcoderequesttransactionerror-swiftstruct.md",
+      "file_path": "documentation/CallKit/cxerrorcoderequesttransactionerror-swift.struct.md",
       "hash": "5405e5a19af4f9f06d8ea370023593fc6f4a47f4413cc9d6fddf817931395b23"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcoderequesttransactionerror-swift.struct/callisprotected.json": {
@@ -2147,7 +2147,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcoderequesttransactionerror-swift.struct/code/init(rawvalue:).json": {
       "etag": "\"17b8-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxerrorcoderequesttransactionerror-swift.struct/code/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxerrorcoderequesttransactionerror-swift.struct/code/init(rawvalue).md",
       "hash": "323ac76587884df9f4a533f5ba80fcdd4a6442575252bdd47820cf1a13820a8c"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxerrorcoderequesttransactionerror-swift.struct/code/invalidaction.json": {
@@ -2267,7 +2267,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxhandle/handletype/init(rawvalue:).json": {
       "etag": "\"16fd-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxhandle/handletype/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxhandle/handletype/init(rawvalue).md",
       "hash": "e9b6a722005076387c6bb2107ca2a5f2759dde001ac942d233c0fc1549bb57d8"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxhandle/handletype/phonenumber.json": {
@@ -2277,12 +2277,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxhandle/init(coder:).json": {
       "etag": "\"13c9-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxhandle/init-coder.md",
+      "file_path": "documentation/CallKit/cxhandle/init(coder).md",
       "hash": "c336bfaaf1e6899ad78af0528d63a6de812323871b235bde2c30d0ebce8e0977"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxhandle/init(type:value:).json": {
       "etag": "\"2b35-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxhandle/init-typevalue.md",
+      "file_path": "documentation/CallKit/cxhandle/init(type,value).md",
       "hash": "4bc84523b7fbd0960d30279066fc4d8a1c2dbb958e340e3611f3f8b82c9042f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxhandle/type.json": {
@@ -2312,7 +2312,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxplaydtmfcallaction/actiontype/init(rawvalue:).json": {
       "etag": "\"187d-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxplaydtmfcallaction/actiontype/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxplaydtmfcallaction/actiontype/init(rawvalue).md",
       "hash": "2b9ad25c9956b3bfc0e2086d9f7b9ee438a8ca1cb8f41eacd134d51690607e1c"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxplaydtmfcallaction/actiontype/singletone.json": {
@@ -2332,17 +2332,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxplaydtmfcallaction/init(call:digits:type:).json": {
       "etag": "\"4111-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init-calldigitstype.md",
+      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init(call,digits,type).md",
       "hash": "4a57a8c9468a19705762e169f313368502507443aebbb035ea84d9bad4ac2c72"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxplaydtmfcallaction/init(calluuid:digits:type:).json": {
       "etag": "\"21c3-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init-calluuiddigitstype.md",
+      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init(calluuid,digits,type).md",
       "hash": "a465a037ae6c362c27c656b18004872450dc9331a3c7d91771e3ec06fc035abe"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxplaydtmfcallaction/init(coder:).json": {
       "etag": "\"296a-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxplaydtmfcallaction/init(coder).md",
       "hash": "8983c943ecced746fec4ba5003b231d4ef32f51795789c0ea197b1f1169a50b1"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxplaydtmfcallaction/type.json": {
@@ -2362,17 +2362,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/init(configuration:).json": {
       "etag": "\"241c-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/init-configuration.md",
+      "file_path": "documentation/CallKit/cxprovider/init(configuration).md",
       "hash": "59f16a69fb2e510b5643cdc2b62cb3523ed2f97dea0c48647b17963cf277a447"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/invalidate().json": {
       "etag": "\"1925-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/invalidate.md",
+      "file_path": "documentation/CallKit/cxprovider/invalidate().md",
       "hash": "eb70b02b032e03ae5ecfd54c112128f13c32d87a5eb0c2a9268201e0b621f0db"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/pendingcallactions(of:withcall:).json": {
       "etag": "\"37e2-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/pendingcallactions-ofwithcall.md",
+      "file_path": "documentation/CallKit/cxprovider/pendingcallactions(of,withcall).md",
       "hash": "feca7d4dd6ca232a04884b3d007aca6051ff8aba8feb992dcb68508aa91347a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/pendingtransactions.json": {
@@ -2382,37 +2382,37 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/reportcall(with:endedat:reason:).json": {
       "etag": "\"5e72-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportcall-withendedatreason.md",
+      "file_path": "documentation/CallKit/cxprovider/reportcall(with,endedat,reason).md",
       "hash": "9bc0442d8a8112e030ccb3be48fec7d4be5870052af9eca57f330feb2d58c7a2"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/reportcall(with:updated:).json": {
       "etag": "\"551a-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportcall-withupdated.md",
+      "file_path": "documentation/CallKit/cxprovider/reportcall(with,updated).md",
       "hash": "aa736c59207a861481dc97d9963da59f6bd13e25aa81d1b1a5c76ae72ef3edc6"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/reportnewincomingcall(with:update:completion:).json": {
       "etag": "\"79fb-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportnewincomingcall-withupdatecompletion.md",
+      "file_path": "documentation/CallKit/cxprovider/reportnewincomingcall(with,update,completion).md",
       "hash": "562a1c82fda087308d258877d80ad29b638ad1bd41f4f69e9853f5cfcb81ce00"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/reportnewincomingvoippushpayload(_:completion:).json": {
       "etag": "\"8461-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportnewincomingvoippushpayload-completion.md",
+      "file_path": "documentation/CallKit/cxprovider/reportnewincomingvoippushpayload(_,completion).md",
       "hash": "5aa4fd46fac0b013b734eb9b47182a3ab847d53fd73f2b6fc8edd1201bebf5cb"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/reportoutgoingcall(with:connectedat:).json": {
       "etag": "\"5747-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportoutgoingcall-withconnectedat.md",
+      "file_path": "documentation/CallKit/cxprovider/reportoutgoingcall(with,connectedat).md",
       "hash": "df968bdd0b6fcd6427744334bf77945657628fdad9f496c86432bf11b6b8e7c2"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/reportoutgoingcall(with:startedconnectingat:).json": {
       "etag": "\"555a-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/reportoutgoingcall-withstartedconnectingat.md",
+      "file_path": "documentation/CallKit/cxprovider/reportoutgoingcall(with,startedconnectingat).md",
       "hash": "b2b61f2ac5ec32f6f02f9a0dbdc6b280544bca1cc1e06c85a1373089b785fc84"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxprovider/setdelegate(_:queue:).json": {
       "etag": "\"2e16-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxprovider/setdelegate-queue.md",
+      "file_path": "documentation/CallKit/cxprovider/setdelegate(_,queue).md",
       "hash": "6be4e65ede7f18d9f50369f83ea1aef82f860524317fe6241e1574d11ffbb9f7"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderconfiguration.json": {
@@ -2432,12 +2432,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderconfiguration/init().json": {
       "etag": "\"1f19-65d56086cd6c8-df\"",
-      "file_path": "documentation/CallKit/cxproviderconfiguration/init.md",
+      "file_path": "documentation/CallKit/cxproviderconfiguration/init().md",
       "hash": "702ae699e6bc8d584cbba28d849a7eb54ecb9fc289b452e6e566a971267b9947"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderconfiguration/init(localizedname:).json": {
       "etag": "\"298a-65d56086cd6c8-df\"",
-      "file_path": "documentation/CallKit/cxproviderconfiguration/init-localizedname.md",
+      "file_path": "documentation/CallKit/cxproviderconfiguration/init(localizedname).md",
       "hash": "c4d49bfa261472cb5ae340fabb692da8c7c2c06d53cedf31d1fa2f2e059e04f6"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderconfiguration/localizedname.json": {
@@ -2482,72 +2482,72 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:didactivate:).json": {
       "etag": "\"3319-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-didactivate.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,didactivate).md",
       "hash": "c2889b00f03d5c5bc0367b743bab3a8b16b16ff1686dad33c8be166102b25186"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:diddeactivate:).json": {
       "etag": "\"3331-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-diddeactivate.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,diddeactivate).md",
       "hash": "92c7b3de7baededcb3c3f5ca6167c8a501da7372557edb3aff111158fbbe94f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:execute:).json": {
       "etag": "\"47ac-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-execute.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,execute).md",
       "hash": "168a6acaa831e3254244ebf303ab7146134a0f97d925c58c8379302b752a1794"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:perform:)-2lem5.json": {
       "etag": "\"6496-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-2lem5.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-2lem5.md",
       "hash": "bc11a521d20aca26125e173b6ccdf684679954b8195bfde3e10c11c0cf869641"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:perform:)-43atg.json": {
       "etag": "\"620c-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-43atg.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-43atg.md",
       "hash": "c3a6b2e7486614ba7e347518650e0d17a12ec96729f2402b89ba58133ef4bb8d"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:perform:)-4htxt.json": {
       "etag": "\"62de-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-4htxt.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-4htxt.md",
       "hash": "540abb86dccf0ac5242be2d6ee5dcd4b273236b678d0a2bc55c911014f501f85"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:perform:)-4u3yu.json": {
       "etag": "\"62aa-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-4u3yu.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-4u3yu.md",
       "hash": "567affb828687a9a667d0a0c1a1c32380318a7b1e5ca3a49ff72e3fb528d4303"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:perform:)-947b1.json": {
       "etag": "\"62a8-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-947b1.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-947b1.md",
       "hash": "92e31d43c5b54d659c50d0c60c954467c310cd8c013559d43fb89239df6c13dd"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:perform:)-9a0m.json": {
       "etag": "\"620e-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-9a0m.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-9a0m.md",
       "hash": "690d48563e5d1e709e1b82313964b2d0c792cc6665a7158b41f2e134d70d70bf"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:perform:)-9masw.json": {
       "etag": "\"62ad-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-9masw.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-9masw.md",
       "hash": "278e3b2635c5feb04459831afabe92f61965ab7595226140b22fd8f79ca9ab07"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:perform:)-h4in.json": {
       "etag": "\"626f-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-perform-h4in.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,perform)-h4in.md",
       "hash": "6589d29fd55a3465e32c376bfdd2ea0b267bb22ecc747e908de2a598025f173e"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/provider(_:timedoutperforming:).json": {
       "etag": "\"638e-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/provider-timedoutperforming.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/provider(_,timedoutperforming).md",
       "hash": "c8a80044c9d2fdcfba1083bfe8d540c8f1128f607e96a3e416ad38e65c3bf4a7"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/providerdidbegin(_:).json": {
       "etag": "\"285a-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/providerdidbegin.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/providerdidbegin(_).md",
       "hash": "1a5056e89b5c529d0e3c77c1cf30ce324e73a97f8af799f5470766db930fca3b"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxproviderdelegate/providerdidreset(_:).json": {
       "etag": "\"282c-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxproviderdelegate/providerdidreset.md",
+      "file_path": "documentation/CallKit/cxproviderdelegate/providerdidreset(_).md",
       "hash": "0442ee3c7195700e482905db9e89daf1b19269ad32df90ae80236ec2ef4801dc"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetgroupcallaction.json": {
@@ -2562,17 +2562,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetgroupcallaction/init(call:calluuidtogroupwith:).json": {
       "etag": "\"3609-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxsetgroupcallaction/init-callcalluuidtogroupwith.md",
+      "file_path": "documentation/CallKit/cxsetgroupcallaction/init(call,calluuidtogroupwith).md",
       "hash": "4ce69404c59fc2725a574a1f3e345ca69332417c470a45aba7a7024c06af9d26"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetgroupcallaction/init(calluuid:calluuidtogroupwith:).json": {
       "etag": "\"171f-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxsetgroupcallaction/init-calluuidcalluuidtogroupwith.md",
+      "file_path": "documentation/CallKit/cxsetgroupcallaction/init(calluuid,calluuidtogroupwith).md",
       "hash": "1e790c549ce2eccab16500c4a32ae6cbd1fdb81084b37671c724b350e39acf87"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetgroupcallaction/init(coder:).json": {
       "etag": "\"2849-65d56086e43df-df\"",
-      "file_path": "documentation/CallKit/cxsetgroupcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxsetgroupcallaction/init(coder).md",
       "hash": "82c2eb3351547dc16841976c17c7ff71a83ee92ddd87ccb44b4f4f7c44bd3606"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetheldcallaction.json": {
@@ -2582,17 +2582,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetheldcallaction/init(call:onhold:).json": {
       "etag": "\"3599-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxsetheldcallaction/init-callonhold.md",
+      "file_path": "documentation/CallKit/cxsetheldcallaction/init(call,onhold).md",
       "hash": "27a808149652565b5a284ed3b9016b426ce9387ab139fc72843d6fe5c213fca6"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetheldcallaction/init(calluuid:onhold:).json": {
       "etag": "\"18ba-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxsetheldcallaction/init-calluuidonhold.md",
+      "file_path": "documentation/CallKit/cxsetheldcallaction/init(calluuid,onhold).md",
       "hash": "c2ff63181c05a3e059b6bad6ca79be16c8daa19507b32173b012439cb9fea40c"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetheldcallaction/init(coder:).json": {
       "etag": "\"2793-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxsetheldcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxsetheldcallaction/init(coder).md",
       "hash": "577d3e47d9325034019d960767ba3681611916aaa1bbe9ba59fad359d79926d6"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetheldcallaction/isonhold.json": {
@@ -2607,17 +2607,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetmutedcallaction/init(call:muted:).json": {
       "etag": "\"3627-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxsetmutedcallaction/init-callmuted.md",
+      "file_path": "documentation/CallKit/cxsetmutedcallaction/init(call,muted).md",
       "hash": "f3fd99eea5b6bb7a927e6effe7fde8be0a06a8c20a2fb37b3d3329d252798bfb"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetmutedcallaction/init(calluuid:muted:).json": {
       "etag": "\"1972-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxsetmutedcallaction/init-calluuidmuted.md",
+      "file_path": "documentation/CallKit/cxsetmutedcallaction/init(calluuid,muted).md",
       "hash": "7a12e8ab7955cfd7e77e525863176b72ee0caf0a29fb24a5ecd81fbb2ef4595d"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetmutedcallaction/init(coder:).json": {
       "etag": "\"27b2-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxsetmutedcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxsetmutedcallaction/init(coder).md",
       "hash": "2999a2bf766b4dcf753e6067afbbeaa59f90b1329eed1b4a3c4c57b25275f57d"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsetmutedcallaction/ismuted.json": {
@@ -2632,22 +2632,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsettranslatingcallaction/fulfill(using:).json": {
       "etag": "\"2114-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxsettranslatingcallaction/fulfill-using.md",
+      "file_path": "documentation/CallKit/cxsettranslatingcallaction/fulfill(using).md",
       "hash": "5c33a808159de3d5e4e68c9a5d847d2a6560e6c02ef25cc99ee08a8f0c745426"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsettranslatingcallaction/init(call:istranslating:locallanguage:remotelanguage:).json": {
       "etag": "\"2fc8-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init-callistranslatinglocallanguageremotelanguage.md",
+      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init(call,istranslating,locallanguage,remotelanguage).md",
       "hash": "d55f4ad7437e37eef69e27eadea0add8e89e56da3d7dcfd56c0fa0c48dcc2d19"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsettranslatingcallaction/init(calluuid:istranslating:locallanguage:remotelanguage:).json": {
       "etag": "\"20b0-65d560869c302-df\"",
-      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init-calluuidistranslatinglocallanguageremotelanguage.md",
+      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init(calluuid,istranslating,locallanguage,remotelanguage).md",
       "hash": "8fd7dd25301f6f2198b7b9ddf20863a7e886444b429ea933352908b7822db549"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsettranslatingcallaction/init(coder:).json": {
       "etag": "\"2022-65d5608684e06-df\"",
-      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxsettranslatingcallaction/init(coder).md",
       "hash": "3dcc8d2ee0ba1513fcaa80ce1e8b81da43439985a84bb3a4627c6424922906fe"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxsettranslatingcallaction/istranslating.json": {
@@ -2677,7 +2677,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxstartcallaction/fulfill(withdatestarted:).json": {
       "etag": "\"26b9-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxstartcallaction/fulfill-withdatestarted.md",
+      "file_path": "documentation/CallKit/cxstartcallaction/fulfill(withdatestarted).md",
       "hash": "dee8aa22018001426685d7bc2a80cec882db6f18c6df9702f8b47979151e64e3"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxstartcallaction/handle.json": {
@@ -2687,17 +2687,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxstartcallaction/init(call:handle:).json": {
       "etag": "\"3552-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxstartcallaction/init-callhandle.md",
+      "file_path": "documentation/CallKit/cxstartcallaction/init(call,handle).md",
       "hash": "3a44b0d0edd3fcba24f53bd7b6ddad801d436a0a3bcddfeaaa2dfd4d0995dda5"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxstartcallaction/init(calluuid:handle:).json": {
       "etag": "\"1a27-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxstartcallaction/init-calluuidhandle.md",
+      "file_path": "documentation/CallKit/cxstartcallaction/init(calluuid,handle).md",
       "hash": "4501e0261a483074b6c959546ea2c9376f514b87a8653df64c0b7a72a254cf3d"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxstartcallaction/init(coder:).json": {
       "etag": "\"2744-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxstartcallaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxstartcallaction/init(coder).md",
       "hash": "4fb2f72c28ea6c1202d4c6ff49709e73bcb482fa29695a6a05a21d5fb940e2da"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxstartcallaction/isvideo.json": {
@@ -2717,22 +2717,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxtransaction/addaction(_:).json": {
       "etag": "\"2119-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxtransaction/addaction.md",
+      "file_path": "documentation/CallKit/cxtransaction/addaction(_).md",
       "hash": "e4827317c5bce96f6aac8b58eb751c4f0180a810b9ea7d067530319fa376af24"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxtransaction/init(action:).json": {
       "etag": "\"2f9c-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxtransaction/init-action.md",
+      "file_path": "documentation/CallKit/cxtransaction/init(action).md",
       "hash": "ded60868a87401c439cf2972a665b8acfaef9de520eef0b2637612b761a03c2a"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxtransaction/init(actions:).json": {
       "etag": "\"2f00-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxtransaction/init-actions.md",
+      "file_path": "documentation/CallKit/cxtransaction/init(actions).md",
       "hash": "741d62128880f9ec4831973ce48aa0c0d88368d51c0e76d18b963a5e51199661"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxtransaction/init(coder:).json": {
       "etag": "\"1434-65d56086b3059-df\"",
-      "file_path": "documentation/CallKit/cxtransaction/init-coder.md",
+      "file_path": "documentation/CallKit/cxtransaction/init(coder).md",
       "hash": "9b2958cbbffd16490fb76f4d0a46987f06cfd81ba6b2fba05f24cd7791568cfd"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxtransaction/iscomplete.json": {
@@ -2762,7 +2762,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/cxtranslationengine/init(rawvalue:).json": {
       "etag": "\"12a3-65d560866a5ef-df\"",
-      "file_path": "documentation/CallKit/cxtranslationengine/init-rawvalue.md",
+      "file_path": "documentation/CallKit/cxtranslationengine/init(rawvalue).md",
       "hash": "6a8b60916140d04c8eab7d66183ce12b4ee45f96b0ea4ad4a9d87c6f67b38c79"
     },
     "https://developer.apple.com/tutorials/data/documentation/callkit/identifying-and-blocking-calls.json": {

@@ -37,7 +37,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/animatedartwork/init(id:supportedaspectratios:preview:video:)": {
       "etag": "\"3a4d-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/animatedartwork/init-idsupportedaspectratiospreviewvideo.md",
+      "file_path": "documentation/NowPlaying/animatedartwork/init(id,supportedaspectratios,preview,video).md",
       "hash": "7711bfbc4e5548a4b0149731a08a41cd0dc9b21d0d8c01fe02a1b9d53a4be9a6"
     },
     "https://developer.apple.com/documentation/nowplaying/animatedartwork/supportedaspectratios": {
@@ -57,7 +57,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/artwork/init(id:artworkprovider:)": {
       "etag": "\"22f4-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/artwork/init-idartworkprovider.md",
+      "file_path": "documentation/NowPlaying/artwork/init(id,artworkprovider).md",
       "hash": "7a99753eb5ce39d0a31c58f16b58feddef50aa2bd65bc75d85cfe74d7fc12a9e"
     },
     "https://developer.apple.com/documentation/nowplaying/artworkrepresentation": {
@@ -77,12 +77,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/artworkrepresentation/init(cgimage:)": {
       "etag": "\"193c-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/artworkrepresentation/init-cgimage.md",
+      "file_path": "documentation/NowPlaying/artworkrepresentation/init(cgimage).md",
       "hash": "dc213cde360e37faa731f48c2caeb677d761b4939d90d3b6eec661a2c0f89314"
     },
     "https://developer.apple.com/documentation/nowplaying/artworkrepresentation/init(data:)": {
       "etag": "\"1a14-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/artworkrepresentation/init-data.md",
+      "file_path": "documentation/NowPlaying/artworkrepresentation/init(data).md",
       "hash": "7a667ed9c5a48bee819049e5c58c78ade1862da256d4fc2dc7cbd17642fe0696"
     },
     "https://developer.apple.com/documentation/nowplaying/bookcontent": {
@@ -117,12 +117,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/bookcontent/init(id:title:authorname:narratorname:type:duration:artwork:)": {
       "etag": "\"2ce9-65d55d1efe734-df\"",
-      "file_path": "documentation/NowPlaying/bookcontent/init-idtitleauthornamenarratornametypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/bookcontent/init(id,title,authorname,narratorname,type,duration,artwork).md",
       "hash": "2cad69ff86e173d4a2141082a66ce8d2c41145aa1389f7cf9bf742dcd412bc75"
     },
     "https://developer.apple.com/documentation/nowplaying/bookcontent/init(id:title:authorname:narratorname:type:duration:artwork:animatedartwork:)": {
       "etag": "\"335c-65d55d1efe734-df\"",
-      "file_path": "documentation/NowPlaying/bookcontent/init-idtitleauthornamenarratornametypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/bookcontent/init(id,title,authorname,narratorname,type,duration,artwork,animatedartwork).md",
       "hash": "4654b2ccc76b67fc09ea008c66cb54654d117a63cf34adc5dfd63b6ce13fbc3f"
     },
     "https://developer.apple.com/documentation/nowplaying/bookcontent/narratorname": {
@@ -167,12 +167,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/genericcontent/init(id:title:subtitle:type:duration:artwork:)": {
       "etag": "\"2a34-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/genericcontent/init-idtitlesubtitletypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/genericcontent/init(id,title,subtitle,type,duration,artwork).md",
       "hash": "22955678926583d72cd02ae231adafb14221568e3d93b58f28e66288fa40f164"
     },
     "https://developer.apple.com/documentation/nowplaying/genericcontent/init(id:title:subtitle:type:duration:artwork:animatedartwork:)": {
       "etag": "\"2fbc-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/genericcontent/init-idtitlesubtitletypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/genericcontent/init(id,title,subtitle,type,duration,artwork,animatedartwork).md",
       "hash": "ad855e433c8c734b5dbe60f749cbc970c635fc8aef07c30f1d23794c63d9e2cd"
     },
     "https://developer.apple.com/documentation/nowplaying/genericcontent/subtitle": {
@@ -217,12 +217,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/homemediacontent/init(id:sourcename:contentdescription:type:duration:artwork:)": {
       "etag": "\"2a77-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/homemediacontent/init-idsourcenamecontentdescriptiontypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/homemediacontent/init(id,sourcename,contentdescription,type,duration,artwork).md",
       "hash": "ee81398bb2d4e627bd9cfbd06f0a154aa559d6f41c31c4571510110b65780edf"
     },
     "https://developer.apple.com/documentation/nowplaying/homemediacontent/init(id:sourcename:contentdescription:type:duration:artwork:animatedartwork:)": {
       "etag": "\"30ed-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/homemediacontent/init-idsourcenamecontentdescriptiontypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/homemediacontent/init(id,sourcename,contentdescription,type,duration,artwork,animatedartwork).md",
       "hash": "bbb09afdf6cd0c416e7bf0b1092bcb5f778268300c8c366b5c7f1aff4b415e76"
     },
     "https://developer.apple.com/documentation/nowplaying/homemediacontent/sourcename": {
@@ -242,27 +242,27 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/changeplaybackrate(supported:_:)": {
       "etag": "\"355e-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/changeplaybackrate-supported.md",
+      "file_path": "documentation/NowPlaying/mediacommand/changeplaybackrate(supported,_).md",
       "hash": "56f7f314dc5f31d9aa7dfdbaee894c325c99ec7aa8e6f207d99c94ae99cb9e88"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/changerepeatmode(current:supported:_:)": {
       "etag": "\"3b17-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/changerepeatmode-currentsupported.md",
+      "file_path": "documentation/NowPlaying/mediacommand/changerepeatmode(current,supported,_).md",
       "hash": "b8e58051aeef8569a44e56af55122a60bc54a8fdf25dc5df40e9326abcfbd5fd"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/changeshufflemode(current:supported:_:)": {
       "etag": "\"3b2f-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/changeshufflemode-currentsupported.md",
+      "file_path": "documentation/NowPlaying/mediacommand/changeshufflemode(current,supported,_).md",
       "hash": "7574859494b63fc323b84f71b5edc990e252dc9cd7fc1fd8cd18468c48a24173"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/enabled(_:)": {
       "etag": "\"1888-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/enabled.md",
+      "file_path": "documentation/NowPlaying/mediacommand/enabled(_).md",
       "hash": "2f296e3ba920ff2eaf5e2ee1cbf26c77252fd8f10a7be0f50938438ed2e6c342"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/feedback(title:shorttitle:status:_:)": {
       "etag": "\"2d6e-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/feedback-titleshorttitlestatus.md",
+      "file_path": "documentation/NowPlaying/mediacommand/feedback(title,shorttitle,status,_).md",
       "hash": "3c30c7679a753f370d9dec1335184c45dbf2f5b2e3dd953e25ac3974467ec615"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/feedbackstatus": {
@@ -287,22 +287,22 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/next(_:)": {
       "etag": "\"2a5a-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/next.md",
+      "file_path": "documentation/NowPlaying/mediacommand/next(_).md",
       "hash": "63f6c4780ecf1663ce0e514e3a7547cf192e933824c76bcf4086615b6e844e00"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/pause(_:)": {
       "etag": "\"2447-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/pause.md",
+      "file_path": "documentation/NowPlaying/mediacommand/pause(_).md",
       "hash": "3ace904b2c9d65f02f977bfc2a0ba0f842e1e352837d8ca7aa0f0c52c2761e37"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/play(_:)": {
       "etag": "\"2442-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/play.md",
+      "file_path": "documentation/NowPlaying/mediacommand/play(_).md",
       "hash": "40a29c998e60904e9a45745972c249415900013f9cc35dbb28bf2ae856064047"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/previous(_:)": {
       "etag": "\"2851-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/previous.md",
+      "file_path": "documentation/NowPlaying/mediacommand/previous(_).md",
       "hash": "51accd26f8ee144899eb0fb3a02dc100847d6034a3646ef6831348b09e62f99f"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/repeatmode": {
@@ -327,17 +327,17 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/seekbackward(beginaction:endaction:)": {
       "etag": "\"2b3c-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/seekbackward-beginactionendaction.md",
+      "file_path": "documentation/NowPlaying/mediacommand/seekbackward(beginaction,endaction).md",
       "hash": "384f64dc99e4f63246f13207159679d0dbd8af49e4c3c728835e1c3d853d3bd7"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/seekforward(beginaction:endaction:)": {
       "etag": "\"2b55-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/seekforward-beginactionendaction.md",
+      "file_path": "documentation/NowPlaying/mediacommand/seekforward(beginaction,endaction).md",
       "hash": "3b74866895d603d4c436a33c9b576315e19098bdb043512c22e1503295442a26"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/seektoposition(_:)": {
       "etag": "\"2ad7-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/seektoposition.md",
+      "file_path": "documentation/NowPlaying/mediacommand/seektoposition(_).md",
       "hash": "76f4ef3842b036123b5572f651bb11b9863b8de3d90deaea3476a8a5bfa26cd4"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/shufflemode": {
@@ -362,22 +362,22 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/skipbackward(preferredintervals:_:)": {
       "etag": "\"30f7-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/skipbackward-preferredintervals.md",
+      "file_path": "documentation/NowPlaying/mediacommand/skipbackward(preferredintervals,_).md",
       "hash": "7018058bb5599f94bea26468e2dade74d96a425182af8f8932ccfac1b88a0b60"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/skipforward(preferredintervals:_:)": {
       "etag": "\"30f0-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/skipforward-preferredintervals.md",
+      "file_path": "documentation/NowPlaying/mediacommand/skipforward(preferredintervals,_).md",
       "hash": "15ec82c4673833e8385f08b27c8a540bd382de4ff204917792f26d78a9c2b794"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/stop(_:)": {
       "etag": "\"2440-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/stop.md",
+      "file_path": "documentation/NowPlaying/mediacommand/stop(_).md",
       "hash": "d31ddd954b90751b43a2485694e679033625d11a74c35c163f105bc09644404f"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacommand/toggleplaypause(_:)": {
       "etag": "\"248b-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/toggleplaypause.md",
+      "file_path": "documentation/NowPlaying/mediacommand/toggleplaypause(_).md",
       "hash": "f5b951985075ee3e1b3954ab17cd79ea5077566211156f233ac58f6b50d85b12"
     },
     "https://developer.apple.com/documentation/nowplaying/mediacontentrepresentable": {
@@ -447,12 +447,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediadevice/capability/absolutevolume(_:onchange:)": {
       "etag": "\"2a2c-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediadevice/capability/absolutevolume-onchange.md",
+      "file_path": "documentation/NowPlaying/mediadevice/capability/absolutevolume(_,onchange).md",
       "hash": "73537632e2f337cec5b5f3630734079f1ef658f36707435f1ee221edacb9dfdc"
     },
     "https://developer.apple.com/documentation/nowplaying/mediadevice/capability/relativevolume(onincrement:ondecrement:)": {
       "etag": "\"267e-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediadevice/capability/relativevolume-onincrementondecrement.md",
+      "file_path": "documentation/NowPlaying/mediadevice/capability/relativevolume(onincrement,ondecrement).md",
       "hash": "fa96fbbc9462a472391a967f48a2ba8d3757e3709d78a6460df538d6b99fdbb8"
     },
     "https://developer.apple.com/documentation/nowplaying/mediadevice/devicetype": {
@@ -537,7 +537,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediadevice/init(id:name:type:capabilities:)": {
       "etag": "\"357a-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediadevice/init-idnametypecapabilities.md",
+      "file_path": "documentation/NowPlaying/mediadevice/init(id,name,type,capabilities).md",
       "hash": "0362379c35f59967732802ac9e069717b1786fb225126a831defa3c64921e654"
     },
     "https://developer.apple.com/documentation/nowplaying/mediadevice/name": {
@@ -562,7 +562,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediaduration/finite(_:)": {
       "etag": "\"1529-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/mediaduration/finite.md",
+      "file_path": "documentation/NowPlaying/mediaduration/finite(_).md",
       "hash": "ff322f1f8dfd2bdec3bc77a8a0faa3be836d88d0d48893c2d903b7e1397aad72"
     },
     "https://developer.apple.com/documentation/nowplaying/mediaduration/live": {
@@ -577,7 +577,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediaplaybacksnapshot/init(state:defaultplaybackrate:elapsedtime:timestamp:)": {
       "etag": "\"2d58-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/mediaplaybacksnapshot/init-statedefaultplaybackrateelapsedtimetimestamp.md",
+      "file_path": "documentation/NowPlaying/mediaplaybacksnapshot/init(state,defaultplaybackrate,elapsedtime,timestamp).md",
       "hash": "62be32164fa09daf11cd91952377e08ec779c6f07d4bb16fda259d51342cbef4"
     },
     "https://developer.apple.com/documentation/nowplaying/mediaplaybacksnapshot/playbackstate": {
@@ -602,7 +602,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediaplaybacksnapshot/playbackstate/playing(rate:)": {
       "etag": "\"1891-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/mediaplaybacksnapshot/playbackstate/playing-rate.md",
+      "file_path": "documentation/NowPlaying/mediaplaybacksnapshot/playbackstate/playing(rate).md",
       "hash": "be7dadbf89aa8cd0b0a639dad99ed220b17f405f88f167b12aed052106b3dc0e"
     },
     "https://developer.apple.com/documentation/nowplaying/mediaplaybacksnapshot/playbackstate/stopped": {
@@ -627,7 +627,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediasession/init(_:)": {
       "etag": "\"147f-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediasession/init.md",
+      "file_path": "documentation/NowPlaying/mediasession/init(_).md",
       "hash": "ba841204f03d13f1761c235de081acc370bcfdc66c69230fde843b948ee66c4a"
     },
     "https://developer.apple.com/documentation/nowplaying/mediasession/isapplicationprimary": {
@@ -642,12 +642,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/mediasession/requesttobecomeapplicationprimary()": {
       "etag": "\"1de4-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediasession/requesttobecomeapplicationprimary.md",
+      "file_path": "documentation/NowPlaying/mediasession/requesttobecomeapplicationprimary().md",
       "hash": "0d516c6962eabb95e5dfdc576f3c7250857aae4437665f90db32bc7544121adf"
     },
     "https://developer.apple.com/documentation/nowplaying/mediasession/requesttobecomesystemprimary()": {
       "etag": "\"231e-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediasession/requesttobecomesystemprimary.md",
+      "file_path": "documentation/NowPlaying/mediasession/requesttobecomesystemprimary().md",
       "hash": "2075e730cc0f9f9faae39216a36e85554818d6ea3c36f150848c83b9db4d75f8"
     },
     "https://developer.apple.com/documentation/nowplaying/mediasessionerror": {
@@ -732,12 +732,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/moviecontent/init(id:title:duration:artwork:)": {
       "etag": "\"20b4-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/moviecontent/init-idtitledurationartwork.md",
+      "file_path": "documentation/NowPlaying/moviecontent/init(id,title,duration,artwork).md",
       "hash": "80a0c06aa2f7c1c5b916f934cecddc627d6713a6cebc78d24f8894a8143ef195"
     },
     "https://developer.apple.com/documentation/nowplaying/moviecontent/init(id:title:duration:artwork:animatedartwork:)": {
       "etag": "\"2728-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/moviecontent/init-idtitledurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/moviecontent/init(id,title,duration,artwork,animatedartwork).md",
       "hash": "e736505105675f9e041fb785c49d404ab4ae9b2bcf0d7174b9bbb62fc965085f"
     },
     "https://developer.apple.com/documentation/nowplaying/moviecontent/title": {
@@ -782,12 +782,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/musiccontent/init(id:songtitle:artistname:albumname:type:duration:artwork:)": {
       "etag": "\"2ca7-65d55d1efe734-df\"",
-      "file_path": "documentation/NowPlaying/musiccontent/init-idsongtitleartistnamealbumnametypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/musiccontent/init(id,songtitle,artistname,albumname,type,duration,artwork).md",
       "hash": "0accf4f3478b2038d8175bca8d9dc055e43a8d6e2623da708bc92ae5d3f81bd7"
     },
     "https://developer.apple.com/documentation/nowplaying/musiccontent/init(id:songtitle:artistname:albumname:type:duration:artwork:animatedartwork:)": {
       "etag": "\"33e5-65d55d1efe734-df\"",
-      "file_path": "documentation/NowPlaying/musiccontent/init-idsongtitleartistnamealbumnametypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/musiccontent/init(id,songtitle,artistname,albumname,type,duration,artwork,animatedartwork).md",
       "hash": "8b1c064c40ba1c278444119be947fb1bb4034f3a45b8b197bcf9e72e20ed060e"
     },
     "https://developer.apple.com/documentation/nowplaying/musiccontent/isrc": {
@@ -837,12 +837,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/podcastcontent/init(id:episodetitle:showname:releasedate:type:duration:artwork:)": {
       "etag": "\"2f4f-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/podcastcontent/init-idepisodetitleshownamereleasedatetypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/podcastcontent/init(id,episodetitle,showname,releasedate,type,duration,artwork).md",
       "hash": "87418846800d3f9d1891918ec1277e4c3eb904c13433c9ffac471f5e7f55151a"
     },
     "https://developer.apple.com/documentation/nowplaying/podcastcontent/init(id:episodetitle:showname:releasedate:type:duration:artwork:animatedartwork:)": {
       "etag": "\"35cd-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/podcastcontent/init-idepisodetitleshownamereleasedatetypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/podcastcontent/init(id,episodetitle,showname,releasedate,type,duration,artwork,animatedartwork).md",
       "hash": "f3bfd2fbf6e3fc42fc81d27a3daf6ac6ba581d976900beb22e7ed3cf9c46a799"
     },
     "https://developer.apple.com/documentation/nowplaying/podcastcontent/releasedate": {
@@ -892,12 +892,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/radiocontent/init(id:stationname:programname:type:duration:artwork:)": {
       "etag": "\"2a1e-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/radiocontent/init-idstationnameprogramnametypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/radiocontent/init(id,stationname,programname,type,duration,artwork).md",
       "hash": "3344163b17e27851471e7fb7a50d4a3b1ad45ca2ec6478745f86836a0c193d52"
     },
     "https://developer.apple.com/documentation/nowplaying/radiocontent/init(id:stationname:programname:type:duration:artwork:animatedartwork:)": {
       "etag": "\"3094-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/radiocontent/init-idstationnameprogramnametypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/radiocontent/init(id,stationname,programname,type,duration,artwork,animatedartwork).md",
       "hash": "c1e2648fdb6062590d0c7941fbb32573f54861960b8c6d7be8eeeb10cb05745f"
     },
     "https://developer.apple.com/documentation/nowplaying/radiocontent/programname": {
@@ -922,7 +922,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasession/end()": {
       "etag": "\"18ab-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/end.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/end().md",
       "hash": "58ccbafb28f380186dba33f1fa99e345e6df389ebed17627f0fa0932e3bf41d2"
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasession/id": {
@@ -947,22 +947,22 @@
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasession/requesttobecomesystemprimary()": {
       "etag": "\"1f4d-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/requesttobecomesystemprimary.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/requesttobecomesystemprimary().md",
       "hash": "ee141cb6d365f0e24d2eea3354c91fbdae154b81ec6f6a101984acdb26876b7c"
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasession/sessions()": {
       "etag": "\"1b49-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/sessions.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/sessions().md",
       "hash": "08a968394f15831218a9e9ad43851af75078e71540d2d358f1f7bfa9f2e9876e"
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasession/start(attributes:)": {
       "etag": "\"22c4-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/start-attributes.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/start(attributes).md",
       "hash": "24ae0154a8f14850b5757e4957ce523d7034781ac7dabf1b98af4bf7d018e97e"
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasession/update(_:)": {
       "etag": "\"2137-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/update.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/update(_).md",
       "hash": "c5faa3c796946b5d1668efb797838f1ca08b5549af74ea08b1706fa744f5dde6"
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasessionattributes": {
@@ -1007,7 +1007,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasessionextension/session(_:)": {
       "etag": "\"23cc-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasessionextension/session.md",
+      "file_path": "documentation/NowPlaying/remotemediasessionextension/session(_).md",
       "hash": "4f79a9215d904cedb2ebd37051da231ddb48ac5a155670c5c35eb2d986400131"
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasessionextensionconfiguration": {
@@ -1017,7 +1017,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasessionextensionconfiguration/init(extension:)": {
       "etag": "\"147e-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasessionextensionconfiguration/init-extension.md",
+      "file_path": "documentation/NowPlaying/remotemediasessionextensionconfiguration/init(extension).md",
       "hash": "ccaf6ee90c2922cb8d8e8ac04eaeb5a5dca98500314cb1178ae7e34c3ca8d80d"
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasessionrepresentable": {
@@ -1067,7 +1067,7 @@
     },
     "https://developer.apple.com/documentation/nowplaying/remotemediasessionrepresentable/update(_:)": {
       "etag": "\"1c27-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasessionrepresentable/update.md",
+      "file_path": "documentation/NowPlaying/remotemediasessionrepresentable/update(_).md",
       "hash": "fe85b37c3fe1bc6ce66dd743cbc4fdddc7a47aaf2db1ea3ff2b1fd9afb400306"
     },
     "https://developer.apple.com/documentation/nowplaying/tvshowcontent": {
@@ -1097,12 +1097,12 @@
     },
     "https://developer.apple.com/documentation/nowplaying/tvshowcontent/init(id:episodetitle:showname:duration:artwork:)": {
       "etag": "\"245d-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/tvshowcontent/init-idepisodetitleshownamedurationartwork.md",
+      "file_path": "documentation/NowPlaying/tvshowcontent/init(id,episodetitle,showname,duration,artwork).md",
       "hash": "dd3f57593c02b3af2d97481b44c58eb561c8121dec413620333fb21ee230616f"
     },
     "https://developer.apple.com/documentation/nowplaying/tvshowcontent/init(id:episodetitle:showname:duration:artwork:animatedartwork:)": {
       "etag": "\"2ad3-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/tvshowcontent/init-idepisodetitleshownamedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/tvshowcontent/init(id,episodetitle,showname,duration,artwork,animatedartwork).md",
       "hash": "ca3cedd52a95c34af19aae1400b391b1a93a8dbb00ad62b4ddca5eb37f2e05af"
     },
     "https://developer.apple.com/documentation/nowplaying/tvshowcontent/showname": {
@@ -1152,7 +1152,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/animatedartwork/init(id:supportedaspectratios:preview:video:).json": {
       "etag": "\"3a4d-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/animatedartwork/init-idsupportedaspectratiospreviewvideo.md",
+      "file_path": "documentation/NowPlaying/animatedartwork/init(id,supportedaspectratios,preview,video).md",
       "hash": "7711bfbc4e5548a4b0149731a08a41cd0dc9b21d0d8c01fe02a1b9d53a4be9a6"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/animatedartwork/supportedaspectratios.json": {
@@ -1172,7 +1172,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/artwork/init(id:artworkprovider:).json": {
       "etag": "\"22f4-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/artwork/init-idartworkprovider.md",
+      "file_path": "documentation/NowPlaying/artwork/init(id,artworkprovider).md",
       "hash": "7a99753eb5ce39d0a31c58f16b58feddef50aa2bd65bc75d85cfe74d7fc12a9e"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/artworkrepresentation.json": {
@@ -1192,12 +1192,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/artworkrepresentation/init(cgimage:).json": {
       "etag": "\"193c-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/artworkrepresentation/init-cgimage.md",
+      "file_path": "documentation/NowPlaying/artworkrepresentation/init(cgimage).md",
       "hash": "dc213cde360e37faa731f48c2caeb677d761b4939d90d3b6eec661a2c0f89314"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/artworkrepresentation/init(data:).json": {
       "etag": "\"1a14-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/artworkrepresentation/init-data.md",
+      "file_path": "documentation/NowPlaying/artworkrepresentation/init(data).md",
       "hash": "7a667ed9c5a48bee819049e5c58c78ade1862da256d4fc2dc7cbd17642fe0696"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/bookcontent.json": {
@@ -1232,12 +1232,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/bookcontent/init(id:title:authorname:narratorname:type:duration:artwork:).json": {
       "etag": "\"2ce9-65d55d1efe734-df\"",
-      "file_path": "documentation/NowPlaying/bookcontent/init-idtitleauthornamenarratornametypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/bookcontent/init(id,title,authorname,narratorname,type,duration,artwork).md",
       "hash": "2cad69ff86e173d4a2141082a66ce8d2c41145aa1389f7cf9bf742dcd412bc75"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/bookcontent/init(id:title:authorname:narratorname:type:duration:artwork:animatedartwork:).json": {
       "etag": "\"335c-65d55d1efe734-df\"",
-      "file_path": "documentation/NowPlaying/bookcontent/init-idtitleauthornamenarratornametypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/bookcontent/init(id,title,authorname,narratorname,type,duration,artwork,animatedartwork).md",
       "hash": "4654b2ccc76b67fc09ea008c66cb54654d117a63cf34adc5dfd63b6ce13fbc3f"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/bookcontent/narratorname.json": {
@@ -1282,12 +1282,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/genericcontent/init(id:title:subtitle:type:duration:artwork:).json": {
       "etag": "\"2a34-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/genericcontent/init-idtitlesubtitletypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/genericcontent/init(id,title,subtitle,type,duration,artwork).md",
       "hash": "22955678926583d72cd02ae231adafb14221568e3d93b58f28e66288fa40f164"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/genericcontent/init(id:title:subtitle:type:duration:artwork:animatedartwork:).json": {
       "etag": "\"2fbc-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/genericcontent/init-idtitlesubtitletypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/genericcontent/init(id,title,subtitle,type,duration,artwork,animatedartwork).md",
       "hash": "ad855e433c8c734b5dbe60f749cbc970c635fc8aef07c30f1d23794c63d9e2cd"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/genericcontent/subtitle.json": {
@@ -1332,12 +1332,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/homemediacontent/init(id:sourcename:contentdescription:type:duration:artwork:).json": {
       "etag": "\"2a77-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/homemediacontent/init-idsourcenamecontentdescriptiontypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/homemediacontent/init(id,sourcename,contentdescription,type,duration,artwork).md",
       "hash": "ee81398bb2d4e627bd9cfbd06f0a154aa559d6f41c31c4571510110b65780edf"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/homemediacontent/init(id:sourcename:contentdescription:type:duration:artwork:animatedartwork:).json": {
       "etag": "\"30ed-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/homemediacontent/init-idsourcenamecontentdescriptiontypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/homemediacontent/init(id,sourcename,contentdescription,type,duration,artwork,animatedartwork).md",
       "hash": "bbb09afdf6cd0c416e7bf0b1092bcb5f778268300c8c366b5c7f1aff4b415e76"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/homemediacontent/sourcename.json": {
@@ -1357,27 +1357,27 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/changeplaybackrate(supported:_:).json": {
       "etag": "\"355e-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/changeplaybackrate-supported.md",
+      "file_path": "documentation/NowPlaying/mediacommand/changeplaybackrate(supported,_).md",
       "hash": "56f7f314dc5f31d9aa7dfdbaee894c325c99ec7aa8e6f207d99c94ae99cb9e88"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/changerepeatmode(current:supported:_:).json": {
       "etag": "\"3b17-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/changerepeatmode-currentsupported.md",
+      "file_path": "documentation/NowPlaying/mediacommand/changerepeatmode(current,supported,_).md",
       "hash": "b8e58051aeef8569a44e56af55122a60bc54a8fdf25dc5df40e9326abcfbd5fd"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/changeshufflemode(current:supported:_:).json": {
       "etag": "\"3b2f-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/changeshufflemode-currentsupported.md",
+      "file_path": "documentation/NowPlaying/mediacommand/changeshufflemode(current,supported,_).md",
       "hash": "7574859494b63fc323b84f71b5edc990e252dc9cd7fc1fd8cd18468c48a24173"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/enabled(_:).json": {
       "etag": "\"1888-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/enabled.md",
+      "file_path": "documentation/NowPlaying/mediacommand/enabled(_).md",
       "hash": "2f296e3ba920ff2eaf5e2ee1cbf26c77252fd8f10a7be0f50938438ed2e6c342"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/feedback(title:shorttitle:status:_:).json": {
       "etag": "\"2d6e-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/feedback-titleshorttitlestatus.md",
+      "file_path": "documentation/NowPlaying/mediacommand/feedback(title,shorttitle,status,_).md",
       "hash": "3c30c7679a753f370d9dec1335184c45dbf2f5b2e3dd953e25ac3974467ec615"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/feedbackstatus.json": {
@@ -1402,22 +1402,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/next(_:).json": {
       "etag": "\"2a5a-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/next.md",
+      "file_path": "documentation/NowPlaying/mediacommand/next(_).md",
       "hash": "63f6c4780ecf1663ce0e514e3a7547cf192e933824c76bcf4086615b6e844e00"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/pause(_:).json": {
       "etag": "\"2447-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/pause.md",
+      "file_path": "documentation/NowPlaying/mediacommand/pause(_).md",
       "hash": "3ace904b2c9d65f02f977bfc2a0ba0f842e1e352837d8ca7aa0f0c52c2761e37"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/play(_:).json": {
       "etag": "\"2442-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/play.md",
+      "file_path": "documentation/NowPlaying/mediacommand/play(_).md",
       "hash": "40a29c998e60904e9a45745972c249415900013f9cc35dbb28bf2ae856064047"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/previous(_:).json": {
       "etag": "\"2851-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/previous.md",
+      "file_path": "documentation/NowPlaying/mediacommand/previous(_).md",
       "hash": "51accd26f8ee144899eb0fb3a02dc100847d6034a3646ef6831348b09e62f99f"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/repeatmode.json": {
@@ -1442,17 +1442,17 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/seekbackward(beginaction:endaction:).json": {
       "etag": "\"2b3c-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/seekbackward-beginactionendaction.md",
+      "file_path": "documentation/NowPlaying/mediacommand/seekbackward(beginaction,endaction).md",
       "hash": "384f64dc99e4f63246f13207159679d0dbd8af49e4c3c728835e1c3d853d3bd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/seekforward(beginaction:endaction:).json": {
       "etag": "\"2b55-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/seekforward-beginactionendaction.md",
+      "file_path": "documentation/NowPlaying/mediacommand/seekforward(beginaction,endaction).md",
       "hash": "3b74866895d603d4c436a33c9b576315e19098bdb043512c22e1503295442a26"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/seektoposition(_:).json": {
       "etag": "\"2ad7-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/seektoposition.md",
+      "file_path": "documentation/NowPlaying/mediacommand/seektoposition(_).md",
       "hash": "76f4ef3842b036123b5572f651bb11b9863b8de3d90deaea3476a8a5bfa26cd4"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/shufflemode.json": {
@@ -1477,22 +1477,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/skipbackward(preferredintervals:_:).json": {
       "etag": "\"30f7-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/skipbackward-preferredintervals.md",
+      "file_path": "documentation/NowPlaying/mediacommand/skipbackward(preferredintervals,_).md",
       "hash": "7018058bb5599f94bea26468e2dade74d96a425182af8f8932ccfac1b88a0b60"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/skipforward(preferredintervals:_:).json": {
       "etag": "\"30f0-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/skipforward-preferredintervals.md",
+      "file_path": "documentation/NowPlaying/mediacommand/skipforward(preferredintervals,_).md",
       "hash": "15ec82c4673833e8385f08b27c8a540bd382de4ff204917792f26d78a9c2b794"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/stop(_:).json": {
       "etag": "\"2440-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/stop.md",
+      "file_path": "documentation/NowPlaying/mediacommand/stop(_).md",
       "hash": "d31ddd954b90751b43a2485694e679033625d11a74c35c163f105bc09644404f"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacommand/toggleplaypause(_:).json": {
       "etag": "\"248b-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/mediacommand/toggleplaypause.md",
+      "file_path": "documentation/NowPlaying/mediacommand/toggleplaypause(_).md",
       "hash": "f5b951985075ee3e1b3954ab17cd79ea5077566211156f233ac58f6b50d85b12"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediacontentrepresentable.json": {
@@ -1562,12 +1562,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediadevice/capability/absolutevolume(_:onchange:).json": {
       "etag": "\"2a2c-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediadevice/capability/absolutevolume-onchange.md",
+      "file_path": "documentation/NowPlaying/mediadevice/capability/absolutevolume(_,onchange).md",
       "hash": "73537632e2f337cec5b5f3630734079f1ef658f36707435f1ee221edacb9dfdc"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediadevice/capability/relativevolume(onincrement:ondecrement:).json": {
       "etag": "\"267e-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediadevice/capability/relativevolume-onincrementondecrement.md",
+      "file_path": "documentation/NowPlaying/mediadevice/capability/relativevolume(onincrement,ondecrement).md",
       "hash": "fa96fbbc9462a472391a967f48a2ba8d3757e3709d78a6460df538d6b99fdbb8"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediadevice/devicetype.json": {
@@ -1652,7 +1652,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediadevice/init(id:name:type:capabilities:).json": {
       "etag": "\"357a-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediadevice/init-idnametypecapabilities.md",
+      "file_path": "documentation/NowPlaying/mediadevice/init(id,name,type,capabilities).md",
       "hash": "0362379c35f59967732802ac9e069717b1786fb225126a831defa3c64921e654"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediadevice/name.json": {
@@ -1677,7 +1677,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediaduration/finite(_:).json": {
       "etag": "\"1529-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/mediaduration/finite.md",
+      "file_path": "documentation/NowPlaying/mediaduration/finite(_).md",
       "hash": "ff322f1f8dfd2bdec3bc77a8a0faa3be836d88d0d48893c2d903b7e1397aad72"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediaduration/live.json": {
@@ -1692,7 +1692,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediaplaybacksnapshot/init(state:defaultplaybackrate:elapsedtime:timestamp:).json": {
       "etag": "\"2d58-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/mediaplaybacksnapshot/init-statedefaultplaybackrateelapsedtimetimestamp.md",
+      "file_path": "documentation/NowPlaying/mediaplaybacksnapshot/init(state,defaultplaybackrate,elapsedtime,timestamp).md",
       "hash": "62be32164fa09daf11cd91952377e08ec779c6f07d4bb16fda259d51342cbef4"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediaplaybacksnapshot/playbackstate.json": {
@@ -1717,7 +1717,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediaplaybacksnapshot/playbackstate/playing(rate:).json": {
       "etag": "\"1891-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/mediaplaybacksnapshot/playbackstate/playing-rate.md",
+      "file_path": "documentation/NowPlaying/mediaplaybacksnapshot/playbackstate/playing(rate).md",
       "hash": "be7dadbf89aa8cd0b0a639dad99ed220b17f405f88f167b12aed052106b3dc0e"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediaplaybacksnapshot/playbackstate/stopped.json": {
@@ -1742,7 +1742,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediasession/init(_:).json": {
       "etag": "\"147f-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediasession/init.md",
+      "file_path": "documentation/NowPlaying/mediasession/init(_).md",
       "hash": "ba841204f03d13f1761c235de081acc370bcfdc66c69230fde843b948ee66c4a"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediasession/isapplicationprimary.json": {
@@ -1757,12 +1757,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediasession/requesttobecomeapplicationprimary().json": {
       "etag": "\"1de4-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediasession/requesttobecomeapplicationprimary.md",
+      "file_path": "documentation/NowPlaying/mediasession/requesttobecomeapplicationprimary().md",
       "hash": "0d516c6962eabb95e5dfdc576f3c7250857aae4437665f90db32bc7544121adf"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediasession/requesttobecomesystemprimary().json": {
       "etag": "\"231e-65d55d1eb2ef3-df\"",
-      "file_path": "documentation/NowPlaying/mediasession/requesttobecomesystemprimary.md",
+      "file_path": "documentation/NowPlaying/mediasession/requesttobecomesystemprimary().md",
       "hash": "2075e730cc0f9f9faae39216a36e85554818d6ea3c36f150848c83b9db4d75f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/mediasessionerror.json": {
@@ -1847,12 +1847,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/moviecontent/init(id:title:duration:artwork:).json": {
       "etag": "\"20b4-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/moviecontent/init-idtitledurationartwork.md",
+      "file_path": "documentation/NowPlaying/moviecontent/init(id,title,duration,artwork).md",
       "hash": "80a0c06aa2f7c1c5b916f934cecddc627d6713a6cebc78d24f8894a8143ef195"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/moviecontent/init(id:title:duration:artwork:animatedartwork:).json": {
       "etag": "\"2728-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/moviecontent/init-idtitledurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/moviecontent/init(id,title,duration,artwork,animatedartwork).md",
       "hash": "e736505105675f9e041fb785c49d404ab4ae9b2bcf0d7174b9bbb62fc965085f"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/moviecontent/title.json": {
@@ -1901,12 +1901,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/musiccontent/init(id:songtitle:artistname:albumname:type:duration:artwork:).json": {
       "etag": "\"2ca7-65d55d1efe734-df\"",
-      "file_path": "documentation/NowPlaying/musiccontent/init-idsongtitleartistnamealbumnametypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/musiccontent/init(id,songtitle,artistname,albumname,type,duration,artwork).md",
       "hash": "0accf4f3478b2038d8175bca8d9dc055e43a8d6e2623da708bc92ae5d3f81bd7"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/musiccontent/init(id:songtitle:artistname:albumname:type:duration:artwork:animatedartwork:).json": {
       "etag": "\"33e5-65d55d1efe734-df\"",
-      "file_path": "documentation/NowPlaying/musiccontent/init-idsongtitleartistnamealbumnametypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/musiccontent/init(id,songtitle,artistname,albumname,type,duration,artwork,animatedartwork).md",
       "hash": "8b1c064c40ba1c278444119be947fb1bb4034f3a45b8b197bcf9e72e20ed060e"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/musiccontent/isrc.json": {
@@ -1956,12 +1956,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/podcastcontent/init(id:episodetitle:showname:releasedate:type:duration:artwork:).json": {
       "etag": "\"2f4f-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/podcastcontent/init-idepisodetitleshownamereleasedatetypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/podcastcontent/init(id,episodetitle,showname,releasedate,type,duration,artwork).md",
       "hash": "87418846800d3f9d1891918ec1277e4c3eb904c13433c9ffac471f5e7f55151a"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/podcastcontent/init(id:episodetitle:showname:releasedate:type:duration:artwork:animatedartwork:).json": {
       "etag": "\"35cd-65d55d1e8f18a-df\"",
-      "file_path": "documentation/NowPlaying/podcastcontent/init-idepisodetitleshownamereleasedatetypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/podcastcontent/init(id,episodetitle,showname,releasedate,type,duration,artwork,animatedartwork).md",
       "hash": "f3bfd2fbf6e3fc42fc81d27a3daf6ac6ba581d976900beb22e7ed3cf9c46a799"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/podcastcontent/releasedate.json": {
@@ -2011,12 +2011,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/radiocontent/init(id:stationname:programname:type:duration:artwork:).json": {
       "etag": "\"2a1e-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/radiocontent/init-idstationnameprogramnametypedurationartwork.md",
+      "file_path": "documentation/NowPlaying/radiocontent/init(id,stationname,programname,type,duration,artwork).md",
       "hash": "3344163b17e27851471e7fb7a50d4a3b1ad45ca2ec6478745f86836a0c193d52"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/radiocontent/init(id:stationname:programname:type:duration:artwork:animatedartwork:).json": {
       "etag": "\"3094-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/radiocontent/init-idstationnameprogramnametypedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/radiocontent/init(id,stationname,programname,type,duration,artwork,animatedartwork).md",
       "hash": "c1e2648fdb6062590d0c7941fbb32573f54861960b8c6d7be8eeeb10cb05745f"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/radiocontent/programname.json": {
@@ -2041,7 +2041,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasession/end().json": {
       "etag": "\"18ab-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/end.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/end().md",
       "hash": "58ccbafb28f380186dba33f1fa99e345e6df389ebed17627f0fa0932e3bf41d2"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasession/id.json": {
@@ -2066,22 +2066,22 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasession/requesttobecomesystemprimary().json": {
       "etag": "\"1f4d-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/requesttobecomesystemprimary.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/requesttobecomesystemprimary().md",
       "hash": "ee141cb6d365f0e24d2eea3354c91fbdae154b81ec6f6a101984acdb26876b7c"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasession/sessions().json": {
       "etag": "\"1b49-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/sessions.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/sessions().md",
       "hash": "08a968394f15831218a9e9ad43851af75078e71540d2d358f1f7bfa9f2e9876e"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasession/start(attributes:).json": {
       "etag": "\"22c4-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/start-attributes.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/start(attributes).md",
       "hash": "24ae0154a8f14850b5757e4957ce523d7034781ac7dabf1b98af4bf7d018e97e"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasession/update(_:).json": {
       "etag": "\"2137-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasession/update.md",
+      "file_path": "documentation/NowPlaying/remotemediasession/update(_).md",
       "hash": "c5faa3c796946b5d1668efb797838f1ca08b5549af74ea08b1706fa744f5dde6"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasessionattributes.json": {
@@ -2121,7 +2121,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasessionextension/session(_:).json": {
       "etag": "\"23cc-65d55d1ee7ab5-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasessionextension/session.md",
+      "file_path": "documentation/NowPlaying/remotemediasessionextension/session(_).md",
       "hash": "4f79a9215d904cedb2ebd37051da231ddb48ac5a155670c5c35eb2d986400131"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasessionextension/session.json": {
@@ -2136,7 +2136,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasessionextensionconfiguration/init(extension:).json": {
       "etag": "\"147e-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasessionextensionconfiguration/init-extension.md",
+      "file_path": "documentation/NowPlaying/remotemediasessionextensionconfiguration/init(extension).md",
       "hash": "ccaf6ee90c2922cb8d8e8ac04eaeb5a5dca98500314cb1178ae7e34c3ca8d80d"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasessionrepresentable.json": {
@@ -2186,7 +2186,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/remotemediasessionrepresentable/update(_:).json": {
       "etag": "\"1c27-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/remotemediasessionrepresentable/update.md",
+      "file_path": "documentation/NowPlaying/remotemediasessionrepresentable/update(_).md",
       "hash": "fe85b37c3fe1bc6ce66dd743cbc4fdddc7a47aaf2db1ea3ff2b1fd9afb400306"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/tvshowcontent.json": {
@@ -2216,12 +2216,12 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/tvshowcontent/init(id:episodetitle:showname:duration:artwork:).json": {
       "etag": "\"245d-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/tvshowcontent/init-idepisodetitleshownamedurationartwork.md",
+      "file_path": "documentation/NowPlaying/tvshowcontent/init(id,episodetitle,showname,duration,artwork).md",
       "hash": "dd3f57593c02b3af2d97481b44c58eb561c8121dec413620333fb21ee230616f"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/tvshowcontent/init(id:episodetitle:showname:duration:artwork:animatedartwork:).json": {
       "etag": "\"2ad3-65d55d1ece038-df\"",
-      "file_path": "documentation/NowPlaying/tvshowcontent/init-idepisodetitleshownamedurationartworkanimatedartwork.md",
+      "file_path": "documentation/NowPlaying/tvshowcontent/init(id,episodetitle,showname,duration,artwork,animatedartwork).md",
       "hash": "ca3cedd52a95c34af19aae1400b391b1a93a8dbb00ad62b4ddca5eb37f2e05af"
     },
     "https://developer.apple.com/tutorials/data/documentation/nowplaying/tvshowcontent/showname.json": {
