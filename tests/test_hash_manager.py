@@ -202,6 +202,81 @@ def test_a_second_save_of_the_same_entries_is_byte_identical() -> None:
     print("PASS: a_second_save_of_the_same_entries_is_byte_identical")
 
 
+def test_a_stale_render_version_refetches_and_renders_every_page() -> None:
+    """While the stored render version isn't the manager's: no etag is sent and every page has changed."""
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        url = "https://example.com/page"
+        hm = HashManager(cache, render_version=2)
+        hm.update_hash(url, "content", etag="E1")
+        assert (hm.stale, hm.stored_render_version) == (True, None)
+        assert hm.get_etag(url) is None
+        assert hm.has_changed(url, "content", etag="E1") is True
+        hm.mark_rendered()
+        assert (hm.stale, hm.stored_render_version) == (False, 2)
+        assert hm.get_etag(url) == "E1"
+        assert hm.has_changed(url, "content", etag="E1") is False
+        assert hm.save()
+        assert json.loads(cache.read_text())["metadata"]["render"] == {"version": 2}
+
+        # A version bump makes the location stale again; an equal one doesn't
+        assert HashManager(cache, render_version=3).stale
+        assert not HashManager(cache, render_version=2).stale
+        # A malformed value is stale
+        data = json.loads(cache.read_text())
+        data["metadata"]["render"] = 2
+        cache.write_text(json.dumps(data))
+        assert HashManager(cache, render_version=2).stale
+    print("PASS: a_stale_render_version_refetches_and_renders_every_page")
+
+
+def test_a_manager_without_a_render_version_keeps_the_stored_one() -> None:
+    """A manager loaded only to prune or count is never stale, never writes render, and keeps it on save."""
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        cache.write_text(json.dumps({
+            "metadata": {"render": {"version": 1}},
+            "hashes": {"u": {"hash": "h", "etag": "E", "file_path": str(Path(d) / "gone.md")},
+                       "v": {"hash": "h", "etag": "E2", "file_path": str(cache)}},
+        }))
+        hm = HashManager(cache)
+        assert (hm.stale, hm.get_etag("v")) == (False, "E2")
+        hm.mark_rendered()
+        assert hm.metadata == {"render": {"version": 1}}
+        assert hm.prune_missing_files() == 1 and hm.save()
+        assert json.loads(cache.read_text())["metadata"]["render"] == {"version": 1}
+        # The scraper's own manager of another version is stale, and stores it only through mark_rendered
+        own = HashManager(cache, render_version=2)
+        own.set_counter("v", "consecutive_failures", 1)
+        assert own.stale and own.save()
+        assert json.loads(cache.read_text())["metadata"]["render"] == {"version": 1}
+    print("PASS: a_manager_without_a_render_version_keeps_the_stored_one")
+
+
+def test_forget_untouched_renderings_drops_only_their_hash_and_etag() -> None:
+    """Untouched live entries lose hash and etag, keeping file_path and counters; touched and
+    error entries, and a value that isn't an entry, stay; a second call changes nothing."""
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        cache.write_text(json.dumps({"metadata": {}, "hashes": {
+            "held": {"hash": "h", "etag": "E", "file_path": "a.md", "consecutive_local_errors": 1},
+            "seen": {"hash": "h", "etag": "E", "file_path": "b.md"},
+            "gone": {"status": "error", "error": "HTTP 404"},
+            "digest": "d",
+        }}))
+        hm = HashManager(cache, render_version=2)
+        hm.touch("seen")
+        assert hm.forget_untouched_renderings() == 1 and hm.save()
+        assert json.loads(cache.read_text())["hashes"] == {
+            "held": {"hash": "", "file_path": "a.md", "consecutive_local_errors": 1},
+            "seen": {"hash": "h", "etag": "E", "file_path": "b.md"},
+            "gone": {"status": "error", "error": "HTTP 404"},
+            "digest": "d",
+        }
+        assert hm.forget_untouched_renderings() == 0 and not hm._modified
+    print("PASS: forget_untouched_renderings_drops_only_their_hash_and_etag")
+
+
 def test_set_metadata_marks_modified_and_drops_falsy() -> None:
     """Every metadata change is saved, even on a run that changed nothing else."""
     with tempfile.TemporaryDirectory() as d:
@@ -606,6 +681,9 @@ def main():
         test_no_etag_uses_hash,
         test_etag_updated_after_regeneration,
         test_metadata_is_preserved_across_save_and_load,
+        test_a_stale_render_version_refetches_and_renders_every_page,
+        test_a_manager_without_a_render_version_keeps_the_stored_one,
+        test_forget_untouched_renderings_drops_only_their_hash_and_etag,
         test_set_metadata_marks_modified_and_drops_falsy,
         test_legacy_fields_are_dropped_on_load,
         test_a_second_save_of_the_same_entries_is_byte_identical,

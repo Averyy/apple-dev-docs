@@ -80,6 +80,7 @@ from utilities.source_policy import (
     FAILURE_COUNTS_KEY,
     GITHUB_RAW,
     PENDING_ORPHANS_KEY,
+    RENDER_KEY,
     CleanupResult,
     FetchFailed,
     KeptLocation,
@@ -129,7 +130,12 @@ XCODE_DIR_SUFFIXES = ('.xcassets', '.xcworkspace', '.xcodeproj', '.playground')
 # changed (under "<name>@<old output_dir>": its name records the new dir)
 SOURCES_KEY = "sources"
 # Hash-file metadata saved whenever it changes
-POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, SOURCES_KEY)
+POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, SOURCES_KEY, RENDER_KEY)
+
+# The converter's output version: bump it when a change to the conversion
+# changes the files of pages that didn't change, so the next clean run
+# renders every page again (source_policy's metadata.render)
+RENDER_VERSION = 1
 
 
 @dataclass
@@ -1325,7 +1331,11 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
     # know which files we already have; --force only rewrites unchanged ones)
     hashes, metadata, load_error = _load_hash_file()
     stored_hashes = dict(hashes)
-    run = ScrapeRun("MLX", OUTPUT_BASE, metadata, load_error)
+    run = ScrapeRun("MLX", OUTPUT_BASE, metadata, load_error, render_version=RENDER_VERSION)
+    if run.render_stale and not force:
+        # Rendered by another converter version: every page again, as --force
+        console.print(f"[yellow]Render version {RENDER_VERSION}: rendering every page again[/yellow]")
+        force = True
 
     # Output dirs no longer configured (a source dropped from the config, or
     # moved to another output_dir) are cleaned until their files are gone
@@ -1390,6 +1400,10 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
         console.print(f"\n[yellow]Deleted {len(cleanup.deleted)} orphaned files[/yellow]")
     if not cleanup.skipped and not dry_run:
         total_stats["pruned"] = prune_hashes(hashes, run, cleanup)
+    # Storing a new render version: a file this run didn't render (e.g. held
+    # by the valve) has the old rendering, so its key loses its source hash
+    for key in run.unrendered_keys(hashes):
+        hashes[key] = ""
 
     # A dropped output dir stays in metadata.sources until its files are gone,
     # so the next run still scans it (e.g. while the valve holds them)

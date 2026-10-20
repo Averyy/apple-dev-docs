@@ -93,9 +93,13 @@ async def test_flat_hash_file_is_converted_on_a_quiet_run(site: FakeUpstream) ->
     entries = hash_file()["hashes"]
     scrape_hig_docs.HASH_FILE.write_text(json.dumps(entries))  # the old flat format
     scraper = await run()
-    assert scraper.exit_code == 0 and scraper.stats["pages_scraped"] == 0
+    # It records no render version: every page is rendered again, from unchanged JSON
+    assert scraper.exit_code == 0 and scraper.stats["pages_scraped"] == len(ALL)
     data = hash_file()
-    assert data["hashes"] == entries and data["metadata"]["source"] == "scrape_hig_docs.py"
+    assert {url: entry["hash"] for url, entry in data["hashes"].items()} == {
+        url: entry["hash"] for url, entry in entries.items()}
+    assert data["metadata"]["source"] == "scrape_hig_docs.py"
+    assert data["metadata"]["render"] == {"version": scrape_hig_docs.RENDER_VERSION}
     # And nothing is rewritten on the next quiet run
     before = scrape_hig_docs.HASH_FILE.read_text()
     await run()
@@ -554,6 +558,7 @@ def test_a_reference_reads_as_the_prose_words_it() -> None:
     content, formatted as Apple wrote it, else its plain text) when it carries
     one, else the target's title, never in code voice."""
     scraper = HIGDocsScraper()
+    scraper.doc_dirs = {"swiftui": "SwiftUI"}
     references: Dict[str, Any] = {
         "doc://com.apple.HIG/design/Human-Interface-Guidelines/dark-mode": {
             "type": "topic", "title": "Dark Mode", "url": "/design/human-interface-guidelines/dark-mode"},
@@ -586,8 +591,104 @@ def test_a_reference_reads_as_the_prose_words_it() -> None:
     ]
     assert scraper._extract_text_from_inline_content(inline, references) == (
         "Both light and [*dark*](dark-mode.md) use [material](materials.md); see "
-        "[Apple Design Resources](https://developer.apple.com/design/resources/), [Button](../SwiftUI/Button.md) "
+        "[Apple Design Resources](https://developer.apple.com/design/resources/), [Button](../SwiftUI/button.md) "
         "and the kit.")
+
+
+def test_links_into_apple_docs_use_the_apple_scrapers_path_rule() -> None:
+    """A link to an Apple documentation page is its file under the Apple scraper's
+    path rule, relative to the HIG file (quoted, its fragment kept), when its framework
+    is a docs dir we have; else its Apple URL. HIG's own links stay as they are."""
+    scraper = HIGDocsScraper()
+    scraper.doc_dirs = {"swiftui": "SwiftUI", "xctest": "XCTest", "swift": "Swift"}
+    scraper.current_url = f"{scrape_hig_docs.JSON_BASE_URL}/human-interface-guidelines/buttons.json"
+    cases = {
+        "/documentation/SwiftUI/View/padding(_:_:)": "../SwiftUI/view/padding%28_,_%29.md",
+        "/documentation/swiftui/view#Overview": "../SwiftUI/view.md#Overview",
+        "/documentation/xctest/xctest": "../XCTest/xctest-page.md",
+        "/documentation/swift/comparable/'..<(_:_:)": "../Swift/comparable/dot._%28_,_%29.md",
+        "/documentation/swiftui": "../SwiftUI/SwiftUI.md",
+        "/documentation/otherkit/thing": "https://developer.apple.com/documentation/otherkit/thing",
+        "/design/human-interface-guidelines/color#Best-practices": "color.md#Best-practices",
+        "https://developer.apple.com/documentation/swiftui/view": "https://developer.apple.com/documentation/swiftui/view",
+    }
+    for link_url, link in cases.items():
+        assert scraper._convert_url_to_local_path(link_url) == link, link_url
+
+
+async def test_the_known_dirs_are_the_apple_hash_files(site: FakeUpstream) -> None:
+    """The dirmap comes from the hash files next to HIG's: an Apple framework's name, never HIG's own file."""
+    hashes = scrape_hig_docs.HASH_FILE.parent
+    hashes.mkdir(parents=True, exist_ok=True)
+    (hashes / "SwiftUI_hashes.json").write_text(json.dumps({"metadata": {}, "hashes": {
+        "https://developer.apple.com/tutorials/data/documentation/swiftui/view.json": {"hash": "h"}}}))
+    await run()
+    scraper = HIGDocsScraper()
+    assert scraper._link_dirs() == {"swiftui": "SwiftUI"}
+
+
+async def test_a_new_render_version_renders_every_page_once(site: FakeUpstream,
+                                                             monkeypatch: pytest.MonkeyPatch) -> None:
+    await run()
+    assert hash_file()["metadata"]["render"] == {"version": scrape_hig_docs.RENDER_VERSION}
+    (scrape_hig_docs.OUTPUT_DIR / "a.md").write_text("# an older rendering\n")
+    monkeypatch.setattr(scrape_hig_docs, "RENDER_VERSION", 2)
+    scraper = await run()
+    assert scraper.exit_code == 0 and scraper.stats["pages_scraped"] == len(ALL)
+    assert "an older rendering" not in (scrape_hig_docs.OUTPUT_DIR / "a.md").read_text()
+    assert hash_file()["metadata"]["render"] == {"version": 2}
+    before = scrape_hig_docs.HASH_FILE.read_text()
+    scraper = await run()
+    assert scraper.stats["pages_scraped"] == 0 and scrape_hig_docs.HASH_FILE.read_text() == before
+
+
+async def test_pages_the_storing_run_didnt_render_are_rendered_when_back(site: FakeUpstream,
+                                                                         monkeypatch: pytest.MonkeyPatch) -> None:
+    """The run that stores a new render version drops the hash of the pages it didn't produce
+    (here files the valve holds), so they are rendered when they're linked again unchanged."""
+    await run()
+    for name in ALL:
+        (scrape_hig_docs.OUTPUT_DIR / name).write_text("# an older rendering\n")
+    monkeypatch.setattr(scrape_hig_docs, "RENDER_VERSION", 2)
+    site.hig_page("", ROOT_TITLE, ("a",))  # 5 of 7 unlinked: held
+    scraper = await run()
+    assert scraper.exit_code == 0 and docs() == ALL and len(hash_file()["metadata"]["pending_orphans"]) == 5
+    assert hash_file()["metadata"]["render"] == {"version": 2}
+    held = urls(site, ("b", "c", "c1", "d", "e"))
+    entries = hash_file()["hashes"]
+    assert {u for u, entry in entries.items() if entry["hash"] == ""} == held
+    assert all(entries[u]["file_path"] for u in held)
+    site.hig_page("", ROOT_TITLE, ROOT_LINKS)  # linked again, unchanged
+    scraper = await run()
+    assert scraper.exit_code == 0 and docs() == ALL and "pending_orphans" not in hash_file()["metadata"]
+    assert not any("an older rendering" in (scrape_hig_docs.OUTPUT_DIR / name).read_text() for name in ALL)
+    before = scrape_hig_docs.HASH_FILE.read_text()
+    scraper = await run()
+    assert scraper.stats["pages_scraped"] == 0 and scrape_hig_docs.HASH_FILE.read_text() == before
+
+
+async def test_a_run_that_isnt_clean_keeps_the_stored_render_version(site: FakeUpstream,
+                                                                     monkeypatch: pytest.MonkeyPatch) -> None:
+    """A blocked run, and an interrupted one (its save keeps the stored metadata), store nothing;
+    the next clean run renders every page and stores the version."""
+    await run()
+    monkeypatch.setattr(scrape_hig_docs, "RENDER_VERSION", 2)
+    site.faults[site.hig_path("a")] = 502
+    scraper = await run()
+    assert scraper.exit_code == 1 and hash_file()["metadata"]["render"] == {"version": 1}
+    del site.faults[site.hig_path("a")]
+
+    def interrupted(self: HIGDocsScraper) -> None:
+        raise RuntimeError("interrupted")
+
+    log_unknown_content = HIGDocsScraper._log_unknown_content
+    monkeypatch.setattr(HIGDocsScraper, "_log_unknown_content", interrupted)
+    with pytest.raises(RuntimeError, match="interrupted"):
+        await run()
+    assert hash_file()["metadata"]["render"] == {"version": 1}
+    monkeypatch.setattr(HIGDocsScraper, "_log_unknown_content", log_unknown_content)
+    scraper = await run()
+    assert scraper.stats["pages_scraped"] == len(ALL) and hash_file()["metadata"]["render"] == {"version": 2}
 
 
 def paragraph(value: str) -> Dict[str, Any]:

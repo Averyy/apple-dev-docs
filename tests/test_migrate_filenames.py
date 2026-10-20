@@ -163,6 +163,15 @@ class TestMigration:
         assert [row[3] for row in plan if row[0] == "orphan"] == [str(DOCS / "stale.md")]
 
     def test_migrate_then_rerun(self, repo: Repo, capsys: pytest.CaptureFixture[str]) -> None:
+        # A second framework, without a render version (TestKit has one): its file moves too
+        other = Path("documentation") / "OtherKit"
+        other_entry = {"hash": "h-run", "etag": "E-run", "file_path": str(other / "run.md")}
+        repo.write(str(other / "run.md"), f"{DOC}/otherkit/run(_:)")
+        Path(".hashes").mkdir(exist_ok=True)
+        Path(".hashes/OtherKit_hashes.json").write_text(json.dumps({"metadata": {"total_pages": 2}, "hashes": {
+            f"{JSON}/otherkit/run(_:).json": other_entry, f"{DOC}/otherkit/run(_:)": other_entry,
+        }}, indent=2, sort_keys=True))
+        repo.metadata["render"] = {"version": 0}
         standard(repo)
         before = repo.saved()
         assert migrate() == 0
@@ -195,10 +204,15 @@ class TestMigration:
         assert saved["metadata"]["pending_orphans"] == sorted(
             [str(DOCS / "stale.md"), str(DOCS / "testkit-page" / "init(_).md")]
         )
+        # metadata.render stays as loaded, in both saved hash files: the rename renders nothing
+        other_saved = json.loads(Path(".hashes/OtherKit_hashes.json").read_text())
+        assert saved["metadata"]["render"] == {"version": 0} and "render" not in other_saved["metadata"]
+        assert other_saved["hashes"][f"{JSON}/otherkit/run(_:).json"] == {
+            **other_entry, "file_path": str(other / "run(_).md")}
         # git sees renames
         git("add", "-A")
         status = git("status", "--porcelain").splitlines()
-        assert sorted(line[:2] for line in status) == ["M ", "R ", "R ", "R ", "R "]
+        assert sorted(line[:2] for line in status) == ["M ", "M ", "R ", "R ", "R ", "R ", "R "]
         git("commit", "-qm", "rename")
 
         hashes_after = Path(f".hashes/{FW}_hashes.json").read_bytes()

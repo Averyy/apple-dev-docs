@@ -132,8 +132,9 @@ class TestUnlistedFrameworks:
         self, runs: Runs, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
     ) -> None:
         """technologies.json misses 3 of 20 frameworks (15%)."""
+        rendered = {"kit00": {"version": 0}}  # metadata.render, kept as it is by the count's write
         for kit in KITS:
-            make_framework(kit)
+            make_framework(kit, **({"render": rendered[kit]} if kit in rendered else {}))
         dropped, listed = KITS[:3], KITS[3:]
         before = snapshot()
         # The scrape's list guard alone would stop the run: 17 of 20 is below 90%
@@ -151,6 +152,7 @@ class TestUnlistedFrameworks:
         for kit in dropped:
             data = json.loads(after[str(Config.get_hash_file(kit))])
             assert data["metadata"].pop("unlisted_runs") == 1
+            assert data["metadata"].get("render") == rendered.get(kit), kit  # present stays, absent stays absent
             assert data == json.loads(before[str(Config.get_hash_file(kit))])
         out = capsys.readouterr().out
         assert "removed if still unlisted on the next run: kit00 (run 1), kit01 (run 1), kit02 (run 1)" in out

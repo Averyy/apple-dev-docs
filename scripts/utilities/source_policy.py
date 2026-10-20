@@ -62,6 +62,16 @@ that doesn't reach the page leaves it as it is, and a run whose cleanup ran
 and that saves no hash key for the page (its file deleted, its key pruned)
 drops it, unless the page failed locally again in that run or its location
 was kept.
+
+metadata.render records the converter output version the files were last
+rendered with ({"version": <the scraper's RENDER_VERSION>}). A run whose
+scraper has another version renders every page again, as --force does
+(render_stale), and stores its version only when it is clean (rendered):
+otherwise a page whose new rendering failed, or a kept location, would never
+be rendered again, its source hash matching. The run that stores it drops the
+stored source hash of every key it didn't produce (unrendered_keys; e.g. a
+file the valve holds), keeping the key, so such a page is rendered when it
+is back.
 """
 
 import asyncio
@@ -117,6 +127,7 @@ GITHUB_API = "https://api.github.com"
 # Hash-file metadata keys this policy owns (scrapers may add their own, e.g. MLX's sources)
 FAILURE_COUNTS_KEY: Final = "failure_counts"
 PENDING_ORPHANS_KEY: Final = "pending_orphans"
+RENDER_KEY: Final = "render"
 COUNT_FIELDS: Final = ("gone", "fail", "local")
 
 
@@ -535,6 +546,7 @@ class ScrapeRun:
         output_base: Path,
         metadata: Mapping[str, Any],
         load_error: Optional[str] = None,
+        render_version: Optional[int] = None,
     ) -> None:
         """
         Args:
@@ -544,14 +556,20 @@ class ScrapeRun:
             load_error: Why the hash file couldn't be loaded, if it couldn't:
                 every key then looks new, so this run's cleanup is blocked
                 (hash_load_failed, exit 1); the run's save replaces the file
+            render_version: The scraper's RENDER_VERSION (render_stale,
+                metadata); None keeps the stored render as it is
         """
         self.scraper = scraper
         self.output_base = output_base
         self.load_error = load_error
         self.counts = FailureCounts(metadata.get(FAILURE_COUNTS_KEY))
         self.pending_orphans = self._stored_pending(metadata.get(PENDING_ORPHANS_KEY))
+        self.render_version = render_version
+        self.stored_render = metadata.get(RENDER_KEY)
         self.blocks: Dict[str, List[str]] = {}
         self.errors: List[str] = []
+        # Keys whose convert/save failed for the PERSISTENT_FAILURE_RUNS-th run in a row (this run)
+        self.persistent_local_errors: List[str] = []
         self.kept: List[KeptLocation] = []
         self.kept_key_prefixes: List[str] = []
         self.produced: Set[str] = set()
@@ -621,6 +639,42 @@ class ScrapeRun:
     def blocked(self) -> bool:
         """This run's cleanup is blocked by a failure of ours."""
         return bool(self.blocks)
+
+    @property
+    def render_stale(self) -> bool:
+        """The files were rendered by another converter version (metadata.render) than render_version.
+
+        The scraper then renders every page again this run, as --force
+        does. Never stale without a render_version.
+        """
+        if self.render_version is None:
+            return False
+        stored = self.stored_render
+        return not (isinstance(stored, dict) and stored.get("version") == self.render_version)
+
+    @property
+    def rendered(self) -> bool:
+        """Every page this run reached was rendered by this run's converter (a clean run).
+
+        The cleanup isn't blocked, no location was kept (e.g.
+        source_gone_pending: its pages weren't reached) and no page's local
+        error is persistent (its file kept, not rendered again).
+        """
+        return not self.blocked and not self.kept and not self.persistent_local_errors
+
+    def unrendered_keys(self, hash_keys: Iterable[str]) -> List[str]:
+        """The keys whose stored source hash the save drops: when this run
+        stores a new render version (render_stale and rendered), every key it
+        didn't produce. Their files keep the old rendering (a file the valve
+        holds, say); without the hash such a page that comes back unchanged
+        is rendered again, not skipped. None on any other run.
+
+        Args:
+            hash_keys: The keys of the hash file this run saves, after its pruning
+        """
+        if not (self.render_stale and self.rendered):
+            return []
+        return [key for key in hash_keys if key not in self.produced]
 
     def exit_code(self) -> int:
         """0 for a clean run; 1 if a failure of ours blocked the cleanup or
@@ -789,6 +843,7 @@ class ScrapeRun:
         logger.error(f"persistent_local_error: {key}: {error} on {runs} consecutive runs; no longer blocking "
                      "cleanup, its file is kept")
         self.errors.append(f"persistent_local_error: {key} ({error}, {runs} runs)")
+        self.persistent_local_errors.append(key)
 
     def unprocessed(self, key: str, path: Optional[Path], error: str) -> None:
         """A page loaded but raised before its links were read: its file (if
@@ -934,7 +989,9 @@ class ScrapeRun:
 
     def metadata(self, hash_keys: Container[str]) -> Dict[str, Any]:
         """This policy's hash-file metadata after the run: failure_counts and
-        pending_orphans, each only while non-empty.
+        pending_orphans, each only while non-empty, and render: this run's
+        render_version when the run is clean (rendered), else the stored
+        one (if any).
 
         Args:
             hash_keys: The keys of the hash file this run saves, after its
@@ -950,6 +1007,10 @@ class ScrapeRun:
             result[FAILURE_COUNTS_KEY] = counts
         if self.pending_orphans:
             result[PENDING_ORPHANS_KEY] = self.pending_orphans
+        if self.render_version is not None and self.rendered:
+            result[RENDER_KEY] = {"version": self.render_version}
+        elif self.stored_render is not None:
+            result[RENDER_KEY] = self.stored_render
         return result
 
     def summary_lines(self, cleanup: Optional[CleanupResult]) -> List[str]:

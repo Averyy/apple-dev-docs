@@ -33,7 +33,7 @@ import cleanup_orphans_at_end
 import scrape_all_frameworks
 from cleanup_orphans_at_end import CleanupReport
 from scraper.config import Config
-from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome
+from scraper.json_scraper import PERSISTENT_FAILURE_RUNS, AppleJSONDocumentationScraper, FrameworkOutcome
 from scraper.utils.hash_manager import HashManager
 from scraper.utils.rate_limiter import AdaptiveRateLimiter
 from tests.test_fetch_results import TIMEOUT, FakeApple, Spec, doc_url, json_url, ok, page, status
@@ -214,7 +214,8 @@ class TestCleanRuns:
         assert outcome == FrameworkOutcome(framework_id=FW, stats=outcome.stats)
         assert not outcome.skip_cleanup
         saved = runs.saved()
-        assert set(saved["metadata"]) == {"total_pages"}
+        assert saved["metadata"] == {"total_pages": len(saved["hashes"]),
+                                     "render": {"version": AppleJSONDocumentationScraper.RENDER_VERSION}}
         assert all(not counters(e) for e in saved["hashes"].values())
         assert runs.orphans() == set()
         assert not (Path("documentation") / FW / "scraping_progress.txt").exists()
@@ -260,7 +261,7 @@ class TestCleanRuns:
         saved = runs.saved()
         assert saved["metadata"]["pending_orphans"] == ["documentation/testkit/old.md"]
         assert saved["metadata"]["module"] == {"parent": "other"}
-        assert list(saved["metadata"]) == ["module", "pending_orphans", "total_pages"]
+        assert list(saved["metadata"]) == ["module", "pending_orphans", "render", "total_pages"]
         # A local-error count resets only on a successful save; a run that
         # never fetched the URL ends its D8 streak
         assert counters(saved["hashes"][unlinked]) == {"consecutive_local_errors": 2}
@@ -1128,3 +1129,139 @@ class TestLostEntries:
         assert not scraper.outcome.skip_cleanup
         assert runs.entry(BETA)["status"] == "error"
         assert would_delete(scraper) == {FW: [file_of(BETA)]}
+
+
+class TestRenderVersion:
+    """4.13: a framework rendered by another RENDER_VERSION is rendered again whole (every page
+    fetched without its etag and written), and the new version is stored only after a clean run."""
+
+    @staticmethod
+    def bump(monkeypatch: pytest.MonkeyPatch, version: int = 2) -> None:
+        monkeypatch.setattr(AppleJSONDocumentationScraper, "RENDER_VERSION", version)
+
+    @staticmethod
+    def stored() -> Any:
+        return Runs.saved()["metadata"].get("render")
+
+    async def test_a_stale_framework_is_rendered_again_then_answers_304(
+        self, runs: Runs, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        await seeded(runs)
+        assert self.stored() == {"version": AppleJSONDocumentationScraper.RENDER_VERSION}
+        for path in SITE:
+            file_of(path).write_text("# an older rendering\n", encoding="utf-8")
+        hashes_before = runs.saved()["hashes"]
+        self.bump(monkeypatch)
+        scraper = await runs.run(routes_for(SITE))
+        assert scraper.stats["pages_skipped"] == 0 and scraper.stats["pages_scraped"] >= len(SITE)
+        for path in SITE:
+            assert f"The {path} page." in file_of(path).read_text(encoding="utf-8"), path
+        assert runs.logged("render_version_stale") and runs.logged("render_version_stored")
+        saved = runs.saved()
+        assert saved["metadata"]["render"] == {"version": 2}
+        assert saved["hashes"] == hashes_before  # same JSON, same etags and files
+        # The next run of the same version: every page answers 304, nothing is written
+        hash_file = Config.get_hash_file(FW)
+        before = hash_file.read_bytes()
+        scraper = await runs.run(routes_for(SITE))
+        assert scraper.stats["pages_scraped"] == 0 and scraper.stats["pages_skipped"] >= len(SITE)
+        assert hash_file.read_bytes() == before and not runs.logged("render_version_stale")
+
+    async def test_pages_the_storing_run_didnt_reach_are_rendered_when_back(
+        self, runs: Runs, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """Their files keep the old rendering (here held by the valve): the run that stores the
+        version drops their hash and etag, so they are rendered when Apple links them again unchanged."""
+        await seeded(runs)
+        for path in SITE:
+            file_of(path).write_text("# an older rendering\n", encoding="utf-8")
+        unreached = (ALPHA, ALPHA_CHILD, BETA, GAMMA)
+        root_only = routes_for({**SITE, ROOT: []})
+        # A run of the stored version that doesn't reach them leaves their entries alone
+        entries = {path: runs.entry(path) for path in unreached}
+        await runs.run(root_only)
+        assert {path: runs.entry(path) for path in unreached} == entries
+        hash_file = Config.get_hash_file(FW)
+        data = runs.saved()
+        data["hashes"][json_url(GAMMA)]["consecutive_local_errors"] = 1
+        hash_file.write_text(json.dumps(data, indent=2, sort_keys=True))
+        self.bump(monkeypatch)
+        scraper = await runs.run(root_only)  # clean, 4 of 5 files unreached
+        assert self.stored() == {"version": 2}
+        for path in unreached:
+            entry = runs.entry(path)
+            assert entry["hash"] == "" and "etag" not in entry and entry["file_path"] == str(file_of(path)), path
+        assert counters(runs.entry(GAMMA)) == {"consecutive_local_errors": 1}
+        assert runs.entry(ROOT)["hash"] and runs.entry(ROOT)["etag"]
+        report = runs.cleanup(scraper)
+        assert report.deleted == {} and report.held == {FW: (4, 5)}
+        assert runs.saved()["metadata"]["pending_orphans"] == sorted(str(file_of(path)) for path in unreached)
+        # A run of the stored version that still doesn't reach them writes nothing
+        before = hash_file.read_bytes()
+        await runs.run(root_only)
+        assert hash_file.read_bytes() == before and not runs.logged("render_version_stale")
+        # Linked again, JSON unchanged: fetched without an etag and rendered; nothing is orphaned
+        scraper = await runs.run(routes_for(SITE))
+        for path in SITE:
+            assert f"The {path} page." in file_of(path).read_text(encoding="utf-8"), path
+        report = runs.cleanup(scraper)
+        assert report.deleted == {} and report.held == {} and "pending_orphans" not in runs.saved()["metadata"]
+        assert all(runs.entry(path)["hash"] and runs.entry(path)["etag"] for path in unreached)
+        # Then every page answers 304 and nothing is written
+        before = hash_file.read_bytes()
+        scraper = await runs.run(routes_for(SITE))
+        assert scraper.stats["pages_scraped"] == 0 and hash_file.read_bytes() == before
+
+    async def test_a_blocked_run_keeps_the_stored_version(self, runs: Runs, monkeypatch: pytest.MonkeyPatch) -> None:
+        await seeded(runs)
+        self.bump(monkeypatch)
+        scraper = await runs.run(routes_for(SITE, {BETA: [status(502)]}))
+        assert scraper.outcome.blocked
+        assert self.stored() == {"version": 1}
+        # Still stale: the next (clean) run renders every page again and stores it
+        scraper = await runs.run(routes_for(SITE))
+        assert scraper.stats["pages_skipped"] == 0 and self.stored() == {"version": 2}
+
+    async def test_a_root_gone_run_stores_nothing(self, runs: Runs, monkeypatch: pytest.MonkeyPatch) -> None:
+        await seeded(runs)
+        self.bump(monkeypatch)
+        scraper = await runs.run(routes_for(SITE, {ROOT: [status(404)]}))
+        assert scraper.outcome.root_gone_runs == 1 and not scraper.outcome.blocked
+        assert self.stored() == {"version": 1}
+
+    async def test_a_persistent_local_error_keeps_the_version_unstored(
+        self, runs: Runs, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """The page's old file is kept and its etag still matches: only an unstored version renders it again."""
+        await seeded(runs)
+        self.bump(monkeypatch)
+        fail_convert(monkeypatch, ALPHA)
+        for run in range(1, PERSISTENT_FAILURE_RUNS + 1):
+            scraper = await runs.run(routes_for(SITE))
+            assert scraper.outcome.blocked == (run < PERSISTENT_FAILURE_RUNS), run
+            assert self.stored() == {"version": 1}, run
+        assert scraper.outcome.persistent_local_errors == [json_url(ALPHA)]
+
+    async def test_a_filename_clash_doesnt_keep_the_framework_stale(
+        self, runs: Runs, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        await seeded(runs)
+        self.bump(monkeypatch)
+        clashing = "testkit/alpha-"  # seg_name strips the "-"
+        site: Site = {**SITE, ROOT: [*SITE[ROOT], clashing], clashing: []}
+        scraper = await runs.run(routes_for(site))
+        assert scraper.outcome.filename_clashes == [json_url(clashing)] and not scraper.outcome.skip_cleanup
+        assert self.stored() == {"version": 2}
+
+    async def test_the_end_of_run_prune_keeps_the_stored_version(
+        self, runs: Runs, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        """cleanup_orphans_at_end's manager passes no version: its prune-save keeps render."""
+        await seeded(runs)
+        stray = Config.OUTPUT_DIR / FW / "stray.md"
+        stray.write_text("# stray\n")
+        scraper = await runs.run(routes_for({**SITE, ROOT: [ALPHA, BETA]}))
+        report = runs.cleanup(scraper)
+        assert report.failures == [] and report.pruned > 0
+        assert not stray.exists() and not file_of(GAMMA).exists()
+        assert self.stored() == {"version": 1}

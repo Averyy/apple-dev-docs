@@ -30,6 +30,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from scraper.base import NOT_MODIFIED, FetchFailed, NotModified
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
+from scraper.utils.hash_manager import RENDER_KEY
 from scraper.utils.naming import clash_suffix
 
 FW = "testkit"
@@ -107,6 +108,10 @@ class Rig:
     def __init__(self, routes: Dict[str, List[Spec]], monkeypatch: pytest.MonkeyPatch) -> None:
         self.fake = FakeApple(routes)
         self.scraper = AppleJSONDocumentationScraper(FW, "TestKit")
+        # Pages rendered by this converter version, as loaded from a hash
+        # file a clean run of this version saved (else every page is stale:
+        # no If-None-Match, no 304)
+        self.scraper.hash_manager.metadata[RENDER_KEY] = {"version": AppleJSONDocumentationScraper.RENDER_VERSION}
         self.scraper.session = httpx.AsyncClient(
             transport=httpx.MockTransport(self.fake), follow_redirects=True
         )

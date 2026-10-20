@@ -129,6 +129,49 @@ def key(site: FakeUpstream, source: str, path: str) -> str:
     return f"{source}:{site.sphinx_url(f'{prefix}/{path}')}"
 
 
+async def test_a_new_render_version_renders_every_page_once(site: FakeUpstream,
+                                                             monkeypatch: pytest.MonkeyPatch) -> None:
+    """Stale behaves as --force; a blocked run keeps the stored version, a clean one stores it."""
+    assert await run() == 0
+    assert metadata()["render"] == {"version": scrape_mlx_docs.RENDER_VERSION}
+    guide = scrape_mlx_docs.OUTPUT_BASE / "Lib" / "guide.md"
+    readme = scrape_mlx_docs.OUTPUT_BASE / "Lib" / "lib-lm" / "README.md"
+    for path in (guide, readme):
+        path.write_text("# an older rendering\n")
+    monkeypatch.setattr(scrape_mlx_docs, "RENDER_VERSION", 2)
+    site.faults["/sphinx/tools/a.html"] = 502
+    assert await run() == 1
+    assert metadata()["render"] == {"version": 1}
+    site.faults.clear()
+    assert await run() == 0
+    assert metadata()["render"] == {"version": 2}
+    assert all("an older rendering" not in path.read_text() for path in (guide, readme))
+    before = scrape_mlx_docs.HASH_FILE.read_text()
+    assert await run() == 0 and scrape_mlx_docs.HASH_FILE.read_text() == before
+
+
+async def test_pages_the_storing_run_didnt_render_are_rendered_when_back(site: FakeUpstream,
+                                                                         monkeypatch: pytest.MonkeyPatch) -> None:
+    """The run that stores a new render version drops the source hash of the keys it didn't
+    produce (here pages whose files the valve holds), so they are rendered when linked again."""
+    assert await run() == 0
+    keys = set(hash_file()["hashes"])
+    for path in ALL:
+        (scrape_mlx_docs.OUTPUT_BASE / path).write_text("# an older rendering\n")
+    monkeypatch.setattr(scrape_mlx_docs, "RENDER_VERSION", 2)
+    site.sphinx_page("lib/index.html", "lib index.html", ("guide.html",))  # 6 of Lib's 12 files unlinked
+    assert await run() == 0 and docs() == ALL and len(metadata()["pending_orphans"]) == 6
+    assert metadata()["render"] == {"version": 2}
+    hashes = hash_file()["hashes"]
+    assert set(hashes) == keys and len([key for key in keys if hashes[key] == ""]) == 6
+    site.sphinx_page("lib/index.html", "lib index.html", LIB_PAGES["index.html"])  # linked again, unchanged
+    assert await run() == 0 and docs() == ALL and "pending_orphans" not in metadata()
+    assert not any("an older rendering" in (scrape_mlx_docs.OUTPUT_BASE / path).read_text() for path in ALL)
+    assert set(hash_file()["hashes"]) == keys and all(hash_file()["hashes"].values())
+    before = scrape_mlx_docs.HASH_FILE.read_text()
+    assert await run() == 0 and scrape_mlx_docs.HASH_FILE.read_text() == before
+
+
 async def test_full_scrape_normalizes_links(site: FakeUpstream) -> None:
     assert await run() == 0
     assert docs() == ALL

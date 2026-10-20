@@ -5,7 +5,7 @@ import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from enum import Enum
-from typing import Any, Dict, Final, Optional, Tuple, Union
+from typing import Any, ClassVar, Dict, Final, Optional, Tuple, Union
 
 import httpx
 
@@ -52,7 +52,13 @@ FetchResult = Union[Tuple[str, Optional[str]], NotModified, FetchFailed]
 
 class BaseAppleScraper(ABC):
     """Base class for all Apple documentation scrapers."""
-    
+
+    # The version of the scraper's converter output (file names and links
+    # included), stored in each framework's hash file after a clean run; a
+    # framework whose stored version differs is rendered again whole
+    # (HashManager.stale). Set by the subclass; None renders nothing again
+    RENDER_VERSION: ClassVar[Optional[int]] = None
+
     def __init__(
         self,
         framework_id: str,
@@ -78,7 +84,9 @@ class BaseAppleScraper(ABC):
         self.output_dir = Config.get_framework_output_dir(framework_id, framework_name)
         
         # Initialize components - use framework_name for proper case in hash file
-        self.hash_manager = HashManager(Config.get_hash_file(framework_id, framework_name), self.output_dir)
+        self.hash_manager = HashManager(
+            Config.get_hash_file(framework_id, framework_name), self.output_dir, render_version=self.RENDER_VERSION
+        )
         self.rate_limiter = AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
         self.session: Optional[httpx.AsyncClient] = None
         

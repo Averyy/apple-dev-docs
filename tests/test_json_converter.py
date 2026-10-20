@@ -382,7 +382,7 @@ class TestContent:
             {"type": "video", "identifier": "intro.mp4"},
         )], references=references))
         assert "| Input | Type |\n| --- | --- |\n| In | Float |\n\nRight." in md
-        assert "- [Happy Beam](happybeam.md)\n  Leverage a Full Space." in md
+        assert "- [Happy Beam](./happybeam.md)\n  Leverage a Full Space." in md
         assert "[Video: A video of the app.](https://developer.apple.com/tutorials/videos/com.apple.testkit/intro.mp4)" in md
 
     def test_unknown_types_render_their_text_and_are_counted(
@@ -534,10 +534,10 @@ class TestReferences:
             ref("doc://t/documentation/TestKit/Key", overridingTitle="OSBundleUsageDescription",
                 overridingTitleInlineContent=[{"type": "codeVoice", "code": "OSBundleUsageDescription"}]),
         ))], references=references))
-        assert ("[`size`](widget/size.md) [Using widgets](guide.md) "
+        assert ("[`size`](./widget/size.md) [Using widgets](./guide.md) "
                 "[Other Kit](https://developer.apple.com/documentation/other) "
                 "[APS Environment Entitlement](https://developer.apple.com/documentation/bundleresources/aps) "
-                "[USB-IF](https://www.usb.org/) Event [`OSBundleUsageDescription`](key.md)") in md
+                "[USB-IF](https://www.usb.org/) Event [`OSBundleUsageDescription`](./key.md)") in md
         assert "comhttps" not in md
 
     def test_doc_literals_in_text(self, scraper: AppleJSONDocumentationScraper) -> None:
@@ -571,10 +571,10 @@ class TestReferences:
         )
         md = render(scraper, json_page)
         assert "## Mentions\n\n- M\n" in md
-        assert ("## Topics\n\n### Types\n- [A](a.md)\n  The A.\n\n"
-                "## Default Implementations\n\n### A Implementations\n- [perform()](a/perform-1.md)") in md
+        assert ("## Topics\n\n### Types\n- [A](./a.md)\n  The A.\n\n"
+                "## Default Implementations\n\n### A Implementations\n- [perform()](./a/perform%28%29-1.md)") in md
         assert "## Relationships\n\n### Inherits From\n- Event\n" in md
-        assert "## See Also\n\n### Related\n- [B](https://example.com/b)\n### More\n- [A](a.md)\n  The A." in md
+        assert "## See Also\n\n### Related\n- [B](https://example.com/b)\n### More\n- [A](./a.md)\n  The A." in md
 
 
 class TestMetadataAndAvailability:

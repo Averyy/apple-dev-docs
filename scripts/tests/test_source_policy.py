@@ -197,6 +197,46 @@ def test_local_errors_never_delete(tmp_path: Path) -> None:
     assert run3.metadata(hash_keys=()) == {}
 
 
+def test_render_version_is_stored_after_a_clean_run_only(tmp_path: Path) -> None:
+    """A run of another render version is stale (every page rendered again, as --force); it
+    stores its version only when clean: not blocked, no location kept, no persistent local error."""
+    stored = {"render": {"version": 1}}
+    location = KeptLocation(tmp_path / "src", reason="")
+
+    def versioned(metadata: dict, version: Optional[int] = 2) -> ScrapeRun:
+        return ScrapeRun("Test", tmp_path, metadata, None, render_version=version)
+
+    clean = versioned(stored)
+    assert clean.render_stale and clean.rendered
+    assert clean.metadata(hash_keys=())["render"] == {"version": 2}
+    # Storing it: the keys it didn't produce lose their source hash; a run of the stored version drops none
+    clean.page_ok("p", tmp_path / "p.md")
+    assert clean.unrendered_keys(["p", "held"]) == ["held"]
+    assert versioned({"render": {"version": 2}}).unrendered_keys(["held"]) == []
+    assert not versioned({"render": {"version": 2}}).render_stale
+    assert versioned({}).render_stale and versioned({"render": 2}).render_stale
+    # Without a version: never stale, the stored value kept as it is
+    unversioned = versioned(stored, version=None)
+    assert not unversioned.render_stale and unversioned.metadata(hash_keys=())["render"] == {"version": 1}
+    assert "render" not in versioned({}, version=None).metadata(hash_keys=())
+
+    blocked = versioned(stored)
+    blocked.page_failed("p", SERVER, previously_good=True)
+    assert blocked.blocked and blocked.metadata(hash_keys=())["render"] == {"version": 1}
+    assert blocked.unrendered_keys(["held"]) == []
+    kept = versioned(stored)
+    kept.source_failed("dir/", GONE, location, key_prefix="dir/")  # source_gone_pending
+    assert not kept.blocked and kept.metadata(hash_keys=())["render"] == {"version": 1}
+    assert kept.unrendered_keys(["dir/held"]) == []
+    persistent = versioned({**stored, "failure_counts": {"p": {"local": 2}}})
+    persistent.local_error("p", tmp_path / "p.md", "boom")
+    assert not persistent.blocked and persistent.persistent_local_errors == ["p"]
+    assert persistent.metadata(hash_keys=("p",))["render"] == {"version": 1}
+    # A hash file that couldn't be loaded blocks: nothing stored
+    unreadable = ScrapeRun("Test", tmp_path, {}, "unreadable", render_version=2)
+    assert unreadable.render_stale and "render" not in unreadable.metadata(hash_keys=())
+
+
 def test_a_local_count_lasts_until_the_page_saves_or_goes(tmp_path: Path) -> None:
     """A run that doesn't reach a page neither counts nor ends its local
     errors (as Apple's consecutive_local_errors, reset only by a save), so a

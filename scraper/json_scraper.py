@@ -8,13 +8,14 @@ import time
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Deque, Dict, Final, List, Literal, Optional, Set, Tuple, Union
+from typing import Any, Deque, Dict, Final, List, Literal, Mapping, Optional, Set, Tuple, Union
 from urllib.parse import urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
 from scraper.utils.assets import hosting_root, variant_url
 from scraper.utils.hash_manager import same_name_any_case, write_text_atomic
+from scraper.utils.links import doc_link, link_base
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter, join_blocks, labeled, quote_blocks
 from scraper.utils.naming import clash_suffix, page_path, seg_name
@@ -270,21 +271,33 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     JSON_BASE_URL = "https://developer.apple.com/tutorials/data/documentation"
     # Root-relative image and video URLs ("/images/…") are served under it
     ASSET_ROOT = hosting_root(JSON_BASE_URL)
+    # The converter's output version (BaseAppleScraper.RENDER_VERSION): bump
+    # it when a change to the conversion, the file names or the links changes
+    # the files of pages whose JSON didn't change, so every framework is
+    # rendered again on its next clean run
+    RENDER_VERSION = 1
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
-                 include_cross_refs: bool = False) -> None:
+                 include_cross_refs: bool = False, known_dirs: Optional[Mapping[str, str]] = None) -> None:
         """Initialize JSON-based scraper.
         
         Args:
             framework_id: Framework identifier (e.g., 'swiftui', 'uikit')
             framework_name: Human-readable name (defaults to framework_id)
             include_cross_refs: Whether to include cross-framework references
+            known_dirs: The docs dirs whose pages are linked locally,
+                {name.lower(): name}: the Apple framework dirs with a hash
+                file (naming.dirmap) and the run's frameworks. This one is
+                always known; any other framework's pages get their Apple URL
         """
         super().__init__(
             framework_id=framework_id,
             framework_name=framework_name or framework_id.replace('-', ' ').title()
         )
-        self.markdown_converter = AppleDocMarkdownConverter(self.output_dir)
+        self.known_dirs: Dict[str, str] = {**(known_dirs or {}), self.framework_id.lower(): self.framework_id}
+        self.markdown_converter = AppleDocMarkdownConverter(self.output_dir, self.known_dirs)
+        # The page being converted (_extract_from_json): its links are relative to its file
+        self._current_scraping_url = ''
         self.processed_urls: Set[str] = set()
         self.include_cross_refs = include_cross_refs
         self.cross_framework_refs: Dict[str, Set[str]] = {}  # Track cross-framework references
@@ -363,9 +376,17 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # of unlisted runs (cleanup_removed_frameworks.py) starts over, also
         # when that script's own fetch failed this run. Saved by __aexit__.
         self.hash_manager.set_metadata("unlisted_runs", 0)
+        if self.hash_manager.stale:
+            logger.info(
+                "render_version_stale",
+                framework=self.framework_name,
+                stored=self.hash_manager.stored_render_version,
+                version=self.RENDER_VERSION,
+            )
 
         await self.discover_and_scrape_streaming()
         self._apply_failure_policy()
+        self._store_render_version()
         
         self.stats["end_time"] = time.time()
         self.stats["duration"] = self.stats["end_time"] - self.stats["start_time"]
@@ -991,6 +1012,37 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 framework=self.framework_name,
                 reasons={reason: len(details) for reason, details in outcome.blocks.items()},
             )
+
+    def _store_render_version(self) -> None:
+        """Store RENDER_VERSION in the hash file's metadata.render after a clean run.
+
+        Clean: cleanup isn't skipped (no failure of ours blocked it, nothing
+        raised, the root isn't gone) and no page's local error is persistent,
+        so every page this run reached was rendered by this version, with or
+        without --cleanup-orphans. Otherwise the stored version stays and
+        the next run renders the framework again: a framework whose root
+        404'd, or a page whose rendering keeps failing (its file kept, its
+        etag still matching), would else never be rendered again. A filename
+        clash doesn't count: its page was written, under a hashed stem.
+        When it stores a new version, the entries this run didn't touch lose
+        their hash and etag (forget_untouched_renderings): their files keep
+        the old rendering (a file the valve holds, or a page no longer
+        reached), and such a page that comes back unchanged would else
+        answer 304 and never be rendered again.
+        Saved by __aexit__.
+        """
+        outcome = self.outcome
+        if outcome.skip_cleanup or outcome.persistent_local_errors:
+            return
+        if self.hash_manager.stale:
+            not_rendered = self.hash_manager.forget_untouched_renderings()
+            logger.info(
+                "render_version_stored",
+                framework=self.framework_name,
+                version=self.RENDER_VERSION,
+                not_rendered=not_rendered,
+            )
+        self.hash_manager.mark_rendered()
 
     def scan_orphans(self) -> None:
         """Find this framework's orphan candidates, right after its hash file was saved.
@@ -1759,72 +1811,18 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             return self.output_dir / f"{seg_name(safe_url)}.md"
         return Config.OUTPUT_DIR / relative
 
-    def _convert_apple_url_to_local_path(self, apple_url: str, current_page_url: str = None) -> str:
-        """Convert an Apple documentation URL to a local markdown file path.
-        
+    def _convert_apple_url_to_local_path(self, apple_url: str) -> str:
+        """The link to a referenced page from the page being converted (self._current_scraping_url).
+
+        links.doc_link: the referenced page's file relative to this page's
+        file, when its framework is a known dir (self.known_dirs); else its
+        URL as it is.
+
         Args:
-            apple_url: Apple documentation URL
-            current_page_url: URL of the current page (to calculate relative paths)
-            
-        Returns:
-            Relative path to local markdown file
+            apple_url: The referenced page's URL (_reference_url)
         """
-        # Check if it's an Apple documentation URL
-        if not apple_url.startswith('https://developer.apple.com/documentation/'):
-            return apple_url
-        
-        # Extract the path after /documentation/
-        url_path = apple_url.replace('https://developer.apple.com/documentation/', '')
-        
-        # Split into components
-        parts = url_path.split('/')
-        
-        # Check if it's in the same framework
-        if parts[0].lower() == self.framework_id.lower():
-            # Same framework - create relative path
-            if len(parts) == 1:
-                # Main framework page
-                return f"{self.framework_id}.md"
-            
-            # For current page context, we need to know where we are
-            if current_page_url and hasattr(self, '_current_scraping_url'):
-                current_path = self._current_scraping_url.replace('https://developer.apple.com/documentation/', '')
-                current_parts = current_path.split('/')
-                current_depth = len(current_parts) - 1
-                
-                if len(parts) == 2 and current_depth == 1:
-                    # Same level - just the filename
-                    return f"{parts[1]}.md"
-                elif len(parts) == 2 and current_depth > 1:
-                    # Need to go up directories
-                    up_dirs = '../' * (current_depth - 1)
-                    return f"{up_dirs}{parts[1]}.md"
-                else:
-                    # More complex nested structure
-                    # Calculate relative path between current location and target
-                    target_depth = len(parts) - 1
-                    if current_depth == target_depth and '/'.join(current_parts[:-1]) == '/'.join(parts[:-1]):
-                        # Same directory
-                        return f"{parts[-1]}.md"
-                    else:
-                        # Different directory - go up to common ancestor
-                        up_dirs = '../' * (current_depth - 1)
-                        # Then navigate to target
-                        if target_depth > 1:
-                            down_path = '/'.join(parts[1:-1])
-                            return f"{up_dirs}{down_path}/{parts[-1]}.md"
-                        else:
-                            return f"{up_dirs}{parts[-1]}.md"
-            else:
-                # Fallback - simple logic
-                if len(parts) == 2:
-                    return f"{parts[1]}.md"
-                else:
-                    # For nested paths, include the subdirectory
-                    return f"{'/'.join(parts[1:])}.md"
-        else:
-            # Different framework - keep Apple URL
-            return apple_url
+        base = link_base(self.framework_id, self._current_scraping_url)
+        return doc_link(apple_url, base, self.known_dirs)
     
     def _format_declaration_from_tokens(self, tokens: List[Dict[str, Any]]) -> str:
         """Format declaration tokens with proper Swift formatting.

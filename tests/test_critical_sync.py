@@ -63,16 +63,22 @@ class TestCrossFrameworkReferences:
     def test_uikit_reference_in_watchkit(self):
         """CRITICAL: Don't create UIKit files in WatchKit folder."""
         output_dir = Path('documentation/watchkit')
-        converter = AppleDocMarkdownConverter(output_dir)
+        converter = AppleDocMarkdownConverter(output_dir, {"uikit": "UIKit"})
+        page_url = "https://developer.apple.com/documentation/watchkit/wkapplication/shared()"
         
-        # UIKit reference in WatchKit docs
+        # UIKit reference in WatchKit docs: the UIKit page's file (the path
+        # rule's name) relative to this page's folder, watchkit/wkapplication/
         result = converter._create_dual_link(
             "https://developer.apple.com/documentation/UIKit/UIUserNotificationActionResponseTypedTextKey",
-            "UIUserNotificationActionResponseTypedTextKey"
+            "UIUserNotificationActionResponseTypedTextKey",
+            page_url,
         )
-        
-        # Should create cross-framework local link
-        assert "../UIKit/" in result and ".md" in result
+        assert result == ("[UIUserNotificationActionResponseTypedTextKey]"
+                          "(../../UIKit/uiusernotificationactionresponsetypedtextkey.md)")
+
+        # A framework whose dir isn't known keeps its Apple URL
+        url = "https://developer.apple.com/documentation/AppKit/NSView"
+        assert converter._create_dual_link(url, "NSView", page_url) == f"[NSView]({url})"
         print("✓ Cross-framework reference test passed")
         
 

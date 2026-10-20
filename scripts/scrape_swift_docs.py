@@ -57,6 +57,7 @@ from utilities.source_policy import (
     FAILURE_COUNTS_KEY,
     GITHUB_RAW,
     PENDING_ORPHANS_KEY,
+    RENDER_KEY,
     FetchFailed,
     KeptLocation,
     ScrapeRun,
@@ -86,8 +87,14 @@ HASH_FILE = Path(__file__).parent.parent / ".hashes" / "swift_docs_hashes.json"
 # Rate limiting
 REQUEST_DELAY = 0.1  # seconds between requests
 
-# Hash-file metadata the failure policy keeps (saved whenever it changes)
-POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY)
+# Hash-file metadata the failure policy keeps (saved whenever it changes),
+# and the render version
+POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, RENDER_KEY)
+
+# The converter's output version: bump it when a change to the conversion
+# changes the files of sources that didn't change, so the next clean run
+# renders every file again (source_policy's metadata.render)
+RENDER_VERSION = 1
 
 
 @dataclass
@@ -598,7 +605,11 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
     # know which files we already have; --force only rewrites unchanged ones)
     hashes, metadata, load_error = _load_hash_file()
     stored_hashes = dict(hashes)
-    run = ScrapeRun("Swift", OUTPUT_DIR.parent, metadata, load_error)
+    run = ScrapeRun("Swift", OUTPUT_DIR.parent, metadata, load_error, render_version=RENDER_VERSION)
+    if run.render_stale and not force:
+        # Rendered by another converter version: every file again, as --force
+        console.print(f"[yellow]Render version {RENDER_VERSION}: rendering every file again[/yellow]")
+        force = True
 
     # Ensure output directory exists
     if not dry_run:
@@ -642,6 +653,10 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
     if not cleanup.skipped and not dry_run:
         # Prune hash entries whose local file no longer exists
         total_stats["pruned"] = _prune_stale_keys(hashes)
+    # Storing a new render version: a file this run didn't render (e.g. held
+    # by the valve) has the old rendering, so its key loses its source hash
+    for key in run.unrendered_keys(hashes):
+        hashes[key] = ""
 
     # Save whenever the hashes or the failure policy's metadata changed (a
     # count or a pending list set on a run with no downloads must persist)

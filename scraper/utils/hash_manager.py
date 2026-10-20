@@ -31,6 +31,10 @@ VALVE_MAX_ORPHANS: Final = 1000
 # The longest file name, in bytes, on the filesystems we write to (ext4, APFS)
 NAME_MAX: Final = 255
 
+# Metadata key of the converter output version the location's files were
+# last rendered with: {"version": <the scraper's RENDER_VERSION>}
+RENDER_KEY: Final = "render"
+
 
 def valve_trips(orphans: int, files: int) -> bool:
     """Whether a framework's orphan candidates are a mass removal, held for confirmation.
@@ -111,16 +115,25 @@ def write_text_atomic(path: Path, text: str) -> None:
 class HashManager:
     """Manage content hashes for incremental scraping."""
     
-    def __init__(self, cache_file: Path, output_dir: Optional[Path] = None) -> None:
+    def __init__(
+        self,
+        cache_file: Path,
+        output_dir: Optional[Path] = None,
+        render_version: Optional[int] = None,
+    ) -> None:
         """Initialize hash manager with a cache file.
         
         Args:
             cache_file: Path to the JSON file storing hashes
             output_dir: The dir of the files the entries record, if there is
                 one (see save)
+            render_version: The scraper's RENDER_VERSION, for its own
+                manager (see stale, mark_rendered); a manager loaded only to
+                prune or count passes none and keeps the stored value as it is
         """
         self.cache_file = cache_file
         self.output_dir = output_dir
+        self.render_version = render_version
         self.cache_file.parent.mkdir(parents=True, exist_ok=True)
         # Why the cache file exists but couldn't be loaded (the manager then
         # starts empty), else None
@@ -141,6 +154,59 @@ class HashManager:
         # the in-memory record of what the run saw live, from which orphans
         # are found (get_untouched_files)
         self.touched: Set[str] = set()
+
+    @property
+    def stored_render_version(self) -> Any:
+        """The version metadata.render records (None if none, or malformed)."""
+        render = self.metadata.get(RENDER_KEY)
+        return render.get("version") if isinstance(render, dict) else None
+
+    @property
+    def stale(self) -> bool:
+        """The location's files were rendered by another converter version than render_version.
+
+        While stale, get_etag returns None and has_changed True, so every
+        page is fetched (200) and rendered again on the normal write-first
+        path. Never stale without a render_version.
+        """
+        return self.render_version is not None and self.stored_render_version != self.render_version
+
+    def mark_rendered(self) -> None:
+        """Store render_version as the location's (metadata.render): its pages were all rendered by it.
+
+        For the scraper's own manager only, after a clean run (one that
+        rendered every page it reached); a manager without a render_version
+        never writes metadata.render.
+        """
+        if self.render_version is not None:
+            self.set_metadata(RENDER_KEY, {"version": self.render_version})
+
+    def forget_untouched_renderings(self) -> int:
+        """Make the live entries this run didn't touch render their page again when it is next reached.
+
+        For a stale location's clean run, before it stores its version
+        (mark_rendered): an untouched entry's file (one the valve holds, or a
+        page the run no longer reached) keeps the old rendering. Its hash
+        becomes "" and its etag goes, as keep_file's entry, so a page that
+        comes back is fetched without If-None-Match and has changed. Its
+        file_path and run counters stay: orphan detection (the touched set)
+        and the failure policy see it as before. Error entries, and anything
+        that isn't an entry, are left as they are.
+
+        Returns:
+            How many entries changed (the manager is then modified)
+        """
+        changed = 0
+        for url, entry in self.hashes.items():
+            if url in self.touched or not isinstance(entry, dict) or entry.get("status") == "error":
+                continue
+            if entry.get("hash") != "" or "etag" in entry:
+                entry["hash"] = ""
+                entry.pop("etag", None)
+                changed += 1
+        if changed:
+            self._modified = True
+        return changed
 
     @staticmethod
     def _without_legacy_fields(entry: Any) -> Any:
@@ -285,6 +351,7 @@ class HashManager:
         """Check if content has changed since last scrape.
         
         Uses ETags for fast comparison when available, with hash as fallback.
+        Always True while the location is stale (another render version).
         
         Args:
             url: URL of the content
@@ -296,6 +363,10 @@ class HashManager:
         """
         if url not in self.hashes:
             logger.debug("new_content", url=url)
+            return True
+
+        if self.stale:
+            # Rendered by another converter version: render it again
             return True
 
         stored_data = self.hashes[url]
@@ -349,8 +420,11 @@ class HashManager:
             url: URL to get ETag for
             
         Returns:
-            Stored ETag or None if not available
+            Stored ETag or None if not available, or while the location is
+            stale (a 304 would skip the page's new rendering)
         """
+        if self.stale:
+            return None
         if url in self.hashes:
             entry = self.hashes[url]
             # Never send If-None-Match when the output file is missing — a

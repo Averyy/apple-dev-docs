@@ -2,8 +2,9 @@
 
 import re
 from pathlib import Path
-from typing import Dict, Final, List, Optional, Any
+from typing import Dict, Final, List, Mapping, Optional, Any
 
+from scraper.utils.links import doc_link, link_base
 from scraper.utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -46,24 +47,32 @@ def quote_blocks(label: str, blocks: List[str]) -> str:
 class AppleDocMarkdownConverter:
     """Convert Apple documentation HTML to markdown with proper formatting."""
     
-    def __init__(self, output_dir: Optional[Path] = None) -> None:
+    def __init__(self, output_dir: Optional[Path] = None, known_dirs: Optional[Mapping[str, str]] = None) -> None:
         """Initialize markdown converter.
         
         Args:
             output_dir: Directory where markdown files are saved for cross-linking
+                (the framework's docs dir: its name is the framework's dir)
+            known_dirs: The docs dirs whose pages are linked locally,
+                {name.lower(): name}; the output dir's framework is always known
         """
         self.output_dir = output_dir
+        self.known_dirs: Dict[str, str] = dict(known_dirs or {})
+        if output_dir is not None:
+            self.known_dirs[output_dir.name.lower()] = output_dir.name
     
     def convert_page(self, data: Dict[str, Any]) -> str:
         """Convert extracted page data to markdown.
         
         Args:
-            data: Extracted page data
+            data: Extracted page data (its links are relative to the file of
+                its source_url's page)
             
         Returns:
             Formatted markdown content
         """
         sections = []
+        page_url = data.get('source_url') or ''
         
         # Title and metadata
         sections.append(f"# {data.get('title', 'Untitled')}")
@@ -105,7 +114,7 @@ class AppleDocMarkdownConverter:
         # Mentions (related documentation links) - comes right after Declaration per Apple's structure
         if data.get('mentions'):
             sections.append("## Mentions")
-            sections.append(self._format_mentions(data['mentions']))
+            sections.append(self._format_mentions(data['mentions'], page_url))
         
         # Main content - preserves the original structure with inline code examples
         if data.get('content'):
@@ -150,12 +159,12 @@ class AppleDocMarkdownConverter:
         # Topics/Related APIs (main content section)
         if data.get('topics'):
             sections.append("## Topics")
-            sections.append(self._format_topics(data['topics']))
+            sections.append(self._format_topics(data['topics'], page_url))
         
         # A protocol requirement's default implementations
         if data.get('default_implementations'):
             sections.append("## Default Implementations")
-            sections.append(self._format_topics(data['default_implementations']))
+            sections.append(self._format_topics(data['default_implementations'], page_url))
 
         # Tasks/Tutorial content
         if data.get('tasks'):
@@ -197,12 +206,12 @@ class AppleDocMarkdownConverter:
         # Relationships (Inherited By, Conforming Types, etc.)
         if data.get('relationships'):
             sections.append("## Relationships")
-            sections.append(self._format_relationships(data['relationships']))
+            sections.append(self._format_relationships(data['relationships'], page_url))
         
         # See Also (should be near the end)
         if data.get('see_also'):
             sections.append("## See Also")
-            sections.append(self._format_see_also(data['see_also']))
+            sections.append(self._format_see_also(data['see_also'], page_url))
         
         # Source URL
         if data.get('source_url'):
@@ -309,8 +318,8 @@ class AppleDocMarkdownConverter:
         
         return "\n".join(lines)
     
-    def _format_topics(self, topics: List[Dict[str, Any]]) -> str:
-        """Format topics/related APIs section."""
+    def _format_topics(self, topics: List[Dict[str, Any]], page_url: str) -> str:
+        """Format topics/related APIs section (page_url: the page it is on)."""
         if not topics:
             return ""
         
@@ -326,7 +335,7 @@ class AppleDocMarkdownConverter:
                 description = item.get('description', '')
                 
                 if url:
-                    dual_link = self._create_dual_link(url, name)
+                    dual_link = self._create_dual_link(url, name, page_url)
                     lines.append(f"- {dual_link}")
                 else:
                     lines.append(f"- {name}")
@@ -336,8 +345,8 @@ class AppleDocMarkdownConverter:
         
         return "\n".join(lines)
     
-    def _format_see_also(self, see_also: List[Dict[str, Any]]) -> str:
-        """Format see also section, by group under its title."""
+    def _format_see_also(self, see_also: List[Dict[str, Any]], page_url: str) -> str:
+        """Format see also section, by group under its title (page_url: the page it is on)."""
         if not see_also:
             return ""
         
@@ -353,7 +362,7 @@ class AppleDocMarkdownConverter:
                 description = item.get('description', '')
 
                 if url:
-                    dual_link = self._create_dual_link(url, title)
+                    dual_link = self._create_dual_link(url, title, page_url)
                     if description:
                         lines.append(f"- {dual_link}")
                         lines.append(f"  {description}")
@@ -368,8 +377,8 @@ class AppleDocMarkdownConverter:
         
         return "\n".join(lines)
     
-    def _format_relationships(self, relationships: List[Dict[str, Any]]) -> str:
-        """Format relationships section (Inherited By, Conforming Types, etc.)."""
+    def _format_relationships(self, relationships: List[Dict[str, Any]], page_url: str) -> str:
+        """Format relationships section (Inherited By, Conforming Types, etc.; page_url: the page it is on)."""
         if not relationships:
             return ""
         
@@ -384,15 +393,15 @@ class AppleDocMarkdownConverter:
                 url = item.get('url', '')
                 
                 if url:
-                    dual_link = self._create_dual_link(url, name)
+                    dual_link = self._create_dual_link(url, name, page_url)
                     lines.append(f"- {dual_link}")
                 else:
                     lines.append(f"- {name}")
         
         return "\n".join(lines)
     
-    def _format_mentions(self, mentions: List[Dict[str, str]]) -> str:
-        """Format mentions section."""
+    def _format_mentions(self, mentions: List[Dict[str, str]], page_url: str) -> str:
+        """Format mentions section (page_url: the page it is on)."""
         if not mentions:
             return ""
         
@@ -402,73 +411,29 @@ class AppleDocMarkdownConverter:
             url = item.get('url', '')
             
             if url:
-                dual_link = self._create_dual_link(url, title)
+                dual_link = self._create_dual_link(url, title, page_url)
                 lines.append(f"- {dual_link}")
             else:
                 lines.append(f"- {title}")
         
         return "\n".join(lines)
     
-    def _create_dual_link(self, apple_url: str, link_text: str) -> str:
-        """Create a local markdown link from an Apple documentation URL.
-        
+    def _create_dual_link(self, apple_url: str, link_text: str, page_url: str) -> str:
+        """A markdown link to a page from the page being converted (links.doc_link).
+
+        The linked page's file relative to this page's file when its
+        framework is a known dir, else its Apple URL; without an output dir,
+        always the Apple URL.
+
         Args:
-            apple_url: Apple documentation URL
+            apple_url: The linked page's URL
             link_text: Text to display for the link
-            
+            page_url: The URL of the page the link is on (its source_url)
+
         Returns:
-            Markdown link to local file (or Apple URL for cross-framework references)
+            The markdown link
         """
-        if not self.output_dir or not apple_url.startswith('https://developer.apple.com/documentation/'):
+        if not self.output_dir:
             return f"[{link_text}]({apple_url})"
-        
-        # Extract API name from Apple URL
-        try:
-            url_path = apple_url.replace('https://developer.apple.com/documentation/', '')
-            path_parts = url_path.split('/')
-            
-            if len(path_parts) >= 1:
-                # Check if this is a cross-framework reference
-                framework_in_url = path_parts[0].lower()
-                current_framework = str(self.output_dir.name).lower()
-                
-                if framework_in_url != current_framework:
-                    # Cross-framework reference - link to other framework's local files
-                    if len(path_parts) == 2:
-                        # Direct child of other framework: ../Swift/BitwiseCopyable.md
-                        cross_framework_path = f"../{path_parts[0]}/{path_parts[1]}.md"
-                    else:
-                        # Nested path in other framework
-                        last_part = path_parts[-1].replace('()', '')
-                        nested_path = '/'.join(path_parts[1:-1])
-                        if nested_path:
-                            cross_framework_path = f"../{path_parts[0]}/{nested_path}/{last_part}.md"
-                        else:
-                            cross_framework_path = f"../{path_parts[0]}/{last_part}.md"
-                    
-                    return f"[{link_text}]({cross_framework_path})"
-                
-                # Same framework - create local link
-                # Handle nested paths properly
-                if len(path_parts) == 2:
-                    # Direct child of framework
-                    local_path = f"{path_parts[-1]}.md"
-                else:
-                    # Nested path - preserve subdirectory structure
-                    # For watchkit/wkapplicationdelegate/main() -> wkapplicationdelegate/main.md
-                    # Remove parentheses from method names
-                    last_part = path_parts[-1].replace('()', '')
-                    nested_path = '/'.join(path_parts[1:-1])
-                    if nested_path:
-                        local_path = f"{nested_path}/{last_part}.md"
-                    else:
-                        local_path = f"{last_part}.md"
-                
-                return f"[{link_text}]({local_path})"
-        
-        except Exception:
-            # If anything goes wrong, fall back to Apple URL only
-            pass
-        
-        # Fallback to Apple URL only
-        return f"[{link_text}]({apple_url})"
+        base = link_base(self.output_dir.name, page_url)
+        return f"[{link_text}]({doc_link(apple_url, base, self.known_dirs)})"

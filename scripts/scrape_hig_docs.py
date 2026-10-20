@@ -33,6 +33,7 @@ import argparse
 import asyncio
 import json
 import logging
+import posixpath
 import re
 import sys
 import time
@@ -49,11 +50,14 @@ from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from scraper.utils.assets import hosting_root, variant_url
+from scraper.utils.links import doc_link
 from scraper.utils.markdown_converter import join_blocks, labeled, quote_blocks
+from scraper.utils.naming import dirmap
 from utilities.hash_utils import HashFileError, compute_hash, read_hash_file, save_hashes, write_text_atomic
 from utilities.source_policy import (
     FAILURE_COUNTS_KEY,
     PENDING_ORPHANS_KEY,
+    RENDER_KEY,
     CleanupResult,
     FetchFailed,
     KeptLocation,
@@ -81,6 +85,8 @@ HASH_FILE = Path(__file__).parent.parent / ".hashes" / "hig_docs_hashes.json"
 # API URLs
 JSON_BASE_URL = "https://developer.apple.com/tutorials/data/design"
 WEB_BASE_URL = "https://developer.apple.com/design"
+# A reference's root-relative URL ("/documentation/…") is under it
+APPLE_HOST = "https://developer.apple.com"
 # Root-relative image and video URLs ("/images/…") are served under it
 ASSET_ROOT = hosting_root(JSON_BASE_URL)
 HIG_ROOT = "human-interface-guidelines"
@@ -102,8 +108,14 @@ HIG_IDENTIFIER_PATTERNS = [
     "/design/Human-Interface-Guidelines",
 ]
 
-# Hash-file metadata the failure policy keeps (saved whenever it changes)
-POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY)
+# Hash-file metadata the failure policy keeps (saved whenever it changes),
+# and the render version
+POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY, RENDER_KEY)
+
+# The converter's output version (links included): bump it when a change to
+# the conversion changes the files of pages whose JSON didn't change, so the
+# next clean run renders every page again (source_policy's metadata.render)
+RENDER_VERSION = 1
 
 # The block and inline types the converter renders (_convert_content_to_markdown,
 # _extract_text_from_inline_content). Any other, like a section kind the page
@@ -186,6 +198,11 @@ class HIGDocsScraper:
         self.unknown_content: Counter[Tuple[str, str]] = Counter()
         self.unknown_examples: Dict[Tuple[str, str], str] = {}
         self.current_url = ''
+
+        # The Apple framework docs dirs whose pages are linked locally,
+        # {name.lower(): name}: naming.dirmap over the hash files, read on
+        # the first link (_link_dirs)
+        self.doc_dirs: Optional[Dict[str, str]] = None
 
     async def __aenter__(self) -> "HIGDocsScraper":
         """Async context manager entry."""
@@ -314,7 +331,10 @@ class HIGDocsScraper:
 
         HIG internal links: /design/human-interface-guidelines/X -> X.md
         HIG anchors: /design/human-interface-guidelines/X#anchor -> X.md#anchor
-        Apple docs: /documentation/Framework/Symbol -> ../Framework/Symbol.md
+        Apple docs: /documentation/Framework/Symbol -> the page's file
+            relative to this page's (links.doc_link: the Apple scraper's own
+            path rule, e.g. ../SwiftUI/button.md), when its framework is a
+            docs dir we have (_link_dirs); else its Apple URL
         External links: keep as-is
         """
         if not url:
@@ -332,22 +352,24 @@ class HIGDocsScraper:
         if url.lower() in ['/design/human-interface-guidelines', '/design/human-interface-guidelines/']:
             return "index.md"
 
-        # Handle Apple documentation links - convert to relative path to our docs
-        # /documentation/Framework/Symbol -> ../Framework/Symbol.md
-        doc_pattern = r'^/documentation/(.+?)(?:#(.+))?$'
-        match = re.match(doc_pattern, url)
-        if match:
-            doc_path = match.group(1)
-            anchor = match.group(2)
-            # Build relative path from HIG folder to documentation folder
-            # HIG is at documentation/HIG/, other docs at documentation/{Framework}/
-            local_path = f"../{doc_path}.md"
-            if anchor:
-                local_path += f"#{anchor}"
-            return local_path
+        # Apple documentation links: relative to this page's folder under
+        # the docs root (HIG/, the folder of _get_file_path's file)
+        if url.startswith('/documentation/'):
+            page_file = self._get_file_path(self.current_url, {}).relative_to(OUTPUT_DIR.parent)
+            return doc_link(f"{APPLE_HOST}{url}", posixpath.dirname(page_file.as_posix()), self._link_dirs())
 
         # Keep external URLs as-is
         return url
+
+    def _link_dirs(self) -> Dict[str, str]:
+        """The docs dirs linked locally (doc_dirs), from the hash files next to ours on first use.
+
+        The HIG scrape runs after the Apple one, so a framework that run
+        scraped for the first time has its hash file by then.
+        """
+        if self.doc_dirs is None:
+            self.doc_dirs = dirmap(HASH_FILE.parent)
+        return self.doc_dirs
 
     def _convert_identifier_to_json_url(self, identifier: str) -> Optional[str]:
         """Convert a doc:// identifier to a JSON URL.
@@ -1086,14 +1108,20 @@ class HIGDocsScraper:
     async def scrape_all(self) -> None:
         """Scrape all HIG documentation, clean up orphans and save (sets exit_code)."""
         self.stats['start_time'] = time.time()
-        run = ScrapeRun("HIG", OUTPUT_DIR.parent, self.stored_metadata, self.load_error)
+        run = ScrapeRun("HIG", OUTPUT_DIR.parent, self.stored_metadata, self.load_error,
+                        render_version=RENDER_VERSION)
         self.run = run
+        # Rendered by another converter version: every page again, as --force
+        rerender = run.render_stale and not self.force
+        self.force = self.force or run.render_stale
 
         console.print(f"[bold blue]Apple Human Interface Guidelines Scraper[/bold blue]")
         console.print(f"Output: {OUTPUT_DIR}")
         if self.dry_run:
             console.print("[yellow]DRY RUN - no files will be written[/yellow]")
-        if self.force:
+        if rerender:
+            console.print(f"[yellow]RENDER VERSION {RENDER_VERSION} - rendering all files again[/yellow]")
+        elif self.force:
             console.print("[yellow]FORCE MODE - re-downloading all files[/yellow]")
         console.print()
 
@@ -1173,6 +1201,13 @@ class HIGDocsScraper:
         pruned = 0
         if not cleanup.skipped and not self.dry_run:
             pruned = self._prune_hashes(run)
+        # Storing a new render version: a file this run didn't render (e.g. held
+        # by the valve) has the old rendering, so its key loses its source hash
+        for url in run.unrendered_keys(self.hashes):
+            entry = self.hashes[url]
+            if isinstance(entry, dict) and entry.get('hash'):
+                entry['hash'] = ''
+                self.hashes_modified = True
 
         # Save whenever the hashes or the failure policy's metadata changed
         self.final_metadata = run.metadata(self.hashes)

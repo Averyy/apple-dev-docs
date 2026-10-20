@@ -84,6 +84,59 @@ async def test_full_scrape(site: FakeUpstream) -> None:
     assert "failure_counts" not in metadata() and "pending_orphans" not in metadata()
 
 
+async def test_a_new_render_version_renders_every_file_once(site: FakeUpstream,
+                                                             monkeypatch: pytest.MonkeyPatch) -> None:
+    """Stale behaves as --force; the version is stored only by a clean run (not a blocked one,
+    nor one that keeps a configured dir), then the next run renders nothing."""
+    assert await run() == 0
+    assert metadata()["render"] == {"version": scrape_swift_docs.RENDER_VERSION}
+    basics = scrape_swift_docs.OUTPUT_DIR / "Guide" / "Basics.md"
+    basics.write_text("# an older rendering\n")
+    monkeypatch.setattr(scrape_swift_docs, "RENDER_VERSION", 2)
+    site.faults[site.raw_path("org/book", "Book/Reference/Types.md")] = 502
+    assert await run() == 1
+    assert metadata()["render"] == {"version": 1} and "an older rendering" not in basics.read_text()
+    site.faults.clear()
+    site.faults[site.api_path("org/site", "docs/interop")] = 404  # source_gone_pending: Interop kept
+    assert await run() == 0
+    assert metadata()["render"] == {"version": 1}
+    site.faults.clear()
+    basics.write_text("# an older rendering\n")
+    assert await run() == 0
+    assert metadata()["render"] == {"version": 2} and "an older rendering" not in basics.read_text()
+    before = scrape_swift_docs.HASH_FILE.read_text()
+    basics.write_text("# an older rendering\n")  # not rendered again: its source didn't change
+    assert await run() == 0
+    assert scrape_swift_docs.HASH_FILE.read_text() == before and "an older rendering" in basics.read_text()
+
+
+async def test_files_the_storing_run_didnt_render_are_rendered_when_back(site: FakeUpstream,
+                                                                        monkeypatch: pytest.MonkeyPatch) -> None:
+    """The run that stores a new render version drops the source hash of the keys it didn't
+    produce (here files the valve holds), so they are rendered when they're back unchanged."""
+    assert await run() == 0
+    out = scrape_swift_docs.OUTPUT_DIR
+    for path in ALL:
+        (out / path).write_text("# an older rendering\n")
+    gone = [("org/book", "Book/Guide/Basics.md"), ("org/book", "Book/Guide/Closures.md"),
+            ("org/book", "Book/Reference/Types.md"), ("org/site", "docs/interop/A.md")]
+    for repo, path in gone:
+        remove_upstream(site, repo, path)
+    monkeypatch.setattr(scrape_swift_docs, "RENDER_VERSION", 2)
+    assert await run() == 0 and docs() == ALL  # 4 of 7 held
+    assert metadata()["render"] == {"version": 2} and len(metadata()["pending_orphans"]) == 4
+    hashes = hash_file()["hashes"]
+    assert {key for key, value in hashes.items() if value == ""} == {f"{repo}:{path}" for repo, path in gone}
+    assert all(hashes[f"{repo}:{path}"] for repo, path in FILES if (repo, path) not in gone)
+    for repo, path in gone:
+        site.github_file(repo, path, f"# {Path(path).stem}\n\nAbout {path}.\n")  # back, unchanged
+    assert await run() == 0 and docs() == ALL and "pending_orphans" not in metadata()
+    assert not any("an older rendering" in (out / path).read_text() for path in ALL)
+    assert all(hash_file()["hashes"].values())
+    before = scrape_swift_docs.HASH_FILE.read_text()
+    assert await run() == 0 and scrape_swift_docs.HASH_FILE.read_text() == before
+
+
 async def test_configured_dir_404_x2_is_removed_while_other_removals_run(site: FakeUpstream) -> None:
     assert await run() == 0
     remove_upstream(site, "org/site", "docs/interop/A.md")

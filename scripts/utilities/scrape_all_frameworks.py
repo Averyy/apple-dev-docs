@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspa
 
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome
+from scraper.utils.naming import dirmap
 from framework_list_scraper import AppleFrameworkListScraper
 from cleanup_removed_frameworks import framework_hash_files
 
@@ -101,6 +102,21 @@ def framework_errors(outcomes: Sequence[FrameworkOutcome]) -> List[str]:
     return errors
 
 
+def known_dirs(frameworks: Sequence[Dict[str, str]]) -> Dict[str, str]:
+    """The docs dirs whose pages this run links locally, {name.lower(): name}.
+
+    Every Apple framework dir with a hash file (naming.dirmap) and every
+    framework this run scrapes, by its id after _canonical_framework_id (its
+    dir name): a framework scraped for the first time links to itself, and
+    is linked to, locally in its first run.
+    """
+    dirs = dirmap(Config.CACHE_DIR)
+    for fw in frameworks:
+        dir_name = AppleJSONDocumentationScraper._canonical_framework_id(fw['id'])
+        dirs[dir_name.lower()] = dir_name
+    return dirs
+
+
 async def scrape_frameworks(framework_list=None, resume_from=None, max_concurrent=20, cleanup_orphans=False):
     """Scrape specified frameworks or all frameworks with proper rolling concurrency
 
@@ -150,6 +166,9 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
 
     print(f"\n📊 Will scrape {len(frameworks)} frameworks")
 
+    # Local links reach every framework dir we have and every one this run scrapes
+    link_dirs = known_dirs(frameworks)
+
     # Track progress
     total = len(frameworks)
     completed = 0
@@ -165,7 +184,8 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
             try:
                 scraper = AppleJSONDocumentationScraper(
                     framework_id=fw['id'],
-                    framework_name=fw['title']
+                    framework_name=fw['title'],
+                    known_dirs=link_dirs,
                 )
                 outcome = await scrape_single_framework(scraper, fw, index, total, cleanup_orphans)
                 return fw, outcome
