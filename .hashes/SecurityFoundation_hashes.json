@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-20T00:52:53.233012",
+    "last_updated": "2026-10-20T07:42:10.412438",
     "total_pages": 22,
-    "session_id": "2026-10-20T00:52:50.187838"
+    "session_id": "2026-10-20T07:42:08.472011"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SecurityFoundation.json": {
       "hash": "e6f301eb1b98d23a5d8077d05eca66451308a50909ff4f5311c6710a8204e1bb",
-      "last_checked": "2026-10-20T00:52:50.502072",
+      "last_checked": "2026-10-20T07:42:08.659852",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"1804-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/SecurityFoundation.md"
     },
     "https://developer.apple.com/documentation/SecurityFoundation": {
       "hash": "e6f301eb1b98d23a5d8077d05eca66451308a50909ff4f5311c6710a8204e1bb",
-      "last_checked": "2026-10-20T00:52:50.492812",
+      "last_checked": "2026-10-20T07:42:08.640569",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"1804-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/SecurityFoundation.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization.json": {
       "hash": "2a4ed2dc3ecf18a33708ccb5248c80f5d332fa2460cbc69191006df71f8f67de",
-      "last_checked": "2026-10-20T00:52:50.896576",
+      "last_checked": "2026-10-20T07:42:09.029303",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"83a6-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/authorization().json": {
       "hash": "91c4b712ef30a706ca29243b6e1c2a1976917bde1635434d90502ef5b3c9d6f7",
-      "last_checked": "2026-10-20T00:52:51.205016",
+      "last_checked": "2026-10-20T07:42:09.132001",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"34a0-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/authorization.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/authorization(with:rights:environment:).json": {
       "hash": "ad404e92969126d354928e289456141faa0fbc516e80fd2a790e7edda0c1ae09",
-      "last_checked": "2026-10-20T00:52:51.496317",
+      "last_checked": "2026-10-20T07:42:09.260900",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"8b78-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/authorization-withrightsenvironment.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/init().json": {
       "hash": "861228e20a0b7f0292207cbb517e1eb65a1165b4b8fd81c0de9cc3cfe7c5e3a7",
-      "last_checked": "2026-10-20T00:52:51.633831",
+      "last_checked": "2026-10-20T07:42:09.394678",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"3212-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/init.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/init(flags:rights:environment:).json": {
       "hash": "b6fc70c4b030a453dc3208ffabeedce8b1b8576f46633f45e73503a632f1fcff",
-      "last_checked": "2026-10-20T00:52:51.907310",
+      "last_checked": "2026-10-20T07:42:09.568073",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"889f-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/init-flagsrightsenvironment.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/authorizationref().json": {
       "hash": "c4fc435f0272e8e130ddb63404768462852e20fddd2ca69810c6794498dac4d1",
-      "last_checked": "2026-10-20T00:52:52.183090",
+      "last_checked": "2026-10-20T07:42:09.677644",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"231b-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/authorizationref.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/obtain(withrights:flags:environment:authorizedrights:).json": {
       "hash": "77a4cd4686c4410112937bb693fc0b5e9afbfd76cab9411b39551e30c80a1902",
-      "last_checked": "2026-10-20T00:52:52.451122",
+      "last_checked": "2026-10-20T07:42:09.838038",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"c351-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/obtain-withrightsflagsenvironmentauthorizedrights.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/obtain(withright:flags:).json": {
       "hash": "10dbbb96917ab47d3be986fc2622fe10c7fcfaabb78f834432d01a97d37484c2",
-      "last_checked": "2026-10-20T00:52:52.745915",
+      "last_checked": "2026-10-20T07:42:09.960573",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"539a-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/obtain-withrightflags.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/invalidatecredentials().json": {
       "hash": "9d5eb785d27a3ee32b655ca08e2df1b4055bafb09749ba2facca6f99dc72208c",
-      "last_checked": "2026-10-20T00:52:52.914675",
+      "last_checked": "2026-10-20T07:42:10.134057",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"1ad5-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/invalidatecredentials.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityfoundation/sfauthorization/init(coder:).json": {
       "hash": "d5796b1b000deeb7a95055b498046337b0c1f1e1c9b8a20eee1d2cb1d5a8e1df",
-      "last_checked": "2026-10-20T00:52:53.192539",
+      "last_checked": "2026-10-20T07:42:10.356313",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.187838",
+      "session_id": "2026-10-20T07:42:08.472011",
       "etag": "\"14f2-65d55d3e6b2f9-df\"",
       "file_path": "documentation/SecurityFoundation/sfauthorization/init-coder.md"
     },

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-20T00:52:53.208728",
+    "last_updated": "2026-10-20T07:42:10.216381",
     "total_pages": 22,
-    "session_id": "2026-10-20T00:52:50.141024"
+    "session_id": "2026-10-20T07:42:08.439853"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/Snapshots.json": {
       "hash": "1f1e51b17f365a74499e3c1c8bdbcf78ee94bc968e89e41c4a9c4243ab4c9798",
-      "last_checked": "2026-10-20T00:52:50.444122",
+      "last_checked": "2026-10-20T07:42:08.671609",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"28f3-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/Snapshots.md"
     },
     "https://developer.apple.com/documentation/Snapshots": {
       "hash": "1f1e51b17f365a74499e3c1c8bdbcf78ee94bc968e89e41c4a9c4243ab4c9798",
-      "last_checked": "2026-10-20T00:52:50.432546",
+      "last_checked": "2026-10-20T07:42:08.663792",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"28f3-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/Snapshots.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/generating-a-url-and-signature-to-create-a-maps-web-snapshot.json": {
       "hash": "581435e3964a198e7a9d914aaa025cbec68ea00fb3b127e31976e22a764ef93f",
-      "last_checked": "2026-10-20T00:52:50.847660",
+      "last_checked": "2026-10-20T07:42:08.933395",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"37d2-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/generating-a-url-and-signature-to-create-a-maps-web-snapshot.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/annotation.json": {
       "hash": "d840b1a7cb4866464d549f315733d2d24d5c93102d4ef2036f40b3be1aa57c96",
-      "last_checked": "2026-10-20T00:52:51.143848",
+      "last_checked": "2026-10-20T07:42:09.084320",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"2a8f-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/annotation.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlay.json": {
       "hash": "1089193e3f5c9dd5f40b0252b0a94e84eb11c29b526f3c3f3f9149fc727b145d",
-      "last_checked": "2026-10-20T00:52:51.418128",
+      "last_checked": "2026-10-20T07:42:09.174081",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"3620-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/overlay.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlaystyle.json": {
       "hash": "65f8d15372077f732d02dd6e60dbbbc8aa02402a83e75ab1810396609d2071f2",
-      "last_checked": "2026-10-20T00:52:51.702773",
+      "last_checked": "2026-10-20T07:42:09.335387",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"31a6-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/overlaystyle.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/image.json": {
       "hash": "4a0a38bb32981937be434f946085bb2a1f090019f99391d0234d14988414f07a",
-      "last_checked": "2026-10-20T00:52:51.856566",
+      "last_checked": "2026-10-20T07:42:09.472265",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"1d01-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/image.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/get-a-map-snapshot.json": {
       "hash": "54f69ed8fa1e93b85688b44cb65002e439c16f8404f428b002358be9f101a75b",
-      "last_checked": "2026-10-20T00:52:52.163846",
+      "last_checked": "2026-10-20T07:42:09.616653",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"5b48-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/get-a-map-snapshot.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlay/linegradient-data.dictionary.json": {
       "hash": "82a85df469dc56deeeba0a428309ca81114cddbf4fa27141a6129cf82721377d",
-      "last_checked": "2026-10-20T00:52:52.436925",
+      "last_checked": "2026-10-20T07:42:09.713244",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"11a1-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/overlay/linegradient-datadictionary.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlay/linegradientindexes-data.dictionary.json": {
       "hash": "c7d3a5ec04347ed8bb9bb85c8f55d2d83a33e22759b43ffcfeb0a69dc9fc2bae",
-      "last_checked": "2026-10-20T00:52:52.607319",
+      "last_checked": "2026-10-20T07:42:09.879863",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"11d5-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/overlay/linegradientindexes-datadictionary.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlaystyle/linegradient-data.dictionary.json": {
       "hash": "f41bffe1c0abc6b179f2cfd2ba23b1bab3a4d99b755373811abba9f3f9116ecf",
-      "last_checked": "2026-10-20T00:52:52.906957",
+      "last_checked": "2026-10-20T07:42:10.006647",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"11c3-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/overlaystyle/linegradient-datadictionary.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/snapshots/overlaystyle/linegradientindexes-data.dictionary.json": {
       "hash": "2a7daa1f8c5d45d63788f98ea395999a99e225e451df2742c822bffc1943ef74",
-      "last_checked": "2026-10-20T00:52:53.190008",
+      "last_checked": "2026-10-20T07:42:10.148335",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:50.141024",
+      "session_id": "2026-10-20T07:42:08.439853",
       "etag": "\"11f7-65d55a2277a64-df\"",
       "file_path": "documentation/Snapshots/overlaystyle/linegradientindexes-datadictionary.md"
     },

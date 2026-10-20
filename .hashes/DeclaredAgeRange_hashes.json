@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-20T00:52:36.288638",
+    "last_updated": "2026-10-20T07:41:54.540982",
     "total_pages": 96,
-    "session_id": "2026-10-20T00:52:29.650843"
+    "session_id": "2026-10-20T07:41:46.852021"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/DeclaredAgeRange.json": {
       "hash": "4e4f4ce9e531c0914620157dadf40eff8bcc2cd530fb7ae812880207c240e2a8",
-      "last_checked": "2026-10-20T00:52:29.828729",
+      "last_checked": "2026-10-20T07:41:47.026669",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"25c8-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/DeclaredAgeRange.md"
     },
     "https://developer.apple.com/documentation/DeclaredAgeRange": {
       "hash": "4e4f4ce9e531c0914620157dadf40eff8bcc2cd530fb7ae812880207c240e2a8",
-      "last_checked": "2026-10-20T00:52:29.729513",
+      "last_checked": "2026-10-20T07:41:47.012795",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"25c8-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/DeclaredAgeRange.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice.json": {
       "hash": "ff68c512f4de00a88adb647b917aba44bef60570d3090ab77dd958e075126915",
-      "last_checked": "2026-10-20T00:52:30.419740",
+      "last_checked": "2026-10-20T07:41:47.724186",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"5002-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/declaredagerangeaction.json": {
       "hash": "fd8ccb587996d9fdec8fad4c85b853d97747528759fda3927d977a9a3f6122f7",
-      "last_checked": "2026-10-20T00:52:30.523892",
+      "last_checked": "2026-10-20T07:41:47.866615",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1824-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/declaredagerangeaction.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/shared.json": {
       "hash": "978a47c01172fb188ccb549fcb9a8d2079b595d3f5cffcc8eb9756ab7a56c00e",
-      "last_checked": "2026-10-20T00:52:30.822821",
+      "last_checked": "2026-10-20T07:41:48.119170",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"12ea-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/shared.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration.json": {
       "hash": "76d3ea384dc8a61de155b84273650dbd6f47d7ed3cd49881f418fc8a986aeeb7",
-      "last_checked": "2026-10-20T00:52:30.925777",
+      "last_checked": "2026-10-20T07:41:48.273603",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"5353-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerange.json": {
       "hash": "10800bf47b1b9dc62bd2d956a88fc199f7cd2bd2a2ea00a3ecee31891377686c",
-      "last_checked": "2026-10-20T00:52:31.111614",
+      "last_checked": "2026-10-20T07:41:48.366059",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"3f09-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerange.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/response.json": {
       "hash": "27cbad91024dc05d5a28f728dca35e537f11f501b8fa45bdaa8c3b7509efeeec",
-      "last_checked": "2026-10-20T00:52:31.464594",
+      "last_checked": "2026-10-20T07:41:48.772928",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2e95-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/response.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/parentalcontrols.json": {
       "hash": "e9c410afd57e6a3f22480888863e62a37ec59a338320d4f990db912dca394e42",
-      "last_checked": "2026-10-20T00:52:31.612800",
+      "last_checked": "2026-10-20T07:41:49.041403",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"4dfa-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/parentalcontrols.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/error.json": {
       "hash": "b0c3880cc4f6dc4d98ddc4c4d0e435e02ebcc107bd09e2e787974169c149ee95",
-      "last_checked": "2026-10-20T00:52:32.257645",
+      "last_checked": "2026-10-20T07:41:49.769386",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2e0a-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/error.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.json": {
       "hash": "d0736d6653b22e90afce31490e005f20c233f84948b4f0ab4f5aab395e907698",
-      "last_checked": "2026-10-20T00:52:31.215281",
+      "last_checked": "2026-10-20T07:41:48.519739",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"4818-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/requestagerange-agegates-in-2go8c.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/requestagerange(agegates:_:_:in:)-4yo3r.json": {
       "hash": "f2810f259cfcb00d29809bb894be4c528d744450a7bab9bac12ec827f6c9d56d",
-      "last_checked": "2026-10-20T00:52:31.332750",
+      "last_checked": "2026-10-20T07:41:48.631538",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"4200-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/requestagerange-agegates-in-4yo3r.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/declaredagerangeaction/callasfunction(agegates:_:_:).json": {
       "hash": "66d1660651302769f621459cdd32c2fc1555ebf7b8c28df1beae903aceadde6f",
-      "last_checked": "2026-10-20T00:52:32.399775",
+      "last_checked": "2026-10-20T07:41:49.908496",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2f4d-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/declaredagerangeaction/callasfunction-agegates.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/selfdeclared.json": {
       "hash": "e1484da5f8e275e4f08f2d84cc956142020d014331d1d2b4c261b5ee1415cae5",
-      "last_checked": "2026-10-20T00:52:32.640781",
+      "last_checked": "2026-10-20T07:41:50.366804",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"19cd-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/selfdeclared.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardiandeclared.json": {
       "hash": "c9109fec4301d4479fedaf823b1b3070c7fd78f27eb73304bbf2fc0fc8542123",
-      "last_checked": "2026-10-20T00:52:32.810113",
+      "last_checked": "2026-10-20T07:41:50.523618",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"19fb-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/guardiandeclared.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerange/lowerbound.json": {
       "hash": "0444e8b0b6bc777720cbd9243b84a1a6c79083860ecc9e67f5484e53a2e0011d",
-      "last_checked": "2026-10-20T00:52:33.884347",
+      "last_checked": "2026-10-20T07:41:51.750448",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2e69-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerange/lowerbound.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerange/upperbound.json": {
       "hash": "1c335a40f7334f89e42aca7d8e9ff699f1ac975818a7cb882379afb5c22604ce",
-      "last_checked": "2026-10-20T00:52:33.980672",
+      "last_checked": "2026-10-20T07:41:51.865123",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2c90-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerange/upperbound.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerange/agerangedeclaration.json": {
       "hash": "cb48265c94e9c576996b64312f73ada9e92569bbd661b2eb1622060010e3e60b",
-      "last_checked": "2026-10-20T00:52:34.116584",
+      "last_checked": "2026-10-20T07:41:52.054098",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2782-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerange/agerangedeclaration.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerange/activeparentalcontrols.json": {
       "hash": "2a63661c6af44a7e1f08afb9ef3eddfe2c84768426a53102ed1a696ba6e39b1e",
-      "last_checked": "2026-10-20T00:52:34.303078",
+      "last_checked": "2026-10-20T07:41:52.202819",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2797-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerange/activeparentalcontrols.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/response/declinedsharing.json": {
       "hash": "9167ce34bb72aecd51ba59e042cfc9cc9e2c5a2501702198ea81bd8fb8448c23",
-      "last_checked": "2026-10-20T00:52:34.412176",
+      "last_checked": "2026-10-20T07:41:52.291725",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1723-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/response/declinedsharing.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/response/sharing(range:).json": {
       "hash": "d41ce19f69e52c14bde312251f2546a6fc8a67f8701490c62ac0ae24f9c9cb6f",
-      "last_checked": "2026-10-20T00:52:34.539151",
+      "last_checked": "2026-10-20T07:41:52.448107",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1fa8-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/response/sharing-range.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/parentalcontrols/init(rawvalue:).json": {
       "hash": "5ed6d1426cb101dcd9154717f72a5e8ca6a151f32eb321fd42883b0403fb6e23",
-      "last_checked": "2026-10-20T00:52:34.649545",
+      "last_checked": "2026-10-20T07:41:52.739532",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"16bd-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/parentalcontrols/init-rawvalue.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/parentalcontrols/description.json": {
       "hash": "d469078ed5abbbadb0978e7bc690bad409a61f368b2a9f2a1016c48e58323cf9",
-      "last_checked": "2026-10-20T00:52:34.779180",
+      "last_checked": "2026-10-20T07:41:52.891833",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1aa8-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/parentalcontrols/description.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/parentalcontrols/communicationlimits.json": {
       "hash": "dbd97c429d18339ddc5c98010336a201b6ad2fa231b0c414467166cce236624c",
-      "last_checked": "2026-10-20T00:52:35.041051",
+      "last_checked": "2026-10-20T07:41:53.139152",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1920-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/parentalcontrols/communicationlimits.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/error/notavailable.json": {
       "hash": "4d734ae2b33de4baa9ca7cc827129ea79588b0042aeb341c4cee7f9e11d7109a",
-      "last_checked": "2026-10-20T00:52:35.743309",
+      "last_checked": "2026-10-20T07:41:53.856439",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1693-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/error/notavailable.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/error/invalidrequest.json": {
       "hash": "8f645e4635f3cf48b4a8d7c7ce2bc1598b0699268142d35946dba5c211550a69",
-      "last_checked": "2026-10-20T00:52:35.861433",
+      "last_checked": "2026-10-20T07:41:53.997933",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1551-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/error/invalidrequest.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/iseligibleforagefeatures.json": {
       "hash": "0099b0a51e98115e53d55c21e59a5bce10ddd3751b4d856bbd8decff46adb805",
-      "last_checked": "2026-10-20T00:52:31.700713",
+      "last_checked": "2026-10-20T07:41:49.146777",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"270b-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/iseligibleforagefeatures.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/paymentchecked.json": {
       "hash": "d27c6d8064ae1a326aab45d0d72e841a89b80a37b81f636fc73e9e6fc821ed49",
-      "last_checked": "2026-10-20T00:52:33.095591",
+      "last_checked": "2026-10-20T07:41:50.923580",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2569-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/paymentchecked.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/governmentidchecked.json": {
       "hash": "5085d462a5008d23f5a0a4abbbbe781fa8d3db3e365bd30480fa67d7f891d6d6",
-      "last_checked": "2026-10-20T00:52:33.216510",
+      "last_checked": "2026-10-20T07:41:51.059542",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"256d-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/governmentidchecked.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/checkedbyothermethod.json": {
       "hash": "7682bb312ec9fe1bef5bd294339475aa9c961320d152c5a41efd279a7e150f7c",
-      "last_checked": "2026-10-20T00:52:33.349138",
+      "last_checked": "2026-10-20T07:41:51.238250",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2578-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/checkedbyothermethod.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardianpaymentchecked.json": {
       "hash": "45f6ae0a5d59fa0f648beec2911370b40a7fbf6c330fd0cf57e88d85fcf12571",
-      "last_checked": "2026-10-20T00:52:33.489917",
+      "last_checked": "2026-10-20T07:41:51.368778",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"25c2-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/guardianpaymentchecked.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardiangovernmentidchecked.json": {
       "hash": "d8a89254193ee7fc5e423e37ed148e67aa103b50a1c3f4e0a3c66747f1a48269",
-      "last_checked": "2026-10-20T00:52:33.590872",
+      "last_checked": "2026-10-20T07:41:51.516040",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"25c6-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/guardiangovernmentidchecked.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardiancheckedbyothermethod.json": {
       "hash": "585cf423665e9c0631c798c156f1b6c969b4bf6c265e6d22dc1ccd718a94879e",
-      "last_checked": "2026-10-20T00:52:33.719529",
+      "last_checked": "2026-10-20T07:41:51.610244",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"25d1-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/guardiancheckedbyothermethod.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/parentalcontrols/rawvalue.json": {
       "hash": "d04f8a3ae856ac1842624df73cc2fddd4bc3ebaf39d9df16993ad10367df5014",
-      "last_checked": "2026-10-20T00:52:34.909565",
+      "last_checked": "2026-10-20T07:41:52.970871",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"18f3-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/parentalcontrols/rawvalue.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/parentalcontrols/significantappchangeapprovalrequired.json": {
       "hash": "3100c91b3ebfd54f7ea7d2a463a0ea47fcb15ebdc9a7c435da61fa0c7af8bf39",
-      "last_checked": "2026-10-20T00:52:35.219846",
+      "last_checked": "2026-10-20T07:41:53.243056",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1fd2-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/parentalcontrols/significantappchangeapprovalrequired.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/requesting-people-share-their-age-range-with-your-app.json": {
       "hash": "ff77411ed9028b6ac0312123b7b00d13f896c3bcb41441644c089fdcd116d718",
-      "last_checked": "2026-10-20T00:52:30.125185",
+      "last_checked": "2026-10-20T07:41:47.303796",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"eb81-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/requesting-people-share-their-age-range-with-your-app.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/significantupdateaction.json": {
       "hash": "a2f45aed52a8e7adcbc40fb9e15469044e6852dd7bfd18f83c583dbf57fbc4a6",
-      "last_checked": "2026-10-20T00:52:30.655330",
+      "last_checked": "2026-10-20T07:41:47.995545",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1271-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/significantupdateaction.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/regulatoryfeature.json": {
       "hash": "17ddbdeb68aafe87339b2712220fb12fd3987f1420be949255e457fcdfb20407",
-      "last_checked": "2026-10-20T00:52:31.839206",
+      "last_checked": "2026-10-20T07:41:49.292722",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2b6c-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/regulatoryfeature.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/requiredregulatoryfeatures.json": {
       "hash": "00861a0d2b078073b549a3011a45e85c706e6477dd72d0af827ac275d405e9d5",
-      "last_checked": "2026-10-20T00:52:31.971969",
+      "last_checked": "2026-10-20T07:41:49.565528",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2492-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/requiredregulatoryfeatures.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/significantupdateaction/callasfunction(updatedescription:).json": {
       "hash": "c6c3fa81fb9b5f77235f62d05a79285e8152c0995de973e67c3bd2cab26a6d5e",
-      "last_checked": "2026-10-20T00:52:32.545669",
+      "last_checked": "2026-10-20T07:41:50.203094",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1c89-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/significantupdateaction/callasfunction-updatedescription.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/regulatoryfeature/declaredagerangerequired.json": {
       "hash": "c7e28a469378ee0e55bfcf34d025883a2e2e1650f364a07b72792d4e055aabed",
-      "last_checked": "2026-10-20T00:52:35.310138",
+      "last_checked": "2026-10-20T07:41:53.415662",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1b85-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/regulatoryfeature/declaredagerangerequired.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/regulatoryfeature/significantappchangerequiresadultnotification.json": {
       "hash": "e4912bb1fa457ff624b95d5cdf679babf2341274b130b41d4c9b7aca1747e354",
-      "last_checked": "2026-10-20T00:52:35.452652",
+      "last_checked": "2026-10-20T07:41:53.560134",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1bf7-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/regulatoryfeature/significantappchangerequiresadultnotification.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/regulatoryfeature/significantappchangerequiresparentalconsent.json": {
       "hash": "58112f71954f95d45e7542ed96a7e7640e463508a29881cb25eb6c4aa9a0c38e",
-      "last_checked": "2026-10-20T00:52:35.596704",
+      "last_checked": "2026-10-20T07:41:53.692816",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1c03-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/regulatoryfeature/significantappchangerequiresparentalconsent.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/showsignificantupdateacknowledgment(in:updatedescription:).json": {
       "hash": "f9870a23af6d5f9a2c3b58c3cd99055d7556c4a172d54faadce9bbec782a31a3",
-      "last_checked": "2026-10-20T00:52:32.127949",
+      "last_checked": "2026-10-20T07:41:49.652489",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"2ae2-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/showsignificantupdateacknowledgment-inupdatedescription.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/agerangedeclaration/confirmed.json": {
       "hash": "90668f8182650691e9f28ffb8c2def91dfee8d47603796546fa3cb20a51b4ec6",
-      "last_checked": "2026-10-20T00:52:32.987288",
+      "last_checked": "2026-10-20T07:41:50.783183",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"19eb-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/agerangedeclaration/confirmed.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/implementing-age-assurance-and-permissions.json": {
       "hash": "a63a605e457447523fa181d7415a33c660fdc9b73f9f6da16b199bd32543319f",
-      "last_checked": "2026-10-20T00:52:30.283569",
+      "last_checked": "2026-10-20T07:41:47.392766",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"7267-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/implementing-age-assurance-and-permissions.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/error/declinedonboarding.json": {
       "hash": "4e996f1bf4bee41c7901caefbb06dcc89b958ea8b194b894daf937256a449acc",
-      "last_checked": "2026-10-20T00:52:35.978154",
+      "last_checked": "2026-10-20T07:41:54.098346",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1370-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/error/declinedonboarding.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/error/invalidaccount.json": {
       "hash": "97eec615592f3b413548c767a54429af5f8ccec04ab2ae69d264f3778ed30faf",
-      "last_checked": "2026-10-20T00:52:36.146963",
+      "last_checked": "2026-10-20T07:41:54.318554",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"13c9-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/error/invalidaccount.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/declaredagerange/agerangeservice/error/network.json": {
       "hash": "f303b836718fd3536b860bbcb8267efdf6022885a2ce6b77eab47656c31e1dcc",
-      "last_checked": "2026-10-20T00:52:36.268614",
+      "last_checked": "2026-10-20T07:41:54.518695",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:29.650843",
+      "session_id": "2026-10-20T07:41:46.852021",
       "etag": "\"1354-65d55dd5583c3-df\"",
       "file_path": "documentation/DeclaredAgeRange/agerangeservice/error/network.md"
     },

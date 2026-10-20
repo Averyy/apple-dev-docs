@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-20T00:52:29.843625",
+    "last_updated": "2026-10-20T07:41:47.312669",
     "total_pages": 124,
-    "session_id": "2026-10-20T00:52:21.362316"
+    "session_id": "2026-10-20T07:41:37.022798"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/BackgroundTasks.json": {
       "hash": "cc339de7a9ca8a13e2a3778831ef4095dfb3be67b716ef5379164adfdb0ae930",
-      "last_checked": "2026-10-20T00:52:21.503312",
+      "last_checked": "2026-10-20T07:41:37.244856",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"67f1-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/BackgroundTasks.md"
     },
     "https://developer.apple.com/documentation/BackgroundTasks": {
       "hash": "cc339de7a9ca8a13e2a3778831ef4095dfb3be67b716ef5379164adfdb0ae930",
-      "last_checked": "2026-10-20T00:52:21.494443",
+      "last_checked": "2026-10-20T07:41:37.183602",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"67f1-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/BackgroundTasks.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler.json": {
       "hash": "6e6801467c20e82ee33dc5a0e68ce57a77a55bb75451a34174c150f0ec4f7ec0",
-      "last_checked": "2026-10-20T00:52:21.826287",
+      "last_checked": "2026-10-20T07:41:37.430674",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"8884-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtask.json": {
       "hash": "e5f2f490620078352f3c1caabadcc9c399e1ff1e1f222923bfc5e8f2d0371959",
-      "last_checked": "2026-10-20T00:52:22.033748",
+      "last_checked": "2026-10-20T07:41:37.601586",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"5e0d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/refreshing-and-maintaining-your-app-using-background-tasks.json": {
       "hash": "a6a87b09d28a05be4df757466d9c2602f26bae9b4ecdab707c53326da004ee48",
-      "last_checked": "2026-10-20T00:52:22.168116",
+      "last_checked": "2026-10-20T07:41:37.856701",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"2658-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/choosing-background-strategies-for-your-app.json": {
       "hash": "870b454da9340d00d337598c014f6609a2140d27b636b1bd1a6473dc1745f942",
-      "last_checked": "2026-10-20T00:52:22.320072",
+      "last_checked": "2026-10-20T07:41:37.991358",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"81f1-65902970fdddd-df\"",
       "file_path": "documentation/BackgroundTasks/choosing-background-strategies-for-your-app.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtask.json": {
       "hash": "96b2f945bfce945f5b1df135e6177250a31f320722f1491673778a439d4ebf15",
-      "last_checked": "2026-10-20T00:52:22.481040",
+      "last_checked": "2026-10-20T07:41:38.130617",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"5555-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtask.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgapprefreshtask.json": {
       "hash": "5b6656eb1dc62870543b153c05292ca9ac0bbd7830dcad0b1c57cf38d83e763f",
-      "last_checked": "2026-10-20T00:52:22.592353",
+      "last_checked": "2026-10-20T07:41:38.234927",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"4d78-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtask.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bghealthresearchtask.json": {
       "hash": "730a55791155c4d8119ac2be38d43871ba9441c5e9c1172f64a0cfa4060c2d98",
-      "last_checked": "2026-10-20T00:52:22.762836",
+      "last_checked": "2026-10-20T07:41:38.373800",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3f71-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtask.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/performing-long-running-tasks-on-ios-and-ipados.json": {
       "hash": "0c32a078971e43f0a0016b9f3f1adaf25e4edf404a245138a5f63e494bf5442e",
-      "last_checked": "2026-10-20T00:52:22.870306",
+      "last_checked": "2026-10-20T07:41:38.512103",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"9fae-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/performing-long-running-tasks-on-ios-and-ipados.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtask.json": {
       "hash": "9d62c542bb51e65d659631bd0d425d0f345d90d4827f28ba20c31b086f84d483",
-      "last_checked": "2026-10-20T00:52:23.024449",
+      "last_checked": "2026-10-20T07:41:38.823148",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"5b3d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtaskrequest.json": {
       "hash": "f15c11e1188fe657ef8c981953a4ff5da5dd5e9b24f7782d190ea1ab9b17ea29",
-      "last_checked": "2026-10-20T00:52:23.157957",
+      "last_checked": "2026-10-20T07:41:39.086847",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"5a0b-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgapprefreshtaskrequest.json": {
       "hash": "d710d7739010fe702610279a6c6db4939e418c96b385e1240041fc23aee9ee16",
-      "last_checked": "2026-10-20T00:52:23.288143",
+      "last_checked": "2026-10-20T07:41:39.238097",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"4e8f-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtaskrequest.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskrequest.json": {
       "hash": "7aa8c996e6bb7895d8c328d617928b5a91aa135d81d7215d238084bb684eb8ae",
-      "last_checked": "2026-10-20T00:52:23.437675",
+      "last_checked": "2026-10-20T07:41:39.328245",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"5681-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bghealthresearchtaskrequest.json": {
       "hash": "6f33c04f3e088ce5ea66b3e3dd1261e0810535eba37d92d29379b43a391a4a53",
-      "last_checked": "2026-10-20T00:52:23.538099",
+      "last_checked": "2026-10-20T07:41:39.511463",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"4f5e-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtaskrequest.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest.json": {
       "hash": "ebed05e57d22f45055aa165a31d1b79b39263200d73a07f0f8a7a2942360e456",
-      "last_checked": "2026-10-20T00:52:23.710834",
+      "last_checked": "2026-10-20T07:41:39.681895",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"7cfb-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/starting-and-terminating-tasks-during-development.json": {
       "hash": "91be7b24802a836eef631e6b3242768b42eeea4b195b4434afec0d43101eaaa8",
-      "last_checked": "2026-10-20T00:52:23.800418",
+      "last_checked": "2026-10-20T07:41:39.815442",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"1b48-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/starting-and-terminating-tasks-during-development.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/shared.json": {
       "hash": "1f7fd00b1434030e617a710c6a8f1e6d5b8da08e8413a406ac47327591164f36",
-      "last_checked": "2026-10-20T00:52:23.907949",
+      "last_checked": "2026-10-20T07:41:39.898559",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"1d74-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/shared.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/supportedresources.json": {
       "hash": "3e16a11b3a967a817dc70810d204db4ba8ca6579ac2d14f90172bfa17de63c76",
-      "last_checked": "2026-10-20T00:52:24.070066",
+      "last_checked": "2026-10-20T07:41:40.009742",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3a5a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/supportedresources.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/register(fortaskwithidentifier:using:launchhandler:).json": {
       "hash": "eefd2b9ef80ff082c566ba2273e55440ba7755bf27dc37889704a1d91a476f86",
-      "last_checked": "2026-10-20T00:52:24.221020",
+      "last_checked": "2026-10-20T07:41:40.173403",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"6491-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/register-fortaskwithidentifierusinglaunchhandler.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/submit(_:).json": {
       "hash": "877360cea4048abbf86f3d573aefcc96ceeb4b895be29bd41a4568ee6f1a2a8a",
-      "last_checked": "2026-10-20T00:52:24.315231",
+      "last_checked": "2026-10-20T07:41:40.318996",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"49be-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/submit.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/cancel(taskrequestwithidentifier:).json": {
       "hash": "c737d2ae2d5e60a588a0d25e7c1035d9ef6f008e9013b2539c4f67000a034719",
-      "last_checked": "2026-10-20T00:52:24.432777",
+      "last_checked": "2026-10-20T07:41:40.405583",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"2bd8-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/cancel-taskrequestwithidentifier.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/cancelalltaskrequests().json": {
       "hash": "dbee24e66eed5824fa51185cf44e8976473e4a92866b12a3f066cbc057622a7b",
-      "last_checked": "2026-10-20T00:52:24.630972",
+      "last_checked": "2026-10-20T07:41:40.581976",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"222a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/cancelalltaskrequests.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/getpendingtaskrequests(completionhandler:).json": {
       "hash": "54cddf9bc8c185f37211c1117e1a54e7b2ec254711c775faa9707599bb6594c3",
-      "last_checked": "2026-10-20T00:52:24.762341",
+      "last_checked": "2026-10-20T07:41:40.718256",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3e2d-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/getpendingtaskrequests-completionhandler.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error.json": {
       "hash": "7f37a00e4422826f2609d113164cdc38e8c46ad494d8ab7f406cb4871d1b0048",
-      "last_checked": "2026-10-20T00:52:24.911305",
+      "last_checked": "2026-10-20T07:41:40.977676",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"4312-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code.json": {
       "hash": "1d285c0895aa4489d306dea4150d763b58a3583edbc73617c02e963e395e06b6",
-      "last_checked": "2026-10-20T00:52:25.028492",
+      "last_checked": "2026-10-20T07:41:41.120481",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"4eec-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/errordomain.json": {
       "hash": "f096fb3dae27f8a5b2080218d663a245b0e2a0becc4efb9407c177bdaa100f25",
-      "last_checked": "2026-10-20T00:52:25.127015",
+      "last_checked": "2026-10-20T07:41:41.221954",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"272f-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/errordomain.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtask/identifier.json": {
       "hash": "cf094c959a6e615077aa0137bfedad17ff141af56653181a9c9165a8480c88ff",
-      "last_checked": "2026-10-20T00:52:25.441162",
+      "last_checked": "2026-10-20T07:41:41.504250",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"2a21-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/identifier.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtask/expirationhandler.json": {
       "hash": "3e115a7998a077a139b3f2785bb77bd90e862532bc59d10cd8c46b1de2bd2f4c",
-      "last_checked": "2026-10-20T00:52:25.544118",
+      "last_checked": "2026-10-20T07:41:41.791644",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3011-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/expirationhandler.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtask/settaskcompleted(success:).json": {
       "hash": "b42e966b5045eee7662cc00e59cfda80504fec4d742459ed4baf78eca95f75f6",
-      "last_checked": "2026-10-20T00:52:25.687852",
+      "last_checked": "2026-10-20T07:41:41.926767",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"2dae-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtask/settaskcompleted-success.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtask/title.json": {
       "hash": "286dd37e83d3743ebfa413edf540608cb6e0a1dce1e5ae150e030ea119c2f301",
-      "last_checked": "2026-10-20T00:52:25.895920",
+      "last_checked": "2026-10-20T07:41:42.177610",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"36db-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/title.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtask/subtitle.json": {
       "hash": "041e810ed4168d5f5f9f70cee3e8e0c3e1efdb2035b906e80ee0a4cc5c75aa54",
-      "last_checked": "2026-10-20T00:52:25.979662",
+      "last_checked": "2026-10-20T07:41:42.262159",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"36fc-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/subtitle.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtask/updatetitle(_:subtitle:).json": {
       "hash": "d2c5fe25ad7d47082bdaad7e80c7993542a7c7210606fe99bdea915f3c969055",
-      "last_checked": "2026-10-20T00:52:26.107769",
+      "last_checked": "2026-10-20T07:41:42.452343",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"34f3-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtask/updatetitle-subtitle.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtaskrequest/init(identifier:).json": {
       "hash": "47d3bad0fa4628082ccbdaf421d6bc63280353f545ccd7baabe300a454617abb",
-      "last_checked": "2026-10-20T00:52:26.250342",
+      "last_checked": "2026-10-20T07:41:42.549928",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"246b-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/init-identifier.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtaskrequest/requiresexternalpower.json": {
       "hash": "1d9d28ddb78a29655208e21b497d3f30d2aa06840df71eaf2ad95c0e79f28f0a",
-      "last_checked": "2026-10-20T00:52:26.387753",
+      "last_checked": "2026-10-20T07:41:42.720667",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"26e9-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/requiresexternalpower.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgprocessingtaskrequest/requiresnetworkconnectivity.json": {
       "hash": "7313a0c0eff47e3b4a029a845e9003d4cc0827e78eb26e4101b78dbdd8866f7b",
-      "last_checked": "2026-10-20T00:52:26.509344",
+      "last_checked": "2026-10-20T07:41:42.989000",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"2718-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgprocessingtaskrequest/requiresnetworkconnectivity.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgapprefreshtaskrequest/init(identifier:).json": {
       "hash": "97d7f50b3c0acdb02100308a3633cde0ce3c4cb6eee2e9d68ffa8d1142787710",
-      "last_checked": "2026-10-20T00:52:26.623743",
+      "last_checked": "2026-10-20T07:41:43.141663",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"2440-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgapprefreshtaskrequest/init-identifier.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskrequest/earliestbegindate.json": {
       "hash": "41be4cd68908e7941b8da97e235dc7cbf11504673d7b90ade9b7bd52da35f529",
-      "last_checked": "2026-10-20T00:52:26.751026",
+      "last_checked": "2026-10-20T07:41:43.410953",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"268b-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest/earliestbegindate.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskrequest/identifier.json": {
       "hash": "58b440f70d1e65d45babb6554bb02310cba3ccdf178bef542e057f85ba1676b0",
-      "last_checked": "2026-10-20T00:52:26.875964",
+      "last_checked": "2026-10-20T07:41:43.549903",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"26b9-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskrequest/identifier.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bghealthresearchtaskrequest/protectiontypeofrequireddata.json": {
       "hash": "edba4c285e7a2556da12796548b19b2f5c00b1530fede64da20d6920497040ec",
-      "last_checked": "2026-10-20T00:52:26.985144",
+      "last_checked": "2026-10-20T07:41:43.699459",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"21f6-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bghealthresearchtaskrequest/protectiontypeofrequireddata.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/init(identifier:title:subtitle:).json": {
       "hash": "5ae5c9a9cb7d6766f11a0489ccefccdfdd9deeccc5d9a20c80bd2caa1c011c10",
-      "last_checked": "2026-10-20T00:52:27.110085",
+      "last_checked": "2026-10-20T07:41:43.815683",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"397a-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/init-identifiertitlesubtitle.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/requiredresources.json": {
       "hash": "b7e1216cac8a6388694f26d72308e746b1b06b7221e3fb197e3732094b7082f1",
-      "last_checked": "2026-10-20T00:52:27.279471",
+      "last_checked": "2026-10-20T07:41:44.096269",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"40a4-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/requiredresources.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources.json": {
       "hash": "fbe69e3a0b193390e7a1488cca6f42fe0cddf4933850a4bf0eee739edf209833",
-      "last_checked": "2026-10-20T00:52:27.376816",
+      "last_checked": "2026-10-20T07:41:44.254312",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"565c-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/strategy.json": {
       "hash": "20f9481100cf820cb15baf59dc249ad64fb9fcbf5dcb28f55af01d41aebdcb39",
-      "last_checked": "2026-10-20T00:52:27.485198",
+      "last_checked": "2026-10-20T07:41:44.399713",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"34d3-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/strategy.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy.json": {
       "hash": "ba3be1d005b4e803076bba62ad53a8b9bbfc0a2b54523ea4fad392004e691676",
-      "last_checked": "2026-10-20T00:52:27.656201",
+      "last_checked": "2026-10-20T07:41:44.664021",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"4de4-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/subtitle.json": {
       "hash": "a54ab45de64da726e14848f0e72eaaabd465773e875c3a97a313edd0f8ace623",
-      "last_checked": "2026-10-20T00:52:27.758891",
+      "last_checked": "2026-10-20T07:41:44.748640",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3025-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/subtitle.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/title.json": {
       "hash": "a338dc90232e09e5c0aaa9b9f0a4f1ec7a2c2ac0c9fa4e1dc1363398005e464f",
-      "last_checked": "2026-10-20T00:52:27.878539",
+      "last_checked": "2026-10-20T07:41:44.860197",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"300c-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/title.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/notpermitted.json": {
       "hash": "a4145d8b7eba7657ae922b83352a27298a2df79f0b545388b87828bec4dbb44d",
-      "last_checked": "2026-10-20T00:52:27.995606",
+      "last_checked": "2026-10-20T07:41:45.027871",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"366f-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/notpermitted.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/toomanypendingtaskrequests.json": {
       "hash": "9b75ce28232b07e3c3b51660a73200a5735cd06b7165e3ce2a63c0654d689c13",
-      "last_checked": "2026-10-20T00:52:28.116441",
+      "last_checked": "2026-10-20T07:41:45.169812",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"2b52-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/toomanypendingtaskrequests.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/unavailable.json": {
       "hash": "8b6224d38deecce3e04c00c78e850000a5d2d09f71c582ab1ec5873e86e1eeae",
-      "last_checked": "2026-10-20T00:52:28.221994",
+      "last_checked": "2026-10-20T07:41:45.321539",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3497-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/unavailable.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/errordomain.json": {
       "hash": "08e1363e42467df072e439e6feb78edda8be8bea456114267860426f5f8738bd",
-      "last_checked": "2026-10-20T00:52:28.342815",
+      "last_checked": "2026-10-20T07:41:45.472188",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"18a2-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/errordomain.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/immediaterunineligible.json": {
       "hash": "24193858b346aa205bed607057708776cd368ef873f18b323e920224094a00a9",
-      "last_checked": "2026-10-20T00:52:28.486032",
+      "last_checked": "2026-10-20T07:41:45.556131",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"1f60-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/immediaterunineligible.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/notpermitted.json": {
       "hash": "2034e721e129e81194faf28dc8b952ebb3724d4711593a33e58e0c4d92c99c23",
-      "last_checked": "2026-10-20T00:52:28.618873",
+      "last_checked": "2026-10-20T07:41:45.841248",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"416c-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/notpermitted.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/toomanypendingtaskrequests.json": {
       "hash": "45354e876c759a9efbc83ec508643068b0e9d1725418d3ca279b7097ad079cdb",
-      "last_checked": "2026-10-20T00:52:28.724879",
+      "last_checked": "2026-10-20T07:41:45.979772",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3687-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/toomanypendingtaskrequests.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/unavailable.json": {
       "hash": "1dc1c22041481f2fe2c36a8ab1b26f619d73896aadd6141aad0ab5e4e54638c6",
-      "last_checked": "2026-10-20T00:52:28.843762",
+      "last_checked": "2026-10-20T07:41:46.115108",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3f90-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/unavailable.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/immediaterunineligible.json": {
       "hash": "8cee75ee61812ad89375ca9bbb632d0277addad5616c1fd769c01054a377c669",
-      "last_checked": "2026-10-20T00:52:28.966122",
+      "last_checked": "2026-10-20T07:41:46.248985",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"49c7-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/immediaterunineligible.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/error/code/init(rawvalue:).json": {
       "hash": "183ac28b8c96873232b41981449991363976a881a6865665ee1038f61d1ab2fc",
-      "last_checked": "2026-10-20T00:52:29.125144",
+      "last_checked": "2026-10-20T07:41:46.344232",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"1c6a-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/error/code/init-rawvalue.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources/gpu.json": {
       "hash": "672060fb71a9c0a117c71d640e2749575580899be488ae4fcfc993359a7b1a65",
-      "last_checked": "2026-10-20T00:52:29.260103",
+      "last_checked": "2026-10-20T07:41:46.533023",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3947-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources/gpu.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/resources/init(rawvalue:).json": {
       "hash": "dcc5a7b0ad77c1cef951377c69b130eeb592a5e7d60c04638a67071518981d18",
-      "last_checked": "2026-10-20T00:52:29.365827",
+      "last_checked": "2026-10-20T07:41:46.704901",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"1be3-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/resources/init-rawvalue.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/fail.json": {
       "hash": "1f292abcec23373f36e53e9e2c391f440112b14ae4be52d1350f7c1d84b22432",
-      "last_checked": "2026-10-20T00:52:29.497656",
+      "last_checked": "2026-10-20T07:41:46.849397",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3031-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/fail.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/queue.json": {
       "hash": "0a929282be7124868ef2c71cfc2306444837fc4116bede72ac35f73a480502b5",
-      "last_checked": "2026-10-20T00:52:29.679923",
+      "last_checked": "2026-10-20T07:41:46.945539",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"3238-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/queue.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgcontinuedprocessingtaskrequest/submissionstrategy/init(rawvalue:).json": {
       "hash": "ae385d3958040cb145ef3854ed42392d020eaed68d472a863cb19cfa670337c5",
-      "last_checked": "2026-10-20T00:52:29.834014",
+      "last_checked": "2026-10-20T07:41:47.291448",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"1c47-65d5609b91a72-df\"",
       "file_path": "documentation/BackgroundTasks/bgcontinuedprocessingtaskrequest/submissionstrategy/init-rawvalue.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundtasks/bgtaskscheduler/submittaskrequest(_:completionhandler:).json": {
       "hash": "98c2546883cca67d3b87fce962dd3d8767afd8a30fc2d9b537a78e20575f1413",
-      "last_checked": "2026-10-20T00:52:25.278947",
+      "last_checked": "2026-10-20T07:41:41.404783",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:52:21.362316",
+      "session_id": "2026-10-20T07:41:37.022798",
       "etag": "\"5c25-65d5609b7b42a-df\"",
       "file_path": "documentation/BackgroundTasks/bgtaskscheduler/submittaskrequest-completionhandler.md"
     },

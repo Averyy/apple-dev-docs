@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-20T00:50:40.716845",
+    "last_updated": "2026-10-20T07:39:56.298659",
     "total_pages": 424,
-    "session_id": "2026-10-20T00:50:10.660390"
+    "session_id": "2026-10-20T07:39:24.347822"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MediaLibrary.json": {
       "hash": "2c69d9da63fb55d49b26427da33084d0a46284dba3d630bfca425535c746341f",
-      "last_checked": "2026-10-20T00:50:10.799132",
+      "last_checked": "2026-10-20T07:39:24.488833",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"33a1-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/MediaLibrary.md"
     },
     "https://developer.apple.com/documentation/MediaLibrary": {
       "hash": "2c69d9da63fb55d49b26427da33084d0a46284dba3d630bfca425535c746341f",
-      "last_checked": "2026-10-20T00:50:10.777592",
+      "last_checked": "2026-10-20T07:39:24.477185",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"33a1-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/MediaLibrary.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup.json": {
       "hash": "c5e09523ed54ac7b35d50e5f6a65b025b6b1fa691d8a0d764b60f03b94f3af17",
-      "last_checked": "2026-10-20T00:50:11.072335",
+      "last_checked": "2026-10-20T07:39:24.925973",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"8bf8-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialibrary.json": {
       "hash": "523ce88c008c2960bf09e3a8b058690d2cbf09ccab72c9c376e0974ddd976cae",
-      "last_checked": "2026-10-20T00:50:11.244619",
+      "last_checked": "2026-10-20T07:39:25.075266",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6ed3-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialibrary.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject.json": {
       "hash": "efa8b3e06ef92ea9b3e0cf50f0a3d238fd24a6ce019a2105f1e0c2ed57db11cc",
-      "last_checked": "2026-10-20T00:50:11.414360",
+      "last_checked": "2026-10-20T07:39:25.210499",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"8920-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource.json": {
       "hash": "f3aa44c8045b9cb00f7e09520036f357d4959a2983af94f5ee7a710406c0254b",
-      "last_checked": "2026-10-20T00:50:11.700103",
+      "last_checked": "2026-10-20T07:39:25.475932",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"8051-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/medialibrary-constants.json": {
       "hash": "98b0158935af25e75d87904095fe849deea5bb49232d3dccc4c41a970f6cdddd",
-      "last_checked": "2026-10-20T00:50:11.851445",
+      "last_checked": "2026-10-20T07:39:25.628278",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"167bd-659027089ce8c-df\"",
       "file_path": "documentation/MediaLibrary/medialibrary-constants.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/identifier.json": {
       "hash": "1eababd40fa6920f6a3d29660f647dae183b1270265e6231a1aa27a595d6cafd",
-      "last_checked": "2026-10-20T00:50:11.996519",
+      "last_checked": "2026-10-20T07:39:25.767214",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"2e6c-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/identifier.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/typeidentifier.json": {
       "hash": "375de7c049997ad3c8511cbfd7fb80987cf5b47858c61de27f57ad5b294b0f63",
-      "last_checked": "2026-10-20T00:50:12.268756",
+      "last_checked": "2026-10-20T07:39:26.034298",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"30d7-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/typeidentifier.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/mediasourceidentifier.json": {
       "hash": "25c490909182c11a11b2bbb076ead02cb506e6a3a151b8c085ca11ef3a059d0d",
-      "last_checked": "2026-10-20T00:50:12.407795",
+      "last_checked": "2026-10-20T07:39:26.170137",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"2e05-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/mediasourceidentifier.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/medialibrary.json": {
       "hash": "0e3fb30002cd7589a265e013d4fb01ec308267666fbf4d10faac02773963a3f9",
-      "last_checked": "2026-10-20T00:50:12.546443",
+      "last_checked": "2026-10-20T07:39:26.309254",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"321b-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/medialibrary.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/attributes.json": {
       "hash": "5d42fbaf649f9f5d949830fbe5faa1d4a957a28bb8890a7c07b4ed6a0e1edfca",
-      "last_checked": "2026-10-20T00:50:12.819226",
+      "last_checked": "2026-10-20T07:39:26.442486",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3496-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/attributes.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/name.json": {
       "hash": "469de46cb63465a3196a3566cfbcaa74fa58b434397a3b1426b01a85b7d7afe5",
-      "last_checked": "2026-10-20T00:50:13.108548",
+      "last_checked": "2026-10-20T07:39:26.693409",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"32d2-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/name.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/iconimage.json": {
       "hash": "7f91c996d2cf97abec3646e19eda2b095f53bf7f32d83462ac0ee05eeb932daa",
-      "last_checked": "2026-10-20T00:50:13.267330",
+      "last_checked": "2026-10-20T07:39:26.838901",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3332-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/iconimage.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/url.json": {
       "hash": "d17ad58a1711d1b2749ce806cf88df6bc572b576cd8a0adec50a35d0bf3d0f5a",
-      "last_checked": "2026-10-20T00:50:13.555288",
+      "last_checked": "2026-10-20T07:39:27.107880",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"33a0-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/url.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/modificationdate.json": {
       "hash": "7cb790df090499068dcd3cf39294974a40986eecdbdc8cf4b0f2e6c17c436d08",
-      "last_checked": "2026-10-20T00:50:13.704337",
+      "last_checked": "2026-10-20T07:39:27.345410",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3263-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/modificationdate.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/parent.json": {
       "hash": "12dd5a17446619a553d1b1535c47de65d7ada681b3d9d80e6281e292e237ba1f",
-      "last_checked": "2026-10-20T00:50:13.998882",
+      "last_checked": "2026-10-20T07:39:27.495199",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"278b-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/parent.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/childgroups.json": {
       "hash": "cbc225b5a44a3672c67213ea8734dd188fb9ec94ea88213c180a8ea66c0ab091",
-      "last_checked": "2026-10-20T00:50:14.275605",
+      "last_checked": "2026-10-20T07:39:27.635615",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"2735-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/childgroups.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediagroup/mediaobjects.json": {
       "hash": "92dad119d7fb43db33bf0d6603ad881c5300aa5898ad99b95a40303e848f252f",
-      "last_checked": "2026-10-20T00:50:14.559589",
+      "last_checked": "2026-10-20T07:39:27.777755",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"319e-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediagroup/mediaobjects.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialibrary/init(options:).json": {
       "hash": "a6948de1629b47b9507420699efa0b98bf01a412f49b11b7a1758fff5780521a",
-      "last_checked": "2026-10-20T00:50:14.713116",
+      "last_checked": "2026-10-20T07:39:27.914739",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"25ce-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialibrary/init-options.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialibrary/mediasources.json": {
       "hash": "4ca01fb0ebc2f85e125c890a090e1404693707c32a13f8005e47c1b4327ba904",
-      "last_checked": "2026-10-20T00:50:14.995551",
+      "last_checked": "2026-10-20T07:39:28.183901",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"26c6-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialibrary/mediasources.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/load-options-keys.json": {
       "hash": "cfff579f326acf54786163044de6384aada3755c9472d36b75900bbe289d36b5",
-      "last_checked": "2026-10-20T00:50:15.137072",
+      "last_checked": "2026-10-20T07:39:28.331792",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"4a96-65902708c433f-df\"",
       "file_path": "documentation/MediaLibrary/load-options-keys.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/media-source-identifiers.json": {
       "hash": "4ded3fdff83bb48d63fa1cc36d4110ce15a003490e1f2734748db40dd13959e8",
-      "last_checked": "2026-10-20T00:50:15.276908",
+      "last_checked": "2026-10-20T07:39:28.593695",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"4e18-65902708c433f-df\"",
       "file_path": "documentation/MediaLibrary/media-source-identifiers.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/non-app-specific-media-source-identifiers.json": {
       "hash": "ef4aca4d1d0d525957def65784c2166e793895f6d541d10070f9043625fff6b0",
-      "last_checked": "2026-10-20T00:50:15.410150",
+      "last_checked": "2026-10-20T07:39:28.745146",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"4655-659027087cf8a-df\"",
       "file_path": "documentation/MediaLibrary/non-app-specific-media-source-identifiers.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/well-known-folder-identifiers.json": {
       "hash": "7e9d5129901c22bd83940e9d2be07587e731e453ba2b89dd62044fbb7542aecb",
-      "last_checked": "2026-10-20T00:50:15.558785",
+      "last_checked": "2026-10-20T07:39:28.896643",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3037-659027089ce8c-df\"",
       "file_path": "documentation/MediaLibrary/well-known-folder-identifiers.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/identifier.json": {
       "hash": "3d174863165fc3cdccaf384e529ec107bb08b391383ec4868f8705cf6384ca8e",
-      "last_checked": "2026-10-20T00:50:15.717990",
+      "last_checked": "2026-10-20T07:39:29.046021",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"2cb3-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/identifier.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/mediasourceidentifier.json": {
       "hash": "a574a33e49d328ce832276d2bf8dbcd3b07c904b7eb66473dc853ebeada0883e",
-      "last_checked": "2026-10-20T00:50:15.876528",
+      "last_checked": "2026-10-20T07:39:29.321685",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"32bd-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/mediasourceidentifier.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/medialibrary.json": {
       "hash": "980084908a1117d957f86353b9d5e7bf1bb4bf4f8dc0eb0889ffdc54f42d75cc",
-      "last_checked": "2026-10-20T00:50:16.145890",
+      "last_checked": "2026-10-20T07:39:29.584955",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3061-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/medialibrary.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/attributes.json": {
       "hash": "b9610e1828bd9bb7d5a17d4d5f63c7605f64234b4bf0d18e4fcd3f91b783b595",
-      "last_checked": "2026-10-20T00:50:16.439786",
+      "last_checked": "2026-10-20T07:39:29.843337",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"4ffd-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/attributes.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/mediatype.json": {
       "hash": "f64b357da0be90a9c5536556e2b19abbbaf5a570b12cd9ff65873a1a77754f82",
-      "last_checked": "2026-10-20T00:50:16.726674",
+      "last_checked": "2026-10-20T07:39:29.973328",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"52c8-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/mediatype.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/contenttype.json": {
       "hash": "63cce5e77189e49e39ca334caaeec4188a09fd1ee1382eb7276e18d845ea8cb6",
-      "last_checked": "2026-10-20T00:50:16.872909",
+      "last_checked": "2026-10-20T07:39:30.244525",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"4e23-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/contenttype.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/name.json": {
       "hash": "ba43e8320892593c69ffe3d6ae5b085bfa977365bfc795274dc79358f9f4b716",
-      "last_checked": "2026-10-20T00:50:17.143224",
+      "last_checked": "2026-10-20T07:39:30.394085",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"4dd8-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/name.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/url.json": {
       "hash": "25441597754891b9bd0adc87b9ba5e2c3a499c46f369b46c2364f34893dfa18b",
-      "last_checked": "2026-10-20T00:50:17.275641",
+      "last_checked": "2026-10-20T07:39:30.545027",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6026-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/url.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/originalurl.json": {
       "hash": "866f9161e24e2b3da2776f29be4d5e40d387ef953a8da2419aa0b5a998da41ed",
-      "last_checked": "2026-10-20T00:50:17.431320",
+      "last_checked": "2026-10-20T07:39:30.677365",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6137-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/originalurl.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/filesize.json": {
       "hash": "5daa9346bef7b0169853590f32b379446640757ca62965d081a48d883507ae6e",
-      "last_checked": "2026-10-20T00:50:17.576823",
+      "last_checked": "2026-10-20T07:39:30.807703",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"4d70-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/filesize.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/modificationdate.json": {
       "hash": "368711bbc7532abf5cef6583bb3fd34dad7714ada1056fa102d2452ea653a9e1",
-      "last_checked": "2026-10-20T00:50:17.851514",
+      "last_checked": "2026-10-20T07:39:30.936330",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"4e87-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/modificationdate.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/thumbnailurl.json": {
       "hash": "a49189029afebc22b1436637cd41d1243644fd22b22b3523eeb8a62a52380a83",
-      "last_checked": "2026-10-20T00:50:17.995327",
+      "last_checked": "2026-10-20T07:39:31.076685",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"608b-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/thumbnailurl.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobject/artworkimage.json": {
       "hash": "d7b2446469b9019940fc1641dbcf733b8853ebb82a5c073e54f4d72d41b667a6",
-      "last_checked": "2026-10-20T00:50:18.150528",
+      "last_checked": "2026-10-20T07:39:31.226341",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"50b3-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobject/artworkimage.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediasourceidentifier.json": {
       "hash": "a92d61c13723aa28b87051a5c2693f813064301f0b5c21d2b175c1c124af8748",
-      "last_checked": "2026-10-20T00:50:18.288901",
+      "last_checked": "2026-10-20T07:39:31.358625",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"2aa2-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource/mediasourceidentifier.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/medialibrary.json": {
       "hash": "38869739a3a908037a53c2882a2f8234dff6c78341878278721e5b89daa4fad1",
-      "last_checked": "2026-10-20T00:50:18.442049",
+      "last_checked": "2026-10-20T07:39:31.514065",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"283d-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource/medialibrary.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/attributes.json": {
       "hash": "6d45236bdb30e7dd86117c198117755791a5c4a40f4553be054a1d063471bba0",
-      "last_checked": "2026-10-20T00:50:18.581550",
+      "last_checked": "2026-10-20T07:39:31.657463",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"1e5a-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource/attributes.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/rootmediagroup.json": {
       "hash": "52a58443dd6f67529b9ddcaac45f09727f50393d21aebd65d7c23f7c28c2c613",
-      "last_checked": "2026-10-20T00:50:18.676556",
+      "last_checked": "2026-10-20T07:39:31.800609",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"24b9-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource/rootmediagroup.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediagroup(foridentifier:).json": {
       "hash": "82d359d217c2916504f8c3c6cc15cfceba6e6233d3ffad8e0f84d53310939edc",
-      "last_checked": "2026-10-20T00:50:18.846254",
+      "last_checked": "2026-10-20T07:39:31.929148",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"40b1-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource/mediagroup-foridentifier.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediagroups(foridentifiers:).json": {
       "hash": "be3279b7e166071ae374e469c4ac4b2a331743aa3b599804f51d6b28998dd23f",
-      "last_checked": "2026-10-20T00:50:18.930628",
+      "last_checked": "2026-10-20T07:39:32.069189",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"43d6-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource/mediagroups-foridentifiers.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediaobject(foridentifier:).json": {
       "hash": "8782b2bbc8609602519ccd3b9660530092066cca0cfb5e8ab66f63cfbc4e4161",
-      "last_checked": "2026-10-20T00:50:19.092378",
+      "last_checked": "2026-10-20T07:39:32.210943",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"43d1-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource/mediaobject-foridentifier.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasource/mediaobjects(foridentifiers:).json": {
       "hash": "aecfe6ffa0cc184cab12dcf3980fcb2c2f9a39dbfd6e890e76c0c5fc1c22467f",
-      "last_checked": "2026-10-20T00:50:19.189550",
+      "last_checked": "2026-10-20T07:39:32.357359",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"46ea-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasource/mediaobjects-foridentifiers.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/aperture-media-group-type-identifiers.json": {
       "hash": "e0be3ed0282d12761fbf4dfdac044bcfa81f27a8c93c591278120fc57499813c",
-      "last_checked": "2026-10-20T00:50:19.364464",
+      "last_checked": "2026-10-20T07:39:32.495956",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"10b77-659027089ce8c-df\"",
       "file_path": "documentation/MediaLibrary/aperture-media-group-type-identifiers.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/final-cut-pro-media-group-type-identifiers.json": {
       "hash": "6c9d59316ab3e461a2f3740ab97703b2bfc90406b6e22cd230422bf19238d1a7",
-      "last_checked": "2026-10-20T00:50:19.507730",
+      "last_checked": "2026-10-20T07:39:32.664212",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"9234-659027087cf8a-df\"",
       "file_path": "documentation/MediaLibrary/final-cut-pro-media-group-type-identifiers.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/folders-media-group-type-identifiers.json": {
       "hash": "ef3a1c7f370d38d498df3bb30e96697b3036c0cb1b8d8ca62acc30d9749107eb",
-      "last_checked": "2026-10-20T00:50:19.603508",
+      "last_checked": "2026-10-20T07:39:32.817966",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ace-65902708c433f-df\"",
       "file_path": "documentation/MediaLibrary/folders-media-group-type-identifiers.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/garageband-media-group-type-identifiers.json": {
       "hash": "db64d2255fca546c664c6f88d714403421100fcb312e9a6fe5788bb740866a6d",
-      "last_checked": "2026-10-20T00:50:19.781058",
+      "last_checked": "2026-10-20T07:39:32.952872",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7b60-65902708c433f-df\"",
       "file_path": "documentation/MediaLibrary/garageband-media-group-type-identifiers.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/logic-media-group-type-identifiers.json": {
       "hash": "0679925154cf3d2dc432d90bec21ed5d53f655249b4d839ef4858315bf7c1ff7",
-      "last_checked": "2026-10-20T00:50:19.911322",
+      "last_checked": "2026-10-20T07:39:33.085234",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"85a6-659027087cf8a-df\"",
       "file_path": "documentation/MediaLibrary/logic-media-group-type-identifiers.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadappfolderskey.json": {
       "hash": "8f34e5f7305af7d847bd0e348933734e64ca4d3a01be079b987395be3d3a1baa",
-      "last_checked": "2026-10-20T00:50:20.062310",
+      "last_checked": "2026-10-20T07:39:33.225308",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7b4a-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialoadappfolderskey.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadappleloops.json": {
       "hash": "a0904a41074dde7c412caf0213d520c5a76a905d390421e669fa9a3ff5fe6745",
-      "last_checked": "2026-10-20T00:50:20.210103",
+      "last_checked": "2026-10-20T07:39:33.375172",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a9d-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialoadappleloops.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadexcludesourceskey.json": {
       "hash": "81f204cec0718291ab4860ee44f34a974d0ec8e1442d0b639ad2d3fbbd3b580f",
-      "last_checked": "2026-10-20T00:50:20.315085",
+      "last_checked": "2026-10-20T07:39:33.511171",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7f40-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialoadexcludesourceskey.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadfolderskey.json": {
       "hash": "7909ed1f5f0c426419c164dfb658bb4de2b1b971f6b96ea14accbac5cb346968",
-      "last_checked": "2026-10-20T00:50:20.486795",
+      "last_checked": "2026-10-20T07:39:33.645268",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7c43-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialoadfolderskey.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadincludesourceskey.json": {
       "hash": "f87d25ebc70a4833b8ff396fe929a6ea2f7d818345e9999f27cc9a9d47af13a0",
-      "last_checked": "2026-10-20T00:50:20.611991",
+      "last_checked": "2026-10-20T07:39:33.782140",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"81d0-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialoadincludesourceskey.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadmoviesfolder.json": {
       "hash": "36c95d40bbe2b319af806bf8bb39432e5ea400ec5b303bd78ea15643377a57c2",
-      "last_checked": "2026-10-20T00:50:20.754146",
+      "last_checked": "2026-10-20T07:39:33.938593",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a9d-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialoadmoviesfolder.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmedialoadsourcetypeskey.json": {
       "hash": "8347893f9618690c94127a61ada1140eb44a1540515832560667a90c28dcad4f",
-      "last_checked": "2026-10-20T00:50:20.851081",
+      "last_checked": "2026-10-20T07:39:34.082173",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"85b6-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmedialoadsourcetypeskey.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceapertureidentifier.json": {
       "hash": "6f307526554430cd45a84ad1bb7e3550079478133658bcae4025d99a8c983df9",
-      "last_checked": "2026-10-20T00:50:20.948614",
+      "last_checked": "2026-10-20T07:39:34.210243",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7af0-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourceapertureidentifier.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceappdefinedfoldersidentifier.json": {
       "hash": "e57b2cded01e63ea4a6498debe6d55bcdb69c59e47350dde004bb06ed448dba8",
-      "last_checked": "2026-10-20T00:50:21.070722",
+      "last_checked": "2026-10-20T07:39:34.356621",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7c77-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourceappdefinedfoldersidentifier.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcecustomfoldersidentifier.json": {
       "hash": "fda1764449b12978497b86abc83a61fd6b4bf2dc65185fcdf757fe249a0a3ff2",
-      "last_checked": "2026-10-20T00:50:21.240079",
+      "last_checked": "2026-10-20T07:39:34.518190",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ce2-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcecustomfoldersidentifier.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcefinalcutidentifier.json": {
       "hash": "9728628e6acc6d74c6b030984bad29c7147909483d8a3dac5c07740b1453ad9c",
-      "last_checked": "2026-10-20T00:50:21.341817",
+      "last_checked": "2026-10-20T07:39:34.671985",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7af5-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcefinalcutidentifier.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcegaragebandidentifier.json": {
       "hash": "0771c4eb45260b56db9c1802a98caa23c790983dbc66a5e5830064b14a939be1",
-      "last_checked": "2026-10-20T00:50:21.471701",
+      "last_checked": "2026-10-20T07:39:34.812541",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7b19-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcegaragebandidentifier.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcelogicidentifier.json": {
       "hash": "1550e2a6342db0ddaeb8168b9ebbaf73a98533a74914e4989cfc6b94a4a66fdc",
-      "last_checked": "2026-10-20T00:50:21.600669",
+      "last_checked": "2026-10-20T07:39:34.946575",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7aa6-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcelogicidentifier.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcemoviesfolderidentifier.json": {
       "hash": "5152f52ee0e4c2e67283d69f5d596ae1d566402c047ea0ae8bd39592099dbdcb",
-      "last_checked": "2026-10-20T00:50:21.771109",
+      "last_checked": "2026-10-20T07:39:35.091173",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7e3f-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcemoviesfolderidentifier.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcephotoboothidentifier.json": {
       "hash": "50795c494c946574ffd222d3fd197b06c43aa077a177f562afc75a995d70dc81",
-      "last_checked": "2026-10-20T00:50:21.897748",
+      "last_checked": "2026-10-20T07:39:35.230061",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7b1b-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcephotoboothidentifier.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcephotosidentifier.json": {
       "hash": "8935d3ed775a21bdbbbeeabfe2e25065c4eb3f4672bdedf564d0adf00a42adac",
-      "last_checked": "2026-10-20T00:50:21.993323",
+      "last_checked": "2026-10-20T07:39:35.374240",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ea6-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcephotosidentifier.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype.json": {
       "hash": "51937b8ebd853c7e1b91376c186810f59711b50796a5a834d72119329b5960b8",
-      "last_checked": "2026-10-20T00:50:22.116675",
+      "last_checked": "2026-10-20T07:39:35.521012",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"a6dc-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcetype.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceimovieidentifier.json": {
       "hash": "058b8bba96c1c1768539a993a66244b73b521fc5bf0233bae254c63ae1f6e39d",
-      "last_checked": "2026-10-20T00:50:22.307191",
+      "last_checked": "2026-10-20T07:39:35.671722",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7abd-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourceimovieidentifier.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceiphotoidentifier.json": {
       "hash": "93901b1c2ba35831817bb0d1a546d2de7abc19930af00a4056393f39b573467d",
-      "last_checked": "2026-10-20T00:50:22.456456",
+      "last_checked": "2026-10-20T07:39:35.822071",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7abd-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourceiphotoidentifier.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourceitunesidentifier.json": {
       "hash": "1e5bdf5905f2f99291606978dc3f337a96787cf8f9d6265534e57d45dd482374",
-      "last_checked": "2026-10-20T00:50:22.560769",
+      "last_checked": "2026-10-20T07:39:35.952063",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7abd-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourceitunesidentifier.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype.json": {
       "hash": "c54c28473260552eb48e6f534902a98f10c21cb8e96c3bd479f4463e5b9d631c",
-      "last_checked": "2026-10-20T00:50:22.700968",
+      "last_checked": "2026-10-20T07:39:36.090855",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"9c42-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediatype.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosalbumtypeidentifier.json": {
       "hash": "6d208a0c006011c84a223ac18a8db3d745974d80b38c73e90b41a023c6ccf254",
-      "last_checked": "2026-10-20T00:50:22.834594",
+      "last_checked": "2026-10-20T07:39:36.221677",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"79f7-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosalbumtypeidentifier.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosalbumsgrouptypeidentifier.json": {
       "hash": "10a6deb09cb79b1cac0f4678d96d9c925fdadad53278d1f821f480729a7ecade",
-      "last_checked": "2026-10-20T00:50:22.972068",
+      "last_checked": "2026-10-20T07:39:36.360809",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a75-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosalbumsgrouptypeidentifier.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosallcollectionsgrouptypeidentifier.json": {
       "hash": "15cbfa1056cd5f91e5337b60802c1e355301d6e05063f2017f48388ce2f04f75",
-      "last_checked": "2026-10-20T00:50:23.130290",
+      "last_checked": "2026-10-20T07:39:36.497677",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ab9-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosallcollectionsgrouptypeidentifier.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosallmomentsgrouptypeidentifier.json": {
       "hash": "361ec7db33afac82771f204ecb6b8d2092d027a378d59099b178a4a4ebb3fc38",
-      "last_checked": "2026-10-20T00:50:23.224655",
+      "last_checked": "2026-10-20T07:39:36.651452",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a65-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosallmomentsgrouptypeidentifier.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosallphotosalbumtypeidentifier.json": {
       "hash": "238abd157752caf2a8f96cfbb63f7d8faaf92a2caf9b7d04a0829516f5ccd850",
-      "last_checked": "2026-10-20T00:50:23.398544",
+      "last_checked": "2026-10-20T07:39:36.792781",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ab8-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosallphotosalbumtypeidentifier.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosallyearsgrouptypeidentifier.json": {
       "hash": "9bcd6a3e7ba16157e2a2bc8736597f2406c56d7765cf06e3a9870269d30d30cb",
-      "last_checked": "2026-10-20T00:50:23.538200",
+      "last_checked": "2026-10-20T07:39:36.934056",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a3b-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosallyearsgrouptypeidentifier.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosburstgrouptypeidentifier.json": {
       "hash": "e998c8da712935c133a4511debdc416dcd315fbc3eeaa8ae7979a9e52d53f98c",
-      "last_checked": "2026-10-20T00:50:23.678063",
+      "last_checked": "2026-10-20T07:39:37.077667",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a64-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosburstgrouptypeidentifier.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotoscollectiongrouptypeidentifier.json": {
       "hash": "179315769c1d274e4d520420e98f771acfe00410b08482a30ee359a446d5472a",
-      "last_checked": "2026-10-20T00:50:23.767035",
+      "last_checked": "2026-10-20T07:39:37.229113",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a65-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlphotoscollectiongrouptypeidentifier.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosdeptheffectgrouptypeidentifier.json": {
       "hash": "1cb1a9272e9527857339f89d4cc6ec724ed79f5cdbefb0c1d7b763376684ddc8",
-      "last_checked": "2026-10-20T00:50:23.914386",
+      "last_checked": "2026-10-20T07:39:37.380341",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ae2-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosdeptheffectgrouptypeidentifier.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosfacesalbumtypeidentifier.json": {
       "hash": "5cb3b5e18cb975a3d1b99f96f67d8754fe56befed6375fe8b21cc6ded9f1010e",
-      "last_checked": "2026-10-20T00:50:24.042984",
+      "last_checked": "2026-10-20T07:39:37.509881",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a64-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosfacesalbumtypeidentifier.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosfavoritesgrouptypeidentifier.json": {
       "hash": "f436911cbe02544b542ee69b6a9a8f8ac599dbff39b4604b48a12eb8147894a8",
-      "last_checked": "2026-10-20T00:50:24.185452",
+      "last_checked": "2026-10-20T07:39:37.651575",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ab4-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosfavoritesgrouptypeidentifier.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosfoldertypeidentifier.json": {
       "hash": "cae656a6df951763a2aa920a1e252b45e676a69496387e48cdb77bbdf1aeb05c",
-      "last_checked": "2026-10-20T00:50:24.311580",
+      "last_checked": "2026-10-20T07:39:37.779853",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a0c-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosfoldertypeidentifier.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosfrontcameragrouptypeidentifier.json": {
       "hash": "47372fbc6f085013147a634168a04c408d0239b1b6082c0c461a75096df03972",
-      "last_checked": "2026-10-20T00:50:24.461253",
+      "last_checked": "2026-10-20T07:39:38.045702",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ade-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosfrontcameragrouptypeidentifier.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotoslastimportgrouptypeidentifier.json": {
       "hash": "0008f974c13c8a76488e399efca874b4ae289c10ac268f88de61cc4f09fd9b60",
-      "last_checked": "2026-10-20T00:50:24.593383",
+      "last_checked": "2026-10-20T07:39:38.197081",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ac9-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlphotoslastimportgrouptypeidentifier.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosmomentgrouptypeidentifier.json": {
       "hash": "e1c41b1014f615b3eeaab45343d26bc2c7fba7dba00b3897244360c6dd6e019d",
-      "last_checked": "2026-10-20T00:50:24.773145",
+      "last_checked": "2026-10-20T07:39:38.357624",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a11-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosmomentgrouptypeidentifier.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosmyphotostreamtypeidentifier.json": {
       "hash": "7a06557d165232c8a880aa2b311645c6172b9aa1c54754596dff640845aaf9ac",
-      "last_checked": "2026-10-20T00:50:24.864063",
+      "last_checked": "2026-10-20T07:39:38.487142",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a9f-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosmyphotostreamtypeidentifier.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotospanoramasgrouptypeidentifier.json": {
       "hash": "10cbe05f7bd60e3476a0453b6c4b595ae1cd759c36ede0940436eb25bf6b2a1d",
-      "last_checked": "2026-10-20T00:50:25.007542",
+      "last_checked": "2026-10-20T07:39:38.622639",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ab4-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotospanoramasgrouptypeidentifier.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotospublishedalbumtypeidentifier.json": {
       "hash": "cc19afec2042dc5f2f6b472a44f1880087ca0c59d5daa7899e14441d156db3f2",
-      "last_checked": "2026-10-20T00:50:25.148506",
+      "last_checked": "2026-10-20T07:39:38.752891",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ab4-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlphotospublishedalbumtypeidentifier.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosrootgrouptypeidentifier.json": {
       "hash": "0a4e9a2858b3f1154c2e8bab4351eebd44006b04ff6b7b3fc3833680e7147a11",
-      "last_checked": "2026-10-20T00:50:25.267050",
+      "last_checked": "2026-10-20T07:39:38.886343",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a4b-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosrootgrouptypeidentifier.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosscreenshotgrouptypeidentifier.json": {
       "hash": "f8b360e4c92be4ff7044a6a430b7fd35355a8fd7c84ed414f0a0cbb6921d021f",
-      "last_checked": "2026-10-20T00:50:25.426462",
+      "last_checked": "2026-10-20T07:39:39.029159",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ac9-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosscreenshotgrouptypeidentifier.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotossharedgrouptypeidentifier.json": {
       "hash": "3dbf3c4b1b743299c0353094481ab26200997796794c9f4483af0044550a586d",
-      "last_checked": "2026-10-20T00:50:25.525440",
+      "last_checked": "2026-10-20T07:39:39.181791",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a75-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlphotossharedgrouptypeidentifier.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotossharedphotostreamtypeidentifier.json": {
       "hash": "a0f73a7ea59f35a8e1e8182a24f59ec816e9b638310d7ae3291d8b69e9b63907",
-      "last_checked": "2026-10-20T00:50:25.701477",
+      "last_checked": "2026-10-20T07:39:39.312108",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7af3-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotossharedphotostreamtypeidentifier.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosslomogrouptypeidentifier.json": {
       "hash": "b209d0469b088566bf33448e3ba20c8ee5e4f47370ffa51fdab66dfcd2784c83",
-      "last_checked": "2026-10-20T00:50:25.821603",
+      "last_checked": "2026-10-20T07:39:39.450253",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a64-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosslomogrouptypeidentifier.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotossmartalbumtypeidentifier.json": {
       "hash": "e75ac9ab7dae2a94928f16a6cdef6b5fe5ba861ffdb9b529c09dccdc638a3965",
-      "last_checked": "2026-10-20T00:50:25.947032",
+      "last_checked": "2026-10-20T07:39:39.719314",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a60-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlphotossmartalbumtypeidentifier.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotostimelapsegrouptypeidentifier.json": {
       "hash": "bb8947cb9f1c3820040609ff7f44cdc55160d8f959ebcddff93712ce1c6fe96b",
-      "last_checked": "2026-10-20T00:50:26.071246",
+      "last_checked": "2026-10-20T07:39:39.847948",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ab8-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlphotostimelapsegrouptypeidentifier.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosvideosgrouptypeidentifier.json": {
       "hash": "bd0be79f5fa5ea76f6f652ba701f9610ed6c760019f2846daed58e3fd23405f6",
-      "last_checked": "2026-10-20T00:50:26.190244",
+      "last_checked": "2026-10-20T07:39:39.980850",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a75-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosvideosgrouptypeidentifier.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosyeargrouptypeidentifier.json": {
       "hash": "f219fd254da6ed5d897722ce4e6345d5a6f5e9cf234ddcfda7560a4d696a4957",
-      "last_checked": "2026-10-20T00:50:26.310106",
+      "last_checked": "2026-10-20T07:39:40.123642",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"79e7-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosyeargrouptypeidentifier.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesmusicvideosplaylisttypeidentifier.json": {
       "hash": "5bcfbf9c4577635c2ebbc2605eec8ac023ea57f8591ad9b02e05ae5f6e653520",
-      "last_checked": "2026-10-20T00:50:26.417094",
+      "last_checked": "2026-10-20T07:39:40.275368",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7b1d-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesmusicvideosplaylisttypeidentifier.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesvideoplaylisttypeidentifier.json": {
       "hash": "9882f2a45d438697ff5b98391d92d5753e403913abd9710a3e2c66d570842bfb",
-      "last_checked": "2026-10-20T00:50:26.529318",
+      "last_checked": "2026-10-20T07:39:40.404179",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a9f-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesvideoplaylisttypeidentifier.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/media-object-attribute-keys.json": {
       "hash": "579be9617de55e30598cb86e2ca310a5ee7e247138aa98b751ecec0780c0fed2",
-      "last_checked": "2026-10-20T00:50:26.655368",
+      "last_checked": "2026-10-20T07:39:40.555290",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"cf6a-659027087cf8a-df\"",
       "file_path": "documentation/MediaLibrary/media-object-attribute-keys.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/imovie-media-group-type-identifiers.json": {
       "hash": "3b198bdec88107dc8fcd2f02c504c174d5651baea781027adec38a3c6a66de74",
-      "last_checked": "2026-10-20T00:50:26.797620",
+      "last_checked": "2026-10-20T07:39:40.702255",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"8fd1-65902708c433f-df\"",
       "file_path": "documentation/MediaLibrary/imovie-media-group-type-identifiers.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/iphoto-media-group-type-identifiers.json": {
       "hash": "84528fd6027121b7b9ffbebc04eb6e0a496e788c983424fc5d073426690aaf02",
-      "last_checked": "2026-10-20T00:50:26.941062",
+      "last_checked": "2026-10-20T07:39:40.840148",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"f66b-65902708e6c46-df\"",
       "file_path": "documentation/MediaLibrary/iphoto-media-group-type-identifiers.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/itunes-media-group-type-identifiers.json": {
       "hash": "ce8689c2e596900a29c1faa140c31392f060e36fe20051110c393ac8c33a2fa6",
-      "last_checked": "2026-10-20T00:50:27.050904",
+      "last_checked": "2026-10-20T07:39:40.982381",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"b703-659027087cf8a-df\"",
       "file_path": "documentation/MediaLibrary/itunes-media-group-type-identifiers.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotosanimatedgrouptypeidentifier.json": {
       "hash": "18ce03796ac56b6129bc80a8250e639ebe00fe5aed831a6559f750ed105f4041",
-      "last_checked": "2026-10-20T00:50:27.180150",
+      "last_checked": "2026-10-20T07:39:41.128275",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7a9f-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlphotosanimatedgrouptypeidentifier.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotoslivephotosgrouptypeidentifier.json": {
       "hash": "7825bc7dd3d4cd99082f44fa915c7368f55b87497ee96c0ea2f7bb30bdccbdc8",
-      "last_checked": "2026-10-20T00:50:27.284477",
+      "last_checked": "2026-10-20T07:39:41.261933",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7ac9-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlphotoslivephotosgrouptypeidentifier.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlphotoslongexposuregrouptypeidentifier.json": {
       "hash": "a688367200a49ddc6d9adf028a6833bee79a4b020f703f54ec9f6dfe42303a4b",
-      "last_checked": "2026-10-20T00:50:27.406234",
+      "last_checked": "2026-10-20T07:39:41.392632",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7af3-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlphotoslongexposuregrouptypeidentifier.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturerootgrouptypeidentifier.json": {
       "hash": "66fc9215b4442c8952b17a47ff51df08caaa0ec7fe9d1b8e878d7f756c6fa46e",
-      "last_checked": "2026-10-20T00:50:27.532647",
+      "last_checked": "2026-10-20T07:39:41.517929",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6db6-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturerootgrouptypeidentifier.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureuseralbumtypeidentifier.json": {
       "hash": "e055fc8b08d53c0ff0f1d13c529293d4ff85c833e9e471c9d7b201a3d1424200",
-      "last_checked": "2026-10-20T00:50:27.676039",
+      "last_checked": "2026-10-20T07:39:41.654000",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6dd3-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureuseralbumtypeidentifier.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureusersmartalbumtypeidentifier.json": {
       "hash": "7e3b4e914fe7ce91162154dbeabdd082cd2b6c511c11e2cc2cada0ad27b9903d",
-      "last_checked": "2026-10-20T00:50:27.811355",
+      "last_checked": "2026-10-20T07:39:41.794352",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e06-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureusersmartalbumtypeidentifier.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureprojectalbumtypeidentifier.json": {
       "hash": "6c7aca96c3bf1c1854fa8a3d0d2bded76302e019815e7a987efe46a81ae9bea0",
-      "last_checked": "2026-10-20T00:50:27.936675",
+      "last_checked": "2026-10-20T07:39:41.948045",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6de3-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureprojectalbumtypeidentifier.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturefolderalbumtypeidentifier.json": {
       "hash": "6eb33deca63549881e09236e48828caa07012a7053e5bc0abc9002cd38ba9f3a",
-      "last_checked": "2026-10-20T00:50:28.052714",
+      "last_checked": "2026-10-20T07:39:42.085082",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6dd9-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturefolderalbumtypeidentifier.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureprojectfolderalbumtypeidentifier.json": {
       "hash": "36f53c31fe53003a94dcaca4d825d2c2900e279753ee462826ac71dcc7ad4115",
-      "last_checked": "2026-10-20T00:50:28.220885",
+      "last_checked": "2026-10-20T07:39:42.252637",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e29-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureprojectfolderalbumtypeidentifier.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureallprojectstypeidentifier.json": {
       "hash": "569687b29e302f4e857e70c7390ab3abe1c67d5b2b61ea1ece4e1345467750fa",
-      "last_checked": "2026-10-20T00:50:28.322920",
+      "last_checked": "2026-10-20T07:39:42.399491",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6ddf-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureallprojectstypeidentifier.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureallphotostypeidentifier.json": {
       "hash": "5fce3abb88fd4378f89092a0cc61b97c8ec6af2d5134c33341f251ff3cff17c0",
-      "last_checked": "2026-10-20T00:50:28.455447",
+      "last_checked": "2026-10-20T07:39:42.531257",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6dcb-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureallphotostypeidentifier.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturelastviewedeventalbumtypeidentifier.json": {
       "hash": "19d1545ba06dc25ad963a642a1d48f054eba8464d183a563e638edb023c074fb",
-      "last_checked": "2026-10-20T00:50:28.568654",
+      "last_checked": "2026-10-20T07:39:42.673973",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e39-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturelastviewedeventalbumtypeidentifier.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturelastimportalbumtypeidentifier.json": {
       "hash": "48515ff321e6e0c52ce66ae78cbd811a133463ce307184a9c5cbd6dca801d44e",
-      "last_checked": "2026-10-20T00:50:28.690937",
+      "last_checked": "2026-10-20T07:39:42.802898",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e0c-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturelastimportalbumtypeidentifier.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturelastnmonthsalbumtypeidentifier.json": {
       "hash": "d651c030e301dd4d0203ab7f59e8ae8a28d9a11229324f52fe4be16a9966502e",
-      "last_checked": "2026-10-20T00:50:28.828981",
+      "last_checked": "2026-10-20T07:39:42.935236",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6f3c-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturelastnmonthsalbumtypeidentifier.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureflaggedtypeidentifier.json": {
       "hash": "dd540dfe272f814701abbece1ef7ca4dc5bdf022d95c43a8c87d1d22e0ddcae8",
-      "last_checked": "2026-10-20T00:50:28.942570",
+      "last_checked": "2026-10-20T07:39:43.074729",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6dc9-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureflaggedtypeidentifier.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturelighttabletypeidentifier.json": {
       "hash": "bd7e309b2827c87d11bb6d28b91d46b6eca636fa5eae6432d2274a54a57ad785",
-      "last_checked": "2026-10-20T00:50:29.099373",
+      "last_checked": "2026-10-20T07:39:43.219883",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6dd5-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturelighttabletypeidentifier.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureslideshowtypeidentifier.json": {
       "hash": "4807041aae386ea686d5fa373cb8125f3ec0013511704eec73376674ac3c6058",
-      "last_checked": "2026-10-20T00:50:29.209083",
+      "last_checked": "2026-10-20T07:39:43.360145",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6dcc-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureslideshowtypeidentifier.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturephotostreamalbumtypeidentifier.json": {
       "hash": "c2a19ea0a851210e24bbbf6a266974f25fe19cf3d21d2335d3afc445a3b65c26",
-      "last_checked": "2026-10-20T00:50:29.341399",
+      "last_checked": "2026-10-20T07:39:43.513361",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e0c-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturephotostreamalbumtypeidentifier.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturefacesalbumtypeidentifier.json": {
       "hash": "549409bb8a9c0ecce3e480d496d6e27e9fb6d3100b679281b90f41c6dd0202f6",
-      "last_checked": "2026-10-20T00:50:29.468471",
+      "last_checked": "2026-10-20T07:39:43.653719",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e11-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturefacesalbumtypeidentifier.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacesalbumtypeidentifier.json": {
       "hash": "dfd817dbfc40f1dfa8224abceb85c29828caa1214b9eb76ebf7610a1c8a90fe1",
-      "last_checked": "2026-10-20T00:50:29.600628",
+      "last_checked": "2026-10-20T07:39:43.775988",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6db8-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureplacesalbumtypeidentifier.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacescountryalbumtypeidentifier.json": {
       "hash": "fe2df7d2f8c65bce9570f6ede4555a25c39e8167d8365784d91c4bbfca119b4d",
-      "last_checked": "2026-10-20T00:50:29.726422",
+      "last_checked": "2026-10-20T07:39:43.928499",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6eef-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureplacescountryalbumtypeidentifier.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacesprovincealbumtypeidentifier.json": {
       "hash": "bf77059a22760a4562c9f24c5ba5e29632f18aa5b39f4b76ca14dfc6a1592ea7",
-      "last_checked": "2026-10-20T00:50:29.861765",
+      "last_checked": "2026-10-20T07:39:44.066570",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6f0c-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureplacesprovincealbumtypeidentifier.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacescityalbumtypeidentifier.json": {
       "hash": "cb1c4cdfae29494063e40be12717546cb5c5b46aebf2b7f9231153e3218faf71",
-      "last_checked": "2026-10-20T00:50:29.983856",
+      "last_checked": "2026-10-20T07:39:44.214491",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e84-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureplacescityalbumtypeidentifier.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureplacespointofinterestalbumtypeidentifier.json": {
       "hash": "7986a994b99139a658f2976229fdd89daafd92601e0ef7d2a77c50d0c4e86a7c",
-      "last_checked": "2026-10-20T00:50:30.119027",
+      "last_checked": "2026-10-20T07:39:44.352227",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6f85-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureplacespointofinterestalbumtypeidentifier.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturefacebookalbumtypeidentifier.json": {
       "hash": "e69a61e7987f80b69054ee499958767b3c526f86107700b3312ae1483491a19a",
-      "last_checked": "2026-10-20T00:50:30.249833",
+      "last_checked": "2026-10-20T07:39:44.504523",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6dfe-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturefacebookalbumtypeidentifier.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturefacebookgrouptypeidentifier.json": {
       "hash": "c6222f5f76219e05029208dae29071886583925de37b9fde232a55ea3ed580a9",
-      "last_checked": "2026-10-20T00:50:30.362448",
+      "last_checked": "2026-10-20T07:39:44.673118",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e68-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturefacebookgrouptypeidentifier.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureflickralbumtypeidentifier.json": {
       "hash": "6aafcc63fe3ae2e66ba5274534bf759d93dffe9c822ab49a735ddffc8d5395f0",
-      "last_checked": "2026-10-20T00:50:30.481672",
+      "last_checked": "2026-10-20T07:39:44.829831",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6dd0-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureflickralbumtypeidentifier.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlapertureflickrgrouptypeidentifier.json": {
       "hash": "0a5a457a8c46ce628e1af053ea39816c55bc0a3495954fe7fe68c787c3e396c4",
-      "last_checked": "2026-10-20T00:50:30.619496",
+      "last_checked": "2026-10-20T07:39:44.973170",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e32-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlapertureflickrgrouptypeidentifier.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturesmugmugalbumtypeidentifier.json": {
       "hash": "26c9cb85e423e43332d7941fcbea1c1e288c680cd0e9c20ffd45b9012845f3b5",
-      "last_checked": "2026-10-20T00:50:30.766372",
+      "last_checked": "2026-10-20T07:39:45.108554",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6de7-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturesmugmugalbumtypeidentifier.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlaperturesmugmuggrouptypeidentifier.json": {
       "hash": "04435336ef5edf3ee594d2dabe141b30fc113da25d6600faad3aef309bffde58",
-      "last_checked": "2026-10-20T00:50:30.892778",
+      "last_checked": "2026-10-20T07:39:45.206704",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e4d-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlaperturesmugmuggrouptypeidentifier.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcutrootgrouptypeidentifier.json": {
       "hash": "4a2917f0812d30e0550d6b23ab95c88a653886aa85a2c47a81cc6fbd87feb0a6",
-      "last_checked": "2026-10-20T00:50:31.019310",
+      "last_checked": "2026-10-20T07:39:45.360446",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3522-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlfinalcutrootgrouptypeidentifier.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcutprojectgrouptypeidentifier.json": {
       "hash": "e8c6c42166839ba427d1b70f2507fe6bd695920164bb49cf44a29a6f51ffe70e",
-      "last_checked": "2026-10-20T00:50:31.146105",
+      "last_checked": "2026-10-20T07:39:45.517066",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"354f-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlfinalcutprojectgrouptypeidentifier.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcutfoldergrouptypeidentifier.json": {
       "hash": "1b18a5ecaf10059d3047d019b7e755dd5a84aec7cfe9093518777b7e82d1cc8c",
-      "last_checked": "2026-10-20T00:50:31.273337",
+      "last_checked": "2026-10-20T07:39:45.667999",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3545-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlfinalcutfoldergrouptypeidentifier.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcuteventgrouptypeidentifier.json": {
       "hash": "901bc6b9fc4a47f961ff87219b1bd7cec89e35e31a5c9f7136e3bfab61704f3e",
-      "last_checked": "2026-10-20T00:50:31.406830",
+      "last_checked": "2026-10-20T07:39:45.810536",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"353c-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlfinalcuteventgrouptypeidentifier.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcuteventcalendargrouptypeidentifier.json": {
       "hash": "5216d6727b16819441af259d01e1777477949274d36ea0612f23b513c5316cae",
-      "last_checked": "2026-10-20T00:50:31.549430",
+      "last_checked": "2026-10-20T07:39:45.941901",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"35ae-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlfinalcuteventcalendargrouptypeidentifier.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfinalcuteventlibrarygrouptypeidentifier.json": {
       "hash": "17a931d152892b28b8d8ab2bea173860b07154d9a56c10414c8c3ec466d37f48",
-      "last_checked": "2026-10-20T00:50:31.692242",
+      "last_checked": "2026-10-20T07:39:46.072920",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"35bc-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlfinalcuteventlibrarygrouptypeidentifier.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfolderrootgrouptypeidentifier.json": {
       "hash": "1e0cf3e9ee14557639fbf5447ed9744a909b5caf443bbe7191a5527c37c02438",
-      "last_checked": "2026-10-20T00:50:31.829850",
+      "last_checked": "2026-10-20T07:39:46.171928",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"1da3-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlfolderrootgrouptypeidentifier.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlfoldergrouptypeidentifier.json": {
       "hash": "e897fde2f157940e3c5304e5fc3b928a43cd6e71eedd1cb433dad587793410d0",
-      "last_checked": "2026-10-20T00:50:31.939546",
+      "last_checked": "2026-10-20T07:39:46.348000",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"1d90-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlfoldergrouptypeidentifier.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlgaragebandrootgrouptypeidentifier.json": {
       "hash": "0949a2c2ec014fde4309d012960d7fa601585f978af6ab5ff69a84e34ae766ad",
-      "last_checked": "2026-10-20T00:50:32.057514",
+      "last_checked": "2026-10-20T07:39:46.491066",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"1e57-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlgaragebandrootgrouptypeidentifier.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlgaragebandfoldergrouptypeidentifier.json": {
       "hash": "b5fe19d29ae457628fc4af543a326386c6071bcf98d72e01fa05dd1394e7aeef",
-      "last_checked": "2026-10-20T00:50:32.199733",
+      "last_checked": "2026-10-20T07:39:46.640646",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"1e7a-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlgaragebandfoldergrouptypeidentifier.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mllogicrootgrouptypeidentifier.json": {
       "hash": "3e96d27ef10cb29ec5ada5c7abd78a66506c7ee78bf06ba7da6a040b760a5c5c",
-      "last_checked": "2026-10-20T00:50:32.333987",
+      "last_checked": "2026-10-20T07:39:46.803833",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"2861-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mllogicrootgrouptypeidentifier.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mllogicprojecttypeidentifier.json": {
       "hash": "8ea248de64ef6d05bb716b402903ff48a77c213b375f06ba43c298efbee30a43",
-      "last_checked": "2026-10-20T00:50:32.446784",
+      "last_checked": "2026-10-20T07:39:47.065240",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"2879-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mllogicprojecttypeidentifier.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mllogicprojectsgrouptypeidentifier.json": {
       "hash": "fee47d2d5357cf763e6ad61b28ef4c5010f4f8e9653c65aa33acd8c9c8f3e746",
-      "last_checked": "2026-10-20T00:50:32.564990",
+      "last_checked": "2026-10-20T07:39:47.202173",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"289c-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mllogicprojectsgrouptypeidentifier.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mllogicbouncesgrouptypeidentifier.json": {
       "hash": "995ae4314aa10e9edffe548ca5f3e93bb1107c834b47f87611d5782574c8d94e",
-      "last_checked": "2026-10-20T00:50:32.678697",
+      "last_checked": "2026-10-20T07:39:47.340581",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"2892-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mllogicbouncesgrouptypeidentifier.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype/audio.json": {
       "hash": "90890aafd89ad72eb11275c924c35962e39d98429eb98719acd412916a09cca8",
-      "last_checked": "2026-10-20T00:50:32.791142",
+      "last_checked": "2026-10-20T07:39:47.493088",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"374c-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcetype/audio.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype/image.json": {
       "hash": "8d63fb907b31ddba4c1ad099e4110a7a83196d19a68861d59900641336bd773d",
-      "last_checked": "2026-10-20T00:50:32.899507",
+      "last_checked": "2026-10-20T07:39:47.605898",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3750-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcetype/image.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype/movie.json": {
       "hash": "e97a2112bd4208684d75056565c6057f30d7ebb444a4262d68459ccfda4d1c08",
-      "last_checked": "2026-10-20T00:50:33.024499",
+      "last_checked": "2026-10-20T07:39:47.882991",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3747-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcetype/movie.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediasourcetype/init(rawvalue:).json": {
       "hash": "7ef635f6c6bdab7fbea055c189f3e91b5a43ad6dca940da94472ac469e5abb67",
-      "last_checked": "2026-10-20T00:50:33.158090",
+      "last_checked": "2026-10-20T07:39:47.990876",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"256b-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediasourcetype/init-rawvalue.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype/audio.json": {
       "hash": "183066c1fa42c9da2a8ebac07f37fc031f086c6024381d396baa49a7ed283e22",
-      "last_checked": "2026-10-20T00:50:33.291070",
+      "last_checked": "2026-10-20T07:39:48.115069",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"247b-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediatype/audio.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype/image.json": {
       "hash": "50487010e6083c8d63a13abcd743f8af6fb9943cd742fdf9e50755221738ce18",
-      "last_checked": "2026-10-20T00:50:33.417477",
+      "last_checked": "2026-10-20T07:39:48.212588",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"247b-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediatype/image.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype/movie.json": {
       "hash": "31a110af542b4d3e3c51e59223770a28a1f42430174e1627cd77244d16f7fe12",
-      "last_checked": "2026-10-20T00:50:33.550963",
+      "last_checked": "2026-10-20T07:39:48.334250",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"247b-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediatype/movie.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediatype/init(rawvalue:).json": {
       "hash": "14aebc952cbce466df194250386727e2e9b31b614bc7b206ce7ff04ba1b8e3fd",
-      "last_checked": "2026-10-20T00:50:33.681642",
+      "last_checked": "2026-10-20T07:39:48.496610",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"183d-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediatype/init-rawvalue.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectdurationkey.json": {
       "hash": "ef5561f89fd09bf8db420d976126ab31bb39a505675c480d4dbe250e9f9ef5a7",
-      "last_checked": "2026-10-20T00:50:33.795568",
+      "last_checked": "2026-10-20T07:39:48.656517",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7046-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectdurationkey.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectartistkey.json": {
       "hash": "05557ca4d73628d10550487a1524af683cdc1eb6877ef9599e65dbeb0da20dbd",
-      "last_checked": "2026-10-20T00:50:33.903120",
+      "last_checked": "2026-10-20T07:39:48.754794",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7026-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectartistkey.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectalbumkey.json": {
       "hash": "17e3f1af7bc6e8d11011bb3cc826609212062a39046121e0e67a732921d7de22",
-      "last_checked": "2026-10-20T00:50:34.013873",
+      "last_checked": "2026-10-20T07:39:48.930986",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"701c-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectalbumkey.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectgenrekey.json": {
       "hash": "0d9bab333314aa254bcb92cb97587da64383bad577d51572b93ff6d9692d3e32",
-      "last_checked": "2026-10-20T00:50:34.162319",
+      "last_checked": "2026-10-20T07:39:49.128356",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"701c-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectgenrekey.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectkindkey.json": {
       "hash": "d0652be64c0e182d343fed0cbf179dba8b3243020b9ccfe08d9993f25caff414",
-      "last_checked": "2026-10-20T00:50:34.290566",
+      "last_checked": "2026-10-20T07:39:49.209496",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7059-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectkindkey.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjecttracknumberkey.json": {
       "hash": "631e95e7f057fbaaeddd1e0b49371d502a2cea1738c2c22022dcd991635f15ae",
-      "last_checked": "2026-10-20T00:50:34.433175",
+      "last_checked": "2026-10-20T07:39:49.332909",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7059-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjecttracknumberkey.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectbitratekey.json": {
       "hash": "3d5b6625b46dac7f356914e4d817fa3bcd8afa00d39bfad6929b7b51352d8c2b",
-      "last_checked": "2026-10-20T00:50:34.567704",
+      "last_checked": "2026-10-20T07:39:49.540006",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7049-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectbitratekey.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectsampleratekey.json": {
       "hash": "b5ced96e377eaaba3186e5a2fafc8b5da23189d01ed5f6e0765bc945b7ac8f34",
-      "last_checked": "2026-10-20T00:50:34.682363",
+      "last_checked": "2026-10-20T07:39:49.723313",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"706b-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectsampleratekey.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectchannelcountkey.json": {
       "hash": "174113929e98d48e1385c29295492f2fd2ba7845f6ed50679a2e7d74524cae41",
-      "last_checked": "2026-10-20T00:50:34.821927",
+      "last_checked": "2026-10-20T07:39:49.839031",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7063-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectchannelcountkey.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectresolutionstringkey.json": {
       "hash": "01533953a6355827b7ccb859faab949cd604254be59b2d8041fca968d643cb0e",
-      "last_checked": "2026-10-20T00:50:34.945187",
+      "last_checked": "2026-10-20T07:39:49.927297",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"71ec-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectresolutionstringkey.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectcommentskey.json": {
       "hash": "d34fb355dc2838956f2c18b8464ca46ab2bb354170d67e461830dfded7171edd",
-      "last_checked": "2026-10-20T00:50:35.057773",
+      "last_checked": "2026-10-20T07:39:50.082030",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7060-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectcommentskey.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectkeywordskey.json": {
       "hash": "820ed36eb2b0df4e77b0394c111c8c385fe50a1d5f3696c3f66661d6c129af20",
-      "last_checked": "2026-10-20T00:50:35.191883",
+      "last_checked": "2026-10-20T07:39:50.219103",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"70ea-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectkeywordskey.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlmediaobjectprotectedkey.json": {
       "hash": "a440baf6f3d08cad56037709e26ace3ae26c341946f28893e29c2cc3dc4ba6d0",
-      "last_checked": "2026-10-20T00:50:35.307105",
+      "last_checked": "2026-10-20T07:39:50.355234",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"7097-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlmediaobjectprotectedkey.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovierootgrouptypeidentifier.json": {
       "hash": "6c3c7a2238191695e41b1dafa1cb205eae931c6c58dcd152910aef207f8e5273",
-      "last_checked": "2026-10-20T00:50:35.429377",
+      "last_checked": "2026-10-20T07:39:50.468106",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"344f-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlimovierootgrouptypeidentifier.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovieprojectgrouptypeidentifier.json": {
       "hash": "833e47cd768e23f2661e920633819b92c54b6300a4d0587715b1cb8138b0a827",
-      "last_checked": "2026-10-20T00:50:35.549379",
+      "last_checked": "2026-10-20T07:39:50.652522",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"347c-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlimovieprojectgrouptypeidentifier.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimoviefoldergrouptypeidentifier.json": {
       "hash": "cb8fd01e19caa6491be6092cf6cc3ae824d8f845e4dc4a5838248b9a318d3c1c",
-      "last_checked": "2026-10-20T00:50:35.674144",
+      "last_checked": "2026-10-20T07:39:50.795453",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3472-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlimoviefoldergrouptypeidentifier.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovieeventgrouptypeidentifier.json": {
       "hash": "6fc86813cf6c129221284bd9a9adeb6b82abe92df417738b6e8bdcb278200275",
-      "last_checked": "2026-10-20T00:50:35.809168",
+      "last_checked": "2026-10-20T07:39:50.889339",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"3469-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlimovieeventgrouptypeidentifier.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovieeventcalendargrouptypeidentifier.json": {
       "hash": "f938313787c0887869d22649add750ca4d9477201b47ec7eccb2f7603078e253",
-      "last_checked": "2026-10-20T00:50:35.922180",
+      "last_checked": "2026-10-20T07:39:51.016887",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"34db-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlimovieeventcalendargrouptypeidentifier.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlimovieeventlibrarygrouptypeidentifier.json": {
       "hash": "e8e9678b9410ded2f0604925d746f1528ddc51e1d3f295f908ba9490343612b3",
-      "last_checked": "2026-10-20T00:50:36.031283",
+      "last_checked": "2026-10-20T07:39:51.208297",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"34e9-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlimovieeventlibrarygrouptypeidentifier.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotorootgrouptypeidentifier.json": {
       "hash": "ab0d0de1921a964e783e0e9a1b4dccfab2498d2b5e1ba35b86991f092defb17d",
-      "last_checked": "2026-10-20T00:50:36.167801",
+      "last_checked": "2026-10-20T07:39:51.309953",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c0a-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mliphotorootgrouptypeidentifier.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoalbumtypeidentifier.json": {
       "hash": "2e0f2020daf3765078c21cf957b578c62d6fc6249408cd8ab81047f54e63a6ef",
-      "last_checked": "2026-10-20T00:50:36.259825",
+      "last_checked": "2026-10-20T07:39:51.469098",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6bf7-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoalbumtypeidentifier.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotosmartalbumtypeidentifier.json": {
       "hash": "07566f49d281c15e1749815aac867e3a2f87f66f711140bc7dbf9efa1a2393a9",
-      "last_checked": "2026-10-20T00:50:36.367494",
+      "last_checked": "2026-10-20T07:39:51.568402",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c29-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mliphotosmartalbumtypeidentifier.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotolibraryalbumtypeidentifier.json": {
       "hash": "4365a85e42805ec43d50d55a0b95266c6adc480d41cadb4f6669ef4b0a373cfd",
-      "last_checked": "2026-10-20T00:50:36.560719",
+      "last_checked": "2026-10-20T07:39:51.750839",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c40-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mliphotolibraryalbumtypeidentifier.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotofolderalbumtypeidentifier.json": {
       "hash": "d272d268cbae92a9bd365326ed72aefe44089d3bd3c7c2a5927c5d12276c6de5",
-      "last_checked": "2026-10-20T00:50:36.656001",
+      "last_checked": "2026-10-20T07:39:51.889643",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c2d-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mliphotofolderalbumtypeidentifier.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoeventalbumtypeidentifier.json": {
       "hash": "0c3ed4c5c59891710e01e474b9cbf2654f2fdae1403c1cecd5a174f374a46001",
-      "last_checked": "2026-10-20T00:50:36.788896",
+      "last_checked": "2026-10-20T07:39:52.011309",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c24-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoeventalbumtypeidentifier.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoeventsfoldertypeidentifier.json": {
       "hash": "4ac43b6a0fb7902d0885cb412b00bcd9755c3d9ef5fc804c87709b7c9da256e0",
-      "last_checked": "2026-10-20T00:50:36.891383",
+      "last_checked": "2026-10-20T07:39:52.131750",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c40-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoeventsfoldertypeidentifier.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotolastviewedeventalbumtypeidentifier.json": {
       "hash": "08b50eccae764baf652abbe62d8fd5749c005e22da8660d2a00a6a0860888dcb",
-      "last_checked": "2026-10-20T00:50:37.014788",
+      "last_checked": "2026-10-20T07:39:52.300315",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c8d-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mliphotolastviewedeventalbumtypeidentifier.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotolastimportalbumtypeidentifier.json": {
       "hash": "18868e70a90120695f0ba2ac805a691a4854a236e0540825c76d31a98a2d92aa",
-      "last_checked": "2026-10-20T00:50:37.128126",
+      "last_checked": "2026-10-20T07:39:52.433927",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c60-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mliphotolastimportalbumtypeidentifier.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotolastnmonthsalbumtypeidentifier.json": {
       "hash": "24bb02586b8c94546664f2f8cb2e2a4030cbbe69408744c8e80652386e8187b1",
-      "last_checked": "2026-10-20T00:50:37.284668",
+      "last_checked": "2026-10-20T07:39:52.560744",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6d8e-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mliphotolastnmonthsalbumtypeidentifier.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoflaggedalbumtypeidentifier.json": {
       "hash": "4a781d30725e438dbff906a2c74bc06ffd480b8f0f48a617e646fbf68dd01913",
-      "last_checked": "2026-10-20T00:50:37.372082",
+      "last_checked": "2026-10-20T07:39:52.656145",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c4a-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoflaggedalbumtypeidentifier.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotosubscribedalbumtypeidentifier.json": {
       "hash": "599c2c4144d62bb8f18d32c2d0b98cf5a6acad82fba6c9015c9aa12c6540dfbd",
-      "last_checked": "2026-10-20T00:50:37.548473",
+      "last_checked": "2026-10-20T07:39:52.832557",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c5b-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mliphotosubscribedalbumtypeidentifier.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoslideshowalbumtypeidentifier.json": {
       "hash": "8fc3f08113276a466d4263d0807621f437a6fd850dbd4d355638fe993ac732b4",
-      "last_checked": "2026-10-20T00:50:37.650932",
+      "last_checked": "2026-10-20T07:39:52.914984",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c51-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoslideshowalbumtypeidentifier.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotophotostreamalbumtypeidentifier.json": {
       "hash": "b7617ed42a0e25cc5b0026ac34c691a11ea62dd123d25c194c2e19e660cae74c",
-      "last_checked": "2026-10-20T00:50:37.780387",
+      "last_checked": "2026-10-20T07:39:53.114517",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c60-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mliphotophotostreamalbumtypeidentifier.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotofacesalbumtypeidentifier.json": {
       "hash": "aa40e41e9908abb07d741ca01d5bf767396455ef8317098b5c1d7dd885992b3a",
-      "last_checked": "2026-10-20T00:50:37.908891",
+      "last_checked": "2026-10-20T07:39:53.258804",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c65-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mliphotofacesalbumtypeidentifier.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacesalbumtypeidentifier.json": {
       "hash": "10dfc95514a19333cc308250543791ad8a294b94f8074158aaf3e6ce21fbe1ea",
-      "last_checked": "2026-10-20T00:50:38.031955",
+      "last_checked": "2026-10-20T07:39:53.405599",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c37-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoplacesalbumtypeidentifier.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacescountryalbumtypeidentifier.json": {
       "hash": "391a8de2a6d989188dadd701d54ceebd63fc65ed5801437b4a420e9ea8b9f3a4",
-      "last_checked": "2026-10-20T00:50:38.158795",
+      "last_checked": "2026-10-20T07:39:53.503935",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6d6e-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoplacescountryalbumtypeidentifier.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacesprovincealbumtypeidentifier.json": {
       "hash": "6c5dae038c108b7924d78b881d3b24373e6cc3b1cd6ddfff59447bf9e023c8ec",
-      "last_checked": "2026-10-20T00:50:38.280983",
+      "last_checked": "2026-10-20T07:39:53.634945",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6d8b-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoplacesprovincealbumtypeidentifier.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacescityalbumtypeidentifier.json": {
       "hash": "bd063631c3be78563ec7ff20c86a15e3927d133e3aad09693a828ce6ab65ddfd",
-      "last_checked": "2026-10-20T00:50:38.390528",
+      "last_checked": "2026-10-20T07:39:53.750157",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6d03-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoplacescityalbumtypeidentifier.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoplacespointofinterestalbumtypeidentifier.json": {
       "hash": "2ffea45ceacc4597894b4e456730f50e5049073ea00c9730b08ff027974d37eb",
-      "last_checked": "2026-10-20T00:50:38.503421",
+      "last_checked": "2026-10-20T07:39:53.885582",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6e04-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoplacespointofinterestalbumtypeidentifier.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotofacebookalbumtypeidentifier.json": {
       "hash": "3b9a8a878e61ef90d519b80344c0f508e586a8ef4e3db768eed2489588a4e0ae",
-      "last_checked": "2026-10-20T00:50:38.636113",
+      "last_checked": "2026-10-20T07:39:54.054105",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c7d-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mliphotofacebookalbumtypeidentifier.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotofacebookgrouptypeidentifier.json": {
       "hash": "91e4b25c2c1611005683dd0b5b7ddbea783010955db52f30ab7778f92b2b86b8",
-      "last_checked": "2026-10-20T00:50:38.765725",
+      "last_checked": "2026-10-20T07:39:54.157271",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6ce7-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mliphotofacebookgrouptypeidentifier.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoflickralbumtypeidentifier.json": {
       "hash": "f79b51ccd6109f349d7f0916b06c283f901627ff1348f249f29ea7331fe81420",
-      "last_checked": "2026-10-20T00:50:38.902010",
+      "last_checked": "2026-10-20T07:39:54.343316",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6c4f-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoflickralbumtypeidentifier.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mliphotoflickrgrouptypeidentifier.json": {
       "hash": "34986a84a37d25005b608a36475ceca1a048c04e4aeaa40d2e7cc7afff4cbaea",
-      "last_checked": "2026-10-20T00:50:39.029074",
+      "last_checked": "2026-10-20T07:39:54.483135",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"6cb1-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mliphotoflickrgrouptypeidentifier.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesrootgrouptypeidentifier.json": {
       "hash": "56e119a0cb09045d5f91be1da1600fffe02b0d3e19a81f6a6c6186dabdb6424c",
-      "last_checked": "2026-10-20T00:50:39.140749",
+      "last_checked": "2026-10-20T07:39:54.628960",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5b81-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesrootgrouptypeidentifier.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesplaylisttypeidentifier.json": {
       "hash": "fc80d27f7c135a7c3cfadba99ea0678dd550db7ef8b7ac7345e3383f207a6018",
-      "last_checked": "2026-10-20T00:50:39.261535",
+      "last_checked": "2026-10-20T07:39:54.742437",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5b98-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesplaylisttypeidentifier.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunessmartplaylisttypeidentifier.json": {
       "hash": "2f12e0111f801c23ec8d7995cfc2fc7cbcb81ab6a82303ae384fa78f8c68fc5f",
-      "last_checked": "2026-10-20T00:50:39.371032",
+      "last_checked": "2026-10-20T07:39:54.857861",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bbe-65d560ad62623-df\"",
       "file_path": "documentation/MediaLibrary/mlitunessmartplaylisttypeidentifier.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesgeniusplaylisttypeidentifier.json": {
       "hash": "3432b1449b6b91c4701a67b38eda603829be97c0fc199966d75d35fca3aad49f",
-      "last_checked": "2026-10-20T00:50:39.507645",
+      "last_checked": "2026-10-20T07:39:54.993284",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bc8-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesgeniusplaylisttypeidentifier.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunessavedgeniusplaylisttypeidentifier.json": {
       "hash": "10c7a1cf75c1e9ac82aeb304b60190742e3008ffa4fd135e61bc966829cb221f",
-      "last_checked": "2026-10-20T00:50:39.619220",
+      "last_checked": "2026-10-20T07:39:55.172570",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bfb-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlitunessavedgeniusplaylisttypeidentifier.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesfolderplaylisttypeidentifier.json": {
       "hash": "7c644a57c8ea669ff3bb5e86c970ea52706def724e800a065781b57c660c0d1b",
-      "last_checked": "2026-10-20T00:50:39.741624",
+      "last_checked": "2026-10-20T07:39:55.318502",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bbf-65d560ad8332c-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesfolderplaylisttypeidentifier.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesaudiobooksplaylisttypeidentifier.json": {
       "hash": "0626ee29a1b605277fac5feb32c7d011aeea41c76fbc87623bb0f13eb875f8be",
-      "last_checked": "2026-10-20T00:50:39.912559",
+      "last_checked": "2026-10-20T07:39:55.465368",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bf5-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesaudiobooksplaylisttypeidentifier.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesitunesuplaylisttypeidentifier.json": {
       "hash": "183b965332e2408447300858588aae40784fcca431b9ddbca1ae4a85a579e263",
-      "last_checked": "2026-10-20T00:50:40.043723",
+      "last_checked": "2026-10-20T07:39:55.611880",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bd7-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesitunesuplaylisttypeidentifier.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesmoviesplaylisttypeidentifier.json": {
       "hash": "43b399b1f14b42986efc8c311852b29ab9c255b224ff7d36da04029f794dda81",
-      "last_checked": "2026-10-20T00:50:40.184404",
+      "last_checked": "2026-10-20T07:39:55.761995",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bcc-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesmoviesplaylisttypeidentifier.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunesmusicplaylisttypeidentifier.json": {
       "hash": "0bbba7a1a3e1e9e98c537c3c8a24f5e41e6d32fa21e3f6f5afef17ba05395504",
-      "last_checked": "2026-10-20T00:50:40.297648",
+      "last_checked": "2026-10-20T07:39:55.863985",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bc2-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlitunesmusicplaylisttypeidentifier.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunespodcastplaylisttypeidentifier.json": {
       "hash": "19821c0be85616dfa8392fab03452a948ca4deb366d645c6f2a48d0e374f20e0",
-      "last_checked": "2026-10-20T00:50:40.442409",
+      "last_checked": "2026-10-20T07:39:55.975276",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bd6-65d560adbede3-df\"",
       "file_path": "documentation/MediaLibrary/mlitunespodcastplaylisttypeidentifier.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunespurchasedplaylisttypeidentifier.json": {
       "hash": "df658690a7acfb31f1de2709ed49d55f826bba9c82f68669d8dc84ccb2801364",
-      "last_checked": "2026-10-20T00:50:40.564526",
+      "last_checked": "2026-10-20T07:39:56.099902",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bea-65d560addbfa6-df\"",
       "file_path": "documentation/MediaLibrary/mlitunespurchasedplaylisttypeidentifier.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/medialibrary/mlitunestvshowsplaylisttypeidentifier.json": {
       "hash": "f3ab80f840a9ca5d61beb196db529d0f7c39af91f2884ff8f14088c882beeddd",
-      "last_checked": "2026-10-20T00:50:40.680695",
+      "last_checked": "2026-10-20T07:39:56.289911",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:50:10.660390",
+      "session_id": "2026-10-20T07:39:24.347822",
       "etag": "\"5bd7-65d560ade8447-df\"",
       "file_path": "documentation/MediaLibrary/mlitunestvshowsplaylisttypeidentifier.md"
     },

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-20T00:52:10.085693",
+    "last_updated": "2026-10-20T07:41:26.362405",
     "total_pages": 166,
-    "session_id": "2026-10-20T00:51:55.532042"
+    "session_id": "2026-10-20T07:41:14.474644"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/IdentityDocumentServices.json": {
       "hash": "be6c8c3667556bfa3f8fdc6bde36de7f0636b880af60d64365c711c7a7574017",
-      "last_checked": "2026-10-20T00:51:55.859948",
+      "last_checked": "2026-10-20T07:41:14.634003",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3c67-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/IdentityDocumentServices.md"
     },
     "https://developer.apple.com/documentation/IdentityDocumentServices": {
       "hash": "be6c8c3667556bfa3f8fdc6bde36de7f0636b880af60d64365c711c7a7574017",
-      "last_checked": "2026-10-20T00:51:55.857252",
+      "last_checked": "2026-10-20T07:41:14.564089",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3c67-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/IdentityDocumentServices.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/requesting-a-mobile-document-on-the-web.json": {
       "hash": "162a5a2ad0c757a24ba02c9f30d553217b541520b418d5e1ee097417ec346638",
-      "last_checked": "2026-10-20T00:51:56.234881",
+      "last_checked": "2026-10-20T07:41:14.867308",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3f6a-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/requesting-a-mobile-document-on-the-web.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/implenting-as-an-identity-document-provider.json": {
       "hash": "fc15f241ec704098339b011d539343e67df847ae51fa87ddd146307b705a874d",
-      "last_checked": "2026-10-20T00:51:56.534752",
+      "last_checked": "2026-10-20T07:41:15.031103",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"54f0-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/implenting-as-an-identity-document-provider.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore.json": {
       "hash": "36e8bf00e5ed3894d14be45787d5bd4529d1bd41a466290c20061cbc6abe5d53",
-      "last_checked": "2026-10-20T00:51:56.977668",
+      "last_checked": "2026-10-20T07:41:15.276305",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"460a-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentregistration.json": {
       "hash": "ce03ad23d70ec05eb4e2cd36772c648c96b183fb85ec594a03d605f3760bc173",
-      "last_checked": "2026-10-20T00:51:57.281473",
+      "last_checked": "2026-10-20T07:41:15.580901",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"20eb-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentregistration.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration.json": {
       "hash": "13109219733f417dbd000b9edbf5b7c0560f75e6349d0504d5c113d6825062fe",
-      "last_checked": "2026-10-20T00:51:57.416834",
+      "last_checked": "2026-10-20T07:41:15.702149",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3c25-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequestvalidator.json": {
       "hash": "f634a3e85c2b6e95d45e1dece239592515a457cd2cca3d56732a957ed9253c3a",
-      "last_checked": "2026-10-20T00:51:57.567234",
+      "last_checked": "2026-10-20T07:41:15.814335",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2a9a-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequestvalidator.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrequest.json": {
       "hash": "be0790fdc8bf7d6962a2f2b9c0df9b074e53d6f600293bfdc43b480455db02ce",
-      "last_checked": "2026-10-20T00:51:57.854182",
+      "last_checked": "2026-10-20T07:41:15.948260",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2837-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrequest.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest.json": {
       "hash": "fb555adcdae4b2f9fbef08e3006e12380bf73cd7a4cd471aef807050f764e4f0",
-      "last_checked": "2026-10-20T00:51:58.006016",
+      "last_checked": "2026-10-20T07:41:16.101712",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"4aa0-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentresponse.json": {
       "hash": "e2f87d63f085863c5949bdbe536c42d48c58d1c74845aef346f3966976462426",
-      "last_checked": "2026-10-20T00:51:58.306279",
+      "last_checked": "2026-10-20T07:41:16.378740",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2837-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentresponse.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentresponse.json": {
       "hash": "7fe4509adb4cba59382cbd54e4023e0848164aa5e75a2ff4d7ac936e95bae0cb",
-      "last_checked": "2026-10-20T00:51:58.583165",
+      "last_checked": "2026-10-20T07:41:16.472752",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2edc-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentresponse.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest.json": {
       "hash": "591c78f584fad0d58da5fae9fddc4f6562bf3b3bea36c854db5a78664a2d4c01",
-      "last_checked": "2026-10-20T00:51:58.734225",
+      "last_checked": "2026-10-20T07:41:16.663412",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3bcb-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/init().json": {
       "hash": "036b92207df6656253f2f89c0f26179776edac99a6d155789902bd67872ec59f",
-      "last_checked": "2026-10-20T00:51:59.004749",
+      "last_checked": "2026-10-20T07:41:17.083973",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1d9f-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/init.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/addregistration(_:).json": {
       "hash": "bd6835ca03a16c8c7cd991f9e713c0ec16e05712f407323b07eee305b7c53745",
-      "last_checked": "2026-10-20T00:51:59.302784",
+      "last_checked": "2026-10-20T07:41:17.187317",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2723-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/addregistration.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrations.json": {
       "hash": "331d34c626af55db32de69b250230a0a70222adaadd812f8842a859e76db528c",
-      "last_checked": "2026-10-20T00:51:59.446425",
+      "last_checked": "2026-10-20T07:41:17.370069",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"23a7-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrations.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/removeregistration(fordocumentidentifier:).json": {
       "hash": "e72fa282fb45a445324c8f36fa5820624099ef69b1177cd62e351246704d16e8",
-      "last_checked": "2026-10-20T00:51:59.740708",
+      "last_checked": "2026-10-20T07:41:17.519608",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2553-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/removeregistration-fordocumentidentifier.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/status-swift.property.json": {
       "hash": "3a2945f6247102510c5a59ebe36a878b84b60334247104170f5fb324863daf2e",
-      "last_checked": "2026-10-20T00:52:00.013607",
+      "last_checked": "2026-10-20T07:41:17.605065",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1b0d-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/status-swiftproperty.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/status-swift.enum.json": {
       "hash": "8aa9d4db90f1553593f3b98627a6a2ddb7f2573b4a8a1806ba5c5148a9d6adfe",
-      "last_checked": "2026-10-20T00:52:00.149520",
+      "last_checked": "2026-10-20T07:41:17.781720",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3197-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/status-swiftenum.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror.json": {
       "hash": "2f1fbe2319d32866bd25fc64977fbcc1ec90f9fdd411487969bbbd1311d1d7d6",
-      "last_checked": "2026-10-20T00:52:00.307886",
+      "last_checked": "2026-10-20T07:41:17.873128",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3151-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentregistration/documentidentifier.json": {
       "hash": "40c2cdb7d28d19ffdde0e6ff7a233e2b0c23f51d686c824f7a214f21d9d6c46c",
-      "last_checked": "2026-10-20T00:52:00.447909",
+      "last_checked": "2026-10-20T07:41:18.008152",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1470-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentregistration/documentidentifier.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/init(mobiledocumenttype:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:).json": {
       "hash": "4034d89d7cb78a224f51bdbd19a342d204e55e66716814cd17980f1e9fad89a3",
-      "last_checked": "2026-10-20T00:52:00.589840",
+      "last_checked": "2026-10-20T07:41:18.127588",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"24e3-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/init-mobiledocumenttypesupportedauthoritykeyidentifiersdocumentidentifierinvalidationdate.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/invalidationdate.json": {
       "hash": "12ef985ff62cb6ffe71514987299b05ec4503fb89b4cbfe120ff79dc39517982",
-      "last_checked": "2026-10-20T00:52:00.889099",
+      "last_checked": "2026-10-20T07:41:18.420822",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"14d7-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/invalidationdate.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/mobiledocumenttype.json": {
       "hash": "7db7a9d883c132324b28a9ee1661765f10db73fe8ef470d0926ccdd175b5bd8e",
-      "last_checked": "2026-10-20T00:52:01.150857",
+      "last_checked": "2026-10-20T07:41:18.537794",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"12a0-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/mobiledocumenttype.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/supportedauthoritykeyidentifiers.json": {
       "hash": "4785c598377f044195d5a960c16ef602e1d3bf5f8278ea08ef04d0d111940661",
-      "last_checked": "2026-10-20T00:52:01.298051",
+      "last_checked": "2026-10-20T07:41:18.709923",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"159e-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/supportedauthoritykeyidentifiers.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequestvalidator/init().json": {
       "hash": "f3d759eeb305d1347a4f52ec50f5fff63470a830bb7916fa2b6338dadfb3e403",
-      "last_checked": "2026-10-20T00:52:01.593459",
+      "last_checked": "2026-10-20T07:41:18.998259",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"fc4-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequestvalidator/init.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequestvalidator/validateiso18013mobiledocumentrequest(_:origin:).json": {
       "hash": "0ae6278f296950fa49278d71487d2f509d0f0df43659e958442e4585f32ee830",
-      "last_checked": "2026-10-20T00:52:01.747920",
+      "last_checked": "2026-10-20T07:41:19.084093",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"22e8-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequestvalidator/validateiso18013mobiledocumentrequest-origin.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest.json": {
       "hash": "d18b6c44f7941f516ac94b83a2f9f472abc939a50cc652c02160437459e51959",
-      "last_checked": "2026-10-20T00:52:01.886254",
+      "last_checked": "2026-10-20T07:41:19.223000",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"32e1-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequestset.json": {
       "hash": "b4a475d7d5a28e9d814cee147366aa5642d82de5cdbe87b974236887b8f0c941",
-      "last_checked": "2026-10-20T00:52:02.164468",
+      "last_checked": "2026-10-20T07:41:19.386191",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2184-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequestset.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/elementinfo.json": {
       "hash": "6dc32f295f57b7aef9e6876190782f7b8a60ac618e0ac8fe7b1ca1459e7d8607",
-      "last_checked": "2026-10-20T00:52:02.324598",
+      "last_checked": "2026-10-20T07:41:19.520311",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1ebd-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/elementinfo.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/presentmentrequest.json": {
       "hash": "bf2388dd80afce0f491f0f3f1369f1c386ce3fb8b47748f4266ea35f463b61ec",
-      "last_checked": "2026-10-20T00:52:02.476314",
+      "last_checked": "2026-10-20T07:41:19.611354",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"27e1-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/presentmentrequest.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/requestauthentication.json": {
       "hash": "9f9fafba080f8cee57fec8cd55ef25e10e090c3faa4554b94ad7363bf0d8f27e",
-      "last_checked": "2026-10-20T00:52:02.615428",
+      "last_checked": "2026-10-20T07:41:19.787280",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"20e4-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/requestauthentication.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/init(presentmentrequests:requestauthentications:).json": {
       "hash": "26e8261619f64b8aa3de77f610818a81e31b22fbd0c6012a1a0f56d6eea2c3e0",
-      "last_checked": "2026-10-20T00:52:02.775794",
+      "last_checked": "2026-10-20T07:41:19.875919",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"24af-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/init-presentmentrequestsrequestauthentications.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/presentmentrequests.json": {
       "hash": "885e28f3a4d1d57272d168ec1094dd7fd8e51ca23586b36231e4ccb723895721",
-      "last_checked": "2026-10-20T00:52:03.070016",
+      "last_checked": "2026-10-20T07:41:20.034231",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1a48-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/presentmentrequests.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/requestauthentications.json": {
       "hash": "448d2825f997e1b9b1fe0e59f2536e2007667e8a46fb56d29c97cb868b264188",
-      "last_checked": "2026-10-20T00:52:03.227690",
+      "last_checked": "2026-10-20T07:41:20.177384",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1921-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/requestauthentications.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentresponse/init(responsedata:).json": {
       "hash": "297e60df92d081c00a5fb37946fe016607066896dae7d534a7a44ca1c2457d07",
-      "last_checked": "2026-10-20T00:52:03.500122",
+      "last_checked": "2026-10-20T07:41:20.325315",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1475-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentresponse/init-responsedata.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentresponse/responsedata.json": {
       "hash": "35ac3933cee4238b658f39fe594db3c1acf9cb31afb1e0e376e0e6ca8838df45",
-      "last_checked": "2026-10-20T00:52:03.650359",
+      "last_checked": "2026-10-20T07:41:20.473531",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"134c-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentresponse/responsedata.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/init(requesttype:requestdata:).json": {
       "hash": "0f421dc535dae6178daec635679acc30e5450a8af97340d42b512574345034d6",
-      "last_checked": "2026-10-20T00:52:03.797292",
+      "last_checked": "2026-10-20T07:41:20.565489",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"28d7-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/init-requesttyperequestdata.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requestdata.json": {
       "hash": "3ebaface2bf1b67b03f5a69b80e59da9f93faeda9e39508a6ea27f4f4fa11ca7",
-      "last_checked": "2026-10-20T00:52:03.952541",
+      "last_checked": "2026-10-20T07:41:20.771302",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"200c-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requestdata.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.property.json": {
       "hash": "3a1fcb3fdd2a02f177a38701a4b043d8efa0658c7efded16f0743277ea63fb7d",
-      "last_checked": "2026-10-20T00:52:04.092694",
+      "last_checked": "2026-10-20T07:41:20.864516",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2375-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swiftproperty.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum.json": {
       "hash": "a49cce9c3ac08e6c7afbea396b01e72604f06154adbaa41e5d6b76743af53ca8",
-      "last_checked": "2026-10-20T00:52:04.227534",
+      "last_checked": "2026-10-20T07:41:21.007559",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"208d-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swiftenum.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/status-swift.enum/authorized.json": {
       "hash": "ed3be7b5955090562261862190a367cc10cea6ed5a6f16368f3725736d713aaa",
-      "last_checked": "2026-10-20T00:52:05.618599",
+      "last_checked": "2026-10-20T07:41:22.180287",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"145a-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/status-swift.enum/authorized.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/status-swift.enum/notauthorized.json": {
       "hash": "aefd1fadf6b1bb7896322edb6bb2de8071aab47846b54eff361d584d8b63d659",
-      "last_checked": "2026-10-20T00:52:05.755977",
+      "last_checked": "2026-10-20T07:41:22.306935",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"148b-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/status-swift.enum/notauthorized.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/status-swift.enum/notdetermined.json": {
       "hash": "1a5ee914f25bd754a95dcfe24d27d7caf0f1cf748d52e1ae5229ba131b50fcda",
-      "last_checked": "2026-10-20T00:52:05.905259",
+      "last_checked": "2026-10-20T07:41:22.421191",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1495-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/status-swift.enum/notdetermined.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/status-swift.enum/notsupported.json": {
       "hash": "7ddca48251e36dd78e484856c7e3571e4078e44f889d817e58b2a189aba7b844",
-      "last_checked": "2026-10-20T00:52:06.191932",
+      "last_checked": "2026-10-20T07:41:22.605594",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"146c-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/status-swift.enum/notsupported.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/invalidrequest.json": {
       "hash": "5cc0082534ef96d3f04a58c4c1af8795583932204f5d4063840d4433fd65f931",
-      "last_checked": "2026-10-20T00:52:06.334371",
+      "last_checked": "2026-10-20T07:41:22.703352",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"14cf-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/invalidrequest.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/notauthorized.json": {
       "hash": "2daba403a1be14c766e094e3ad8b706d14e8dd722bf03ad38fa90b20c6fb3f23",
-      "last_checked": "2026-10-20T00:52:06.473066",
+      "last_checked": "2026-10-20T07:41:22.813079",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1550-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/notauthorized.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/notsupported.json": {
       "hash": "9786a56da88313c814c7c0ac063e04ab9052fb14c7ad9679c4a7e9910883103a",
-      "last_checked": "2026-10-20T00:52:06.636051",
+      "last_checked": "2026-10-20T07:41:22.944617",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1523-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/notsupported.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentproviderregistrationstore/registrationerror/unknown.json": {
       "hash": "fd816cead332ada690c6b069796999d02572334dba81b392042dec0ed7012f19",
-      "last_checked": "2026-10-20T00:52:06.790650",
+      "last_checked": "2026-10-20T07:41:23.126359",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"14db-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentproviderregistrationstore/registrationerror/unknown.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/init(documenttype:namespaces:).json": {
       "hash": "d395d5034088ddcc9d93c1db9cc880989390618da060d2ef38eaff1cb1153113",
-      "last_checked": "2026-10-20T00:52:06.927363",
+      "last_checked": "2026-10-20T07:41:23.454374",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"24a5-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/init-documenttypenamespaces.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/documenttype.json": {
       "hash": "2b70f2bc2b82d098d82a1188737bbcd74b0b6c6314fea03832daed8bcb829489",
-      "last_checked": "2026-10-20T00:52:07.240547",
+      "last_checked": "2026-10-20T07:41:23.707349",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"16b3-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/documenttype.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/namespaces.json": {
       "hash": "f2abd4757818b62d0c85c42cf39753507eaaf1ab640fbd34582b5d76a7e33c73",
-      "last_checked": "2026-10-20T00:52:07.529391",
+      "last_checked": "2026-10-20T07:41:24.018113",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"208b-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/namespaces.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequestset/init(requests:).json": {
       "hash": "4bd876f1979c41f455eab6c387a49e79aef3989648f3a901ab8b743d2bd8a8e6",
-      "last_checked": "2026-10-20T00:52:07.671116",
+      "last_checked": "2026-10-20T07:41:24.109711",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1cd5-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequestset/init-requests.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequestset/requests.json": {
       "hash": "2dd2769dacb34b78c08f8230e7046e0761863e813f44589165e9e956a17d867f",
-      "last_checked": "2026-10-20T00:52:07.828106",
+      "last_checked": "2026-10-20T07:41:24.251036",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1d87-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequestset/requests.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/elementinfo/init(isretaining:).json": {
       "hash": "5db8aeae62a026473e10cc09a5930088f42e99c25ac3abd068a2939372128fd8",
-      "last_checked": "2026-10-20T00:52:07.969453",
+      "last_checked": "2026-10-20T07:41:24.384111",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1847-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/elementinfo/init-isretaining.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/elementinfo/isretaining.json": {
       "hash": "9ba2b8462717192e25b2d1023807f5969c9640f5315539f182d7fdc63c00d21e",
-      "last_checked": "2026-10-20T00:52:08.264581",
+      "last_checked": "2026-10-20T07:41:24.574822",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1702-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/elementinfo/isretaining.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/presentmentrequest/init(documentrequestsets:ismandatory:).json": {
       "hash": "434dc55d1ba85d1df34ca93c13cb234540cd6f20028047871fea1e07920fa9ac",
-      "last_checked": "2026-10-20T00:52:08.411639",
+      "last_checked": "2026-10-20T07:41:24.666709",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"22f1-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/presentmentrequest/init-documentrequestsetsismandatory.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/presentmentrequest/documentrequestsets.json": {
       "hash": "af4777d6aa6503bd6a81684bb0ca223bc947806707c473f1107d0e68aff45e9d",
-      "last_checked": "2026-10-20T00:52:08.563160",
+      "last_checked": "2026-10-20T07:41:24.854709",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1e5b-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/presentmentrequest/documentrequestsets.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/presentmentrequest/ismandatory.json": {
       "hash": "2ffdcf9758ba615586bf935735cbbaf059086f5d0788d0818fe3469f8cdc9ff1",
-      "last_checked": "2026-10-20T00:52:08.698333",
+      "last_checked": "2026-10-20T07:41:25.004394",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1828-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/presentmentrequest/ismandatory.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/requestauthentication/init(authenticationcertificatechain:).json": {
       "hash": "9556678a87e1824a187ea2bf50b371efff2537dd8504cdeb34669b8c7eb96fe3",
-      "last_checked": "2026-10-20T00:52:08.881073",
+      "last_checked": "2026-10-20T07:41:25.160182",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1c54-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/requestauthentication/init-authenticationcertificatechain.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/requestauthentication/authenticationcertificatechain.json": {
       "hash": "841b336e5c0b575a5b3f29c881ad03c53d321d32b1e74fd4cb31aeae9b923a50",
-      "last_checked": "2026-10-20T00:52:09.036334",
+      "last_checked": "2026-10-20T07:41:25.265282",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1bee-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/requestauthentication/authenticationcertificatechain.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/iso18013mobiledocument.json": {
       "hash": "b896aa17c0521274c948dc1a66d715029556413f7caca6689aba8364c14a8efc",
-      "last_checked": "2026-10-20T00:52:09.166321",
+      "last_checked": "2026-10-20T07:41:25.407329",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1537-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentwebpresentmentrawrequest/requesttype-swift.enum/iso18013mobiledocument.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror.json": {
       "hash": "21c16e010ac9c84254be4e61fc5b049eee063858c0d0baabf87968fb74ae7ead",
-      "last_checked": "2026-10-20T00:51:58.875155",
+      "last_checked": "2026-10-20T07:41:16.947540",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3b9e-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/code-swift.property.json": {
       "hash": "69ca94a3dc76dad9bc076b503d41731315e61544dd4a9dbe307f93ece0719bef",
-      "last_checked": "2026-10-20T00:52:04.375158",
+      "last_checked": "2026-10-20T07:41:21.119590",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1740-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/code-swiftproperty.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/debugdescription.json": {
       "hash": "abd580471fec3447bd2922252a0467d6e1ad77175c73c42213a6ff756415aa05",
-      "last_checked": "2026-10-20T00:52:04.543171",
+      "last_checked": "2026-10-20T07:41:21.282542",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1386-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/debugdescription.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/cancelled.json": {
       "hash": "4ff12a18aad7d0be9bccfec56b5ce73b96e140156fa007f92ce145769ce42048",
-      "last_checked": "2026-10-20T00:52:04.672890",
+      "last_checked": "2026-10-20T07:41:21.380132",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"182f-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/cancelled.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/invalidrequest.json": {
       "hash": "cdd996d37bcf1b60b2d3fbeacd38cc464fc9e0d52f4b3bb25a839704223e92e2",
-      "last_checked": "2026-10-20T00:52:04.811913",
+      "last_checked": "2026-10-20T07:41:21.495155",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1857-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/invalidrequest.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/notentitled.json": {
       "hash": "31da6b1dae4e60489525bfb15e9ce009f22c62d2a5aaec03d476e6687dea3241",
-      "last_checked": "2026-10-20T00:52:04.961722",
+      "last_checked": "2026-10-20T07:41:21.694621",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1824-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/notentitled.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/requestinprogress.json": {
       "hash": "fe8b8d8b15664ba4c813ee5599cda949660d906ce02cb3f7df5343bf2113dcba",
-      "last_checked": "2026-10-20T00:52:05.097310",
+      "last_checked": "2026-10-20T07:41:21.819274",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"188c-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/requestinprogress.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/unknown.json": {
       "hash": "7292b4e84be7b6672f96eeaf19230ca425c7bd590a02d42075014aab8bee2ff7",
-      "last_checked": "2026-10-20T00:52:05.251768",
+      "last_checked": "2026-10-20T07:41:21.914715",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1825-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/unknown.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/code-swift.enum.json": {
       "hash": "8a5e19be324f9f48b1c3643655000af1cc9811a10c2828514982ec8e5e567ae9",
-      "last_checked": "2026-10-20T00:52:05.403292",
+      "last_checked": "2026-10-20T07:41:22.087574",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"3b08-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/code-swiftenum.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/code-swift.enum/~=(_:_:).json": {
       "hash": "8be1f690bc46c43e896697da11d975d86329ce4090847bcd85af82028e5aac43",
-      "last_checked": "2026-10-20T00:52:09.326110",
+      "last_checked": "2026-10-20T07:41:25.530229",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2220-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/code-swift.enum/unknown.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/code-swift.enum/cancelled.json": {
       "hash": "191f31986ccb546ed30429df948a9e26856fb8be8a4c7ec6152090ce9a80edab",
-      "last_checked": "2026-10-20T00:52:09.477499",
+      "last_checked": "2026-10-20T07:41:25.670726",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"13c9-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/code-swift.enum/cancelled.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/code-swift.enum/invalidrequest.json": {
       "hash": "26ae606a375add641ea4131cd61be4014a9ace0afbf7c387cb36b9f6e7488a35",
-      "last_checked": "2026-10-20T00:52:09.644001",
+      "last_checked": "2026-10-20T07:41:25.836532",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"13f1-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/code-swift.enum/invalidrequest.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/code-swift.enum/notentitled.json": {
       "hash": "b6be8e88850cb95296535f5692ba978856986ed786b8ee5907bf2436bae4fc57",
-      "last_checked": "2026-10-20T00:52:09.808198",
+      "last_checked": "2026-10-20T07:41:26.077404",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"13be-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/code-swift.enum/notentitled.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/code-swift.enum/requestinprogress.json": {
       "hash": "9be33196ba631fa219d2a587379d4ff86a383b9e61f35f259f61fb0711de6056",
-      "last_checked": "2026-10-20T00:52:09.938361",
+      "last_checked": "2026-10-20T07:41:26.184185",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1426-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/code-swift.enum/requestinprogress.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/identitydocumentpresentmenterror/code-swift.enum/unknown.json": {
       "hash": "54b976cc6f56282b009f37d4a4ccb3cb0a1645a68d0935d498d79944bfbd6551",
-      "last_checked": "2026-10-20T00:52:10.081705",
+      "last_checked": "2026-10-20T07:41:26.354828",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"13bf-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/identitydocumentpresentmenterror/code-swift.enum/unknown.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/verifying-a-mobile-document-from-a-passport.json": {
       "hash": "8ae66af76536c40da39b695fc0bd364b052c57c2e0fd766688729b474f05b110",
-      "last_checked": "2026-10-20T00:51:56.834505",
+      "last_checked": "2026-10-20T07:41:15.152771",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"71b0-65d55cd7ea974-df\"",
       "file_path": "documentation/IdentityDocumentServices/verifying-a-mobile-document-from-a-passport.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/init(mobiledocumenttype:supportedissuerkeyidentifiers:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:).json": {
       "hash": "97e7eba7f65fa1cccf21b2eafcd7042b85416a40f98058f4d473db067941355a",
-      "last_checked": "2026-10-20T00:52:00.740151",
+      "last_checked": "2026-10-20T07:41:18.259242",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2997-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/init-mobiledocumenttypesupportedissuerkeyidentifierssupportedauthoritykeyidentifiersdocumentidentifierinvalidationdate.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/mobiledocumentregistration/supportedissuerkeyidentifiers.json": {
       "hash": "8c68b4805dda996287a714609cf8d51733539edc0c3fa22e8fb45fb99b35503a",
-      "last_checked": "2026-10-20T00:52:01.440989",
+      "last_checked": "2026-10-20T07:41:18.848676",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"164a-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/mobiledocumentregistration/supportedissuerkeyidentifiers.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/init(documenttype:namespaces:issuerkeyidentifiers:).json": {
       "hash": "60f761264c551d08b0552c77dd891337d12ec9b109dee9e0a5b026c21136f0e9",
-      "last_checked": "2026-10-20T00:52:07.086774",
+      "last_checked": "2026-10-20T07:41:23.599610",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"2ac0-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/init-documenttypenamespacesissuerkeyidentifiers.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/identitydocumentservices/iso18013mobiledocumentrequest/documentrequest/issuerkeyidentifiers.json": {
       "hash": "d5741a1f4bb8ff77685cafed841899a324111da50f2ee989f3bd6402a41d4529",
-      "last_checked": "2026-10-20T00:52:07.393609",
+      "last_checked": "2026-10-20T07:41:23.839808",
       "status": "unchanged",
-      "session_id": "2026-10-20T00:51:55.532042",
+      "session_id": "2026-10-20T07:41:14.474644",
       "etag": "\"1a09-65d55cd7d7d48-df\"",
       "file_path": "documentation/IdentityDocumentServices/iso18013mobiledocumentrequest/documentrequest/issuerkeyidentifiers.md"
     },
